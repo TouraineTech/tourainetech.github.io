@@ -5,10 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "poi",
-    "build": "poi build",
-    "sync-dist": "git submodule update --init --recursive",
-    "push-dist": "cd $PWD/dist && git add . && git commit -am\"Release\" && git push origin master && cd -",
-    "release": "npm run sync-dist && npm run build && npm run push-dist"
+    "build": "poi build"
   },
   "author": "",
   "license": "MIT",

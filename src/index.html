@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="google-site-verification" content="1xAheeaBoQnz6xwU64q2ZGh6xBjxXnBnjLhN7hzFCi0"/>
     <meta charset="UTF-8">
+    <meta property="og:url" content="https://tourainetech.github.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Touraine Tech"/>
+    <meta property="og:description" content="Une conférence tourangelle !"/>
+    <meta property="og:locale" content="fr_FR">
+    <!-- <meta property="og:image"
+          content=""/>-->
     <title>Touraine Tech</title>
 </head>
 <body>
 <header class="nav-header">
-    <h1>Touraine Tech</h1>
+    <div itemscope itemprop="organization" itemtype="http://schema.org/Organization">
+        <a href="https://tourainetech.github.io" itemprop="url">
+            <h1 itemprop="name">Touraine Tech</h1>
+        </a>
+    </div>
     <nav>
         <a href="#quisommesnous">Qui sommes nous ?</a>
         <a href="#participer">Participer</a>
@@ -26,14 +38,29 @@
         <h1>Une association indépendante</h1>
         <p>Nous voulons être indépedant, et garantir des conférence de qualité</p>
     </section>
-    <section id="participer">
+    <section id="participer" itemscope itemtype="http://schema.org/Event">
         <h1>Incriptions</h1>
         <p>Les inscriptions ne sont pas encore ouvertes tennez vous au jus sur twitter !</p>
+        <p>
+            Prochain <span itemprop="name">Touraine Tech</span>
+            le <span itemprop="startDate" content="2018-02-23">vendredi 23/02/2018</span>
+            à
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                <span itemprop="name">Polytech Tours</span>
+                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">64 Avenue Jean Portalis</span>,
+                    <span itemprop="postalCode">37200</span>
+                    <span itemprop="addressLocality">Tours</span>
+                </span>
+            </span>
+        </p>
     </section>
     <section id="proposer">
         <h1>Call For Papers</h1>
         <p>Bientôt ouvert !</p>
     </section>
 </main>
+<footer>
+</footer>
 </body>
 </html>
