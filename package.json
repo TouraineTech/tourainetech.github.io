@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "poi",
-    "build": "poi build"
+    "build": "poi build",
+    "sync-dist": "git submodule update --init --recursive",
+    "push-dist": "cd $PWD/dist && git add . && git commit -am\"Release\" && git push cd -",
+    "release": "npm run sync-dist && npm run build && npm run push-dist"
   },
   "author": "",
   "license": "MIT",
@@ -20,7 +23,7 @@
     "sass-loader": "^6.0.6"
   },
   "poi": {
-    "dist": "./docs",
+    "dist": "./dist",
     "homepage": "./",
     "html": {
       "template": "./src/index.html"

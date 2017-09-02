@@ -1,3 +1,68 @@
-h1 {
-  color: blue
+$backgroundColor: #22244B;
+$highlightColor: #315897;
+$actionColor: #61BCA3;
+$textColor: #FFFFFF;
+
+/**
+ * Globals
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  flex: 1;
+  background-color: $backgroundColor;
+  color: $textColor;
+}
+
+a {
+  text-decoration: none;
+  color: $textColor;
+}
+
+/**
+ * Nav Header
+ */
+.nav-header {
+  flex-grow: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: $textColor;
+
+  h1 {
+    margin: 0;
+    color: $highlightColor;
+  }
+
+  nav a {
+    padding: 15px;
+    color: $highlightColor;
+    &:hover {
+      background-color: $actionColor;
+      color: $textColor
+    }
+  }
+}
+
+/**
+ * Main content
+ */
+.content {
+  flex: 1;
+  overflow-y: scroll;
+  > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100vh;
+  }
 }
