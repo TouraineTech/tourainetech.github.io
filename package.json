@@ -1,13 +1,14 @@
 {
   "name": "touraine-tech",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website of Touraine Tech",
   "main": "src/index.js",
   "scripts": {
-    "start": "poi",
-    "build": "poi build"
+    "start" : "poi",
+    "build" : "poi build",
+    "deploy": "gh-pages --dist ./dist --branch master"
   },
-  "author": "",
+  "author": "Touraine Tech",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
+    "gh-pages": "^1.0.0",
     "node-sass": "^4.5.3",
     "poi": "^9.3.3",
     "sass-loader": "^6.0.6"
