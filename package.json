@@ -6,7 +6,8 @@
   "scripts": {
     "start" : "poi",
     "build" : "poi build",
-    "deploy": "gh-pages --dist ./dist --branch master"
+    "to-ghpages": "gh-pages --dist ./dist --branch master",
+    "deploy": "npm run build && npm run to-ghpages"
   },
   "author": "Touraine Tech",
   "license": "MIT",
@@ -24,6 +25,11 @@
   "poi": {
     "dist": "./dist",
     "homepage": "./",
+    "copy": [
+      {
+        "from":"./README.md"
+      }
+    ],
     "html": {
       "template": "./src/index.html"
     }
