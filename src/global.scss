@@ -1,7 +1,14 @@
+// Colors
 $backgroundColor: #22244B;
 $highlightColor: #315897;
 $actionColor: #61BCA3;
 $textColor: #FFFFFF;
+// Media sizes
+$largeScreen: 1690px;
+$oldScreen: 1280px;
+$tablet: 980px;
+$largePhone: 736px;
+$phone: 480px;
 
 /**
  * Globals
@@ -17,9 +24,23 @@ html, body {
   flex: 1;
   background-color: $backgroundColor;
   color: $textColor;
+  font-family: Arial, serif;
+  font-size: 5vw;
+  @media (min-width: $tablet), (orientation: landscape) {
+    font-size: 2vw;
+  }
 }
 
-a {
+/**
+ * Defaults
+ */
+
+h1, h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a.link {
   text-decoration: none;
   color: $textColor;
 }
@@ -32,13 +53,58 @@ a {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
   background-color: $textColor;
 
-  h1 {
-    margin: 0;
-    color: $highlightColor;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    h1 {
+      margin: 0;
+      color: $highlightColor;
+      font-size: 1.5rem;
+    }
+  }
+  .nav-open {
+    font-size: 1.2rem;
+
+    color: $textColor;
+    background-color: $actionColor;
+
+    padding: 0.5rem;
+    border-radius: 4px;
+
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  #nav-trigger {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + nav {
+      display: block;
+    }
+  }
+
+  nav {
+    display: none;
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   nav a {
@@ -47,6 +113,10 @@ a {
     &:hover {
       background-color: $actionColor;
       color: $textColor
+    }
+    @media (max-width: $tablet - 1) {
+      display: block;
+      text-align: center;
     }
   }
 }
@@ -57,12 +127,75 @@ a {
 .content {
   flex: 1;
   overflow-y: scroll;
-  > section {
+  > section, .presentation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 
-    height: 100vh;
+    min-height: 100%; // Take a complete screen height minus the top bar.
+
+    &:nth-of-type(2n+1) {
+      background-color: $highlightColor;
+    }
+    &:nth-of-type(2n), &.presentation {
+      background-color: $backgroundColor;
+    }
+  }
+}
+
+.presentation {
+  .presentation-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.themes {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      background-color: $actionColor;
+      border-radius: 50%;
+      width: 60vmin;
+      height: 60vmin;
+      margin: 5%;
+      @media (min-width: $largePhone) {
+        width: 20vw;
+        height: 20vw;
+      }
+    }
+  }
+}
+
+.numbers {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      line-height: 1.3rem;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row !important;
+    & > * {
+      flex: 1;
+    }
   }
 }

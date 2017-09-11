@@ -14,50 +14,70 @@
 </head>
 <body>
 <header class="nav-header">
-    <div itemscope itemprop="organization" itemtype="http://schema.org/Organization">
-        <a href="https://tourainetech.github.io" itemprop="url">
+    <div itemscope itemprop="organization" itemtype="http://schema.org/Organization" class="nav-bar">
+        <a class="link" href="https://tourainetech.github.io" itemprop="url">
             <h1 itemprop="name">Touraine Tech</h1>
         </a>
+        <label for="nav-trigger" class="nav-open">
+            Ouvrir
+        </label>
     </div>
+    <input type="checkbox" id="nav-trigger">
     <nav>
-        <a href="#quisommesnous">Qui sommes nous ?</a>
-        <a href="#participer">Participer</a>
-        <a href="#proposer">Proposer un sujet</a>
+        <a class="link" href="#quisommesnous">Qui sommes nous ?</a>
+        <a class="link" href="#participer">Participer</a>
+        <a class="link" href="#proposer">Proposer un sujet</a>
     </nav>
 </header>
 <main class="content">
-    <section class="presentation">
-        <div>
-            <h1>Touraine Tech</h1>
-            <h2>La première conférence téchnique en région centre sur les nouvelles technologies du numérique</h2>
-        </div>
-    </section>
+    <div class="presentation">
+        <h1>Touraine Tech</h1>
+        <h2>La première conférence téchnique en région centre sur les nouvelles technologies du numérique</h2>
+        <p class="presentation-date">Touraine Tech aura lieu le 23 février 2018</p>
+        <p>Cet événement a pour but de promouvoir le secteur numérique, notamment son économie, ses métiers et ses formations.  Il est organisée bénévolement par l'association Touraine Tech, dont l'objectif est de promouvoir ce secteur d'activité en touraine.</p>
+    </div>
     <section class="themes">
         <h1>Thématiques</h1>
-        <h2>Dev responsables</h2>
+        <p>L'axe principal mis en avant sera le développement résponsable.</p>
         <ul>
-            <li>Design, UI, UX</li>
-            <li>Front web, mobile, jeux web</li>
-            <li>Internet des objets, marchés émergents</li>
-            <li>backends, cloud, bigData</li>
-            <li>tooling</li>
-            <li>Conception, architecture, pratiques de developpement</li>
+            <li>
+                Design, UI, UX
+            </li>
+            <li>
+                Front web, Mobile
+            </li>
+            <li>
+                Backends, Cloud, Big Data
+            </li>
+            <li>
+                Jeux vidéos et hybrides
+            </li>
+            <li>
+                Internet des Objets
+            </li>
+            <li>
+                Conception, architecture
+            </li>
+            <li>
+                Outillage, pratiques de développement
+            </li>
         </ul>
     </section>
     <section class="numbers">
-        <h1>Chiffres</h1>
+        <h1>Ambiations</h1>
         <ul>
-            <li>Nombre de participants attendus : 250</li>
-            <li>2 amphithéatres, une salle de prises en mains, un grand espace sponsor, une cafétéria, et surtout des TOILETTES !</li>
-            <li>2 tracks de conférences pour un total de 14 conférences, 6 lightning talks, et 3 hands on</li>
+            <li>Cette conférence sera ouverte sur un large panel de technologies informatiques, visant un public autant professionnel qu'étudiant. Elle accueillera jusqu'à 250 personnes.</li>
+            <li>Pour cette première édition, nous organisons une journée de conférence sur Tours dans les locaux du département informatique de l'école polytechnique de l'université de Tours.</li>
+            <li>Seront mis à disposition 2 amphithéatres, une salle de prises en mains, un grand espace sponsor, une cafétéria.</li>
+            <li>La journée se déroulera sur 2 tracks de conférences pour un total de 14 conférences, 6 lightning talks, et 3 hands on</li>
         </ul>
     </section>
     <section id="quisommesnous">
-        <h1>Une association indépendante</h1>
-        <p>Nous voulons être indépedant, et garantir des conférence de qualité</p>
+        <h1>L'équipe</h1>
+        <p>L'association Touraine Tech est consituée de membres actifs de la communauté tech de Tours métropole et sa région. Ils sont par ailleurs engagés dans les formations bénévoles, ateliers techniques et évènements du numérique : Tours JS, GDG Tours, Tours JUG, Tours MUG, Les Ateliers du Web Design, ...</p>
     </section>
     <section id="participer" itemscope itemtype="http://schema.org/Event">
-        <h1>Incriptions</h1>
+        <h1>Inscriptions</h1>
         <p>Les inscriptions ne sont pas encore ouvertes tennez vous au jus sur twitter !</p>
         <p>
             Prochain <span itemprop="name">Touraine Tech</span>
