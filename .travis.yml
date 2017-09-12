@@ -8,6 +8,8 @@ script:
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
-  local_dir: "dist"
+  local_dir: ./dist
+  target_branch: master
+  fqdn: touraine.tech
   on:
-    branch: master
+    branch: dev
