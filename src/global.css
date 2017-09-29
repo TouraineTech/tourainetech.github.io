@@ -1,0 +1,269 @@
+/**
+ * Globals
+ */
+/* line 23, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  flex: 1;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 4vw; }
+  @media (min-width: 980px), (orientation: landscape) {
+    /* line 23, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    html, body {
+      font-size: 1.5vw; } }
+
+/**
+ * Defaults
+ */
+/* line 44, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.nav-header .nav-bar h1, .presentation h1, .themes h1, .numbers h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+/* line 56, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.nav-header, .nav-header .nav-bar, .nav-header nav, .content > section, .content .presentation, .presentation .presentation-date, .presentation .presentation-event, .themes ul, .themes ul li, .themes ul li span {
+  display: flex;
+  align-items: center; }
+
+/* line 66, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.presentation .presentation-intro, .themes, .numbers, #quisommesnous, #participer, #proposer {
+  padding: 40px 0; }
+
+/* line 78, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+a.link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+
+/**
+ * Nav Header
+ */
+/* line 87, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.nav-header {
+  flex-grow: 0;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #fff;
+  flex-direction: column; }
+  @media (min-width: 980px) {
+    /* line 87, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .nav-header {
+      flex-direction: row; } }
+  /* line 99, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .nav-header .nav-bar {
+    justify-content: space-between;
+    flex: 1; }
+    /* line 103, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .nav-header .nav-bar img {
+      width: 10vw; }
+    /* line 107, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .nav-header .nav-bar h1 {
+      color: #222332;
+      font-size: 0.8rem;
+      margin-top: 0; }
+  /* line 112, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .nav-header .nav-open {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000;
+    padding: 0.5rem;
+    border-radius: 4px; }
+    @media (min-width: 980px) {
+      /* line 112, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+      .nav-header .nav-open {
+        display: none; } }
+  /* line 127, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .nav-header #nav-trigger {
+    width: 0;
+    height: 0;
+    opacity: 0; }
+    /* line 132, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .nav-header #nav-trigger:checked + nav {
+      display: block; }
+  /* line 137, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .nav-header nav {
+    justify-content: center; }
+    @media (max-width: 980px) {
+      /* line 137, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+      .nav-header nav {
+        display: none; } }
+  /* line 144, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .nav-header nav a {
+    padding: 15px;
+    color: #222332; }
+    /* line 147, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .nav-header nav a:hover {
+      background-color: #6ABFAD;
+      color: #fff; }
+    @media (max-width: 979px) {
+      /* line 144, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+      .nav-header nav a {
+        display: block;
+        text-align: center; } }
+
+/**
+ * Main content
+ */
+/* line 161, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.content {
+  flex: 1;
+  overflow-y: scroll; }
+  /* line 164, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .content > section, .content .presentation {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100%; }
+    /* line 171, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .content > section:first-child, .content .presentation:first-child {
+      background-color: #222332; }
+
+/* line 184, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.presentation h1 {
+  color: #fff;
+  font-size: 2rem; }
+
+/* line 187, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.presentation h2 {
+  line-height: 2.8rem;
+  font-weight: 500;
+  font-size: 2vw; }
+
+/* line 192, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.presentation .presentation-date {
+  justify-content: center;
+  font-size: 1.8vw;
+  width: 100%;
+  background-color: #6ABFAD;
+  padding: 30px 0;
+  margin-bottom: 0; }
+  /* line 200, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .presentation .presentation-date img {
+    margin-right: 15px; }
+
+/* line 204, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.presentation .presentation-event {
+  justify-content: center;
+  background-color: #fff;
+  margin: 0;
+  color: #222332; }
+  /* line 210, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .presentation .presentation-event img {
+    width: 50%;
+    height: 100%;
+    margin-right: 25px; }
+  /* line 215, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .presentation .presentation-event p {
+    line-height: 2.5vw;
+    text-align: left; }
+
+/* line 224, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.themes h1 {
+  color: #222332;
+  font-size: 2rem; }
+
+/* line 227, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.themes p {
+  color: #222332; }
+
+/* line 230, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.themes ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  /* line 236, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .themes ul li {
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5%;
+    margin: 4vw;
+    background-size: 100%; }
+    /* line 250, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.design {
+      background-image: url(../img/1_design.svg); }
+    /* line 251, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.front {
+      background-image: url(../img/2_front.svg); }
+    /* line 252, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.cloud {
+      background-image: url(../img/3_cloud.svg); }
+    /* line 253, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.jeux {
+      background-image: url(../img/4_jeux.svg); }
+    /* line 254, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.objets {
+      background-image: url(../img/5_objets.svg); }
+    /* line 255, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.archi {
+      background-image: url(../img/6_archi.svg); }
+    /* line 256, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li.outils {
+      background-image: url(../img/7_outils.svg); }
+    /* line 258, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li span {
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      transform: scale(0) rotate(180deg);
+      color: #fff;
+      background-color: rgba(34, 35, 50, 0.85);
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      line-height: 3vw;
+      border-radius: 5%; }
+    /* line 270, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .themes ul li:hover span {
+      transform: scale(1) rotate(0); }
+    @media (min-width: 980px) {
+      /* line 236, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+      .themes ul li {
+        width: 14vw;
+        height: 14vw; } }
+
+/* line 283, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+.numbers {
+  background-color: #222332; }
+  /* line 286, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .numbers h1 {
+    color: #fff;
+    font-size: 2rem; }
+  /* line 289, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+  .numbers ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    /* line 293, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+    .numbers ul li {
+      line-height: 1.3rem; }
+
+/* line 303, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+#quisommesnous {
+  background-image: url(../img/team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #6ABFAD;
+  background-blend-mode: multiply; }
+
+/* line 311, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+#participer {
+  background-color: #6ABFAD; }
+
+/* line 315, /Users/alexiaalarza/Desktop/PRO/TOURAINE TECH/tourainetech.github.io/src/global.scss */
+#proposer {
+  background-color: #222332; }
+
+/*# sourceMappingURL=global.css.map */
