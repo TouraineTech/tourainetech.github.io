@@ -13,7 +13,7 @@ $largePhone: 736px;
 $phone: 480px;
 
 // Google font
-$fontStyle: 'Raleway', sans-serif;
+$fontstack: 'Raleway', sans-serif;
 
 /**
  * Globals
@@ -28,7 +28,7 @@ html, body {
   height: 100vh;
   flex: 1;
   color: $textColor;
-  font-family: $fontStyle;
+  font-family: $fontstack;
   font-size: 4vw;
   @media (min-width: $tablet), (orientation: landscape) {
     font-size: 1.5vw;
@@ -39,29 +39,38 @@ html, body {
  * Defaults
  */
 
-%titleBase {
-  font-weight: 600;
-  text-transform: uppercase;
+%align{   
+  font-weight: normal; 
+  text-transform: uppercase; 
+  font-weight: 600;      
 }
 
-@mixin title($color, $size) {
-  @extend %titleBase;
-  color: $color;
-  font-size: $size;
+@mixin title($color, $size){
+    @extend %align;
+    color: $color;
+    font-size: $size;
 }
 
-%alignFlex {
-  display: flex;
-  align-items: center;
+%alignFlex{
+    display: flex;
+    align-items: center; 
 }
 
-@mixin centeredFlex($content) {
-  @extend %alignFlex;
-  justify-content: $content;
+@mixin flex($content){
+    @extend %alignFlex;
+    justify-content: $content;
 }
 
-%sectionSpace {
-  padding: 40px 0;
+%sectionSpace{
+    padding: 40px 0;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -ms-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }
 
 a.link {
@@ -76,7 +85,7 @@ a.link {
 .nav-header {
   flex-grow: 0;
 
-  @include centeredFlex(space-between);
+  @include flex(space-between); 
   padding: 0 10px;
   background-color: $BgColorLight;
 
@@ -86,7 +95,7 @@ a.link {
   }
 
   .nav-bar {
-    @include centeredFlex(space-between);
+    @include flex(space-between); 
     flex: 1;
 
     img {
@@ -95,8 +104,8 @@ a.link {
 
     h1 {
       @include title($BgColorDark, .8rem);
-      margin-top: 0;
-    }
+      margin-top: 0;    
+    }  
   }
   .nav-open {
     font-size: 1.2rem;
@@ -123,9 +132,9 @@ a.link {
   }
 
   nav {
-    @include centeredFlex(center);
+      @include flex(center);
     @media (max-width: $tablet) {
-      display: none;
+       display: none;
     }
   }
 
@@ -150,7 +159,7 @@ a.link {
   flex: 1;
   overflow-y: scroll;
   > section, .presentation {
-    @include centeredFlex(center);
+    @include flex(center);  
     flex-direction: column;
     text-align: center;
 
@@ -159,128 +168,121 @@ a.link {
     &:first-child {
       background-color: $BgColorDark;
     }
+//    &:nth-of-type(2n), &.presentation {
+//      background-color: $BgColorDark;
+//    }
   }
 }
 
 .presentation {
-  & .presentation-intro {
-    @extend %sectionSpace;
-  }
-  h1 {
-    @include title($BgColorLight, 2rem);
-  }
+  & .presentation-intro{
+    @extend %sectionSpace;    
+  }    
+  h1{
+    @include title($BgColorLight, 2rem);   
+  }    
   h2 {
     line-height: 2.8rem;
-    font-weight: 500;
-    font-size: 2vw;
-  }
+    font-weight: 500;  
+    font-size: 2vw;  
+  }    
   & .presentation-date {
-    @include centeredFlex(center);
-    font-size: 1.8vw;
+    @include flex(center); 
+    font-size: 1.8vw; 
     width: 100%;
     background-color: $BgColor;
-    padding: 30px 0;
-    margin-bottom: 0;
-
-    img {
-      margin-right: 15px;
-    }
+    padding: 30px 0;  
+    margin-bottom: 0;  
+      
+    img{
+        margin-right: 15px;
+    }  
   }
-  & .presentation-event {
-    @include centeredFlex(center);
+  & .presentation-event{
+    @include flex(center); 
     background-color: $BgColorLight;
     margin: 0;
-    color: $BgColorDark;
-
-    img {
+    color: $BgColorDark;  
+      
+    img{
       width: 50%;
       height: 100%;
       margin-right: 25px;
-    }
-    p {
-      line-height: 2.5vw;
+    }  
+    p{
+      line-height: 2.5vw;    
       text-align: left;
     }
-  }
+  }    
 }
 
 .themes {
-  @extend %sectionSpace;
-  h1 {
-    @include title($BgColorDark, 2rem);
-  }
-  p {
+  @extend %sectionSpace;    
+  h1{
+    @include title($BgColorDark, 2rem);   
+  }   
+  p{
     color: $BgColorDark;
-  }
+  }    
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    @include centeredFlex(space-evenly);
+    @include flex(space-evenly); 
     flex-wrap: wrap;
     li {
-      @include centeredFlex(center);
+      @include flex(center); 
 
       font-size: 1.2rem;
-      font-weight: 500;
+      font-weight: 500;  
 
       border-radius: 5%;
+//      width: 60vmin;
+//      height: 60vmin;
       margin: 4vw;
-
+        
       background-size: 100%;
-
-      &.design {
-        background-image: url(../img/1_design.svg);
-      }
-      &.front {
-        background-image: url(../img/2_front.svg);
-      }
-      &.cloud {
-        background-image: url(../img/3_cloud.svg);
-      }
-      &.jeux {
-        background-image: url(../img/4_jeux.svg);
-      }
-      &.objets {
-        background-image: url(../img/5_objets.svg);
-      }
-      &.archi {
-        background-image: url(../img/6_archi.svg);
-      }
-      &.outils {
-        background-image: url(../img/7_outils.svg);
-      }
-
-      & span {
-        transition: all .3s;
-        transform: scale(0) rotate(180deg);
-        color: $BgColorLight;
-        background-color: rgba($BgColorDark, .85);
-        width: 100%;
-        height: 100%;
-        @include centeredFlex(center);
-        line-height: 3vw;
-        border-radius: 5%;
-      }
-
-      &:hover span {
-        transform: scale(1) rotate(0);
-      }
-
+//      border: 1px solid $BgColorDark;    
+   
+        &.design{ background-image: url(../img/1_design.svg);}
+        &.front{ background-image: url(../img/2_front.svg);}
+        &.cloud{ background-image: url(../img/3_cloud.svg);}
+        &.jeux{ background-image: url(../img/4_jeux.svg);}
+        &.objets{ background-image: url(../img/5_objets.svg);}
+        &.archi{ background-image: url(../img/6_archi.svg);}
+        &.outils{ background-image: url(../img/7_outils.svg);}
+    
+        & span{
+            @include transition(all .3s);
+            transform: scale(0) rotate(180deg);
+            color: $BgColorLight;
+            background-color: rgba($BgColorDark, .85);
+            width: 100%;
+            height: 100%;
+            @include flex(center);
+            line-height: 3vw;
+            border-radius: 5%;
+        }
+        
+        &:hover span{
+            transform: scale(1) rotate(0);
+        }
+        
+        
       @media (min-width: $tablet) {
         width: 14vw;
         height: 14vw;
-      }
+      }      
     }
   }
 }
 
 .numbers {
-  @extend %sectionSpace;
-  background-color: $BgColorDark;
-  h1 {
-    @include title($BgColorLight, 2rem);
-  }
+  @extend %sectionSpace; 
+  background-color: $BgColorDark;  
+  h1{
+    @include title($BgColorLight, 2rem);   
+  }     
   ul {
     padding: 0;
     margin: 0;
@@ -295,21 +297,19 @@ a.link {
   }
 }
 
-#quisommesnous {
-  @extend %sectionSpace;
+#quisommesnous{
+  @extend %sectionSpace; 
   background-image: url(../img/team.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $BgColor;
-  background-blend-mode: multiply;
+  background-size: cover;    
+  background-color: $BgColor;    
+  background-blend-mode: multiply;    
 }
-
-#participer {
-  @extend %sectionSpace;
-  background-color: $BgColor;
+#participer{
+  @extend %sectionSpace; 
+  background-color: $BgColor;       
 }
-
-#proposer {
-  @extend %sectionSpace;
-  background-color: $BgColorDark;
+#proposer{
+  @extend %sectionSpace; 
+  background-color: $BgColorDark;       
 }
