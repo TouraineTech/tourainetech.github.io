@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "8"
+install:
+  - "npm install"
+script:
+  - "npm run build"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: ./dist
+  target_branch: master
+  fqdn: touraine.tech
+  on:
+    branch: dev
