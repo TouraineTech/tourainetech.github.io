@@ -1,14 +1,21 @@
 // Colors
-$backgroundColor: #22244B;
-$highlightColor: #315897;
-$actionColor: #61BCA3;
-$textColor: #FFFFFF;
+$backgroundColor: #222332;
+$highlightColor: #222332;
+$actionColor: #6ABFAD;
+$NavbgColor: #fff;
+$textColor: #fff;
 // Media sizes
 $largeScreen: 1690px;
 $oldScreen: 1280px;
 $tablet: 980px;
 $largePhone: 736px;
 $phone: 480px;
+
+// Google font
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700');
+$font-stack: Raleway, sans-serif;
+
+
 
 /**
  * Globals
@@ -24,10 +31,10 @@ html, body {
   flex: 1;
   background-color: $backgroundColor;
   color: $textColor;
-  font-family: Arial, serif;
+  font-family: $font-stack;
   font-size: 5vw;
   @media (min-width: $tablet), (orientation: landscape) {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -36,13 +43,16 @@ html, body {
  */
 
 h1, h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.5rem;    
+  font-weight: normal; 
+  text-transform: uppercase; 
+  font-weight: 600;    
 }
 
 a.link {
   text-decoration: none;
   color: $textColor;
+  text-align: center;    
 }
 
 /**
@@ -54,7 +64,7 @@ a.link {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: $textColor;
+  background-color: $NavbgColor;
 
   flex-direction: column;
   @media (min-width: $tablet) {
@@ -67,11 +77,16 @@ a.link {
     align-items: center;
     flex: 1;
 
+    img{
+      width: 10vw;          
+    }  
+      
     h1 {
       margin: 0;
       color: $highlightColor;
-      font-size: 1.5rem;
-    }
+      font-size: .8rem;
+      
+    }  
   }
   .nav-open {
     font-size: 1.2rem;
@@ -146,9 +161,17 @@ a.link {
 }
 
 .presentation {
+  h2 {
+    line-height: 2.5rem;
+  }    
   .presentation-date {
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $actionColor;
+    padding: 30px 0;   
   }
 }
 
