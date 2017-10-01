@@ -35,7 +35,7 @@
       }
     ],
     "html": {
-      "template": "html-loader!./src/index.html"
+      "template": "html-loader?interpolate=require!./src/index.html"
     }
   }
 }
