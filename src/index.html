@@ -9,7 +9,7 @@
     <meta property="og:description" content="Une conférence tourangelle !">
     <meta property="og:locale" content="fr_FR">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <meta property="og:image" content=""/>-->
+    <meta property="og:image" content="${require('../img/logo_tnt.svg')}"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700" rel="stylesheet">
     <title>Touraine Tech</title>
 </head>
@@ -20,27 +20,40 @@
             <img src="../img/logo_tnt.svg" alt="logo Touraine Tech">
             <h1 itemprop="name">Touraine Tech</h1>
         </a>
+        <a class="link" href="#participer">Participer</a>
         <label for="nav-trigger" class="nav-open">
-            Ouvrir
+            Menu
         </label>
     </div>
     <input type="checkbox" id="nav-trigger">
     <nav>
+        <a class="link" href="#presention">Présentation</a>
+        <a class="link" href="#thematiques">Thématiques</a>
+        <a class="link" href="#ambitions">Ambitions</a>
         <a class="link" href="#quisommesnous">Qui sommes nous ?</a>
         <a class="link" href="#participer">Participer</a>
         <a class="link" href="#proposer">Proposer un sujet</a>
     </nav>
 </header>
 <main class="content">
-    <div class="presentation">
+    <div class="presentation" id="presention">
         <article class="presentation-intro">
             <h1>Touraine Tech</h1>
             <h2>La première conférence technique en région centre<br> sur les nouvelles technologies du numérique</h2>
         </article>
-        <article class="presentation-date"><img src="../img/calendar.svg" alt="picto calendrier"><p>Rendez-vous le 23 février 2018</p></article>
-        <article class="presentation-event"><img src="../img/but_event.jpg" alt="photo d'un ordinateur avec du code"><p>Cet événement a pour but de promouvoir le secteur numérique, notamment son économie, ses métiers et ses formations. Il est organisé bénévolement par l'association Touraine Tech, dont l'objectif est de promouvoir ce secteur d'activité en Touraine.</p></article>
+        <article class="presentation-date">
+            <img src="../img/calendar.svg" alt="picto calendrier">
+            <p>Rendez-vous le 23 février 2018</p>
+        </article>
+        <article class="presentation-event">
+            <img src="../img/but_event.jpg" alt="photo d'un ordinateur avec du code">
+            <p>Cet événement a pour but de promouvoir le secteur numérique, notamment son économie, ses métiers et ses formations. Il est organisé bénévolement par l'association Touraine Tech, dont l'objectif est de promouvoir ce secteur d'activité en Touraine.</p>
+        </article>
+        <article class="presentation-accroche">
+            <h1>Hello</h1>
+        </article>
     </div>
-    <section class="themes">
+    <section class="themes" id="thematiques">
         <h1>Thématiques</h1>
         <p>L'axe principal mis en avant sera le développement responsable.</p>
         <ul>
@@ -67,7 +80,7 @@
             </li>
         </ul>
     </section>
-    <section class="numbers">
+    <section class="numbers" id="ambitions">
         <h1>Ambitions</h1>
         <ul>
             <li>Cette conférence sera ouverte sur un large panel de technologies informatiques, visant un public autant professionnel qu'étudiant. Elle accueillera jusqu'à 250 personnes.</li>
