@@ -10,3 +10,5 @@ deploy:
   project: "touraine-tech"
   token:
     secure: $FIREBASE_TOKEN
+  on:
+    branch: dev
