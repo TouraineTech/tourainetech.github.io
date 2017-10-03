@@ -30,7 +30,7 @@ html, body {
   color: $textColor;
   font-family: $fontstack;
   font-size: 4vw;
-  @media (min-width: $tablet), (orientation: landscape) {
+  @media (min-width: $tablet) {
     font-size: 1.5vw;
   }
 }
@@ -41,7 +41,7 @@ html, body {
 
 %align{   
   font-weight: normal; 
-  text-transform: uppercase; 
+  text-transform: Capitalize; 
   font-weight: 600;      
 }
 
@@ -65,14 +65,6 @@ html, body {
     padding: 40px 0;
 }
 
-@mixin transition($transition) {
-    -moz-transition:    $transition;
-    -ms-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
-}
-
 a.link {
   text-decoration: none;
   color: $textColor;
@@ -90,6 +82,7 @@ a.link {
   background-color: $BgColorLight;
 
   flex-direction: column;
+    align-items: stretch;
   @media (min-width: $tablet) {
     flex-direction: row;
   }
@@ -106,6 +99,12 @@ a.link {
       @include title($BgColorDark, .8rem);
       margin-top: 0;    
     }  
+      > .link {
+          color: $BgColorDark;
+          @media (min-width: $tablet) {
+              display: none;
+          }
+      }
   }
   .nav-open {
     font-size: 1.2rem;
@@ -150,6 +149,18 @@ a.link {
       text-align: center;
     }
   }
+    @media (max-width: $tablet - 1) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column-reverse;
+        z-index: 9999;
+        box-shadow: 0 -2px 15px black;
+        .nav-bar {
+            padding: 10px
+        }
+    }
 }
 
 /**
@@ -163,7 +174,6 @@ a.link {
     flex-direction: column;
     text-align: center;
 
-    min-height: 100%; // Take a complete screen height minus the top bar.
 
     &:first-child {
       background-color: $BgColorDark;
@@ -176,19 +186,34 @@ a.link {
 
 .presentation {
   & .presentation-intro{
-    @extend %sectionSpace;    
+    @extend %sectionSpace;  
+    padding: 1rem;
+      h1 {
+          text-transform: uppercase;
+      }
   }    
   h1{
-    @include title($BgColorLight, 2rem);   
+    @include title($BgColorLight, 2rem);
   }    
   h2 {
-    line-height: 2.8rem;
-    font-weight: 500;  
-    font-size: 2vw;  
+    line-height: 1.5rem;
+    font-weight: 400;  
+    font-size: 0.8rem;  
+      
+      @media (min-width: $tablet) {
+        line-height: 2.8rem;
+        font-weight: 500;  
+        font-size: 2rem;  
+      }
+      @media (min-width: $oldScreen) {
+        line-height: 2.8rem;
+        font-weight: 500;  
+        font-size: 1rem;  
+      }
   }    
   & .presentation-date {
     @include flex(center); 
-    font-size: 1.8vw; 
+    font-size: 1rem; 
     width: 100%;
     background-color: $BgColor;
     padding: 30px 0;  
@@ -203,17 +228,46 @@ a.link {
     background-color: $BgColorLight;
     margin: 0;
     color: $BgColorDark;  
-      
-    img{
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+    img {
+        display: block;
       width: 50%;
       height: 100%;
       margin-right: 25px;
+        @media (max-width: $phone - 1) {
+            display: none;
+        }
     }  
     p{
-      line-height: 2.5vw;    
+        align-self: center;
+      line-height: 1rem;    
       text-align: left;
+      margin: 0;
+      font-size: 0.6rem;
+        @media (min-width: $tablet) {
+            font-size: 1rem;
+            line-height: 1.4rem;  
+        }
+        
+        @media (max-width: $phone - 1) {
+            padding: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+            background-color: $BgColorLight;   
+        }
     }
   }    
+    & .presentation-accroche {
+        align-self: stretch;
+        background-color: $BgColorDark;
+        @media (max-width: $phone - 1) {
+            background-image: url(../img/but_event.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+    }
 }
 
 .themes {
@@ -233,16 +287,15 @@ a.link {
     li {
       @include flex(center); 
 
-      font-size: 1.2rem;
+      font-size: 18px;
       font-weight: 500;  
+      width: 150px;
+      height: 150px;
 
       border-radius: 5%;
-//      width: 60vmin;
-//      height: 60vmin;
       margin: 4vw;
         
-      background-size: 100%;
-//      border: 1px solid $BgColorDark;    
+      background-size: 100%; 
    
         &.design{ background-image: url(../img/1_design.svg);}
         &.front{ background-image: url(../img/2_front.svg);}
@@ -252,27 +305,28 @@ a.link {
         &.archi{ background-image: url(../img/6_archi.svg);}
         &.outils{ background-image: url(../img/7_outils.svg);}
     
-        & span{
-            @include transition(all .3s);
+        & span {
+            padding: 5px;
+            transition: all .3s;
             transform: scale(0) rotate(180deg);
             color: $BgColorLight;
             background-color: rgba($BgColorDark, .85);
             width: 100%;
             height: 100%;
             @include flex(center);
-            line-height: 3vw;
+            line-height: 22px;
             border-radius: 5%;
         }
         
         &:hover span{
             transform: scale(1) rotate(0);
+        }   
+        
+        @media (max-width: $tablet - 1) {
+            & span{
+                transform: scale(1) rotate(0);
+            }   
         }
-        
-        
-      @media (min-width: $tablet) {
-        width: 14vw;
-        height: 14vw;
-      }      
     }
   }
 }
@@ -282,13 +336,19 @@ a.link {
   background-color: $BgColorDark;  
   h1{
     @include title($BgColorLight, 2rem);   
-  }     
+      margin: 0;
+      
+  }
   ul {
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     list-style: none;
     li {
-      line-height: 1.3rem;
+      line-height: 1.2rem;
+      font-size: 0.6rem;
+        @media (min-width: $tablet) {
+            font-size: 1rem;
+        }
     }
   }
 
