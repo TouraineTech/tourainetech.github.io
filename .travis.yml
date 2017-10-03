@@ -6,11 +6,7 @@ install:
 script:
   - "npm run build"
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: ./dist
-  target_branch: master
-  fqdn: touraine.tech
-  on:
-    branch: dev
+  provider: firebase
+  project: "touraine-tech"
+  token:
+    secure: $FIREBASE_TOKEN
