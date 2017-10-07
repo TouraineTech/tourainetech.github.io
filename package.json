@@ -15,7 +15,8 @@
     "core-js": "^2.5.1",
     "intersection-observer": "^0.4.2",
     "lozad": "^1.0.2",
-    "promise-polyfill": "^6.0.2"
+    "promise-polyfill": "^6.0.2",
+    "svg-inline-loader": "^0.8.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
@@ -35,7 +36,7 @@
       }
     ],
     "html": {
-      "template": "html-loader?interpolate=require!./src/index.html"
+      "template": "html-loader?interpolate!./src/index.html"
     }
   }
 }
