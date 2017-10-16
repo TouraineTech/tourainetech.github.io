@@ -1,7 +1,7 @@
 // Colors
 $BgColorLight: #fff;
 $BgColor: #6ABFAD;
-$BgColorDark: #222332;
+$BgColorDark: #1f202c;
 
 $textColor: #fff;
 
@@ -31,7 +31,7 @@ html, body {
   font-family: $fontstack;
   font-size: 4vw;
   @media (min-width: $tablet) {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 }
 
@@ -47,7 +47,6 @@ html, body {
 
 %align {
   font-weight: 600;
-  text-transform: Capitalize;
 }
 
 @mixin title($color, $size) {
@@ -101,7 +100,7 @@ a.link {
     }
 
     h1 {
-      @include title($BgColorDark, .8rem);
+      @include title($BgColorDark, 1.2rem);
       margin-top: 0;
     }
     > .link {
@@ -146,6 +145,7 @@ a.link {
 
   nav a {
     padding: 15px;
+    font-size: 1rem;  
     color: $BgColorDark;
     &:hover {
       background-color: $BgColor;
@@ -192,12 +192,14 @@ a.link {
     }
   }
   h1 {
-    @include title($BgColorLight, 2rem);
+    @include title($BgColor, 4rem);
+    margin-bottom: 2rem;  
   }
   h2 {
     line-height: 1.5rem;
     font-weight: 400;
     font-size: 0.8rem;
+    opacity: .9;  
 
     @media (min-width: $tablet) {
       line-height: 2.8rem;
@@ -205,66 +207,60 @@ a.link {
       font-size: 2rem;
     }
     @media (min-width: $oldScreen) {
-      line-height: 2.8rem;
+      line-height: 2rem;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
-  & .presentation-date {
-    @include flex(center);
+  & .presentation-info {
+    @include flex(space-around);
     font-size: 1rem;
-    width: 100%;
-    background-color: $BgColor;
-    padding: 30px 0;
+    width: 80%;
+    padding: 3rem 0;
     margin-bottom: 0;
 
     img {
-      margin-right: 15px;
+      width: 60px;
     }
   }
+    
   & .presentation-event {
-    @include flex(center);
-    background-color: $BgColorLight;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
     margin: 0;
     color: $BgColorDark;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    img {
-      display: block;
-      width: 50%;
-      height: 100%;
-      margin-right: 25px;
-      @media (max-width: $phone - 1) {
-        display: none;
-      }
+    background-color: $BgColorLight;    
+    .event{
+      width: 30%;
+        
+      p{
+        opacity: .8;
+        text-align: left;
+        
+        em{ color: $BgColor; font-style: normal; }   
+        
+        @media (min-width: $tablet) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        @media (max-width: $phone - 1) {
+          padding: 1rem;
+          font-size: 0.9rem;
+        }
+      }     
     }
-    p {
-      align-self: center;
-      line-height: 1rem;
-      text-align: left;
-      margin: 0;
-      font-size: 0.6rem;
-      @media (min-width: $tablet) {
-        font-size: 1rem;
-        line-height: 1.4rem;
-      }
-
-      @media (max-width: $phone - 1) {
-        padding: 1rem;
-        font-size: 0.9rem;
-        text-align: center;
-        background-color: $BgColorLight;
-      }
-    }
+    .event:first-child{ margin-right: 2rem; }  
   }
+    
   & .presentation-accroche {
-    align-self: stretch;
-    background-color: $BgColorDark;
+    padding: 2rem 0;  
+    h1{
+      font-size: 2rem;
+    }  
+      
+      
     @media (max-width: $phone - 1) {
-      background-image: url(../img/but_event.jpg);
-      background-size: cover;
-      background-blend-mode: darken;
     }
   }
 }
@@ -296,27 +292,13 @@ a.link {
 
       background-size: 100%;
 
-      &.design {
-        background-image: url(../img/1_design.svg);
-      }
-      &.front {
-        background-image: url(../img/2_front.svg);
-      }
-      &.cloud {
-        background-image: url(../img/3_cloud.svg);
-      }
-      &.jeux {
-        background-image: url(../img/4_jeux.svg);
-      }
-      &.objets {
-        background-image: url(../img/5_objets.svg);
-      }
-      &.archi {
-        background-image: url(../img/6_archi.svg);
-      }
-      &.outils {
-        background-image: url(../img/7_outils.svg);
-      }
+      &.design { background-image: url(../img/1_design.svg); }
+      &.front { background-image: url(../img/2_front.svg); }
+      &.cloud { background-image: url(../img/3_cloud.svg); }
+      &.jeux { background-image: url(../img/4_jeux.svg); }
+      &.objets { background-image: url(../img/5_objets.svg); }
+      &.archi { background-image: url(../img/6_archi.svg); }
+      &.outils { background-image: url(../img/7_outils.svg); }
 
       & span {
         padding: 5px;
@@ -335,6 +317,10 @@ a.link {
         transform: scale(1) rotate(0);
       }
 
+      @media (min-width: $oldScreen) {
+        width: 200px;
+        height: 200px;  
+      }
       @media (max-width: $tablet - 1) {
         & span {
           transform: scale(1) rotate(0);
@@ -344,63 +330,51 @@ a.link {
   }
 }
 
-.numbers {
-  @extend %sectionSpace;
-  background-color: $BgColorDark;
-  h1 {
-    @include title($BgColorLight, 2rem);
-    margin: 0;
-
-  }
-  ul {
-    padding: 1rem;
-    margin: 0;
-    list-style: none;
-    li {
-      line-height: 1.2rem;
-      font-size: 0.6rem;
-      @media (min-width: $tablet) {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  @media (min-width: $tablet) {
-
-  }
-}
-
 #quisommesnous {
   @extend %sectionSpace;
-  background-image: url(../img/team.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba($BgColorDark, 0.6);
-  background-blend-mode: darken;
+  background-color: $BgColorDark;
+    
+  h1 {
+    @include title($BgColorLight, 2rem);
+  } 
+  p{
+    line-height: 1.8rem;
+    width: 80%;    
+  }    
+  img{
+    width: 10%;
+    margin: 2rem;
+  }       
 }
 
 #participer {
   @extend %sectionSpace;
-  background-color: $BgColor;
+  background-color: $BgColor;    
+  h1 {
+    @include title($BgColorLight, 2rem);
+  }     
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    align-self: stretch;
+    filter: grayscale(100);  
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }     
 }
 
 #proposer {
   @extend %sectionSpace;
+  h1 {
+    @include title($BgColorLight, 2rem);
+  }     
   background-color: $BgColorDark;
-}
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-  align-self: stretch;
-}
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
 }
