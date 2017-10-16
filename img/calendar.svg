@@ -3,8 +3,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M72.348,54.469H50.001v22.346h22.346V54.469z
-	 M67.878,5.308v8.938H32.123V5.308h-8.939v8.938h-4.47c-4.937,0-8.894,4-8.894,8.938L9.777,85.752c0,4.938,4,8.939,8.937,8.939
-	h62.569c4.939,0,8.939-4.002,8.939-8.939V23.185c0-4.938-4-8.938-8.939-8.938h-4.468V5.308H67.878z M81.285,85.754H18.716V36.592
-	h62.569V85.754z"/>
+<path fill="none" stroke="#6ABFAD" stroke-width="3" stroke-miterlimit="10" d="M72.348,54.469H50.001v22.346h22.347V54.469
+	L72.348,54.469z M67.878,5.308v8.938H32.123V5.308h-8.939v8.938h-4.47c-4.937,0-8.894,4-8.894,8.938L9.777,85.752
+	c0,4.938,4,8.939,8.937,8.939h62.569c4.939,0,8.939-4.002,8.939-8.939V23.185c0-4.938-4-8.938-8.939-8.938h-4.469V5.308H67.878z
+	 M81.285,85.754H18.716V36.592h62.569V85.754z"/>
 </svg>

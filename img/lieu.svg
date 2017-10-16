@@ -4,9 +4,10 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g>
-	<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M34.932,95.059H65.7"/>
-	<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M71.75,26.915c0,11.827-15.308,47.57-21.414,59.415
-		c-5.785-11.16-21.415-47.588-21.415-59.415S38.509,5.5,50.336,5.5C62.162,5.5,71.75,15.088,71.75,26.915z"/>
-	<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="50.375" cy="22.375" r="10.125"/>
+	<path fill="none" stroke="#6ABFAD" stroke-width="3" stroke-miterlimit="10" d="M34.932,95.059H65.7"/>
+	<path fill="none" stroke="#6ABFAD" stroke-width="3" stroke-miterlimit="10" d="M71.75,26.915
+		c0,11.827-15.309,47.569-21.414,59.415c-5.785-11.16-21.415-47.588-21.415-59.415S38.509,5.5,50.336,5.5
+		C62.162,5.5,71.75,15.088,71.75,26.915z"/>
+	<circle fill="none" stroke="#6ABFAD" stroke-width="3" stroke-miterlimit="10" cx="50.375" cy="22.375" r="10.125"/>
 </g>
 </svg>
