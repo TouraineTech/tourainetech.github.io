@@ -8,6 +8,7 @@ script:
 deploy:
   provider: firebase
   project: "touraine-tech"
+  skip_cleanup: true
   token:
     secure: $FIREBASE_TOKEN
   on:
