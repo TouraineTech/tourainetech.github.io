@@ -4,12 +4,15 @@
     <meta name="google-site-verification" content="aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM">
     <meta charset="UTF-8">
     <meta property="og:url" content="https://touraine.tech/">
+    <meta property="og:image" content="https://touraine.tech${require('!!file-loader!../img/logo_tnt.png')}"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="Touraine Tech">
-    <meta property="og:description" content="Une conférence tourangelle !">
+    <meta property="og:description" content="La première conférence technique en région centre sur les nouvelles technologies du numérique">
     <meta property="og:locale" content="fr_FR">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:image" content="${require('../img/logo_tnt.svg')}"/>
+    <meta name="description" content="La première conférence technique en région centre sur les nouvelles technologies du numérique">
+    <meta name="keywords" content="conférence, tours, tech, développement, design, ux, ui, jeu, conception, webdesign, software">
+    <link rel="icon" type="image/png" href="${require('!!file-loader!../img/logo_tnt.png')}" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700" rel="stylesheet">
     <title>Touraine Tech</title>
 </head>
@@ -17,7 +20,7 @@
 <header class="nav-header">
     <div itemscope itemprop="organization" itemtype="http://schema.org/Organization" class="nav-bar">
         <a class="link" href="https://touraine.tech" itemprop="url">
-            <img src="../img/logo_tnt.svg" alt="logo Touraine Tech">
+            <img src="../img/logo_tnt.svg" alt="Touraine Tech" itemprop="logo">
             <h1 itemprop="name">Touraine Tech</h1>
         </a>
         <a class="link participer" href="#participer">Participer</a>
@@ -35,10 +38,14 @@
     </nav>
 </header>
 <main class="content">
-    <section class="presentation" id="presention">
+    <section class="presentation" id="presention" itemscope itemtype="http://schema.org/NewsArticle">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://touraine.tech/"/>
+        <div itemscope itemprop="image"  itemType="https://schema.org/ImageObject">
+            <meta itemprop="url" content="${require('../img/logo_tnt.svg')}">
+        </div>
         <article class="presentation-intro">
-            <h1>Touraine Tech</h1>
-            <h2>La première conférence technique en région centre<br> sur les nouvelles technologies du numérique</h2>
+            <h1 itemprop="headline">Touraine Tech</h1>
+            <h2 itemprop="description">La première conférence technique en région centre<br> sur les nouvelles technologies du numérique</h2>
         </article>
         <article class="presentation-info">
             <div class="lieu">
@@ -120,15 +127,16 @@
                 Prochain <span itemprop="name">Touraine Tech</span>
                 le <span itemprop="startDate" content="2018-02-23">vendredi 23/02/2018</span>
                 à
-                <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+                <address itemprop="location" itemscope itemtype="http://schema.org/Place">
                     <span itemprop="name">Polytech Tours</span>
                     <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="streetAddress">64 Avenue Jean Portalis</span>,
                         <span itemprop="postalCode">37200</span>
                         <span itemprop="addressLocality">Tours</span>
                     </span>
-                </span>
+                </address>
             </p>
+        </div>
         <div class="map-responsive">
             <iframe class="lozad" data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10809.685841048247!2d0.6847465!3d47.3646921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x178da484f4c36cd4!2sPolytechnique+de+l&#39;universit%C3%A9+de+Tours!5e0!3m2!1sfr!2sfr!4v1505132799666" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
@@ -138,15 +146,5 @@
         <p>Bientôt ouvert !</p>
     </section>
 </main>
-<!-- <footer>
-  <p>FOOTER</p>
-  <ul>
-    <li>Réseaux</li>
-    <li><a href="https://www.facebook.com/tourainetech/" target="_BLANK">LOGO FACEBOOK</a></li>
-    <li><a href="https://twitter.com/tourainetech" target="_BLANK">LOGO TWITTER</a></li>
-    <li></li>
-    <li></li>
-  </ul>
-</footer> -->
 </body>
 </html>
