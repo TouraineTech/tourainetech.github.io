@@ -436,6 +436,16 @@ a.link {
     @include title($BgColorLight, 2rem);
   }
   background-color: $BgColorDark;
+  a.link {
+    background-color: $BgColor;
+    color: $textColor;
+    font-weight: bold;
+    padding: 15px;
+    &:hover {
+      background-color: $textColor;
+      color: $BgColor;
+    }
+  }
 }
 
 /**
