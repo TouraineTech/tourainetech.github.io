@@ -1,7 +1,12 @@
+@import "sponsors";
 // Colors
 $BgColorLight: #fff;
 $BgColor: #6ABFAD;
 $BgColorDark: #1f202c;
+$bgTable: #f2f2f4;
+$bgtableBronze: #ef6a36;
+$bgtableSylver: #2b3041;
+$bgtablegold: #83cec5;
 
 $textColor: #fff;
 
@@ -21,15 +26,20 @@ $fontstack: 'Raleway', sans-serif;
 html, body {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  flex: 1;
-  color: $textColor;
   font-family: $fontstack;
   font-size: 4vw;
+  .index{
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    .sponor-header{
+      display: none;
+    }
+  }
   @media (min-width: $tablet) {
     font-size: 1vw;
   }
@@ -90,7 +100,6 @@ a.link {
   @media (min-width: $tablet) {
     flex-direction: row;
   }
-
   .nav-bar {
     @include flex(space-between);
     flex: 1;

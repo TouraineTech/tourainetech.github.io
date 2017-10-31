@@ -16,27 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700" rel="stylesheet">
     <title>Touraine Tech</title>
 </head>
-<body>
-<header class="nav-header">
-    <div itemscope itemprop="organization" itemtype="http://schema.org/Organization" class="nav-bar">
-        <a class="link" href="https://touraine.tech" itemprop="url">
-            <img src="../img/logo_tnt.svg" alt="Touraine Tech" itemprop="logo">
-            <h1 itemprop="name">Touraine Tech</h1>
-        </a>
-        <a class="link participer" href="#participer">Participer</a>
-        <label for="nav-trigger" class="nav-open" id="nav-open">
-            Menu
-        </label>
-    </div>
-    <input type="checkbox" id="nav-trigger">
-    <nav>
-        <a class="link" href="#presention">Présentation</a>
-        <a class="link" href="#thematiques">Thématiques</a>
-        <a class="link" href="#quisommesnous">Qui sommes nous ?</a>
-        <a class="link" href="#participer">Participer</a>
-        <a class="link" href="#proposer">Proposer un sujet</a>
-    </nav>
-</header>
+<body class="index">
+${require('html-loader!./partials/header.html')}
 <main class="content">
     <section class="presentation" id="presention" itemscope itemtype="http://schema.org/NewsArticle">
         <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://touraine.tech/"/>

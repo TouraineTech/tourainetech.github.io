@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeGA();
     lozad().observe();
 });
+
+console.log('test');
