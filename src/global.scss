@@ -28,18 +28,16 @@ html, body {
   margin: 0;
   font-family: $fontstack;
   font-size: 4vw;
-  .index{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  flex: 1;
+  .index {
     color: $textColor;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    flex: 1;
-    .sponor-header{
-      display: none;
-    }
   }
+
   @media (min-width: $tablet) {
     font-size: 1vw;
   }

@@ -29,7 +29,11 @@ $fontstack: 'Raleway', sans-serif;
 }
 
 .sponsor-content {
-  & header{
+  & .sponsor-main {
+    flex: 1;
+    overflow-y: scroll;
+  }
+  & header {
     font-weight: 200;
   }
   & ul {
@@ -53,7 +57,6 @@ $fontstack: 'Raleway', sans-serif;
     width: 100vw;
     min-height: 500px;
     margin-bottom: 3vh;
-    margin-top: 3vh;
     border-top: 10px solid $BgColor;
     display: flex;
     flex-direction: column;
@@ -108,7 +111,9 @@ $fontstack: 'Raleway', sans-serif;
       justify-content: flex-start;
       align-items: center;
       text-align: justify;
-      margin: 3rem 2vw 3rem 2vw;
+      margin: 3vh auto;
+      width: 80vw;
+      min-width: 300px;
       & strong {
         color: $BgColor;
         font-weight: 700;
@@ -143,16 +148,26 @@ $fontstack: 'Raleway', sans-serif;
     @include flex(space-around);
     align-items: flex-start;
     flex-wrap: wrap;
-    & article,
-    & article:first-of-type .presentation-article-content {
+    & article{
       width: 35vw;
       min-width: 300px;
-      @media(max-width: $tablet) {
-        width: 80vw;
+    }
+    & article:first-of-type{
+      width: 100vw;
+      .presentation-article-content{
+        width: 35vw;
+        min-width: 300px;
+        @media(max-width : $tablet){
+          width: 100%;
+        }
       }
     }
-    & article:first-of-type {
-      width: 100vw;
+    & article, & article:first-of-type{
+      @media(max-width : $tablet){
+        width: 80vw;
+        min-width: 300px;
+        margin: 3vh auto;
+      }
     }
 
   }
@@ -177,6 +192,7 @@ $fontstack: 'Raleway', sans-serif;
     & article.thematique {
       & > span {
         margin-bottom: 3rem;
+
         @media(max-width: $tablet) {
           margin-bottom: 1rem;
         }
@@ -192,21 +208,23 @@ $fontstack: 'Raleway', sans-serif;
         @media(max-width: $tablet) {
           width: 40vw;
           min-width: 300px;
+          span{
+            max-width: 90%;
+          }
         }
-        & > span{
+        & > span {
           margin-bottom: 1rem;
           font-weight: 700;
+          text-align: center;
         }
         & img {
           max-width: 130px;
         }
       }
     }
-    & article.HowAreWe p {
-      width: 65vw;
-    }
+
   }
-  & section.sponsor{
+  & section.sponsor {
     & .sponsor-article-content {
       display: flex;
       flex-direction: row;
@@ -225,27 +243,27 @@ $fontstack: 'Raleway', sans-serif;
     }
 
   }
-  & section.plan{
-    display:flex;
+  & section.plan {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    & h1{
+    & h1 {
       margin-left: 15vw;
     }
-    & .underline{
+    & .underline {
       margin-left: 15vw;
     }
-    & .plan-site{
+    & .plan-site {
       width: 90vw;
       min-width: 300px;
       margin: 0 auto;
       height: auto;
-      & img{
+      & img {
         max-width: 100%;
       }
     }
-    & .plan-hall{
+    & .plan-hall {
       width: 40vw;
       min-width: 300px;
       margin-left: 10vw;
@@ -260,34 +278,21 @@ $fontstack: 'Raleway', sans-serif;
         margin: 0 auto;
 
       }
-      & span{
+      & span {
         display: inline-block;
         font-weight: 700;
         width: 100%;
         text-align: center;
         margin-bottom: 1vh;
       }
-      & img{
+      & img {
         max-width: 100%;
       }
     }
   }
-  & section.tarif table {
-    border-spacing: 0;
+  & section.tarif {
     font-size: 1.5rem;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    text-align: center;
-    width: 90vw;
-    & td {
-      border-bottom: 1px solid $BgColorLight;
-      padding: 1.3rem;
-    }
-    & .label {
-      background-color:$bgTable;
-      text-align: left;
-      font-weight: 200;
-    }
+
     & .bronze {
       background-color: $bgtableBronze;
       color: $BgColorLight;
@@ -315,25 +320,90 @@ $fontstack: 'Raleway', sans-serif;
       color: $bgtablegold;
       padding: 1.2rem;
     }
-  }
-  & .footer{
-    & span {
-      display: block;
-      text-align: center;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
+    @media(min-width: $tablet) {
+      & .tarif-desktop {
+        display: flex;
+        border-spacing: 0;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        text-align: center;
+        & td {
+          border-bottom: 1px solid $BgColorLight;
+          padding: 2vh 2vw;
+        }
+        & .label {
+          background-color: $bgTable;
+          text-align: left;
+          font-weight: 200;
+        }
+      }
+      & .tarif-mobile {
+        display: none;
+      }
     }
-    & ul {
+    @media(max-width: $tablet) {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      margin-top: 4vh;
-      width: 100%;
-      & li {
-        width: 150px;
-        & img {
-          max-width: 100%;
+      min-height: 800px;
+      font-size: 0.8rem;
+      & .tarif-desktop {
+        display: none;
+      }
+      & .tarif-mobile {
+        display: block;
+        min-width: 300px;
+        width: 80vw;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 5vh;
+        text-align: center;
+        & h1 {
+          color: $textColor;
+        }
+        & li {
+          &:not(:last-of-type) {
+            margin-bottom: 2vh;
+            &:before {
+              content: '\002713';
+              margin-right: 2vw;
+            }
+          }
+          &:last-of-type {
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            padding-top: 2vh;
+          }
+        }
+        hr {
+          height: 2px;
+          width: 100%;
+          background-color: $textColor;
+          border: none;
+        }
+      }
+    }
+    & .footer {
+      & span {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+      & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4vh;
+        width: 100%;
+        & li {
+          width: 150px;
+          & img {
+            max-width: 100%;
+          }
         }
       }
     }
