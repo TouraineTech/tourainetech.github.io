@@ -145,7 +145,7 @@ a.link {
 
   nav a {
     padding: 15px;
-    font-size: 1rem;  
+    font-size: 1rem;
     color: $BgColorDark;
     &:hover {
       background-color: $BgColor;
@@ -186,20 +186,25 @@ a.link {
 .presentation {
   & .presentation-intro {
     @extend %sectionSpace;
-    padding: 1rem;
     h1 {
       text-transform: uppercase;
+    }
+    @media (max-width: $tablet) {
+      padding: 2rem 0 1.2rem 0;
     }
   }
   h1 {
     @include title($BgColor, 4rem);
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
+    @media (max-width: $tablet) {
+      margin: 2rem;
+    }
   }
   h2 {
     line-height: 1.5rem;
     font-weight: 400;
     font-size: 0.8rem;
-    opacity: .9;  
+    opacity: .9;
 
     @media (min-width: $tablet) {
       line-height: 2.8rem;
@@ -222,24 +227,26 @@ a.link {
     img {
       width: 60px;
     }
+    @media (max-width: $tablet) {
+      padding: 1rem 3rem 2rem 3rem;
+    }
   }
-    
   & .presentation-event {
     display: flex;
     justify-content: center;
     padding: 5rem 0;
     margin: 0;
     color: $BgColorDark;
-    background-color: $BgColorLight;    
+    background-color: $BgColorLight;
+
     .event{
       width: 30%;
-        
       p{
         opacity: .8;
         text-align: left;
-        
-        em{ color: $BgColor; font-style: normal; }   
-        
+
+        em{ color: $BgColor; font-style: normal; }
+
         @media (min-width: $tablet) {
           font-size: 1rem;
           line-height: 1.5rem;
@@ -248,19 +255,37 @@ a.link {
           padding: 1rem;
           font-size: 0.9rem;
         }
-      }     
+      }
+    }
+    .event:first-child{ margin-right: 2rem; }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      padding: 1rem 2rem;
+      & .event {
+          width: 100%;
+        p {
+          padding: 0 0.2rem;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      & .event:first-child p {
+        margin-bottom: 0;
+      }
     }
     .event:first-child{ margin-right: 2rem; }  
   }
-    
+
   & .presentation-accroche {
-    padding: 2rem 0;  
+    padding: 2rem 0;
     h1{
       font-size: 2rem;
-    }  
-      
-      
-    @media (max-width: $phone - 1) {
+    }
+    @media (max-width: $tablet) {
+      padding: 4rem 2rem;
+      h1 {
+        margin: 0;
+      }
     }
   }
 }
@@ -319,7 +344,7 @@ a.link {
 
       @media (min-width: $oldScreen) {
         width: 200px;
-        height: 200px;  
+        height: 200px;
       }
       @media (max-width: $tablet - 1) {
         & span {
@@ -328,38 +353,56 @@ a.link {
       }
     }
   }
+  @media (max-width: $tablet) {
+    padding: 2rem;
+    h1 {
+      margin: 0 0 0.6rem 0;
+    }
+    p {
+      padding-bottom: 0.6rem;
+    }
+  }
 }
-
 #quisommesnous {
   @extend %sectionSpace;
   background-color: $BgColorDark;
-    
+
   h1 {
     @include title($BgColorLight, 2rem);
-  } 
+  }
   p{
     line-height: 1.8rem;
-    width: 80%;    
-  }    
+    width: 80%;
+  }
   img{
     width: 10%;
     margin: 2rem;
-  }       
+  }
+  @media (max-width: $tablet) {
+    padding: 4rem 2rem;
+    h1 {
+      margin: 0 0 1rem 0;
+    }
+    p {
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 #participer {
   @extend %sectionSpace;
-  background-color: $BgColor;    
+  background-color: $BgColor;
   h1 {
     @include title($BgColorLight, 2rem);
-  }     
+  }
   .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
     align-self: stretch;
-    filter: grayscale(100);  
+    filter: grayscale(100);
   }
 
   .map-responsive iframe {
@@ -368,13 +411,46 @@ a.link {
     height: 100%;
     width: 100%;
     position: absolute;
-  }     
+  }
+  @media (max-width: $tablet) {
+    padding: 4rem 2rem;
+    h1 {
+      margin: 0;
+    }
+    a, a:hover {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: bold;
+      background-color: #6ABFAD;
+      border-radius: 8px;
+      border: 2px solid #FFF;
+      padding: 0.2rem 0.4rem;
+      margin: 0.4rem 0;
+    }
+  }
 }
 
 #proposer {
   @extend %sectionSpace;
   h1 {
     @include title($BgColorLight, 2rem);
-  }     
+  }
   background-color: $BgColorDark;
+  a.link {
+    background-color: $BgColor;
+    color: $textColor;
+    font-weight: bold;
+    padding: 15px;
+    &:hover {
+      background-color: $textColor;
+      color: $BgColor;
+    }
+  }
+}
+
+/**
+ * Footer
+ */
+footer {
+  display: none;
 }
