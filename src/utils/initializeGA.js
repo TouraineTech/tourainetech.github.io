@@ -13,5 +13,5 @@ export function initializeGA() {
 }
 
 function noAnalytics() {
-    console.log("google analytics weren't loaded");
+    console.warn("google analytics weren't loaded");
 }
