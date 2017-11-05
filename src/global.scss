@@ -231,7 +231,6 @@ a.link {
       padding: 1rem 3rem 2rem 3rem;
     }
   }
-
   & .presentation-event {
     display: flex;
     justify-content: center;
@@ -274,6 +273,7 @@ a.link {
         margin-bottom: 0;
       }
     }
+    .event:first-child{ margin-right: 2rem; }  
   }
 
   & .presentation-accroche {
