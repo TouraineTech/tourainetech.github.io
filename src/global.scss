@@ -1,4 +1,5 @@
 @import "sponsors";
+@import "print";
 // Colors
 $BgColorLight: #fff;
 $BgColor: #6ABFAD;
@@ -20,216 +21,217 @@ $phone: 480px;
 // Google font
 $fontstack: 'Raleway', sans-serif;
 
-/**
- * Globals
- */
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: $fontstack;
-  font-size: 4vw;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  flex: 1;
-  .index {
-    color: $textColor;
-  }
-
-  @media (min-width: $tablet) {
-    font-size: 1vw;
-  }
-}
-
-@media (max-width: $tablet - 1) {
-  body {
-    flex-direction: column-reverse;
-  }
-}
-
-/**
- * Defaults
- */
-
-%align {
-  font-weight: 600;
-}
-
-@mixin title($color, $size) {
-  @extend %align;
-  color: $color;
-  font-size: $size;
-}
-
-%alignFlex {
-  display: flex;
-  align-items: center;
-}
-
-@mixin flex($content) {
-  @extend %alignFlex;
-  justify-content: $content;
-}
-
-%sectionSpace {
-  padding: 40px 0;
-}
-
-a.link {
-  text-decoration: none;
-  color: $textColor;
-  text-align: center;
-}
-
-/**
- * Nav Header
- */
-.nav-header {
-  flex-grow: 0;
-
-  @include flex(space-between);
-  padding: 0 10px;
-  background-color: $BgColorLight;
-
-  flex-direction: column;
-  align-items: stretch;
-  @media (min-width: $tablet) {
-    flex-direction: row;
-  }
-  .nav-bar {
-    @include flex(space-between);
+@media screen {
+  /**
+   * Globals
+   */
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: $fontstack;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     flex: 1;
-
-    img {
-      width: 10vw;
+    .index {
+      color: $textColor;
     }
 
-    h1 {
-      @include title($BgColorDark, 1.2rem);
-      margin-top: 0;
+    @media (min-width: $tablet) {
+      font-size: 1vw;
     }
-    > .link {
-      color: $BgColorDark;
-      &.participer {
-        @media (min-width: $tablet) {
-          display: none;
+  }
+
+  @media (max-width: $tablet - 1) {
+    body {
+      flex-direction: column-reverse;
+    }
+  }
+
+  /**
+   * Defaults
+   */
+
+  %align {
+    font-weight: 600;
+  }
+
+  @mixin title($color, $size) {
+    @extend %align;
+    color: $color;
+    font-size: $size;
+  }
+
+  %alignFlex {
+    display: flex;
+    align-items: center;
+  }
+
+  @mixin flex($content) {
+    @extend %alignFlex;
+    justify-content: $content;
+  }
+
+  %sectionSpace {
+    padding: 40px 0;
+  }
+
+  a.link {
+    text-decoration: none;
+    color: $textColor;
+    text-align: center;
+  }
+
+  /**
+   * Nav Header
+   */
+  .nav-header {
+    flex-grow: 0;
+
+    @include flex(space-between);
+    padding: 0 10px;
+    background-color: $BgColorLight;
+
+    flex-direction: column;
+    align-items: stretch;
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
+    .nav-bar {
+      @include flex(space-between);
+      flex: 1;
+
+      img {
+        width: 10vw;
+      }
+
+      h1 {
+        @include title($BgColorDark, 1.2rem);
+        margin-top: 0;
+      }
+      > .link {
+        color: $BgColorDark;
+        &.participer {
+          @media (min-width: $tablet) {
+            display: none;
+          }
         }
       }
     }
-  }
-  .nav-open {
-    font-size: 1.2rem;
+    .nav-open {
+      font-size: 1.2rem;
 
-    color: $textColor;
-    background-color: #000;
-
-    padding: 0.5rem;
-    border-radius: 4px;
-
-    @media (min-width: $tablet) {
-      display: none;
-    }
-  }
-
-  #nav-trigger {
-    width: 0;
-    height: 0;
-    opacity: 0;
-
-    &:checked + nav {
-      display: block;
-    }
-  }
-
-  nav {
-    @include flex(center);
-    @media (max-width: $tablet) {
-      display: none;
-    }
-  }
-
-  nav a {
-    padding: 15px;
-    font-size: 1rem;
-    color: $BgColorDark;
-    &:hover {
-      background-color: $BgColor;
       color: $textColor;
+      background-color: #000;
+
+      padding: 0.5rem;
+      border-radius: 4px;
+
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+
+    #nav-trigger {
+      width: 0;
+      height: 0;
+      opacity: 0;
+
+      &:checked + nav {
+        display: block;
+      }
+    }
+
+    nav {
+      @include flex(center);
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    nav a {
+      padding: 15px;
+      font-size: 1rem;
+      color: $BgColorDark;
+      &:hover {
+        background-color: $BgColor;
+        color: $textColor;
+      }
+      @media (max-width: $tablet - 1) {
+        display: block;
+        text-align: center;
+      }
     }
     @media (max-width: $tablet - 1) {
-      display: block;
+      flex-direction: column-reverse;
+      z-index: 9999;
+      box-shadow: 0 -2px 15px black;
+      .nav-bar {
+        padding: 10px
+      }
+    }
+  }
+
+  /**
+   * Main content
+   */
+  .content {
+    flex: 1;
+    overflow-y: scroll;
+    > section, .presentation {
+      @include flex(center);
+      flex-direction: column;
       text-align: center;
+
+      &:first-child {
+        background-color: $BgColorDark;
+      }
     }
   }
-  @media (max-width: $tablet - 1) {
-    flex-direction: column-reverse;
-    z-index: 9999;
-    box-shadow: 0 -2px 15px black;
-    .nav-bar {
-      padding: 10px
+
+  .presentation {
+    & .presentation-intro {
+      @extend %sectionSpace;
+      h1 {
+        text-transform: uppercase;
+      }
+      @media (max-width: $tablet) {
+        padding: 2rem 0 1.2rem 0;
+      }
     }
-  }
-}
-
-/**
- * Main content
- */
-.content {
-  flex: 1;
-  overflow-y: scroll;
-  > section, .presentation {
-    @include flex(center);
-    flex-direction: column;
-    text-align: center;
-
-    &:first-child {
-      background-color: $BgColorDark;
-    }
-  }
-}
-
-.presentation {
-  & .presentation-intro {
-    @extend %sectionSpace;
     h1 {
-      text-transform: uppercase;
+      @include title($BgColor, 4rem);
+      margin-bottom: 2rem;
+      @media (max-width: $tablet) {
+        margin: 2rem;
+      }
     }
-    @media (max-width: $tablet) {
-      padding: 2rem 0 1.2rem 0;
-    }
-  }
-  h1 {
-    @include title($BgColor, 4rem);
-    margin-bottom: 2rem;
-    @media (max-width: $tablet) {
-      margin: 2rem;
-    }
-  }
-  h2 {
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-size: 0.8rem;
-    opacity: .9;
+    h2 {
+      line-height: 1.5rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      opacity: .9;
 
-    @media (min-width: $tablet) {
-      line-height: 2.8rem;
-      font-weight: 500;
-      font-size: 2rem;
+      @media (min-width: $tablet) {
+        line-height: 2.8rem;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      @media (min-width: $oldScreen) {
+        line-height: 2rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
     }
-    @media (min-width: $oldScreen) {
-      line-height: 2rem;
-      font-weight: 500;
-      font-size: 1.2rem;
-    }
-  }
-  & .presentation-info {
-    @include flex(space-around);
-    font-size: 1rem;
-    width: 80%;
-    padding: 3rem 0;
-    margin-bottom: 0;
+    & .presentation-info {
+      @include flex(space-around);
+      font-size: 1rem;
+      width: 80%;
+      padding: 3rem 0;
+      margin-bottom: 0;
 
     img {
       width: 60px;
@@ -238,6 +240,7 @@ a.link {
       padding: 1rem 3rem 2rem 3rem;
     }
   }
+
   & .presentation-event {
     display: flex;
     justify-content: center;
@@ -246,218 +249,238 @@ a.link {
     color: $BgColorDark;
     background-color: $BgColorLight;
 
-    .event{
-      width: 30%;
-      p{
-        opacity: .8;
-        text-align: left;
-
-        em{ color: $BgColor; font-style: normal; }
-
-        @media (min-width: $tablet) {
-          font-size: 1rem;
-          line-height: 1.5rem;
-        }
-        @media (max-width: $phone - 1) {
-          padding: 1rem;
-          font-size: 0.9rem;
-        }
-      }
-    }
-    .event:first-child{ margin-right: 2rem; }
-    @media (max-width: $tablet) {
-      flex-direction: column;
-      padding: 1rem 2rem;
-      & .event {
-          width: 100%;
+      .event {
+        width: 30%;
         p {
-          padding: 0 0.2rem;
-          font-size: 1rem;
-          text-align: center;
+          opacity: .8;
+          text-align: left;
+
+          em {
+            color: $BgColor;
+            font-style: normal;
+          }
+
+          @media (min-width: $tablet) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          @media (max-width: $phone - 1) {
+            padding: 1rem;
+            font-size: 0.9rem;
+          }
         }
       }
-      & .event:first-child p {
-        margin-bottom: 0;
+      .event:first-child {
+        margin-right: 2rem;
+      }
+      @media (max-width: $tablet) {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        & .event {
+          width: 100%;
+          p {
+            padding: 0 0.2rem;
+            font-size: 1rem;
+            text-align: center;
+          }
+        }
+        & .event:first-child p {
+          margin-bottom: 0;
+        }
+      }
+      .event:first-child{ margin-right: 2rem; }
+    }
+
+    & .presentation-accroche {
+      padding: 2rem 0;
+      h1 {
+        font-size: 2rem;
+      }
+      @media (max-width: $tablet) {
+        padding: 4rem 2rem;
+        h1 {
+          margin: 0;
+        }
       }
     }
-    .event:first-child{ margin-right: 2rem; }  
   }
 
-  & .presentation-accroche {
-    padding: 2rem 0;
-    h1{
-      font-size: 2rem;
+  .themes {
+    @extend %sectionSpace;
+    h1 {
+      @include title($BgColorDark, 2rem);
+    }
+    p {
+      color: $BgColorDark;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      @include flex(space-evenly);
+      flex-wrap: wrap;
+      li {
+        @include flex(center);
+
+        font-size: 18px;
+        font-weight: 500;
+        width: 150px;
+        height: 150px;
+
+        border-radius: 5%;
+        margin: 4vw;
+
+        background-size: 100%;
+
+        &.design {
+          background-image: url(../img/1_design.svg);
+        }
+        &.front {
+          background-image: url(../img/2_front.svg);
+        }
+        &.cloud {
+          background-image: url(../img/3_cloud.svg);
+        }
+        &.jeux {
+          background-image: url(../img/4_jeux.svg);
+        }
+        &.objets {
+          background-image: url(../img/5_objets.svg);
+        }
+        &.archi {
+          background-image: url(../img/6_archi.svg);
+        }
+        &.outils {
+          background-image: url(../img/7_outils.svg);
+        }
+
+        & span {
+          padding: 5px;
+          transition: all .3s;
+          transform: scale(0) rotate(180deg);
+          color: $BgColorLight;
+          background-color: rgba($BgColorDark, .85);
+          width: 100%;
+          height: 100%;
+          @include flex(center);
+          line-height: 22px;
+          border-radius: 5%;
+        }
+
+        &:hover span {
+          transform: scale(1) rotate(0);
+        }
+
+        @media (min-width: $oldScreen) {
+          width: 200px;
+          height: 200px;
+        }
+        @media (max-width: $tablet - 1) {
+          & span {
+            transform: scale(1) rotate(0);
+          }
+        }
+      }
+    }
+    @media (max-width: $tablet) {
+      padding: 2rem;
+      h1 {
+        margin: 0 0 0.6rem 0;
+      }
+      p {
+        padding-bottom: 0.6rem;
+      }
+    }
+  }
+  #quisommesnous {
+    @extend %sectionSpace;
+    background-color: $BgColorDark;
+
+    h1 {
+      @include title($BgColorLight, 2rem);
+    }
+    p {
+      line-height: 1.8rem;
+      width: 80%;
+    }
+    img {
+      width: 10%;
+      margin: 2rem;
+    }
+    @media (max-width: $tablet) {
+      padding: 4rem 2rem;
+      h1 {
+        margin: 0 0 1rem 0;
+      }
+      p {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  #participer {
+    @extend %sectionSpace;
+    background-color: $BgColor;
+    h1 {
+      @include title($BgColorLight, 2rem);
+    }
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+      align-self: stretch;
+      filter: grayscale(100);
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
     }
     @media (max-width: $tablet) {
       padding: 4rem 2rem;
       h1 {
         margin: 0;
       }
-    }
-  }
-}
-
-.themes {
-  @extend %sectionSpace;
-  h1 {
-    @include title($BgColorDark, 2rem);
-  }
-  p {
-    color: $BgColorDark;
-  }
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    @include flex(space-evenly);
-    flex-wrap: wrap;
-    li {
-      @include flex(center);
-
-      font-size: 18px;
-      font-weight: 500;
-      width: 150px;
-      height: 150px;
-
-      border-radius: 5%;
-      margin: 4vw;
-
-      background-size: 100%;
-
-      &.design { background-image: url(../img/1_design.svg); }
-      &.front { background-image: url(../img/2_front.svg); }
-      &.cloud { background-image: url(../img/3_cloud.svg); }
-      &.jeux { background-image: url(../img/4_jeux.svg); }
-      &.objets { background-image: url(../img/5_objets.svg); }
-      &.archi { background-image: url(../img/6_archi.svg); }
-      &.outils { background-image: url(../img/7_outils.svg); }
-
-      & span {
-        padding: 5px;
-        transition: all .3s;
-        transform: scale(0) rotate(180deg);
-        color: $BgColorLight;
-        background-color: rgba($BgColorDark, .85);
-        width: 100%;
-        height: 100%;
-        @include flex(center);
-        line-height: 22px;
-        border-radius: 5%;
-      }
-
-      &:hover span {
-        transform: scale(1) rotate(0);
-      }
-
-      @media (min-width: $oldScreen) {
-        width: 200px;
-        height: 200px;
-      }
-      @media (max-width: $tablet - 1) {
-        & span {
-          transform: scale(1) rotate(0);
-        }
+      a, a:hover {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+        background-color: #6ABFAD;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        padding: 0.2rem 0.4rem;
+        margin: 0.4rem 0;
       }
     }
   }
-  @media (max-width: $tablet) {
-    padding: 2rem;
+
+  #proposer {
+    @extend %sectionSpace;
     h1 {
-      margin: 0 0 0.6rem 0;
+      @include title($BgColorLight, 2rem);
     }
-    p {
-      padding-bottom: 0.6rem;
-    }
-  }
-}
-#quisommesnous {
-  @extend %sectionSpace;
-  background-color: $BgColorDark;
-
-  h1 {
-    @include title($BgColorLight, 2rem);
-  }
-  p{
-    line-height: 1.8rem;
-    width: 80%;
-  }
-  img{
-    width: 10%;
-    margin: 2rem;
-  }
-  @media (max-width: $tablet) {
-    padding: 4rem 2rem;
-    h1 {
-      margin: 0 0 1rem 0;
-    }
-    p {
-      width: 100%;
-      padding: 0;
-    }
-  }
-}
-
-#participer {
-  @extend %sectionSpace;
-  background-color: $BgColor;
-  h1 {
-    @include title($BgColorLight, 2rem);
-  }
-  .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    align-self: stretch;
-    filter: grayscale(100);
-  }
-
-  .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  @media (max-width: $tablet) {
-    padding: 4rem 2rem;
-    h1 {
-      margin: 0;
-    }
-    a, a:hover {
-      text-decoration: none;
-      color: #FFF;
+    background-color: $BgColorDark;
+    a.link {
+      background-color: $BgColor;
+      color: $textColor;
       font-weight: bold;
-      background-color: #6ABFAD;
-      border-radius: 8px;
-      border: 2px solid #FFF;
-      padding: 0.2rem 0.4rem;
-      margin: 0.4rem 0;
+      padding: 15px;
+      &:hover {
+        background-color: $textColor;
+        color: $BgColor;
+      }
     }
   }
-}
-
-#proposer {
-  @extend %sectionSpace;
-  h1 {
-    @include title($BgColorLight, 2rem);
-  }
-  background-color: $BgColorDark;
-  a.link {
-    background-color: $BgColor;
-    color: $textColor;
-    font-weight: bold;
-    padding: 15px;
-    &:hover {
-      background-color: $textColor;
-      color: $BgColor;
-    }
-  }
-}
 
 /**
  * Footer
  */
 footer {
   display: none;
+}
 }
