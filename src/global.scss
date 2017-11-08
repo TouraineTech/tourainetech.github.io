@@ -488,6 +488,7 @@ transition: all .3s;
       border: 2px solid #FFF;
       padding: 0.2rem 0.4rem;
       margin: 0.4rem 0;
+      display: inline-block;
     }
   }
 }
@@ -521,10 +522,18 @@ transition: all .3s;
     }
   }}
 
+  .logo_link {
+    width: auto;
+    height: 1.5rem;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+
 /**
  * Footer
  */
 footer {
   display: none;
 }
+
 }
