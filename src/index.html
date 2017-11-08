@@ -1,131 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta name="google-site-verification" content="aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM">
-    <meta charset="UTF-8">
-    <meta property="og:url" content="https://touraine.tech/">
-    <meta property="og:image" content="${require('!!file-loader?publicPath=https://touraine.tech/!../img/logo_tnt.png')}"/>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Touraine Tech">
-    <meta property="og:description" content="La première conférence technique en région centre sur les nouvelles technologies du numérique">
-    <meta property="og:locale" content="fr_FR">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="La première conférence technique en région centre sur les nouvelles technologies du numérique">
-    <meta name="keywords" content="conférence, tours, tech, développement, design, ux, ui, jeu, conception, webdesign, software">
-    <link rel="icon" type="image/png" href="${require('!!file-loader?publicPath=https://touraine.tech/!../img/logo_tnt.png')}" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700" rel="stylesheet">
-    <title>Touraine Tech</title>
-</head>
+${require('html-loader!./partials/head.html')}
 <body class="index">
-${require('html-loader!./partials/header.html')}
-<main class="content">
-    <section class="presentation" id="presentation" itemscope itemtype="http://schema.org/NewsArticle">
-        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://touraine.tech/"/>
-        <div itemscope itemprop="image"  itemType="https://schema.org/ImageObject">
-            <meta itemprop="url" content="${require('../img/logo_tnt.svg')}">
-        </div>
-        <article class="presentation-intro">
-            <h1 itemprop="headline">Touraine Tech</h1>
-            <h2 itemprop="description">La première conférence technique en région centre<br> sur les nouvelles technologies du numérique</h2>
-        </article>
-        <article class="presentation-info">
-            <div class="lieu">
-                <img src="../img/lieu.svg" alt="picto de localisation">
-                <p>École Polytechnique de l'Université de Tours</p>
-            </div>
-            <div class="date">
-                <img src="../img/calendar.svg" alt="picto d'un calendrier">
-                <p>Rendez-vous le 23 février 2018</p>
-            </div>
-            <div class="conf">
-                <img src="../img/micro.svg" alt="picto d'un micro">
-                <p>14 conférences et 6 lightning talks</p>
-            </div>
-        </article>
-        <article class="presentation-event">
-            <div class="event">
-                <p>Cet événement a pour but de <em>promouvoir le secteur numérique</em>, notamment son économie, ses métiers et ses formations. Il est organisé bénévolement par l’association <em>Touraine Tech</em>, dont l’objectif est de développer ce secteur d’activité en Touraine.</p>
-                <p>Cette conférences est ouverte à un large public, aussi bien des professionnels du secteur que des étudiants préparant leur insertion dans le monde du travail.</p>
-            </div>
-            <div class="event">
-                <p>Pour cette première édition, nous organisons une journée de conférence sur Tours dans les locaux du département informatique de <em>l'école Polytechnique de l'Université de Tours</em>.</p>
-                <p>Seront mis à disposition 2 amphithéâtres, une salle de prises en mains, un grand espace sponsor, une cafétéria.<br>
-                <em>La journée se déroulera sur 2 tracks de conférences pour un total de 14 conférences et 6 lightning talks</em>.</p>
-            </div>
-        </article>
-        <article class="presentation-accroche">
-            <h1>Pour cette première, nous accueillerons 250 personnes</h1>
-        </article>
-    </section>
-    <section class="themes" id="thematiques">
-        <h1>Thématiques</h1>
-        <p>L'axe principal mis en avant sera le développement responsable.</p>
-        <ul>
-            <li class="design">
-                <span>Design, UI, UX</span>
-            </li>
-            <li class="front">
-                <span>Front web, Mobile</span>
-            </li>
-            <li class="cloud">
-                <span>Backends, Cloud, Big Data</span>
-            </li>
-            <li class="jeux">
-                <span>Jeux vidéos et hybrides</span>
-            </li>
-            <li class="objets">
-                <span>Internet des objets</span>
-            </li>
-            <li class="archi">
-                <span>Conception, architecture</span>
-            </li>
-            <li class="outils">
-                <span>Outillage, pratiques de développement</span>
-            </li>
-        </ul>
-    </section>
-    <section id="quisommesnous">
-        <h1>L'équipe</h1>
-        <p>Le comité Touraine Tech de l’association PALO ALTOURS, est constitué de membres actifs de la communauté tech de Tours métropole et sa région . Ils sont par ailleurs engagés dans les formations bénévoles, ateliers techniques et évènements du numérique : Tours JS, Tours JUG, GDG Tours, les Ateliers du Web Design, Docker Tours...</p>
-        <div class="ateliers">
-            <a target="_blank" href="https://paloaltours.org/"><img src="../img/paloaltours.jpg" alt="Logo de Palo Altours"></a>
-            <a target="_blank" href="https://paloaltours.org/actions/toursjs/"><img src="../img/toursjs.jpg" alt="Logo du Tours JS"></a>
-            <a target="_blank" href="https://www.meetup.com/fr-FR/Docker-Tours/"><img src="../img/docker.jpeg" alt="Logo dU Docker"></a>
-            <a target="_blank" href="https://www.meetup.com/fr-FR/GDG-Tours/"><img src="../img/gdgtours.png" alt="Logo du GDG Tours"></a>
-            <a target="_blank" href="http://www.toursjug.org/"><img src="../img/Tours-Jug.png" alt="Logo du Tours Jug"></a>
-            <a target="_blank" href="https://paloaltours.org/actions/les-ateliers-du-web-design/"><img src="../img/AWD.jpg" alt="Logo des Ateliers du Web Design"></a>
-        </div>
-    </section>
-    <section id="participer" itemscope itemtype="http://schema.org/Event">
-        <h1>Inscriptions</h1>
-        <div class="inscriptions">
-            <p>Les inscriptions ne sont pas encore ouvertes.</p>
-            <p>
-              <a href="https://twitter.com/tourainetech" target="_BLANK">Tenez-vous au jus sur twitter !</a>
-            </p>
-            <p>
-                Prochain <span itemprop="name">Touraine Tech</span>
-                le <span itemprop="startDate" content="2018-02-23">vendredi 23/02/2018</span>
-                à
-                <address itemprop="location" itemscope itemtype="http://schema.org/Place">
-                    <span itemprop="name">Polytech Tours</span>
-                    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress">64 Avenue Jean Portalis</span>,
-                        <span itemprop="postalCode">37200</span>
-                        <span itemprop="addressLocality">Tours</span>
-                    </span>
-                </address>
-            </p>
-        </div>
-        <div class="map-responsive">
-            <iframe class="lozad" data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10809.685841048247!2d0.6847465!3d47.3646921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x178da484f4c36cd4!2sPolytechnique+de+l&#39;universit%C3%A9+de+Tours!5e0!3m2!1sfr!2sfr!4v1505132799666" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section id="proposer">
-        <h1>Call For Papers</h1>
-        <p>Vous pouvez proposer un sujet jusqu'au 07 janvier 2018, la délibération se fera le 15 janvier 2018</p>
-        <a href="https://tourainetech.cfp.io/" class="link">Proposer un sujet !</a>
-    </section>
-</main>
+    ${require('html-loader!./partials/header.html')}
+    <main class="content">
+        ${require('html-loader!./partials/presentation.html')}
+        ${require('html-loader!./partials/thematiques.html')}
+        ${require('html-loader!./partials/quisommesnous.html')}
+        ${require('html-loader!./partials/participer.html')}
+        ${require('html-loader!./partials/proposer.html')}
+    </main>
 </body>
 </html>
