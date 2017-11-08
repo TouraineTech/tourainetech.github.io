@@ -1,7 +1,13 @@
+@import "sponsors";
+@import "print";
 // Colors
 $BgColorLight: #fff;
 $BgColor: #6ABFAD;
 $BgColorDark: #1f202c;
+$bgTable: #f2f2f4;
+$bgtableBronze: #ef6a36;
+$bgtableSylver: #2b3041;
+$bgtablegold: #83cec5;
 
 $textColor: #fff;
 
@@ -15,92 +21,93 @@ $phone: 480px;
 // Google font
 $fontstack: 'Raleway', sans-serif;
 
-/**
- * Globals
- */
-html, body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  flex: 1;
-  color: $textColor;
-  font-family: $fontstack;
-  font-size: 4vw;
-  @media (min-width: $tablet) {
-    font-size: 1vw;
+@media screen {
+  /**
+   * Globals
+   */
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: $fontstack;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    .index {
+      color: $textColor;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 1vw;
+    }
   }
-}
 
-@media (max-width: $tablet - 1) {
-  body {
-    flex-direction: column-reverse;
+  @media (max-width: $tablet - 1) {
+    body {
+      flex-direction: column-reverse;
+    }
   }
-}
 
-/**
- * Defaults
- */
+  /**
+   * Defaults
+   */
 
-%align {
-  font-weight: 600;
-}
+  %align {
+    font-weight: 600;
+  }
 
-@mixin title($color, $size) {
-  @extend %align;
-  color: $color;
-  font-size: $size;
-}
+  @mixin title($color, $size) {
+    @extend %align;
+    color: $color;
+    font-size: $size;
+  }
 
-%alignFlex {
-  display: flex;
-  align-items: center;
-}
+  %alignFlex {
+    display: flex;
+    align-items: center;
+  }
 
-@mixin flex($content) {
-  @extend %alignFlex;
-  justify-content: $content;
-}
+  @mixin flex($content) {
+    @extend %alignFlex;
+    justify-content: $content;
+  }
 
-%sectionSpace {
-  padding: 40px 0;
-}
+  %sectionSpace {
+    padding: 40px 0;
+  }
 
 a.link {
   text-decoration: none;
   color: $textColor;
   text-align: center;
-  transition: all .3s;
+transition: all .3s;
 }
 
+  /**
+   * Nav Header
+   */
+  .nav-header {
+    flex-grow: 0;
 
-
-/**
- * Nav Header
- */
-.nav-header {
-  flex-grow: 0;
-
-  @include flex(space-between);
-  padding: 0 10px;
-  background-color: $BgColorLight;
-
-  flex-direction: column;
-  align-items: stretch;
-  @media (min-width: $tablet) {
-    flex-direction: row;
-  }
-
-  .nav-bar {
     @include flex(space-between);
-    flex: 1;
+    padding: 0 10px;
+    background-color: $BgColorLight;
 
-    img {
-      width: 10vw;
+    flex-direction: column;
+    align-items: stretch;
+    @media (min-width: $tablet) {
+      flex-direction: row;
     }
+    .nav-bar {
+      @include flex(space-between);
+      flex: 1;
+
+      img {
+        width: 10vw;
+      }
 
     h1 {
       @include title($BgColorDark, 1.2rem);
@@ -117,32 +124,34 @@ a.link {
   }
   .nav-open {
     font-size: 1.2rem;
+
     color: $textColor;
     background-color: $BgColor;
+
     padding: 0.5rem;
     border-radius: 4px;
 
-    @media (min-width: $tablet) {
-      display: none;
+      @media (min-width: $tablet) {
+        display: none;
+      }
     }
-  }
 
-  #nav-trigger {
-    width: 0;
-    height: 0;
-    opacity: 0;
+    #nav-trigger {
+      width: 0;
+      height: 0;
+      opacity: 0;
 
-    &:checked + nav {
-      display: block;
+      &:checked + nav {
+        display: block;
+      }
     }
-  }
 
-  nav {
-    @include flex(center);
-    @media (max-width: $tablet) {
-      display: none;
+    nav {
+      @include flex(center);
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
-  }
 
   nav a {
     padding: 15px;
@@ -155,8 +164,7 @@ a.link {
     @media (max-width: $tablet - 1) {
       display: block;
       text-align: center;
-      font-size: .8rem;    
-    }
+    font-size: .8rem;}
   }
   @media (max-width: $tablet - 1) {
     flex-direction: column-reverse;
@@ -168,95 +176,95 @@ a.link {
   }
 }
 
-/**
- * Main content
- */
-.content {
-  flex: 1;
-  overflow-y: scroll;
-  > section, .presentation {
-    @include flex(center);
-    flex-direction: column;
-    text-align: center;
+  /**
+   * Main content
+   */
+  .content {
+    flex: 1;
+    overflow-y: scroll;
+    > section, .presentation {
+      @include flex(center);
+      flex-direction: column;
+      text-align: center;
 
-    &:first-child {
-      background-color: $BgColorDark;
+      &:first-child {
+        background-color: $BgColorDark;
+      }
     }
   }
-}
 
-.presentation {
-  & .presentation-intro {
-    @extend %sectionSpace;
+  .presentation {
+    & .presentation-intro {
+      @extend %sectionSpace;
+      h1 {
+        text-transform: uppercase;
+      }
+      @media (max-width: $tablet - 1) {
+        padding: 2rem 0 1.2rem 0;
+      }
+    }
     h1 {
-      text-transform: uppercase;
+      @include title($BgColor, 3rem);
+      margin-bottom: 2rem;
+      @media (max-width: $tablet - 1) {
+        margin: 2rem;
+      }
     }
-    @media (max-width: $tablet - 1) {
-      padding: 2rem 0 1.2rem 0;
-    }
-  }
-  h1 {
-    @include title($BgColor, 3rem);
-    margin-bottom: 2rem;
-    @media (max-width: $tablet - 1) {
-      margin: 2rem;
-    }
-  }
-  h2 {
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-size: 0.8rem;
-    opacity: .9;
+    h2 {
+      line-height: 1.5rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      opacity: .9;
 
-    @media (min-width: $tablet) {
-      line-height: 2.8rem;
-      font-weight: 500;
-      font-size: 2rem;
+      @media (min-width: $tablet) {
+        line-height: 2.8rem;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      @media (min-width: $oldScreen) {
+        line-height: 2rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
     }
-    @media (min-width: $oldScreen) {
-      line-height: 2rem;
-      font-weight: 500;
-      font-size: 1.4rem;
-    }
-  }
-  & .presentation-info {
-    @include flex(space-around);
-    font-size: 1rem;
-    width: 80%;
-    padding: 3rem 0;
-    margin-bottom: 0;
+    & .presentation-info {
+      @include flex(space-around);
+      font-size: 1rem;
+      width: 80%;
+      padding: 3rem 0;
+      margin-bottom: 0;
 
     .date p{
       color: $BgColor;
-      font-size: 1.4rem;  
-       
+      font-size: 1.4rem;
+
       @media (max-width: $tablet - 1) {
-        font-size: .8rem;    
-      }    
-    }  
-      
+        font-size: .8rem;
+      }
+    }
+
     img {
       width: 60px;
-    }  
+    }
     @media (max-width: $tablet - 1) {
       padding: 1rem 3rem 2rem 3rem;
       width: 90%;
-      font-size: .7rem;  
-        
+      font-size: .7rem;
+
     }
     @media (max-width: $phone - 1) {
-      flex-direction: column;  
-      align-self: center;  
-      align-items: start;  
-      width: auto;    
+      flex-direction: column;
+      align-self: center;
+      align-items: start;
+      width: auto;
     }
     & > div{
       @media (max-width: $phone - 1) {
         display: inline-flex;
-        margin-bottom: 10px;  
-        align-items: center;  
+        margin-bottom: 10px;
+        align-items: center;
       }
-    }  
+    }
   }
 
   & .presentation-event {
@@ -267,56 +275,59 @@ a.link {
     color: $BgColorDark;
     background-color: $BgColorLight;
 
-    .event{
-      width: 30%;
-      p{
-        opacity: .8;
-        text-align: left;  
-
-        em{ color: $BgColor; font-style: normal; font-weight: bold; }
-
-        @media (min-width: $tablet) {
-          font-size: 1.1rem;
-          line-height: 1.5rem;
-        }
-        @media (max-width: $phone - 1) {
-          padding: 1rem;
-          font-size: 0.9rem;
-        }
-      }
-    }
-    .event:first-child{ margin-right: 2rem; }
-    @media (max-width: $tablet) {
-      flex-direction: column;
-      padding: 1rem 2rem;
-      & .event {
-          width: 100%;
+      .event {
+        width: 30%;
         p {
-          padding: 0 0.2rem;
-          font-size: .7rem;
-          text-align: center;
+          opacity: .8;
+          text-align: left;
+
+        em{ color: $BgColor; font-style: normal;font-weight: bold; }
+
+          @media (min-width: $tablet) {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+          }
+          @media (max-width: $phone - 1) {
+            padding: 1rem;
+            font-size: 0.9rem;
+          }
         }
       }
-      & .event:first-child p {
-        margin-bottom: 0;
+      .event:first-child {
+        margin-right: 2rem;
       }
+      @media (max-width: $tablet) {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        & .event {
+          width: 100%;
+          p {
+            padding: 0 0.2rem;
+            font-size: .7rem;
+            text-align: center;
+          }
+        }
+        & .event:first-child p {
+          margin-bottom: 0;
+        }
+      }
+      .event:first-child{ margin-right: 2rem; }
     }
-  }
 
-  & .presentation-accroche {
-    padding: 2rem 0;
-    h1{
-      font-size: 2rem;
-    }
-    @media (max-width: $tablet - 1) {
-      padding: 4rem 2rem;
+    & .presentation-accroche {
+      padding: 2rem 0;
       h1 {
-        margin: 0;
-        font-size: 1.3rem;  
+        font-size: 2rem;
+      }
+      @media (max-width: $tablet - 1) {
+        padding: 4rem 2rem;
+        h1 {
+          margin: 0;
+        font-size: 1.3rem;
+        }
       }
     }
   }
-}
 
 .themes {
   @extend %sectionSpace;
@@ -325,8 +336,7 @@ a.link {
   }
   p {
     color: $BgColorDark;
-    font-size: 1.1rem;  
-  }
+  font-size: 1.1rem;}
   ul {
     padding: 0;
     margin: 0;
@@ -336,40 +346,54 @@ a.link {
     li {
       @include flex(center);
 
-      font-size: 18px;
-      font-weight: 500;
-      width: 150px;
-      height: 150px;
+        font-size: 18px;
+        font-weight: 500;
+        width: 150px;
+        height: 150px;
 
-      border-radius: 5%;
-      margin: 4vw;
-
-      background-size: 100%;
-
-      &.design { background-image: url(../img/1_design.svg); }
-      &.front { background-image: url(../img/2_front.svg); }
-      &.cloud { background-image: url(../img/3_cloud.svg); }
-      &.jeux { background-image: url(../img/4_jeux.svg); }
-      &.objets { background-image: url(../img/5_objets.svg); }
-      &.archi { background-image: url(../img/6_archi.svg); }
-      &.outils { background-image: url(../img/7_outils.svg); }
-
-      & span {
-        padding: 5px;
-        transition: all .3s;
-        transform: scale(0) rotate(180deg);
-        color: $BgColorLight;
-        background-color: rgba($BgColorDark, .85);
-        width: 100%;
-        height: 100%;
-        @include flex(center);
-        line-height: 22px;
         border-radius: 5%;
-      }
+        margin: 4vw;
 
-      &:hover span {
-        transform: scale(1) rotate(0);
-      }
+        background-size: 100%;
+
+        &.design {
+          background-image: url(../img/1_design.svg);
+        }
+        &.front {
+          background-image: url(../img/2_front.svg);
+        }
+        &.cloud {
+          background-image: url(../img/3_cloud.svg);
+        }
+        &.jeux {
+          background-image: url(../img/4_jeux.svg);
+        }
+        &.objets {
+          background-image: url(../img/5_objets.svg);
+        }
+        &.archi {
+          background-image: url(../img/6_archi.svg);
+        }
+        &.outils {
+          background-image: url(../img/7_outils.svg);
+        }
+
+        & span {
+          padding: 5px;
+          transition: all .3s;
+          transform: scale(0) rotate(180deg);
+          color: $BgColorLight;
+          background-color: rgba($BgColorDark, .85);
+          width: 100%;
+          height: 100%;
+          @include flex(center);
+          line-height: 22px;
+          border-radius: 5%;
+        }
+
+        &:hover span {
+          transform: scale(1) rotate(0);
+        }
 
       @media (min-width: $oldScreen) {
         width: 180px;
@@ -386,15 +410,13 @@ a.link {
     padding: 2rem;
     h1 {
       margin: 0 0 0.6rem 0;
-      font-size: 1.6rem;    
-    }
+    font-size: 1.6rem;}
     p {
-      padding-bottom: 0.6rem;
-      font-size: .8rem;
-      line-height: 1.5rem;    
+      padding-bottom: 0.6rem;font-size: .8rem;
+      line-height: 1.5rem;
+    }
     }
   }
-}
 
 #quisommesnous {
   @extend %sectionSpace;
@@ -404,8 +426,7 @@ a.link {
     @include title($BgColorLight, 2rem);
   }
   p{
-    font-size: 1.1rem;  
-    line-height: 1.8rem;
+    font-size: 1.1rem;line-height: 1.8rem;
     width: 80%;
   }
   img{
@@ -413,25 +434,23 @@ a.link {
     margin: 2rem;
   }
   @media (max-width: $tablet - 1) {
-    padding: 2rem;
+    padding:  2rem;
     h1 {
       margin: 0 0 1rem 0;
-      font-size: 1.6rem;    
-    }
+    font-size: 1.6rem;}
     p {
       width: 100%;
-      padding: 0;
-      font-size: .8rem;   
-      line-height: 1.5rem;    
+      padding: 0;font-size: .8rem;
+      line-height: 1.5rem;
     }
     img{
       width: 20%;
       @media (max-width: $phone - 1) {
-        width: 35%; 
-        margin: 1rem;  
-      }        
-    }  
-  } 
+        width: 35%;
+        margin: 1rem;
+      }
+    }
+  }
 }
 
 #participer {
@@ -440,25 +459,26 @@ a.link {
   h1 {
     @include title($BgColorLight, 2rem);
   }
-  p{
-    font-size: 1.1rem;  
-  }    
-  .map-responsive {
+  p {
+    font-size: 1.1rem;
+    }
+    .map-responsive {
     width: 100%;
     filter: grayscale(100);
   }
+
   .map-responsive iframe {
+
     width: 80%;
   }
   @media (max-width: $tablet - 1) {
-    padding: 2rem;      
+    padding:  2rem;
     h1 {
-      margin: 0;
-      font-size: 1.6rem;    
+      margin: 0;font-size: 1.6rem;
     }
     p{
         font-size: .8rem;
-    }  
+    }
     a, a:hover {
       text-decoration: none;
       color: #FFF;
@@ -484,28 +504,27 @@ a.link {
     font-weight: bold;
     padding: 15px;
     margin-top: 10px;
-    font-size: 1.2em;  
-    &:hover {
+    font-size: 1.2em;&:hover {
       background-color: $textColor;
       color: $BgColor;
     }
   }
-  @media (max-width: $tablet - 1) {
-    padding: 2rem;      
+@media (max-width: $tablet - 1) {
+    padding: 2rem;
     h1 {
       font-size: 1.6rem;
-      margin-bottom: 0;    
-    }        
+      margin-bottom: 0;
+    }
     p{
       font-size: 1rem;
-      line-height: 1.5rem;        
-    }  
-  }  
-}
+      line-height: 1.5rem;
+    }
+  }}
 
 /**
  * Footer
  */
 footer {
   display: none;
+}
 }

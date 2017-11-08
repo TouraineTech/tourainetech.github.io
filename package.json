@@ -36,8 +36,14 @@
         "from": "./README.md"
       }
     ],
-    "html": {
-      "template": "html-loader?interpolate!./src/index.html"
-    }
+    "html": [
+      {
+        "template": "html-loader?interpolate!./src/index.html"
+      },
+      {
+        "filename": "sponsors.html",
+        "template": "html-loader?interpolate!./src/sponsors.html"
+      }
+    ]
   }
 }
