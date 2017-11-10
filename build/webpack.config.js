@@ -78,12 +78,21 @@ module.exports = {
                 }
             }, {
                 test: /\.(svg|png|jpe?g)$/,
-                use : {
-                    loader : 'file-loader',
-                    options: {
-                        publicPath: devMode ? '/' : 'https://touraine.tech/'
+                oneOf: [
+                    {
+                        resourceQuery: /absolute/,
+                        use : {
+                            loader : 'file-loader',
+                            options: {
+                                publicPath: devMode ? '/' : 'https://touraine.tech/'
+                            }
+                        }
+                    }, {
+                        use : {
+                            loader : 'file-loader'
+                        }
                     }
-                }
+                ]
             }
         ]
     },
