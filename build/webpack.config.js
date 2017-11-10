@@ -7,8 +7,12 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const LinkMediaHtmlWebpackPlugin = require('link-media-html-webpack-plugin')
 
 let devMode = process.env.NODE_ENV !== 'production'
+
+
+// To make LinkMediaHtmlWebpackPlugin add automatically the media...
+const encodedMediaScreen = `media_${new Buffer('screen').toString('base64')}`
 const extractSass = new ExtractTextPlugin({
-    filename: '[name].[contenthash].css',
+    filename: `[name].[contenthash].${encodedMediaScreen}.css`,
 })
 
 // To make LinkMediaHtmlWebpackPlugin add automatically the media...
@@ -86,7 +90,6 @@ module.exports = {
     devtool  : '#source-map',
     target   : 'web',
     devServer: {
-        hot        : true,
         inline     : true,
         compress   : true,
         contentBase: dist,
