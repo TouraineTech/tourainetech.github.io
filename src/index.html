@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-${require('html-loader!./partials/head.html')}
+${require('html-loader?interpolate!./partials/head.html')}
 <body class="index">
-    ${require('html-loader!./partials/header.html')}
+    ${require('html-loader?interpolate!./partials/header.html')}
     <main class="content">
-        ${require('html-loader!./partials/presentation.html')}
-        ${require('html-loader!./partials/thematiques.html')}
-        ${require('html-loader!./partials/quisommesnous.html')}
-        ${require('html-loader!./partials/participer.html')}
-        ${require('html-loader!./partials/proposer.html')}
+        ${require('html-loader?interpolate!./partials/presentation.html')}
+        ${require('html-loader?interpolate!./partials/thematiques.html')}
+        ${require('html-loader?interpolate!./partials/quisommesnous.html')}
+        ${require('html-loader?interpolate!./partials/participer.html')}
+        ${require('html-loader?interpolate!./partials/proposer.html')}
     </main>
 </body>
 </html>
