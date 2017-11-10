@@ -1,4 +1,5 @@
 import './global.scss';
+import './print.scss';
 import Promise from 'promise-polyfill';
 import { initializeGA } from './utils/initializeGA';
 import "intersection-observer";
