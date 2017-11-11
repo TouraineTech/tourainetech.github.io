@@ -5,8 +5,12 @@ const webpack = require('webpack')
 const fs = require('fs')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const LinkMediaHtmlWebpackPlugin = require('link-media-html-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin')
+const ImageOptimizePlugin = require('imagemin-webpack-plugin').default
 
-let devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production'
+const isPR = process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != "false"
+const prNumber = process.env.TRAVIS_PULL_REQUEST
 
 
 // To make LinkMediaHtmlWebpackPlugin add automatically the media...
@@ -33,7 +37,8 @@ module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
         path    : dist,
-        filename: '[name].[hash].js'
+        filename: '[name].[hash].js',
+        publicPath: isPR ? `/${prNumber}/` : '/'
     },
     module   : {
         rules: [
@@ -84,12 +89,16 @@ module.exports = {
                         use : {
                             loader : 'file-loader',
                             options: {
+                                outputPath: 'static/',
                                 publicPath: devMode ? '/' : 'https://touraine.tech/'
                             }
                         }
                     }, {
                         use : {
-                            loader : 'file-loader'
+                            loader : 'file-loader',
+                            options: {
+                                outputPath: 'static/',
+                            }
                         }
                     }
                 ]
@@ -107,10 +116,14 @@ module.exports = {
         overlay    : true,
     },
     plugins  : devPlugins.concat([
+        new CleanPlugin(['dist'], {
+            root: resolve(__dirname, '..')
+        }),
         ...listAllPages(),
         new FaviconsWebpackPlugin(resolve(__dirname, '../img/logo_tnt.png')),
         new LinkMediaHtmlWebpackPlugin(),
         new webpack.HashedModuleIdsPlugin(),
+        new ImageOptimizePlugin(),
         extractSass,
         extractPrintSass,
     ])

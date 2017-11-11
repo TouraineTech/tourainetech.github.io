@@ -1,10 +1,15 @@
 language: node_js
 node_js:
   - "8"
+before_install:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then export DEPLOYED_TO="https://tourainetech.github.io/${TRAVIS_PULL_REQUEST}"; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then export DEPLOYED_TO="https://touraine.tech"; fi'
 install:
   - "npm install"
 script:
   - "npm run build"
+after_script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then npm run deploy-gh-page; fi'
 deploy:
   provider: firebase
   project: "touraine-tech"
@@ -16,3 +21,8 @@ deploy:
 notifications:
   slack:
     secure: oPIKyyECMtndSsq9SFOcotusgqoywKv/8z6pG+YR5oNsB/yfXk9APb8WhCOoPkuc9g4LZBoqWqarcup7EjyAH8VtgTdIxFpsEl8barF2kDf8kOLrnj6CRkU2MMNBGxpXteBh4RJjLcB9JEi9UqqUWLbUtaRWnpZgC8LD1YhUFmcQruwkROx9CxIlTa+wFJFI6zz4nc2TBXC/sW9CPF28C6OSrtZfaHi53UxZxcSB6TxyLHLtPAilaQmeyThPXIuKNOZ/MDZ1WUa6RSM0QP/jRrXx/X5fEU/ZUCLkZNM5TwkADmzc7Br1m5KweCY2WXjyr85iOdr9Wr8fGd78MDcAIfKyJNAr/0ztGZMoUHAGmNokzIe4Q3X+gKPRBdnTGS2e0VKyKKIuuCh1YeBuHXmYGsmAxk5Dwz3BmjNuOSBiCynRVti+lTHGAIo3a0Vt7MSXqQ4vg5BxJihZqrViPk24ZgRQRjoQMU+gUmhpZ4kNUPt98Ty93/qLneNOKq4IN7azA/fbZQQl6NuEN8/omwYL4FHVaU1nWdYke/M/GDXxiP9nS4Lq8aOHGfjsxOXfYsUgdK0bOEGEyhCFg+kRO4LiroFfdFXQXZtIXRPNTlehSkrG3dXoSV86WMozYXwtFeeYyyk0+KCgAh/g2H8zSUK1W0Oe1covIzBVT9ESoYAMyLQ=
+    template:
+      - $TRAVIS_COMMIT_MESSAGE
+      - $TRAVIS_PULL_REQUEST_SLUG
+      - 'Deployed at'
+      - $DEPLOYED_TO
