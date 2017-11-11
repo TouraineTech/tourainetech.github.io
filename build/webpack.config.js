@@ -38,7 +38,7 @@ module.exports = {
     output   : {
         path    : dist,
         filename: '[name].[hash].js',
-        publicPath: isPR ? `/${prNumber}/` : '/'
+        publicPath: isPR && !devMode ? `/${prNumber}/` : '/'
     },
     module   : {
         rules: [
@@ -90,7 +90,11 @@ module.exports = {
                             loader : 'file-loader',
                             options: {
                                 outputPath: 'static/',
-                                publicPath: devMode ? '/' : 'https://touraine.tech/'
+                                publicPath: devMode
+                                    ? '/'
+                                    : isPR
+                                        ? `https://tourainetech.github.io/${prNumber}/`
+                                        :'https://touraine.tech/'
                             }
                         }
                     }, {
