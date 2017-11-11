@@ -1,412 +1,389 @@
-$BgColorLight: #fff;
-$BgColor: #6ABFAD;
-$BgColorDark: #1f202c;
-$bgTable: #f2f2f4;
-$bgtableBronze: #ef6a36;
-$bgtableSylver: #2b3041;
-$bgtablegold: #83cec5;
+@import "variables";
 
-$textColor: #fff;
-
-// Media sizes
-$largeScreen: 1690px;
-$oldScreen: 1280px;
-$tablet: 980px;
-$largePhone: 736px;
-$phone: 480px;
-
-// Google font
-$fontstack: 'Raleway', sans-serif;
-
-
-
-@media screen{
-  .sponsor-content {
-    & .logo-to-print, & .background-to-print{
-      display: none;
+.sponsor-content {
+  & .logo-to-print, & .background-to-print {
+    display: none;
+  }
+  & .sponsor-main {
+    flex: 1;
+    overflow-y: scroll;
+  }
+  & header {
+    font-weight: 200;
+  }
+  & ul {
+    list-style: none;
+    padding-left: 0
+  }
+  & p {
+    opacity: 0.8;
+    font-size: 1rem;
+    @media (max-width: $tablet) {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
     }
-    & .sponsor-main {
-      flex: 1;
-      overflow-y: scroll;
+  }
+  margin: 0;
+  & header a h1 {
+    display: none;
+  }
+  & .sponor-header {
+    background-color: $BgColorDark;
+    width: 100vw;
+    min-height: 500px;
+    margin-bottom: 3vh;
+    border-top: 10px solid $BgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    & h1 {
+      font-size: 4rem;
+      line-height: 5.5rem;
+      font-weight: 600;
+
     }
-    & header {
+    & h2 {
+      font-style: italic;
+      font-size: 2.5rem;
+      line-height: 3rem;
       font-weight: 200;
+
     }
-    & ul {
-      list-style: none;
-      padding-left: 0
+    & h1, & h2 {
+      color: #fff; /* $BgColorLight*/
+      text-align: center;
     }
-    & p {
-      opacity: 0.8;
-      font-size: 1rem;
+  }
+  & section {
+    & .section-line {
+      height: 18px;
+      width: 90vw;
+      margin: 5vh auto 5vh;
+      background-image: url('../img/section_line.png');
+      background-repeat: repeat-x;
+    }
+    & h1 {
+      color: #1f202c; /*$BgColorDark*/
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
       @media (max-width: $tablet) {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
       }
     }
-    margin: 0;
-    & header a h1 {
-      display: none;
+    & .underline {
+      width: 20px;
+      height: 3px;
+      margin-top: -2px;
+      margin-bottom: 2vh;
+      background-color: #1f202c; /*$BgColorDark*/
     }
-    & .sponor-header {
-      background-color: $BgColorDark;
-      width: 100vw;
-      min-height: 500px;
-      margin-bottom: 3vh;
-      border-top: 10px solid $BgColor;
+    & article {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
-      & h1 {
-        font-size: 4rem;
-        line-height: 5.5rem;
-        font-weight: 600;
+      text-align: justify;
+      margin: 3vh auto;
+      width: 80vw;
+      min-width: 300px;
+      & strong {
+        color: $BgColor;
+        font-weight: 700;
+        font-size: 1.2rem;
+        display: inline-block;
+        text-align: center;
 
+      }
+      & .icon,
+      & .icon-article,
+      & .icon-subtitle {
+        max-width: 75px;
+      }
+      & .icon-article,
+      & .icon-subtitle {
+        display: block;
+        margin: 0 auto;
       }
       & h2 {
-        font-style: italic;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        font-weight: 200;
-
-      }
-      & h1, & h2 {
-        color: #fff; /* $BgColorLight*/
         text-align: center;
-      }
-    }
-    & section {
-      & .section-line {
-        height: 18px;
-        width: 90vw;
-        margin: 5vh auto 5vh;
-        background-image: url('../img/section_line.png');
-        background-repeat: repeat-x;
-      }
-      & h1 {
-        color: #1f202c; /*$BgColorDark*/
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-align: center;
-        @media (max-width: $tablet) {
-          font-size: 1.5rem;
+        color: $BgColor;
+        font-size: 1.5rem;
+        @media(max-width: $tablet) {
+          font-size: 1.2rem;
         }
       }
-      & .underline {
-        width: 20px;
-        height: 3px;
-        margin-top: -2px;
-        margin-bottom: 2vh;
-        background-color: #1f202c; /*$BgColorDark*/
+    }
+  }
+  & section.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    & article {
+      width: 35vw;
+      min-width: 300px;
+    }
+    & article:first-of-type {
+      width: 100vw;
+      .presentation-article-content {
+        width: 35vw;
+        min-width: 300px;
+        @media(max-width: $tablet) {
+          width: 100%;
+        }
       }
-      & article {
+    }
+    & article, & article:first-of-type {
+      @media(max-width: $tablet) {
+        width: 80vw;
+        min-width: 300px;
+        margin: 3vh auto;
+      }
+    }
+
+  }
+  & section.subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    & article ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0;
+      width: 100%;
+      & li {
+        width: 110px;
+        & img {
+          max-width: 100%;
+        }
+      }
+    }
+    & article.thematique {
+      & > span {
+        margin-bottom: 3rem;
+
+        @media(max-width: $tablet) {
+          margin-bottom: 1rem;
+        }
+      }
+      & ul li {
+        width: 22vw;
+        min-width: 250px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        text-align: justify;
-        margin: 3vh auto;
-        width: 80vw;
-        min-width: 300px;
-        & strong {
-          color: $BgColor;
-          font-weight: 700;
-          font-size: 1.2rem;
-          display: inline-block;
-          text-align: center;
-
-        }
-        & .icon,
-        & .icon-article,
-        & .icon-subtitle {
-          max-width: 75px;
-        }
-        & .icon-article,
-        & .icon-subtitle {
-          display: block;
-          margin: 0 auto;
-        }
-        & h2 {
-          text-align: center;
-          color: $BgColor;
-          font-size: 1.5rem;
-          @media(max-width: $tablet) {
-            font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        @media(max-width: $tablet) {
+          width: 40vw;
+          min-width: 300px;
+          span {
+            max-width: 90%;
           }
+        }
+        & > span {
+          margin-bottom: 1rem;
+          font-weight: 700;
+          text-align: center;
+        }
+        & img {
+          max-width: 130px;
         }
       }
     }
-    & section.presentation {
+
+  }
+  & section.sponsor {
+    & .sponsor-article-content {
       display: flex;
       flex-direction: row;
-      justify-content:space-around;
+      justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
-      & article{
+      margin-top: 4vh;
+      & .part {
         width: 35vw;
+        margin: 0 1rem;
         min-width: 300px;
-      }
-      & article:first-of-type{
-        width: 100vw;
-        .presentation-article-content{
-          width: 35vw;
-          min-width: 300px;
-          @media(max-width : $tablet){
-            width: 100%;
-          }
-        }
-      }
-      & article, & article:first-of-type{
-        @media(max-width : $tablet){
+        @media(max-width: $tablet) {
           width: 80vw;
-          min-width: 300px;
-          margin: 3vh auto;
         }
       }
-
     }
-    & section.subject {
+
+  }
+  & section.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & h1 {
+      margin-left: 15vw;
+    }
+    & .underline {
+      margin-left: 15vw;
+    }
+    & .plan-site {
+      width: 90vw;
+      min-width: 300px;
+      margin: 0 auto;
+      height: auto;
+      & img {
+        max-width: 100%;
+      }
+    }
+    & .plan-hall {
+      width: 40vw;
+      min-width: 300px;
+      margin-left: 10vw;
+      margin-top: -45vh;
+      font-size: 1.3rem;
+      height: auto;
+      @media(max-width: $tablet) {
+        font-size: 1rem;
+        margin-top: -25vh;
+      }
+      @media(max-width: $largePhone) {
+        margin: 0 auto;
+
+      }
+      & span {
+        display: inline-block;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1vh;
+      }
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+  & section.tarif {
+    font-size: 1.5rem;
+
+    & .bronze {
+      background-color: $bgtableBronze;
+      color: $BgColorLight;
+    }
+    & .bronze-border {
+      border: 2px solid $bgtableBronze;
+      color: $bgtableBronze;
+      padding: 1.2rem;
+    }
+    & .silver {
+      background-color: $bgtableSylver;
+      color: $BgColorLight;
+    }
+    & .silver-border {
+      border: 2px solid $bgtableSylver;
+      color: $bgtableSylver;
+      padding: 1.2rem;
+    }
+    & .gold {
+      background-color: $bgtablegold;
+      color: $BgColorLight;
+    }
+    & .gold-border {
+      border: 2px solid $bgtablegold;
+      color: $bgtablegold;
+      padding: 1.2rem;
+    }
+    @media(min-width: $tablet) {
+      & .tarif-desktop {
+        display: flex;
+        border-spacing: 0;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        text-align: center;
+        & td {
+          border-bottom: 1px solid $BgColorLight;
+          padding: 2vh 2vw;
+        }
+        & .label {
+          background-color: $bgTable;
+          text-align: left;
+          font-weight: 200;
+        }
+      }
+      & .tarif-mobile {
+        display: none;
+      }
+    }
+    @media(max-width: $tablet) {
       display: flex;
       flex-direction: column;
-      justify-content:space-around;
-      align-items: flex-start;
-      & article ul {
+      justify-content: space-around;
+      align-items: center;
+      min-height: 800px;
+      font-size: 0.8rem;
+      & .tarif-desktop {
+        display: none;
+      }
+      & .tarif-mobile {
+        display: block;
+        min-width: 300px;
+        width: 80vw;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 5vh;
+        text-align: center;
+        & h1 {
+          color: $textColor;
+        }
+        & li {
+          &:not(:last-of-type) {
+            margin-bottom: 2vh;
+            &:before {
+              content: '\002713';
+              margin-right: 2vw;
+            }
+          }
+          &:last-of-type {
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            padding-top: 2vh;
+          }
+        }
+        hr {
+          height: 2px;
+          width: 100%;
+          background-color: $textColor;
+          border: none;
+        }
+      }
+    }
+    & .footer {
+      & span {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+      & ul {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-        padding: 0;
+        margin-top: 4vh;
         width: 100%;
         & li {
-          width: 110px;
+          width: 150px;
           & img {
             max-width: 100%;
           }
         }
       }
-      & article.thematique {
-        & > span {
-          margin-bottom: 3rem;
-
-          @media(max-width: $tablet) {
-            margin-bottom: 1rem;
-          }
-        }
-        & ul li {
-          width: 22vw;
-          min-width: 250px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          margin-bottom: 2.5rem;
-          @media(max-width: $tablet) {
-            width: 40vw;
-            min-width: 300px;
-            span{
-              max-width: 90%;
-            }
-          }
-          & > span {
-            margin-bottom: 1rem;
-            font-weight: 700;
-            text-align: center;
-          }
-          & img {
-            max-width: 130px;
-          }
-        }
-      }
-
-    }
-    & section.sponsor {
-      & .sponsor-article-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin-top: 4vh;
-        & .part {
-          width: 35vw;
-          margin: 0 1rem;
-          min-width: 300px;
-          @media(max-width: $tablet) {
-            width: 80vw;
-          }
-        }
-      }
-
-    }
-    & section.plan {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      & h1 {
-        margin-left: 15vw;
-      }
-      & .underline {
-        margin-left: 15vw;
-      }
-      & .plan-site {
-        width: 90vw;
-        min-width: 300px;
-        margin: 0 auto;
-        height: auto;
-        & img {
-          max-width: 100%;
-        }
-      }
-      & .plan-hall {
-        width: 40vw;
-        min-width: 300px;
-        margin-left: 10vw;
-        margin-top: -45vh;
-        font-size: 1.3rem;
-        height: auto;
-        @media(max-width: $tablet) {
-          font-size: 1rem;
-          margin-top: -25vh;
-        }
-        @media(max-width: $largePhone) {
-          margin: 0 auto;
-
-        }
-        & span {
-          display: inline-block;
-          font-weight: 700;
-          width: 100%;
-          text-align: center;
-          margin-bottom: 1vh;
-        }
-        & img {
-          max-width: 100%;
-        }
-      }
-    }
-    & section.tarif {
-      font-size: 1.5rem;
-
-      & .bronze {
-        background-color: $bgtableBronze;
-        color: $BgColorLight;
-      }
-      & .bronze-border {
-        border: 2px solid $bgtableBronze;
-        color: $bgtableBronze;
-        padding: 1.2rem;
-      }
-      & .silver {
-        background-color: $bgtableSylver;
-        color: $BgColorLight;
-      }
-      & .silver-border {
-        border: 2px solid $bgtableSylver;
-        color: $bgtableSylver;
-        padding: 1.2rem;
-      }
-      & .gold {
-        background-color: $bgtablegold;
-        color: $BgColorLight;
-      }
-      & .gold-border {
-        border: 2px solid $bgtablegold;
-        color: $bgtablegold;
-        padding: 1.2rem;
-      }
-      @media(min-width: $tablet) {
-        & .tarif-desktop {
-          display: flex;
-          border-spacing: 0;
-          margin-top: 4vh;
-          margin-bottom: 4vh;
-          text-align: center;
-          & td {
-            border-bottom: 1px solid $BgColorLight;
-            padding: 2vh 2vw;
-          }
-          & .label {
-            background-color: $bgTable;
-            text-align: left;
-            font-weight: 200;
-          }
-        }
-        & .tarif-mobile {
-          display: none;
-        }
-      }
-      @media(max-width: $tablet) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 800px;
-        font-size: 0.8rem;
-        & .tarif-desktop {
-          display: none;
-        }
-        & .tarif-mobile {
-          display: block;
-          min-width: 300px;
-          width: 80vw;
-          border-radius: 5px;
-          padding: 20px;
-          margin-bottom: 5vh;
-          text-align: center;
-          & h1 {
-            color: $textColor;
-          }
-          & li {
-            &:not(:last-of-type) {
-              margin-bottom: 2vh;
-              &:before {
-                content: '\002713';
-                margin-right: 2vw;
-              }
-            }
-            &:last-of-type {
-              font-weight: 700;
-              font-size: 1.3rem;
-              text-align: center;
-              padding-top: 2vh;
-            }
-          }
-          hr {
-            height: 2px;
-            width: 100%;
-            background-color: $textColor;
-            border: none;
-          }
-        }
-      }
-      & .footer {
-        & span {
-          display: block;
-          text-align: center;
-          margin-bottom: 1rem;
-          font-size: 1.4rem;
-        }
-        & ul {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center;
-          margin-top: 4vh;
-          width: 100%;
-          & li {
-            width: 150px;
-            & img {
-              max-width: 100%;
-            }
-          }
-        }
-      }
     }
   }
-
 }
 
