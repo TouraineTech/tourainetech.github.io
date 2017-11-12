@@ -1,6 +1,6 @@
 Touraine Tech Website
 =====================
-[![Build Status](https://travis-ci.org/TouraineTech/tourainetech.github.io.svg?branch=dev)](https://travis-ci.org/TouraineTech/tourainetech.github.io)
+[![Build Status](https://semaphoreci.com/api/v1/nooblad/tourainetech-github-io/branches/dev/shields_badge.svg)](https://semaphoreci.com/nooblad/tourainetech-github-io)
 
 To work on the project checkout the `dev` branch.
 
