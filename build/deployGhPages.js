@@ -1,8 +1,8 @@
 const ghpages = require('gh-pages')
 const path = require('path')
 
-const isPR = process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != 'false'
-const prNumber = process.env.TRAVIS_PULL_REQUEST
+const isPR = process.env.PULL_REQUEST_NUMBER && process.env.PULL_REQUEST_NUMBER != 'false'
+const prNumber = process.env.PULL_REQUEST_NUMBER
 const token = process.env.GITHUB_TOKEN
 deploy()
 
