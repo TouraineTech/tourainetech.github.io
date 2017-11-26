@@ -9,8 +9,8 @@ const CleanPlugin = require('clean-webpack-plugin')
 const ImageOptimizePlugin = require('imagemin-webpack-plugin').default
 
 const devMode = process.env.NODE_ENV !== 'production'
-const isPR = process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != "false"
-const prNumber = process.env.TRAVIS_PULL_REQUEST
+const isPR = process.env.ghprbPullId && process.env.ghprbPullId != "false"
+const prNumber = process.env.ghprbPullId
 
 
 // To make LinkMediaHtmlWebpackPlugin add automatically the media...
@@ -32,6 +32,11 @@ const src = resolve(__dirname, '../src/')
 const devPlugins = !devMode ? [] : [
     new webpack.HotModuleReplacementPlugin()
 ]
+
+const fullPath = isPR
+    ? `https://tourainetech.github.io/${prNumber}/`
+    :'https://touraine.tech/'
+
 
 module.exports = {
     entry    : resolve(src, 'index.js'),
@@ -92,9 +97,7 @@ module.exports = {
                                 outputPath: 'static/',
                                 publicPath: devMode
                                     ? '/'
-                                    : isPR
-                                        ? `https://tourainetech.github.io/${prNumber}/`
-                                        :'https://touraine.tech/'
+                                    : fullPath
                             }
                         }
                     }, {
