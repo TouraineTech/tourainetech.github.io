@@ -37,6 +37,7 @@ const fullPath = isPR
     ? `https://tourainetech.github.io/${prNumber}/`
     :'https://touraine.tech/'
 
+
 module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
