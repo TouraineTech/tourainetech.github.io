@@ -33,6 +33,10 @@ const devPlugins = !devMode ? [] : [
     new webpack.HotModuleReplacementPlugin()
 ]
 
+const fullPath = isPR
+    ? `https://tourainetech.github.io/${prNumber}/`
+    :'https://touraine.tech/'
+
 module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
@@ -92,9 +96,7 @@ module.exports = {
                                 outputPath: 'static/',
                                 publicPath: devMode
                                     ? '/'
-                                    : isPR
-                                        ? `https://tourainetech.github.io/${prNumber}/`
-                                        :'https://touraine.tech/'
+                                    : fullPath
                             }
                         }
                     }, {
