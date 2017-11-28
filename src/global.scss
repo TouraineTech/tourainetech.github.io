@@ -4,6 +4,8 @@
 /**
  * Globals
  */
+*{ box-sizing: border-box; }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -85,12 +87,13 @@ a.link {
     flex: 1;
 
     img {
-      width: 10vw;
+      width: 6vw;
     }
 
     h1 {
       @include title($BgColorDark, 1.2rem);
       margin-top: 0;
+        
     }
     > .link {
       color: $BgColorDark;
@@ -102,7 +105,7 @@ a.link {
     }
   }
   .nav-open {
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     color: $textColor;
     background-color: $BgColor;
@@ -113,6 +116,7 @@ a.link {
     @media (min-width: $tablet) {
       display: none;
     }
+      
   }
 
   #nav-trigger {
@@ -127,7 +131,7 @@ a.link {
 
   nav {
     @include flex(center);
-    @media (max-width: $tablet) {
+    @media (max-width: $tablet - 1) {
       display: none;
     }
   }
@@ -193,9 +197,10 @@ a.link {
   h2 {
     line-height: 1.5rem;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding: 0 .5em;  
     opacity: .9;
-
+ 
     @media (min-width: $tablet) {
       line-height: 2.8rem;
       font-weight: 500;
@@ -209,11 +214,17 @@ a.link {
   }
   & .presentation-info {
     @include flex(space-around);
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 80%;
     padding: 3rem 0;
     margin-bottom: 0;
 
+    p{
+      @media (max-width: $phone - 1) {
+        font-size: 1rem;
+      }          
+    }  
+      
     .date p {
       color: $BgColor;
       font-size: 1.4rem;
@@ -221,16 +232,18 @@ a.link {
       @media (max-width: $tablet - 1) {
         font-size: .8rem;
       }
+      @media (max-width: $phone - 1) {
+        font-size: 1.1rem;
+      }
     }
 
     img {
       width: 60px;
     }
     @media (max-width: $tablet - 1) {
-      padding: 1rem 3rem 2rem 3rem;
-      width: 90%;
+      padding: 1rem;
+      width: 100%;
       font-size: .7rem;
-
     }
     @media (max-width: $phone - 1) {
       flex-direction: column;
@@ -280,7 +293,7 @@ a.link {
     .event:first-child {
       margin-right: 2rem;
     }
-    @media (max-width: $tablet) {
+    @media (max-width: $tablet - 1) {
       flex-direction: column;
       padding: 1rem 2rem;
       & .event {
@@ -289,6 +302,10 @@ a.link {
           padding: 0 0.2rem;
           font-size: .7rem;
           text-align: center;
+            
+          @media (max-width: $phone - 1) {
+            font-size: .9rem;
+          }
         }
       }
       & .event:first-child p {
@@ -322,7 +339,7 @@ a.link {
   }
   p {
     color: $BgColorDark;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   ul {
     padding: 0;
@@ -403,6 +420,10 @@ a.link {
       padding-bottom: 0.6rem;
       font-size: .8rem;
       line-height: 1.5rem;
+        
+      @media (max-width: $phone - 1) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -415,9 +436,13 @@ a.link {
     @include title($BgColorLight, 2rem);
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     width: 80%;
+      
+    @media (max-width: $phone - 1) {
+      font-size: 1rem;      
+    }  
   }
   img {
     width: 10%;
@@ -433,7 +458,7 @@ a.link {
       width: 100%;
       padding: 0;
       font-size: .8rem;
-      line-height: 1.5rem;
+      line-height: 1.5rem;    
     }
     img {
       width: 20%;
@@ -452,17 +477,20 @@ a.link {
     @include title($BgColorLight, 2rem);
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+      
+    @media (max-width: $phone - 1) {
+        font-size: 1rem;  
+    }
   }
   .map-responsive {
     width: 100%;
     filter: grayscale(100);
+    iframe {
+      width: 80%;
+    }
   }
 
-  .map-responsive iframe {
-
-    width: 80%;
-  }
   @media (max-width: $tablet - 1) {
     padding: 2rem;
     h1 {
@@ -474,15 +502,21 @@ a.link {
     }
   }
   a, a:hover {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
-    background-color: #6ABFAD;
-    border-radius: 8px;
-    border: 2px solid #FFF;
-    padding: 0.2rem 0.4rem;
-    margin: 0.4rem 0;
-    display: inline-block;
+    margin: 0 1rem;
+      
+    .logo_link {
+      width: 5vw;
+      height: auto;
+      vertical-align: middle;
+      padding-right: 5px;
+          
+      @media (max-width: $tablet - 1) {
+        width: 10vw;  
+      }          
+      @media (max-width: $phone - 1) {
+        width: 15vw;  
+      }
+    }
   }
 }
 
@@ -490,6 +524,9 @@ a.link {
   @extend %sectionSpace;
   h1 {
     @include title($BgColorLight, 2rem);
+  }
+  p{
+    font-size: 1.2rem;
   }
   background-color: $BgColorDark;
   a.link {
@@ -517,12 +554,6 @@ a.link {
   }
 }
 
-.logo_link {
-  width: auto;
-  height: 1.5rem;
-  vertical-align: middle;
-  padding-right: 5px;
-}
 
 /**
  * Footer
