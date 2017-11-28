@@ -528,6 +528,14 @@ a.link {
  * Footer
  */
 footer {
-  display: none;
+  padding: 5px;
+  text-align: center;
 }
 
+footer a {
+  color: #1f202c;
+}
+
+footer a:visited {
+  color: #1f202c;
+}
