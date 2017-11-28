@@ -29,21 +29,24 @@ const extractPrintSass = new ExtractTextPlugin({
 const dist = resolve(__dirname, '../dist/')
 const src = resolve(__dirname, '../src/')
 
-const devPlugins = !devMode ? [] : [
+const additionalPlugins = !devMode ? [
+    new ImageOptimizePlugin()
+] : [
     new webpack.HotModuleReplacementPlugin()
 ]
 
-const fullPath = isPR
-    ? `https://tourainetech.github.io/${prNumber}/`
-    :'https://touraine.tech/'
+const base = isPR
+    ? `/${prNumber}/`
+    :`/`
 
+const fullPath = `https://tourainetech.github.io${base}`
 
 module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
         path    : dist,
         filename: '[name].[hash].js',
-        publicPath: isPR && !devMode ? `/${prNumber}/` : '/'
+        publicPath: !devMode ? base : '/'
     },
     module   : {
         rules: [
@@ -122,7 +125,10 @@ module.exports = {
         open       : true,
         overlay    : true,
     },
-    plugins  : devPlugins.concat([
+    plugins  : additionalPlugins.concat([
+        new webpack.DefinePlugin({
+            base: JSON.stringify(base),
+        }),
         new CleanPlugin(['dist'], {
             root: resolve(__dirname, '..')
         }),
@@ -130,9 +136,8 @@ module.exports = {
         new FaviconsWebpackPlugin(resolve(__dirname, '../img/logo_tnt.png')),
         new LinkMediaHtmlWebpackPlugin(),
         new webpack.HashedModuleIdsPlugin(),
-        new ImageOptimizePlugin(),
         extractSass,
-        extractPrintSass,
+        extractPrintSass
     ])
 }
 
