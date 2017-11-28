@@ -1,8 +1,10 @@
-const ghpages = require('gh-pages')
+const dir = process.env.WORKSPACE
 const path = require('path')
+console.log("dir : ", dir)
+const ghpages = require(path.join(dir, 'node_modules/gh-pages/lib/index.js'))
 
-const isPR = process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != 'false'
-const prNumber = process.env.TRAVIS_PULL_REQUEST
+const isPR = process.env.ghprbPullId && process.env.ghprbPullId != 'false'
+const prNumber = process.env.ghprbPullId
 const token = process.env.GITHUB_TOKEN
 deploy()
 
@@ -17,7 +19,7 @@ function deploy() {
         process.exit(0)
         return
     }
-    ghpages.publish(path.join(__dirname, '../dist'), {
+    ghpages.publish(path.join(dir, './dist'), {
         add   : true,
         branch: 'master',
         dest  : prNumber,
