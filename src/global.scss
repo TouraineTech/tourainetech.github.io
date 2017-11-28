@@ -445,6 +445,28 @@ a.link {
   }
 }
 
+#partenaires {
+  padding: 2rem;
+  h1 {
+    color: $BgColorDark;
+    font-size: 1.6rem;
+  }
+  h2 {
+    color: $BgColor;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 5pt;
+    text-align: center;
+  }
+  img {
+    max-width: 20%;
+    margin: 2rem;
+  }
+  div.bronze {
+    margin-bottom: 15px;
+  }
+}
+
 #participer {
   @extend %sectionSpace;
   background-color: $BgColor;
