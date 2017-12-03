@@ -8,6 +8,7 @@ const LinkMediaHtmlWebpackPlugin = require('link-media-html-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
 const ImageOptimizePlugin = require('imagemin-webpack-plugin').default
 
+/** Environment information */
 const devMode = process.env.NODE_ENV !== 'production'
 const isPR = process.env.ghprbPullId && process.env.ghprbPullId != "false"
 const prNumber = process.env.ghprbPullId
@@ -21,7 +22,6 @@ const extractSass = new ExtractTextPlugin({
 
 // To make LinkMediaHtmlWebpackPlugin add automatically the media...
 const encodedMediaPrint = `media_${new Buffer('print').toString('base64')}`
-
 const extractPrintSass = new ExtractTextPlugin({
     filename: `[name].[contenthash].${encodedMediaPrint}.css`,
 })
@@ -30,11 +30,14 @@ const dist = resolve(__dirname, '../dist/')
 const src = resolve(__dirname, '../src/')
 
 const additionalPlugins = !devMode ? [
+    /** Prod mod */
     new ImageOptimizePlugin()
 ] : [
+    /** Dev mod */
     new webpack.HotModuleReplacementPlugin()
 ]
 
+// Calculate base path when deployed.
 const base = isPR
     ? `/${prNumber}/`
     :`/`
@@ -69,6 +72,8 @@ module.exports = {
                     }, {
                         loader: 'sass-loader'
                     } ],
+                    // use style-loader in development
+                    fallback: 'style-loader'
                 })
             }, {
                 test   : /\.scss$/,
@@ -141,6 +146,7 @@ module.exports = {
     ])
 }
 
+/** Tools to handle all pages made in the project without configuring each one individually */
 function listAllPages() {
     return listFiles(resolve(__dirname, '../src'))
         .filter(f => f.match(/\.html$/))
