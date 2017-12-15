@@ -8,6 +8,7 @@ const LinkMediaHtmlWebpackPlugin = require('link-media-html-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
 const ImageOptimizePlugin = require('imagemin-webpack-plugin').default
 
+/** Environment information */
 const devMode = process.env.NODE_ENV !== 'production'
 const isPR = process.env.ghprbPullId && process.env.ghprbPullId != "false"
 const prNumber = process.env.ghprbPullId
@@ -21,7 +22,6 @@ const extractSass = new ExtractTextPlugin({
 
 // To make LinkMediaHtmlWebpackPlugin add automatically the media...
 const encodedMediaPrint = `media_${new Buffer('print').toString('base64')}`
-
 const extractPrintSass = new ExtractTextPlugin({
     filename: `[name].[contenthash].${encodedMediaPrint}.css`,
 })
@@ -29,21 +29,27 @@ const extractPrintSass = new ExtractTextPlugin({
 const dist = resolve(__dirname, '../dist/')
 const src = resolve(__dirname, '../src/')
 
-const devPlugins = !devMode ? [] : [
+const additionalPlugins = !devMode ? [
+    /** Prod mod */
+    new ImageOptimizePlugin()
+] : [
+    /** Dev mod */
     new webpack.HotModuleReplacementPlugin()
 ]
 
-const fullPath = isPR
-    ? `https://tourainetech.github.io/${prNumber}/`
-    :'https://touraine.tech/'
+// Calculate base path when deployed.
+const base = isPR
+    ? `/${prNumber}/`
+    :`/`
 
+const fullPath = `https://tourainetech.github.io${base}`
 
 module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
         path    : dist,
         filename: '[name].[hash].js',
-        publicPath: isPR && !devMode ? `/${prNumber}/` : '/'
+        publicPath: !devMode ? base : '/'
     },
     module   : {
         rules: [
@@ -66,6 +72,8 @@ module.exports = {
                     }, {
                         loader: 'sass-loader'
                     } ],
+                    // use style-loader in development
+                    fallback: 'style-loader'
                 })
             }, {
                 test   : /\.scss$/,
@@ -122,7 +130,10 @@ module.exports = {
         open       : true,
         overlay    : true,
     },
-    plugins  : devPlugins.concat([
+    plugins  : additionalPlugins.concat([
+        new webpack.DefinePlugin({
+            base: JSON.stringify(base),
+        }),
         new CleanPlugin(['dist'], {
             root: resolve(__dirname, '..')
         }),
@@ -130,12 +141,12 @@ module.exports = {
         new FaviconsWebpackPlugin(resolve(__dirname, '../img/logo_tnt.png')),
         new LinkMediaHtmlWebpackPlugin(),
         new webpack.HashedModuleIdsPlugin(),
-        new ImageOptimizePlugin(),
         extractSass,
-        extractPrintSass,
+        extractPrintSass
     ])
 }
 
+/** Tools to handle all pages made in the project without configuring each one individually */
 function listAllPages() {
     return listFiles(resolve(__dirname, '../src'))
         .filter(f => f.match(/\.html$/))

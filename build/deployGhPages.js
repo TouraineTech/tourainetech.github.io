@@ -1,9 +1,14 @@
-const ghpages = require('gh-pages')
 const path = require('path')
 
-const isPR = process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != 'false'
-const prNumber = process.env.TRAVIS_PULL_REQUEST
+const jenkinsWorkspace = process.env.WORKSPACE
+// Get ghpages module, from the workspace, scripts are note executed in the work space.
+const ghpages = require(path.join(jenkinsWorkspace, 'node_modules/gh-pages/lib/index.js'))
+
+/** Extract jenkins infomation on the actual build */
+const isPR = process.env.ghprbPullId && process.env.ghprbPullId != 'false'
+const prNumber = process.env.ghprbPullId
 const token = process.env.GITHUB_TOKEN
+
 deploy()
 
 function deploy() {
@@ -17,7 +22,8 @@ function deploy() {
         process.exit(0)
         return
     }
-    ghpages.publish(path.join(__dirname, '../dist'), {
+    ghpages.publish(path.join(jenkinsWorkspace, './dist'), {
+        // Important option ! Gives us the possibility to make incremental deploy !
         add   : true,
         branch: 'master',
         dest  : prNumber,
