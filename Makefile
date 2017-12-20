@@ -18,7 +18,7 @@ OK_COLOR=\033[33;32m
 ERR_COLOR=\033[33;31m
 INFO_COLOR=\033[33;01m
 
-all: build checkdb start
+all: build start
 
 build:
 	@echo "$(INFO_COLOR)Building $(IMAGE)...$(NO_COLOR)"
