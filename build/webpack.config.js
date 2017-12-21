@@ -126,6 +126,7 @@ module.exports = {
         inline     : true,
         compress   : true,
         contentBase: dist,
+        host: '0.0.0.0',
         port       : 4000,
         open       : true,
         overlay    : true,
