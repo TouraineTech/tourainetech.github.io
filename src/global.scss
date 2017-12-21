@@ -322,6 +322,9 @@ a.link {
     h1 {
       font-size: 2rem;
     }
+    h1 a {
+      color: $BgColor;
+    }
     @media (max-width: $tablet - 1) {
       padding: 4rem 2rem;
       h1 {
