@@ -140,6 +140,7 @@ a.link {
     padding: 15px;
     font-size: 1.1rem;
     color: $BgColorDark;
+    vertical-align: middle;
     &:hover {
       background-color: $BgColor;
       color: $textColor;
@@ -153,7 +154,7 @@ a.link {
   @media (max-width: $tablet - 1) {
     flex-direction: column-reverse;
     z-index: 9999;
-    box-shadow: 0 0px 5px #333;
+    box-shadow: 0 0 5px #333;
     .nav-bar {
       padding: 10px
     }
@@ -321,15 +322,47 @@ a.link {
     padding: 2rem 0;
     h1 {
       font-size: 2rem;
+      color: $BgColorLight;
+      > img {
+        width: 10rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+      }
+      > img:last-of-type {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      a {
+        text-decoration: none;
+        color: $BgColorLight;
+        background-color: $BgColor;
+        padding: 15px;
+      }
+      a:hover, a:active, a:focus {
+        color: $BgColor;
+        background-color: $BgColorLight;
+      }
     }
-    h1 a {
-      color: $BgColor;
+    h1:last-of-type {
+      margin-top: 2rem;
+      white-space: nowrap;
     }
     @media (max-width: $tablet - 1) {
       padding: 4rem 2rem;
       h1 {
         margin: 0;
         font-size: 1.3rem;
+        > img {
+          width: 5rem;
+          padding: 0 0.4rem;
+        }
+      }
+    }
+    @media (max-width: $phone - 1) {
+      h1 > img {
+        display: none;
       }
     }
   }
