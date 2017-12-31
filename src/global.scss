@@ -508,6 +508,7 @@ a.link {
 
 #partenaires {
   padding: 2rem;
+  article.sponsors,
   article.partenaires {
     display: flex;
     flex-direction: row;
@@ -534,6 +535,7 @@ a.link {
   }
 
   @media (max-width: $tablet - 1) {
+    article.sponsors,
     article.partenaires {
       flex-direction: column;
       h2.bronze {
