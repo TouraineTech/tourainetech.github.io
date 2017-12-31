@@ -93,7 +93,7 @@ a.link {
     h1 {
       @include title($BgColorDark, 1.2rem);
       margin-top: 0;
-        
+
     }
     > .link {
       color: $BgColorDark;
@@ -116,7 +116,7 @@ a.link {
     @media (min-width: $tablet) {
       display: none;
     }
-      
+
   }
 
   #nav-trigger {
@@ -140,6 +140,7 @@ a.link {
     padding: 15px;
     font-size: 1.1rem;
     color: $BgColorDark;
+    vertical-align: middle;
     &:hover {
       background-color: $BgColor;
       color: $textColor;
@@ -153,7 +154,7 @@ a.link {
   @media (max-width: $tablet - 1) {
     flex-direction: column-reverse;
     z-index: 9999;
-    box-shadow: 0 0px 5px #333;
+    box-shadow: 0 0 5px #333;
     .nav-bar {
       padding: 10px
     }
@@ -198,9 +199,9 @@ a.link {
     line-height: 1.5rem;
     font-weight: 400;
     font-size: 1rem;
-    padding: 0 .5em;  
+    padding: 0 .5em;
     opacity: .9;
- 
+
     @media (min-width: $tablet) {
       line-height: 2.8rem;
       font-weight: 500;
@@ -222,9 +223,9 @@ a.link {
     p{
       @media (max-width: $phone - 1) {
         font-size: 1rem;
-      }          
-    }  
-      
+      }
+    }
+
     .date p {
       color: $BgColor;
       font-size: 1.4rem;
@@ -302,7 +303,7 @@ a.link {
           padding: 0 0.2rem;
           font-size: .7rem;
           text-align: center;
-            
+
           @media (max-width: $phone - 1) {
             font-size: .9rem;
           }
@@ -321,12 +322,47 @@ a.link {
     padding: 2rem 0;
     h1 {
       font-size: 2rem;
+      color: $BgColorLight;
+      > img {
+        width: 10rem;
+        padding: 0 2rem;
+        vertical-align: middle;
+      }
+      > img:last-of-type {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      a {
+        text-decoration: none;
+        color: $BgColorLight;
+        background-color: $BgColor;
+        padding: 15px;
+      }
+      a:hover, a:active, a:focus {
+        color: $BgColor;
+        background-color: $BgColorLight;
+      }
+    }
+    h1:last-of-type {
+      margin-top: 2rem;
+      white-space: nowrap;
     }
     @media (max-width: $tablet - 1) {
       padding: 4rem 2rem;
       h1 {
         margin: 0;
         font-size: 1.3rem;
+        > img {
+          width: 5rem;
+          padding: 0 0.4rem;
+        }
+      }
+    }
+    @media (max-width: $phone - 1) {
+      h1 > img {
+        display: none;
       }
     }
   }
@@ -420,7 +456,7 @@ a.link {
       padding-bottom: 0.6rem;
       font-size: .8rem;
       line-height: 1.5rem;
-        
+
       @media (max-width: $phone - 1) {
         font-size: 1rem;
       }
@@ -439,10 +475,10 @@ a.link {
     font-size: 1.2rem;
     line-height: 1.8rem;
     width: 80%;
-      
+
     @media (max-width: $phone - 1) {
-      font-size: 1rem;      
-    }  
+      font-size: 1rem;
+    }
   }
   img {
     width: 10%;
@@ -458,7 +494,7 @@ a.link {
       width: 100%;
       padding: 0;
       font-size: .8rem;
-      line-height: 1.5rem;    
+      line-height: 1.5rem;
     }
     img {
       width: 20%;
@@ -516,9 +552,9 @@ a.link {
   }
   p {
     font-size: 1.2rem;
-      
+
     @media (max-width: $phone - 1) {
-        font-size: 1rem;  
+      font-size: 1rem;
     }
   }
   .map-responsive {
@@ -541,18 +577,18 @@ a.link {
   }
   a, a:hover {
     margin: 0 1rem;
-      
+
     .logo_link {
       width: 5vw;
       height: auto;
       vertical-align: middle;
       padding-right: 5px;
-          
+
       @media (max-width: $tablet - 1) {
-        width: 10vw;  
-      }          
+        width: 10vw;
+      }
       @media (max-width: $phone - 1) {
-        width: 15vw;  
+        width: 15vw;
       }
     }
   }
