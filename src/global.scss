@@ -511,7 +511,7 @@ a.link {
   article.sponsors,
   article.partenaires {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   h1 {
     color: $BgColorDark;
