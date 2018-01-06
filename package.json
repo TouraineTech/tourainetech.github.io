@@ -16,6 +16,7 @@
     "core-js": "^2.5.1",
     "intersection-observer": "^0.4.2",
     "lozad": "^1.0.2",
+    "moment": "^2.20.1",
     "promise-polyfill": "^6.0.2"
   },
   "devDependencies": {
@@ -35,7 +36,9 @@
     "html-webpack-inline-svg-plugin": "^0.2.2",
     "html-webpack-plugin": "^2.30.1",
     "imagemin-webpack-plugin": "^1.5.2",
+    "js-yaml": "^3.10.0",
     "link-media-html-webpack-plugin": "^1.0.1",
+    "markdown-loader": "^2.0.1",
     "node-sass": "^4.6.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",

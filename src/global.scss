@@ -646,3 +646,45 @@ footer a {
 footer a:visited {
   color: #1f202c;
 }
+
+/**
+ * News
+ */
+
+.news {
+  color: $BgColorDark;
+  .news-list {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .news-item {
+      width: 30%;
+    }
+  }
+
+  .news-item {
+    text-align: left;
+    .news-item-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 0;
+      h1 {
+        margin: 0;
+      }
+      & > * {
+        padding-right: 10px;
+      }
+    }
+  }
+  .link {
+    text-decoration: none;
+    color: $textColor;
+    background-color: $BgColor;
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
