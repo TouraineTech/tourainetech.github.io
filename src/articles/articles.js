@@ -3,7 +3,7 @@ import { articlesDatesToMomentDates } from './utils/articlesDatesToMomentDates'
 
 const mdRequire = require.context('./content', true, /\.md/)
 
-module.exports = mdRequire
+export default mdRequire
     .keys()
     .map(mdRequire)
     .map(articlesDatesToMomentDates)
