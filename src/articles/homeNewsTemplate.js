@@ -19,13 +19,8 @@ export default function template(article) {
             </div>
             
             <footer class="news-item-footer">
-                <button class="read-more">Lire plus</button>
+                <a href="news.html#${article.meta.title}" class="read-more">Lire plus</a>
             </footer>
-            
-            <article class="modal-content news-item">
-                ${ header }
-                ${ article.content }
-            </article>
         </article>
     `
 }

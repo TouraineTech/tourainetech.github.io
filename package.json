@@ -17,7 +17,6 @@
     "intersection-observer": "^0.4.2",
     "lozad": "^1.0.2",
     "moment": "^2.20.1",
-    "picomodal": "^3.0.0",
     "promise-polyfill": "^6.0.2",
     "siema": "^1.4.9"
   },

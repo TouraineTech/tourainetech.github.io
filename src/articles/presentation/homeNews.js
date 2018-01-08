@@ -1,5 +1,4 @@
 import Siema from 'siema'
-import picomodal from 'picomodal'
 
 const perPage = 2
 const timeBetweenTwoNews = 10000
@@ -28,17 +27,3 @@ function changeSlideAfterTime() {
 function changeSlide(carousel) {
     carousel.next()
 }
-
-const slides = [ ...document.querySelectorAll('.news-previews-list .news-item:not(.modal-content)') ]
-
-slides.forEach((slide) => {
-    const modalContent = slide.querySelector('.modal-content')
-
-    const modal = picomodal(modalContent.outerHTML)
-
-    slide
-        .querySelector('.read-more')
-        .addEventListener('click', (event) => {
-            modal.show()
-        })
-})
