@@ -4,7 +4,7 @@ export default function template(article) {
             <header class="news-item-header">
                 ${
                     article.meta.title
-                        ? `<h1>${article.meta.title}</h1>`
+                        ? `<a id="${article.meta.title}" href="news.html?#${article.meta.title}"><h1>${article.meta.title}</h1></a>`
                         : ''
                 }
                 <span>Publié le : ${ article.creationDate.format('YYYY-MM-DD') }</span>
