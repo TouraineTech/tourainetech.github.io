@@ -4,7 +4,9 @@
 /**
  * Globals
  */
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   padding: 0;
@@ -220,7 +222,7 @@ a.link {
     padding: 3rem 0;
     margin-bottom: 0;
 
-    p{
+    p {
       @media (max-width: $phone - 1) {
         font-size: 1rem;
       }
@@ -601,7 +603,7 @@ a.link {
   h1 {
     @include title($BgColorLight, 2rem);
   }
-  p{
+  p {
     font-size: 1.2rem;
   }
   background-color: $BgColorDark;
@@ -630,7 +632,6 @@ a.link {
   }
 }
 
-
 /**
  * Footer
  */
@@ -645,4 +646,60 @@ footer a {
 
 footer a:visited {
   color: #1f202c;
+}
+
+/**
+ * News
+ */
+
+.news {
+  color: $BgColorDark;
+  .news-previews-list {
+    width: 100%;
+  }
+  .link {
+    text-decoration: none;
+    color: $textColor;
+    background-color: $BgColor;
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+.news-item {
+  color: $BgColorDark;
+  text-align: left;
+
+  &:not(.modal-content) {
+    padding: 10px;
+  }
+
+  .news-item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    h1 {
+      margin: 0;
+    }
+    & > * {
+      padding-right: 10px;
+    }
+  }
+
+  .news-item-footer {
+    text-align: right;
+  }
+
+  .modal-content {
+    display: none;
+  }
+
+  .read-more {
+    text-decoration: none;
+    color: $textColor;
+    background-color: $BgColor;
+    font-size: 1rem;
+    padding: 7px;
+  }
 }

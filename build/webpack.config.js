@@ -10,7 +10,7 @@ const ImageOptimizePlugin = require('imagemin-webpack-plugin').default
 
 /** Environment information */
 const devMode = process.env.NODE_ENV !== 'production'
-const isPR = process.env.ghprbPullId && process.env.ghprbPullId != "false"
+const isPR = process.env.ghprbPullId && process.env.ghprbPullId != 'false'
 const prNumber = process.env.ghprbPullId
 
 
@@ -40,15 +40,15 @@ const additionalPlugins = !devMode ? [
 // Calculate base path when deployed.
 const base = isPR
     ? `/${prNumber}/`
-    :`/`
+    : `/`
 
 const fullPath = `https://tourainetech.github.io${base}`
 
 module.exports = {
     entry    : resolve(src, 'index.js'),
     output   : {
-        path    : dist,
-        filename: '[name].[hash].js',
+        path      : dist,
+        filename  : '[name].[hash].js',
         publicPath: !devMode ? base : '/'
     },
     module   : {
@@ -89,17 +89,22 @@ module.exports = {
                     // use style-loader in development
                     fallback: 'style-loader'
                 })
-            },{
+            }, {
                 test: /\.html$/,
                 use : {
                     loader: 'html-loader?interpolate'
                 }
             }, {
-                test: /\.(svg|png|jpe?g)$/,
+                test: /\.md/,
+                use : {
+                    loader: resolve(__dirname, './loaders/article.js')
+                }
+            }, {
+                test : /\.(svg|png|jpe?g)$/,
                 oneOf: [
                     {
                         resourceQuery: /absolute/,
-                        use : {
+                        use          : {
                             loader : 'file-loader',
                             options: {
                                 outputPath: 'static/',
@@ -109,7 +114,7 @@ module.exports = {
                             }
                         }
                     }, {
-                        use : {
+                        use: {
                             loader : 'file-loader',
                             options: {
                                 outputPath: 'static/',
@@ -126,7 +131,7 @@ module.exports = {
         inline     : true,
         compress   : true,
         contentBase: dist,
-        host: '0.0.0.0',
+        host       : '0.0.0.0',
         port       : 4000,
         open       : true,
         overlay    : true,
@@ -135,7 +140,7 @@ module.exports = {
         new webpack.DefinePlugin({
             base: JSON.stringify(base),
         }),
-        new CleanPlugin(['dist'], {
+        new CleanPlugin([ 'dist' ], {
             root: resolve(__dirname, '..')
         }),
         ...listAllPages(),
