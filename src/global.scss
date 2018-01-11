@@ -659,8 +659,13 @@ footer a:visited {
 
 .news {
   color: $BgColorDark;
+  padding: 40px 20px;
+  h1 {
+    font-size: 2rem;
+  }
   .news-previews-list {
     width: 100%;
+    margin: 20px 0;
   }
   .link {
     text-decoration: none;
@@ -674,6 +679,7 @@ footer a:visited {
 .news-item {
   color: $BgColorDark;
   text-align: left;
+  padding: 0 20px;
 
   &:not(.modal-content) {
     padding: 10px;
@@ -684,16 +690,32 @@ footer a:visited {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
+    flex-direction: column;
     h1 {
-      margin: 0;
+      font-size: 1.8em;
+      color: $BgColorDark;
+      text-align: center;
+      margin: 0 0 10px 0;
     }
     & > * {
       padding-right: 10px;
     }
   }
 
+  .news-item-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    p {
+      padding: 0 5px;
+    }
+    img {
+      width: 100px;
+    }
+  }
+
   .news-item-footer {
-    text-align: right;
+    text-align: center;
   }
 
   .read-more {
