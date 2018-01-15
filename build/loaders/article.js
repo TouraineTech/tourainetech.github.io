@@ -3,8 +3,6 @@ const { statSync } = require('fs')
 const { resolve } = require('path')
 
 const loaders = [ 'html-loader', 'markdown-loader', resolve(__dirname, './removeMeta.js') ]
-const globalBackslashMatcher = /\\/g
-const escapedBackspaces = '\\\\'
 
 loaders.forEach(
     checkIfLoaderIsInstalled
@@ -20,11 +18,10 @@ module.exports = function articleLoader(content) {
 
     const meta = parseMeta(content, defaultsMeta)
 
-    const windowsCompliantPath = resourcePath.replace(globalBackslashMatcher, escapedBackspaces)
-
+    const loadersString = loaders.join('!')
     return `module.exports = {
         meta   : ${JSON.stringify(meta)},
-        content: require('!!${loaders.join('!')}!${windowsCompliantPath}')
+        content: require('!!${escapeString(loaders.join('!'))}!${escapeString(resourcePath)}')
     }`
 }
 
@@ -42,4 +39,8 @@ function parseMeta(content, defaultsMeta) {
         defaultsMeta,
         getMeta(content), // Allows dates defaults overload
     )
+}
+
+function escapeString(s) {
+    return JSON.stringify(s).slice(1, -1);
 }
