@@ -29,7 +29,7 @@
   }
 }
 
-$cellSize: 8rem;
+$cellSize: 11rem;
 .agenda-resource .agenda-event {
   flex: 1;
 
@@ -42,9 +42,18 @@ $cellSize: 8rem;
   flex: 1;
 
   @media (min-width: $tablet) {
-    flex-basis: 2*$cellSize;
-    margin-bottom: 2*$cellSize;
+    flex-basis: 2.25 * $cellSize;
   }
+}
+
+.agenda-TD .agenda-event.keynote {
+  flex: 1;
+  @media (min-width: $tablet) {
+    flex-basis: $cellSize;
+    background-color: $BgColorDark;
+    border: none;
+  }
+  .agenda-hours {display: none;}
 }
 
 .agenda-event {
@@ -58,6 +67,21 @@ $cellSize: 8rem;
   h1 {
     margin: auto;
   }
+}
+
+.agenda-event.lightning {
+  flex-basis: $cellSize / 2;
+  p {
+    margin: 0;
+  }
+}
+
+.agenda-event.break {
+  background-color: $BgColorDark;
+  border: none;
+  flex-basis: $cellSize / 4;
+
+  .agenda-hours {display: none;}
 }
 
 .description-content dd p {
