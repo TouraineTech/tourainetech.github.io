@@ -27,11 +27,12 @@
   }
 }
 
+$cellSize: 8rem;
 .agenda-resource .agenda-event {
   flex: 1;
 
   @media (min-width: $tablet) {
-    flex-basis: 90px;
+    flex-basis: $cellSize;
   }
 }
 
@@ -39,8 +40,8 @@
   flex: 1;
 
   @media (min-width: $tablet) {
-    flex-basis: 180px;
-    margin-bottom: 180px;
+    flex-basis: 2*$cellSize;
+    margin-bottom: 2*$cellSize;
   }
 }
 
