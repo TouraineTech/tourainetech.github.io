@@ -18,7 +18,7 @@ const agendaPartial = agenda
     .map(resourceTemplate)
     .join('');
 
-module.exports = `<section class="agenda">
+module.exports = `<section id="agenda" class="agenda">
     <h1>Agenda</h1>
     <div class="agenda-content">
         ${agendaPartial}
