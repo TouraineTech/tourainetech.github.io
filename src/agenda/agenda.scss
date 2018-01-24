@@ -1,5 +1,7 @@
 @import "../variables";
-
+.content > section.agenda {
+  background-color: $BgColorDark;
+}
 .agenda-content {
   display: flex;
   flex-direction: column;
