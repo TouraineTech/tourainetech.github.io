@@ -1,0 +1,61 @@
+@import "../variables";
+.content > section.agenda {
+  background-color: $BgColorDark;
+}
+.agenda-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  padding: 15px;
+  .agenda-resource {
+    flex: 1;
+  }
+}
+
+.agenda-resource {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin: 2px;
+
+  > h1 {
+    flex: 0;
+  }
+}
+
+$cellSize: 8rem;
+.agenda-resource .agenda-event {
+  flex: 1;
+
+  @media (min-width: $tablet) {
+    flex-basis: $cellSize;
+  }
+}
+
+.agenda-TD .agenda-event {
+  flex: 1;
+
+  @media (min-width: $tablet) {
+    flex-basis: 2*$cellSize;
+    margin-bottom: 2*$cellSize;
+  }
+}
+
+.agenda-event {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $BgColor;
+  border: 1px solid $bgtablegold;
+  padding: 10px;
+
+  h1 {
+    margin: auto;
+  }
+}

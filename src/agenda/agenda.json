@@ -1,0 +1,354 @@
+{
+  "resources": [
+    {
+      "id": "33",
+      "title": "Turing ( 140 places )"
+    },
+    {
+      "id": "34",
+      "title": "Pascal ( 120 places )"
+    },
+    {
+      "id": "35",
+      "title": "LoveLace ( 60 places )"
+    },
+    {
+      "id": "53",
+      "title": "TD 1"
+    },
+    {
+      "id": "54",
+      "title": "TD 2"
+    }
+  ],
+  "events": [
+    {
+      "id": "2456",
+      "resourceId": "33",
+      "start": "2018-02-23T10:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T10:55:00Z",
+      "color": "#6c0762",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Les Vendredis noirs : même pas peur !",
+      "slides": "https://speakerdeck.com/elastic/polycon-dot-io-bcn-managing-your-black-friday-logs"
+    },
+    {
+      "id": "2461",
+      "resourceId": "35",
+      "start": "2018-02-23T12:45:00Z",
+      "duration": 15,
+      "end": "2018-02-23T13:00:00Z",
+      "color": "#6c0762",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "Byte Buddy, la génération de bytecode facile !",
+      "slides": "https://ncomet.github.io/devoxxfr2017-bytebuddy/bytebuddy.html",
+      "videos": "https://youtu.be/UpH2YwpKXOs"
+    },
+    {
+      "id": "2484",
+      "resourceId": "35",
+      "start": "2018-02-23T14:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T15:15:00Z",
+      "color": "#b60317",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Les formes narratives : propriétés formelles des récits"
+    },
+    {
+      "id": "2498",
+      "resourceId": "33",
+      "start": "2018-02-23T12:45:00Z",
+      "duration": 15,
+      "end": "2018-02-23T13:00:00Z",
+      "color": "#2c3042",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "10 conseils pour réussir ses premiers pas en DDD",
+      "slides": "https://binout.github.io/ten-tips-gs-ddd/",
+      "videos": "https://www.youtube.com/watch?v=E-z3PwAVRHs&list=PL4Z_Bm3ccVwdr6AY0_MIMOmzHkYUdeOX-"
+    },
+    {
+      "id": "2499",
+      "resourceId": "35",
+      "start": "2018-02-23T12:20:00Z",
+      "duration": 15,
+      "end": "2018-02-23T12:35:00Z",
+      "color": "#0095a5",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "Let’s Sketchnote : prise de notes visuelle",
+      "slides": "https://github.com/anediaz/lets-sketchnote/tree/master/Touraine%20Tech%202018",
+      "videos": "https://youtu.be/bsx8V0NZULA"
+    },
+    {
+      "id": "2506",
+      "resourceId": "34",
+      "start": "2018-02-23T12:45:00Z",
+      "duration": 15,
+      "end": "2018-02-23T13:00:00Z",
+      "color": "#0095a5",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "Jenkins 2 : Le retour (d'expérience)"
+    },
+    {
+      "id": "2526",
+      "resourceId": "33",
+      "start": "2018-02-23T11:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T11:55:00Z",
+      "color": "#6c0762",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Don't be afraid by Jigsaw! What's new with Java 9?"
+    },
+    {
+      "id": "2571",
+      "resourceId": "34",
+      "start": "2018-02-23T12:20:00Z",
+      "duration": 15,
+      "end": "2018-02-23T12:35:00Z",
+      "color": "#80cfc6",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "Tous UX designers !",
+      "slides": "https://speakerdeck.com/scharrier/tous-ux-designers",
+      "videos": "https://www.youtube.com/watch?v=6c6CEPuY_3o"
+    },
+    {
+      "id": "2619",
+      "resourceId": "35",
+      "start": "2018-02-23T11:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T11:55:00Z",
+      "color": "#ffe711",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Ce que j'aurais aimé savoir en me lançant dans la domotique",
+      "slides": "https://t.co/30IJ7Ueg78",
+      "videos": "https://t.co/XfXDG6e5tj"
+    },
+    {
+      "id": "2733",
+      "resourceId": "33",
+      "start": "2018-02-23T14:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T15:15:00Z",
+      "color": "#f16a28",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "The bleeding web is coming !"
+    },
+    {
+      "id": "2747",
+      "resourceId": "35",
+      "start": "2018-02-23T10:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T10:55:00Z",
+      "color": "#0095a5",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Guide anti-frustration pour navigation en projet trouble"
+    },
+    {
+      "id": "2848",
+      "resourceId": "53",
+      "start": "2018-02-23T10:10:00Z",
+      "duration": 105,
+      "end": "2018-02-23T11:55:00Z",
+      "color": "#0095a5",
+      "format": "Hands On",
+      "icon": "wrench",
+      "title": "Epic Legacy Code Challenge"
+    },
+    {
+      "id": "2860",
+      "resourceId": "35",
+      "start": "2018-02-23T13:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T14:15:00Z",
+      "color": "#2c3042",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Le web décentralisé, comment ça marche ?",
+      "slides": "https://docs.google.com/presentation/d/1hRQybPD5vw1ZeL5bkFGVp-77mLEpsqJFS0vlGwkhyJg/edit?usp=sharing"
+    },
+    {
+      "id": "2869",
+      "resourceId": "34",
+      "start": "2018-02-23T13:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T14:15:00Z",
+      "color": "#80cfc6",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "A quoi ressemblera le métier de designer demain ?"
+    },
+    {
+      "id": "2879",
+      "resourceId": "33",
+      "start": "2018-02-23T16:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T17:30:00Z",
+      "color": "#6c0762",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "From a french monolith to a worldwide platform: a human story",
+      "slides": "https://fr.slideshare.net/tsunammis/how-we-scale-up-our-architecture-and-organization-at-dailymotion/tsunammis/how-we-scale-up-our-architecture-and-organization-at-dailymotion"
+    },
+    {
+      "id": "2889",
+      "resourceId": "34",
+      "start": "2018-02-23T10:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T10:55:00Z",
+      "color": "#2c3042",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Hexagonal Architecture for Dummies",
+      "slides": "https://drive.google.com/open?id=0B4KTOFlyLP1xWTEyMGJtVWFNMmM"
+    },
+    {
+      "id": "2915",
+      "resourceId": "34",
+      "start": "2018-02-23T11:10:00Z",
+      "duration": 45,
+      "end": "2018-02-23T11:55:00Z",
+      "color": "#f16a28",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "The Web Components interoperability challenge",
+      "videos": "https://www.youtube.com/watch?v=YdTrMOpUMfY"
+    },
+    {
+      "id": "2917",
+      "resourceId": "54",
+      "start": "2018-02-23T13:30:00Z",
+      "duration": 105,
+      "end": "2018-02-23T15:15:00Z",
+      "color": "#6c0762",
+      "format": "Hands On",
+      "icon": "wrench",
+      "title": "Kubernetes sans les moufles"
+    },
+    {
+      "id": "2986",
+      "resourceId": "34",
+      "start": "2018-02-23T15:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T16:30:00Z",
+      "color": "#f16a28",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "mobx-state-tree, ne vous mettez plus dans tous vos états !",
+      "slides": "https://docs.google.com/presentation/d/1GoHkiHX7LgyHSp-Y7EWH_Rpb6s4m1Sbl593YKGG89Co/edit#slide=id.g35f391192_00",
+      "videos": "https://www.youtube.com/watch?v=dmVFTX4Wyyo"
+    },
+    {
+      "id": "2995",
+      "resourceId": "33",
+      "start": "2018-02-23T13:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T14:15:00Z",
+      "color": "#6c0762",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "HTTP/2 en pratique"
+    },
+    {
+      "id": "3022",
+      "resourceId": "54",
+      "start": "2018-02-23T10:10:00Z",
+      "duration": 105,
+      "end": "2018-02-23T11:55:00Z",
+      "color": "#6c0762",
+      "format": "Hands On",
+      "icon": "wrench",
+      "title": "Kotlin : Le back du futur - Le codelab"
+    },
+    {
+      "id": "3046",
+      "resourceId": "53",
+      "start": "2018-02-23T13:30:00Z",
+      "duration": 105,
+      "end": "2018-02-23T15:15:00Z",
+      "color": "#0095a5",
+      "format": "Hands On",
+      "icon": "wrench",
+      "title": "Real world evolutionary design with python"
+    },
+    {
+      "id": "3062",
+      "resourceId": "35",
+      "start": "2018-02-23T15:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T16:30:00Z",
+      "color": "#6c0762",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Lagom : un framework CQRS, pour votre projet de lundi prochain, bonne idée ou pas?"
+    },
+    {
+      "id": "3077",
+      "resourceId": "35",
+      "start": "2018-02-23T16:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T17:30:00Z",
+      "color": "#0095a5",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "How to quit ssh in 90 days"
+    },
+    {
+      "id": "3092",
+      "resourceId": "34",
+      "start": "2018-02-23T16:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T17:30:00Z",
+      "color": "#0095a5",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Comment être un développeur ethique et green ? Dilemne entre la course technologique et mon impact sur la société."
+    },
+    {
+      "id": "3101",
+      "resourceId": "33",
+      "start": "2018-02-23T15:45:00Z",
+      "duration": 45,
+      "end": "2018-02-23T16:30:00Z",
+      "color": "#0095a5",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Documentation as code (expliqué à mon père)"
+    },
+    {
+      "id": "3147",
+      "resourceId": "33",
+      "start": "2018-02-23T12:20:00Z",
+      "duration": 15,
+      "end": "2018-02-23T12:35:00Z",
+      "color": "#f16a28",
+      "format": "Lightning Talk",
+      "icon": "comments-o",
+      "title": "Donner du sens à vos pages web avec Schema.org",
+      "slides": "https://speakerdeck.com/agarreau/donner-du-sens-a-vos-pages-web-avec-schema-dot-org",
+      "videos": "https://www.youtube.com/watch?time_continue=1&v=SVrgarg3KNs"
+    },
+    {
+      "id": "3212",
+      "resourceId": "34",
+      "start": "2018-02-23T14:30:00Z",
+      "duration": 45,
+      "end": "2018-02-23T15:15:00Z",
+      "color": "#2c3042",
+      "format": "Conf",
+      "icon": "slideshare",
+      "title": "Philosophie Fonctionnelle",
+      "slides": "https://speakerdeck.com/lilobase/philosophie-fonctionnelle-meetup-craftingsw-paris-2016"
+    }
+  ]
+}
