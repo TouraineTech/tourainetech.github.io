@@ -1,5 +1,5 @@
 @import "../variables";
-.content > section.agenda {
+.content > section.agenda, .content > section.talkDescription {
   background-color: $BgColorDark;
 }
 .agenda-content {
@@ -58,4 +58,9 @@ $cellSize: 8rem;
   h1 {
     margin: auto;
   }
+}
+
+.description-content dd p {
+  text-align: justify;
+  margin-right: 5vw;
 }

@@ -31,7 +31,8 @@ function eventTemplate(event) {
             <span class="agenda-hours">
                 ${moment(event.start).format('HH:mm')}
             </span>
-            <h1>${event.title}</h1>
+            <h1><a href="agenda.html#${event.id}">${event.title}</a></h1>
+            <h1>${event.speakers}</h1>
         </article>
     `);
 }
