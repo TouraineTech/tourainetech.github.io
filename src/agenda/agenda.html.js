@@ -30,7 +30,7 @@ function eventTemplate(event) {
         <article class="agenda-event ${event.formatType}">
             <div class="agenda-event-wrapper">
                 <span class="agenda-hours">
-                    ${moment(event.start).format('HH:mm')}
+                    ${moment(event.start).utcOffset(1).format('HH:mm')}
                 </span>
                 <h1>${event.id ? `<a href="agenda.html#${event.id}">${event.title}</a>` : event.title}</h1>
                 <p>${event.speakers}</p>
