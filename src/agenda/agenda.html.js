@@ -27,11 +27,14 @@ module.exports = `<section id="agenda" class="agenda">
 
 function eventTemplate(event) {
     return trim(`
-        <article class="agenda-event">
-            <span class="agenda-hours">
-                ${moment(event.start).format('HH:mm')}
-            </span>
-            <h1>${event.title}</h1>
+        <article class="agenda-event ${event.formatType}">
+            <div class="agenda-event-wrapper">
+                <span class="agenda-hours">
+                    ${moment(event.start).format('HH:mm')}
+                </span>
+                <h1>${event.id ? `<a href="agenda.html#${event.id}">${event.title}</a>` : event.title}</h1>
+                <p>${event.speakers}</p>
+            </div>
         </article>
     `);
 }

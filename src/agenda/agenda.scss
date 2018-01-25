@@ -1,5 +1,5 @@
 @import "../variables";
-.content > section.agenda {
+.content > section.agenda, .content > section.talkDescription {
   background-color: $BgColorDark;
 }
 .agenda-content {
@@ -29,7 +29,7 @@
   }
 }
 
-$cellSize: 8rem;
+$cellSize: 11rem;
 .agenda-resource .agenda-event {
   flex: 1;
 
@@ -42,12 +42,30 @@ $cellSize: 8rem;
   flex: 1;
 
   @media (min-width: $tablet) {
-    flex-basis: 2*$cellSize;
-    margin-bottom: 2*$cellSize;
+    flex-basis: 2.25 * $cellSize;
   }
 }
 
+.agenda-TD .agenda-event.keynote {
+  flex: 1;
+    @media (min-width: $tablet) {
+      flex-basis: $cellSize;
+      .agenda-event-wrapper {
+        background-color: $BgColorDark;
+        border: none;
+      }
+    }
+  .agenda-hours {display: none;}
+}
+
 .agenda-event {
+  display: flex;
+  flex-direction: column;
+}
+
+.agenda-event-wrapper {
+  flex: 1;
+
   display: flex;
   flex-direction: column;
 
@@ -58,4 +76,34 @@ $cellSize: 8rem;
   h1 {
     margin: auto;
   }
+}
+
+.agenda-event.lightning {
+  flex-basis: $cellSize / 1.5;
+  p {
+    margin: 0;
+  }
+}
+.agenda-event.lightning-break {
+  flex-basis: $cellSize / 1.5;
+  .agenda-event-wrapper {
+    display: none;
+  }
+}
+
+.agenda-event.break {
+  flex-basis: $cellSize / 4;
+  max-height: $cellSize / 4;
+
+  .agenda-event-wrapper {
+    background-color: $BgColorDark;
+    border: none;
+  }
+
+  .agenda-hours {display: none;}
+}
+
+.description-content dd p {
+  text-align: justify;
+  margin-right: 5vw;
 }
