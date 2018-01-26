@@ -61,6 +61,10 @@ $cellSize: 11rem;
 .agenda-event {
   display: flex;
   flex-direction: column;
+  background-color: $BgColor;
+  &.keynote .agenda-event-wrapper{
+    border-bottom-width: 0;
+  }
 }
 
 .agenda-event-wrapper {
@@ -70,11 +74,16 @@ $cellSize: 11rem;
   flex-direction: column;
 
   background-color: $BgColor;
-  border: 1px solid $bgtablegold;
   padding: 10px;
+
+  border-bottom-width: 1rem;
+  border-bottom-style: solid;
 
   h1 {
     margin: auto;
+  }
+  a{
+    color: $textColor;
   }
 }
 
@@ -103,7 +112,14 @@ $cellSize: 11rem;
   .agenda-hours {display: none;}
 }
 
-.description-content dd p {
-  text-align: justify;
-  margin-right: 5vw;
+.description-content {
+  dd {
+    border-left-width: 1rem;
+    border-left-style: solid;
+    padding-left: 1rem;
+    p {
+      text-align: justify;
+      margin-right: 5vw;
+    }
+  }
 }

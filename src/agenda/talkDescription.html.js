@@ -18,7 +18,7 @@ function eventTemplate(event) {
         <dt id="${event.id}" class="agenda-event">
             <h1>${event.title} par ${event.speakers}</h1>
         </dt>
-        <dd>
+        <dd style="border-color: ${event.color}">
             <p class="format">${event.format}</p>
             <p class="type">${event.event_type}</p>
             <p>${cariageReturn(event.description)}</p>

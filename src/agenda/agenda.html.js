@@ -28,7 +28,7 @@ module.exports = `<section id="agenda" class="agenda">
 function eventTemplate(event) {
     return trim(`
         <article class="agenda-event ${event.formatType}">
-            <div class="agenda-event-wrapper">
+            <div class="agenda-event-wrapper" style="border-bottom-color: ${event.color}"  title="${event.event_type}">
                 <span class="agenda-hours">
                     ${moment(event.start).utcOffset(1).format('HH:mm')}
                 </span>
