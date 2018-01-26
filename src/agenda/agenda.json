@@ -162,7 +162,7 @@
       "format": "Lightning Talk", "formatType" : "lightning", 
       "icon": "comments-o",
       "title": "Jenkins 2 : Le retour (d'expérience)",
-      "description": "L'intégration continue est au cœur du processus de construction et livraison des applications chez Harmonie Mutuelle. JENKINS a apporté dans sa nouvelle version majeure ( la 2 ) un grand nombre de fonctionnalités. \n\nCourant 2017, nous avons évolué notre plateforme et décidé de les intégrer en utilisant les pipelines.\n\nDans cette présentation, je vous ferai un retour d'expérience de notre processus de construction des applications et de notre migration vers JENKINS 2 ( les gains, difficultés et choix de conception ).",
+      "description": "L'intégration continue est au cœur du processus de construction et livraison des applications chez Harmonie Mutuelle. JENKINS a apporté dans sa nouvelle version majeure ( la 2 ) un grand nombre de fonctionnalités. \n\nCourant 2017, nous avons fait évoluer notre plateforme et décidé de les intégrer en utilisant les pipelines.\n\nDans cette présentation, je vous ferai un retour d'expérience de notre processus de construction des applications et de notre migration vers JENKINS 2 ( les gains, difficultés et choix de conception ).",
       "speakers": "Alexandre TOURET",
       "language": "Français",
       "event_type": "Outillage, pratiques de développement"
