@@ -543,6 +543,13 @@ a.link {
     }
   }
 
+  #becomeSponsorLink {
+    text-decoration: none;
+    color: #fff;
+    background-color: $BgColor;
+    padding: 15px;
+  }
+
   @media (max-width: $tablet - 1) {
     article.sponsors,
     article.partenaires {
