@@ -95,6 +95,8 @@ $cellSize: 11rem;
 }
 .agenda-event.lightning-break {
   flex-basis: $cellSize / 1.5;
+  background-color: $BgColorDark;
+  border: none;
   .agenda-event-wrapper {
     display: none;
   }
@@ -122,4 +124,10 @@ $cellSize: 11rem;
       margin-right: 5vw;
     }
   }
+}
+
+.agenda-event.noContent div {
+  background-color: $BgColorDark;
+  border: none;
+  .agenda-hours {display: none;}
 }
