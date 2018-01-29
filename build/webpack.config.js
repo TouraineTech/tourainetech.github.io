@@ -42,7 +42,9 @@ const base = isPR
     ? `/${prNumber}/`
     :`/`
 
-const fullPath = `https://tourainetech.github.io${base}`
+const fullPath = isPR 
+    ? `https://tourainetech.github.io${base}`
+    : `https://touraine.tech${base}`
 
 module.exports = {
     entry    : resolve(src, 'index.js'),
