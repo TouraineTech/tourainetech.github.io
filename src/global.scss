@@ -1,5 +1,6 @@
 @import "sponsors";
 @import "variables";
+@import "agenda/agenda";
 
 /**
  * Globals
@@ -267,11 +268,13 @@ a.link {
       }
     }
   }
+}
 
-  & .presentation-event {
+section#event {
+  .presentation-event {
     display: flex;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 4rem 0;
     margin: 0;
     color: $BgColorDark;
     background-color: $BgColorLight;
@@ -324,7 +327,10 @@ a.link {
       margin-right: 2rem;
     }
   }
+}
 
+section#inscriptions {
+  background-color: $BgColorDark;
   & .presentation-accroche {
     padding: 2rem 0;
     h1 {
@@ -528,17 +534,42 @@ a.link {
     color: $BgColor;
     font-size: 1.4rem;
     font-weight: 600;
-    margin-top: 5px;
+    //margin-top: 5px;
     text-align: center;
   }
-  img {
-    max-width: 50%;
-    margin: 0;
-  }
-  .gold, .bronze {
-    h2 {
-      margin: 0;
+  article.sponsors {
+    img {
+      margin: 1rem 0.4rem 2rem 0.4rem;
     }
+    .silver img {
+      //max-width: 25%;
+      //margin: 4% 0 6% 0;
+    }
+    .bronze img {
+      //max-width: 18%;
+      //margin: 0 3% 2% 3%;
+    }
+    .gold, .bronze {
+      h2 {
+        //margin: 0;
+      }
+    }
+  }
+
+  #becomeSponsorLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: $BgColorDark;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 15px;
+  }
+  #becomeSponsorLink:hover,
+  #becomeSponsorLink:focus,
+  #becomeSponsorLink:active {
+    background-color: $BgColor;
   }
 
   @media (max-width: $tablet - 1) {
