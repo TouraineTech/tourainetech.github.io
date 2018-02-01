@@ -491,10 +491,14 @@ section#inscriptions {
       font-size: 1rem;
     }
   }
-  .ateliers > a {
-    padding: 2%;
-    max-width: 12%;
-    display: inline-block;
+  .ateliers {
+    max-width: 100%;
+
+    > a {
+      padding: 2%;
+      max-width: 12%;
+      display: inline-block;
+    }
   }
   img {
     width: 100%;
