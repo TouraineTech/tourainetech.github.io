@@ -172,7 +172,9 @@ a.link {
  */
 .content {
   flex: 1;
-
+  > section > * {
+    max-width: 100%;
+  }
   > section, .presentation {
     @include flex(center);
     flex-direction: column;
@@ -478,6 +480,7 @@ section#inscriptions {
 #quisommesnous {
   @extend %sectionSpace;
   background-color: $BgColorDark;
+  display: block;
 
   h1 {
     @include title($BgColorLight, 2rem);
@@ -492,8 +495,6 @@ section#inscriptions {
     }
   }
   .ateliers {
-    max-width: 100%;
-
     > a {
       padding: 2%;
       max-width: 12%;
