@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -81,8 +82,10 @@ $cellSize: 11rem;
 
   h1 {
     margin: auto;
+    font-size: 1rem;
   }
-  a{
+  a {
+    font-size: 1rem;
     color: $textColor;
   }
 }
