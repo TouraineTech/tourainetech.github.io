@@ -5,7 +5,9 @@
 /**
  * Globals
  */
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   padding: 0;
@@ -228,7 +230,7 @@ a.link {
     padding: 3rem 0;
     margin-bottom: 0;
 
-    p{
+    p {
       @media (max-width: $phone - 1) {
         font-size: 1rem;
       }
@@ -647,7 +649,7 @@ section#inscriptions {
   h1 {
     @include title($BgColorLight, 2rem);
   }
-  p{
+  p {
     font-size: 1.2rem;
   }
   background-color: $BgColorDark;
@@ -676,7 +678,6 @@ section#inscriptions {
   }
 }
 
-
 /**
  * Footer
  */
@@ -691,4 +692,79 @@ footer a {
 
 footer a:visited {
   color: #1f202c;
+}
+
+
+/**
+ * News
+ */
+
+.news {
+  color: $BgColorDark;
+  padding: 40px 20px;
+  h1 {
+    font-size: 2rem;
+  }
+  .news-previews-list {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .link {
+    text-decoration: none;
+    color: $textColor;
+    background-color: $BgColor;
+    font-size: 2rem;
+    padding: 15px;
+  }
+}
+
+.news-item {
+  color: $BgColorDark;
+  text-align: left;
+  padding: 0 20px;
+
+  &:not(.modal-content) {
+    padding: 10px;
+  }
+
+  .news-item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    flex-direction: column;
+    h1 {
+      font-size: 1.8em;
+      color: $BgColorDark;
+      text-align: center;
+      margin: 0 0 10px 0;
+    }
+    & > * {
+      padding-right: 10px;
+    }
+  }
+
+  .news-item-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    p {
+      padding: 0 5px;
+    }
+    img {
+      width: 100px;
+    }
+  }
+
+  .news-item-footer {
+    text-align: center;
+  }
+
+  .read-more {
+    text-decoration: none;
+    color: $textColor;
+    background-color: $BgColor;
+    font-size: 1rem;
+    padding: 7px;
+  }
 }
