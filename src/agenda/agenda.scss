@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -23,10 +24,6 @@
   width: 100%;
 
   margin: 2px;
-
-  > h1 {
-    flex: 0;
-  }
 }
 
 $cellSize: 11rem;
@@ -81,8 +78,10 @@ $cellSize: 11rem;
 
   h1 {
     margin: auto;
+    font-size: 1rem;
   }
-  a{
+  a {
+    font-size: 1rem;
     color: $textColor;
   }
 }
@@ -95,6 +94,8 @@ $cellSize: 11rem;
 }
 .agenda-event.lightning-break {
   flex-basis: $cellSize / 1.5;
+  background-color: $BgColorDark;
+  border: none;
   .agenda-event-wrapper {
     display: none;
   }
@@ -122,4 +123,10 @@ $cellSize: 11rem;
       margin-right: 5vw;
     }
   }
+}
+
+.agenda-event.noContent div {
+  background-color: $BgColorDark;
+  border: none;
+  .agenda-hours {display: none;}
 }

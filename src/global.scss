@@ -174,7 +174,9 @@ a.link {
  */
 .content {
   flex: 1;
-  overflow-y: scroll;
+  > section > * {
+    max-width: 100%;
+  }
   > section, .presentation {
     @include flex(center);
     flex-direction: column;
@@ -480,6 +482,7 @@ section#inscriptions {
 #quisommesnous {
   @extend %sectionSpace;
   background-color: $BgColorDark;
+  display: block;
 
   h1 {
     @include title($BgColorLight, 2rem);
@@ -493,9 +496,15 @@ section#inscriptions {
       font-size: 1rem;
     }
   }
+  .ateliers {
+    > a {
+      padding: 2%;
+      max-width: 12%;
+      display: inline-block;
+    }
+  }
   img {
-    width: 10%;
-    margin: 2rem;
+    width: 100%;
   }
   @media (max-width: $tablet - 1) {
     padding: 2rem;
@@ -509,11 +518,12 @@ section#inscriptions {
       font-size: .8rem;
       line-height: 1.5rem;
     }
-    img {
-      width: 20%;
+
+    .ateliers > a {
+      max-width: 22%;
       @media (max-width: $phone - 1) {
-        width: 35%;
-        margin: 1rem;
+        max-width: 36%;
+        padding: 1%;
       }
     }
   }
