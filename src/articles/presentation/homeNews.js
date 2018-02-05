@@ -1,7 +1,7 @@
 import Siema from 'siema'
 
-const perPage = 2
-const timeBetweenTwoNews = 10000
+const perPage = 1
+const timeBetweenTwoNews = 5000
 
 const carousel = new Siema({
     selector : '.news-previews-list',
