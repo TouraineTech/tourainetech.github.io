@@ -18,7 +18,6 @@ module.exports = function articleLoader(content) {
 
     const meta = parseMeta(content, defaultsMeta)
 
-    const loadersString = loaders.join('!')
     return `module.exports = {
         meta   : ${JSON.stringify(meta)},
         content: require('!!${escapeString(loaders.join('!'))}!${escapeString(resourcePath)}')
