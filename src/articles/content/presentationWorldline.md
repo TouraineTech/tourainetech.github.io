@@ -4,7 +4,7 @@ creationDate: 2018-02-14T18
 modificationDate: 2018-02-14T18
 ---
 
-![logo apside](../../../img/logo-worldline.png)
+![logo wordline](../../../img/logo-worldline.png)
 
 Worldline est le leader européen dans le secteur des paiements et des services transactionnels. Ses 9400 collaborateurs, présents dans 29 pays, jouent un rôle majeur dans les domaines des services marchands, de la mobilité ou encore de la e-administration et des grands projets d’état. Nous travaillons à la fois sur la mise en place d’offres et de services mutualisés, ainsi que sur la construction de solutions sur mesure au plus proche des besoins de nos clients.
  
