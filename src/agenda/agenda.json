@@ -176,7 +176,7 @@
       "color": "#6c0762",
       "format": "Conf", "formatType" : "conference", 
       "icon": "slideshare",
-      "title": "Don't be afraid by Jigsaw! What's new with Java 9?",
+      "title": "Don't be afraid of Jigsaw! What's new with Java 9?",
       "description": "Après plusieurs reports, Java 9 est arrivé le 21 septembre 2017. Il s'agit d'une version particulièrement disruptive avec plus de 80 changements. Le plus important et le plus controversé d'entre eux est Jigsaw alias Java Platform Module System. C'est aussi et surtout l'opportunité pour Oracle, propriétaire de la technologie, de revisiter sa stratégie avec un objectif clairement affiché : replacer l'innovation au cœur de l'écosystème Java.  Pari risqué ? Venez vous faire votre propre idée à travers ce tour d'horizon de Java 9.",
       "speakers": "Jean-François JAMES",
       "language": "Français",
