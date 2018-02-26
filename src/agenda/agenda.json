@@ -411,7 +411,8 @@
       "description": "Depuis l’annonce par Google du support de Kotlin sur Android, les développeurs d'applications mobiles se sont fortement intéressés à ce langage récent. Mais **\"Non de Zeus !\"** est ce réservé aux développeurs mobiles ?\nNon, Non et Non. Kotlin tourne sur la JVM alors autant en profiter dans tout nos projets.\n\nViens nous rejoindre pour découvrir toutes les facettes de ton futur prochain langage préféré.\nA travers plusieurs exercices tu apprendras à transformer ton vieux Java en Kotlin puis à penser directement en Kotlin pour plus de **\"fun\"** et moins de \"void\".\n\nPas encore persuadé que ce codelab est fait pour toi ? Regarde ces avis de développeurs déjà convaincus.\n\n> *\"Java ? Là où on va, on n’a pas besoin de Java !\"*\n   Un développeur backend à propos de son prochain projet en Kotlin.\n\n> *\"Faut voir grand dans la vie, quitte à coder sur la JVM, autant choisir un language qui ait d’la gueule !\"*\n   Un autre développeur backend après le codelab Kotlin : Le back du futur.\n\nDoc Gautier et Adrien Mc Fly",
       "speakers": "Gautier DE SAINT MARTIN LACAZE, Adrien PESSU",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://bttf-kotlin.github.io/kotlin-codelab-bttf/"
     },
     {
       "id": "3046",
