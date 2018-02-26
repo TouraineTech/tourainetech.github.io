@@ -121,6 +121,9 @@ $cellSize: 11rem;
     p {
       text-align: justify;
       margin-right: 5vw;
+      a {
+        color: $textColor;
+      }
     }
   }
 }
