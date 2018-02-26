@@ -84,7 +84,8 @@
       "description": "Surveiller une application complexe n'est pas une tâche aisée, mais avec les bons outils, ce n'est pas si sorcier. Néanmoins, des périodes fortes telles que les opérations de type \"Black Friday\" (Vendredi noir) ou période de Noël peuvent pousser votre application aux limites de ce qu'elle peut supporter, ou pire, la faire crasher. Parce que le système est fortement sollicité, il génère encore davantage de logs qui peuvent également mettre à mal votre système de supervision.\n\nDans cette session, j'aborderai les bonnes pratiques d'utilisation de la suite Elastic pour centraliser et monitorer vos logs. Je partagerai également avec vous quelques trucs et astuces pour vous aider à passer sans souci vos Vendredis noirs !\n\nNous verrons :\n\n* Les architectures de monitoring\n* Trouver la taille optimale pour l'API `_bulk`\n* Distribuer la charge\n* Taille des index et des shards\n* Optimiser les E/S disque\n\nVous ressortirez de la session avec : des bonnes pratiques pour bâtir son système de monitoring avec la suite Elastic, le tuning avancé pour optimiser les performances d'ingestion et de recherche.",
       "speakers": "David PILATO",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://speakerdeck.com/elastic/les-vendredis-noirs-meme-pas-peur-touraine-tech"
     },
     {
       "id": "2461",
@@ -116,7 +117,8 @@
       "description": "Le 02 Novembre 2016, mon petit frère de 13 ans m'affirme qu'un récit est un conte s'il a traversé les âges en véhiculant une morale populaire. S'en suit une conversation fascinante sur ce qui caractérise le \"genre\" d'un récit. \"Et si, en 2016, je plagie un des contes de 1001 nuits, s'agit-il d'un conte?\", en tenant compte de cette définition, non. Les genres de récits seraient donc organisés grâce à leurs contextes ? Existe-t-il des caractéristiques récurrentes liées à la **structure d'un récit** ?\nDans cette présentation, je vous propose de survoler une brève histoire du structuralisme, vue au travers d'un soupçon de logique et de théorie des types, pour valider, combiner et générer de la substance narrative, donc des récits.\nEn plus de tâcher de présenter un usage des systèmes de types et de la programmation assez exotique, l'objectif de cette présentation est de mettre en lumière la proximité que certaines sciences humaines ont entretenues avec certaines sciences appliquées, permettant de tendre vers la génération de récits, à destination, par exemple, du Cinéma ou du Jeux-vidéo.",
       "speakers": "Xavier VAN DE WOESTYNE",
       "language": "Français",
-      "event_type": "Jeux vidéos et hybrides"
+      "event_type": "Jeux vidéos et hybrides",
+      "tnt_slides": "http://xvw.github.io/talks/tourainetech/slides.pdf"
     },
     {
       "id": "2498",
@@ -133,7 +135,8 @@
       "description": "DDD vous en avez entendu parler, vous avez envie de vous lancer, cette session est pour vous ! J'ai commencé à utiliser des concepts DDD dans mes projets depuis quelques années et au début ce n'était pas toujours facile de les mettre en pratique. A travers cette session, je vais vous donner 10 conseils issus de mon expérience personnelle pour réussir ses premiers pas en DDD.",
       "speakers": "Benoit PRIOUX",
       "language": "Français",
-      "event_type": "Conception, architecture"
+      "event_type": "Conception, architecture",
+      "tnt_slides": "https://binout.github.io/ten-tips-gs-ddd/"
     },
     {
       "id": "2499",
@@ -165,7 +168,8 @@
       "description": "L'intégration continue est au cœur du processus de construction et livraison des applications chez Harmonie Mutuelle. JENKINS a apporté dans sa nouvelle version majeure ( la 2 ) un grand nombre de fonctionnalités. \n\nCourant 2017, nous avons fait évoluer notre plateforme et décidé de les intégrer en utilisant les pipelines.\n\nDans cette présentation, je vous ferai un retour d'expérience de notre processus de construction des applications et de notre migration vers JENKINS 2 ( les gains, difficultés et choix de conception ).",
       "speakers": "Alexandre TOURET",
       "language": "Français",
-      "event_type": "Outillage, pratiques de développement"
+      "event_type": "Outillage, pratiques de développement",
+      "tnt_slides": "https://www.slideshare.net/AlexandreTouret1/jenkins2-le-retour-dexprience-tourainetech-2018"
     },
     {
       "id": "2526",
@@ -180,7 +184,8 @@
       "description": "Après plusieurs reports, Java 9 est arrivé le 21 septembre 2017. Il s'agit d'une version particulièrement disruptive avec plus de 80 changements. Le plus important et le plus controversé d'entre eux est Jigsaw alias Java Platform Module System. C'est aussi et surtout l'opportunité pour Oracle, propriétaire de la technologie, de revisiter sa stratégie avec un objectif clairement affiché : replacer l'innovation au cœur de l'écosystème Java.  Pari risqué ? Venez vous faire votre propre idée à travers ce tour d'horizon de Java 9.",
       "speakers": "Jean-François JAMES",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://jefrajames.files.wordpress.com/2018/02/whatsnewinjava9-tnt-final.pdf"
     },
     {
       "id": "2571",
@@ -214,7 +219,8 @@
       "description": "Avec l'essor de l'IOT, de plus en plus de personnes sont tentées par la domotique. Les grandes enseignes s'y mettent, avec plus ou moins de succès. Notre métier nous permet une plus grand liberté dans ce domaine, encore faut-il ne pas se perdre dans ce qui existe.\nJe vous propose un tour d'horizon (non exhaustif) de ce qui se fait, les solutions que j'ai choisies pour mon domicile ainsi que des pistes pour ceux qui souhaitent se lancer.\nAttention, il y'aura du troll.",
       "speakers": "Michaël BITARD",
       "language": "Français",
-      "event_type": "Internet des objets"
+      "event_type": "Internet des objets",
+      "tnt_slides": "https://drive.google.com/file/d/1FlaMp9l9eJ9QnKKzwsz-kWI4azyzRCcR/view"
     },
     {
       "id": "2733",
@@ -244,7 +250,8 @@
       "description": "Bien souvent, des projets démarrent dans le brouillard et le chaos. Qu'ils soient en agile ou non.\nEt bien trop souvent, une purée de pois vous accompagne tout le long du projet et vous emmène droit dans le mur, sans que vous le sachiez. Les victimes : vous, et votre client.\n\nDans ce retour d'expérience, nous vous partagerons comment allumer des feux anti-brouillards. Concrètement, des pratiques facilement actionnables pour vous, votre équipe et votre client, afin d'améliorer les conditions de réalisation et de pilotage de vos futurs projets.\n\nNous évoquerons des sujets tels que le mob programming, les tracer bullet ou la rétrospective technique, qui vous permettront de transformer ce mur en petits obstacles franchissables.",
       "speakers": "Damien BEAUFILS, Julien TELLIER",
       "language": "Français",
-      "event_type": "Outillage, pratiques de développement"
+      "event_type": "Outillage, pratiques de développement",
+      "tnt_slides": "https://speakerdeck.com/damienbeaufils/guide-anti-frustration-pour-navigation-en-projet-trouble-touraine-tech-2018"
     },
     {
       "id": "2848",
@@ -275,7 +282,8 @@
       "description": "Aujourd’hui l’inquiétude monte devant l’emprise qu’ont certaines entreprises ou gouvernement sur notre utilisation d’internet. \n\nFace à cette situation, beaucoup de personnes prônent la décentralisation du web un peu à la manière de Mastodon face à Twitter, néanmoins les concepts nécessaires sont assez éloignés des traditionnelles application client-serveur qui restent aujourd’hui majoritaires. \n\nQue faut il pour décentraliser le web ? C’est ce que je vais tenter de vous présenter simplement et avec des exemples, tout en m’attardant sur certains mécanismes un peu plus techniques (DHT, Merkle-trees, CRDT...) que vous utilisez peut être déjà sans le savoir. \n\nJe parlerais également de quelques initiatives qui commencent à faire le buzz et qui pourraient bouleverser nos usages à l’avenir.",
       "speakers": "Antoine CAILLY",
       "language": "Français",
-      "event_type": "Conception, architecture"
+      "event_type": "Conception, architecture",
+      "tnt_slides": "https://speakerdeck.com/acailly/le-web-decentralise-comment-ca-marche-touraine-tech-2018"
     },
     {
       "id": "2869",
@@ -322,7 +330,8 @@
       "description": "Le monde DDD aime bien troller le framework Spring. Et moi, après 10 années en tant que développeur Spring, je suis toujours déçu par les présentations de DDD (Domain Driven Development), je trouve que le code arrive toujours trop tard.\n\nCe talk est une initiation au DDD pour des développeurs Java qui veulent contrôler la complexité au cœur du software avec leur framework favori et aller plus loin.\n\nLes exemples de code seront en kotlin.",
       "speakers": "Youen CHÉNÉ",
       "language": "Français",
-      "event_type": "Conception, architecture"
+      "event_type": "Conception, architecture",
+      "tnt_slides": "https://drive.google.com/file/d/1jrZAb5WxcUE6omfNH-DFbeDFZzZxzPPS/view"
     },
     {
       "id": "2915",
@@ -370,7 +379,8 @@
       "description": "Connaissez-vous les stratégies de store sur une application frontend orientée composants ? Savez-vous en quoi ces stores sont utiles ? Et quel type d’implémentation ils choisissent d’utiliser ?\n\n\nNous répondrons à ces questions pour introduire mobx-state-tree, le tout nouveau store conçu par Michel Westrate, le créateur de MobX. mobx-state-tree est un store mutable MAIS avec les avantages d’un store immutable, et rejouable… haaa le paradis des développeurs React :)\n\n\nSuivez-nous dans cette présentation de mobx-state-tree avec au programme 20% de théorie et 80% de live coding !",
       "speakers": "Delphine MILLET, Fabien JUIF",
       "language": "Français",
-      "event_type": "Front web, Mobile"
+      "event_type": "Front web, Mobile",
+      "tnt_slides": "https://github.com/Dedetat/pimp-my-powerpuff"
     },
     {
       "id": "2995",
@@ -385,7 +395,8 @@
       "description": "Je suppose que vous avez déjà vu cette démo montrant une image morcelée qui s'affiche tellement plus vite en HTTP/2. Si ce n'est pas le cas, je vous la montrerai, et je vous expliquerai brièvement pourquoi c'est aussi rapide.\n\nLe but de cette présentation, c'est surtout de vous montrer comment HTTP/2 est implémenté aujourd'hui, en accès direct ou en reverse proxy. On verra en particulier comment configurer les principaux serveurs Web du marché, comme Apache httpd, nginx ou NodeJS.\n\nComme souvent, le cas de Java est un peu plus compliqué. Rien que pour Tomcat, il y a plusieurs variantes : en h2 ou h2c, avec Java 8 ou Java 9, avec JSSE ou OpenSSL. Je vous expliquerai pourquoi toutes ces variantes. Ensuite, on fera un petit tour des autres serveurs Web et Java EE de l'écosystème et on verra que ce n'est pas aussi compliqué pour tous.\nEnfin nous évaluerons l'impact que peut avoir HTTP/2 sur notre code et comment les API Push peuvent faire charger l'image morcelée encore plus rapidement.",
       "speakers": "Alexis HASSLER",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "http://prez.sewatech.fr/http2/"
     },
     {
       "id": "3022",
@@ -430,7 +441,8 @@
       "description": "Ce que propose Lagom est très séduisant : mettre en place une architecture CQRS/Event sourcing avec un système de microservice et tout ça clef en main! Franchement ça fait rêver, non ? Mais est ce que tout ça est bien réel? \nJe vous propose durant cette présentation une introduction au framework pour mieux le cerner et ensuite un retour d'expérience sur un vrai projet dans la vrai vie.  \nAlors on met 'Lagom' ou on freine?",
       "speakers": "Fabrice SZNAJDERMAN",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://www.slideshare.net/fabszn/lagom-touraine-tech2018"
     },
     {
       "id": "3077",
@@ -491,7 +503,8 @@
       "description": "Nous connaissons tous le web sémantique. Et si on allait encore plus loin ? Et si on offrait un niveau de compréhension supérieure à nos contenus ? Nous allons voir ensemble les enjeux d'utiliser les micro-datas, l'importance pour les moteurs de recherches de pouvoir parser du contenu catégorisé et ainsi alimenter des outils comme le Knowledge Graph de Google. Je vous montrerai comment mettre en place simplement du contenu ayant du sens en s'appuyant sur Schema.org.",
       "speakers": "Audrey GARREAU",
       "language": "Français",
-      "event_type": "Front web, Mobile"
+      "event_type": "Front web, Mobile",
+      "tnt_slides": "https://speakerdeck.com/agarreau/donner-du-sens-a-vos-pages-web-avec-schema-dot-org"
     },
     {
       "id": "3212",
@@ -507,7 +520,8 @@
       "description": "Et si, au lieu de vous présenter l’outillage du paradigme fonctionnel parfois compliqué à prendre en main et fortement chargé en jargon, nous parlions de comment « penser en fonctionnel » ?\n Et si, nous parlions du paradigme et non d’une implémentation spécifique ?  \nEt si, on explicitait les idées qui font de ce paradigme une solution de choix pour certain type d’applications et qui explique sa popularité grandissante ?   \nContrairement à trop de présentation sur la programmation fonctionnelle, je vous propose de découvrir ce paradigme à travers son modèle de pensée et non de ses outils ou implémentations spécifiques.  \nUne présentation accessible à tous, sans jargon ou concepts complexes. Et qui présente un usage du fonctionnel, possible au quotidien, dans vos langages préférés.",
       "speakers": "Arnaud LEMAIRE",
       "language": "Français",
-      "event_type": "Conception, architecture"
+      "event_type": "Conception, architecture",
+      "tnt_slides": "https://speakerdeck.com/lilobase/philosophie-fonctionnelle-touraine-tech-2018"
     }
   ]
 }
