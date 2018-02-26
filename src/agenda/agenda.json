@@ -235,7 +235,8 @@
       "description": "Le web est en mouvement et ne compte pas s’arrêter là. Venez dans cette session pour voir les dernières avancées du web en terme d’intégrations de capteurs et ce qui se profile pour l’avenir.",
       "speakers": "Jean-francois GARREAU",
       "language": "Français",
-      "event_type": "Front web, Mobile"
+      "event_type": "Front web, Mobile",
+      "tnt_slides": "https://jef.binomed.fr/binomed_docs/Prezs/CuttingEdgeWeb/index.html#/"
     },
     {
       "id": "2747",
