@@ -102,7 +102,8 @@
       "description": "​\nLa génération de bytecode JVM n'est pas nouvelle (ASM, BCEL, Javassist, CGLIB), mais elle est souvent méconnue. De nombreux frameworks et librairies s'appuient sur celle-ci pour effectuer des opérations transparentes mais essentielles.\n\n`Byte Buddy` est la lib de bytecode gen qui fait parler d'elle en ce moment ! Elle vient d'ailleurs de fraîchement être mergée dans de nombreux projets (`Mockito 2.1`, `Hibernate`).\n\nVenez apprendre en 15 minutes comment Byte Buddy rend la génération de bytecode amusante et élégante, et surtout à quelles fins elle peut servir au travers de petits exemples parlants live-codés !",
       "speakers": "Nicolas COMET",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://ncomet.github.io/devoxxfr2017-bytebuddy/bytebuddy.html"
     },
     {
       "id": "2484",
@@ -153,7 +154,8 @@
       "description": "La communication fait aujourd’hui partie intégrante de notre travail; il nous arrive régulièrement de vouloir diffuser une information importante, réaliser une présentation, un compte rendu de réunion… Mais comment être sûrs que le message que l’on souhaite faire passer a bien été compris et retenu par les interlocuteurs ? Le sketchnoting apporte une solution ludique, créative et agréable autant à créer qu’à lire. Venez découvrir comment mettre en valeur votre communication à l’aide de procédés très visuels, simples et accessibles à tous.",
       "speakers": "Ane DIAZ DE TUESTA, Amélie BENOIT",
       "language": "Français",
-      "event_type": "Outillage, pratiques de développement"
+      "event_type": "Outillage, pratiques de développement",
+      "tnt_slides": "https://github.com/anediaz/lets-sketchnote/blob/master/Touraine%20Tech%202018/Lets%20Sketchnote.pdf"
     },
     {
       "id": "2506",
@@ -202,7 +204,8 @@
       "description": "\"Non mais je suis backend engineer, l'UX c'est pas mon problème\" - Un développeur, au XVIIIe siècle.\n\nVous pensez que la problématique de l'expérience utilisateur est l'apanage de votre équipe produit ? Que c'est uniquement à votre UX designer de s'intéresser aux besoins réels de vos utilisateurs ?\n\nPendant longtemps, on a scindé les rôles dans les entreprises, opposant les \"fonctionnels\" aux \"techniques\". Deux mondes avec des problématiques différentes, difficilement conciliables, et qui semblaient avoir du mal à s'entendre.\n\nEt si tout ça était une erreur monumentale ? Et si, finalement, toutes les personnes travaillant sur un produit étaient des UX designers ?",
       "speakers": "Sébastien CHARRIER",
       "language": "Français",
-      "event_type": "Design UI/UX"
+      "event_type": "Design UI/UX",
+      "tnt_slides": "https://speakerdeck.com/scharrier/tous-ux-designers"
     },
     {
       "id": "2619",
@@ -315,7 +318,8 @@
       "description": "Septembre 2016, Dailymotion commence sa mutation, la stratégie pivote et se tourne vers le contenu premium. Le produit doit changer radicalement et rapidement, pour diverses raisons que je vous expliquerai, le choix s'oriente vers une migration du monolith PHP (mono-datacenter) vers une architecture SOA (géo-distribuée) sous GraphQL.\n\nUn an plus tard, notre nouveau produit est disponible mondialement, nos 4 clusters kubernetes (cloud provider + on premise) dispersés dans le monde orchestrent plus de 1 500 containers pour un traffic représentant plus de 1k requêtes / seconde.\n\nDans cette conférence je vous présenterai le chemin que nous avons parcouru, l'impact d'une architecture SOA sur l'organisation, la manière dont nous avons utilisé les technologies de l'univers CNCF ainsi que les différentes briques que nous avons créées puis rendues open source.",
       "speakers": "Stanislas CHOLLET",
       "language": "Français",
-      "event_type": "Backends, Cloud, Big Data"
+      "event_type": "Backends, Cloud, Big Data",
+      "tnt_slides": "https://fr.slideshare.net/tsunammis/how-we-scale-up-our-architecture-and-organization-at-dailymotion-90169370"
     },
     {
       "id": "2889",
@@ -348,7 +352,8 @@
       "description": "Vous l'avez déjà entendu dans plein  de talks, vous l'avez lu dans le net, les Web Components sont là, la v1 du standard est approuvé, les navigateurs l’implémentent de mieux en mieux, les différents frameworks se targuent d'être *web components compatible* et il semble de plus en plus clair que les web components ont un rôle clé dans le futur proche du web.\n\nMais comment y se lancer ? Il y a plein de façon d'écrire des Web Components, plein de bibliothèques différentes. Et la question qu'on peut se poser est celle de la compatibilité, est-ce que la promesse du standard d'une parfaite compatibilité entre les Web Components tient la route dans la vraie vie, avec des composants écrits avec des bibliothèques différentes ?\n\nDans ce talk nous allons présenter plusieurs façons d'écire des Web Components (vanilla components, Polymer, Stencil, SlimJS, SkateJs...) et nous allons écrire un composant avec chacune des bibliothèques. Ensuite  nous mettrons tous ces composants ensembles dans une app pour montrer comment la promesse de l’interopérabilité n'est pas que de la publicité mais une réalité prouvée.",
       "speakers": "Horacio GONZALEZ",
       "language": "Français",
-      "event_type": "Front web, Mobile"
+      "event_type": "Front web, Mobile",
+      "tnt_slides": "https://drive.google.com/open?id=1F7nbbnEUsZDtfK52W8UVOlA4l3JIKOau"
     },
     {
       "id": "2917",
@@ -459,7 +464,8 @@
       "description": "You’ve been running applications in production for years now. You know how to operate them with your eyes closed. When an outage is called you jump into your ssh terminal and fix the mess with a crowd of colleagues cheering behind you. \nIt feels amazing right? But that quick victory will cause you more problems in the future.\n\nIn 2018, sshing commands is still the first answer to most of our production issues. For many operators this is more than an easy win, it’s a habit. A bad habit.\n\nThrough my different experiences of running large systems in production I’ve learnt the hard way that there are consequences to having humans operating production from their terminal. This must stop. \n\nDuring this talk I will tell you the story of a team that goes from chaotic operations, system outages and alerts in the middle of the night to a peaceful environment by reducing its ssh usage. I will talk about team organisation, tools and the philosophy you can use to achieve this transformation.\n\nThis talk can be can be given in English or French. Material will be in English.",
       "speakers": "Jerome DASSONVILLE",
       "language": "English",
-      "event_type": "Outillage, pratiques de développement"
+      "event_type": "Outillage, pratiques de développement",
+      "tnt_slides": "https://speakerdeck.com/jdassonvil/how-to-quit-ssh-in-90-days"
     },
     {
       "id": "3092",
@@ -474,7 +480,8 @@
       "description": "Le logiciel est partout. Il est clair que le logiciel a un impact réel sur le monde : uberisation, digitalisation... mais stoppons ici la buzzwordisation... Nous, développeurs sommes les architectes du monde virtuel au service du réel. Nos actions ont un effet bien réel. Bénéfique mais aussi néfaste. \nExclusion sociale, impact environnemental, obsolescence sont des effets bien réel de nos logiciels. Mais avons nous le choix face au demandes de nos utilisateurs et clients et aux contraintes associées (planning, sécurité...)\nEt bien oui, c'est le choix qui est fait par de nombreuses sociétés et développeurs : bénévolat comme code for America, Eco-conception de logiciel publique... Etre développeur ethique et green est possibles, nous verrons concretement comme faire cela au jour le jour.",
       "speakers": "Olivier PHILIPPOT",
       "language": "Français",
-      "event_type": "Outillage, pratiques de développement"
+      "event_type": "Outillage, pratiques de développement",
+      "tnt_slides": "https://www.slideshare.net/ophilippot/devfest-toulouse-comment-tre-une-dveloppeuse-un-dveloppeur-ethique-et-green"
     },
     {
       "id": "3101",
@@ -486,6 +493,7 @@
       "format": "Conf", "formatType" : "conference", 
       "icon": "slideshare",
       "title": "Documentation as code (expliqué à mon père)",
+      "videos": "https://www.dailymotion.com/video/x6f6zt0",
       "description": "En tant que codeurs, nous profitons tous les jours de la puissance de nos outils (IDE, versioning, build, intégration, déploiement). Nous mettons également l’accent sur la qualité avec un ensemble de bonnes pratiques (tests, DRY, KISS). Néanmoins, lorsqu’il s’agit de s’occuper de la documentation, nous sommes encore nombreux à utiliser des outils de \"bureautique traditionnelle\" (Word, Sharepoint, client email).\n\n\"Au menu de cette session, je vous propose d’aborder le langage AsciiDoc ainsi que l’outil asciidoctor (et son ecosystème). Nous verrons quels avantages ils apportent et quelles \"pratiques de codeur\" appliquer pour améliorer les différentes étapes de la vie d’une documentation : rédaction, collaboration et publication.\"",
       "speakers": "Hubert SABLONNIÈRE",
       "event_type": "Outillage, pratiques de développement"
