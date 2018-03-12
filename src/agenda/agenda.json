@@ -22,9 +22,7 @@
     }
   ],
   "events": [
-    {"title": "keynote", "resourceId": "33","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote", "event_type": "Keynote"},
-    {"title": "keynote", "resourceId": "34","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote", "event_type": "Keynote"},
-      {"title": "", "resourceId": "35","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote noContent", "event_type": "Keynote"},
+    {"title": "", "resourceId": "35","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote noContent", "event_type": "Keynote"},
     {"title": "", "resourceId": "53","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote"},
     {"title": "", "resourceId": "54","start": "2018-02-23T09:00:00+01:00","end": "2018-02-23T09:55:00+01:00", "speakers": "", "formatType": "keynote"},
     {"title": "", "resourceId": "33","start": "2018-02-23T09:55:00+01:00","end": "2018-02-23T10:10:00+01:00", "speakers": "", "formatType": "break"},
@@ -69,6 +67,35 @@
     {"title": "", "resourceId": "54","start": "2018-02-23T12:35:00+01:00","end": "2018-02-23T12:40:00+01:00", "speakers": "", "formatType": "break"},
     {"title": "", "resourceId": "54","start": "2018-02-23T12:45:00+01:00","end": "2018-02-23T12:55:00+01:00", "speakers": "", "formatType": "lightning-break"},
     {"title": "", "resourceId": "54","start": "2018-02-23T13:00:00+01:00","end": "2018-02-23T13:10:00+01:00", "speakers": "", "formatType": "break"},
+
+    {
+      "id": "0",
+      "title": "keynote",
+      "resourceId": "33",
+      "start": "2018-02-23T09:00:00+01:00",
+      "end": "2018-02-23T09:55:00+01:00",
+      "speakers": "Gaël Musquet",
+      "formatType": "keynote",
+      "tnt_video": "https://vimeo.com/237427399",
+      "tnt_slides": "http://ratzillas.com/hack/TNT_2018.pdf",
+      "description": "",
+      "format": "Conf",
+      "event_type": "Keynote"
+    },
+    {
+      "id": "0",
+      "title": "keynote",
+      "resourceId": "34",
+      "start": "2018-02-23T09:00:00+01:00",
+      "end": "2018-02-23T09:55:00+01:00",
+      "speakers": "Gaël Musquet",
+      "formatType": "keynote",
+      "tnt_video": "https://vimeo.com/237427399",
+      "tnt_slides": "http://ratzillas.com/hack/TNT_2018.pdf",
+      "description": "",
+      "format": "Conf",
+      "event_type": "Keynote"
+    },
 
     {
       "id": "2456",
