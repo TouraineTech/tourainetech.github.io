@@ -188,6 +188,13 @@ a.link {
   }
 }
 
+.content section#next{
+  background-color: $BgColorLight;
+  h1{
+    @include title($BgColorDark, 4rem);
+  }
+}
+
 .presentation {
   & .presentation-intro {
     @extend %sectionSpace;
@@ -238,7 +245,7 @@ a.link {
 
     .date p {
       color: $BgColor;
-      font-size: 1.4rem;
+      font-size: 2rem;
 
       @media (max-width: $tablet - 1) {
         font-size: .8rem;
@@ -249,7 +256,7 @@ a.link {
     }
 
     img {
-      width: 60px;
+      width: 120px;
     }
     @media (max-width: $tablet - 1) {
       padding: 1rem;
