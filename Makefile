@@ -22,6 +22,7 @@ all: build start
 
 build:
 	@echo "$(INFO_COLOR)Building $(IMAGE)...$(NO_COLOR)"
+	rm -rf ./node_modules
 	$(DOCKER_CMD) build --rm -t $(IMAGE) $(WORKSPACE)
 	@echo "$(OK_COLOR)Building $(IMAGE): Done$(NO_COLOR)"
 
