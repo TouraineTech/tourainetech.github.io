@@ -22,6 +22,7 @@ function eventTemplate(event) {
             <p class="format">${event.format}</p>
             <p class="type">${event.event_type}</p>` +
             (event.tnt_slides ? `<p><a href="${event.tnt_slides}">slides : ${event.title}</a></p>` : ``) +
+            (event.tnt_videos ? `<p><a href="${event.tnt_video}">video : ${event.tnt_video}</a></p>` : ``) +
             `<p>${cariageReturn(event.description)}</p>
         </dd>
     `);
