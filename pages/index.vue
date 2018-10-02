@@ -3,7 +3,7 @@
     <Header/>
     <Register/>
     <Sponsors/>
-    <LastEdition/>
+    <!--<LastEdition/>-->
     <Map/>
     <Footer/>
   </div>

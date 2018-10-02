@@ -38,8 +38,7 @@ module.exports = {
       {name: 'theme-color', content: '#ffffff'}
     ],
     link: [
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand'},
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro'},
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Avenir'},
       {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=WGoYma5yEm'},
       {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png?v=WGoYma5yEm'},
       {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png?v=WGoYma5yEm'},
