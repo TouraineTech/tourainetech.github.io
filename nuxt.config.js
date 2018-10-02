@@ -1,6 +1,7 @@
 const pkg = require('./package')
-const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique';
-const description = 'La première conférence technique en région centre sur les nouvelles technologies du numérique';
+const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique'
+const description = 'La première conférence technique en région centre sur les nouvelles technologies du numérique'
+const url = "https://touraine.tech/"
 module.exports = {
   mode: 'universal',
 
@@ -14,51 +15,53 @@ module.exports = {
       lang: 'fr',
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: description },
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://tnt.c-t.io' },
-      { property: 'og:image', content: 'https://tnt.c-t.io/cover.png' },
+      {charset: 'utf-8'},
+      {name: 'google-site-verification', content: 'aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: description},
+      {property: 'og:title', content: title},
+      {property: 'og:description', content: description},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:url', content: url},
+      {property: 'og:image', content: url + '/cover.png'},
+      {property: 'og:locale', content: 'fr_FR'},
       // Twitter Card
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@tourainetech' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: 'https://tnt.c-t.io/cover.png' },
-      { name: 'twitter:image:alt', content: 'Touraine tech logo' }
+      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:site', content: '@tourainetech'},
+      {name: 'twitter:title', content: title},
+      {name: 'twitter:description', content: description},
+      {name: 'twitter:image', content: url + '/cover.png'},
+      {name: 'twitter:image:alt', content: 'Touraine tech logo'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand'}
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: {color: '#222333'},
 
   /*
   ** Global CSS
   */
   css: [
-      '@/assets/scss/main.scss'
+    '@/assets/scss/main.scss'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    //'@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
