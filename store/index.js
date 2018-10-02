@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+import SPONSORS from '../api/sponsors.json'
 
 const createStore = () => {
   return new Vuex.Store({
@@ -8,27 +9,11 @@ const createStore = () => {
     },
     actions: {
       async nuxtServerInit ({ commit }, { app }) {
-        commit('SET_SPONSORS', [
-          {
-            name: "Code-Troopers",
-            image: "",
-            link: "https://code-troopers.com",
-            type: "bronze",
-            desc: "Superrrr"
-          },
-          {
-            name: "Harmonie",
-            image: "",
-            link: "https://harmonie-mutuelle.com",
-            type: "platinium",
-            desc: "Harmmonieeee"
-          }
-        ])
+        commit('SET_SPONSORS', SPONSORS)
       }
     },
     mutations: {
       SET_SPONSORS (state, sponsors) {
-        console.log(state)
         state.sponsors = sponsors
       }
     }

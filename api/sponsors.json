@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Code-Troopers",
+    "image": "codetroopers.png",
+    "link": "https://code-troopers.com",
+    "type": "bronze"
+  },
+  {
+    "name": "Harmonie",
+    "image": "harmonie.png",
+    "link": "https://www.harmonie-mutuelle.fr/",
+    "type": "platinium"
+  }
+]

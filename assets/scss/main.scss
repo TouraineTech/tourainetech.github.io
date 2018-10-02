@@ -24,7 +24,11 @@ html {
   margin: auto;
 }
 
-.container--header{
+.container--center {
+  text-align: center;
+}
+
+.container--header {
   padding-left: $padding-container;
   padding-right: $padding-container;
 }
@@ -47,18 +51,15 @@ html {
 .container--white {
   background-color: white;
   color: $color-primary;
-}
 
-p {
-  font-size: 24px;
-  max-width: 600px;
-  width: 100%;
-  padding: 3rem;
+  a{
+    color: $color-secondary;
+  }
 }
 
 footer {
   background-color: $color-primary;
-  > div{
+  > div {
     max-width: $width-container;
     padding-left: $padding-container;
     padding-right: $padding-container;
@@ -77,16 +78,3 @@ a {
   color: white;
 }
 
-@media screen and (max-width: $mobile-step) {
-  .container--header{
-    .title{
-      font-size: 36px;
-    }
-    .subtitle{
-      font-size: 24px;
-    }
-    p{
-      font-size: 18px;
-    }
-  }
-}
