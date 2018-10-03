@@ -3,7 +3,7 @@
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">
-        Rendez-vous le <span class="label--text label--white">vendredi 01 février 2019</span> à <span class="label--text label--white">Polytech'TOURS</span>
+        Rendez-vous le <span class="label--text label--white">vendredi 01 février 2019</span> à <span class="label--text label--white">Polytech'TOURS</span> pour une journée de conférence à un prix accessible.
       </p>
       <ul class="backtoschool--numbers">
         <li><span>18</span> conférences</li>

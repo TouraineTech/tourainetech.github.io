@@ -98,8 +98,6 @@ a.button--white{
 span.label--text {
   font-weight: bold;
   padding: 0.8rem 0.5rem 0.5rem;
-  border-radius: 1rem;
-  border: 2px solid;
   white-space: nowrap;
   line-height: 4rem;
 }
@@ -107,9 +105,15 @@ span.label--text {
 span.label--white {
   color: white;
   border-color: white;
+  background-color: lighten($color-secondary, 10%);
 }
 
 span.label--green {
   color: $color-secondary;
   border-color: $color-secondary;
+  background-color: darken(white, 10%);
+}
+
+span.no-wrap{
+  white-space: nowrap;
 }
