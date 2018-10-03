@@ -1,11 +1,7 @@
 <template>
   <div>
     <Header/>
-    <section class="container--green">
-      <div class="container--fix container--center">
-        #backtoschool Polytech'Tours, date, thématiques, accessible, nb de tracks
-      </div>
-    </section>
+    <About/>
     <Sponsors/>
     <Register/>
     <!--<LastEdition/>-->
@@ -38,6 +34,7 @@
   import Sponsors from '~/components/Sponsors.vue'
   import Register from '~/components/Register.vue'
   import LastEdition from '~/components/LastEdition.vue'
+  import About from '~/components/About.vue'
 
   export default {
     components: {
@@ -46,7 +43,8 @@
       Footer,
       Map,
       Sponsors,
-      LastEdition
+      LastEdition,
+      About
     }
   }
 </script>
