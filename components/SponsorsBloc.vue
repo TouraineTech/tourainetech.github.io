@@ -4,7 +4,7 @@
     <div class="sponsors--container">
       <a
         v-for="sponsor in sponsors"
-        :key="sponsor.id"
+        :key="sponsor.name"
         :href="sponsor.link"
         target="_blank"
       >

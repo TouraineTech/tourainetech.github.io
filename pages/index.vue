@@ -5,12 +5,7 @@
     <Sponsors/>
     <Register/>
     <!--<LastEdition/>-->
-    <section class="container--white">
-      <div class="container--fix container--center">
-        <h2>L'équipe</h2>
-        <p>Photo d'équipe en fond + nom</p>
-      </div>
-    </section>
+    <Team/>
     <section class="container--green">
       <div class="container--fix container--center">
         <h2>L'actu</h2>
@@ -32,6 +27,7 @@
   import LastEdition from '~/components/LastEdition.vue'
   import About from '~/components/About.vue'
   import CFP from '~/components/CFP.vue'
+  import Team from '~/components/Team.vue'
 
   export default {
     components: {
@@ -42,7 +38,8 @@
       Sponsors,
       LastEdition,
       About,
-      CFP
+      CFP,
+      Team
     }
   }
 </script>
