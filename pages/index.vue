@@ -13,15 +13,11 @@
     </section>
     <section class="container--green">
       <div class="container--fix container--center">
-        Fil twitter juste des posts
+        <h2>L'actu</h2>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=TNT19&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="fr" data-show-count="false">Tweet #TNT19</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
-    <section class="container--white">
-      <div class="container--fix container--center">
-        <h2>CFP</h2>
-        <p>Proposez c'est cool + lien + date</p>
-      </div>
-    </section>
+    <CFP/>
     <Map/>
     <Footer/>
   </div>
@@ -35,6 +31,7 @@
   import Register from '~/components/Register.vue'
   import LastEdition from '~/components/LastEdition.vue'
   import About from '~/components/About.vue'
+  import CFP from '~/components/CFP.vue'
 
   export default {
     components: {
@@ -44,7 +41,8 @@
       Map,
       Sponsors,
       LastEdition,
-      About
+      About,
+      CFP
     }
   }
 </script>

@@ -3,7 +3,7 @@
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">
-        Rendez-vous le <span>Vendredi 01 février 2019</span> à <span>Polytech'TOURS</span>
+        Rendez-vous le <span class="label--text label--white">vendredi 01 février 2019</span> à <span class="label--text label--white">Polytech'TOURS</span>
       </p>
       <ul class="backtoschool--numbers">
         <li><span>18</span> conférences</li>
@@ -33,16 +33,6 @@
   ul {
     list-style: none;
     padding: 0;
-  }
-
-  .backtoschool--intro span {
-    color: white;
-    font-weight: bold;
-    padding: 0.8rem 0.5rem 0.5rem;
-    border-radius: 1rem;
-    border: 2px solid white;
-    white-space: nowrap;
-    line-height: 4rem;
   }
 
   ul.backtoschool--numbers {

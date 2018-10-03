@@ -78,3 +78,38 @@ a {
   color: white;
 }
 
+a.button--link{
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+a.button--green{
+  background-color: $color-secondary;
+  color: white;
+}
+
+a.button--white{
+  background-color: white;
+  color: $color-secondary;
+  border: 2px solid $color-secondary;
+}
+
+span.label--text {
+  font-weight: bold;
+  padding: 0.8rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid;
+  white-space: nowrap;
+  line-height: 4rem;
+}
+
+span.label--white {
+  color: white;
+  border-color: white;
+}
+
+span.label--green {
+  color: $color-secondary;
+  border-color: $color-secondary;
+}
