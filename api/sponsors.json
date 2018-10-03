@@ -6,9 +6,22 @@
     "type": "bronze"
   },
   {
-    "name": "Harmonie",
-    "image": "harmonie.png",
-    "link": "https://www.harmonie-mutuelle.fr/",
-    "type": "platinium"
+    "name": "Apside",
+    "image": "logo-apside.png",
+    "link": "https://www.apside.com/",
+    "type": "gold"
+  },
+  {
+    "name": "Polytech'Tours",
+    "image": "logo-polytech.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "partenaires"
+  },
+  {
+    "name": "Dailymotion",
+    "image": "logo-dailymotion.png",
+    "link": "https://www.dailymotion.com/fr",
+    "type": "partenaires"
   }
+
 ]

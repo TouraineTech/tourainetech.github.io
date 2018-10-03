@@ -1,9 +1,31 @@
 <template>
   <div>
     <Header/>
-    <Register/>
+    <section class="container--green">
+      <div class="container--fix container--center">
+        #backtoschool Polytech'Tours, date, thématiques, accessible, nb de tracks
+      </div>
+    </section>
     <Sponsors/>
+    <Register/>
     <!--<LastEdition/>-->
+    <section class="container--white">
+      <div class="container--fix container--center">
+        <h2>L'équipe</h2>
+        <p>Photo d'équipe en fond + nom</p>
+      </div>
+    </section>
+    <section class="container--green">
+      <div class="container--fix container--center">
+        Fil twitter juste des posts
+      </div>
+    </section>
+    <section class="container--white">
+      <div class="container--fix container--center">
+        <h2>CFP</h2>
+        <p>Proposez c'est cool + lien + date</p>
+      </div>
+    </section>
     <Map/>
     <Footer/>
   </div>

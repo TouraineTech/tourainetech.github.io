@@ -1,6 +1,6 @@
 const pkg = require('./package')
 const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique'
-const description = 'La première conférence technique en région centre sur les nouvelles technologies du numérique'
+const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
 const url = "https://touraine.tech/"
 module.exports = {
   mode: 'universal',

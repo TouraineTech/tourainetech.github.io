@@ -8,11 +8,12 @@
         Touraine Tech'
       </h1>
       <h2 class="subtitle">
-        01 février 2019
+        Vendredi 01 février 2019
       </h2>
       <p>
-        La première conférence technique en région centre sur les nouvelles technologies du numérique
+        La conférence technique en région centre sur les nouvelles technologies du numérique
       </p>
+      <p>socials</p>
     </div>
     <img
       class="mouse_scroll"
