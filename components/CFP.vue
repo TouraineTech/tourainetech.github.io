@@ -1,7 +1,7 @@
 <template>
-  <section class="container--white">
+  <section id="cfp" class="container--white">
     <div class="container--fix container--center">
-      <h2 id="#cfp">Call for paper</h2>
+      <h2>Call for paper</h2>
       <p>
         Vous pouvez proposer un sujet jusqu'au <span class="label--text label--green">dimanche 7 décembre 2018</span>, la délibération se fera le <span class="no-wrap">X décembre 2019</span>.
       </p>

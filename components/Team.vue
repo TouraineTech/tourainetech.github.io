@@ -1,5 +1,5 @@
 <template>
-  <section class="container--white">
+  <section id="team" class="container--white">
     <div class="container--fix container--center">
       <h2>L'équipe</h2>
       <ul>

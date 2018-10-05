@@ -1,5 +1,5 @@
 <template>
-  <section class="container--white">
+  <section id="sponsors" class="container--white">
     <div class="container--fix container--center">
       <h2>Nos sponsors</h2>
       <p>

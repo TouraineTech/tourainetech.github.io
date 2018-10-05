@@ -1,5 +1,5 @@
 <template>
-  <section class="container--green">
+  <section id="backtoschool" class="container--green">
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">

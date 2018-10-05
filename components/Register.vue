@@ -1,5 +1,5 @@
 <template>
-  <section class="container--green">
+  <section id="register" class="container--green">
     <div class="container--fix container--center">
       <h2>Inscriptions</h2>
       <div>
