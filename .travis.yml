@@ -17,7 +17,7 @@ install:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_ACCESS_TOKEN  # Set in travis-ci.org dashboard, marked secure https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  github-token: $GITHUB_TOKEN
   target-branch: gh-pages
   local-dir: dist
   on:
@@ -30,11 +30,11 @@ deploy:
 #  on:
 #    branch: dev
 #  token:
-#    secure: SkotwM2QghmbSKHWPvqZNC2ugqPdtdut3nwSWxx31O8unezz5xYnZQKgR/Yj1HxHDjQspN/2TRY9ReLzNkEgC8/dI4DJSK8h3SlcbkQJVcV+B/aY7QYjov/9OBqX0RIn0tz9BZiWGJpEfE2IeUphch00hyvNb2YSthSJsdSqql1UCdEX4UqMNxnEcfYtwQa4+1vD5ZIpDC4tHciUdfQVdyc2dOCA/iqR/DGbb+j4PXLRtC6z2/qT4leSi0DuPqmlN/DUKe2Vo5TDn7Q1g58QA4qvMuR4HnpBNNXPn6HeqIUnQlrf5w8YoQd02jJeqQQN7/3o317Xa1Q6g80CUSGel8ti6OUzMm+osB6UghZU8yGPCiX4q/H1DZG7FrunDnf0O/EgYy7gqcdLEWsg3IT5zcAjUzufhq7GBdf5ao9xbSunJPiys5duNfr6UOaChD8wFX5mXhbSeVCGKrO0dEaATQs9TIr8JoFTq2l1Ehd2d5E0ilpnGZKcBl1hTg2hR+gYV4fFE2B5WEP593Rxy3zAsuJi0IIBz81k5hyL60mSg+teZwqH45WOGQuMu9vWnhast2/NHXX5fx26wBV6oA3vXWhlCllkgIMLSzi0rhQ1czrMOAdUvnst+2vU2RkP3h25teqZb9JB8+9ZGpNDy5p/T9h0icNDSM81U6+swH8UzVU=
+#    secure: $FIREBASE_TOKEN
 
 notifications:
   slack:
-    secure: oPIKyyECMtndSsq9SFOcotusgqoywKv/8z6pG+YR5oNsB/yfXk9APb8WhCOoPkuc9g4LZBoqWqarcup7EjyAH8VtgTdIxFpsEl8barF2kDf8kOLrnj6CRkU2MMNBGxpXteBh4RJjLcB9JEi9UqqUWLbUtaRWnpZgC8LD1YhUFmcQruwkROx9CxIlTa+wFJFI6zz4nc2TBXC/sW9CPF28C6OSrtZfaHi53UxZxcSB6TxyLHLtPAilaQmeyThPXIuKNOZ/MDZ1WUa6RSM0QP/jRrXx/X5fEU/ZUCLkZNM5TwkADmzc7Br1m5KweCY2WXjyr85iOdr9Wr8fGd78MDcAIfKyJNAr/0ztGZMoUHAGmNokzIe4Q3X+gKPRBdnTGS2e0VKyKKIuuCh1YeBuHXmYGsmAxk5Dwz3BmjNuOSBiCynRVti+lTHGAIo3a0Vt7MSXqQ4vg5BxJihZqrViPk24ZgRQRjoQMU+gUmhpZ4kNUPt98Ty93/qLneNOKq4IN7azA/fbZQQl6NuEN8/omwYL4FHVaU1nWdYke/M/GDXxiP9nS4Lq8aOHGfjsxOXfYsUgdK0bOEGEyhCFg+kRO4LiroFfdFXQXZtIXRPNTlehSkrG3dXoSV86WMozYXwtFeeYyyk0+KCgAh/g2H8zSUK1W0Oe1covIzBVT9ESoYAMyLQ=
+    secure: $SLACK_TOKEN
     template:
     - $TRAVIS_COMMIT_MESSAGE
     - $TRAVIS_PULL_REQUEST_SLUG
