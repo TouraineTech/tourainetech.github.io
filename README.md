@@ -1,22 +1,16 @@
-# website
+Touraine Tech Website
+=====================
+[![Build Status](https://travis-ci.org/TouraineTech/tourainetech.github.io.svg?branch=dev)](https://travis-ci.org/TouraineTech/tourainetech.github.io)
 
-> My tiptop Nuxt.js project
+To work on the project checkout the `dev` branch.
 
-## Build Setup
+Do not forget to install dependencies : `npm install`
 
-``` bash
-# install dependencies
-$ yarn install
+To have a local live version use : `npm run dev`
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
+To build use : `npm run generate`
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
 
-# generate static project
-$ yarn run generate
-```
+### TODO
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+* Each pull requests are built and deployed on github pages.
