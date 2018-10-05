@@ -18,7 +18,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_NEW_TOKEN
-  target-branch: gh-pages
+  target-branch: master
   local-dir: dist
   on:
     branch: tnt2019
