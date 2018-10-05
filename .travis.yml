@@ -34,7 +34,8 @@ deploy:
 
 notifications:
   slack:
-    secure: $SLACK_TOKEN
+    rooms:
+      secure: $SLACK_TOKEN
     template:
     - $TRAVIS_COMMIT_MESSAGE
     - $TRAVIS_PULL_REQUEST_SLUG
