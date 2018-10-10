@@ -44,7 +44,6 @@
       CFP,
       Team,
       Navbar,
-      LastEdition,
       Socials
     }
   }
