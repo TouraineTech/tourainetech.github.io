@@ -11,13 +11,13 @@
         <li><span>2</span> hands on</li>
       </ul>
       <ul class="backtoschool--themes">
-        <li><img src="@/assets/img/1_design.svg">Design, UI, UX</li>
-        <li><img src="@/assets/img/2_front.svg">Front web, mobile</li>
-        <li><img src="@/assets/img/3_cloud.svg">Backends, Cloud, Big Data</li>
-        <li><img src="@/assets/img/4_jeux.svg">Jeux vidéos et hybrides</li>
-        <li><img src="@/assets/img/5_objets.svg">Internet des objets</li>
-        <li><img src="@/assets/img/6_archi.svg">Conception, architecture</li>
-        <li><img src="@/assets/img/7_outils.svg">Outillage, pratiques de développement</li>
+        <li><img src="@/assets/img/1_design.svg" alt="design logo">Design, UI, UX</li>
+        <li><img src="@/assets/img/2_front.svg" alt="front logo">Front web, mobile</li>
+        <li><img src="@/assets/img/3_cloud.svg" alt="cloud logo">Backends, Cloud, Big Data</li>
+        <li><img src="@/assets/img/4_jeux.svg" alt="jeux logo">Jeux vidéos et hybrides</li>
+        <li><img src="@/assets/img/5_objets.svg" alt="objets logo">Internet des objets</li>
+        <li><img src="@/assets/img/6_archi.svg" alt="archi logo">Conception, architecture</li>
+        <li><img src="@/assets/img/7_outils.svg" alt="outils logo">Outillage, pratiques de développement</li>
       </ul>
     </div>
   </section>

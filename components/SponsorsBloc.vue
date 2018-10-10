@@ -8,7 +8,7 @@
         :href="sponsor.link"
         target="_blank"
       >
-        <img :src="require(`@/assets/img/${sponsor.image}`)">
+        <img :src="require(`@/assets/img/${sponsor.image}`)" :alt="sponsor.name">
       </a>
     </div>
   </div>

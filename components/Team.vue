@@ -5,7 +5,7 @@
       <ul>
         <li v-for="p in team"
             :key="p.name">
-          <img :src="p.avatar">
+          <img :src="p.avatar" :alt="p.name">
           <div>{{ p.name }}</div>
         </li>
       </ul>
