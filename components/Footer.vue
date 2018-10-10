@@ -6,16 +6,7 @@
         </li>
       </ul>
     </div>
-    <div class="footer--socials">
-      <ul>
-        <li><a href="https://twitter.com/tourainetech" target="_blank">
-          <img src="@/assets/img/twitter.png" alt="Twitter logo">
-        </a></li>
-        <li><a href="https://www.facebook.com/tourainetech/" target="_blank">
-          <img src="@/assets/img/facebook.png" alt="Facebook logo">
-        </a></li>
-      </ul>
-    </div>
+    <Socials/>
   </footer>
 </template>
 
@@ -32,22 +23,17 @@
         margin-bottom: 2rem;
       }
     }
-
-    .footer--socials ul{
-      display: flex;
-
-      margin-left: -0.5rem;
-      margin-right: -0.5rem;
-
-      li{
-        margin: 0 0.5rem;
-
-        img{
-          width: 35px;
-          height: 35px;
-          border-radius: 5px;
-        }
-      }
-    }
   }
 </style>
+
+
+<script>
+  import Socials from '~/components/Socials.vue'
+
+  export default {
+    components: {
+      Socials
+    }
+  }
+</script>
+
