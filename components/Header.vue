@@ -17,7 +17,7 @@
     </div>
     <img
       class="mouse_scroll"
-      src="../assets/img/mouse_scroll.svg"
+      src="@/assets/img/mouse_scroll.svg"
       alt="scroll">
   </section>
 </template>

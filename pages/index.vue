@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar/>
+    <ScrollToTop/>
     <Header/>
     <About/>
     <Sponsors/>
@@ -31,6 +32,7 @@
   import CFP from '~/components/CFP.vue'
   import Team from '~/components/Team.vue'
   import Navbar from '~/components/Navbar.vue'
+  import ScrollToTop from '~/components/ScrollToTop.vue'
 
   export default {
     components: {
@@ -44,7 +46,8 @@
       CFP,
       Team,
       Navbar,
-      Socials
+      Socials,
+      ScrollToTop
     }
   }
 </script>
