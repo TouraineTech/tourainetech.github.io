@@ -2,10 +2,10 @@
   <div class="socials">
     <ul>
       <li><a href="https://twitter.com/tourainetech" target="_blank">
-        <img src="@/assets/img/twitter.png">
+        <img src="@/assets/img/twitter.png" alt="Twitter logo">
       </a></li>
       <li><a href="https://www.facebook.com/tourainetech/" target="_blank">
-        <img src="@/assets/img/facebook.png">
+        <img src="@/assets/img/facebook.png" alt="Facebook logo">
       </a></li>
     </ul>
   </div>
