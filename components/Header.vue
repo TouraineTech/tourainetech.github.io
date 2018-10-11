@@ -52,6 +52,22 @@
     height: 32px;
     position: absolute;
     bottom: 2rem;
+    animation: 500ms linear scroll;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-1rem);
+    }
+    75% {
+      transform: translateY(1rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .container--header {
