@@ -4,7 +4,7 @@
       src="../assets/img/logo.svg"
       alt="Logo Touraine Tech' 2019">
     <ul>
-      <li v-for="section in sections" :key="section.anchor" @click="scrollTo(section.anchor)"><a>{{ section.name }}</a>
+      <li v-for="section in sections" :key="section.anchor" @click="scrollTo(section.anchor)" :class="{'mobile': section.mobile}"><a>{{ section.name }}</a>
       </li>
     </ul>
   </nav>
@@ -16,12 +16,12 @@
       return {
         scrolled: false,
         sections: [
-          {name: '#BackToSchool', anchor: '#backtoschool'},
-          {name: 'Sponsors', anchor: '#sponsors'},
-          {name: 'Inscription', anchor: '#register'},
-          {name: 'L\'équipe', anchor: '#team'},
-          {name: 'L\'actu', anchor: '#news'},
-          {name: 'CFP', anchor: '#cfp'},
+          {name: '#BackToSchool', anchor: '#backtoschool', mobile: false},
+          {name: 'Sponsors', anchor: '#sponsors', mobile: true},
+          {name: 'Inscription', anchor: '#register', mobile: true},
+          {name: 'L\'équipe', anchor: '#team', mobile: false},
+          {name: 'L\'actu', anchor: '#news', mobile: false},
+          {name: 'CFP', anchor: '#cfp', mobile: true},
         ]
       }
     },
@@ -44,7 +44,7 @@
           window.scrollTo({
             "behavior": "smooth",
             "top": document.querySelector(target).offsetTop - 70
-          });
+          })
           return false
         }
       }
@@ -56,18 +56,19 @@
   @import "./../assets/scss/variables";
 
   @media screen and (max-width: $tablet-step - 1) {
-    nav{
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: $tablet-step) {
-    nav{
-      display: flex;
-    }
-  }
-
     nav {
+      li:not(.mobile){
+        display: none;
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
     background-color: white;
     position: fixed;
     top: 0;
@@ -77,6 +78,7 @@
     transition: 300ms ease-in-out;
     z-index: 1000;
     box-shadow: transparentize($color-primary, 0.8) 3px 3px 3px;
+    justify-content: center;
 
     &.navbar--visible {
       transform: translateY(0px);
@@ -93,12 +95,11 @@
       padding: 0;
 
       li {
-        padding: 0 1rem;
-        padding-top: 1.3rem;
+        padding: 1.3rem 1rem;
         cursor: pointer;
         background-color: white;
         transition: 300ms ease-in-out;
-        &:hover{
+        &:hover {
           background-color: lighten($color-secondary, 30%);
         }
         a {
