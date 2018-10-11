@@ -14,23 +14,23 @@ install:
 - npm install
 - npm run generate
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_NEW_TOKEN
-  target-branch: master
-  local-dir: dist
-  on:
-    branch: tnt2019
-
 #deploy:
-#  provider: firebase
-#  project: "touraine-tech"
-#  skip_cleanup: true
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $GITHUB_NEW_TOKEN
+#  target-branch: master
+#  local-dir: dist
 #  on:
-#    branch: dev
-#  token:
-#    secure: $FIREBASE_TOKEN
+#    branch: develop
+
+deploy:
+  provider: firebase
+  project: "touraine-tech"
+  skip_cleanup: true
+  on:
+    branch: develop
+  token:
+    secure: $FIREBASE_TOKEN
 
 notifications:
   slack:
