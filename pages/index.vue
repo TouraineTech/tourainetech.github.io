@@ -48,6 +48,9 @@
       Navbar,
       Socials,
       ScrollToTop
+    },
+    mounted(){
+      this.$smoothScroll.polyfill()
     }
   }
 </script>

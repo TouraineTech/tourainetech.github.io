@@ -15,10 +15,10 @@
       </p>
       <Socials/>
     </div>
-    <img
+    <!--<img
       class="mouse_scroll"
       src="@/assets/img/mouse_scroll.svg"
-      alt="scroll">
+      alt="scroll">-->
   </section>
 </template>
 
@@ -47,7 +47,7 @@
     padding-bottom: 15px;
   }
 
-  .mouse_scroll {
+  /*.mouse_scroll {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -69,7 +69,7 @@
       transform: translateY(0);
     }
   }
-
+*/
   .container--header {
     min-height: 100vh;
     display: flex;

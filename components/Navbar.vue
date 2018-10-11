@@ -4,7 +4,7 @@
       src="../assets/img/logo.svg"
       alt="Logo Touraine Tech' 2019">
     <ul>
-      <li v-for="section in sections" :key="section.anchor" @click="scrollTo(section.anchor)" :class="{'mobile': section.mobile}"><a>{{ section.name }}</a>
+      <li v-for="section in sections" :key="section.anchor" @touch="scrollTo(section.anchor)" @click="scrollTo(section.anchor)" :class="{'mobile': section.mobile}"><a>{{ section.name }}</a>
       </li>
     </ul>
   </nav>

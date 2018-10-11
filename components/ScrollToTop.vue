@@ -1,5 +1,5 @@
 <template>
-  <div class="scrolltotop--container" @click="scrollToTop" :class="{'scrolltotop--visible': scrolled}" title="Retourner en haut">
+  <div class="scrolltotop--container" @click="scrollToTop" @touch="scrollToTop" :class="{'scrolltotop--visible': scrolled}" title="Retourner en haut">
     <img src="@/assets/img/baseline-arrow_upward-24px.svg" alt="scroll to top"/>
   </div>
 </template>
