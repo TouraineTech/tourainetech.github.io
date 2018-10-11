@@ -1,36 +1,51 @@
 <template>
   <section class="container--header">
-    <div>
+    <div class="logo">
       <img
         src="../assets/img/logo.svg"
         alt="Logo Touraine Tech' 2019">
-      <h1 class="title">
-        Touraine Tech'
-      </h1>
-      <h2 class="subtitle">
-        Vendredi 01 février 2019
-      </h2>
-      <p>
-        La conférence technique en région centre sur les nouvelles technologies du numérique
-      </p>
-      <Socials/>
     </div>
-    <!--<img
-      class="mouse_scroll"
-      src="@/assets/img/mouse_scroll.svg"
-      alt="scroll">-->
+    <h1 class="title">
+      Touraine Tech'
+    </h1>
+    <h2 class="subtitle">
+      Vendredi 01 février 2019
+    </h2>
+    <p>
+      La conférence technique en région centre sur les nouvelles technologies du numérique
+    </p>
+    <socials/>
+    <div class="mouse_scroll">
+      <img
+        src="@/assets/img/mouse_scroll.svg"
+        alt="scroll">
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
   @import "./../assets/scss/variables";
 
+  .container--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   img {
     max-width: 100%;
   }
 
+  .logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .title {
-    display: block;
     font-weight: 300;
     font-size: 100px;
     color: $color-primary;
@@ -47,12 +62,19 @@
     padding-bottom: 15px;
   }
 
-  /*.mouse_scroll {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    bottom: 2rem;
-    animation: 500ms linear scroll;
+  /deep/ .socials {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mouse_scroll {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    img {
+      width: 32px;
+      height: 32px;
+      animation: 500ms linear scroll;
+    }
   }
 
   @keyframes scroll {
@@ -69,7 +91,7 @@
       transform: translateY(0);
     }
   }
-*/
+
   .container--header {
     min-height: 100vh;
     display: flex;
@@ -83,8 +105,7 @@
   p {
     font-size: 24px;
     max-width: 600px;
-    margin: auto;
-    padding: 3rem;
+    margin: 3rem auto;
   }
 
   @media screen and (max-width: $mobile-step) {
@@ -97,9 +118,11 @@
       }
       p {
         font-size: 18px;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
+    }
+    .logo, .title, p, .mouse_scroll {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   }
 
