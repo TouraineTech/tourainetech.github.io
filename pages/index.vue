@@ -26,6 +26,7 @@
   import Sponsors from '~/components/Sponsors.vue'
   import Register from '~/components/Register.vue'
   import LastEdition from '~/components/LastEdition.vue'
+  import Socials from '~/components/Socials.vue'
   import About from '~/components/About.vue'
   import CFP from '~/components/CFP.vue'
   import Team from '~/components/Team.vue'
@@ -42,7 +43,8 @@
       About,
       CFP,
       Team,
-      Navbar
+      Navbar,
+      Socials
     }
   }
 </script>

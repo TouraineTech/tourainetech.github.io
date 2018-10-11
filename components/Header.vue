@@ -13,7 +13,7 @@
       <p>
         La conférence technique en région centre sur les nouvelles technologies du numérique
       </p>
-      <p>socials</p>
+      <Socials/>
     </div>
     <img
       class="mouse_scroll"
@@ -88,3 +88,15 @@
   }
 
 </style>
+
+
+<script>
+  import Socials from '~/components/Socials.vue'
+
+  export default {
+    components: {
+      Socials
+    }
+  }
+</script>
+
