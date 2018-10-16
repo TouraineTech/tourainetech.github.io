@@ -4,6 +4,7 @@
       <ul>
         <li><a rel="noreferrer" href="http://confcodeofconduct.com/index-fr.html" target="_blank">Code de conduite</a>
         </li>
+        <li><a rel="noreferrer" href="https://2018.touraine.tech/" target="_blank">Édition 2018</a></li>
       </ul>
     </div>
     <Socials/>
@@ -13,13 +14,19 @@
 <style lang="scss" scoped>
   @import "./../assets/scss/variables";
 
-  footer{
+  footer {
     display: flex;
+
+    .footer--links {
+      li {
+        margin: 1rem 0;
+      }
+    }
 
     @media screen and (max-width: $mobile-step) {
       display: block;
 
-      .footer--links{
+      .footer--links {
         margin-bottom: 2rem;
       }
     }
