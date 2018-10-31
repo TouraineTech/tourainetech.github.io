@@ -16,6 +16,12 @@
     "image": "logo-polytech.png",
     "link": "https://polytech.univ-tours.fr/",
     "type": "partenaires"
+  },
+  {
+    "name": "Harmonie Mutuelle",
+    "image": "logo-harmonie.jpg",
+    "link": "https://www.harmonie-mutuelle.fr/",
+    "type": "platinium"
   }
 
 ]
