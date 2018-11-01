@@ -1,7 +1,6 @@
 <template>
   <div>
     <Navbar/>
-    <ScrollToTop/>
     <Header/>
     <About/>
     <Sponsors/>
@@ -16,12 +15,10 @@
     </section>
     <CFP/>
     <Map/>
-    <Footer/>
   </div>
 </template>
 
 <script>
-  import Footer from '~/components/Footer.vue'
   import Map from '~/components/Map.vue'
   import Header from '~/components/Header.vue'
   import Sponsors from '~/components/Sponsors.vue'
@@ -32,22 +29,19 @@
   import CFP from '~/components/CFP.vue'
   import Team from '~/components/Team.vue'
   import Navbar from '~/components/Navbar.vue'
-  import ScrollToTop from '~/components/ScrollToTop.vue'
 
   export default {
     components: {
       Header,
       Register,
-      Footer,
       Map,
       Sponsors,
       LastEdition,
       About,
       CFP,
       Team,
-      Navbar,
       Socials,
-      ScrollToTop
+      Navbar
     },
     mounted(){
       this.$smoothScroll.polyfill()
