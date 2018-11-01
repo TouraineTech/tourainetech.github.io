@@ -101,7 +101,19 @@
         width: auto;
       }
     }
+  }
 
+  @media screen and (max-width: $mobile-step) {
+    div.description--container {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      .description--link {
+        a {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
   }
 
 </style>
