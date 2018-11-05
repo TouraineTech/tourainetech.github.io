@@ -2,14 +2,13 @@
   <div v-if="sponsors.length > 0">
     <h3><span>{{ type }}</span></h3>
     <div class="sponsors--container">
-      <a
+      <nuxt-link
         v-for="sponsor in sponsors"
-        :key="sponsor.name"
-        :href="sponsor.link"
-        target="_blank"
+        :key="sponsor.id"
+        :to="`/sponsor/${sponsor.id}`"
       >
         <img :src="require(`@/assets/img/${sponsor.image}`)" :alt="sponsor.name">
-      </a>
+      </nuxt-link>
     </div>
   </div>
 </template>

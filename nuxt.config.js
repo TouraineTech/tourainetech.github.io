@@ -1,3 +1,5 @@
+import SPONSORS from './api/sponsors.json'
+
 const pkg = require('./package')
 const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique'
 const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
@@ -19,19 +21,19 @@ module.exports = {
       {name: 'google-site-verification', content: 'aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {hid: 'description', name: 'description', content: description},
-      {property: 'og:title', content: title},
-      {property: 'og:description', content: description},
-      {property: 'og:type', content: 'website'},
-      {property: 'og:url', content: url},
-      {property: 'og:image', content: url + 'cover.jpg'},
+      {hid: 'ogtitle', property: 'og:title', content: title},
+      {hid: 'ogdescription', property: 'og:description', content: description},
+      {hid: 'ogtype', property: 'og:type', content: 'website'},
+      {hid: 'ogurl', property: 'og:url', content: url},
+      {hid: 'ogimage', property: 'og:image', content: url + 'cover.jpg'},
       {property: 'og:locale', content: 'fr_FR'},
       // Twitter Card
-      {name: 'twitter:card', content: 'summary'},
-      {name: 'twitter:site', content: '@tourainetech'},
-      {name: 'twitter:title', content: title},
-      {name: 'twitter:description', content: description},
-      {name: 'twitter:image', content: url + 'cover.jpg'},
-      {name: 'twitter:image:alt', content: 'Touraine tech logo'},
+      {hid: 'twittercard', name: 'twitter:card', content: 'summary'},
+      {hid: 'twittersite', name: 'twitter:site', content: '@tourainetech'},
+      {hid: 'twittertitle', name: 'twitter:title', content: title},
+      {hid: 'twitterdescription', name: 'twitter:description', content: description},
+      {hid: 'twitterimage', name: 'twitter:image', content: url + 'cover.jpg'},
+      {hid: 'twitterimagealt', name: 'twitter:image:alt', content: 'Touraine tech logo'},
       {name: 'apple-mobile-web-app-title', content: 'Touraine Tech'},
       {name: 'application-name', content: 'Touraine Tech'},
       {name: 'msapplication-TileColor', content: '#ffffff'},
@@ -99,6 +101,12 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+
+  generate: {
+    routes: function () {
+      return SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`)
     }
   }
 }

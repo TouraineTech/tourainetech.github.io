@@ -1,27 +1,35 @@
 [
   {
     "name": "Code-Troopers",
+    "id": "codetroopers",
     "image": "codetroopers.png",
     "link": "https://code-troopers.com",
-    "type": "bronze"
+    "type": "bronze",
+    "desc": "<b>Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications mobiles sur-mesure.</b><br><br>Fondée en 2014 à Tours, Code-Troopers est installée au sein de la bouillonnante Cité de la création et du numérique MAME.<br>Analyse pour de grands groupes, développement natif multisupport pour des start-ups innovantes… Les membres de notre structure s’engagent dans des suivis complets, rigoureux, au plus près des différentes phases de vos projets informatiques."
   },
   {
     "name": "Apside",
+    "id": "apside",
     "image": "logo-apside.png",
     "link": "https://www.apside.com/",
-    "type": "gold"
+    "type": "gold",
+    "desc": ""
   },
   {
     "name": "Polytech'Tours",
+    "id": "polytechtours",
     "image": "logo-polytech.png",
     "link": "https://polytech.univ-tours.fr/",
-    "type": "partenaires"
+    "type": "partenaires",
+    "desc": ""
   },
   {
     "name": "Harmonie Mutuelle",
-    "image": "logo-harmonie.jpg",
+    "id": "harmoniemutuelle",
+    "image": "logo-harmonie.png",
     "link": "https://www.harmonie-mutuelle.fr/",
-    "type": "platinium"
+    "type": "platinium",
+    "desc": "<b>Harmonie Mutuelle, acteur de santé globale, protège aujourd’hui plus de 4,3 millions de personnes et 58.000 entreprises. Elle accompagne ses adhérents dans leur parcours de santé et de vie ainsi que les entreprises clientes dans leurs responsabilités vis-à-vis de leurs collaborateurs.<br>Harmonie Mutuelle apporte des réponses solidaires et innovantes en prévention, santé et prévoyance.</b><br><br>Pour Harmonie Mutuelle, la santé est un capital qu’il faut promouvoir en agissant sur tous ses déterminants (physiques, économiques, sociaux, culturels, environnementaux…).<br>Entreprise à but non-lucratif, elle s’engage au plus près de chacun pour le mieux vivre de tous par une approche à la fois démocratique et experte et propose des solutions mutualistes collectives et personnalisées, notamment grâce à ses réseaux partenaires (optique, audio et dentaire) et ses 900 services de soins et d’accompagnement.<br>Ses valeurs d’ouverture, de confiance, de transparence et de solidarité lui permettent de tisser un lien pérenne avec ses adhérents/clients mais aussi d’accompagner les évolutions de la société en participant à la construction du 1er groupe de protection sociale mutualiste : le Groupe VYV."
   }
 
 ]
