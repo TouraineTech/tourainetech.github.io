@@ -24,6 +24,14 @@
     "desc": ""
   },
   {
+    "name": "Polytech'Tours",
+    "id": "polytechtours",
+    "image": "logo-polytech.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "gold",
+    "desc": ""
+  },
+  {
     "name": "Harmonie Mutuelle",
     "id": "harmoniemutuelle",
     "image": "logo-harmonie.png",
