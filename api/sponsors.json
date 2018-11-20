@@ -40,6 +40,22 @@
     "desc": "<b>Harmonie Mutuelle, acteur de santé globale, protège aujourd’hui plus de 4,3 millions de personnes et 58.000 entreprises. Elle accompagne ses adhérents dans leur parcours de santé et de vie ainsi que les entreprises clientes dans leurs responsabilités vis-à-vis de leurs collaborateurs.<br>Harmonie Mutuelle apporte des réponses solidaires et innovantes en prévention, santé et prévoyance.</b><br><br>Pour Harmonie Mutuelle, la santé est un capital qu’il faut promouvoir en agissant sur tous ses déterminants (physiques, économiques, sociaux, culturels, environnementaux…).<br>Entreprise à but non-lucratif, elle s’engage au plus près de chacun pour le mieux vivre de tous par une approche à la fois démocratique et experte et propose des solutions mutualistes collectives et personnalisées, notamment grâce à ses réseaux partenaires (optique, audio et dentaire) et ses 900 services de soins et d’accompagnement.<br>Ses valeurs d’ouverture, de confiance, de transparence et de solidarité lui permettent de tisser un lien pérenne avec ses adhérents/clients mais aussi d’accompagner les évolutions de la société en participant à la construction du 1er groupe de protection sociale mutualiste : le Groupe VYV."
   },
   {
+    "name": "Sopra Steria",
+    "id": "sopraSteria",
+    "image": "logo-SOPRASTERIA.png",
+    "link": "http://www.soprasteria.com",
+    "type": "gold",
+    "desc": "Sopra Steria, leader européen de la transformation numérique, propose l’un des portefeuilles d’offres les plus complets du marché : conseil, intégration de systèmes, édition de solutions métier, infrastructure management et business process services. Il apporte ainsi une réponse globale aux enjeux de développement et de compétitivité des grandes entreprises et organisations. Combinant valeur ajoutée, innovation et performance des services délivrés, Sopra Steria accompagne ses clients dans leur transformation et les aide à faire le meilleur usage du numérique. Fort de plus de 42 000 collaborateurs dans plus de 20 pays, le Groupe Sopra Steria affiche un chiffre d’affaires de 3,8 milliards d’euros en 2017. <br/>Pour plus d'informations, retrouvez-nous sur www.soprasteria.com"
+  },
+  {
+    "name": "Sopra Banking Software",
+    "id": "sopraBanking",
+    "image": "logo-SOPRABANKING.png",
+    "link": "http://www.soprabanking.com",
+    "type": "gold",
+    "desc": "Avec ses 4000 experts et l'un des portefeuilles de solutions et de services les plus complets du marché, Sopra Banking Software est de longue date le partenaire de confiance de plus de 600 banques dans 70 pays. Son savoir-faire sans égal lui permet de répondre aux besoins d'innovation et de développement de banques et institutions financières de toute taille et activité. <br/>Sopra Banking Software est une filiale du groupe Sopra Steria, leader européen de la transformation numérique. Fort de plus de 42 000 collaborateurs, le groupe Sopra Steria affiche un chiffre d'affaires 2017 de 3,8 milliards d'euros.<br/>Pour plus d'informations, retrouvez-nous sur www.soprabanking.com"
+  },
+  {
     "name": "Worldline",
     "id": "worldline",
     "image": "logo-worldline.png",
@@ -47,6 +63,4 @@
     "type": "gold",
     "desc": "Worldline est le leader européen dans le secteur des paiements et des services transactionnels. Ses 9400 collaborateurs, présents dans 29 pays, jouent un rôle majeur dans les domaines des services marchands, de la mobilité ou encore de la e-administration et des grands projets d’état. Nous travaillons à la fois sur la mise en place d’offres et de services mutualisés, ainsi que sur la construction de solutions sur mesure au plus proche des besoins de nos clients.<br> Le modèle de Worldline, « Build to Run », se transforme aujourd’hui via le mouvement DevOps. Nous proposons en effet depuis toujours à nos clients une collaboration de bout en bout : depuis l’accompagnement métier et l’expression de besoins, la conception logicielle / UX-UI / technique, le développement, jusqu’à l’hébergement dédié ou cloud l’exploitation applicative, métier et technique.<br>L’Open Source, le Software Craftsmanship ainsi que les démarches Agile et DevOps constituent des marqueurs forts de nos projets. Les méthodologies, techniques et technologies associées trouvent un écho naturel dans la culture Worldline et sont au cœur de nos stratégies, organisations et plateformes.<br>L’amélioration continue est renforcée par la mutualisation des expertises et expériences puisque nous ne fonctionnons pas en mode régie et travaillons exclusivement depuis nos propres locaux. Au-delà de notre entité R&D, nous développons l’expertise et l’innovation grâce à un important réseau d’experts techniques, projets et métiers, issus de l’ensemble des équipes. Nos experts peuvent ainsi consacrer jusqu’à 20% de leur temps à développer leur domaine d’expertise et à partager les connaissances, en interne et au sein des communautés.<br>Par ailleurs, Worldline porte une attention particulière au développement de chaque collaborateur et propose une large offre de formations, de coding dojos, de conférences internes et externes nationales ou internationales. Nous encourageons, localement et globalement, un juste équilibre entre vie privée et vie professionnelle, par exemple avec 32 à 35 jours de congés payés selon l’ancienneté. Nous portons également une attention particulière à l’égalité femme-homme et à la mixité.<br>Enfin, La diversité des projets, clients et enjeux que nous adressons offre une très grande richesse métier et technologique. Elle permet à chacun de contribuer à la construction de solutions fonctionnelles et techniques ambitieuses. Notre organisation s’appuie ainsi sur des équipes aux profils extrêmement variés et capables d’appréhender de multiples métiers, approches, technologies et solutions.<br>Worldline est une société du groupe Atos."
   }
-
-
 ]
