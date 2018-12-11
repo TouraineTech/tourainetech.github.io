@@ -59,6 +59,7 @@
     flex-wrap: wrap;
     margin: 1rem -1rem;
     justify-content: center;
+    align-items: center;
 
     & > a{
       margin: 1rem;
