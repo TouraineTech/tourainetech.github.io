@@ -78,5 +78,13 @@
     "link": "http://www.groupe-creative.fr/",
     "type": "bronze",
     "desc": "Fort d’une croissance à deux chiffres depuis sa création en 2008, le Groupe CREATIVE poursuit son développement en conservant ses valeurs d’origine : l’expertise technique et l’épanouissement des collaborateurs. Notre Groupe est une entreprise de services du numérique, portée par ses 300 collaborateurs et répartie sur 6 agences (Rennes, Nantes, Paris, Bordeaux, Lille et Lyon) et ouvre une implantation à Tours début 2019.<br/><br/>Aujourd’hui acteur incontournable du Grand Ouest, nous adressons des projets autour de 2 domaines d’expertise :<br/>- L’ingénierie applicative (applications sur-mesure, mobilité, infrastructures de services) ;<br/>- L’ingénierie des systèmes (logiciels industriels, systèmes embarqués, informatique scientifique)..<br/><br/>L’expertise technique étant notre ADN, vous aurez l’opportunité de travailler au sein de notre filiale entièrement dédiée à la recherche et au développement : CREATIVE Innovation. Vous aurez aussi la possibilité de participer aux évènements numériques locaux en tant qu’ambassadeur du Groupe, CREATIVE étant partenaire d’associations comme le DevFest, le BreizhCamp, Nantes Java User Group et maintenant Touraine Tech… Enfin, nous privilégions les moments de partage et de détente autour d’activités variées et de soirées entre collègues. Pour tout cela (et bien d’autres choses…) 87% de nos collaborateurs recommanderaient notre Groupe à leur entourage ! Alors si vous souhaitez travailler dans une équipe inventive et passionnée, rejoignez sans tarder la Team CREATIVE !"
+  },
+  {
+    "name": "GitLab",
+    "id": "gitlab",
+    "image": "logo-gitlab.png",
+    "link": "https://about.gitlab.com/",
+    "type": "silver",
+    "desc": "GitLab is the first single application for the entire DevOps lifecycle. Only GitLab enables Concurrent DevOps, unlocking organizations from the constraints of the toolchain. GitLab provides unmatched visibility, higher levels of efficiency, and comprehensive governance. This makes the software lifecycle 200% times faster, radically improving the speed of business."
   }
 ]
