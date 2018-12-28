@@ -3,6 +3,8 @@ import SPONSORS from '../api/sponsors.json'
 import TEAM from '../api/team.json'
 import TALKS from '../api/talks.json'
 
+const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], [])
+
 const createStore = () => {
   return new Vuex.Store({
     state: {
@@ -12,7 +14,7 @@ const createStore = () => {
     },
     getters: {
       speakers ({talks}) {
-        return talks.flatMap(talk => talk.speakers).sort((a,b) => a.name.localeCompare(b.name))
+        return flatMap(talk => talk.speakers, talks).sort((a,b) => a.name.localeCompare(b.name))
       }
     },
     actions: {

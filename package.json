@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
+    "showdown": "^1.9.0",
     "smoothscroll-polyfill": "^0.4.3"
   },
   "devDependencies": {
