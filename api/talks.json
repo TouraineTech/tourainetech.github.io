@@ -15,5 +15,35 @@
                 "company":"SuiviDeFlotte.net - Beepiz"
             }
         ]
+    },
+    {
+        "speakers": [
+            {
+                "name": "Speaker 1"
+            },
+            {
+                "name": "Speaker 2"
+            }
+        ]
+    },
+    {
+        "speakers": [
+            {
+                "name": "Speaker 3"
+            },
+            {
+                "name": "Speaker 4"
+            }
+        ]
+    },
+    {
+        "speakers": [
+            {
+                "name": "Speaker 5"
+            },
+            {
+                "name": "Speaker 6"
+            }
+        ]
     }
 ]

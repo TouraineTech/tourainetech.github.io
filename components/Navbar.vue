@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{'navbar--visible': scrolled}">
+  <nav :class="{'navbar--visible': isNavbarVisible}">
     <img
       src="../assets/img/logo.svg"
       alt="Logo Touraine Tech' 2019">
@@ -12,6 +12,12 @@
 
 <script>
   export default {
+    props: {
+      alwaysVisible: {
+        type: Boolean,
+        default: false
+      }
+    },
     data() {
       return {
         scrolled: false,
@@ -23,6 +29,11 @@
           {name: 'L\'actu', anchor: '#news', mobile: false},
           {name: 'CFP', anchor: '#cfp', mobile: true},
         ]
+      }
+    },
+    computed: {
+      isNavbarVisible () {
+        return this.scrolled || this.alwaysVisible
       }
     },
     created() {

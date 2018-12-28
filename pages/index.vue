@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar/>
     <Header/>
     <About/>
     <Sponsors/>

@@ -1,0 +1,38 @@
+<template>
+  <div class="speaker--bloc">
+    <div class="container--image">
+      <img :src="speaker.avatar" :alt="speaker.name">
+    </div>
+    <h3>{{ speaker.name }}</h3>
+  </div>
+</template>
+
+<script>
+export default {
+    props: {
+        speaker: {
+            type: Object,
+            default () {
+                return {}
+            }
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+  .speaker--bloc{
+      text-align: center;
+      background-color: darken(white, 2%);
+      box-shadow: 1px 1px 5px lightgrey;
+      border-radius: 2px;
+      padding: 1rem;
+      color: black;
+
+      img{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+      }
+  }
+</style>
