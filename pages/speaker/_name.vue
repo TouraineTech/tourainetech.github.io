@@ -29,7 +29,7 @@
       }
     },
     head() {
-      const title = `Touraine Tech 2019 - Merci à ${this.speaker.name} notre partenaire ${this.speaker.type}`
+      const title = `Touraine Tech 2019 - ${this.speaker.name}`
       const url = `https://touraine.tech/speaker/${this.speaker.name}`
       const image = `${this.speaker.avatar}`
       return {
