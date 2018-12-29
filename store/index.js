@@ -2,6 +2,7 @@ import Vuex from 'vuex'
 import SPONSORS from '../api/sponsors.json'
 import TEAM from '../api/team.json'
 import TALKS from '../api/talks.json'
+import SPEAKERS from '../api/speakers.json'
 
 const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], [])
 
@@ -11,10 +12,11 @@ const createStore = () => {
       sponsors: [],
       team: [],
       talks: [],
+      speakers: []
     },
     getters: {
-      speakers ({talks}) {
-        return flatMap(talk => talk.speakers, talks).sort((a,b) => a.name.localeCompare(b.name))
+      speakers ({speakers}) {
+        return speakers
       }
     },
     actions: {
@@ -22,6 +24,7 @@ const createStore = () => {
         commit('SET_SPONSORS', SPONSORS)
         commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name)))
         commit('SET_TALKS', TALKS)
+        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.name.localeCompare(b.name)))
       }
     },
     mutations: {
@@ -33,6 +36,9 @@ const createStore = () => {
       },
       SET_TALKS (state, talks) {
         state.talks = talks
+      },
+      SET_SPEAKERS (state, speakers) {
+        state.speakers = speakers
       },
     }
   })
