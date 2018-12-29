@@ -21,18 +21,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./../assets/scss/variables";
+
   .speaker--bloc{
       text-align: center;
-      background-color: darken(white, 2%);
-      box-shadow: 1px 1px 5px lightgrey;
+      background-color: $color-primary;
+      box-shadow: 0 0 5px lightgrey;
       border-radius: 2px;
       padding: 1rem;
-      color: black;
+      color: white;
 
       img{
           width: 100px;
           height: 100px;
           border-radius: 50%;
+          border: 3px solid white;
       }
   }
 </style>

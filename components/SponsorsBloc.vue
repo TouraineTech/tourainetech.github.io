@@ -1,6 +1,6 @@
 <template>
   <div v-if="sponsors.length > 0">
-    <h3><span>{{ type }}</span></h3>
+    <h3 class="type--title"><span>{{ type }}</span></h3>
     <div class="sponsors--container">
       <nuxt-link
         v-for="sponsor in sponsors"
@@ -32,7 +32,7 @@
 <style lang="scss">
   @import "./../assets/scss/variables";
 
-  h3 {
+  h3.type--title {
     font-weight: 300;
     position: relative;
     z-index: 1;

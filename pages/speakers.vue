@@ -11,9 +11,7 @@
 
 <script>
   import SpeakerBloc from '~/components/SpeakerBloc'
-
-  const showdown = require('showdown')
-  const converter = new showdown.Converter()
+  
   export default {
     components: {
       SpeakerBloc
