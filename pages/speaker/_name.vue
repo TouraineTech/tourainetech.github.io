@@ -93,19 +93,7 @@
     margin-top: 2rem;
 
     p {
-      text-align: justify;
       line-height: 32px;
-    }
-
-    .description--link {
-      margin-top: 2rem;
-      a {
-        text-decoration: none;
-        background-color: $color-primary;
-        padding: 0.5rem 3rem;
-        border-radius: 0.5rem;
-        width: auto;
-      }
     }
   }
 
