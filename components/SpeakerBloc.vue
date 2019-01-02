@@ -37,5 +37,9 @@ export default {
           border-radius: 50%;
           border: 3px solid white;
       }
+
+      h3{
+        font-size: 1rem;
+      }
   }
 </style>
