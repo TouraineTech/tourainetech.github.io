@@ -109,7 +109,7 @@ module.exports = {
     routes: function () {
       return [
         ...SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`),
-        ...SPEAKERS.map(speaker => `/speaker/${speaker.name}`)
+        ...SPEAKERS.filter(({confirmed}) => confirmed).map(speaker => `/speaker/${speaker.name}`)
       ]
     }
   }
