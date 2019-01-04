@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Navbar/>
     <Header/>
     <About/>
     <Sponsors/>
     <Register/>
     <!--<LastEdition/>-->
+    <TopSpeakers/>
     <Team/>
     <section id="news" class="container--green">
       <div class="container--fix container--center">
@@ -13,7 +13,7 @@
         <a href="https://twitter.com/intent/tweet?button_hashtag=TNT19&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-lang="fr" data-show-count="false">Tweet #TNT19</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
-    <CFP/>
+    <!--<CFP/>-->
     <Map/>
   </div>
 </template>
@@ -29,6 +29,7 @@
   import CFP from '~/components/CFP.vue'
   import Team from '~/components/Team.vue'
   import Navbar from '~/components/Navbar.vue'
+  import TopSpeakers from '~/components/TopSpeakers.vue'
 
   export default {
     components: {
@@ -41,7 +42,8 @@
       CFP,
       Team,
       Socials,
-      Navbar
+      Navbar,
+      TopSpeakers
     },
     mounted(){
       this.$smoothScroll.polyfill()

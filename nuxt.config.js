@@ -1,4 +1,5 @@
 import SPONSORS from './api/sponsors.json'
+import SPEAKERS from './api/speakers.json'
 
 const pkg = require('./package')
 const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique'
@@ -106,7 +107,10 @@ module.exports = {
 
   generate: {
     routes: function () {
-      return SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`)
+      return [
+        ...SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`),
+        ...SPEAKERS.filter(({confirmed}) => confirmed).map(speaker => `/speaker/${speaker.name}`)
+      ]
     }
   }
 }

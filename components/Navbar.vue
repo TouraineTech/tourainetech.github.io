@@ -1,6 +1,8 @@
 <template>
-  <nav :class="{'navbar--visible': scrolled}">
+  <nav :class="{'navbar--visible': scrolled, 'navbar--fixed': alwaysVisible}">
     <img
+      @touch="goToHome()"
+      @click="goToHome()"
       src="../assets/img/logo.svg"
       alt="Logo Touraine Tech' 2019">
     <ul>
@@ -12,6 +14,12 @@
 
 <script>
   export default {
+    props: {
+      alwaysVisible: {
+        type: Boolean,
+        default: false
+      }
+    },
     data() {
       return {
         scrolled: false,
@@ -19,19 +27,19 @@
           {name: '#BackToSchool', anchor: '#backtoschool', mobile: false},
           {name: 'Sponsors', anchor: '#sponsors', mobile: true},
           {name: 'Inscription', anchor: '#register', mobile: true},
+          {name: 'Speakers', anchor: '#speakers', mobile: true},
           {name: 'L\'équipe', anchor: '#team', mobile: false},
           {name: 'L\'actu', anchor: '#news', mobile: false},
-          {name: 'CFP', anchor: '#cfp', mobile: true},
         ]
       }
     },
     created() {
-      if (process.browser) {
+      if (process.browser && !this.alwaysVisible) {
         window.addEventListener('scroll', this.handleScroll)
       }
     },
     destroyed() {
-      if (process.browser) {
+      if (process.browser && !this.alwaysVisible) {
         window.removeEventListener('scroll', this.handleScroll)
       }
     },
@@ -41,12 +49,19 @@
       },
       scrollTo(target) {
         if (process.browser) {
-          window.scrollTo({
-            "behavior": "smooth",
-            "top": document.querySelector(target).offsetTop - 70
-          })
-          return false
+          if (!this.alwaysVisible) {
+            window.scrollTo({
+              "behavior": "smooth",
+              "top": document.querySelector(target).offsetTop - 70
+            })
+          } else {
+            this.$router.push(`/${target}`)
+          }
         }
+        return false
+      },
+      goToHome() {
+        this.$router.push('/')
       }
     },
   }
@@ -84,9 +99,14 @@
       transform: translateY(0px);
     }
 
+    &.navbar--fixed {
+      transform: translateY(0);
+    }
+
     img {
       margin: 8px 1rem;
       max-height: 48px;
+      cursor: pointer;
     }
 
     ul {

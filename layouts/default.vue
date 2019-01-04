@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Navbar :always-visible="scrollbarIsAlwaysVisible"/>
     <ScrollToTop/>
     <nuxt/>
     <Footer/>
@@ -14,15 +15,23 @@
   import Footer from '~/components/Footer.vue'
   import Socials from '~/components/Socials.vue'
   import ScrollToTop from '~/components/ScrollToTop.vue'
+  import Navbar from '~/components/Navbar.vue'
 
   export default {
     components: {
       Footer,
       Socials,
-      ScrollToTop
+      ScrollToTop,
+      Navbar
     },
-    mounted(){
+    computed: {
+      scrollbarIsAlwaysVisible() {
+        return this.$route.path !== '/'
+      }
+    },
+    mounted() {
       this.$smoothScroll.polyfill()
-    }
+    },
+    
   }
 </script>
