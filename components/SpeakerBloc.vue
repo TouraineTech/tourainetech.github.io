@@ -30,6 +30,7 @@ export default {
       border-radius: 2px;
       padding: 1rem;
       color: white;
+      height: available;
 
       img{
           width: 100px;

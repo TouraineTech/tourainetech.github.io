@@ -11,14 +11,14 @@
     "confirmed": true
   },
   {
-    "id": "5Ob98R2kYKdnHHAwzQ88ZaEcsE53",
+    "id": "u3FdKFoMCSZ8EZ083Kncdi1019X2",
     "name": "Delphine Millet",
     "avatar": "https://lh6.googleusercontent.com/-KA5hkxM0tEk/AAAAAAAAAAI/AAAAAAAAEeo/hIRvO_L9FvQ/photo.jpg",
-    "github": null,
-    "twitter": null,
-    "bio": null,
-    "company": null,
-    "city": null,
+    "github": "delphinemillet",
+    "twitter": "MilletDelphine",
+    "bio": "Attirée à la fois par le design et la programmation, c’est tout naturellement que Delphine s’est orientée vers le développement front-end. Toujours avide de nouveauté, l’écosystème Javascript est pour elle une source de découverte permanente ! Développeuse front-end chez Zenika, son framework de prédilection est React. Elle accorde une importance particulière à la qualité, au design, à l'expérience utilisateur et à l'accessibilité.",
+    "company": "Zenika",
+    "city": "Nantes, France",
     "confirmed": true
   },
   {
@@ -40,6 +40,17 @@
     "twitter": "@garreau_audrey",
     "bio": "Audrey est Intégratrice Web senior. Elle a co-fondé l'agence Yumigo en 2015.\nMue par une insatiable soif d'apprendre et consciente que le diable est dans les détails, elle perfectionne sans cesse sa technique à 360°.\nSes chantiers de prédilection : responsive, accessibilité, performance.\nElle s'engage pour améliorer la place de la femme dans le numérique.\nSigne particulier : enchaîne les escape rooms nantaises comme des M&Ms (aucune défaite à ce jour ^^).",
     "company": "Yumigo",
+    "city": "Nantes, France",
+    "confirmed": true
+  },
+  {
+    "id": "MKCVoyKPwHb8Cd0uTe2erKbhPqf1",
+    "name": "Jean-Francois Garreau",
+    "avatar": "https://lh6.googleusercontent.com/-jDbKZi8b1pE/AAAAAAAAAAI/AAAAAAAASRc/rrjQ9nn1LgQ/photo.jpg",
+    "github": "jefBinomed",
+    "twitter": "@jefbinomed",
+    "bio": "GDE Web Technology, je travaille pour Sfeir en tant que CTO de l'agence de Nantes.\n\nEn dehors du travail, je suis co-fondateur du GDG Nantes, organisateur du DevFest Nantes, co-créateur des Nantes Wit",
+    "company": "Sfeir / GDG Nantes",
     "city": "Nantes, France",
     "confirmed": true
   },
@@ -228,7 +239,7 @@
     "bio": "Développeur Fullstack NodeJS.",
     "company": "Virtuo",
     "city": "Tours",
-    "confirmed": false
+    "confirmed": true
   },
   {
     "id": "MnhGOgYtOAMltn07ziObYfyTUnh1",

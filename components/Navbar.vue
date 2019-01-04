@@ -28,6 +28,7 @@
           {name: 'Sponsors', anchor: '#sponsors', mobile: true},
           {name: 'Inscription', anchor: '#register', mobile: true},
           {name: 'Speakers', anchor: '#speakers', mobile: true},
+          {name: 'Talks', anchor: '#talks', mobile: true},
           {name: 'L\'équipe', anchor: '#team', mobile: false},
           {name: 'L\'actu', anchor: '#news', mobile: false},
         ]
