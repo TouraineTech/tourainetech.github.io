@@ -5,7 +5,7 @@
     <Sponsors/>
     <Register/>
     <!--<LastEdition/>-->
-    <TopSpeakers/>
+    <!--<TopSpeakers/>-->
     <Talks/>
     <Team/>
     <section id="news" class="container--green">

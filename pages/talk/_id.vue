@@ -1,9 +1,11 @@
 <template>
   <div class="container--fix">
     <h1>{{ talk.name }}</h1>
-    <nuxt-link :to="`/speaker/${speaker.name}`" v-for="speaker in speakers" :key="speaker.name">
-      <SpeakerBloc :speaker="speaker"></SpeakerBloc>
-    </nuxt-link>
+    <div class="talk-speakers--grid">
+      <nuxt-link :to="`/speaker/${speaker.name}`" v-for="speaker in speakers" :key="speaker.name">
+        <SpeakerBloc :speaker="speaker"></SpeakerBloc>
+      </nuxt-link>
+    </div>
     <div class="description--container">
       <p v-html="abstractHTML"></p>
     </div>
@@ -99,6 +101,13 @@
     p {
       line-height: 32px;
     }
+  }
+
+  .talk-speakers--grid {
+    background: $color-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   @media screen and (max-width: $mobile-step) {

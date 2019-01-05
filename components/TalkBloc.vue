@@ -1,9 +1,11 @@
 <template>
   <div class="talk--bloc">
     <h3>{{ talk.name }}</h3>
-    <nuxt-link :to="`/speaker/${speaker.name}`" v-for="speaker in speakers" :key="speaker.name">
-      <SpeakerBloc :speaker="speaker"></SpeakerBloc>
-    </nuxt-link>
+    <div class="talk-speakers--grid">
+      <div v-for="speaker in speakers" :key="speaker.name">
+        <SpeakerBloc :speaker="speaker"></SpeakerBloc>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,6 +40,9 @@ export default {
   @import "./../assets/scss/variables";
 
   .talk--bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     background-color: $color-primary;
     box-shadow: 0 0 5px lightgrey;
@@ -47,7 +52,14 @@ export default {
     height: 100%;
 
     h3{
-      font-size: 1rem;
+      font-weight: 100;
+      font-size: 1.3rem;
+    }
+
+    .talk-speakers--grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 </style>

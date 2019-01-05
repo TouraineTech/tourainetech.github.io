@@ -20,7 +20,8 @@
     },
     computed: {
       talks() {
-        return this.$store.getters.talks
+        let confirmedSpeakersId = this.$store.getters.speakers.map(s => s.id)
+        return this.$store.getters.talks.filter(({speakers}) => speakers.every(s => confirmedSpeakersId.indexOf(s) >= 0))
       }
     }
   }
@@ -31,9 +32,13 @@
 
   .talk--grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     margin-bottom: 2rem;
+
+    a {
+      text-decoration: none !important;
+    }
 
     @media screen and (max-width: $mobile-step) {
       grid-template-columns: repeat(1, 1fr);
