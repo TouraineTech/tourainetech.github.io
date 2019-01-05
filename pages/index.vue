@@ -5,7 +5,8 @@
     <Sponsors/>
     <Register/>
     <!--<LastEdition/>-->
-    <TopSpeakers/>
+    <!--<TopSpeakers/>-->
+    <Talks/>
     <Team/>
     <section id="news" class="container--green">
       <div class="container--fix container--center">
@@ -30,6 +31,7 @@
   import Team from '~/components/Team.vue'
   import Navbar from '~/components/Navbar.vue'
   import TopSpeakers from '~/components/TopSpeakers.vue'
+  import Talks from '~/components/Talks.vue'
 
   export default {
     components: {
@@ -43,7 +45,8 @@
       Team,
       Socials,
       Navbar,
-      TopSpeakers
+      TopSpeakers,
+      Talks
     },
     mounted(){
       this.$smoothScroll.polyfill()

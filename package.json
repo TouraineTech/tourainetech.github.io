@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "deploy": "push-dir --dir=dist --branch=master --cleanup",
-    "extract:speakers": "jq '.documents | map({id: .fields.uid.stringValue, name: .fields.displayName.stringValue, avatar: .fields.photoURL.stringValue, github: .fields.github.stringValue, twitter: .fields.twitter.stringValue, bio: .fields.bio.stringValue, company: .fields.company.stringValue, city: .fields.city.stringValue})' raw_speakers.json > speakers.json"
+    "extract:speakers": "jq '.documents | map({id: .fields.uid.stringValue, name: .fields.displayName.stringValue, avatar: .fields.photoURL.stringValue, github: .fields.github.stringValue, twitter: .fields.twitter.stringValue, bio: .fields.bio.stringValue, company: .fields.company.stringValue, city: .fields.city.stringValue})' raw_speakers.json > speakers.json",
+    "extract:talks": "jq '.documents | map({id: .fields.id.stringValue, createTime: .createTime, updateTime: .updateTime, name: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.title.stringValue, abstract: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.abstract.stringValue, level: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.level.stringValue, format: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.formats.stringValue, categories: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.categories.stringValue, speakers: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.speakers.mapValue.fields})' raw_talks.json > api/talks.json"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",

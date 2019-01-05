@@ -34,6 +34,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-bottom: 2rem;
+  align-items: stretch;
 
   @media screen and (max-width: $mobile-step) {
     grid-template-columns: repeat(1, 1fr);
