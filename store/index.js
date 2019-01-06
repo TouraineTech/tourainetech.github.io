@@ -20,6 +20,9 @@ const createStore = () => {
       speakers ({speakers}) {
         return speakers
       },
+      getSpeakerForIds({speakers}) {
+        return ids => speakers.filter(({id}) => ids.includes(id))
+      },
       talks ({talks}) {
         return talks
       },

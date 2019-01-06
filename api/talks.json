@@ -300,7 +300,9 @@
     "speakers": [
       "jyGjaD4PluQG5VMVsjFVsNiIEMX2"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [1],
+    "times": [8]
   },
   {
     "id": "XkEWP6hxht8EVHeGcIJj",
@@ -314,7 +316,9 @@
     "speakers": [
       "37O6NWp4PwObEXdY2Fteq2NIDBm2"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [2],
+    "times": [8]
   },
   {
     "id": "FaXf48w5zlTP3P8zNFM4",
@@ -328,7 +332,9 @@
     "speakers": [
       "4jOlS8NoZyXFPY3tOt362A9Zkmd2"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [3],
+    "times": [8]
   },
   {
     "id": "HYF2lJgOpRZuOWtlWKCU",
@@ -342,7 +348,9 @@
     "speakers": [
       "HGGzindQTLbxds93dMDhfNbDQAI2"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [1],
+    "times": [9]
   },
   {
     "id": "4BV1Z0HVxeBMtuVo6zol",
@@ -356,7 +364,9 @@
     "speakers": [
       "MnhGOgYtOAMltn07ziObYfyTUnh1"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [2],
+    "times": [9]
   },
   {
     "id": "4iXVLD9YSz2hiWBFVqqc",
@@ -370,7 +380,9 @@
     "speakers": [
       "p9l5iYCB0hVTOIpAz9S0yLhqbAb2"
     ],
-    "backup": false
+    "backup": false,
+    "rooms": [3],
+    "times": [9]
   },
   {
     "id": "IQRy9HiP1O1DaRGy51ge",
