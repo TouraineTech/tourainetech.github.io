@@ -1,0 +1,149 @@
+[
+    {
+        "id": "welcome",
+        "name": "Welcome",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            1
+        ]
+    },
+    {
+        "id": "keynote",
+        "name": "Keynote d'ouverture",
+        "format": "break",
+        "rooms": [
+            1,
+            2
+        ],
+        "times": [
+            2
+        ]
+    },
+    {
+        "id": "ptitdej",
+        "name": "Petit déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3
+        ],
+        "times": [
+            3
+        ]
+    },
+    {
+        "id": "am1",
+        "name": "",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3
+        ],
+        "times": [
+            5
+        ]
+    },
+    {
+        "id": "dejeuner",
+        "name": "À vos foués",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            7
+        ]
+    },
+    {
+        "id": "dejeuner2",
+        "name": "Fin déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            10
+        ]
+    },
+    {
+        "id": "pm1",
+        "name": "",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3
+        ],
+        "times": [
+            12
+        ]
+    },
+    {
+        "id": "pm2",
+        "name": "",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            14
+        ]
+    },
+    {
+        "id": "gouter",
+        "name": "Goûter",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            16
+        ]
+    },
+    {
+        "id": "pm3",
+        "name": "",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            18
+        ]
+    },
+    {
+        "id": "keynoteend",
+        "name": "Keynote de fin",
+        "format": "break",
+        "rooms": [
+            1,
+            2
+        ],
+        "times": [
+            19,20
+        ]
+    }
+]
