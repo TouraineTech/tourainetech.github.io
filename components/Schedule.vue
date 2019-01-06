@@ -266,6 +266,7 @@ $color-backend: #345264;
 
 .schedule-talk-iot--category {
     background-color: $color-iot;
+    color: black;
 }
 
 .schedule-talk-game--category {
@@ -275,6 +276,7 @@ $color-backend: #345264;
 
 .schedule-talk-architecture--category {
     background-color: $color-architecture;
+    color: black;
 }
 
 .schedule-talk-tools--category {
@@ -288,6 +290,7 @@ $color-backend: #345264;
 
 .schedule-talk-design--category {
     background-color: $color-design;
+    color: black;
 }
 
 .schedule-talk-backend--category {
