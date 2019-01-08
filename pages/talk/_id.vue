@@ -94,6 +94,7 @@
   }
 
   div.description--container {
+    text-align: left;
     background-color: lighten($color-secondary, 20%);
     padding: 2rem;
     margin-top: 2rem;
