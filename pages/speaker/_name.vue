@@ -88,10 +88,11 @@
   }
 
   div.description--container {
+    text-align: left;
     background-color: lighten($color-secondary, 20%);
     padding: 2rem;
     margin-top: 2rem;
-
+    
     p {
       line-height: 32px;
     }
@@ -101,12 +102,6 @@
     div.description--container {
       margin-left: -2rem;
       margin-right: -2rem;
-      .description--link {
-        a {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
     }
   }
 

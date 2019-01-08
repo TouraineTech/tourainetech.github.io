@@ -86,5 +86,13 @@
     "link": "https://about.gitlab.com/",
     "type": "silver",
     "desc": "GitLab is the first single application for the entire DevOps lifecycle. Only GitLab enables Concurrent DevOps, unlocking organizations from the constraints of the toolchain. GitLab provides unmatched visibility, higher levels of efficiency, and comprehensive governance. This makes the software lifecycle 200% times faster, radically improving the speed of business."
+  },
+  {
+    "name": "Nicolas BRUNET",
+    "id": "vouvray",
+    "image": "logo-brunet.png",
+    "link": "http://www.vouvray-brunet.com/",
+    "type": "partenaires",
+    "desc": "Le Domaine Nicolas BRUNET s’étend sur seize hectares de vignes situés en première côte de Vouvray. Il est exploité par Nicolas BRUNET. Viticulteurs depuis neuf générations, il s’attache à cultiver ce vignoble de façon traditionnelle en respectant la vigne (vendanges uniquement manuelles) et l’environnement (utilisation raisonnée des produits de traitement et labour de la vigne en substitut des désherbants). Ses vins ne contiennent aucun résidu de pesticides (analyses du laboratoire Inovalys au Mans dans le 72)."
   }
 ]
