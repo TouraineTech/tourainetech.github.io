@@ -87,6 +87,7 @@
     "type": "silver",
     "desc": "GitLab is the first single application for the entire DevOps lifecycle. Only GitLab enables Concurrent DevOps, unlocking organizations from the constraints of the toolchain. GitLab provides unmatched visibility, higher levels of efficiency, and comprehensive governance. This makes the software lifecycle 200% times faster, radically improving the speed of business."
   },
+  {
     "name": "Nicolas BRUNET",
     "id": "vouvray",
     "image": "logo-brunet.png",
