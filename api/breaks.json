@@ -14,18 +14,6 @@
         ]
     },
     {
-        "id": "keynote",
-        "name": "Keynote d'ouverture",
-        "format": "conference",
-        "rooms": [
-            1,
-            2
-        ],
-        "times": [
-            2
-        ]
-    },
-    {
         "id": "ptitdej",
         "name": "🥐 Suite du petit déjeuner",
         "format": "break",
