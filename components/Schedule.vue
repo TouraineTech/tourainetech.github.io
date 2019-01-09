@@ -133,6 +133,7 @@ export default {
                 case "conference": return "50m"
                 case "quickie": return "15m"
                 case "handson": return "1h50"
+                case "keynoteend": return "25m"
             }
         }
     },
@@ -235,13 +236,19 @@ $color-backend: #345264;
 }
 
 .schedule-talk-break--cell {
-    border: 1px solid $color-secondary;
-    background-color: white;
-    color: $color-secondary;
+    border: 0;
+    color: $color-primary;
     font-weight: 100;
     font-size: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background: repeating-linear-gradient(
+        45deg,
+        lighten($color-secondary,30%),
+        lighten($color-secondary,30%) 10px,
+        lighten($color-secondary, 35%) 10px,
+        lighten($color-secondary, 35%) 20px
+    );
 }
 
 .schedule-talk-iot--cell {

@@ -359,14 +359,14 @@
     "name": "Au pays des Gophers (à partir de 3 ans)",
     "abstract": "Au pays des Gophers, les Goroutines gambadent librement, et s’échangent des bisous et des bonbons grâce aux channels.<br/><br/>Les méchants Locks sont tous deads (ou presque), et le Scheduler règne sur ce monde paisible qui ne connaît pas le nom des Processeurs.<br/><br/>La concurrence en Go expliquée à ma fille de 3 ans !",
     "level": "beginner",
-    "format": "quickie",
+    "format": "keynoteend",
     "categories": "backend",
     "speakers": [
       "MnhGOgYtOAMltn07ziObYfyTUnh1"
     ],
     "backup": false,
-    "rooms": [2],
-    "times": [9]
+    "rooms": [1,2],
+    "times": [18]
   },
   {
     "id": "4iXVLD9YSz2hiWBFVqqc",
@@ -515,5 +515,20 @@
       "4WL9NL8LsdNZ8RXkVzutmAcUK5j2"
     ],
     "backup": true
+  },
+  {
+    "id": "keynote",
+    "name": "Keynote d'ouverture",
+    "abstract": "Surprise",
+    "speakers": [],
+    "format": "conference",
+    "level": "beginner",
+    "rooms": [
+      1,
+      2
+    ],
+    "times": [
+        2
+    ]
   }
 ]

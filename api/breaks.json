@@ -1,7 +1,7 @@
 [
     {
         "id": "welcome",
-        "name": "Welcome / Petit déjeuner",
+        "name": "👋 Accueil et petit déjeuner",
         "format": "break",
         "rooms": [
             1,
@@ -16,7 +16,7 @@
     {
         "id": "keynote",
         "name": "Keynote d'ouverture",
-        "format": "break",
+        "format": "conference",
         "rooms": [
             1,
             2
@@ -27,7 +27,7 @@
     },
     {
         "id": "ptitdej",
-        "name": "Petit déjeuner",
+        "name": "🥐 Suite du petit déjeuner",
         "format": "break",
         "rooms": [
             1,
@@ -41,7 +41,7 @@
     },
     {
         "id": "am1",
-        "name": "",
+        "name": "☕ Pause café",
         "format": "break",
         "rooms": [
             1,
@@ -54,7 +54,7 @@
     },
     {
         "id": "dejeuner",
-        "name": "À vos foués",
+        "name": "🍽 Pause déjeuner",
         "format": "break",
         "rooms": [
             1,
@@ -67,8 +67,20 @@
         ]
     },
     {
+        "id": "dejeuner",
+        "name": "🍽 Pause déjeuner",
+        "format": "break",
+        "rooms": [
+            4
+        ],
+        "times": [
+            8,
+            9
+        ]
+    },
+    {
         "id": "dejeuner2",
-        "name": "Fin déjeuner",
+        "name": "🍽 Pause déjeuner",
         "format": "break",
         "rooms": [
             1,
@@ -82,7 +94,7 @@
     },
     {
         "id": "pm1",
-        "name": "",
+        "name": "☕ Pause café",
         "format": "break",
         "rooms": [
             1,
@@ -95,7 +107,7 @@
     },
     {
         "id": "pm2",
-        "name": "",
+        "name": "☕ Pause café",
         "format": "break",
         "rooms": [
             1,
@@ -109,7 +121,7 @@
     },
     {
         "id": "gouter",
-        "name": "Goûter",
+        "name": "☕ Pause café",
         "format": "break",
         "rooms": [
             1,
@@ -119,18 +131,6 @@
         ],
         "times": [
             16
-        ]
-    },
-    {
-        "id": "keynoteend",
-        "name": "Keynote de fin",
-        "format": "break",
-        "rooms": [
-            1,
-            2
-        ],
-        "times": [
-            18,19
         ]
     }
 ]

@@ -6,7 +6,11 @@
       src="../assets/img/logo.svg"
       alt="Logo Touraine Tech' 2019">
     <ul>
-      <li v-for="section in sections" :key="section.anchor" @touch="scrollTo(section.anchor)" @click="scrollTo(section.anchor)" :class="{'mobile': section.mobile}"><a>{{ section.name }}</a>
+      <li v-for="section in sections" 
+          :key="section.anchor" 
+          @touch="scrollTo(section.anchor)" 
+          @click="scrollTo(section.anchor)" 
+          :class="{'mobile': section.mobile}"><a>{{ section.name }}</a>
       </li>
     </ul>
   </nav>
@@ -27,7 +31,8 @@
           {name: '#BackToSchool', anchor: '#backtoschool', mobile: false},
           {name: 'Sponsors', anchor: '#sponsors', mobile: true},
           {name: 'Inscription', anchor: '#register', mobile: true},
-          {name: 'Talks', anchor: '#talks', mobile: true},
+          //{name: 'Talks', anchor: '#talks', mobile: true},
+          {name: 'Le programme', anchor: '#schedule', mobile: true},
           {name: 'L\'équipe', anchor: '#team', mobile: false},
           {name: 'L\'actu', anchor: '#news', mobile: false},
         ]
