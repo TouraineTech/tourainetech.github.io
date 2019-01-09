@@ -39,12 +39,12 @@
       }
     },
     created() {
-      if (process.browser && !this.alwaysVisible) {
+      if (process.browser && this.isHome()) {
         window.addEventListener('scroll', this.handleScroll)
       }
     },
     destroyed() {
-      if (process.browser && !this.alwaysVisible) {
+      if (process.browser && this.isHome()) {
         window.removeEventListener('scroll', this.handleScroll)
       }
     },
@@ -54,7 +54,7 @@
       },
       scrollTo(target) {
         if (process.browser) {
-          if (!this.alwaysVisible) {
+          if (this.isHome()) {
             window.scrollTo({
               "behavior": "smooth",
               "top": document.querySelector(target).offsetTop - 70
@@ -67,6 +67,9 @@
       },
       goToHome() {
         this.$router.push('/')
+      },
+      isHome() {
+        return this.$route.path === '/'
       }
     },
   }
@@ -97,7 +100,7 @@
     transform: translateY(-1000px);
     transition: 300ms ease-in-out;
     z-index: 1000;
-    box-shadow: transparentize($color-primary, 0.8) 3px 3px 3px;
+    border-bottom: 1px solid $color-secondary;
     justify-content: center;
 
     &.navbar--visible {
