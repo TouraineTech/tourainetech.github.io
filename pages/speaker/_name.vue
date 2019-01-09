@@ -96,6 +96,9 @@
     text-align: left;
     ul {
       display: flex;
+      @media screen and (max-width: $mobile-step) {
+        display: block;
+      }
       margin: 0;
       padding: 0;
       list-style: none;
