@@ -29,7 +29,7 @@
           <ul>
             <li :class="['schedule-talk-'+talk.categories+'--category']">{{ talkName(talk.categories) }}</li>
           </ul>
-          <p class="schedule-room--label">{{ roomName(talk.rooms[0]) }}</p>
+          <p class="schedule-room--duration-level">⏱{{ duration(talk.format) }} — {{ levelName(talk.level) }}</p>
         </div>
       </nuxt-link>
     </div>
@@ -119,6 +119,21 @@ export default {
         },
         roomName(room) {
             return this.rooms[room - 1];
+        },
+        levelName(level) {
+            switch(level) {
+                case "beginner": return "Débutant"
+                case "intermediate": return "Intermédiaire"
+                case "hard": return "Confirmé"
+                default: return level
+            }
+        },
+        duration(format) {
+            switch(format) {
+                case "conference": return "50m"
+                case "quickie": return "15m"
+                case "handson": return "1h50"
+            }
         }
     },
 }
@@ -188,9 +203,7 @@ $color-backend: #345264;
     margin-bottom: 1rem;
     border-left:10px solid lightseagreen;
     position: relative;
-    @media screen and (max-width: $mobile-step) {
-        padding-bottom: 40px;
-    }
+    padding-bottom: 40px;
 
     h5{
         color: darken(white, 30%);
@@ -210,17 +223,14 @@ $color-backend: #345264;
         }
     }
 
-    .schedule-room--label {
-        display: none;
-        @media screen and (max-width: $mobile-step) {
-            display: inline-block;
-            color: darken(white, 10%);
-            font-size: 0.9rem;
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            text-align: right;
-        }
+    .schedule-room--duration-level {
+        display: inline-block;
+        color: darken(white, 10%);
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        text-align: left;
     }
 }
 
