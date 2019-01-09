@@ -1,7 +1,7 @@
 [
     {
         "id": "welcome",
-        "name": "Welcome",
+        "name": "Welcome / Petit déjeuner",
         "format": "break",
         "rooms": [
             1,
@@ -32,7 +32,8 @@
         "rooms": [
             1,
             2,
-            3
+            3,
+            4
         ],
         "times": [
             3
@@ -121,20 +122,6 @@
         ]
     },
     {
-        "id": "pm3",
-        "name": "",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4
-        ],
-        "times": [
-            18
-        ]
-    },
-    {
         "id": "keynoteend",
         "name": "Keynote de fin",
         "format": "break",
@@ -143,7 +130,7 @@
             2
         ],
         "times": [
-            19,20
+            18,19
         ]
     }
 ]
