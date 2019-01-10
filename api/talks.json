@@ -309,7 +309,7 @@
     "backup": false
   },
   {
-    "id": "4BV1Z0HVxeBMtuVo6zol",
+    "id": "keynoteend",
     "createTime": "2018-10-15T08:29:05.088249Z",
     "updateTime": "2018-10-15T08:35:43.480824Z",
     "name": "Au pays des Gophers (à partir de 3 ans)",
@@ -320,7 +320,7 @@
     "speakers": [
       "MnhGOgYtOAMltn07ziObYfyTUnh1"
     ],
-    "backup": false
+    "backup": true
   },
   {
     "id": "4iXVLD9YSz2hiWBFVqqc",
