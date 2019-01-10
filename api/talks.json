@@ -353,17 +353,15 @@
     "times": [9]
   },
   {
-    "id": "4BV1Z0HVxeBMtuVo6zol",
+    "id": "keynoteend",
     "createTime": "2018-10-15T08:29:05.088249Z",
     "updateTime": "2018-10-15T08:35:43.480824Z",
-    "name": "Au pays des Gophers (à partir de 3 ans)",
-    "abstract": "Au pays des Gophers, les Goroutines gambadent librement, et s’échangent des bisous et des bonbons grâce aux channels.<br/><br/>Les méchants Locks sont tous deads (ou presque), et le Scheduler règne sur ce monde paisible qui ne connaît pas le nom des Processeurs.<br/><br/>La concurrence en Go expliquée à ma fille de 3 ans !",
+    "name": "Keynote de clôture",
+    "abstract": "Surprise",
     "level": "beginner",
     "format": "keynoteend",
-    "categories": "backend",
-    "speakers": [
-      "MnhGOgYtOAMltn07ziObYfyTUnh1"
-    ],
+    "categories": "",
+    "speakers": [],
     "backup": false,
     "rooms": [1,2],
     "times": [18]
