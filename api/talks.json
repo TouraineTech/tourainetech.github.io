@@ -293,7 +293,7 @@
     "createTime": "2018-11-12T14:58:14.813333Z",
     "updateTime": "2018-11-12T15:03:29.756431Z",
     "name": "CORS, XSS, CSRF, SQL injection  #BackToTheBasics",
-    "abstract": "Pas besoin d'être RSSI ou DevOpsSec pour se soucier de sécurité. Que l'on soit développeur back ou front, la sécurité est l'affaire de tous.<br/>Pourtant, on l'a confit souvent aveuglement à nos frameworks. Mais alors comment vérifier la sécurité de nos données et de nos utilisateurs. <br/>A travers quelques démos, nous allons voir les failles les plus basiques et pourtant les plus répandus : CORS, XSS, CSRF et SQL injection<br/>",
+    "abstract": "Pas besoin d'être RSSI ou DevOpsSec pour se soucier de sécurité. Que l'on soit développeur back ou front, la sécurité est l'affaire de tous.<br/>Pourtant, on la confie souvent aveuglement à nos frameworks. Mais alors comment vérifier la sécurité de nos données et de nos utilisateurs. <br/>A travers quelques démos, nous allons voir les failles les plus basiques et pourtant les plus répandus : CORS, XSS, CSRF et SQL injection<br/>",
     "level": "beginner",
     "format": "quickie",
     "categories": "tools",
