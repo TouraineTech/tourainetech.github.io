@@ -353,6 +353,22 @@
     "times": [9]
   },
   {
+    "id": "JFGarreauBackup",
+    "createTime": "2018-12-09T11:08:47.809609Z",
+    "updateTime": "2018-12-09T11:54:16.043013Z",
+    "name": "AutoML ou le machine learning sans data scientists",
+    "abstract": "Le machine learning n’est pas réservé qu’aux experts en data science ! Moi aussi en tant que développeur, j’ai envie de pouvoir jouer, créer sur des modèles de données qui me sont propre. Seul hic, les APIs de machine learning publiques (Voice, Vidéo, ...) ne correspondent pas à mon besoin... Mais ça c’était avant ! Grâce à AutoML, je suis maintenant en mesure de créer mes propres modèles facilement et disponible depuis une API !!",
+    "level": "beginner",
+    "format": "quickie",
+    "categories": "Backends, Cloud, Big Data",
+    "speakers": [
+      "MKCVoyKPwHb8Cd0uTe2erKbhPqf1"
+    ],
+    "backup": false,
+    "rooms": [2],
+    "times": [9]
+  },
+  {
     "id": "keynoteend",
     "createTime": "2018-10-15T08:29:05.088249Z",
     "updateTime": "2018-10-15T08:35:43.480824Z",
