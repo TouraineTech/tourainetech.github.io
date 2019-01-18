@@ -30,7 +30,7 @@
         sections: [
           {name: '#BackToSchool', anchor: '#backtoschool', mobile: false},
           {name: 'Sponsors', anchor: '#sponsors', mobile: true},
-          {name: 'Inscription', anchor: '#register', mobile: true},
+          //{name: 'Inscription', anchor: '#register', mobile: true},
           //{name: 'Talks', anchor: '#talks', mobile: true},
           {name: 'Le programme', anchor: '#schedule', mobile: true},
           {name: 'L\'équipe', anchor: '#team', mobile: false},
