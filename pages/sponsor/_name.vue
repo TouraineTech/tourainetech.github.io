@@ -94,6 +94,7 @@
     .description--link {
       margin-top: 2rem;
       a {
+        color: white;
         text-decoration: none;
         background-color: $color-primary;
         padding: 0.5rem 3rem;

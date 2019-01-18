@@ -26,7 +26,8 @@
     },
     computed: {
       scrollbarIsAlwaysVisible() {
-        return this.$route.path !== '/'
+        //return this.$route.path !== '/'
+        return true
       }
     },
     mounted() {

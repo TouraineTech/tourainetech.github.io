@@ -26,7 +26,6 @@ export default {
   .speaker--bloc{
       text-align: center;
       background-color: $color-primary;
-      //box-shadow: 0 0 5px lightgrey;
       border-radius: 2px;
       padding: 1rem;
       color: white;

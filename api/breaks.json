@@ -1,0 +1,124 @@
+[
+    {
+        "id": "welcome",
+        "name": "👋 Accueil et petit déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            1
+        ]
+    },
+    {
+        "id": "ptitdej",
+        "name": "🥐 Suite du petit déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            3
+        ]
+    },
+    {
+        "id": "am1",
+        "name": "☕ Pause café",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3
+        ],
+        "times": [
+            5
+        ]
+    },
+    {
+        "id": "dejeuner",
+        "name": "🍽 Pause déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            7
+        ]
+    },
+    {
+        "id": "dejeuner",
+        "name": "🍽 Pause déjeuner",
+        "format": "break",
+        "rooms": [
+            4
+        ],
+        "times": [
+            8,
+            9
+        ]
+    },
+    {
+        "id": "dejeuner2",
+        "name": "🍽 Pause déjeuner",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            10
+        ]
+    },
+    {
+        "id": "pm1",
+        "name": "☕ Pause café",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3
+        ],
+        "times": [
+            12
+        ]
+    },
+    {
+        "id": "pm2",
+        "name": "☕ Pause café",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            14
+        ]
+    },
+    {
+        "id": "gouter",
+        "name": "☕ Pause café",
+        "format": "break",
+        "rooms": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "times": [
+            16
+        ]
+    }
+]
