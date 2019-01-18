@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     speakers() {
-      return this.$store.getters.speakers.filter(({id}) => this.talk.speakers.includes(id))
+      return this.$store.getters.getSpeakerForIds(this.talk.speakers)
     }
   }
 }

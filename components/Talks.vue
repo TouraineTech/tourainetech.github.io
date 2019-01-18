@@ -21,7 +21,9 @@
     computed: {
       talks() {
         let confirmedSpeakersId = this.$store.getters.speakers.map(s => s.id)
-        return this.$store.getters.talks.filter(({speakers}) => speakers.every(s => confirmedSpeakersId.indexOf(s) >= 0))
+        return this.$store.getters.talks
+        .filter(({speakers}) => speakers.every(s => confirmedSpeakersId.indexOf(s) >= 0))
+        .filter(({id}) => id !== "keynote")
       }
     }
   }
