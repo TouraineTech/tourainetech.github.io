@@ -8,6 +8,7 @@
     </div>
     <div class="description--container">
       <p v-html="abstractHTML"></p>
+      <p><a target="_blank" v-if="talk.slidesLink" :href="`${talk.slidesLink}`" >Les slides </a> </p>
     </div>
   </div>
 </template>
