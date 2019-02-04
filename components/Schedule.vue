@@ -154,6 +154,7 @@ $color-backend: #345264;
 #schedule{
     max-width: 1280px;
     margin: auto;
+    background: repeat center/100% url("../assets/img/soireeSpeakers.jpg");
 }
 .schedule--grid {
     display: grid;
@@ -180,6 +181,7 @@ $color-backend: #345264;
     text-align: right;
     padding-right: 1rem;
     border-right: 1px solid lightgrey;
+    opacity: 0.8;
 }
 
 .schedule-spacer--cell{
@@ -194,11 +196,12 @@ $color-backend: #345264;
     margin-bottom: 1rem;
     background-color: $color-secondary;
     color: white;
+    opacity: 0.8;
 }
 
 .schedule-talk--cell {
     text-decoration: none;
-    background-color: $color-primary;
+    background-color: $color-primary-alpha;
     color: white;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -249,6 +252,7 @@ $color-backend: #345264;
         lighten($color-secondary, 35%) 10px,
         lighten($color-secondary, 35%) 20px
     );
+    opacity: 0.8;
 }
 
 .schedule-talk-iot--cell {
