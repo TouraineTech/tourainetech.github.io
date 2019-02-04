@@ -152,9 +152,10 @@ $color-design: #ff75cc;
 $color-backend: #345264;
 
 #schedule{
-    max-width: 1280px;
+
     margin: auto;
-    background: repeat center/100% url("../assets/img/soireeSpeakers.jpg");
+    background: center url("../assets/img/soireeSpeakers.jpg") ;
+    background-size: cover;
 }
 .schedule--grid {
     display: grid;
