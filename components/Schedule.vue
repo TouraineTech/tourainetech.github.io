@@ -16,22 +16,31 @@
         class="schedule-talk--cell schedule-talk-break--cell">
         {{ cell.name }}
       </div>
-      <nuxt-link 
-        :to="`/talk/${talk.id}`"
+      <div
         v-for="talk of talks" 
         :key="talk.id" 
         :class="talkCssClass(talk)"
         :style="talkCellStyle(talk)"
-        :data-time="talk.time">
+        :data-time="talk.time"
+      >
         <div>
-          <h4>{{ talk.name }}</h4>
-          <h5>{{ talk.speakerNames }}</h5>
+          <nuxt-link
+            :to="`/talk/${talk.id}`"
+          >
+            <h4>{{ talk.name }}</h4>
+            <h5>{{ talk.speakerNames }}</h5>
+          </nuxt-link>
           <ul>
             <li :class="['schedule-talk-'+talk.categories+'--category']">{{ talkName(talk.categories) }}</li>
           </ul>
+          <p v-if="talk.peertubeLink || talk.dailymotionLink">
+            <a :href="talk.peertubeLink" target="_blank"><img class="icon" src="../static/cinema.svg" alt="icon cinema"/></a>
+            <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon" src="../static/dailymotion.svg" alt="icon dailymotion"/></a>
+          </p>
+          <p v-if="talk.slidesLink"><a :href="talk.slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg" alt="icon presentation"/></a></p>
           <p class="schedule-room--duration-level">⏱{{ duration(talk.format) }} — {{ levelName(talk.level) }}</p>
         </div>
-      </nuxt-link>
+      </div>
     </div>
   </section>
 </template>
@@ -206,10 +215,14 @@ $color-backend: #345264;
     position: relative;
     padding-bottom: 40px;
 
-    h5{
-        color: darken(white, 30%);
-    }
+    a {
+        text-decoration: none;
+        color: white;
 
+        h5 {
+            color: darken(white, 30%);
+        }
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -232,6 +245,15 @@ $color-backend: #345264;
         bottom: 5px;
         left: 5px;
         text-align: left;
+    }
+
+    p {
+        margin-top: 5px;
+        .icon {
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+        }
     }
 }
 
