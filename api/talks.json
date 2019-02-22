@@ -48,7 +48,9 @@
     "backup": false,
     "rooms": [1],
     "times": [11],
-    "slidesLink": ""
+    "slidesLink": "",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72s0z7",
+    "peertubeLink" : "https://peertube.fr/videos/watch/4f50f5ed-d0cd-4fc7-9341-8e11cd9aa7d0"
   },
   {
     "id": "sEyFkiS6aHzlXuWo6Z8a",
@@ -66,7 +68,9 @@
     "backup": false,
     "rooms": [1],
     "times": [13],
-    "slidesLink": "https://docs.google.com/presentation/d/1bqE0RrJBp_Vrc0Mifhi-Gu3CGRa5nhWo5qaFEz8ufOs/edit"
+    "slidesLink": "https://docs.google.com/presentation/d/1bqE0RrJBp_Vrc0Mifhi-Gu3CGRa5nhWo5qaFEz8ufOs/edit",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72s14s",
+    "peertubeLink" : "https://peertube.fr/videos/watch/27a4d3cb-744f-4837-bcf0-700b0e81059c"
   },
   {
     "id": "lw00p0gkFROeVVPqQtxW",
@@ -100,7 +104,9 @@
     "backup": false,
     "rooms": [1],
     "times": [4],
-    "slidesLink": "https://docs.google.com/presentation/d/1nzrt1afWuJJ8iGa1Fc2NYfyjZ2aiYasmfxUADGw2STw/present#slide=id.g443cbc4bb1_0_0"
+    "slidesLink": "https://docs.google.com/presentation/d/1nzrt1afWuJJ8iGa1Fc2NYfyjZ2aiYasmfxUADGw2STw/present#slide=id.g443cbc4bb1_0_0",
+    "dailymotionLink": "",
+    "peertubeLink" : "https://peertube.fr/videos/watch/d4a473f0-e7ae-48d5-8aa0-b6c4c81e2af9"
   },
   {
     "id": "owtdxLKFshDxxt3T2Zc3",
@@ -185,7 +191,9 @@
     "backup": false,
     "rooms": [1],
     "times": [17],
-    "slidesLink": "https://www.slideshare.net/FGRibreau/choisir-entre-une-api-rpc-soap-rest-graphql-et-si-le-problme-tait-ailleurs/FGRibreau/"
+    "slidesLink": "https://www.slideshare.net/FGRibreau/choisir-entre-une-api-rpc-soap-rest-graphql-et-si-le-problme-tait-ailleurs/FGRibreau/",
+    "dailymotionLink": "",
+    "peertubeLink" : ""
   },
   {
     "id": "HrbEzkDyczVchTxfdMvl",
@@ -236,7 +244,9 @@
     "backup": false,
     "rooms": [1],
     "times": [15],
-    "slidesLink": "https://speakerdeck.com/fabinout/touraine-tech-2019"
+    "slidesLink": "https://speakerdeck.com/fabinout/touraine-tech-2019",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72s17w",
+    "peertubeLink" : "https://peertube.fr/videos/watch/4ecc6c03-7e7b-4392-a726-d0c6dd942945"
   },
   {
     "id": "dMNOXRhXLpxZMCKbtFW2",
@@ -270,7 +280,9 @@
     "backup": false,
     "rooms": [1],
     "times": [6],
-    "slidesLink": ""
+    "slidesLink": "",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72os4v",
+    "peertubeLink" : "https://peertube.fr/videos/watch/4430ebc3-e8cc-4239-93b2-6495df725e5d"
   },
   {
     "id": "rz7osZfhbITMlI5B5vK5",
@@ -321,7 +333,9 @@
     "backup": false,
     "rooms": [1],
     "times": [8],
-    "slidesLink": ""
+    "slidesLink": "",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72ot1k",
+    "peertubeLink" : "https://peertube.fr/videos/watch/2be19a9c-b692-4c37-9a3c-01983dd4cb60"
   },
   {
     "id": "XkEWP6hxht8EVHeGcIJj",
@@ -372,7 +386,9 @@
     "backup": false,
     "rooms": [1],
     "times": [9],
-    "slidesLink": ""
+    "slidesLink": "",
+    "dailymotionLink": "https://www.dailymotion.com/video/x72otb2",
+    "peertubeLink" : "https://peertube.fr/videos/watch/0cb97711-c663-4cb4-9f1b-d92ec95d6a2e"
   },
   {
     "id": "HYF2lJgOpRZuOWtlWACZ",
@@ -404,7 +420,9 @@
     "backup": false,
     "rooms": [1,2],
     "times": [18],
-    "slidesLink": "https://docs.google.com/presentation/d/1jpUbE5qzfMgXkyLy3fSxvop3s_sQE_nI3Z9xTEfH4AA"
+    "slidesLink": "https://docs.google.com/presentation/d/1jpUbE5qzfMgXkyLy3fSxvop3s_sQE_nI3Z9xTEfH4AA",
+    "dailymotionLink": "",
+    "peertubeLink" : ""
   },
   {
     "id": "4iXVLD9YSz2hiWBFVqqc",
@@ -570,6 +588,8 @@
     ],
     "times": [
         2
-    ]
+    ],
+    "dailymotionLink": "https://www.dailymotion.com/video/x72ordy",
+    "peertubeLink" : "https://peertube.fr/videos/watch/d3b52e41-ab99-4bd0-8de9-9a9368fbbdee"
   }
 ]
