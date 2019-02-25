@@ -3,7 +3,7 @@
     <Header/>
     <About/>
     <Sponsors/>
-    <Register/>
+    <Pictures/>
     <!--<LastEdition/>-->
     <!--<TopSpeakers/>-->
     <!--<Talks/>-->
@@ -25,6 +25,7 @@
   import Header from '~/components/Header.vue'
   import Sponsors from '~/components/Sponsors.vue'
   import Register from '~/components/Register.vue'
+  import Pictures from '~/components/Pictures.vue'
   import LastEdition from '~/components/LastEdition.vue'
   import Socials from '~/components/Socials.vue'
   import About from '~/components/About.vue'
@@ -39,6 +40,7 @@
     components: {
       Header,
       Register,
+      Pictures,
       Map,
       Sponsors,
       LastEdition,
