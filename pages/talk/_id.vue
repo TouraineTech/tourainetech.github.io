@@ -8,7 +8,9 @@
     </div>
     <div class="description--container">
       <p v-html="abstractHTML"></p>
-      <p><a target="_blank" v-if="talk.slidesLink" :href="`${talk.slidesLink}`" >Les slides </a> </p>
+      <p v-if="talk.slidesLink"><a target="_blank" :href="`${talk.slidesLink}`" >Les slides </a> </p>
+      <p v-if="talk.peertubeLink"><a target="_blank" :href="`${talk.peertubeLink}`" >La vidéo (peertube) </a> </p>
+      <p v-if="talk.dailymotionLink"><a target="_blank" :href="`${talk.dailymotionLink}`" >La vidéo (dailymotion) </a> </p>
     </div>
   </div>
 </template>
