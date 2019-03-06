@@ -8,7 +8,14 @@
     </div>
     <div class="description--container">
       <p v-html="abstractHTML"></p>
-      <p v-if="talk.slidesLink"><a target="_blank" :href="`${talk.slidesLink}`" >Les slides </a> </p>
+      <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
+        <p
+          v-for="slidesLink of talk.slidesLinks"
+          :key="slidesLink"
+        >
+          <a target="_blank" :href="`${slidesLink}`" >Les slides </a>
+        </p>
+      </span>
       <p v-if="talk.peertubeLink"><a target="_blank" :href="`${talk.peertubeLink}`" >La vidéo (peertube) </a> </p>
       <p v-if="talk.dailymotionLink"><a target="_blank" :href="`${talk.dailymotionLink}`" >La vidéo (dailymotion) </a> </p>
     </div>

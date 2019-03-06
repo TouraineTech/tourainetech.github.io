@@ -37,7 +37,14 @@
             <a :href="talk.peertubeLink" target="_blank"><img class="icon" src="../static/cinema.svg" alt="icon cinema"/></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon" src="../static/dailymotion.svg" alt="icon dailymotion"/></a>
           </p>
-          <p v-if="talk.slidesLink"><a :href="talk.slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg" alt="icon presentation"/></a></p>
+          <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
+            <p
+              v-for="slidesLink of talk.slidesLinks"
+              :key="slidesLink"
+            >
+              <a :href="slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg" alt="icon presentation"/></a>
+            </p>
+          </span>
           <p class="schedule-room--duration-level">⏱{{ duration(talk.format) }} — {{ levelName(talk.level) }}</p>
         </div>
       </div>
