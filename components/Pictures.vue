@@ -1,5 +1,8 @@
 <template>
-  <section id="pictures" class="container--green">
+  <section
+    id="pictures"
+    class="container--green"
+  >
     <div class="container--fix container--center">
       <h2>Les photos</h2>
       <iframe
@@ -10,20 +13,17 @@
         allowFullScreen="true"
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
-      >
-        <p>No pictures for you, too sad !!</p>
-        <small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small>
-      </iframe>
+      ></iframe>
 
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-  #pictures{
-    height: 600px;
-  }
-  .container--fix {
-    height: 100%;
-  }
+#pictures {
+  height: 600px;
+}
+.container--fix {
+  height: 100%;
+}
 </style>
