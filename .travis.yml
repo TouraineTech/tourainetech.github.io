@@ -7,10 +7,20 @@ cache: npm
 branches:
   only:
   - develop
+  - cypress
 
 install:
 - npm ci
 - npm run generate
+
+script:
+  ## print all Travis environment variables for debugging
+  - $(npm bin)/print-env TRAVIS
+  - npm start -- --silent &
+  - npm run cy:run
+  # after all tests finish running we need
+  # to kill all background jobs (like "npm start &")
+  - kill $(jobs -p) || true
 
 #deploy:
 #  provider: pages
@@ -20,6 +30,8 @@ install:
 #  local-dir: dist
 #  on:
 #    branch: develop
+
+
 
 deploy:
   provider: firebase
