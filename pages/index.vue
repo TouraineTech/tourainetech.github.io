@@ -3,6 +3,7 @@
     <Header/>
     <About/>
     <Sponsors/>
+    <Video/>
     <Pictures/>
     <!--<LastEdition/>-->
     <!--<TopSpeakers/>-->
@@ -35,6 +36,7 @@
   import TopSpeakers from '~/components/TopSpeakers.vue'
   import Talks from '~/components/Talks.vue'
   import Schedule from '~/components/Schedule.vue'
+  import Video from '~/components/Video.vue'
 
   export default {
     components: {
@@ -51,7 +53,8 @@
       Navbar,
       TopSpeakers,
       Talks,
-      Schedule
+      Schedule,
+      Video
     },
     mounted(){
       this.$smoothScroll.polyfill()
