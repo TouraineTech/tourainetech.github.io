@@ -7,7 +7,7 @@
       <h2>L'aftermovie</h2>
       <div class="embed-container">
         <iframe
-          src="https://www.dailymotion.com/embed/video/x77qljc"
+          src="https://www.dailymotion.com/embed/video/k6venI1Y7mpELbtwvy0"
           frameborder="0"
           webkitAllowFullScreen
           mozallowfullscreen
