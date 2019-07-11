@@ -3,7 +3,7 @@ import SPEAKERS from './api/speakers.json'
 import TALKS from './api/talks.json'
 
 const pkg = require('./package')
-const title = 'Touraine Tech 2019 - Conférence sur les nouvelles technologie du numérique'
+const title = 'Touraine Tech 2020 - Conférence sur les nouvelles technologie du numérique'
 const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
 const url = "https://touraine.tech/"
 module.exports = {
@@ -42,7 +42,8 @@ module.exports = {
       {name: 'theme-color', content: '#ffffff'}
     ],
     link: [
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito'},
+
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans&display=swap'},
       {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=WGoYma5yEm'},
       {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png?v=WGoYma5yEm'},
       {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png?v=WGoYma5yEm'},

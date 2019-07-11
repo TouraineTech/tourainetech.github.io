@@ -16,19 +16,20 @@
     "extract:talks": "jq '.documents | map({id: .fields.id.stringValue, createTime: .createTime, updateTime: .updateTime, name: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.title.stringValue, abstract: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.abstract.stringValue, level: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.level.stringValue, format: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.formats.stringValue, categories: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.categories.stringValue, speakers: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.speakers.mapValue.fields})' raw_talks.json > api/talks.json"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/axios": "^5.5.4",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.8.1",
     "showdown": "^1.9.0",
-    "smoothscroll-polyfill": "^0.4.3"
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "acorn": "^6.1.1",
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
-    "eslint-loader": "^2.0.0",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.9.3",
-    "nodemon": "^1.11.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
     "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0"
   }

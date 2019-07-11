@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Navbar :always-visible="scrollbarIsAlwaysVisible"/>
-    <ScrollToTop/>
+    <!-- <Navbar :always-visible="scrollbarIsAlwaysVisible"/> -->
+    <!-- <ScrollToTop/> -->
     <nuxt/>
     <Footer/>
   </div>
@@ -33,6 +33,6 @@
     mounted() {
       this.$smoothScroll.polyfill()
     },
-    
+
   }
 </script>
