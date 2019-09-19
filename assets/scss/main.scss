@@ -122,3 +122,22 @@ span.no-wrap{
 div.description--container a{
   color: $color-primary;
 }
+
+// new style 2020
+
+.HeaderButton {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+
+  &-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  &-subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}

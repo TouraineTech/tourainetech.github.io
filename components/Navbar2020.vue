@@ -1,21 +1,27 @@
 <template>
-  <nav :class="{'navbar--visible': scrolled, 'navbar--fixed': alwaysVisible}">
-    <img
-      @touch="goToHome()"
-      @click="goToHome()"
-      src="../assets/img/logo.svg"
-      alt="Logo Touraine Tech' 2019"
-    >
-    <ul>
-      <li
-        v-for="section in sections"
-        :key="section.anchor"
-        @touch="scrollTo(section.anchor)"
-        @click="scrollTo(section.anchor)"
-        :class="{'mobile': section.mobile}"
-      ><a>{{ section.name }}</a>
-      </li>
-    </ul>
+  <nav :class="{'navbar--hidden': scrolledToHide, 'navbar--visible': scrolledToShow}">
+    <div class="Navbar-wrapper">
+      <div class="Navbar-logo">
+        <img
+          @touch="goToHome()"
+          @click="goToHome()"
+          src="../assets/img/logo.svg"
+          alt="Logo Touraine Tech' 2019"
+        >
+      </div>
+      <div class="Navbar-menu">
+        <ul>
+          <li
+            v-for="section in sections"
+            :key="section.anchor"
+            @touch="scrollTo(section.anchor)"
+            @click="scrollTo(section.anchor)"
+            :class="{'mobile': section.mobile}"
+          ><a>{{ section.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -29,13 +35,14 @@ export default {
   },
   data() {
     return {
-      scrolled: false,
+      scrolledToHide: false,
+      scrolledToShow: false,
       sections: [
         { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
-        { name: "Sponsors", anchor: "#sponsors", mobile: true },
+        //{ name: "Sponsors", anchor: "#sponsors", mobile: true },
         //{name: 'Inscription', anchor: '#register', mobile: true},
         //{name: 'Talks', anchor: '#talks', mobile: true},
-        { name: "Le programme", anchor: "#schedule", mobile: true },
+        //{ name: "Le programme", anchor: "#schedule", mobile: true },
         { name: "L'équipe", anchor: "#team", mobile: false },
         { name: "L'actu", anchor: "#news", mobile: false }
       ]
@@ -53,7 +60,8 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.scrolled = window.scrollY > window.innerHeight - 100;
+      this.scrolledToHide = window.scrollY > 100;
+      this.scrolledToShow = window.scrollY > window.innerHeight - 200;
     },
     scrollTo(target) {
       if (process.browser) {
@@ -88,35 +96,65 @@ export default {
     }
 
     img {
-      display: none;
+      //display: none;
     }
   }
 }
 
 nav {
   display: flex;
-  background-color: white;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  transform: translateY(-1000px);
   transition: 300ms ease-in-out;
   z-index: 1000;
-  border-bottom: 1px solid $color-secondary;
   justify-content: center;
+  opacity: 1;
 
-  &.navbar--visible {
-    transform: translateY(0px);
+  &.navbar--hidden {
+    transform: translateY(-100px);
+    opacity: 0;
   }
 
-  &.navbar--fixed {
+  &.navbar--visible {
     transform: translateY(0);
+    background: white;
+    opacity: 1;
+    position: fixed;
+  }
+
+  .Navbar {
+    &-wrapper {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+    }
+    &-logo {
+      flex: 0;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: $mobile-step) {
+        justify-content: center;
+        flex: 1;
+      }
+    }
+    &-menu {
+      flex: 1;
+      @media screen and (max-width: $tablet-step - 1) {
+        li:not(.mobile) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: $mobile-step) {
+        display: none;
+      }
+    }
   }
 
   img {
     margin: 8px 1rem;
-    max-height: 48px;
+    max-height: 36px;
     cursor: pointer;
   }
 
@@ -124,14 +162,14 @@ nav {
     display: flex;
     list-style: none;
     padding: 0;
+    justify-content: flex-end;
 
     li {
       padding: 1.3rem 1rem;
       cursor: pointer;
-      background-color: white;
       transition: 300ms ease-in-out;
       &:hover {
-        background-color: lighten($color-secondary, 30%);
+        background-color: $color-secondary;
       }
       a {
         color: $color-primary;
