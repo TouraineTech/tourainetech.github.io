@@ -43,8 +43,8 @@ export default {
         //{name: 'Inscription', anchor: '#register', mobile: true},
         //{name: 'Talks', anchor: '#talks', mobile: true},
         //{ name: "Le programme", anchor: "#schedule", mobile: true },
-        { name: "L'équipe", anchor: "#team", mobile: false },
-        { name: "L'actu", anchor: "#news", mobile: false }
+        { name: "L'équipe", anchor: "#team", mobile: false }
+        //{ name: "L'actu", anchor: "#news", mobile: false }
       ]
     };
   },

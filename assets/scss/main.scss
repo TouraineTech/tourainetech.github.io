@@ -131,6 +131,20 @@ div.description--container a{
   padding: 2rem;
   text-align: center;
   text-decoration: none;
+  transition: all 100ms ease-in-out;
+
+  &--disabled {
+    background-color: transparentize(lightgrey, 0.5) !important;
+    transform: scale(0.9);
+
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    }
+  }
+
+  &:not(.HeaderButton--disabled):hover {
+    transform: scale(1.2);
+  }
 
   &-title {
     font-weight: bold;
@@ -141,3 +155,23 @@ div.description--container a{
     margin-top: 0.5rem;
   }
 }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+
+  20%, 80% {
+    transform: translateX(2px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
+
+

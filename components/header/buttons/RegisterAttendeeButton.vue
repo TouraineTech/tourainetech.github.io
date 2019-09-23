@@ -1,16 +1,16 @@
 <template>
   <a
     href=""
-    class="HeaderButton"
+    class="HeaderButton HeaderButton--disabled"
   >
     <span class="HeaderButton-title RegisterAttendee-title">Inscrivez-vous</span>
-    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">Ouverture de la billeterie le XX</span>
+    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">la billeterie n'est pas encore ouverte, restez informé !</span>
   </a>
 </template>
 
 <style lang="scss" scoped>
 @import "./../../../assets/scss/variables";
-a {
+.HeaderButton {
   background-color: $color-secondary;
   color: $color-primary;
 }
