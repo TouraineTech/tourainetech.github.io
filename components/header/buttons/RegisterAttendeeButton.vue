@@ -1,10 +1,10 @@
 <template>
   <a
-    href=""
-    class="HeaderButton HeaderButton--disabled"
+    href="#register"
+    class="HeaderButton"
   >
     <span class="HeaderButton-title RegisterAttendee-title">Inscrivez-vous</span>
-    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">la billeterie n'est pas encore ouverte, restez informé !</span>
+    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">ouverture de la billeterie le 30 septembre !</span>
   </a>
 </template>
 

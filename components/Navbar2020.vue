@@ -39,6 +39,7 @@ export default {
       scrolledToShow: false,
       sections: [
         { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
+        { name: "Billetterie", anchor: "#register", mobile: false },
         //{ name: "Sponsors", anchor: "#sponsors", mobile: true },
         //{name: 'Inscription', anchor: '#register', mobile: true},
         //{name: 'Talks', anchor: '#talks', mobile: true},

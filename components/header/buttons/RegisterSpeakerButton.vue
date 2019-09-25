@@ -1,6 +1,7 @@
 <template>
   <a
-    href="cfp.touraine.tech"
+    href="https://cfp.touraine.tech"
+    target="_blank"
     class="HeaderButton"
   >
     <span class="HeaderButton-title RegisterSpeaker-title">Devenez speaker</span>
