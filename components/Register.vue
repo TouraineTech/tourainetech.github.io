@@ -6,20 +6,37 @@
     <div class="container--fix container--center">
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
-        <div class="PriceBloc PriceBloc--bigger">
+        <a
+          class="PriceBloc PriceBloc--bigger"
+          target="_blank"
+          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+        >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">18,50 €</div>
-          <div class="PriceBloc-quota">20 places ????</div>
-        </div>
-        <div class="PriceBloc">
+          <div class="PriceBloc-quota">places limités</div>
+        </a>
+        <a
+          class="PriceBloc"
+          target="_blank"
+          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+        >
           <h3 class="PriceBloc-title">Plein tarif</h3>
           <div class="PriceBloc-price">25 €</div>
-          <div class="PriceBloc-quota">20 places ????</div>
-        </div>
+        </a>
       </div>
 
-      <span class="RegisterButton">Ouverture de la billeterie le 30 septembre 2019</span>
-      <!-- <a class="RegisterButton button--link button--white">Lien vers la billeterie HelloAsso</a> -->
+      <!-- <span class="RegisterButton">Ouverture de la billeterie le 30 septembre 2019</span> -->
+      <div>
+        <a
+          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+          target="_blank"
+          class="RegisterButton button--link button--white"
+        >Lien vers la billeterie HelloAsso</a>
+      </div>
+
+      <div class="RegisterHelp">
+        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement n’est pas inclus dans ce prix.</span>
+      </div>
     </div>
   </section>
 </template>
@@ -35,7 +52,8 @@
       display: block;
     }
   }
-
+  display: block;
+  text-decoration: none;
   background-color: white;
   color: $color-primary;
   flex: 1;
@@ -81,5 +99,11 @@
 .RegisterButton {
   display: inline-block;
   margin-top: 4rem;
+}
+
+.RegisterHelp {
+  margin-top: 2rem;
+  color: white;
+  font-size: 0.8rem;
 }
 </style>

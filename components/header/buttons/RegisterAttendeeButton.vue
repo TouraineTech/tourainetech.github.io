@@ -3,8 +3,8 @@
     href="#register"
     class="HeaderButton"
   >
-    <span class="HeaderButton-title RegisterAttendee-title">Inscrivez-vous</span>
-    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">ouverture de la billeterie le 30 septembre !</span>
+    <span class="HeaderButton-title RegisterAttendee-title">Acheter sa place</span>
+    <!-- <span class="HeaderButton-subtitle RegisterAttendee-subtitle">la billeterie est ouverte</span> -->
   </a>
 </template>
 
