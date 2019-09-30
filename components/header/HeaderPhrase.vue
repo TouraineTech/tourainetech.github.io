@@ -4,7 +4,7 @@
     <div class="HeaderPhrase-date">31 janvier 2020</div>
     <div class="HeaderPhrase-hour">8h30 — 18h30</div>
     <div class="HeaderPhrase-place">à Tours</div>
-    <h2 class="HeaderPhrase-subtitle">3<sup>ème</sup> édition de la première conférence technique en Touraine</h2>
+    <h2 class="HeaderPhrase-subtitle">3<sup>ème</sup> édition</h2>
   </div>
 </template>
 
