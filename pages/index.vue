@@ -2,8 +2,9 @@
   <div>
     <Header2020></Header2020>
     <About></About>
-    <Team></Team>
+    <Sponsors></Sponsors>
     <Register></Register>
+    <Team></Team>
     <Map></Map>
   </div>
 </template>
@@ -14,6 +15,7 @@ import About from "~/components/About.vue";
 import Map from "~/components/Map.vue";
 import Team from "~/components/Team.vue";
 import Register from "~/components/Register.vue";
+import Sponsors from "~/components/Sponsors.vue";
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     About,
     Map,
     Team,
-    Register
+    Register,
+    Sponsors
   },
   mounted() {}
 };
