@@ -75,19 +75,19 @@
         transform: scale(1.3);
       }
     }
+  }
 
-    &--soldOut {
-      &:before {
-        content:"ÉPUISÉ";
-        font-size: 3rem;
-        color: white;
-        background-color: #222333;
-        display: inline-block;
-        transform: rotate(-45deg);
-        position: relative;
-        top: 2em;
-        width: 5em;
-      }
+  &--soldOut {
+    &:before {
+      content:"ÉPUISÉ";
+      font-size: 3rem;
+      color: white;
+      background-color: #222333;
+      display: inline-block;
+      transform: rotate(-45deg);
+      position: relative;
+      top: 2em;
+      width: 5em;
     }
   }
 
