@@ -7,7 +7,7 @@
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--bigger"
+          class="PriceBloc PriceBloc--soldOut"
           target="_blank"
           href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
         >
@@ -16,7 +16,7 @@
           <div class="PriceBloc-quota">places limités</div>
         </a>
         <a
-          class="PriceBloc"
+          class="PriceBloc PriceBloc--bigger"
           target="_blank"
           href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
         >
@@ -62,7 +62,7 @@
   transition: all 100ms ease-in-out;
   @media screen and (min-width: $mobile-step) {
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     &:hover {
       transform: scale(1.1);
     }
@@ -73,6 +73,20 @@
       transform: scale(1.2);
       &:hover {
         transform: scale(1.3);
+      }
+    }
+
+    &--soldOut {
+      &:before {
+        content:"ÉPUISÉ";
+        font-size: 3rem;
+        color: white;
+        background-color: #222333;
+        display: inline-block;
+        transform: rotate(-45deg);
+        position: relative;
+        top: 2em;
+        width: 5em;
       }
     }
   }
