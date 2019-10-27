@@ -1,14 +1,10 @@
 <template>
   <nav :class="{'navbar--hidden': scrolledToHide, 'navbar--visible': scrolledToShow}">
     <div class="Navbar-wrapper">
-      <div class="Navbar-logo">
-        <img
-          @touch="goToHome()"
-          @click="goToHome()"
-          src="../assets/img/logo.svg"
-          alt="Logo Touraine Tech' 2019"
-        >
-      </div>
+      <TntLogo
+        @touch="goToHome()"
+        @click="goToHome()"
+      />
       <div class="Navbar-menu">
         <ul>
           <li
@@ -26,6 +22,7 @@
 </template>
 
 <script>
+import TntLogo from "../assets/img/logo.svg?inline";
 export default {
   props: {
     alwaysVisible: {
@@ -83,6 +80,9 @@ export default {
     isHome() {
       return this.$route.path === "/";
     }
+  },
+  components: {
+      TntLogo
   }
 };
 </script>
@@ -149,9 +149,9 @@ nav {
     }
   }
 
-  img {
-    margin: 8px 1rem;
-    max-height: 36px;
+  svg {
+    margin: 1rem;
+    max-height: 70px;
     cursor: pointer;
   }
 
