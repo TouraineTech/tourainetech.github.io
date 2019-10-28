@@ -2,10 +2,10 @@ import SPONSORS from './api/sponsors.json'
 import SPEAKERS from './api/speakers.json'
 import TALKS from './api/talks.json'
 
-const pkg = require('./package')
-const title = 'Touraine Tech 2020 - Conférence sur les nouvelles technologie du numérique'
-const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
-const url = "https://touraine.tech/"
+const pkg = require('./package');
+const title = 'Touraine Tech 2020 - Conférence sur les nouvelles technologie du numérique';
+const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique';
+const url = "https://touraine.tech/";
 module.exports = {
   mode: 'universal',
 
@@ -79,6 +79,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     //'@nuxtjs/axios'
+    '@nuxtjs/svg'
   ],
   /*
   ** Axios module configuration
@@ -116,4 +117,4 @@ module.exports = {
       ]
     }
   }
-}
+};

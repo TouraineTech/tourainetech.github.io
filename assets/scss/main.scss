@@ -173,4 +173,116 @@ div.description--container a{
   }
 }
 
+.topLeft {
+  animation: 2s ease-in 1s 1 forwards topLeftLogoMove;
+}
 
+.topRight {
+  animation: 2s ease-in 1s 1 forwards topRightLogoMove;
+}
+
+.topCenter {
+  animation: 2s ease-in 1s 1 forwards topCenterLogoMove;
+}
+
+.bottomCenter{
+  animation: 2s ease-in 1s 1 forwards bottomCenterLogoMove;
+}
+
+.bottomCenter {
+  animation: 2s ease-in 1s 1 forwards bottomCenterLogoMove;
+}
+
+.middleLeft {
+  animation: 2s ease-in 1s 1 forwards middleLeftLogoMove;
+}
+
+.middleRight {
+  animation: 2s ease-in 1s 1 forwards middleRightLogoMove;
+}
+
+.bottomLeft {
+  animation: 2s ease-in 1s 1 forwards bottomLeftLogoMove;
+}
+
+.bottomRight {
+  animation: 2s ease-in 1s 1 forwards bottomRightLogoMove;
+}
+
+#rightT {
+  animation: 2s ease-in 1s 1 forwards rightTLogoMove;
+}
+
+#leftT {
+  animation: 2s ease-in 1s 1 forwards leftTLogoMove;
+}
+
+svg {
+  animation: 2s ease-in 1s 1 forwards iconLogoResize;
+}
+
+@keyframes topRightLogoMove {
+  from {
+    transform: translate(-60px, 60px);
+  }
+}
+
+@keyframes topLeftLogoMove {
+  from {
+    transform: translate(60px, 60px);
+  }
+}
+
+@keyframes topCenterLogoMove {
+  from {
+    transform: translate(0, 60px);
+  }
+}
+
+@keyframes bottomCenterLogoMove {
+  from {
+    transform: translate(0, -60px);
+  }
+}
+
+@keyframes rightTLogoMove {
+  from {
+    transform: translate(-120px, 0);
+  }
+}
+
+@keyframes leftTLogoMove {
+  from {
+    transform: translate(120px, 0);
+  }
+}
+
+@keyframes bottomRightLogoMove {
+  from {
+    transform: translate(-60px,-60px);
+  }
+}
+
+@keyframes bottomLeftLogoMove {
+  from {
+    transform: translate(60px,-60px);
+  }
+}
+
+@keyframes middleRightLogoMove {
+  from {
+    transform: translate(-60px,0);
+  }
+}
+
+@keyframes middleLeftLogoMove {
+  from {
+    transform: translate(60px,0);
+  }
+}
+
+@keyframes iconLogoResize {
+  from {
+    transform: scale(10) translate(60px,60px);
+  }
+}
