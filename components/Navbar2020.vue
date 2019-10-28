@@ -153,6 +153,7 @@ nav {
     margin: 1rem;
     max-height: 70px;
     cursor: pointer;
+    width: 150px;
   }
 
   ul {
