@@ -5,7 +5,6 @@
   >
     <div class="container--fix container--center">
       <h2>Les vidéos</h2>
-      <h4>Fast & Curious (TNT19)</h4>
       <div class="embed-container">
         <iframe
           width="560"
@@ -16,17 +15,16 @@
           allowfullscreen
         ></iframe>
       </div>
-      <h4>Aftermovie (TNT19)</h4>
       <div class="embed-container">
         <iframe
-          src="https://www.dailymotion.com/embed/video/k6venI1Y7mpELbtwvy0"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/BG-rNKlCngs"
           frameborder="0"
-          webkitAllowFullScreen
-          mozallowfullscreen
-          allowFullScreen
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
       </div>
-
       <p>
         Un grand merci à <a
           target="_blank"
