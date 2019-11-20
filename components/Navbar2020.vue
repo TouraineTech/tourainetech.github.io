@@ -6,7 +6,7 @@
           @touch="goToHome()"
           @click="goToHome()"
           src="../assets/img/logo.svg"
-          alt="Logo Touraine Tech' 2019"
+          alt="Logo Touraine Tech' 2020"
         >
       </div>
       <div class="Navbar-menu">
