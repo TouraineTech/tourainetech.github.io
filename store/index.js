@@ -1,11 +1,11 @@
 import Vuex from 'vuex'
 import SPONSORS from '../api/sponsors.json'
 import TEAM from '../api/team.json'
-import TALKS from '../api/talks.json'
-import SPEAKERS from '../api/speakers.json'
 import BREAKS from '../api/breaks.json'
 
-const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], [])
+import {speakers as SPEAKERS, talks as TALKS} from "../api/conferenceHall";
+
+const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], []);
 
 const createStore = () => {
   return new Vuex.Store({
@@ -36,7 +36,7 @@ const createStore = () => {
         commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name)))
         commit('SET_TALKS', TALKS.filter(({backup}) => !backup)),
         commit('SET_BREAKS', BREAKS),
-        commit('SET_SPEAKERS', SPEAKERS.filter(({confirmed}) => confirmed).sort((a, b) => a.name.localeCompare(b.name)))
+        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName)))
       }
     },
     mutations: {

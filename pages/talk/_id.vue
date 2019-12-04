@@ -1,11 +1,11 @@
 <template>
   <div class="container--fix">
-    <h1>{{ talk.name }}</h1>
+    <h1>{{ talk.title }}</h1>
     <div class="talk-speakers--grid">
       <nuxt-link
-        :to="`/speaker/${speaker.name}`"
+        :to="`/speaker/${speaker.displayName}`"
         v-for="speaker in speakers"
-        :key="speaker.name"
+        :key="speaker.uid"
       >
         <SpeakerBloc :speaker="speaker"></SpeakerBloc>
       </nuxt-link>
@@ -57,23 +57,25 @@ export default {
       return converter.makeHtml(this.talk.abstract);
     },
     speakers() {
-      return this.$store.getters.speakers.filter(({ id }) =>
-        this.talk.speakers.includes(id)
+      let speakers = this.$store.getters.speakers.filter(({ uid }) =>
+        this.talk.speakers.includes(uid)
       );
+      console.log({speakers: this.$store.getters.speakers})
+      return speakers;
     }
   },
   head() {
-    const title = `Touraine Tech 2020 - ${this.talk.name}`;
-    const url = `https://touraine.tech/talk/${this.talk.name}`;
+    const title = `Touraine Tech 2020 - ${this.talk.title}`;
+    const url = `https://touraine.tech/talk/${this.talk.id}`;
     return {
       titleTemplate: title,
       meta: [
-        { hid: "description", name: "description", content: this.talk.name },
+        { hid: "description", name: "description", content: this.talk.title },
         { hid: "ogtitle", property: "og:title", content: title },
         {
           hid: "ogdescription",
           property: "og:description",
-          content: this.talk.name
+          content: this.talk.title
         },
         { hid: "ogtype", property: "og:type", content: "website" },
         { hid: "ogurl", property: "og:url", content: url },
@@ -84,12 +86,12 @@ export default {
         {
           hid: "twitterdescription",
           name: "twitter:description",
-          content: this.talk.name
+          content: this.talk.title
         },
         {
           hid: "twitterimagealt",
           name: "twitter:image:alt",
-          content: `Logo ${this.talk.name}`
+          content: `Logo ${this.talk.title}`
         }
       ]
     };

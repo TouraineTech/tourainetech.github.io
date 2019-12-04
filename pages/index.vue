@@ -4,6 +4,7 @@
     <About></About>
     <Sponsors></Sponsors>
     <Register></Register>
+    <TopSpeakers></TopSpeakers>
     <Team></Team>
     <Video></Video>
     <Map></Map>
@@ -17,6 +18,7 @@ import Map from "~/components/Map.vue";
 import Team from "~/components/Team.vue";
 import Register from "~/components/Register.vue";
 import Sponsors from "~/components/Sponsors.vue";
+import TopSpeakers from "../components/TopSpeakers";
 import Video from "~/components/Video.vue";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     Team,
     Register,
     Sponsors,
+    TopSpeakers,
     Video
   },
   mounted() {}
