@@ -6,7 +6,7 @@
           @touch="goToHome()"
           @click="goToHome()"
           src="../assets/img/logo.svg"
-          alt="Logo Touraine Tech' 2019"
+          alt="Logo Touraine Tech' 2020"
         >
       </div>
       <div class="Navbar-menu">
@@ -41,7 +41,8 @@ export default {
         { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
         { name: "Sponsors", anchor: "#sponsors", mobile: true },
         { name: "Billetterie", anchor: "#register", mobile: false },
-        { name: "L'équipe", anchor: "#team", mobile: false }
+        { name: "L'équipe", anchor: "#team", mobile: false },
+        { name: "Les vidéos", anchor: "#video", mobile: false }
         //{name: 'Inscription', anchor: '#register', mobile: true},
         //{name: 'Talks', anchor: '#talks', mobile: true},
         //{ name: "Le programme", anchor: "#schedule", mobile: true },

@@ -5,6 +5,7 @@
     <Sponsors></Sponsors>
     <Register></Register>
     <Team></Team>
+    <Video></Video>
     <Map></Map>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Map from "~/components/Map.vue";
 import Team from "~/components/Team.vue";
 import Register from "~/components/Register.vue";
 import Sponsors from "~/components/Sponsors.vue";
+import Video from "~/components/Video.vue";
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Map,
     Team,
     Register,
-    Sponsors
+    Sponsors,
+    Video
   },
   mounted() {}
 };

@@ -6,22 +6,18 @@
       </div>
       <div class="Header-buttons">
         <RegisterAttendeeButton></RegisterAttendeeButton>
-        <RegisterSpeakerButton></RegisterSpeakerButton>
       </div>
     </div>
-
   </section>
 </template>
 
 <script>
 import RegisterAttendeeButton from "~/components/header/buttons/RegisterAttendeeButton.vue";
-import RegisterSpeakerButton from "~/components/header/buttons/RegisterSpeakerButton.vue";
 import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
 
 export default {
   components: {
     RegisterAttendeeButton,
-    RegisterSpeakerButton,
     HeaderPhrase
   },
   mounted() {}

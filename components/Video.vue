@@ -1,24 +1,35 @@
 <template>
   <section
-    id="aftermovie"
+    id="video"
     class="container--white"
   >
     <div class="container--fix container--center">
-      <h2>L'aftermovie</h2>
+      <h2>Les vidéos</h2>
       <div class="embed-container">
         <iframe
-          src="https://www.dailymotion.com/embed/video/k6venI1Y7mpELbtwvy0"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/C93gIFfDN-o"
           frameborder="0"
-          webkitAllowFullScreen
-          mozallowfullscreen
-          allowFullScreen
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="embed-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/BG-rNKlCngs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
       </div>
       <p>
         Un grand merci à <a
           target="_blank"
           href="https://lescousins.co/"
-        >LES COUSINS</a> pour la réalisation de cette vidéo
+        >LES COUSINS</a> pour la réalisation et le montage de ces vidéos
       </p>
     </div>
   </section>
@@ -27,8 +38,14 @@
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
 
-#aftermovie {
+#video {
   border-top: 1rem solid $color-secondary;
+
+  h4 {
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 .embed-container {
   position: relative;
