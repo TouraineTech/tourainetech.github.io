@@ -1,6 +1,6 @@
 <template>
   <div class="speaker--bloc">
-    <div class="container--image">
+    <div v-if="speaker.photoURL" class="container--image">
       <img :src="speaker.photoURL" :alt="speaker.displayName">
     </div>
     <h3>{{ speaker.displayName }}</h3>

@@ -30,6 +30,22 @@
       "language": "French"
     },
     {
+      "id": "vBXehLE9i3ShOGZBeNUQ",
+      "title": "L'Esport à un sport comme les autres ",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Rare sont les devs qui n’ont jamais joué aux jeux-vidéo.\nRare sont les joueurs qui deviennent professionnels.\nCertains ont des fans à travers le monde entier, remplissent aujourd'hui des stades et gagnent des sommes astronomiques.\n\nPourtant les joueurs ont toujours la réputation d'être des ados enfermés dans leur chambre.\n\nOù en est-on réellement aujourd'hui ? \nDopage, marketing, professionnalisation, faisons le parallèle avec le monde du sport.\n\nQue vous soyez gamer ou non, venez découvrir ce nouvel écosystème !\n",
+      "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+      ],
+      "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
+      "references": "Nous avons déjà parlé de ce sujet à nos collègues à Zenika Nantes, la vidéo est disponible ici : https://youtu.be/uGLwbm0ktA4\n\nNotre document de travail pour cette présentation est disponible ici : https://docs.google.com/document/d/1YKRTGwlychi_wIuzIAuNYu0b1TsqkLOh1WWW6iRLEsI/edit?usp=sharing",
+      "language": "French"
+    },
+    {
       "id": "1jiAsaKrbfhsEewsXaSH",
       "title": "Cypress, l’outil qui va vous faire aimer les tests End-to-End !",
       "state": "confirmed",
@@ -89,6 +105,21 @@
       "language": "Français"
     },
     {
+      "id": "7vchsRqdvPawjft0FOd8",
+      "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "En partant sur une architecture proche des micro-frontends pour la construction de la plateforme groupe chez Ouest-France nous avons anticipé plusieurs problèmes posé par ce modèle :\n- l'autonomie des équipes est virtuelle en pratique\n- pas de dépendances explicites entre composant\n- gestion du versioning par du code plutôt que de la configuration\n- pas d'assurance sur la résilience\n- pas d'assurance intrinsèque sur les performances\n- ... et d'autres points que nous verrons durant cette présentation\n\nNous verrons différentes solutions à ces problèmes basées sur 5 principes intemporels et fondamentaux en ingénierie logicielle et système (spoiler alert: SoC, SSoT, tout limiter dans l'espace et dans le temps, explicite > implicite, déclaratif > impératif) ainsi qu'un REX 2 ans plus tard.\n\n",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "HaMEPZSMBscJU4Adj9VF8brrL5h1"
+      ],
+      "comments": "Pour résumé on pourrait dire que l'idée part de ce talk : https://www.slideshare.net/FGRibreau/une-plateforme-moderne-pour-le-groupe-sipaouestfrance mais 2 ans plus tard avec une approche bien plus centré sur les micro-frontends et le passage à l'échelle d'une organisation et de ces principes.\n\nLes key takeaways:\n- montrer ce que notre approche déclarative permet d'enforce et comment\n- comment on enforce la ré-utilisabilité des blocs\n- montrer comment on génère automatiquement les UI de backend\n- le mode de fonctionnement dégradé (circuit-breaker)\n- le mode de chargement partiellement asynchrone (déclaration statique des dépendances)\n- la documentation des blocks (via ses paramètres de configuration / nom / organisation)\n- garantir la cohérence de l'UX par un design system + équipe validation\n- gestion de la migration ancien-système/nouveau système (intégrée)\n- ...\n\nTalks passés/Vidéos/Slides: https://www.francois-guillaume-ribreau.com/cv/portfolios\n\n\n",
+      "references": null,
+      "language": "French"
+    },
+    {
       "id": "vzGargOlA8voJIxO4BLz",
       "title": "Pair Design : Un moyen de concevoir à deux ou plus",
       "state": "confirmed",
@@ -140,8 +171,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
       "speakers": [
-        "rDKV0gUOk0O4WU9tpknPAngMF9A3",
-        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3"
+        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+        "rDKV0gUOk0O4WU9tpknPAngMF9A3"
       ],
       "comments": "Bonjour la team review 😉\n\nCe TP sera joué pour la première fois au SnowCamp 2020. \nNous allons tout mettre en place pour que les participants n'aient pas à sortir leur carte bleu 🤩.\n\n",
       "references": "Ce TP est un dérivé de la présentation \"Istio, le meilleur ami de votre cluster K8S ❤️\" qui a été joué à de nombreuses reprise.\n\nDe nombreuses personnes m'ont remonté leur intérêt d'avoir un format plus \"pratique\" pour démarrer avec Istio.\n\nDe plus, c'est un dérivé d'une formation que nous avons donné à de multiple reprise auprès de nos clients. ",
@@ -205,6 +236,19 @@
       "comments": "Parce Christophe vient de me dire de postuler",
       "references": "François :  \n - Au secours, ma prod est sous Docker ! - DevFest Toulouse 2016, Devoxx 2017, MixIt 2017, RivieraDev 2017  \n - Un PaaS en 20 min pour votre équipe - DevFest Nantes 2016   \n - Architecture migroservice - JugSummerCamp 2017, Codeurs en Seine 2018, SnowCamp 2019, DevFest Lille 2019, RivieraDev 2019\n - L'UX a sauvé mon DevOps - DevFestToulouse 2017, Devops DDay 2017, DevFest Nantes 2017, RivieraDev 2018, DevFest Lilles 2018 , Devops Rex 2018, DevFest BoutDuMonde 2019\n - SystemD, de /dev/null à root - DevFest Toulouse 2018\n - Mon premier service en Rust - BDX I/O 2018, Breizhcamp 2019, Devoxx 2019, Mix-IT 2019\n - Devops ? C'est comme Scrum mais avec Docker ... - Devoxx Maroc 2018",
       "language": "French"
+    },
+    {
+      "id": "H6hSWT3gMPPhoV2bPY5k",
+      "title": "Secretary Vs Dev : retour d expérience d'une assistante administrative dans un dev studio",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Vous vous êtes déjà sentie comme une baleine dans Microcosmos ? Moi ça m'est arrivé... Quand sur mon parcours professionnel j'ai rencontré un studio de développement. J'avais déjà écumé pas mal de secteurs, bien décidée à ne pas signer de CDI tant que je ne me sentirai pas vraiment bien quelque part ! Mais jamais rien qui ressemblait de près ou de loin au BEARSTUDIO.\n\nJ'ai plongé sans bouteille et sans préparation dans un monde où l'on m'a parlé d'agilité, d’auto-gouvernance, mais aussi de sprint, de merge request, d'issue et une flopée d'autre terme que je ne maîtrise toujours pas... En contrepartie je leur ai parlé contrat cadre, convention collective, gestion des congés, plan comptable...\n\n1 an et demi plus tard je suis toujours là, eux aussi, on s'est apprivoisé on a appris à travailler ensemble et à se comprendre. C'est cette expérience singulière mais tellement enrichissante que je voudrais partager parce que franchement je ne regrette pour rien au monde d'avoir osé me lancer dans cette aventure professionnelle et humaine !",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "24si0s4B8lYEwbg5d4sshrMyklS2"
+      ],
+      "references": "https://www.youtube.com/watch?v=02fezqRngEM&amp;index=2"
     },
     {
       "id": "m8pvkEKdZYVIxBQL3v4z",
@@ -278,21 +322,6 @@
       "photoURL": "https://avatars2.githubusercontent.com/u/1575521?v=4",
       "twitter": "@chanksleroux",
       "github": "larousso",
-      "address": {
-        "formattedAddress": "Niort, France",
-        "locality": {
-          "long_name": "Niort",
-          "short_name": "Niort"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 46.323716,
-          "lng": -0.4647769999999999
-        }
-      },
       "language": "scala"
     },
     {
@@ -302,25 +331,6 @@
       "company": "SII",
       "photoURL": "https://avatars3.githubusercontent.com/u/37868974?v=4",
       "github": "paul-roye",
-      "address": {
-        "locality": {
-          "short_name": "Nantes",
-          "long_name": "Nantes"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 47.218371,
-          "lng": -1.553621000000021
-        },
-        "formattedAddress": "Nantes, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Standard Time"
-        }
-      },
       "language": "French"
     },
     {
@@ -332,22 +342,27 @@
       "photoURL": "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
       "twitter": "@jefrajames",
       "github": "https://github.com/jefrajames",
-      "address": {
-        "locality": {
-          "long_name": "Blois",
-          "short_name": "Blois"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 47.58609209999999,
-          "lng": 1.3359475
-        },
-        "formattedAddress": "Blois"
-      },
       "language": "French"
+    },
+    {
+      "uid": "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+      "displayName": "Yann Bertrand",
+      "bio": "Passionné de dev web depuis plus de 10 ans, ma passion m'a emmené à un diplôme d'Ingénieur à l'ENIB et à mon poste de consultant chez Zenika Nantes.\n\nJ'aime partager mes expériences et discuter pendant des heures sur des sujets techniques (ou non).\n\nJ'adore rencontrer de nouvelles personnes et découvrir de nouvelles manières de penser.",
+      "speakerReferences": "- Aout 2019 - Night class Open-Source",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/-CmFqCYA4cBc/AAAAAAAAAAI/AAAAAAAAABw/MG-IwRWRmyM/photo.jpg",
+      "twitter": "_YannBertrand",
+      "github": "yannbertrand",
+      "language": "Français"
+    },
+    {
+      "uid": "qVuC10841Ecu0FB0eIHE0uqtwup2",
+      "displayName": "Lucas Dupuy",
+      "bio": "Lucas développeur backend chez Zenika Nantes. Curieux et passionné, il aime spécialement les technologies liées à la Big Data. Social, il co-organise CNCF Nantes meetup.",
+      "company": "Zenika",
+      "photoURL": "https://lh6.googleusercontent.com/-FOdP9sEkajI/AAAAAAAAAAI/AAAAAAAAAAA/ABtNlbBxkcmD3mQE-SLbwoxyfnR88IMYYg/mo/photo.jpg",
+      "github": "louckousse",
+      "language": "Français"
     },
     {
       "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
@@ -357,18 +372,6 @@
       "company": "Shodo",
       "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
       "twitter": "@JkNourry",
-      "address": {
-        "locality": {},
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 46.227638,
-          "lng": 2.213749
-        },
-        "formattedAddress": "France"
-      },
       "language": "Français"
     },
     {
@@ -379,21 +382,6 @@
       "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
       "twitter": "@rodbung",
       "github": "rbung",
-      "address": {
-        "formattedAddress": "Paris, France",
-        "locality": {
-          "long_name": "Paris",
-          "short_name": "Paris"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 48.856614,
-          "lng": 2.3522219
-        }
-      },
       "language": "France"
     },
     {
@@ -405,21 +393,6 @@
       "photoURL": "https://lh3.googleusercontent.com/-gm2VH9ACvBs/AAAAAAAAAAI/AAAAAAAAHUs/1ekXFpnAWUY/photo.jpg",
       "twitter": "JoGrenat",
       "github": "jgrenat",
-      "address": {
-        "locality": {
-          "short_name": "Paris",
-          "long_name": "Paris"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 48.856614,
-          "lng": 2.3522219
-        },
-        "formattedAddress": "Paris"
-      },
       "language": "Elm"
     },
     {
@@ -431,25 +404,6 @@
       "photoURL": "https://lh3.googleusercontent.com/-4_4dOg_V9C4/AAAAAAAAAAI/AAAAAAAAAFU/9-fQ0kBWKIQ/photo.jpg",
       "twitter": "@QuesnelLise",
       "github": "lisequesnel",
-      "address": {
-        "locality": {
-          "short_name": "Nantes",
-          "long_name": "Nantes"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 47.218371,
-          "lng": -1.553621000000021
-        },
-        "formattedAddress": "Nantes, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Summer Time"
-        }
-      },
       "language": "français"
     },
     {
@@ -458,24 +412,9 @@
       "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
       "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
       "company": "Access42",
-      "photoURL": "https://pbs.twimg.com/profile_images/893697090538360832/bzPdkHN9_normal.jpg",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
       "twitter": "@kReEsTaL",
       "github": "kreestal",
-      "address": {
-        "locality": {
-          "long_name": "Rennes",
-          "short_name": "Rennes"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 48.117266,
-          "lng": -1.6777926
-        },
-        "formattedAddress": "Rennes, France"
-      },
       "language": "French"
     },
     {
@@ -487,22 +426,17 @@
       "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
       "twitter": "@audreyblabla",
       "github": "audreymaniez",
-      "address": {
-        "formattedAddress": "Carcassonne, France",
-        "locality": {
-          "long_name": "Carcassonne",
-          "short_name": "Carcassonne"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.2132151,
-          "lng": 2.3517702999999983
-        }
-      },
       "language": "FR"
+    },
+    {
+      "uid": "HaMEPZSMBscJU4Adj9VF8brrL5h1",
+      "displayName": "Francois-Guillaume Ribreau",
+      "bio": "Architect & Head of Digital Development @OuestFrance 🌟#FullStack CTO @imagecharts @Redsmin @killbugapp @motiondynamic_ @mailpopin founder",
+      "company": "Ouest-France/Image-Charts",
+      "photoURL": "https://avatars2.githubusercontent.com/u/138050?v=4",
+      "twitter": "@fgribreau",
+      "github": "fgribreau",
+      "language": "French"
     },
     {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
@@ -511,22 +445,7 @@
       "speakerReferences": "* Meilleur Dev de France 2018\n* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n\n",
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
-      "twitter": "@cecilefreydf",
-      "address": {
-        "locality": {
-          "short_name": "Paris",
-          "long_name": "Paris"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 48.856614,
-          "lng": 2.3522219
-        },
-        "formattedAddress": "Paris, France"
-      }
+      "twitter": "@cecilefreydf"
     },
     {
       "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
@@ -535,21 +454,6 @@
       "company": "Elium",
       "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
       "twitter": "@estelandry",
-      "address": {
-        "formattedAddress": "Montpellier, France",
-        "locality": {
-          "short_name": "Montpellier",
-          "long_name": "Montpellier"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 43.610769,
-          "lng": 3.876716
-        }
-      },
       "language": "French"
     },
     {
@@ -560,26 +464,16 @@
       "photoURL": "https://lh4.googleusercontent.com/-CKXCWocMVqM/AAAAAAAAAAI/AAAAAAAAE9w/-uU2AB-Gb9E/photo.jpg",
       "twitter": "@youribm",
       "github": "youribonnaffe",
-      "address": {
-        "locality": {
-          "short_name": "Valbonne",
-          "long_name": "Valbonne"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.64152,
-          "lng": 7.009186
-        },
-        "formattedAddress": "Valbonne, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Standard Time"
-        }
-      },
       "language": "Français / Anglais"
+    },
+    {
+      "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+      "displayName": "Nikola Lohinski",
+      "bio": "Google Cloud Architect and tech lover 😍 I fancy cloud tech, efficient languages and infrastructure development.\n\nI have experience with Python, Go, JS and Rust and usually play with those in Kubernetes pipelining everything in Gitlab's CI/CD. ",
+      "company": "Stack Labs",
+      "photoURL": "https://lh5.googleusercontent.com/-MSYc2z97haQ/AAAAAAAAAAI/AAAAAAAAADw/6S9E4T6u1Ok/photo.jpg",
+      "github": "https://github.com/NikolaLohinski",
+      "language": "Français"
     },
     {
       "uid": "rDKV0gUOk0O4WU9tpknPAngMF9A3",
@@ -590,50 +484,7 @@
       "photoURL": "https://lh5.googleusercontent.com/-t2c2Q9TjKnA/AAAAAAAAAAI/AAAAAAAAFZU/G4vUXziejAw/photo.jpg",
       "twitter": "@davinkevin",
       "github": "davinkevin",
-      "address": {
-        "locality": {
-          "short_name": "Toulouse",
-          "long_name": "Toulouse"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.604652,
-          "lng": 1.444209
-        },
-        "formattedAddress": "Toulouse, France"
-      },
       "language": "France"
-    },
-    {
-      "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
-      "displayName": "Nikola Lohinski",
-      "bio": "Google Cloud Architect and tech lover 😍 I fancy cloud tech, efficient languages and infrastructure development.\n\nI have experience with Python, Go, JS and Rust and usually play with those in Kubernetes pipelining everything in Gitlab's CI/CD. ",
-      "company": "Stack Labs",
-      "photoURL": "https://lh5.googleusercontent.com/-MSYc2z97haQ/AAAAAAAAAAI/AAAAAAAAADw/6S9E4T6u1Ok/photo.jpg",
-      "github": "https://github.com/NikolaLohinski",
-      "address": {
-        "formattedAddress": "Toulouse, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Standard Time"
-        },
-        "locality": {
-          "long_name": "Toulouse",
-          "short_name": "Toulouse"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.604652,
-          "lng": 1.4442090000000007
-        }
-      },
-      "language": "Français"
     },
     {
       "uid": "ZdNase96oBSI6QdrWySX9eCtJgs1",
@@ -644,25 +495,6 @@
       "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
       "twitter": "@JulienTopcu",
       "github": "julien-topcu",
-      "address": {
-        "locality": {
-          "long_name": "Paris",
-          "short_name": "Paris"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 48.856614,
-          "lng": 2.3522219000000177
-        },
-        "formattedAddress": "Paris, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Standard Time"
-        }
-      },
       "language": "French"
     },
     {
@@ -674,21 +506,6 @@
       "photoURL": "https://avatars0.githubusercontent.com/u/6339753?v=4",
       "twitter": "@NicolasComet",
       "github": "https://github.com/ncomet",
-      "address": {
-        "formattedAddress": "Bordeaux",
-        "locality": {
-          "short_name": "Bordeaux",
-          "long_name": "Bordeaux"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 44.837789,
-          "lng": -0.57918
-        }
-      },
       "language": "French"
     },
     {
@@ -700,21 +517,6 @@
       "photoURL": "https://lh5.googleusercontent.com/-Jx8n2dYA8Ss/AAAAAAAAAAI/AAAAAAAAYLA/oDqXfvM9CfY/photo.jpg",
       "twitter": "@aurelievache",
       "github": "scraly",
-      "address": {
-        "formattedAddress": "Toulouse, France",
-        "locality": {
-          "long_name": "Toulouse",
-          "short_name": "Toulouse"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.604652,
-          "lng": 1.444209
-        }
-      },
       "language": "Français"
     },
     {
@@ -726,22 +528,18 @@
       "photoURL": "https://lh6.googleusercontent.com/-RvGrfi4p_Uk/AAAAAAAAAAI/AAAAAAAABtE/iqj8zP9rc0U/photo.jpg",
       "twitter": "@fteychene",
       "github": "fteychene",
-      "address": {
-        "formattedAddress": "Montpellier, France",
-        "locality": {
-          "short_name": "Montpellier",
-          "long_name": "Montpellier"
-        },
-        "country": {
-          "short_name": "FR",
-          "long_name": "France"
-        },
-        "latLng": {
-          "lat": 43.610769,
-          "lng": 3.876716
-        }
-      },
       "language": "French"
+    },
+    {
+      "uid": "24si0s4B8lYEwbg5d4sshrMyklS2",
+      "displayName": "Claire Jeanne",
+      "bio": "Issue d'une formation administrative plus que classique j'ai volontairement enchaîné les CDD pour ne pas avoir le sentiment d'être coincé dans une boite ou dans un secteur d'activité qui ne me correspondait pas. Assistante administrative oui ! Mais pas plante verte ! \nDe la comptabilité au commerce en passant par les tests utilisateurs, je fais aujourd'hui parti de se monde merveilleux du numérique ! \n",
+      "speakerReferences": "Devfest du bout  du Monde 2019 ",
+      "company": "BEARSTUDIO",
+      "photoURL": "https://lh4.googleusercontent.com/-duScLtM8H9k/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jU7L5o8YhyJmB562BiNVCHBJ3J2g/mo/photo.jpg",
+      "twitter": "@c_jeanne63",
+      "github": "@ClaireBS",
+      "language": "Français"
     },
     {
       "uid": "PuG5s59DFfdNEToSJt5FfWNZZh03",
@@ -751,25 +549,6 @@
       "company": "Dernier Cri",
       "photoURL": "https://lh4.googleusercontent.com/-2tmNDDHazV8/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfvS1L8063oS5_YW68duQhAKYrqrg/mo/photo.jpg",
       "twitter": "@TellYourMummy",
-      "address": {
-        "locality": {
-          "long_name": "Lille",
-          "short_name": "Lille"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 50.62925,
-          "lng": 3.057256000000052
-        },
-        "formattedAddress": "Lille, France",
-        "timezone": {
-          "id": "Europe/Paris",
-          "name": "Central European Summer Time"
-        }
-      },
       "language": "Français, Anglais, Espagnol"
     },
     {
@@ -781,21 +560,6 @@
       "photoURL": "https://lh5.googleusercontent.com/-kEdVtrC6Poc/AAAAAAAAAAI/AAAAAAAAAo0/9i_S-sPAc84/photo.jpg",
       "twitter": "@ilaborie",
       "github": "ilaborie",
-      "address": {
-        "locality": {
-          "short_name": "Toulouse",
-          "long_name": "Toulouse"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 43.604652,
-          "lng": 1.444209
-        },
-        "formattedAddress": "Toulouse, France"
-      },
       "language": "Français "
     },
     {
@@ -807,21 +571,6 @@
       "photoURL": "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg",
       "twitter": "@LostInBrittany",
       "github": "https://github.com/LostInBrittany",
-      "address": {
-        "formattedAddress": "Brest, France",
-        "locality": {
-          "long_name": "Brest",
-          "short_name": "Brest"
-        },
-        "country": {
-          "long_name": "France",
-          "short_name": "FR"
-        },
-        "latLng": {
-          "lat": 48.390394,
-          "lng": -4.486076
-        }
-      },
       "language": "Français"
     }
   ],
@@ -847,31 +596,31 @@
       "name": "⏲️ Internet des objets"
     },
     {
-      "name": "📐 Conception, architecture",
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "name": "📐 Conception, architecture"
     },
     {
-      "name": "🧰 Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "🧰 Outillage, pratiques de développement"
     },
     {
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "name": "Alien",
-      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !"
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
     }
   ],
   "formats": [
     {
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "name": "⚡ Quickie (15min)"
+      "name": "⚡ Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "name": "🗣️ Conférence (50min)"
+      "name": "🗣️ Conférence (50min)",
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
-      "name": "🧪 Hands-on (120 min)"
+      "name": "🧪 Hands-on (120 min)",
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
     }
   ]
 }

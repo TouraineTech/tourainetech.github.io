@@ -28,14 +28,20 @@ const talks = conferenceHallDatas.talks
 
 console.log(`confirmed talks count : ${talks.length}`);
 
+const acceptedTalksSpeakersId = conferenceHallDatas.talks
+  .filter(({state}) => state === 'accepted')
+  .map(({speakers}) => {return speakers})
+  .reduce((a, b) => a.concat(b), []);
+
 const confirmedSpeakersId = talks
   .map(({speakers}) => {return speakers})
   .reduce((a, b) => a.concat(b), []);
 
 console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
+console.log(`accepted speaker count : ${acceptedTalksSpeakersId.length}`);
 
 const speakers = conferenceHallDatas.speakers
-  .map(({email, phone, ...datas}) => {return {...datas}})
+  .map(({email, phone, address, ...datas}) => {return {...datas}})
   .filter(({uid}) => confirmedSpeakersId.includes(uid));
 
 console.log(`confirmed speaker count : ${speakers.length}`);
