@@ -27,8 +27,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
       "speakers": [
-        "rDKV0gUOk0O4WU9tpknPAngMF9A3",
-        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3"
+        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+        "rDKV0gUOk0O4WU9tpknPAngMF9A3"
       ],
       "comments": "Bonjour la team review 😉\n\nCe TP sera joué pour la première fois au SnowCamp 2020. \nNous allons tout mettre en place pour que les participants n'aient pas à sortir leur carte bleu 🤩.\n\n",
       "language": "Français",
@@ -342,8 +342,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "qVuC10841Ecu0FB0eIHE0uqtwup2",
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -574,7 +574,7 @@
       "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
       "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
       "company": "Access42",
-      "photoURL": "https://pbs.twimg.com/profile_images/893697090538360832/bzPdkHN9_normal.jpg",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
       "twitter": "@kReEsTaL",
       "github": "kreestal"
     },
@@ -681,24 +681,24 @@
   ],
   "categories": [
     {
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
-      "name": "🎨 Design, UI, UX"
+      "name": "🎨 Design, UI, UX",
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "name": "🌍 Front web, Mobile",
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "🌍 Front web, Mobile"
     },
     {
-      "name": "☁️ Backends, Cloud, Big Data",
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "name": "☁️ Backends, Cloud, Big Data"
     },
     {
-      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
-      "name": "🎮 Jeux vidéos et hybrides"
+      "name": "🎮 Jeux vidéos et hybrides",
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
-      "name": "⏲️ Internet des objets"
+      "name": "⏲️ Internet des objets",
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
@@ -724,8 +724,8 @@
       "name": "🗣️ Conférence (50min)"
     },
     {
-      "name": "🧪 Hands-on (120 min)",
-      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
+      "name": "🧪 Hands-on (120 min)"
     }
   ]
 }
