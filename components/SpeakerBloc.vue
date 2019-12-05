@@ -1,9 +1,9 @@
 <template>
   <div class="speaker--bloc">
-    <div class="container--image">
-      <img :src="speaker.avatar" :alt="speaker.name">
+    <div v-if="speaker.photoURL" class="container--image">
+      <img :src="speaker.photoURL" :alt="speaker.displayName">
     </div>
-    <h3>{{ speaker.name }}</h3>
+    <h3>{{ speaker.displayName }}</h3>
   </div>
 </template>
 

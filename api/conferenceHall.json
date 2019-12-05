@@ -1,0 +1,626 @@
+{
+  "talks": [
+    {
+      "id": "W625dqFOD8C4lUJwi8lk",
+      "title": "Optimiser le codeur pour optimiser le code (bonnes pratiques d'organisation personnelle à destination des développeuses et développeurs)",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Quelle développeuse ou développeur n'a jamais haï ces journées où on doit passer d'une tâche à l'autre sans rien pouvoir finir, où on perd 2h dans une réunion inutile pour finir la journée avec le syndrome de la page blanche devant son code ?\n\nHeureusement, des solutions existent. Avec un peu d'organisation personnelle, finies les journées insatisfaisantes !\n\nNous verrons un ensemble de bonnes pratiques d'organisation personnelle :\n* déconnectez : la diète d'information\n* priorisez : le principe de Pareto\n* défragmentez vos activités\n* initialisez la veille\n* loguez vos activités\n* fuyez les réunions\n* etc.",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "iXIL5MO7gUW8RFHEx4Q7qjxKI662"
+      ],
+      "references": "Ces bonnes pratiques d'organisation proviennent de :\n* mon expérience en tant que développeur en agence web et ESN.\n* mon livre \"Gérez vos projets\" paru aux éditions ENI.\n* mes lectures en développement personnel.",
+      "language": "French"
+    },
+    {
+      "id": "vZU5mTokXupZBLNjA8BB",
+      "title": "« Ça part en prod ! » Testez la résilience de votre appli par le chaos.",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Le moment de mettre en production notre application est arrivée. Les indicateurs sont au vert mais il subsiste un doute… Notre application est-elle résiliente ?\n\nPar la mise en pratique, explorons ensemble des aspects trop peu souvent abordés lors d’une mise en production : la fiabilité des tests unitaires, la charge et la tolérance aux pannes. Découvrez les concepts de mutation testing et de chaos engineering, et mettez la main à la pâte avec PitTest, Gatling, Chaos Monkey et Kubernetes.\n\nUn seul objectif : être en pleine confiance avant ce Grand Evènement qu’est la mise en production .\n",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
+      "speakers": [
+        "lVp57FlvF1fKYwqk8yNinu3uFv92"
+      ],
+      "comments": "Bonsoir !\n\nNous sommes 3 développeurs collaborateurs chez SII et travaillons en parallèle de nos missions sur des sujets d'expertise, et en ce moment sur des sujets liés à la résilience des systèmes.\nEn particulier nous nous sommes bien amusés avec des outils de mutation testing et de chaos engineering.\nEt nous sommes vraiment motivés pour partager notre enthousiasme avec des développeurs qui auraient envie d'expérimenter pour de vrai !\nL'idée est aussi de montrer que rendre son application résiliente, c'est facile !\nA bientôt nous l'espérons,\n\nPaul, Pierre, Sullivan",
+      "references": "\n### SLIDES + STEPS (déroulé du hands-on) + ABSTRACT VERSION LONGUE\n\n[https://drive.google.com/drive/folders/1CVGJQDtmf1ztOekhKzuOXJLY7hg8LXbW?usp=sharing](https://drive.google.com/drive/folders/1CVGJQDtmf1ztOekhKzuOXJLY7hg8LXbW?usp=sharing)\n\nNote : Nous travaillons encore sur les slides, certaines sont encore en WIP, mais le \"squelette\" ne devrait pas bouger. Nous étofferons les parties \"HANDS-ON\" avec les commandes à utiliser. Les steps/déroulé ne vont pas changer.\n\n### Sources GIT\n\nLes sources qui seront utilisées : [https://github.com/SII-Codelab-Chaos](https://github.com/SII-Codelab-Chaos)\n\n### Pré-requis\n\nPlutôt conçu pour les développeurs intermédiaires, pas de prérequis de connaissances docker & kube, c'est un plus mais c'est surtout un support. Pour la partie mutation testing ce sera plus simple si on a pratiqué java.\n\nOutils installés en avance sur le poste (nous pourrons fournir une doc sur un git ou autre) : maven, java 8, docker et kubernetes en local (Docker for Windows ou Minikube)\n\n### Notes\n\nLe hands-on n'a pas été joué dans d'autres conférences mais a déjà été testé en interne chez SII.\nHands-On co-animé par 3 collaborateurs SII :\n*   Pierre GAULTIER : [https://github.com/P1erreGaultier](https://github.com/P1erreGaultier)\n*   Sullivan PINEAU : [https://github.com/PineauSullivan](https://github.com/PineauSullivan)\n*   Paul ROYE : [https://github.com/paul-roye](https://github.com/paul-roye)\n\n# Abstract :\n\n## « Ça part en prod ! » Testez la résilience de votre appli par le chaos.\n\nLe moment de mettre en production notre application est arrivée. Les indicateurs sont au vert mais il subsiste un doute… Notre application est-elle résiliente ?\n\nPar la mise en pratique, explorons ensemble des aspects trop peu souvent abordés lors d’une mise en production : la fiabilité des tests unitaires, la charge et la tolérance aux pannes. Découvrez les concepts de mutation testing et de chaos engineering, et mettez la main à la pâte avec PitTest, Gatling, Chaos Monkey et Kubernetes.\n\nUn seul objectif : être en pleine confiance avant ce Grand Evènement qu’est la mise en production .\n\n# Abstract version longue:\n\n## « Ça part en prod ! » Testez la résilience de votre appli par le chaos.\n\nBon, on a développé en interne une super application de gestion des compétences en architecture micro-service, on a fait une super recette fonctionnelle (sur les cas passants, faute de temps.. ça devrait suffire !), on a une couverture de TU au top, on a des super tests d'intégration, … Bref, on est super confiant pour partir en prod !\n\nMais au fait, quelqu’un a regardé si notre application allait tenir la charge ? Si elle était tolérante aux pannes ? Petit doute… Sait-on vraiment si notre application va être résiliente ou pas ?\n\nDans ce codelab/hands-on-lab, nous allons explorer ensemble une face cachée de la mise en production en challengeant notre application sur des aspects trop peu souvent abordés : la fiabilité des tests unitaires, la charge et la tolérance aux pannes.\n\nPour cela, nous allons vous faire découvrir les concepts de mutation testing et de chaos engineering, et vous faire mettre la main à la pâte en utilisant une palette d’outils assez large : PitTest, Gatling, Chaos Monkey et Kubernetes.\n\nUn seul objectif : être en pleine confiance avant ce Grand Evènement qu’est la mise en production .\n\n\n# Déroulement du codeLab\n\n\n## « Ça part en prod ! » Testez la résilience de votre appli par le chaos.\n\n\n### Introduction (15 minutes)\n\n    \"Bon, on a développé en interne une super application de gestion des compétences en architecture micro-service, on a fait une super recette fonctionnelle (sur les cas passants, faute de temps.. ça devrait suffire !), on a une couverture de TU au top, on a des super tests d'intégration, … Bref, on est super confiant pour partir en prod !_\n    Mais au fait, quelqu’un a regardé si notre application allait tenir la charge ? Si elle était tolérante aux pannes ? Petit doute… Sait-on vraiment si notre application va être résiliente ou pas ?\"_\n\n*   [SLIDE 1] Qu’est-ce que la résilience ?\n*   [SLIDE 2] Présentation du concept de Chaos Engineering\n*   [SLIDE 3] Présentation du scénario (cf abstract et pitch ci-dessus)\n*   [SLIDE 4] Présentation de notre application : fonctionnel et architecture\n*   Présentation du besoin : challenger le produit sur des aspects de résilience en utilisant des outils du monde du chaos engineering\n*   [SLIDE 5] {CODELAB} Installation des outils : java, maven, docker4windows ou docker sur linux, cluster Kubernetes en local\n*   Récupération des différents dépôts : application, tests de charges et déploiements\n\n### Chapitre 1 (30 minutes)\n\nObjectif : **Mutation testing**, théorie et pratique en utilisant **Pit Test** et **Descartes **(installation et utilisation de l’outil, analyse, correction de TUs en suivant les résultats des analyses)\n\n    \"Un stagiaire a touché au code source. Depuis, l'application bugue !!_\n    Pourtant, les tests unitaires passaient au vert ! Et la couverture de tests est à 100% sur l'ensemble de notre code métier !_\n    A un mois de la MEP, doit t'on blâmer le stagiaire ou l'auteur des tests unitaires ?_\n    Comment aurait-on pu éviter d'avoir des TU inutiles ?”_\n\n*   [SLIDE 6] Explication mutation testing\n*   [SLIDE 7] {CODELAB} Ajout des dépendances maven pit test + descartes\n*   Scénario à affiner :\n    *   {CODELAB} lancement analyse pit test\n    *   [SLIDE 8] Pit test c’est moche, mais c’est puissant\n    *   [SLIDE 9] {CODELAB} Atelier de détection d'erreurs\n    *   {CODELAB} correction de TUs\n\n### Chapitre 2. 30 minutes\n\nObjectif : **Chaos engineering** et **tests de charge**, théorie et pratique en utilisant **Chaos Monkey** et **Gatling **(installation et utilisation des l’outil, simulation de pannes avec chaos monkey, tirs de références et tirs de charges avec gatling). Analyse en récupérant des métriques.\n\n    \"On a des doutes sur la tolérance aux pannes de notre application, en fait personne n'a jamais regardé !_\n    Comment peut on faire un état des lieux de la situation ?\"_\n\n*   explication chaos-monkey / gatling\n*   {CODELAB} lancement de FuSIIon en local avec les images docker, en configurant chaos-monkey en mode coupure ( simulation de pannes)\n*   {CODELAB} tir de référence avec gatling et constat : les services tombent tous très vite.\n\n### Chapitre 3. 30 minutes\n\nObjectif : **Résilience**, théorie et pratique en utilisant **Kubernetes **avec Kube, tirs de charges avec Gatling pour constater la résilience de notre application\n\n    \"Le constat est fait : ok, notre applicatif répond.. mais est vraiment très sensibles aux pannes !_\n    Comment rendre notre application vraiment résiliente ?_\n    Comment palier à ce genre de problèmes ?”_\n\n*   explication rapide de K8S et du gain en resilience\n*   {CODELAB} démarrage de FuSIIon en local avec kube\n*   {CODELAB} constat avec un nouveau tir Gatling : ça marche beaucoup mieux\n\n### Conclusion : 15 minutes\n\n    \"Nous voilà rassurés, notre application est tolérante aux défaillances techniques, on va pouvoir aller en production beaucoup plus confiant!_\n    En plus, on a même pu challenger nos TU et récupérer des métriques au passage !”_\n\n*   debrief sur les outils utilisés\n*   quelques principes du chaos engineering",
+      "language": "French"
+    },
+    {
+      "id": "vBXehLE9i3ShOGZBeNUQ",
+      "title": "L'Esport à un sport comme les autres ",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Rare sont les devs qui n’ont jamais joué aux jeux-vidéo.\nRare sont les joueurs qui deviennent professionnels.\nCertains ont des fans à travers le monde entier, remplissent aujourd'hui des stades et gagnent des sommes astronomiques.\n\nPourtant les joueurs ont toujours la réputation d'être des ados enfermés dans leur chambre.\n\nOù en est-on réellement aujourd'hui ? \nDopage, marketing, professionnalisation, faisons le parallèle avec le monde du sport.\n\nQue vous soyez gamer ou non, venez découvrir ce nouvel écosystème !\n",
+      "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+      ],
+      "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
+      "references": "Nous avons déjà parlé de ce sujet à nos collègues à Zenika Nantes, la vidéo est disponible ici : https://youtu.be/uGLwbm0ktA4\n\nNotre document de travail pour cette présentation est disponible ici : https://docs.google.com/document/d/1YKRTGwlychi_wIuzIAuNYu0b1TsqkLOh1WWW6iRLEsI/edit?usp=sharing",
+      "language": "French"
+    },
+    {
+      "id": "1jiAsaKrbfhsEewsXaSH",
+      "title": "Cypress, l’outil qui va vous faire aimer les tests End-to-End !",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Sorti de sa bêta publique en septembre dernier, Cypress connait déjà un franc succès dans le domaine du test End-To-End. Il est d'ailleurs très bien classé dans le classement StateOfJs 2018 dans la catégorie des [« autres outils de tests »](https://2018.stateofjs.com/testing/other-libraries) loin de devant Selenium, Protractor et Nightwatch. Thoughtworks, dans son tout dernier [tech radar](https://www.thoughtworks.com/radar/tools), le place même dans les outils à adopter 😎\n\nDéveloppé depuis 2015, l’équipe en charge du développement de Cypress prend un soin particulier à l’expérience développeur (DX).\n\nDans cette conférence, nous verrons brièvement ce qui caractérise Cypress de Selenium et nous ferons un *live-coding* qui nous permettra de passer en revue les principales fonctionnalités ainsi que les compromis à prendre en compte. Nous évoquerons les bonnes pratiques qui rendront vos tests E2E plus rapides et moins soumis aux aléas qu’impliquent ce type de test. \n\nA l’issue de cette présentation, faire des tests E2E ne sera plus une souffrance, bien au contraire ! ",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
+        "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
+      ],
+      "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
+      "references": "J'ai déjà eu l'occasion de faire une présentation de Cypress au sein de mon entreprise (Egencia, qui est une filiale d'Expedia), à Devoxx France, Voxxed Days Luxembourg, à Devfest Nantes et en mars dernier à Breizhcamp. \nCes conférences ont été appréciées et ont suscité beaucoup d'intérêts. Elles sont visibles sur Youtube : \n - [Devoxx France](https://www.youtube.com/watch?v=UpBfQ6mdb8U)\n - [Voxxed Days Luxembourg](https://www.youtube.com/watch?v=KeGFvlopxcA)\n - [Devfest Nantes](https://www.youtube.com/watch?v=Ko_ZWasSgU0)\n - [Breizhcamp](https://www.youtube.com/watch?v=fKG9KaOTnxw)\n\nAvec Jordan, nous avons aussi animer un [*lab*](https://cfp.devoxx.fr/2019/talk/MIZ-8369/Cypress,_l%E2%80%99outil_qui_va_vous_faire_aimer_les_tests_End-to-End_!_) sur Cypress qui a été très bien accueilli."
+    },
+    {
+      "id": "jc3PNZWvUSCjAS2vqdLA",
+      "title": "Vous livrez encore des bugs en prod ?! 😱",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Le stagiaire a encore frappé ! C'était pourtant simple de passer le montant de la transaction en **premier** argument et le timestamp en **second**, non ? Et du coup, vous avez un problème à 1530795303€...\n\nMais... est-ce vraiment sa faute ? Est-ce qu'on n'aurait pas dû empêcher que cette erreur puisse même se produire ?\n\nJe vous affirme au contraire qu'il est de notre devoir de viser le zéro bugs !\n\nRéfléchissons ensemble à la façon de produire un code plus résistant aux erreurs des autres (*l'autre*, c'est aussi vous dans trois mois !) en suivant la philosophie du `Poka Yoke` – l'art de prévenir les erreurs d'inattention en architecturant son code de façon empathique.",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "xRNeGxIeNcdAegOPlnYeBKFVX2o1"
+      ],
+      "references": "Les slides sont disponibles ici : https://slides.com/ereold/bug-free-by-design\n\nDepuis quelques années,  j'ai découvert plusieurs langages qui m'ont particulièrement intéressé par la façon dont le langage et les APIs sont parfois conçus pour éviter les cas impossibles. Cela m'a amené à réfléchir aux façons d'empêcher les erreurs dans les autres langages en les rendant soit impossibles, soit dures à effectuer.\n\nC'est ainsi que j'ai  découvert la philosophie du Poka Yoke et toutes les techniques associées, et de réaliser comment je pouvais capitaliser sur les erreurs des nouveaux arrivants dans mon équipe projet pour identifier les points qui devraient être revus dans le code.\n\nC'est cette expérience que je souhaiterais partager, à travers des exemples en divers langages (Java, JavaScript, F#, Rust, Elm...) En vrac :\n\n - comment la programmation fonctionnelle permet de réduire la charge cognitive et la possibilité d'erreurs\n - comment un modèle mieux défini permet de réduire la possibilité d'avoir des états impossibles\n - comment éviter les types primitifs et signatures sans signification permet de réduire les erreurs faciles (j'ai rédigé un article sur le sujet ici : https://www.grenat.eu/blog/des-types-au-top)\n - comment arrêter les \"mensonges\" dans son code permet de réduire les erreurs d'inattention\n - comment certains concepts de Elm, ReasonML, Rust peuvent être utilisés en JavaScript (et en Java) pour sécuriser son périmètre fonctionnel\n",
+      "language": "Français"
+    },
+    {
+      "id": "tYSdKQvuEtgH7nLokY0e",
+      "title": "🏡 Full-remote : comment réussir à travailler en équipe ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Dans un contexte où de plus en plus d’entreprises ont à cœur le bien-être de leurs employés, le télétravail se développe. Lorsque cela reste ponctuel, tout va pour le mieux. Mais lorsqu’une personne décide de partir à l’autre bout du pays parce qu’elle en a marre de Paris, c’est une autre histoire !\n\nJe vous propose de passer en revue quelques clés pour réussir à travailler en équipe tout en étant dans des villes différentes. \n\nVous verrez que la communication est au cœur du sujet et découvrirez quelques conseils, que l'on travaille en télétravail ponctuel ou de longue durée.",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "LBXSNoYRKbWwvirzjnpHzMk03cM2"
+      ],
+      "references": "Cela fait quelques mois maintenant que je suis en full-remote depuis Nantes pour mon client, la start-up d'état Pix. Je parlerai dans ce talk de tout ce qui a été mis en place dans ce cadre, mais également de toutes les informations que j'ai pu recueillir ailleurs.\n\nJ'ai donné ce talk sous le format quicky lors de Codeurs en Seine, à Rouen, le 21 novembre 2019.",
+      "language": "français"
+    },
+    {
+      "id": "M7nW2FKPHbF2FpNWqNMx",
+      "title": "Accessibilité : et si on laissait les utilisateurs personnaliser l’interface ?",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Des lecteurs et loupes d’écran aux claviers virtuels ; des styles utilisateurs aux CSS alternatives en passant par les nouvelles *media queries* : les navigateurs web et les systèmes d’exploitation fournissent déjà de nombreux mécanismes d’accessibilité pour permettre aux utilisateurs et utilisatrices en situation de handicap d’adapter les interfaces numériques à leurs besoins.\n\nMais l’absence de support homogène entre les navigateurs et le manque de persistance de certains choix faits par les utilisateurs·rices ont involontairement donné naissance à la création de projets *open source* dédiés à l’accessibilité (extensions de navigateurs, *style switchers*, etc.), initiatives qui pêchent parfois par leur complexité technique et leur manque d’universalité.\n\nPour utiles que soient ces outils, Il existe des spécifications qui prennent en charge les besoins d’adaptations des utilisateurs·rices, ou qui tentent de les standardiser, notamment WCAG 2.1.\n\nMais *quid* d’une spécification standard dédiée, qui aurait pour objectif de tenir compte des préférences des utilisateurs·rices handicapé·es, afin de leur garantir l’expérience la plus prédictive, compréhensible et fluide possible, quel que soit le site concerné ? \n\nLe cas échéant, comment pourrions-nous dès à présent adapter notre code et nos UI (*user interfaces*) à ces recommandations ?\n\nEnfin, comment permettre aux utilisateurs·rices ayant un handicap mental ou cognitif de prendre conscience de leurs besoins en matière d’accessibilité ? Bien souvent, avant de savoir repérer les mécanismes d’aide et pouvoir les utiliser, il faut savoir déterminer ses propres besoins.\n\nÀ la croisée de l’UX et du développement, cette conférence hybride vous plongera dans le prochain grand chapitre de l’accessibilité numérique : la personnalisation des interfaces par les utilisateurs·rices handicapé·es.",
+      "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "IxJJoBIKX0bIfQHni4zoN62YpH12",
+        "lKpZ3RoHJATLjiQyIcPV1xsJJ203"
+      ],
+      "comments": "Re-bonjour !\n\nVoici une nouvelle conférence, sur laquelle Audrey et moi travaillons depuis un an. C‘est une conférence sur l’accessibilité un peu plus poussée que ce que l’on entend d’habitude. C’est une conférence hybride, dans laquelle on parlera dev ET design.\n\nOn serait vraiment absolument ravies de la donner pour la première fois pendant TNT, qui offre le cadre chaleureux et bienveillant qui nous met en confiance.\n\nVoilà, on croise les doigts !!\n\n",
+      "references": "Cette nouvelle conférence est un format long. Nous ne l’avons pas encore donnée, mais c’est un sujet sur lequel nous travaillons depuis un an. \n\nOn y parlera bien entendu des utilisateurs et des utilisatrices en situation de handicap concerné·es par la personnalisation des interfaces, on fera un tour d’horizon des outils qui existent déjà, mais surtout on présentera ce qui arrive et qui va impacter nos pratiques de code et de design : des nouveaux critères WCAG 2.1, les travaux de COGA, la « Cognitive and Learning Disabilities Accessibility Task Force » du W3C.\n\nAborder la conception et le développement web par le prisme des handicaps intellectuels et cognitifs nous semble essentiel, car c’est un sujet généralement ignoré.\n\nEn outre, cela permet d’avoir une conférence qui parle d’accessibilité mais à un niveau plus avancé que les sensibilisations d’usage.",
+      "language": "Français"
+    },
+    {
+      "id": "7vchsRqdvPawjft0FOd8",
+      "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "En partant sur une architecture proche des micro-frontends pour la construction de la plateforme groupe chez Ouest-France nous avons anticipé plusieurs problèmes posé par ce modèle :\n- l'autonomie des équipes est virtuelle en pratique\n- pas de dépendances explicites entre composant\n- gestion du versioning par du code plutôt que de la configuration\n- pas d'assurance sur la résilience\n- pas d'assurance intrinsèque sur les performances\n- ... et d'autres points que nous verrons durant cette présentation\n\nNous verrons différentes solutions à ces problèmes basées sur 5 principes intemporels et fondamentaux en ingénierie logicielle et système (spoiler alert: SoC, SSoT, tout limiter dans l'espace et dans le temps, explicite > implicite, déclaratif > impératif) ainsi qu'un REX 2 ans plus tard.\n\n",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "HaMEPZSMBscJU4Adj9VF8brrL5h1"
+      ],
+      "comments": "Pour résumé on pourrait dire que l'idée part de ce talk : https://www.slideshare.net/FGRibreau/une-plateforme-moderne-pour-le-groupe-sipaouestfrance mais 2 ans plus tard avec une approche bien plus centré sur les micro-frontends et le passage à l'échelle d'une organisation et de ces principes.\n\nLes key takeaways:\n- montrer ce que notre approche déclarative permet d'enforce et comment\n- comment on enforce la ré-utilisabilité des blocs\n- montrer comment on génère automatiquement les UI de backend\n- le mode de fonctionnement dégradé (circuit-breaker)\n- le mode de chargement partiellement asynchrone (déclaration statique des dépendances)\n- la documentation des blocks (via ses paramètres de configuration / nom / organisation)\n- garantir la cohérence de l'UX par un design system + équipe validation\n- gestion de la migration ancien-système/nouveau système (intégrée)\n- ...\n\nTalks passés/Vidéos/Slides: https://www.francois-guillaume-ribreau.com/cv/portfolios\n\n\n",
+      "references": null,
+      "language": "French"
+    },
+    {
+      "id": "vzGargOlA8voJIxO4BLz",
+      "title": "Pair Design : Un moyen de concevoir à deux ou plus",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Malgré l'application de cadres agiles, et l'amélioration de la communication grâce à l'arrivé du Game Storming et autres ateliers, un mur existe encore entre designers (\"concepteurs\") et développeurs.\n\nChaque groupe travaille indépendamment jusqu'à la prochaine fonctionnalité où le designer présente ses travaux. Le produit alors développé est souvent une créature difforme composée des besoins du métier, des utilisateurs et de la technique. \n\nPourquoi un développeur ne pourrait il pas concevoir au même titre qu'un designer ? Pourquoi un designer ne devrait il jamais se soucier des contraintes et faisabilités techniques de ces collègues ? Si on cassait ce mythe ? La solution ne serait il pas dans le \"pair design\": un moyen de concevoir à deux.",
+      "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+      ],
+      "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
+      "references": "Nous avons donné ce talk à devFest Nantes 2019 https://www.youtube.com/watch?v=rIZjbuEfyDs\n\n",
+      "language": "Français"
+    },
+    {
+      "id": "3QQqWeUo8kj2R6AlzJIP",
+      "title": "Trucs et astuces pour consommer une API REST",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Consommer une API REST fait désormais partie de notre quotidien de développeur. Que ce soit pour appeler un composant de notre belle architecture micro-services, un service externe hébergé par un tiers, réaliser un appel HTTP est plus que courant dans nos applications. **Nous avons à disposition pléthore de ressources pour bien concevoir son API REST mais comment faisons-nous pour en consommer une de manière efficace ?**\n\n- Cela commence souvent par la découverte d'une nouvelle API. Ai-je la chance de disposer d'une documentation complète ? Ou bien va-t-il falloir découvrir l'API ? Quels sont les outils qui peuvent m'aider pour démarrer ?\n\n- Une fois les premiers services découverts, comment les intégrer dans mon application ? Avec un client HTTP basique comme le nouveau client du JDK11 ou bien un client REST complet comme Feign ?\n\n- Dites donc, nous venons d'ajouter du code à notre application, quid des tests ? Faut-il appeler l'API directement dans ses tests ou bien rejouer les réponses ?\n\n- Appeler une API c'est facile mais comment s'assurer de ses performances en production ? Comment tracer et débugger les appels ?\n\nJe vous propose de faire le tour des outils et pratiques utiles pour la consommation des APIs REST en Java, en évoquant notamment : \n  - outils HTTP : OpenAPI, Postman, cURL\n  - clients HTTP & REST : JDK11, Apache, Feign, Retrofit\n  - techniques de test avec Wiremock\n  - pratiques pour la production : performances, traçabilité, logs\n\n---\n\n*La présentation se veut plutôt comme un back to basics autour d'HTTP et REST centrée autour d'outils et pratiques éprouvés. Point de frameworks flambants neufs mais des techniques apprises au quotidien. L'objectif est de faire un tour d'horizon orienté vers la pratique avec démos et du code pour permettre à chacun d'améliorer sa manière d'utiliser une API REST.*\n",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "PV4LOlB4jLRPDCCxXT6BBbsxNA93"
+      ],
+      "references": "Il faut bien reconnaître que cela serait pour moi ma première participation en tant que speakers à une grande conférence mais en tant que passionné je cumule quelques expériences qui me permettront, je l'espère, de présenter un super talk.\n\n**Je fais notamment partie de l'équipe qui organise RivieraDEV** (conférence à Sophia-Antipolis qui rassemble 500 participants en mai) pour la quatrième année. Je prends plaisir à participer au CFP et à vider les poubelles le jour J 😀.\n\nJ'ai également assisté à plusieurs conférences en tant que participant : Devoxx (Be & Fr), MiXiT, Jazoon,...\n\nJ'ai aussi eu envie quelques fois de partager en présentant un sujet qui me tenait à coeur sur des formats courts :\n\nPrésentation de Postman au meetup mobile de Sophia-Antipolis (https://www.youtube.com/watch?v=KL6RgHJRmJE&list=PLl_6oEqRRwJDAQOEJZxmb2kYFg7aVog5g&index=10)\nPrésentation (il y a fort longtemps) autour de l'intégration continue à Mixit (https://benjiscorner.wordpress.com/2012/05/04/mixit-2012/)\n\n**Développeur passionné** je travaille chez Instant System, petite entreprise il y a 3 ans quand je l'ai rejoint, un peu moins maintenant puisque nous sommes presque 50. En tant qu'architecte backend, j'aide souvent les développeurs de l'équipe à être plus efficace au quotidien. C'est une formidable expérience dont j'espère partager quelques éléments en tout cas sur les aspects techniques 🤓.\n\n**Je souhaite donc proposer un sujet concret, utile au quotidien qui se veut plus un retour d'expérience qu'une présentation technique d'une nouveauté. Difficile de faire ressortir de l'excitation sur un sujet qui peut paraître évident mais j'espère bien l'animer et le rendre visible à travers des exemples concrets et du live coding.**",
+      "language": "French"
+    },
+    {
+      "id": "yUtgGDeJyLq57mK86q9g",
+      "title": "Postgresql + json : bye bye JPA et passe le bonjour à mongo",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "* **Quelqu'un :** *Les ORMs c'est vraiment de la @%ù%$, franchement moi j'en utilise pas*\n* **Moi :** _à ouais tu utilises quoi alors? Par exemple pour gérer ton mapping objet quand il y a des relations_\n* **Quelqu'un :** *Au fait, t'as pensé quoi du dernier épisode de game of throne ?*\n\nUne des features star de JPA, c'est la possibilité de mapper les relations entre objets. Malheureusement tout le monde sait que cette feature amène aussi beaucoup de souffrance. \n\nDans ce talk 100% (ouais ok 80%) live coding, je vous proposerai une alternative à JPA en utilisant le support json de postgresql. On parlera requêtage json, aggrégations json et on ira jusqu'à stocker et indexer du json voir même faire des jointures entre json. Tout ça afin de pouvoir gérer facilement le mapping objet côté java. ",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "9g2TJuw97VMd8Zwn9y2x0g0w7SB2"
+      ],
+      "language": "français"
+    },
+    {
+      "id": "2nUoRfU9qblCBji2OHWx",
+      "title": "istio ⛵️par la pratique !",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Dans un monde distribué, nous sommes confrontés à de nouveaux problèmes. Les notions de circuit-breaker, de retry, de timeout, de blue-green deployment, A/B testing, pool-ejection… viennent remplacer nos anciens problèmes de monolithe 🙁.\n\nIstio ⛵ est là pour nous aider sur tous ces points... et même plus ! 🥰\n\nNous allons utiliser **Istio on GKE** sur Google Cloud Platfom et découvrir ensemble tout ce que nous pouvons faire pour nos petites applications. Si le **traffic mirroring**, **Canary Release**, **Traffic spliting** ne vous font pas peur, nous pourrons mettre cela en place très facilement ! Nous irons même jusqu'à injecter des erreurs dans notre système #ModeChaos 💥.\n\nNous profiterons aussi des outils offerts par GCP pour suivre les comportements et performances de nos applications en live ❤️.",
+      "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "formats": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
+      "speakers": [
+        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+        "rDKV0gUOk0O4WU9tpknPAngMF9A3"
+      ],
+      "comments": "Bonjour la team review 😉\n\nCe TP sera joué pour la première fois au SnowCamp 2020. \nNous allons tout mettre en place pour que les participants n'aient pas à sortir leur carte bleu 🤩.\n\n",
+      "references": "Ce TP est un dérivé de la présentation \"Istio, le meilleur ami de votre cluster K8S ❤️\" qui a été joué à de nombreuses reprise.\n\nDe nombreuses personnes m'ont remonté leur intérêt d'avoir un format plus \"pratique\" pour démarrer avec Istio.\n\nDe plus, c'est un dérivé d'une formation que nous avons donné à de multiple reprise auprès de nos clients. ",
+      "language": "Français"
+    },
+    {
+      "id": "XvpmnMltEJ6PNv0LBf4e",
+      "title": "Comment se faire hacker bien comme il faut!",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Et encore une fuite de numéros de cartes de crédit sur internet! https://www.infoq.com/news/2018/11/british-airways-data-breach\n\nC'est révoltant n'est-ce pas ? Mais attends, qu'est-ce qu'on fait nous pour s'assurer que notre appli n'est pas une passoire? \n\nDans cette live-coding-hacking session, venez découvrir les erreurs les plus communes en sécurité, que la grande majorité d'entre nous font sans même le savoir!\n\nAprès cela, vous ne verrez plus votre application de la même manière...\n",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "ZdNase96oBSI6QdrWySX9eCtJgs1"
+      ],
+      "comments": "Le but de ce talk est de faire découvrir aux gens, directement par le code, les erreurs les plus courantes décrite par le OWASP TOP10 2017 https://www.owasp.org/index.php/Top_10-2017_Top_10 - sans pour autant le mentionner dès le départ.\n\nJe développerai en live une application e-commerce, Java/JavaScript et à chaque itération je montrerai les erreurs que j'ai faites en les démontrant par des attaques. Puis je montrerai comment corriger les failles.\n\nJe suis membre de la fondation OWASP, que je représente en tant que speaker dans plusieurs conférences: DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx Belgium et Codeurs en Seine.",
+      "references": "Ce talk a été joué à DevoxxFR 2019, RivieraDev 2019 et Mixit 2019\n\nIl a été ranké #5 dans le TOP 10 de DevoxxFR: https://mailchi.mp/4b39a6614115/0dw1htrqpp-1432853\n\nVideo: https://youtu.be/Aa6yeVHs2fI\nSlides: http://slides.com/julientopcu/comment-se-faire-hacker-bien-comme-il-faut#/\nRepository: https://gitlab.com/crafts-records/pangloss\n\n\nLe but de ce talk est de faire découvrir au gens, directement par le code, les erreurs les plus courantes décrite par le OWASP TOP10 2017 https://www.owasp.org/index.php/Top_10-2017_Top_10 - sans pour autant le mentionner dès le départ.\n\nJe développerai en live une application e-commerce, Java/JavaScript et à chaque itération je montrerai les erreurs que j'ai faites en les démontrant par des attaques. Puis je montrerai comment corriger les failles.\n\nJe suis membre de la fondation OWASP, que je représente en tant que speaker dans plusieurs conférences: DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx Belgium, Codeurs en Seine, BreizhCamp, Devoxx France, RivieraDev et Mixit.\n\nVoici une des videos d'un de mes précédant talks sur la sécurité: \nhttps://youtu.be/barK5AmxpT8\n ",
+      "language": "French"
+    },
+    {
+      "id": "et52YASk16xgCOWszF5H",
+      "title": "L'OSS en entreprise, causons peu, Koson bien !",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "[Koson](https://github.com/lectra-tech/koson) est la première librairie Kotlin fraîchement open sourcée par Lectra.\nIl s'agit d'un DSL qui permet de décrire du JSON de manière concise, puis de le sérialiser avec des options (pretty).\n\nLe plus dur pour faire de l'Open Source en entreprise, au delà de convaincre de son intérêt même, c'est d'industrialiser et d'automatiser les releases. On verra que les occasions pour en faire sont nombreuses et qu'il ne faut pas hésiter à se lancer.\n\nOn parlera des problématiques de publication d'un artefact sous maven central (OSSRH), et on fera un petit tour du côté de la librairie elle même !",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "xKKBytTJTGMrchSRfanwMNSuYhS2"
+      ],
+      "comments": "Hello la team 'NT, merci beaucoup pour votre temps ! Je suis déjà venu au TNT pour parler de génération de bytecode JVM en 2018.\n\nMerci et en espérant vous revoir bientôt !\nNicolas.",
+      "references": "Ce serait la première fois que ce Quickie serait présenté en public ! Cependant, <a href=\"https://www.youtube.com/playlist?list=PLwsoXLLiKU-xnrivLVVFhR7xcQMKaECeR\" target=\"_blank\">ce n'est pas ma première expérience de speaker</a>.\n\nMerci d'avance pour votre temps et vos reviews !",
+      "language": "FR"
+    },
+    {
+      "id": "iDWSjGfWX8OLxBppd8PC",
+      "title": "Tips pour combattre le syndrome de l'imposteur",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Qui n’a pas un jour prononcer la phrase : j’ai l’impression d’être un imposteur ? Je ne me sens pas légitime de faire ceci ou de faire cela ? Certaines personnes sont persuadées qu’elles ne méritent pas leur succès, malgré les efforts qu’elles fournissent pour réussir. Elles s’auto-persuadent souvent que leur réussite n’est pas liée à leur travail, leur accomplissement personnel, mais tout bonnement à la chance ou bien au travail des autres. De fait, elles vivent en permanence avec un sentiment de duperie et craignent sans cesse que quelqu’un ne les démasque d’un jour à un autre.\n\nDans ce quickie nous ferons un retour sur ce qu'est le syndrome de l'imposteur, comment il se réflète au quotidien et nous verrons que ce n'est pas une fatalité, au contraire, qu'il existe des tips et astuces pour le combattre, se dépasser et s'améliorer.\n",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "MKkYzwlXx6dLM9cfE5vXYqJo5d43"
+      ],
+      "comments": "Ce talk a déjà été donné à Riviera Dev et à VoxxedDays Luxembourg.\nIl peut être joué en 15, 20, 25 ou 30 minutes.\n\nVoici le transcript de la présentation :\n\nhttps://scraly.github.io/posts/syndrome-imposteur/\n\nMerci.",
+      "references": "Rédaction de plusieurs articles sur le sujet dont :\n\n* Développeuses : Le syndrome de l'imposteur : https://oclock.io/blog/1054/syndrome-de-limposteur (2018)\n\n* J’ai testé pour vous : le syndrome de l’imposteur:  https://www.duchess-france.org/jai-teste-syndrome-de-limposteur/ (2015)\n\nTalks :\n\n* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" à Sunny Tech 2019\n\n* \"Le syndrome de l'imposteur\" à Voxxed Days Luxembourg 2019\n\n* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" au Riviera Dev 2019\n\n* \"Le syndrome de l'imposteur\" au Riviera Dev 2019\n\n* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" à Devoxx France 2019\n\n* \"Dans les coulisses de Google BigQuery\" au DevFest Toulouse 2016\n\n* \"Dans les coulisses de Google BigQuery\" au Toulouse Data Science (novembre 2015)\n\n* Organisation du Devfest Toulouse et du DevFest Pitchouns\n\n* Organisation et animation de meetups (Duchess France et Toulouse Data Science)\n\n* Organisation et animation d'ateliers pour les enfants / lycéen.ne.s"
+    },
+    {
+      "id": "pAMZmFT2wrfqPr9IdeXv",
+      "title": "Le design de l'erreur",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Nos systèmes sont designés de manière optimiste, de la gestion technique des erreurs à la modélisation de nos interfaces.  \nQue ce soit les codes d'erreurs, les exceptions ou les modélisations plus avancées, elles servent pour arrêter un traitement et _potentiellement_ afficher un message d'information à un utilisateur.\n\nMais avec les architectures microservices, la distribution des traitements ou une simple volonté de résilience, la gestion des erreurs est devenue un enjeu important de tous les systèmes afin qu’ils restent accessibles de tous, tout le temps tout en maintenant le système dans un état cohérent.\n\nQue fait-on lorsqu’une erreur intervient ? Peut-on compenser voire gérer l’erreur depuis le système pour l’utilisateur ?\n\nLa réponse a ces questions se trouvent autant dans la définition du produit que dans le choix technique.\nUn outil bien conçu est un outil intelligent qui peut faire les bons choix au bon moment pour l'utilisateur. Et si on apprenait ensemble à concevoir nos erreurs ?",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "EZdFes7RoSTGQJO5uOBCqSeyGvv2"
+      ],
+      "comments": "Parce Christophe vient de me dire de postuler",
+      "references": "François :  \n - Au secours, ma prod est sous Docker ! - DevFest Toulouse 2016, Devoxx 2017, MixIt 2017, RivieraDev 2017  \n - Un PaaS en 20 min pour votre équipe - DevFest Nantes 2016   \n - Architecture migroservice - JugSummerCamp 2017, Codeurs en Seine 2018, SnowCamp 2019, DevFest Lille 2019, RivieraDev 2019\n - L'UX a sauvé mon DevOps - DevFestToulouse 2017, Devops DDay 2017, DevFest Nantes 2017, RivieraDev 2018, DevFest Lilles 2018 , Devops Rex 2018, DevFest BoutDuMonde 2019\n - SystemD, de /dev/null à root - DevFest Toulouse 2018\n - Mon premier service en Rust - BDX I/O 2018, Breizhcamp 2019, Devoxx 2019, Mix-IT 2019\n - Devops ? C'est comme Scrum mais avec Docker ... - Devoxx Maroc 2018",
+      "language": "French"
+    },
+    {
+      "id": "H6hSWT3gMPPhoV2bPY5k",
+      "title": "Secretary Vs Dev : retour d expérience d'une assistante administrative dans un dev studio",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Vous vous êtes déjà sentie comme une baleine dans Microcosmos ? Moi ça m'est arrivé... Quand sur mon parcours professionnel j'ai rencontré un studio de développement. J'avais déjà écumé pas mal de secteurs, bien décidée à ne pas signer de CDI tant que je ne me sentirai pas vraiment bien quelque part ! Mais jamais rien qui ressemblait de près ou de loin au BEARSTUDIO.\n\nJ'ai plongé sans bouteille et sans préparation dans un monde où l'on m'a parlé d'agilité, d’auto-gouvernance, mais aussi de sprint, de merge request, d'issue et une flopée d'autre terme que je ne maîtrise toujours pas... En contrepartie je leur ai parlé contrat cadre, convention collective, gestion des congés, plan comptable...\n\n1 an et demi plus tard je suis toujours là, eux aussi, on s'est apprivoisé on a appris à travailler ensemble et à se comprendre. C'est cette expérience singulière mais tellement enrichissante que je voudrais partager parce que franchement je ne regrette pour rien au monde d'avoir osé me lancer dans cette aventure professionnelle et humaine !",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "24si0s4B8lYEwbg5d4sshrMyklS2"
+      ],
+      "references": "https://www.youtube.com/watch?v=02fezqRngEM&amp;index=2"
+    },
+    {
+      "id": "m8pvkEKdZYVIxBQL3v4z",
+      "title": "Notif qui saoule n'amasse pas foule ...",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Ça sonne dans ta poche !! L’irrésistible notification est présente depuis bien longtemps dans nos vies et les avis sont unanimes : On en a ras-le-bol ! Dans cette présentation, le but est de comprendre comment concevoir des parcours intelligents et leurs impacts sur les interfaces de vos produits. Avec des conseils simples et explicites nous explorerons les bonnes pratiques des parcours de notifications.",
+      "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "PuG5s59DFfdNEToSJt5FfWNZZh03"
+      ],
+      "references": "2017 - Take Off (Lille, FR) - Conférence\n2018 - Take Off (Lille, FR) - Conférence\n2018 - BDX.IO (Bordeaux, FR) - Conférence : https://youtu.be/CI_9fCb-OtU\n2018 - BlendWebMix (Lyon, FR) - Table Ronde\n2019 - PodCamp (Toronto, CA) - Conférence\n2019 - Sudweb (Toulouse, FR) - Conférence\n2019 - Web2days (Nantes, FR) - Conférence",
+      "language": "France"
+    },
+    {
+      "id": "SYJIDy5JPhQuABdiT7Gv",
+      "title": "Java server-side: 20 years old and still innovative!",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Pendant 20 ans, l'écosystème Java côté serveur  a évolué à un train sénatorial. Depuis une dizaine d'années,  les applications se sont transformées pour devenir cloud-native. \n\nJava est aujourd'hui contraint de s'adapter à ce nouveau contexte, en particulier pour fonctionner correctement dans une infrastructure moderne Kubernetes/Docker :\n\n* il doit permettre de développer facilement des applications observables et résistantes aux pannes,\n* il doit devenir frugal, en particulier consommer moins de mémoire et proposer des images Docker optimisées,\n* il doit démarrer rapidement.\n\nCette présentation a pour but de démontrer les différentes options qui permettent d'atteindre ces objectifs :\n\n* au niveau de la JVM avec OpenJ9 et GraalVM,\n* au niveau des frameworks et serveur d'application avec Payara, KumuluzEE, TomEE et bien sûr Quarkus.\n\nLa présentation sera basée sur quelques slides (le minimum) et une démo inspirée d'un cas réel.\n\nSi vous pensez que la technologie Java est réservée aux applications \"legacy\", cette présentation est pour vous.\n",
+      "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "U0h27oWjIEX6SyideyIpOoPXtYs2"
+      ],
+      "comments": "Conférence déjà donnée à DevoXX Paris et Oracle San Francisco. En état d'amélioration continue pour coller à l'actualité technologique bien entendu.",
+      "references": "Pendant les deux dernières années, j'ai effectué les conférences suivantes :\n\n* Touraine Tech 2018\n* EclipseCon France 2018 Toulouse\n* Eclipse DemoCamp Zurich 2018 Zurich\n* EclipseCon Europe 2018 Ludwigsburg\n* Devoxx Paris 2019\n* Oracle Code One San Francisco 2019",
+      "language": "Français (ou anglais à la demande)"
+    },
+    {
+      "id": "VhehXV2aodPu46LuhxbF",
+      "title": "⏰ CSS Clockwork",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Souvent décrié, le CSS est pourtant puissant, et surtout fun.\nAujourd’hui alors qu’on est entré dans l’ère post-IE, on peut utiliser beaucoup plus sereinement cette puissance ; pourquoi passer à côté !\n\nCette session de live-coding d’une horloge est l’occasion de montrer quantité de trucs et astuces utiles quotidiennement pour les développeu·rs·ses web.\nNous aborderons en particulier les _custom properties_ (c.-à-d. CSS variables), les transformations, les animations, les compteurs, et un peu de positionnement.\n",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "DOf7nxshJKYoWia2QQX8cTkJtRL2"
+      ],
+      "comments": "Cette présentation est en quelque sorte la suite de \"CSS is Awesome\" que j'ai donnée notamment à [DevoxxFR](https://www.youtube.com/watch?v=H8lICKucWL4), MixIT, et une version plus longue au [DevFest Toulouse](https://www.youtube.com/watch?v=fPObs60585w).\nLes nombreux retours positifs m’incitent pour continuer à faire passer le message :\n\n> Le CSS est plus épineux qu’on le pense, pour bien développer en  Web, il faut se donner du temps pour l’apprendre.\n\nL’idée est de faire un live-coding d’une horologe : [voir le prototype sur codepen](https://codepen.io/ilaborie/pen/wRpoJy).\n\nPlutôt que de faire une autre liste de tricks CSS pour rechercher les effets waouh, je trouve intéressant de construire un exemple de bout en bout.\nÇa permet de prendre par la main ceux qui ne sont pas à l'aise avec une progression plus linéaire. C'est aussi l'occasion de montrer des opérations de refactoring, ou bien d'expliquer certaines solutions alternatives.\n",
+      "references": "Je parle régulièrement dans des confs, par exemple en 2019, j'ai parlé à DevoxxFR, RivieraDev,, MiXiT, Voxxed Luxembourg, SunnyTech, JUG Toulouse on en 2018, j'ai parlé à Breizhcamp, DevoxxFR, SunnyTech, GDG Toulouse, JUG Toulouse, plus quelques BBL.\n\nCette présentation a déjà été donnée lors de [MixIT](https://mixitconf.org/2019/-css-clockwork) et à [Voxxed Luxembourg](https://cfp-voxxed-lux.yajug.org/talk/SXG-1126/%E2%8F%B0_CSS_Clockwork)\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [⏰ CSS Clockwork - Igor Laborie - Voxxed Luxembourg 2019](https://www.youtube.com/watch?v=Iingd-bNjPg)\n\nJ'ai aussi reçu ce retour qui m'a fait chaud au cœur par email:\n\n> Je viens de passer l'après-midi à matter les talks de MiXiT. En tant qu'orga, je n'ai pas pu me concentrer sur les contenus durant la conf et le faire un jour pluvieux est le bon moment.\n> J'ai vu pas mal de conf front et UX, intéressant, mais sans plus. J''avoue ta session m'a bluffée.\n>Parce qu'elle est didactique et m'a donnée la sensation que je pouvais la refaire, parce que la conclusion est super réaliste: Bosser HTML et CSS comme base, les principes du codes pourront  bouger dans l'avenir...\n>\n> Superbe. Bravo."
+    },
+    {
+      "id": "B8gr3HrZqJoTV0g1ZP28",
+      "title": "J'ai déployé mes apps sur Minikube... maintenant je fais quoi ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Ces derniers mois Kubernetes est partout, en terme de *buzz word* on peut difficilement faire mieux. Et comme souvent lorsqu'un sujet est si populaire, vous avez des tutoriels, billets de blog et talks par milliers, expliquant comment bien démarrer sur Kubernetes. Tout va donc bien dans le meilleur des mondes, non ?\n\nEt bien non, pour être honnête. Car l'immense majorité de ces tutoriels, articles et talks s'arrêtent juste après le *Hello Kube*, lorsque vous avez quelques applications tournant sur votre MiniKube sur le laptop. Et là, c'est pas la fin, mais à peine le principe...\n\nDans ce talk je vais parler de cet écart entre MiniKube et une infra de production, de l'intérêt des infrastructures Kubernetes managées, des pièges et du *vendor locking*, de comment arriver à faire assez confiance dans sa solution pour faire tourner du Kubernetes sur Kubernetes et d'autres sujets de ce type. ",
+      "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "pYuiGicpt0MenD8NEMhZXtk6VSr1"
+      ],
+      "comments": "Hola!\n\nPunaise, les amis, j'ai vu Christophe vendredi dernier et il m'a rappelé que le CFT de TNT'20 était déjà ouvert ! Alors, avant d'oublier, je préfère vous envoyer déjà quelques propositions de talks qui me tient à coeur et que je adorerais aller vous montrer à Tours, après le talk sur les Web Components de l'année dernière.\n\nCelui-ci est un talk sur Kubernetes... mais pas le talk typique, car je cherche à aller plus loin que la plupart de talks que j'ai vu, vers la partie qui est souvent mise de côté : l'énorme écart entre avoir son archi sur un Minikube ou un petit Kubernetes monté à la main et lka même archi sur un Kubernetes de prod, bien sécurisé, dimensionné  et prêt pour les contraintes de prod. C'est un beau voyage, et j'adorerais le raconter à Tours cet hiver...  \n\nJ'ai fait le talk à Devoxx UK, et je vais bientôt le faire à Devoxx Belgique, mais je ne l'ai à peine fait tourner en France (qu'au JUG Summer Camp semaine dernière). ",
+      "references": "Pour mon expérience en tant que speaker, j'ai fait pas mal de choses: Devoxx (tous les ans depuis 2014), Devoxx France (aussi tous \nles ans depuis 2014), Codemotion Rome, Amsterdam et Madrid, DevFest Nantes, BreizhCamp, MobiConf, MixIt, SnowCamp, DevFest Toulouse... \net aussi plein de Meetups, JUG et autres GDG.  \n\nJe suis [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez) en Web Technologies et Flutter.\n\nVous pouvez avoir plus de détails sur mon [profil Noti.st](https://noti.st/lostinbrittany).\n \nQuelques lien vers certains de mes talks en YouTube :\n\n- [DevFest Toulouse 2018](https://www.youtube.com/watch?v=a4zCakyQN-o&t=198s&index=17&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT)\n- [Web2Day 2018](https://www.youtube.com/watch?v=zwzA5PCP2vA&t=877s&index=15&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT)\n- [Devoxx France 2018](https://www.youtube.com/watch?v=bYODgsCkt90&t=90s&index=14&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT)\n- [DevFest Toulouse 2017](https://www.youtube.com/watch?v=gAJh58ejuQc&t=0s&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT&index=2)\n- [Codeurs en Seine 2017](https://www.youtube.com/watch?v=qAZK0HpDrWc&t=4s&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT&index=3)\n- [Rennes JS Mai 2017](https://www.youtube.com/watch?v=YdTrMOpUMfY&t=316s&list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT&index=4\n\nPour une liste plus exhaustive de vidéos, voici une [liste sur YouTube](https://www.youtube.com/playlist?list=PLZsghq6BxISSY62UCrZEvL7KhGfY3-_YT)\n"
+    }
+  ],
+  "speakers": [
+    {
+      "uid": "iXIL5MO7gUW8RFHEx4Q7qjxKI662",
+      "displayName": "Thibault Pairis",
+      "company": "Modulo Management",
+      "photoURL": "https://lh6.googleusercontent.com/-IKBS76kA3lc/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcMXdwj0AC2E0mrG4gz3KfYUL6dOw/photo.jpg"
+    },
+    {
+      "uid": "9g2TJuw97VMd8Zwn9y2x0g0w7SB2",
+      "displayName": "Delegue Alexandre",
+      "company": "MAIF",
+      "photoURL": "https://avatars2.githubusercontent.com/u/1575521?v=4",
+      "twitter": "@chanksleroux",
+      "github": "larousso",
+      "language": "scala"
+    },
+    {
+      "uid": "lVp57FlvF1fKYwqk8yNinu3uFv92",
+      "displayName": "Paul ROYE",
+      "bio": "Lead Dev at SII",
+      "company": "SII",
+      "photoURL": "https://avatars3.githubusercontent.com/u/37868974?v=4",
+      "github": "paul-roye",
+      "language": "French"
+    },
+    {
+      "uid": "U0h27oWjIEX6SyideyIpOoPXtYs2",
+      "displayName": "Jean-Francois James",
+      "bio": "Coding Software Architect, Distinguished Expert, head of Worldline Expert Community, blogger, speaker, strong focus on the Java ecosystem, Eclipse MicroProfile contributer.\n\nStill enthusiast after more than 30 years in the IT Industry!",
+      "speakerReferences": "Pendant les deux dernières années, j'ai effectué les conférences suivantes :\n\n* Touraine Tech 2018\n* EclipseCon France 2018 Toulouse\n* Eclipse DemoCamp Zurich 2018 Zurich\n* EclipseCon Europe 2018 Ludwigsburg\n* Devoxx Paris 2019\n* Oracle Code One San Francisco 2019",
+      "company": "Worldline",
+      "photoURL": "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
+      "twitter": "@jefrajames",
+      "github": "https://github.com/jefrajames",
+      "language": "French"
+    },
+    {
+      "uid": "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+      "displayName": "Yann Bertrand",
+      "bio": "Passionné de dev web depuis plus de 10 ans, ma passion m'a emmené à un diplôme d'Ingénieur à l'ENIB et à mon poste de consultant chez Zenika Nantes.\n\nJ'aime partager mes expériences et discuter pendant des heures sur des sujets techniques (ou non).\n\nJ'adore rencontrer de nouvelles personnes et découvrir de nouvelles manières de penser.",
+      "speakerReferences": "- Aout 2019 - Night class Open-Source",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/-CmFqCYA4cBc/AAAAAAAAAAI/AAAAAAAAABw/MG-IwRWRmyM/photo.jpg",
+      "twitter": "_YannBertrand",
+      "github": "yannbertrand",
+      "language": "Français"
+    },
+    {
+      "uid": "qVuC10841Ecu0FB0eIHE0uqtwup2",
+      "displayName": "Lucas Dupuy",
+      "bio": "Lucas développeur backend chez Zenika Nantes. Curieux et passionné, il aime spécialement les technologies liées à la Big Data. Social, il co-organise CNCF Nantes meetup.",
+      "company": "Zenika",
+      "photoURL": "https://lh6.googleusercontent.com/-FOdP9sEkajI/AAAAAAAAAAI/AAAAAAAAAAA/ABtNlbBxkcmD3mQE-SLbwoxyfnR88IMYYg/mo/photo.jpg",
+      "github": "louckousse",
+      "language": "Français"
+    },
+    {
+      "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
+      "displayName": "Jordan Nourry",
+      "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
+      "speakerReferences": "Speaker au Breizchamp 2019 sur les tests dans un environnement micro-services avec de l'architecture hexagonale selon Martin Fowler. (Live coding session)\nSpeaker à Devoxx France 2019 sur les tests e2e front avec Cypress (Hand on Lab de 3h30)\nBBL sur les tests e2e front à L'occitane en provence et enedis (2019)",
+      "company": "Shodo",
+      "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
+      "twitter": "@JkNourry",
+      "language": "Français"
+    },
+    {
+      "uid": "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
+      "displayName": "Rodolphe BUNG",
+      "bio": "Développeur fullstack expérimenté, j'ai travaillé sur plusieurs sites internet « grand public » et suis sensible aux problématiques de performance relatives à ce type de site.\n\nAdepte des méthodes agiles et certifié ScrumMaster, j'aime le partage de connaissances et suis partisan de l'amélioration continue.\n\nInitialement très orienté Java/Spring, je me passionne actuellement sur l'écosystème JavaScript (en particulier NodeJS, React) qui offre de nombreuses possibilités (développement front et back, application mobile native ou desktop, etc.)",
+      "company": "Société Générale",
+      "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
+      "twitter": "@rodbung",
+      "github": "rbung",
+      "language": "France"
+    },
+    {
+      "uid": "xRNeGxIeNcdAegOPlnYeBKFVX2o1",
+      "displayName": "Jordan Grenat",
+      "bio": "Jordane est développeur chez Viseo et adore les découvertes et ce qui sort de l'ordinaire. Ce qui est souvent incompatible avec le pragmatisme technologique nécessaire sur les projets clients.\n\nIl assouvit alors sa passion à coup de projets perso jamais finis et en écumant les conférences en compagnie des autres développeurs férus de nouveautés. En vrac : Elm, F#, nouveau-framework-à-la-mode-JS, ...\n\nIl passe le reste de son temps libre à refuser les cookies sur les sites web qu'il consulte.",
+      "speakerReferences": "J'ai donné des talks dans plusieurs conférences ces trois dernières années, dont voici quelques liens :\n\n-   BDX.io (FR) :  [https://www.youtube.com/watch?v=8xafl9VPiX8](https://www.youtube.com/watch?v=8xafl9VPiX8)\n-   Devfest Nantes (FR):  [https://www.youtube.com/watch?v=pjeXbKXSiVs](https://www.youtube.com/watch?v=pjeXbKXSiVs)\n-   Devoxx France (FR) :\n    -   [https://youtube.com/watch?v=pSHTe2xTGDc](https://youtube.com/watch?v=pSHTe2xTGDc)\n    -   [https://youtube.com/watch?v=J09wjZBzJGg](https://youtube.com/watch?v=J09wjZBzJGg)\n-   Devoxx Belgium (EN) :\n    -   [https://youtube.com/watch?v=Ofx6LFCYea0](https://youtube.com/watch?v=Ofx6LFCYea0)\n    -   [https://youtube.com/watch?v=dIABJZsvfWI](https://youtube.com/watch?v=dIABJZsvfWI)",
+      "company": "Viseo",
+      "photoURL": "https://lh3.googleusercontent.com/-gm2VH9ACvBs/AAAAAAAAAAI/AAAAAAAAHUs/1ekXFpnAWUY/photo.jpg",
+      "twitter": "JoGrenat",
+      "github": "jgrenat",
+      "language": "Elm"
+    },
+    {
+      "uid": "LBXSNoYRKbWwvirzjnpHzMk03cM2",
+      "displayName": "Lise Quesnel",
+      "bio": "Consultante chez Zenika, Lise a déménagé il y a quelques mois de Paris vers les contrées nantaises. Elle travaille en tant que développeuse web en full-remote pour son client, Pix. Grande curieuse, elle aime découvrir sans cesse de nouvelles choses et a tout particulièrement une appétence pour les technologies front-end.",
+      "speakerReferences": "J'ai eu l'occasion de donner deux talks aux événements interne à Zenika, appelés Technozaure. L'un sur le framework de tests end-to-end Cypress, l'autre sur la start-up d'état Pix.  J'ai également pu donner mon talk \"🏡 Full-remote : comment réussir à travailler en équipe ?\" à Codeurs en Seine 2019.",
+      "company": "Zenika - Pix",
+      "photoURL": "https://lh3.googleusercontent.com/-4_4dOg_V9C4/AAAAAAAAAAI/AAAAAAAAAFU/9-fQ0kBWKIQ/photo.jpg",
+      "twitter": "@QuesnelLise",
+      "github": "lisequesnel",
+      "language": "français"
+    },
+    {
+      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
+      "displayName": "Marie Guillaumet",
+      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
+      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
+      "company": "Access42",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
+      "twitter": "@kReEsTaL",
+      "github": "kreestal",
+      "language": "French"
+    },
+    {
+      "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
+      "displayName": "Audrey Maniez",
+      "bio": "Audrey Maniez est experte accessibilité senior et co-gérante chez [Access42](https://access42.net/). Sa maîtrise poussée des différentes normes d’accessibilité numérique (WCAG 2.0 et 2.1, ATAG 2.0) lui permet d’accompagner de nombreux clients dans leur démarche d’accessibilité numérique, quelles que soient leurs problématiques. Co-rédactrice du RGAA 3 (Référentiel général d’accessibilité pour les administrations), Audrey travaille sur des référentiels et méthodes de tests destinées à adresser les spécificités des logiciels et des applications mobiles. Elle a conçu et rédigé certaines ressources du RGAA 3, notamment un guide dédié aux troubles DYS et au handicap mental. C’est également une formatrice chevronnée, et elle publie régulièrement des articles d’expertise technique sur [le blog d’Access42](https://access42.net/blog). Elle télétravaille depuis Carcassonne.",
+      "speakerReferences": "- « Les ressources du RGAA 3 », 24ème séminaire AccessiWeb (2017), en binôme avec Yann Olive d’Empreinte Digitale\n- Table ronde « Numérique, handicap et formation », Forum de la Gouvernance de l’Internet (2019).\n",
+      "company": "Access42",
+      "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
+      "twitter": "@audreyblabla",
+      "github": "audreymaniez",
+      "language": "FR"
+    },
+    {
+      "uid": "HaMEPZSMBscJU4Adj9VF8brrL5h1",
+      "displayName": "Francois-Guillaume Ribreau",
+      "bio": "Architect & Head of Digital Development @OuestFrance 🌟#FullStack CTO @imagecharts @Redsmin @killbugapp @motiondynamic_ @mailpopin founder",
+      "company": "Ouest-France/Image-Charts",
+      "photoURL": "https://avatars2.githubusercontent.com/u/138050?v=4",
+      "twitter": "@fgribreau",
+      "github": "fgribreau",
+      "language": "French"
+    },
+    {
+      "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+      "displayName": "Cécile Freyd-Foucault",
+      "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
+      "speakerReferences": "* Meilleur Dev de France 2018\n* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n\n",
+      "company": "TalanLabs",
+      "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
+      "twitter": "@cecilefreydf"
+    },
+    {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry",
+      "language": "French"
+    },
+    {
+      "uid": "PV4LOlB4jLRPDCCxXT6BBbsxNA93",
+      "displayName": "Youri Bonnaffé",
+      "bio": "Développeur passionné je travaille chez Instant System, un éditeur dans la mobilité urbaine, un domaine dans lequel je m'éclate et qui bouge ! 🤪\n\nHabitué de la ligne de commande j'aime bien automatiser les choses alors forcément les tests, l'intégration continue, l'administration système sont des sujets qui m'intéressent. \n\nEt parce qu'il faut un esprit sain dans un corps sain, je cours (un peu, beaucoup, passionnément) au milieu des beaux paysages de la Côte d'Azur.",
+      "company": "Instant System",
+      "photoURL": "https://lh4.googleusercontent.com/-CKXCWocMVqM/AAAAAAAAAAI/AAAAAAAAE9w/-uU2AB-Gb9E/photo.jpg",
+      "twitter": "@youribm",
+      "github": "youribonnaffe",
+      "language": "Français / Anglais"
+    },
+    {
+      "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+      "displayName": "Nikola Lohinski",
+      "bio": "Google Cloud Architect and tech lover 😍 I fancy cloud tech, efficient languages and infrastructure development.\n\nI have experience with Python, Go, JS and Rust and usually play with those in Kubernetes pipelining everything in Gitlab's CI/CD. ",
+      "company": "Stack Labs",
+      "photoURL": "https://lh5.googleusercontent.com/-MSYc2z97haQ/AAAAAAAAAAI/AAAAAAAAADw/6S9E4T6u1Ok/photo.jpg",
+      "github": "https://github.com/NikolaLohinski",
+      "language": "Français"
+    },
+    {
+      "uid": "rDKV0gUOk0O4WU9tpknPAngMF9A3",
+      "displayName": "Kevin Davin",
+      "bio": "Google Developer Expert on Google Cloud, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation. \n\nJava, Kotlin, TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the Continuous Integration of Gitlab 🚀. \n\nAddict of agility and devops, some of my work was to help teams to follow those philosophies. From the analysis of the code quality (with code-review or static analysis tool) to the setup of unit or end-to-end tests and ending by the continuous deployment of the application directly on the Google Cloud platform. \n\nMy mantra is to go to production as soon as possible! In my activity in Stack Labs and also in my personal time, I contribute on open source projects (Spring boot, Spring Security, Angular, Protractor, Jest schematics for Angular, NgxOpenlayers, Istio...). . \n\nI'm currently CTO (and one of the founder) of Stack Labs, a company specialized in architecture and development of cloud solutions. I supervise about twenty passionate and talented developers in their missions and during our internal events",
+      "speakerReferences": "* Una-GitLab\n  * [GDG Toulouse Sept 2018](https://www.youtube.com/watch?v=67V3QNI0TF4&t=3s)\n  * SnowCamp 2019\n  * Sunny Tech 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Una-GitLab, le TP à roulette\n  * SnowCamp 2019\n  * Touraine Tech 2019\n  * DevFest Paris 2019\n  * Mixit 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Istio, le meilleur ami de votre cluster K8S\n  * Snowcamp 2019\n  * Tourainne Tech 2019\n  * [BreizhCamp 2019](https://www.youtube.com/watch?v=80jo1ftgHVM)\n  * [Paris Container Day 2019](https://www.youtube.com/watch?v=oHgzSTJi2Uo)\n  * [VoxxedDays Luxembourg 2019](https://www.youtube.com/watch?v=wG_oljge1Xc)\n  * [BDX.io 2019](https://www.youtube.com/watch?v=_AvgNihwlWU)\n* Docker, Kubernetes & Istio:  Tips, tricks & tools\n  * [Devoxx Fr 2019](https://www.youtube.com/watch?v=jkbHEMaYsB0)\n  * RivieraDev 2019\n  * [Sunny Tech 2019](https://www.youtube.com/watch?v=GHZqlTDvRic)\n  * [DevFest Nantes 2019](https://www.youtube.com/watch?v=XnEdh9bwDXk)\n  * DevFest Strasbourg 2019",
+      "company": "Stack Labs",
+      "photoURL": "https://lh5.googleusercontent.com/-t2c2Q9TjKnA/AAAAAAAAAAI/AAAAAAAAFZU/G4vUXziejAw/photo.jpg",
+      "twitter": "@davinkevin",
+      "github": "davinkevin",
+      "language": "France"
+    },
+    {
+      "uid": "ZdNase96oBSI6QdrWySX9eCtJgs1",
+      "displayName": "Julien Topçu",
+      "bio": "Sr Tech Lead à la Société Générale, j'aime concevoir des logiciels à forte valeur métier en usant de techniques issues du Domain-Driven Design, le tout propulsé en Xtreme Programming dans la philosophie Kanban #NoEstimates. Membre de la fondation OWASP, j'évangélise sur les techniques de sécurité applicative afin d'éviter de se faire hacker bien comme il faut.",
+      "speakerReferences": "En tant que speaker, j'ai participé à plusieurs conférences : DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx France, Devoxx Belgium, Codeurs en Seine, Mixit etc...\n\nLa liste de mes videos sur YouTube:\nhttps://www.youtube.com/playlist?list=PLuMbC-fWSyk3zf7o0idX1pXD4HSuTqCoY\n\n",
+      "company": "Société Générale & OWASP fundation",
+      "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+      "twitter": "@JulienTopcu",
+      "github": "julien-topcu",
+      "language": "French"
+    },
+    {
+      "uid": "xKKBytTJTGMrchSRfanwMNSuYhS2",
+      "displayName": "Nicolas Comet",
+      "bio": "Développeur passionné, Speaker, grand curieux, j'aime apprendre en permanence. Je ne m'attache pas à une technologie en particulier, même si je gravite en ce moment plus souvent du côté de Kotlin. J'aime les principes fondateurs du TDD. Je porte également un grand intérêt pour la synergie entre DDD et documentation vivante ou \"Living Documentation\". \n\nJe suis actuellement Tech Lead Cloud chez Lectra, numéro un mondial des solutions dédiées à l'industrie textile (logiciels & machines).",
+      "speakerReferences": "Lien : <a href=\"https://www.youtube.com/playlist?list=PLwsoXLLiKU-xnrivLVVFhR7xcQMKaECeR\" target=\"_blank\">Playlist YouTube de mes conférences enregistrées</a>",
+      "company": "Lectra",
+      "photoURL": "https://avatars0.githubusercontent.com/u/6339753?v=4",
+      "twitter": "@NicolasComet",
+      "github": "https://github.com/ncomet",
+      "language": "French"
+    },
+    {
+      "uid": "MKkYzwlXx6dLM9cfE5vXYqJo5d43",
+      "displayName": "Aurélie Vache",
+      "bio": "Aurélie est Cloud developer (& DevOps) chez Continental à Toulouse, en France. Elle travaille comme développeuse depuis plus de 13 ans. Ancienne développeuse Java / JEE, puis développeuse Web, Full-Stack et Lead, elle est maintenant Cloud developer et DevOps sur des projets de véhicules connectés et autonomes. En tant que l’une des leaders de Duchesse France, une association qui promeut les femmes développeurs et les femmes travaillant dans l'informatique, elle est fortement impliquée dans leur initiative de coaching #AdoptADuchess, qui aide les développeurs débutants et en reconversion. Elle est également l’une des organisatrices du DevFest Toulouse et un membre de la core team du Toulouse Data Science (TDS).\nElle est également rédactrice d'articles techniques et marraine de l’association Elles Bougent.",
+      "speakerReferences": "* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" à SunnyTech 2019\n* \"Le syndrome de l'imposteur\" à Voxxed Days Luxembourg 2019\n* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" au Riviera Dev 2019\n* \"Le syndrome de l'imposteur\" au Riviera Dev 2019\n* \"Docker, Kubernetes & Istio : Tips, tricks & tools\" à Devoxx France 2019\n* \"Terrible BOF\" à Devoxx France 2019\n* \"Dans les coulisses de Google BigQuery\" au DevFest Toulouse 2016\n* \"Dans les coulisses de Google BigQuery\" au Toulouse Data Science (Novembre 2015)\n* Organisation et animation de meetups (Duchess France et Toulouse Data Science)\n* Plusieurs talks et training sur Terraform en interne chez Continental\n* Organisation et animation d'ateliers pour les enfants / lycéen.ne.s",
+      "company": "Continental",
+      "photoURL": "https://lh5.googleusercontent.com/-Jx8n2dYA8Ss/AAAAAAAAAAI/AAAAAAAAYLA/oDqXfvM9CfY/photo.jpg",
+      "twitter": "@aurelievache",
+      "github": "scraly",
+      "language": "Français"
+    },
+    {
+      "uid": "EZdFes7RoSTGQJO5uOBCqSeyGvv2",
+      "displayName": "François Teychene",
+      "bio": "Cloud Developer @ Elastic, meetup addict & organizer @ Montpellier,  SunnyTech team.  \nDéveloppeur couteau suisse pouvant intervenir du Javascript à la table de routage. Mes passions actuelles sont le Rust, le DevOps et le Scala en plus de vouloir mettre des conteneurs partout.",
+      "speakerReferences": " - Au secours, ma prod est sous Docker ! - DevFest Toulouse 2016, Devoxx 2017, MixIt 2017, RivieraDev 2017  \n - Un PaaS en 20 min pour votre équipe - DevFest Nantes 2016   \n - Architecture migroservice - JugSummerCamp 2017, Codeurs en Seine 2018, SnowCamp 2019, DevFest Lille 2019, RivieraDev 2019\n - L'UX a sauvé mon DevOps - DevFestToulouse 2017, Devops DDay 2017, DevFest Nantes 2017, RivieraDev 2018, DevFest Lilles 2018 , Devops Rex 2018, DevFest BoutDuMonde 2019\n - SystemD, de /dev/null à root - DevFest Toulouse 2018\n - Mon premier service en Rust - BDX I/O 2018, Breizhcamp 2019, Devoxx 2019, Mix-IT 2019\n - Devops ? C'est comme Scrum mais avec Docker ... - Devoxx Maroc 2018",
+      "company": "Elastic",
+      "photoURL": "https://lh6.googleusercontent.com/-RvGrfi4p_Uk/AAAAAAAAAAI/AAAAAAAABtE/iqj8zP9rc0U/photo.jpg",
+      "twitter": "@fteychene",
+      "github": "fteychene",
+      "language": "French"
+    },
+    {
+      "uid": "24si0s4B8lYEwbg5d4sshrMyklS2",
+      "displayName": "Claire Jeanne",
+      "bio": "Issue d'une formation administrative plus que classique j'ai volontairement enchaîné les CDD pour ne pas avoir le sentiment d'être coincé dans une boite ou dans un secteur d'activité qui ne me correspondait pas. Assistante administrative oui ! Mais pas plante verte ! \nDe la comptabilité au commerce en passant par les tests utilisateurs, je fais aujourd'hui parti de se monde merveilleux du numérique ! \n",
+      "speakerReferences": "Devfest du bout  du Monde 2019 ",
+      "company": "BEARSTUDIO",
+      "photoURL": "https://lh4.googleusercontent.com/-duScLtM8H9k/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jU7L5o8YhyJmB562BiNVCHBJ3J2g/mo/photo.jpg",
+      "twitter": "@c_jeanne63",
+      "github": "@ClaireBS",
+      "language": "Français"
+    },
+    {
+      "uid": "PuG5s59DFfdNEToSJt5FfWNZZh03",
+      "displayName": "Arthur Retrou",
+      "bio": "Je suis Lead UX Designer à Lille dans l'agence Dernier Cri. Je supporte l’empathie et l'exigence au service de parcours utilisateurs intelligents quel qu'en soit la cible et le support.",
+      "speakerReferences": "2017 - Take Off (Lille, FR) - Conférence\n2018 - Take Off (Lille, FR) - Conférence\n2018 - BDX.IO (Bordeaux, FR) - Conférence : https://youtu.be/CI_9fCb-OtU\n2018 - BlendWebMix (Lyon, FR) - Table Ronde\n2019 - PodCamp (Toronto, CA) - Conférence\n2019 - Sudweb (Toulouse, FR) - Conférence\n2019 - Web2days (Nantes, FR) - Conférence : https://youtu.be/dWGTG2xBeAo\n2019 - BDX.IO (Bordeaux, FR) - Conférence",
+      "company": "Dernier Cri",
+      "photoURL": "https://lh4.googleusercontent.com/-2tmNDDHazV8/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfvS1L8063oS5_YW68duQhAKYrqrg/mo/photo.jpg",
+      "twitter": "@TellYourMummy",
+      "language": "Français, Anglais, Espagnol"
+    },
+    {
+      "uid": "DOf7nxshJKYoWia2QQX8cTkJtRL2",
+      "displayName": "Igor Laborie",
+      "bio": "Développeur passionné depuis plus de 18 ans, expert dans les technos Java et Web. Je suis impliqué dans les rendez-vous techniques toulousains (Devfest Toulouse, GDG, JUG, Software Craftsmanship Toulouse).\nJ’apprécie la programmation fonctionnelle, et donc particulièrement je suis attiré par les nouveaux langages et frameworks qui vont dans cette direction. \n\nEt puis je sais dessiner une 🦄 en CSS.",
+      "speakerReferences": "Depuis de nombreuses années, je fais des présentations: JUG, GDG Toulouse, EclipseCon Toulouse, présentations internes ou chez les clients (BBL).\n\nDepuis 2016, j’ai profité de mon changement de société pour être plus présent dans les conférences : j’ai eu la chance d’être speaker à DevoxxFR (1 university, 2 Hands-on, 2 Tools in Action), Devfest Toulouse (x2), DevoxxBE (Tool in action), MiXiT x2, BreizhCamp, RivieraDev,  SunnyTech. \n\nJ’ai aussi eu régulièrement assuré des formations et coaché des MonkeyTechDays (un atelier technique sur une journée) on des _workshops_.\nJe suis habitué aux live-coding.\n\nJe suis aussi impliqué dans l'organisation du Devfest Toulouse depuis 2017.\n\nQuelques vidéos sur des thèmes variés :\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [🏋️‍♂️ Refactoring sans les `for` - Igor Laborie - Toulouse JUG 2019](https://www.youtube.com/watch?v=KjzA91jvjq4)\n* [Programmation fonctionnelle en JavaScript : 🦄 ou 💩 ? - Igor Laborie](https://www.youtube.com/watch?v=AHAFIe4CWHw&t=6s)\n* [Deep Dive Kotlin du Hello World au Bytecode (I. Laborie, E. Vinas) - Devoxx 2018](https://www.youtube.com/watch?v=cXNGhDiQgmo)\n* [CSS is Awesome ! (Igor Laborie) - Devfest Toulouse 2017](https://www.youtube.com/watch?v=fPObs60585w)\n\nVous pouvez retrouver certains de mes slides [ici](https://ilaborie.github.io/slides2/) ou [la](https://ilaborie.github.io/slides/)",
+      "company": "MonkeyPatch",
+      "photoURL": "https://lh5.googleusercontent.com/-kEdVtrC6Poc/AAAAAAAAAAI/AAAAAAAAAo0/9i_S-sPAc84/photo.jpg",
+      "twitter": "@ilaborie",
+      "github": "ilaborie",
+      "language": "Français "
+    },
+    {
+      "uid": "pYuiGicpt0MenD8NEMhZXtk6VSr1",
+      "displayName": "Horacio Gonzalez (LostInBrittany)",
+      "bio": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une quinzaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\n\nAprès quelques années comme tech leader de la partie frontend de [@warp10io](https://twitter.com/warp10io/) chez [Cityzen Data](https://twitter.com/cityendata/), Horacio a rejoint [OVH](](https://twitter.com/ovh/) en janvier 2018 en tant que Developer Advocate. Il est cofondateur du [FinistDevs](https://twitter.com/finistdevs/), le JUG/GDG français le plus proche de la Silicon Valley.\n\nPassionné par le développement web et tout ce qui gravite autour des composants web, Horacio est [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez) en Web Technologies et Flutter.\n\nVous pouvez voir mes dernières talks sur [mon profil Notist](https://noti.st/lostinbrittany)",
+      "speakerReferences": "I have been several times speaker at Devoxx Belgium, Devoxx France, Codemotion Rome, Codemotion Madrid and Codemotion Amsterdam. I have done a keynote at MobiConf in Poland, and been speaker at many regional conferences: DevFest Nantes, DevFest Toulouse, DevFest Paris, Mix It, Sunny Tech, Riviera Dev... And of course lots and lots of meetups, JUGs and GDGs, because those are my roots. \n\nYou can see more about my speaker activity (with links to slides and videos) at https://noti.st/lostinbrittany",
+      "company": "OVH",
+      "photoURL": "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg",
+      "twitter": "@LostInBrittany",
+      "github": "https://github.com/LostInBrittany",
+      "language": "Français"
+    }
+  ],
+  "categories": [
+    {
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "name": "🎨 Design, UI, UX"
+    },
+    {
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "🌍 Front web, Mobile"
+    },
+    {
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "name": "☁️ Backends, Cloud, Big Data"
+    },
+    {
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
+      "name": "🎮 Jeux vidéos et hybrides"
+    },
+    {
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
+      "name": "⏲️ Internet des objets"
+    },
+    {
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "name": "📐 Conception, architecture"
+    },
+    {
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "🧰 Outillage, pratiques de développement"
+    },
+    {
+      "name": "Alien",
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+    }
+  ],
+  "formats": [
+    {
+      "name": "⚡ Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
+    },
+    {
+      "name": "🗣️ Conférence (50min)",
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "name": "🧪 Hands-on (120 min)",
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
+    }
+  ]
+}

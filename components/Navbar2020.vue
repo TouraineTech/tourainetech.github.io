@@ -41,6 +41,7 @@ export default {
         { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
         { name: "Sponsors", anchor: "#sponsors", mobile: true },
         { name: "Billetterie", anchor: "#register", mobile: false },
+        { name: "Nos speakers", anchor: "#speakers", mobile: false },
         { name: "L'équipe", anchor: "#team", mobile: false },
         { name: "Les vidéos", anchor: "#video", mobile: false }
         //{name: 'Inscription', anchor: '#register', mobile: true},

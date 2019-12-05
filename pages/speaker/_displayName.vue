@@ -2,11 +2,11 @@
   <div class="container--fix">
     <div class="container--image">
       <img
-        :src="speaker.avatar"
-        :alt="speaker.name"
+        :src="speaker.photoURL"
+        :alt="speaker.displayName"
       >
     </div>
-    <h1>{{ speaker.name }}</h1>
+    <h1>{{ speaker.displayName }}</h1>
     <div class="speaker--links">
       <ul>
         <li v-if="speaker.company">
@@ -80,14 +80,14 @@ const converter = new showdown.Converter();
 export default {
   validate({ store, params }) {
     return (
-      store.getters.speakers.filter(speaker => speaker.name === params.name)
+      store.getters.speakers.filter(speaker => speaker.displayName === params.displayName)
         .length > 0
     );
   },
   asyncData({ store, params }) {
     return {
       speaker: store.getters.speakers.filter(
-        speaker => speaker.name === params.name
+        speaker => speaker.displayName === params.displayName
       )[0]
     };
   },
@@ -97,9 +97,9 @@ export default {
     }
   },
   head() {
-    const title = `Touraine Tech 2020 - ${this.speaker.name}`;
-    const url = `https://touraine.tech/speaker/${this.speaker.name}`;
-    const image = `${this.speaker.avatar}`;
+    const title = `Touraine Tech 2020 - ${this.speaker.displayName}`;
+    const url = `https://touraine.tech/speaker/${this.speaker.displayName}`;
+    const image = `${this.speaker.photoURL}`;
     return {
       titleTemplate: title,
       meta: [
@@ -126,7 +126,7 @@ export default {
         {
           hid: "twitterimagealt",
           name: "twitter:image:alt",
-          content: `Logo ${this.speaker.name}`
+          content: `Logo ${this.speaker.displayName}`
         }
       ]
     };

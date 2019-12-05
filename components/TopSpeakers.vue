@@ -3,7 +3,7 @@
     <div class="container--fix container--center">
       <h2>Nos talentueux speakers</h2>
       <div class="speaker--grid">
-        <nuxt-link :to="`/speaker/${speaker.name}`" v-for="speaker in speakers" :key="speaker.name">
+        <nuxt-link :to="`/speaker/${speaker.displayName}`" v-for="speaker in speakers" :key="speaker.displayName">
           <SpeakerBloc :speaker="speaker"></SpeakerBloc>
         </nuxt-link>
       </div>
