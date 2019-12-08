@@ -29,6 +29,7 @@
     "eslint": "^6.4.0",
     "eslint-loader": "^3.0.0",
     "eslint-plugin-vue": "^5.2.3",
+    "node-fetch": "^2.6.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.2",
     "push-dir": "^0.4.1",
