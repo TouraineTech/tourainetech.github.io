@@ -48,6 +48,14 @@
     "desc": "Apside TOP est implantée en région centre sur 3 agences : Tours, Orléans et Le Mans. Apside TOP et ses 180 collaborateurs partagent deux valeurs fondamentales : le sens du service et la proximité.<br>Nous sommes une structure à taille humaine spécialisée dans l’informatique de gestion et proposant des prestations en assistance technique et au forfait auprès de clients grands comptes et de clients locaux dans divers domaines (banque, mutuelle, assurance…).<br>Nos différents profils (développeurs, analystes, DBA, testeurs, chef de projets…) accompagnent nos clients autant côté études et développements que côté production-infrastructure. Nos centres de services permettent à nos collaborateurs de pouvoir travailler sur de nombreux sujets innovants (JAVAEE, C#.net, PHP, Angular, React…).<br>Nos différences et nos particularités vous attirent, alors apportez votre empreinte de personnalité !"
   },
   {
+    "name": "SopraSteria",
+    "id": "sopraSteria",
+    "image": "logo-SOPRASTERIA.png",
+    "link": "https://www.soprasteria.com",
+    "type": "gold",
+    "desc": "A propos de Sopra Steria<br/><br/>Sopra Steria, l’un des leaders européens du conseil, des services numériques et de l’édition de logiciels, aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables.<br/> Il apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, combinant une connaissance approfondie des secteurs d’activité et des technologies innovantes à une approche résolument collaborative. Sopra Steria place l’humain au centre de son action et s’engage auprès de ses clients à tirer le meilleur parti du digital pour construire un avenir positif. Fort de 45 000 collaborateurs dans 25 pays, le Groupe a réalisé un chiffre d’affaires de 4,1 milliards d’euros en 2018.<br/><br/>The world is how we shape it.<br/><br/>Sopra Steria (SOP) est coté sur Euronext Paris (Compartiment A) - Code ISIN : FR0000050809 <br/><br/>Pour plus d'informations, retrouvez-nous sur www.soprasteria.com<br/><br/><br/>À propos de Sopra Banking Software<br/><br/>Avec ses 5000 experts, un chiffre d’affaires 2018 de 373,7 millions d’euros et l’un des portefeuilles de solutions et de services les plus complets du marché, Sopra Banking Software est de longue date le partenaire de confiance de plus de 800 banques dans 70 pays. Son savoir-faire sans égal lui permet de répondre aux besoins d’innovation comme de développement de banques et institutions financières de toute taille et activité. Sopra Banking Software est une filiale du groupe Sopra Steria, leader européen de la transformation numérique. Avec plus de 44 000 collaborateurs, ce dernier affiche un chiffre d’affaires 2018 de 4,1 milliard d’euros.<br/><br/>Pour plus d'informations, retrouvez-nous sur les réseaux sociaux ou sur www.soprabanking.com"
+  },
+  {
     "name": "Acensi",
     "id": "acensi",
     "image": "logo-acensi.jpg",
