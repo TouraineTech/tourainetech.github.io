@@ -42,15 +42,6 @@ function getTalks(conferenceHallDatas) {
   const acceptedTalks = conferenceHallDatas.talks
     .filter(({state}) => state === 'accepted');
 
-  const talks = conferenceHallDatas.talks
-    .map((
-      {organizersThread, rating, loves, hates, ...datas}) => {
-      return {...datas};
-    })
-    .filter(({state}) => state === 'confirmed');
-
-  console.log(`confirmed talks count : ${talks.length}/${acceptedTalks.length+talks.length}`);
-
   const acceptedTalksSpeakersId = conferenceHallDatas.talks
     .filter(({state}) => state === 'accepted')
     .map(({speakers}) => {
@@ -60,7 +51,33 @@ function getTalks(conferenceHallDatas) {
 
   console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
   console.log(`accepted speaker count : ${acceptedTalksSpeakersId.length}`);
-  return talks;
+
+  const talks = conferenceHallDatas.talks
+    .map((
+      {organizersThread, rating, loves, hates, ...datas}) => {
+      return {...datas};
+    })
+    .filter(({state}) => state === 'confirmed')
+    .filter(({id}) => id !== '2UyymcQvMehGkX1W40IE' );
+
+  talks.push(
+    {
+      "id": "keynoteOuverture",
+      "title": "Keynote d'ouverture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "id": "keynoteCloture",
+      "title": "Keynote de clôture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    }
+  );
+
+  console.log(`confirmed talks count : ${talks.length}/${acceptedTalks.length+talks.length}`);
+
+  return {talks, acceptedTalks};
 }
 
 function getSpeakers(conferenceHallDatas, talks) {
@@ -69,7 +86,7 @@ function getSpeakers(conferenceHallDatas, talks) {
     .reduce((a, b) => a.concat(b), []);
 
   const speakers = conferenceHallDatas.speakers
-    .map(({email, phone, address, ...datas}) => {
+    .map(({email, phone, address, comments, state, ...datas}) => {
       return {...datas}
     })
     .filter(({uid}) => confirmedSpeakersId.includes(uid));
@@ -86,10 +103,10 @@ async function doWork() {
     formats
   } = conferenceHallDatas;
 
-  const talks = getTalks(conferenceHallDatas);
+  const {talks, acceptedTalks} = getTalks(conferenceHallDatas);
   const speakers = getSpeakers(conferenceHallDatas, talks);
 
-  writeConferenceHallDataFile(talks, speakers, categories, formats);
+  writeConferenceHallDataFile(talks.concat(acceptedTalks), speakers, categories, formats);
 
 }
 

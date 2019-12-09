@@ -1,7 +1,7 @@
 <template>
   <section id="schedule" class="container--white">
     <div class="container--fix container--center">
-      <h2>Le programme</h2>  
+      <h2>Le programme</h2>
     </div>
     <div class="schedule--grid">
       <div class="schedule-spacer--cell"></div>
@@ -10,15 +10,15 @@
       </div>
       <div v-for="time of times" :key="time" class="schedule-time--cell">{{ time }}</div>
       <div
-        v-for="cell of breaks" 
+        v-for="cell of breaks"
         :key="cell.id"
         :style="talkCellStyle(cell)"
         class="schedule-talk--cell schedule-talk-break--cell">
         {{ cell.name }}
       </div>
       <div
-        v-for="talk of talks" 
-        :key="talk.id" 
+        v-for="talk of talks"
+        :key="talk.id"
         :class="talkCssClass(talk)"
         :style="talkCellStyle(talk)"
         :data-time="talk.time"
@@ -27,7 +27,7 @@
           <nuxt-link
             :to="`/talk/${talk.id}`"
           >
-            <h4>{{ talk.name }}</h4>
+            <h4>{{ talk.title }}</h4>
             <h5>{{ talk.speakerNames }}</h5>
           </nuxt-link>
           <ul>
@@ -45,7 +45,7 @@
               <a :href="slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg" alt="icon presentation"/></a>
             </p>
           </span>
-          <p class="schedule-room--duration-level">⏱{{ duration(talk.format) }} — {{ levelName(talk.level) }}</p>
+          <p class="schedule-room--duration-level">⏱{{ duration(talk.formats) }} — {{ levelName(talk.level) }}</p>
         </div>
       </div>
     </div>
@@ -81,19 +81,19 @@ export default {
                 "Turing",
                 "Pascal",
                 "LoveLace",
-                "TD1 (premier étage)"
+                "TD1 (premier étage)",
+                "TD2 (premier étage)"
             ]
         }
     },
     computed: {
       talks() {
-        let confirmedSpeakersId = this.$store.getters.speakers.map(s => s.id)
         return [
             ...this.$store.getters.talks.map(talk => {
-                return {
-                    ...talk,
-                    speakerNames: this.$store.getters.getSpeakerForIds(talk.speakers).map(s => s.name).join(', ')  
-                }
+              return {
+                ...talk,
+                speakerNames: this.$store.getters.getSpeakerForIds(talk.speakers).map(s => s.displayName).join(', ')
+              }
             })
         ]
       },
@@ -123,15 +123,9 @@ export default {
             ]
         },
         talkName(category) {
-          switch(category){
-              case 'design': return "Design, UI, UX"
-              case 'front': return "Front web, mobile"
-              case 'backend': return "Backends, Clouds, Big Data"
-              case 'game': return "Jeux vidéos et hybrides"
-              case 'iot': return "Internet des objets"
-              case 'architecture': return "Conception, architecture"
-              case 'tools': return "Outillage, pratiques de développement"
-          }
+          return this.$store.getters.categories
+            .filter(({id}) => id === category)
+            .map(({name})=> name)[0];
         },
         roomName(room) {
             return this.rooms[room - 1];
@@ -145,12 +139,9 @@ export default {
             }
         },
         duration(format) {
-            switch(format) {
-                case "conference": return "50m"
-                case "quickie": return "15m"
-                case "handson": return "1h50"
-                case "keynoteend": return "25m"
-            }
+          return this.$store.getters.formats
+            .filter(({id}) => id === format)
+            .map(({name})=> name)[0];
         }
     },
 }
@@ -173,7 +164,7 @@ $color-backend: #345264;
 }
 .schedule--grid {
     display: grid;
-    grid-template-columns: 50px repeat(4, 1fr);
+    grid-template-columns: 50px repeat(5, 1fr);
     grid-column-gap: 1rem;
     margin: 1rem;
 
