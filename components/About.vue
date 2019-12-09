@@ -10,7 +10,7 @@
       </p>
       <ul class="backtoschool--numbers">
         <li><span>18</span> conférences</li>
-        <li><span>6</span> lightning talks</li>
+        <li><span>10</span> lightning talks</li>
         <li><span>2</span> hands on</li>
       </ul>
       <ul class="backtoschool--themes">
