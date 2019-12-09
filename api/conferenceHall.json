@@ -19,6 +19,24 @@
       }
     },
     {
+      "id": "2UyymcQvMehGkX1W40IE",
+      "title": "Développement Zéro Déchet : tips & tricks pour améliorer l'empreinte carbone de vos applications",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "La planète n'est vraiment pas en grande forme, et en tant que professionnels de l'IT, nous en sommes en partie responsables (sur-consommation de ressources, appareils électroniques polluants obsolètes rapidement, ... ).\n\nSachant qu'il est possible de réduire ses déchets à la maison en appliquant les règles du Zéro Déchet (Refuser, Réduire, Réutiliser, Recycler et Composter), peut-on essayer de les appliquer au développement logiciel ? Que peut-on faire concrètement dans nos pratiques de développement pour améliorer notre empreinte carbone numérique ?\n\nCette présentation vous propose des pistes et des exemples concrets pour essayer de réduire notre impact écologique et essayer de tendre vers un numérique un peu plus vert : 💻 💚 🌍",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "yvq7ZPxZkcbNJbLHyaeq8Nj4TQ52",
+        "MFT4lwPv0Ifp7qEXiyFbWNeO4Np2"
+      ],
+      "language": "Français",
+      "createTimestamp": {
+        "_seconds": 1568965546,
+        "_nanoseconds": 910000000
+      }
+    },
+    {
       "id": "2nUoRfU9qblCBji2OHWx",
       "title": "istio ⛵️par la pratique !",
       "state": "confirmed",
@@ -87,6 +105,24 @@
       "createTimestamp": {
         "_seconds": 1568637812,
         "_nanoseconds": 450000000
+      }
+    },
+    {
+      "id": "C7diXezyH5e5CAZHCD8w",
+      "title": "Dockerfile - les bonnes pratiques",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "A partir d'un Dockerfile pris \"aleatoirement\" sur Github, à partir d'un bon vieux monolithe, nous allons, en appliquant les bonnes pratiques, transformer l'application en un ensemble de microservices réutilisables.\n\nOn va commencer par externaliser les services utilisés par notre application en utilisant des images existantes et en associant le tout dans un compose file.\n\nEnsuite, nous allons optimiser le dockerfile en vidant les caches et en supprimant les layers inutiles générés pendant le build de notre application.\n\nPuis nous allons supprimer les différentes étapes de build afin de ne pas conserver les dépendances de développement dans l'image finale.\n\nOn s'assurera d'utiliser des images officielles plutôt que de recréer des images que l'on devra maintenir.\n\nEnfin on verra comment ne pas démarrer nos application en tant que root.\n\n---\n\nFrom a Dockerfile taken \"randomly\" on Github, like a good old monolith, we will, by applying the best practices, transform this application into a set of reusable and understandable microservices.\n\nWe will start by externalizing the services used by our application using existing images and associating them in a Compose file.\n\nWe will optimize it by emptying the caches and removing unnecessary layers generated during the build of our application.\n\nWe will cut out the different build steps so that we do not have to keep the development dependencies in the final image\n\nWe will improve maintainability by using official images rather than manually installing our dependencies.\n\nWe will see how to avoid running our application as root.\n",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "rYhBI1cLEJSmHtzJfgyckwdJ0Il1"
+      ],
+      "comments": "On a fait le talk avec Guillaume Lours a Devoxx BE et Codeurs en Seine.\nVoici le lien vers le repo avec un lien vers la video https://github.com/glours/dockerfile-best-practices",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1575019945,
+        "_nanoseconds": 764000000
       }
     },
     {
@@ -230,6 +266,24 @@
       }
     },
     {
+      "id": "duZ9XQ4TxP79Q1WiOyVe",
+      "title": "Une caméra 📹 en DIY sur une mangeoire d'oiseau 🐦  au milieu d’un jardin 🌳 ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Filmer une mangeoire d’oiseau avec un Raspberry Pi, mais pourquoi faire ? Parce que c’est reposant :)\n\nAu lieu d’utiliser une solution clé en main et en utilisant du matériel low cost, comme un Raspberry Pi, j’ai commencé ce projet avec une simple webcam d'intérieur en USB, puis de fil en aiguille, j'ai ajouté du POE, un allumage / extinction à l'aide d'un Arduino en fonction de l'heure de lever et coucher du soleil, une détection de mouvement pour ne prendre des photos qu'au bon moment…\n\nEnvie de vous changer de Vue.JS, kubernetes & co ou encore de découvrir les oiseaux ? Venez découvrir ce projet.\n",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "aHchGCaQStWhoqQtDKBjBpkEnLF2"
+      ],
+      "comments": "Hi 👋\nMerci pour l'orga\n\nL’objectif de cette présentation est de montrer qu’il est possible de réaliser une solution de surveillance vidéo DIY avec peu de matériel et pas mal d’astuces.\n\nJ’ai présenté ce sujet sur [mon blog](http://geekeries.fun/realisations_webcamoiseaux_start.html)\n",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1575042536,
+        "_nanoseconds": 711000000
+      }
+    },
+    {
       "id": "et52YASk16xgCOWszF5H",
       "title": "L'OSS en entreprise, causons peu, Koson bien !",
       "state": "confirmed",
@@ -245,6 +299,23 @@
       "createTimestamp": {
         "_seconds": 1571587884,
         "_nanoseconds": 724000000
+      }
+    },
+    {
+      "id": "fW4yvmVxjXb57vQJhIXu",
+      "title": "Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Depuis les années 70 tous les constructeurs autos intégrent des calculateurs électroniques.\nLes moteurs des voitures modernes sont des systèmes informatiques complexes qui s'appuient sur des dizaines de capteurs... et du code. \nComment ça fonctionne ? A quoi ressemble ce code et que fait-il ?\nQu'est-ce qu'il se passe lorsqu'on fait une \"reprog\" ? \nQu'est-ce que signifie le voyant moteur allumé ? Comment débugger tout ça ?\nSoulevons le capot (électronique), analysons le matériel mis en oeuvre mais surtout le logiciel grâce aux sources des calculateurs \"Megasquirt\" et allons explorer la face cachée numérique de nos voitures.",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "JLEDSTiwyJX5AxGAw1GZjv7X23a2"
+      ],
+      "comments": "Conférence faite au devfest Toulouse \n\nhttps://youtu.be/1o5v8Ew9FjE",
+      "createTimestamp": {
+        "_seconds": 1571559814,
+        "_nanoseconds": 977000000
       }
     },
     {
@@ -342,8 +413,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
-        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+        "qVuC10841Ecu0FB0eIHE0uqtwup2",
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -379,14 +450,32 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+        "JkWN4X6967cvBrV2x8vKf1QrHS93",
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
       "createTimestamp": {
         "_seconds": 1574100424,
         "_nanoseconds": 973000000
+      }
+    },
+    {
+      "id": "wqcmtLstTNKvYUFdh4ai",
+      "title": "Stateless Microservice Security via MicroProfile JWT",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Microservices based architecture seems to be the common convergence point in the industry. But when it comes to security we are still struggling to evolve from monolithic systems or people oriented architecture.\n\nThis presentation will be focusing on this landscape and explain how to leverage the quickly evolving MicroProfile JWT specification to secure Microservices and in a fully stateless and scalable manner. We’ll introduce the specification in a quick and no nonsense fashion and move on to several code examples that show how to setup JWT verification and obtain trusted claims via lookup or dependency injection. For our playground, we’ll be using Apache TomEE, fully open source lightweight Java EE server and MicroProfile implementation.",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "QjQCCyUhBDOdIpK6CIGSjJwd8RE3"
+      ],
+      "comments": "Thanks",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1575042338,
+        "_nanoseconds": 616000000
       }
     },
     {
@@ -447,6 +536,22 @@
       "github": "rbung"
     },
     {
+      "uid": "yvq7ZPxZkcbNJbLHyaeq8Nj4TQ52",
+      "displayName": "Yannick Martel",
+      "bio": "Dev Java à Code Lutin depuis 2008, libriste convaincu, et surtout attaché au modèle Libre Entreprise !\nDepuis plus de dix ans donc, j'ai la chance de faire mon boulot dans une société tellement attachée au Logiciel Libre qu'elle le transpire dans son fonctionnement !\n",
+      "company": "Code Lutin",
+      "photoURL": "https://avatars1.githubusercontent.com/u/10868277?v=4",
+      "github": "ChtiDkois"
+    },
+    {
+      "uid": "MFT4lwPv0Ifp7qEXiyFbWNeO4Np2",
+      "displayName": "Cécilia Bossard",
+      "bio": "Développeuse depuis plus de 10 ans, agiliste passionnée, boîte à outils, ...\n\nJe m'intéresse à beaucoup de sujets et aime partager avec les différentes communautés.\n\nVous pouvez me croiser du côté des meetups  Software Crafters, aux coding goûters et Devoxx4kids nantais, aux événements RailsGirls, Node schools ...",
+      "company": "Code Lutin",
+      "photoURL": "https://lh4.googleusercontent.com/-OSawFNoJIqE/AAAAAAAAAAI/AAAAAAAAIi8/7G0YQ-w-Luw/photo.jpg",
+      "twitter": "@ceciliaBossard"
+    },
+    {
       "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
       "displayName": "Nikola Lohinski",
       "bio": "Google Cloud Architect and tech lover 😍 I fancy cloud tech, efficient languages and infrastructure development.\n\nI have experience with Python, Go, JS and Rust and usually play with those in Kubernetes pipelining everything in Gitlab's CI/CD. ",
@@ -502,6 +607,11 @@
       "github": "jgrenat"
     },
     {
+      "uid": "QjQCCyUhBDOdIpK6CIGSjJwd8RE3",
+      "displayName": "Jean-Louis MONTEIRO",
+      "photoURL": "https://pbs.twimg.com/profile_images/2822722326/9c3502818f6a76e0a4b2a907fca8cfb7_normal.jpeg"
+    },
+    {
       "uid": "PRuMzxC7NVbsVnJP07AbHR2cNFx2",
       "displayName": "Benjamin Cavy",
       "bio": "Benjamin est développeur full-stack à la MAIF. Il s’intéresse en ce moment particulièrement à l’écosystème JavaScript : reactjs, vuejs, svelte, ...",
@@ -531,14 +641,14 @@
       "github": "https://github.com/LostInBrittany"
     },
     {
-      "uid": "977YQDolbxde0ito7I2dUiee2ap1",
-      "displayName": "Nicolas Lepage",
-      "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
-      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) au [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/) avec [Valentin Cocaud](https://twitter.com/ragorn44)\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
-      "company": "Zenika",
-      "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
-      "twitter": "@njblepage",
-      "github": "nlepage"
+      "uid": "rYhBI1cLEJSmHtzJfgyckwdJ0Il1",
+      "displayName": "Jérémie Drouet",
+      "bio": "Developer that develops. Sometimes I drink a coffee.",
+      "speakerReferences": "- Talk about Progressive Web Apps at the Mobile One conference in 2018\n- I also talk during my sleep",
+      "company": "Docker",
+      "photoURL": "https://lh6.googleusercontent.com/-1Qsye-cxZEQ/AAAAAAAAAAI/AAAAAAAAE_E/21fctkulPuA/photo.jpg",
+      "twitter": "@jeremiedrouet",
+      "github": "jdrouet"
     },
     {
       "uid": "M9fbPRwPVMUL2CDG64muamrcOqs2",
@@ -549,6 +659,16 @@
       "photoURL": "https://lh3.googleusercontent.com/-wMpeHpz3unc/AAAAAAAAAAI/AAAAAAAAAIs/RBMsAGURyt4/photo.jpg",
       "twitter": "@ragorn44",
       "github": "EmrysMyrddin"
+    },
+    {
+      "uid": "977YQDolbxde0ito7I2dUiee2ap1",
+      "displayName": "Nicolas Lepage",
+      "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
+      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) au [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/) avec [Valentin Cocaud](https://twitter.com/ragorn44)\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
+      "company": "Zenika",
+      "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
+      "twitter": "@njblepage",
+      "github": "nlepage"
     },
     {
       "uid": "24si0s4B8lYEwbg5d4sshrMyklS2",
@@ -605,6 +725,16 @@
       "photoURL": "https://lh6.googleusercontent.com/-IKBS76kA3lc/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcMXdwj0AC2E0mrG4gz3KfYUL6dOw/photo.jpg"
     },
     {
+      "uid": "aHchGCaQStWhoqQtDKBjBpkEnLF2",
+      "displayName": "Guillaume Membré",
+      "bio": "Geek à toute heure, je travaille principalement autour des technologies Java/JavaEE mais aussi sur des problématiques de déploiement continu, de qualimétrie. Désormais, je partage son expérience pour faciliter la mise en place de démarche devops chez différents acteurs. J'adore bidouiller des RaspberryPi ou Arduino pour créer des choses inutiles donc indispensables.\nLorsque le temps le permet, je décris mes aventures sur mon [site web](https://www.geekeries.fun).",
+      "speakerReferences": "### Suivre les avions avec un Raspberry\n- BDX.io 2017, le 10/11/2017 : [slides](https://www.slideshare.net/MembreGuillaume/suivre-les-avions-des-lignes-avec-un-raspberry-pi)\n[video](https://youtu.be/2NiJEA9C_B4)\n- Devoxx FR, 18/04/2018\n[slides](https://www.slideshare.net/MembreGuillaume/suivre-les-avions-des-lignes-avec-un-raspberry-pi-94522064)\n[video](https://youtu.be/NcmCdeY5Iuo)\n- JugSummer Camp, 14/09/2018 [video](https://www.youtube.com/watch?v=DbtWUFs2_XU)\n- Devfest toulouse, 08/11/2018 [video](https://www.youtube.com/watch?v=UcADSVfOg3k)\n\n### REX Openshift à la Poste\n[Docker Meetup de Nantes, le 29/06/17](https://www.meetup.com/fr-FR/Docker-Nantes/events/240106239/) : [slides](https://www.slideshare.net/MembreGuillaume/rex-openshift-la-poste)\n\n### CI, CD, pipelines, conteneurs : la cohabitation est elle possible ?\n[Nantes JUG, le 15/05/2017](http://nantesjug.org/#/events/2017_05_15) : [Slides](https://www.slideshare.net/MembreGuillaume/ci-cd-pipelines-conteneurs-la-cohabitation-est-elle-possible)\n\n### Construire une station météo en NodeJS avec un Raspberry PI et un Arduino\nBDX I/O 2016 - Devfest Nantes 2016 :\n- Vidéo : [Bdx.io](https://www.youtube.com/watch?v=Y-2zpNji9UM) [DevFest](https://www.youtube.com/watch?v=iK71pBYfsoc)\n- Slides : [HTML](https://gmembre-zenika.github.io/bdx.io-prez-2016-arduino) [PDF](https://github.com/gmembre-zenika/bdx.io-prez-2016-arduino/raw/master/presentation/PDF/Bdx.io%202016%20Arduino-Slides.pdf)\n\n### REX docker sur la mise d'une forge logicielle et ALM\n[Nantes JUG, le 23/11/2015](http://nantesjug.org/#/events/2015_11_23) : [Video](https://www.youtube.com/watch?v=YzfZsEAgNHc)\n",
+      "company": "Zenika",
+      "photoURL": "https://lh5.googleusercontent.com/-_wR1F6ARzlY/AAAAAAAAAAI/AAAAAAAAABA/sL5Sk_m1uWA/photo.jpg",
+      "twitter": "@GuillaumeMembre",
+      "github": "gmembre-zenika"
+    },
+    {
       "uid": "xKKBytTJTGMrchSRfanwMNSuYhS2",
       "displayName": "Nicolas Comet",
       "bio": "Développeur passionné, Speaker, grand curieux, j'aime apprendre en permanence. Je ne m'attache pas à une technologie en particulier, même si je gravite en ce moment plus souvent du côté de Kotlin. J'aime les principes fondateurs du TDD. Je porte également un grand intérêt pour la synergie entre DDD et documentation vivante ou \"Living Documentation\". \n\nJe suis actuellement Tech Lead Cloud chez Lectra, numéro un mondial des solutions dédiées à l'industrie textile (logiciels & machines).",
@@ -613,6 +743,16 @@
       "photoURL": "https://avatars0.githubusercontent.com/u/6339753?v=4",
       "twitter": "@NicolasComet",
       "github": "https://github.com/ncomet"
+    },
+    {
+      "uid": "JLEDSTiwyJX5AxGAw1GZjv7X23a2",
+      "displayName": "Mathieu Passenaud",
+      "bio": "Après 8 ans en tant que DevOps dans les univers du Cloud et de l'IOT, j'ai découvert la nécessité absolue de bien fait l'authentification sur les applications.\nDepuis bientôt 2 ans, j'ai décidé de ne faire que ça avec please-open.it",
+      "speakerReferences": "devfest Toulouse 2016 : My resumé in an operating system : un buzz et ses conséquences\nhttps://2016.devfesttoulouse.fr/schedule/116\n\nDevfest Toulouse 2018 :  Template de déploiements Kubernetes avec Kontemplate\nhttps://www.youtube.com/watch?v=KF3gvGnpjIg\n\nDevfest Toulouse 2019 : Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ?\nhttps://www.youtube.com/watch?v=1o5v8Ew9FjE\n\nIUT Caen, aux 2A informatique : comment j'ai survécu 10 ans grâce à ma formation\n\nTouraine Tech 2020 : Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ?",
+      "company": "please-open.it",
+      "photoURL": "https://lh3.googleusercontent.com/-AdTmzjaMxhc/AAAAAAAAAAI/AAAAAAAAJ4U/rCSxGrIM_ck/photo.jpg",
+      "twitter": "@mathieupassenau",
+      "github": "mathieupassenaud"
     },
     {
       "uid": "EZdFes7RoSTGQJO5uOBCqSeyGvv2",
@@ -662,6 +802,14 @@
       "github": "paul-roye"
     },
     {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry"
+    },
+    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
@@ -669,28 +817,20 @@
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
-    },
-    {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
     }
   ],
   "categories": [
     {
-      "name": "🎨 Design, UI, UX",
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "name": "🎨 Design, UI, UX"
     },
     {
       "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "name": "🌍 Front web, Mobile"
     },
     {
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
-      "name": "☁️ Backends, Cloud, Big Data"
+      "name": "☁️ Backends, Cloud, Big Data",
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
       "name": "🎮 Jeux vidéos et hybrides",
@@ -701,12 +841,12 @@
       "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
-      "name": "📐 Conception, architecture"
+      "name": "📐 Conception, architecture",
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "name": "🧰 Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "🧰 Outillage, pratiques de développement"
     },
     {
       "name": "Alien",
@@ -716,16 +856,16 @@
   ],
   "formats": [
     {
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "name": "⚡ Quickie (15min)"
+      "name": "⚡ Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
       "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "name": "🗣️ Conférence (50min)"
     },
     {
-      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
-      "name": "🧪 Hands-on (120 min)"
+      "name": "🧪 Hands-on (120 min)",
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
     }
   ]
 }
