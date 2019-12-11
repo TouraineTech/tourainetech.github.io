@@ -149,8 +149,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "M9fbPRwPVMUL2CDG64muamrcOqs2",
-        "977YQDolbxde0ito7I2dUiee2ap1"
+        "977YQDolbxde0ito7I2dUiee2ap1",
+        "M9fbPRwPVMUL2CDG64muamrcOqs2"
       ],
       "comments": "Merci de l'attention que vous porterez à notre proposition.",
       "language": "Français",
@@ -430,8 +430,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "qVuC10841Ecu0FB0eIHE0uqtwup2",
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -871,32 +871,32 @@
   ],
   "categories": [
     {
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
-      "name": "🎨 Design, UI, UX"
+      "name": "Design, UI, UX",
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "name": "🌍 Front web, Mobile",
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "Front web, Mobile"
     },
     {
-      "name": "☁️ Backends, Cloud, Big Data",
+      "name": "Backends, Cloud, Big Data",
       "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
-      "name": "🎮 Jeux vidéos et hybrides",
-      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
+      "name": "Jeux vidéos et hybrides"
     },
     {
-      "name": "⏲️ Internet des objets",
+      "name": "Internet des objets",
       "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
-      "name": "📐 Conception, architecture",
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "name": "Conception, architecture"
     },
     {
-      "name": "🧰 Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "Outillage, pratiques de développement"
     },
     {
       "name": "Alien",
@@ -906,16 +906,16 @@
   ],
   "formats": [
     {
-      "name": "⚡ Quickie (15min)",
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "name": "Quickie (15min)"
     },
     {
-      "name": "🗣️ Conférence (50min)",
+      "name": "Conférence (50min)",
       "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
-      "name": "🧪 Hands-on (120 min)"
+      "name": "Hands-on (120 min)",
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
     }
   ]
 }
