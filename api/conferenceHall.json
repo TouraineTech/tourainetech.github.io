@@ -9,8 +9,8 @@
       "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
-        "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
+        "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
+        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3"
       ],
       "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
       "createTimestamp": {
@@ -168,8 +168,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "IxJJoBIKX0bIfQHni4zoN62YpH12",
-        "lKpZ3RoHJATLjiQyIcPV1xsJJ203"
+        "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
+        "IxJJoBIKX0bIfQHni4zoN62YpH12"
       ],
       "comments": "Re-bonjour !\n\nVoici une nouvelle conférence, sur laquelle Audrey et moi travaillons depuis un an. C‘est une conférence sur l’accessibilité un peu plus poussée que ce que l’on entend d’habitude. C’est une conférence hybride, dans laquelle on parlera dev ET design.\n\nOn serait vraiment absolument ravies de la donner pour la première fois pendant TNT, qui offre le cadre chaleureux et bienveillant qui nous met en confiance.\n\nVoilà, on croise les doigts !!\n\n",
       "language": "Français",
@@ -192,6 +192,23 @@
       "createTimestamp": {
         "_seconds": 1572873413,
         "_nanoseconds": 198000000
+      }
+    },
+    {
+      "id": "P39ti4I6J5PN4nn3oNll",
+      "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
+      "state": "accepted",
+      "level": "intermediate",
+      "abstract": "Un petit parcours, côté technique, de l'évolution des fontes web à travers les différentes spécifications et technologies marquantes : font-family, @font-face, compression, Google Fonts, CSS3, icon-fonts, emojis, ligatures, font-display et enfin les Fontes Variables. Respirez à *font*, tout va bien se passer !",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
+      ],
+      "language": "français",
+      "createTimestamp": {
+        "_seconds": 1569491794,
+        "_nanoseconds": 206000000
       }
     },
     {
@@ -430,8 +447,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
-        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+        "qVuC10841Ecu0FB0eIHE0uqtwup2",
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -467,8 +484,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "JkWN4X6967cvBrV2x8vKf1QrHS93",
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+        "JkWN4X6967cvBrV2x8vKf1QrHS93"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
@@ -523,23 +540,6 @@
       "title": "Keynote de clôture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
-    },
-    {
-      "id": "P39ti4I6J5PN4nn3oNll",
-      "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
-      "state": "accepted",
-      "level": "intermediate",
-      "abstract": "Un petit parcours, côté technique, de l'évolution des fontes web à travers les différentes spécifications et technologies marquantes : font-family, @font-face, compression, Google Fonts, CSS3, icon-fonts, emojis, ligatures, font-display et enfin les Fontes Variables. Respirez à *font*, tout va bien se passer !",
-      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
-      ],
-      "language": "français",
-      "createTimestamp": {
-        "_seconds": 1569491794,
-        "_nanoseconds": 206000000
-      }
     }
   ],
   "speakers": [
@@ -564,15 +564,6 @@
       "github": "davinkevin"
     },
     {
-      "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
-      "displayName": "Jordan Nourry",
-      "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
-      "speakerReferences": "Speaker au Breizchamp 2019 sur les tests dans un environnement micro-services avec de l'architecture hexagonale selon Martin Fowler. (Live coding session)\nSpeaker à Devoxx France 2019 sur les tests e2e front avec Cypress (Hand on Lab de 3h30)\nBBL sur les tests e2e front à L'occitane en provence et enedis (2019)",
-      "company": "Shodo",
-      "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
-      "twitter": "@JkNourry"
-    },
-    {
       "uid": "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
       "displayName": "Rodolphe BUNG",
       "bio": "Développeur fullstack expérimenté, j'ai travaillé sur plusieurs sites internet « grand public » et suis sensible aux problématiques de performance relatives à ce type de site.\n\nAdepte des méthodes agiles et certifié ScrumMaster, j'aime le partage de connaissances et suis partisan de l'amélioration continue.\n\nInitialement très orienté Java/Spring, je me passionne actuellement sur l'écosystème JavaScript (en particulier NodeJS, React) qui offre de nombreuses possibilités (développement front et back, application mobile native ou desktop, etc.)",
@@ -580,6 +571,15 @@
       "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
       "twitter": "@rodbung",
       "github": "rbung"
+    },
+    {
+      "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
+      "displayName": "Jordan Nourry",
+      "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
+      "speakerReferences": "Speaker au Breizchamp 2019 sur les tests dans un environnement micro-services avec de l'architecture hexagonale selon Martin Fowler. (Live coding session)\nSpeaker à Devoxx France 2019 sur les tests e2e front avec Cypress (Hand on Lab de 3h30)\nBBL sur les tests e2e front à L'occitane en provence et enedis (2019)",
+      "company": "Shodo",
+      "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
+      "twitter": "@JkNourry"
     },
     {
       "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
@@ -691,14 +691,14 @@
       "github": "jdrouet"
     },
     {
-      "uid": "977YQDolbxde0ito7I2dUiee2ap1",
-      "displayName": "Nicolas Lepage",
-      "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
-      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) au [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/) avec [Valentin Cocaud](https://twitter.com/ragorn44)\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
-      "company": "Zenika",
-      "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
-      "twitter": "@njblepage",
-      "github": "nlepage"
+      "uid": "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2",
+      "displayName": "Raphael Goetter",
+      "bio": "Intégrateur du Dimanche, dompteur de CSS et tripoteur de HTML, créateur de la communauté et de l'agence web Alsacreations.\nÉvangéliste international de la Knack d'or et du picon-bière, Ambassadeur du Lorem Ipsum alsacien, et accessoirement auteur de divers livres sur CSS.",
+      "speakerReferences": "http://www.goetter.fr/conf/",
+      "company": "Alsacreations",
+      "photoURL": "https://avatars2.githubusercontent.com/u/491029?v=4",
+      "twitter": "@goetter",
+      "github": "raphaelgoetter"
     },
     {
       "uid": "M9fbPRwPVMUL2CDG64muamrcOqs2",
@@ -709,6 +709,16 @@
       "photoURL": "https://lh3.googleusercontent.com/-wMpeHpz3unc/AAAAAAAAAAI/AAAAAAAAAIs/RBMsAGURyt4/photo.jpg",
       "twitter": "@ragorn44",
       "github": "EmrysMyrddin"
+    },
+    {
+      "uid": "977YQDolbxde0ito7I2dUiee2ap1",
+      "displayName": "Nicolas Lepage",
+      "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
+      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) au [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/) avec [Valentin Cocaud](https://twitter.com/ragorn44)\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
+      "company": "Zenika",
+      "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
+      "twitter": "@njblepage",
+      "github": "nlepage"
     },
     {
       "uid": "24si0s4B8lYEwbg5d4sshrMyklS2",
@@ -729,16 +739,6 @@
       "github": "louckousse"
     },
     {
-      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
-      "displayName": "Marie Guillaumet",
-      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
-      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
-      "company": "Access42",
-      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
-      "twitter": "@kReEsTaL",
-      "github": "kreestal"
-    },
-    {
       "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
       "displayName": "Audrey Maniez",
       "bio": "Audrey Maniez est experte accessibilité senior et co-gérante chez [Access42](https://access42.net/). Sa maîtrise poussée des différentes normes d’accessibilité numérique (WCAG 2.0 et 2.1, ATAG 2.0) lui permet d’accompagner de nombreux clients dans leur démarche d’accessibilité numérique, quelles que soient leurs problématiques. Co-rédactrice du RGAA 3 (Référentiel général d’accessibilité pour les administrations), Audrey travaille sur des référentiels et méthodes de tests destinées à adresser les spécificités des logiciels et des applications mobiles. Elle a conçu et rédigé certaines ressources du RGAA 3, notamment un guide dédié aux troubles DYS et au handicap mental. C’est également une formatrice chevronnée, et elle publie régulièrement des articles d’expertise technique sur [le blog d’Access42](https://access42.net/blog). Elle télétravaille depuis Carcassonne.",
@@ -747,6 +747,16 @@
       "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
       "twitter": "@audreyblabla",
       "github": "audreymaniez"
+    },
+    {
+      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
+      "displayName": "Marie Guillaumet",
+      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
+      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
+      "company": "Access42",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
+      "twitter": "@kReEsTaL",
+      "github": "kreestal"
     },
     {
       "uid": "U0h27oWjIEX6SyideyIpOoPXtYs2",
@@ -852,14 +862,6 @@
       "github": "paul-roye"
     },
     {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
-    },
-    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
@@ -867,12 +869,20 @@
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
+    },
+    {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry"
     }
   ],
   "categories": [
     {
-      "name": "Design, UI, UX",
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "name": "Design, UI, UX"
     },
     {
       "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
@@ -883,25 +893,25 @@
       "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
-      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
-      "name": "Jeux vidéos et hybrides"
+      "name": "Jeux vidéos et hybrides",
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "name": "Internet des objets",
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
+      "name": "Internet des objets"
     },
     {
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
-      "name": "Conception, architecture"
+      "name": "Conception, architecture",
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "name": "Outillage, pratiques de développement"
+      "name": "Outillage, pratiques de développement",
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "name": "Alien",
-      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !"
     }
   ],
   "formats": [
@@ -914,8 +924,8 @@
       "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "name": "Hands-on (120 min)",
-      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02"
+      "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
+      "name": "Hands-on (120 min)"
     }
   ]
 }
