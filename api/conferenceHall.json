@@ -9,8 +9,8 @@
       "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
-        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3"
+        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
+        "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
       ],
       "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
       "createTimestamp": {
@@ -52,6 +52,23 @@
       "createTimestamp": {
         "_seconds": 1573391439,
         "_nanoseconds": 592000000
+      }
+    },
+    {
+      "id": "41fdl7fni2rFn601lpxx",
+      "title": "Améliorez votre façon de taper du code au quotidien",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Ce talk non techniques est la pour présenter quelques façons que vous pourrez appliquer dans votre routine quotidienne de développeur-euse.\nEn tant que webdev, combien de temps passez-vous sur votre clavier tous les jours ? Laissez moi vous montrer quelques aspects qui pourraient améliorer votre santé et/ou productivité !\n\nVous tapez sans doute pour la plupart sur un Azerty ? Laissez moi vous parler de l'inconvénient de ce mapping et les bienfaits que pourraient vous apporter un Dvorak, un Colemak ou même le QMLW de Carpalx.\n\nNous verrons ensemble comment nous pouvons améliorer notre expérience pour avoir quelques chose de moins fatiguant (santé), avec un meilleur feeling (fun d’un clavier mécanique) et totalement customizable (firmware QMK).\n\nCela vous donnera peut-être envie de faire votre propre keyboard, comme vous le souhaitez et avec votre propre layout !\n\nNB: je donnerai aussi des tips sur comment apprendre à taper sur un tout nouveau layout.",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "cjA6fXpkQvUT8wRMBipQnFUTDeJ2"
+      ],
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1572175295,
+        "_nanoseconds": 998000000
       }
     },
     {
@@ -230,6 +247,24 @@
       }
     },
     {
+      "id": "WrRpxCNMyaKVCc6aHsPa",
+      "title": "Gardez un oeil sur vos métriques avec Prometheus et Grafana",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Un système informatique en bonne santé 24h/24, ça n'existe pas. Des erreurs peuvent survenir, en général même assez fréquemment.\n\nIl est alors important de mettre en place un système de monitoring pour détecter ces erreurs plus facilement, plus rapidement, et pour aider à les résoudre. Cependant, cela ne se résume pas à des centaines de millions de lignes de logs centralisées dans un cluster ElasticSearch. En complément, il peut être intéressant de se pencher sur les métriques. Par exemple : l'utilisation du CPU, de la mémoire, du disque, la température de vos machine, le temps moyen de réponse de vos serveurs Apache, Nginx, le nombre de connexions par minute sur vos sites etc.\n\nIl n'existe pas d'outil miracle permettant de combiner tous les aspects du monitoring. Dans cette présentation, nous allons alors nous intéresser à Prometheus, un outil spécialement conçu pour l'analyse en temps réel des métriques. Je présenterai les concepts de monitoring, d'alertes, de métrique, le fonctionnement de Prometheus ainsi que son écosystème. Je vous montrerai comment surveiller un système d'exploitation, une application Spring Boot ou encore une architecture complexe et dynamique. ",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
+      ],
+      "comments": "Merci pour cet événement et bon courage à toute l'équipe ! ",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1575135531,
+        "_nanoseconds": 90000000
+      }
+    },
+    {
       "id": "XvpmnMltEJ6PNv0LBf4e",
       "title": "Comment se faire hacker bien comme il faut!",
       "state": "confirmed",
@@ -395,8 +430,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
-        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+        "qVuC10841Ecu0FB0eIHE0uqtwup2",
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -432,8 +467,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+        "JkWN4X6967cvBrV2x8vKf1QrHS93",
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
@@ -490,23 +525,6 @@
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "id": "41fdl7fni2rFn601lpxx",
-      "title": "Améliorez votre façon de taper du code au quotidien",
-      "state": "accepted",
-      "level": "beginner",
-      "abstract": "Ce talk non techniques est la pour présenter quelques façons que vous pourrez appliquer dans votre routine quotidienne de développeur-euse.\nEn tant que webdev, combien de temps passez-vous sur votre clavier tous les jours ? Laissez moi vous montrer quelques aspects qui pourraient améliorer votre santé et/ou productivité !\n\nVous tapez sans doute pour la plupart sur un Azerty ? Laissez moi vous parler de l'inconvénient de ce mapping et les bienfaits que pourraient vous apporter un Dvorak, un Colemak ou même le QMLW de Carpalx.\n\nNous verrons ensemble comment nous pouvons améliorer notre expérience pour avoir quelques chose de moins fatiguant (santé), avec un meilleur feeling (fun d’un clavier mécanique) et totalement customizable (firmware QMK).\n\nCela vous donnera peut-être envie de faire votre propre keyboard, comme vous le souhaitez et avec votre propre layout !\n\nNB: je donnerai aussi des tips sur comment apprendre à taper sur un tout nouveau layout.",
-      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "speakers": [
-        "cjA6fXpkQvUT8wRMBipQnFUTDeJ2"
-      ],
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1572175295,
-        "_nanoseconds": 998000000
-      }
-    },
-    {
       "id": "P39ti4I6J5PN4nn3oNll",
       "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
       "state": "accepted",
@@ -521,24 +539,6 @@
       "createTimestamp": {
         "_seconds": 1569491794,
         "_nanoseconds": 206000000
-      }
-    },
-    {
-      "id": "WrRpxCNMyaKVCc6aHsPa",
-      "title": "Gardez un oeil sur vos métriques avec Prometheus et Grafana",
-      "state": "accepted",
-      "level": "beginner",
-      "abstract": "Un système informatique en bonne santé 24h/24, ça n'existe pas. Des erreurs peuvent survenir, en général même assez fréquemment.\n\nIl est alors important de mettre en place un système de monitoring pour détecter ces erreurs plus facilement, plus rapidement, et pour aider à les résoudre. Cependant, cela ne se résume pas à des centaines de millions de lignes de logs centralisées dans un cluster ElasticSearch. En complément, il peut être intéressant de se pencher sur les métriques. Par exemple : l'utilisation du CPU, de la mémoire, du disque, la température de vos machine, le temps moyen de réponse de vos serveurs Apache, Nginx, le nombre de connexions par minute sur vos sites etc.\n\nIl n'existe pas d'outil miracle permettant de combiner tous les aspects du monitoring. Dans cette présentation, nous allons alors nous intéresser à Prometheus, un outil spécialement conçu pour l'analyse en temps réel des métriques. Je présenterai les concepts de monitoring, d'alertes, de métrique, le fonctionnement de Prometheus ainsi que son écosystème. Je vous montrerai comment surveiller un système d'exploitation, une application Spring Boot ou encore une architecture complexe et dynamique. ",
-      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
-      ],
-      "comments": "Merci pour cet événement et bon courage à toute l'équipe ! ",
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1575135531,
-        "_nanoseconds": 90000000
       }
     }
   ],
@@ -564,15 +564,6 @@
       "github": "davinkevin"
     },
     {
-      "uid": "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
-      "displayName": "Rodolphe BUNG",
-      "bio": "Développeur fullstack expérimenté, j'ai travaillé sur plusieurs sites internet « grand public » et suis sensible aux problématiques de performance relatives à ce type de site.\n\nAdepte des méthodes agiles et certifié ScrumMaster, j'aime le partage de connaissances et suis partisan de l'amélioration continue.\n\nInitialement très orienté Java/Spring, je me passionne actuellement sur l'écosystème JavaScript (en particulier NodeJS, React) qui offre de nombreuses possibilités (développement front et back, application mobile native ou desktop, etc.)",
-      "company": "Société Générale",
-      "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
-      "twitter": "@rodbung",
-      "github": "rbung"
-    },
-    {
       "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
       "displayName": "Jordan Nourry",
       "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
@@ -580,6 +571,15 @@
       "company": "Shodo",
       "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
       "twitter": "@JkNourry"
+    },
+    {
+      "uid": "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
+      "displayName": "Rodolphe BUNG",
+      "bio": "Développeur fullstack expérimenté, j'ai travaillé sur plusieurs sites internet « grand public » et suis sensible aux problématiques de performance relatives à ce type de site.\n\nAdepte des méthodes agiles et certifié ScrumMaster, j'aime le partage de connaissances et suis partisan de l'amélioration continue.\n\nInitialement très orienté Java/Spring, je me passionne actuellement sur l'écosystème JavaScript (en particulier NodeJS, React) qui offre de nombreuses possibilités (développement front et back, application mobile native ou desktop, etc.)",
+      "company": "Société Générale",
+      "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
+      "twitter": "@rodbung",
+      "github": "rbung"
     },
     {
       "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
@@ -617,6 +617,16 @@
       "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
       "twitter": "@JulienTopcu",
       "github": "julien-topcu"
+    },
+    {
+      "uid": "cjA6fXpkQvUT8wRMBipQnFUTDeJ2",
+      "displayName": "Konstantin BIFERT",
+      "bio": "❤️ JavaScript (VueJS, JAMstack) 🧡 Linux 💚 mechanical keyboards 💙\nWriter 📝 and speaker 🎤\nOrganizer of @HumanTalksBdx 🎎📣 \nWorking at @quorumco (づ｡◕‿‿◕｡)づ",
+      "speakerReferences": "2 lightning @nordicjs 2k19, 1 @devfestnantes 2k19, @humanTalksBdx speaker and organizer and also gave a podcast ! :D ",
+      "company": "Quorum.co",
+      "photoURL": "https://avatars1.githubusercontent.com/u/5133074?v=4",
+      "twitter": "kissu_io",
+      "github": "kissu"
     },
     {
       "uid": "9g2TJuw97VMd8Zwn9y2x0g0w7SB2",
@@ -662,7 +672,7 @@
     },
     {
       "uid": "pYuiGicpt0MenD8NEMhZXtk6VSr1",
-      "displayName": "Horacio Gonzalez (LostInBrittany)",
+      "displayName": "Horacio Gonzalez",
       "bio": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une quinzaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\n\nAprès quelques années comme tech leader de la partie frontend de [@warp10io](https://twitter.com/warp10io/) chez [Cityzen Data](https://twitter.com/cityendata/), Horacio a rejoint [OVH](](https://twitter.com/ovh/) en janvier 2018 en tant que Developer Advocate. Il est cofondateur du [FinistDevs](https://twitter.com/finistdevs/), le JUG/GDG français le plus proche de la Silicon Valley.\n\nPassionné par le développement web et tout ce qui gravite autour des composants web, Horacio est [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez) en Web Technologies et Flutter.\n\nVous pouvez voir mes dernières talks sur [mon profil Notist](https://noti.st/lostinbrittany)",
       "speakerReferences": "I have been several times speaker at Devoxx Belgium, Devoxx France, Codemotion Rome, Codemotion Madrid and Codemotion Amsterdam. I have done a keynote at MobiConf in Poland, and been speaker at many regional conferences: DevFest Nantes, DevFest Toulouse, DevFest Paris, Mix It, Sunny Tech, Riviera Dev... And of course lots and lots of meetups, JUGs and GDGs, because those are my roots. \n\nYou can see more about my speaker activity (with links to slides and videos) at https://noti.st/lostinbrittany",
       "company": "OVH",
@@ -681,16 +691,6 @@
       "github": "jdrouet"
     },
     {
-      "uid": "M9fbPRwPVMUL2CDG64muamrcOqs2",
-      "displayName": "Valentin Cocaud",
-      "bio": "Consultant et formateur FullStack chez Zenika depuis 2 ans, Valentin est passionné par le développement depuis l’âge de 15 ans. Touche à tout, il est principalement intéressé par la programmation fonctionnelle, même là où l’on ne l’attend pas.\n\nIl travaille aujourd’hui principalement avec JavaScript et Go sur des applications web.",
-      "speakerReferences": " - 2018 - Les nouveautés de Scala 3 au Scala Nantes User Group #2\n - 2019 - Gophers le retour au GDG Lille",
-      "company": "Zenika",
-      "photoURL": "https://lh3.googleusercontent.com/-wMpeHpz3unc/AAAAAAAAAAI/AAAAAAAAAIs/RBMsAGURyt4/photo.jpg",
-      "twitter": "@ragorn44",
-      "github": "EmrysMyrddin"
-    },
-    {
       "uid": "977YQDolbxde0ito7I2dUiee2ap1",
       "displayName": "Nicolas Lepage",
       "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
@@ -699,6 +699,16 @@
       "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
       "twitter": "@njblepage",
       "github": "nlepage"
+    },
+    {
+      "uid": "M9fbPRwPVMUL2CDG64muamrcOqs2",
+      "displayName": "Valentin Cocaud",
+      "bio": "Consultant et formateur FullStack chez Zenika depuis 2 ans, Valentin est passionné par le développement depuis l’âge de 15 ans. Touche à tout, il est principalement intéressé par la programmation fonctionnelle, même là où l’on ne l’attend pas.\n\nIl travaille aujourd’hui principalement avec JavaScript et Go sur des applications web.",
+      "speakerReferences": " - 2018 - Les nouveautés de Scala 3 au Scala Nantes User Group #2\n - 2019 - Gophers le retour au GDG Lille",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/-wMpeHpz3unc/AAAAAAAAAAI/AAAAAAAAAIs/RBMsAGURyt4/photo.jpg",
+      "twitter": "@ragorn44",
+      "github": "EmrysMyrddin"
     },
     {
       "uid": "24si0s4B8lYEwbg5d4sshrMyklS2",
@@ -753,6 +763,16 @@
       "displayName": "Thibault Pairis",
       "company": "Modulo Management",
       "photoURL": "https://lh6.googleusercontent.com/-IKBS76kA3lc/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcMXdwj0AC2E0mrG4gz3KfYUL6dOw/photo.jpg"
+    },
+    {
+      "uid": "FjmEcWGtDNUqKmkd0Pwu24oL87G2",
+      "displayName": "Robin Marechal",
+      "bio": "Jeune Ingénieur diplômé de Polytech Tours depuis 2019, je travaille chez Apside TOP à Tours. \n\nActuellement en régie chez Ellisphere, je travaille sur deux sujets principaux : \n- la mise en place d'une architecture de monitoring orientée métriques des systèmes et des applications\n- Migration d'un programme de type Batch vers la chaîne _Big Data & Real Time_ basée sur Cassandra, Solr et Kafka\n\nPassionné par l'informatique depuis 2014 (arrivée à Polytech Tours), j'ai depuis toujours été très curieux et motivé pour apprendre des nouvelles technologies. A commencer par du développement web back-end en PHP (from Scratch, Laravel, Lumen, Symfony, CakePHP), jusqu'à la création d'applications mobiles (Android, PWA, React Native, Flutter) en passant par du développement Java (Swing, JavaFX, Spring) ou encore front-end (Angular, React, Vue, ElectonJS), j'ai toujours envie d'élargir mes compétences et d'apprendre de nouvelles choses, dans le domaine de l'informatique mais pas que.\n\nGlobalement à l'aise pour prendre la parole devant un public, et ayant toujours eu à cœur d'aider ou de partager mes compétences, j'ai décidé de me lancer et d'effectuer une première présentation en juillet 2019 en interne chez Apside. En espérant que celle-ci soit la première d'une longue série.",
+      "speakerReferences": "Pour le moment, une seule présentation a été effectuée, en interne chez Apside, concernant le monitoring avec Prometheus et Grafana. La vidéo : https://www.youtube.com/watch?v=1bRdOFs7rW4&t=649s ",
+      "company": "Apside TOP",
+      "photoURL": "https://avatars1.githubusercontent.com/u/16049815?v=4",
+      "twitter": "@robinmarechal",
+      "github": "RobinMarechal"
     },
     {
       "uid": "aHchGCaQStWhoqQtDKBjBpkEnLF2",
@@ -832,6 +852,14 @@
       "github": "paul-roye"
     },
     {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry"
+    },
+    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
@@ -839,55 +867,47 @@
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
-    },
-    {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
     }
   ],
   "categories": [
     {
-      "name": "🎨 Design, UI, UX",
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "name": "🎨 Design, UI, UX"
     },
     {
       "name": "🌍 Front web, Mobile",
       "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
     },
     {
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
-      "name": "☁️ Backends, Cloud, Big Data"
+      "name": "☁️ Backends, Cloud, Big Data",
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
       "name": "🎮 Jeux vidéos et hybrides",
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
-      "name": "⏲️ Internet des objets"
+      "name": "⏲️ Internet des objets",
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
       "name": "📐 Conception, architecture",
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "name": "🧰 Outillage, pratiques de développement"
+      "name": "🧰 Outillage, pratiques de développement",
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
+      "name": "Alien",
       "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "name": "Alien"
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
     }
   ],
   "formats": [
     {
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "name": "⚡ Quickie (15min)"
+      "name": "⚡ Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
       "name": "🗣️ Conférence (50min)",

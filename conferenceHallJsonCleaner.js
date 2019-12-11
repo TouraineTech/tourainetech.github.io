@@ -14,9 +14,11 @@ if (!apiKey) {
 function writeConferenceHallDataFile(talks, speakers, categories, formats) {
   let data = JSON.stringify({talks, speakers, categories, formats}, null, '  ');
 
-  const datas = data.replace(
+  const datas = data
+    .replace(
   "https://pbs.twimg.com/profile_images/893697090538360832/bzPdkHN9_normal.jpg",
-  "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg");
+  "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg")
+    .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
     path.join(__dirname, 'api/conferenceHall.json'),

@@ -27,8 +27,8 @@
           <nuxt-link
             :to="`/talk/${talk.id}`"
           >
-            <h4>{{ talk.title }}</h4>
-            <h5>{{ talk.speakerNames }}</h5>
+            <h4 class="schedule-title">{{ talk.title }}</h4>
+            <h5 v-if="talk.speakerNames" class="schedule-speaker-name"> {{ talk.speakerNames }}</h5>
           </nuxt-link>
           <ul>
             <li :class="['schedule-talk-'+talk.categories+'--category']">{{ talkName(talk.categories) }}</li>
@@ -102,7 +102,7 @@ export default {
       },
     },
     methods: {
-        talkCellStyle({rooms, times, format}) {
+        talkCellStyle({rooms, times}) {
             if(rooms === undefined){
                 return {
                     "display": "none"
@@ -115,12 +115,27 @@ export default {
                 "grid-row-end": times[times.length - 1] + 2,
             }
         },
-        talkCssClass({format, categories}) {
-            return [
-                "schedule-talk--cell",
-                "schedule-talk-"+format+"--cell",
-                categories ? "schedule-talk-" + categories + "--cell" : ""
-            ]
+        talkCssClass({formats, categories}) {
+          const category = {
+            "46293012-ca7f-5197-8c58-69bc9a6c7a4b":"design",
+            "96440de7-ddfa-5d09-b206-64ecb4ec86c0": "front",
+            "ae14e3b6-2476-58d7-a629-f130574251bd": "backend",
+            "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8": "game",
+            "9fc85ea1-2256-54f1-886f-246090b0e764": "iot",
+            "63920d15-9b86-58e5-875c-441301f6dbb9": "architecture",
+            "18c44d7d-ed48-5dde-94ba-8b4477a84db3": "tools",
+            "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9": "alien"
+          }[categories];
+          const format = {
+            "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a": "quickie",
+            "84638839-c9f7-5eaf-9df5-5fcb578c2c6d": "conference",
+            "5c8efbbf-1640-5a9b-b42e-0c1180b82d02": "hands-on"
+          }[formats];
+          return [
+            "schedule-talk--cell",
+            "schedule-talk-"+format+"--cell",
+            category ? "schedule-talk-" + category + "--cell" : ""
+          ];
         },
         talkName(category) {
           return this.$store.getters.categories
@@ -157,6 +172,7 @@ $color-tools: #ffa000;
 $color-front: #0077c2;
 $color-design: #ff75cc;
 $color-backend: #345264;
+$color-alien: #066420;
 
 #schedule{
     max-width: 1280px;
@@ -275,6 +291,10 @@ $color-backend: #345264;
     border-color: $color-iot;
 }
 
+.schedule-talk-alien--cell {
+    border-color: $color-alien;
+}
+
 .schedule-talk-game--cell {
     border-color: $color-game;
 }
@@ -298,7 +318,6 @@ $color-backend: #345264;
 .schedule-talk-backend--cell {
     border-color: $color-backend;
 }
-
 
 .schedule-talk-iot--category {
     background-color: $color-iot;
@@ -333,5 +352,17 @@ $color-backend: #345264;
     background-color: $color-backend;
 }
 
+.schedule-talk-conference--cell .schedule-title,
+.schedule-talk-quickie--cell .schedule-title,
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.schedule-speaker-name:before {
+  content: "\1F3A4 "
+}
 </style>
 
