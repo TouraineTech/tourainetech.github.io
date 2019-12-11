@@ -1,4 +1,4 @@
-/*! showdown v 1.9.0 - 10-11-2018 */
+/*! showdown v 1.9.1 - 02-11-2019 */
 
 /*!
  * vue-no-ssr v1.1.1
@@ -19,7 +19,7 @@
  */
 
 /**
- * vuex v3.1.1
+ * vuex v3.1.2
  * (c) 2019 Evan You
  * @license MIT
  */
