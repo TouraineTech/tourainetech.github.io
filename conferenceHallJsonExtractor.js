@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require("node-fetch");
 
-const apiKey = process.env.API_KEY;
+const {API_KEY: apiKey, WRITE_RAW_FILE: createRawConferenceHallDataFile} = process.env;
 
 if (!apiKey) {
   console.log(`API_KEY ENV value should exist`);
@@ -18,6 +18,9 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
     .replace(
   "https://pbs.twimg.com/profile_images/893697090538360832/bzPdkHN9_normal.jpg",
   "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg")
+    .replace(
+  "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
+  "https://pbs.twimg.com/profile_images/1201869350107566081/zcZed08W_400x400.jpg")
     .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
@@ -38,29 +41,41 @@ async function retrieveData(apiKey) {
   return json;
 }
 
+function confirmedTalksFilter() {
+  return ({id, state}) => (state === 'confirmed' || id === "P39ti4I6J5PN4nn3oNll");
+}
+
+function acceptedTalksFilter() {
+  return ({id, state}) => (state === 'accepted' && id !== "P39ti4I6J5PN4nn3oNll");
+}
+
+function keynoteTalkFilter() {
+  return ({id}) => id !== '2UyymcQvMehGkX1W40IE';
+}
+
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
 
   const acceptedTalks = conferenceHallDatas.talks
-    .filter(({state}) => state === 'accepted');
+    .filter(acceptedTalksFilter());
 
-  const acceptedTalksSpeakersId = conferenceHallDatas.talks
-    .filter(({state}) => state === 'accepted')
+  const confirmedTalksSpeakersId = conferenceHallDatas.talks
+    .filter(confirmedTalksFilter())
     .map(({speakers}) => {
       return speakers
     })
     .reduce((a, b) => a.concat(b), []);
 
   console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
-  console.log(`accepted speaker count : ${acceptedTalksSpeakersId.length}`);
+  console.log(`confirmed speaker count : ${confirmedTalksSpeakersId.length}`);
 
   const talks = conferenceHallDatas.talks
     .map((
       {organizersThread, rating, loves, hates, ...datas}) => {
       return {...datas};
     })
-    .filter(({state}) => state === 'confirmed')
-    .filter(({id}) => id !== '2UyymcQvMehGkX1W40IE' );
+    .filter(confirmedTalksFilter())
+    .filter(keynoteTalkFilter() );
 
   talks.push(
     {
@@ -99,6 +114,20 @@ function getSpeakers(conferenceHallDatas, talks) {
 
 async function doWork() {
   const conferenceHallDatas = await retrieveData(apiKey);
+
+  if (createRawConferenceHallDataFile) {
+    fs.writeFile(
+      path.join(__dirname, 'api/conferenceHallRawDatas.json'),
+      JSON.stringify(conferenceHallDatas, null, '  '),
+      readErr => {
+        if (readErr) {
+          console.log(err);
+          process.exit(2);
+        }
+        console.log(`The file conferenceHallRawDatas.json was saved!`);
+      }
+    );
+  }
 
   const {
     categories,

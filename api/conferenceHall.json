@@ -149,8 +149,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "M9fbPRwPVMUL2CDG64muamrcOqs2",
-        "977YQDolbxde0ito7I2dUiee2ap1"
+        "977YQDolbxde0ito7I2dUiee2ap1",
+        "M9fbPRwPVMUL2CDG64muamrcOqs2"
       ],
       "comments": "Merci de l'attention que vous porterez à notre proposition.",
       "language": "Français",
@@ -192,6 +192,23 @@
       "createTimestamp": {
         "_seconds": 1572873413,
         "_nanoseconds": 198000000
+      }
+    },
+    {
+      "id": "P39ti4I6J5PN4nn3oNll",
+      "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
+      "state": "accepted",
+      "level": "intermediate",
+      "abstract": "Un petit parcours, côté technique, de l'évolution des fontes web à travers les différentes spécifications et technologies marquantes : font-family, @font-face, compression, Google Fonts, CSS3, icon-fonts, emojis, ligatures, font-display et enfin les Fontes Variables. Respirez à *font*, tout va bien se passer !",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
+      ],
+      "language": "français",
+      "createTimestamp": {
+        "_seconds": 1569491794,
+        "_nanoseconds": 206000000
       }
     },
     {
@@ -430,8 +447,8 @@
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "qVuC10841Ecu0FB0eIHE0uqtwup2",
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -467,8 +484,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "JkWN4X6967cvBrV2x8vKf1QrHS93",
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+        "JkWN4X6967cvBrV2x8vKf1QrHS93"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
@@ -523,23 +540,6 @@
       "title": "Keynote de clôture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
-    },
-    {
-      "id": "P39ti4I6J5PN4nn3oNll",
-      "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
-      "state": "accepted",
-      "level": "intermediate",
-      "abstract": "Un petit parcours, côté technique, de l'évolution des fontes web à travers les différentes spécifications et technologies marquantes : font-family, @font-face, compression, Google Fonts, CSS3, icon-fonts, emojis, ligatures, font-display et enfin les Fontes Variables. Respirez à *font*, tout va bien se passer !",
-      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
-      ],
-      "language": "français",
-      "createTimestamp": {
-        "_seconds": 1569491794,
-        "_nanoseconds": 206000000
-      }
     }
   ],
   "speakers": [
@@ -691,10 +691,20 @@
       "github": "jdrouet"
     },
     {
+      "uid": "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2",
+      "displayName": "Raphael Goetter",
+      "bio": "Intégrateur du Dimanche, dompteur de CSS et tripoteur de HTML, créateur de la communauté et de l'agence web Alsacreations.\nÉvangéliste international de la Knack d'or et du picon-bière, Ambassadeur du Lorem Ipsum alsacien, et accessoirement auteur de divers livres sur CSS.",
+      "speakerReferences": "http://www.goetter.fr/conf/",
+      "company": "Alsacreations",
+      "photoURL": "https://avatars2.githubusercontent.com/u/491029?v=4",
+      "twitter": "@goetter",
+      "github": "raphaelgoetter"
+    },
+    {
       "uid": "977YQDolbxde0ito7I2dUiee2ap1",
       "displayName": "Nicolas Lepage",
-      "bio": "Développeur depuis plus de 10 ans, Nicolas est actuellement consultant et formateur chez Zenika Nantes.\n\nAprès de trop longues années de développement Java, il prend le contrepied et s'intéresse maintenant à tout ! Sa quête de nouveauté l'amène à explorer les mondes du front avec ReactJS, du NoSQL avec MongoDB, et des langages modernes tels que Go(lang) ou encore Kotlin.\n\nSon goût du partage le pousse à devenir formateur, notamment sur Go(lang), et à se lancer dans l'open source en créant [immutad●t](https://github.com/Zenika/immutadot), une bibliothèque JavaScript pour manipuler les structures immuables imbriquées.",
-      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) au [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/) avec [Valentin Cocaud](https://twitter.com/ragorn44)\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
+      "bio": "Développeur JS durant la journée, Nicolas travaille avec une stack fournie allant de React/Redux à NodeJS et GraphQL, en passant par du PostreSQL et du Kubernetes...\n\nMais la nuit, il se transforme en une créature difforme, mi dev JS mi gopher, pour s'adonner à des rituels de contribution open source...\n\nCertains racontent que dans un lointain passé, il fût développeur Java, même si aujourd'hui il renie ces sombres origines.",
+      "speakerReferences": "* Gophers le retour (Nouveautés de Go 2) avec [Valentin Cocaud](https://twitter.com/ragorn44) : [GDG Lille](https://www.meetup.com/fr-FR/GDG-Lille/events/264218182/), TouraineTech 2020\n* [Dr Gopher, Anatomie du Scheduler Golang](https://youtu.be/TPt6pS-ptfM) : BreizhCamp 2019, SunnyTech 2019, DevFest Nantes 2019\n* [Au Pays des Gophers (à partir de 3 ans)](https://youtu.be/kJR74dG6_1U) : JUG Summer Camp 2018, DevFest Nantes 2018, Bdx I/O 2018, Touraine Tech 2019, DevFest Paris 2019, DevFest BdM 2019\n* [L’immuabilité en Javascript](https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190) au meetup [NantesJS](http://nantesjs.org/) #32 avec [Yvonnick Frin](https://twitter.com/YvonnickFrin)\n* [Découvrir et comprendre Kotlin par la pratique](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/events/246038841/) au meetup [NightClazz by Zenika Nantes](https://www.meetup.com/fr-FR/NightClazz-by-Zenika-Nantes/) avec [Grégory Bévan](https://twitter.com/gr3gory_b3van)",
       "company": "Zenika",
       "photoURL": "https://lh6.googleusercontent.com/-96ltg2kr4oc/AAAAAAAAAAI/AAAAAAAAAG4/bk0-E9b9kuU/photo.jpg",
       "twitter": "@njblepage",
@@ -754,7 +764,7 @@
       "bio": "Coding Software Architect, Distinguished Expert, head of Worldline Expert Community, blogger, speaker, strong focus on the Java ecosystem, Eclipse MicroProfile contributer.\n\nStill enthusiast after more than 30 years in the IT Industry!",
       "speakerReferences": "Pendant les deux dernières années, j'ai effectué les conférences suivantes :\n\n* Touraine Tech 2018\n* EclipseCon France 2018 Toulouse\n* Eclipse DemoCamp Zurich 2018 Zurich\n* EclipseCon Europe 2018 Ludwigsburg\n* Devoxx Paris 2019\n* Oracle Code One San Francisco 2019",
       "company": "Worldline",
-      "photoURL": "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
+      "photoURL": "https://pbs.twimg.com/profile_images/1201869350107566081/zcZed08W_400x400.jpg",
       "twitter": "@jefrajames",
       "github": "https://github.com/jefrajames"
     },
@@ -852,14 +862,6 @@
       "github": "paul-roye"
     },
     {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
-    },
-    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
@@ -867,55 +869,63 @@
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
+    },
+    {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry"
     }
   ],
   "categories": [
     {
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
-      "name": "🎨 Design, UI, UX"
+      "name": "Design, UI, UX",
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "name": "🌍 Front web, Mobile",
+      "name": "Front web, Mobile",
       "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
     },
     {
-      "name": "☁️ Backends, Cloud, Big Data",
+      "name": "Backends, Cloud, Big Data",
       "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
-      "name": "🎮 Jeux vidéos et hybrides",
+      "name": "Jeux vidéos et hybrides",
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "name": "⏲️ Internet des objets",
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
+      "name": "Internet des objets"
     },
     {
-      "name": "📐 Conception, architecture",
+      "name": "Conception, architecture",
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "name": "🧰 Outillage, pratiques de développement",
+      "name": "Outillage, pratiques de développement",
       "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "name": "Alien",
-      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !"
     }
   ],
   "formats": [
     {
-      "name": "⚡ Quickie (15min)",
+      "name": "Quickie (15min)",
       "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
-      "name": "🗣️ Conférence (50min)",
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "name": "Conférence (50min)"
     },
     {
       "id": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
-      "name": "🧪 Hands-on (120 min)"
+      "name": "Hands-on (120 min)"
     }
   ]
 }
