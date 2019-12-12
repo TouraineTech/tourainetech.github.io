@@ -18,6 +18,9 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
     .replace(
   "https://pbs.twimg.com/profile_images/893697090538360832/bzPdkHN9_normal.jpg",
   "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg")
+    .replace(
+  "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
+  "https://pbs.twimg.com/profile_images/1201869350107566081/zcZed08W_400x400.jpg")
     .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
