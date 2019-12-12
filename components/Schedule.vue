@@ -45,7 +45,7 @@
               <a :href="slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg" alt="icon presentation"/></a>
             </p>
           </span>
-          <p class="schedule-room--duration-level">⏱{{ duration(talk.formats) }} — {{ levelName(talk.level) }}</p>
+          <p class="schedule-room--duration-level">⏱{{ duration(talk.formats) }}</p>
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@ export default {
                 "grid-row-end": times[times.length - 1] + 2,
             }
         },
-        talkCssClass({formats, categories}) {
+        talkCssClass({formats, categories, times}) {
           const category = {
             "46293012-ca7f-5197-8c58-69bc9a6c7a4b":"design",
             "96440de7-ddfa-5d09-b206-64ecb4ec86c0": "front",
@@ -134,6 +134,7 @@ export default {
           return [
             "schedule-talk--cell",
             "schedule-talk-"+format+"--cell",
+            "schedule-talk-time"+times.reduce((a, c) => a+c, "")+"--cell",
             category ? "schedule-talk-" + category + "--cell" : ""
           ];
         },
@@ -363,6 +364,9 @@ $color-alien: #066420;
 }
 .schedule-speaker-name:before {
   content: "\1F3A4 "
+}
+.schedule-talk-time2--cell p.schedule-room--duration-level {
+  display: none;
 }
 </style>
 
