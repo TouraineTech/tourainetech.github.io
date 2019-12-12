@@ -365,7 +365,8 @@ $color-alien: #066420;
 .schedule-speaker-name:before {
   content: "\1F3A4 "
 }
-.schedule-talk-time2--cell p.schedule-room--duration-level {
+.schedule-talk-time2--cell p.schedule-room--duration-level,
+.schedule-talk-time18--cell p.schedule-room--duration-level {
   display: none;
 }
 </style>
