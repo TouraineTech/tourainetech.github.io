@@ -1,0 +1,194 @@
+[
+  {
+    "id": "keynoteOuverture",
+    "name": "Keynote d'ouverture",
+    "rooms": [1,2,3],
+    "times": [2]
+  },
+  {
+    "id": "2nUoRfU9qblCBji2OHWx",
+    "title": "istio ⛵️par la pratique !",
+    "rooms": [4],
+    "times": [4,5,6]
+  },
+  {
+    "id": "vZU5mTokXupZBLNjA8BB",
+    "title": "« Ça part en prod ! » Testez la résilience de votre appli par le chaos.",
+    "rooms": [4],
+    "times": [11,12,13]
+  },
+  {
+    "id": "pAMZmFT2wrfqPr9IdeXv",
+    "title": "Le design de l'erreur",
+    "rooms": [1],
+    "times": [4]
+  },
+  {
+    "id": "SYJIDy5JPhQuABdiT7Gv",
+    "title": "Java server-side: 20 years old and still innovative!",
+    "rooms": [2],
+    "times": [4]
+  },
+  {
+    "id": "M7nW2FKPHbF2FpNWqNMx",
+    "title": "Accessibilité : et si on laissait les utilisateurs personnaliser l’interface ?",
+    "rooms": [3],
+    "times": [4]
+  },
+  {
+    "id": "B8gr3HrZqJoTV0g1ZP28",
+    "title": "J'ai déployé mes apps sur Minikube... maintenant je fais quoi ?",
+    "rooms": [1],
+    "times": [6]
+  },
+  {
+    "id": "wqcmtLstTNKvYUFdh4ai",
+    "title": "Stateless Microservice Security via MicroProfile JWT",
+    "rooms": [2],
+    "times": [6]
+  },
+  {
+    "id": "duZ9XQ4TxP79Q1WiOyVe",
+    "title": "Une caméra 📹 en DIY sur une mangeoire d'oiseau 🐦  au milieu d’un jardin 🌳 ?",
+    "rooms": [3],
+    "times": [6]
+  },
+  {
+    "id": "et52YASk16xgCOWszF5H",
+    "title": "L'OSS en entreprise, causons peu, Koson bien !",
+    "rooms": [1],
+    "times": [8]
+  },
+  {
+    "id": "iDWSjGfWX8OLxBppd8PC",
+    "title": "Tips pour combattre le syndrome de l'imposteur",
+    "rooms": [2],
+    "times": [8]
+  },
+  {
+    "id": "W625dqFOD8C4lUJwi8lk",
+    "title": "Optimiser le codeur pour optimiser le code (bonnes pratiques d'organisation personnelle à destination des développeuses et développeurs)",
+    "rooms": [3],
+    "times": [8]
+  },
+  {
+    "id": "tYSdKQvuEtgH7nLokY0e",
+    "title": "🏡 Full-remote : comment réussir à travailler en équipe ?",
+    "rooms": [4],
+    "times": [8]
+  },
+  {
+    "id": "OSeRNhvgAv183XS9gPAA",
+    "title": "Event loop et asynchronisme en JavaScript",
+    "rooms": [5],
+    "times": [8]
+  },
+  {
+    "id": "vzGargOlA8voJIxO4BLz",
+    "title": "Pair Design : Un moyen de concevoir à deux ou plus",
+    "rooms": [1],
+    "times": [9]
+  },
+  {
+    "id": "yUtgGDeJyLq57mK86q9g",
+    "title": "Postgresql + json : bye bye JPA et passe le bonjour à mongo",
+    "rooms": [2],
+    "times": [9]
+  },
+  {
+    "id": "H6hSWT3gMPPhoV2bPY5k",
+    "title": "Secretary Vs Dev : retour d expérience d'une assistante administrative dans un dev studio",
+    "rooms": [3],
+    "times": [9]
+  },
+  {
+    "id": "41fdl7fni2rFn601lpxx",
+    "title": "Améliorez votre façon de taper du code au quotidien",
+    "rooms": [4],
+    "times": [9]
+  },
+  {
+    "id": "vBXehLE9i3ShOGZBeNUQ",
+    "title": "L'Esport à un sport comme les autres ",
+    "rooms": [5],
+    "times": [9]
+  },
+  {
+    "id": "7vchsRqdvPawjft0FOd8",
+    "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
+    "rooms": [1],
+    "times": [11]
+  },
+  {
+    "id": "VhehXV2aodPu46LuhxbF",
+    "title": "⏰ CSS Clockwork",
+    "rooms": [2],
+    "times": [11]
+  },
+  {
+    "id": "fW4yvmVxjXb57vQJhIXu",
+    "title": "Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur",
+    "rooms": [3],
+    "times": [11]
+  },
+  {
+    "id": "P39ti4I6J5PN4nn3oNll",
+    "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
+    "rooms": [1],
+    "times": [13]
+  },
+  {
+    "id": "XvpmnMltEJ6PNv0LBf4e",
+    "title": "Comment se faire hacker bien comme il faut!",
+    "rooms": [2],
+    "times": [13]
+  },
+  {
+    "id": "HDbur1UG6PNYC48rcBZ0",
+    "title": "Gophers le retour",
+    "rooms": [3],
+    "times": [13]
+  },
+  {
+    "id": "C7diXezyH5e5CAZHCD8w",
+    "title": "Dockerfile - les bonnes pratiques",
+    "rooms": [1],
+    "times": [15]
+  },
+  {
+    "id": "1jiAsaKrbfhsEewsXaSH",
+    "title": "Cypress, l’outil qui va vous faire aimer les tests End-to-End !",
+    "rooms": [2],
+    "times": [15]
+  },
+  {
+    "id": "WrRpxCNMyaKVCc6aHsPa",
+    "title": "Gardez un oeil sur vos métriques avec Prometheus et Grafana",
+    "rooms": [3],
+    "times": [15]
+  },
+  {
+    "id": "jc3PNZWvUSCjAS2vqdLA",
+    "title": "Vous livrez encore des bugs en prod ?! 😱",
+    "rooms": [1],
+    "times": [17]
+  },
+  {
+    "id": "3QQqWeUo8kj2R6AlzJIP",
+    "title": "Trucs et astuces pour consommer une API REST",
+    "rooms": [2],
+    "times": [17]
+  },
+  {
+    "id": "m8pvkEKdZYVIxBQL3v4z",
+    "title": "Notif qui saoule n'amasse pas foule ...",
+    "rooms": [3],
+    "times": [17]
+  },
+  {
+    "id": "keynoteCloture",
+    "title": "Keynote de clôture",
+    "rooms": [1,2,3],
+    "times": [18]
+  }
+]

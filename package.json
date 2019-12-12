@@ -11,10 +11,9 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup",
-    "extract:all": "node conferenceHallJsonCleaner.js",
-    "extract:speakers": "jq '.documents | map({id: .fields.uid.stringValue, name: .fields.displayName.stringValue, avatar: .fields.photoURL.stringValue, github: .fields.github.stringValue, twitter: .fields.twitter.stringValue, bio: .fields.bio.stringValue, company: .fields.company.stringValue, city: .fields.city.stringValue})' raw_speakers.json > speakers.json",
-    "extract:talks": "jq '.documents | map({id: .fields.id.stringValue, createTime: .createTime, updateTime: .updateTime, name: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.title.stringValue, abstract: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.abstract.stringValue, level: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.level.stringValue, format: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.formats.stringValue, categories: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.categories.stringValue, speakers: .fields.submissions.mapValue.fields.wghOOf6byfO2nIaZg5wj.mapValue.fields.speakers.mapValue.fields})' raw_talks.json > api/talks.json"
+    "deploy": "gh-pages --dotfiles -d dist -b master",
+    "extract:all": "node conferenceHallJsonExtractor.js",
+    "extract:preBuildPlanning": "node prePlanningBuilder.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
@@ -32,7 +31,7 @@
     "node-fetch": "^2.6.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.2",
-    "push-dir": "^0.4.1",
+    "gh-pages": "^2.1.1",
     "sass-loader": "^8.0.0"
   }
 }

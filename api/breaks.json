@@ -7,7 +7,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             1
@@ -15,13 +16,14 @@
     },
     {
         "id": "ptitdej",
-        "name": "🥐 Suite du petit déjeuner",
+        "name": "🥐 Suite du petit déjeuner (20 min)",
         "format": "break",
         "rooms": [
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             3
@@ -29,7 +31,7 @@
     },
     {
         "id": "am1",
-        "name": "☕ Pause café",
+        "name": "☕ Pause café (10 min)",
         "format": "break",
         "rooms": [
             1,
@@ -42,39 +44,30 @@
     },
     {
         "id": "dejeuner",
-        "name": "🍽 Pause déjeuner",
+        "name": "🍽 Pause déjeuner (jusqu'à 13h30, 20 min avant le premier Quickie)",
         "format": "break",
         "rooms": [
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             7
         ]
     },
-    {
-        "id": "dejeuner",
-        "name": "🍽 Pause déjeuner",
-        "format": "break",
-        "rooms": [
-            4
-        ],
-        "times": [
-            8,
-            9
-        ]
-    },
+
     {
         "id": "dejeuner2",
-        "name": "🍽 Pause déjeuner",
+        "name": "🍽 fin de la pause déjeuner (30 min)",
         "format": "break",
         "rooms": [
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             10
@@ -82,7 +75,7 @@
     },
     {
         "id": "pm1",
-        "name": "☕ Pause café",
+        "name": "☕ Pause café (10 min)",
         "format": "break",
         "rooms": [
             1,
@@ -95,13 +88,14 @@
     },
     {
         "id": "pm2",
-        "name": "☕ Pause café",
+        "name": "☕ Pause café (25 min)",
         "format": "break",
         "rooms": [
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             14
@@ -109,13 +103,14 @@
     },
     {
         "id": "gouter",
-        "name": "☕ Pause café",
+        "name": "☕ Pause café (10 min)",
         "format": "break",
         "rooms": [
             1,
             2,
             3,
-            4
+            4,
+            5
         ],
         "times": [
             16

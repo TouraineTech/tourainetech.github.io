@@ -3,9 +3,21 @@ import SPONSORS from '../api/sponsors.json'
 import TEAM from '../api/team.json'
 import BREAKS from '../api/breaks.json'
 
-import {speakers as SPEAKERS, talks as TALKS} from "../api/conferenceHall";
+import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/conferenceHall";
+import PLANNING from '../api/planning';
 
 const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], []);
+
+function addPlanningToTalks(TALKS) {
+  const planningByTalkId = {};
+  PLANNING.forEach(planning => planningByTalkId[planning.id] = planning);
+
+  return TALKS.map(talk => {
+    talk.rooms = planningByTalkId[talk.id].rooms;
+    talk.times = planningByTalkId[talk.id].times;
+    return talk
+  });
+}
 
 const createStore = () => {
   return new Vuex.Store({
@@ -14,29 +26,39 @@ const createStore = () => {
       team: [],
       talks: [],
       speakers: [],
-      breaks: []
+      breaks: [],
+      categories: [],
+      formats: []
     },
     getters: {
       speakers ({speakers}) {
         return speakers
       },
       getSpeakerForIds({speakers}) {
-        return ids => speakers.filter(({id}) => ids.includes(id))
+        return ids => speakers.filter(({uid}) => ids.includes(uid))
       },
       talks ({talks}) {
         return talks
       },
       breaks ({breaks}) {
         return breaks;
+      },
+      categories ({categories}) {
+        return categories;
+      },
+      formats ({formats}) {
+        return formats
       }
     },
     actions: {
       async nuxtServerInit ({ commit }, { app }) {
-        commit('SET_SPONSORS', SPONSORS)
-        commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name)))
-        commit('SET_TALKS', TALKS.filter(({backup}) => !backup)),
+        commit('SET_SPONSORS', SPONSORS),
+        commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name))),
+        commit('SET_TALKS', addPlanningToTalks(TALKS)),
         commit('SET_BREAKS', BREAKS),
-        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName)))
+        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName))),
+        commit('SET_CATEGORIES', categories),
+        commit('SET_FORMATS', formats)
       }
     },
     mutations: {
@@ -54,6 +76,12 @@ const createStore = () => {
       },
       SET_BREAKS (state, breaks) {
         state.breaks = breaks
+      },
+      SET_CATEGORIES (state, categories) {
+        state.categories = categories
+      },
+      SET_FORMATS (state, formats) {
+        state.formats = formats
       }
     }
   })

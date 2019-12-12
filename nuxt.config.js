@@ -1,6 +1,5 @@
 import SPONSORS from './api/sponsors.json'
-import SPEAKERS from './api/speakers.json'
-import TALKS from './api/talks.json'
+import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "./api/conferenceHall";
 
 const pkg = require('./package')
 const title = 'Touraine Tech 2020 - Conférence sur les nouvelles technologie du numérique'
@@ -111,9 +110,10 @@ module.exports = {
     routes: function () {
       return [
         ...SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`),
-        ...SPEAKERS.filter(({confirmed}) => confirmed).map(speaker => `/speaker/${speaker.name}`),
+        ...SPEAKERS.map(speaker => `/speaker/${speaker.displayName}`),
         ...TALKS.filter(({backup}) => !backup).map(talk => `/talk/${talk.id}`)
       ]
     }
   }
 }
+

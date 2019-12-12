@@ -60,7 +60,6 @@ export default {
       let speakers = this.$store.getters.speakers.filter(({ uid }) =>
         this.talk.speakers.includes(uid)
       );
-      console.log({speakers: this.$store.getters.speakers})
       return speakers;
     }
   },
