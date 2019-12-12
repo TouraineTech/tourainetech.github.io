@@ -80,7 +80,7 @@ export default {
             rooms: [
                 "Turing",
                 "Pascal",
-                "LoveLace",
+                "Lovelace",
                 "TD1 (premier étage)",
                 "TD2 (premier étage)"
             ]
