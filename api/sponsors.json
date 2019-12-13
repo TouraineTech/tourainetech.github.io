@@ -1,5 +1,13 @@
 [
   {
+    "name": "Microsoft",
+    "id": "microsoft",
+    "image": "logo-microsoft.png",
+    "link": "https://azure.microsoft.com/fr-fr/",
+    "type": "gold",
+    "desc": "Leader des plateformes et des services de productivité, Microsoft donne à chaque individu et chaque organisation les moyens de réaliser ses ambitions, dans un monde fondé sur le Cloud et la mobilité.<br/><br/>Grâce a des investissements en recherche et développement dans des domaines de pointe comme l’IA, le quantum computing ou la réalité mixte, Microsoft a su s’imposer comme un leader de l’innovation tout en ayant à coeur de former les développeurs à travers des initiatives comme l’école IA (https://simplon.co/ecoleia/). Le virage vers l’opensource engagé par Microsoft ces dernières années participe également à l’ouverture de l’entreprise auprès des développeurs. Il n’est plus rare de voir Microsoft mettre à disposition de la communauté des outils ou langages sous licence opensource à l’instar de Typescript, .Net Core ou VSCode. Sans oublier Linux dans lequel l’entreprise investie à la fois sur Azure et sur Windows avec WSL (Windows Subsystem for Linux).<br/><br/>Au cœur de l’écosystème numérique français depuis plus de 30 ans, Microsoft s’engage à soutenir les développeurs dans la réalisation de leurs projets et à les accompagner dans leur formation tout au long de leur carrière grâce à des initiatives comme Microsoft Learn aka.ms/learn"
+  },
+  {
     "name": "Code-Troopers",
     "id": "codetroopers",
     "image": "codetroopers.png",
@@ -13,14 +21,6 @@
     "image": "logo-polytech.png",
     "link": "https://polytech.univ-tours.fr/",
     "type": "partenaires",
-    "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
-  },
-  {
-    "name": "Polytech'Tours",
-    "id": "polytechtours",
-    "image": "logo-polytech.png",
-    "link": "https://polytech.univ-tours.fr/",
-    "type": "gold",
     "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
   },
   {
@@ -62,5 +62,13 @@
     "link": "https://www.acensi.fr/",
     "type": "silver",
     "desc": "Créé en 2003, le groupe ACENSI est spécialisé dans le conseil en systèmes d’information.<br/><br/>ACENSI accompagne ses clients dans leurs projets de transformation, depuis la définition des process et l’analyse des besoins jusqu’au développement et à la maintenance de leur système d’information.<br/><br/>ACENSI est présent en Région Centre depuis 2015 à travers deux sites situés à Orléans et à Tours, et en Région Niortaise depuis 2018.<br/><br/>Nos équipes interviennent particulièrement sur les projets liés :<br/>- Au métier : Support, Test/Recette, Pilote de Recette, AMOA, Business Analyst, Product Owner, Chef de Projet, Expert fonctionnel,<br/>- A la technique : Ingénieur d’études, Analyste, Lead Dev, Test Manager, Support MCO.<br/><br/>Historiquement, nous sommes présents auprès de l’ensemble des acteurs de l’Assurance et de la Protection Sociale (Assureurs et Bancassureurs, Mutuelles, Groupes de Protection Sociale, Courtiers, Editeurs).<br/><br/>Notre croissance nous amène aujourd’hui à développer l’industrie, la banque et le service. En participant à des événements tels que les Microsoft TechDays, la conférence Devoxx, TouraineTech, etc… ACENSI affirme son dynamisme dans les enjeux technologiques d’aujourd’hui (mobilité, virtualisation…).<br/><br/>Si vous êtes à la recherche d’une société qui vous inclura dans sa vie d’entreprise (Conférences, Salons, MeetUp, Soirées, Formations…) tout en vous proposant des projets en lien avec votre volonté d’évolution, rejoignez nos équipes ACENSI en Région !"
+  },
+  {
+    "name": "Polytech'Tours",
+    "id": "polytechtours",
+    "image": "logo-polytech.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "gold",
+    "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
   }
 ]
