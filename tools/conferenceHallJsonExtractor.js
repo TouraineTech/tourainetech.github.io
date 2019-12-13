@@ -25,6 +25,7 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
       "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
       "https://pbs.twimg.com/profile_images/966390108747456517/z_Oph3Yv_400x400.jpg")
     .replace(" (LostInBrittany)", "");
+    .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
     path.join(__dirname, '../api/conferenceHall.json'),
