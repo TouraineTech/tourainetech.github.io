@@ -21,10 +21,14 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
     .replace(
   "https://pbs.twimg.com/profile_images/959477038477389824/9pIYfLhL_normal.jpg",
   "https://pbs.twimg.com/profile_images/1201869350107566081/zcZed08W_400x400.jpg")
+    .replace(
+      "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+      "https://pbs.twimg.com/profile_images/966390108747456517/z_Oph3Yv_400x400.jpg")
+    .replace(" (LostInBrittany)", "");
     .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
-    path.join(__dirname, 'api/conferenceHall.json'),
+    path.join(__dirname, '../api/conferenceHall.json'),
     datas,
     readErr => {
       if (readErr) {
@@ -117,7 +121,7 @@ async function doWork() {
 
   if (createRawConferenceHallDataFile) {
     fs.writeFile(
-      path.join(__dirname, 'api/conferenceHallRawDatas.json'),
+      path.join(__dirname, '../api/conferenceHallRawDatas.json'),
       JSON.stringify(conferenceHallDatas, null, '  '),
       readErr => {
         if (readErr) {
