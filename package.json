@@ -12,8 +12,8 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "deploy": "gh-pages --dotfiles -d dist -b master",
-    "extract:all": "node conferenceHallJsonExtractor.js",
-    "extract:preBuildPlanning": "node prePlanningBuilder.js"
+    "extract:all": "node tools/conferenceHallJsonExtractor.js",
+    "extract:preBuildPlanning": "node tools/prePlanningBuilder.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
