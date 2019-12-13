@@ -9,8 +9,8 @@
       "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
-        "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
+        "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
+        "kfhDyJchjlSYR5Z8c8gVRBNUaCE3"
       ],
       "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
       "createTimestamp": {
@@ -564,15 +564,6 @@
       "github": "davinkevin"
     },
     {
-      "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
-      "displayName": "Jordan Nourry",
-      "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
-      "speakerReferences": "Speaker au Breizchamp 2019 sur les tests dans un environnement micro-services avec de l'architecture hexagonale selon Martin Fowler. (Live coding session)\nSpeaker à Devoxx France 2019 sur les tests e2e front avec Cypress (Hand on Lab de 3h30)\nBBL sur les tests e2e front à L'occitane en provence et enedis (2019)",
-      "company": "Shodo",
-      "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
-      "twitter": "@JkNourry"
-    },
-    {
       "uid": "sNc6usDmBJMSPh0Z66CwVaE9xkv2",
       "displayName": "Rodolphe BUNG",
       "bio": "Développeur fullstack expérimenté, j'ai travaillé sur plusieurs sites internet « grand public » et suis sensible aux problématiques de performance relatives à ce type de site.\n\nAdepte des méthodes agiles et certifié ScrumMaster, j'aime le partage de connaissances et suis partisan de l'amélioration continue.\n\nInitialement très orienté Java/Spring, je me passionne actuellement sur l'écosystème JavaScript (en particulier NodeJS, React) qui offre de nombreuses possibilités (développement front et back, application mobile native ou desktop, etc.)",
@@ -580,6 +571,15 @@
       "photoURL": "https://lh3.googleusercontent.com/-ZvfH3jechuk/AAAAAAAAAAI/AAAAAAAAAgs/_1wfzQmwb8o/photo.jpg",
       "twitter": "@rodbung",
       "github": "rbung"
+    },
+    {
+      "uid": "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
+      "displayName": "Jordan Nourry",
+      "bio": "Développeur senior chez Shodo, j'accompagne aujourd'hui Thalès Digital Factory dans la construction de leur plateforme Cloud permettant de déploiement des projets dans le monde entier de manière rapide, hautement securisé, scalable et résiliente.\n\nEn tant que craftsman, je redistribue depuis plusieurs années les connaissances acquises à travers mes expériences via des articles, BBLs, conférences et meetups.",
+      "speakerReferences": "Speaker au Breizchamp 2019 sur les tests dans un environnement micro-services avec de l'architecture hexagonale selon Martin Fowler. (Live coding session)\nSpeaker à Devoxx France 2019 sur les tests e2e front avec Cypress (Hand on Lab de 3h30)\nBBL sur les tests e2e front à L'occitane en provence et enedis (2019)",
+      "company": "Shodo",
+      "photoURL": "https://lh3.googleusercontent.com/-1QM8Xd96QWI/AAAAAAAAAAI/AAAAAAAAAAA/AGDgw-jYAoPKbXBT8i9ntLzNqAiVSd7WFw/mo/photo.jpg",
+      "twitter": "@JkNourry"
     },
     {
       "uid": "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
@@ -601,8 +601,8 @@
     {
       "uid": "DOf7nxshJKYoWia2QQX8cTkJtRL2",
       "displayName": "Igor Laborie",
-      "bio": "Développeur passionné depuis plus de 18 ans, expert dans les technos Java et Web. Je suis impliqué dans les rendez-vous techniques toulousains (Devfest Toulouse, GDG, JUG, Software Craftsmanship Toulouse).\nJ’apprécie la programmation fonctionnelle, et donc particulièrement je suis attiré par les nouveaux langages et frameworks qui vont dans cette direction. \n\nEt puis je sais dessiner une 🦄 en CSS.",
-      "speakerReferences": "Depuis de nombreuses années, je fais des présentations: JUG, GDG Toulouse, EclipseCon Toulouse, présentations internes ou chez les clients (BBL).\n\nDepuis 2016, j’ai profité de mon changement de société pour être plus présent dans les conférences : j’ai eu la chance d’être speaker à DevoxxFR (1 university, 2 Hands-on, 2 Tools in Action), Devfest Toulouse (x2), DevoxxBE (Tool in action), MiXiT x2, BreizhCamp, RivieraDev,  SunnyTech. \n\nJ’ai aussi eu régulièrement assuré des formations et coaché des MonkeyTechDays (un atelier technique sur une journée) on des _workshops_.\nJe suis habitué aux live-coding.\n\nJe suis aussi impliqué dans l'organisation du Devfest Toulouse depuis 2017.\n\nQuelques vidéos sur des thèmes variés :\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [🏋️‍♂️ Refactoring sans les `for` - Igor Laborie - Toulouse JUG 2019](https://www.youtube.com/watch?v=KjzA91jvjq4)\n* [Programmation fonctionnelle en JavaScript : 🦄 ou 💩 ? - Igor Laborie](https://www.youtube.com/watch?v=AHAFIe4CWHw&t=6s)\n* [Deep Dive Kotlin du Hello World au Bytecode (I. Laborie, E. Vinas) - Devoxx 2018](https://www.youtube.com/watch?v=cXNGhDiQgmo)\n* [CSS is Awesome ! (Igor Laborie) - Devfest Toulouse 2017](https://www.youtube.com/watch?v=fPObs60585w)\n\nVous pouvez retrouver certains de mes slides [ici](https://ilaborie.github.io/slides2/) ou [la](https://ilaborie.github.io/slides/)",
+      "bio": "Développeur passionné depuis le début du siècle - Java et Web.\n❤️ Kotlin, Rust, Scala, et CSS. \nEt puis je sais dessiner une 🦄 en CSS.",
+      "speakerReferences": "\nDepuis de nombreuses années, je fais des présentations: JUG, GDG Toulouse, EclipseCon Toulouse, présentations internes ou chez les clients (BBL).\nDepuis 2016  j’ai eu la chance d’être speaker à DevoxxFR (1 university, 2 Hands-on, 2 Tools in Action), Devfest Toulouse x2, DevoxxBE (Tool in action), MixIT x2, BreizhCamp, SunnyTech x2, RiveraDev, BreizhCamp, TourraineTech. \nJe suis habitué aux live-coding.\n\nJe suis aussi impliqué dans l'organisation du Devfest Toulouse depuis 2017.\n\nQuelques vidéos sur des thèmes variés :\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [🏋️‍♂️ Refactoring sans les `for` - Igor Laborie - Toulouse JUG 2019](https://www.youtube.com/watch?v=KjzA91jvjq4)\n* [Programmation fonctionnelle en JavaScript : 🦄 ou 💩 ? - Igor Laborie](https://www.youtube.com/watch?v=AHAFIe4CWHw&t=6s)\n* [Deep Dive Kotlin du Hello World au Bytecode (I. Laborie, E. Vinas) - Devoxx 2018](https://www.youtube.com/watch?v=cXNGhDiQgmo)\n* [CSS is Awesome ! (Igor Laborie) - Devfest Toulouse 2017](https://www.youtube.com/watch?v=fPObs60585w)\n\nVous pouvez retrouver certains de mes slides [ici](https://ilaborie.github.io/slides2/) ou [la](https://ilaborie.github.io/slides/)",
       "company": "MonkeyPatch",
       "photoURL": "https://lh5.googleusercontent.com/-kEdVtrC6Poc/AAAAAAAAAAI/AAAAAAAAAo0/9i_S-sPAc84/photo.jpg",
       "twitter": "@ilaborie",
@@ -614,7 +614,7 @@
       "bio": "Sr Tech Lead à la Société Générale, j'aime concevoir des logiciels à forte valeur métier en usant de techniques issues du Domain-Driven Design, le tout propulsé en Xtreme Programming dans la philosophie Kanban #NoEstimates. Membre de la fondation OWASP, j'évangélise sur les techniques de sécurité applicative afin d'éviter de se faire hacker bien comme il faut.",
       "speakerReferences": "En tant que speaker, j'ai participé à plusieurs conférences : DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx France, Devoxx Belgium, Codeurs en Seine, Mixit etc...\n\nLa liste de mes videos sur YouTube:\nhttps://www.youtube.com/playlist?list=PLuMbC-fWSyk3zf7o0idX1pXD4HSuTqCoY\n\n",
       "company": "Société Générale & OWASP fundation",
-      "photoURL": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+      "photoURL": "https://pbs.twimg.com/profile_images/966390108747456517/z_Oph3Yv_400x400.jpg",
       "twitter": "@JulienTopcu",
       "github": "julien-topcu"
     },
@@ -638,7 +638,7 @@
     },
     {
       "uid": "xRNeGxIeNcdAegOPlnYeBKFVX2o1",
-      "displayName": "Jordan Grenat",
+      "displayName": "Jordane Grenat",
       "bio": "Jordane est développeur chez Viseo et adore les découvertes et ce qui sort de l'ordinaire. Ce qui est souvent incompatible avec le pragmatisme technologique nécessaire sur les projets clients.\n\nIl assouvit alors sa passion à coup de projets perso jamais finis et en écumant les conférences en compagnie des autres développeurs férus de nouveautés. En vrac : Elm, F#, nouveau-framework-à-la-mode-JS, ...\n\nIl passe le reste de son temps libre à refuser les cookies sur les sites web qu'il consulte.",
       "speakerReferences": "J'ai donné des talks dans plusieurs conférences ces trois dernières années, dont voici quelques liens :\n\n-   BDX.io (FR) :  [https://www.youtube.com/watch?v=8xafl9VPiX8](https://www.youtube.com/watch?v=8xafl9VPiX8)\n-   Devfest Nantes (FR):  [https://www.youtube.com/watch?v=pjeXbKXSiVs](https://www.youtube.com/watch?v=pjeXbKXSiVs)\n-   Devoxx France (FR) :\n    -   [https://youtube.com/watch?v=pSHTe2xTGDc](https://youtube.com/watch?v=pSHTe2xTGDc)\n    -   [https://youtube.com/watch?v=J09wjZBzJGg](https://youtube.com/watch?v=J09wjZBzJGg)\n-   Devoxx Belgium (EN) :\n    -   [https://youtube.com/watch?v=Ofx6LFCYea0](https://youtube.com/watch?v=Ofx6LFCYea0)\n    -   [https://youtube.com/watch?v=dIABJZsvfWI](https://youtube.com/watch?v=dIABJZsvfWI)",
       "company": "Viseo",
@@ -881,32 +881,32 @@
   ],
   "categories": [
     {
-      "name": "Design, UI, UX",
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "name": "Design, UI, UX"
     },
     {
-      "name": "Front web, Mobile",
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "Front web, Mobile"
     },
     {
-      "name": "Backends, Cloud, Big Data",
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "name": "Backends, Cloud, Big Data"
     },
     {
       "name": "Jeux vidéos et hybrides",
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
-      "name": "Internet des objets"
+      "name": "Internet des objets",
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
-      "name": "Conception, architecture",
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "name": "Conception, architecture"
     },
     {
-      "name": "Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "Outillage, pratiques de développement"
     },
     {
       "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
@@ -916,8 +916,8 @@
   ],
   "formats": [
     {
-      "name": "Quickie (15min)",
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "name": "Quickie (15min)"
     },
     {
       "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
