@@ -42,11 +42,11 @@ export default {
         { name: "Sponsors", anchor: "#sponsors", mobile: true },
         { name: "Billetterie", anchor: "#register", mobile: false },
         { name: "Nos speakers", anchor: "#speakers", mobile: false },
+        { name: "Le programme", anchor: "#schedule", mobile: true },
         { name: "L'équipe", anchor: "#team", mobile: false },
         { name: "Les vidéos", anchor: "#video", mobile: false },
         //{name: 'Inscription', anchor: '#register', mobile: true},
         //{name: 'Talks', anchor: '#talks', mobile: true},
-        { name: "Le programme", anchor: "#schedule", mobile: true },
         //{ name: "L'actu", anchor: "#news", mobile: false }
       ]
     };

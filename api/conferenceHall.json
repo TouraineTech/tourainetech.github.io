@@ -168,8 +168,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "IxJJoBIKX0bIfQHni4zoN62YpH12",
-        "lKpZ3RoHJATLjiQyIcPV1xsJJ203"
+        "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
+        "IxJJoBIKX0bIfQHni4zoN62YpH12"
       ],
       "comments": "Re-bonjour !\n\nVoici une nouvelle conférence, sur laquelle Audrey et moi travaillons depuis un an. C‘est une conférence sur l’accessibilité un peu plus poussée que ce que l’on entend d’habitude. C’est une conférence hybride, dans laquelle on parlera dev ET design.\n\nOn serait vraiment absolument ravies de la donner pour la première fois pendant TNT, qui offre le cadre chaleureux et bienveillant qui nous met en confiance.\n\nVoilà, on croise les doigts !!\n\n",
       "language": "Français",
@@ -484,8 +484,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+        "JkWN4X6967cvBrV2x8vKf1QrHS93",
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
@@ -739,16 +739,6 @@
       "github": "louckousse"
     },
     {
-      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
-      "displayName": "Marie Guillaumet",
-      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
-      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
-      "company": "Access42",
-      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
-      "twitter": "@kReEsTaL",
-      "github": "kreestal"
-    },
-    {
       "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
       "displayName": "Audrey Maniez",
       "bio": "Audrey Maniez est experte accessibilité senior et co-gérante chez [Access42](https://access42.net/). Sa maîtrise poussée des différentes normes d’accessibilité numérique (WCAG 2.0 et 2.1, ATAG 2.0) lui permet d’accompagner de nombreux clients dans leur démarche d’accessibilité numérique, quelles que soient leurs problématiques. Co-rédactrice du RGAA 3 (Référentiel général d’accessibilité pour les administrations), Audrey travaille sur des référentiels et méthodes de tests destinées à adresser les spécificités des logiciels et des applications mobiles. Elle a conçu et rédigé certaines ressources du RGAA 3, notamment un guide dédié aux troubles DYS et au handicap mental. C’est également une formatrice chevronnée, et elle publie régulièrement des articles d’expertise technique sur [le blog d’Access42](https://access42.net/blog). Elle télétravaille depuis Carcassonne.",
@@ -757,6 +747,16 @@
       "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
       "twitter": "@audreyblabla",
       "github": "audreymaniez"
+    },
+    {
+      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
+      "displayName": "Marie Guillaumet",
+      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
+      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
+      "company": "Access42",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
+      "twitter": "@kReEsTaL",
+      "github": "kreestal"
     },
     {
       "uid": "U0h27oWjIEX6SyideyIpOoPXtYs2",
@@ -862,6 +862,14 @@
       "github": "paul-roye"
     },
     {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "company": "Elium",
+      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
+      "twitter": "@estelandry"
+    },
+    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
@@ -869,14 +877,6 @@
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
-    },
-    {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
     }
   ],
   "categories": [
@@ -893,8 +893,8 @@
       "name": "Backends, Cloud, Big Data"
     },
     {
-      "name": "Jeux vidéos et hybrides",
-      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
+      "name": "Jeux vidéos et hybrides"
     },
     {
       "name": "Internet des objets",
@@ -909,9 +909,9 @@
       "name": "Outillage, pratiques de développement"
     },
     {
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "name": "Alien",
-      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !"
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
     }
   ],
   "formats": [
