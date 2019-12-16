@@ -25,7 +25,6 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
       "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
       "https://pbs.twimg.com/profile_images/966390108747456517/z_Oph3Yv_400x400.jpg")
     .replace(" (LostInBrittany)", "");
-    .replace(" (LostInBrittany)", "");
 
   fs.writeFile(
     path.join(__dirname, '../api/conferenceHall.json'),
@@ -116,6 +115,25 @@ function getSpeakers(conferenceHallDatas, talks) {
   return speakers;
 }
 
+function doSomeCorrection(rawTalks, rawSpeakers) {
+  const talks = [...rawTalks];
+  const speakers = [...rawSpeakers];
+
+  talks.filter(({id}) => "C7diXezyH5e5CAZHCD8w" === id)[0].speakers.push("dcwy5r3Xy5P679SNm57j0Mmu34D2")
+  speakers.push({
+    "uid": "dcwy5r3Xy5P679SNm57j0Mmu34D2",
+    "displayName": "Ulrich VACHON",
+    "bio": "Développeur avec une bonne pratique de l'agilité, Ulrich a travaillé chez des éditeurs logiciels, des sociétés de services, mais aussi en tant que freelance. Ulrich a  endossé les rôles de développeurs, leader technique et Scrum Master, avec un intérêt grandissant pour les pratiques DEVOPS.\nActuellement, il participe au développement de Docker Desktop pour Mac et Windows chez Docker !",
+    "speakerReferences": "J'ai au l'occasion de présenter des tool in action, quicky et hands-on à Devoxx.\n\nPlus des talks internes.",
+    "company": "Docker",
+    "photoURL": "https://avatars1.githubusercontent.com/u/225652?v=4",
+    "twitter": "@ulrich",
+    "github": "ulrich"
+  });
+
+  return {talks, speakers};
+}
+
 async function doWork() {
   const conferenceHallDatas = await retrieveData(apiKey);
 
@@ -138,10 +156,12 @@ async function doWork() {
     formats
   } = conferenceHallDatas;
 
-  const {talks, acceptedTalks} = getTalks(conferenceHallDatas);
-  const speakers = getSpeakers(conferenceHallDatas, talks);
+  const {talks: rawTalks} = getTalks(conferenceHallDatas);
+  const rawSpeakers = getSpeakers(conferenceHallDatas, rawTalks);
 
-  writeConferenceHallDataFile(talks.concat(acceptedTalks), speakers, categories, formats);
+  const {talks, speakers} = doSomeCorrection(rawTalks, rawSpeakers);
+
+  writeConferenceHallDataFile(talks, speakers, categories, formats);
 
 }
 
