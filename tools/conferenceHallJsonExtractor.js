@@ -119,7 +119,9 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
   const talks = [...rawTalks];
   const speakers = [...rawSpeakers];
 
-  talks.filter(({id}) => "C7diXezyH5e5CAZHCD8w" === id)[0].speakers.push("dcwy5r3Xy5P679SNm57j0Mmu34D2")
+  talks.filter(({id}) => "C7diXezyH5e5CAZHCD8w" === id)[0].speakers.push("dcwy5r3Xy5P679SNm57j0Mmu34D2");
+  talks.filter(({id}) => "vZU5mTokXupZBLNjA8BB" === id)[0].speakers.push("lVp57FlvF1fKYwqk8yNinu3uFv93", "lVp57FlvF1fKYwqk8yNinu3uFv94");
+
   speakers.push({
     "uid": "dcwy5r3Xy5P679SNm57j0Mmu34D2",
     "displayName": "Ulrich VACHON",
@@ -129,6 +131,26 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
     "photoURL": "https://avatars1.githubusercontent.com/u/225652?v=4",
     "twitter": "@ulrich",
     "github": "ulrich"
+  },
+  {
+    "uid": "lVp57FlvF1fKYwqk8yNinu3uFv93",
+    "displayName": "Pierre GAULTIER",
+    "bio": "",
+    "speakerReferences": "",
+    "company": "SII",
+    "photoURL": "https://pbs.twimg.com/profile_images/1187753634328698886/cPYtsnor_400x400.jpg",
+    "twitter": "@P1erreGaultier",
+    "github": "https://github.com/P1erreGaultier"
+  },
+  {
+    "uid": "lVp57FlvF1fKYwqk8yNinu3uFv94",
+    "displayName": "Sullivan PINEAU",
+    "bio": "",
+    "speakerReferences": "",
+    "company": "SII",
+    "photoURL": "https://pbs.twimg.com/profile_images/923140867392786432/Is6gAmPL_400x400.jpg",
+    "twitter": "@Sullivan_Pineau",
+    "github": "https://github.com/PineauSullivan"
   });
 
   return {talks, speakers};
