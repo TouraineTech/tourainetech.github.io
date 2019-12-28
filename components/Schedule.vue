@@ -81,6 +81,7 @@ export default {
     },
     methods: {
         talkCellStyle({rooms, times}) {
+            times.sort();
             if(rooms === undefined){
                 return {
                     "display": "none"
@@ -89,8 +90,8 @@ export default {
             return {
                 "grid-column-start": rooms[0] + 1,
                 "grid-column-end": rooms[rooms.length - 1] + 2,
-                "grid-row-start": times[0] + 1,
-                "grid-row-end": times[times.length - 1] + 2,
+                "grid-row-start": times[0] + 2,
+                "grid-row-end": times[times.length - 1] + 3,
             }
         },
         talkCssClass({formats, categories, times}) {
