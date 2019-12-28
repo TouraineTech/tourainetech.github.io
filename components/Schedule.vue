@@ -56,34 +56,6 @@
 export default {
     data () {
         return {
-            times: [
-                "8:00",
-                "9:00",
-                "9:50",
-                "10:10",
-                "11:00",
-                "11:10",
-                "12:00",
-                "12:20",
-                "12:45",
-                "13:00",
-                "13:30",
-                "14:20",
-                "14:30",
-                "15:20",
-                "15:45",
-                "16:35",
-                "16:45",
-                "17:35",
-                "18:00",
-            ],
-            rooms: [
-                "Turing",
-                "Pascal",
-                "Lovelace",
-                "TD1 (premier étage)",
-                "TD2 (premier étage)"
-            ]
         }
     },
     computed: {
@@ -100,9 +72,16 @@ export default {
       breaks() {
         return this.$store.getters.breaks
       },
+      times() {
+        return this.$store.getters.times
+      },
+      rooms() {
+        return this.$store.getters.rooms
+      }
     },
     methods: {
         talkCellStyle({rooms, times}) {
+            times.sort();
             if(rooms === undefined){
                 return {
                     "display": "none"
@@ -111,8 +90,8 @@ export default {
             return {
                 "grid-column-start": rooms[0] + 1,
                 "grid-column-end": rooms[rooms.length - 1] + 2,
-                "grid-row-start": times[0] + 1,
-                "grid-row-end": times[times.length - 1] + 2,
+                "grid-row-start": times[0] + 2,
+                "grid-row-end": times[times.length - 1] + 3,
             }
         },
         talkCssClass({formats, categories, times}) {
@@ -365,8 +344,8 @@ $color-alien: #066420;
 .schedule-speaker-name:before {
   content: "\1F3A4 "
 }
-.schedule-talk-time2--cell p.schedule-room--duration-level,
-.schedule-talk-time18--cell p.schedule-room--duration-level {
+.schedule-talk-time1--cell p.schedule-room--duration-level,
+.schedule-talk-time19--cell p.schedule-room--duration-level {
   display: none;
 }
 </style>

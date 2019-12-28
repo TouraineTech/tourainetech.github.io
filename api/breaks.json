@@ -1,119 +1,148 @@
 [
-    {
-        "id": "welcome",
-        "name": "👋 Accueil et petit déjeuner",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            1
-        ]
-    },
-    {
-        "id": "ptitdej",
-        "name": "🥐 Suite du petit déjeuner (20 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            3
-        ]
-    },
-    {
-        "id": "am1",
-        "name": "☕ Pause café (10 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3
-        ],
-        "times": [
-            5
-        ]
-    },
-    {
-        "id": "dejeuner",
-        "name": "🍽 Pause déjeuner (jusqu'à 13h30, 20 min avant le premier Quickie)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            7
-        ]
-    },
-
-    {
-        "id": "dejeuner2",
-        "name": "🍽 fin de la pause déjeuner (30 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            10
-        ]
-    },
-    {
-        "id": "pm1",
-        "name": "☕ Pause café (10 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3
-        ],
-        "times": [
-            12
-        ]
-    },
-    {
-        "id": "pm2",
-        "name": "☕ Pause café (25 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            14
-        ]
-    },
-    {
-        "id": "gouter",
-        "name": "☕ Pause café (10 min)",
-        "format": "break",
-        "rooms": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "times": [
-            16
-        ]
-    }
+  {
+    "id": "welcome",
+    "name": "👋 Accueil et petit déjeuner",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      0
+    ]
+  },
+  {
+    "id": "ptitdej",
+    "name": "🥐 Suite du petit déjeuner (20 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      2
+    ]
+  },
+  {
+    "id": "am1",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      4
+    ]
+  },
+  {
+    "id": "dejeuner",
+    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 20 min avant le premier Quickie)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      6
+    ]
+  },
+  {
+    "id": "soSmall",
+    "name": "",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      8
+    ]
+  },
+  {
+    "id": "dejeuner2",
+    "name": "🍽 fin de la pause déjeuner (30 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      10
+    ]
+  },
+  {
+    "id": "pm1",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      12
+    ]
+  },
+  {
+    "id": "pm2",
+    "name": "☕ Pause café (25 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      14
+    ]
+  },
+  {
+    "id": "gouter",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      16
+    ]
+  },
+  {
+    "id": "soSmall2",
+    "name": "",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "times": [
+      18
+    ]
+  }
 ]
