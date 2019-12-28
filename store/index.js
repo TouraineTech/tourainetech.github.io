@@ -5,6 +5,8 @@ import BREAKS from '../api/breaks.json'
 
 import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/conferenceHall";
 import PLANNING from '../api/planning';
+import TIMES from '../api/times'
+import ROOMS from '../api/rooms'
 
 const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], []);
 
@@ -28,7 +30,9 @@ const createStore = () => {
       speakers: [],
       breaks: [],
       categories: [],
-      formats: []
+      formats: [],
+      times: [],
+      rooms: []
     },
     getters: {
       speakers ({speakers}) {
@@ -48,6 +52,12 @@ const createStore = () => {
       },
       formats ({formats}) {
         return formats
+      },
+      times ({times}) {
+        return times
+      },
+      rooms ({rooms}) {
+        return rooms
       }
     },
     actions: {
@@ -58,7 +68,9 @@ const createStore = () => {
         commit('SET_BREAKS', BREAKS),
         commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName))),
         commit('SET_CATEGORIES', categories),
-        commit('SET_FORMATS', formats)
+        commit('SET_FORMATS', formats),
+        commit('SET_TIMES', TIMES),
+        commit('SET_ROOMS', ROOMS)
       }
     },
     mutations: {
@@ -82,6 +94,12 @@ const createStore = () => {
       },
       SET_FORMATS (state, formats) {
         state.formats = formats
+      },
+      SET_TIMES (state, times) {
+        state.times = times
+      },
+      SET_ROOMS (state, rooms) {
+        state.rooms = rooms
       }
     }
   })

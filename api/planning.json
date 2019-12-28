@@ -15,7 +15,7 @@
     "id": "vZU5mTokXupZBLNjA8BB",
     "title": "« Ça part en prod ! » Testez la résilience de votre appli par le chaos.",
     "rooms": [4],
-    "times": [11,12,13]
+    "times": [12,13,14]
   },
   {
     "id": "pAMZmFT2wrfqPr9IdeXv",
@@ -87,108 +87,108 @@
     "id": "vzGargOlA8voJIxO4BLz",
     "title": "Pair Design : Un moyen de concevoir à deux ou plus",
     "rooms": [1],
-    "times": [9]
+    "times": [10]
   },
   {
     "id": "yUtgGDeJyLq57mK86q9g",
     "title": "Postgresql + json : bye bye JPA et passe le bonjour à mongo",
     "rooms": [2],
-    "times": [9]
+    "times": [10]
   },
   {
     "id": "H6hSWT3gMPPhoV2bPY5k",
     "title": "Secretary Vs Dev : retour d expérience d'une assistante administrative dans un dev studio",
     "rooms": [3],
-    "times": [9]
+    "times": [10]
   },
   {
     "id": "41fdl7fni2rFn601lpxx",
     "title": "Améliorez votre façon de taper du code au quotidien",
     "rooms": [4],
-    "times": [9]
+    "times": [10]
   },
   {
     "id": "vBXehLE9i3ShOGZBeNUQ",
     "title": "L'Esport à un sport comme les autres ",
     "rooms": [5],
-    "times": [9]
+    "times": [10]
   },
   {
     "id": "7vchsRqdvPawjft0FOd8",
     "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
     "rooms": [1],
-    "times": [11]
+    "times": [12]
   },
   {
     "id": "VhehXV2aodPu46LuhxbF",
     "title": "⏰ CSS Clockwork",
     "rooms": [2],
-    "times": [11]
+    "times": [12]
   },
   {
     "id": "fW4yvmVxjXb57vQJhIXu",
     "title": "Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur",
     "rooms": [3],
-    "times": [11]
+    "times": [12]
   },
   {
     "id": "P39ti4I6J5PN4nn3oNll",
     "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
     "rooms": [1],
-    "times": [13]
+    "times": [14]
   },
   {
     "id": "XvpmnMltEJ6PNv0LBf4e",
     "title": "Comment se faire hacker bien comme il faut!",
     "rooms": [2],
-    "times": [13]
+    "times": [14]
   },
   {
     "id": "HDbur1UG6PNYC48rcBZ0",
     "title": "Gophers le retour",
     "rooms": [3],
-    "times": [13]
+    "times": [14]
   },
   {
     "id": "C7diXezyH5e5CAZHCD8w",
     "title": "Dockerfile - les bonnes pratiques",
     "rooms": [1],
-    "times": [15]
+    "times": [16]
   },
   {
     "id": "1jiAsaKrbfhsEewsXaSH",
     "title": "Cypress, l’outil qui va vous faire aimer les tests End-to-End !",
     "rooms": [2],
-    "times": [15]
+    "times": [16]
   },
   {
     "id": "WrRpxCNMyaKVCc6aHsPa",
     "title": "Gardez un oeil sur vos métriques avec Prometheus et Grafana",
     "rooms": [3],
-    "times": [15]
+    "times": [16]
   },
   {
     "id": "jc3PNZWvUSCjAS2vqdLA",
     "title": "Vous livrez encore des bugs en prod ?! 😱",
     "rooms": [1],
-    "times": [17]
+    "times": [18]
   },
   {
     "id": "3QQqWeUo8kj2R6AlzJIP",
     "title": "Trucs et astuces pour consommer une API REST",
     "rooms": [2],
-    "times": [17]
+    "times": [18]
   },
   {
     "id": "m8pvkEKdZYVIxBQL3v4z",
     "title": "Notif qui saoule n'amasse pas foule ...",
     "rooms": [3],
-    "times": [17]
+    "times": [18]
   },
   {
     "id": "keynoteCloture",
     "title": "Keynote de clôture",
     "rooms": [1,2,3],
-    "times": [18]
+    "times": [20]
   }
 ]

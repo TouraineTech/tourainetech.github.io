@@ -56,34 +56,6 @@
 export default {
     data () {
         return {
-            times: [
-                "8:00",
-                "9:00",
-                "9:50",
-                "10:10",
-                "11:00",
-                "11:10",
-                "12:00",
-                "12:20",
-                "12:45",
-                "13:00",
-                "13:30",
-                "14:20",
-                "14:30",
-                "15:20",
-                "15:45",
-                "16:35",
-                "16:45",
-                "17:35",
-                "18:00",
-            ],
-            rooms: [
-                "Turing",
-                "Pascal",
-                "Lovelace",
-                "TD1 (premier étage)",
-                "TD2 (premier étage)"
-            ]
         }
     },
     computed: {
@@ -100,6 +72,12 @@ export default {
       breaks() {
         return this.$store.getters.breaks
       },
+      times() {
+        return this.$store.getters.times
+      },
+      rooms() {
+        return this.$store.getters.rooms
+      }
     },
     methods: {
         talkCellStyle({rooms, times}) {
