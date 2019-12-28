@@ -13,7 +13,8 @@
     "precommit": "npm run lint",
     "deploy": "gh-pages --dotfiles -d dist -b master",
     "extract:all": "node tools/conferenceHallJsonExtractor.js",
-    "extract:preBuildPlanning": "node tools/prePlanningBuilder.js"
+    "extract:preBuildPlanning": "node tools/prePlanningBuilder.js",
+    "extract:timerDatas": "node tools/timerJsonBuilder.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
