@@ -103,13 +103,13 @@ async function doWork() {
 
   const turingData = allSlots
     .filter(({rooms}) => rooms.includes(1))
-    .map(({times: [thisTime], rooms, ...rest}) => { return {time: times[thisTime], ...rest};});
+    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
   const pascalData = allSlots
     .filter(({rooms}) => rooms.includes(2))
-    .map(({times: [thisTime], rooms, ...rest}) => { return {time: times[thisTime], ...rest};});
+    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
   const lovelaceData = allSlots
     .filter(({rooms}) => rooms.includes(2))
-    .map(({times: [thisTime], rooms, ...rest}) => { return {time: times[thisTime], ...rest};});
+    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
 
   const output = {
     [turing]: turingData,
