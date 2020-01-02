@@ -16,7 +16,7 @@
           <div class="PriceBloc-quota">places limités</div>
         </a>
         <a
-          class="PriceBloc PriceBloc--bigger"
+          class="PriceBloc PriceBloc--soldOut"
           target="_blank"
           href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
         >
