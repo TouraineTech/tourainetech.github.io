@@ -81,7 +81,7 @@ export default {
     },
     methods: {
         talkCellStyle({rooms, times}) {
-            times.sort();
+            // times.sort(); cause js issue with https or proxy
             if(rooms === undefined){
                 return {
                     "display": "none"
