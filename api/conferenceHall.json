@@ -169,8 +169,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "IxJJoBIKX0bIfQHni4zoN62YpH12",
-        "lKpZ3RoHJATLjiQyIcPV1xsJJ203"
+        "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
+        "IxJJoBIKX0bIfQHni4zoN62YpH12"
       ],
       "comments": "Re-bonjour !\n\nVoici une nouvelle conférence, sur laquelle Audrey et moi travaillons depuis un an. C‘est une conférence sur l’accessibilité un peu plus poussée que ce que l’on entend d’habitude. C’est une conférence hybride, dans laquelle on parlera dev ET design.\n\nOn serait vraiment absolument ravies de la donner pour la première fois pendant TNT, qui offre le cadre chaleureux et bienveillant qui nous met en confiance.\n\nVoilà, on croise les doigts !!\n\n",
       "language": "Français",
@@ -441,15 +441,15 @@
     },
     {
       "id": "vBXehLE9i3ShOGZBeNUQ",
-      "title": "L'Esport, un sport comme les autres ",
+      "title": "L'Esport à un sport comme les autres ",
       "state": "confirmed",
       "level": "beginner",
       "abstract": "Rare sont les devs qui n’ont jamais joué aux jeux-vidéo.\nRare sont les joueurs qui deviennent professionnels.\nCertains ont des fans à travers le monde entier, remplissent aujourd'hui des stades et gagnent des sommes astronomiques.\n\nPourtant les joueurs ont toujours la réputation d'être des ados enfermés dans leur chambre.\n\nOù en est-on réellement aujourd'hui ? \nDopage, marketing, professionnalisation, faisons le parallèle avec le monde du sport.\n\nQue vous soyez gamer ou non, venez découvrir ce nouvel écosystème !\n",
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "qVuC10841Ecu0FB0eIHE0uqtwup2",
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+        "qVuC10841Ecu0FB0eIHE0uqtwup2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -487,8 +487,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+        "JkWN4X6967cvBrV2x8vKf1QrHS93",
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
@@ -559,7 +559,7 @@
     {
       "uid": "rDKV0gUOk0O4WU9tpknPAngMF9A3",
       "displayName": "Kevin Davin",
-      "bio": "Google Developer Expert on Google Cloud, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation. \n\nJava, Kotlin, TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the Continuous Integration of Gitlab 🚀. \n\nAddict of agility and devops, some of my work was to help teams to follow those philosophies. From the analysis of the code quality (with code-review or static analysis tool) to the setup of unit or end-to-end tests and ending by the continuous deployment of the application directly on the Google Cloud platform. \n\nMy mantra is to go to production as soon as possible! In my activity in Stack Labs and also in my personal time, I contribute on open source projects (Spring boot, Spring Security, Angular, Protractor, Jest schematics for Angular, NgxOpenlayers, Istio...). . \n\nI'm currently CTO (and one of the founder) of Stack Labs, a company specialized in architecture and development of cloud solutions. I supervise about twenty passionate and talented developers in their missions and during our internal events",
+      "bio": "Google Developer Expert on Google Cloud, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation. \nJava, Kotlin, TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the GitLab's Continuous Integration 🚀. \n\nAddict of agility and DevOps, some of my missions were to help teams to follow those philosophies. \nFrom code quality analysis to unit or end-to-end tests setup all the way to continuous deployment and operation, I try to follow a project from birth to production. \n\nMy mantra is to go to production as soon as possible! During my personal and professional time in Stack Labs, I contribute to open source projects (Spring boot, Spring Security, Angular, Protractor, Jest schematics for Angular, NgxOpenlayers, Istio...).\nI'm currently CTO (and co-founder) of Stack Labs, a company specialized in architecture and development of cloud solutions. I supervise about twenty passionate and talented developers in their missions and during our internal events.",
       "speakerReferences": "* Una-GitLab\n  * [GDG Toulouse Sept 2018](https://www.youtube.com/watch?v=67V3QNI0TF4&t=3s)\n  * SnowCamp 2019\n  * Sunny Tech 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Una-GitLab, le TP à roulette\n  * SnowCamp 2019\n  * Touraine Tech 2019\n  * DevFest Paris 2019\n  * Mixit 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Istio, le meilleur ami de votre cluster K8S\n  * Snowcamp 2019\n  * Tourainne Tech 2019\n  * [BreizhCamp 2019](https://www.youtube.com/watch?v=80jo1ftgHVM)\n  * [Paris Container Day 2019](https://www.youtube.com/watch?v=oHgzSTJi2Uo)\n  * [VoxxedDays Luxembourg 2019](https://www.youtube.com/watch?v=wG_oljge1Xc)\n  * [BDX.io 2019](https://www.youtube.com/watch?v=_AvgNihwlWU)\n* Docker, Kubernetes & Istio:  Tips, tricks & tools\n  * [Devoxx Fr 2019](https://www.youtube.com/watch?v=jkbHEMaYsB0)\n  * RivieraDev 2019\n  * [Sunny Tech 2019](https://www.youtube.com/watch?v=GHZqlTDvRic)\n  * [DevFest Nantes 2019](https://www.youtube.com/watch?v=XnEdh9bwDXk)\n  * DevFest Strasbourg 2019",
       "company": "Stack Labs",
       "photoURL": "https://lh5.googleusercontent.com/-t2c2Q9TjKnA/AAAAAAAAAAI/AAAAAAAAFZU/G4vUXziejAw/photo.jpg",
@@ -605,7 +605,7 @@
       "uid": "DOf7nxshJKYoWia2QQX8cTkJtRL2",
       "displayName": "Igor Laborie",
       "bio": "Développeur passionné depuis le début du siècle - Java et Web.\n❤️ Kotlin, Rust, Scala, et CSS. \nEt puis je sais dessiner une 🦄 en CSS.",
-      "speakerReferences": "\nDepuis de nombreuses années, je fais des présentations: JUG, GDG Toulouse, EclipseCon Toulouse, présentations internes ou chez les clients (BBL).\nDepuis 2016  j’ai eu la chance d’être speaker à DevoxxFR (1 university, 2 Hands-on, 2 Tools in Action), Devfest Toulouse x2, DevoxxBE (Tool in action), MixIT x2, BreizhCamp, SunnyTech x2, RiveraDev, BreizhCamp, TourraineTech. \nJe suis habitué aux live-coding.\n\nJe suis aussi impliqué dans l'organisation du Devfest Toulouse depuis 2017.\n\nQuelques vidéos sur des thèmes variés :\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [🏋️‍♂️ Refactoring sans les `for` - Igor Laborie - Toulouse JUG 2019](https://www.youtube.com/watch?v=KjzA91jvjq4)\n* [Programmation fonctionnelle en JavaScript : 🦄 ou 💩 ? - Igor Laborie](https://www.youtube.com/watch?v=AHAFIe4CWHw&t=6s)\n* [Deep Dive Kotlin du Hello World au Bytecode (I. Laborie, E. Vinas) - Devoxx 2018](https://www.youtube.com/watch?v=cXNGhDiQgmo)\n* [CSS is Awesome ! (Igor Laborie) - Devfest Toulouse 2017](https://www.youtube.com/watch?v=fPObs60585w)\n\nVous pouvez retrouver certains de mes slides [ici](https://ilaborie.github.io/slides2/) ou [la](https://ilaborie.github.io/slides/)",
+      "speakerReferences": "Depuis de nombreuses années, je fais des présentations: JUG, GDG Toulouse, EclipseCon Toulouse, présentations internes ou chez les clients (BBL).\nDepuis 2016  j’ai eu la chance d’être speaker à DevoxxFR (1 university, 2 Hands-on, 2 Tools in Action), Devfest Toulouse x2, DevoxxBE (Tool in action), MixIT x2, BreizhCamp, SunnyTech x2, RiveraDev, BreizhCamp, TourraineTech. \nJe suis habitué aux live-coding.\n\nJe suis aussi impliqué dans l'organisation du Devfest Toulouse depuis 2017.\n\nQuelques vidéos sur des thèmes variés :\n\n* [⏰ CSS Clockwork - Igor Laborie - MiXiT 2019](https://vimeo.com/340078778)\n* [🏋️‍♂️ Refactoring sans les `for` - Igor Laborie - Toulouse JUG 2019](https://www.youtube.com/watch?v=KjzA91jvjq4)\n* [Programmation fonctionnelle en JavaScript : 🦄 ou 💩 ? - Igor Laborie](https://www.youtube.com/watch?v=AHAFIe4CWHw&t=6s)\n* [Deep Dive Kotlin du Hello World au Bytecode (I. Laborie, E. Vinas) - Devoxx 2018](https://www.youtube.com/watch?v=cXNGhDiQgmo)\n* [CSS is Awesome ! (Igor Laborie) - Devfest Toulouse 2017](https://www.youtube.com/watch?v=fPObs60585w)\n\nVous pouvez retrouver certains de mes slides [ici](https://ilaborie.github.io/slides2/) ou [la](https://ilaborie.github.io/slides/)",
       "company": "MonkeyPatch",
       "photoURL": "https://lh5.googleusercontent.com/-kEdVtrC6Poc/AAAAAAAAAAI/AAAAAAAAAo0/9i_S-sPAc84/photo.jpg",
       "twitter": "@ilaborie",
@@ -699,7 +699,7 @@
       "bio": "Intégrateur du Dimanche, dompteur de CSS et tripoteur de HTML, créateur de la communauté et de l'agence web Alsacreations.\nÉvangéliste international de la Knack d'or et du picon-bière, Ambassadeur du Lorem Ipsum alsacien, et accessoirement auteur de divers livres sur CSS.",
       "speakerReferences": "http://www.goetter.fr/conf/",
       "company": "Alsacreations",
-      "photoURL": "https://avatars2.githubusercontent.com/u/491029?v=4",
+      "photoURL": "https://avatars1.githubusercontent.com/u/491029?s=400&u=43cc6df4ef14309bd8a8c04b3207c0945840beae&v=4",
       "twitter": "@goetter",
       "github": "raphaelgoetter"
     },
@@ -717,7 +717,7 @@
       "uid": "M9fbPRwPVMUL2CDG64muamrcOqs2",
       "displayName": "Valentin Cocaud",
       "bio": "Consultant et formateur FullStack chez Zenika depuis 2 ans, Valentin est passionné par le développement depuis l’âge de 15 ans. Touche à tout, il est principalement intéressé par la programmation fonctionnelle, même là où l’on ne l’attend pas.\n\nIl travaille aujourd’hui principalement avec JavaScript et Go sur des applications web.",
-      "speakerReferences": " - 2018 - Les nouveautés de Scala 3 au Scala Nantes User Group #2\n - 2019 - Gophers le retour au GDG Lille",
+      "speakerReferences": " - 2018 - Les nouveautés de Scala 3 au Scala Nantes User Group #2\n - 2019 - Gophers le retour au GDG Lille\n - 2020 - Gophers le retour au Touraine Tech",
       "company": "Zenika",
       "photoURL": "https://lh3.googleusercontent.com/-wMpeHpz3unc/AAAAAAAAAAI/AAAAAAAAAIs/RBMsAGURyt4/photo.jpg",
       "twitter": "@ragorn44",
@@ -736,20 +736,11 @@
     {
       "uid": "qVuC10841Ecu0FB0eIHE0uqtwup2",
       "displayName": "Lucas Dupuy",
-      "bio": "Lucas développeur backend chez Zenika Nantes. Curieux et passionné, il aime spécialement les technologies liées à la Big Data. Social, il co-organise CNCF Nantes meetup.",
+      "bio": "Lucas développeur backend chez Zenika Nantes. Curieux et passionné, il aime spécialement les technologies liées à la Big Data. \nIl est habitué à parler pour un public notamment grace à son rôle de co-organisateur du CNCF Nantes Meetup.\nIl a l'expérience du podcast avec les Projets du Web autour de 2010 et [voyage au centre de la tech](https://soundcloud.com/voyageaucentredelatech) plus récemment. \nIl a aussi participé à plusieurs table ronde en public.\nEn somme, Lucas aime partager ce qu'il aime.",
+      "speakerReferences": "(https://soundcloud.com/voyageaucentredelatech)",
       "company": "Zenika",
       "photoURL": "https://lh6.googleusercontent.com/-FOdP9sEkajI/AAAAAAAAAAI/AAAAAAAAAAA/ABtNlbBxkcmD3mQE-SLbwoxyfnR88IMYYg/mo/photo.jpg",
       "github": "louckousse"
-    },
-    {
-      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
-      "displayName": "Marie Guillaumet",
-      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
-      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
-      "company": "Access42",
-      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
-      "twitter": "@kReEsTaL",
-      "github": "kreestal"
     },
     {
       "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
@@ -760,6 +751,16 @@
       "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
       "twitter": "@audreyblabla",
       "github": "audreymaniez"
+    },
+    {
+      "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
+      "displayName": "Marie Guillaumet",
+      "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
+      "speakerReferences": "- « [Comment rendre votre thème WordPress plus accessible ?](https://blend2019.access42.net/) », BlendWebMix 2019 (Lyon)\n- « [Typographie et accessibilité](https://www.youtube.com/watch?v=iWNIxGQtg2k&index=42&list=PLuZ_sYdawLiXyaSnyRinPKvPXQIsNaJFz&t=0s) », DevFest Nantes 2018\n- « [UX design pour les personnes DYS : pensez à l’accessibilité !](https://flupa2018.access42.net/#D1) », Flupa UX Days 2018\n- « [UX et accessibilité : BFF !](https://uxincognita.access42.net/) », BlendWebMix 2017\n- « [Design de soi : valoriser son identité et son expertise sur le web](https://marieguillaumet.com/design-de-soi-paris-web-2015/) », Paris Web 2015",
+      "company": "Access42",
+      "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
+      "twitter": "@kReEsTaL",
+      "github": "kreestal"
     },
     {
       "uid": "U0h27oWjIEX6SyideyIpOoPXtYs2",
@@ -774,8 +775,9 @@
     {
       "uid": "iXIL5MO7gUW8RFHEx4Q7qjxKI662",
       "displayName": "Thibault Pairis",
+      "bio": "Développeur avant d'être chef de projets. Expert en optimisation SQL et ceinture noire de debugging.<br/><br/>\nA ses heures perdues, auteur du livre [Gérez vos projets](https://www.editions-eni.fr/livre/gerez-vos-projets-les-cles-pour-reussir-etape-par-etape-9782409012389) publié chez ENI et co-auteur de recueils de nouvelles.<br/><br/>\nPartage ses méthodes de gestion de projet sur [Rocket Projet](https://www.rocketprojet.com/).",
       "company": "Modulo Management",
-      "photoURL": "https://lh6.googleusercontent.com/-IKBS76kA3lc/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcMXdwj0AC2E0mrG4gz3KfYUL6dOw/photo.jpg"
+      "photoURL": "https://www.modulo-management.com/wp-content/uploads/2020/01/thibault-pairis-2019-centered.jpg"
     },
     {
       "uid": "FjmEcWGtDNUqKmkd0Pwu24oL87G2",
@@ -821,7 +823,7 @@
       "uid": "EZdFes7RoSTGQJO5uOBCqSeyGvv2",
       "displayName": "François Teychene",
       "bio": "Cloud Developer @ Elastic, meetup addict & organizer @ Montpellier,  SunnyTech team.  \nDéveloppeur couteau suisse pouvant intervenir du Javascript à la table de routage. Mes passions actuelles sont le Rust, le DevOps et le Scala en plus de vouloir mettre des conteneurs partout.",
-      "speakerReferences": " - Au secours, ma prod est sous Docker ! - DevFest Toulouse 2016, Devoxx 2017, MixIt 2017, RivieraDev 2017  \n - Un PaaS en 20 min pour votre équipe - DevFest Nantes 2016   \n - Architecture migroservice - JugSummerCamp 2017, Codeurs en Seine 2018, SnowCamp 2019, DevFest Lille 2019, RivieraDev 2019\n - L'UX a sauvé mon DevOps - DevFestToulouse 2017, Devops DDay 2017, DevFest Nantes 2017, RivieraDev 2018, DevFest Lilles 2018 , Devops Rex 2018, DevFest BoutDuMonde 2019\n - SystemD, de /dev/null à root - DevFest Toulouse 2018\n - Mon premier service en Rust - BDX I/O 2018, Breizhcamp 2019, Devoxx 2019, Mix-IT 2019\n - Devops ? C'est comme Scrum mais avec Docker ... - Devoxx Maroc 2018",
+      "speakerReferences": " - Au secours, ma prod est sous Docker ! - DevFest Toulouse 2016, Devoxx 2017, MixIt 2017, RivieraDev 2017  \n - Un PaaS en 20 min pour votre équipe - DevFest Nantes 2016   \n - Architecture migroservice - JugSummerCamp 2017, Codeurs en Seine 2018, SnowCamp 2019, DevFest Lille 2019, RivieraDev 2019, BDX I/O 2019\n - L'UX a sauvé mon DevOps - DevFestToulouse 2017, Devops DDay 2017, DevFest Nantes 2017, RivieraDev 2018, DevFest Lilles 2018 , Devops Rex 2018, DevFest BoutDuMonde 2019\n - SystemD, de /dev/null à root - DevFest Toulouse 2018\n - Mon premier service en Rust - BDX I/O 2018, Touraine Tech 2019, Breizhcamp 2019, Devoxx 2019, Mix-IT 2019\n - Devops ? C'est comme Scrum mais avec Docker ... - Devoxx Maroc 2018\n - Le design de l'erreur - Devoxx Toulouse 2019, SnowCamp 2020, Touraine Tech 2020\n - Functional programming : l'architecture du choix - DevFest Bout du Monde 2020\n\nLes lien des vidéos peuvent etre trouvé sur ce site : https://www.fteychene.xyz/#references",
       "company": "Elastic",
       "photoURL": "https://lh6.googleusercontent.com/-RvGrfi4p_Uk/AAAAAAAAAAI/AAAAAAAABtE/iqj8zP9rc0U/photo.jpg",
       "twitter": "@fteychene",
@@ -831,7 +833,7 @@
       "uid": "PuG5s59DFfdNEToSJt5FfWNZZh03",
       "displayName": "Arthur Retrou",
       "bio": "Je suis Lead UX Designer à Lille dans l'agence Dernier Cri. Je supporte l’empathie et l'exigence au service de parcours utilisateurs intelligents quel qu'en soit la cible et le support.",
-      "speakerReferences": "2017 - Take Off (Lille, FR) - Conférence\n2018 - Take Off (Lille, FR) - Conférence\n2018 - BDX.IO (Bordeaux, FR) - Conférence : https://youtu.be/CI_9fCb-OtU\n2018 - BlendWebMix (Lyon, FR) - Table Ronde\n2019 - PodCamp (Toronto, CA) - Conférence\n2019 - Sudweb (Toulouse, FR) - Conférence\n2019 - Web2days (Nantes, FR) - Conférence : https://youtu.be/dWGTG2xBeAo\n2019 - BDX.IO (Bordeaux, FR) - Conférence",
+      "speakerReferences": "2017 - Take Off (Lille, FR) - Conférence\n2018 - Take Off (Lille, FR) - Conférence\n2018 - BDX.IO (Bordeaux, FR) - Conférence : https://youtu.be/CI_9fCb-OtU\n2018 - BlendWebMix (Lyon, FR) - Table Ronde\n2019 - PodCamp (Toronto, CA) - Conférence\n2019 - Sudweb (Toulouse, FR) - Conférence\n2019 - Web2days (Nantes, FR) - Conférence : https://youtu.be/dWGTG2xBeAo\n2019 - BDX.IO (Bordeaux, FR) - Conférence : https://youtu.be/bCqmOqRnOhQ\n2020 - TouraineTech (Tours, FR) - Conférence\n2020 - Webinale (Berlin, DE) - Conférence",
       "company": "Dernier Cri",
       "photoURL": "https://lh4.googleusercontent.com/-2tmNDDHazV8/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfvS1L8063oS5_YW68duQhAKYrqrg/mo/photo.jpg",
       "twitter": "@TellYourMummy"
@@ -865,21 +867,22 @@
       "github": "paul-roye"
     },
     {
+      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "displayName": "Estelle Landry ☀️",
+      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
+      "speakerReferences": "J'ai réalisé plusieurs conférences depuis maintenant plus de 2 ans. J'aime beaucoup transmettre, partager mes connaissances. \n\nVous pouvez voir mes talks sur youtube : \nhttps://www.youtube.com/results?search_query=Estelle+landry\n\nVoici quelques exemples de conférences où j'ai pu me rendre pour parler d'UX et de design :\nRivieraDev 2018\nDevFestLille 2018\nDevFestToulouse 2018 \nDevops REX 2018\nDevfestNantes2018 \nDevoxx 2019\nBdx.io 2019\n...\n",
+      "company": "Elium",
+      "photoURL": "https://estellelandrydotcom.files.wordpress.com/2019/07/portrait.png?w=2048",
+      "twitter": "@estelandry"
+    },
+    {
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
-      "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design.",
+      "bio": "Tomber dans la soupe du design étant petite, je suis actuellement designer. Je parle avec autant de passion de typographie que de flow utilisateurs ! Issue du print et du branding, j’ai pris le choix de m’orienter vers le design d’interfaces à la fois en UI et en UX design, l'Agilité et le travail en équipe.",
       "speakerReferences": "* Meilleur Dev de France 2018\n* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n\n",
       "company": "TalanLabs",
       "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
       "twitter": "@cecilefreydf"
-    },
-    {
-      "uid": "JkWN4X6967cvBrV2x8vKf1QrHS93",
-      "displayName": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech et du MeetUp UX Flupa Montpellier, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.\n",
-      "company": "Elium",
-      "photoURL": "https://lh5.googleusercontent.com/-mTQKDL_hSJs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rejCmpCZV7Fyfv_MfcCiH2c3tSLaQ/mo/photo.jpg",
-      "twitter": "@estelandry"
     },
     {
       "uid": "dcwy5r3Xy5P679SNm57j0Mmu34D2",
@@ -918,43 +921,43 @@
       "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
-      "name": "Front web, Mobile"
+      "name": "Front web, Mobile",
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
     },
     {
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
-      "name": "Backends, Cloud, Big Data"
+      "name": "Backends, Cloud, Big Data",
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "name": "Jeux vidéos et hybrides"
     },
     {
-      "name": "Internet des objets",
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
+      "name": "Internet des objets"
     },
     {
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
-      "name": "Conception, architecture"
+      "name": "Conception, architecture",
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "name": "Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "Outillage, pratiques de développement"
     },
     {
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "name": "Alien",
-      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "description": "Vous ne trouvez pas la catégorie qui va bien, soumettez votre talk ici !"
     }
   ],
   "formats": [
     {
-      "name": "Quickie (15min)",
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "name": "Quickie (15min)"
     },
     {
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "name": "Conférence (50min)"
+      "name": "Conférence (50min)",
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
       "name": "Hands-on (120 min)",
