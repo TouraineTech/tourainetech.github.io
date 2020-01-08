@@ -9,7 +9,7 @@
       >
     </div>
     <div class="description--container">
-      <p v-html="sponsor.desc"></p>
+      <p v-html="sponsor.desc"/>
       <div class="description--link">
         <a
           :href="sponsor.link"
@@ -17,7 +17,13 @@
         >Visiter leur site internet</a>
       </div>
     </div>
-
+    <div class="job-offer-bloc"
+       v-for="jobOffer in sponsor.jobOffers"
+      :key="jobOffer.id"
+    :id="jobOffer.id">
+      <h3>{{ jobOffer.title }}</h3>
+      <article v-html="jobOffer.desc"/>
+    </div>
   </div>
 </template>
 
@@ -125,6 +131,18 @@ div.description--container {
       border-radius: 0.5rem;
       width: auto;
     }
+  }
+}
+
+.job-offer-bloc {
+  background-color: lighten($color-secondary, 20%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  article {
+    text-align: justify;
   }
 }
 
