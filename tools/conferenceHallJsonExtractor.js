@@ -159,6 +159,9 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
     "Son aspect organisationnel et humain, sa gouvernance, ses contraintes business et d'opérabilité (SLA, SLO, SLI), son release management, ses méthodes de requêtage, sa sécurité (ses performances, sa mise à l'échelle), ses différents types de test, sa documentation, son versioning (compatibilité, changelog), son monitoring — et bien plus encore — de cette API une fois en production ?\n" +
     "Durant ce talk, c'est plus de 70 points d'attentions rarement évoqué que je vous propose d'aborder, à la lumière de retours d'expériences provenant de tech-leader comme Uber, Stripe, Facebook et Google mais aussi d'entreprise française de la petite startup à la PME.";
 
+  const esportTalk = talks.filter(({id}) => "vBXehLE9i3ShOGZBeNUQ" === id)[0];
+  esportTalk.title = "L'Esport, un sport comme les autres";
+
   return {talks, speakers};
 }
 
