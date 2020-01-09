@@ -153,6 +153,15 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
     "github": "https://github.com/PineauSullivan"
   });
 
+  const fgRibreauTalk = talks.filter(({id}) => "7vchsRqdvPawjft0FOd8" === id)[0];
+  fgRibreauTalk.title = "⛳ Votre API passe-t-elle les 70 points du contrôle technique ?\n";
+  fgRibreauTalk.abstract = "Nous savons tous développer une API mais avons-nous bien intégré toutes les problématiques?\n" +
+    "Son aspect organisationnel et humain, sa gouvernance, ses contraintes business et d'opérabilité (SLA, SLO, SLI), son release management, ses méthodes de requêtage, sa sécurité (ses performances, sa mise à l'échelle), ses différents types de test, sa documentation, son versioning (compatibilité, changelog), son monitoring — et bien plus encore — de cette API une fois en production ?\n" +
+    "Durant ce talk, c'est plus de 70 points d'attentions rarement évoqué que je vous propose d'aborder, à la lumière de retours d'expériences provenant de tech-leader comme Uber, Stripe, Facebook et Google mais aussi d'entreprise française de la petite startup à la PME.";
+
+  const esportTalk = talks.filter(({id}) => "vBXehLE9i3ShOGZBeNUQ" === id)[0];
+  esportTalk.title = "L'Esport, un sport comme les autres";
+
   return {talks, speakers};
 }
 

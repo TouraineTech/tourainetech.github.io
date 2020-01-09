@@ -27,8 +27,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "5c8efbbf-1640-5a9b-b42e-0c1180b82d02",
       "speakers": [
-        "rDKV0gUOk0O4WU9tpknPAngMF9A3",
-        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3"
+        "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
+        "rDKV0gUOk0O4WU9tpknPAngMF9A3"
       ],
       "comments": "Bonjour la team review 😉\n\nCe TP sera joué pour la première fois au SnowCamp 2020. \nNous allons tout mettre en place pour que les participants n'aient pas à sortir leur carte bleu 🤩.\n\n",
       "language": "Français",
@@ -73,10 +73,10 @@
     },
     {
       "id": "7vchsRqdvPawjft0FOd8",
-      "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
+      "title": "⛳ Votre API passe-t-elle les 70 points du contrôle technique ?\n",
       "state": "confirmed",
       "level": "intermediate",
-      "abstract": "En partant sur une architecture proche des micro-frontends pour la construction de la plateforme groupe chez Ouest-France nous avons anticipé plusieurs problèmes posé par ce modèle :\n- l'autonomie des équipes est virtuelle en pratique\n- pas de dépendances explicites entre composant\n- gestion du versioning par du code plutôt que de la configuration\n- pas d'assurance sur la résilience\n- pas d'assurance intrinsèque sur les performances\n- ... et d'autres points que nous verrons durant cette présentation\n\nNous verrons différentes solutions à ces problèmes basées sur 5 principes intemporels et fondamentaux en ingénierie logicielle et système (spoiler alert: SoC, SSoT, tout limiter dans l'espace et dans le temps, explicite > implicite, déclaratif > impératif) ainsi qu'un REX 2 ans plus tard.\n\n",
+      "abstract": "Nous savons tous développer une API mais avons-nous bien intégré toutes les problématiques?\nSon aspect organisationnel et humain, sa gouvernance, ses contraintes business et d'opérabilité (SLA, SLO, SLI), son release management, ses méthodes de requêtage, sa sécurité (ses performances, sa mise à l'échelle), ses différents types de test, sa documentation, son versioning (compatibilité, changelog), son monitoring — et bien plus encore — de cette API une fois en production ?\nDurant ce talk, c'est plus de 70 points d'attentions rarement évoqué que je vous propose d'aborder, à la lumière de retours d'expériences provenant de tech-leader comme Uber, Stripe, Facebook et Google mais aussi d'entreprise française de la petite startup à la PME.",
       "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
@@ -169,8 +169,8 @@
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
-        "IxJJoBIKX0bIfQHni4zoN62YpH12"
+        "IxJJoBIKX0bIfQHni4zoN62YpH12",
+        "lKpZ3RoHJATLjiQyIcPV1xsJJ203"
       ],
       "comments": "Re-bonjour !\n\nVoici une nouvelle conférence, sur laquelle Audrey et moi travaillons depuis un an. C‘est une conférence sur l’accessibilité un peu plus poussée que ce que l’on entend d’habitude. C’est une conférence hybride, dans laquelle on parlera dev ET design.\n\nOn serait vraiment absolument ravies de la donner pour la première fois pendant TNT, qui offre le cadre chaleureux et bienveillant qui nous met en confiance.\n\nVoilà, on croise les doigts !!\n\n",
       "language": "Français",
@@ -441,15 +441,15 @@
     },
     {
       "id": "vBXehLE9i3ShOGZBeNUQ",
-      "title": "L'Esport à un sport comme les autres ",
+      "title": "L'Esport, un sport comme les autres",
       "state": "confirmed",
       "level": "beginner",
       "abstract": "Rare sont les devs qui n’ont jamais joué aux jeux-vidéo.\nRare sont les joueurs qui deviennent professionnels.\nCertains ont des fans à travers le monde entier, remplissent aujourd'hui des stades et gagnent des sommes astronomiques.\n\nPourtant les joueurs ont toujours la réputation d'être des ados enfermés dans leur chambre.\n\nOù en est-on réellement aujourd'hui ? \nDopage, marketing, professionnalisation, faisons le parallèle avec le monde du sport.\n\nQue vous soyez gamer ou non, venez découvrir ce nouvel écosystème !\n",
       "categories": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
-        "qVuC10841Ecu0FB0eIHE0uqtwup2"
+        "qVuC10841Ecu0FB0eIHE0uqtwup2",
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
       ],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
@@ -743,16 +743,6 @@
       "github": "louckousse"
     },
     {
-      "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
-      "displayName": "Audrey Maniez",
-      "bio": "Audrey Maniez est experte accessibilité senior et co-gérante chez [Access42](https://access42.net/). Sa maîtrise poussée des différentes normes d’accessibilité numérique (WCAG 2.0 et 2.1, ATAG 2.0) lui permet d’accompagner de nombreux clients dans leur démarche d’accessibilité numérique, quelles que soient leurs problématiques. Co-rédactrice du RGAA 3 (Référentiel général d’accessibilité pour les administrations), Audrey travaille sur des référentiels et méthodes de tests destinées à adresser les spécificités des logiciels et des applications mobiles. Elle a conçu et rédigé certaines ressources du RGAA 3, notamment un guide dédié aux troubles DYS et au handicap mental. C’est également une formatrice chevronnée, et elle publie régulièrement des articles d’expertise technique sur [le blog d’Access42](https://access42.net/blog). Elle télétravaille depuis Carcassonne.",
-      "speakerReferences": "- « Les ressources du RGAA 3 », 24ème séminaire AccessiWeb (2017), en binôme avec Yann Olive d’Empreinte Digitale\n- Table ronde « Numérique, handicap et formation », Forum de la Gouvernance de l’Internet (2019).\n",
-      "company": "Access42",
-      "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
-      "twitter": "@audreyblabla",
-      "github": "audreymaniez"
-    },
-    {
       "uid": "IxJJoBIKX0bIfQHni4zoN62YpH12",
       "displayName": "Marie Guillaumet",
       "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en *full remote*. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
@@ -761,6 +751,16 @@
       "photoURL": "https://pbs.twimg.com/profile_images/1193220065619070976/kY7G0fQR_400x400.jpg",
       "twitter": "@kReEsTaL",
       "github": "kreestal"
+    },
+    {
+      "uid": "lKpZ3RoHJATLjiQyIcPV1xsJJ203",
+      "displayName": "Audrey Maniez",
+      "bio": "Audrey Maniez est experte accessibilité senior et co-gérante chez [Access42](https://access42.net/). Sa maîtrise poussée des différentes normes d’accessibilité numérique (WCAG 2.0 et 2.1, ATAG 2.0) lui permet d’accompagner de nombreux clients dans leur démarche d’accessibilité numérique, quelles que soient leurs problématiques. Co-rédactrice du RGAA 3 (Référentiel général d’accessibilité pour les administrations), Audrey travaille sur des référentiels et méthodes de tests destinées à adresser les spécificités des logiciels et des applications mobiles. Elle a conçu et rédigé certaines ressources du RGAA 3, notamment un guide dédié aux troubles DYS et au handicap mental. C’est également une formatrice chevronnée, et elle publie régulièrement des articles d’expertise technique sur [le blog d’Access42](https://access42.net/blog). Elle télétravaille depuis Carcassonne.",
+      "speakerReferences": "- « Les ressources du RGAA 3 », 24ème séminaire AccessiWeb (2017), en binôme avec Yann Olive d’Empreinte Digitale\n- Table ronde « Numérique, handicap et formation », Forum de la Gouvernance de l’Internet (2019).\n",
+      "company": "Access42",
+      "photoURL": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
+      "twitter": "@audreyblabla",
+      "github": "audreymaniez"
     },
     {
       "uid": "U0h27oWjIEX6SyideyIpOoPXtYs2",
@@ -921,28 +921,28 @@
       "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "name": "Front web, Mobile",
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "Front web, Mobile"
     },
     {
-      "name": "Backends, Cloud, Big Data",
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
+      "name": "Backends, Cloud, Big Data"
     },
     {
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
       "name": "Jeux vidéos et hybrides"
     },
     {
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
-      "name": "Internet des objets"
+      "name": "Internet des objets",
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
       "name": "Conception, architecture",
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "name": "Outillage, pratiques de développement"
+      "name": "Outillage, pratiques de développement",
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
       "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
@@ -952,8 +952,8 @@
   ],
   "formats": [
     {
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "name": "Quickie (15min)"
+      "name": "Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
       "name": "Conférence (50min)",
