@@ -68,6 +68,14 @@ function writeTimerDataFiles(slots, filename) {
     });
 }
 
+function getRoomData(allSlots, roomIndex) {
+  return allSlots
+    .filter(({rooms}) => rooms.includes(roomIndex))
+    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => {
+      return {time: times[thisTime], talk: {speakers, ...rest}};
+    });
+}
+
 async function doWork() {
 
   const {
@@ -85,36 +93,32 @@ async function doWork() {
     .map(({id, rooms, times}) => {
       const talk = talksById[id];
       times.sort();
-      const filteredRooms = rooms.filter(room => room < 4);
-      filteredRooms.sort();
-      return {...talk, rooms: filteredRooms, times};
+      rooms.sort();
+      return {...talk, rooms, times};
     })
     .filter(({rooms}) => rooms.length !== 0);
 
   const cleanedBreaks = breaks.map(({format, rooms, ...rest}) => {
-    const filteredRooms = rooms.filter(room => room < 4);
-    return {rooms: filteredRooms, ...rest}
+    return {rooms, ...rest}
   });
   const allSlots = [...completeTalks, ...cleanedBreaks];
 
   allSlots.sort(({times: [timeA], rooms: [roomA]}, {times: [timeB], rooms: [roomB]}) => (timeA - timeB) !== 0 ? (timeA - timeB) : (roomA - roomB));
 
-  const [turing, pascal, lovelace] = rooms;
+  const [turing, pascal, lovelace, td1, td2] = rooms;
 
-  const turingData = allSlots
-    .filter(({rooms}) => rooms.includes(1))
-    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
-  const pascalData = allSlots
-    .filter(({rooms}) => rooms.includes(2))
-    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
-  const lovelaceData = allSlots
-    .filter(({rooms}) => rooms.includes(2))
-    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => { return {time: times[thisTime], talk: {speakers, ...rest}};});
+  const turingData = getRoomData(allSlots, 1);
+  const pascalData = getRoomData(allSlots, 2);
+  const lovelaceData = getRoomData(allSlots, 3);
+  const td1Data = getRoomData(allSlots, 4);
+  const td2Data = getRoomData(allSlots, 5);
 
   const output = {
     [turing]: turingData,
     [pascal]: pascalData,
-    [lovelace]: lovelaceData
+    [lovelace]: lovelaceData,
+    [td1]: td1Data,
+    [td2]: td2Data
   };
 
   writeTimerDataFiles(output, "room_time_talks");
