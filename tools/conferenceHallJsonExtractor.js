@@ -162,6 +162,9 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
   const esportTalk = talks.filter(({id}) => "vBXehLE9i3ShOGZBeNUQ" === id)[0];
   esportTalk.title = "L'Esport, un sport comme les autres";
 
+  const handsonProd = talks.filter(({id}) => "vZU5mTokXupZBLNjA8BB" === id)[0];
+  handsonProd.abstract += "\n\nPrérequis pour notre hands-on, il faudrait avoir installé préalablement :<ul><li>un JDK 8</li><li>maven</li><li>docker for windows (sous windows) ou un cluster kubernetes local comme minikube (sous linux)</li>";
+
   return {talks, speakers};
 }
 
