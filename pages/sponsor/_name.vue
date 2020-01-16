@@ -17,7 +17,7 @@
         >Visiter leur site internet</a>
       </div>
     </div>
-    <div class="job-offer-bloc"
+    <div class="job-offer-bloc description--container"
        v-for="jobOffer in sponsor.jobOffers"
       :key="jobOffer.id"
     :id="jobOffer.id">
