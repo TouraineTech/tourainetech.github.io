@@ -8,6 +8,14 @@
     "desc": "Leader des plateformes et des services de productivité, Microsoft donne à chaque individu et chaque organisation les moyens de réaliser ses ambitions, dans un monde fondé sur le Cloud et la mobilité.<br/><br/>Grâce a des investissements en recherche et développement dans des domaines de pointe comme l’IA, le quantum computing ou la réalité mixte, Microsoft a su s’imposer comme un leader de l’innovation tout en ayant à coeur de former les développeurs à travers des initiatives comme l’école IA (https://simplon.co/ecoleia/). Le virage vers l’opensource engagé par Microsoft ces dernières années participe également à l’ouverture de l’entreprise auprès des développeurs. Il n’est plus rare de voir Microsoft mettre à disposition de la communauté des outils ou langages sous licence opensource à l’instar de Typescript, .Net Core ou VSCode. Sans oublier Linux dans lequel l’entreprise investie à la fois sur Azure et sur Windows avec WSL (Windows Subsystem for Linux).<br/><br/>Au cœur de l’écosystème numérique français depuis plus de 30 ans, Microsoft s’engage à soutenir les développeurs dans la réalisation de leurs projets et à les accompagner dans leur formation tout au long de leur carrière grâce à des initiatives comme Microsoft Learn aka.ms/learn"
   },
   {
+    "name": "Oracle France",
+    "id": "oracle",
+    "image": "logo-oracle.png",
+    "link": "https://www.oracle.com/",
+    "type": "bronze",
+    "desc": "Oracle Cloud propose une suite complète d’applications intégrées pour les ventes, les services, le marketing, les ressources humaines, la finance, la supply chain et le manufacturing, ainsi qu’une infrastructure de deuxième génération hautement automatisée et sécurisée qui inclut la base de données Oracle Autonomous.<br> Pour en savoir plus sur Oracle (NYSE:ORCL), visitez notre site oracle.com.<br> Oracle et Java sont des marques déposées d’Oracle Corporation et/ou de ses filiales. Les autres noms cités peuvent être des marques appartenant à leurs propriétaires respectifs."
+  },
+  {
     "name": "Code-Troopers",
     "id": "codetroopers",
     "image": "codetroopers.png",
