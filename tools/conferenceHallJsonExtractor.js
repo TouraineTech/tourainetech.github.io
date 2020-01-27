@@ -148,7 +148,7 @@ function doSomeCorrection(rawTalks, rawSpeakers) {
     "bio": "",
     "speakerReferences": "",
     "company": "SII",
-    "photoURL": "https://pbs.twimg.com/profile_images/923140867392786432/Is6gAmPL_400x400.jpg",
+    "photoURL": "https://pbs.twimg.com/profile_images/1217566689728049153/Pk40zxjA_400x400.jpg",
     "twitter": "@Sullivan_Pineau",
     "github": "https://github.com/PineauSullivan"
   });
