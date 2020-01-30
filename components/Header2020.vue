@@ -5,19 +5,19 @@
         <HeaderPhrase></HeaderPhrase>
       </div>
       <div class="Header-buttons">
-        <RegisterAttendeeButton></RegisterAttendeeButton>
+        <SeeScheduleButton></SeeScheduleButton>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import RegisterAttendeeButton from "~/components/header/buttons/RegisterAttendeeButton.vue";
+import SeeScheduleButton from "~/components/header/buttons/SeeScheduleButton.vue"
 import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
 
 export default {
   components: {
-    RegisterAttendeeButton,
+    SeeScheduleButton,
     HeaderPhrase
   },
   mounted() {}
