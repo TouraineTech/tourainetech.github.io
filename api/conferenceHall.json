@@ -49,6 +49,7 @@
         "PV4LOlB4jLRPDCCxXT6BBbsxNA93"
       ],
       "language": "French",
+      "slides": "https://docs.google.com/presentation/d/1AzGfICd2K6KtvYKqKXk_MdaKwKoMJVbyGhWy7-g0GFI",
       "createTimestamp": {
         "_seconds": 1573391439,
         "_nanoseconds": 592000000
@@ -295,6 +296,7 @@
       ],
       "comments": "Le but de ce talk est de faire découvrir aux gens, directement par le code, les erreurs les plus courantes décrite par le OWASP TOP10 2017 https://www.owasp.org/index.php/Top_10-2017_Top_10 - sans pour autant le mentionner dès le départ.\n\nJe développerai en live une application e-commerce, Java/JavaScript et à chaque itération je montrerai les erreurs que j'ai faites en les démontrant par des attaques. Puis je montrerai comment corriger les failles.\n\nJe suis membre de la fondation OWASP, que je représente en tant que speaker dans plusieurs conférences: DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx Belgium et Codeurs en Seine.",
       "language": "French",
+      "slides": "https://slides.com/julientopcu/comment-se-faire-hacker-bien-comme-il-faut#/14",
       "createTimestamp": {
         "_seconds": 1571656195,
         "_nanoseconds": 725000000
@@ -329,6 +331,7 @@
       "speakers": [
         "xKKBytTJTGMrchSRfanwMNSuYhS2"
       ],
+      "slides": "https://ncomet.github.io/oss-koson-2020/#/",
       "comments": "Hello la team 'NT, merci beaucoup pour votre temps ! Je suis déjà venu au TNT pour parler de génération de bytecode JVM en 2018.\n\nMerci et en espérant vous revoir bientôt !\nNicolas.",
       "language": "FR",
       "createTimestamp": {
@@ -433,6 +436,7 @@
       "speakers": [
         "LBXSNoYRKbWwvirzjnpHzMk03cM2"
       ],
+      "slides": "https://docs.google.com/presentation/d/e/2PACX-1vSwQNL8U42byR5xZClJ7NkQl7ClyzjDi3GiEEtevbuiKGEZofRfJzvcRccWk2SIlw1fNo-BIukBVscm/pub#slide=id.g6baba6d148_2_50",
       "language": "français",
       "createTimestamp": {
         "_seconds": 1574536510,
@@ -492,6 +496,7 @@
       ],
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
+      "slides": "https://docs.google.com/presentation/d/1qs-9SavH0zFciyTNn13IjOZjYkCka6M6EywPRrHyDqo/preview#slide=id.g35f391192_00",
       "createTimestamp": {
         "_seconds": 1574100424,
         "_nanoseconds": 973000000
