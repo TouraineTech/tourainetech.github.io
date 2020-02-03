@@ -102,6 +102,7 @@
       "speakers": [
         "pYuiGicpt0MenD8NEMhZXtk6VSr1"
       ],
+      "slidesLinks" : ["https://noti.st/lostinbrittany/0ssL7W/i-have-deployed-my-app-on-minikube-and-now-what"],
       "comments": "Hola!\n\nPunaise, les amis, j'ai vu Christophe vendredi dernier et il m'a rappelé que le CFT de TNT'20 était déjà ouvert ! Alors, avant d'oublier, je préfère vous envoyer déjà quelques propositions de talks qui me tient à coeur et que je adorerais aller vous montrer à Tours, après le talk sur les Web Components de l'année dernière.\n\nCelui-ci est un talk sur Kubernetes... mais pas le talk typique, car je cherche à aller plus loin que la plupart de talks que j'ai vu, vers la partie qui est souvent mise de côté : l'énorme écart entre avoir son archi sur un Minikube ou un petit Kubernetes monté à la main et lka même archi sur un Kubernetes de prod, bien sécurisé, dimensionné  et prêt pour les contraintes de prod. C'est un beau voyage, et j'adorerais le raconter à Tours cet hiver...  \n\nJ'ai fait le talk à Devoxx UK, et je vais bientôt le faire à Devoxx Belgique, mais je ne l'ai à peine fait tourner en France (qu'au JUG Summer Camp semaine dernière). ",
       "createTimestamp": {
         "_seconds": 1568637812,
