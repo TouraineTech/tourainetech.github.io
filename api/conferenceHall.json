@@ -301,7 +301,7 @@
       ],
       "comments": "Le but de ce talk est de faire découvrir aux gens, directement par le code, les erreurs les plus courantes décrite par le OWASP TOP10 2017 https://www.owasp.org/index.php/Top_10-2017_Top_10 - sans pour autant le mentionner dès le départ.\n\nJe développerai en live une application e-commerce, Java/JavaScript et à chaque itération je montrerai les erreurs que j'ai faites en les démontrant par des attaques. Puis je montrerai comment corriger les failles.\n\nJe suis membre de la fondation OWASP, que je représente en tant que speaker dans plusieurs conférences: DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx Belgium et Codeurs en Seine.",
       "language": "French",
-      "slidesLinks": ["https://slides.com/julientopcu/comment-se-faire-hacker-bien-comme-il-faut#/14"],
+      "slidesLinks": ["https://slides.com/julientopcu/comment-se-faire-hacker-bien-comme-il-faut"],
       "createTimestamp": {
         "_seconds": 1571656195,
         "_nanoseconds": 725000000
