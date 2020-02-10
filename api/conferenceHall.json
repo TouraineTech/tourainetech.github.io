@@ -85,6 +85,7 @@
       "speakers": [
         "HaMEPZSMBscJU4Adj9VF8brrL5h1"
       ],
+      "slidesLinks": ["https://www.slideshare.net/FGRibreau/votre-api-passetelle-le-contrle-technique"],
       "comments": "Pour résumé on pourrait dire que l'idée part de ce talk : https://www.slideshare.net/FGRibreau/une-plateforme-moderne-pour-le-groupe-sipaouestfrance mais 2 ans plus tard avec une approche bien plus centré sur les micro-frontends et le passage à l'échelle d'une organisation et de ces principes.\n\nLes key takeaways:\n- montrer ce que notre approche déclarative permet d'enforce et comment\n- comment on enforce la ré-utilisabilité des blocs\n- montrer comment on génère automatiquement les UI de backend\n- le mode de fonctionnement dégradé (circuit-breaker)\n- le mode de chargement partiellement asynchrone (déclaration statique des dépendances)\n- la documentation des blocks (via ses paramètres de configuration / nom / organisation)\n- garantir la cohérence de l'UX par un design system + équipe validation\n- gestion de la migration ancien-système/nouveau système (intégrée)\n- ...\n\nTalks passés/Vidéos/Slides: https://www.francois-guillaume-ribreau.com/cv/portfolios\n\n\n",
       "language": "French",
       "createTimestamp": {
