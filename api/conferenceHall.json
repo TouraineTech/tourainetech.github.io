@@ -12,6 +12,7 @@
         "kfhDyJchjlSYR5Z8c8gVRBNUaCE3",
         "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
       ],
+      "slidesLinks": ["https://slides.com/rodolphebung/cypress-touraine-tech#"],
       "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
       "createTimestamp": {
         "_seconds": 1575032504,
@@ -30,6 +31,7 @@
         "CxYwtJCDgEbs0sJ0OxkghkwUJ4G3",
         "rDKV0gUOk0O4WU9tpknPAngMF9A3"
       ],
+      "slidesLinks": ["https://docs.google.com/presentation/d/1IP3bFBwA_7N3HY0XCQL_AxvGo8gVa9z-DncsP0QuZcQ"],
       "comments": "Bonjour la team review 😉\n\nCe TP sera joué pour la première fois au SnowCamp 2020. \nNous allons tout mettre en place pour que les participants n'aient pas à sortir leur carte bleu 🤩.\n\n",
       "language": "Français",
       "createTimestamp": {
@@ -84,6 +86,7 @@
       "speakers": [
         "HaMEPZSMBscJU4Adj9VF8brrL5h1"
       ],
+      "slidesLinks": ["https://www.slideshare.net/FGRibreau/votre-api-passetelle-le-contrle-technique"],
       "comments": "Pour résumé on pourrait dire que l'idée part de ce talk : https://www.slideshare.net/FGRibreau/une-plateforme-moderne-pour-le-groupe-sipaouestfrance mais 2 ans plus tard avec une approche bien plus centré sur les micro-frontends et le passage à l'échelle d'une organisation et de ces principes.\n\nLes key takeaways:\n- montrer ce que notre approche déclarative permet d'enforce et comment\n- comment on enforce la ré-utilisabilité des blocs\n- montrer comment on génère automatiquement les UI de backend\n- le mode de fonctionnement dégradé (circuit-breaker)\n- le mode de chargement partiellement asynchrone (déclaration statique des dépendances)\n- la documentation des blocks (via ses paramètres de configuration / nom / organisation)\n- garantir la cohérence de l'UX par un design system + équipe validation\n- gestion de la migration ancien-système/nouveau système (intégrée)\n- ...\n\nTalks passés/Vidéos/Slides: https://www.francois-guillaume-ribreau.com/cv/portfolios\n\n\n",
       "language": "French",
       "createTimestamp": {
@@ -211,6 +214,7 @@
       "speakers": [
         "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
       ],
+      "slideLinks": ["https://speakerdeck.com/goetter/lepopee-des-polices-web-de-comic-sans-aux-variable-fonts"],
       "language": "français",
       "createTimestamp": {
         "_seconds": 1569491794,
@@ -228,6 +232,7 @@
       "speakers": [
         "U0h27oWjIEX6SyideyIpOoPXtYs2"
       ],
+      "slidesLinks" : ["https://fr.slideshare.net/JeanFrancoisJames/tnt-2020jfjames-227526479"],
       "comments": "Conférence déjà donnée à DevoXX Paris et Oracle San Francisco. En état d'amélioration continue pour coller à l'actualité technologique bien entendu.",
       "language": "Français (ou anglais à la demande)",
       "createTimestamp": {
@@ -264,6 +269,7 @@
       "speakers": [
         "iXIL5MO7gUW8RFHEx4Q7qjxKI662"
       ],
+      "slidesLinks": ["https://www.modulo-management.com/Optimiser-le-codeur-pour-optimiser-le-code.pdf"],
       "language": "French",
       "createTimestamp": {
         "_seconds": 1575127422,
@@ -281,6 +287,7 @@
       "speakers": [
         "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
       ],
+      "slidesLinks": ["https://drive.google.com/file/d/1m4rlNXI_SZ1YRxlaR-2Klwb-Vr8_e-qd/view"],
       "comments": "Merci pour cet événement et bon courage à toute l'équipe ! ",
       "language": "French",
       "createTimestamp": {
@@ -356,6 +363,7 @@
       "speakers": [
         "JLEDSTiwyJX5AxGAw1GZjv7X23a2"
       ],
+      "slidesLinks": ["https://www.slideshare.net/mathieupassenaud/calculateur-moteur"],
       "comments": "Conférence faite au devfest Toulouse \n\nhttps://youtu.be/1o5v8Ew9FjE",
       "createTimestamp": {
         "_seconds": 1571559814,
@@ -391,6 +399,7 @@
       "speakers": [
         "xRNeGxIeNcdAegOPlnYeBKFVX2o1"
       ],
+      "slidesLinks": ["https://slides.com/ereold/bug-free-by-design/#/"],
       "language": "Français",
       "createTimestamp": {
         "_seconds": 1574882940,
@@ -408,6 +417,7 @@
       "speakers": [
         "PuG5s59DFfdNEToSJt5FfWNZZh03"
       ],
+      "slidesLinks": ["https://derniercri.d.pr/i2S8lU"],
       "language": "France",
       "createTimestamp": {
         "_seconds": 1569853153,
@@ -462,6 +472,7 @@
         "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
         "qVuC10841Ecu0FB0eIHE0uqtwup2"
       ],
+      "slidesLinks": ["https://t.co/eBkudSP7v6"],
       "comments": "Nous avons tous les deux grandis dans un monde informatique depuis touts petits.\n\nOn a trouvé notre voie dans le développement mais d'autres de notre génération ont percé dans le monde des jeux-vidéo.\nFinalement, nous sommes tous derrière nos écrans à longueur de journée.\n\nLes générations précédentes se passionnaient de sport, nous sommes passionnés d'Esport, un domaine qui est aujourd'hui en explosion.\n\nMalgré l'engouement, ce monde reste encore mystérieux, et nous avons l'intention d'éclaircir vos zones d'ombres !",
       "language": "French",
       "createTimestamp": {
