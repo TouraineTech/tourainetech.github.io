@@ -62,7 +62,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '@/assets/scss/main.scss'
+    '@/assets/scss/main.scss',
+  //'@/assets/scss/print.scss',
   ],
 
   /*

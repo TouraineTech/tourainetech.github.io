@@ -1,0 +1,23 @@
+.schedule-talk--cell {
+    padding: 0.3rem !important;
+    font-size: 0.9rem;
+    background-color: transparent !important;
+    color: black !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 0.3rem !important;
+}
+
+.schedule-title, h5, .schedule-room--duration-level{
+    color: black !important;
+}
+
+nav, .container--fix h2, .container--fix h3, footer, .scrolltotop--container, .schedule-room--duration-level {
+    display: none !important;
+}
+
+#schedule, .page--schedule {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
