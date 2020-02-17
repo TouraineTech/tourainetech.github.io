@@ -31,14 +31,14 @@
             <h4 class="schedule-title">{{ talk.title }}</h4>
             <h5 v-if="talk.speakerNames" class="schedule-speaker-name"> {{ talk.speakerNames }}</h5>
           </nuxt-link>
-          <ul>
+          <ul class="schedule-talk-category">
             <li :class="['schedule-talk-'+talk.categories+'--category']">{{ talkName(talk.categories) }}</li>
           </ul>
           <p v-if="talk.peertubeLink || talk.dailymotionLink">
             <a :href="talk.peertubeLink" target="_blank"><img class="icon" src="../static/cinema.svg" alt="icon cinema"/></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon" src="../static/dailymotion.svg" alt="icon dailymotion"/></a>
           </p>
-          <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
+          <span class="schedule-talk-slidesLinks" v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
             <p
               v-for="slidesLink of talk.slidesLinks"
               :key="slidesLink"
@@ -219,11 +219,10 @@ $color-alien: #066420;
         }
     }
     ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-top: 0.5rem;
-        li {
+      padding: 0;
+      list-style: none;
+      margin: 0.5rem 0 3rem;
+      li {
             display: inline-block;
             font-size: 0.8em;
             padding-left: 0.5rem;
@@ -240,6 +239,13 @@ $color-alien: #066420;
         bottom: 5px;
         left: 5px;
         text-align: left;
+    }
+
+    .schedule-talk-slidesLinks {
+      position: absolute;
+      bottom: 2em;
+      left: 5px;
+      text-align: left;
     }
 
     p {
