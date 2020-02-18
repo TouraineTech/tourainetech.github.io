@@ -34,10 +34,11 @@
           <ul class="schedule-talk-category">
             <li :class="['schedule-talk-'+talk.categories+'--category']">{{ talkName(talk.categories) }}</li>
           </ul>
-          <p v-if="talk.peertubeLink || talk.dailymotionLink">
-            <a :href="talk.peertubeLink" target="_blank"><img class="icon" src="../static/cinema.svg" alt="icon cinema"/></a>
+          <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
+            <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img class="icon" src="../static/cinema.svg" alt="icon cinema"/></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon" src="../static/dailymotion.svg" alt="icon dailymotion"/></a>
-          </p>
+            <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img class="icon" src="../static/youtube.svg" alt="icon youtube"/></a>
+          </span>
           <span class="schedule-talk-slidesLinks" v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
             <p
               v-for="slidesLink of talk.slidesLinks"
@@ -246,6 +247,18 @@ $color-alien: #066420;
       bottom: 2em;
       left: 5px;
       text-align: left;
+    }
+
+    .schedule-talk-videoLinks {
+      position: absolute;
+      bottom: 2em;
+      left: 25px;
+      text-align: left;
+      .icon {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
     }
 
     p {

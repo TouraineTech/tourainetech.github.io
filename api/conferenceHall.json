@@ -13,6 +13,7 @@
         "sNc6usDmBJMSPh0Z66CwVaE9xkv2"
       ],
       "slidesLinks": ["https://slides.com/rodolphebung/cypress-touraine-tech#"],
+      "youtubeLink": "https://www.youtube.com/watch?v=ojqs5cHxCjw",
       "comments": "Nous avons une préférence pour la conférence, mais nous pouvons aussi faire un Hands-On sur le sujet. Nous avons fait le workshop à Devoxx et plus dernièrement à BDX.io. ",
       "createTimestamp": {
         "_seconds": 1575032504,
@@ -52,6 +53,7 @@
       ],
       "language": "French",
       "slidesLinks": ["https://docs.google.com/presentation/d/1AzGfICd2K6KtvYKqKXk_MdaKwKoMJVbyGhWy7-g0GFI"],
+      "youtubeLink": "https://www.youtube.com/watch?v=PRNe0xNCHa4",
       "createTimestamp": {
         "_seconds": 1573391439,
         "_nanoseconds": 592000000
@@ -87,6 +89,7 @@
         "HaMEPZSMBscJU4Adj9VF8brrL5h1"
       ],
       "slidesLinks": ["https://www.slideshare.net/FGRibreau/votre-api-passetelle-le-contrle-technique"],
+      "youtubeLink": "https://www.youtube.com/watch?v=FzJSkXHfF-I",
       "comments": "Pour résumé on pourrait dire que l'idée part de ce talk : https://www.slideshare.net/FGRibreau/une-plateforme-moderne-pour-le-groupe-sipaouestfrance mais 2 ans plus tard avec une approche bien plus centré sur les micro-frontends et le passage à l'échelle d'une organisation et de ces principes.\n\nLes key takeaways:\n- montrer ce que notre approche déclarative permet d'enforce et comment\n- comment on enforce la ré-utilisabilité des blocs\n- montrer comment on génère automatiquement les UI de backend\n- le mode de fonctionnement dégradé (circuit-breaker)\n- le mode de chargement partiellement asynchrone (déclaration statique des dépendances)\n- la documentation des blocks (via ses paramètres de configuration / nom / organisation)\n- garantir la cohérence de l'UX par un design system + équipe validation\n- gestion de la migration ancien-système/nouveau système (intégrée)\n- ...\n\nTalks passés/Vidéos/Slides: https://www.francois-guillaume-ribreau.com/cv/portfolios\n\n\n",
       "language": "French",
       "createTimestamp": {
@@ -106,6 +109,7 @@
         "pYuiGicpt0MenD8NEMhZXtk6VSr1"
       ],
       "slidesLinks" : ["https://noti.st/lostinbrittany/0ssL7W/i-have-deployed-my-app-on-minikube-and-now-what"],
+      "youtubeLink": "https://www.youtube.com/watch?v=c1wTjVYtV2s&list=PL1d9UGnF3u-sMQ9SOAhv0oqgdG_dXzkRC",
       "comments": "Hola!\n\nPunaise, les amis, j'ai vu Christophe vendredi dernier et il m'a rappelé que le CFT de TNT'20 était déjà ouvert ! Alors, avant d'oublier, je préfère vous envoyer déjà quelques propositions de talks qui me tient à coeur et que je adorerais aller vous montrer à Tours, après le talk sur les Web Components de l'année dernière.\n\nCelui-ci est un talk sur Kubernetes... mais pas le talk typique, car je cherche à aller plus loin que la plupart de talks que j'ai vu, vers la partie qui est souvent mise de côté : l'énorme écart entre avoir son archi sur un Minikube ou un petit Kubernetes monté à la main et lka même archi sur un Kubernetes de prod, bien sécurisé, dimensionné  et prêt pour les contraintes de prod. C'est un beau voyage, et j'adorerais le raconter à Tours cet hiver...  \n\nJ'ai fait le talk à Devoxx UK, et je vais bientôt le faire à Devoxx Belgique, mais je ne l'ai à peine fait tourner en France (qu'au JUG Summer Camp semaine dernière). ",
       "createTimestamp": {
         "_seconds": 1568637812,
@@ -124,6 +128,7 @@
         "rYhBI1cLEJSmHtzJfgyckwdJ0Il1",
         "dcwy5r3Xy5P679SNm57j0Mmu34D2"
       ],
+      "youtubeLink": "https://www.youtube.com/watch?v=zSqE6UQXnN0",
       "comments": "On a fait le talk avec Guillaume Lours a Devoxx BE et Codeurs en Seine.\nVoici le lien vers le repo avec un lien vers la video https://github.com/glours/dockerfile-best-practices",
       "language": "French",
       "createTimestamp": {
@@ -216,6 +221,7 @@
         "mFo8oYG8pcWQHjtq2UFVDZ5dvWB2"
       ],
       "slideLinks": ["https://speakerdeck.com/goetter/lepopee-des-polices-web-de-comic-sans-aux-variable-fonts"],
+      "youtubeLink": "https://www.youtube.com/watch?v=MXD8bbJBoeA",
       "language": "français",
       "createTimestamp": {
         "_seconds": 1569491794,
@@ -234,6 +240,7 @@
         "U0h27oWjIEX6SyideyIpOoPXtYs2"
       ],
       "slidesLinks" : ["https://fr.slideshare.net/JeanFrancoisJames/tnt-2020jfjames-227526479"],
+      "youtubeLink": "https://www.youtube.com/watch?v=wbFpwSDhntc",
       "comments": "Conférence déjà donnée à DevoXX Paris et Oracle San Francisco. En état d'amélioration continue pour coller à l'actualité technologique bien entendu.",
       "language": "Français (ou anglais à la demande)",
       "createTimestamp": {
@@ -253,6 +260,7 @@
         "DOf7nxshJKYoWia2QQX8cTkJtRL2"
       ],
       "slidesLinks": ["https://ilaborie.github.io/slides2/cssClockwork/index-tnt.html"],
+      "youtubeLink": "https://www.youtube.com/watch?v=4PFA2kO_ly0",
       "comments": "Cette présentation est en quelque sorte la suite de \"CSS is Awesome\" que j'ai donnée notamment à [DevoxxFR](https://www.youtube.com/watch?v=H8lICKucWL4), MixIT, et une version plus longue au [DevFest Toulouse](https://www.youtube.com/watch?v=fPObs60585w).\nLes nombreux retours positifs m’incitent pour continuer à faire passer le message :\n\n> Le CSS est plus épineux qu’on le pense, pour bien développer en  Web, il faut se donner du temps pour l’apprendre.\n\nL’idée est de faire un live-coding d’une horologe : [voir le prototype sur codepen](https://codepen.io/ilaborie/pen/wRpoJy).\n\nPlutôt que de faire une autre liste de tricks CSS pour rechercher les effets waouh, je trouve intéressant de construire un exemple de bout en bout.\nÇa permet de prendre par la main ceux qui ne sont pas à l'aise avec une progression plus linéaire. C'est aussi l'occasion de montrer des opérations de refactoring, ou bien d'expliquer certaines solutions alternatives.\n",
       "createTimestamp": {
         "_seconds": 1568873405,
@@ -310,6 +318,7 @@
       "comments": "Le but de ce talk est de faire découvrir aux gens, directement par le code, les erreurs les plus courantes décrite par le OWASP TOP10 2017 https://www.owasp.org/index.php/Top_10-2017_Top_10 - sans pour autant le mentionner dès le départ.\n\nJe développerai en live une application e-commerce, Java/JavaScript et à chaque itération je montrerai les erreurs que j'ai faites en les démontrant par des attaques. Puis je montrerai comment corriger les failles.\n\nJe suis membre de la fondation OWASP, que je représente en tant que speaker dans plusieurs conférences: DevFest Nantes, VoxxedDays Microservices, DevFest Toulouse, BDX.io, Devoxx Belgium et Codeurs en Seine.",
       "language": "French",
       "slidesLinks": ["https://slides.com/julientopcu/comment-se-faire-hacker-bien-comme-il-faut"],
+      "youtubeLink": "https://www.youtube.com/watch?v=HKzzvrDP77w",
       "createTimestamp": {
         "_seconds": 1571656195,
         "_nanoseconds": 725000000
@@ -346,6 +355,7 @@
         "xKKBytTJTGMrchSRfanwMNSuYhS2"
       ],
       "slidesLinks": ["https://ncomet.github.io/oss-koson-2020/#/"],
+      "youtubeLink": "https://www.youtube.com/watch?v=_uoXpFUJrSo",
       "comments": "Hello la team 'NT, merci beaucoup pour votre temps ! Je suis déjà venu au TNT pour parler de génération de bytecode JVM en 2018.\n\nMerci et en espérant vous revoir bientôt !\nNicolas.",
       "language": "FR",
       "createTimestamp": {
@@ -383,6 +393,7 @@
         "MKkYzwlXx6dLM9cfE5vXYqJo5d43"
       ],
       "slidesLinks" : ["https://docs.google.com/presentation/d/1ppVieCHg8NG6N5-i4tMIP1EcjChep5AeIksutetfbTg/preview#slide=id.g714406e38db71814_1"],
+      "youtubeLink": "https://www.youtube.com/watch?v=zcXQf56b-5k",
       "comments": "Ce talk a déjà été donné à Riviera Dev et à VoxxedDays Luxembourg.\nIl peut être joué en 15, 20, 25 ou 30 minutes.\n\nVoici le transcript de la présentation :\n\nhttps://scraly.github.io/posts/syndrome-imposteur/\n\nMerci.",
       "createTimestamp": {
         "_seconds": 1570196370,
@@ -401,6 +412,7 @@
         "xRNeGxIeNcdAegOPlnYeBKFVX2o1"
       ],
       "slidesLinks": ["https://slides.com/ereold/bug-free-by-design/#/"],
+      "youtubeLink": "https://www.youtube.com/watch?v=-l56jYBrGho",
       "language": "Français",
       "createTimestamp": {
         "_seconds": 1574882940,
@@ -436,6 +448,7 @@
       "speakers": [
         "EZdFes7RoSTGQJO5uOBCqSeyGvv2"
       ],
+      "youtubeLink": "https://www.youtube.com/watch?v=I8CCgYlc6pk",
       "comments": "Parce Christophe vient de me dire de postuler",
       "language": "French",
       "createTimestamp": {
@@ -516,6 +529,7 @@
       "comments": "Ce quickie est un récap de ce que Estelle et Cécile ont vécu avec leurs 2 équipes de projet.  \n\nUn grand gain de temps et une amélioration des compétences de chacun on fait de cette méthodologie une réussite. C'est pourquoi, nous aimerions présenter un REX de ce qu'est le \"pair design\" et comment le mettre en place rapidement dans une équipe projet.\n\nPour ce quickie, nous parlerons au départ des frustrations rencontrées dans la conception d'une nouvelle fonctionnalité et de comment nous avons essayé de les résoudre dans une petite mais aussi grande équipe grace au pair design  !",
       "language": "Français",
       "slidesLinks": ["https://docs.google.com/presentation/d/1qs-9SavH0zFciyTNn13IjOZjYkCka6M6EywPRrHyDqo/preview#slide=id.g35f391192_00"],
+      "youtubeLink": "https://www.youtube.com/watch?v=3vafBwXmhJo",
       "createTimestamp": {
         "_seconds": 1574100424,
         "_nanoseconds": 973000000
@@ -532,6 +546,7 @@
       "speakers": [
         "QjQCCyUhBDOdIpK6CIGSjJwd8RE3"
       ],
+      "youtubeLink": "https://www.youtube.com/watch?v=U2FJo-mesJU",
       "comments": "Thanks",
       "language": "French",
       "createTimestamp": {
@@ -551,6 +566,7 @@
         "9g2TJuw97VMd8Zwn9y2x0g0w7SB2"
       ],
       "slidesLinks": ["https://docs.google.com/presentation/d/1Kx-BtUV7F1bfugV_mehIoeqP94Gli9LXvYm8dNhrNa0"],
+      "youtubeLink": "https://www.youtube.com/watch?v=VXSoP_HH-Vo",
       "language": "français",
       "createTimestamp": {
         "_seconds": 1572022922,
@@ -561,13 +577,15 @@
       "id": "keynoteOuverture",
       "title": "Keynote d'ouverture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "youtubeLink": "https://www.youtube.com/watch?v=EJbP-4nU-Tk&list=PL1d9UGnF3u-sMQ9SOAhv0oqgdG_dXzkRC"
     },
     {
       "id": "keynoteCloture",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "youtubeLink": "https://www.youtube.com/watch?v=8Ro5_DvZwHM&list=PL1d9UGnF3u-sMQ9SOAhv0oqgdG_dXzkRC"
     }
   ],
   "speakers": [
