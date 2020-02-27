@@ -7,6 +7,7 @@
     <TopSpeakers></TopSpeakers>
     <Schedule></Schedule>
     <Team></Team>
+    <Pictures></Pictures>
     <Video></Video>
     <Map></Map>
   </div>
@@ -22,6 +23,7 @@ import Sponsors from "~/components/Sponsors.vue";
 import TopSpeakers from "../components/TopSpeakers";
 import Schedule from "../components/Schedule";
 import Video from "~/components/Video.vue";
+import Pictures from '~/components/Pictures.vue';
 
 export default {
   components: {
@@ -33,7 +35,8 @@ export default {
     Sponsors,
     TopSpeakers,
     Schedule,
-    Video
+    Video,
+    Pictures
   },
   mounted() {}
 };
