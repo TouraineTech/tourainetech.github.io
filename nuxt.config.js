@@ -70,7 +70,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/smoothscroll-polyfill.js', ssr: false }
+    { src: '~/plugins/smoothscroll-polyfill.js', ssr: false },
+    '~/plugins/vue-lightbox.client.js'
   ],
 
   /*

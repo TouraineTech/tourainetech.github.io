@@ -7,6 +7,7 @@ import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/
 import PLANNING from '../api/planning';
 import TIMES from '../api/times'
 import ROOMS from '../api/rooms'
+import PHOTOS from '../api/photos_72157713187904526'
 
 const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], []);
 
@@ -32,7 +33,8 @@ const createStore = () => {
       categories: [],
       formats: [],
       times: [],
-      rooms: []
+      rooms: [],
+      photos: []
     },
     getters: {
       speakers ({speakers}) {
@@ -58,6 +60,9 @@ const createStore = () => {
       },
       rooms ({rooms}) {
         return rooms
+      },
+      photos ({photos}) {
+        return photos
       }
     },
     actions: {
@@ -71,6 +76,7 @@ const createStore = () => {
         commit('SET_FORMATS', formats),
         commit('SET_TIMES', TIMES),
         commit('SET_ROOMS', ROOMS)
+        commit('SET_PHOTOS', PHOTOS)
       }
     },
     mutations: {
@@ -100,6 +106,9 @@ const createStore = () => {
       },
       SET_ROOMS (state, rooms) {
         state.rooms = rooms
+      },
+      SET_PHOTOS (state, photos) {
+        state.photos = photos.sort((a,b) => new Date(a.date) - new Date(b.date));
       }
     }
   })
