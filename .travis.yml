@@ -1,41 +1,28 @@
 language: node_js
 node_js:
-- "10"
-
+- '10'
 cache: npm
-
 branches:
   only:
   - develop
-
 install:
 - npm ci
 - npm run generate
-
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GITHUB_NEW_TOKEN
-#  target-branch: master
-#  local-dir: dist
-#  on:
-#    branch: develop
-
 deploy:
   provider: firebase
-  project: "touraine-tech"
+  project: touraine-tech
+  edge: true
   skip_cleanup: true
   on:
     branch: develop
   token:
-    secure: $FIREBASE_TOKEN
-
+    secure: u05JVKDMb6RFjxYWqDUyU9CXcRME85uwwKcAJizcSlh7cFAxxkz/7T54gLOQg62g0vHY6xFj1WXMQ5Mwyce7HeOfjPrtzqTCo65iPxYvVbutZEDCj929fZ8I7b1iaytJQR3vysRAY2581Cqy405DxEf5Lxs7CSgt4n3TnlCJvuyeWpxhTqwxLrhZ2hNgOs6z6R/NEP1Fbmm4dzXb062Td1oqC2vhGtI2UIZx4jlJJxTL    2OSsZRPeLiz/Z5U+EDJPeiHddvznvq2c+Zmp/k7sHFUkLWAdsFVbPUdG/scOELvlylwfNDy5skh+Ehgn1mdgbICAUWg8i9pE9/j+ucMs6WwvANsiu6mhMXDgOcgiDTOFUEsalPt7bkAjnoNPd9xfyvdrjD1sFT/clAxcQCigBnCoXYr9yo/jX+040ZKnuQUPYPLGQScDw+0Y3/hyzw9R4AQ+pyumQ6wD0EPDVt5pHiHKY9cc1G8hVtXK72s/oed+ThVLkGtbgOrA2BgOLB48lI4ioBME5XeywgYm6unbwcKLfDmFwtjA/Mq4dadFvy36NjklMer1xLWyAYorNX2mWJnfwYEHIF2UcRdhm9XdWd4n04RH1aqBRciAsoQtVQpRcCTz/TvW9rnsj+P7AKnsidllHy4yV5Z9BbkrGvdnkKYBFZWKdXQQ8nSrYwMz3Ic=
 notifications:
   slack:
     rooms:
-    - secure: $SLACK_TOKEN
+    - secure: "$SLACK_TOKEN"
     template:
-    - $TRAVIS_COMMIT_MESSAGE
-    - $TRAVIS_PULL_REQUEST_SLUG
-    - 'Deployed at'
-    - $DEPLOYED_TO
+    - "$TRAVIS_COMMIT_MESSAGE"
+    - "$TRAVIS_PULL_REQUEST_SLUG"
+    - Deployed at
+    - "$DEPLOYED_TO"
