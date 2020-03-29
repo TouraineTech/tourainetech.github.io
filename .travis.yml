@@ -23,7 +23,6 @@ install:
 
 deploy:
   provider: firebase
-  edge: true
   project: "touraine-tech"
   skip_cleanup: true
   on:
