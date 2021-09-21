@@ -2,7 +2,7 @@ import SPONSORS from './api/sponsors.json'
 import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "./api/conferenceHall";
 
 const pkg = require('./package')
-const title = 'Touraine Tech 2020 - Conférence sur les nouvelles technologie du numérique'
+const title = 'Touraine Tech 2022 - Conférence sur les nouvelles technologie du numérique'
 const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
 const url = "https://touraine.tech/"
 module.exports = {

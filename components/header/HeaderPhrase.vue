@@ -1,10 +1,10 @@
 <template>
   <div class="HeaderPhrase">
-    <h1 class="HeaderPhrase-title">Touraine <span class="HeaderPhrase-title--green">Tech</span> #20</h1>
-    <div class="HeaderPhrase-date">31 janvier 2020</div>
+    <h1 class="HeaderPhrase-title">Touraine <span class="HeaderPhrase-title--green">Tech</span> #22</h1>
+    <div class="HeaderPhrase-date">21 janvier 2022</div>
     <div class="HeaderPhrase-hour">8h30 — 18h30</div>
     <div class="HeaderPhrase-place">à Tours</div>
-    <h2 class="HeaderPhrase-subtitle">3<sup>ème</sup> édition</h2>
+    <h2 class="HeaderPhrase-subtitle">4<sup>ème</sup> édition</h2>
   </div>
 </template>
 
