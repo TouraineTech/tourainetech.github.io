@@ -16,6 +16,11 @@
           >Press kit</a></li>
         <li><a
             rel="noreferrer"
+            href="https://2020.touraine.tech/"
+            target="_blank"
+          >Édition 2020</a></li>
+        <li><a
+            rel="noreferrer"
             href="https://2019.touraine.tech/"
             target="_blank"
           >Édition 2019</a></li>
