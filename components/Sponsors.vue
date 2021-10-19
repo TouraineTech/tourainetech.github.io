@@ -11,7 +11,7 @@
       <p>
         <a
           class="button--link button--green"
-          href="/sponsor_2020.pdf"
+          href="/sponsor_2022.pdf"
           target="_blank"
         >Devenez sponsor</a>
       </p>
