@@ -7,18 +7,18 @@
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--soldOut"
+          class="PriceBloc"
           target="_blank"
-          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">18,50 €</div>
           <div class="PriceBloc-quota">places limités</div>
         </a>
         <a
-          class="PriceBloc PriceBloc--soldOut"
+          class="PriceBloc"
           target="_blank"
-          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
           <div class="PriceBloc-price">25 €</div>
@@ -28,7 +28,7 @@
       <!-- <span class="RegisterButton">Ouverture de la billeterie le 30 septembre 2019</span> -->
       <div>
         <a
-          href="https://www.helloasso.com/associations/palo-altours/evenements/tourainetech-2020"
+          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
           target="_blank"
           class="RegisterButton button--link button--white"
         >Lien vers la billeterie HelloAsso</a>
