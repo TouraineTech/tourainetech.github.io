@@ -13,7 +13,7 @@
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">18,50 €</div>
-          <div class="PriceBloc-quota">places limités</div>
+          <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
           class="PriceBloc"
