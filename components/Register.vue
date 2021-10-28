@@ -7,7 +7,7 @@
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc"
+          class="PriceBloc PriceBloc--soldOut"
           target="_blank"
           href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
         >
