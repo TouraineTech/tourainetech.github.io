@@ -6,5 +6,21 @@
     "link": "https://www.cat-amania.com/",
     "type": "bronze",
     "desc": "<b>Cat-Amania est une société de conseil et de services numériques.</b></br></br>Nous mettons en pratique nos expertises métier, technique et méthodologique pour accompagner nos clients dans leurs grands projets de transformation.</br></br>Nous définissons et participons à l’évolution du système d’information de nos clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, nous sommes en mesure de répondre aux besoins de nos clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage."
+  },
+  {
+    "name": "Code-Troopers",
+    "id": "codetroopers",
+    "image": "codetroopers.png",
+    "link": "https://code-troopers.com",
+    "type": "gold",
+    "desc": "<b>Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications mobiles sur-mesure.</b><br><br>Fondée en 2014 à Tours, Code-Troopers est installée au sein de la bouillonnante Cité de la création et du numérique MAME.<br>Analyse pour de grands groupes, développement natif multisupport pour des start-ups innovantes… Les membres de notre structure s’engagent dans des suivis complets, rigoureux, au plus près des différentes phases de vos projets informatiques."
+  },
+  {
+    "name": "Apside",
+    "id": "apside",
+    "image": "logo-apside.png",
+    "link": "https://www.apside.com/",
+    "type": "gold",
+    "desc": "Apside TOP est implantée en région centre sur 3 agences : Tours, Orléans et Le Mans. Apside TOP et ses 180 collaborateurs partagent deux valeurs fondamentales : le sens du service et la proximité.<br>Nous sommes une structure à taille humaine spécialisée dans l’informatique de gestion et proposant des prestations en assistance technique et au forfait auprès de clients grands comptes et de clients locaux dans divers domaines (banque, mutuelle, assurance…).<br>Nos différents profils (développeurs, analystes, DBA, testeurs, chef de projets…) accompagnent nos clients autant côté études et développements que côté production-infrastructure. Nos centres de services permettent à nos collaborateurs de pouvoir travailler sur de nombreux sujets innovants (JAVAEE, C#.net, PHP, Angular, React…).<br>Nos différences et nos particularités vous attirent, alors apportez votre empreinte de personnalité !"
   }
 ]
