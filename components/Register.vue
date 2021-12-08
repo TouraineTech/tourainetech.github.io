@@ -8,17 +8,13 @@
       <div class="PriceBloc-wrapper">
         <a
           class="PriceBloc PriceBloc--soldOut"
-          target="_blank"
-          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">18,50 €</div>
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc"
-          target="_blank"
-          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
+          class="PriceBloc PriceBloc--soldOut"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
           <div class="PriceBloc-price">25 €</div>
@@ -26,13 +22,13 @@
       </div>
 
       <!-- <span class="RegisterButton">Ouverture de la billeterie le 30 septembre 2019</span> -->
-      <div>
-        <a
-          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"
-          target="_blank"
-          class="RegisterButton button--link button--white"
-        >Lien vers la billeterie HelloAsso</a>
-      </div>
+<!--      <div>-->
+<!--        <a-->
+<!--          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"-->
+<!--          target="_blank"-->
+<!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
+<!--        >Lien vers la billeterie HelloAsso</a>-->
+<!--      </div>-->
 
       <div class="RegisterHelp">
         <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
@@ -88,6 +84,9 @@
       position: relative;
       top: 2em;
       width: 5em;
+    }
+    &:hover {
+      transform: none;
     }
   }
 
