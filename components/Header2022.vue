@@ -5,19 +5,16 @@
         <HeaderPhrase></HeaderPhrase>
       </div>
       <div class="Header-buttons">
-        <RegisterSpeakerButton></RegisterSpeakerButton>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import RegisterSpeakerButton from "~/components/header/buttons/RegisterSpeakerButton.vue"
 import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
 
 export default {
   components: {
-    RegisterSpeakerButton,
     HeaderPhrase
   },
   mounted() {}
