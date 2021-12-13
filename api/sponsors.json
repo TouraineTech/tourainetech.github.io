@@ -1,2 +1,10 @@
 [
+  {
+    "name": "Cat-Amania",
+    "id": "catamania",
+    "image": "logo-catamania.png",
+    "link": "https://www.cat-amania.com/",
+    "type": "bronze",
+    "desc": "<b>Cat-Amania est une société de conseil et de services numériques.</b></br></br>Nous mettons en pratique nos expertises métier, technique et méthodologique pour accompagner nos clients dans leurs grands projets de transformation.</br></br>Nous définissons et participons à l’évolution du système d’information de nos clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, nous sommes en mesure de répondre aux besoins de nos clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage."
+  }
 ]
