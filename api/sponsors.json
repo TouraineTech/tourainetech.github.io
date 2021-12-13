@@ -6,5 +6,13 @@
     "link": "https://www.cat-amania.com/",
     "type": "bronze",
     "desc": "<b>Cat-Amania est une société de conseil et de services numériques.</b></br></br>Nous mettons en pratique nos expertises métier, technique et méthodologique pour accompagner nos clients dans leurs grands projets de transformation.</br></br>Nous définissons et participons à l’évolution du système d’information de nos clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, nous sommes en mesure de répondre aux besoins de nos clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage."
+  },
+  {
+    "name": "Harmonie Mutuelle",
+    "id": "harmoniemutuelle",
+    "image": "logo-harmonie.png",
+    "link": "https://www.harmonie-mutuelle.fr/",
+    "type": "gold",
+    "desc": "<b>Harmonie Mutuelle, acteur de santé globale, protège aujourd’hui plus de 4,3 millions de personnes et 58.000 entreprises. Elle accompagne ses adhérents dans leur parcours de santé et de vie ainsi que les entreprises clientes dans leurs responsabilités vis-à-vis de leurs collaborateurs.<br>Harmonie Mutuelle apporte des réponses solidaires et innovantes en prévention, santé et prévoyance.</b><br><br>Pour Harmonie Mutuelle, la santé est un capital qu’il faut promouvoir en agissant sur tous ses déterminants (physiques, économiques, sociaux, culturels, environnementaux…).<br>Entreprise à but non-lucratif, elle s’engage au plus près de chacun pour le mieux vivre de tous par une approche à la fois démocratique et experte et propose des solutions mutualistes collectives et personnalisées, notamment grâce à ses réseaux partenaires (optique, audio et dentaire) et ses 900 services de soins et d’accompagnement.<br>Ses valeurs d’ouverture, de confiance, de transparence et de solidarité lui permettent de tisser un lien pérenne avec ses adhérents/clients mais aussi d’accompagner les évolutions de la société en participant à la construction du 1er groupe de protection sociale mutualiste : le Groupe VYV."
   }
 ]
