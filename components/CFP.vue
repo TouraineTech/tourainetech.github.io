@@ -3,12 +3,7 @@
     <div class="container--fix container--center">
       <h2>Call for paper</h2>
       <p>
-        Le
-        <a href="https://cfp.touraine.tech" target="_blank">
-          CFP est ouvert
-        </a>
-        pour cette édition, la délibération se fera le
-        <span class="label--text label--green">samedi 11 décembre 2021</span>.
+        Le CFP est clos pour cette édition, la délibération se fera le <span class="label--text label--green">samedi 11 décembre 2021</span>.
       </p>
     </div>
   </section>
