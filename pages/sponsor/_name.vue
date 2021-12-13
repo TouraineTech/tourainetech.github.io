@@ -21,7 +21,7 @@
        v-for="jobOffer in sponsor.jobOffers"
       :key="jobOffer.id"
     :id="jobOffer.id">
-      <h3>{{ jobOffer.title }}</h3>
+      <h3 v-html="jobOffer.title"></h3>
       <article v-html="jobOffer.desc"/>
     </div>
   </div>
@@ -80,6 +80,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.job-offer-bloc article h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+</style>
 
 <style lang="scss" scoped>
 @import "./../../assets/scss/variables";

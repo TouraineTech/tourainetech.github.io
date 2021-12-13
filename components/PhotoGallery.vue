@@ -12,9 +12,10 @@
         </div>
       </div>
 
-    <v-light-box :media="photos" ref="lightbox"
-        :show-caption="false"
-        :show-light-box="false"></v-light-box>
+      <v-light-box :media="photos" ref="lightbox"
+                   :show-caption="false"
+                   :show-light-box="false"
+      ></v-light-box>
     </client-only>
   </div>
 </template>
