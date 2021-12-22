@@ -62,8 +62,8 @@
       "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "y3wNWuGdbKdUsmdjMrbbQXHL2ay1",
-        "F5ZGeSwlxjTyIVuhWfPZrVinnn92"
+        "F5ZGeSwlxjTyIVuhWfPZrVinnn92",
+        "y3wNWuGdbKdUsmdjMrbbQXHL2ay1"
       ],
       "comments": "Que notre conférence soit acceptée ou non lors de TNT, nous serons là :)\n\nMerci pour l’organisation de cet évènement, et que nous puissions nous retrouver bientôt :D\n\nÀ très vite !",
       "language": "French",
@@ -88,6 +88,23 @@
       "createTimestamp": {
         "_seconds": 1633090784,
         "_nanoseconds": 618000000
+      }
+    },
+    {
+      "id": "6RrVaTNLyt73GF0J5jWb",
+      "title": "Types top !",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Dans vos codebases se cachent des héros méconnus : les **types** !\n\nParfois vus comme des contraintes rébarbatives, les types peuvent pourtant apporter beaucoup à vos projets quand on les exploite au mieux.\nIls peuvent ainsi documenter votre code, réduire la charge cognitive du développeur, faciliter le refactoring, rendre votre IDE plus intelligent et même rendre beaucoup de vos tests inutiles !\n\nOn découvrira dans ce talk comment aller plus loin que les types de base (`number`, `string`, `boolean`, ...) et comment encoder ses règles métier dans nos types pour réduire la possibilité même de l'existence d'un bug !",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "xRNeGxIeNcdAegOPlnYeBKFVX2o1"
+      ],
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1633080680,
+        "_nanoseconds": 778000000
       }
     },
     {
@@ -214,6 +231,24 @@
       }
     },
     {
+      "id": "Q4h6tnflAckbwdiydABe",
+      "title": "Would like to learn how manage your passwords like your code?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "La gestion de mot de passe est une partie bien-souvent douloureuse, voir fastidieuse.\n\nQui a raison? L’informations qui est en prod ou bien celle du Keepass, ou encore celle que l’on croit avoir configuré ?\n\nLe développement en collaboration est désormais beaucoup plus aisé depuis des outils comme SVN et désormais l’incontournable GIT, projet initié par Linus Torvald !\n\nMais alors pourquoi pas gérer nos mots de passe comme du code ?\nC’est finalement du texte, qui doit être versionné, on souhaite approuvé son changement, et on est potentiellement plusieurs à vouloir le modifier, et mieux encore on aimerait les voir se déplacer magiquement de notre référentiel vers notre production...cela ne vous rappelle rien ?\n\nNous allons voir comment nous avons réussi avec finalement peu de moyens et d’investissement à résoudre notre problématiques de gestion de mot de passe grâce à plusieurs outils :\nPassword-store (coffre fort GPG), Git, une CI/CD, et c’est tout !\n\nNous avons environ 200 mots de passe quasiment géré de manière automatique, avec tous les avantages de Git et la sécurité de l’automatisation qui évite les erreurs humaines.\n",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+      "speakers": [
+        "KnXJ9TChESfPYo1VGkztUQf1hx93"
+      ],
+      "comments": "Hello,\n\nI have already submit this talk on DevFest Brest 2020, it can helpful for a lot of developers \n\nSébastien",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1637078881,
+        "_nanoseconds": 81000000
+      }
+    },
+    {
       "id": "QypHgyU453hUQ5mfRDB2",
       "title": "Dis papa ? C'est quoi un SRE ?",
       "state": "confirmed",
@@ -303,6 +338,25 @@
       }
     },
     {
+      "id": "g7uf2lkiVA3vFzv8vCSR",
+      "title": "Game of Nodes ou comment fonctionnent les systèmes distribués ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Le monde des systèmes distribués est un monde impitoyable. Le réseau n'est pas fiable. Les dates sont fausses. Les messages arrivent dans le désordre, ou pire, sont incohérents. Les serveurs ne sont pas d'accord entre eux. Comment faire en sorte de rétablir un semblant de loi dans cette univers chaotique ? \nL'algorithme Raft a été conçu pour être une forteresse et résister à ces difficultés. \nUtilisé dans des projets open sources comme etcd, Consul, Kafka, MongoDB (et de [nombreux autres](https://raft.github.io/#implementations))), raft remet de l'ordre  dans tout ça.\nDans ce talk, on  va bâtir en live brique par brique un petit système distribué avec Raft. Arriverez-vous à le faire planter ?",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+      "speakers": [
+        "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
+        "6klOX1xduHbBCxddJhe0sBJLZp13"
+      ],
+      "comments": "Pour l'intro, nous aimerions pouvoir jouer du son depuis l'ordinateur qui présente les slides et le code.\nComme nous faisons beaucoup de live coding durant ce talk, nous souhaiterions avoir une place assise et un bureau pour l'ordinateur qui présentera les slides.\n\nMerci ❤️",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1638209701,
+        "_nanoseconds": 974000000
+      }
+    },
+    {
       "id": "grExMwZ2uPDwi4m897vO",
       "title": "GitOps , une mise en situation un peu réaliste sur Kubernetes avec FluxCD",
       "state": "confirmed",
@@ -311,8 +365,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2",
-        "6gcb9OjG5cgl14IQBEt5yu4TmTT2"
+        "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
+        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2"
       ],
       "language": "French",
       "createTimestamp": {
@@ -357,6 +411,25 @@
       }
     },
     {
+      "id": "nLfP4678o1ZaMYm2kJZB",
+      "title": "The blind test : l'accessibilité d'un site internet pour une personne non voyante",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "<p>Non, il ne s’agit pas d’un test musical mais de comprendre comment une personne aveugle navigue sur une page web !</p>\n<p>À l’heure actuelle, notre société devient de plus en plus numérique (démarches administratives, échanges sociaux, achats…). L’accessibilité d’un site internet est importante, si l’on souhaite que personne ne soit exclu de cet univers numérique. Différents types de handicap (visuel, moteur…) sont à prendre en considération pour qu’un site internet soit inclusif c’est-à-dire accessible à tous. Florent et Hervé vous proposent un focus sur l’accessibilité d’un site internet pour une personne non voyante.</p>\n<p>Au travers d’un exemple de page web, Florent qui est non voyant vous montre comment, à l’aide d’un lecteur d’écran et d’une plage braille, il arrive à naviguer et à quelles difficultés il est confronté. Hervé vous montre comment corriger petit à petit la page pour améliorer son accessibilité.</p>\n",
+      "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
+        "bsQBCvfQjCbafP0wFCWVkPqwTGX2"
+      ],
+      "comments": "Nous avons une installation technique un peu complexe (un second écran, un clavier supplémentaire, une plage braille, le son de l’ordinateur qui doit être retransmis dans la salle)… Si vous retenez notre sujet, merci de prendre en compte le temps nécessaire de mise en place dans votre planification.",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1635513945,
+        "_nanoseconds": 380000000
+      }
+    },
+    {
       "id": "rhH5srvPxspJKVBUzRbB",
       "title": "L'eco conception, c'est bien, mais si on parlait un peu du backend ?",
       "state": "confirmed",
@@ -372,6 +445,23 @@
       "createTimestamp": {
         "_seconds": 1632740398,
         "_nanoseconds": 583000000
+      }
+    },
+    {
+      "id": "smHIjirTqfAqt7qPEwF5",
+      "title": "(Re) Découvrir les outils UNIX",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Votre logiciel hang, vous ne savez pas pourquoi ? Ou votre application préférée ne\nlit pas sa configuration et vous ne savez pas pourquoi ?\n\nIl existe beaucoup d'outils fournis avec Linux. Pourtant beaucoup de développeurs\nne les connaissent pas ou ne les utilisent pas.\n\nA travers une série de cas d'utilisation, nous verrons comment utiliser tout ces\noutils: grep, find, xargs, strace, tcpdump, lsof",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+      "speakers": [
+        "mM9cCQG86kWwoaCQsQ5pwq26d012"
+      ],
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1633422373,
+        "_nanoseconds": 754000000
       }
     },
     {
@@ -444,6 +534,16 @@
   ],
   "speakers": [
     {
+      "uid": "xRNeGxIeNcdAegOPlnYeBKFVX2o1",
+      "displayName": "Jordane Grenat",
+      "bio": "Jordane est développeur chez Viseo et adore les découvertes et ce qui sort de l'ordinaire. Ce qui est souvent incompatible avec le pragmatisme technologique nécessaire sur les projets clients.\n\nIl assouvit alors sa passion à coup de projets perso jamais finis et en écumant les conférences en compagnie des autres développeurs férus de nouveautés. En vrac : Elm, F#, nouveau-framework-à-la-mode-JS, ...\n\nIl passe le reste de son temps libre à refuser les cookies sur les sites web qu'il consulte.",
+      "speakerReferences": "J'ai donné des talks dans plusieurs conférences ces trois dernières années, dont voici quelques liens :\n\n-   BDX.io (FR) :  [https://www.youtube.com/watch?v=8xafl9VPiX8](https://www.youtube.com/watch?v=8xafl9VPiX8)\n-   Devfest Nantes (FR):  [https://www.youtube.com/watch?v=pjeXbKXSiVs](https://www.youtube.com/watch?v=pjeXbKXSiVs)\n-   Devoxx France (FR) :\n    -   [https://youtube.com/watch?v=pSHTe2xTGDc](https://youtube.com/watch?v=pSHTe2xTGDc)\n    -   [https://youtube.com/watch?v=J09wjZBzJGg](https://youtube.com/watch?v=J09wjZBzJGg)\n-   Devoxx Belgium (EN) :\n    -   [https://youtube.com/watch?v=Ofx6LFCYea0](https://youtube.com/watch?v=Ofx6LFCYea0)\n    -   [https://youtube.com/watch?v=dIABJZsvfWI](https://youtube.com/watch?v=dIABJZsvfWI)",
+      "company": "Viseo",
+      "photoURL": "https://lh3.googleusercontent.com/-gm2VH9ACvBs/AAAAAAAAAAI/AAAAAAAAHUs/1ekXFpnAWUY/photo.jpg",
+      "twitter": "JoGrenat",
+      "github": "jgrenat"
+    },
+    {
       "uid": "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1",
       "displayName": "David Aparicio",
       "bio": "Passionate engineer in Computer Science, graduated INSA Lyon 2014, after two years spent at UNICAMP in Brazil, actively participates in the community, through Meetups and conferences. His motto: “No developer is supposed to ignore security”.\n\nIngénieur passionné en Informatique, diplômé INSA Lyon 2014, après deux années passées à UNICAMP au Brésil, participe activement à la communauté, à travers des Meetups et des conférences. Sa devise: « Nul développeur n'est censé ignorer la sécurité »",
@@ -480,14 +580,14 @@
       "github": "larousso"
     },
     {
-      "uid": "y3wNWuGdbKdUsmdjMrbbQXHL2ay1",
-      "displayName": "David Pequegnot",
-      "bio": "Développeur Java à la base, je suis aussi ingénieur performance au sein de Worldline. \n\nUn soucis de performance ? Un Black Friday difficile ? Je suis là pour accompagner les équipes afin de diagnostiquer le problème, même si a priori il n’y en avait pas :).\n\nJe reste développeur dans l’âme, et j’adore expérimenter tout plein de frameworks, notamment du monde de l’Observabilité. Mon objectif ? Annihiler les incident de productions !\n\nEt si vous voulez discuter Java, Kotlin, Python ou Rust, ce sera aussi avec plaisir ! :D",
-      "speakerReferences": "* 2019 - What? Monitoring my application in production with an APM?\n* ParisJUG (co-speaker) : 09/02/2021 - Java server-side, 22 ans et toujours fringant ! (https://www.youtube.com/watch?v=Kr5ARdTuX8Q)\n* 2021 - Observability. How it started, how it's going.\n* BordeauxJUG (co-speaker) : 24/06/2021 - Java server-side, 22 ans et toujours fringant ! (https://www.youtube.com/watch?v=FXSFeyhxVIM)",
-      "company": "Worldline",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiQv4MJw_VRD2uA7mybnFr-Cc8k3ve4-Cn2-dIxYg=s96-c",
-      "twitter": "foxlegend",
-      "github": "foxlegend"
+      "uid": "mM9cCQG86kWwoaCQsQ5pwq26d012",
+      "displayName": "Grégoire Pineau",
+      "bio": "Arrivé en 2017 dans l’équipe de JoliCode, Grégoire a toujours aimé bidouiller,\ncomprendre et apprendre. À l’issue d’études éclectiques, il est revenu au Web en\n2010, domaine dans lequel il exerce depuis avec passion. Après avoir appris à se\nservir du framework Symfony, il a passé sa certification, puis a commencé à\ncontribuer timidement… Ce qui l’a mené, quelques années après, à devenir un des\ncore contributeurs du projet !\n\nDurant toutes ces années, il a toujours préféré le backend au frontend – même\ns’il apprécie React, Sass et ces autres joyeusetés, il s’amuse davantage avec\nAnsible, AWS ou Consul. Vous pourrez le croiser lors de meetups, ou dans des\nmatches de Volley :-)\n",
+      "speakerReferences": "https://speakerdeck.com/lyrixx ",
+      "company": "jolicode",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AAuE7mDuHlmv061hDvW5Br_b1xBkPM_ywv5xpltwuIV-TA",
+      "twitter": "lyrixx",
+      "github": "lyrixx"
     },
     {
       "uid": "F5ZGeSwlxjTyIVuhWfPZrVinnn92",
@@ -498,6 +598,16 @@
       "photoURL": "https://avatars.githubusercontent.com/u/3098707?v=4",
       "twitter": "charlesmariea",
       "github": "TheCopycat"
+    },
+    {
+      "uid": "y3wNWuGdbKdUsmdjMrbbQXHL2ay1",
+      "displayName": "David Pequegnot",
+      "bio": "Développeur Java à la base, je suis aussi ingénieur performance au sein de Worldline. \n\nUn soucis de performance ? Un Black Friday difficile ? Je suis là pour accompagner les équipes afin de diagnostiquer le problème, même si a priori il n’y en avait pas :).\n\nJe reste développeur dans l’âme, et j’adore expérimenter tout plein de frameworks, notamment du monde de l’Observabilité. Mon objectif ? Annihiler les incident de productions !\n\nEt si vous voulez discuter Java, Kotlin, Python ou Rust, ce sera aussi avec plaisir ! :D",
+      "speakerReferences": "* 2019 - What? Monitoring my application in production with an APM?\n* ParisJUG (co-speaker) : 09/02/2021 - Java server-side, 22 ans et toujours fringant ! (https://www.youtube.com/watch?v=Kr5ARdTuX8Q)\n* 2021 - Observability. How it started, how it's going.\n* BordeauxJUG (co-speaker) : 24/06/2021 - Java server-side, 22 ans et toujours fringant ! (https://www.youtube.com/watch?v=FXSFeyhxVIM)",
+      "company": "Worldline",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiQv4MJw_VRD2uA7mybnFr-Cc8k3ve4-Cn2-dIxYg=s96-c",
+      "twitter": "foxlegend",
+      "github": "foxlegend"
     },
     {
       "uid": "9RbNQ6FMFJQomghcNoer2BoSiRK2",
@@ -563,15 +673,15 @@
       "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
       "displayName": "Cécile Freyd-Foucault",
       "bio": "Tomber dans la soupe du design étant petite, je suis designeuse. Je parle avec autant de passion de typographie que de flow utilisateurs, accessibilité et surtout de design system 😍 !",
-      "speakerReferences": "* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Touraine Tech 2020\n* DevFest Bout du Monde 2020\n* Meetup : UX design Brest (typographie), le Rendez-vous des speakers (REX autours d'un design system)",
+      "speakerReferences": "* DevFest Nantes 2021 https://www.youtube.com/watch?v=GMzXZA9tiW4\n* ParisWeb 2021\n* Devest Lille 2021\n* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Touraine Tech 2020\n* DevFest Bout du Monde 2020\n* Meetup : UX design Brest (typographie), le Rendez-vous des speakers (REX autours d'un design system)",
       "company": null,
-      "photoURL": "https://lh5.googleusercontent.com/-UyalCSSFXaA/AAAAAAAAAAI/AAAAAAAAEWQ/9fl4_ICI0M8/photo.jpg",
+      "photoURL": "https://pbs.twimg.com/profile_images/1466896120379068416/ZbmwziI2_400x400.jpg",
       "twitter": "@cecilefreydf"
     },
     {
       "uid": "8bRdg6HP4rTESCd8x8MuIWGEbBt2",
       "displayName": "Mélanie Boudard",
-      "bio": "Mélanie est actuellement Tech Lead pour le service public Pix. \n\nMélanie a testé plusieurs aspects de l'informatique, du jeu vidéo à la recherche en bioinformatique. Elle est revenue à sa passion pour le web, et notamment le front. Elle s'intéresse aux bonnes pratiques et aime trouver de nouveaux moyens pour faire grandir les équipes.",
+      "bio": "Mélanie est actuellement Tech Lead / VPE pour le service public Pix. \n\nMélanie a testé plusieurs aspects de l'informatique, du jeu vidéo à la recherche en bioinformatique. Elle est revenue à sa passion pour le web, et notamment le front. Elle s'intéresse aux bonnes pratiques et aime trouver de nouveaux moyens pour faire grandir les équipes.",
       "speakerReferences": "https://www.youtube.com/watch?v=4iVPa9m5Emw",
       "company": "Pix",
       "photoURL": "https://pbs.twimg.com/profile_images/1219272706866208771/Xrk8Ts5d_400x400.jpg",
@@ -595,6 +705,16 @@
       "company": "Code Lutin",
       "photoURL": "https://lh5.googleusercontent.com/-RHL1PKvMuhw/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reeZXZGoh0B1aOJumGC1bOYBhYP-w/mo/photo.jpg",
       "twitter": "@jcouteau"
+    },
+    {
+      "uid": "KnXJ9TChESfPYo1VGkztUQf1hx93",
+      "displayName": "Sébastien jardin",
+      "bio": "\nIngénieur systèmes SRE - DevOps\n\nOVH\nDates d’emploi févr. 2019 – Aujourd’hui\nDurée d’emploi 10 mois\nLieu Région de Bordeaux, France\n\nITS GROUP S.A.\nIngénieur Systèmes DevOps chez CDiscount\nDates d’emploi sept. 2017 – févr. 2019\nDurée d’emploi 1 an 6 mois\nLieu Région de Bordeaux, France\n\n\nOXAND DevOps\nDates d’emploi juin 2015 – sept. 2017\nDurée d’emploi 2 ans 4 mois\nLieu Avon (France)\n\n\nCrédit Agricole Consumer Finance\nIngénieur Système\nDates d’emploi oct. 2013 – juin 2015\nDurée d’emploi 1 an 9 mois\n\n\nPRESSTALIS\nDurée totale 3 ans\n\n Intitulé du poste Administrateur Icinga\n ates d’emploi oct. 2010 – sept. 2013\n Durée d’emploi 3 ans\n\n",
+      "speakerReferences": "Kubinception // CNCF Bordeaux // https://www.meetup.com/fr-FR/Cloud-Native-Computing-Bordeaux/events/259991418/\n ",
+      "company": "OVHCloud",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AAuE7mDkorAAf3jmep4AZ-lyHENykBCh9tLyygdLRM1c",
+      "twitter": "https://twitter.com/Sebastien_Jard1",
+      "github": "https://github.com/SebastienJardin"
     },
     {
       "uid": "irgm2DvTsrQt79lI1YIaR3B3V4p1",
@@ -629,11 +749,30 @@
       "uid": "rDKV0gUOk0O4WU9tpknPAngMF9A3",
       "displayName": "Kevin Davin",
       "bio": "Google Developer Expert on Google Cloud & Kotlin, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation. \nKotlin, Java, TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the GitLab's Continuous Integration 🚀. \n\nAddict of agility and DevOps, some of my missions were to help teams to follow those philosophies. \nFrom code quality analysis to unit or end-to-end tests setup all the way to continuous deployment and operation, I try to follow a project from birth to production. \n\nI'm currently Software Engineer at Gradle and I'm working on Gradle Enterprise, the product which can improve the developer productivity by reducing its build and test time.",
-      "speakerReferences": "* Una-GitLab\n  * [GDG Toulouse Sept 2018](https://www.youtube.com/watch?v=67V3QNI0TF4&t=3s)\n  * SnowCamp 2019\n  * Sunny Tech 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Una-GitLab, le TP à roulette\n  * SnowCamp 2019\n  * Touraine Tech 2019\n  * DevFest Paris 2019\n  * Mixit 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Istio, le meilleur ami de votre cluster K8S\n  * Snowcamp 2019\n  * Tourainne Tech 2019\n  * [BreizhCamp 2019](https://www.youtube.com/watch?v=80jo1ftgHVM)\n  * [Paris Container Day 2019](https://www.youtube.com/watch?v=oHgzSTJi2Uo)\n  * [VoxxedDays Luxembourg 2019](https://www.youtube.com/watch?v=wG_oljge1Xc)\n  * [BDX.io 2019](https://www.youtube.com/watch?v=_AvgNihwlWU)\n  * [Event with Google](https://www.youtube.com/watch?v=LFfAGDMvJG8)\n* Docker, Kubernetes & Istio:  Tips, tricks & tools\n  * [Devoxx Fr 2019](https://www.youtube.com/watch?v=jkbHEMaYsB0)\n  * RivieraDev 2019\n  * [Sunny Tech 2019](https://www.youtube.com/watch?v=GHZqlTDvRic)\n  * [DevFest Nantes 2019](https://www.youtube.com/watch?v=XnEdh9bwDXk)\n  * DevFest Strasbourg 2019\n  * JUG Summer Camp 2020",
+      "speakerReferences": "* Una-GitLab\n  * [GDG Toulouse Sept 2018](https://www.youtube.com/watch?v=67V3QNI0TF4&t=3s)\n  * SnowCamp 2019\n  * Sunny Tech 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Una-GitLab, le TP à roulette\n  * SnowCamp 2019\n  * Touraine Tech 2019\n  * DevFest Paris 2019\n  * Mixit 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Istio, le meilleur ami de votre cluster K8S\n  * Snowcamp 2019\n  * Tourainne Tech 2019\n  * [BreizhCamp 2019](https://www.youtube.com/watch?v=80jo1ftgHVM)\n  * [Paris Container Day 2019](https://www.youtube.com/watch?v=oHgzSTJi2Uo)\n  * [VoxxedDays Luxembourg 2019](https://www.youtube.com/watch?v=wG_oljge1Xc)\n  * [BDX.io 2019](https://www.youtube.com/watch?v=_AvgNihwlWU)\n  * DevoxxFR 2020 (annulée 😓)\n  * [CloudOuest 2020](https://cloudouest2020.virtualconference.com/#/conference/5eac1d83643a40001b6c9f76)\n  * VoxxedDays Minsk 2020 (annulée 😓)\n  * [Istio event with Google](https://twitter.com/stack_labs/status/1273557708524978177?s=20)\n  * [DevFest Norway 2020](https://devfest.no/schedule/2020-14-10?sessionId=107) ([replay](https://youtu.be/U6AMYBV_DZ4?t=9197))\n  * [DevFest Casablanca x Settat](https://gdg.community.dev/events/details/google-gdg-casablanca-presents-devfest-casablanca-x-settat-)\n  * [DevoxxFR 2021](https://cfp.devoxx.fr/2021/talk/TAB-3486/Istio,_le_meilleur_ami_de_votre_cluster_K8S_%E2%9D%A4%EF%B8%8F) ([replay](https://www.youtube.com/watch?v=03m9KsI7EtI))\n* Istio in Action ⛵️\n  * [CloudSud 2021](https://cloudsud.virtualconference.com/#/conference/6049fa98f336e10019a80a4b)\n  * Partnership with [Google (SMB Program)](https://www.meetup.com/fr-FR/Stack-Days/events/271347501/)\n  * [CloudOuest 2020](https://twitter.com/stack_labs/status/1272522842152804358?s=20)\n  * [DevFest Paris 2020](https://devfest.gdgparis.com/sessions/istio_par_la_pratique_/)\n  * [Touraine Tech 2020](https://touraine.tech/talk/2nUoRfU9qblCBji2OHWx)\n  * [SnowCamp 2020](https://snowcamp2020.sched.com/event/XoNH/istio-nulbpar-la-pratique)\n* Docker, Kubernetes & Istio:  Tips, tricks & tools\n  * [JUG Summer Camp 2020](https://www.youtube.com/watch?v=JN639944qSk)\n  * [DevFest du bout du monde 2020](https://devfest.duboutdumonde.bzh/sessions/docker__kubernetes___istio___tips__tricks___tools/)\n  * [DevFest Strasbourg 2019](https://devfest19.gdgstrasbourg.fr/schedule/2018-11-06?sessionId=107)\n  * [DevFest Nantes 2019](https://www.youtube.com/watch?v=XnEdh9bwDXk)\n  * [SunnyTech 2019](https://www.youtube.com/watch?v=GHZqlTDvRic)\n  * RivieraDev 2019\n  * [DevoxxFR 2019](https://www.youtube.com/watch?v=jkbHEMaYsB0)\n* Let's kustomize our manifests with style 🤩 !\n  * CloudOuest 2021\n  * [CloudEst 2021](https://twitter.com/cloud_est/status/1450009940286902278?s=20)\n* JOOQ, joy of SQL\n  * [ToulouseJUG](https://twitter.com/toulousejug/status/1320690617572315138) | [Replay](https://www.crowdcast.io/e/toulousejug-2020-11/register) | [Slides](https://docs.google.com/presentation/d/1YKk47FWeQqEIUVRHBKHSx7cigFGfeMV5QBYqe-dnHjE/edit)\n  * [DevoxxUK 2021](https://www.devoxx.co.uk/talk/?id=12161)\n",
       "company": "Gradle",
       "photoURL": "https://lh5.googleusercontent.com/-t2c2Q9TjKnA/AAAAAAAAAAI/AAAAAAAAFZU/G4vUXziejAw/photo.jpg",
       "twitter": "@davinkevin",
       "github": "davinkevin"
+    },
+    {
+      "uid": "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
+      "displayName": "Alexandre Fruchaud",
+      "bio": "Après 10 ans d’expérience dans le backend, je suis à la frontière entre le développeur et l'architecte. J'affectionne particulièrement les Data Integration Pattern. Je reste un grand fan du DDD!\n\nA l'origine, je viens du java, et j'ai bien touché à la JVM. J'ai aussi joué quelques notes de programmation fonctionnelles. Je suis Kafkaiste convaincu et je suis certifié et formateur sur la techno.\n\nEn perso, je monte sur les planches de temps en temps dans des représentations de théâtre d'impro.",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gi4z-_e-jd9KBy14b9yJooRZGuC21crMv16vGs5=s96-c",
+      "twitter": null,
+      "github": "mmacphail"
+    },
+    {
+      "uid": "6klOX1xduHbBCxddJhe0sBJLZp13",
+      "displayName": "Delphin Aubin",
+      "bio": "Fan de web, je développe avec passion depuis plus de 10 ans.\nCurieux de nature, j'aime beaucoup savoir comment les choses fonctionnent et regarder sous le capot des outils que nous utilisons tous les jours.\n\nEnfin, comme j'aime le partage, je suis speaker et buveur de bière à mes heures perdues :)\n",
+      "speakerReferences": "J'ai donné un talk au Paris Open Source Summit 2019  (\"Momomodule\" avec Emmanuel Demey)\nJ'ai déjà speaké lors de différents meet up de la région Lilloise : \nGDG Lille,\nReact Beer,\nPlusieurs BBL",
+      "company": "Zenika Lille",
+      "photoURL": "https://lh3.googleusercontent.com/-UzixzWYbeqM/AAAAAAAAAAI/AAAAAAAAABc/3c7NRhzQzqk/photo.jpg",
+      "twitter": "@delphinaubin",
+      "github": "delphinaubin"
     },
     {
       "uid": "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
@@ -663,6 +802,23 @@
       "github": "quentinovega"
     },
     {
+      "uid": "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
+      "displayName": "Hervé Boisgontier",
+      "bio": "Formateur en développement informatique au sein d'ENI École Informatique à Nantes.<br>\nDepuis plus de 10 ans, avec différents langages, je forme à la programmation et l’art du développement informatique. Depuis longtemps, je m’intéresse au développement durable et plus récemment comment le mettre en pratique dans notre métier d’informaticien ou d'informaticienne.<br>\nJe me suis donc intéressé à ces thématiques et pour parfaire mes connaissances, j'ai suivi les formations \"écoconception de services numériques\" par GreenIT.fr et \"Développer des sites web accessibles\" par Access42 et obtenu les certifications associées.\nPour plus d'informations : <a href=\"https://www.linkedin.com/in/boisgontier/\">https://www.linkedin.com/in/boisgontier/</a>\n",
+      "speakerReferences": "J'ai présenté sur un format court \"Un site internet pour répondre aux défis actuels : le GreenIT, l’accessibilité, la performance et le référencement\" à l'AFUP Day Nantes (édition en ligne le 19 juin 2020).<br>Le support de cette présentation est un site internet mettant en pratique les conseils prodigués à titre d'exemple : <a href=\"https://hboisgontier.github.io/afupDay2020/\">https://hboisgontier.github.io/afupDay2020/</a> (il faut utiliser les flèches du clavier pour faire défiler la présentation)<br>\nJ'ai co-animé la conférence \"Numérique Responsable, Green IT : un secteur en plein essor ? \" au Safari des Métiers du Numérique lors de la Nantes Digital Week le 22 septembre 2020 (physiquement !).<br>\nJ'ai co-animé pour ADN Ouest une conférence portant sur \"l'impact des transitions écologique et numérique sur les métiers\" le 2 février 2021 (à distance) dans le cadre d'un webinaire organisé par le Cariforef des pays de la Loire.<br>\nLe 29 juin 2021, avec Florent LEVESQUE, nous avons présenté \"The blind test\" dans un meetup (à distance) organisé par notre école.\nEnfin, le 22 octobre 2021, nous avons présenté cette conférence au DevFest de Nantes.",
+      "company": "ENI École Informatique",
+      "photoURL": "https://avatars1.githubusercontent.com/u/57721330?v=4",
+      "github": "https://github.com/hboisgontier/afupDay2020"
+    },
+    {
+      "uid": "bsQBCvfQjCbafP0wFCWVkPqwTGX2",
+      "displayName": "Florent Lévêque",
+      "bio": "Actuellement en formation D2WM à l'ENI Ecole d'informatique, je suis confronté à des soucis d'accessibilité numérique au quotidien.",
+      "company": "ENI",
+      "photoURL": "https://avatars.githubusercontent.com/u/84006572?v=4",
+      "github": "florentleveque"
+    },
+    {
       "uid": "rYhBI1cLEJSmHtzJfgyckwdJ0Il1",
       "displayName": "Jérémie Drouet",
       "bio": "Developer that develops. Sometimes I drink a coffee.",
@@ -688,7 +844,7 @@
       "bio": "Je suis architecte et développeur sénior chez Worldline. Mon activité consiste à coder (principalement en Java), coacher des développeurs et concevoir des architectures. \n\nBlog: https://blog.touret.info",
       "speakerReferences": "J'ai été speaker dans le cadre des événements suivants:\n\n- Devoxx UK 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- Devoxx UK 2021 (EN): Architecture Katas : Improve your system architecture design skills in a funny way !\n- Volcamp IO 2021 (FR): Améliorer les compétences et les infrastructures avec les katas d'architecture\n- JNation 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- The Cloud First 2021 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- The Cloud First 2021 (FR): \"Checklist_pour_concevoir_une_application_dans_le_cloud\"\n- Worldline Expert Community - \"Cloud Day\" Live event 2020 (EN) : \"K8S & Co : beyond the hype\"\n- Techforum Iberia 2020 (EN): Java Next Steps (EN)\n- Orleans Tech 2019 (FR): \"Unifiez vos traitements Batch et Streaming avec Apache Beam\"\n- Techforum 2019: Java Next Steps (EN)\n- Touraine Tech 2019 (FR): \"Architecture Hands-on\"\n- Touraine Tech 2018 (FR): \"Jenkins 2 : Le retour (d'expérience)\"\n\nVous pourrez trouver les slides de quelques présentations que j'ai pu faire sur [mon compte slidedeck](https://speakerdeck.com/alexandretouret).",
       "company": "WORLDLINE",
-      "photoURL": "https://blogtouret.files.wordpress.com/2020/05/photo_identite_light.jpeg",
+      "photoURL": "https://lh6.googleusercontent.com/-b9g43PM551Q/AAAAAAAAAAI/AAAAAAAADF4/S0ivCJalbks/photo.jpg",
       "twitter": "@touret_alex",
       "github": "alexandre-touret"
     },
@@ -724,12 +880,12 @@
   ],
   "categories": [
     {
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
-      "name": "Design, UI, UX"
+      "name": "Design, UI, UX",
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "name": "Front web, Mobile",
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+      "name": "Front web, Mobile"
     },
     {
       "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
@@ -752,8 +908,8 @@
       "name": "Outillage, pratiques de développement"
     },
     {
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "name": "Alien"
+      "name": "Alien",
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
     }
   ],
   "formats": [
@@ -762,12 +918,12 @@
       "name": "Quickie (15min)"
     },
     {
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "name": "Conférence (50min)"
+      "name": "Conférence (50min)",
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "name": "Hands-on (120min)",
-      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b"
+      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+      "name": "Hands-on (120min)"
     }
   ]
 }
