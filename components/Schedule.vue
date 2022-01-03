@@ -2,7 +2,7 @@
   <section id="schedule" class="container--white">
     <div class="container--fix container--center">
       <h2>Le programme</h2>
-<!--      <h3>L'application du programme <a href="https://testflight.apple.com/join/XiwXrdnn">Apple</a> <a href="https://play.google.com/store/apps/details?id=com.codetroopers.pp">Android</a> </h3>-->
+      <h3>L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a> <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a> </h3>
     </div>
     <div class="schedule--grid">
       <div class="schedule-spacer--cell"></div>
@@ -366,7 +366,7 @@ $color-alien: #066420;
   content: "\1F3A4 "
 }
 .schedule-talk-time1--cell p.schedule-room--duration-level,
-.schedule-talk-time19--cell p.schedule-room--duration-level {
+.schedule-talk-time21--cell p.schedule-room--duration-level {
   display: none;
 }
 .disabled {
