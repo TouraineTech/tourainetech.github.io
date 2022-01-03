@@ -5,6 +5,7 @@
         <HeaderPhrase></HeaderPhrase>
       </div>
       <div class="Header-buttons">
+        <SeeScheduleButton></SeeScheduleButton>
       </div>
     </div>
   </section>
@@ -12,10 +13,12 @@
 
 <script>
 import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
+import SeeScheduleButton from "~/components/header/buttons/SeeScheduleButton";
 
 export default {
   components: {
-    HeaderPhrase
+    HeaderPhrase,
+    SeeScheduleButton
   },
   mounted() {}
 };

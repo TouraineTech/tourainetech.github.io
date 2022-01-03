@@ -6,189 +6,251 @@
     "times": [1]
   },
   {
-    "id": "2nUoRfU9qblCBji2OHWx",
-    "title": "istio ⛵️par la pratique !",
+    "id": "0nD7viTYmVHJMcMMmweW",
+    "title": "A la découverte du code source du vaccin Pfizer/BioNTech",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [2],
+    "times": [7]
+  },
+  {
+    "id": "g7uf2lkiVA3vFzv8vCSR",
+    "title": "Game of Nodes ou comment fonctionnent les systèmes distribués ?",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+    "rooms": [4],
+    "times": [13,14,15]
+  },
+  {
+    "id": "grExMwZ2uPDwi4m897vO",
+    "title": "GitOps , une mise en situation un peu réaliste sur Kubernetes avec FluxCD",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
     "rooms": [4],
     "times": [3,4,5]
   },
   {
-    "id": "vZU5mTokXupZBLNjA8BB",
-    "title": "« Ça part en prod ! » Testez la résilience de votre appli par le chaos.",
-    "rooms": [4],
-    "times": [11,12,13]
-  },
-  {
-    "id": "pAMZmFT2wrfqPr9IdeXv",
-    "title": "Le design de l'erreur",
-    "rooms": [1],
-    "times": [3]
-  },
-  {
-    "id": "SYJIDy5JPhQuABdiT7Gv",
-    "title": "Java server-side: 20 years old and still innovative!",
+    "id": "1ii3MtY8M6p4lwM2VKDx",
+    "title": "Père Castor 🐻, raconte nous une histoire (d'OPS)",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
     "times": [3]
   },
   {
-    "id": "M7nW2FKPHbF2FpNWqNMx",
-    "title": "Accessibilité : et si on laissait les utilisateurs personnaliser l’interface ?",
+    "id": "22IzHA9usrQNr3VHtwV3",
+    "title": "A la découverte de Jetpack Compose",
+    "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
     "times": [3]
   },
   {
-    "id": "B8gr3HrZqJoTV0g1ZP28",
-    "title": "J'ai déployé mes apps sur Minikube... maintenant je fais quoi ?",
-    "rooms": [1],
-    "times": [5]
-  },
-  {
-    "id": "wqcmtLstTNKvYUFdh4ai",
-    "title": "Stateless Microservice Security via MicroProfile JWT",
-    "rooms": [2],
-    "times": [5]
-  },
-  {
-    "id": "duZ9XQ4TxP79Q1WiOyVe",
-    "title": "Une caméra 📹 en DIY sur une mangeoire d'oiseau 🐦  au milieu d’un jardin 🌳 ?",
-    "rooms": [3],
-    "times": [5]
-  },
-  {
-    "id": "et52YASk16xgCOWszF5H",
-    "title": "L'OSS en entreprise, causons peu, Koson bien !",
-    "rooms": [1],
-    "times": [7]
-  },
-  {
-    "id": "iDWSjGfWX8OLxBppd8PC",
-    "title": "Tips pour combattre le syndrome de l'imposteur",
-    "rooms": [2],
-    "times": [7]
-  },
-  {
-    "id": "W625dqFOD8C4lUJwi8lk",
-    "title": "Optimiser le codeur pour optimiser le code (bonnes pratiques d'organisation personnelle à destination des développeuses et développeurs)",
-    "rooms": [3],
-    "times": [7]
-  },
-  {
-    "id": "tYSdKQvuEtgH7nLokY0e",
-    "title": "🏡 Full-remote : comment réussir à travailler en équipe ?",
-    "rooms": [4],
-    "times": [7]
-  },
-  {
-    "id": "OSeRNhvgAv183XS9gPAA",
-    "title": "Event loop et asynchronisme en JavaScript",
-    "rooms": [5],
-    "times": [7]
-  },
-  {
-    "id": "vzGargOlA8voJIxO4BLz",
-    "title": "Pair Design : Un moyen de concevoir à deux ou plus",
-    "rooms": [1],
-    "times": [9]
-  },
-  {
-    "id": "yUtgGDeJyLq57mK86q9g",
-    "title": "Postgresql + json : bye bye JPA et passe le bonjour à mongo",
-    "rooms": [2],
-    "times": [9]
-  },
-  {
-    "id": "H6hSWT3gMPPhoV2bPY5k",
-    "title": "Secretary Vs Dev : retour d expérience d'une assistante administrative dans un dev studio",
-    "rooms": [3],
-    "times": [9]
-  },
-  {
-    "id": "41fdl7fni2rFn601lpxx",
-    "title": "Améliorez votre façon de taper du code au quotidien",
-    "rooms": [4],
-    "times": [9]
-  },
-  {
-    "id": "vBXehLE9i3ShOGZBeNUQ",
-    "title": "L'Esport à un sport comme les autres ",
-    "rooms": [5],
-    "times": [9]
-  },
-  {
-    "id": "7vchsRqdvPawjft0FOd8",
-    "title": "Micro-frontends 🧩de la théorie à l'industrialisation : limites structurelles 🤦🏻‍♂️ et solutions 🧘‍♂️",
-    "rooms": [1],
-    "times": [11]
-  },
-  {
-    "id": "VhehXV2aodPu46LuhxbF",
-    "title": "⏰ CSS Clockwork",
-    "rooms": [2],
-    "times": [11]
-  },
-  {
-    "id": "fW4yvmVxjXb57vQJhIXu",
-    "title": "Mon p*** de voyant moteur est encore allumé ! Comment debugger mon moteur ? Plongeon dans les entrailles des calculateurs moteur",
-    "rooms": [3],
-    "times": [11]
-  },
-  {
-    "id": "P39ti4I6J5PN4nn3oNll",
-    "title": "L'épopée des polices CSS de Comic Sans aux fontes variables",
-    "rooms": [1],
-    "times": [13]
-  },
-  {
-    "id": "XvpmnMltEJ6PNv0LBf4e",
-    "title": "Comment se faire hacker bien comme il faut!",
-    "rooms": [2],
-    "times": [13]
-  },
-  {
-    "id": "HDbur1UG6PNYC48rcBZ0",
-    "title": "Gophers le retour",
-    "rooms": [3],
-    "times": [13]
-  },
-  {
-    "id": "C7diXezyH5e5CAZHCD8w",
-    "title": "Dockerfile - les bonnes pratiques",
-    "rooms": [1],
-    "times": [15]
-  },
-  {
-    "id": "1jiAsaKrbfhsEewsXaSH",
-    "title": "Cypress, l’outil qui va vous faire aimer les tests End-to-End !",
-    "rooms": [2],
-    "times": [15]
-  },
-  {
-    "id": "WrRpxCNMyaKVCc6aHsPa",
-    "title": "Gardez un oeil sur vos métriques avec Prometheus et Grafana",
+    "id": "2r5YrFDbjwokeA27e43O",
+    "title": "Property-based Testing ou l'insuffisance des tests unitaires",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
     "times": [15]
   },
   {
-    "id": "jc3PNZWvUSCjAS2vqdLA",
-    "title": "Vous livrez encore des bugs en prod ?! 😱",
-    "rooms": [1],
-    "times": [17]
+    "id": "4QN8Gz2BUyjd2Xmq2Kgu",
+    "title": "L’Observabilité : de Zéro à OpenTelemetry",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [2],
+    "times": [15]
   },
   {
-    "id": "3QQqWeUo8kj2R6AlzJIP",
-    "title": "Trucs et astuces pour consommer une API REST",
+    "id": "6RC04OGesjjv4empdOLO",
+    "title": "DevSecOps : de la sécurité dans mon DevOps",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
     "times": [17]
   },
   {
-    "id": "m8pvkEKdZYVIxBQL3v4z",
-    "title": "Notif qui saoule n'amasse pas foule ...",
+    "id": "6RrVaTNLyt73GF0J5jWb",
+    "title": "Types top !",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [2],
+    "times": [13]
+  },
+  {
+    "id": "BLeeHoP7KNseKPuIVRBo",
+    "title": "OpenAPI & AsyncAPI : spécifications et contrats",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [2],
+    "times": [7]
+  },
+  {
+    "id": "EeFwDdpryszbUCXQbXHU",
+    "title": "OAuth 2.1 expliqué simplement (même si tu n'es pas dev) ! ",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [3]
+  },
+  {
+    "id": "FOtf5DDjHiIwr16Zvkgb",
+    "title": "Petit guide pratique pour commencer un design system",
+    "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
     "times": [17]
+  },
+  {
+    "id": "MGh1FlQvLhcFIn3ldjaZ",
+    "title": "C'est qui le patron ?",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [2],
+    "times": [11]
+  },
+  {
+    "id": "MkEtWfsIOK8wQl2xXpVN",
+    "title": "REST, gRPC, GraphQL, Webhooks : dans quelles situations ?",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [15]
+  },
+  {
+    "id": "NqYCRco6ujJ7EbNxmMIt",
+    "title": "Parse don't validate mais en java en 15 min",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [1],
+    "times": [7]
+  },
+  {
+    "id": "NuCWRJxo3GXfdCqiusRJ",
+    "title": "L'échange et la communication à 40 devs : c'est possible avec les bons rituels",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [3],
+    "times": [7]
+  },
+  {
+    "id": "Q4h6tnflAckbwdiydABe",
+    "title": "Would like to learn how manage your passwords like your code?",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [3],
+    "times": [11]
+  },
+  {
+    "id": "QypHgyU453hUQ5mfRDB2",
+    "title": "Dis papa ? C'est quoi un SRE ?",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [2],
+    "times": [5]
+  },
+  {
+    "id": "Wnn8w21SnahbPtnDeRLS",
+    "title": "Vis ma vie de bénévole ! ",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [3],
+    "times": [9]
+  },
+  {
+    "id": "WvbQnfQIlrcwpEICvylZ",
+    "title": "Les fonctions (récursives) décortiquées",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [5]
+  },
+  {
+    "id": "YM5SsM4ypHA0t74w3vMU",
+    "title": "JOOQ, joy of SQL",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [2],
+    "times": [19]
+  },
+  {
+    "id": "fwKNjlHb5v44lvrnrYHo",
+    "title": "Mon email devient dynamique ! ",
+    "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [1],
+    "times": [9]
+  },
+
+  {
+    "id": "jmU1KWBEVrb4f6D59qHV",
+    "title": "Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [3],
+    "times": [19]
+  },
+  {
+    "id": "n5zBPRs7NMSrwXJVrVHc",
+    "title": "HTTPS comment ça marche ?",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [2],
+    "times": [9]
+  },
+  {
+    "id": "nLfP4678o1ZaMYm2kJZB",
+    "title": "The blind test : l'accessibilité d'un site internet pour une personne non voyante",
+    "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [13]
+  },
+  {
+    "id": "rhH5srvPxspJKVBUzRbB",
+    "title": "L'eco conception, c'est bien, mais si on parlait un peu du backend ?",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [3],
+    "times": [13]
+  },
+  {
+    "id": "smHIjirTqfAqt7qPEwF5",
+    "title": "(Re) Découvrir les outils UNIX",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+    "rooms": [1],
+    "times": [11]
+  },
+  {
+    "id": "tb63G5PhWlgT0OirMGQT",
+    "title": "Comment mes hobbies m'ont aidé à sauver mon frigo",
+    "categories": "9fc85ea1-2256-54f1-886f-246090b0e764",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [3],
+    "times": [5]
+  },
+  {
+    "id": "viqWI7wZa2jpPUo1Vy8y",
+    "title": "Java dans le cloud : Avec Spring ou Quarkus ?",
+    "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [17]
+  },
+  {
+    "id": "zq4HdtYsZFbQghPedwLs",
+    "title": "👨‍🎨 Il était une fois... les navigateurs ⛵️",
+    "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [19]
   },
   {
     "id": "keynoteCloture",
     "title": "Keynote de clôture",
     "rooms": [1,2,3],
-    "times": [19]
+    "times": [21]
   }
+
 ]
