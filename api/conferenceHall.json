@@ -1,6 +1,25 @@
 {
   "talks": [
     {
+      "id": "1eXVuAHysYDUSr0AnHtS",
+      "title": "GitPod : IDE as a service, ou comment ne pas acheter un MacBook Pro à 6000 € et être heureux avec une petite machine",
+      "state": "accepted",
+      "level": "beginner",
+      "abstract": "Nous allons vous conter plusieurs histoires, dont vous développeurs, êtes les héros\n\n### La 1ère, vous êtes contributeur opensource:\n\nIl est tard, les enfants sont au lit, vous avez enfin un peu de temps pour geeker tranquillement 🎉. C'est le moment de vous lancer à contribuer dans ce projet open source qui vous tient à cœur.\nVous commencez à suivre  les instructions pour préparer l'environnement de dev : telle version de node, en conflit avec celle qui vous utilisez au jour le jour, telles bibliothèques, telles dependences qui marchent pas bien sur votre machine... Après deux heures, vous avez réussi à tout préparer, mais votre envie de coder s'est éteinte 🥱 à force de vous battre avec l'environnement, et vous allez vous coucher … 😴\n\n### La 2ème, plus classique, vous êtes chef de projet “couteau suisse” en ESN:\n\nVendredi matin, vous travaillez dans l'ESN \"HGJ\", votre patron vous annonce que vous êtes promu Chef de Projet, que vous avez hérité du projet \"EnRetardDèsLeDépart\" et que votre équipe de 20 personnes commence Lundi et le client a exigé qu'elle soit opérationnelle dès Lundi. Pas grave, vous avez tout le week-end pour installer les 20 postes de développement et les paramétrer 🥵\nIl faut juste expliquer à votre compagne pourquoi vous allez devoir annuler le week-end prévu depuis des semaines ... Bon courage 😈\n\nQui n'a pas eu ce type d'expérience, ou d'autres semblables : devoir contribuer à un nouveau projet avec l'ordinateur du travail, dont le verrouillage mis par la RSSI rend hyper compliqué d'installer des outils, développer depuis son iPad car on est en déplacement et on n'a plus de batterie sur le laptop, développer sur un même projet mais avec des paramétrages complètement différentes selon l'environnement, faire un quick fix sur un dépôt sans devoir télécharger la moitié d'internet sur son poste... ?\n\nGitPod est une solution étonnement simple et efficace à tous ces soucis. Le principe ? Un environnement de développement dans le cloud, basé sur Git, Eclipse Theia et Docker, vous permettant de développer, tester et déployer votre code directement depuis la fenêtre de votre navigateur.\n\nAvec nos 2 histoires, nous allons vous expliquer et démontrer comment utiliser GitPod pour monter un environnement de développement en quelques minutes, comment ne pas passer un week-end à préparer l’arrivée d’une équipe de développement, comment utiliser GitPod avec GitLab ou GitHub pour fournir des environnements clés en mains pour des projets, workshops, formations …\n\nBref, à la fin de notre talk, vous saurez utiliser GitPod, et vous serez peut-être même “acro” à cet IDE dans le cloud (qui fonctionne même avec FireFox ou Safari iOS 😉 … et que vous pouvez aussi installer chez vous, mais bon 🤣)\n",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "7nvNI5UNjmcHVhBxnCPz3TIz4rC3",
+        "pYuiGicpt0MenD8NEMhZXtk6VSr1"
+      ],
+      "comments": "Hola amigos !\n\nÇa y est, une année de plus Touraine Tech approche! Je suis **ravi** d'envoyer des propositions pour cette édition 2022, et je serais sincèrement heureux de pouvoir retourner vous voir en janvier, car  TnT est une conférence que j'adore, avec une team orga simplement géniale (et cela sans parler d'un des meilleurs repas de conférence que j'ai jamais goûté, j'espère que les conditions et l'Université vous permettront de le faire cette année).\n\nSinon, pour le talk, Philippe et moi sommes très contents de ce talk, qui vient directement de notre enthousiasme pour GitPod, vu comment il nous a rendu la vie plus simple pour plein de tâches, et on adorerait vous le raconter à Tours...\n\nBon courage avec l'orga, les amis !",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1633685959,
+        "_nanoseconds": 285000000
+      }
+    },
+    {
       "id": "1ii3MtY8M6p4lwM2VKDx",
       "title": "Père Castor 🐻, raconte nous une histoire (d'OPS)",
       "state": "confirmed",
@@ -302,24 +321,6 @@
       }
     },
     {
-      "id": "YM5SsM4ypHA0t74w3vMU",
-      "title": "JOOQ, joy of SQL",
-      "state": "confirmed",
-      "level": "beginner",
-      "abstract": "Et si l'on reprenait le contrôle de nos interactions avec notre base de données préférée? Car en vrai, nos BDD sont des monstres de puissance qui sont souvent sous exploités 😓.\nNous verrons, avec JOOQ comment écrire des requêtes SQL simples ou évolués, le tout facilement et de manière type-safe ! \n\nVenez découvrir cette superbe librairie OpenSource, compatible Java, Kotlin & Scala, qui va vous permettre de vous simplifier la vie et d'améliorer votre code… et même de découvrir de super fonctionnalités SQL que vous n'imaginiez même pas.",
-      "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "rDKV0gUOk0O4WU9tpknPAngMF9A3"
-      ],
-      "comments": "Bonjour la team review 😊\n\nCette présentation est un énorme retour d'expérience sur l'un des sujets qui me passionne le plus, les requêtes SQL faites depuis nos applications (oui je sais, c'est un peu bizarre comme passion...).\n\nLe but de cette présentation est de fournir aux participants une solution alternative et BEAUCOUP plus simple que les standards d'aujourd'hui... et de les amener à reprendre en mains leurs requêtes SQL.\n\nLa présentation est un mélange de slides, de code et de très belles photos 😇",
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1635404404,
-        "_nanoseconds": 661000000
-      }
-    },
-    {
       "id": "fwKNjlHb5v44lvrnrYHo",
       "title": "Mon email devient dynamique ! ",
       "state": "confirmed",
@@ -346,8 +347,8 @@
       "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
-        "6klOX1xduHbBCxddJhe0sBJLZp13"
+        "6klOX1xduHbBCxddJhe0sBJLZp13",
+        "MIk2pkgfjjfTWRrlZQulaVJxWgR2"
       ],
       "comments": "Pour l'intro, nous aimerions pouvoir jouer du son depuis l'ordinateur qui présente les slides et le code.\nComme nous faisons beaucoup de live coding durant ce talk, nous souhaiterions avoir une place assise et un bureau pour l'ordinateur qui présentera les slides.\n\nMerci ❤️",
       "language": "French",
@@ -365,8 +366,8 @@
       "categories": "ae14e3b6-2476-58d7-a629-f130574251bd",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
-        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2"
+        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2",
+        "6gcb9OjG5cgl14IQBEt5yu4TmTT2"
       ],
       "language": "French",
       "createTimestamp": {
@@ -419,8 +420,8 @@
       "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
-        "bsQBCvfQjCbafP0wFCWVkPqwTGX2"
+        "bsQBCvfQjCbafP0wFCWVkPqwTGX2",
+        "KWlesYn7ciZTRyCHSu3NQqMuGVi2"
       ],
       "comments": "Nous avons une installation technique un peu complexe (un second écran, un clavier supplémentaire, une plage braille, le son de l’ordinateur qui doit être retransmis dans la salle)… Si vous retenez notre sujet, merci de prendre en compte le temps nécessaire de mise en place dans votre planification.",
       "language": "French",
@@ -544,6 +545,25 @@
       "github": "jgrenat"
     },
     {
+      "uid": "7nvNI5UNjmcHVhBxnCPz3TIz4rC3",
+      "displayName": "Philippe Charrière",
+      "bio": "J'ai plusieurs vies professionnelles (en même temps)\n- Senior Technical account manager pour GitLab 🦊\n- \"Boss\" chez Bot.Garden (en fait j'ai monté ma boîte pour tenter de \"transformer\" quelques side projects) 🤖🌼\n\nEt le reste du temps, si je ne suis pas à la pêche ou avec ma famille, je code en JavaScript, Golo, Kotlin et Scala",
+      "company": "GitLab",
+      "photoURL": "https://lh6.googleusercontent.com/-PKwAMaR8DwQ/AAAAAAAAAAI/AAAAAAAAJNQ/H9mANtBiKmg/photo.jpg",
+      "twitter": "@k33g_org",
+      "github": "@k33g"
+    },
+    {
+      "uid": "pYuiGicpt0MenD8NEMhZXtk6VSr1",
+      "displayName": "Horacio Gonzalez (LostInBrittany)",
+      "bio": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une quinzaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\n\nAprès quelques années comme tech leader de la partie frontend de [@warp10io](https://twitter.com/warp10io/) chez  [Cityzen Data](https://twitter.com/cityendata/), Horacio a rejoint [OVHcloud](https://twitter.com/OVHcloud) en janvier 2018 en tant que leader DevRel (Developer Relations). Il est cofondateur du  [FinistDevs](https://twitter.com/finistdevs/), le JUG/GDG français le plus proche de la Silicon Valley.\n\nPassionné par le développement web et tout ce qui gravite autour des composants web, Horacio est [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez)  en Web Technologies and Flutter.\n\nVous pouvez voir mes dernières talks sur [mon profil Notist](https://noti.st/lostinbrittany)",
+      "speakerReferences": "I have been several times speaker at Devoxx Belgium, Devoxx France, Codemotion Rome, Codemotion Madrid and Codemotion Amsterdam. I have done a keynote at MobiConf in Poland, and been speaker at many regional conferences: DevFest Nantes, DevFest Toulouse, DevFest Paris, Mix It, Sunny Tech, Riviera Dev... And of course lots and lots of meetups, JUGs and GDGs, because those are my roots. \n\nYou can see more about my speaker activity (with links to slides and videos) at https://noti.st/lostinbrittany",
+      "company": "OVHcloud",
+      "photoURL": "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg",
+      "twitter": "@LostInBrittany",
+      "github": "https://github.com/LostInBrittany"
+    },
+    {
       "uid": "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1",
       "displayName": "David Aparicio",
       "bio": "Passionate engineer in Computer Science, graduated INSA Lyon 2014, after two years spent at UNICAMP in Brazil, actively participates in the community, through Meetups and conferences. His motto: “No developer is supposed to ignore security”.\n\nIngénieur passionné en Informatique, diplômé INSA Lyon 2014, après deux années passées à UNICAMP au Brésil, participe activement à la communauté, à travers des Meetups et des conférences. Sa devise: « Nul développeur n'est censé ignorer la sécurité »",
@@ -556,7 +576,7 @@
     {
       "uid": "jcgQ0F1L54dEsi4l6WMylBxEMDx2",
       "displayName": "Gerard Paligot",
-      "bio": "Father and husband, Software Staff Engineer @Decathlon, co-organisator LAUG and FRAUG, Kotlin Lover, Disney Fan!",
+      "bio": "Father and husband, Software Staff Engineer at Decathlon, GDG Lille (Android) and FRAUG organizer and Disney Fan!",
       "speakerReferences": "Vous pouvez retrouver toutes mes références via cette page : https://gerard.paligot.com/speaking/",
       "company": "Decathlon",
       "photoURL": "https://pbs.twimg.com/profile_images/1465658195767136257/zdYQWsTj_400x400.jpg",
@@ -566,7 +586,7 @@
     {
       "uid": "0Xv6EnbodmaXO2WF56MP48WbKF62",
       "displayName": "Sébastien JAUPART",
-      "bio": "Développeur Java depuis 2015 et enseignant vacataire depuis 2018, Sébastien a débuté et forgé son expérience technique dans le monde du retail (Kiabi, Boulanger et aujourd’hui chez Decathlon).\n\nOrienté back, il apprécie travailler sur des problématiques liées à la performance et aux architectures microservices. Il aime apprendre des autres et partager ses connaissances au travers de présentations théoriques et d'ateliers pratiques (Git ProTips, ...).\n\nDésormais consultant FullStack chez Ippon Technologies à Lille, il souhaite continuer à partager ses expériences sur de nouveaux sujets liés au testing ou à la programmation fonctionnelle.\n",
+      "bio": "Développeur Java depuis 2015 et enseignant vacataire depuis 2018, Sébastien a débuté et forgé son expérience technique dans le monde du retail.\n\nOrienté back, il apprécie travailler sur des problématiques liées à la performance et aux architectures microservices. Il aime apprendre des autres et partager ses connaissances au travers de présentations théoriques et d'ateliers pratiques (Git ProTips, ...).\n\nDésormais consultant FullStack chez Ippon Technologies à Lille, il souhaite continuer à partager ses expériences sur de nouveaux sujets liés au testing ou à la programmation fonctionnelle.\n",
       "company": "Ippon Technologies",
       "photoURL": "https://lh3.googleusercontent.com/a/AATXAJxRmP0rmCVAuobVUTu4WTm3x3Or5wrzkc36Y-96=s96-c"
     },
@@ -608,16 +628,6 @@
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiQv4MJw_VRD2uA7mybnFr-Cc8k3ve4-Cn2-dIxYg=s96-c",
       "twitter": "foxlegend",
       "github": "foxlegend"
-    },
-    {
-      "uid": "9RbNQ6FMFJQomghcNoer2BoSiRK2",
-      "displayName": "Damien Cavaillès",
-      "bio": "Damien Cavaillès peut être considéré comme un des développeurs incontournable quand on parle de sujets RHs.   Son ambition est de chambouler le recrutement des développeurs.\nSelon lui “vu que le marché est tendu, il devrait être facile pour un dev de trouver par lui-même une entreprise où il sera heureux.” Issu de l’ISEN, il cofonde WeLoveDevs en 2015 et n’hésite pas à déconstruire l’imagerie du métier de développeur-peuse informatique pour la réconcilier avec le recrutement. .\nNovateur, inspiré et inspirant, il participe à de nombreuses conférences tech dans toute la France. Damien fédère par sa gentillesse, sa curiosité et son honnêteté qui, bien que parfois désarmante, permet de pointer le focal là où il est nécessaire de voir ce qui doit être mis en lumière.",
-      "speakerReferences": "J'ai speaké sur beaucoup de DroidCon, des VoxxedDays, des DevFest, au Mixit.",
-      "company": "WeLoveDevs",
-      "photoURL": "https://avatars3.githubusercontent.com/u/2880446?v=4",
-      "twitter": "@thedamfr",
-      "github": "thedamfr"
     },
     {
       "uid": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
@@ -746,14 +756,14 @@
       "github": "fcabestre"
     },
     {
-      "uid": "rDKV0gUOk0O4WU9tpknPAngMF9A3",
-      "displayName": "Kevin Davin",
-      "bio": "Google Developer Expert on Google Cloud & Kotlin, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation. \nKotlin, Java, TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the GitLab's Continuous Integration 🚀. \n\nAddict of agility and DevOps, some of my missions were to help teams to follow those philosophies. \nFrom code quality analysis to unit or end-to-end tests setup all the way to continuous deployment and operation, I try to follow a project from birth to production. \n\nI'm currently Software Engineer at Gradle and I'm working on Gradle Enterprise, the product which can improve the developer productivity by reducing its build and test time.",
-      "speakerReferences": "* Una-GitLab\n  * [GDG Toulouse Sept 2018](https://www.youtube.com/watch?v=67V3QNI0TF4&t=3s)\n  * SnowCamp 2019\n  * Sunny Tech 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Una-GitLab, le TP à roulette\n  * SnowCamp 2019\n  * Touraine Tech 2019\n  * DevFest Paris 2019\n  * Mixit 2019\n  * GitLab Connect Paris\n  * GitLab Connect Toulouse\n* Istio, le meilleur ami de votre cluster K8S\n  * Snowcamp 2019\n  * Tourainne Tech 2019\n  * [BreizhCamp 2019](https://www.youtube.com/watch?v=80jo1ftgHVM)\n  * [Paris Container Day 2019](https://www.youtube.com/watch?v=oHgzSTJi2Uo)\n  * [VoxxedDays Luxembourg 2019](https://www.youtube.com/watch?v=wG_oljge1Xc)\n  * [BDX.io 2019](https://www.youtube.com/watch?v=_AvgNihwlWU)\n  * DevoxxFR 2020 (annulée 😓)\n  * [CloudOuest 2020](https://cloudouest2020.virtualconference.com/#/conference/5eac1d83643a40001b6c9f76)\n  * VoxxedDays Minsk 2020 (annulée 😓)\n  * [Istio event with Google](https://twitter.com/stack_labs/status/1273557708524978177?s=20)\n  * [DevFest Norway 2020](https://devfest.no/schedule/2020-14-10?sessionId=107) ([replay](https://youtu.be/U6AMYBV_DZ4?t=9197))\n  * [DevFest Casablanca x Settat](https://gdg.community.dev/events/details/google-gdg-casablanca-presents-devfest-casablanca-x-settat-)\n  * [DevoxxFR 2021](https://cfp.devoxx.fr/2021/talk/TAB-3486/Istio,_le_meilleur_ami_de_votre_cluster_K8S_%E2%9D%A4%EF%B8%8F) ([replay](https://www.youtube.com/watch?v=03m9KsI7EtI))\n* Istio in Action ⛵️\n  * [CloudSud 2021](https://cloudsud.virtualconference.com/#/conference/6049fa98f336e10019a80a4b)\n  * Partnership with [Google (SMB Program)](https://www.meetup.com/fr-FR/Stack-Days/events/271347501/)\n  * [CloudOuest 2020](https://twitter.com/stack_labs/status/1272522842152804358?s=20)\n  * [DevFest Paris 2020](https://devfest.gdgparis.com/sessions/istio_par_la_pratique_/)\n  * [Touraine Tech 2020](https://touraine.tech/talk/2nUoRfU9qblCBji2OHWx)\n  * [SnowCamp 2020](https://snowcamp2020.sched.com/event/XoNH/istio-nulbpar-la-pratique)\n* Docker, Kubernetes & Istio:  Tips, tricks & tools\n  * [JUG Summer Camp 2020](https://www.youtube.com/watch?v=JN639944qSk)\n  * [DevFest du bout du monde 2020](https://devfest.duboutdumonde.bzh/sessions/docker__kubernetes___istio___tips__tricks___tools/)\n  * [DevFest Strasbourg 2019](https://devfest19.gdgstrasbourg.fr/schedule/2018-11-06?sessionId=107)\n  * [DevFest Nantes 2019](https://www.youtube.com/watch?v=XnEdh9bwDXk)\n  * [SunnyTech 2019](https://www.youtube.com/watch?v=GHZqlTDvRic)\n  * RivieraDev 2019\n  * [DevoxxFR 2019](https://www.youtube.com/watch?v=jkbHEMaYsB0)\n* Let's kustomize our manifests with style 🤩 !\n  * CloudOuest 2021\n  * [CloudEst 2021](https://twitter.com/cloud_est/status/1450009940286902278?s=20)\n* JOOQ, joy of SQL\n  * [ToulouseJUG](https://twitter.com/toulousejug/status/1320690617572315138) | [Replay](https://www.crowdcast.io/e/toulousejug-2020-11/register) | [Slides](https://docs.google.com/presentation/d/1YKk47FWeQqEIUVRHBKHSx7cigFGfeMV5QBYqe-dnHjE/edit)\n  * [DevoxxUK 2021](https://www.devoxx.co.uk/talk/?id=12161)\n",
-      "company": "Gradle",
-      "photoURL": "https://lh5.googleusercontent.com/-t2c2Q9TjKnA/AAAAAAAAAAI/AAAAAAAAFZU/G4vUXziejAw/photo.jpg",
-      "twitter": "@davinkevin",
-      "github": "davinkevin"
+      "uid": "6klOX1xduHbBCxddJhe0sBJLZp13",
+      "displayName": "Delphin Aubin",
+      "bio": "Fan de web, je développe avec passion depuis plus de 10 ans.\nCurieux de nature, j'aime beaucoup savoir comment les choses fonctionnent et regarder sous le capot des outils que nous utilisons tous les jours.\n\nEnfin, comme j'aime le partage, je suis speaker et buveur de bière à mes heures perdues :)\n",
+      "speakerReferences": "J'ai donné un talk au Paris Open Source Summit 2019  (\"Momomodule\" avec Emmanuel Demey)\nJ'ai déjà speaké lors de différents meet up de la région Lilloise : \nGDG Lille,\nReact Beer,\nPlusieurs BBL",
+      "company": "Zenika Lille",
+      "photoURL": "https://lh3.googleusercontent.com/-UzixzWYbeqM/AAAAAAAAAAI/AAAAAAAAABc/3c7NRhzQzqk/photo.jpg",
+      "twitter": "@delphinaubin",
+      "github": "delphinaubin"
     },
     {
       "uid": "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
@@ -763,16 +773,6 @@
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gi4z-_e-jd9KBy14b9yJooRZGuC21crMv16vGs5=s96-c",
       "twitter": null,
       "github": "mmacphail"
-    },
-    {
-      "uid": "6klOX1xduHbBCxddJhe0sBJLZp13",
-      "displayName": "Delphin Aubin",
-      "bio": "Fan de web, je développe avec passion depuis plus de 10 ans.\nCurieux de nature, j'aime beaucoup savoir comment les choses fonctionnent et regarder sous le capot des outils que nous utilisons tous les jours.\n\nEnfin, comme j'aime le partage, je suis speaker et buveur de bière à mes heures perdues :)\n",
-      "speakerReferences": "J'ai donné un talk au Paris Open Source Summit 2019  (\"Momomodule\" avec Emmanuel Demey)\nJ'ai déjà speaké lors de différents meet up de la région Lilloise : \nGDG Lille,\nReact Beer,\nPlusieurs BBL",
-      "company": "Zenika Lille",
-      "photoURL": "https://lh3.googleusercontent.com/-UzixzWYbeqM/AAAAAAAAAAI/AAAAAAAAABc/3c7NRhzQzqk/photo.jpg",
-      "twitter": "@delphinaubin",
-      "github": "delphinaubin"
     },
     {
       "uid": "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
@@ -802,6 +802,14 @@
       "github": "quentinovega"
     },
     {
+      "uid": "bsQBCvfQjCbafP0wFCWVkPqwTGX2",
+      "displayName": "Florent Lévêque",
+      "bio": "Actuellement en formation D2WM à l'ENI Ecole d'informatique, je suis confronté à des soucis d'accessibilité numérique au quotidien.",
+      "company": "ENI",
+      "photoURL": "https://avatars.githubusercontent.com/u/84006572?v=4",
+      "github": "florentleveque"
+    },
+    {
       "uid": "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
       "displayName": "Hervé Boisgontier",
       "bio": "Formateur en développement informatique au sein d'ENI École Informatique à Nantes.<br>\nDepuis plus de 10 ans, avec différents langages, je forme à la programmation et l’art du développement informatique. Depuis longtemps, je m’intéresse au développement durable et plus récemment comment le mettre en pratique dans notre métier d’informaticien ou d'informaticienne.<br>\nJe me suis donc intéressé à ces thématiques et pour parfaire mes connaissances, j'ai suivi les formations \"écoconception de services numériques\" par GreenIT.fr et \"Développer des sites web accessibles\" par Access42 et obtenu les certifications associées.\nPour plus d'informations : <a href=\"https://www.linkedin.com/in/boisgontier/\">https://www.linkedin.com/in/boisgontier/</a>\n",
@@ -809,14 +817,6 @@
       "company": "ENI École Informatique",
       "photoURL": "https://avatars1.githubusercontent.com/u/57721330?v=4",
       "github": "https://github.com/hboisgontier/afupDay2020"
-    },
-    {
-      "uid": "bsQBCvfQjCbafP0wFCWVkPqwTGX2",
-      "displayName": "Florent Lévêque",
-      "bio": "Actuellement en formation D2WM à l'ENI Ecole d'informatique, je suis confronté à des soucis d'accessibilité numérique au quotidien.",
-      "company": "ENI",
-      "photoURL": "https://avatars.githubusercontent.com/u/84006572?v=4",
-      "github": "florentleveque"
     },
     {
       "uid": "rYhBI1cLEJSmHtzJfgyckwdJ0Il1",
@@ -844,7 +844,7 @@
       "bio": "Je suis architecte et développeur sénior chez Worldline. Mon activité consiste à coder (principalement en Java), coacher des développeurs et concevoir des architectures. \n\nBlog: https://blog.touret.info",
       "speakerReferences": "J'ai été speaker dans le cadre des événements suivants:\n\n- Devoxx UK 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- Devoxx UK 2021 (EN): Architecture Katas : Improve your system architecture design skills in a funny way !\n- Volcamp IO 2021 (FR): Améliorer les compétences et les infrastructures avec les katas d'architecture\n- JNation 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- The Cloud First 2021 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- The Cloud First 2021 (FR): \"Checklist_pour_concevoir_une_application_dans_le_cloud\"\n- Worldline Expert Community - \"Cloud Day\" Live event 2020 (EN) : \"K8S & Co : beyond the hype\"\n- Techforum Iberia 2020 (EN): Java Next Steps (EN)\n- Orleans Tech 2019 (FR): \"Unifiez vos traitements Batch et Streaming avec Apache Beam\"\n- Techforum 2019: Java Next Steps (EN)\n- Touraine Tech 2019 (FR): \"Architecture Hands-on\"\n- Touraine Tech 2018 (FR): \"Jenkins 2 : Le retour (d'expérience)\"\n\nVous pourrez trouver les slides de quelques présentations que j'ai pu faire sur [mon compte slidedeck](https://speakerdeck.com/alexandretouret).",
       "company": "WORLDLINE",
-      "photoURL": "https://lh6.googleusercontent.com/-b9g43PM551Q/AAAAAAAAAAI/AAAAAAAADF4/S0ivCJalbks/photo.jpg",
+      "photoURL": "https://media-exp1.licdn.com/dms/image/C4D03AQGH93qyploLvg/profile-displayphoto-shrink_800_800/0/1567183805396?e=1646870400&v=beta&t=-352QeCbzJYqjSys0NCdn_qCD65Lo6rSDuPsk13OUzw",
       "twitter": "@touret_alex",
       "github": "alexandre-touret"
     },
@@ -888,8 +888,8 @@
       "name": "Front web, Mobile"
     },
     {
-      "id": "ae14e3b6-2476-58d7-a629-f130574251bd",
-      "name": "Backends, Cloud, Big Data"
+      "name": "Backends, Cloud, Big Data",
+      "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
       "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
@@ -900,12 +900,12 @@
       "name": "Internet des objets"
     },
     {
-      "name": "Conception, architecture",
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "name": "Conception, architecture"
     },
     {
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "name": "Outillage, pratiques de développement"
+      "name": "Outillage, pratiques de développement",
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
       "name": "Alien",
@@ -914,12 +914,12 @@
   ],
   "formats": [
     {
-      "id": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
-      "name": "Quickie (15min)"
+      "name": "Quickie (15min)",
+      "id": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6"
     },
     {
-      "name": "Conférence (50min)",
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "name": "Conférence (50min)"
     },
     {
       "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
