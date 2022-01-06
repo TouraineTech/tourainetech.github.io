@@ -33,26 +33,23 @@ async function retrieveData(apiKey) {
   return json;
 }
 
-function confirmedTalksFilter() {
-  return ({id, state}) => (state === 'confirmed');
+function talksFilter(...states) {
+  return ({id, state}) => (states.includes(state));
 }
 
-function acceptedTalksFilter() {
-  return ({id, state}) => (state === 'accepted');
-}
 
 function keynoteTalkFilter() {
-  return ({id}) => id !== '2UyymcQvMehGkX1W40IE';
+  return ({id}) => id !== '5dpfmCYFArWV96iuHRld';
 }
 
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
 
   const acceptedTalks = conferenceHallDatas.talks
-    .filter(acceptedTalksFilter());
+    .filter(talksFilter('accepted'));
 
   const confirmedTalksSpeakersId = conferenceHallDatas.talks
-    .filter(confirmedTalksFilter())
+    .filter(talksFilter('confirmed'))
     .map(({speakers}) => {
       return speakers
     })
@@ -66,7 +63,7 @@ function getTalks(conferenceHallDatas) {
       {organizersThread, rating, loves, hates, ...datas}) => {
       return {...datas};
     })
-    .filter(confirmedTalksFilter())
+    .filter(talksFilter('confirmed','accepted'))
     .filter(keynoteTalkFilter() );
 
   talks.push(
