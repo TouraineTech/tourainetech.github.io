@@ -59,6 +59,14 @@
     "desc": "Leader des plateformes et des services de productivité, Microsoft donne à chaque individu et chaque organisation les moyens de réaliser ses ambitions, dans un monde fondé sur le Cloud et la mobilité.<br/><br/>Grâce a des investissements en recherche et développement dans des domaines de pointe comme l’IA, le quantum computing ou la réalité mixte, Microsoft a su s’imposer comme un leader de l’innovation tout en ayant à coeur de former les développeurs à travers des initiatives comme l’école IA (https://simplon.co/ecoleia/). Le virage vers l’opensource engagé par Microsoft ces dernières années participe également à l’ouverture de l’entreprise auprès des développeurs. Il n’est plus rare de voir Microsoft mettre à disposition de la communauté des outils ou langages sous licence opensource à l’instar de Typescript, .Net Core ou VSCode. Sans oublier Linux dans lequel l’entreprise investie à la fois sur Azure et sur Windows avec WSL (Windows Subsystem for Linux).<br/><br/>Au cœur de l’écosystème numérique français depuis plus de 30 ans, Microsoft s’engage à soutenir les développeurs dans la réalisation de leurs projets et à les accompagner dans leur formation tout au long de leur carrière grâce à des initiatives comme Microsoft Learn aka.ms/learn"
   },
   {
+    "name": "OVHcloud",
+    "id": "OVHcloud",
+    "image": "logo-ovh.png",
+    "link": "https://www.ovhcloud.com/fr/",
+    "type": "gold",
+    "desc": "OVHcloud est un acteur mondial et le leader européen du Cloud opérant plus de 400 000 serveurs dans 33 datacenters sur 4 continents. Depuis 20 ans, le Groupe s’appuie sur un modèle intégré qui lui confère la maîtrise complète de sa chaîne de valeur : de la conception de ses serveurs à la construction et au pilotage de ses datacenters en passant par l’orchestration de son réseau de fibre optique. Cette approche unique lui permet de couvrir en toute indépendance l’ensemble des usages de ses 1,6 million de clients dans plus de 140 pays. OVHcloud propose aujourd’hui des solutions de dernière génération alliant performance, prédictibilité des prix et une totale souveraineté sur leurs données pour accompagner leur croissance en toute liberté."
+  },
+  {
     "name": "Worldline",
     "id": "worldline",
     "image": "logo-worldline.png",
