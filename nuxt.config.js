@@ -38,7 +38,10 @@ module.exports = {
       {name: 'apple-mobile-web-app-title', content: 'Touraine Tech'},
       {name: 'application-name', content: 'Touraine Tech'},
       {name: 'msapplication-TileColor', content: '#ffffff'},
-      {name: 'theme-color', content: '#ffffff'}
+      {name: 'theme-color', content: '#ffffff'},
+      // Smartbanner
+      {name:"apple-itunes-app",content:"app-id=1599891078"},
+      {name:"google-play-app",content:"app-id=to.chapi.tnt"},
     ],
     link: [
 
@@ -63,6 +66,7 @@ module.exports = {
   */
   css: [
     '@/assets/scss/main.scss',
+    'node_modules/smart-app-banner/dist/smart-app-banner.css'
   //'@/assets/scss/print.scss',
   ],
 
@@ -71,7 +75,8 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/smoothscroll-polyfill.js', ssr: false },
-    '~/plugins/vue-lightbox.client.js'
+    '~/plugins/vue-lightbox.client.js',
+    '~/plugins/smartbanner.client.js'
   ],
 
   /*

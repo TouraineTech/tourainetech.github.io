@@ -108,7 +108,7 @@ h2 {
 .container--image {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  min-height: 300px;
+  min-height: 200px;
   display: flex;
   justify-content: center;
 

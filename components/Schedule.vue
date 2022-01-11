@@ -2,7 +2,7 @@
   <section id="schedule" class="container--white">
     <div class="container--fix container--center">
       <h2>Le programme</h2>
-      <h3>L'application du programme <a href="https://testflight.apple.com/join/XiwXrdnn">Apple</a> <a href="https://play.google.com/store/apps/details?id=com.codetroopers.pp">Android</a> </h3>
+      <h3>L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a> <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a> </h3>
     </div>
     <div class="schedule--grid">
       <div class="schedule-spacer--cell"></div>
@@ -27,6 +27,7 @@
         <div>
           <nuxt-link
             :to="`/talk/${talk.id}`"
+            :class="{ disabled: talk.id === 'keynoteOuverture' ||   talk.id === 'keynoteCloture' }"
           >
             <h4 class="schedule-title">{{ talk.title }}</h4>
             <h5 v-if="talk.speakerNames" class="schedule-speaker-name"> {{ talk.speakerNames }}</h5>
@@ -162,7 +163,7 @@ $color-alien: #066420;
 }
 .schedule--grid {
     display: grid;
-    grid-template-columns: 50px repeat(5, 1fr);
+    grid-template-columns: 50px repeat(4, 1fr);
     grid-column-gap: 1rem;
     margin: 1rem;
 
@@ -365,8 +366,12 @@ $color-alien: #066420;
   content: "\1F3A4 "
 }
 .schedule-talk-time1--cell p.schedule-room--duration-level,
-.schedule-talk-time19--cell p.schedule-room--duration-level {
+.schedule-talk-time21--cell p.schedule-room--duration-level {
   display: none;
+}
+.disabled {
+  color: lightgrey;
+  pointer-events: none;
 }
 </style>
 
