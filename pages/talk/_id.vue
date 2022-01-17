@@ -64,7 +64,7 @@ export default {
     }
   },
   head() {
-    const title = `Touraine Tech 2020 - ${this.talk.title}`;
+    const title = `Touraine Tech 2022 - ${this.talk.title}`;
     const url = `https://touraine.tech/talk/${this.talk.id}`;
     return {
       titleTemplate: title,

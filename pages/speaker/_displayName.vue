@@ -97,7 +97,7 @@ export default {
     }
   },
   head() {
-    const title = `Touraine Tech 2020 - ${this.speaker.displayName}`;
+    const title = `Touraine Tech 2022 - ${this.speaker.displayName}`;
     const url = `https://touraine.tech/speaker/${this.speaker.displayName}`;
     const image = `${this.speaker.photoURL}`;
     return {
