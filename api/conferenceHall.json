@@ -81,8 +81,8 @@
       "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "F5ZGeSwlxjTyIVuhWfPZrVinnn92",
-        "y3wNWuGdbKdUsmdjMrbbQXHL2ay1"
+        "y3wNWuGdbKdUsmdjMrbbQXHL2ay1",
+        "F5ZGeSwlxjTyIVuhWfPZrVinnn92"
       ],
       "comments": "Que notre conférence soit acceptée ou non lors de TNT, nous serons là :)\n\nMerci pour l’organisation de cet évènement, et que nous puissions nous retrouver bientôt :D\n\nÀ très vite !",
       "language": "French",
@@ -181,23 +181,6 @@
       }
     },
     {
-      "id": "MGh1FlQvLhcFIn3ldjaZ",
-      "title": "C'est qui le patron ?",
-      "state": "confirmed",
-      "level": "beginner",
-      "abstract": "Depuis 2002, chez Code Lutin on a décidé de vivre en anarchie. C'est bien beau tout ça, mais ça fonctionne comment ? C'est ce que je vais essayer de vous montrer avec les avantages et les inconvénients de la démarche.",
-      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
-      "speakers": [
-        "ATWxmgrBTEcstZyQjR25MPP5wJS2"
-      ],
-      "comments": null,
-      "createTimestamp": {
-        "_seconds": 1632929814,
-        "_nanoseconds": 199000000
-      }
-    },
-    {
       "id": "MkEtWfsIOK8wQl2xXpVN",
       "title": "REST, gRPC, GraphQL, Webhooks : dans quelles situations ?",
       "state": "confirmed",
@@ -286,6 +269,23 @@
       }
     },
     {
+      "id": "VT5jRYoIZvxeNMoeXbdf",
+      "title": "Mutation testing : y a-t-il des trous dans votre couverture de test ?",
+      "state": "accepted",
+      "level": "beginner",
+      "abstract": "Les tests c'est bien, les tests qui échouent en cas de régression c'est mieux !\n\nC'est sur ce principe qu'est basé le mutation testing, une stratégie de test peu connue qui permet de \"tester vos tests\".\n\nLors de ce quickie, nous découvrirons les grands principes du mutation testing avant de le voir en action sur un projet.",
+      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "formats": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+      "speakers": [
+        "PRuMzxC7NVbsVnJP07AbHR2cNFx2"
+      ],
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1634832674,
+        "_nanoseconds": 921000000
+      }
+    },
+    {
       "id": "Wnn8w21SnahbPtnDeRLS",
       "title": "Vis ma vie de bénévole ! ",
       "state": "confirmed",
@@ -347,8 +347,8 @@
       "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "6klOX1xduHbBCxddJhe0sBJLZp13",
-        "MIk2pkgfjjfTWRrlZQulaVJxWgR2"
+        "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
+        "6klOX1xduHbBCxddJhe0sBJLZp13"
       ],
       "comments": "Pour l'intro, nous aimerions pouvoir jouer du son depuis l'ordinateur qui présente les slides et le code.\nComme nous faisons beaucoup de live coding durant ce talk, nous souhaiterions avoir une place assise et un bureau pour l'ordinateur qui présentera les slides.\n\nMerci ❤️",
       "language": "French",
@@ -510,8 +510,8 @@
       "categories": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "9LHSTmgvjXcyMPyfifAgXjtP6Z02",
-        "0alFaI2imGdQVSjuaMLFFfwqoL62"
+        "0alFaI2imGdQVSjuaMLFFfwqoL62",
+        "9LHSTmgvjXcyMPyfifAgXjtP6Z02"
       ],
       "comments": "J'ai hésité à le mettre en catégorie Alien car le format est très atypique : on va dire Alien-Web comme catégorie !!!",
       "language": "French",
@@ -588,7 +588,7 @@
       "displayName": "Sébastien JAUPART",
       "bio": "Développeur Java depuis 2015 et enseignant vacataire depuis 2018, Sébastien a débuté et forgé son expérience technique dans le monde du retail.\n\nOrienté back, il apprécie travailler sur des problématiques liées à la performance et aux architectures microservices. Il aime apprendre des autres et partager ses connaissances au travers de présentations théoriques et d'ateliers pratiques (Git ProTips, ...).\n\nDésormais consultant FullStack chez Ippon Technologies à Lille, il souhaite continuer à partager ses expériences sur de nouveaux sujets liés au testing ou à la programmation fonctionnelle.\n",
       "company": "Ippon Technologies",
-      "photoURL": "https://lh3.googleusercontent.com/a/AATXAJxRmP0rmCVAuobVUTu4WTm3x3Or5wrzkc36Y-96=s96-c"
+      "photoURL": "https://lh3.googleusercontent.com/fife/AAWUweVBgq-JO_mXa3AfNHbx2VH-ZgaGNtrL9cZvIE2IIp1DUhJL5-pz834jC2cRtlrELbMhBuEhrEAwoD3dC9XKYqIvoBVqp2vrZP84CcOtpERjXHxjOU01MFd5o2do-ovAb5GTANVOfiiHn37ptlde3TUfNLQkbrytwKpqH6WHPaZNK5igZdUwMUCQzKNIVHbcOgXNld6MUyu2wUS8HoHt2ftAy3zzrWRgvBGlbh3-LoGHYkvKOMRPWJY_KAkBRrQXj2pP78QQ4podU8mra4R8NoNvZ96NhyqHYh-QaJjCY73Mt6Oaw-YFJogBnbz7WXGdVyWZ1LwIkN8p7ZNjvxt8xJwaKZ2fvJrF3bRLUjwwxIzIlrjqmhBUffexX6Jai2jrKZYjLU5qDsb1V3tgA9QGHsGimHo5t8GzKf5Wnb7Eu_xCltePc7oKU2-41RFQsStemRKnu6bovs_AYMDWmjfngTYsp2xTp6YYIKmBsa9C-1D3xkPjsvtJ7be1FN1cbaTF9C4f-EEQvknh05uGjNnQEiPzc5-vQr6IVRNoHopjL0O1KvV6NEvoSxJlB90dCTrAGB41xug_X_1FshEtTTuNdp8oWpf14Dsw_tEa5nSQc83wmlDCHhtcyEwe1Fo5cujo5mgT0fIfT47LMpmctx5idrNLVS0qyhhp5z8bYokP0Blej7PQe8yXshIDd-sqIz67uT7zEUkEA95isKbYaI0X-pMdVl0KuXP-zogHCJwyXl4Gjw=s32-c"
     },
     {
       "uid": "9g2TJuw97VMd8Zwn9y2x0g0w7SB2",
@@ -610,16 +610,6 @@
       "github": "lyrixx"
     },
     {
-      "uid": "F5ZGeSwlxjTyIVuhWfPZrVinnn92",
-      "displayName": "Charles-Marie Ambrosetti",
-      "bio": "Développeur passionné depuis plus de 10 ans, j'ai eu l'occasion de travailler dans des domaines aussi variés que les véhicules connectés, le paiement sécurisé, la performance, le monitoring l'observabilité, et j'en oublie sûrement.\nJe joue aux jeux vidéos sur mes heures perdues, c'est-à-dire celles où je ne travaille pas, dors pas, ou ne mange pas (encore que).",
-      "speakerReferences": "J'ai eu l'occasion de donner plusieurs présentations lors d'évènements internes petits et grands, ainsi que lors d'évènements publics comme le Scala User Group (présentation Gatling) et le Google Developer Group (Protobuf Android).\n",
-      "company": "Worldline",
-      "photoURL": "https://avatars.githubusercontent.com/u/3098707?v=4",
-      "twitter": "charlesmariea",
-      "github": "TheCopycat"
-    },
-    {
       "uid": "y3wNWuGdbKdUsmdjMrbbQXHL2ay1",
       "displayName": "David Pequegnot",
       "bio": "Développeur Java à la base, je suis aussi ingénieur performance au sein de Worldline. \n\nUn soucis de performance ? Un Black Friday difficile ? Je suis là pour accompagner les équipes afin de diagnostiquer le problème, même si a priori il n’y en avait pas :).\n\nJe reste développeur dans l’âme, et j’adore expérimenter tout plein de frameworks, notamment du monde de l’Observabilité. Mon objectif ? Annihiler les incident de productions !\n\nEt si vous voulez discuter Java, Kotlin, Python ou Rust, ce sera aussi avec plaisir ! :D",
@@ -628,6 +618,16 @@
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiQv4MJw_VRD2uA7mybnFr-Cc8k3ve4-Cn2-dIxYg=s96-c",
       "twitter": "foxlegend",
       "github": "foxlegend"
+    },
+    {
+      "uid": "F5ZGeSwlxjTyIVuhWfPZrVinnn92",
+      "displayName": "Charles-Marie Ambrosetti",
+      "bio": "Développeur passionné depuis plus de 10 ans, j'ai eu l'occasion de travailler dans des domaines aussi variés que les véhicules connectés, le paiement sécurisé, la performance, le monitoring l'observabilité, et j'en oublie sûrement.\nJe joue aux jeux vidéos sur mes heures perdues, c'est-à-dire celles où je ne travaille pas, dors pas, ou ne mange pas (encore que).",
+      "speakerReferences": "J'ai eu l'occasion de donner plusieurs présentations lors d'évènements internes petits et grands, ainsi que lors d'évènements publics comme le Scala User Group (présentation Gatling) et le Google Developer Group (Protobuf Android).\n",
+      "company": "Worldline",
+      "photoURL": "https://avatars.githubusercontent.com/u/3098707?v=4",
+      "twitter": "charlesmariea",
+      "github": "TheCopycat"
     },
     {
       "uid": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
@@ -737,6 +737,16 @@
       "github": "@zwindler"
     },
     {
+      "uid": "PRuMzxC7NVbsVnJP07AbHR2cNFx2",
+      "displayName": "Benjamin Cavy",
+      "bio": "Lead dev à la MAIF, je m'intéresse en ce moment particulièrement aux tests et méthodologie de testing.",
+      "speakerReferences": "### Mutation testing : y-a-t-il des trous dans votre couverture de test ?\n\n* Jug Summer Camp 2021\n\n### Asynchronisme et Event Loop en JavaScript, quickie\n\n* Devfest 2018\n* Devoxx France 2019\n* Riviea dev 2019\n* JUG Summer Camp 2019\n* Devfest strasbourg 2019\n* Codeur en seine 2019\n\n### React en 2019, conférence (avec Yvonnick Frin)\n\n* Devoxx France 2019\n* JUG Summer Camp 2019\n* Devfest Nantes 2019\n\n### Laravel et Vue.js, une stack simple et efficace pour le WEB (avec Yvonnick Frin)\n\n* Web2day 2017\n* JUG Summer Camp 2017\n* SnowCamp 2018\n* AFUP Nantes 2018\n* AFUP Days Rennes 2019\n\n",
+      "company": "MAIF",
+      "photoURL": "https://lh3.googleusercontent.com/-qridgWF20Vk/AAAAAAAAAAI/AAAAAAAAAtQ/K8bT4K-PTmU/photo.jpg",
+      "twitter": "@benjamin_cavy",
+      "github": "ptitFicus"
+    },
+    {
       "uid": "cQ2crtyaLna4zeubqysVfDcS3vk1",
       "displayName": "Annabelle Koster",
       "bio": "Ancienne Recruteuse IT, désormais Ambassadrice des communautés SFEIR. Je suis membre du GDG Nantes et organisatrice du DevFest Nantes depuis 2016, et présidente depuis 2020  !\nPassionnée de l'univers IT, de mon métier et fan des Spice Girls ! ",
@@ -756,6 +766,15 @@
       "github": "fcabestre"
     },
     {
+      "uid": "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
+      "displayName": "Alexandre Fruchaud",
+      "bio": "Après 10 ans d’expérience dans le backend, je suis à la frontière entre le développeur et l'architecte. J'affectionne particulièrement les Data Integration Pattern. Je reste un grand fan du DDD!\n\nA l'origine, je viens du java, et j'ai bien touché à la JVM. J'ai aussi joué quelques notes de programmation fonctionnelles. Je suis Kafkaiste convaincu et je suis certifié et formateur sur la techno.\n\nEn perso, je monte sur les planches de temps en temps dans des représentations de théâtre d'impro.",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gi4z-_e-jd9KBy14b9yJooRZGuC21crMv16vGs5=s96-c",
+      "twitter": null,
+      "github": "mmacphail"
+    },
+    {
       "uid": "6klOX1xduHbBCxddJhe0sBJLZp13",
       "displayName": "Delphin Aubin",
       "bio": "Fan de web, je développe avec passion depuis plus de 10 ans.\nCurieux de nature, j'aime beaucoup savoir comment les choses fonctionnent et regarder sous le capot des outils que nous utilisons tous les jours.\n\nEnfin, comme j'aime le partage, je suis speaker et buveur de bière à mes heures perdues :)\n",
@@ -764,15 +783,6 @@
       "photoURL": "https://lh3.googleusercontent.com/-UzixzWYbeqM/AAAAAAAAAAI/AAAAAAAAABc/3c7NRhzQzqk/photo.jpg",
       "twitter": "@delphinaubin",
       "github": "delphinaubin"
-    },
-    {
-      "uid": "MIk2pkgfjjfTWRrlZQulaVJxWgR2",
-      "displayName": "Alexandre Fruchaud",
-      "bio": "Après 10 ans d’expérience dans le backend, je suis à la frontière entre le développeur et l'architecte. J'affectionne particulièrement les Data Integration Pattern. Je reste un grand fan du DDD!\n\nA l'origine, je viens du java, et j'ai bien touché à la JVM. J'ai aussi joué quelques notes de programmation fonctionnelles. Je suis Kafkaiste convaincu et je suis certifié et formateur sur la techno.\n\nEn perso, je monte sur les planches de temps en temps dans des représentations de théâtre d'impro.",
-      "company": "Zenika",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gi4z-_e-jd9KBy14b9yJooRZGuC21crMv16vGs5=s96-c",
-      "twitter": null,
-      "github": "mmacphail"
     },
     {
       "uid": "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
@@ -844,7 +854,7 @@
       "bio": "Je suis architecte et développeur sénior chez Worldline. Mon activité consiste à coder (principalement en Java), coacher des développeurs et concevoir des architectures. \n\nBlog: https://blog.touret.info",
       "speakerReferences": "J'ai été speaker dans le cadre des événements suivants:\n\n- Devoxx UK 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- Devoxx UK 2021 (EN): Architecture Katas : Improve your system architecture design skills in a funny way !\n- Volcamp IO 2021 (FR): Améliorer les compétences et les infrastructures avec les katas d'architecture\n- JNation 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- The Cloud First 2021 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- The Cloud First 2021 (FR): \"Checklist_pour_concevoir_une_application_dans_le_cloud\"\n- Worldline Expert Community - \"Cloud Day\" Live event 2020 (EN) : \"K8S & Co : beyond the hype\"\n- Techforum Iberia 2020 (EN): Java Next Steps (EN)\n- Orleans Tech 2019 (FR): \"Unifiez vos traitements Batch et Streaming avec Apache Beam\"\n- Techforum 2019: Java Next Steps (EN)\n- Touraine Tech 2019 (FR): \"Architecture Hands-on\"\n- Touraine Tech 2018 (FR): \"Jenkins 2 : Le retour (d'expérience)\"\n\nVous pourrez trouver les slides de quelques présentations que j'ai pu faire sur [mon compte slidedeck](https://speakerdeck.com/alexandretouret).",
       "company": "WORLDLINE",
-      "photoURL": "https://media-exp1.licdn.com/dms/image/C4D03AQGH93qyploLvg/profile-displayphoto-shrink_800_800/0/1567183805396?e=1646870400&v=beta&t=-352QeCbzJYqjSys0NCdn_qCD65Lo6rSDuPsk13OUzw",
+      "photoURL": "https://lh6.googleusercontent.com/-b9g43PM551Q/AAAAAAAAAAI/AAAAAAAADF4/S0ivCJalbks/photo.jpg",
       "twitter": "@touret_alex",
       "github": "alexandre-touret"
     },
@@ -859,15 +869,6 @@
       "github": "https://github.com/jefrajames"
     },
     {
-      "uid": "9LHSTmgvjXcyMPyfifAgXjtP6Z02",
-      "displayName": "Pierre Tibulle",
-      "bio": "\"Dev principalement mobile (Android/iOS/Hybride), je gribouille des sketchnotes colorées et je participe à l'organisation du meetup Android Nantes (GDG) et du rendez-vous des speakers...",
-      "speakerReferences": "Je travaille depuis 8 ans sur des technos mobile natives et hybrides et je communique sur le sujet depuis 2017.   \nJe suis dans l'organisation du meetup Android Nantes (GDG) depuis avril 2018 et du rendez-vous des  speakers depuis août 2020.  \n Je fais aussi des sketchnotes que je partage sur https://twitter.com/ptibulle/media \n\nEn tant que speaker :\n* Meetup Android Nantes - Avril 2017 -:\"Services natifs Android en environnement Hybride Cordova\"\n* Jug Summer Camp La Rochelle - Septembre 2017 : \"Job Crafting en ESN - Make your job great again\" (https://www.youtube.com/watch?v=pcE-i8b0v3c)\n* Agile Tour Nantes - Novembre 2017 : \"Jobcrafting en ESN - une carrière agile en terrain hostile\"\n* Web2Day Nantes - Juin 2018 - un talk découverte sur flutter de 30' : \"Flutter, ça roxe du poney ?\"\n* Workshop \"Créer sa première application Flutter\" avec Horacio Gonzales et/ou Romain Rastel ( https://ptibulle.github.io ) : Devfest Nantes (Octobre 2018), Devfest Bout Du Monde (Février 2019), BreizhCamp (Mars 2019), Devoxx France, Android Maker et Meetup Flutter Paris (Avril 2019), Mixit Conf et Meetup Gdg Nantes (Mai 2019)\n* Niort Numéric - Mars 2019 - Keynote 15mn - \"Choisir sa solution mobile en 2019\"\n* Workshop \"Introduction au Sketchnoting\" : meetup We Innov Niort en novembre 2019 en présentiel, adapté pour le jouer pour le meetup Flutter/Duchesse (9 avril 2020) puis à Android Maker (21 avril 2020) en remote pendant le confinement.\n* Workshop \"Kotlin Multiplatform\" avec Maxime Lumeau et Robin Caroff : Devfest Nantes (Octobre 2019), BDXio (Novembre 2019), Devfest Paris (Février 2020), Devfest Bout Du Monde (Février 2020)\n* \"Il était une fois les navigateurs Web\" avec Noël Macé ou je dessine les slides en live : Riviera Dev (Juillet 2021), Jug Summer Camp (Septembre 2021)",
-      "company": "IKOBOX",
-      "photoURL": "https://lh6.googleusercontent.com/-EPCphRSOO1Y/AAAAAAAAAAI/AAAAAAAAARo/JCN5RTGQPos/photo.jpg",
-      "twitter": "@ptibulle"
-    },
-    {
       "uid": "0alFaI2imGdQVSjuaMLFFfwqoL62",
       "displayName": "Noël Macé",
       "bio": "Noël Macé nourrit depuis toujours une passion sans faille pour la pédagogie et l'innovation, qu'il transmet depuis onze ans lors des formations et conférences qu’il dispense. En 2014 il décide de faire du développement d'applications web sa spécialité, l'exerçant dans des contextes variés en tant que développeur, architecte logiciel, directeur technique et Developer Advocate. Depuis, il recherche ainsi systématiquement à identifier et transmettre les approches optimales pour les équipes de développements et les utilisateurs.\n\n*(en)*\n\nPassionate about sharing technical knowledge and about meeting and helping people, Noël loves to teach and has offered talks on diverse topics from the very beginning of his career in technology. He is a web developer and a developer advocate, a former mobile and Java developer, with experience in learning design, teaching, software architecture and technical management. Based on this wide experience, he now focuses on the developer community, where he helps developers around the world master the modern capabilities of the Web (among other things) through talks, blog posts and OSS contributions.",
@@ -876,6 +877,15 @@
       "photoURL": "https://lh4.googleusercontent.com/-_DHdWW0tzAs/AAAAAAAAAAI/AAAAAAAAAGY/SHaW4w5ruEQ/photo.jpg",
       "twitter": "@noel_mace",
       "github": "noelmace"
+    },
+    {
+      "uid": "9LHSTmgvjXcyMPyfifAgXjtP6Z02",
+      "displayName": "Pierre Tibulle",
+      "bio": "\"Dev principalement mobile (Android/iOS/Hybride), je gribouille des sketchnotes colorées et je participe à l'organisation du meetup Android Nantes (GDG) et du rendez-vous des speakers...",
+      "speakerReferences": "Je travaille depuis 8 ans sur des technos mobile natives et hybrides et je communique sur le sujet depuis 2017.   \nJe suis dans l'organisation du meetup Android Nantes (GDG) depuis avril 2018 et du rendez-vous des  speakers depuis août 2020.  \n Je fais aussi des sketchnotes que je partage sur https://twitter.com/ptibulle/media \n\nEn tant que speaker :\n* Meetup Android Nantes - Avril 2017 -:\"Services natifs Android en environnement Hybride Cordova\"\n* Jug Summer Camp La Rochelle - Septembre 2017 : \"Job Crafting en ESN - Make your job great again\" (https://www.youtube.com/watch?v=pcE-i8b0v3c)\n* Agile Tour Nantes - Novembre 2017 : \"Jobcrafting en ESN - une carrière agile en terrain hostile\"\n* Web2Day Nantes - Juin 2018 - un talk découverte sur flutter de 30' : \"Flutter, ça roxe du poney ?\"\n* Workshop \"Créer sa première application Flutter\" avec Horacio Gonzales et/ou Romain Rastel ( https://ptibulle.github.io ) : Devfest Nantes (Octobre 2018), Devfest Bout Du Monde (Février 2019), BreizhCamp (Mars 2019), Devoxx France, Android Maker et Meetup Flutter Paris (Avril 2019), Mixit Conf et Meetup Gdg Nantes (Mai 2019)\n* Niort Numéric - Mars 2019 - Keynote 15mn - \"Choisir sa solution mobile en 2019\"\n* Workshop \"Introduction au Sketchnoting\" : meetup We Innov Niort en novembre 2019 en présentiel, adapté pour le jouer pour le meetup Flutter/Duchesse (9 avril 2020) puis à Android Maker (21 avril 2020) en remote pendant le confinement.\n* Workshop \"Kotlin Multiplatform\" avec Maxime Lumeau et Robin Caroff : Devfest Nantes (Octobre 2019), BDXio (Novembre 2019), Devfest Paris (Février 2020), Devfest Bout Du Monde (Février 2020)\n* \"Il était une fois les navigateurs Web\" avec Noël Macé ou je dessine les slides en live : Riviera Dev (Juillet 2021), Jug Summer Camp (Septembre 2021)",
+      "company": "IKOBOX",
+      "photoURL": "https://lh6.googleusercontent.com/-EPCphRSOO1Y/AAAAAAAAAAI/AAAAAAAAARo/JCN5RTGQPos/photo.jpg",
+      "twitter": "@ptibulle"
     }
   ],
   "categories": [
@@ -884,20 +894,20 @@
       "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0",
-      "name": "Front web, Mobile"
+      "name": "Front web, Mobile",
+      "id": "96440de7-ddfa-5d09-b206-64ecb4ec86c0"
     },
     {
       "name": "Backends, Cloud, Big Data",
       "id": "ae14e3b6-2476-58d7-a629-f130574251bd"
     },
     {
-      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8",
-      "name": "Jeux vidéos et hybrides"
+      "name": "Jeux vidéos et hybrides",
+      "id": "7af0e2b1-708d-5a28-9e44-b1fe0ef856a8"
     },
     {
-      "id": "9fc85ea1-2256-54f1-886f-246090b0e764",
-      "name": "Internet des objets"
+      "name": "Internet des objets",
+      "id": "9fc85ea1-2256-54f1-886f-246090b0e764"
     },
     {
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
@@ -908,18 +918,18 @@
       "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
-      "name": "Alien",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "name": "Alien"
     }
   ],
   "formats": [
     {
-      "name": "Quickie (15min)",
-      "id": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6"
+      "id": "f1f4eb00-ff40-57ea-805a-b3aa3ce5f6e6",
+      "name": "Quickie (15min)"
     },
     {
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "name": "Conférence (50min)"
+      "name": "Conférence (50min)",
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
       "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
