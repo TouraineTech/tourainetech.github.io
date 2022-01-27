@@ -9,6 +9,16 @@
             target="_blank"
           >Code de conduite</a>
         </li>
+        <li>
+          <a
+            rel="noreferrer"
+            @click="mailTo()"
+            @touch="mailTo()"
+            class="link"
+          >
+            Contact
+          </a>
+        </li>
         <li><a
             rel="noreferrer"
             href="/press_kit.zip"
@@ -47,6 +57,13 @@ footer {
     }
   }
 
+  .link {
+    text-decoration: underline;
+  }
+  .link:hover {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: $mobile-step) {
     display: block;
 
@@ -64,6 +81,14 @@ import Socials from "~/components/Socials.vue";
 export default {
   components: {
     Socials
+  },
+  methods: {
+    mailTo() {
+      // split the email to avoid most simple robot spam
+      const address = "team";
+      const domain = "touraine.tech";
+      window.open(`mailto:${address}@${domain}`, 'mail')
+    }
   }
 };
 </script>
