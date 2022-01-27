@@ -16,6 +16,22 @@
     "desc": "<b>Harmonie Mutuelle, acteur de santé globale, protège aujourd’hui 5 millions de personnes et 65.000 entreprises. Elle accompagne ses adhérents dans leur parcours de santé et de vie et les entreprises dans leurs responsabilités vis-à-vis de leurs collaborateurs en leur apportant des réponses solidaires et innovantes en Prévention, Santé, Prévoyance et Epargne-retraite. </b> <br/><br/> Harmonie Mutuelle est devenue en juillet 2021 une Entreprise Mutualiste à Mission, en définissant ses objectifs sociaux et environnementaux et en se dotant d&#39;une raison d&#39;être :\u200B « \u200BAgir sur les facteurs sociaux, environnementaux, et économiques qui améliorent la santé des personnes autant que celle de la société en mobilisant la force des collectifs». </br></br>  <b>Harmonie Mutuelle en bref:</b> </br>5 millions de personnes protégées – 65 000 entreprises clientes - 150 000 adhérents entrepreneurs,</br>2 200 élus représentant les adhérents,</br>4 978 collaborateurs,</br>1 400 établissements et services de soins et d&#39;accompagnement mutualistes (optique, audition, centres de santé dentaire, instituts médico-sociaux…) au sein du 1 er groupe de protection sociale mutualiste : le Groupe VYV."
   },
   {
+    "name": "Polytech'Tours",
+    "id": "polytechtours",
+    "image": "logo-polytech.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "partenaires",
+    "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
+  },
+  {
+    "name": "Polytech'Tours",
+    "id": "polytechtours",
+    "image": "logo-polytech.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "gold",
+    "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
+  },
+  {
     "name": "Apside TOP",
     "id": "apside",
     "image": "logo-apside-top.png",
