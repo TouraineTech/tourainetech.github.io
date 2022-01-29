@@ -5,7 +5,9 @@
         <HeaderPhrase></HeaderPhrase>
       </div>
       <div class="Header-buttons">
-        <SeeScheduleButton></SeeScheduleButton>
+        <SeeScheduleButton v-if="configuration.isScheduleOnline"></SeeScheduleButton>
+        <RegisterSpeakerButton v-if="configuration.isCfpOpen"></RegisterSpeakerButton>
+        <RegisterAttendeeButton v-if="configuration.isRegisterOpen && !configuration.isSoldOut"></RegisterAttendeeButton>
       </div>
     </div>
   </section>
@@ -14,11 +16,20 @@
 <script>
 import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
 import SeeScheduleButton from "~/components/header/buttons/SeeScheduleButton";
+import RegisterSpeakerButton from "~/components/header/buttons/RegisterSpeakerButton";
+import RegisterAttendeeButton from "~/components/header/buttons/RegisterAttendeeButton";
 
 export default {
   components: {
     HeaderPhrase,
-    SeeScheduleButton
+    SeeScheduleButton,
+    RegisterSpeakerButton,
+    RegisterAttendeeButton
+  },
+  computed: {
+    configuration() {
+      return this.$store.getters.configuration;
+    }
   },
   mounted() {}
 };

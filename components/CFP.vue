@@ -2,17 +2,36 @@
   <section id="cfp" class="container--white">
     <div class="container--fix container--center">
       <h2>Call for paper</h2>
-      <p>
-        Le
-        <a href="https://cfp.touraine.tech" target="_blank">
-          CFP est ouvert
-        </a>
-        pour cette édition, la délibération se fera le
-        <span class="label--text label--green">samedi 11 décembre 2021</span>.
-      </p>
+      <template v-if="configuration.isCfpOpen">
+        <p>
+          Le
+          <a href="https://cfp.touraine.tech" target="_blank">
+            CFP est ouvert
+          </a>
+          pour cette édition,
+        </p>
+      </template>
+      <template v-else>
+        Le CFP est clos pour cette édition,
+      </template>
+      la délibération se fera le
+      <span class="label--text label--green">{{ configuration.cfpDeliberationDate }}</span>.
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {}
+  },
+  computed: {
+    configuration() {
+      return this.$store.getters.configuration;
+    }
+  }
+}
+</script>
 
 <style scoped>
 p {

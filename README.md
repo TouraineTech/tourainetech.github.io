@@ -11,6 +11,9 @@ To have a local live version use : `npm run dev`
 To build use : `npm run generate`
 
 
+## Configuration
+To manage the lifecycle of this website, there is a `configuration.js` in `assets`
+
 ## Generate planning
 ### Extract Conference Hall Data
 1. Go to : https://conference-hall.io/organizer/event/${ID}/edit/integrations. Replace ID by the event ID. The ID can be found on the URL after choosing the right event on [conferenceHall](https://conference-hall.io/organizer)
