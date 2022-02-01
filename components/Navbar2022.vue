@@ -17,7 +17,8 @@
             @touch="scrollTo(section.anchor)"
             @click="scrollTo(section.anchor)"
             :class="{'mobile': section.mobile}"
-          ><a>{{ section.name }}</a>
+          >
+            <a>{{ section.name }}</a>
           </li>
         </ul>
       </div>
@@ -34,21 +35,24 @@ export default {
     }
   },
   data() {
+    const configuration = this.$store.getters.configuration;
+    const sections = [        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
+      { name: "Sponsors", anchor: "#sponsors", mobile: true },];
+    if(configuration.isRegisterOpen) {
+      sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
+    }
+    if(configuration.isScheduleOnline) {
+      sections.push({ name: "Nos speakers", anchor: "#speakers", mobile: false })
+      sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
+    }
+    if(configuration.isVideoOnline) {
+      sections.push({ name: "Les vidéos", anchor: "#video", mobile: false })
+    }
+      sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
     return {
       scrolledToHide: false,
       scrolledToShow: false,
-      sections: [
-        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
-        { name: "Sponsors", anchor: "#sponsors", mobile: true },
-        { name: "Billetterie", anchor: "#register", mobile: false },
-        { name: "Nos speakers", anchor: "#speakers", mobile: false },
-        { name: "Le programme", anchor: "#schedule", mobile: true },
-        { name: "L'équipe", anchor: "#team", mobile: false },
-        //{ name: "Les vidéos", anchor: "#video", mobile: false },
-        // {name: 'Inscription', anchor: '#register', mobile: true},
-        // {name: 'Talks', anchor: '#talks', mobile: true},
-        //{ name: "L'actu", anchor: "#news", mobile: false }
-      ]
+      sections: sections
     };
   },
   created() {

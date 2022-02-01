@@ -6,7 +6,7 @@
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">
-        Rendez-vous le <span class="label--text label--white">vendredi 21 janvier 2022</span> à <span class="label--text label--white">Polytech'TOURS</span> pour une journée de conférence à un prix accessible.
+        Rendez-vous le <span class="label--text label--white">{{ configuration.eventDate }}</span> à <span class="label--text label--white">Polytech'TOURS</span> pour une journée de conférence à un prix accessible.
       </p>
     <!--
       <ul class="backtoschool--numbers">
@@ -48,7 +48,17 @@
     </div>
   </section>
 </template>
+<script>
 
+export default {
+  computed: {
+    configuration() {
+      return this.$store.getters.configuration;
+    }
+  },
+  mounted() {}
+};
+</script>
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
 

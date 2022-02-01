@@ -8,6 +8,8 @@ import PLANNING from '../api/planning';
 import TIMES from '../api/times'
 import ROOMS from '../api/rooms'
 import PHOTOS from '../api/photos_72157713187904526'
+import CONFIGURATION from '../assets/configuration'
+
 
 const flatMap = (f, arr) => arr.reduce((x, y) => [...x, ...f(y)], []);
 
@@ -28,13 +30,14 @@ const createStore = () => {
       sponsors: [],
       team: [],
       talks: [],
-      speakers: [],
+      speakers:[],
       breaks: [],
       categories: [],
       formats: [],
       times: [],
       rooms: [],
-      photos: []
+      photos: [],
+      configuration: {},
     },
     getters: {
       speakers ({speakers}) {
@@ -63,20 +66,24 @@ const createStore = () => {
       },
       photos ({photos}) {
         return photos
+      },
+      configuration ({configuration}) {
+        return configuration
       }
     },
     actions: {
       async nuxtServerInit ({ commit }, { app }) {
-        commit('SET_SPONSORS', SPONSORS),
-        commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name))),
-        commit('SET_TALKS', addPlanningToTalks(TALKS)),
-        commit('SET_BREAKS', BREAKS),
-        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName))),
-        commit('SET_CATEGORIES', categories),
-        commit('SET_FORMATS', formats),
-        commit('SET_TIMES', TIMES),
-        commit('SET_ROOMS', ROOMS)
-        commit('SET_PHOTOS', PHOTOS)
+        commit('SET_SPONSORS', SPONSORS);
+        commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name)));
+        commit('SET_TALKS', addPlanningToTalks(TALKS));
+        commit('SET_BREAKS', BREAKS);
+        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName)));
+        commit('SET_CATEGORIES', categories);
+        commit('SET_FORMATS', formats);
+        commit('SET_TIMES', TIMES);
+        commit('SET_ROOMS', ROOMS);
+        commit('SET_PHOTOS', PHOTOS);
+        commit('SET_CONFIGURATION', CONFIGURATION);
       }
     },
     mutations: {
@@ -109,6 +116,9 @@ const createStore = () => {
       },
       SET_PHOTOS (state, photos) {
         state.photos = photos.sort((a,b) => new Date(a.date) - new Date(b.date));
+      },
+      SET_CONFIGURATION (state, configuration) {
+        state.configuration = configuration;
       }
     }
   })
