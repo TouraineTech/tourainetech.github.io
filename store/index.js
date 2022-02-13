@@ -41,7 +41,10 @@ const createStore = () => {
     },
     getters: {
       speakers ({speakers}) {
-        return speakers
+        return speakers.map(s => {
+          s.photoURL=`@/assets/img/speakers/${s.uid}.png`;
+          return s;
+        })
       },
       getSpeakerForIds({speakers}) {
         return ids => speakers.filter(({uid}) => ids.includes(uid))

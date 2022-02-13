@@ -1,7 +1,7 @@
 <template>
   <div class="speaker--bloc">
     <div v-if="speaker.photoURL" class="container--image">
-      <img :src="speaker.photoURL" :alt="speaker.displayName">
+      <img :src="require(`@/assets/img/speakers/${speaker.uid}.png`)" :alt="speaker.displayName">
     </div>
     <h3>{{ speaker.displayName }}</h3>
   </div>
