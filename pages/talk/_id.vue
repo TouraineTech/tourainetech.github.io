@@ -23,14 +23,24 @@
           >Les slides </a>
         </p>
       </span>
-      <p v-if="talk.peertubeLink"><a
+      <p v-if="talk.peertubeLink">
+        <a
           target="_blank"
           :href="`${talk.peertubeLink}`"
-        >La vidéo (peertube) </a> </p>
-      <p v-if="talk.dailymotionLink"><a
+        >La vidéo (peertube) </a>
+      </p>
+      <p v-if="talk.dailymotionLink">
+        <a
           target="_blank"
           :href="`${talk.dailymotionLink}`"
-        >La vidéo (dailymotion) </a> </p>
+        >La vidéo (dailymotion) </a>
+      </p>
+      <p v-if="talk.youtubeLink">
+        <a
+          target="_blank"
+          :href="`${talk.youtubeLink}`"
+        >La vidéo (youtube) </a>
+      </p>
     </div>
   </div>
 </template>
@@ -47,11 +57,6 @@ export default {
   validate({ store, params }) {
     return store.getters.talks.filter(({ id }) => id === params.id).length > 0;
   },
-  asyncData({ store, params }) {
-    return {
-      talk: store.getters.talks.filter(({ id }) => id === params.id)[0]
-    };
-  },
   computed: {
     abstractHTML() {
       return converter.makeHtml(this.talk.abstract);
@@ -62,6 +67,11 @@ export default {
       );
       return speakers;
     }
+  },
+  asyncData({ store, params }) {
+    return {
+      talk: store.getters.talks.filter(({ id }) => id === params.id)[0]
+    };
   },
   head() {
     const title = `Touraine Tech 2022 - ${this.talk.title}`;
