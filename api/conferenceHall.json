@@ -14,6 +14,8 @@
       ],
       "comments": "Hola amigos !\n\nÇa y est, une année de plus Touraine Tech approche! Je suis **ravi** d'envoyer des propositions pour cette édition 2022, et je serais sincèrement heureux de pouvoir retourner vous voir en janvier, car  TnT est une conférence que j'adore, avec une team orga simplement géniale (et cela sans parler d'un des meilleurs repas de conférence que j'ai jamais goûté, j'espère que les conditions et l'Université vous permettront de le faire cette année).\n\nSinon, pour le talk, Philippe et moi sommes très contents de ce talk, qui vient directement de notre enthousiasme pour GitPod, vu comment il nous a rendu la vie plus simple pour plein de tâches, et on adorerait vous le raconter à Tours...\n\nBon courage avec l'orga, les amis !",
       "language": "French",
+      "slidesLinks": ["https://docs.google.com/spreadsheets/d/1Lij54cFrAjfVX0O4dJFVaV_SJudz97Zc2kyFrcwN3gM/edit#gid=379988423"],
+      "youtubeLink" : "https://youtu.be/nIzbS0kKANg",
       "createTimestamp": {
         "_seconds": 1633685959,
         "_nanoseconds": 285000000
@@ -31,6 +33,8 @@
         "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1"
       ],
       "comments": "Merci beaucoup d'organiser cette conférence, malgré le contexte sanitaire qui complexifie grandement votre organisation.",
+      "slidesLinks": ["https://davidaparicio.gitlab.io/website/talks/TNT2022_PereCastor.pdf"],
+      "youtubeLink": "https://youtu.be/pjv1Jic7VLM",
       "language": "French",
       "createTimestamp": {
         "_seconds": 1637757915,
@@ -48,6 +52,7 @@
       "speakers": [
         "jcgQ0F1L54dEsi4l6WMylBxEMDx2"
       ],
+      "slidesLinks" : ["https://speakerdeck.com/gerardpaligot/discovering-jetpack-compose"],
       "comments": "Talk joué au Lille Android User Group, au Devfest du Bout du Monde, au DevDay 2020 et prochainement au Devfest Strasbourg 2021 (9 Novembre).\n\nCependant, je vais mettre à jour le talk et rajouter une section entière autour du Multiplateforme avec Jetpack Compose.\n\nLe talk restera accessible au débutant dans le développement mobile.\n\nBonne chance pour l'orga ! :)",
       "language": "French",
       "createTimestamp": {
@@ -66,6 +71,7 @@
       "speakers": [
         "0Xv6EnbodmaXO2WF56MP48WbKF62"
       ],
+      "slidesLinks" : ["https://github.com/sjaupart/talk-property-based-testing/blob/main/slides.pdf"],
       "language": "French",
       "createTimestamp": {
         "_seconds": 1638217717,
@@ -86,6 +92,8 @@
       ],
       "comments": "Que notre conférence soit acceptée ou non lors de TNT, nous serons là :)\n\nMerci pour l’organisation de cet évènement, et que nous puissions nous retrouver bientôt :D\n\nÀ très vite !",
       "language": "French",
+      "slidesLinks": ["https://www.slideshare.net/DavidPequegnot2/observabilit-de-zro-opentelemetry-251052829"],
+      "youtubeLink": "https://youtu.be/XCJRLd09dA8",
       "createTimestamp": {
         "_seconds": 1638302562,
         "_nanoseconds": 680000000
@@ -102,6 +110,7 @@
       "speakers": [
         "GaTXktSpMGXO1RIGafgjJ9m87oB3"
       ],
+      "youtubeLink": "https://youtu.be/3FL2CNy8EsU",
       "comments": "Merci",
       "language": "French",
       "createTimestamp": {
@@ -121,6 +130,8 @@
         "xRNeGxIeNcdAegOPlnYeBKFVX2o1"
       ],
       "language": "French",
+      "slidesLinks": ["https://slides.com/ereold/types-top/"],
+      "youtubeLink": "https://youtu.be/QDmTM5UWnBQ",
       "createTimestamp": {
         "_seconds": 1633080680,
         "_nanoseconds": 778000000
@@ -139,6 +150,8 @@
       ],
       "comments": "Talk fait au DevFest Nantes 2021, voici la vidéo : https://www.youtube.com/watch?v=3UUpqXGEGQ4",
       "language": "French",
+      "slidesLinks": ["https://noti.st/scharrier/KZGzyR/api-specifications-and-contracts"],
+      "youtubeLink" : "https://youtu.be/www611v-5DM",
       "createTimestamp": {
         "_seconds": 1635892600,
         "_nanoseconds": 378000000
@@ -157,6 +170,8 @@
       ],
       "comments": "Le but de ce talk est de permettre aux gens de démystifier la complexité de OAuth2 en utilisant que des exemples de la vie courante tels que la réservation de chambre d'hôtel et la livraison de repas à domicile. Je m'appuie sur ces exemples pour expliquer la raison d'être des concepts les moins intuitifs de OAuth2, c'est un exercice de vulgarisation.\n\nLe talk est complètement scénarisé autour d'un Story Telling basé sur l'univers du film The Grand Budapest Hotel de Wes Anderson.\n\nJ'aborderai dans ce talk les nouveautés de OAuth 2.1 qui remplace le flow implicit, aujourd'hui considéré comme non sécurisé et déprécié qui est pourtant encore largement utilisé.\n\nLes slides du talk sont en ligne ici : https://slides.com/julientopcu/concepts-avances-authn-authz",
       "language": "French",
+      "slidesLinks": ["https://t.co/PwtWpb6g5B"],
+      "youtubeLink": "https://youtu.be/bR48_dbOM38",
       "createTimestamp": {
         "_seconds": 1633418504,
         "_nanoseconds": 988000000
@@ -193,6 +208,8 @@
       ],
       "comments": "Merci pour l'attention accordée à ma proposition ! Je reste à disposition pour préciser l'abstract si nécessaire.\n",
       "language": "French",
+      "slidesLinks": ["https://github.com/fdelbrayelle/talk-rest-grpc-graphql-webhooks/blob/main/slides.pdf"],
+      "youtubeLink": "https://youtu.be/s5qRho_FIyc",
       "createTimestamp": {
         "_seconds": 1636540613,
         "_nanoseconds": 353000000
@@ -209,6 +226,8 @@
       "speakers": [
         "9g2TJuw97VMd8Zwn9y2x0g0w7SB2"
       ],
+      "slidesLinks" : ["https://docs.google.com/presentation/d/1AJHnyBabLbjdTo1Ti2o_dzgj1E6AAh1_sWu3XRQJPnE/edit"],
+      "youtubeLink" :"https://youtu.be/QIn-w_nnca0",
       "createTimestamp": {
         "_seconds": 1635490845,
         "_nanoseconds": 107000000
@@ -227,6 +246,7 @@
       ],
       "comments": "Merci pour l'organisation !",
       "language": "French",
+      "slidesLinks": ["https://drive.google.com/file/d/1dVIWjAdADU0YwjJuf4nRsRrTqmT3bbJd/view"],
       "createTimestamp": {
         "_seconds": 1636148211,
         "_nanoseconds": 9000000
@@ -263,6 +283,8 @@
       ],
       "comments": "Au même titre qu'on a eu la mode du \"DevOps\" à toutes les sauces, on a vraiment beaucoup d'offres d'emploi pour des SRE et aucune ne veut jamais dire la même chose.\n\nSans vouloir donner une vérité universelle, j'aimerai rappeler ce qu'était à la base le role de SRE (chez Google), de pourquoi personne n'a besoin de faire du Google en France (car il n'y a que Google qui fait du Google), mais qu'on peut adapter le role et le faire fonctionner dans une entreprise normale.\n\nJe donnerai ensuite mon expérience de ce qui marche et qui ne marche pas. \n\nJ'insisterai à la fin du talk sur le fait qu'on a besoin, de la part des entreprises, d'avoir clairement explicité dans les annonces ce que eux attendent du futur SRE, pour ne pas postuler inutilement quand le profil ne correspond pas (idem avec \"DevOps\")\n\nJ'espère que mon sujet vous plaira. Merci pour cette conférence.",
       "language": "French",
+      "slidesLinks": ["https://blog.zwindler.fr/talks/tourainetech-2022-dis-papa-c-est-quoi-un-sre/index.html"],
+      "youtubeLink": "https://youtu.be/l8W8XGK3gSo",
       "createTimestamp": {
         "_seconds": 1634819700,
         "_nanoseconds": 582000000
@@ -280,6 +302,8 @@
         "PRuMzxC7NVbsVnJP07AbHR2cNFx2"
       ],
       "language": "French",
+      "slidesLinks": ["https://speakerdeck.com/benjamin_cavy/mutation-testing-y-a-t-il-des-trous-dans-votre-couverture-de-test-e37e049f-d641-4b85-9d27-f3769a4ad3e5"],
+      "youtubeLink" : "https://youtu.be/uHGfNhWI8CI",
       "createTimestamp": {
         "_seconds": 1634832674,
         "_nanoseconds": 921000000
@@ -297,6 +321,7 @@
         "cQ2crtyaLna4zeubqysVfDcS3vk1"
       ],
       "comments": "Je suis une pure Tourangelle, chauvine (mais quand même nantaise de cœur)\nMon rêve est de Speaker chez vous ! ",
+      "slidesLinks" : ["https://drive.google.com/file/d/1y2F1ll0OL1xnxDJQxJ1wBUN85mnSPgCn/view?usp=sharing"],
       "language": "French",
       "createTimestamp": {
         "_seconds": 1632852924,
@@ -315,6 +340,8 @@
         "Phb3HAqlbCTaH37I9WorONd8KUD2"
       ],
       "comments": "Bonjour,\nJe ne sais dans qu'elle catégorie cette présentation tombe. Je l'aurais bien vu dans une catégorie \"Langage\" qui n'existe pas, mais je trouve que \"Alien\" c'est finalement pas mal... Du moins c'est là que je me sens le mieux. \nC'est une présentation qui ce veut une sorte de \"back to basics\" sur le thème de la compilation de fonctions, avec un éclairage embrassant aussi bien la théorie que des détails de mise en œuvre sordides. \nC'est encore un \"work in progess\" et l'abstract, s'il donne une idée assez précise d'où je veux vous emmener, n'est pas encore totalement figé.\nEn tout cas, merci pour l'organisation, et à bientôt j'espère.",
+      "slidesLinks": ["https://fonctions-recursives-decortiquees.sigusr.net/"],
+      "youtubeLink": "https://youtu.be/I_tPNydAcCk",
       "createTimestamp": {
         "_seconds": 1633444275,
         "_nanoseconds": 521000000
@@ -333,6 +360,8 @@
       ],
       "comments": "Merci pour l'organisation.\n\nMa belle famille habite à côté de Tours ce qui facilitera la logistique pour venir à la conférence.",
       "language": "French",
+      "slidesLinks": ["https://amp.patou.dev/slides"],
+      "youtubeLink": "https://youtu.be/TqHBzaBVE6g",
       "createTimestamp": {
         "_seconds": 1634308012,
         "_nanoseconds": 64000000
@@ -370,6 +399,7 @@
         "6gcb9OjG5cgl14IQBEt5yu4TmTT2"
       ],
       "language": "French",
+      "slidesLinks": ["https://github.com/one-kubernetes/workshop"],
       "createTimestamp": {
         "_seconds": 1633098866,
         "_nanoseconds": 761000000
@@ -388,6 +418,7 @@
       ],
       "comments": "Pas de besoin de transport ou hébergement particulier, je suis Tourangeau :)\n\nMerci pour l'organisation de la conférence, ça fait quelques années que j'aurais dû proposer un sujet !",
       "language": "French",
+      "slidesLinks": ["https://drive.google.com/file/d/1m6iUt5y3f-vup5BCSyW-fLOenEyz8qGZ/view?usp=sharing"],
       "createTimestamp": {
         "_seconds": 1638311123,
         "_nanoseconds": 670000000
@@ -406,6 +437,7 @@
       ],
       "comments": "Pas sûr de la catégorie ;)\nMerci.",
       "language": "French",
+      "slidesLinks": ["https://t.co/yeWDYg39QK"],
       "createTimestamp": {
         "_seconds": 1633350072,
         "_nanoseconds": 380000000
@@ -425,6 +457,7 @@
       ],
       "comments": "Nous avons une installation technique un peu complexe (un second écran, un clavier supplémentaire, une plage braille, le son de l’ordinateur qui doit être retransmis dans la salle)… Si vous retenez notre sujet, merci de prendre en compte le temps nécessaire de mise en place dans votre planification.",
       "language": "French",
+      "slidesLinks": ["https://docs.google.com/spreadsheets/d/1Lij54cFrAjfVX0O4dJFVaV_SJudz97Zc2kyFrcwN3gM/edit#gid=379988423"],
       "createTimestamp": {
         "_seconds": 1635513945,
         "_nanoseconds": 380000000
@@ -460,6 +493,8 @@
         "mM9cCQG86kWwoaCQsQ5pwq26d012"
       ],
       "language": "French",
+      "slidesLinks": ["https://speakerdeck.com/lyrixx/re-decouvrir-les-outils-unix"],
+      "youtubeLink": "https://youtu.be/attMtVXk3n0",
       "createTimestamp": {
         "_seconds": 1633422373,
         "_nanoseconds": 754000000
@@ -496,6 +531,8 @@
         "U0h27oWjIEX6SyideyIpOoPXtYs2"
       ],
       "language": "French",
+      "slidesLinks": ["https://speakerdeck.com/alexandretouret/tnt2-java-dans-le-cloud-avec-spring-ou-quarkus"],
+      "youtubeLink": "https://youtu.be/0KlET6ES-IU",
       "createTimestamp": {
         "_seconds": 1636725829,
         "_nanoseconds": 81000000
@@ -530,7 +567,8 @@
       "id": "keynoteCloture",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "slidesLinks": ["https://docs.google.com/presentation/d/1LCgIOFGNa4PNa0Nynidnq0VQZAfpl6BcH7ODVKvnCss/edit?usp=sharing"]
     }
   ],
   "speakers": [
