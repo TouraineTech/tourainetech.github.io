@@ -17,4 +17,4 @@ const createPhotoJSON = (albumId) => (fetch('https://www.flickr.com/services/res
 .then(json => json.rsp.photoset.photo.map(photo => ({date: photo['@_datetaken'], small: photo['@_url_s'], original: photo['@_url_o']})))
 .then(urls => fs.writeFile('api/photos_'+albumId+'.json', JSON.stringify(urls), () => {})));
 
-createPhotoJSON('72157713187904526');
+createPhotoJSON('72177720296829451');

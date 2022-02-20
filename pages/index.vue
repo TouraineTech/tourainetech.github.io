@@ -8,6 +8,8 @@
       <CFP v-if="!configuration.isScheduleOnline"></CFP>
       <TopSpeakers v-if="configuration.isScheduleOnline"></TopSpeakers>
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
+      <Pictures v-if="configuration.isVideoOnline"></Pictures>
+      <Video v-if="configuration.isVideoOnline"></Video>
       <Team></Team>
       <Map></Map>
     </template>
@@ -28,9 +30,13 @@ import Schedule from "../components/Schedule";
 import TopSpeakers from "../components/TopSpeakers";
 import CFP from "../components/CFP";
 import RendezVous from "../components/RendezVous";
+import Video from "../components/Video";
+import Pictures from "../components/Pictures";
 
 export default {
   components: {
+    Pictures,
+    Video,
     TopSpeakers,
     Register,
     Sponsors,
