@@ -46,7 +46,8 @@ export default {
       sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
     }
     if(configuration.isVideoOnline) {
-      sections.push({ name: "Les vidéos", anchor: "#video", mobile: false })
+      sections.push({ name: "Les photos", anchor: "#pictures", mobile: false })
+      sections.push({ name: "La vidéo", anchor: "#video", mobile: false })
     }
       sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
     return {
