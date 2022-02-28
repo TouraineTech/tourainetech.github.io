@@ -9,7 +9,7 @@
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/BG-rNKlCngs"
+          src="https://www.youtube-nocookie.com/embed/Ne_YvbtHofw"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -19,7 +19,7 @@
         Un grand merci à <a
           target="_blank"
           href="https://barbaragoutte.com/"
-        >MOUSETTE</a> pour la réalisation et le montage de cette vidéo
+        >Barbara Goutte</a> pour la réalisation et le montage de cette vidéo
       </p>
     </div>
   </section>
