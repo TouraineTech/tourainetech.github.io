@@ -7,6 +7,6 @@ export default {
     isSoldOut: true,
     isScheduleOnline: true,
     isEditionOpen: true,
-    isVideoOnline: false,
+    isVideoOnline: true,
     nbEdition: 4
 }

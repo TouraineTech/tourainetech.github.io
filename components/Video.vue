@@ -4,22 +4,12 @@
     class="container--white"
   >
     <div class="container--fix container--center">
-      <h2>Les vidéos</h2>
+      <h2>La vidéo</h2>
       <div class="embed-container">
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/C93gIFfDN-o"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="embed-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/BG-rNKlCngs"
+          src="https://www.youtube-nocookie.com/embed/Ne_YvbtHofw"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -28,8 +18,8 @@
       <p>
         Un grand merci à <a
           target="_blank"
-          href="https://lescousins.co/"
-        >LES COUSINS</a> pour la réalisation et le montage de ces vidéos
+          href="https://barbaragoutte.com/"
+        >Barbara Goutte</a> pour la réalisation et le montage de cette vidéo
       </p>
     </div>
   </section>
