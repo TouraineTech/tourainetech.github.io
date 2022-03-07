@@ -28,6 +28,14 @@
       scrollToTop() {
         if (process.browser) {
           location.hash='header'
+          const uri = window.location.toString();
+
+
+            const clean_uri = uri.substring(0,
+              uri.indexOf("#"));
+
+            window.history.replaceState({}, document.title, clean_uri);
+          
           return false
         }
       }
