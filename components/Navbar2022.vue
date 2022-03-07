@@ -74,10 +74,7 @@ export default {
     scrollTo(target) {
       if (process.browser) {
         if (this.isHome()) {
-          window.scrollTo({
-            behavior: "smooth",
-            top: document.querySelector(target).offsetTop - 70
-          });
+          location.hash = target
         } else {
           this.$router.push(`/${target}`);
         }
