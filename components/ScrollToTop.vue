@@ -1,6 +1,6 @@
 <template>
   <div class="scrolltotop--container" @click="scrollToTop" @touch="scrollToTop" :class="{'scrolltotop--visible': scrolled}" title="Retourner en haut">
-    <img src="@/assets/img/baseline-arrow_upward-24px.svg" alt="scroll to top"/>
+    <img src="@/assets/img/baseline-arrow_upward-24px.svg" alt="scroll to top" />
   </div>
 </template>
 
@@ -27,10 +27,15 @@
       },
       scrollToTop() {
         if (process.browser) {
-          window.scrollTo({
-            "behavior": "smooth",
-            "top": 0
-          })
+          location.hash='header'
+          const uri = window.location.toString();
+
+
+            const clean_uri = uri.substring(0,
+              uri.indexOf("#"));
+
+            window.history.replaceState({}, document.title, clean_uri);
+          
           return false
         }
       }

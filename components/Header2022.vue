@@ -1,5 +1,5 @@
 <template>
-  <section class="Header-container">
+  <section id="header" class="Header-container">
     <div class="Header-wrapper">
       <div class="Header-phrase">
         <HeaderPhrase></HeaderPhrase>
