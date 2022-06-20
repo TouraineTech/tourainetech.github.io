@@ -1,38 +1,38 @@
 [
   {
     "name":"Benjamin",
-    "avatar": "https://www.gravatar.com/avatar/3e4eeb6684192c7667363e34e888a581?s=128"
+    "avatar": "benjamin.jpeg"
   },
   {
     "name":"Cedric",
-    "avatar": "https://www.gravatar.com/avatar/9600dc1bda25e979e656559914e00021?s=128"
-  },
-  {
-    "name":"Loïc",
-    "avatar": "https://www.gravatar.com/avatar/e2c03d76e6e2115cc46d4171e45ebe31?s=128"
+    "avatar": "cedric.jpeg"
   },
   {
     "name":"Christophe",
-    "avatar": "https://www.gravatar.com/avatar/1b56c1638d9a934e215b0545955116f6?s=128"
-  },
-  {
-    "name":"Florian C.",
-    "avatar": "https://www.gravatar.com/avatar/3934adbeb90a98e8e450643e216affea?s=128"
+    "avatar": "christophe.jpeg"
   },
   {
     "name":"Amandine",
-    "avatar": "https://lh4.googleusercontent.com/-rrh_d0_HrMY/AAAAAAAAAAI/AAAAAAAAHhw/4g3WjisVWzU/il/photo.jpg"
+    "avatar": "amandine.jpeg"
   },
   {
-    "name":"Florian R.",
-    "avatar": "https://www.gravatar.com/avatar/d926a5d4c87217cd1c36a9799cde311d?s=128"
+    "name":"Florian",
+    "avatar": "florian.jpeg"
   },
   {
     "name":"François",
-    "avatar": "https://www.gravatar.com/avatar/f70b50612e64df6b64ebb217374b3035?s=128"
+    "avatar": "francois.png"
   },
   {
     "name":"Valentin",
-    "avatar": "https://gravatar.com/avatar/973e4e737cd823d4e61b13bc71e11b08?s=128"
+    "avatar": "valentin.png"
+  },
+  {
+    "name":"Elisa",
+    "avatar": "elisa.jpeg"
+  },
+  {
+    "name":"Jordane",
+    "avatar": "jordane.jpeg"
   }
 ]

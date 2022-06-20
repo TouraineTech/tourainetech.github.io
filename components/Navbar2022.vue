@@ -36,8 +36,11 @@ export default {
   },
   data() {
     const configuration = this.$store.getters.configuration;
-    const sections = [        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
-      { name: "Sponsors", anchor: "#sponsors", mobile: true },];
+    const sections = [        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false }];
+    if(configuration.displaySponsors) {
+      sections.push({ name: "Sponsors", anchor: "#sponsors", mobile: true })
+    }
+
     if(configuration.isRegisterOpen) {
       sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
     }
@@ -49,7 +52,7 @@ export default {
       sections.push({ name: "Les photos", anchor: "#pictures", mobile: false })
       sections.push({ name: "La vidéo", anchor: "#video", mobile: false })
     }
-      sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
+    sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
     return {
       scrolledToHide: false,
       scrolledToShow: false,
