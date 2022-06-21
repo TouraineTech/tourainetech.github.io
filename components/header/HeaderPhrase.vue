@@ -7,7 +7,6 @@
       {{ configuration.eventDate }}
     </div>
     <div class="HeaderPhrase-hour">
-      8h30 — 18h30
     </div>
     <div class="HeaderPhrase-place">
       à Tours

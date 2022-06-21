@@ -1,7 +1,7 @@
 export default {
     isCfpOpen: false,
     cfpDeliberationDate: 'samedi 11 décembre 2021',
-    eventDate: 'janvier 2022',
+    eventDate: 'janvier 2023',
     eventEdition: '23',
     isRegisterOpen: false,
     isSoldOut: false,
