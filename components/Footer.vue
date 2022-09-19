@@ -19,26 +19,41 @@
             Contact
           </a>
         </li>
-        <li><a
+        <li>
+          <a
             rel="noreferrer"
             href="/press_kit.zip"
             target="_blank"
-          >Press kit</a></li>
-        <li><a
+          >Press kit</a>
+        </li>
+        <li>
+          <a
+            rel="noreferrer"
+            href="https://2022.touraine.tech/"
+            target="_blank"
+          >Édition 2022</a>
+        </li>
+        <li>
+          <a
             rel="noreferrer"
             href="https://2020.touraine.tech/"
             target="_blank"
-          >Édition 2020</a></li>
-        <li><a
+          >Édition 2020</a>
+        </li>
+        <li>
+          <a
             rel="noreferrer"
             href="https://2019.touraine.tech/"
             target="_blank"
-          >Édition 2019</a></li>
-        <li><a
+          >Édition 2019</a>
+        </li>
+        <li>
+          <a
             rel="noreferrer"
             href="https://2018.touraine.tech/"
             target="_blank"
-          >Édition 2018</a></li>
+          >Édition 2018</a>
+        </li>
       </ul>
     </div>
     <Socials />
