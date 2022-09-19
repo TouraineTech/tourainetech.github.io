@@ -20,6 +20,7 @@ module.exports = {
     },
     meta: [
       {charset: 'utf-8'},
+      {"http-equiv": "la-datee", content: "lol"},
       {name: 'google-site-verification', content: 'aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {hid: 'description', name: 'description', content: description},
