@@ -22,7 +22,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
     "cross-env": "^6.0.0",
-    "nuxt": "^2.9.2",
+    "nuxt": "^2.15.8",
     "showdown": "^1.9.0",
     "smart-app-banner": "^2.0.0",
     "smoothscroll-polyfill": "^0.4.4",
