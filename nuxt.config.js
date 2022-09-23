@@ -79,6 +79,7 @@ module.exports = {
     '~/plugins/vue-lightbox.client.js',
     '~/plugins/smartbanner.client.js'
   ],
+  serverMiddleware: [],
 
   /*
   ** Nuxt.js modules

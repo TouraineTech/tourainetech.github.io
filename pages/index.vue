@@ -3,9 +3,9 @@
     <template v-if="configuration.isEditionOpen">
       <Header2022></Header2022>
       <About></About>
-      <Sponsors></Sponsors>
+      <Sponsors v-if="configuration.displaySponsors"></Sponsors>
       <Register v-if="configuration.isRegisterOpen"></Register>
-      <CFP v-if="!configuration.isScheduleOnline"></CFP>
+      <CFP v-if="!configuration.isScheduleOnline && configuration.cfpOpen"></CFP>
       <TopSpeakers v-if="configuration.isScheduleOnline"></TopSpeakers>
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
       <Pictures v-if="configuration.isVideoOnline"></Pictures>

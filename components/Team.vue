@@ -11,7 +11,7 @@
           :key="p.name"
         >
           <img
-            :src="p.avatar"
+            :src="require(`@/assets/img/team/${p.avatar}`)"
             :alt="p.name"
           >
           <div>{{ p.name }}</div>

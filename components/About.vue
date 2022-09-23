@@ -6,7 +6,7 @@
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">
-        Rendez-vous le <span class="label--text label--white">{{ configuration.eventDate }}</span> à <span class="label--text label--white">Polytech'TOURS</span> pour une journée de conférence à un prix accessible.
+        Rendez-vous en <span class="label--text label--white">{{ configuration.eventDate }}</span> à <span class="label--text label--white">Polytech'TOURS</span> pour une journée de conférence à un prix accessible.
       </p>
     <!--
       <ul class="backtoschool--numbers">
