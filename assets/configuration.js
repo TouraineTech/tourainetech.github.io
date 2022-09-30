@@ -1,7 +1,7 @@
 export default {
-    isCfpOpen: false,
-    cfpDeliberationDate: 'samedi 11 décembre 2021',
-    eventDate: 'janvier 2023',
+    isCfpOpen: true,
+    cfpDeliberationDate: 'vendredi 09 décembre 2022',
+    eventDate: '19 & 20 janvier 2023',
     eventEdition: '23',
     isRegisterOpen: false,
     isSoldOut: false,
@@ -9,5 +9,5 @@ export default {
     isEditionOpen: true,
     isVideoOnline: false,
     nbEdition: 5,
-    displaySponsors : false
+    displaySponsors : true
 }
