@@ -3,7 +3,7 @@ export default {
     cfpDeliberationDate: 'vendredi 09 décembre 2022',
     eventDate: '19 & 20 janvier 2023',
     eventEdition: '23',
-    isRegisterOpen: false,
+    isRegisterOpen: true,
     isSoldOut: false,
     isScheduleOnline: false,
     isEditionOpen: true,

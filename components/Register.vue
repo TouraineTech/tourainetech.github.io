@@ -7,21 +7,21 @@
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--soldOut"
+          class="PriceBloc"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
-          <div class="PriceBloc-price">18,50 €</div>
+          <div class="PriceBloc-price">25 €</div>
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc PriceBloc--soldOut"
+          class="PriceBloc"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
-          <div class="PriceBloc-price">25 €</div>
+          <div class="PriceBloc-price">37 €</div>
         </a>
       </div>
 
-      <!-- <span class="RegisterButton">Ouverture de la billeterie le 30 septembre 2019</span> -->
+       <span class="RegisterButton">Ouverture de la billeterie le 13 octobre 2022 à 13h00</span>
 <!--      <div>-->
 <!--        <a-->
 <!--          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"-->
@@ -30,9 +30,9 @@
 <!--        >Lien vers la billeterie HelloAsso</a>-->
 <!--      </div>-->
 
-      <div class="RegisterHelp">
-        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
-      </div>
+<!--      <div class="RegisterHelp">-->
+<!--        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>-->
+<!--      </div>-->
     </div>
   </section>
 </template>
