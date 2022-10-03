@@ -14,7 +14,7 @@
       <p>
         <a
           class="button--link button--green"
-          href="https://sponsoring2023.touraine.tech"
+          href="http://sponsoring2023.touraine.tech"
           target="_blank"
         >Devenez sponsor</a>
       </p>
