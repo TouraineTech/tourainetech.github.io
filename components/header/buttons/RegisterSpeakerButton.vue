@@ -5,7 +5,7 @@
     class="HeaderButton"
   >
     <span class="HeaderButton-title RegisterSpeaker-title">Devenez speaker</span>
-    <span class="HeaderButton-subtitle RegisterSpeaker-subtitle">dépéchez-vous, fermeture du CFP le 30/11/2021 à 11h59</span>
+    <span class="HeaderButton-subtitle RegisterSpeaker-subtitle">dépéchez-vous, fermeture du CFP le 27/11/2022 à 11h59</span>
   </a>
 </template>
 

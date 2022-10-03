@@ -6,12 +6,15 @@
     <div class="container--fix container--center">
       <h2>Nos sponsors</h2>
       <p>
-        Vous souhaitez être sponsor, consultez notre dossier de sponsoring et contactez-nous à <a href="mailto:team@touraine.tech">team@touraine.tech</a>
+        Vous souhaitez être sponsor, consultez notre         <a
+          href="/sponsor_2023.pdf"
+          target="_blank"
+        >dossier de sponsoring</a>
       </p>
       <p>
         <a
           class="button--link button--green"
-          href="/sponsor_2022.pdf"
+          href="http://sponsoring2023.touraine.tech"
           target="_blank"
         >Devenez sponsor</a>
       </p>
@@ -21,7 +24,6 @@
       <sponsors-bloc type="Silver"></sponsors-bloc>
       <sponsors-bloc type="Bronze"></sponsors-bloc>
       <sponsors-bloc type="Partenaires"></sponsors-bloc>
-
     </div>
   </section>
 </template>
