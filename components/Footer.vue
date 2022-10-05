@@ -22,13 +22,6 @@
         <li>
           <a
             rel="noreferrer"
-            href="/press_kit.zip"
-            target="_blank"
-          >Press kit</a>
-        </li>
-        <li>
-          <a
-            rel="noreferrer"
             href="https://2022.touraine.tech/"
             target="_blank"
           >Édition 2022</a>
