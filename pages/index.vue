@@ -10,6 +10,7 @@
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
       <Pictures v-if="configuration.isVideoOnline"></Pictures>
       <Video v-if="configuration.isVideoOnline"></Video>
+      <BeginnerSpeakers v-if="configuration.displayBeginnerSpeakers"></BeginnerSpeakers>
       <Team></Team>
       <Map></Map>
     </template>
@@ -32,6 +33,7 @@ import CFP from "../components/CFP";
 import RendezVous from "../components/RendezVous";
 import Video from "../components/Video";
 import Pictures from "../components/Pictures";
+import BeginnerSpeakers from "../components/BeginnerSpeakers.vue";
 
 export default {
   components: {
@@ -46,7 +48,8 @@ export default {
     Map,
     Team,
     CFP,
-    RendezVous
+    RendezVous,
+    BeginnerSpeakers
   },
   data() {
     return {

@@ -13,5 +13,8 @@
 .HeaderButton {
   background-color: $color-secondary;
   color: $color-primary;
+  &:focus {
+    outline-color: $color-primary;
+  }
 }
 </style>

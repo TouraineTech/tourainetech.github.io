@@ -9,5 +9,6 @@ export default {
     isEditionOpen: true,
     isVideoOnline: false,
     nbEdition: 5,
-    displaySponsors : true
+    displaySponsors : true,
+    displayBeginnerSpeakers: true,
 }

@@ -2,7 +2,7 @@ Touraine Tech Website
 =====================
 [![Node.js CI](https://github.com/TouraineTech/tourainetech.github.io/actions/workflows/deployGHPages.yml/badge.svg)](https://github.com/TouraineTech/tourainetech.github.io/actions/workflows/deployGHPages.yml)
 
-To work on the project checkout the `dev` branch.
+To work on the project checkout the `develop` branch.
 
 Do not forget to install dependencies : `npm install`
 
