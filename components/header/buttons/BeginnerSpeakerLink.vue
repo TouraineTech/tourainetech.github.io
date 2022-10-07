@@ -4,14 +4,6 @@
 
 <style lang="scss" scoped>
 @import "./../../../assets/scss/variables";
-.HeaderButton {
-  background-color: $color-primary;
-  color: white;
-
-  &:focus {
-    outline-color: $color-secondary;
-  }
-}
 
 .beginner-speakers-link {
   display: block;
