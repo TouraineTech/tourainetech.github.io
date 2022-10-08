@@ -7,6 +7,7 @@
       <div class="Header-buttons">
         <SeeScheduleButton v-if="configuration.isScheduleOnline"></SeeScheduleButton>
         <RegisterSpeakerButton v-if="configuration.isCfpOpen"></RegisterSpeakerButton>
+        <BeginnerSpeakerLink v-if="configuration.displayBeginnerSpeakers"></BeginnerSpeakerLink>
         <RegisterAttendeeButton v-if="configuration.isRegisterOpen && !configuration.isSoldOut"></RegisterAttendeeButton>
       </div>
     </div>
@@ -18,9 +19,11 @@ import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
 import SeeScheduleButton from "~/components/header/buttons/SeeScheduleButton";
 import RegisterSpeakerButton from "~/components/header/buttons/RegisterSpeakerButton";
 import RegisterAttendeeButton from "~/components/header/buttons/RegisterAttendeeButton";
+import BeginnerSpeakerLink from "./header/buttons/BeginnerSpeakerLink.vue";
 
 export default {
   components: {
+    BeginnerSpeakerLink,
     HeaderPhrase,
     SeeScheduleButton,
     RegisterSpeakerButton,

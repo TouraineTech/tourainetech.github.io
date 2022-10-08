@@ -14,5 +14,9 @@
 a {
   background-color: $color-primary;
   color: white;
+
+  &:focus {
+    outline-color: $color-secondary;
+  }
 }
 </style>
