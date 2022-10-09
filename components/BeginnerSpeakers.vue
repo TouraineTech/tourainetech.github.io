@@ -24,7 +24,7 @@
       <p>
         L'idée est de vous offrir un évènement où vous vous sentez en sécurité pour faire vos premiers pas
         dans le monde des conférences, c'est pourquoi vous êtes libre de décider de quelle forme d'accompagnement
-        vous souhaitez bénéficier et que vous aurez libre choix de votre mentor femme ou homme parmi nos volontaires. 
+        vous souhaitez bénéficier et vous aurez libre choix de votre mentor femme ou homme parmi nos volontaires. 
       </p>
       <p>
         <strong>Choisissez le format "Speaker débutant" en remplissant le CFP</strong>, ou contactez-nous directement !
