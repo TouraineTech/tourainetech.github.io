@@ -5,7 +5,8 @@
       <p>
         Depuis ses débuts, Touraine Tech souhaite offrir sa chance aux
         <strong>speakers débutants</strong>, à donner la parole à tout le monde
-        et à favoriser la diversité dans notre milieu.
+        et à favoriser la diversité dans notre milieu et plus particulièrement pour
+        les speakers femmes et/ou issu(e)s de minorités.
       </p>
       <p>
         Inspirés par des évènements comme le YoungBlood et le Tremplin des
@@ -19,6 +20,11 @@
         accompagnement dans la préparation de votre support et de votre discours
         et une occasion de répéter devant quelqu’un pour avoir des conseils
         personnalisés.
+      </p>
+      <p>
+        L'idée est de vous offrir un évènement où vous vous sentez en sécurité pour faire vos premiers pas
+        dans le monde des conférences, c'est pourquoi vous êtes libre de décider de quelle forme d'accompagnement
+        vous souhaitez bénéficier et vous aurez libre choix de votre mentor femme ou homme parmi nos volontaires. 
       </p>
       <p>
         <strong>Choisissez le format "Speaker débutant" en remplissant le CFP</strong>, ou contactez-nous directement !
