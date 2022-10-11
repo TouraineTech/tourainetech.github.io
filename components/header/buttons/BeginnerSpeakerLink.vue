@@ -1,5 +1,5 @@
 <template>
-  <a class="beginner-speakers-link" href="#beginner-speakers">Speaker débutant ? On vous accompagne !</a>
+  <a class="beginner-speakers-link" href="#beginner-speakers">Speaker débutant•e ? On vous accompagne !</a>
 </template>
 
 <style lang="scss" scoped>
