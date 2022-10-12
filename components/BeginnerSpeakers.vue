@@ -4,15 +4,15 @@
       <h2>Acccompagnement des nouveaux speakers</h2>
       <p>
         Depuis ses débuts, Touraine Tech souhaite offrir sa chance aux
-        <strong>speakers débutants</strong>, à donner la parole à tout le monde
-        et à favoriser la diversité dans notre milieu et plus particulièrement pour
-        les speakers femmes et/ou issu(e)s de minorités.
+        <strong>speakers débutant•e•s</strong>, donner la parole à tout le monde
+        et favoriser la diversité dans notre milieu et plus particulièrement pour
+        les speakers femmes et/ou issu•e•s de minorités.
       </p>
       <p>
         Inspirés par des évènements comme le YoungBlood et le Tremplin des
         speakers (organisé par CraftRecords, TADx et le Camping des speakers),
         nous voulons nous investir davantage cette année en offrant un
-        <strong>accompagnement aux speakers débutants</strong>, particulièrement
+        <strong>accompagnement aux speakers débutant•e•s</strong>, particulièrement
         si vous avez peur de vous lancer !
       </p>
       <p>
@@ -27,7 +27,7 @@
         vous souhaitez bénéficier et vous aurez libre choix de votre mentor femme ou homme parmi nos volontaires. 
       </p>
       <p>
-        <strong>Choisissez le format "Speaker débutant" en remplissant le CFP</strong>, ou contactez-nous directement !
+        <strong>Choisissez le format "Speaker débutant•e" en remplissant le CFP</strong>, ou contactez-nous directement !
       </p>
 
       <ul class="contact-list">
