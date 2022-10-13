@@ -21,18 +21,18 @@
         </a>
       </div>
 
-       <span class="RegisterButton">Ouverture de la billeterie le 13 octobre 2022 à 13h00</span>
-<!--      <div>-->
-<!--        <a-->
-<!--          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"-->
-<!--          target="_blank"-->
-<!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
-<!--        >Lien vers la billeterie HelloAsso</a>-->
-<!--      </div>-->
+      <span class="RegisterButton">Ouverture de la billeterie le 13 octobre 2022 à 13h00</span>
+      <!--      <div>-->
+      <!--        <a-->
+      <!--          href="https://www.helloasso.com/associations/touraine-tech/evenements/tourainetech-22"-->
+      <!--          target="_blank"-->
+      <!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
+      <!--        >Lien vers la billeterie HelloAsso</a>-->
+      <!--      </div>-->
 
-<!--      <div class="RegisterHelp">-->
-<!--        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>-->
-<!--      </div>-->
+      <div class="RegisterHelp">
+        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
+      </div>
     </div>
   </section>
 </template>
