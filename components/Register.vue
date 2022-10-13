@@ -7,7 +7,7 @@
       <h2>Billetterie</h2>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc"
+          class="PriceBloc PriceBloc--soldOut"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">25 €</div>
