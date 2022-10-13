@@ -31,7 +31,7 @@
       <!--      </div>-->
 
       <div class="RegisterHelp">
-        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
+        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
       </div>
     </div>
   </section>
