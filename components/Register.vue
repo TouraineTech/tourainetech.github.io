@@ -26,7 +26,7 @@
           href="https://billetterie.touraine.tech"
           target="_blank"
           class="RegisterButton button--link button--white"
-        >Lien vers la billetterie</a>
+        >Achetez votre place !</a>
       </div>
 
       <!--      <div class="RegisterHelp">-->
