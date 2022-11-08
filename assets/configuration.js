@@ -4,7 +4,7 @@ export default {
     eventDate: '19 & 20 janvier 2023',
     eventEdition: '23',
     isRegisterOpen: true,
-    isSoldOut: false,
+    isSoldOut: true,
     isScheduleOnline: false,
     isEditionOpen: true,
     isVideoOnline: false,
