@@ -14,7 +14,7 @@
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc  PriceBloc--soldOut PriceBloc--soldOut--wave"
+          class="PriceBloc  PriceBloc--soldOut"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
           <div class="PriceBloc-price">37 €</div>
@@ -22,14 +22,14 @@
       </div>
 
 
-      <span class="RegisterButton"> * Le premier lot de places est déjà épuisé, rendez-vous le 08/11 à 13h pour la deuxième salve !</span>
-      <div>
-        <a
-          href="https://billetterie.touraine.tech"
-          target="_blank"
-          class="RegisterButton button--link button--white"
-        >Achetez votre place !</a>
-      </div>
+      <!--      <span class="RegisterButton"> * Le premier lot de places est déjà épuisé, rendez-vous le 08/11 à 13h pour la deuxième salve !</span>-->
+      <!--      <div>-->
+      <!--        <a-->
+      <!--          href="https://billetterie.touraine.tech"-->
+      <!--          target="_blank"-->
+      <!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
+      <!--        >Achetez votre place !</a>-->
+      <!--      </div>-->
 
       <!--      <div class="RegisterHelp">-->
       <!--        <span>* Votre billet vous donne accès à toutes les conférences, aux pauses café et au repas. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>-->
@@ -47,7 +47,6 @@
       <div class="RegisterHelp">
         <span>Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
       </div>
-
     </div>
   </section>
 </template>
