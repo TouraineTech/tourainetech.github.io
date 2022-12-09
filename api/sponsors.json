@@ -13,11 +13,6 @@
         "id": "acensiOne",
         "title": "Consultant senior C#.NET",
         "images": ["acensiOnePage1.png", "acensiOnePage2.png"]
-      },
-      {
-        "id": "acensiTwo",
-        "title": "Analyste Technico-Fonctionnel",
-        "images": ["acensiTwoPage1.png", "acensiTwoPage2.png"]
       }
     ]
   }
