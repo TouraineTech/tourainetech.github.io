@@ -47,12 +47,19 @@
     >
       <h3 v-html="jobOffer.title"></h3>
       <article>
-        MODE IFRAME
-        <iframe src="/job1.pdf"
+        EMBBEDED PDF
+        <object data="/job1.pdf"
                 width="100%"
                 height="1100"
-        />
-        MODE IMAGE
+                type="application/pdf"
+        >
+          <img v-for="image in jobOffer.images"
+               :key="image"
+               :id="jobOffer" :src="require(`@/assets/img/jobOffers/${image}`)" width="100%" alt=""
+          >
+        </object>
+
+        IMAGE
         <img v-for="image in jobOffer.images"
              :key="image"
              :id="jobOffer" :src="require(`@/assets/img/jobOffers/${image}`)" width="100%" alt=""
