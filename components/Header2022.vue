@@ -7,7 +7,7 @@
       <div class="Header-buttons">
         <SeeScheduleButton v-if="configuration.isScheduleOnline"></SeeScheduleButton>
         <RegisterSpeakerButton v-if="configuration.isCfpOpen"></RegisterSpeakerButton>
-        <BeginnerSpeakerLink v-if="configuration.displayBeginnerSpeakers"></BeginnerSpeakerLink>
+        <BeginnerSpeakerLink v-if="configuration.isCfpOpen"></BeginnerSpeakerLink>
         <RegisterAttendeeButton v-if="configuration.isRegisterOpen && !configuration.isSoldOut"></RegisterAttendeeButton>
       </div>
     </div>

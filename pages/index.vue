@@ -5,12 +5,13 @@
       <About></About>
       <Sponsors v-if="configuration.displaySponsors"></Sponsors>
       <Register v-if="configuration.isRegisterOpen"></Register>
-      <CFP v-if="!configuration.isScheduleOnline && configuration.cfpOpen"></CFP>
+      <CFP v-if="!configuration.isScheduleOnline && configuration.isCfpOpen"></CFP>
+      <BeginnerSpeakers v-if="!configuration.isScheduleOnline && configuration.isCfpOpen"></BeginnerSpeakers>
       <TopSpeakers v-if="configuration.isScheduleOnline"></TopSpeakers>
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
       <Pictures v-if="configuration.isVideoOnline"></Pictures>
       <Video v-if="configuration.isVideoOnline"></Video>
-      <BeginnerSpeakers v-if="configuration.displayBeginnerSpeakers"></BeginnerSpeakers>
+
       <Team></Team>
       <Map></Map>
     </template>

@@ -28,7 +28,7 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
 }
 
 async function retrieveData(apiKey) {
-  const response = await fetch(`https://conference-hall.io/api/v1/event/tREIbPYCGIKKca55XFzh?key=${apiKey}`);
+  const response = await fetch(`https://conference-hall.io/api/v1/event/3lWSdH0pfZkHEAL7RWSJ?key=${apiKey}`);
   const json = await response.json();
   return json;
 }
@@ -39,7 +39,7 @@ function talksFilter(...states) {
 
 
 function keynoteTalkFilter() {
-  return ({id}) => id !== '5dpfmCYFArWV96iuHRld';
+  return ({id}) => id !== 'w96GMrchHy0os6sN5LRD' && id !== '5NCjyjA6K1EsbxtW2Mn6';
 }
 
 function getTalks(conferenceHallDatas) {
@@ -68,13 +68,25 @@ function getTalks(conferenceHallDatas) {
 
   talks.push(
     {
-      "id": "keynoteOuverture",
+      "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "id": "keynoteCloture",
+      "id": "keynoteCloture1",
+      "title": "Keynote de clôture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "id": "keynoteOuverture2",
+      "title": "Keynote d'ouverture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"

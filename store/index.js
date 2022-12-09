@@ -20,6 +20,7 @@ function addPlanningToTalks(TALKS) {
   return TALKS.map(talk => {
     talk.rooms = planningByTalkId[talk.id].rooms;
     talk.times = planningByTalkId[talk.id].times;
+    talk.day = planningByTalkId[talk.id].day;
     return talk
   });
 }
