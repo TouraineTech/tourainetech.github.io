@@ -48,5 +48,16 @@
     "type": "gold",
     "desc": "Tu ne connais pas encore La Mobilery ? Depuis 12 ans, on crée des apps mobiles et web pour nos clients.<br>Depuis 12 ans, on le fait avec l’amour du beau code et en mettant toujours l’humain au centre de notre activité.<br>La Mobilery a été créée à Lille en 2010 et est présente à Tours depuis 2017 et à Paris depuis 2019.<br>Plus qu’une ESN, nous sommes une Néo ESN. Notre but : faire grandir nos collaborateurs et collaboratrices dans un cadre à la fois plaisant et prônant l’excellence. Nous accompagnons nos clients en régie (remote ou sur place) comme en mode projet.<br>Société à mission, management libéré, politique carbone neutre, mécénat de compétences techniques sont autant d’axes qui nous permettent d’atteindre nos objectifs ambitieux et porteurs de sens.<br>Nous sommes heureux de soutenir Touraine Tech en tant que sponsor depuis deux ans, et pour encore une belle aventure.<br>Nous continuons à grandir et à recruter, alors n'hésitez pas à passer nous voir pour discuter !",
     "jobOffers": []
+  },
+  {
+    "name": "Code-Troopers",
+    "id": "code-troopers",
+    "image": "codetroopers.png",
+    "link": "https://code-troopers.com/",
+    "linkedIn" :"https://www.linkedin.com/company/5058677/",
+    "twitter" : "https://twitter.com/codetroopers",
+    "type": "gold",
+    "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br> <br>Après plus de 10 ans d’expérience, l’équipe de développeurs d’applications web et mobiles de Code-Troopers compte aujourd’hui 15 collaborateurs. Des start-ups aux grands groupes, nous accompagnons les entreprises tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.",
+    "jobOffers": []
   }
 ]
