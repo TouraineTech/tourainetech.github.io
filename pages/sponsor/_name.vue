@@ -33,6 +33,11 @@
             <img src="@/assets/img/facebook-official.svg" width="50px" alt="Facebook logo">
           </a>
         </div>
+        <div v-if="sponsor.instagram">
+          <a :href="sponsor.instagram" target="_blank">
+            <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo logo">
+          </a>
+        </div>
       </div>
     </div>
     <div class="job-offer-bloc description--container"
@@ -41,7 +46,17 @@
          :id="jobOffer.id"
     >
       <h3 v-html="jobOffer.title"></h3>
-      <article v-html="jobOffer.desc" />
+      <article>
+        <iframe src="/job1.pdf"
+                width="100%"
+                height="1100"
+        />
+        OR
+        <img v-for="image in jobOffer.images"
+             :key="image"
+             :id="jobOffer" :src="require(`@/assets/img/jobOffers/${image}`)" width="100%" alt=""
+        >
+      </article>
     </div>
   </div>
 </template>
@@ -65,7 +80,7 @@ export default {
     const title = `Touraine Tech 2022 - Merci à ${this.sponsor.name} notre partenaire ${this.sponsor.type}`;
     const url = `https://touraine.tech/sponsor/${this.sponsor.id}`;
     const image =
-      "https://touraine.tech" + require(`@/assets/img/${this.sponsor.image}`);
+      "https://touraine.tech" + require(`@/assets/img/sponsors/${this.sponsor.image}`);
     return {
       titleTemplate: title,
       meta: [
