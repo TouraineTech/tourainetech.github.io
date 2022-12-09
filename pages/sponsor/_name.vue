@@ -4,25 +4,44 @@
     <h2>Sponsor {{ sponsor.type.toLocaleUpperCase() }}</h2>
     <div class="container--image">
       <img
-        :src="require(`@/assets/img/${sponsor.image}`)"
+        :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
         :alt="sponsor.name"
       >
     </div>
     <div class="description--container">
-      <p v-html="sponsor.desc"/>
+      <p v-html="sponsor.desc" />
       <div class="description--link">
         <a
           :href="sponsor.link"
           target="_blank"
         >Visiter leur site internet</a>
       </div>
+
+      <div style="margin-top: 2rem; display: flex; justify-content: space-evenly">
+        <div v-if="sponsor.linkedIn">
+          <a :href="sponsor.linkedIn" target="_blank">
+            <img src="@/assets/img/linkedin-icon.svg" width="50px" alt="linkedIn logo">
+          </a>
+        </div>
+        <div v-if="sponsor.twitter">
+          <a :href="sponsor.twitter" target="_blank">
+            <img src="@/assets/img/twitter-rounded.svg" width="50px" alt="twitter logo">
+          </a>
+        </div>
+        <div v-if="sponsor.facebook">
+          <a :href="sponsor.facebook" target="_blank">
+            <img src="@/assets/img/facebook-official.svg" width="50px" alt="Facebook logo">
+          </a>
+        </div>
+      </div>
     </div>
     <div class="job-offer-bloc description--container"
-       v-for="jobOffer in sponsor.jobOffers"
-      :key="jobOffer.id"
-    :id="jobOffer.id">
+         v-for="jobOffer in sponsor.jobOffers"
+         :key="jobOffer.id"
+         :id="jobOffer.id"
+    >
       <h3 v-html="jobOffer.title"></h3>
-      <article v-html="jobOffer.desc"/>
+      <article v-html="jobOffer.desc" />
     </div>
   </div>
 </template>
