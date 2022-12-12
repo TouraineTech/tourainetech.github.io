@@ -205,6 +205,7 @@ $color-alien: #066420;
 }
 
 .container-days {
+  cursor: pointer;
   display: inline-flex;
   width: 100%;
   min-height: 100%;
@@ -419,6 +420,7 @@ $color-alien: #066420;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  word-break: break-all;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
