@@ -3,7 +3,7 @@
     {
       "id": "07vraokDo3cMoivHt8SD",
       "title": "Edge AI : allez viens, on embarque notre intelligence artificielle !",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "intermediate",
       "abstract": "Avez-vous déjà entendu parler du terme \"AI on edge\" ? Il s'agit du déploiement d'applications d'IA sur des appareils situés dans le monde physique. \nLes avantages ? Moins de latence, plus de sécurité, d'efficacité et surtout de la proximité ! Aujourd'hui, il devient donc de plus en plus important de pouvoir déployer des modèles d'IA capables d'inférer en temps réel.\n\nLa vision par ordinateur est particulièrement concernée de par sa progression rapide et son utilisation dans de nombreux domaines : automobile, médical, commerce, ... Elle regroupe de nombreuses techniques comme la classification d'images, la segmentation d'images ou encore la détection d'objets. \n\nCette dernière permet d'identifier et de localiser les différents objets sur une image ou sur une vidéo. Un célèbre algorithme de détection d'objets, connu pour son fonctionnement rapide, se nomme YOLOv7.\n\nDans ce talk, nous verrons comment déployer un modèle YOLOv7 pour la détection d'objets sur une carte Raspberry Pi 4. \n\nPour cela, nous nous intéresserons à l'entraînement et au test d'un modèle YOLOv7 au sein d'un Notebook Jupyter. Nous convertirons ensuite notre modèle pour pouvoir le déployer et faire de l'inférence sur Raspberry Pi. \nLa finalité ? Un outil de détection d'objets en temps réel à portée de main.\n\nAlors, on embarque ?",
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
@@ -51,23 +51,6 @@
       "createTimestamp": {
         "_seconds": 1669483455,
         "_nanoseconds": 299000000
-      }
-    },
-    {
-      "id": "3VtJMCT7CMG3bOSbQgup",
-      "title": "Comment j'ai aidé ma fille à lire avec le machine learning",
-      "state": "accepted",
-      "level": "beginner",
-      "abstract": "Et si le machine learning pouvait aider un enfant à lire ? C'est en accompagnant ma fille pendant ses séances de lecture que m'est venu cette question et l'envie d'y répondre m'a tout de suite titiller l'esprit.\n\nPartant du constat que les solutions \"speech to text\" du marché ne sont pas adaptées aux voix d'enfants, me voilà parti pour une folle aventure dans le monde du machine learning.\n\nJe vous propose de découvrir dans ce talk toutes les étapes (dataset, modèle, technologies) qui m'ont permis d'aboutir à une application web pour enfants qui leur permet de lire à voix haute des mots/phrases découpés en syllabes avec un retour immédiat sur leur prononciation.",
-      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "jMUwWI44kuTXsgUt8vLFp3vAe1j1"
-      ],
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1664540724,
-        "_nanoseconds": 749000000
       }
     },
     {
@@ -180,7 +163,7 @@
     {
       "id": "DMbEta12hz6HS1I3rWym",
       "title": "Le DevOps expliqué à mon père, agriculteur à la retraite.",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "DevOps, GitOps, MLOps, DataOps, DevSecOps, SysOps, xOps et tous les ...Ops.\nVous rencontrez peut-être au quotidien ces nouveaux termes. Est-ce que ce sont encore des anglicismes ou des mots \"hype\" vide de sens ?\nA l'origine d'un grand nombre d'entre eux se trouve une démarche qui a révolutionné l'IT : le DevOps. Mais en quoi cela consiste-t-il ?\n\nAu travers du quotidien de mon père, vous comprendrez ce qu'est la démarche DevOps.\n\nAinsi, vous pourrez expliquer à vos enfants, vos copains, vos parents et grand-parents ce qu'est le DevOps, votre nouvelle démarche de travail !",
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
@@ -232,14 +215,14 @@
     {
       "id": "HWmC1kHb5oxthqwbyrXW",
       "title": "Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Avec des collègues de tous horizons, on se retrouve autour d'un évènement pour construire un jeu de cartes collaboratif à partir d'une feuille blanche.\n\nCa donne près de 60h de jeu cumulées sur 2 jours et des opportunités  d'usages et de business.\n\n\nVenez vivre l'histoire de quelques mois qui nous a menée à proposer une expérience de jeu en pleine conférence de développeurs...\nEt découvrir les bénéfices humains et techniques que ce type d'aventure peut vous apporter.\n\nTout cela pour répondre aux grandes questions de la vie :  « Qui suis-je ? - Dans quel état j'erre ? - Où cours-je ? »",
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "IPck78ZRNPaINM4qaagRuJnDZvR2",
-        "3v72z5xWXfbL94DpKVI1snjC7Jr1"
+        "3v72z5xWXfbL94DpKVI1snjC7Jr1",
+        "IPck78ZRNPaINM4qaagRuJnDZvR2"
       ],
       "language": "French",
       "createTimestamp": {
@@ -334,6 +317,25 @@
       "createTimestamp": {
         "_seconds": 1669306996,
         "_nanoseconds": 959000000
+      }
+    },
+    {
+      "id": "PZhCax4A1hSIflgKWUGS",
+      "title": "As a UI designer, how to mess up your project? ",
+      "state": "accepted",
+      "level": "beginner",
+      "abstract": "# Version française 🇫🇷\n\nEn tant que designer, c’est facile de vendre du rêve à vos clients. Mais c’est encore plus facile d’oublier que le développement est lié à un budget et à un planning. Un mauvais processus de travail en design peut mener à une mauvaise expérience pour l’utilisateur final, peu importe à quel point la première interface était jolie.\n\nMais si vous voulez vraiment rater votre projet, lors de cette conférence, vous verrez comment:\n\n- Choisir le mauvais logiciel de design\n- Choisir les mauvaises polices et couleurs\n- Empêcher les modifications rapides\n- Ajouter des incohérences (rapidement)\n- Faire un beau design uniquement avec des données “bien pratiques”\n- Fournir une interface utilisateur mobile merdique (même si la plupart des utilisateurs sont sur mobile) Pourrir la vie des développeurs front-end\n\n# English version 🇬🇧\n\nAs a designer, it’s very easy to sell a beautiful dream to your client. But it’s easier to forget that development is tied to budget and schedule. A bad design workflow can lead to poor UX for the end user, no matter how shiny the first design was.\nBut if you really want to fail your project, in this talk, you will see how to:\n\n- Choose the wrong design software\n- Choose the wrong fonts & colors\n- Prevent design iterations\n- Add inconsistencies (quickly)\n- Make shiny design with only convenient data\n- Deliver shitty mobile UI (even if most of the users are on mobile)\n- Make the life of front-end developers a pain\n",
+      "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "HfBwLxQ1wyO4giltVDafRIFILLJ2",
+        "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2"
+      ],
+      "comments": "Bon courage pour la selection ;) ",
+      "language": "English",
+      "createTimestamp": {
+        "_seconds": 1668786322,
+        "_nanoseconds": 338000000
       }
     },
     {
@@ -452,8 +454,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
-        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3"
+        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
+        "Et0TICQLYudeoQ5KjUZ55X2rU9M2"
       ],
       "language": "French",
       "createTimestamp": {
@@ -571,6 +573,24 @@
       }
     },
     {
+      "id": "cqhVPs2RgbRvlBNQZyN5",
+      "title": "Oh crab ! My watch speaks Rust 🦀",
+      "state": "accepted",
+      "level": "intermediate",
+      "abstract": "Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...\nEt en général, on les programmes en hybride C/C++.\n\nPar nostalgie, j'aime beaucoup le C, mais je me suis demandé si on ne pouvait pas utiliser des langages plus modernes...\n\nLors de ce talk je vous présenterai ma découverte de la T-Watch 2020 et mes tentatives pour la programmer en Rust.\nCe sera aussi l'occasion de découvrir l'éco-système Rust existant autour de l'embarqué et les avantages qu'apporte le langage dans ce contexte particulier.\n\n",
+      "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "0ZbtTwugPpTsYEAbDRbt6Voqcca2"
+      ],
+      "comments": "Merci pour l'organisation !",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1666082524,
+        "_nanoseconds": 692000000
+      }
+    },
+    {
       "id": "eMlIQizK95KpLycTP70y",
       "title": "Féminisation dans la tech : la communication, ou l'échec de tout un secteur",
       "state": "confirmed",
@@ -660,7 +680,7 @@
     {
       "id": "kgKT9TgmJggaYZ5VVn9a",
       "title": "Wolfy - de 2000 à 20 000 joueurs connectés ",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Wolfy est un jeu de loup-garou en ligne, fait par des fans du genre. Nous avons voulu remettre au goût du jour ce jeu en utilisant les dernières technologies (Docker, Kubernetes, NextJS, microservice...)\n\nLors du premier confinement, tous les écoliers se sont retrouvés confinés chez eux. Pour garder le contact entre eux, l'un des moyens a été le jeu vidéo. Wolfy a vu son trafic multiplié par 10 dans les premiers jours du confinement.\n\nVenez suivre nos nuits blanches et les différents problèmes de performance, de charge, de DDOS et de saturation réseau que nous avons dû affronter lié à cette augmentation exceptionnelle de joueurs.",
       "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
@@ -748,14 +768,14 @@
     {
       "id": "omWyNKhCM0MT1GwS9wWG",
       "title": "Votre équipe de développement à l'ère post-covid",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Si le confinement nous a forcé à apprendre à travailler en remote, il nous a aussi montré toute la difficulté de se synchroniser à distance. **Le retour à la normale n'a jamais eu lieu** et nous sommes entrés dans **l'ère post-covid** : des personnes en présentiel, en  remote, en flex-office, sur des tiers lieux, dans un autre pays ou à la plage. **Difficile de synchroniser tout le monde**, sans même parler de la création d'un esprit d'équipe. Si **la qualité de vie de chacun y a beaucoup gagné**, de nombreuses difficultés sont apparues pour les animateurs d'équipe. \n\nDans ce talk **Eric Aboudaram** (Tech Lead depuis plus de 10 ans) et **Marc Dugué** (Chef de projet depuis plus de 15 ans et facilitateur graphique depuis plus de 8 ans) vous partageront ce qu'ils ont appris sur l'animation d'équipe dans l'ère post covid : **les difficultés et les enjeux** d'avoir des équipes partiellement distantes, bien sûr, mais aussi les **solutions et les outils** qu'ils ont mis en oeuvre dans l'animation des équipes de **Conserto**. Tout n'a pas fonctionné, ils parleront donc également de **leurs échecs** (pour vous éviter de faire les mêmes erreurs ? ) et de **leurs réussites** dans l'animation d'une équipe d'expert multi site. ",
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "biWKM3edJtX6IkI0Nc128sYFYkO2",
-        "oqMr9PXJTSWJ8wJKtHl5pj9bs412"
+        "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
+        "biWKM3edJtX6IkI0Nc128sYFYkO2"
       ],
       "comments": "Bonjour, \n\nEric et moi collaborons dans l'animation d'une équipe d'innovation répartie sur l'ensemble des agences de Conserto (Paris, Nantes, Rennes, Bordeaux, Toulouse, Lyon, Strasbourg...). Nous nous heurtons régulièrement aux freins que pose l'animation d'une équipe hybride et nous adorerions en parler lors de votre événement. Comme je le dis dans les références, j'ai vraiment l'habitude de faire des conférences sur la facilitation graphique mais ce serait ma première conférence sur un autre sujet. Par ailleurs ce serait la première conférence d'Eric. Nous nous demandons donc si dans ce contexte il serait justifié de participer à votre programme de Speaker débutant ? Si cela n'était pas possible, nous pouvons nous faire accompagner par d'autres conférenciers de notre boite, donc nous pouvons aussi faire une conférence sans ce programme si vous n'avez plus de place dedans. \n\nTrès belle journée\n\nMarc ",
       "language": "French",
@@ -767,14 +787,14 @@
     {
       "id": "opMtA5pHQNvWz9AEJd6F",
       "title": "Remotion : le 7ème art à porté de composants web et d'API 🎬",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Vous avez déjà eu envie de générer des vidéos ... ?\n\nVous ne trouvez pas un outil pas cher, facile à prendre en main et pas limiter dans les possibilités ?\n\nVous avez des bases en HTML, CSS et Javascript ?\n\n**Remotion est fait pour vous !** 🫵🏼\n\nRemotion est une lib open source publiée en 2019, qui permet la génération de gif, d'animations, de vidéos de manière programmatique, à partir de composant React ! \nNous allons vous partager notre aventure de création de trailer vidéo dans le contexte des plateformes de streaming sur lesquels nous travaillons chez Bedrock. Nostalgique des programmes du début des années 2000, on a essayé de reproduire quelques bandes d'annonces pour vous rappelez des souvenirs et vous montrer à quel point c'est facile ! \n\nInstallez-vous et préparez vos pop-corn la séance va commencer ! 🍿",
       "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "mODnTNL9onNOU1odUO9jb2tbpQj2",
-        "eGA6OY0HEhP9d6WQ7HZtq054tW22"
+        "eGA6OY0HEhP9d6WQ7HZtq054tW22",
+        "mODnTNL9onNOU1odUO9jb2tbpQj2"
       ],
       "comments": "Merci pour l'organisation de Touraine Tech ! 👏🏼",
       "language": "French",
@@ -823,7 +843,7 @@
     {
       "id": "txsbzctz75bYv2CHpoit",
       "title": "La sécurité, par où commencer ? Install party 🎉",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Vous connaissez probablement les Linux [Install Parties](https://fr.wikipedia.org/wiki/Install_party) ? Alors, faisons de même avec la Sécurité, nous allons suivre l'approche [DevSecOps](https://davidaparicio.gitlab.io/website/files/devsecops_software_lifecycle.jpg) du [ministère américain de la défense](https://public.cyber.mil/devsecops/). Pour cela, rien de plus simple, venez avec votre ordinateur, votre projet opensource et vos outils (IDE, CI/CD). Après quelques slides de présentation, nous évolurons étape par étape dans la sécurisation de votre application. Si votre application est dockerisée, nous évonquerons les [bonnes pratiques de l'ANSSI](https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-au-deploiement-de-conteneurs-docker/) sur ce sujet. Nous verrons ainsi, à travers cet atelier, comment le GitOps/CI/CD permettent à nous et aux organisations d'améliorer notre posture face à la sécurité.",
       "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
@@ -841,7 +861,7 @@
     {
       "id": "uYdE2DzqELvT4lEL9OAc",
       "title": "Les post-mortems ou comment sortir heureux d’un carnage",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Une fonctionnalité, un projet, une réunion, ça ne se passe pas toujours bien. Loin de là. C’est parfois même un carnage. 😱 Que fait-on dans ces cas-là ? Ça s’est terminé dans les larmes, le sang et la sueur mais qu’importe ! On met tout ça sous le tapis, c’est fini, on en parle plus. 🙈\n\nPour que cela recommence encore la prochaine fois ? Pour que tout le monde en souffre sans oser en parler ? Pas la peine !\n\nAlors on prend notre courage à deux mains, et on organise un POST-MORTEM. Mais qu'est-ce que c'est ? À quoi cela sert-il ? Et comment le mettre en place ? 🤔\n\nVous découvrirez dans ce talk les différentes étapes d'un post-mortem réussi et comment l'animer au mieux pour que chacun et chacune puisse être heureux.se après un tel carnage, sans pour autant être psychopathe ! 😌",
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
@@ -900,8 +920,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "zQ0mhj745ZgtNDL3QL6pVT316ai2",
-        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2"
+        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+        "zQ0mhj745ZgtNDL3QL6pVT316ai2"
       ],
       "comments": "Hello la team orga !\n\nFabien et moi-même vous proposons notre talk un peu à part concernant la représentation des nombres en informatique. Nous y abordons de façon ludique différentes techniques pour représenter et exploiter les nombres en fonction des besoins et repartons même un peu dans le temps en proposant l'analyse d'un effet de démomaker, le rotozoom, et même comment l'Atari 2600 exploitait certains compteurs d'une façon très élégante.\n\nBon courage pour la sélection des talks ! \n\nOlivier & Fabien",
       "language": "French",
@@ -925,24 +945,6 @@
       "createTimestamp": {
         "_seconds": 1665468856,
         "_nanoseconds": 55000000
-      }
-    },
-    {
-      "id": "vmo6mvBKkPLGKaisZ1vP",
-      "title": "Trouver sa voix, et l'accepter pour mieux l'utiliser",
-      "state": "accepted",
-      "level": "beginner",
-      "abstract": "Dans la saga Dune de Frank Herbert, la voix est un outil absolu de domination et de manipulation.\nSans chercher à atteindre cette extrémité mais force est d'admettre qu'une voix bien placée, bien utilisée, peut être une arme redoutable dans la vie quotidienne.\nLes politiques et les pro du marketing n'ont aucun scrupule à l'utiliser pleinement alors pourquoi pas vous?\nGrâce à quelques exercices et à un travail d'écoute assidu, vous disposerez bientôt, en plus de vos brillants argumentaires, d'un outil de pointe pour vous faire entendre, comprendre et surtout écouter!\nQue ce soit en réunion, en conférence ou au téléphone, ne négligez plus votre voix, cultivez-la!",
-      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "qV3eJfwUWfZvIOYV23PJ6nfXkBn1"
-      ],
-      "comments": "\"Ecoutez ma voix... Votez pour moi!!!!\" Flûte ça marche pas en version texte! (déso pour l'humour moisi j'espère que ça ne vous pourrit pas votre productivité à la lecture des sujets)",
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1664885019,
-        "_nanoseconds": 305000000
       }
     },
     {
@@ -985,29 +987,25 @@
       "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "state" : "confirmed"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
       "id": "keynoteCloture1",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "state" : "confirmed"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
       "id": "keynoteOuverture2",
       "title": "Keynote d'ouverture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "state" : "confirmed"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
       "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "state" : "confirmed"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     }
   ],
   "speakers": [
@@ -1024,9 +1022,9 @@
     {
       "uid": "ATWxmgrBTEcstZyQjR25MPP5wJS2",
       "displayName": "Jean Couteau",
-      "speakerReferences": "Rencontres Mondiales du Logiciel Libre 2010 (Bordeaux) - ISIS-Fish, un simulateur libre pour la recherche : \nhttp://2010.rmll.info/ISIS-Fish-un-simulateur-libre-pour-la-recherche.html?lang=fr\n\nMeetup PSY Talk Nantes (Mai 2019) - L'entreprise Autrement (avec Yannick Martel)",
+      "speakerReferences": "Rencontres Mondiales du Logiciel Libre 2010 (Bordeaux) - ISIS-Fish, un simulateur libre pour la recherche : \nhttp://2010.rmll.info/ISIS-Fish-un-simulateur-libre-pour-la-recherche.html?lang=fr\n\nMeetup PSY Talk Nantes (Mai 2019) - L'entreprise Autrement (avec Yannick Martel)\n\nOSX 2022 : https://www.youtube.com/watch?v=ujPIPM22sDE",
       "company": "Code Lutin",
-      "photoURL": "https://lh5.googleusercontent.com/-RHL1PKvMuhw/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reeZXZGoh0B1aOJumGC1bOYBhYP-w/mo/photo.jpg",
+      "photoURL": "https://cache.sessionize.com/image/db9b-200o200o2-RWGGmT7jGwj2jts6FzDaDn.jpeg",
       "twitter": "@jcouteau"
     },
     {
@@ -1058,16 +1056,6 @@
       "photoURL": "https://lh5.googleusercontent.com/-_wR1F6ARzlY/AAAAAAAAAAI/AAAAAAAAABA/sL5Sk_m1uWA/photo.jpg",
       "twitter": "@GuillaumeMembre",
       "github": "gmembre-zenika"
-    },
-    {
-      "uid": "jMUwWI44kuTXsgUt8vLFp3vAe1j1",
-      "displayName": "Vincent Ogloblinsky",
-      "bio": "Brestois du bout du monde émigré à Rennes, je suis architecte logiciel frontend au sein d’Orange Innovation et passionné par les technologies du web, et la plupart du temps je les utilise en codant en (Type||Java)script. \n\nJe suis également Google Developer Expert sur les technologies web.\n\nLe partage de la connaissance est pour moi une chose importante : au sein de ma société au travers de déjeuners techniques ou de sessions de mobprogramming; durant des formations; en présentant des sujets lors de conférences; et enfin en contribuant et en maintenant des projets open-source.\n\n\"Let's browsers rock !\"",
-      "speakerReferences": "Devfest Toulouse, Nantes, Brest, Paris, Lille, Devoxx FR & BE, Web2Day\n\nhttps://slides.com/vogloblinsky",
-      "company": "Orange ",
-      "photoURL": "https://lh3.googleusercontent.com/-ckhK85zrlYM/AAAAAAAAAAI/AAAAAAAAC4g/G5DIeeyNEAM/photo.jpg",
-      "twitter": "vogloblinsky",
-      "github": "vogloblinsky"
     },
     {
       "uid": "z40htDnoNBgrrGeOikcH3MaKimO2",
@@ -1291,6 +1279,26 @@
       "github": "enthuan"
     },
     {
+      "uid": "HfBwLxQ1wyO4giltVDafRIFILLJ2",
+      "displayName": "Rudy Baer",
+      "bio": "En tant que fondateur et dirigeant de BearStudio, le travail de Rudy consiste à résoudre des problèmes humains et techniques. Après avoir été CTO dans une startup, Rudy a créé un studio de développement pour aider d'autres fondateurs de projets à livrer de vrais produits à de vrais utilisateurs. Aider les gens à se parler, à se comprendre et à avancer est sa principale motivation.\n\nEt aussi organisateur bénévoles a Codeurs En Seine depuis 2016",
+      "speakerReferences": "- [Lancer une Application Mobile](https://podcast.ausha.co/podcast-structure/bearstudio-lancer-une-application-mobile-avec-rudy-baer-e049) pour le podcast Structure en 2022\n- [Comment ça se passe pour mettre en ligne une app quand on commence avec le cloud ?]( https://www.youtube.com/watch?v=7LZDkoEHWJM) donnée au DevFest du bout du monde a Brest en 2020, [Meetup Montpellier devops](https://www.meetup.com/fr-FR/montpellier-devops/events/266019150/), et [meetup Codeurs En Seine](https://www.codeursenseine.com/meetups/events/firebase-and-clouds)\n- [Stream dev bot slack](https://www.youtube.com/watch?v=o_0WqoNiP_g )\n- Pourquoi faire des maquettes pour un projet numérique ?](https://www.youtube.com/watch?v=7mSr_H_Dpjg&t=1s)\n- [Orga Codeurs en Seine depuis meetup et conférence 2016](https://www.codeursenseine.com)\n- [Ansible, l’outil du sysadmin paresseux mais pragmatique](https://www.youtube.com/watch?v=lyn6VyK_ik8&list=PL3phsoEh8sHc9BFCYLLoWlkQ1TiPK3DWV&index=6) donné en 2017 👴\n",
+      "company": "BearStudio",
+      "photoURL": "https://lh4.googleusercontent.com/-GUIo9muY3bs/AAAAAAAAAAI/AAAAAAAAAGA/bzO4wcPA6qI/photo.jpg",
+      "twitter": "RudyBaer",
+      "github": "RudyBaer"
+    },
+    {
+      "uid": "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2",
+      "displayName": "Dorian Delorme",
+      "bio": "Cherchant constamment à s'améliorer et à développer ses compétences, Dorian prend plaisir à concevoir des interfaces qui répondent aux attentes des utilisateurs. Du design au développement, après des années en tant que designer, Dorian apprend actuellement le développement front-end.",
+      "speakerReferences": "- [Comment foirer son projet en tant qu’UI Designer ?](https://www.youtube.com/watch?v=kRXD9932RtE), donnée à un meetup Codeurs en Seine en 2022.",
+      "company": "BearStudio",
+      "photoURL": "https://lh3.googleusercontent.com/a-/ACNPEu-h7e09lBOCFF5E8XAr3pA3pMcbUpFgvdR8phVe=s96-c",
+      "twitter": "d_del_s",
+      "github": "doriandel"
+    },
+    {
       "uid": "p4lQkz4mvnTox9AZz9nsRV5Iedg1",
       "displayName": "Olivier Mertens",
       "bio": "Developer Relations @Microsoft\n13 years in electronic radar domain, 10 years in software development and sofware architecture, created and lead the french sofware engineer community for an international consulting company for 4600 developpers @capgemini\n",
@@ -1343,6 +1351,14 @@
       "github": "matthieuwerner"
     },
     {
+      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
+      "displayName": "Marion Valentin",
+      "company": "BAM",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
+      "twitter": "@MarionBarr2",
+      "github": "marionnousvalentin"
+    },
+    {
       "uid": "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
       "displayName": "Yvonnick FRIN",
       "bio": "Yvonnick développeur chez Pix. Curieux et passionné, il aime découvrir les dernières technologies du Web. Social, il co-organise NantesJS.",
@@ -1351,14 +1367,6 @@
       "photoURL": "https://lh5.googleusercontent.com/-tmj1tGCN_u4/AAAAAAAAAAI/AAAAAAAABO0/oVqsblFTX8k/photo.jpg",
       "twitter": "YvonnickFrin",
       "github": "frinyvonnick"
-    },
-    {
-      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-      "displayName": "Marion Valentin",
-      "company": "BAM",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
-      "twitter": "@MarionBarr2",
-      "github": "marionnousvalentin"
     },
     {
       "uid": "nhFyEmSJYZZiMa989nAp7qxGAkp2",
@@ -1396,8 +1404,13 @@
     },
     {
       "uid": "Npd1iKHS7kfua1fYYOsfF8gAUbW2",
-      "displayName": "AlonahAmélie",
-      "photoURL": "https://pbs.twimg.com/profile_images/1577242430809800710/tFH0PpqI_normal.jpg"
+      "displayName": "Amélie ABDALLAH",
+      "bio": "Développeuse suite à ma reconversion professionnelle, intéressée depuis mes débuts sur les méthodes dites \"Craft\", la qualité du code en général, j'ai eu beaucoup de difficulté pour trouver des ressources accessibles, et un bon accompagnement en ce sens.\n\nSuite à ces problématiques, j'ai décidé de partager sur différents sujets qui me tiennent à cœur afin de faire évoluer le secteur de la tech.\n\nNous avons beaucoup de travail à venir.",
+      "speakerReferences": "J'ai participé à des multiples live sur Twitch et YouTube de différentes communautés Tech, mais également suis active sur les meetup de ma ville, et ai réalisé ma première conférence en octobre 2022, au ForumPHP.",
+      "company": "theTribe",
+      "photoURL": "https://pbs.twimg.com/profile_images/1577242430809800710/tFH0PpqI_normal.jpg",
+      "twitter": "AlonahAmelie",
+      "github": "AmelieAlonah"
     },
     {
       "uid": "hDgeovtbpYUe248iONsiVDFsTn53",
@@ -1418,6 +1431,16 @@
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0FkMgU3Y8kKMFxFgWQrpM7OSVF-vBpFkYWV_FAPw=s96-c",
       "twitter": "adessaigne",
       "github": "adessaigne"
+    },
+    {
+      "uid": "0ZbtTwugPpTsYEAbDRbt6Voqcca2",
+      "displayName": "Pierre-Yves Aillet",
+      "bio": "Passionné d'informatique, Pierre-Yves travaille depuis 15 ans sur des technologies variées allant de Go à Rust en passant par Python. Son IHM de prédilection est la ligne de commande. Il est consultant chez Zenika Nantes et intervient sur des missions d’audit, d’accompagnement à la mise en place d'outils liés la conteneurisation, Kubernetes et au Cloud.",
+      "speakerReferences": "- [Speakerdeck](https://speakerdeck.com/pyaillet/)\n- [Talks filmés](https://www.youtube.com/playlist?list=PLt4ek4WeGOjjmzOmyMHLHgqUpuqxgOOeH)\n- Et quelques autres talks et Workshops (Devfest Nantes, Devfest du Bout du Monde, Devfest Paris, ...)",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/-vRueeeZ11qc/AAAAAAAAAAI/AAAAAAAAAA0/8WHvuJZv-kQ/photo.jpg",
+      "twitter": "@pyaillet",
+      "github": "pyaillet"
     },
     {
       "uid": "YwH0iCA69oaFgyQu31I9Yy79X142",
@@ -1463,15 +1486,6 @@
       "github": "melix"
     },
     {
-      "uid": "qV3eJfwUWfZvIOYV23PJ6nfXkBn1",
-      "displayName": "Sylvain Coudert",
-      "bio": "Dev .NET depuis 2008, Freelance depuis 2018, Crafter devant l'éternel et debugger de l'infini!\nJ'aime apprendre, transmettre et découvrir.\nChanteur rockeur intermittent et papa à temps plein, j'aime également prendre le temps de regarder le vent agiter les feuilles d'un arbre.",
-      "speakerReferences": "Podcaster : https://podcast.ausha.co/punkindev/\nChanteur de l'IT : https://podcast.ausha.co/les-enflures-de-la-tech/\n\nListe de mes talks ayant été captés:\nhttps://www.youtube.com/playlist?list=PLPJQ1OOrURGBP-ScGF-N5xz_LApozQ6tp\n\nMembre organisateur du MUG Lyon, et de l'association de devs freelances lyonnais Hack Your Job.",
-      "company": "Freelance",
-      "photoURL": "https://lh3.googleusercontent.com/-ZtVSNeAJBDA/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcZp3iWQkGBz1RSRQToqhYmNnVaGdQ/mo/photo.jpg",
-      "twitter": "https://twitter.com/sylv_coud"
-    },
-    {
       "uid": "9Krfeqq5mpO5cY2R81DKdktW9gy1",
       "displayName": "Raphaël Luta",
       "bio": "Je suis un consultant technique indépendant, spécialiste des aspects opérationnels (sécurité et performance) des systèmes et applications.\n\nPassionné par les données, je développe également pour mes clients des systèmes de traitement et de visualisation de données en s'appuyant sur les outils tels que Apache Spark, Vert.x ou D3.js/Vega.js.\n\nJavaiste depuis les premières bétas et membre de la fondation Apache depuis plus de 15 ans, j'ai contribué à plusieurs projets Apache Jakarta donc Jetspeed et JMeter.",
@@ -1500,6 +1514,14 @@
       "github": "https://github.com/aydubois"
     },
     {
+      "uid": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
+      "displayName": "aboudaram",
+      "bio": "20 d'experience dans le monde du développement\ndont 10 en tant que TechLead, Architecte JAVA\n\nFormateur java, springboot, angular\n\nL'informatique est une passion et pas un métier\n",
+      "company": "conserto",
+      "photoURL": "https://pbs.twimg.com/profile_images/1834436625/image_normal.jpg",
+      "twitter": "@nabou08"
+    },
+    {
       "uid": "biWKM3edJtX6IkI0Nc128sYFYkO2",
       "displayName": "Marc DUGUE",
       "bio": "Après 15 ans de gestion et direction de projet dans les télécoms et la data, ma vie a basculé quand une collègue m’a dit « Au lieu de dessiner n’importe quoi en réunion, tu ferais mieux de dessiner la réunion : cela s’appelle la facilitation graphique ! »\n\nDevenu un passionné de toutes les pratiques visuelles au service des interactions de groupes ou de la performance personnelle, je contribue activement au développement de la facilitation graphique en France à travers l’équipe « UnPictoParJour » et sur Nantes via l’animation de « UnPictoParJour, le Meetup » une fois par mois. \n\nFort de plus de 5ans d’expérience en facilitation graphique, j’ai dispensé des formations au sein de grands groupe comme EDF, SNCF, Engie, Système U, La Poste, Caisse d’épargne, et bien d’autres. ",
@@ -1507,14 +1529,6 @@
       "company": "Perspectives visuelles",
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GjgH5V8kkSvgkWInpRtEAsVXDtnIE1CFxSPPj5JeQ",
       "twitter": "Marc_DUGUE"
-    },
-    {
-      "uid": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
-      "displayName": "aboudaram",
-      "bio": "20 d'experience dans le monde du développement\ndont 10 en tant que TechLead, Architecte JAVA\n\nFormateur java, springboot, angular\n\nL'informatique est une passion et pas un métier\n",
-      "company": "conserto",
-      "photoURL": "https://pbs.twimg.com/profile_images/1834436625/image_normal.jpg",
-      "twitter": "@nabou08"
     },
     {
       "uid": "mODnTNL9onNOU1odUO9jb2tbpQj2",
@@ -1553,6 +1567,15 @@
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu3kTtFlhAEF4omcrRGNidrWWaaIlPPzXfdK_JDt=s96-c"
     },
     {
+      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+      "displayName": "Fabien Trégan",
+      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
+      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
+      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
+      "twitter": "@ftregan",
+      "github": "fabientregan"
+    },
+    {
       "uid": "zQ0mhj745ZgtNDL3QL6pVT316ai2",
       "displayName": "Olivier PONCET",
       "bio": "Geek, ex-nerd repenti, je code, je teste, je bricole, je soude et parfois fait sauter les plombs. CTO et spécialiste du magiciel, je suis aussi libriste dans l'âme et très impliqué dans le mouvement des logiciels libres.",
@@ -1561,15 +1584,6 @@
       "photoURL": "https://avatars.githubusercontent.com/u/29702924?v=4",
       "twitter": "@ponceto91",
       "github": "@ponceto"
-    },
-    {
-      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-      "displayName": "Fabien Trégan",
-      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
-      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
-      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
-      "twitter": "@ftregan",
-      "github": "fabientregan"
     },
     {
       "uid": "FskfRIn9B0V1rQ9rca4QERaw5Mq1",
@@ -1615,16 +1629,16 @@
       "name": "Backend, Cloud, Big Data"
     },
     {
-      "id": "ef452c33-83cf-5472-8e72-acd374e24b58",
-      "name": "Mobile, Internet des objets"
+      "name": "Mobile, Internet des objets",
+      "id": "ef452c33-83cf-5472-8e72-acd374e24b58"
     },
     {
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
       "name": "Conception, architecture"
     },
     {
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "name": "Outillage, pratiques de développement"
+      "name": "Outillage, pratiques de développement",
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
     },
     {
       "id": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
@@ -1637,16 +1651,16 @@
   ],
   "formats": [
     {
-      "name": "Quickie (15min)",
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "name": "Quickie (15min)"
     },
     {
       "name": "Conférence (50min)",
       "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "name": "Hands-on (120min)",
-      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b"
+      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+      "name": "Hands-on (120min)"
     },
     {
       "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
