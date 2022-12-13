@@ -221,8 +221,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "3v72z5xWXfbL94DpKVI1snjC7Jr1",
-        "IPck78ZRNPaINM4qaagRuJnDZvR2"
+        "IPck78ZRNPaINM4qaagRuJnDZvR2",
+        "3v72z5xWXfbL94DpKVI1snjC7Jr1"
       ],
       "language": "French",
       "createTimestamp": {
@@ -322,7 +322,7 @@
     {
       "id": "PZhCax4A1hSIflgKWUGS",
       "title": "As a UI designer, how to mess up your project? ",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "# Version française 🇫🇷\n\nEn tant que designer, c’est facile de vendre du rêve à vos clients. Mais c’est encore plus facile d’oublier que le développement est lié à un budget et à un planning. Un mauvais processus de travail en design peut mener à une mauvaise expérience pour l’utilisateur final, peu importe à quel point la première interface était jolie.\n\nMais si vous voulez vraiment rater votre projet, lors de cette conférence, vous verrez comment:\n\n- Choisir le mauvais logiciel de design\n- Choisir les mauvaises polices et couleurs\n- Empêcher les modifications rapides\n- Ajouter des incohérences (rapidement)\n- Faire un beau design uniquement avec des données “bien pratiques”\n- Fournir une interface utilisateur mobile merdique (même si la plupart des utilisateurs sont sur mobile) Pourrir la vie des développeurs front-end\n\n# English version 🇬🇧\n\nAs a designer, it’s very easy to sell a beautiful dream to your client. But it’s easier to forget that development is tied to budget and schedule. A bad design workflow can lead to poor UX for the end user, no matter how shiny the first design was.\nBut if you really want to fail your project, in this talk, you will see how to:\n\n- Choose the wrong design software\n- Choose the wrong fonts & colors\n- Prevent design iterations\n- Add inconsistencies (quickly)\n- Make shiny design with only convenient data\n- Deliver shitty mobile UI (even if most of the users are on mobile)\n- Make the life of front-end developers a pain\n",
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
@@ -454,8 +454,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-        "Et0TICQLYudeoQ5KjUZ55X2rU9M2"
+        "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
+        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3"
       ],
       "language": "French",
       "createTimestamp": {
@@ -508,8 +508,8 @@
       "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "ignPtVvWplSLmOo8aO9byUt8pIl2",
-        "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33"
+        "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
+        "ignPtVvWplSLmOo8aO9byUt8pIl2"
       ],
       "comments": "Hello merci pour la review 👋\n\nOn a donné ce talk récemment à Cloud nord 2022, que j'ai indiqué en référence. ",
       "language": "French",
@@ -575,7 +575,7 @@
     {
       "id": "cqhVPs2RgbRvlBNQZyN5",
       "title": "Oh crab ! My watch speaks Rust 🦀",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "intermediate",
       "abstract": "Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...\nEt en général, on les programmes en hybride C/C++.\n\nPar nostalgie, j'aime beaucoup le C, mais je me suis demandé si on ne pouvait pas utiliser des langages plus modernes...\n\nLors de ce talk je vous présenterai ma découverte de la T-Watch 2020 et mes tentatives pour la programmer en Rust.\nCe sera aussi l'occasion de découvrir l'éco-système Rust existant autour de l'embarqué et les avantages qu'apporte le langage dans ce contexte particulier.\n\n",
       "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
@@ -830,8 +830,8 @@
       "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
-        "cXT2k96AMcUHl3DWRDRmcdUbkU72"
+        "cXT2k96AMcUHl3DWRDRmcdUbkU72",
+        "xf0KkBiaWxPLSevQFHnzbqbnkuw1"
       ],
       "comments": "Nous avons hésité sur la case à cocher : soit \"Conférence\" soit \"Speaker débutant\" car  nous n'avons jamais fait de présentation dans d'autre conférence (uniquement en interne).\n\nNous avons déjà une base de slides que nous voulons adapter pour TNT.",
       "language": "French",
@@ -896,7 +896,7 @@
     {
       "id": "v1zt5Tr807oFayaQ722R",
       "title": "Rendu 3D, la grande illusion expliquée",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Dans les jeux vidéo, le cinéma, l’industrie, la médecine ou encore l’urbanisme, la 3D est partout. Nous l’utilisons aujourd’hui pour nous divertir, apprendre, simuler les prochaines  catastrophes ou encore le fonctionnement de la voiture du futur. Demain, nous l’utiliserons pour explorer de nouvelles façons de communiquer, de construire et de créer. \n\nMais comment fonctionne ce rendu 3D qui donne vie à ces univers virtuels ? Quel lien y-a-t- il entre notre vision et notre carte graphique ? Sur un écran, qui n’est qu’une grille de pixels, la 3D existe-t-elle vraiment ? \n\nPour répondre à ces questions, nous allons voir les différentes étapes nécessaires qu’un ordinateur doit accomplir pour tromper notre cerveau. Grâce à une explication pas à pas, nous pourrons comprendre le fonctionnement de cette grande illusion.\n",
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
@@ -920,8 +920,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-        "zQ0mhj745ZgtNDL3QL6pVT316ai2"
+        "zQ0mhj745ZgtNDL3QL6pVT316ai2",
+        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2"
       ],
       "comments": "Hello la team orga !\n\nFabien et moi-même vous proposons notre talk un peu à part concernant la représentation des nombres en informatique. Nous y abordons de façon ludique différentes techniques pour représenter et exploiter les nombres en fonction des besoins et repartons même un peu dans le temps en proposant l'analyse d'un effet de démomaker, le rotozoom, et même comment l'Atari 2600 exploitait certains compteurs d'une façon très élégante.\n\nBon courage pour la sélection des talks ! \n\nOlivier & Fabien",
       "language": "French",
@@ -1351,14 +1351,6 @@
       "github": "matthieuwerner"
     },
     {
-      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-      "displayName": "Marion Valentin",
-      "company": "BAM",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
-      "twitter": "@MarionBarr2",
-      "github": "marionnousvalentin"
-    },
-    {
       "uid": "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
       "displayName": "Yvonnick FRIN",
       "bio": "Yvonnick développeur chez Pix. Curieux et passionné, il aime découvrir les dernières technologies du Web. Social, il co-organise NantesJS.",
@@ -1367,6 +1359,14 @@
       "photoURL": "https://lh5.googleusercontent.com/-tmj1tGCN_u4/AAAAAAAAAAI/AAAAAAAABO0/oVqsblFTX8k/photo.jpg",
       "twitter": "YvonnickFrin",
       "github": "frinyvonnick"
+    },
+    {
+      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
+      "displayName": "Marion Valentin",
+      "company": "BAM",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
+      "twitter": "@MarionBarr2",
+      "github": "marionnousvalentin"
     },
     {
       "uid": "nhFyEmSJYZZiMa989nAp7qxGAkp2",
@@ -1540,16 +1540,16 @@
       "github": "@Slashgear"
     },
     {
-      "uid": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
-      "displayName": "Julien Jimenez",
-      "company": "Worldline",
-      "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu05CZ3QS3Abj6VRab68fMlBmOsGIQyv-NkqKF0n=s96-c"
-    },
-    {
       "uid": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
       "displayName": "Amélie Avignon",
       "company": "Worldline",
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0g8WnOJudW4cMCFwkD6oZGEsWapQAbBu1_Q-U0=s96-c"
+    },
+    {
+      "uid": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
+      "displayName": "Julien Jimenez",
+      "company": "Worldline",
+      "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu05CZ3QS3Abj6VRab68fMlBmOsGIQyv-NkqKF0n=s96-c"
     },
     {
       "uid": "LBXSNoYRKbWwvirzjnpHzMk03cM2",
@@ -1567,15 +1567,6 @@
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu3kTtFlhAEF4omcrRGNidrWWaaIlPPzXfdK_JDt=s96-c"
     },
     {
-      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-      "displayName": "Fabien Trégan",
-      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
-      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
-      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
-      "twitter": "@ftregan",
-      "github": "fabientregan"
-    },
-    {
       "uid": "zQ0mhj745ZgtNDL3QL6pVT316ai2",
       "displayName": "Olivier PONCET",
       "bio": "Geek, ex-nerd repenti, je code, je teste, je bricole, je soude et parfois fait sauter les plombs. CTO et spécialiste du magiciel, je suis aussi libriste dans l'âme et très impliqué dans le mouvement des logiciels libres.",
@@ -1584,6 +1575,15 @@
       "photoURL": "https://avatars.githubusercontent.com/u/29702924?v=4",
       "twitter": "@ponceto91",
       "github": "@ponceto"
+    },
+    {
+      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+      "displayName": "Fabien Trégan",
+      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
+      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
+      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
+      "twitter": "@ftregan",
+      "github": "fabientregan"
     },
     {
       "uid": "FskfRIn9B0V1rQ9rca4QERaw5Mq1",
@@ -1629,24 +1629,24 @@
       "name": "Backend, Cloud, Big Data"
     },
     {
-      "name": "Mobile, Internet des objets",
-      "id": "ef452c33-83cf-5472-8e72-acd374e24b58"
+      "id": "ef452c33-83cf-5472-8e72-acd374e24b58",
+      "name": "Mobile, Internet des objets"
     },
     {
-      "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
-      "name": "Conception, architecture"
+      "name": "Conception, architecture",
+      "id": "63920d15-9b86-58e5-875c-441301f6dbb9"
     },
     {
-      "name": "Outillage, pratiques de développement",
-      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3"
+      "id": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+      "name": "Outillage, pratiques de développement"
     },
     {
       "id": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
       "name": "Humain & Tech"
     },
     {
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
-      "name": "Alien"
+      "name": "Alien",
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
     }
   ],
   "formats": [
@@ -1663,9 +1663,9 @@
       "name": "Hands-on (120min)"
     },
     {
-      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
+      "name": "Speaker débutant",
       "id": "fc5112e0-a2c3-54e6-8ca9-9dd622ca9b8b",
-      "name": "Speaker débutant"
+      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier."
     }
   ]
 }

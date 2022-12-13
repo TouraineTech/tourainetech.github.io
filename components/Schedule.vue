@@ -220,7 +220,7 @@ $color-alien: #066420;
 
 .schedule--grid {
   display: grid;
-  grid-template-columns: 50px repeat(4, 1fr);
+  grid-template-columns: 50px repeat(4, minmax(200px, 1fr));
   grid-column-gap: 1rem;
   margin: 1rem;
 

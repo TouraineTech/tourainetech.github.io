@@ -242,8 +242,12 @@
     "title": "As a UI designer, how to mess up your project? ",
     "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-    "rooms": [3],
-    "times": [13],
+    "rooms": [
+      3
+    ],
+    "times": [
+      13
+    ],
     "day": 1
   },
   {
@@ -422,8 +426,12 @@
     "title": "Oh crab ! My watch speaks Rust 🦀",
     "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-    "rooms": [1],
-    "times": [15],
+    "rooms": [
+      1
+    ],
+    "times": [
+      15
+    ],
     "day": 2
   },
   {
