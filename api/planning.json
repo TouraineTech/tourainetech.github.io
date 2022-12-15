@@ -26,19 +26,6 @@
     "day": 1
   },
   {
-    "id": "1rLrr6i1bSLeHnZ7jXBh",
-    "title": "Tester la performance de son back c’est bien, tester celle de son front c’est mieux !",
-    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-    "rooms": [
-      1
-    ],
-    "times": [
-      17
-    ],
-    "day": 1
-  },
-  {
     "id": "3vity7gCVOrIPLbr5anu",
     "title": "Rust sans (trop) roter du sang",
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
@@ -555,7 +542,7 @@
     "id": "neprDB8HcIu0LJn0XexY",
     "title": "Démystifions le CSS",
     "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
-    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [
       3
     ],

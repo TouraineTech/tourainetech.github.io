@@ -44,11 +44,15 @@ function keynoteTalkFilter() {
 
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
-
-  const acceptedTalks = conferenceHallDatas.talks
-    .filter(talksFilter('accepted'));
-
-  const confirmedTalksSpeakersId = conferenceHallDatas.talks
+  const talks = conferenceHallDatas.talks.map(t => {
+    if(t.id === 'TuXPjtB8tUG4yaSnj6pn' || t.id === 'RKdpxRlsknOPkd4Lazye') {
+      t.state = 'confirmed';
+    }
+    return t
+  })
+  const confirmedTalks = talks
+    .filter(talksFilter('confirmed'));
+  const confirmedTalksSpeakersId = talks
     .filter(talksFilter('confirmed'))
     .map(({speakers}) => {
       return speakers
@@ -58,15 +62,15 @@ function getTalks(conferenceHallDatas) {
   console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
   console.log(`confirmed speaker count : ${confirmedTalksSpeakersId.length}`);
 
-  const talks = conferenceHallDatas.talks
+  const allTalks = talks
     .map((
       {organizersThread, rating, loves, hates, ...datas}) => {
       return {...datas};
     })
     .filter(talksFilter('confirmed','accepted'))
-    .filter(keynoteTalkFilter() );
+    .filter(keynoteTalkFilter());
 
-  talks.push(
+  allTalks.push(
     {
       "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
@@ -92,10 +96,9 @@ function getTalks(conferenceHallDatas) {
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     }
   );
+  console.log(`confirmed talks count : ${confirmedTalks.length}/${allTalks.length}`);
 
-  console.log(`confirmed talks count : ${talks.length}/${acceptedTalks.length+talks.length}`);
-
-  return {talks, acceptedTalks};
+  return {talks: allTalks, confirmedTalks};
 }
 
 function getSpeakers(conferenceHallDatas, talks) {
