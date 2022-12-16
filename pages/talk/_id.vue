@@ -62,10 +62,9 @@ export default {
       return converter.makeHtml(this.talk.abstract);
     },
     speakers() {
-      let speakers = this.$store.getters.speakers.filter(({ uid }) =>
+      return this.$store.getters.speakers.filter(({uid}) =>
         this.talk.speakers.includes(uid)
       );
-      return speakers;
     }
   },
   asyncData({ store, params }) {

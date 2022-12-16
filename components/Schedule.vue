@@ -9,10 +9,10 @@
     </div>
     <br>
     <div class="container-days">
-      <div class="schedule-room--cell" @click="day=1">
+      <div class="schedule-room--cell" :style="{'opacity' : day === 1 ? 1 : 0.5 }" @click="day=1">
         Jeudi
       </div>
-      <div class="schedule-room--cell" @click="day=2">
+      <div class="schedule-room--cell" :style="{'opacity' : day === 2 ? 1 : 0.5 }" @click="day=2">
         Vendredi
       </div>
     </div>
@@ -420,7 +420,6 @@ $color-alien: #066420;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  word-break: break-all;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
