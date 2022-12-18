@@ -65,7 +65,7 @@ export default {
     const title = `Touraine Tech 2022 - Merci à ${this.sponsor.name} notre partenaire ${this.sponsor.type}`;
     const url = `https://touraine.tech/sponsor/${this.sponsor.id}`;
     const image =
-      "https://touraine.tech" + require(`@/assets/img/${this.sponsor.image}`);
+      "https://touraine.tech" + require(`@/assets/img/sponsors/${this.sponsor.image}`);
     return {
       titleTemplate: title,
       meta: [
