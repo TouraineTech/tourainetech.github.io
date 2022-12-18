@@ -40,31 +40,12 @@
         </div>
       </div>
     </div>
-    <div class="job-offer-bloc description--container"
-         v-for="jobOffer in sponsor.jobOffers"
+    <div class="job-offer-bloc description--container">
+      <h3>Offres d'emploi</h3>
+      <a v-for="jobOffer in sponsor.jobOffers"
          :key="jobOffer.id"
-         :id="jobOffer.id"
-    >
-      <h3 v-html="jobOffer.title"></h3>
-      <article>
-        EMBBEDED PDF
-        <object data="/job1.pdf"
-                width="100%"
-                height="1100"
-                type="application/pdf"
-        >
-          <img v-for="image in jobOffer.images"
-               :key="image"
-               :id="jobOffer" :src="require(`@/assets/img/jobOffers/${image}`)" width="100%" alt=""
-          >
-        </object>
-
-        IMAGE
-        <img v-for="image in jobOffer.images"
-             :key="image"
-             :id="jobOffer" :src="require(`@/assets/img/jobOffers/${image}`)" width="100%" alt=""
-        >
-      </article>
+         :id="jobOffer.id" :href="`/sponsors/${sponsor.id}/${jobOffer.pdf}`" target="_blank" class="bite"
+      ><h3 v-html="jobOffer.title"></h3></a>
     </div>
   </div>
 </template>

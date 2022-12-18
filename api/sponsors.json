@@ -11,8 +11,13 @@
     "jobOffers": [
       {
         "id": "acensiOne",
+        "title": "Analyste Technico-Fonctionnel",
+        "pdf": "Analyste Technico-Fonctionnel.pdf"
+      },
+      {
+        "id": "acensiTwo",
         "title": "Consultant senior C#.NET",
-        "images": ["acensiOnePage1.png", "acensiOnePage2.png"]
+        "pdf": "Developpeur Csharp.NET.pdf"
       }
     ]
   }
