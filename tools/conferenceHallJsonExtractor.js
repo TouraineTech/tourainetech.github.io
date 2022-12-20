@@ -45,7 +45,7 @@ function keynoteTalkFilter() {
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
   const talks = conferenceHallDatas.talks.map(t => {
-    if(t.id === 'TuXPjtB8tUG4yaSnj6pn' || t.id === 'RKdpxRlsknOPkd4Lazye') {
+    if(t.id === 'TuXPjtB8tUG4yaSnj6pn' || t.id === 'RKdpxRlsknOPkd4Lazye' || t.id === 'QL23LjbKcwLMnCVGYAn8') {
       t.state = 'confirmed';
     }
     return t
