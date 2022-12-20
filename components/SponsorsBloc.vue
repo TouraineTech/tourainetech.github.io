@@ -1,13 +1,15 @@
 <template>
   <div v-if="sponsors.length > 0">
-    <h3 class="type--title"><span>{{ type }}</span></h3>
+    <h3 class="type--title">
+      <span>{{ type }}</span>
+    </h3>
     <div class="sponsors--container">
       <nuxt-link
         v-for="sponsor in sponsors"
         :key="sponsor.id"
         :to="`/sponsor/${sponsor.id}`"
       >
-        <img :src="require(`@/assets/img/${sponsor.image}`)" :alt="sponsor.name">
+        <img :src="require(`@/assets/img/sponsors/${sponsor.image}`)" :alt="sponsor.name">
       </nuxt-link>
     </div>
   </div>
