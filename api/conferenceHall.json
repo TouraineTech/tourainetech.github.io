@@ -44,8 +44,8 @@
       "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "z40htDnoNBgrrGeOikcH3MaKimO2",
-        "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2"
+        "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
+        "z40htDnoNBgrrGeOikcH3MaKimO2"
       ],
       "comments": "Merci pour le boulot d'organisation !",
       "language": "French",
@@ -180,7 +180,7 @@
     {
       "id": "H3Z9ga1ideEdq1Q2UDOa",
       "title": "Live-coding, Space invaderes en vanilla JS en partant de zéro",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Aujourd'hui c'est Back to Basics ! Je vais vous montrer comment coder le jeu mythique Space Invaders à partir de zéro, sans framework, sans librairie, en 45 minutes !\nDu Bazel? ça manque de sel !    \nDu Angular ? Même pas pour un million de dollars.   \nDu typescript ? Je préfère aller vivre en Egypte (_pas faciles les rymes en ipte_)\n\nDu javascript à l'ancienne, deux lignes de Html et c'est parti ! ",
       "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
@@ -256,8 +256,8 @@
       "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "aHchGCaQStWhoqQtDKBjBpkEnLF2",
-        "dnahDuhtlpNv9d15xbIbpS896sC2"
+        "dnahDuhtlpNv9d15xbIbpS896sC2",
+        "aHchGCaQStWhoqQtDKBjBpkEnLF2"
       ],
       "comments": "Merci pour l'organisation 💪",
       "language": "French",
@@ -377,7 +377,7 @@
     {
       "id": "TBitgNi5VAJ7maDvY2ZC",
       "title": "Storybook, une vraie bonne idée ?",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Ça y est, vos designers ont enfin mis en place un design system complet pour assurer une maintenabilité, homogénéité et accessibilité des composants UI de votre interface.\nMais comment s'assurer du respect de celui-ci et des bonnes pratiques front-end dans une équipe à l'appétence très fortement back-end ?\nDepuis 2 ans, notre équipe hésitait à utiliser Storybook, un outil front-end pour créer une UI propre et documentée isolée. Est-ce que la notoriété est justifiée ? Est-ce que Storybook correspondrait à une équipe réduite comme la nôtre ?\nJe partagerai nos réflexions, nos choix, l’histoire de l’intégration de Storybook au sein de celui-ci et vous découvrirez si oui ou non, nous l’avons déployé.\n",
       "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
@@ -436,8 +436,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-        "Et0TICQLYudeoQ5KjUZ55X2rU9M2"
+        "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
+        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3"
       ],
       "language": "French",
       "createTimestamp": {
@@ -756,8 +756,8 @@
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
-        "biWKM3edJtX6IkI0Nc128sYFYkO2"
+        "biWKM3edJtX6IkI0Nc128sYFYkO2",
+        "oqMr9PXJTSWJ8wJKtHl5pj9bs412"
       ],
       "comments": "Bonjour, \n\nEric et moi collaborons dans l'animation d'une équipe d'innovation répartie sur l'ensemble des agences de Conserto (Paris, Nantes, Rennes, Bordeaux, Toulouse, Lyon, Strasbourg...). Nous nous heurtons régulièrement aux freins que pose l'animation d'une équipe hybride et nous adorerions en parler lors de votre événement. Comme je le dis dans les références, j'ai vraiment l'habitude de faire des conférences sur la facilitation graphique mais ce serait ma première conférence sur un autre sujet. Par ailleurs ce serait la première conférence d'Eric. Nous nous demandons donc si dans ce contexte il serait justifié de participer à votre programme de Speaker débutant ? Si cela n'était pas possible, nous pouvons nous faire accompagner par d'autres conférenciers de notre boite, donc nous pouvons aussi faire une conférence sans ce programme si vous n'avez plus de place dedans. \n\nTrès belle journée\n\nMarc ",
       "language": "French",
@@ -775,8 +775,8 @@
       "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "eGA6OY0HEhP9d6WQ7HZtq054tW22",
-        "mODnTNL9onNOU1odUO9jb2tbpQj2"
+        "mODnTNL9onNOU1odUO9jb2tbpQj2",
+        "eGA6OY0HEhP9d6WQ7HZtq054tW22"
       ],
       "comments": "Merci pour l'organisation de Touraine Tech ! 👏🏼",
       "language": "French",
@@ -812,8 +812,8 @@
       "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "cXT2k96AMcUHl3DWRDRmcdUbkU72",
-        "xf0KkBiaWxPLSevQFHnzbqbnkuw1"
+        "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
+        "cXT2k96AMcUHl3DWRDRmcdUbkU72"
       ],
       "comments": "Nous avons hésité sur la case à cocher : soit \"Conférence\" soit \"Speaker débutant\" car  nous n'avons jamais fait de présentation dans d'autre conférence (uniquement en interne).\n\nNous avons déjà une base de slides que nous voulons adapter pour TNT.",
       "language": "French",
@@ -938,8 +938,8 @@
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "k8jUygDtyJYlOdZoJeyzllRCc2B3",
-        "FHxMDyr6LiRP3TDGOqKaRxlqLar1"
+        "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
+        "k8jUygDtyJYlOdZoJeyzllRCc2B3"
       ],
       "language": "French",
       "createTimestamp": {
@@ -1030,14 +1030,6 @@
       "github": "gmembre-zenika"
     },
     {
-      "uid": "z40htDnoNBgrrGeOikcH3MaKimO2",
-      "displayName": "Édouard Siha",
-      "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
-      "speakerReferences": "# Conférences déjà données\n## XebiCon\n* 2018 : [Conférence 45 min : Ce que l'histoire du métro parisien m'a enseigné sur la création logicielle](https://www.youtube.com/watch?v=8ARwQbdWARQ)\n* 2019 : [Quickie 15 min : What the UTC?](https://www.youtube.com/watch?v=oG7OlXwalcY)\n\n## BreizhCamp\n* 2019 : [University 2h : Chérie, j'ai mis du fonctionnel dans mon Java !](https://www.youtube.com/watch?v=_wUBpEb5xWs)\n* 2022 : [Tool in Action 25 min : Optimiser vos conteneurs Spring avec le Jar layering et la Modularité](https://www.youtube.com/watch?v=eCCeSlR4B88)\n\n## Touraine Tech\n* 2022 : Conférence 50 min : Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?",
-      "company": "WeScale",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c"
-    },
-    {
       "uid": "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
       "displayName": "Alexis \"Horgix\" Chotard",
       "bio": "# Bio\n\nAlexis \"Horgix\" Chotard is a french systems and software engineer currently working at Xebia (https://xebia.fr/).\n\nWith a software engineering background, and experiences more inclined toward systems and infrastructure, he naturally finds himself at home around \"DevOps\" topics.\nAlexis \"Horgix\" is eager to automate everything he can and currently loves working on various topics such as continuous integration and deployment, or design of dynamic architectures and applications integration into these. He's happy to face new challenges with the gain in popularity of containers and to look for evolutions of traditionnal workflows.\nOn his spare time, he also maintains a bunch of ArchLinux packages, contributes to Open Source projects and plays with Cloud Native solutions to be able to use them in real clients projects.\n\n# Speaker experience\n\n- \"An Ops among the Devs : a feedback from both sides\" - Talk at \"DevOps REX\", a french conference on feedback around DevOps (800 people) : https://www.youtube.com/watch?v=6KnKYHUjIjg\n\n- \"How I automated Photobox' incident management in 13h\" - Talk at Xebicon 2017 (80 people), composed at 70% of live demo : https://www.youtube.com/watch?v=nlEbgHKy6PY (sadly, the demo itself wasn't captured on the video)\n\n- \"Modern infrastructure, automation, whales and stuff\" - Talk at a french engineering school about evolution of infrastructure paradigms (50 people) : https://www.youtube.com/watch?v=iIBqoU-LdQQ\n\n- Trainer during Docker meetups including workshops in Paris, speaker at internal conferences at my company and clients, etc.\n",
@@ -1045,6 +1037,14 @@
       "photoURL": "https://avatars2.githubusercontent.com/u/4584397?v=4",
       "twitter": "@Horgix",
       "github": "Horgix"
+    },
+    {
+      "uid": "z40htDnoNBgrrGeOikcH3MaKimO2",
+      "displayName": "Édouard Siha",
+      "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
+      "speakerReferences": "# Conférences déjà données\n## XebiCon\n* 2018 : [Conférence 45 min : Ce que l'histoire du métro parisien m'a enseigné sur la création logicielle](https://www.youtube.com/watch?v=8ARwQbdWARQ)\n* 2019 : [Quickie 15 min : What the UTC?](https://www.youtube.com/watch?v=oG7OlXwalcY)\n\n## BreizhCamp\n* 2019 : [University 2h : Chérie, j'ai mis du fonctionnel dans mon Java !](https://www.youtube.com/watch?v=_wUBpEb5xWs)\n* 2022 : [Tool in Action 25 min : Optimiser vos conteneurs Spring avec le Jar layering et la Modularité](https://www.youtube.com/watch?v=eCCeSlR4B88)\n\n## Touraine Tech\n* 2022 : Conférence 50 min : Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?",
+      "company": "WeScale",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c"
     },
     {
       "uid": "IlVQ3DcdvccEIvzcYr75msiHJUo1",
@@ -1118,7 +1118,7 @@
       "bio": "J'ai acquis une forte expérience dans le développement d'applications Web avec Java, ainsi que l'outillage associé. L’intégration et le déploiement continu ont fait part intégrante de toutes mes missions.\nJe suis également formateur Docker et Kubernetes.",
       "speakerReferences": "Participation à des meetups internes pour le moment.\nFormateur pour WeScale depuis décembre 2020",
       "company": "WeScale",
-      "photoURL": "https://lh5.googleusercontent.com/-YP1K9ugKtBw/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclMOZCs20_nvQ_VH9_4twKdMhTdRw/s96-c/photo.jpg",
+      "photoURL": "https://lh3.googleusercontent.com/a/AEdFTp4hNweEZWlQbz_BeQ_hbZVI9YS9_zJk0LbM19RQ=s83-c-mo",
       "twitter": "mkassovix",
       "github": "kassovix"
     },
@@ -1184,7 +1184,10 @@
     {
       "uid": "OFR3coK7G1c4zwBlMcHNv295b0q2",
       "displayName": "Fabien Lamarque",
-      "photoURL": "https://i.imgur.com/XgRnNgI.jpg"
+      "bio": "Développeur, 33 ans, j'aime bien le jardinage, la couture, et aller à des conférences de dév pour parler à des vieux copains et copines que j'ai pas vu depuis le confinement.",
+      "company": "Great Place to Work",
+      "photoURL": "https://i.imgur.com/XgRnNgI.jpg",
+      "github": "Fabinout"
     },
     {
       "uid": "eGA6OY0HEhP9d6WQ7HZtq054tW22",
@@ -1237,8 +1240,9 @@
     {
       "uid": "ffbnsZEQaCebGS2Dlip8JifuVIn2",
       "displayName": "Pierre Robillard",
+      "bio": "Développeur full-stack, j'ai rejoint les Code-Troopers en 2018; je me définis souvent en tant que dev fonctionnelle, autant par opposition au métier de devops que par appétence pour la programmation fonctionnelle. ",
       "company": "Code Troopers",
-      "photoURL": "https://avatars.githubusercontent.com/u/8728093?v=4",
+      "photoURL": "https://media.licdn.com/dms/image/C4E03AQGR_NpyQUaL4g/profile-displayphoto-shrink_800_800/0/1516903242078?e=1677110400&v=beta&t=uBHWhNPkQaxtvy7VbBfdvxOM77oCrXD7HEst6I1Xcs4",
       "github": "github.com/age2pierre"
     },
     {
@@ -1323,14 +1327,6 @@
       "github": "matthieuwerner"
     },
     {
-      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-      "displayName": "Marion Valentin",
-      "company": "BAM",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
-      "twitter": "@MarionBarr2",
-      "github": "marionnousvalentin"
-    },
-    {
       "uid": "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
       "displayName": "Yvonnick FRIN",
       "bio": "Yvonnick développeur chez Pix. Curieux et passionné, il aime découvrir les dernières technologies du Web. Social, il co-organise NantesJS.",
@@ -1339,6 +1335,14 @@
       "photoURL": "https://lh5.googleusercontent.com/-tmj1tGCN_u4/AAAAAAAAAAI/AAAAAAAABO0/oVqsblFTX8k/photo.jpg",
       "twitter": "YvonnickFrin",
       "github": "frinyvonnick"
+    },
+    {
+      "uid": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
+      "displayName": "Marion Valentin",
+      "company": "BAM",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
+      "twitter": "@MarionBarr2",
+      "github": "marionnousvalentin"
     },
     {
       "uid": "nhFyEmSJYZZiMa989nAp7qxGAkp2",
@@ -1450,7 +1454,7 @@
     {
       "uid": "TuQxXI5DPLMTSuaeNWiS85P0eGk2",
       "displayName": "Cédric Champeau",
-      "bio": "Cédric Champeau is Principal Software Engineer at Gradle, Inc, working on the open-source Gradle build tool. He contributed performance improvements and is currently mainly focused on dependency management with Gradle. Previously Cédric worked on the Apache Groovy project, where he implemented the static compiler and worked on many compile time meta-programming features (AST xforms, traits, ...)",
+      "bio": "Cédric Champeau works for Oracle Labs, in the GraalVM team and in particular on the Micronaut framework. He is specialized in developer productivity and maintains among others the official GraalVM and Micronaut plugins for Gradle and Maven.\nHe has worked for Gradle Inc. for several years on dependency management and other developer productivity issues.\nA former contributor to the Groovy language, he implemented its static compiler.\nOutside of computing, Cédric is an astronomy enthusiast.",
       "speakerReferences": "Devoxx Belgium, Devoxx France, JavaOne, SpringOne2GX, Gr8Conf Europe, GR8Conf US, Greach, manyJUGs, ...",
       "company": "Gradle, Inc.",
       "photoURL": "https://lh4.googleusercontent.com/-TVY7U8ZKABg/AAAAAAAAAAI/AAAAAAAAGQg/eaTDh_bVKpI/photo.jpg",
@@ -1486,14 +1490,6 @@
       "github": "https://github.com/aydubois"
     },
     {
-      "uid": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
-      "displayName": "aboudaram",
-      "bio": "20 d'experience dans le monde du développement\ndont 10 en tant que TechLead, Architecte JAVA\n\nFormateur java, springboot, angular\n\nL'informatique est une passion et pas un métier\n",
-      "company": "conserto",
-      "photoURL": "https://pbs.twimg.com/profile_images/1834436625/image_normal.jpg",
-      "twitter": "@nabou08"
-    },
-    {
       "uid": "biWKM3edJtX6IkI0Nc128sYFYkO2",
       "displayName": "Marc DUGUE",
       "bio": "Après 15 ans de gestion et direction de projet dans les télécoms et la data, ma vie a basculé quand une collègue m’a dit « Au lieu de dessiner n’importe quoi en réunion, tu ferais mieux de dessiner la réunion : cela s’appelle la facilitation graphique ! »\n\nDevenu un passionné de toutes les pratiques visuelles au service des interactions de groupes ou de la performance personnelle, je contribue activement au développement de la facilitation graphique en France à travers l’équipe « UnPictoParJour » et sur Nantes via l’animation de « UnPictoParJour, le Meetup » une fois par mois. \n\nFort de plus de 5ans d’expérience en facilitation graphique, j’ai dispensé des formations au sein de grands groupe comme EDF, SNCF, Engie, Système U, La Poste, Caisse d’épargne, et bien d’autres. ",
@@ -1501,6 +1497,14 @@
       "company": "Perspectives visuelles",
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GjgH5V8kkSvgkWInpRtEAsVXDtnIE1CFxSPPj5JeQ",
       "twitter": "Marc_DUGUE"
+    },
+    {
+      "uid": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
+      "displayName": "aboudaram",
+      "bio": "20 d'experience dans le monde du développement\ndont 10 en tant que TechLead, Architecte JAVA\n\nFormateur java, springboot, angular\n\nL'informatique est une passion et pas un métier\n",
+      "company": "conserto",
+      "photoURL": "https://pbs.twimg.com/profile_images/1834436625/image_normal.jpg",
+      "twitter": "@nabou08"
     },
     {
       "uid": "mODnTNL9onNOU1odUO9jb2tbpQj2",
@@ -1512,16 +1516,16 @@
       "github": "@Slashgear"
     },
     {
-      "uid": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
-      "displayName": "Amélie Avignon",
-      "company": "Worldline",
-      "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0g8WnOJudW4cMCFwkD6oZGEsWapQAbBu1_Q-U0=s96-c"
-    },
-    {
       "uid": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
       "displayName": "Julien Jimenez",
       "company": "Worldline",
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu05CZ3QS3Abj6VRab68fMlBmOsGIQyv-NkqKF0n=s96-c"
+    },
+    {
+      "uid": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
+      "displayName": "Amélie Avignon",
+      "company": "Worldline",
+      "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu0g8WnOJudW4cMCFwkD6oZGEsWapQAbBu1_Q-U0=s96-c"
     },
     {
       "uid": "LBXSNoYRKbWwvirzjnpHzMk03cM2",
@@ -1568,14 +1572,14 @@
       "github": "g123k"
     },
     {
-      "uid": "k8jUygDtyJYlOdZoJeyzllRCc2B3",
-      "displayName": "Viet Hoang",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiGnNQMPbjBVn_aqM0kQpku3I9VwqCy935wwrQvmw=s96-c"
-    },
-    {
       "uid": "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
       "displayName": "Christelle Murté",
       "photoURL": "https://lh5.googleusercontent.com/-IiaK2sZPRWA/AAAAAAAAAAI/AAAAAAAAAAQ/2FzPc3t8Ipk/photo.jpg"
+    },
+    {
+      "uid": "k8jUygDtyJYlOdZoJeyzllRCc2B3",
+      "displayName": "Viet Hoang",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiGnNQMPbjBVn_aqM0kQpku3I9VwqCy935wwrQvmw=s96-c"
     },
     {
       "uid": "9XiNHiC9vzfHLs7bDN3B9XS62Fp1",
@@ -1597,8 +1601,8 @@
       "name": "Front web"
     },
     {
-      "id": "87b16802-9e01-5a51-910f-71141789a8b8",
-      "name": "Backend, Cloud, Big Data"
+      "name": "Backend, Cloud, Big Data",
+      "id": "87b16802-9e01-5a51-910f-71141789a8b8"
     },
     {
       "id": "ef452c33-83cf-5472-8e72-acd374e24b58",
@@ -1617,27 +1621,27 @@
       "name": "Humain & Tech"
     },
     {
-      "name": "Alien",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "name": "Alien"
     }
   ],
   "formats": [
     {
-      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
-      "name": "Quickie (15min)"
+      "name": "Quickie (15min)",
+      "id": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a"
     },
     {
-      "name": "Conférence (50min)",
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "name": "Conférence (50min)"
     },
     {
-      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
-      "name": "Hands-on (120min)"
+      "name": "Hands-on (120min)",
+      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b"
     },
     {
-      "id": "fc5112e0-a2c3-54e6-8ca9-9dd622ca9b8b",
       "name": "Speaker débutant",
-      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier."
+      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
+      "id": "fc5112e0-a2c3-54e6-8ca9-9dd622ca9b8b"
     }
   ]
 }
