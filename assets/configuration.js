@@ -10,4 +10,5 @@ export default {
     isVideoOnline: false,
     nbEdition: 5,
     displaySponsors : true,
+    displayBeginnerSpeakers: false,
 }
