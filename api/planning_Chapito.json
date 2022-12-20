@@ -1,0 +1,745 @@
+[
+  {
+    "id": "07vraokDo3cMoivHt8SD",
+    "title": "Edge AI : allez viens, on embarque notre intelligence artificielle !",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "11:10",
+    "day": "Jeudi",
+    "abstract": "Avez-vous déjà entendu parler du terme \"AI on edge\" ? Il s'agit du déploiement d'applications d'IA sur des appareils situés dans le monde physique. \nLes avantages ? Moins de latence, plus de sécurité, d'efficacité et surtout de la proximité ! Aujourd'hui, il devient donc de plus en plus important de pouvoir déployer des modèles d'IA capables d'inférer en temps réel.\n\nLa vision par ordinateur est particulièrement concernée de par sa progression rapide et son utilisation dans de nombreux domaines : automobile, médical, commerce, ... Elle regroupe de nombreuses techniques comme la classification d'images, la segmentation d'images ou encore la détection d'objets. \n\nCette dernière permet d'identifier et de localiser les différents objets sur une image ou sur une vidéo. Un célèbre algorithme de détection d'objets, connu pour son fonctionnement rapide, se nomme YOLOv7.\n\nDans ce talk, nous verrons comment déployer un modèle YOLOv7 pour la détection d'objets sur une carte Raspberry Pi 4. \n\nPour cela, nous nous intéresserons à l'entraînement et au test d'un modèle YOLOv7 au sein d'un Notebook Jupyter. Nous convertirons ensuite notre modèle pour pouvoir le déployer et faire de l'inférence sur Raspberry Pi. \nLa finalité ? Un outil de détection d'objets en temps réel à portée de main.\n\nAlors, on embarque ?",
+    "speakers": [
+      "Eléa Petton"
+    ]
+  },
+  {
+    "id": "0BCYtAIapzP7FOTAoaih",
+    "title": "La contribution aux communs numériques",
+    "categories": "Alien",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "12:35",
+    "day": "Jeudi",
+    "abstract": "Bon nombre d'organisations dépendent de produits, données, services sous licence libre. Ces dépendances sont parfois critiques comme a pu le démontrer la faille Heartbleed et souvent soutenus par un très faible nombre de personnes bénévoles.\n\nChez Code Lutin nous essayons de financer nos dépendances (mais pas que), et je vais vous montrer comment nous nous y prenons afin que vous aussi vous puissiez passer le cap.",
+    "speakers": [
+      "Jean Couteau"
+    ]
+  },
+  {
+    "id": "3vity7gCVOrIPLbr5anu",
+    "title": "Rust sans (trop) roter du sang",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "13:30",
+    "day": "Jeudi",
+    "abstract": "S'il y a bien un langage de programmation qui a le vent en poupe, c'est Rust. Les arguments en sa faveur ne manquent pas : programmation sûre, performance d'exécution, écosystème vivant, etc.\nIl n'est même pas nécessaire d'y ajouter l'argument d'autorité \"Linus Torvalds approuve\" !\n\nComme toute personne curieuse, nous nous sommes lancés... pour se prendre de plein fouet la courbe d'apprentissage rude qui fait aussi la réputation du langage. Mais bon, nous sommes utilisateurs de Vi au quotidien depuis des années, il n'y a pas de raison qu'on n'arrive pas à coder en Rust !\n\nDans cette présentation, nous proposons une approche visuelle pour illustrer le plus simplement possible les points d'achoppement de la montée en compétence sur Rust... et vous verrez qu'en fait, c'est pas compliqué, on a juste été très mal habitués par les autres langages depuis des années. Notre but ? Que vous repartiez avec les bons outils pour écrire vos premiers petits programmes en Rust et ne paniquiez pas face à la volubilité du compilateur.",
+    "speakers": [
+      "Édouard Siha",
+      "Alexis \"Horgix\" Chotard"
+    ]
+  },
+  {
+    "id": "4ZuVgkJsSPF3AgU7aSBn",
+    "title": "Comment gérer des journées de 35h ?",
+    "categories": "Humain & Tech",
+    "formats": "Quickie (15min)",
+    "rooms": "Lovelace",
+    "times": "12:35",
+    "day": "Vendredi",
+    "abstract": "Connaissez-vous l’origine de l’expression “être réglé comme du papier à musique” ?\n\nLa présentation aurait pu également s'appeler : _Comment être chef d'orchestre m'a permis \nde hacker mon cerveau ?_\n\nToute personne passionnée mène une vie riche et variée. Dans la mienne, la passion s'exprime par ma vie de famille, la musique et le développement.\n\nComment jongler alors avec un emploi du temps chargé et ne pas devenir fou ?\n\nDans cette présentation, je vous parlerai des parallèles que je vois entre la direction d’orchestre et la gestion d’un agenda. Au rythme _moderato_ donné par ma baguette de chef d'orchestre, je vous partagerai mes astuces qui vous aideront peut-être à mieux organiser votre emploi du temps et survivre à ces journées bien chargées.",
+    "speakers": [
+      "Sylvain Gougouzian"
+    ]
+  },
+  {
+    "id": "6hVZGT7mDHObwqc7iVk4",
+    "title": "Sensibilisation aux problématiques des systèmes distribués",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "11:10",
+    "day": "Jeudi",
+    "abstract": "\nLorsqu'on veut monter en charge ou améliorer la résistance aux pannes d'une application, généralement on scale.\n \nMais en scalant on se heurte a un certain nombre de problèmes dont on ne connait souvent pas l’existence.  \nLa base de données peut-elle scaler autant que mon application ? \nFaire une application stateless suffit-il ? \nComment gérer la concurrence lors des écritures ? \nComment gérer des locks ? \n\nDans ce talk, je vous présenterai quelques problématiques qu'on peut rencontrer, \nOn parlera théorème CAP, cohérence à terme, le split brain ... \n\nJe vous proposerai également quelques patterns pour résoudre certain problèmes comme le CQRS, le sharding, le singleton, le CRDT ...\n\nA la fin rien de magique, c'est toujours une histoire de compromis mais au moins vous sacherez \n\n",
+    "speakers": [
+      "Delegue Alexandre"
+    ]
+  },
+  {
+    "id": "82PVJ8pWAf3XUBuobgt1",
+    "title": "Ne jette pas ton ordi,  ... répare le futur ! 🌍",
+    "categories": "Humain & Tech",
+    "formats": "Quickie (15min)",
+    "rooms": "Lovelace",
+    "times": "12:10",
+    "day": "Jeudi",
+    "abstract": "Savez vous que dort peut être chez vous un trésor, qui peut aider la planète !\n\nDans cette intervention, je présenterai comment « réparer le futur » au travers de la collecte, du reconditionnement, et de la redistribution gracieuse d’équipements. Ce sera peut être aussi l’occasion pour vous de vous lancer dans l’aventure . . .\n\n\nObjectifs du talk :\n\nIl y en a 4 :\n\n- Présenter avec quelques chiffres marquants l’impact écologique de la production d’un ordinateur neuf,\n- Initier un cercle vertueux (collecte, reconditionnement, redistribution et partage des connaissances),\n- Présenter les obstacles à la mise en route du projet,\n- Faire appel aux idées, aux bonnes volontés.\n\n\nDéroulé du talk\n\n- Présentation personnelle (1 min)\n- Exposé des chiffres significatifs l’impact écologique lié à la construction d’un ordinateur neuf (2 min)\n- Un exemple avec le collège de mon fils lors du premier confinement (5 min)\n- Les obstacles rencontrés malgré mon enthousiasme et ma bonne volonté (ou naïveté , peut être) (5 min)\n- Appel aux bonnes volontés, aux idées pour initier un cercle vertueux (2 min)",
+    "speakers": [
+      "OLIVIER DEIBER"
+    ]
+  },
+  {
+    "id": "8Y1SA6Pfjj2LIrbUa037",
+    "title": "Apprenez Rust pas à pas en construisant une application en ligne de commande",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Hands-on (120min)",
+    "rooms": "TD1",
+    "day": "Jeudi",
+    "abstract": "Rust est un langage de programmation récent qui promet fiabilité, performance et sécurité. Cependant Rust est aussi réputé comme difficile d’accès.\n \nVenez développer pas à pas une application en ligne de commande pour découvrir et apprendre Rust.\nL’atelier est conçu de manière pédagogique pour appréhender les concepts un par un tout au long de l’atelier.\n",
+    "speakers": [
+      "julien rollin"
+    ]
+  },
+  {
+    "id": "9mUt36g9CuvlJdvGLDVS",
+    "title": "J'écris mes CLI en Java, pas vous ?",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "13:30",
+    "day": "Vendredi",
+    "abstract": "Les interfaces en ligne de commandes (CLI) font partie de notre quotidien. \nElles permettent un accès simple et automatisable à des fonctionnalités ou des services. \nBeaucoup d'entre elles sont écrites en Go, Python ou encore en Shell.\n\nMais que faire si vos équipes sont constituées de développeurs Java ? \nDevez-vous les former à un autre langage ? \nSans divulgâcher le sujet : non. \nDe nombreuses solutions s'offrent à vous, venez découvrir Java, Quarkus et Picocli en action !\n",
+    "speakers": [
+      "Kevin Toublanc",
+      "Mathieu Laude"
+    ]
+  },
+  {
+    "id": "DMbEta12hz6HS1I3rWym",
+    "title": "Le DevOps expliqué à mon père, agriculteur à la retraite.",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "13:30",
+    "day": "Vendredi",
+    "abstract": "DevOps, GitOps, MLOps, DataOps, DevSecOps, SysOps, xOps et tous les ...Ops.\nVous rencontrez peut-être au quotidien ces nouveaux termes. Est-ce que ce sont encore des anglicismes ou des mots \"hype\" vide de sens ?\nA l'origine d'un grand nombre d'entre eux se trouve une démarche qui a révolutionné l'IT : le DevOps. Mais en quoi cela consiste-t-il ?\n\nAu travers du quotidien de mon père, vous comprendrez ce qu'est la démarche DevOps.\n\nAinsi, vous pourrez expliquer à vos enfants, vos copains, vos parents et grand-parents ce qu'est le DevOps, votre nouvelle démarche de travail !",
+    "speakers": [
+      "Philippe MORISSEAU"
+    ]
+  },
+  {
+    "id": "ESyHvSv5gDz2deOwaFkZ",
+    "title": "On peut écouter 1 fois un utilisateur, ou écouter 1 milliard d'utilisateurs.",
+    "categories": "Design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "14:30",
+    "day": "Jeudi",
+    "abstract": "Nous savons tous que la conception centrée utilisateur est fondamentale pour le succès d'un produit. Parmi l'ensemble des choses à faire pour y arriver, collecter du feedback de vos utilisateurs est l'un des points les plus importants pour prendre les bonnes décisions produits et techniques. Mais comment le faire ?\n\nA la fin de cette session, vous aurez quelques techniques pour collecter ce feedback, mais aussi l'intégrer dans votre workflow de développements: \n- Comment collecter et traiter le feedback produit avec des outils simples comme l'email ou GitHub?\n- Comment tracker les utilisateurs tout en respectant leurs droits et données ?\n- Comment faire une place à ce feedback dans votre organisation et dans les roadmaps ?\n\nCes techniques proviennent de mes expériences à différentes échelles : de la startup qui tient dans une voiture aux équipes Azure en passant par Deezer.",
+    "speakers": [
+      "Christopher MANEU"
+    ]
+  },
+  {
+    "id": "H3Z9ga1ideEdq1Q2UDOa",
+    "title": "Live-coding, Space invaderes en vanilla JS en partant de zéro",
+    "categories": "Front web",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "11:10",
+    "day": "Vendredi",
+    "abstract": "Aujourd'hui c'est Back to Basics ! Je vais vous montrer comment coder le jeu mythique Space Invaders à partir de zéro, sans framework, sans librairie, en 45 minutes !\nDu Bazel? ça manque de sel !    \nDu Angular ? Même pas pour un million de dollars.   \nDu typescript ? Je préfère aller vivre en Egypte (_pas faciles les rymes en ipte_)\n\nDu javascript à l'ancienne, deux lignes de Html et c'est parti ! ",
+    "speakers": [
+      "Fabien Lamarque"
+    ]
+  },
+  {
+    "id": "HWmC1kHb5oxthqwbyrXW",
+    "title": "Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "13:30",
+    "day": "Vendredi",
+    "abstract": "Avec des collègues de tous horizons, on se retrouve autour d'un évènement pour construire un jeu de cartes collaboratif à partir d'une feuille blanche.\n\nCa donne près de 60h de jeu cumulées sur 2 jours et des opportunités  d'usages et de business.\n\n\nVenez vivre l'histoire de quelques mois qui nous a menée à proposer une expérience de jeu en pleine conférence de développeurs...\nEt découvrir les bénéfices humains et techniques que ce type d'aventure peut vous apporter.\n\nTout cela pour répondre aux grandes questions de la vie :  « Qui suis-je ? - Dans quel état j'erre ? - Où cours-je ? »",
+    "speakers": [
+      "Nicolas GIRAUD",
+      "Sylvain Bestion"
+    ]
+  },
+  {
+    "id": "IezpFmDwL1no9qNdYQIG",
+    "title": "Développer publiquement un site en milieu hostile : retour d'expérience",
+    "categories": "Humain & Tech",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "13:00",
+    "day": "Vendredi",
+    "abstract": "Durant l'été 2022, j'ai développé [salaires.dev](https://salaires.dev), un site open-source de partage anonyme de salaires pour les développeurs et développeuses. Après avoir implémenté le MVP en quelques jours, j'ai ouvert le site au public dans l'espoir d'avoir des retours et de pouvoir continuer à développer le site avec l'aide de la communauté. L'accueil a été très bon mais la transparence du développement m'a apporté un problème que je n'avais pas envisagé : les attaques de bots toujours plus intelligents. \n\nDurant ce talk, je parlerai du développement du site et surtout de toutes les systèmes que j'ai du mettre en place pour contrer les bots qui me ciblaient. Je partagerai aussi les bienfaits du développement en public et de tout ce que cette expérience m'a apporté.",
+    "speakers": [
+      "Alexis Lozano"
+    ]
+  },
+  {
+    "id": "J7gGsPyGOyyIxADiHN04",
+    "title": "Ahead Of Time et Native avec Spring Boot 3.0",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "15:45",
+    "day": "Vendredi",
+    "abstract": "Après une phase d’expérimentation avec le projet Spring Native, l’équipe Spring contribue le support Ahead of Time (AOT) à Spring. Cette nouvelle fonctionnalité va permettre un support des applications natives avec GraalVM mais aussi améliorer l’efficacité des applications JVM classiques.\n\nPendant cette présentation, Stéphane va détailler l’état de l’art du support AOT dans Spring Framework 6.0 et Spring Boot 3.0:\n\n* l’architecture du moteur AOT\n* comment cette nouvelle infrastructure peut-être utilisée par des librairies\n* l’expérience développeur\n",
+    "speakers": [
+      "Stéphane Nicoll"
+    ]
+  },
+  {
+    "id": "JPFFlmGXccsFCvny4idC",
+    "title": "Venez faire un petit Tours de la programmation IoT 📟 ?",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Hands-on (120min)",
+    "rooms": "TD1",
+    "day": "Vendredi",
+    "abstract": "Au travers de ce codelab, venez réveiller le Maker qui sommeille en vous en s’initiant à la programmation sur ESP32, un micro-contrôleur très utilisé par la communauté DIY, et (re-)découvrir quelques bases d’informatique embarquée à l'aide d'une led et d'un capteur de lumière.\n\nSeul ou en binôme, cet atelier est accessible aux débutants en électronique comme en développement. Pour faciliter le démarrage des TPs, l’installation de l’outil [Arduino IDE](https://www.arduino.cc/en/software) est fortement recommandée. Attention, le nombre de places est limité !",
+    "speakers": [
+      "Guillaume Membré",
+      "Guillaume Renaudin"
+    ]
+  },
+  {
+    "id": "MktwHZRwKOdE031ba80B",
+    "title": "Lost in abstraction",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "13:00",
+    "day": "Vendredi",
+    "abstract": "Avez-vous déjà vu une bonne idée de refacto se transformer en une difformité incompréhensible un an plus tard ? \nNous manipulons des abstractions tous les jours, de la plus petite fonction en passant par le design pattern le plus tordu, cependant nous ne les considérons pas toujours pour les armes à doubles tranchants qu'elles sont.\nÀ travers des exemples (sans code), on déconstruira quelques préconceptions sur certaines pratiques (DRY, copy/pasting ) et  architectures (clean, layers vs slices) qui feront de vous des meilleurs reviewers et même codeurs.",
+    "speakers": [
+      "Pierre Robillard"
+    ]
+  },
+  {
+    "id": "OIJZAyTGJRnFpG7F1J77",
+    "title": "User vs Human Experience",
+    "categories": "Design, UI, UX",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "12:10",
+    "day": "Jeudi",
+    "abstract": "On parle beaucoup d'UX aujourd'hui. L'expérience utilisateur est un enjeu majeur dans nos projets ; nous voulons que nos produits correspondent au mieux aux besoins des clients. Mais au final, qu'est ce que \"l'expérience\" en tant qu'Être Humain ?\n\nNous expérimentons des millions de choses chaque jour depuis notre naissance - c'est à dire bien avant qu'on commence à utiliser des produits HighTech, des services numériques...\n\nComment définir l'Expérience ? Quelle différence y a-t-il entre l'expérience utilisateur et l'expérience \"humaine\" ? Et comment est-ce devenu un challenge dans les services et produits que l'on déploie ?",
+    "speakers": [
+      "Antoine Robiez"
+    ]
+  },
+  {
+    "id": "PZhCax4A1hSIflgKWUGS",
+    "title": "As a UI designer, how to mess up your project? ",
+    "categories": "Design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "13:30",
+    "day": "Jeudi",
+    "abstract": "# Version française 🇫🇷\n\nEn tant que designer, c’est facile de vendre du rêve à vos clients. Mais c’est encore plus facile d’oublier que le développement est lié à un budget et à un planning. Un mauvais processus de travail en design peut mener à une mauvaise expérience pour l’utilisateur final, peu importe à quel point la première interface était jolie.\n\nMais si vous voulez vraiment rater votre projet, lors de cette conférence, vous verrez comment:\n\n- Choisir le mauvais logiciel de design\n- Choisir les mauvaises polices et couleurs\n- Empêcher les modifications rapides\n- Ajouter des incohérences (rapidement)\n- Faire un beau design uniquement avec des données “bien pratiques”\n- Fournir une interface utilisateur mobile merdique (même si la plupart des utilisateurs sont sur mobile) Pourrir la vie des développeurs front-end\n\n# English version 🇬🇧\n\nAs a designer, it’s very easy to sell a beautiful dream to your client. But it’s easier to forget that development is tied to budget and schedule. A bad design workflow can lead to poor UX for the end user, no matter how shiny the first design was.\nBut if you really want to fail your project, in this talk, you will see how to:\n\n- Choose the wrong design software\n- Choose the wrong fonts & colors\n- Prevent design iterations\n- Add inconsistencies (quickly)\n- Make shiny design with only convenient data\n- Deliver shitty mobile UI (even if most of the users are on mobile)\n- Make the life of front-end developers a pain\n",
+    "speakers": [
+      "Rudy Baer",
+      "Dorian Delorme"
+    ]
+  },
+  {
+    "id": "QL23LjbKcwLMnCVGYAn8",
+    "title": "DALL-E V2 -  un robot et un peintre font de la génération d'image par IA ",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "14:30",
+    "day": "Vendredi",
+    "abstract": "### Cela commence comme une histoire drôle \n\nEn lisant le titre on peut se dire que les  moustaches se frisent ( quoi tu connais pas *Dali* ? ) \nQu'a pu inventer ce cher petit robot ramasseur ? a -t'il vu un astronaute chevaucher un cheval blanc dans l'espace ?\n\n*DALL-E*  **v2** est une technologie *open AI* où l'on peut d'une simple phrase ( en natural language ) :\n- créer une image à la volée avec des éléments générés\n- éditer une photo existante avec des éléments supplémentaires ou la modifier selon votre demande \n- faire des variations d'une image à la volée suivant son bon vouloir\n\nUne chose est sûre avec DALL-E votre imagination débordante peut se lâcher ! \n\n### Au revoir GIMP , Photoshop et les créatifs ?\n\nSous cet aspect fun, cet outil permet de comprendre comment l'IA interprète et analyse nos demandes.\n\nEn démontrant ses capacités, son fonctionnement et réfléchir à des possibles usages pour celle-ci.\n\nPar exemple comment son modèle utilise des biais imposés, gère les stéréotypes éventuels et ses hypothèses de compréhension par rapport à sa technique d'apprentissage.\n\nEt pour alimenter le petit rabot facétieux, on générera un tas d'image suivant avec des phrases aléatoires.\n",
+    "speakers": [
+      "Olivier Mertens"
+    ]
+  },
+  {
+    "id": "RKdpxRlsknOPkd4Lazye",
+    "title": "[Conférence dessinée] Regard scientifique sur l'artisanat logiciel",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "10:10",
+    "day": "Jeudi",
+    "abstract": "Artisanat logiciel, Clean Code, TDD, autant de termes qui s'imposent actuellement dans les discussions sur le développement logiciel. L'influence importante de ces \"bonnes pratiques\" peut sembler étrange par rapport à son adoption modérée par l'industrie. Est-ce l'industrie qui se trompe, ou est-ce les pratiquants convaincus qui sont à côté de la plaque ? La critique constructive est compliquée, et c'est d'autant plus vrai quand on fait partie des pratiquants convaincus.\n\nPour m'aider à sortir de ce dilemme, et ramener un peu d'objectivité à mes réflexions, j'ai commencé il y a 4 ans à lire des papiers scientifiques portant sur les méthodes de développement logiciel. Cette démarche m'a donné des réponses utiles et plus important encore : de meilleures questions. Si vous vous demandez:\n\n- C'est mieux de faire des petites fonctions ?\n- Est-ce que Clean Code ça marche ?\n- Ça a du sens de faire du Test Driven Development sans commencer par les tests ?\n\nOn va tenter d'y répondre ensemble avec une synthèse de deux conférences existantes : \"**Artisanat logiciel, un regard zététique**\" et \"**Le Test Driven Development sans commencer par les tests**\".\n\nLes dessins rendront le contenu accessible à tous ceux qui s'intéressent à ces sujets, sans simplifications sur le fond.",
+    "speakers": [
+      "Victor Lambret"
+    ]
+  },
+  {
+    "id": "RSFB4Oq1k0AafqRJeZ4z",
+    "title": "(Et si on apprenait à) Apprendre et partager autrement",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "11:10",
+    "day": "Vendredi",
+    "abstract": "Nous sommes actuellement environ 7.9 milliards d’individus sur Terre et nous sommes tous différents mais nous devons rentrer dans des cases, suivre le même programme éducatif, et nous devons tous apprendre de la même manière. \n\nEt si je vous disait qu'il est possible d'apprendre et de partager autrement, de faire appel à son imagination et à sa créativité et que c'est bénéfique pour tout le monde ?\n\nDans ce talk, je raconte une histoire, je vous raconte mon histoire, de comment je suis passée d'une personne qui avait perdu ses passions à la création de sketchnotes, vidéos, talks qui sortent du commun et de livres illustrés. Nous verrons que partager autrement, que changer les choses n'est pas facile mais que c'est important et que c'est possible avec quelques tips, que d'autres personnes l'ont fait et que maintenant c'est à vous de jouer :-). \n\nEt pour finir, nous verrons que nous avons chacun de super pouvoirs a utiliser à bon escient.",
+    "speakers": [
+      "Aurélie Vache"
+    ]
+  },
+  {
+    "id": "TBitgNi5VAJ7maDvY2ZC",
+    "title": "Storybook, une vraie bonne idée ?",
+    "categories": "Front web",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "12:10",
+    "day": "Vendredi",
+    "abstract": "Ça y est, vos designers ont enfin mis en place un design system complet pour assurer une maintenabilité, homogénéité et accessibilité des composants UI de votre interface.\nMais comment s'assurer du respect de celui-ci et des bonnes pratiques front-end dans une équipe à l'appétence très fortement back-end ?\nDepuis 2 ans, notre équipe hésitait à utiliser Storybook, un outil front-end pour créer une UI propre et documentée isolée. Est-ce que la notoriété est justifiée ? Est-ce que Storybook correspondrait à une équipe réduite comme la nôtre ?\nJe partagerai nos réflexions, nos choix, l’histoire de l’intégration de Storybook au sein de celui-ci et vous découvrirez si oui ou non, nous l’avons déployé.\n",
+    "speakers": [
+      "Sara Attallah"
+    ]
+  },
+  {
+    "id": "TuXPjtB8tUG4yaSnj6pn",
+    "title": "Le guide 2023 du recrutement technique",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "10:10",
+    "day": "Vendredi",
+    "abstract": "Sur un marché déjà en pleine tension, le télétravail généralisé a créé une compétition à échelle mondiale entre nos entreprises pour attirer les talents les plus qualifiés. Plus que jamais, le processus de recrutement est un facteur clé du succès et de la performance d’une équipe technique. Et puisqu’il existe une infinité de manières de tester les compétences d’un·e dev, est-ce qu’on n’a vraiment rien trouvé de mieux que 6 entretiens identiques d’affilée sur un tableau blanc ?\n\nDans cette conférence, vous découvrirez comment la quasi-totalité des processus de recrutement technique sont biaisés et frustrants pour les candidat·es et recruteurs·es, et comment y remédier avec quelques astuces simples.",
+    "speakers": [
+      "Mathis Hammel"
+    ]
+  },
+  {
+    "id": "TvfUGgFtJJ5z8zp5KcLB",
+    "title": "Web dans le cloud, piloter ses décisions par les coûts",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "14:30",
+    "day": "Vendredi",
+    "abstract": "Le Cloud, tout le monde en parle, mais maîtrisez-vous vraiment ses coûts cachés ? Les alternatives structurelles que celà peut impliquer ?\n\nAprès une introduction au cloud, dont les exemples seront issus d'AWS et un parallèle avec les architectures traditionnelles, nous verrons que les orientations techniques et architecturales peuvent avoir un impact financier plus ou moins fort.\n\nPendant cette présentation, nous étudierons plusieurs cas concrets d'architectures web, d'app, d'api et nous remettrons en cause les choix qui nous paraissent pourtant naturels, pour les relier à une réalité financière imposée par le cloud, sans forcément y perdre et avec un peu d'astuce.\n\nNous déconstruirons ensemble des schémas types, en constaterons, étape par étape, les gains parfois conséquents, puis remettrons en question nos choix en fonction de ces constats.\n\nVous sortirez avec une autre vision du cloud,économique et pragmatique, et ne ferez plus  vos choix de la même manière.",
+    "speakers": [
+      "Matthieu Werner"
+    ]
+  },
+  {
+    "id": "TzYjfulaUQkXB1Stkrer",
+    "title": "Apprenons ensemble grâce aux bookclubs",
+    "categories": "Alien",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "12:10",
+    "day": "Vendredi",
+    "abstract": "Tu aimerais lire plus de dix pages d'un livre pro sans lâcher l'affaire ? Tu as lu le même livre que tes collègues mais vous n’avez pas compris la même chose ? Et pourtant la lecture est un super moyen d’échanger et de progresser dans ton métier !\n\nMarion et Yvonnick eux non plus n'en lisaient pas jusqu’à l’année dernière. Mais cette année, ils ont lu cinq livres grâce aux bookclubs ! Bookclub ? Non, non, on ne parle pas de club de lecture pour le troisième âge…\n\nEn participant et en animant ces clubs de lecture, ils ont élargi leurs connaissances professionnelles. La lecture de “The manager’s path” les a par exemple aidés à devenir plus proactifs dans leur rôle de manageur et dans l’accompagnement de leurs équipes.\n\n\nAprès avoir découvert le fonctionnement des bookclubs, il y a fort à parier que vous serez prêts à embarquer vos collègues dans la lecture de ce livre qui traîne sur votre bureau. Et vous serez même capable d'animer des conversations constructives et passionnantes autour de vos lectures. Qui sait, peut être que vous arriverez comme nous à convaincre votre CTO de participer à votre premier bookclub ?\n\n",
+    "speakers": [
+      "Marion Valentin",
+      "Yvonnick FRIN"
+    ]
+  },
+  {
+    "id": "Uix3DyDf349JzrHJptTl",
+    "title": "H@ck your house!",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "15:45",
+    "day": "Jeudi",
+    "abstract": "L’objet de ce talk est de présenter comment 2 geeks du monde de l’IT domotisent leur maison avec un esprit résolument *Do It Yourself*. La présentation se découpe en 3 parties. Une première partie théorique qui expose les protocoles et considérations techniques prises en compte. Ensuite un focus est réalisé sur le matériel, leurs contraintes et les possibilités de hack… personnalisation. Enfin différents cas d’usage concrets sont présentés, des plus utiles aux plus inutiles donc indispensables.",
+    "speakers": [
+      "Loïc Rodier",
+      "Nicolas Carlier"
+    ]
+  },
+  {
+    "id": "UjwT58pQSRJUK8aLYfna",
+    "title": "Décommissionnement progressif de code legacy à l’aide d’AST",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "10:10",
+    "day": "Vendredi",
+    "abstract": "Il était une fois une fonction illisible et buggée. Toute l’équipe souhaitait sa disparition. Mais personne ne voulait se lancer dans ce chantier, car cette fonction était appelée un peu partout dans le code…\n\nCette histoire peut-elle connaitre une fin heureuse ? Comment éviter que la situation n’empire au fur et à mesure que les développeurs ajoutent de nouvelles fonctionnalités ?\n\nEt si l’AST (Abstract Syntax Tree) était la clé ? Voyons ensemble comment l’employer pour cartographier et suivre l’usage de cette fonction dépréciée. Pour que les jours de cette fonction puissent enfin être comptés. 😌",
+    "speakers": [
+      "Adrien JOLY"
+    ]
+  },
+  {
+    "id": "VaECb4MkKg6Si1uzVFK2",
+    "title": "Facilitez-vous les releases, utilisez semantic release (et donnez du sens à vos commits)",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "14:30",
+    "day": "Vendredi",
+    "abstract": "La dernière version de votre frontend attendue depuis 2 mois par le métier est en prod, vous passez de la v3257 à la v3284. Et c’est le drame: votre application plante lamentablement avec la version du backend déployé récemment en prod. Après une vaine tentative pour trouver un changelog du backend, une fouille à base de git blame est organisée pour trouver le commit à corriger : “finally fix it”, tout un programme ! \nBref : 3 jours de boulot pour retrouver le commit incriminé...\n\nGrâce à semantic-release, vous bénéficiez d’un nommage clair de vos releases peu importe la technologie, d’un changelog, d’une intégration native avec vos scm\n\nNous allons voir comment gagner du temps, en étant juste un peu plus rigoureux avec ses messages de commit. Que vous soyez développeur back, front, data, sysops, devops ou fan des monorepo : si vous utilisez Git, semantic release s’adresse à vous. \n\nNous verrons en démo comment cela fonctionne, et comment vous pouvez automatiser les tags sur vos projets, les releases notes, les montées de version (on va même vous parler de Dependabot). \n",
+    "speakers": [
+      "Antoine Meausoone",
+      "Gaetan BOGAERT"
+    ]
+  },
+  {
+    "id": "Y3UvX1gfVgRQtncTbfSa",
+    "title": "Lego Flow Game : le Waterfall, le Scrum et le Kanban tu différencieras !",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Hands-on (120min)",
+    "rooms": "TD1",
+    "day": "Jeudi",
+    "abstract": "Il existe beaucoup de façon de gérer des projets ou des produits.\nDans l'écosystème informatique, beaucoup de mots sont à la mode et il est difficile de s'y retrouver.\n\nJe vous propose un atelier, basé sur des Lego, pour expérimenter trois façons de gérer en équipe les fonctionnalités d'un produit : \n- en cascade - référence au mode Waterfall\n- en itératif - référence au mode Scrum\n- au fil de l'eau - référence au mode Kanban\n\nSerious game, débrief et présentation des notions sont au programme.\nEt si l'envie vous prend de rejouer cette expérience en entreprise, je vous présenterai le mode opératoire pour faciliter cet atelier-découverte.\n\nVenez participer à cet atelier ludique et vivant à base de briques colorées !\n",
+    "speakers": [
+      "Fanny Klauk"
+    ]
+  },
+  {
+    "id": "Yta40p2efXdTF7BvmnJ9",
+    "title": "Améliorer les performances de son backend",
+    "categories": "Conception, architecture",
+    "formats": "Quickie (15min)",
+    "rooms": "Lovelace",
+    "times": "12:35",
+    "day": "Jeudi",
+    "abstract": "Améliorer les performances de son backend est un sujet important, que ce soit pour des considérations écologiques ou économiques. Mais on ne sait pas forcément par quoi commencer et comment commencer ? Après avoir donné la définition de ce que l'on entend par \"performances\", suite à mon retour d'expérience de ses 3 dernières années, nous essaierons de répondre aux questions suivantes : \n\n- doit-on améliorer les performances de son backend ? \n- pourquoi ? \n- quand doit-on s'en préoccuper ? \n- quelles méthodologies adopter ? \n- quelles sont les bonnes et les mauvaises pratiques ? \n- quels sont les pièges à éviter ? \n\nA la fin de ce talk vous saurez quand et comment améliorer les performances votre backend et surtout comment éviter de sacrifier votre roadmap pour une toute petite amélioration.",
+    "speakers": [
+      "Antoine DESSAIGNE"
+    ]
+  },
+  {
+    "id": "cTeyrIyyeQTdDc7x2kLK",
+    "title": "Loi de Conway : Lorsque votre conception produit se fâche avec votre organisation",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "13:30",
+    "day": "Jeudi",
+    "abstract": "Des utilisateurs qui ont toujours du mal à récupérer les informations dont ils ont besoin, alors que vous avez mis le paquet sur l'expérience utilisateur ? \nLa frustration de voir qu'une fonctionnalité implémentée est rarement la solution fonctionnelle idéale que vous aviez défini, car il y a toujours un \"mais\" ? \nOu plus techniquement, avez-vous des APIs découpées d'une manière qui semble au final arbitraire et qui ne suit pas le métier ?\nLa sensation que votre organisation est orthogonale à vos objectifs ?\n \nN'avez-vous jamais remarqué, que bien que vous soyez agile et vous suivez les bonnes pratiques, le logiciel qu'on construit s'écarte souvent de la vision produit, technique et parfois même des besoins de l'utilisateur que l'on a pourtant passé du temps à récolter ?\nEt si on vous disait que tout cela est lié, et qu'il existe une force qui a une influence certaine sur votre produit, votre expérience utilisateur et votre architecture ? \n\nLors de ce talk venez découvrir la Loi de Conway, cette force méconnue qui a un pouvoir magique sur ce que vous construisez quel que soit votre métier. Nous verrons ses impacts sur les différents aspects du logiciel et nous apprendrons comment l'apprivoiser.",
+    "speakers": [
+      "Julien Topçu"
+    ]
+  },
+  {
+    "id": "cqhVPs2RgbRvlBNQZyN5",
+    "title": "Oh crab ! My watch speaks Rust 🦀",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "10:10",
+    "day": "Vendredi",
+    "abstract": "Lorsqu'on parle d'IoT, on a tous à l'esprit l'Arduino, les puces WiFi ESP...\nEt en général, on les programmes en hybride C/C++.\n\nPar nostalgie, j'aime beaucoup le C, mais je me suis demandé si on ne pouvait pas utiliser des langages plus modernes...\n\nLors de ce talk je vous présenterai ma découverte de la T-Watch 2020 et mes tentatives pour la programmer en Rust.\nCe sera aussi l'occasion de découvrir l'éco-système Rust existant autour de l'embarqué et les avantages qu'apporte le langage dans ce contexte particulier.\n\n",
+    "speakers": [
+      "Pierre-Yves Aillet"
+    ]
+  },
+  {
+    "id": "eMlIQizK95KpLycTP70y",
+    "title": "Féminisation dans la tech : la communication, ou l'échec de tout un secteur",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "11:10",
+    "day": "Jeudi",
+    "abstract": " Le nombre de femmes dans la tech baisse. Le nombre de femmes qui s'orientent dans la tech, également. Pourtant, l'histoire de la tech en est remplie. De femmes, de tous les horizons, qui ont fait basculer l'innovation technologique avec des inventions, des thèses, des travaux. On en parle, dans des podcasts, des livres, des conférences, pour les mettre à l'honneur. Néanmoins, rien ne change.\n\nL'acceptation de post nauséabond, sexistes, misogynes, qui ne font valider des thèses dépassées par de réelles études récentes et officielles, empêche l'évolution de tout un secteur.\nNous sommes toutes et tous responsables, et il est tant de prendre les mesures nécessaires.\n\n\nÉtape 1 : Avoir des sources récentes, fiables.\nÉtape 2 : Reconnaitre le sexisme et la misogynie.\nÉtape 3 : Communiquer correctement.\nÉtape 4 : Réagir et prendre position.",
+    "speakers": [
+      "Amélie ABDALLAH"
+    ]
+  },
+  {
+    "id": "fADNfLumOONTJin3kcOQ",
+    "title": "J’ai expliqué notre métier à un pote âgé 🧑‍🌾🥕 ",
+    "categories": "Alien",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "13:00",
+    "day": "Jeudi",
+    "abstract": "En temps que porteur de projet web, business developer, ou parrain dans le cadre de concours de création d’entreprise je suis amené à vulgariser le développement d’application.\n\n« J’ai une super idée d’appli, elle sera hyper simple et intuitive, un peu comme Airbnb, combien ça peut couter ? »\n\nIl n’est que trop courant de rencontrer des porteurs de projets ou entrepreneur n’ayant aucune connaissance du travail nécessaire et des étapes obligatoires pour mener à bien un projet « application ».\n\nNous verrons comment depuis quelques temps je vulgarise le développement grâce à un potager.\n\nA vos pioches !",
+    "speakers": [
+      "Nicolas Dauphin-Moulin"
+    ]
+  },
+  {
+    "id": "hRCioWdYNuGOTw59bLm9",
+    "title": "Vous allez finir par les aimer les `Optionals`???",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "12:35",
+    "day": "Jeudi",
+    "abstract": "Les `optional` ont débarqué en java 1.8 il y a 8 ans. Quand ils sont apparus je me souviens m'être dit :  \n\n>  \"Génial ! Avant on faisait `if (object != null)`, maintenant on fait `if (optional.isPresent())` Quelle avancée 🙄 !\"\n\nDepuis j'ai eu l'occasion de les cotoyer, d'apprendre à les aimer et à les utiliser à bon escient.\n\nSur les projets auxquels je participe je m'aperçois qu'ils sont encore souvent mal utilisés, ou pas utiliseés quand il le faudrait.\n\nEnsemble redécouvrons leur élégance, apprenons à maîtriser leur API et pourquoi ils sont bien mieux qu'un simple `null check` !\n\n",
+    "speakers": [
+      "Jérôme Tama"
+    ]
+  },
+  {
+    "id": "i8RUBCZSCXX1EpP5Ce3T",
+    "title": "Corn Hole 2 Turbo : Mes premiers pas dans l'embarqué",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "16:45",
+    "day": "Jeudi",
+    "abstract": "Le Corn Hole est un jeu d'extérieur qui nous vient des USA. Il consiste à lancer de petits sacs remplis de grains de maïs sur une planche située à 8,20m. Si possible il faut viser le trou situé en haut de la planche !\n\nAvec mon pote Nico on voulait bidouiller. De l'électronique, de la découpe de bois laser, de l'impression 3D.. on voulait bricoler. Pour le Corn Hole nous avions un besoin : rendre le score disponible à tout le monde : aux joueurs, mais aussi au public. Et soyons honnête, on avait aussi vraiment envie de faire n'importe quoi ! Jusqu'où pourrions-nous aller ? Le défi était lancé..\n\nC'est comme ça qu'on s'est lancé à faire une planche \"2.0\", avec des capteurs, affichage du score, etc.. Au menu : du travail du bois, du dev arduino et du dev android. C'est satisfaisant de mettre les mains dans le cambouis, à l'heure de l'artisanat logiciel. On y redécouvre les sensations grisantes de nos débuts... repartir de zéro, avec peu de ressources. Cela nous appris à être extrêmement sobre en énergie, en code et en utilisation de ressources ! Après quelques grosses claques (spoiler : nous n'avons pas pu atteindre nos objectifs les plus fous.. !) , c'est un retour aux sources, du développement sous contrainte, et nos premiers pas dans le développement embarqué.",
+    "speakers": [
+      "Paul ROYE"
+    ]
+  },
+  {
+    "id": "iqyLnwdkN4a8O5WcpV7i",
+    "title": "10+ ans de développement Android: La Rétrospective",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "16:45",
+    "day": "Jeudi",
+    "abstract": "Depuis mes premières lignes de code avec Android 2.2 (Froyo), le chemin n'a pas été de tout repos ! D'une époque sans Fragment, où ActionBarSherlock était roi et EventBus était partout jusqu'à l'émergence de Kotlin et Jetpack Compose UI, notre expérience développement sur Android a constamment évolué (et souvent dans le bon sens !).\n\nA travers de multiples anecdotes et exemples (bons comme mauvais 😅), je vous emmène dans un voyage qui retracera l'évolution du développement Android du point de ~~View~~ vu d'un dev Android 😃",
+    "speakers": [
+      "Julien Salvi"
+    ]
+  },
+  {
+    "id": "kgKT9TgmJggaYZ5VVn9a",
+    "title": "Wolfy - de 2000 à 20 000 joueurs connectés ",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "10:10",
+    "day": "Jeudi",
+    "abstract": "Wolfy est un jeu de loup-garou en ligne, fait par des fans du genre. Nous avons voulu remettre au goût du jour ce jeu en utilisant les dernières technologies (Docker, Kubernetes, NextJS, microservice...)\n\nLors du premier confinement, tous les écoliers se sont retrouvés confinés chez eux. Pour garder le contact entre eux, l'un des moyens a été le jeu vidéo. Wolfy a vu son trafic multiplié par 10 dans les premiers jours du confinement.\n\nVenez suivre nos nuits blanches et les différents problèmes de performance, de charge, de DDOS et de saturation réseau que nous avons dû affronter lié à cette augmentation exceptionnelle de joueurs.",
+    "speakers": [
+      "Kevin Jean"
+    ]
+  },
+  {
+    "id": "l23b0hpll77Fk1LNLIWN",
+    "title": "Tester pour ne plus douter : à la recherche du test idéal",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "13:00",
+    "day": "Jeudi",
+    "abstract": "Tester son code c'est important, on est tous d'accord là dessus (non ? 😅).\n\nLà où ça se complique, c'est quand il faut décider :\n\n* Que tester ?\n* Comment le tester ?\n* Comment écrire des tests qui restent fiables et utiles avec le temps ?\n\nÀ travers ce quickie, je présenterai ma méthodologie actuelle de tests, qui consiste à :\n\n* Privilégier les tests d'intégration\n* Tester au maximum le système en mode boîte noire\n* Investir autant dans le refactoring et la maintenance du code des tests que du code de production \n* Tester le système au plus proche de ses conditions de fonctionnement réelles\n",
+    "speakers": [
+      "Benjamin Cavy"
+    ]
+  },
+  {
+    "id": "mAzMafjZzEjUvK5w8hct",
+    "title": "Tester vos microservices sans peine avec Micronaut Test Resources",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "14:30",
+    "day": "Jeudi",
+    "abstract": "Micronaut est un framework full-stack moderne, basé sur la JVM, permettant de construire des microservices ou applications serverless facilement.\n\nDe part son emphase sur la compilation ahead-of-time, il s'intègre particulièrement bien avec GraalVM, poussant les limites de ce qu'on peut faire avec le langage Java.\n\nCependant, le développement d'applications modernes est aussi synonyme de multiples intégrations qui sont parfois difficiles à configurer. Par exemple, votre application peut avoir besoin d'une base de données, d'un serveur Kafka, d'un broker MQTT ou autre. Micronaut Test Resources permet de grandement simplifier le développement de telles applications: sans aucune configuration, il est capable de démarrer des conteneurs de test pendant le développement ou les tests, réduisant considérablement l'effort nécessaire pour obtenir une excellente productivité développeur.\nDans cette session, nous montrerons les bases d'une application Micronaut et comment il s'intègre, en particulier, avec les outils de builds et Testcontainers.\n\nMicronaut Test Resources est aussi un framework extensible, rendant relativement simple l'ajout de vos propres ressources de test: il est par exemple possible d'exposer un conteneur Docker avec quelques lignes de configuration. En dernier recours, il est toujours possible d'implémenter vos propres ressources de test.\n\nEnfin, il est intéressant de savoir que Micronaut Test Resources est conçu de façon à ce que les ressources de test puissent être partagées entre différents projets, même s'ils utilisent des outils de build différent ! Cerise sur le gâteau, nous montrerons comment les images natives peuvent bénéficier de ce mécanisme.",
+    "speakers": [
+      "Cédric Champeau"
+    ]
+  },
+  {
+    "id": "mR9GTCYeKujpZ6YkFr0y",
+    "title": "Les lois universelles de la performance",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "15:45",
+    "day": "Vendredi",
+    "abstract": "L'estimation de la performance d'une application est souvent une démarche empirique à base de tests de charge et de recherche d'optimisations algorithmiques ou de configuration. Pour aider dans cette démarche, il existe des règles universelles, dérivées de la théorie des files d'attente, qui nous permettent de mieux modéliser les systèmes et prédire leur performance même sans être capable de les tester complètement.\n\nDans cette session, je vous présenterai les principales lois applicables en particulier la loi de montée en charge universelle de Gunther et comment, sans rentrer dans les détails mathématiques, il est possible de les appliquer sur des problèmes concrets de modélisation de performance applicative et d'estimation de charge.",
+    "speakers": [
+      "Raphaël Luta"
+    ]
+  },
+  {
+    "id": "neprDB8HcIu0LJn0XexY",
+    "title": "Démystifions le CSS",
+    "categories": "Front web",
+    "formats": "Conférence (50min)",
+    "rooms": "Lovelace",
+    "times": "13:00",
+    "day": "Jeudi",
+    "abstract": "Pourtant essentiel à la création d’un site web moderne, le **CSS** est généralement relégué à l’arrière plan car mal compris ou jugé trop complexe au premier abord.\n\nQu’à cela ne tienne ! Plongeons dans les entrailles des navigateurs web pour comprendre comment ce langage y est interprété.  \n\n_CSSOM, render tree_ ou encore _stacking context_, nous verrons tous ces concepts à travers la construction d’une animation CSS d’un personnage bien connu : Pᗣᗧ•••MᗣN",
+    "speakers": [
+      "Audrey Dubois"
+    ]
+  },
+  {
+    "id": "omWyNKhCM0MT1GwS9wWG",
+    "title": "Votre équipe de développement à l'ère post-covid",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "10:10",
+    "day": "Jeudi",
+    "abstract": "Si le confinement nous a forcé à apprendre à travailler en remote, il nous a aussi montré toute la difficulté de se synchroniser à distance. **Le retour à la normale n'a jamais eu lieu** et nous sommes entrés dans **l'ère post-covid** : des personnes en présentiel, en  remote, en flex-office, sur des tiers lieux, dans un autre pays ou à la plage. **Difficile de synchroniser tout le monde**, sans même parler de la création d'un esprit d'équipe. Si **la qualité de vie de chacun y a beaucoup gagné**, de nombreuses difficultés sont apparues pour les animateurs d'équipe. \n\nDans ce talk **Eric Aboudaram** (Tech Lead depuis plus de 10 ans) et **Marc Dugué** (Chef de projet depuis plus de 15 ans et facilitateur graphique depuis plus de 8 ans) vous partageront ce qu'ils ont appris sur l'animation d'équipe dans l'ère post covid : **les difficultés et les enjeux** d'avoir des équipes partiellement distantes, bien sûr, mais aussi les **solutions et les outils** qu'ils ont mis en oeuvre dans l'animation des équipes de **Conserto**. Tout n'a pas fonctionné, ils parleront donc également de **leurs échecs** (pour vous éviter de faire les mêmes erreurs ? ) et de **leurs réussites** dans l'animation d'une équipe d'expert multi site. ",
+    "speakers": [
+      "aboudaram",
+      "Marc DUGUE"
+    ]
+  },
+  {
+    "id": "opMtA5pHQNvWz9AEJd6F",
+    "title": "Remotion : le 7ème art à porté de composants web et d'API 🎬",
+    "categories": "Front web",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "15:45",
+    "day": "Vendredi",
+    "abstract": "Vous avez déjà eu envie de générer des vidéos ... ?\n\nVous ne trouvez pas un outil pas cher, facile à prendre en main et pas limiter dans les possibilités ?\n\nVous avez des bases en HTML, CSS et Javascript ?\n\n**Remotion est fait pour vous !** 🫵🏼\n\nRemotion est une lib open source publiée en 2019, qui permet la génération de gif, d'animations, de vidéos de manière programmatique, à partir de composant React ! \nNous allons vous partager notre aventure de création de trailer vidéo dans le contexte des plateformes de streaming sur lesquels nous travaillons chez Bedrock. Nostalgique des programmes du début des années 2000, on a essayé de reproduire quelques bandes d'annonces pour vous rappelez des souvenirs et vous montrer à quel point c'est facile ! \n\nInstallez-vous et préparez vos pop-corn la séance va commencer ! 🍿",
+    "speakers": [
+      "Alves Mickaël",
+      "Antoine CARON"
+    ]
+  },
+  {
+    "id": "p77AbCE87X3s091WvRcb",
+    "title": "sécurité + open source = ❤️",
+    "categories": "Conception, architecture",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "12:35",
+    "day": "Vendredi",
+    "abstract": "Pour beaucoup de développeurs , l'open source ce sont des frameworks ou des libraries qui apportent des fonctionnalités.\nOn parle peu de l'open source dans la sécurité et quand on en parle c'est pour dire qu'il y a des vulnérabilités.\nMais dans le domaine de la sécurité, l'open source fait partie intégrante de la blue team comme de la red team. \nDans cette présentation, je vais vous présenter les grandes initiatives open source orientées sécurité pour vous aider à sécuriser vos développements. De l'Open source security foundation à L'OWASP en passant par MITRE et pleins d'autres. ",
+    "speakers": [
+      "Adrien PESSU"
+    ]
+  },
+  {
+    "id": "r1Bi03rwl8MUWDrFv2BW",
+    "title": "Comment hacker vos applications mobiles ?",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "16:45",
+    "day": "Jeudi",
+    "abstract": "Nous utilisons tous des applications mobiles pour payer, s'authentifier ou consulter nos comptes bancaires. Etant donné la sensibilité de ces actions, nous faisons confiance aux éditeurs que sont les banques ou le service publique. Mais peut-on hacker de telles applications ou les données qu'elles contiennent ?  Yes, we can !\nQuels sont ces moyens d'attaque ? Quels sont les risques et que pouvons-nous faire pour les réduire ?\n\nLa sécurité mobile est au cœur du métier de notre équipe car nous travaillons quotidiennement à protéger les applications mobiles de nos clients. Dans cette présentation nous nous focaliserons sur le pentest (la partie offensive de notre activité) en alliant explications et démonstrations.\nCette conférence s’adresse donc à un public technique assez large : des personnes intéressées par la sécurité des applications mobiles, que ce soit simplement pour se rendre compte des attaques possibles ou bien pour les mettre en pratique.\n\nNous allons utiliser un téléphone rooté, pour analyser une application Android et la modifier grâce au reverse engineering. Ensuite, nous approfondirons l’analyse avec l'utilisation d'outils permettant de modifier dynamiquement le comportement de l'application lors de son exécution. Enfin nous évoquerons les protections à mettre en place pour éviter ces attaques.\n\nA l'issu de notre présentation, vous aurez une meilleure vision du pentest mobile et les bases nécessaires pour utiliser les outils élémentaires de ce domaine.",
+    "speakers": [
+      "Amélie Avignon",
+      "Julien Jimenez"
+    ]
+  },
+  {
+    "id": "txsbzctz75bYv2CHpoit",
+    "title": "La sécurité, par où commencer ? Install party 🎉",
+    "categories": "Outillage, pratiques de développement",
+    "formats": "Hands-on (120min)",
+    "rooms": "TD1",
+    "day": "Vendredi",
+    "abstract": "Vous connaissez probablement les Linux [Install Parties](https://fr.wikipedia.org/wiki/Install_party) ? Alors, faisons de même avec la Sécurité, nous allons suivre l'approche [DevSecOps](https://davidaparicio.gitlab.io/website/files/devsecops_software_lifecycle.jpg) du [ministère américain de la défense](https://public.cyber.mil/devsecops/). Pour cela, rien de plus simple, venez avec votre ordinateur, votre projet opensource et vos outils (IDE, CI/CD). Après quelques slides de présentation, nous évolurons étape par étape dans la sécurisation de votre application. Si votre application est dockerisée, nous évonquerons les [bonnes pratiques de l'ANSSI](https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-au-deploiement-de-conteneurs-docker/) sur ce sujet. Nous verrons ainsi, à travers cet atelier, comment le GitOps/CI/CD permettent à nous et aux organisations d'améliorer notre posture face à la sécurité.",
+    "speakers": [
+      "David Aparicio"
+    ]
+  },
+  {
+    "id": "uYdE2DzqELvT4lEL9OAc",
+    "title": "Les post-mortems ou comment sortir heureux d’un carnage",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "14:30",
+    "day": "Jeudi",
+    "abstract": "Une fonctionnalité, un projet, une réunion, ça ne se passe pas toujours bien. Loin de là. C’est parfois même un carnage. 😱 Que fait-on dans ces cas-là ? Ça s’est terminé dans les larmes, le sang et la sueur mais qu’importe ! On met tout ça sous le tapis, c’est fini, on en parle plus. 🙈\n\nPour que cela recommence encore la prochaine fois ? Pour que tout le monde en souffre sans oser en parler ? Pas la peine !\n\nAlors on prend notre courage à deux mains, et on organise un POST-MORTEM. Mais qu'est-ce que c'est ? À quoi cela sert-il ? Et comment le mettre en place ? 🤔\n\nVous découvrirez dans ce talk les différentes étapes d'un post-mortem réussi et comment l'animer au mieux pour que chacun et chacune puisse être heureux.se après un tel carnage, sans pour autant être psychopathe ! 😌",
+    "speakers": [
+      "Lise Quesnel"
+    ]
+  },
+  {
+    "id": "uhJk2QvrixVicAGP5ZLF",
+    "title": "Mais au fait, que se passe-t-il quand je mets en ligne une vidéo ?",
+    "categories": "Front web",
+    "formats": "Conférence (50min)",
+    "rooms": "Pascal",
+    "times": "15:45",
+    "day": "Jeudi",
+    "abstract": "Pour proposer une expérience optimale de streaming vidéo, mettre un fichier `.mp4` sur un serveur web ne suffit pas.\n\nDans ce talk nous aborderons les grands challenges du streaming vidéo et les solutions techniques actuelles avec des exemples visuels et vulgarisés.\n\nVous découvrirez:\n- comment fonctionne un codec\n- la chaine Over The Top (OTT)\n- les différences entre le live et la VOD\n- comment la qualité de la vidéo se dégrade à cause d'une connexion lente\n- comment fonctionne la diffusion live à faible latence",
+    "speakers": [
+      "Antoine Wacheux"
+    ]
+  },
+  {
+    "id": "v1zt5Tr807oFayaQ722R",
+    "title": "Rendu 3D, la grande illusion expliquée",
+    "categories": "Alien",
+    "formats": "Quickie (15min)",
+    "rooms": "Lovelace",
+    "times": "13:00",
+    "day": "Vendredi",
+    "abstract": "Dans les jeux vidéo, le cinéma, l’industrie, la médecine ou encore l’urbanisme, la 3D est partout. Nous l’utilisons aujourd’hui pour nous divertir, apprendre, simuler les prochaines  catastrophes ou encore le fonctionnement de la voiture du futur. Demain, nous l’utiliserons pour explorer de nouvelles façons de communiquer, de construire et de créer. \n\nMais comment fonctionne ce rendu 3D qui donne vie à ces univers virtuels ? Quel lien y-a-t- il entre notre vision et notre carte graphique ? Sur un écran, qui n’est qu’une grille de pixels, la 3D existe-t-elle vraiment ? \n\nPour répondre à ces questions, nous allons voir les différentes étapes nécessaires qu’un ordinateur doit accomplir pour tromper notre cerveau. Grâce à une explication pas à pas, nous pourrons comprendre le fonctionnement de cette grande illusion.\n",
+    "speakers": [
+      "Thomas GUIBERT"
+    ]
+  },
+  {
+    "id": "vSHKQqPa25JkOZrGKfBa",
+    "title": "Entiers, virgules flottantes ou représentations exotiques : parlons d'élégance ",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": "Turing",
+    "times": "11:10",
+    "day": "Vendredi",
+    "abstract": "Manipuler des nombres dans notre code est un problème à peu près résolu et auquel nous n'accordons plus beaucoup d'importance. Et pourtant ! Prendre le temps de se pencher un peu sur les bases se révèle parfois très intéressant.\n\nNous vous proposons de revenir sur ce que signifie « représenter un nombre », pourquoi et comment nous faisons souvent des maths plus ou moins fausses, des concessions et avec plus ou moins de rigueur ou d'astuce selon que nous traitons du bancaire ou du jeu vidéo. Nous parlerons de solutions utilisées sur les cartes graphiques d'aujourd'hui mais aussi d'autres un peu oubliées telles que les nombres à virgule fixe ou les compteurs polynomiaux ... et de pourquoi un RotoZoom sur 486, c'était mathématiquement faux et beau à la fois.",
+    "speakers": [
+      "Fabien Trégan",
+      "Olivier PONCET"
+    ]
+  },
+  {
+    "id": "vlxojaVlUVeS6ZbF6dcm",
+    "title": "Android : ces petits détails qui font la différence",
+    "categories": "Mobile, Internet des objets",
+    "formats": "Quickie (15min)",
+    "rooms": "Pascal",
+    "times": "12:10",
+    "day": "Jeudi",
+    "abstract": "Avec plus de 32 versions d'API au compteur, de nombreuses fonctionnalités d'Android ne sont pas très connues, mais sont pourtant utiles pour les utilisateurs.\n\nDans ce rapide talk, nous essaierons d'en voir quelques unes pour rendre votre application non seulement unique, mais encore mieux intégrée au système !",
+    "speakers": [
+      "Edouard Marquez"
+    ]
+  },
+  {
+    "id": "xn10AFjRHyYPFPeVv69O",
+    "title": "Product owners et développeurs/développeuses, apprenons à dire \"Non ! \"",
+    "categories": "Humain & Tech",
+    "formats": "Quickie (15min)",
+    "rooms": "Lovelace",
+    "times": "12:10",
+    "day": "Vendredi",
+    "abstract": "Bien souvent les développeurs sont malheureusement mis en posture de simples exécutants sans être impliqués en amont dans la conception du produit. \nLes product owners ont eux aussi, souvent,  peu de pouvoir décisionnel dans la définition de la stratégie produit et pourtant ils sont, avec les développeurs, au coeur de la réalisation des projets. \nEt si l’équipe de réalisation challengeait plus les directions Produit pour qu’elles prennent conscience qu’une meilleure collaboration entre les équipes métiers et les équipes techniques et qu’impliquer davantage l’équipe technique dans la co-construction du produit sont l’une des clés de réussite d’un projet ? \n\nLes product owners et les développeurs ont plus de pouvoir qu’ils ne le pensent et peuvent inciter à leur niveau les organisations à travailler de manière plus collaborative, itérative et pragmatique !  \n",
+    "speakers": [
+      "Viet Hoang",
+      "Christelle Murté"
+    ]
+  },
+  {
+    "id": "zvFb4Oj4FfNaxbaWPHE9",
+    "title": "NoSQL et SQL, les grands esprits se rencontrent... enfin !",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Quickie (15min)",
+    "rooms": "Turing",
+    "times": "12:35",
+    "day": "Vendredi",
+    "abstract": "Quand le géant des bases NoSQL, MongoDB, rencontre le géant des bases SQL, Oracle, que se passe-t-il ?\n\nDans ce quicky, une application initialement développée pour MongoDB va se connecter à une base de données relationelle sans changer le code... et un nouveau monde de possibilités apparaît : faire du SQL sur des données JSON et relationnelles en même temps !\n\n\n",
+    "speakers": [
+      "Loïc LEFEVRE"
+    ]
+  },
+  {
+    "id": "keynoteOuverture1",
+    "title": "Keynote d'ouverture",
+    "formats": "Conférence (50min)",
+    "times": "09:00",
+    "day": "Jeudi",
+    "speakers": []
+  },
+  {
+    "id": "keynoteCloture1",
+    "title": "Keynote de clôture",
+    "formats": "Conférence (50min)",
+    "times": "17:40",
+    "day": "Jeudi",
+    "speakers": []
+  },
+  {
+    "id": "keynoteOuverture2",
+    "title": "Keynote d'ouverture",
+    "formats": "Conférence (50min)",
+    "times": "09:00",
+    "day": "Vendredi",
+    "speakers": []
+  },
+  {
+    "id": "keynoteCloture2",
+    "title": "Keynote de clôture",
+    "formats": "Conférence (50min)",
+    "times": "16:45",
+    "day": "Vendredi",
+    "speakers": []
+  }
+]
