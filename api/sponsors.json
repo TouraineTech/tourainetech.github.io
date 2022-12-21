@@ -1,5 +1,27 @@
 [
   {
+    "name": "ACENSI",
+    "id": "acensi",
+    "image": "acensi.png",
+    "link": "https://www.acensi.fr/page/accueil/fr_fr",
+    "linkedIn" : "https://www.linkedin.com/company/acensi/",
+    "instagram" : "https://instagram.com/acensisana?igshid=YmMyMTA2M2Y=",
+    "type": "gold",
+    "desc": "ACENSI, créée en 2003, est classée parmi les 100 plus belles entreprises de France depuis 2013, avec un chiffre d’affaires de 180 M€ et 1 200 collaborateurs. <br/><br/> Spécialisé dans le conseil en systèmes d'information, ACENSI accompagne ses clients dans leurs projets de transformation, depuis la définition des processus et l'analyse des besoins jusqu'au développement et à la maintenance de leur système d'information. Le groupe ACENSI est présent en France comme à l'international avec une expertise métier reconnue notamment dans les télécoms, l'assurance, la finance et l'énergie. <br/><br/>En 2015, création d'ACENSI Région Centre. Aujourd'hui nous sommes plus de 100 collaborateurs à intervenir chez les clients grands comptes de la région sur Orléans, Tours et Niort.<br/>Historiquement, nous sommes présents auprès de l'ensemble des acteurs de l'Assurance et de la Protection Sociale (Assureurs et Bancassureurs, Mutuelles, Groupes de Protection Sociale, Courtiers, Editeurs). <br/><br/> Nos équipes interviennent particulièrement sur les projets liés :<br/>Au métier : Support, Test/Recette, Pilote de Recette, AMOA, Business Analyst, Product Owner, Chef de Projet, Expert fonctionnel,<br/>A la technique: Ingénieur d'études, Analyste, Lead Dev, Test Manager, Support MCO.<br/><br/>  Chez ACENSI, vous bénéficiez d'un suivi individualisé avec votre manager. Des points individuels tout au long de l'année qui vous permettront grâce à nos solutions de formation certifiante de monter en compétences et d'atteindre votre objectif de carrière ! <br/><br/>  ACENSI c'est également une société proche de ses consultants, avec l'organisation d'événements (rencontre sportive, afterwork, meetup...) une fois par mois !",
+    "jobOffers": [
+      {
+        "id": "acensiOne",
+        "title": "Analyste Technico-Fonctionnel",
+        "pdf": "Analyste Technico-Fonctionnel.pdf"
+      },
+      {
+        "id": "acensiTwo",
+        "title": "Consultant senior C#.NET",
+        "pdf": "Developpeur Csharp.NET.pdf"
+      }
+    ]
+  },
+  {
     "name": "Polytech'Tours",
     "id": "polytechtours",
     "image": "logo-polytech.png",
@@ -14,5 +36,6 @@
     "link": "https://polytech.univ-tours.fr/",
     "type": "gold",
     "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
+
   }
 ]

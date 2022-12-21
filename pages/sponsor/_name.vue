@@ -33,15 +33,19 @@
             <img src="@/assets/img/facebook-official.svg" width="50px" alt="Facebook logo">
           </a>
         </div>
+        <div v-if="sponsor.instagram">
+          <a :href="sponsor.instagram" target="_blank">
+            <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo logo">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="job-offer-bloc description--container"
-         v-for="jobOffer in sponsor.jobOffers"
+    <div class="job-offer-bloc description--container">
+      <h3>Offres d'emploi</h3>
+      <a v-for="jobOffer in sponsor.jobOffers"
          :key="jobOffer.id"
-         :id="jobOffer.id"
-    >
-      <h3 v-html="jobOffer.title"></h3>
-      <article v-html="jobOffer.desc" />
+         :id="jobOffer.id" :href="`/sponsors/${sponsor.id}/${jobOffer.pdf}`" target="_blank" class="bite"
+      ><h3 v-html="jobOffer.title"></h3></a>
     </div>
   </div>
 </template>
