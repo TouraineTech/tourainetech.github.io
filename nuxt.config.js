@@ -77,7 +77,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/smoothscroll-polyfill.js', ssr: false },
     '~/plugins/vue-lightbox.client.js',
-//    '~/plugins/smartbanner.client.js'
+   '~/plugins/smartbanner.client.js'
   ],
   serverMiddleware: [],
 

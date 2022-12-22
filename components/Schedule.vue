@@ -42,7 +42,7 @@
         <div v-if="talk.day === day">
           <nuxt-link
             :to="`/talk/${talk.id}`"
-            :class="{ disabled: talk.id === 'keynoteOuverture' || talk.id === 'keynoteCloture' }"
+            :class="{ disabled: talk.id.includes('keynote')}"
           >
             <h4 class="schedule-title">
               {{ talk.title }}
