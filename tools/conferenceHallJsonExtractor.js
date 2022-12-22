@@ -44,9 +44,14 @@ function keynoteTalkFilter() {
 
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
+  const talksNeedToBeForceConfirmed = ['TuXPjtB8tUG4yaSnj6pn', 'RKdpxRlsknOPkd4Lazye', 'QL23LjbKcwLMnCVGYAn8', 'vWqRo4G2Zt787YV5hu0p', '9mx91dnbQegxuMZPrp8m', 'SltiD9i2aW0hxWmNWWop' ]
+  const talksNeedToBeForceRefused = ['vlxojaVlUVeS6ZbF6dcm', 'J7gGsPyGOyyIxADiHN04', ]
   const talks = conferenceHallDatas.talks.map(t => {
-    if(t.id === 'TuXPjtB8tUG4yaSnj6pn' || t.id === 'RKdpxRlsknOPkd4Lazye' || t.id === 'QL23LjbKcwLMnCVGYAn8') {
+    if(talksNeedToBeForceConfirmed.includes(t.id)) {
       t.state = 'confirmed';
+    }
+    if(talksNeedToBeForceRefused.includes(t.id)) {
+      t.state = 'refused'
     }
     return t
   })

@@ -44,8 +44,8 @@
       "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
-        "z40htDnoNBgrrGeOikcH3MaKimO2"
+        "z40htDnoNBgrrGeOikcH3MaKimO2",
+        "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2"
       ],
       "comments": "Merci pour le boulot d'organisation !",
       "language": "French",
@@ -143,6 +143,24 @@
       }
     },
     {
+      "id": "9mx91dnbQegxuMZPrp8m",
+      "title": "Développer et enseigner, une bonne idée ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Dans mon métier, en plus de développer, j'ai la chance de pouvoir enseigner de manière régulière.\n\nOn se souvient tous de cours qui nous ont plu et d'autres qu'on a détesté. Mais quand c'est à notre tour d'enseigner le développement, qu'est ce qu'il se passe ?\nAvec maintenant un peu de recul, on va parler ensemble de ce que j'aurai aimé savoir quand je me suis lancé. Qu'est ce que ça m'a demandé ? Qu'est ce que ça m'a apporté ? Les bons et les mauvais aspects. Un petit retour d'expérience en vrac d'une aventure pas si facile que ça.\n\nEt au final, est ce que ça a changé quelque chose dans mon métier de développeur ?",
+      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "3jAixvFWDwMpoISHbnkL3IqGNjP2"
+      ],
+      "comments": "Merci pour l'orga :)",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1665424129,
+        "_nanoseconds": 280000000
+      }
+    },
+    {
       "id": "DMbEta12hz6HS1I3rWym",
       "title": "Le DevOps expliqué à mon père, agriculteur à la retraite.",
       "state": "confirmed",
@@ -203,8 +221,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "3v72z5xWXfbL94DpKVI1snjC7Jr1",
-        "IPck78ZRNPaINM4qaagRuJnDZvR2"
+        "IPck78ZRNPaINM4qaagRuJnDZvR2",
+        "3v72z5xWXfbL94DpKVI1snjC7Jr1"
       ],
       "language": "French",
       "createTimestamp": {
@@ -230,24 +248,6 @@
       }
     },
     {
-      "id": "J7gGsPyGOyyIxADiHN04",
-      "title": "Ahead Of Time et Native avec Spring Boot 3.0",
-      "state": "accepted",
-      "level": "intermediate",
-      "abstract": "Après une phase d’expérimentation avec le projet Spring Native, l’équipe Spring contribue le support Ahead of Time (AOT) à Spring. Cette nouvelle fonctionnalité va permettre un support des applications natives avec GraalVM mais aussi améliorer l’efficacité des applications JVM classiques.\n\nPendant cette présentation, Stéphane va détailler l’état de l’art du support AOT dans Spring Framework 6.0 et Spring Boot 3.0:\n\n* l’architecture du moteur AOT\n* comment cette nouvelle infrastructure peut-être utilisée par des librairies\n* l’expérience développeur\n",
-      "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "hVZgJxVUtNZd7qiTYazHAdJC7uX2"
-      ],
-      "comments": "Hello,\n\nSpring Boot 3 est prévu pour fin Novembre et ce talk se propose de détailler sa nouvelle feature la plus importante. N'hésitez pas si vous avez d'autres idées ou besoins concernant une couverture de l'écosystème Spring.",
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1665673442,
-        "_nanoseconds": 468000000
-      }
-    },
-    {
       "id": "JPFFlmGXccsFCvny4idC",
       "title": "Venez faire un petit Tours de la programmation IoT 📟 ?",
       "state": "confirmed",
@@ -256,8 +256,8 @@
       "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "aHchGCaQStWhoqQtDKBjBpkEnLF2",
-        "dnahDuhtlpNv9d15xbIbpS896sC2"
+        "dnahDuhtlpNv9d15xbIbpS896sC2",
+        "aHchGCaQStWhoqQtDKBjBpkEnLF2"
       ],
       "comments": "Merci pour l'organisation 💪",
       "language": "French",
@@ -372,6 +372,25 @@
       "createTimestamp": {
         "_seconds": 1666511588,
         "_nanoseconds": 765000000
+      }
+    },
+    {
+      "id": "SltiD9i2aW0hxWmNWWop",
+      "title": "Si on aidait le capitaine Némo à classifier les monstres marins ?",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "Intelligence Artificielle, Machine Learning, Deep Learning, ...\nCes termes on les entend tous les jours mais au final que représentent-ils et surtout comment développe-t-on des applications basées sur ces notions ?\n\nDurant ce talk nous vous ferons découvrir le monde de la data et comment il est, avec les bons outils, facile de se lancer dans l'aventure de l'analyse de données et de la classification.\n\nCe talk permettra aux développeuses et développeurs de découvrir comment développer des applications apprenantes et montrera qu'il n'est pas nécessaire d'être un As du développement pour développer son propre algorithme de Machine Learning ou de Deep Learning.\nNous vous montrerons comment créer votre premier Notebook avec JupyterLab afin de vous accompagner dans vos premiers pas.\nCe sera l'occasion pour vous de plonger dans la découverte du monde sous-marin en développant un modèle permettant d'identifier et classifier les sons de mammifères marins.\n\nPour finir, nous verrons ensemble, avec [Streamlit](https://streamlit.io/), comment développer une application utilisant ce modèle.",
+      "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "vTyhTPQNomd3MwKBg1HAQmWfYW93",
+        "pNFXh8L1wecfg2Mdg1sFKJKrENV2"
+      ],
+      "comments": "Bonjour,\n\nEncore merci pour l'organisation de cette belle conférence.\n\nL'objectif de ce talk est de présenter l'éco-système de l'Intelligence Artificielle sous une autre forme que de longues formules mathématiques (même si il y en faudra 😉).\nLe talk se fera par un dialogue entre Eléa, spécialiste Intelligence Artificielle et Stéphane, développeur ne connaissant pas bien ce monde.\nC'est justement cette différence qui va alimenter le talk et les démos où Eléa explique les notions d'Intelligence Artificielle à Stéphane de manière simple et pragmatique pour que, lui, en tant que développeur il comprenne comment les implémenter.\n\nL'implémentation se fera au travers de Notebooks sous JupyterLabs.\n\nNous avons choisi le thème de la reconnaissance des sons des mammifères marins pour notre exemple. Ce thème a déjà été abordé par Eléa lors de la rédaction d'un [article](https://blog.ovhcloud.com/ai-notebooks-analyze-and-classify-sounds-with-ai/) sur le sujet.\n\nNous aimerions qu'à la fin de ce talk les participantes et participants puissent repartir en ayant : \n - appris simplement ce que représente réellement l'intelligence artificielle et plus particulièrement le machine learning et le deep learning\n - comment développer simplement ses premiers algorithmes d'apprentissage\n - créer un notebook auto-porteur\n\nComme vous l'avez vu dans nos bios nous travaillons pour OVHcloud, l'idée ici n'est pas de vendre nos produits d'IA mais vraiment de se centrer sur la vulgarisation de ces notions.\nA ce titre la démo est utilisable avec n'importe quel JupyterLab.\n\nEléa & Stéphane",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1665730461,
+        "_nanoseconds": 916000000
       }
     },
     {
@@ -775,8 +794,8 @@
       "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "eGA6OY0HEhP9d6WQ7HZtq054tW22",
-        "mODnTNL9onNOU1odUO9jb2tbpQj2"
+        "mODnTNL9onNOU1odUO9jb2tbpQj2",
+        "eGA6OY0HEhP9d6WQ7HZtq054tW22"
       ],
       "comments": "Merci pour l'organisation de Touraine Tech ! 👏🏼",
       "language": "French",
@@ -902,8 +921,8 @@
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "zQ0mhj745ZgtNDL3QL6pVT316ai2",
-        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2"
+        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+        "zQ0mhj745ZgtNDL3QL6pVT316ai2"
       ],
       "comments": "Hello la team orga !\n\nFabien et moi-même vous proposons notre talk un peu à part concernant la représentation des nombres en informatique. Nous y abordons de façon ludique différentes techniques pour représenter et exploiter les nombres en fonction des besoins et repartons même un peu dans le temps en proposant l'analyse d'un effet de démomaker, le rotozoom, et même comment l'Atari 2600 exploitait certains compteurs d'une façon très élégante.\n\nBon courage pour la sélection des talks ! \n\nOlivier & Fabien",
       "language": "French",
@@ -913,20 +932,21 @@
       }
     },
     {
-      "id": "vlxojaVlUVeS6ZbF6dcm",
-      "title": "Android : ces petits détails qui font la différence",
-      "state": "accepted",
-      "level": "intermediate",
-      "abstract": "Avec plus de 32 versions d'API au compteur, de nombreuses fonctionnalités d'Android ne sont pas très connues, mais sont pourtant utiles pour les utilisateurs.\n\nDans ce rapide talk, nous essaierons d'en voir quelques unes pour rendre votre application non seulement unique, mais encore mieux intégrée au système !",
-      "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
-      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "id": "vWqRo4G2Zt787YV5hu0p",
+      "title": "Du code SOLID comme un rock, c’est vraiment utile ?",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "En informatique, plus précisément en programmation orientée objet, on entend souvent parler de programmation *SOLID*.\n\n*SOLID* c’est un acronyme de 5 principes qui sont censés nous permettre d’avoir une architecture logicielle plus compréhensible et maintenable.\nC’est ce bon vieux Martin dans l’article _Design Principles and Design Patterns_ de 2000 qui évoque ces principes. (Ca fait donc déjà 20 ans qu’on en parle...)\n\nMais dans la vraie vie, est-ce que ce n’est pas surtout beaucoup de boulot pour pas grand-chose ?\nDans quelles situations SOLID est vraiment intéressant ? Est-ce que cela sert vraiment ?\n\nAprès avoir revu les bases du principe de SOLID, nous verrons ensemble, pour chacun des principes, un cas très imagé de l’avantage qu’il procure, et dans quelle situation ce principe s’avère utile.",
+      "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "speakers": [
-        "FskfRIn9B0V1rQ9rca4QERaw5Mq1"
+        "g9esU5Tes3Y6vkpbHLKwJLEwMBF2"
       ],
+      "comments": "2j ca va envoyer du lourd !",
       "language": "French",
       "createTimestamp": {
-        "_seconds": 1665468856,
-        "_nanoseconds": 55000000
+        "_seconds": 1665640237,
+        "_nanoseconds": 186000000
       }
     },
     {
@@ -938,8 +958,8 @@
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
       "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
       "speakers": [
-        "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
-        "k8jUygDtyJYlOdZoJeyzllRCc2B3"
+        "k8jUygDtyJYlOdZoJeyzllRCc2B3",
+        "FHxMDyr6LiRP3TDGOqKaRxlqLar1"
       ],
       "language": "French",
       "createTimestamp": {
@@ -1030,6 +1050,14 @@
       "github": "gmembre-zenika"
     },
     {
+      "uid": "z40htDnoNBgrrGeOikcH3MaKimO2",
+      "displayName": "Édouard Siha",
+      "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
+      "speakerReferences": "# Conférences déjà données\n## XebiCon\n* 2018 : [Conférence 45 min : Ce que l'histoire du métro parisien m'a enseigné sur la création logicielle](https://www.youtube.com/watch?v=8ARwQbdWARQ)\n* 2019 : [Quickie 15 min : What the UTC?](https://www.youtube.com/watch?v=oG7OlXwalcY)\n\n## BreizhCamp\n* 2019 : [University 2h : Chérie, j'ai mis du fonctionnel dans mon Java !](https://www.youtube.com/watch?v=_wUBpEb5xWs)\n* 2022 : [Tool in Action 25 min : Optimiser vos conteneurs Spring avec le Jar layering et la Modularité](https://www.youtube.com/watch?v=eCCeSlR4B88)\n\n## Touraine Tech\n* 2022 : Conférence 50 min : Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?",
+      "company": "WeScale",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c"
+    },
+    {
       "uid": "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
       "displayName": "Alexis \"Horgix\" Chotard",
       "bio": "# Bio\n\nAlexis \"Horgix\" Chotard is a french systems and software engineer currently working at Xebia (https://xebia.fr/).\n\nWith a software engineering background, and experiences more inclined toward systems and infrastructure, he naturally finds himself at home around \"DevOps\" topics.\nAlexis \"Horgix\" is eager to automate everything he can and currently loves working on various topics such as continuous integration and deployment, or design of dynamic architectures and applications integration into these. He's happy to face new challenges with the gain in popularity of containers and to look for evolutions of traditionnal workflows.\nOn his spare time, he also maintains a bunch of ArchLinux packages, contributes to Open Source projects and plays with Cloud Native solutions to be able to use them in real clients projects.\n\n# Speaker experience\n\n- \"An Ops among the Devs : a feedback from both sides\" - Talk at \"DevOps REX\", a french conference on feedback around DevOps (800 people) : https://www.youtube.com/watch?v=6KnKYHUjIjg\n\n- \"How I automated Photobox' incident management in 13h\" - Talk at Xebicon 2017 (80 people), composed at 70% of live demo : https://www.youtube.com/watch?v=nlEbgHKy6PY (sadly, the demo itself wasn't captured on the video)\n\n- \"Modern infrastructure, automation, whales and stuff\" - Talk at a french engineering school about evolution of infrastructure paradigms (50 people) : https://www.youtube.com/watch?v=iIBqoU-LdQQ\n\n- Trainer during Docker meetups including workshops in Paris, speaker at internal conferences at my company and clients, etc.\n",
@@ -1037,14 +1065,6 @@
       "photoURL": "https://avatars2.githubusercontent.com/u/4584397?v=4",
       "twitter": "@Horgix",
       "github": "Horgix"
-    },
-    {
-      "uid": "z40htDnoNBgrrGeOikcH3MaKimO2",
-      "displayName": "Édouard Siha",
-      "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
-      "speakerReferences": "# Conférences déjà données\n## XebiCon\n* 2018 : [Conférence 45 min : Ce que l'histoire du métro parisien m'a enseigné sur la création logicielle](https://www.youtube.com/watch?v=8ARwQbdWARQ)\n* 2019 : [Quickie 15 min : What the UTC?](https://www.youtube.com/watch?v=oG7OlXwalcY)\n\n## BreizhCamp\n* 2019 : [University 2h : Chérie, j'ai mis du fonctionnel dans mon Java !](https://www.youtube.com/watch?v=_wUBpEb5xWs)\n* 2022 : [Tool in Action 25 min : Optimiser vos conteneurs Spring avec le Jar layering et la Modularité](https://www.youtube.com/watch?v=eCCeSlR4B88)\n\n## Touraine Tech\n* 2022 : Conférence 50 min : Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?",
-      "company": "WeScale",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c"
     },
     {
       "uid": "IlVQ3DcdvccEIvzcYr75msiHJUo1",
@@ -1121,6 +1141,16 @@
       "photoURL": "https://lh3.googleusercontent.com/a/AEdFTp4hNweEZWlQbz_BeQ_hbZVI9YS9_zJk0LbM19RQ=s83-c-mo",
       "twitter": "mkassovix",
       "github": "kassovix"
+    },
+    {
+      "uid": "3jAixvFWDwMpoISHbnkL3IqGNjP2",
+      "displayName": "Jimmy Kasprzak",
+      "bio": "Consultant formateur à Zenika, je me passionne pour le monde du développement web depuis déjà quelques années. J'adore me confronter à de nouvelles problématiques, découvrir, apprendre et partager autour de moi avec des gens qui partage la même passion. Adepte de Javascript, Typescript, CSS et de tout ce qui fait le web d'aujourd'hui, n'hésitez pas à me retrouver sur les différents réseaux sociaux pour échanger. Quand je ne suis pas en train de parler web, vous me trouverez sûrement en train d'élever de me balader dans la faille de l'invocateur où de \"piloter\" sur Mariokart :)",
+      "speakerReferences": "- Human Talks Nantes 2020 - Démystifier l'utilisation du cache d'Apollo Graphql - https://www.youtube.com/watch?v=su14OOTeZ_g&ab_channel=HumanTalksNantes\n- NantesJs 2020 - Démystifier l'utilisation du cache d'Apollo Graphql - https://www.youtube.com/watch?v=xuzlD95v2Gk&ab_channel=NantesJS\n- NantesJs 2021 - Angular, Vue, React ... et si au final on s'en fichait ? - https://www.youtube.com/watch?v=WXCXDrVRO7Y&ab_channel=NantesJS\n- Devfest Nantes 2021 - Développer et enseigner, une bonne idée ? - https://www.youtube.com/watch?v=MyPYPbZwrlo&t=32s&ab_channel=GDGFrance\n- NantesJs 2022 - Standalone component, le futur d'Angular ?",
+      "company": "Zenika",
+      "photoURL": "https://lh3.googleusercontent.com/-1klXL98Tgmo/AAAAAAAAAAI/AAAAAAAAAI4/2MgtgWfi9Zw/photo.jpg",
+      "twitter": "@JimmyKasprzak",
+      "github": "Orodan"
     },
     {
       "uid": "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
@@ -1218,16 +1248,6 @@
       "github": "alexislozano"
     },
     {
-      "uid": "hVZgJxVUtNZd7qiTYazHAdJC7uX2",
-      "displayName": "Stéphane Nicoll",
-      "bio": "Stéphane has 20 years of experience in software engineering with a strong focus on API development on the JVM. After having spent more than a decade developing large scale Java enterprise applications in the geospatial, financial, or logistics sectors, he joins the core Spring Framework development team in 2014. Stéphane is now working on Spring Boot and is the lead of start.spring.io, a service that helps millions of users start their next applications.",
-      "speakerReferences": "Some of my [recorded talks](https://www.youtube.com/watch?v=tvgbpEw5QKE&list=PLR7XjYHBzYoNXBf7Inr_6cNfmezpLmHxg)\n\nI had the chance to give talks in the following countries: Belgium, France, Spain, Germany, The Netherlands, UK, Danemark, Finland, Sweden, Poland, Latvia, Ukraine, Belarus, Turkey, South Africa, Morocco, Japan, USA, Canada.\n\n",
-      "company": "VMware",
-      "photoURL": "https://avatars0.githubusercontent.com/u/490484?v=4",
-      "twitter": "snicoll",
-      "github": "snicoll"
-    },
-    {
       "uid": "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1",
       "displayName": "David Aparicio",
       "bio": "Passionate engineer in Computer Science, graduated INSA Lyon 2014, after two years spent at UNICAMP in Brazil, actively participates in the community, through Meetups and conferences. His motto: “No developer is supposed to ignore security”.\n\nIngénieur passionné en Informatique, diplômé INSA Lyon 2014, après deux années passées à UNICAMP au Brésil, participe activement à la communauté, à travers des Meetups et des conférences. Sa devise: « Nul développeur n'est censé ignorer la sécurité »",
@@ -1299,6 +1319,16 @@
       "photoURL": "https://avatars.githubusercontent.com/u/795995?v=4"
     },
     {
+      "uid": "pNFXh8L1wecfg2Mdg1sFKJKrENV2",
+      "displayName": "Stéphane Philippart",
+      "bio": "Développeur un jour, développeur toujours !\n\nDéveloppeur Java depuis de nombreuses d'années, j'ai la joie de connaître le JDK 1.1, JEE, Struts, ... et maintenant Spring (core, boot, batch), Angular, Groovy, ...\n\nAprès 14 années à être Architecte Logiciel j'ai pu me confronter à de nombreuses problématiques inhérentes aux systèmes d'information toujours complexes dans les grands groupes\n.\nCela m'a permis aussi de basculer dans le mode de l'automatisation avec la mise place de chaînes de CI/CD basées sur les pipelines as code de Jenkins.\n\nJ'accorde une grande importance dans l'approche humaine et notamment l'agilité (avec l'utilisation, dès que possible, du Framework SCRUM) mais aussi le DevOps. Deux notions qui me sont chères dans ma vision du métier de l'IT.\n\nToujours dans le partage et les relations avec les développeurs je suis devenu DevRel au sein d'OVHcloud. Comme on peut le voir régulièrement dans ce métier, l'un de mes objectifs principal : rendre les développeuses et développeurs heureux.\n\nJe suis le co-créateur du Meetup [TADx](https://www.tadx.fr) à Tours et met à jour un blog [blog](https://philippart-s.github.io/blog/) techno.",
+      "speakerReferences": "La liste des différentes conférences que j'ai donné est disponible ici : https://noti.st/philippart-s\n\nJ'écris des articles techniques ici : https://philippart-s.github.io/blog/ ",
+      "company": "OVHcloud",
+      "photoURL": "https://avatars0.githubusercontent.com/u/26224751?v=4",
+      "twitter": "@wildagsx",
+      "github": "philippart-s"
+    },
+    {
       "uid": "UgdeZxl1gBfhw0o8BepkqscBTiq2",
       "displayName": "Sara Attallah",
       "bio": "Sara est développeuse Front-End spécialisée en Vue JS.\nActuellement responsable du Front-End chez JOLIMOI, elle a commencé sa carrière dans des studios de design interactifs. \nElle se passionne pour les interfaces au cours de ses études en cinéma documentaire et s'épanouit dans le web depuis 6 ans.\n",
@@ -1322,7 +1352,7 @@
       "bio": "Passionné de développement depuis l’adolescence, Matthieu apporte son soutien à tous types de projets depuis plus de 15 ans, dans l’univers PHP et Open source.\n\nÉvoluant tantôt en agence sur des projets grands comptes, tantôt en startup sur des projets ambitieux, les problématiques de qualité et de disponibilité sont sa priorité.\n\nPrésent aux événements de la communauté PHP/Symfony, il y a de fortes chances de l’y croiser. Là, ou dans un concert de Tool !",
       "speakerReferences": "Speaker débutant 🐣🍼",
       "company": "JoliCode",
-      "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu2zQW3vst7vmTt1lPkXYRQnkTxHaEm0e4LCrI3qmA=s96-c",
+      "photoURL": "https://lh3.googleusercontent.com/a/AEdFTp6LeB4gBIS3J8mW6PvjIyEZh121oRQxMJB2husrNg=s96-c-rg-br100",
       "twitter": "WernerMatthieu",
       "github": "matthieuwerner"
     },
@@ -1543,6 +1573,15 @@
       "photoURL": "https://lh3.googleusercontent.com/a/ALm5wu3kTtFlhAEF4omcrRGNidrWWaaIlPPzXfdK_JDt=s96-c"
     },
     {
+      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+      "displayName": "Fabien Trégan",
+      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
+      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
+      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
+      "twitter": "@ftregan",
+      "github": "fabientregan"
+    },
+    {
       "uid": "zQ0mhj745ZgtNDL3QL6pVT316ai2",
       "displayName": "Olivier PONCET",
       "bio": "Geek, ex-nerd repenti, je code, je teste, je bricole, je soude et parfois fait sauter les plombs. CTO et spécialiste du magiciel, je suis aussi libriste dans l'âme et très impliqué dans le mouvement des logiciels libres.",
@@ -1553,33 +1592,24 @@
       "github": "@ponceto"
     },
     {
-      "uid": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-      "displayName": "Fabien Trégan",
-      "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
-      "speakerReferences": "Voir le menu a gauche ici :\n\n  http://www.tregan.fr/NoCV/conferences_donnees/conferences_donnees.html",
-      "photoURL": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
-      "twitter": "@ftregan",
-      "github": "fabientregan"
-    },
-    {
-      "uid": "FskfRIn9B0V1rQ9rca4QERaw5Mq1",
-      "displayName": "Edouard Marquez",
-      "bio": "Edouard est un développeur Android qui ne voyait que par les applications natives.\nMais un jour il a découvert qu'il était possible d'obtenir des applications multiplateforme avec un niveau de performances similaire...\n\nDepuis il ne cesse de crier son amour pour Flutter, en ayant notamment cofondé le meetup Flutter à Paris.\nIl est également l'un des co-organisateurs de la Flutter Conf Paris 2020, qui sera la première conférence francophone entièrement dédiée à Flutter.",
-      "speakerReferences": "I Code Java Johannesburg 2019\nDevfest Lille 2019\nMeetup GDG Nantes\nMeetup GDG Tours\nMeetup GDG Lille Android\nMeetup GDG Nice\nNombreuses participations au Flutter Paris",
-      "company": "Freelance",
-      "photoURL": "https://lh3.googleusercontent.com/-mEUIVk33oM0/AAAAAAAAAAI/AAAAAAABPEk/iY71eaEL1qc/photo.jpg",
-      "twitter": "g123k",
-      "github": "g123k"
-    },
-    {
-      "uid": "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
-      "displayName": "Christelle Murté",
-      "photoURL": "https://lh5.googleusercontent.com/-IiaK2sZPRWA/AAAAAAAAAAI/AAAAAAAAAAQ/2FzPc3t8Ipk/photo.jpg"
+      "uid": "g9esU5Tes3Y6vkpbHLKwJLEwMBF2",
+      "displayName": "Quentin KLEIN",
+      "bio": "Dev Android, puis Flutter, puis Lead Tech, j'ai une admiration pour les belles applications et les API bien faites.\n\nAu jour le jour, j'aime apprendre des autres et partager ce que j'apprends.\n\nHa, et aussi j'aime challenger les organisations en place et défendre l'agilité !",
+      "speakerReferences": "# Confs\n\n- [Devoxx 2016 : La voiture connectée - un IoT au potentiel immense](https://www.youtube.com/watch?v=d8n92LENX9Y)\n\n# Meetups\n\n- [Meetup IoT #3 - Xee, boîtier et applications pour la voiture connectée.](https://www.youtube.com/watch?v=RBHA_a902wM)\n- Et d'autres sur le même thème mais non filmés. ",
+      "company": "La Mobilery",
+      "photoURL": "https://lh5.googleusercontent.com/-s8ZeRNMdMUY/AAAAAAAAAAI/AAAAAAAAIAg/tMefLw4P54Y/photo.jpg",
+      "twitter": "kleinquentin",
+      "github": "quentin7b"
     },
     {
       "uid": "k8jUygDtyJYlOdZoJeyzllRCc2B3",
       "displayName": "Viet Hoang",
       "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiGnNQMPbjBVn_aqM0kQpku3I9VwqCy935wwrQvmw=s96-c"
+    },
+    {
+      "uid": "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
+      "displayName": "Christelle Murté",
+      "photoURL": "https://lh5.googleusercontent.com/-IiaK2sZPRWA/AAAAAAAAAAI/AAAAAAAAAAQ/2FzPc3t8Ipk/photo.jpg"
     },
     {
       "uid": "9XiNHiC9vzfHLs7bDN3B9XS62Fp1",
@@ -1593,20 +1623,20 @@
   ],
   "categories": [
     {
-      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
-      "name": "Design, UI, UX"
+      "name": "Design, UI, UX",
+      "id": "46293012-ca7f-5197-8c58-69bc9a6c7a4b"
     },
     {
-      "id": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
-      "name": "Front web"
+      "name": "Front web",
+      "id": "78e751d2-e8f0-5aca-9e0e-373fc79208c3"
     },
     {
-      "name": "Backend, Cloud, Big Data",
-      "id": "87b16802-9e01-5a51-910f-71141789a8b8"
+      "id": "87b16802-9e01-5a51-910f-71141789a8b8",
+      "name": "Backend, Cloud, Big Data"
     },
     {
-      "name": "Mobile, Internet des objets",
-      "id": "ef452c33-83cf-5472-8e72-acd374e24b58"
+      "id": "ef452c33-83cf-5472-8e72-acd374e24b58",
+      "name": "Mobile, Internet des objets"
     },
     {
       "id": "63920d15-9b86-58e5-875c-441301f6dbb9",
@@ -1617,12 +1647,12 @@
       "name": "Outillage, pratiques de développement"
     },
     {
-      "id": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
-      "name": "Humain & Tech"
+      "name": "Humain & Tech",
+      "id": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa"
     },
     {
-      "name": "Alien",
-      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9"
+      "id": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "name": "Alien"
     }
   ],
   "formats": [
@@ -1635,13 +1665,13 @@
       "name": "Conférence (50min)"
     },
     {
-      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
-      "name": "Hands-on (120min)"
+      "name": "Hands-on (120min)",
+      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b"
     },
     {
+      "id": "fc5112e0-a2c3-54e6-8ca9-9dd622ca9b8b",
       "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakers femme et/ou issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
-      "name": "Speaker débutant",
-      "id": "fc5112e0-a2c3-54e6-8ca9-9dd622ca9b8b"
+      "name": "Speaker débutant"
     }
   ]
 }
