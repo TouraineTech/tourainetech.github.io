@@ -5,7 +5,7 @@ export default {
     eventEdition: '23',
     isRegisterOpen: true,
     isSoldOut: true,
-    isScheduleOnline: false,
+    isScheduleOnline: true,
     isEditionOpen: true,
     isVideoOnline: false,
     nbEdition: 5,

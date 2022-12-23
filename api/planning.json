@@ -1,1 +1,777 @@
-[]
+[
+  {
+    "id": "07vraokDo3cMoivHt8SD",
+    "title": "Edge AI : allez viens, on embarque notre intelligence artificielle !",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      5
+    ],
+    "day": 1
+  },
+  {
+    "id": "0BCYtAIapzP7FOTAoaih",
+    "title": "La contribution aux communs numériques",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      9
+    ],
+    "day": 1
+  },
+  {
+    "id": "3vity7gCVOrIPLbr5anu",
+    "title": "Rust sans (trop) roter du sang",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      13
+    ],
+    "day": 1
+  },
+  {
+    "id": "4ZuVgkJsSPF3AgU7aSBn",
+    "title": "Comment gérer des journées de 35h ?",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      3
+    ],
+    "times": [
+      9
+    ],
+    "day": 2
+  },
+  {
+    "id": "6hVZGT7mDHObwqc7iVk4",
+    "title": "Sensibilisation aux problématiques des systèmes distribués",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      5
+    ],
+    "day": 1
+  },
+  {
+    "id": "82PVJ8pWAf3XUBuobgt1",
+    "title": "Ne jette pas ton ordi,  ... répare le futur ! 🌍",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      3
+    ],
+    "times": [
+      7
+    ],
+    "day": 1
+  },
+  {
+    "id": "8Y1SA6Pfjj2LIrbUa037",
+    "title": "Apprenez Rust pas à pas en construisant une application en ligne de commande",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+    "rooms": [
+      4
+    ],
+    "times": [
+      3,
+      4,
+      5
+    ],
+    "day": 1
+  },
+  {
+    "id": "9mUt36g9CuvlJdvGLDVS",
+    "title": "J'écris mes CLI en Java, pas vous ?",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      13
+    ],
+    "day": 2
+  },
+  {
+    "id": "9mx91dnbQegxuMZPrp8m",
+    "title": "Développer et enseigner, une bonne idée ?",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      7
+    ],
+    "day": 1
+  },
+  {
+    "id": "DMbEta12hz6HS1I3rWym",
+    "title": "Le DevOps expliqué à mon père, agriculteur à la retraite.",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      13
+    ],
+    "day": 2
+  },
+  {
+    "id": "ESyHvSv5gDz2deOwaFkZ",
+    "title": "On peut écouter 1 fois un utilisateur, ou écouter 1 milliard d'utilisateurs.",
+    "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      19
+    ],
+    "day": 1
+  },
+  {
+    "id": "H3Z9ga1ideEdq1Q2UDOa",
+    "title": "Live-coding, Space invaderes en vanilla JS en partant de zéro",
+    "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      5
+    ],
+    "day": 2
+  },
+  {
+    "id": "HWmC1kHb5oxthqwbyrXW",
+    "title": "Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      13
+    ],
+    "day": 2
+  },
+  {
+    "id": "IezpFmDwL1no9qNdYQIG",
+    "title": "Développer publiquement un site en milieu hostile : retour d'expérience",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      11
+    ],
+    "day": 2
+  },
+  {
+    "id": "JPFFlmGXccsFCvny4idC",
+    "title": "Venez faire un petit Tours de la programmation IoT 📟 ?",
+    "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+    "rooms": [
+      4
+    ],
+    "times": [
+      13,
+      14,
+      15
+    ],
+    "day": 2
+  },
+  {
+    "id": "MktwHZRwKOdE031ba80B",
+    "title": "Lost in abstraction",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      11
+    ],
+    "day": 2
+  },
+  {
+    "id": "OIJZAyTGJRnFpG7F1J77",
+    "title": "User vs Human Experience",
+    "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      7
+    ],
+    "day": 1
+  },
+  {
+    "id": "PZhCax4A1hSIflgKWUGS",
+    "title": "As a UI designer, how to mess up your project? ",
+    "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      13
+    ],
+    "day": 1
+  },
+  {
+    "id": "QL23LjbKcwLMnCVGYAn8",
+    "title": "DALL-E V2 -  un robot et un peintre font de la génération d'image par IA ",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      15
+    ],
+    "day": 2
+  },
+  {
+    "id": "RKdpxRlsknOPkd4Lazye",
+    "title": "[Conférence dessinée] Regard scientifique sur l'artisanat logiciel",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      3
+    ],
+    "day": 1
+  },
+  {
+    "id": "RSFB4Oq1k0AafqRJeZ4z",
+    "title": "(Et si on apprenait à) Apprendre et partager autrement",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      5
+    ],
+    "day": 2
+  },
+  {
+    "id": "SltiD9i2aW0hxWmNWWop",
+    "title": "Si on aidait le capitaine Némo à classifier les monstres marins ?",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [1],
+    "times": [17],
+    "day": 2
+  },
+  {
+    "id": "TBitgNi5VAJ7maDvY2ZC",
+    "title": "Storybook, une vraie bonne idée ?",
+    "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      7
+    ],
+    "day": 2
+  },
+  {
+    "id": "TuXPjtB8tUG4yaSnj6pn",
+    "title": "Le guide 2023 du recrutement technique",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      3
+    ],
+    "day": 2
+  },
+  {
+    "id": "TvfUGgFtJJ5z8zp5KcLB",
+    "title": "Web dans le cloud, piloter ses décisions par les coûts",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      15
+    ],
+    "day": 2
+  },
+  {
+    "id": "TzYjfulaUQkXB1Stkrer",
+    "title": "Apprenons ensemble grâce aux bookclubs",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      7
+    ],
+    "day": 2
+  },
+  {
+    "id": "Uix3DyDf349JzrHJptTl",
+    "title": "H@ck your house!",
+    "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      17
+    ],
+    "day": 1
+  },
+  {
+    "id": "UjwT58pQSRJUK8aLYfna",
+    "title": "Décommissionnement progressif de code legacy à l’aide d’AST",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      3
+    ],
+    "day": 2
+  },
+  {
+    "id": "VaECb4MkKg6Si1uzVFK2",
+    "title": "Facilitez-vous les releases, utilisez semantic release (et donnez du sens à vos commits)",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      15
+    ],
+    "day": 2
+  },
+  {
+    "id": "Y3UvX1gfVgRQtncTbfSa",
+    "title": "Lego Flow Game : le Waterfall, le Scrum et le Kanban tu différencieras !",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+    "rooms": [
+      4
+    ],
+    "times": [
+      13,
+      14,
+      15
+    ],
+    "day": 1
+  },
+  {
+    "id": "Yta40p2efXdTF7BvmnJ9",
+    "title": "Améliorer les performances de son backend",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      3
+    ],
+    "times": [
+      9
+    ],
+    "day": 1
+  },
+  {
+    "id": "cTeyrIyyeQTdDc7x2kLK",
+    "title": "Loi de Conway : Lorsque votre conception produit se fâche avec votre organisation",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      13
+    ],
+    "day": 1
+  },
+  {
+    "id": "cqhVPs2RgbRvlBNQZyN5",
+    "title": "Oh crab ! My watch speaks Rust 🦀",
+    "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      3
+    ],
+    "day": 2
+  },
+  {
+    "id": "eMlIQizK95KpLycTP70y",
+    "title": "Féminisation dans la tech : la communication, ou l'échec de tout un secteur",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      5
+    ],
+    "day": 1
+  },
+  {
+    "id": "fADNfLumOONTJin3kcOQ",
+    "title": "J’ai expliqué notre métier à un pote âgé 🧑‍🌾🥕 ",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      11
+    ],
+    "day": 1
+  },
+  {
+    "id": "hRCioWdYNuGOTw59bLm9",
+    "title": "Vous allez finir par les aimer les `Optionals`???",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      9
+    ],
+    "day": 1
+  },
+  {
+    "id": "i8RUBCZSCXX1EpP5Ce3T",
+    "title": "Corn Hole 2 Turbo : Mes premiers pas dans l'embarqué",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      19
+    ],
+    "day": 1
+  },
+  {
+    "id": "iqyLnwdkN4a8O5WcpV7i",
+    "title": "10+ ans de développement Android: La Rétrospective",
+    "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      15
+    ],
+    "day": 1
+  },
+  {
+    "id": "kgKT9TgmJggaYZ5VVn9a",
+    "title": "Wolfy - de 2000 à 20 000 joueurs connectés ",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      17
+    ],
+    "day": 1
+  },
+  {
+    "id": "l23b0hpll77Fk1LNLIWN",
+    "title": "Tester pour ne plus douter : à la recherche du test idéal",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      11
+    ],
+    "day": 1
+  },
+  {
+    "id": "mAzMafjZzEjUvK5w8hct",
+    "title": "Tester vos microservices sans peine avec Micronaut Test Resources",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      15
+    ],
+    "day": 1
+  },
+  {
+    "id": "mR9GTCYeKujpZ6YkFr0y",
+    "title": "Les lois universelles de la performance",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      17
+    ],
+    "day": 2
+  },
+  {
+    "id": "neprDB8HcIu0LJn0XexY",
+    "title": "Démystifions le CSS",
+    "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      3
+    ],
+    "times": [
+      11
+    ],
+    "day": 1
+  },
+  {
+    "id": "omWyNKhCM0MT1GwS9wWG",
+    "title": "Votre équipe de développement à l'ère post-covid",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      3
+    ],
+    "day": 1
+  },
+  {
+    "id": "opMtA5pHQNvWz9AEJd6F",
+    "title": "Remotion : le 7ème art à porté de composants web et d'API 🎬",
+    "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      17
+    ],
+    "day": 2
+  },
+  {
+    "id": "p77AbCE87X3s091WvRcb",
+    "title": "sécurité + open source = ❤️",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      2
+    ],
+    "times": [
+      9
+    ],
+    "day": 2
+  },
+  {
+    "id": "r1Bi03rwl8MUWDrFv2BW",
+    "title": "Comment hacker vos applications mobiles ?",
+    "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      19
+    ],
+    "day": 1
+  },
+  {
+    "id": "txsbzctz75bYv2CHpoit",
+    "title": "La sécurité, par où commencer ? Install party 🎉",
+    "categories": "18c44d7d-ed48-5dde-94ba-8b4477a84db3",
+    "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+    "rooms": [
+      4
+    ],
+    "times": [
+      3,
+      4,
+      5
+    ],
+    "day": 2
+  },
+  {
+    "id": "uYdE2DzqELvT4lEL9OAc",
+    "title": "Les post-mortems ou comment sortir heureux d’un carnage",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      15
+    ],
+    "day": 1
+  },
+  {
+    "id": "uhJk2QvrixVicAGP5ZLF",
+    "title": "Mais au fait, que se passe-t-il quand je mets en ligne une vidéo ?",
+    "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      17
+    ],
+    "day": 1
+  },
+  {
+    "id": "v1zt5Tr807oFayaQ722R",
+    "title": "Rendu 3D, la grande illusion expliquée",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      3
+    ],
+    "times": [
+      11
+    ],
+    "day": 2
+  },
+  {
+    "id": "vSHKQqPa25JkOZrGKfBa",
+    "title": "Entiers, virgules flottantes ou représentations exotiques : parlons d'élégance ",
+    "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1
+    ],
+    "times": [
+      5
+    ],
+    "day": 2
+  },
+  {
+    "id": "vWqRo4G2Zt787YV5hu0p",
+    "title": "Du code SOLID comme un rock, c’est vraiment utile ?",
+    "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      2
+    ],
+    "times": [
+      3
+    ],
+    "day": 1
+  },
+  {
+    "id": "xn10AFjRHyYPFPeVv69O",
+    "title": "Product owners et développeurs/développeuses, apprenons à dire \"Non ! \"",
+    "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      3
+    ],
+    "times": [
+      7
+    ],
+    "day": 2
+  },
+  {
+    "id": "zvFb4Oj4FfNaxbaWPHE9",
+    "title": "NoSQL et SQL, les grands esprits se rencontrent... enfin !",
+    "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+    "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+    "rooms": [
+      1
+    ],
+    "times": [
+      9
+    ],
+    "day": 2
+  },
+  {
+    "id": "keynoteOuverture1",
+    "title": "Keynote d'ouverture",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      1
+    ],
+    "day": 1
+  },
+  {
+    "id": "keynoteCloture1",
+    "title": "Keynote de clôture",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      21
+    ],
+    "day": 1
+  },
+  {
+    "id": "keynoteOuverture2",
+    "title": "Keynote d'ouverture",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      1
+    ],
+    "day": 2
+  },
+  {
+    "id": "keynoteCloture2",
+    "title": "Keynote de clôture",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "rooms": [
+      1,
+      2,
+      3
+    ],
+    "times": [
+      19
+    ],
+    "day": 2
+  }
+]

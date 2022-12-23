@@ -28,7 +28,7 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
 }
 
 async function retrieveData(apiKey) {
-  const response = await fetch(`https://conference-hall.io/api/v1/event/tREIbPYCGIKKca55XFzh?key=${apiKey}`);
+  const response = await fetch(`https://conference-hall.io/api/v1/event/3lWSdH0pfZkHEAL7RWSJ?key=${apiKey}`);
   const json = await response.json();
   return json;
 }
@@ -39,16 +39,25 @@ function talksFilter(...states) {
 
 
 function keynoteTalkFilter() {
-  return ({id}) => id !== '5dpfmCYFArWV96iuHRld';
+  return ({id}) => id !== 'w96GMrchHy0os6sN5LRD' && id !== '5NCjyjA6K1EsbxtW2Mn6';
 }
 
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
-
-  const acceptedTalks = conferenceHallDatas.talks
-    .filter(talksFilter('accepted'));
-
-  const confirmedTalksSpeakersId = conferenceHallDatas.talks
+  const talksNeedToBeForceConfirmed = ['TuXPjtB8tUG4yaSnj6pn', 'RKdpxRlsknOPkd4Lazye', 'QL23LjbKcwLMnCVGYAn8', 'vWqRo4G2Zt787YV5hu0p', '9mx91dnbQegxuMZPrp8m', 'SltiD9i2aW0hxWmNWWop' ]
+  const talksNeedToBeForceRefused = ['vlxojaVlUVeS6ZbF6dcm', 'J7gGsPyGOyyIxADiHN04', ]
+  const talks = conferenceHallDatas.talks.map(t => {
+    if(talksNeedToBeForceConfirmed.includes(t.id)) {
+      t.state = 'confirmed';
+    }
+    if(talksNeedToBeForceRefused.includes(t.id)) {
+      t.state = 'refused'
+    }
+    return t
+  })
+  const confirmedTalks = talks
+    .filter(talksFilter('confirmed'));
+  const confirmedTalksSpeakersId = talks
     .filter(talksFilter('confirmed'))
     .map(({speakers}) => {
       return speakers
@@ -58,32 +67,43 @@ function getTalks(conferenceHallDatas) {
   console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
   console.log(`confirmed speaker count : ${confirmedTalksSpeakersId.length}`);
 
-  const talks = conferenceHallDatas.talks
+  const allTalks = talks
     .map((
       {organizersThread, rating, loves, hates, ...datas}) => {
       return {...datas};
     })
     .filter(talksFilter('confirmed','accepted'))
-    .filter(keynoteTalkFilter() );
+    .filter(keynoteTalkFilter());
 
-  talks.push(
+  allTalks.push(
     {
-      "id": "keynoteOuverture",
+      "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     },
     {
-      "id": "keynoteCloture",
+      "id": "keynoteCloture1",
+      "title": "Keynote de clôture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "id": "keynoteOuverture2",
+      "title": "Keynote d'ouverture",
+      "speakers": [],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+    },
+    {
+      "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "speakers": [],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
     }
   );
+  console.log(`confirmed talks count : ${confirmedTalks.length}/${allTalks.length}`);
 
-  console.log(`confirmed talks count : ${talks.length}/${acceptedTalks.length+talks.length}`);
-
-  return {talks, acceptedTalks};
+  return {talks: allTalks, confirmedTalks};
 }
 
 function getSpeakers(conferenceHallDatas, talks) {

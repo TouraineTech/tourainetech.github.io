@@ -10,6 +10,9 @@
         <SpeakerBloc :speaker="speaker"></SpeakerBloc>
       </nuxt-link>
     </div>
+    <div class="time--container">
+      {{ talk.day }} à {{ talk.times }}, Salle {{ talk.rooms }}
+    </div>
     <div class="description--container">
       <p v-html="abstractHTML"></p>
       <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
@@ -62,15 +65,18 @@ export default {
       return converter.makeHtml(this.talk.abstract);
     },
     speakers() {
-      let speakers = this.$store.getters.speakers.filter(({ uid }) =>
+      return this.$store.getters.speakers.filter(({uid}) =>
         this.talk.speakers.includes(uid)
       );
-      return speakers;
     }
   },
   asyncData({ store, params }) {
+    const times = store.getters.times
+    const rooms = store.getters.rooms
+    let talk = store.getters.talks.filter(({ id }) => id === params.id)[0]
+    talk = {...talk, times: times[talk.times].time.replace(':','h'), day: talk.day === 1 ? 'Jeudi' : 'Vendredi', rooms: rooms[talk.rooms - 1] }
     return {
-      talk: store.getters.talks.filter(({ id }) => id === params.id)[0]
+      talk
     };
   },
   head() {
@@ -145,6 +151,18 @@ div.description--container {
   text-align: left;
   background-color: lighten($color-secondary, 20%);
   padding: 2rem;
+  margin-top: 2rem;
+
+  p {
+    line-height: 32px;
+  }
+}
+
+div.time--container {
+  text-align: center;
+  border-radius: 10px;
+  background-color: lighten($color-secondary, 20%);
+  padding: 1rem;
   margin-top: 2rem;
 
   p {
