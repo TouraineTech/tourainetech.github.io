@@ -37,5 +37,16 @@
     "type": "gold",
     "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de treize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
 
+  },
+  {
+    "name": "La Mobilery",
+    "id": "la-mobilery",
+    "image": "logo-la-mobilery.jpeg",
+    "link": "https://www.lamobilery.fr/",
+    "linkedIn" :"https://fr.linkedin.com/company/lamobilery",
+    "twitter" : "https://twitter.com/lamobilery",
+    "type": "gold",
+    "desc": "Tu ne connais pas encore La Mobilery ? Depuis 12 ans, on crée des apps mobiles et web pour nos clients.<br>Depuis 12 ans, on le fait avec l’amour du beau code et en mettant toujours l’humain au centre de notre activité.<br>La Mobilery a été créée à Lille en 2010 et est présente à Tours depuis 2017 et à Paris depuis 2019.<br>Plus qu’une ESN, nous sommes une Néo ESN. Notre but : faire grandir nos collaborateurs et collaboratrices dans un cadre à la fois plaisant et prônant l’excellence. Nous accompagnons nos clients en régie (remote ou sur place) comme en mode projet.<br>Société à mission, management libéré, politique carbone neutre, mécénat de compétences techniques sont autant d’axes qui nous permettent d’atteindre nos objectifs ambitieux et porteurs de sens.<br>Nous sommes heureux de soutenir Touraine Tech en tant que sponsor depuis deux ans, et pour encore une belle aventure.<br>Nous continuons à grandir et à recruter, alors n'hésitez pas à passer nous voir pour discuter !",
+    "jobOffers": []
   }
 ]
