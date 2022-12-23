@@ -74,7 +74,7 @@ export default {
     const times = store.getters.times
     const rooms = store.getters.rooms
     let talk = store.getters.talks.filter(({ id }) => id === params.id)[0]
-    talk = {...talk, times: times[talk.times].time.replace(':','h'), day: talk.day === 1 ? 'Jeudi' : 'Vendredi', rooms: rooms[talk.rooms - 1] }
+    talk = {...talk, times: times[talk.times[0]].time.replace(':','h'), day: talk.day === 1 ? 'Jeudi' : 'Vendredi', rooms: rooms[talk.rooms - 1] }
     return {
       talk
     };
