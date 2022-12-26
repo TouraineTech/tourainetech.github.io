@@ -59,5 +59,16 @@
     "type": "gold",
     "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br> <br>Après plus de 10 ans d’expérience, l’équipe de développeurs d’applications web et mobiles de Code-Troopers compte aujourd’hui 15 collaborateurs. Des start-ups aux grands groupes, nous accompagnons les entreprises tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.",
     "jobOffers": []
+  },
+  {
+    "name": "Elastic",
+    "id": "elastic",
+    "image": "elastic.svg",
+    "link": "https://www.elastic.co/fr/",
+    "linkedIn" :"https://fr.linkedin.com/company/elastic-co",
+    "twitter" : "https://twitter.com/elasticfr",
+    "type": "gold",
+    "desc": "",
+    "jobOffers": []
   }
 ]
