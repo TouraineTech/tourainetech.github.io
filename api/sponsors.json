@@ -59,5 +59,15 @@
     "type": "gold",
     "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br> <br>Après plus de 10 ans d’expérience, l’équipe de développeurs d’applications web et mobiles de Code-Troopers compte aujourd’hui 15 collaborateurs. Des start-ups aux grands groupes, nous accompagnons les entreprises tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.",
     "jobOffers": []
+  },
+  {
+    "name": "Cat-Amania",
+    "id": "cat-amania",
+    "image": "catamania.png",
+    "link": "https://www.cat-amania.com/",
+    "linkedIn" :"https://www.linkedin.com/in/cat-amania-agence-tours-01a003224/",
+    "type": "bronze",
+    "desc": "Cat-Amania est une société de conseil et de services numériques créée pour réaliser la transformation digitale de ses clients. Elle se fonde sur ses expertises métier, technique et méthodologique pour accompagner ses clients dans leurs grands projets de transformation. <br><br> Cat-Amania définit et participe à l’évolution du système d’information de ses clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, Cat-Amania est en mesure de répondre aux besoins de ses clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage.",
+    "jobOffers": []
   }
 ]
