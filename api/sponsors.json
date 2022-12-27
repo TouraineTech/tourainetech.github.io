@@ -59,7 +59,17 @@
     "type": "gold",
     "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br> <br>Après plus de 10 ans d’expérience, l’équipe de développeurs d’applications web et mobiles de Code-Troopers compte aujourd’hui 15 collaborateurs. Des start-ups aux grands groupes, nous accompagnons les entreprises tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.",
     "jobOffers": []
-  },
+  },{
+  "name": "OVHcloud",
+  "id": "OVHcloud",
+  "image": "ovh.png",
+  "link": "https://www.ovhcloud.com/fr/",
+  "linkedIn" :"https://www.linkedin.com/company/ovhgroup/",
+  "twitter" : "https://twitter.com/OVHcloud_FR",
+  "type": "gold",
+  "desc": "OVHcloud est un acteur mondial et le leader européen du Cloud opérant plus de 400 000 serveurs dans 33 datacenters sur 4 continents. Depuis 20 ans, le Groupe s’appuie sur un modèle intégré qui lui confère la maîtrise complète de sa chaîne de valeur : de la conception de ses serveurs à la construction et au pilotage de ses datacenters en passant par l’orchestration de son réseau de fibre optique. Cette approche unique lui permet de couvrir en toute indépendance l’ensemble des usages de ses 1,6 million de clients dans plus de 140 pays. OVHcloud propose aujourd’hui des solutions de dernière génération alliant performance, prédictibilité des prix et une totale souveraineté sur leurs données pour accompagner leur croissance en toute liberté.",
+  "jobOffers" : []
+},
   {
     "name": "Néo-Soft",
     "id": "Neo-soft",
