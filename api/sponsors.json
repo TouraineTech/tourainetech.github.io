@@ -70,6 +70,35 @@
     "linkedIn" : "https://worldline.com/linkedin",
     "instagram" : "https://www.instagram.com/worldline/",
     "twitter" : "https://twitter.com/WorldlineGlobal",
+  },{
+  "name": "OVHcloud",
+  "id": "OVHcloud",
+  "image": "ovh.png",
+  "link": "https://www.ovhcloud.com/fr/",
+  "linkedIn" :"https://www.linkedin.com/company/ovhgroup/",
+  "twitter" : "https://twitter.com/OVHcloud_FR",
+  "type": "gold",
+  "desc": "OVHcloud est un acteur mondial et le leader européen du Cloud opérant plus de 400 000 serveurs dans 33 datacenters sur 4 continents. Depuis 20 ans, le Groupe s’appuie sur un modèle intégré qui lui confère la maîtrise complète de sa chaîne de valeur : de la conception de ses serveurs à la construction et au pilotage de ses datacenters en passant par l’orchestration de son réseau de fibre optique. Cette approche unique lui permet de couvrir en toute indépendance l’ensemble des usages de ses 1,6 million de clients dans plus de 140 pays. OVHcloud propose aujourd’hui des solutions de dernière génération alliant performance, prédictibilité des prix et une totale souveraineté sur leurs données pour accompagner leur croissance en toute liberté.",
+  "jobOffers" : []
+},
+  {
+    "name": "Néo-Soft",
+    "id": "Neo-soft",
+    "image": "neo-soft.png",
+    "link": "https://www.neo-soft.fr/",
+    "linkedIn" :"https://www.linkedin.com/in/sophie-nicod%C3%A8me-12529197?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUYfb24KIQ42Iofw3DlcRtw%3D%3D",
+    "type": "bronze",
+    "desc": "Fédérateur de talents au service de l'excellence digitale, Néo-Soft est un Groupe indépendant de conseil en transformation numérique. <br><br> Depuis sa création en 2005, le Groupe se distingue par son ADN. Avec 15 implantations et une offre diversifiée, nous accompagnons nos clients dans leurs projets de digitalisation. Pour nos consultants, intégrer Néo-Soft c’est la possibilité de développer leur expertise dans une entreprise responsable où la proximité est une réalité. <br><br> Afin d'étoffer son maillage géographique national, le Groupe Néo-Soft poursuit sa croissance sur le territoire français avec le développement de l’agence de Tours, 10ème agence du groupe créée en 2014. Néo-Soft nourrit de belles ambitions sur cette région Centre, propice au secteur informatique, particulièrement dans les domaines de la santé, des assurances, du télécom ou encore de l’industrie. La ville de Tours s'avère stratégique de par sa proximité de Paris, du Mans ou encore d'Orléans. <br><br> Aujourd'hui, Néo-Soft s'impose progressivement comme un acteur majeur auprès des grands comptes de la région sur les activités de conception/développement NTIC, d'infrastructures des systèmes et aussi d’AMOA à travers l’Offre Santé/Prévoyance.",
+    "jobOffers": []
+},
+{
+    "name": "Cat-Amania",
+    "id": "cat-amania",
+    "image": "catamania.png",
+    "link": "https://www.cat-amania.com/",
+    "linkedIn" :"https://www.linkedin.com/in/cat-amania-agence-tours-01a003224/",
+    "type": "bronze",
+    "desc": "Cat-Amania est une société de conseil et de services numériques créée pour réaliser la transformation digitale de ses clients. Elle se fonde sur ses expertises métier, technique et méthodologique pour accompagner ses clients dans leurs grands projets de transformation. <br><br> Cat-Amania définit et participe à l’évolution du système d’information de ses clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, Cat-Amania est en mesure de répondre aux besoins de ses clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage.",
     "jobOffers": []
   }
 ]
