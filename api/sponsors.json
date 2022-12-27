@@ -61,6 +61,16 @@
     "jobOffers": []
   },
   {
+    "name": "Néo-Soft",
+    "id": "Neo-soft",
+    "image": "neo-soft.png",
+    "link": "https://www.neo-soft.fr/",
+    "linkedIn" :"https://www.linkedin.com/in/sophie-nicod%C3%A8me-12529197?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUYfb24KIQ42Iofw3DlcRtw%3D%3D",
+    "type": "bronze",
+    "desc": "Fédérateur de talents au service de l'excellence digitale, Néo-Soft est un Groupe indépendant de conseil en transformation numérique. <br><br> Depuis sa création en 2005, le Groupe se distingue par son ADN. Avec 15 implantations et une offre diversifiée, nous accompagnons nos clients dans leurs projets de digitalisation. Pour nos consultants, intégrer Néo-Soft c’est la possibilité de développer leur expertise dans une entreprise responsable où la proximité est une réalité. <br><br> Afin d'étoffer son maillage géographique national, le Groupe Néo-Soft poursuit sa croissance sur le territoire français avec le développement de l’agence de Tours, 10ème agence du groupe créée en 2014. Néo-Soft nourrit de belles ambitions sur cette région Centre, propice au secteur informatique, particulièrement dans les domaines de la santé, des assurances, du télécom ou encore de l’industrie. La ville de Tours s'avère stratégique de par sa proximité de Paris, du Mans ou encore d'Orléans. <br><br> Aujourd'hui, Néo-Soft s'impose progressivement comme un acteur majeur auprès des grands comptes de la région sur les activités de conception/développement NTIC, d'infrastructures des systèmes et aussi d’AMOA à travers l’Offre Santé/Prévoyance.",
+    "jobOffers": []
+},
+{
     "name": "Cat-Amania",
     "id": "cat-amania",
     "image": "catamania.png",
