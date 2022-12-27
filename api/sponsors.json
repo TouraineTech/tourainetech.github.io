@@ -61,6 +61,17 @@
     "jobOffers": []
   },
   {
+    "name": "Elastic",
+    "id": "elastic",
+    "image": "elastic.svg",
+    "link": "https://www.elastic.co/fr/",
+    "linkedIn" :"https://fr.linkedin.com/company/elastic-co",
+    "twitter" : "https://twitter.com/elasticfr",
+    "type": "gold",
+    "desc": "Elastic propose des solutions cloud-native pour la recherche, l'observabilité et la sécurité, afin d'améliorer l'expérience des clients et des employés, d'assurer le bon fonctionnement des applications fondamentales et de les protéger des cyber menaces.",
+     "jobOffers": []
+},
+{
     "name": "Worldline",
     "id": "worldline",
     "image": "worldline.png",
@@ -72,7 +83,7 @@
     "twitter" : "https://twitter.com/WorldlineGlobal",
     "jobOffers": []
   },{
-  "name": "OVHcloud",
+  "name": "}",
   "id": "OVHcloud",
   "image": "ovh.png",
   "link": "https://www.ovhcloud.com/fr/",
