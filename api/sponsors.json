@@ -59,6 +59,18 @@
     "type": "gold",
     "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br> <br>Après plus de 10 ans d’expérience, l’équipe de développeurs d’applications web et mobiles de Code-Troopers compte aujourd’hui 15 collaborateurs. Des start-ups aux grands groupes, nous accompagnons les entreprises tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.",
     "jobOffers": []
+  },
+  {
+    "name": "Worldline",
+    "id": "worldline",
+    "image": "worldline.png",
+    "link": "https://fr.worldline.com/fr/home.html",
+    "type": "gold",
+    "desc": "Worldline est un leader mondial de la sécurisation des paiements et des transactions. Nous sommes à l’avant-garde de la révolution numérique, gage de nouvelles façons de payer, vivre, travailler et nouer des relations reposant sur la confiance tout au long de la chaîne de valeur des paiements.",
+    "linkedIn" : "https://worldline.com/linkedin",
+    "instagram" : "https://www.instagram.com/worldline/",
+    "twitter" : "https://twitter.com/WorldlineGlobal",
+    "jobOffers": []
   },{
   "name": "OVHcloud",
   "id": "OVHcloud",
