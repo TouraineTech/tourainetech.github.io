@@ -69,7 +69,18 @@
     "twitter" : "https://twitter.com/elasticfr",
     "type": "gold",
     "desc": "Elastic propose des solutions cloud-native pour la recherche, l'observabilité et la sécurité, afin d'améliorer l'expérience des clients et des employés, d'assurer le bon fonctionnement des applications fondamentales et de les protéger des cyber menaces.",
-     "jobOffers": []
+     "jobOffers": [
+       {
+         "id": "elasticOne",
+         "title": "Elasticsearch - Principal Software Engineer (Java)",
+         "link": "https://jobs.elastic.co/jobs/elasticsearch/distributed-emea/elasticsearch-principal-software-engineer-java-/4473974?gh_jid=4473974#/"
+       },
+       {
+         "id": "elasticTwo",
+         "title": "Enterprise Search - Application - Senior Software Engineer (React/Typescript/Ruby)",
+         "link": "https://jobs.elastic.co/jobs/application/distributed-emea/enterprise-search-application-senior-software-engineer-react-typescript-ruby-/4520904?gh_jid=4520904#/"
+       }
+     ]
 },
 {
     "name": "Worldline",
