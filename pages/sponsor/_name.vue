@@ -44,7 +44,7 @@
       <h3>Offres d'emploi</h3>
       <a v-for="jobOffer in sponsor.jobOffers"
          :key="jobOffer.id"
-         :id="jobOffer.id" :href="`/sponsors/${sponsor.id}/${jobOffer.pdf}`" target="_blank" class="bite"
+         :id="jobOffer.id" :href="jobOffer.pdf ? `/sponsors/${sponsor.id}/${jobOffer.pdf}` : `${jobOffer.link}`" target="_blank"
       ><h3 v-html="jobOffer.title"></h3></a>
     </div>
   </div>
