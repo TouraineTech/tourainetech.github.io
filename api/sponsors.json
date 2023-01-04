@@ -61,6 +61,19 @@
     "jobOffers": []
   },
   {
+    "name": "Apside TOP",
+    "id": "apside",
+    "image": "apside-top.png",
+    "link": "https://www.apside.com/",
+    "type": "gold",
+    "linkedIn" : "https://www.linkedin.com/company/apside/",
+    "twitter" : "https://twitter.com/ApsideGroupe",
+    "instagram" : "https://www.instagram.com/apsidegroupe/",
+    "facebook" : "https://www.facebook.com/ApsideGroupe/",
+    "desc": "Un esprit start-up avec la stabilité d’un grand groupe, qui favorise l’agilité, le travail d’équipe et la proximité. Alors qu’Apside ne cesse d'agrandir sa famille déjà forte de plus de 3000 consultants, nous sommes à la recherche de nos nouveaux talents ! <br><br> <ul><li>Intégrez une structure à taille humaine ! Vous rejoindrez 180 collaborateurs d’Apside TOP, filiale du groupe, pour développer notre activité en région ! Ambiance saine et conviviale sont les mots d’ordre ! </li><li>Vous êtes force de proposition ? Participez et animez nos évents techniques et devenez speaker (ApsideCamp, Devoxx, etc..) et faites-nous découvrir votre univers grâce à vos projets associatifs !</li><li>Développez votre réseau (soirées trimestrielles, afterworks, soirées d’intégration…).</li><li>Contribuez à l’Apside Academy en tant que créateurs de parcours pédagogiques et/ou formateurs.</li><li>Vous souhaitez relever des défis dans un environnement digital et multi-technologies ? Rejoignez notre Communautés d’Experts ! </li></ul><br>Notre savoir-faire et notre savoir-être vous accompagnent au cœur de plusieurs métiers : l’ingénierie en systèmes d'information et informatique industrielle, scientifique, aéronautique, automobile et financière.",
+    "jobOffers": []
+  },
+  {
     "name": "Elastic",
     "id": "elastic",
     "image": "elastic.svg",
