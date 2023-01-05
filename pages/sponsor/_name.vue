@@ -38,6 +38,11 @@
             <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo logo">
           </a>
         </div>
+        <div v-if="sponsor.twitch">
+          <a :href="sponsor.twitch" target="_blank">
+            <img src="@/assets/img/twitch-icon.svg" width="50px" alt="Twitch logo">
+          </a>
+        </div>
       </div>
     </div>
     <div class="job-offer-bloc description--container" v-if="sponsor.jobOffers.length !== 0">

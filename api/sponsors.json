@@ -61,6 +61,21 @@
     "jobOffers": []
   },
   {
+    "name": "SopraSteria",
+    "id": "sopra-steria",
+    "image": "sopra.png",
+    "link": "https://www.soprasteria.com/",
+    "type": "gold",
+    "linkedIn" :"https://www.linkedin.com/company/soprasteria",
+    "twitter" : "https://twitter.com/SopraSteria_fr",
+    "facebook" : "https://www.facebook.com/soprasteria/",
+    "instagram" : "https://www.instagram.com/soprasteria_fr/",
+    "youtube" : "https://www.youtube.com/c/SopraSteriaGroup",
+    "twitch" : "https://www.twitch.tv/soprasteria",
+    "desc": "Sopra Steria, l’un des leaders européens du conseil, des services numériques et de l’édition de logiciels, aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Il apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, combinant une connaissance approfondie des secteurs d’activité et des technologies innovantes à une approche résolument collaborative. Sopra Steria place l’humain au centre de son action et s’engage auprès de ses clients à tirer le meilleur parti du digital pour construire un avenir positif. Fort de 47 000 collaborateurs dans près de 30 pays, le Groupe a réalisé un chiffre d’affaires de 4,7 milliards d’euros en 2021. </br><b>The world is how we shape it.</b>",
+    "jobOffers": []
+  },
+  {
     "name": "Apside TOP",
     "id": "apside",
     "image": "apside-top.png",
