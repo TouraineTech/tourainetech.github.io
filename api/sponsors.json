@@ -151,5 +151,16 @@
     "type": "bronze",
     "desc": "Cat-Amania est une société de conseil et de services numériques créée pour réaliser la transformation digitale de ses clients. Elle se fonde sur ses expertises métier, technique et méthodologique pour accompagner ses clients dans leurs grands projets de transformation. <br><br> Cat-Amania définit et participe à l’évolution du système d’information de ses clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, Cat-Amania est en mesure de répondre aux besoins de ses clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage.",
     "jobOffers": []
+  },
+  {
+    "name": "Microsoft",
+    "id": "microsoft",
+    "image": "microsoft.png",
+    "link": "https://www.microsoft.com/fr-fr/",
+    "twitter" : "https://twitter.com/@msdev_fr",
+    "youtube" : "https://www.youtube.com/channel/UCrqTcWee3VRJh906JygWrTw",
+    "type": "gold",
+    "desc": "Microsoft s’engage en faveur d’un numérique de confiance, inclusif et durable. Sa mission est de donner à chaque individu et chaque organisation les moyens de réaliser ses ambitions, à l’ère du cloud intelligent et de l’intelligent edge.<br/> <br/>Catalyseur de l’innovation dans l’Hexagone depuis près de 40 ans, Microsoft France est présidée par Corine de Bilbao depuis juillet 2021. Avec plus de 1 800 collaborateurs et 10 500 partenaires économiques, technologiques, acteurs du secteur public, chercheurs ou start-ups, Microsoft France contribue au développement de l’économie et des compétences numériques sur l’ensemble du territoire français.",
+    "jobOffers": []
   }
 ]

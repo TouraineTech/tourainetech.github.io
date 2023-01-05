@@ -35,7 +35,12 @@
         </div>
         <div v-if="sponsor.instagram">
           <a :href="sponsor.instagram" target="_blank">
-            <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo logo">
+            <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo">
+          </a>
+        </div>
+        <div v-if="sponsor.youtube">
+          <a :href="sponsor.youtube" target="_blank">
+            <img src="@/assets/img/youtube-icon.svg" width="50px" alt="Youtube logo">
           </a>
         </div>
         <div v-if="sponsor.twitch">
