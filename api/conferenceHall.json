@@ -985,6 +985,20 @@
       }
     },
     {
+      "id": "ZmvGwBSs3jNHkA7ZDF8v",
+      "title": "Les reconvertis: cette nouvelle vague de profils dans le dev",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Il y a 4 ans, je ne savais pas ce qu’était le code ni même qu’on pouvait en faire un métier. C’est la curiosité qui m’y a attirée d’abord puis la passion qui m’a donné envie de devenir développeuse.\n\nEt cette reconversion n’a pas été un long fleuve tranquille. Bien au contraire !\n\nPlutôt une nage sportive en eaux troubles, entre syndrome de l’imposteur, vision de l’entourage sur les chances de réussite et découverte d’un monde inconnu avec ses codes, ses règles, ses enjeux.\nSans compter la pression financière inhérente à une transition professionnelle. \n\nCe talk est l’occasion de revenir sur cette reconversion sans filet; en explorer les victoires comme les échecs ainsi que les réflexions qui l’ont jalonnée. Une conversation qui vous permettra de mieux comprendre ces parcours de reconvertis. \n\nIci, découvrons ce qu’implique la réussite d’une reconversion afin de mieux intégrer ces profils dans nos équipes. Essayons de comprendre en quoi ils diffèrent des parcours dits classiques ? \n\nComment pouvons-nous les valoriser ?\n\nVoyageons ensemble dans la tête d’une développeuse reconvertie !\n",
+      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+      "formats": "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a",
+      "speakers": [
+        "Ny2h9DGprRgd9n6PJYFijyYI0OQ2"
+      ],
+      "comments": "Se reconvertir dans un domaine qui nous est inconnu est un coup de poker. On peut tout y gagner comme tout y perdre. \n\nC’est un parcours semé d’embûches entre la perception biaisée de la réalité du métier, de la particularité d’être reconverti et le syndrome de l’imposteur. \n\nLes profils de reconversion sont de plus en plus nombreux dans le développement web. Alors, je veux à travers ce talk montrer qu’il est non seulement possible de n’avoir jamais codé et de se reconvertir mais aussi qu’il est accessible à tous de mieux comprendre ces profils et donc mieux les intégrer dans le paysage du développement web. \n\nNous établirons d’abord le portrait robot du reconverti. Nous analyserons les biais/freins (réaction de l’entourage face à la reconversion, âgisme, accès à la formation, recherche du premier poste) auxquels il est sujet pour en tirer les éléments nous permettant de mieux accompagner, soutenir tout reconverti. \n\n\nCette conférence a été présentée en Quickies de 15 et 25 min.",
+      "language": "French"
+    },
+    {
       "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
       "speakers": [],
@@ -1613,6 +1627,15 @@
       "photoURL": "https://avatars.githubusercontent.com/u/21245376?v=4",
       "twitter": "Loic__Lefevere",
       "github": "loiclefevre"
+    },
+    {
+      "uid": "Ny2h9DGprRgd9n6PJYFijyYI0OQ2",
+      "displayName": "Helvira G",
+      "bio": "Développeuse web, essentiellement dresseuse d'éléphpants, depuis plus de 3 ans, c'est avec l'envie de montrer aux femmes que le développement est une voie professionnelle envisageable qu'Helvira crée Motiv'Her en 2021.",
+      "company": null,
+      "photoURL": "https://pbs.twimg.com/profile_images/1601255670598320131/UO3hhXS9_400x400.jpg",
+      "twitter": "helvira_g",
+      "github": "HelviraG"
     }
   ],
   "categories": [
