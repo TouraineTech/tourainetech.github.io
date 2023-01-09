@@ -115,7 +115,8 @@
       "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
       "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
       "speakers": [
-        "EEd8VQHPxORw8iWh2ZIfieTC5c32"
+        "EEd8VQHPxORw8iWh2ZIfieTC5c32",
+        "guillaumeAzan"
       ],
       "comments": "Bonjour,\n\nmerci pour l'organisation de cet évènement à Tous \nJ'ai fait mes études là-bas avant de venir à Paris...Nostalgie !\n\nj'ai donné cet atelier plusieurs fois en interne dans ma société et dernièrement au DevFest Nantes 2022   où cela s'est très bien passé, plus de 35 personnes ^^\n\n[Atelier DevFest Nantes](https://devfest.gdgnantes.com/sessions/apprenez_rust_pas_a_pas_en_construisant_une_application_en_ligne_de_commande)\n\nL'idée est d'avancer au fil des étapes selon son rythme, pas de course de rapidité, Rust est un langage qui a besoin de pratique et de temps \n\n\n\n\n\n\n\n",
       "language": "French",
@@ -1636,6 +1637,12 @@
       "photoURL": "https://pbs.twimg.com/profile_images/1601255670598320131/UO3hhXS9_400x400.jpg",
       "twitter": "helvira_g",
       "github": "HelviraG"
+    },
+    {
+      "uid": "guillaumeAzan",
+      "displayName": "Gauillaume Azan",
+      "bio": "Après un cours passage dans l’education nationale en tant que professeur de Mathématiques, en 2012 je me suis orienté vers le développement logiciel. Actuellement chez Talan, j’ai eu l’occasion de travailler sur différentes technologies ,a ainsi que dans différentes structures - start-up ou client grand-comptes.\nCes derniers temps, je me suis concentré sur la programmation fonctionnelle et la computer science.",
+      "company": "TalanLabs"
     }
   ],
   "categories": [
