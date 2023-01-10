@@ -162,5 +162,16 @@
     "type": "gold",
     "desc": "Microsoft s’engage en faveur d’un numérique de confiance, inclusif et durable. Sa mission est de donner à chaque individu et chaque organisation les moyens de réaliser ses ambitions, à l’ère du cloud intelligent et de l’intelligent edge.<br/> <br/>Catalyseur de l’innovation dans l’Hexagone depuis près de 40 ans, Microsoft France est présidée par Corine de Bilbao depuis juillet 2021. Avec plus de 1 800 collaborateurs et 10 500 partenaires économiques, technologiques, acteurs du secteur public, chercheurs ou start-ups, Microsoft France contribue au développement de l’économie et des compétences numériques sur l’ensemble du territoire français.",
     "jobOffers": []
+  },
+  {
+    "id": "ippon",
+    "name": "Ippon Technologies",
+    "image": "Ippon.png",
+    "link": "https://fr.ippon.tech/",
+    "twitter" : "https://twitter.com/ippontech",
+    "linkedIn" : "https://www.linkedin.com/company/ippon-technologies/",
+    "type": "bronze",
+    "desc": "Ippon, c’est un cabinet de conseil et d'expertises en technologie, organisé en communautés (Fullstack, Mobile, Cloud, DevOps, Data, Agilité, Architecture, Produit, Design), et regroupant 700 passionnés de tech, guidés par une énergie collective et un goût prononcé pour le challenge.<br/>Nous accompagnons ainsi plus d’une centaine de clients par an, sur leurs enjeux de transformation et d’innovation.<br/><br/>Chez Ippon, nous sommes convaincus que la tech est source de progrès, pour les organisations comme pour l’ensemble de la Société. Nous entretenons une culture positive, entre humanisme, générosité et bienveillance. Ces valeurs se retrouvent dans nos initiatives environnementales et sociétales, portées par la Fondation Ippon et Ippon Go for Good.<br/><br/>Ippon est une entreprise à taille humaine et à visage humain, animée par l’esprit d’équipe, le dépassement de soi et la culture de la gagne. A ce titre, chaque Ippon a accès à un programme personnalisé pour accélérer sa carrière, inspiré du principe des ceintures de judo, le programme BlackBelt.<br/>Ces valeurs nous permettent de relever tous les challenges de la transformation numérique, en co-construction avec nos clients.<br/><br/>Enfin, nous sommes le partenaire de la performance des entreprises et des organisations. Notre but est d’accompagner la transformation en continu, et sur le long terme, grâce à la double casquette de nos collaborateurs : experts technologiques et consultants stratégiques.<br/><br/>Si tu veux en savoir plus sur Ippon, tu peux consulter notre site Internet : https://fr.ippon.tech/ mais également notre blog qui donne un avant-goût assez précis de l’expertise et du savoir-faire que tu pourras retrouver chez nous : <a href=\"https://blog.ippon.fr/\">https://blog.ippon.fr/</a>",
+    "jobOffers": []
   }
 ]
