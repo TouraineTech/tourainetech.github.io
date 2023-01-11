@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="job-offer-bloc description--container" v-if="sponsor.jobOffers.length !== 0">
+    <div class="job-offer-bloc description--container" v-if="sponsor.jobOffers && sponsor.jobOffers.length !== 0">
       <h3>Offres d'emploi</h3>
       <a v-for="jobOffer in sponsor.jobOffers"
          :key="jobOffer.id"
