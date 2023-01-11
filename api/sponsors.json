@@ -120,7 +120,17 @@
     "linkedIn" : "https://worldline.com/linkedin",
     "instagram" : "https://www.instagram.com/worldline/",
     "twitter" : "https://twitter.com/WorldlineGlobal",
-    "jobOffers": []
+    "jobOffers": [
+      {
+      "id": "wlOne",
+      "title": "Lead developer JAVA confirmé (F/H)",
+      "link": "https://careers.worldline.com/en/job/blois/lead-developer-java-confirme-f-h/35538/35269727792"
+      },
+      {
+        "id": "wlTwo",
+        "title": "Ingénieur Devops (F/M)",
+        "link": "https://careers.worldline.com/en/job/la-defense/ingenieur-devops-f-m/35538/38337625952"
+      }]
   },{
   "name": "}",
   "id": "OVHcloud",
