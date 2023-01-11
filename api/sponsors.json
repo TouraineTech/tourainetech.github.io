@@ -47,7 +47,16 @@
     "twitter" : "https://twitter.com/lamobilery",
     "type": "gold",
     "desc": "Tu ne connais pas encore La Mobilery ? Depuis 12 ans, on crée des apps mobiles et web pour nos clients.<br>Depuis 12 ans, on le fait avec l’amour du beau code et en mettant toujours l’humain au centre de notre activité.<br>La Mobilery a été créée à Lille en 2010 et est présente à Tours depuis 2017 et à Paris depuis 2019.<br>Plus qu’une ESN, nous sommes une Néo ESN. Notre but : faire grandir nos collaborateurs et collaboratrices dans un cadre à la fois plaisant et prônant l’excellence. Nous accompagnons nos clients en régie (remote ou sur place) comme en mode projet.<br>Société à mission, management libéré, politique carbone neutre, mécénat de compétences techniques sont autant d’axes qui nous permettent d’atteindre nos objectifs ambitieux et porteurs de sens.<br>Nous sommes heureux de soutenir Touraine Tech en tant que sponsor depuis deux ans, et pour encore une belle aventure.<br>Nous continuons à grandir et à recruter, alors n'hésitez pas à passer nous voir pour discuter !",
-    "jobOffers": []
+    "jobOffers": [{
+      "id": "laMobileryOne",
+      "title": "Développeur/Développeuse Mobile Expérimenté.e\n(H/F/X) - Tours",
+      "pdf": "Développeur_Développeuse Mobile Expérimenté.e - H_F_X - Tours.docx.pdf"
+      },{
+      "id": "laMobileryTwo",
+      "title": "Développeur/Développeuse Web expérimenté.e\n(H/F/X) - Tours",
+      "pdf": "Développeur_Développeuse web expérimenté.e Web H_F_X - Tours.docx.pdf"
+    }
+    ]
   },
   {
     "name": "Code-Troopers",
