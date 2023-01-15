@@ -93,7 +93,7 @@
 export default {
   data() {
     return {
-      day: 1
+      day: new Date().getTime() < Date.UTC(2023,0,20) ? 1 : 2
     }
   },
   computed: {
