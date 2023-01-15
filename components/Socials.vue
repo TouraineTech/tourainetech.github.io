@@ -1,7 +1,8 @@
 <template>
   <div class="socials">
     <ul>
-      <li><a
+      <li>
+        <a
           href="https://twitter.com/tourainetech"
           target="_blank"
         >
@@ -9,8 +10,10 @@
             src="@/assets/img/twitter.png"
             alt="Twitter logo"
           >
-        </a></li>
-      <li><a
+        </a>
+      </li>
+      <li>
+        <a
           href="https://www.facebook.com/tourainetech/"
           target="_blank"
         >
@@ -18,16 +21,19 @@
             src="@/assets/img/facebook.png"
             alt="Facebook logo"
           >
-        </a></li>
-      <li><a
+        </a>
+      </li>
+      <li>
+        <a
           href="https://www.youtube.com/channel/UC4apQIHE7viAVy1oO5Ruq2w"
           target="_blank"
         >
           <img
-            src="@/assets/img/youtube.png"
+            src="@/assets/img/youtube.svg"
             alt="Youtube logo"
           >
-        </a></li>
+        </a>
+      </li>
     </ul>
   </div>
 </template>
