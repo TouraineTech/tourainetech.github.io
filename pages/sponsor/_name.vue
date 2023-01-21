@@ -40,7 +40,7 @@
         </div>
         <div v-if="sponsor.youtube">
           <a :href="sponsor.youtube" target="_blank">
-            <img src="@/assets/img/youtube-icon.svg" width="50px" alt="Youtube logo">
+            <img src="@/assets/img/youtube.svg" width="50px" alt="Youtube logo">
           </a>
         </div>
         <div v-if="sponsor.twitch">

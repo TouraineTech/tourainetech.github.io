@@ -58,15 +58,15 @@
           </ul>
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
             <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img class="icon"
-                                                                                       src="../static/cinema.svg"
+                                                                                       src="@/assets/img/cinema.svg"
                                                                                        alt="icon cinema"
             /></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon"
-                                                                                             src="../static/dailymotion.svg"
+                                                                                             src="@/assets/img/dailymotion.svg"
                                                                                              alt="icon dailymotion"
             /></a>
             <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img class="icon"
-                                                                                     src="../static/youtube.svg"
+                                                                                     src="@/assets/img/youtube.svg"
                                                                                      alt="icon youtube"
             /></a>
           </span>
@@ -75,7 +75,7 @@
               v-for="slidesLink of talk.slidesLinks"
               :key="slidesLink"
             >
-              <a :href="slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg"
+              <a :href="slidesLink" target="_blank"><img class="icon" src="@/assets/img/presentation.svg"
                                                          alt="icon presentation"
               /></a>
             </p>
