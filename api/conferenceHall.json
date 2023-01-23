@@ -585,7 +585,7 @@
         "_seconds": 1669029304,
         "_nanoseconds": 820000000
       },
-      "slidesLinks": []
+      "slidesLinks": ["https://drive.google.com/file/d/1uvjJRz4l8R3JWoJPExLzhT0tiQUZtCfq/view"]
     },
     {
       "id": "cTeyrIyyeQTdDc7x2kLK",
@@ -1085,13 +1085,30 @@
     },
     {
       "id": "keynoteCloture2",
-      "title": "Keynote de clôture",
-      "speakers": [],
+      "title": "Keynote de clôture : Le voyage du héros de l'IT",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Saviez-vous que vous étiez un expert en histoires ? \n\nPour preuve, vous êtes capable de prédire la scène suivante dans un film ou une série, voir même de deviner de suite qui est l'assassin!\nC'est tout à fait normal, car depuis notre plus jeune âge, nous sommes bercé d'histoires, de contes, de légendes, nous en avons intégré inconsciemment les mécaniques. \n\nDans ce talk original, nous allons utiliser le modèle du **Voyage du héros** pour démontrer que Star wars et Dirty Dancing racontent la même chose, et apprendre à utiliser une déclinaison de ce modèle pour raconter nos propres histoires, en conférence, au travail, ou dans n'importe quelle occasion.",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "LqyxlMKvHLbEIEZPsxgPs1JHWx63"
+      ],
       "slidesLinks": []
     }
   ],
   "speakers": [
+    {
+      "uid": "LqyxlMKvHLbEIEZPsxgPs1JHWx63",
+      "displayName": "Olivier BEAUTIER",
+      "bio": "I'm Olivier, DevRel at OVHCloud. I live in the very west of France, in Brest.\n\nI started my career at 18, in the Air Force, where for 8 years I was in charge of radar maintenance, then I spent a few years in a computer services company, and my last 15 years have been employed at Crédit Mutuel Arkéa.\n\nI started as a system administrator (Windows, Unix ♥️), then DBA (Oracle, MySQL, MSSQL, Sybase), then developer (Java, GWT, JEE, etc.), then Automation manager, then DevOps Architect / Evangelist.\n\nWhat I prefer is discovering activities, new technologies, trying them out, having fun with them and then sharing them!\n\nThis is valid for my passions, such as improvisation theatre, electronic music production, surfing, poker, bowling, but also for my professional activities!",
+      "speakerReferences": "[ 06/02/2019 - DevOps en pratique, ou mon JS dans ton Kubernetes ](https://www.meetup.com/fr-FR/BrestJS/events/258318563)\n\n[ 08/04/2022 - Tout ce que le cloud peut faire pour vous ] - PIX Plaine Image\n\n[ 09/06/2022 - Le Voyage du Heros de l'IT ] - Camping des Speakers 2022\n\n[ 13/10/2022 - Le Voyage du Heros de l'IT ] - Volcamp.io 2022\n\n[ 21/10/2022 - Le Voyage du Heros de l'IT ] - [DevFest Nantes 2022](https://youtu.be/AZKjdhViwYI)",
+      "company": "OVHcloud",
+      "photoURL": "https://avatars.githubusercontent.com/u/8849340?v=4",
+      "twitter": "@raclepoulpe",
+      "github": "raclepoulpe",
+      "language": "French / English"
+    },
     {
       "uid": "jOu0p5I3dtgiXPya0RbjR3ggWBg2",
       "displayName": "Iris Naudin",
