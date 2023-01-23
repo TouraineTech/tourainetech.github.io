@@ -77,7 +77,8 @@
             >
               <a :href="slidesLink" target="_blank"><img class="icon" src="@/assets/img/presentation.svg"
                                                          alt="icon presentation"
-              /></a>
+              />
+              </a>
             </p>
           </span>
           <p class="schedule-room--duration-level">
