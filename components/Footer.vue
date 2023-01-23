@@ -3,11 +3,9 @@
     <div class="footer--links">
       <ul>
         <li>
-          <a
-            rel="noreferrer"
-            href="http://confcodeofconduct.com/index-fr.html"
-            target="_blank"
-          >Code de conduite</a>
+          <nuxt-link :to="`/coc`">
+            Code de conduite
+          </nuxt-link>
         </li>
         <li>
           <a
