@@ -58,15 +58,15 @@
           </ul>
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
             <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img class="icon"
-                                                                                       src="../static/cinema.svg"
+                                                                                       src="@/assets/img/cinema.svg"
                                                                                        alt="icon cinema"
             /></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon"
-                                                                                             src="../static/dailymotion.svg"
+                                                                                             src="@/assets/img/dailymotion.svg"
                                                                                              alt="icon dailymotion"
             /></a>
             <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img class="icon"
-                                                                                     src="../static/youtube.svg"
+                                                                                     src="@/assets/img/youtube.svg"
                                                                                      alt="icon youtube"
             /></a>
           </span>
@@ -76,7 +76,7 @@
               :key="slidesLink"
             >
               <a :href="slidesLink.pdf ? `/slides/${slidesLink.pdf}` : slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg"
-                                                         alt="icon presentation"
+                 alt="icon presentation"
               /></a>
             </p>
           </span>
@@ -93,7 +93,7 @@
 export default {
   data() {
     return {
-      day: new Date().getTime() < Date.UTC(2023,0,20) ? 1 : 2
+      day: 2
     }
   },
   computed: {
