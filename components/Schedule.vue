@@ -75,7 +75,7 @@
               v-for="slidesLink of talk.slidesLinks"
               :key="slidesLink"
             >
-              <a :href="slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg"
+              <a :href="slidesLink.pdf ? `/slides/${slidesLink.pdf}` : slidesLink" target="_blank"><img class="icon" src="../static/presentation.svg"
                                                          alt="icon presentation"
               /></a>
             </p>

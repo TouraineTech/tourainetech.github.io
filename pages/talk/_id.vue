@@ -22,7 +22,7 @@
         >
           <a
             target="_blank"
-            :href="`${slidesLink}`"
+            :href="slidesLink.pdf ? `/slides/${slidesLink.pdf}` : slidesLink"
           >Les slides </a>
         </p>
       </span>
