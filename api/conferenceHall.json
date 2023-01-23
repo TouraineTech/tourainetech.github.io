@@ -74,7 +74,7 @@
         "_seconds": 1668001067,
         "_nanoseconds": 386000000
       },
-      "slidesLinks": []
+      "slidesLinks": ["https://35h.gouz.dev/TNT/#/"]
     },
     {
       "id": "6hVZGT7mDHObwqc7iVk4",
@@ -1064,10 +1064,17 @@
     },
     {
       "id": "keynoteCloture1",
-      "title": "Keynote de clôture",
-      "speakers": [],
+      "title": "Keynote de clôture : Le numérique c’est pour tout le monde… ou pas !",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "Zones sans réseau, sites pas accessibles, télécommandes infernales … saviez-vous que 66% des utilisateurs sont exclus de vos dispositifs ?\n\nVous voulez vivre dans un monde où les portes s’ouvrent dans le sens où elles sont censées s’ouvrir ? Où vos parents sont autonomes pour refaire leur carte grise en ligne ? Où (folie !) un site se charge en moins de 25 secondes même avec une mauvaise connexion ?\n\nSuivez-nous pour un tour d’horizon anti-exclusion : accessibilité, technique, complexité et contenu !\n",
+      "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "slidesLinks": []
+      "speakers": [
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+        "jOu0p5I3dtgiXPya0RbjR3ggWBg2"
+      ],
+      "slidesLinks": ["https://docs.google.com/presentation/d/1tpEG-VBMs85byaUuFm9P2yBKPoy1Wf2sGh1uRWDTulE"]
     },
     {
       "id": "keynoteOuverture2",
@@ -1085,6 +1092,25 @@
     }
   ],
   "speakers": [
+    {
+      "uid": "jOu0p5I3dtgiXPya0RbjR3ggWBg2",
+      "displayName": "Iris Naudin",
+      "bio": "Je suis designer au service de l’innovation des organisations.\nDepuis plusieurs années, j’accompagne les entrepreneurs, les ONG et les collectivités publiques dans la conception et la mise en production de services et d’interfaces performantes.\n\nMa mission (si vous l’acceptez), vous accompagner de manière S.M.A.R.T. dans la croissance de votre organisation par l’amélioration de vos produits sans jamais perdre de vue vos objectifs ou vos usagers.\n\nPour y parvenir, j’utilise la méthodologie et les outils du design thinking et le marketing centré sur l’humain, dans une optique d’amélioration constante et de résultats tangibles et concrets.\n\nPrêts ?\n\nAllons-y !",
+      "company": "Octo",
+      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gg8H7x7VblgNBERtOFoc0y75SW0M2UemfBMU7vI=s96-c",
+      "twitter": "irisvnaudin",
+      "language": "Français",
+      "email": "iris.naudin@octo.com"
+    },
+    {
+      "uid": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+      "displayName": "Cécile Freyd-Foucault",
+      "bio": "Tomber dans la soupe du design étant petite, je suis designeuse. Je parle avec autant de passion de typographie que de flow utilisateurs, accessibilité et surtout de design system 😍 !",
+      "speakerReferences": "* Bdx.io 2022\n* Codeur en Seine 2022\n* SunnyTech 2022 : https://www.youtube.com/watch?v=ON1R0SGdDDk&list=PLz7aCyCbFOu9UL1fg16muasyjnbKh0tHd&index=5\n* Camping des speakers 2022\n* Devoxx 2022 : https://www.youtube.com/watch?v=72q4e_IIGN4\n* Touraine Tech 2022\n* DevFest Nantes 2021 https://www.youtube.com/watch?v=GMzXZA9tiW4\n* ParisWeb 2021\n* Devest Lille 2021\n* Devoxx 2019  https://www.youtube.com/watch?v=jXcO7Qu1Gjs&t=1s \n* Best of Web 2019 https://www.youtube.com/watch?v=cZfqxLribBc&t=1s\n* DevFest Lille 2019 https://www.youtube.com/watch?v=W6Lo6FkaUm8&t=1s\n* ParisWeb 2019 https://www.youtube.com/watch?v=L1wdoLFOxKU \n* Bdx.io 2019 https://www.youtube.com/watch?v=iD0Hy7jsuMc\n* DevFest Nantes 2019  https://www.youtube.com/watch?v=rIZjbuEfyDs&list=PLuZ_sYdawLiUjPGPsOvBcgBxC6yP_HSA6&index=24&t=1s\n* Touraine Tech 2020\n* DevFest Bout du Monde 2020\n* Meetup : UX design Brest (typographie), le Rendez-vous des speakers (REX autours d'un design system)",
+      "company": "OCTO Technology",
+      "photoURL": "https://pbs.twimg.com/profile_images/1466896120379068416/ZbmwziI2_400x400.jpg",
+      "twitter": "@cecilefreydf"
+    },
     {
       "uid": "stephaneBortzmeyer",
       "displayName": "Stephane Bortzmeyer",
