@@ -16,7 +16,8 @@
       "createTimestamp": {
         "_seconds": 1665679279,
         "_nanoseconds": 968000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "0BCYtAIapzP7FOTAoaih",
@@ -33,7 +34,8 @@
       "createTimestamp": {
         "_seconds": 1665589883,
         "_nanoseconds": 787000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "3vity7gCVOrIPLbr5anu",
@@ -52,7 +54,8 @@
       "createTimestamp": {
         "_seconds": 1669287047,
         "_nanoseconds": 626000000
-      }
+      },
+      "slidesLinks": ["https://www.slideshare.net/Horgix/rust-sans-trop-roter-du-sang-touraine-tech-2023-par-douard-siha-alexis-horgix-chotard"]
     },
     {
       "id": "4ZuVgkJsSPF3AgU7aSBn",
@@ -70,7 +73,8 @@
       "createTimestamp": {
         "_seconds": 1668001067,
         "_nanoseconds": 386000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "6hVZGT7mDHObwqc7iVk4",
@@ -86,7 +90,8 @@
       "createTimestamp": {
         "_seconds": 1666113408,
         "_nanoseconds": 239000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "82PVJ8pWAf3XUBuobgt1",
@@ -104,7 +109,8 @@
       "createTimestamp": {
         "_seconds": 1665497800,
         "_nanoseconds": 872000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "8Y1SA6Pfjj2LIrbUa037",
@@ -123,7 +129,8 @@
       "createTimestamp": {
         "_seconds": 1668424655,
         "_nanoseconds": 280000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "9mUt36g9CuvlJdvGLDVS",
@@ -141,7 +148,8 @@
       "createTimestamp": {
         "_seconds": 1667563372,
         "_nanoseconds": 269000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "9mx91dnbQegxuMZPrp8m",
@@ -159,7 +167,8 @@
       "createTimestamp": {
         "_seconds": 1665424129,
         "_nanoseconds": 280000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "DMbEta12hz6HS1I3rWym",
@@ -177,7 +186,8 @@
       "createTimestamp": {
         "_seconds": 1665737171,
         "_nanoseconds": 422000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "ESyHvSv5gDz2deOwaFkZ",
@@ -194,7 +204,8 @@
       "createTimestamp": {
         "_seconds": 1668599689,
         "_nanoseconds": 357000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "H3Z9ga1ideEdq1Q2UDOa",
@@ -211,7 +222,8 @@
       "createTimestamp": {
         "_seconds": 1664823851,
         "_nanoseconds": 353000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "HWmC1kHb5oxthqwbyrXW",
@@ -229,7 +241,8 @@
       "createTimestamp": {
         "_seconds": 1665739262,
         "_nanoseconds": 621000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "IezpFmDwL1no9qNdYQIG",
@@ -246,7 +259,8 @@
       "createTimestamp": {
         "_seconds": 1667127566,
         "_nanoseconds": 254000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "JPFFlmGXccsFCvny4idC",
@@ -265,7 +279,8 @@
       "createTimestamp": {
         "_seconds": 1667841303,
         "_nanoseconds": 411000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "MktwHZRwKOdE031ba80B",
@@ -282,7 +297,8 @@
       "createTimestamp": {
         "_seconds": 1669391586,
         "_nanoseconds": 184000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "OIJZAyTGJRnFpG7F1J77",
@@ -300,7 +316,8 @@
       "createTimestamp": {
         "_seconds": 1669306996,
         "_nanoseconds": 959000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "PZhCax4A1hSIflgKWUGS",
@@ -319,7 +336,8 @@
       "createTimestamp": {
         "_seconds": 1668786322,
         "_nanoseconds": 338000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "QL23LjbKcwLMnCVGYAn8",
@@ -337,7 +355,8 @@
       "createTimestamp": {
         "_seconds": 1665743272,
         "_nanoseconds": 799000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "RKdpxRlsknOPkd4Lazye",
@@ -355,7 +374,8 @@
       "createTimestamp": {
         "_seconds": 1664630105,
         "_nanoseconds": 262000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "RSFB4Oq1k0AafqRJeZ4z",
@@ -373,7 +393,8 @@
       "createTimestamp": {
         "_seconds": 1666511588,
         "_nanoseconds": 765000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "SltiD9i2aW0hxWmNWWop",
@@ -392,7 +413,8 @@
       "createTimestamp": {
         "_seconds": 1665730461,
         "_nanoseconds": 916000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "TBitgNi5VAJ7maDvY2ZC",
@@ -410,7 +432,8 @@
       "createTimestamp": {
         "_seconds": 1669363146,
         "_nanoseconds": 653000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "TuXPjtB8tUG4yaSnj6pn",
@@ -427,7 +450,8 @@
       "createTimestamp": {
         "_seconds": 1669113770,
         "_nanoseconds": 613000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "TvfUGgFtJJ5z8zp5KcLB",
@@ -445,7 +469,8 @@
       "createTimestamp": {
         "_seconds": 1667930324,
         "_nanoseconds": 577000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "TzYjfulaUQkXB1Stkrer",
@@ -463,7 +488,8 @@
       "createTimestamp": {
         "_seconds": 1669493466,
         "_nanoseconds": 983000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "Uix3DyDf349JzrHJptTl",
@@ -481,7 +507,8 @@
       "createTimestamp": {
         "_seconds": 1665644077,
         "_nanoseconds": 879000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "UjwT58pQSRJUK8aLYfna",
@@ -499,7 +526,8 @@
       "createTimestamp": {
         "_seconds": 1666527165,
         "_nanoseconds": 595000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "VaECb4MkKg6Si1uzVFK2",
@@ -518,7 +546,8 @@
       "createTimestamp": {
         "_seconds": 1668768133,
         "_nanoseconds": 267000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "Y3UvX1gfVgRQtncTbfSa",
@@ -536,7 +565,8 @@
       "createTimestamp": {
         "_seconds": 1667151083,
         "_nanoseconds": 32000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "Yta40p2efXdTF7BvmnJ9",
@@ -554,7 +584,8 @@
       "createTimestamp": {
         "_seconds": 1669029304,
         "_nanoseconds": 820000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "cTeyrIyyeQTdDc7x2kLK",
@@ -572,7 +603,8 @@
       "createTimestamp": {
         "_seconds": 1664647786,
         "_nanoseconds": 118000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "cqhVPs2RgbRvlBNQZyN5",
@@ -590,7 +622,8 @@
       "createTimestamp": {
         "_seconds": 1666082524,
         "_nanoseconds": 692000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "eMlIQizK95KpLycTP70y",
@@ -607,7 +640,8 @@
       "createTimestamp": {
         "_seconds": 1667914338,
         "_nanoseconds": 644000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "fADNfLumOONTJin3kcOQ",
@@ -624,7 +658,8 @@
       "createTimestamp": {
         "_seconds": 1666978711,
         "_nanoseconds": 111000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "hRCioWdYNuGOTw59bLm9",
@@ -642,7 +677,8 @@
       "createTimestamp": {
         "_seconds": 1664954626,
         "_nanoseconds": 544000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "i8RUBCZSCXX1EpP5Ce3T",
@@ -659,7 +695,8 @@
       "createTimestamp": {
         "_seconds": 1664560023,
         "_nanoseconds": 734000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "iqyLnwdkN4a8O5WcpV7i",
@@ -677,7 +714,8 @@
       "createTimestamp": {
         "_seconds": 1667311448,
         "_nanoseconds": 450000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "kgKT9TgmJggaYZ5VVn9a",
@@ -695,7 +733,8 @@
       "createTimestamp": {
         "_seconds": 1669376350,
         "_nanoseconds": 795000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "l23b0hpll77Fk1LNLIWN",
@@ -713,7 +752,8 @@
       "createTimestamp": {
         "_seconds": 1664786667,
         "_nanoseconds": 17000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "mAzMafjZzEjUvK5w8hct",
@@ -730,7 +770,8 @@
       "createTimestamp": {
         "_seconds": 1669026004,
         "_nanoseconds": 770000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "mR9GTCYeKujpZ6YkFr0y",
@@ -747,7 +788,8 @@
       "createTimestamp": {
         "_seconds": 1665170938,
         "_nanoseconds": 689000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "neprDB8HcIu0LJn0XexY",
@@ -765,7 +807,8 @@
       "createTimestamp": {
         "_seconds": 1667590251,
         "_nanoseconds": 270000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "omWyNKhCM0MT1GwS9wWG",
@@ -784,7 +827,8 @@
       "createTimestamp": {
         "_seconds": 1666336741,
         "_nanoseconds": 933000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "opMtA5pHQNvWz9AEJd6F",
@@ -803,7 +847,8 @@
       "createTimestamp": {
         "_seconds": 1666709715,
         "_nanoseconds": 687000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "p77AbCE87X3s091WvRcb",
@@ -821,7 +866,8 @@
       "createTimestamp": {
         "_seconds": 1664810467,
         "_nanoseconds": 962000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "r1Bi03rwl8MUWDrFv2BW",
@@ -840,7 +886,8 @@
       "createTimestamp": {
         "_seconds": 1669393071,
         "_nanoseconds": 496000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "txsbzctz75bYv2CHpoit",
@@ -858,7 +905,8 @@
       "createTimestamp": {
         "_seconds": 1667817946,
         "_nanoseconds": 154000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "uYdE2DzqELvT4lEL9OAc",
@@ -875,7 +923,8 @@
       "createTimestamp": {
         "_seconds": 1665828073,
         "_nanoseconds": 68000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "uhJk2QvrixVicAGP5ZLF",
@@ -893,7 +942,8 @@
       "createTimestamp": {
         "_seconds": 1669545450,
         "_nanoseconds": 81000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "v1zt5Tr807oFayaQ722R",
@@ -911,7 +961,8 @@
       "createTimestamp": {
         "_seconds": 1667984135,
         "_nanoseconds": 801000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "vSHKQqPa25JkOZrGKfBa",
@@ -930,7 +981,8 @@
       "createTimestamp": {
         "_seconds": 1665993536,
         "_nanoseconds": 30000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "vWqRo4G2Zt787YV5hu0p",
@@ -948,7 +1000,8 @@
       "createTimestamp": {
         "_seconds": 1665640237,
         "_nanoseconds": 186000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "xn10AFjRHyYPFPeVv69O",
@@ -965,7 +1018,8 @@
       "createTimestamp": {
         "_seconds": 1666185868,
         "_nanoseconds": 959000000
-      }
+      },
+      "slidesLinks": []
     },
     {
       "id": "zvFb4Oj4FfNaxbaWPHE9",
@@ -983,7 +1037,8 @@
       "createTimestamp": {
         "_seconds": 1665048374,
         "_nanoseconds": 378000000
-      }
+      },
+      "slidesLinks": [{"pdf": "zvFb4Oj4FfNaxbaWPHE9.pdf"}]
     },
     {
       "id": "ZmvGwBSs3jNHkA7ZDF8v",
@@ -997,34 +1052,58 @@
         "Ny2h9DGprRgd9n6PJYFijyYI0OQ2"
       ],
       "comments": "Se reconvertir dans un domaine qui nous est inconnu est un coup de poker. On peut tout y gagner comme tout y perdre. \n\nC’est un parcours semé d’embûches entre la perception biaisée de la réalité du métier, de la particularité d’être reconverti et le syndrome de l’imposteur. \n\nLes profils de reconversion sont de plus en plus nombreux dans le développement web. Alors, je veux à travers ce talk montrer qu’il est non seulement possible de n’avoir jamais codé et de se reconvertir mais aussi qu’il est accessible à tous de mieux comprendre ces profils et donc mieux les intégrer dans le paysage du développement web. \n\nNous établirons d’abord le portrait robot du reconverti. Nous analyserons les biais/freins (réaction de l’entourage face à la reconversion, âgisme, accès à la formation, recherche du premier poste) auxquels il est sujet pour en tirer les éléments nous permettant de mieux accompagner, soutenir tout reconverti. \n\n\nCette conférence a été présentée en Quickies de 15 et 25 min.",
-      "language": "French"
+      "language": "French",
+      "slidesLinks": []
     },
     {
       "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
-      "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "speakers": ["lionelDricot"],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "slidesLinks": []
     },
     {
       "id": "keynoteCloture1",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "slidesLinks": []
     },
     {
       "id": "keynoteOuverture2",
       "title": "Keynote d'ouverture",
-      "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "speakers": ["stephaneBortzmeyer"],
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "slidesLinks": ["https://www.bortzmeyer.org/touraine-tech-2023.html"]
     },
     {
       "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "slidesLinks": []
     }
   ],
   "speakers": [
+    {
+      "uid": "stephaneBortzmeyer",
+      "displayName": "Stephane Bortzmeyer",
+      "bio": "Stéphane Bortzmeyer est un informaticien français spécialiste des réseaux informatiques. (extrait de : https://fr.wikipedia.org/wiki/St%C3%A9phane_Bortzmeyer)",
+      "twitter": "@bortzmeyer",
+      "mastodon": {
+        "server": "mastodon.gougere.fr",
+        "username": "@bortzmeyer"
+      }
+    },
+    {
+      "uid": "lionelDricot",
+      "displayName": "Lionel Dricot (Ploum)",
+      "bio": "Je suis Lionel Dricot, écrivain de science-fiction, développeur de logiciels libres et enseignant à l’École Polytechnique de Louvain. J’aime l’apnée, le bikepacking, la nage en eau froide et collectionner les anciennes machines à écrire sur lesquelles j’écris des romans et des nouvelles parlant du futur. Appelez-moi Ploum !",
+      "mastodon": {
+        "server": "mamot.fr",
+        "username": "@ploum"
+      }
+    },
     {
       "uid": "vTyhTPQNomd3MwKBg1HAQmWfYW93",
       "displayName": "Eléa Petton",
