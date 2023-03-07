@@ -8,6 +8,7 @@ export default {
     isScheduleOnline: true,
     isEditionOpen: true,
     isVideoOnline: false,
+    isPhotoOnline: true,
     nbEdition: 5,
     displaySponsors : true,
     displayBeginnerSpeakers: false,

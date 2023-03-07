@@ -48,8 +48,10 @@ export default {
       sections.push({ name: "Nos speakers", anchor: "#speakers", mobile: false })
       sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
     }
-    if(configuration.isVideoOnline) {
+    if(configuration.isPhotoOnline) {
       sections.push({ name: "Les photos", anchor: "#pictures", mobile: false })
+    }
+    if(configuration.isVideoOnline) {
       sections.push({ name: "La vidéo", anchor: "#video", mobile: false })
     }
     sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
