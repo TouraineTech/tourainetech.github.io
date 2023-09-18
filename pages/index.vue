@@ -9,7 +9,7 @@
       <BeginnerSpeakers v-if="!configuration.isScheduleOnline && configuration.isCfpOpen"></BeginnerSpeakers>
       <TopSpeakers v-if="configuration.isScheduleOnline"></TopSpeakers>
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
-      <Pictures v-if="configuration.isVideoOnline"></Pictures>
+      <Pictures v-if="configuration.isPhotoOnline"></Pictures>
       <Video v-if="configuration.isVideoOnline"></Video>
 
       <Team></Team>
