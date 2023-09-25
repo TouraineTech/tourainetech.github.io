@@ -7,10 +7,6 @@
   </div>
 </template>
 
-<style lang="scss">
-@import "./../assets/scss/main.scss";
-</style>
-
 <script>
 import Footer from "~/components/Footer.vue";
 import Socials from "~/components/Socials.vue";
@@ -52,3 +48,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "./../assets/scss/main.scss";
+</style>
