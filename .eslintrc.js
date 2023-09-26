@@ -18,6 +18,8 @@ module.exports = {
   rules: {
     "vue/max-attributes-per-line": "off",
     "vue/html-self-closing": "off",
-    "vue/attributes-order": "off"
+    "vue/attributes-order": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-reserved-component-names": "off"
   }
 }
