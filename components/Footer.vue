@@ -20,6 +20,13 @@
         <li>
           <a
             rel="noreferrer"
+            href="https://2023.touraine.tech/"
+            target="_blank"
+          >Édition 2023</a>
+        </li>
+        <li>
+          <a
+            rel="noreferrer"
             href="https://2022.touraine.tech/"
             target="_blank"
           >Édition 2022</a>
@@ -51,6 +58,25 @@
   </footer>
 </template>
 
+<script>
+import Socials from "~/components/Socials.vue";
+
+export default {
+  components: {
+    Socials
+  },
+  methods: {
+    mailTo() {
+      // split the email to avoid most simple robot spam
+      const address = "team";
+      const domain = "touraine.tech";
+      window.open(`mailto:${address}@${domain}`, 'mail')
+    }
+  }
+};
+</script>
+
+
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
 
@@ -79,23 +105,4 @@ footer {
   }
 }
 </style>
-
-
-<script>
-import Socials from "~/components/Socials.vue";
-
-export default {
-  components: {
-    Socials
-  },
-  methods: {
-    mailTo() {
-      // split the email to avoid most simple robot spam
-      const address = "team";
-      const domain = "touraine.tech";
-      window.open(`mailto:${address}@${domain}`, 'mail')
-    }
-  }
-};
-</script>
 
