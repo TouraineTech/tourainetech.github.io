@@ -5,16 +5,28 @@
   >
     <div class="container--fix container--center">
       <h2>Billetterie</h2>
+      <span class="RegisterButton">Ouverture de la billetterie le 30 octobre 2023 à 13h00</span>
+      <!--      <div>-->
+      <!--        <a-->
+      <!--          href="https://billetterie.touraine.tech"-->
+      <!--          target="_blank"-->
+      <!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
+      <!--        >Achetez votre place !</a>-->
+      <!--      </div>-->
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--soldOut PriceBloc--early"
+          class="PriceBloc PriceBloc--early"
+          href="https://billetterie.touraine.tech"
+          target="_blank"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">25 €</div>
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc  PriceBloc--soldOut"
+          class="PriceBloc"
+          href="https://billetterie.touraine.tech"
+          target="_blank"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
           <div class="PriceBloc-price">37 €</div>
@@ -51,6 +63,8 @@
   </section>
 </template>
 
+<script setup>
+</script>
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
 
@@ -130,7 +144,6 @@
 
 .RegisterButton {
   display: inline-block;
-  margin-top: 4rem;
 }
 
 .RegisterHelp {

@@ -13,7 +13,7 @@
       <Video v-if="configuration.isVideoOnline"></Video>
 
       <Team></Team>
-      <Map></Map>
+      <!--      <Map></Map>-->
     </template>
     <template v-else>
       <RendezVous></RendezVous>
