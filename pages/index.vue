@@ -46,7 +46,7 @@ export default {
     Schedule,
     Header2022,
     About,
-    Map,
+    // Map,
     Team,
     CFP,
     RendezVous,
