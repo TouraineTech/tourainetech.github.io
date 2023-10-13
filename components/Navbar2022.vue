@@ -48,7 +48,7 @@ export default {
       sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
     }
     if(configuration.isScheduleOnline) {
-      sections.push({ name: "Nos speakers", anchor: "#speakers", mobile: false })
+      sections.push({ name: "Nos speaker·euse·s", anchor: "#speakers", mobile: false })
       sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
     }
     if(configuration.isPhotoOnline) {
