@@ -8,7 +8,7 @@
 .beginner-speakers-link {
   display: block;
   font-size: 0.9em;
-  color: $color-secondary;
+  color: $color-primary;
   text-align: center;
 }
 </style>

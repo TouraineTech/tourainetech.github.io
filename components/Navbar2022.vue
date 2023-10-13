@@ -40,6 +40,9 @@ export default {
     if(configuration.displaySponsors) {
       sections.push({ name: "Sponsors", anchor: "#sponsors", mobile: true })
     }
+    if(configuration.isCfpOpen) {
+      sections.push({ name: "Proposer un talk", anchor: "#cfp", mobile: true })
+    }
 
     if(configuration.isRegisterOpen) {
       sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
