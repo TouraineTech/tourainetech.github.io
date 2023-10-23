@@ -42,6 +42,10 @@ html {
     font-weight: 300;
     padding-bottom: 2rem;
     font-size: 36px;
+
+    @media screen and (max-width: $mobile-step) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -99,7 +103,6 @@ a.button--white{
 span.label--text {
   font-weight: bold;
   padding: 0.8rem 0.5rem 0.5rem;
-  white-space: nowrap;
   line-height: 4rem;
 }
 
