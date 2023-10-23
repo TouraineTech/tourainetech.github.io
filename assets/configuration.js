@@ -1,7 +1,7 @@
 export default {
     isCfpOpen: true,
     cfpDeliberationDate: 'mercredi 06 décembre 2023',
-    eventDate: '15 & 16 fevrier 2024',
+    eventDate: '8 & 9 fevrier 2024',
     eventEdition: '24',
     isRegisterOpen: false,
     isSoldOut: false,
@@ -10,6 +10,6 @@ export default {
     isVideoOnline: false,
     isPhotoOnline: false,
     nbEdition: 6,
-    displaySponsors : false,
+    displaySponsors : true,
     displayBeginnerSpeakers: false,
 }
