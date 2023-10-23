@@ -6,7 +6,7 @@
     <div class="container--fix container--center">
       <h2>#BackToSchool</h2>
       <p class="backtoschool--intro">
-        Rendez-vous le <span class="label--text label--white">{{ configuration.eventDate }}</span> pour une conférence à un prix accessible.
+        Rendez-vous le <span class="label--text label--white">{{ configuration.eventDate }}</span> à <span class="label--text label--white">la Faculté des Sciences et Techniques de l'Université de Tours</span>  pour une conférence à un prix accessible.
       </p>
     </div>
   </section>

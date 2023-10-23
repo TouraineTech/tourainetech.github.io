@@ -13,7 +13,7 @@
       <Video v-if="configuration.isVideoOnline"></Video>
 
       <Team></Team>
-      <!--      <Map></Map>-->
+      <Map></Map>
     </template>
     <template v-else>
       <RendezVous></RendezVous>
@@ -46,7 +46,7 @@ export default {
     Schedule,
     Header2022,
     About,
-    // Map,
+    Map,
     Team,
     CFP,
     RendezVous,
