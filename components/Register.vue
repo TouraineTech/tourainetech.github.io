@@ -20,7 +20,7 @@
           target="_blank"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
-          <div class="PriceBloc-price">25 €</div>
+          <div class="PriceBloc-price">30 €</div>
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
@@ -29,7 +29,7 @@
           target="_blank"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
-          <div class="PriceBloc-price">37 €</div>
+          <div class="PriceBloc-price">50 €</div>
         </a>
       </div>
 
