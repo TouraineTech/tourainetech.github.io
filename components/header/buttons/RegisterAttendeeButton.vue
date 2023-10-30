@@ -4,7 +4,7 @@
     class="HeaderButton"
   >
     <!--    <span class="HeaderButton-title RegisterAttendee-title">Ouverture de la billetterie le 30 octobre</span>-->
-    <span class="HeaderButton-subtitle RegisterAttendee-subtitle">la billetterie est ouverte</span>
+    <span class="HeaderButton-title RegisterAttendee-title">La billetterie est ouverte</span>
   </a>
 </template>
 

@@ -15,9 +15,7 @@
       <!--      </div>-->
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--early"
-          href="https://billetterie.touraine.tech"
-          target="_blank"
+          class="PriceBloc PriceBloc--early PriceBloc--soldOut"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
           <div class="PriceBloc-price">30 €</div>
