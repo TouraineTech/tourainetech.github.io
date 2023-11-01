@@ -8,14 +8,13 @@
           <a href="https://cfp.touraine.tech" target="_blank">
             CFP est ouvert
           </a>
-          pour cette édition,
         </p>
+        <p>Vous pouvez proposer un sujet jusqu'au <span class="label--text label--green">{{ configuration.cfClosingDate }}</span></p>
       </template>
       <template v-else>
         Le CFP est clos pour cette édition,
       </template>
-      la délibération se fera le
-      <span class="label--text label--green">{{ configuration.cfpDeliberationDate }}</span>.
+      La délibération se fera le <span class="label--text label--green">{{ configuration.cfpDeliberationDate }}</span>
     </div>
   </section>
 </template>
