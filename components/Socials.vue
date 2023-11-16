@@ -7,8 +7,9 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/twitter.png"
-            alt="Twitter logo"
+            src="@/assets/img/x.svg"
+            alt="Twitter/X logo"
+            style="padding: 4px"
           >
         </a>
       </li>
