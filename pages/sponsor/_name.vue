@@ -25,7 +25,7 @@
         </div>
         <div v-if="sponsor.twitter">
           <a :href="sponsor.twitter" target="_blank">
-            <img src="@/assets/img/twitter-rounded.svg" width="50px" alt="twitter logo">
+            <img src="@/assets/img/x.svg" style="filter: invert(); padding: 4px" width="50px" alt="twitter logo">
           </a>
         </div>
         <div v-if="sponsor.facebook">
