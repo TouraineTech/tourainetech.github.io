@@ -35,6 +35,17 @@
           >
         </a>
       </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/company/tourainetech/"
+          target="_blank"
+        >
+          <img
+            src="@/assets/img/linkedin.svg"
+            alt="Linked in logo"
+          >
+        </a>
+      </li>
     </ul>
   </div>
 </template>
