@@ -57,7 +57,7 @@ export default {
     if(configuration.isVideoOnline) {
       sections.push({ name: "La vidéo", anchor: "#video", mobile: false })
     }
-    sections.push(        { name: "L'équipe", anchor: "#team", mobile: false },)
+    sections.push({ name: "L'équipe", anchor: "#team", mobile: false },)
     return {
       scrolledToHide: false,
       scrolledToShow: false,
