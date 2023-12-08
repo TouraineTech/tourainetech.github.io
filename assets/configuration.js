@@ -1,5 +1,5 @@
 export default {
-    isCfpOpen: true,
+    isCfpOpen: false,
     cfpDeliberationDate: 'mercredi 06 décembre 2023',
     cfClosingDate: 'vendredi 30 novembre 2023',
     eventDate: '8 & 9 fevrier 2024',

@@ -100,17 +100,18 @@ a.button--white{
   border: 2px solid $color-secondary;
 }
 
-span.label--text {
+a.label--text, span.label--text {
   font-weight: bold;
   padding: 0.8rem 0.5rem 0.5rem;
   line-height: 4rem;
 }
 
-span.label--white {
+a.label--white, span.label--white {
   color: white;
   border-color: white;
   background-color: lighten($color-secondary, 10%);
 }
+
 
 span.label--green {
   color: $color-secondary;
