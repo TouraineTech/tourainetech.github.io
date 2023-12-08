@@ -26,7 +26,7 @@
       </li>
       <li>
         <a
-          href="https://www.youtube.com/channel/UC4apQIHE7viAVy1oO5Ruq2w"
+          href="https://www.youtube.com/@tourainetech37"
           target="_blank"
         >
           <img
