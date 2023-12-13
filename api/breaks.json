@@ -45,17 +45,28 @@
     "days": [1,2]
   },
   {
-    "id": "dejeuner",
-    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Quickie)",
+    "id": "am2",
+    "name": "Pause",
     "format": "break",
     "rooms": [
-      1,
-      2,
       3,
       4
     ],
     "times": [
       6
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "dejeuner",
+    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Quickie)",
+    "format": "break",
+    "rooms": [
+      1,
+      2
+    ],
+    "times": [
+      8
     ],
     "days": [1,2]
   },
@@ -70,7 +81,7 @@
       4
     ],
     "times": [
-      8
+      10
     ],
     "days": [1,2]
   },
@@ -85,7 +96,7 @@
       4
     ],
     "times": [
-      12
+      14
     ],
     "days": [1,2]
   },
@@ -100,7 +111,7 @@
       4
     ],
     "times": [
-      10
+      12
     ],
     "days": [1,2]
   },
@@ -115,7 +126,7 @@
       4
     ],
     "times": [
-      14
+      16
     ],
     "days": [1,2]
   },
@@ -130,7 +141,7 @@
       4
     ],
     "times": [
-      16
+      18
     ],
     "days": [1,2]
   },
@@ -145,7 +156,7 @@
       4
     ],
     "times": [
-      18
+      20
     ],
     "days": [1,2]
   },
@@ -160,7 +171,7 @@
       4
     ],
     "times": [
-      20
+      22
     ],
     "days": [1]
   }

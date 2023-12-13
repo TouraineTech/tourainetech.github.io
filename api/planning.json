@@ -14,7 +14,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
-    "times": [17],
+    "times": [19],
     "day": 1
   },
   {
@@ -23,7 +23,7 @@
     "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [4],
-    "times": [15],
+    "times": [17],
     "day": 1
   },
   {
@@ -31,8 +31,8 @@
     "title": "Les classes abstraites c’est fini (et c’est la faute à TDD)",
     "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-    "rooms": [2],
-    "times": [5],
+    "rooms": [4],
+    "times": [7, 8, 9],
     "day": 1
   },
   {
@@ -50,7 +50,7 @@
     "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [3],
-    "times": [7],
+    "times": [5],
     "day": 1
   },
   {
@@ -59,7 +59,7 @@
     "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
     "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
     "rooms": [5],
-    "times": [3, 4, 5],
+    "times": [3, 4, 5, 6, 7],
     "day": 1
   },
   {
@@ -67,8 +67,8 @@
     "title": " De l’ignorance à la dépendance : Comment l’IA a changé ma façon de coder?",
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
-    "rooms": [4],
-    "times": [7],
+    "rooms": [2],
+    "times": [9],
     "day": 1
   },
   {
@@ -77,7 +77,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "2d0b4c99-c723-5e89-8632-e76e0c52ce1d",
     "rooms": [1],
-    "times": [19],
+    "times": [21],
     "day": 1
   },
   {
@@ -104,7 +104,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [1],
-    "times": [9],
+    "times": [11],
     "day": 1
   },
   {
@@ -122,7 +122,7 @@
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "2d0b4c99-c723-5e89-8632-e76e0c52ce1d",
     "rooms": [4],
-    "times": [13],
+    "times": [15],
     "day": 1
   },
   {
@@ -140,7 +140,7 @@
     "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
-    "times": [19],
+    "times": [21],
     "day": 1
   },
   {
@@ -158,7 +158,7 @@
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [4],
-    "times": [19],
+    "times": [21],
     "day": 1
   },
   {
@@ -185,7 +185,7 @@
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [3],
-    "times": [9],
+    "times": [11],
     "day": 1
   },
   {
@@ -203,7 +203,7 @@
     "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [1],
-    "times": [15],
+    "times": [17],
     "day": 1
   },
   {
@@ -212,7 +212,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
-    "times": [15],
+    "times": [17],
     "day": 1
   },
   {
@@ -239,7 +239,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [1],
-    "times": [5],
+    "times": [5, 6, 7],
     "day": 1
   },
   {
@@ -275,7 +275,7 @@
     "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
     "formats": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
     "rooms": [5],
-    "times": [13, 14, 15],
+    "times": [15, 16, 17],
     "day": 1
   },
   {
@@ -284,7 +284,7 @@
     "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
-    "times": [13],
+    "times": [15],
     "day": 1
   },
   {
@@ -329,7 +329,7 @@
     "categories": "ef452c33-83cf-5472-8e72-acd374e24b58",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
-    "times": [13],
+    "times": [15],
     "day": 1
   },
   {
@@ -347,7 +347,7 @@
     "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
     "formats": "2d0b4c99-c723-5e89-8632-e76e0c52ce1d",
     "rooms": [3],
-    "times": [19],
+    "times": [21],
     "day": 1
   },
   {
@@ -365,7 +365,7 @@
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [1],
-    "times": [11],
+    "times": [13],
     "day": 1
   },
   {
@@ -401,7 +401,7 @@
     "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [1],
-    "times": [17],
+    "times": [19],
     "day": 1
   },
   {
@@ -437,7 +437,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [2],
-    "times": [9],
+    "times": [11],
     "day": 1
   },
   {
@@ -446,7 +446,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [4],
-    "times": [17],
+    "times": [19],
     "day": 1
   },
   {
@@ -482,7 +482,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "338780b9-2b80-561c-b303-70c6048eb2a0",
     "rooms": [1],
-    "times": [7],
+    "times": [9],
     "day": 1
   },
   {
@@ -491,7 +491,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [1],
-    "times": [13],
+    "times": [15],
     "day": 1
   },
   {
@@ -509,7 +509,7 @@
     "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
-    "times": [15],
+    "times": [17],
     "day": 1
   },
   {
@@ -518,7 +518,7 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [3],
-    "times": [11],
+    "times": [13],
     "day": 1
   },
   {
@@ -527,7 +527,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "338780b9-2b80-561c-b303-70c6048eb2a0",
     "rooms": [2],
-    "times": [11],
+    "times": [13],
     "day": 1
   },
   {
@@ -536,7 +536,7 @@
     "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [4],
-    "times": [11],
+    "times": [13],
     "day": 1
   },
   {
@@ -545,7 +545,7 @@
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [2],
-    "times": [17],
+    "times": [19],
     "day": 1
   },
   {
@@ -562,8 +562,8 @@
     "title": "Comment devenir un parfait \"boyscout\" ?",
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
-    "rooms": [2],
-    "times": [7],
+    "rooms": [4],
+    "times": [5],
     "day": 1
   },
   {
@@ -571,8 +571,8 @@
     "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
     "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-    "rooms": [4],
-    "times": [5],
+    "rooms": [2],
+    "times": [5, 6, 7],
     "day": 1
   },
   {
@@ -608,7 +608,7 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [3],
-    "times": [5],
+    "times": [7, 8, 9],
     "day": 1
   },
   {
@@ -626,7 +626,7 @@
     "categories": "78e751d2-e8f0-5aca-9e0e-373fc79208c3",
     "formats": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
     "rooms": [4],
-    "times": [9],
+    "times": [11],
     "day": 1
   },
   {
@@ -664,7 +664,7 @@
       4
     ],
     "times": [
-      21
+      23
     ],
     "day": 1
   },
@@ -694,7 +694,7 @@
       4
     ],
     "times": [
-      19
+      21
     ],
     "day": 2
   }

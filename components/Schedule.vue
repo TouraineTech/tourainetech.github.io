@@ -94,7 +94,7 @@
 export default {
   data() {
     return {
-      day: 2
+      day: 1
     }
   },
   computed: {
