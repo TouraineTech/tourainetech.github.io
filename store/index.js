@@ -17,7 +17,28 @@ function addPlanningToTalks(TALKS) {
   const planningByTalkId = {};
   PLANNING.forEach(planning => planningByTalkId[planning.id] = planning);
 
-  return TALKS.map(talk => {
+  const dummies = [    {
+    "id": "dummy1",
+    "title": "",
+    "state": "confirmed",
+    "level": "intermediate",
+    "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
+    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "speakers": [],
+    "language": "French"
+  },
+    {
+      "id": "dummy2",
+      "title": "",
+      "state": "confirmed",
+      "level": "intermediate",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
+      "speakers": [],
+      "language": "French"
+    },]
+
+  return [...TALKS, ...dummies].map(talk => {
     talk.rooms = planningByTalkId[talk.id].rooms;
     talk.times = planningByTalkId[talk.id].times;
     talk.day = planningByTalkId[talk.id].day;

@@ -34,6 +34,7 @@
       </div>
       <div
         v-for="talk of talks"
+        :id="talk.id"
         :key="talk.id"
         :class="talkCssClass(talk)"
         :style="talkCellStyle(talk)"
@@ -148,9 +149,11 @@ export default {
         "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9": "alien"
       }[categories];
       const format = {
-        "d6fdc077-e3e3-5fe2-bdd4-5af4bc349e2a": "quickie",
+        "338780b9-2b80-561c-b303-70c6048eb2a0": "quickie",
+        "e1af170f-dbcf-5d6e-9ffa-587a55f7a177": "quickie",
         "84638839-c9f7-5eaf-9df5-5fcb578c2c6d": "conference",
-        "5c8efbbf-1640-5a9b-b42e-0c1180b82d02": "hands-on"
+        "2d0b4c99-c723-5e89-8632-e76e0c52ce1d": "conference",
+        "95d5ba79-ebfc-5e1a-8b45-184925424f1b": "hands-on"
       }[formats];
       return [
         "schedule-talk--cell",
@@ -430,13 +433,18 @@ $color-alien: #066420;
 }
 
 .schedule-talk-time1--cell p.schedule-room--duration-level,
-.schedule-talk-time21--cell p.schedule-room--duration-level {
+.schedule-talk-time23--cell p.schedule-room--duration-level {
   display: none;
 }
 
 .disabled {
   color: lightgrey;
   pointer-events: none;
+}
+
+#dummy1 ul.schedule-talk-category,
+#dummy2 ul.schedule-talk-category{
+  visibility: hidden;
 }
 </style>
 

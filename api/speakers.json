@@ -1,0 +1,702 @@
+[
+  {
+    "id": "vTyhTPQNomd3MwKBg1HAQmWfYW93",
+    "name": "Eléa Petton",
+    "avatar": "https://avatars.githubusercontent.com/u/78957502?v=4",
+    "github": "eleapttn",
+    "twitter": "@EleaPetton",
+    "bio": "Etudiante pendant cinq ans à l'école d'ingénieurs ISEN Brest, je suis diplômée en octobre 2022 en tant qu'ingénieur généraliste avec une coloration Intelligence Artificielle (IA).\n\nL'IA est un domaine qui me passionne et dans lequel je me spécialise en intégrant la TEAM AI Solutions d'OVHcloud depuis mai 2021, en stage, en alternance, puis en tant que Machine Learning Engineer.\n\nJe travaille sur trois produits d'OVHcloud dédiés à l'entraînement et à l'application d'IA : AI Training,  AI Notebooks et AI Deploy. Mon rôle est de créer des verticaux sur ces produits sous différents formats pour les utilisateurs. En somme, je créée des notebooks et autres types de tutoriels en Python. Je manipule également Docker pour le déploiement d'applications et rédige des documentations et articles de blog autours du monde de l'IA.",
+    "company": "OVHcloud",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ATWxmgrBTEcstZyQjR25MPP5wJS2",
+    "name": "Jean Couteau",
+    "avatar": "https://cache.sessionize.com/image/db9b-200o200o2-RWGGmT7jGwj2jts6FzDaDn.jpeg",
+    "twitter": "@jcouteau",
+    "company": "Code Lutin",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
+    "name": "Adrien PESSU",
+    "avatar": "https://lh4.googleusercontent.com/-1wzRZnWEiLs/AAAAAAAAAAI/AAAAAAAAAgY/MXjzTjS-Qu4/photo.jpg",
+    "github": "@adrienpessu",
+    "twitter": "@adrienpessu",
+    "bio": "Je suis developer Field security specialist chez GitHub, mais je suis avant tout un développeur passionné, en particulier de Java, Kotlin et Web. Je m'intéresse aussi particulièrement à la sécurité applicative (AppSec). J'aime chercher/corriger des bugs de sécurité, mais aussi partager et mettre en place les bonnes pratiques.",
+    "company": "GitHub",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "aHchGCaQStWhoqQtDKBjBpkEnLF2",
+    "name": "Guillaume Membré",
+    "avatar": "https://lh5.googleusercontent.com/-_wR1F6ARzlY/AAAAAAAAAAI/AAAAAAAAABA/sL5Sk_m1uWA/photo.jpg",
+    "github": "gmembre-zenika",
+    "twitter": "@GuillaumeMembre",
+    "bio": "Geek à toute heure, je travaille principalement sur des sujets de migration d’architecture sur le cloud d'AWS et également sur des problématiques d'intégration et de déploiement continu. Je partage son expérience pour faciliter la mise en place de démarche devops chez différents acteurs. J'adore bidouiller des RaspberryPi ou Arduino pour créer des choses inutiles donc indispensables !\nLorsque le temps le permet, je décris mes aventures sur mon [site web](https://www.mydiy.dev/).",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "z40htDnoNBgrrGeOikcH3MaKimO2",
+    "name": "Édouard Siha",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c",
+    "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
+    "company": "WeScale",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
+    "name": "Alexis \"Horgix\" Chotard",
+    "avatar": "https://avatars2.githubusercontent.com/u/4584397?v=4",
+    "github": "Horgix",
+    "twitter": "@Horgix",
+    "bio": "# Bio\n\nAlexis \"Horgix\" Chotard is a french systems and software engineer currently working at Xebia (https://xebia.fr/).\n\nWith a software engineering background, and experiences more inclined toward systems and infrastructure, he naturally finds himself at home around \"DevOps\" topics.\nAlexis \"Horgix\" is eager to automate everything he can and currently loves working on various topics such as continuous integration and deployment, or design of dynamic architectures and applications integration into these. He's happy to face new challenges with the gain in popularity of containers and to look for evolutions of traditionnal workflows.\nOn his spare time, he also maintains a bunch of ArchLinux packages, contributes to Open Source projects and plays with Cloud Native solutions to be able to use them in real clients projects.\n\n# Speaker experience\n\n- \"An Ops among the Devs : a feedback from both sides\" - Talk at \"DevOps REX\", a french conference on feedback around DevOps (800 people) : https://www.youtube.com/watch?v=6KnKYHUjIjg\n\n- \"How I automated Photobox' incident management in 13h\" - Talk at Xebicon 2017 (80 people), composed at 70% of live demo : https://www.youtube.com/watch?v=nlEbgHKy6PY (sadly, the demo itself wasn't captured on the video)\n\n- \"Modern infrastructure, automation, whales and stuff\" - Talk at a french engineering school about evolution of infrastructure paradigms (50 people) : https://www.youtube.com/watch?v=iIBqoU-LdQQ\n\n- Trainer during Docker meetups including workshops in Paris, speaker at internal conferences at my company and clients, etc.\n",
+    "company": "Publicis Sapient France",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "IlVQ3DcdvccEIvzcYr75msiHJUo1",
+    "name": "Sylvain Gougouzian",
+    "avatar": "https://avatars.githubusercontent.com/u/219936?v=4",
+    "github": "gouz",
+    "twitter": "gouz",
+    "bio": "Senior Dev @ Zenika since Septembre 2022\n\nEx CTO/Founder @ Lidrea\n\nMy resumé is available at https://sylvain.gougouzian.fr and all my socials links at https://gouz.dev",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "MKkYzwlXx6dLM9cfE5vXYqJo5d43",
+    "name": "Aurélie Vache",
+    "avatar": "https://lh5.googleusercontent.com/-Jx8n2dYA8Ss/AAAAAAAAAAI/AAAAAAAAYLA/oDqXfvM9CfY/photo.jpg",
+    "github": "scraly",
+    "twitter": "@aurelievache",
+    "bio": "Aurélie est DevRel chez OVHcloud à Toulouse, France. Elle est GDE (Google Developer Expert) pour les technologies Cloud, Docker Captain, CNCF Ambassador, GitPod Hero & CKAD (Kubernetes for Developers certifiée). Elle travaille en tant que Développeur et Ops depuis plus de 15 ans. Elle a construit, déployée et exploitée de nombreuses applications dans différentes architectures et environnements. Elle est une passionnée de Cloud et prône les bonnes pratiques DevOps/Cloud/Golang.\n\nEn tant que l’une des leaders de Duchess France, une association qui promeut les femmes développeurs et les femmes travaillant dans l'informatique, elle est fortement impliquée dans leur initiative de coaching #AdoptADuchess, qui aide les développeurs débutants et en reconversion. \n\nElle est organisatrice de conférences et de meetups depuis 2016. Elle est également rédactrice technique (dev.to/aurelievache), sketchnoter et speaker.\n\nElle a créé une nouvelle façon visuelle pour les gens d'apprendre et de comprendre les technologies Cloud : \"Understanding Kubernetes/Istio/Docker in a visual way\" dans des sketchnotes et des vidéos.",
+    "company": "OVHcloud",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "yBuTCMIOkLTJMFhtXvj6ulzL4Rp1",
+    "name": "Christopher MANEU",
+    "avatar": "https://avatars2.githubusercontent.com/u/790974?v=4",
+    "github": "cmaneu",
+    "twitter": "@cmaneu",
+    "bio": "Christopher est Ingénieur cloud & developer advocate chez Microsoft. Il travaille avec, aide et forme les développeurs à travers le continent sur des technologies cloud et open-source. Avant de rejoindre les équipes R&D, il accompagnait les clients grand-comptes et les startups à créer des services digitaux modernes et des équipes agiles.  ",
+    "company": "Microsoft",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "9g2TJuw97VMd8Zwn9y2x0g0w7SB2",
+    "name": "Delegue Alexandre",
+    "avatar": "https://avatars2.githubusercontent.com/u/1575521?v=4",
+    "github": "larousso",
+    "twitter": "@chanksleroux",
+    "bio": "Java, Scala, Kotlin, Javascript, pain au levain",
+    "company": "MAIF",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "U9hxvBPi6MfRegXDRIWbQZ0daXm2",
+    "name": "OLIVIER DEIBER",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu1QBzjr0zYkDb-RtrEfkjPlp_ozH3DOQmJEBOrk=s96-c",
+    "bio": "Passionné d'informatique j'ai en charge le SI d'une association qui lutte contre les maladies neuro-musculaires rares. \n\nJ'ai un gros passé de bénévole IT au sein de plusieurs ONG (La Chaîne de l'espoir, Telecom sans Frontières) qui m'a permis d'effectuer des missions d'urgence (ou pas) à travers le monde (Mali, Vanuatu, Cambodge,...).\n\nJ'ai une grande passion pour le Handball (Allez les Filles de Chambray - CTHB), que je ne peux malheureusement plus pratiquer 😭\n",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "EEd8VQHPxORw8iWh2ZIfieTC5c32",
+    "name": "julien rollin",
+    "avatar": "https://avatars.githubusercontent.com/u/1086565?v=4",
+    "github": "jrollin",
+    "twitter": "julienrollin",
+    "bio": "CTO depuis quelques années maintenant\n\nJ’ai participé à la création d’équipes au sein de plusieurs startup, je suis désormais dans une ESN pour faire grandir les équipes mais surtout les faire s’épanouir.\n\nJe m’oriente de plus en plus vers des langages fonctionnels et de bas niveau comme Rust.\nJe pense qu’un super projet c’est d’abord une équipe qui est heureuse de travailler, découvrir  et partager ensemble !\n\n[Linkedin](https://www.linkedin.com/in/julien-rollin/)\n",
+    "company": "Talan Labs",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "aFcfKeGfODWBN6Q2BJDLH988NwI3",
+    "name": "Kevin Toublanc",
+    "avatar": "https://lh3.googleusercontent.com/a/AItbvmkzx6UbRKFXNrB9vjgfIStRXSae8DRFBOD37DSP=s96-c",
+    "github": "ktoublanc-ws",
+    "twitter": "ktoublanc",
+    "bio": "Développer backend depuis une dizaine d'année, j'apporte une affection particulière aux sujets de qualité de code, d'automatisation de tests et d'intégration continue.\nCurieux et passionné, j'aime découvrir et faire découvrir n'importe quelle nouveauté.",
+    "company": "WeScale",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "bmcEG5lA35c8hrqifZ9kRkhZKXl2",
+    "name": "Mathieu Laude",
+    "avatar": "https://lh3.googleusercontent.com/a/AEdFTp4hNweEZWlQbz_BeQ_hbZVI9YS9_zJk0LbM19RQ=s83-c-mo",
+    "github": "kassovix",
+    "twitter": "mkassovix",
+    "bio": "J'ai acquis une forte expérience dans le développement d'applications Web avec Java, ainsi que l'outillage associé. L’intégration et le déploiement continu ont fait part intégrante de toutes mes missions.\nJe suis également formateur Docker et Kubernetes.",
+    "company": "WeScale",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "3jAixvFWDwMpoISHbnkL3IqGNjP2",
+    "name": "Jimmy Kasprzak",
+    "avatar": "https://lh3.googleusercontent.com/-1klXL98Tgmo/AAAAAAAAAAI/AAAAAAAAAI4/2MgtgWfi9Zw/photo.jpg",
+    "github": "Orodan",
+    "twitter": "@JimmyKasprzak",
+    "bio": "Consultant formateur à Zenika, je me passionne pour le monde du développement web depuis déjà quelques années. J'adore me confronter à de nouvelles problématiques, découvrir, apprendre et partager autour de moi avec des gens qui partage la même passion. Adepte de Javascript, Typescript, CSS et de tout ce qui fait le web d'aujourd'hui, n'hésitez pas à me retrouver sur les différents réseaux sociaux pour échanger. Quand je ne suis pas en train de parler web, vous me trouverez sûrement en train d'élever de me balader dans la faille de l'invocateur où de \"piloter\" sur Mariokart :)",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
+    "name": "Antoine Meausoone",
+    "avatar": "https://lh3.googleusercontent.com/-Bs0CsngAOE0/AAAAAAAAAAI/AAAAAAAAAB8/S31002Hbe3Y/photo.jpg",
+    "github": "ameausoone",
+    "twitter": "ameausoone",
+    "bio": "Cloud Architect | Certified Google Cloud Architect (3x) | Certified LF Trainer CKA-CKAD\n\nTeam Leader et Cloud Architect, je suis chez SFEIR depuis 5 ans. \n\nJe n’ai jamais pu choisir entre le Dév et l’Ops, je suis donc tombé dans le Cloud. Mon sujet de prédilection est l’automatisation, et comment faire collaborer tous les contributeurs d’un projet autour du code.\n\n",
+    "company": "Sfeir",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ETZHP80Ca4buwA294HkQ7Vvkv3r1",
+    "name": "Jérôme Tama",
+    "avatar": "https://avatars0.githubusercontent.com/u/39991688?v=4",
+    "github": "jtama",
+    "bio": "Techlead/Architecte applicatif, je viens du monde java et j'aime ça.\n\nMon travail de tous les jours s'éparpille entre :\n\n- Le dev\n- Le monde de conteneur\n- Le coaching technique\n- Faire aimer la qualité ",
+    "company": "Onepoint",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ZdNase96oBSI6QdrWySX9eCtJgs1",
+    "name": "Julien Topçu",
+    "avatar": "https://fr.gravatar.com/userimage/123188453/975870a140996b955ead02165d002e51.png?size=500",
+    "github": "julien-topcu",
+    "twitter": "@JulienTopcu",
+    "bio": "Tech Coach chez Shodo, j'accompagne le développement de logiciels à forte valeur métier en usant de techniques issues du Domain-Driven Design, le tout propulsé en Xtreme Programming dans la philosophie Kanban #NoEstimates. Membre de la fondation OWASP, j'évangélise sur les techniques de sécurité applicative afin d'éviter de se faire hacker bien comme il faut.",
+    "company": "Shodo",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "i0pl2yBPWmV1BUFj1cc7QfQUdZu1",
+    "name": "Philippe MORISSEAU",
+    "avatar": "https://pmorisseau.ineaweb.net/img/portrait/carre.jpg",
+    "github": "https://pmorisseau.ineaweb.net/",
+    "twitter": "https://twitter.com/morisseauphi",
+    "bio": "Co-responsable du centre d'excellence Microsoft dans la communauté Atlantique de onepoint, je coordonne une équipe de spécialistes sur les technologies Microsoft mais pas que... \n\nNous apportons notre expertise et notre support à nos clients sur les thématiques :\n\n- DevOps avec Azure DevOps, \n- Cloud avec Azure, \n- Modern Workspace avec Microsoft 365, \n- Data. \n\nNous concevons et nous réalisons aussi des solutions applicatives innovantes autour du cloud, du DevOps, du collaboratif et de la data. \n\nAvec plus de 15 ans d'expérience, moi-même, j'apporte mon savoir sur :\n\n- l'architecture Cloud Azure, \n- l'expertise FinOps Azure, \n- l'expertise DevOps, \n- l'architecture Data (ETL, Datahub), \n- la conception et le développement d'application client lourd et web .net, \n- l'agilité, \n- le lean et \n- l'exploitation d'infrastructure OnPremise.\n  \nEnfin, je partage mes connaissances au travers de diverses formations autour du cloud Azure et du DevOps.",
+    "company": "Onepoint",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "IPck78ZRNPaINM4qaagRuJnDZvR2",
+    "name": "Nicolas GIRAUD",
+    "avatar": "https://lh3.googleusercontent.com/-cc1mcrhDQTw/AAAAAAAAAAI/AAAAAAAACsY/m9eXgjM5unA/photo.jpg",
+    "github": "arcanneero",
+    "twitter": "@nicgiro",
+    "bio": "Développeur  passionné, Nicolas évolue depuis près de 15 ans essentiellement sur des projets Java (EE).\n\nAddict aux outils innovants et sensible aux pratiques agiles, c'est d'abord avec les notions de CD/CI qu'il aborde ces notions d'amélioration continue, puis plus récemment dans la mouvance DevOps, où il trouve refuge !\n\nC'est finalement dans un rôle de Tech lead (alias \"couteau suisse\") qu'il intervient, et tente (parfois avec succès) de faciliter la vie de ses co-developpeurs dans l'esprit bienveillant du Software Crafter.",
+    "company": "onepoint",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "dnahDuhtlpNv9d15xbIbpS896sC2",
+    "name": "Guillaume Renaudin",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14Gg_MI_UkqLQfx5qyjehVe6sQ3mvuIyO-Li1wiYW=s96-c",
+    "github": "https://github.com/rguillome",
+    "twitter": "https://twitter.com/RGuillome",
+    "bio": "Avec plus de 17 ans dans le service IT, de dev Java à architecte du SI, je suis avant tout passionné de technologies. \nAttiré par presque tous les langages, les plateformes, les outils, le plus gros frein : le temps! \nAlors il faut choisir et c’est du côté backend, l’exposition, la transformation et la valorisation de la data que mes efforts se concentrent. Et si ma spécialité pour le développement et l’usage de l’intelligence artificielle peut s’exprimer et se développer c’est encore mieux !\n",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "OFR3coK7G1c4zwBlMcHNv295b0q2",
+    "name": "Fabien Lamarque",
+    "avatar": "https://i.imgur.com/XgRnNgI.jpg",
+    "github": "Fabinout",
+    "bio": "Développeur, 33 ans, j'aime bien le jardinage, la couture, et aller à des conférences de dév pour parler à des vieux copains et copines que j'ai pas vu depuis le confinement.",
+    "company": "Great Place to Work",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "eGA6OY0HEhP9d6WQ7HZtq054tW22",
+    "name": "Alves Mickaël",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14GiUrTFnY5aNZ73kRkojspqfnItTEfBQs7MExhGL=s96-c",
+    "github": "CruuzAzul",
+    "twitter": "@CruuzAzul",
+    "bio": "👋🏼 I am a 24 years old French junior developer who is passionate about computers science and new technologies ! 👨🏻‍💻 \nI have just kickstarted my career as a web consultant at <a href=\"https://www.zenika.com/\">@Zenika</a> 🔴 as well as a front web developer at <a href=\"https://www.bedrockstreaming.com/\">@BedrockStreaming</a> ⚫️ I also teach at Epitech Digital Lyon 🎓\n\nI am also one of the organizers of the  <a href=\"https://lyonjs.org/\">@LyonJS</a> 🦁 and a founding member and president of the <a href=\"https://lacruz.org/\">@LaCruz</a> 🟡 association !\n",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "3v72z5xWXfbL94DpKVI1snjC7Jr1",
+    "name": "Sylvain Bestion",
+    "avatar": "https://lh3.googleusercontent.com/a/AATXAJzY0AyILX-EN-acPz9lkxlJ8xytDEpTsj2tMsX0=s96-c",
+    "bio": "Tour à tour Product Owner, Scrum Master, coach agile, chef de projet, démêleur de plat de nouilles en tous genres. J'ai un passif de développeur de plus de 10 ans d'expériences et de responsable d'équipes de plus de 15 ans avec un but ultime, celui de faire grandir les gens avec lesquels je travaille.\n\nJ'ai toujours soif de découvrir de nouvelles choses et suis accrocs aux tutos techs. \n\nEn bon geek, j'ai aussi un \"petit\" gros penchant pour les jeux de société en tous genres avec un faible pour les jeux de cartes TCG qui m'ont vu arpenter quelques salles de championnat où taper le carton.\nEnfin même si je ne fais pas nager les poneys en piscine, je suis un adepte de l'aquaponie mêlant l'aquariophilie et la permaculture.",
+    "company": "onepoint",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "Fhjjvv3C2TYVltqjim6rtTgf48x1",
+    "name": "Alexis Lozano",
+    "avatar": "https://pbs.twimg.com/profile_images/1411681027001569284/XBAI9he5_400x400.jpg",
+    "github": "alexislozano",
+    "twitter": "alexislozano__",
+    "bio": "Développeur nantais passionné chez 360Learning, je travaille en asynchrone et j'onboarde et mentore de nouveaux développeurs et développeuses dans cette configuration. J'aime partager ce que j'apprends sur mon blog et sur Twitter, notamment à propos de théorie des langages et d'architecture logicielle.",
+    "company": "360Learning",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1",
+    "name": "David Aparicio",
+    "avatar": "https://avatars2.githubusercontent.com/u/809982?v=4",
+    "github": "davidaparicio",
+    "twitter": "dadideo",
+    "bio": "Passionate engineer in Computer Science, graduated INSA Lyon 2014, after two years spent at UNICAMP in Brazil, actively participates in the community, through Meetups and conferences. His motto: “No developer is supposed to ignore security”.\n\nIngénieur passionné en Informatique, diplômé INSA Lyon 2014, après deux années passées à UNICAMP au Brésil, participe activement à la communauté, à travers des Meetups et des conférences. Sa devise: « Nul développeur n'est censé ignorer la sécurité »",
+    "company": "OVHCloud",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ffbnsZEQaCebGS2Dlip8JifuVIn2",
+    "name": "Pierre Robillard",
+    "avatar": "https://media.licdn.com/dms/image/C4E03AQGR_NpyQUaL4g/profile-displayphoto-shrink_800_800/0/1516903242078?e=1677110400&v=beta&t=uBHWhNPkQaxtvy7VbBfdvxOM77oCrXD7HEst6I1Xcs4",
+    "github": "github.com/age2pierre",
+    "bio": "Développeur full-stack, j'ai rejoint les Code-Troopers en 2018; je me définis souvent en tant que dev fonctionnelle, autant par opposition au métier de devops que par appétence pour la programmation fonctionnelle. ",
+    "company": "Code Troopers",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "h3nuOK0PgNYxAMuffMX3lbGSiTH2",
+    "name": "Antoine Robiez",
+    "avatar": "https://pbs.twimg.com/profile_images/1544254317787594752/is3i-rtN_400x400.jpg",
+    "github": "enthuan",
+    "twitter": "enthuan",
+    "company": "Worldline",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2",
+    "name": "Dorian Delorme",
+    "avatar": "https://lh3.googleusercontent.com/a-/ACNPEu-h7e09lBOCFF5E8XAr3pA3pMcbUpFgvdR8phVe=s96-c",
+    "github": "doriandel",
+    "twitter": "d_del_s",
+    "bio": "Cherchant constamment à s'améliorer et à développer ses compétences, Dorian prend plaisir à concevoir des interfaces qui répondent aux attentes des utilisateurs. Du design au développement, après des années en tant que designer, Dorian apprend actuellement le développement front-end.",
+    "company": "BearStudio",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "HfBwLxQ1wyO4giltVDafRIFILLJ2",
+    "name": "Rudy Baer",
+    "avatar": "https://lh4.googleusercontent.com/-GUIo9muY3bs/AAAAAAAAAAI/AAAAAAAAAGA/bzO4wcPA6qI/photo.jpg",
+    "github": "RudyBaer",
+    "twitter": "RudyBaer",
+    "bio": "En tant que fondateur et dirigeant de BearStudio, le travail de Rudy consiste à résoudre des problèmes humains et techniques. Après avoir été CTO dans une startup, Rudy a créé un studio de développement pour aider d'autres fondateurs de projets à livrer de vrais produits à de vrais utilisateurs. Aider les gens à se parler, à se comprendre et à avancer est sa principale motivation.\n\nEt aussi organisateur bénévoles a Codeurs En Seine depuis 2016",
+    "company": "BearStudio",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "p4lQkz4mvnTox9AZz9nsRV5Iedg1",
+    "name": "Olivier Mertens",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu28qVgiwd5Hs9UItPeUB7zj5Z73LGaUiIXEUeC9cXw=s83-c-mo",
+    "github": "olivMertens",
+    "twitter": "xam1311",
+    "bio": "Developer Relations @Microsoft\n13 years in electronic radar domain, 10 years in software development and sofware architecture, created and lead the french sofware engineer community for an international consulting company for 4600 developpers @capgemini\n",
+    "company": "Microsoft",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "w9K4w1seusO2SDPlDFCUbw2apCh2",
+    "name": "Victor Lambret",
+    "avatar": "https://avatars.githubusercontent.com/u/676719",
+    "github": "VLambret",
+    "twitter": "VictorLambret",
+    "bio": "Développeur embarqué grenoblois @Sogilis. Je préfère écrire mes bugs en faisant du TDD :)",
+    "company": "Sogilis",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "sVESMnd80YXh3z7emZKgJ1viq3b2",
+    "name": "Nicolas Carlier",
+    "avatar": "https://avatars.githubusercontent.com/u/795995?v=4",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "pNFXh8L1wecfg2Mdg1sFKJKrENV2",
+    "name": "Stéphane Philippart",
+    "avatar": "https://avatars0.githubusercontent.com/u/26224751?v=4",
+    "github": "philippart-s",
+    "twitter": "@wildagsx",
+    "bio": "Développeur un jour, développeur toujours !\n\nDéveloppeur Java depuis de nombreuses d'années, j'ai la joie de connaître le JDK 1.1, JEE, Struts, ... et maintenant Spring (core, boot, batch), Angular, Groovy, ...\n\nAprès 14 années à être Architecte Logiciel j'ai pu me confronter à de nombreuses problématiques inhérentes aux systèmes d'information toujours complexes dans les grands groupes\n.\nCela m'a permis aussi de basculer dans le mode de l'automatisation avec la mise place de chaînes de CI/CD basées sur les pipelines as code de Jenkins.\n\nJ'accorde une grande importance dans l'approche humaine et notamment l'agilité (avec l'utilisation, dès que possible, du Framework SCRUM) mais aussi le DevOps. Deux notions qui me sont chères dans ma vision du métier de l'IT.\n\nToujours dans le partage et les relations avec les développeurs je suis devenu DevRel au sein d'OVHcloud. Comme on peut le voir régulièrement dans ce métier, l'un de mes objectifs principal : rendre les développeuses et développeurs heureux.\n\nJe suis le co-créateur du Meetup [TADx](https://www.tadx.fr) à Tours et met à jour un blog [blog](https://philippart-s.github.io/blog/) techno.",
+    "company": "OVHcloud",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "UgdeZxl1gBfhw0o8BepkqscBTiq2",
+    "name": "Sara Attallah",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu2roNdsrCMEERs22Xq1cf8Mr0xdM8dVLBWJVSdo=s96-c",
+    "bio": "Sara est développeuse Front-End spécialisée en Vue JS.\nActuellement responsable du Front-End chez JOLIMOI, elle a commencé sa carrière dans des studios de design interactifs. \nElle se passionne pour les interfaces au cours de ses études en cinéma documentaire et s'épanouit dans le web depuis 6 ans.\n",
+    "company": "Jolimoi",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "FlNY2ihscVdQLvxKpqsxDrt6PrF2",
+    "name": "Mathis Hammel",
+    "avatar": "https://avatars.githubusercontent.com/u/6159437",
+    "github": "MathisHammel",
+    "twitter": "@MathisHammel",
+    "bio": "Mathis Hammel is a tech evangelist at CodinGame, a website specialized in mini-games to learn programming.\n\nHe is a specialist and technical advisor in cybersecurity, machine learning, and algorithms. Mathis is passionate about technical challenges such as programming competitions and Capture The Flag, and holds several titles from national and international championships.",
+    "company": "CodinGame",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "7wztvu44o2WD7A5spiPkezLH7Rx2",
+    "name": "Matthieu Werner",
+    "avatar": "https://lh3.googleusercontent.com/a/AEdFTp6LeB4gBIS3J8mW6PvjIyEZh121oRQxMJB2husrNg=s96-c-rg-br100",
+    "github": "matthieuwerner",
+    "twitter": "WernerMatthieu",
+    "bio": "Passionné de développement depuis l’adolescence, Matthieu apporte son soutien à tous types de projets depuis plus de 15 ans, dans l’univers PHP et Open source.\n\nÉvoluant tantôt en agence sur des projets grands comptes, tantôt en startup sur des projets ambitieux, les problématiques de qualité et de disponibilité sont sa priorité.\n\nPrésent aux événements de la communauté PHP/Symfony, il y a de fortes chances de l’y croiser. Là, ou dans un concert de Tool !",
+    "company": "JoliCode",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
+    "name": "Marion Valentin",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14Gjo3eiLyQDK6oAv9VdYz0cm6wlg_ZJ1jxhho5Fn=s96-c",
+    "github": "marionnousvalentin",
+    "twitter": "@MarionBarr2",
+    "company": "BAM",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
+    "name": "Yvonnick FRIN",
+    "avatar": "https://lh5.googleusercontent.com/-tmj1tGCN_u4/AAAAAAAAAAI/AAAAAAAABO0/oVqsblFTX8k/photo.jpg",
+    "github": "frinyvonnick",
+    "twitter": "YvonnickFrin",
+    "bio": "Yvonnick développeur chez Pix. Curieux et passionné, il aime découvrir les dernières technologies du Web. Social, il co-organise NantesJS.",
+    "company": "Pix",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "nhFyEmSJYZZiMa989nAp7qxGAkp2",
+    "name": "Loïc Rodier",
+    "avatar": "https://lh5.googleusercontent.com/-RmGqjRpORLg/AAAAAAAAAAI/AAAAAAAARhk/85lVI8ZxfuE/photo.jpg",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "WCr1V33vb0cIZWLSA6eD0dy39l33",
+    "name": "Adrien JOLY",
+    "avatar": "https://adrienjoly.com/img/photo.jpg",
+    "github": "https://github.com/adrienjoly",
+    "twitter": "https://twitter.com/adrienjoly",
+    "bio": "My name is Adrien Joly (he/him). I live in Montreuil, Paris area, France.\n\nAs a Tech Lead and Coach, I help development teams maintain and scale complex software. I love renovating legacy codebases, to reduce technical debt, increase robustness and development velocity.",
+    "company": "SHODO",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "3sdJi27e0DcE50hVB8pz1IZ2dzZ2",
+    "name": "Julien Salvi",
+    "avatar": "https://sessionize.com/image/12c2-200o200o2-Qf5YU6fWEKj4f9iBQP7Pcs.jpg",
+    "github": "Oleur",
+    "twitter": "@JulienSalvi",
+    "bio": "Into the Android world for 10 years, I experienced California the startup way of life before coming back to France. I am currently a Lead Android Engineer at Aircall where we are building the best phone system for modern businesses. Alongside Android, I have a great interest in backend development with Kotlin and AR/VR technology. In 2021, I became an Android GDE to continue my journey to always share and learn with the Android community.\nOn my spare time, I am a world traveler and a beer lover always looking for the best IPAs!",
+    "company": "Aircall",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ignPtVvWplSLmOo8aO9byUt8pIl2",
+    "name": "Gaetan BOGAERT",
+    "avatar": "https://avatars.githubusercontent.com/u/30294729?v=4",
+    "github": "https://github.com/bogaertg",
+    "bio": "Ayant démarré par du dev JAVA il y'a dix ans, je suis passé par de l'expertise technique et de l'architecture logicielle pour finalement passer du coté obscur du terminal ;).\n\nDepuis 2 ans chez SFEIR, je me plonge dans le monde du DevOps et du Cloud.",
+    "company": "SFEIR",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "Npd1iKHS7kfua1fYYOsfF8gAUbW2",
+    "name": "Amélie ABDALLAH",
+    "avatar": "https://pbs.twimg.com/profile_images/1577242430809800710/tFH0PpqI_normal.jpg",
+    "github": "AmelieAlonah",
+    "twitter": "AlonahAmelie",
+    "bio": "Développeuse suite à ma reconversion professionnelle, intéressée depuis mes débuts sur les méthodes dites \"Craft\", la qualité du code en général, j'ai eu beaucoup de difficulté pour trouver des ressources accessibles, et un bon accompagnement en ce sens.\n\nSuite à ces problématiques, j'ai décidé de partager sur différents sujets qui me tiennent à cœur afin de faire évoluer le secteur de la tech.\n\nNous avons beaucoup de travail à venir.",
+    "company": "theTribe",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "hDgeovtbpYUe248iONsiVDFsTn53",
+    "name": "Fanny Klauk",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14Ghy-jt97zLXbqxsYUcdxvd62hB1katKsxvruKL4",
+    "github": "klaukf",
+    "twitter": "@klf37",
+    "bio": "Accompagnatrice agile, co-créatrice de TADx, j'ai parcouru des kilomètres de lignes de développements, d'analyses fonctionnelles et d'architectures orientées données avant de revenir à mes premières amours : le travail d'équipe, dans un cadre motivant et bienveillant, autour de produits utiles et vivants.  \nC'est donc tout naturellement vers l'agilité que mes dernières missions se sont tournées. Depuis, je glane le meilleur pour alimenter les équipes que j'accompagne au quotidien : mindset DevOps et crafmanship, outils au service de la qualité et du déploiement, techniques de design thinking pour capter les vrais besoins et l'amélioration continue des produits et des équipes.",
+    "company": "Apside",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "eiyfzMG3oWQKwt2X8LyUnSx5fdW2",
+    "name": "Antoine DESSAIGNE",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu0FkMgU3Y8kKMFxFgWQrpM7OSVF-vBpFkYWV_FAPw=s96-c",
+    "github": "adessaigne",
+    "twitter": "adessaigne",
+    "bio": "* Né à Tours\n* Diplôme d'ingénieur en alternance (5 ans)\n* 5 ans chez Elutions (editeur de logiciel) en tant que développeur Java puis architecte sur le même logiciel.\n* Depuis Janvier 2012 chez Axway (éditeur de logiciels) sur le même logiciel d'abord en tant que développeur Java puis architecte.\n * Focus sur l'amélioration des performances depuis un peu plus de 2 ans",
+    "company": "Axway",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "0ZbtTwugPpTsYEAbDRbt6Voqcca2",
+    "name": "Pierre-Yves Aillet",
+    "avatar": "https://lh3.googleusercontent.com/-vRueeeZ11qc/AAAAAAAAAAI/AAAAAAAAAA0/8WHvuJZv-kQ/photo.jpg",
+    "github": "pyaillet",
+    "twitter": "@pyaillet",
+    "bio": "Passionné d'informatique, Pierre-Yves travaille depuis 15 ans sur des technologies variées allant de Go à Rust en passant par Python. Son IHM de prédilection est la ligne de commande. Il est consultant chez Zenika Nantes et intervient sur des missions d’audit, d’accompagnement à la mise en place d'outils liés la conteneurisation, Kubernetes et au Cloud.",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "YwH0iCA69oaFgyQu31I9Yy79X142",
+    "name": "Nicolas Dauphin-Moulin",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu3PyyE0gfw5N--u1s5pXCU13ecCBriwTvZ1ON2FUw=s96-c",
+    "bio": "📱💻 Business Developer chez Code-Troopers ! On développe votre app web ou mobile !\n\n👉 si vous êtes dev et que vous voulez bosser avec nous : on recrute !\n👉 si vous cherchez des techs pour votre projet, si vous cherchez à externaliser votre développement : venez m'en parler !\n👉 si vous voulez juste prendre un petit café pour discuter : je ne refuse jamais un café ☕️ !\n\n👨‍💻 Passionné par le monde de l’entrepreneuriat, du numérique, de l’univers startup.\n🚀 Je suis engagé pour représenter au mieux l’entrepreneuriat\n👥 Curieux, je suis toujours à l’écoute d’opportunités, de jeunes entrepreneurs ou entrepreneurs expérimentés\n\n🎪 Je développe (commercialement) un projet au sein de Code-Troopers qui me passionne : Chapitô ! Un générateur d'app mobile pour événement (Festivals, Foires, Salon), si vous êtes curieux d'en savoir plus : ☕️",
+    "company": "Code-Troopers",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "lVp57FlvF1fKYwqk8yNinu3uFv92",
+    "name": "Paul ROYE",
+    "avatar": "https://avatars3.githubusercontent.com/u/37868974?v=4",
+    "github": "paul-roye",
+    "twitter": "Paulo_Del_Rey",
+    "bio": "Tech Crafter and DIY enthusiast. Also lead tech at SII.",
+    "company": "SII",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "4eLdIkDMEmUwtor4mlu8wJJfUqh1",
+    "name": "Kevin Jean",
+    "avatar": "https://lh3.googleusercontent.com/a/AATXAJz1cR3-UUNozGBTqCwOHwcxLcB6NKPZMPigryqG=s96-c",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "PRuMzxC7NVbsVnJP07AbHR2cNFx2",
+    "name": "Benjamin Cavy",
+    "avatar": "https://lh3.googleusercontent.com/-qridgWF20Vk/AAAAAAAAAAI/AAAAAAAAAtQ/K8bT4K-PTmU/photo.jpg",
+    "github": "ptitFicus",
+    "twitter": "@benjamin_cavy",
+    "bio": "Lead dev à la MAIF, je m'intéresse en ce moment particulièrement aux tests et à ce qu'ils peuvent apporter dans le processus de développement logiciel.",
+    "company": "MAIF",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "TuQxXI5DPLMTSuaeNWiS85P0eGk2",
+    "name": "Cédric Champeau",
+    "avatar": "https://lh4.googleusercontent.com/-TVY7U8ZKABg/AAAAAAAAAAI/AAAAAAAAGQg/eaTDh_bVKpI/photo.jpg",
+    "github": "melix",
+    "twitter": "@CedricChampeau",
+    "bio": "Cédric Champeau works for Oracle Labs, in the GraalVM team and in particular on the Micronaut framework. He is specialized in developer productivity and maintains among others the official GraalVM and Micronaut plugins for Gradle and Maven.\nHe has worked for Gradle Inc. for several years on dependency management and other developer productivity issues.\nA former contributor to the Groovy language, he implemented its static compiler.\nOutside of computing, Cédric is an astronomy enthusiast.",
+    "company": "Gradle, Inc.",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "9Krfeqq5mpO5cY2R81DKdktW9gy1",
+    "name": "Raphaël Luta",
+    "avatar": "https://lh3.googleusercontent.com/a-/AAuE7mAH4zop_a5XskZXkpYaeyGP3i5huq7nvSq8wh8X",
+    "github": "rluta",
+    "twitter": "@raphaelluta",
+    "bio": "Je suis un consultant technique indépendant, spécialiste des aspects opérationnels (sécurité et performance) des systèmes et applications.\n\nPassionné par les données, je développe également pour mes clients des systèmes de traitement et de visualisation de données en s'appuyant sur les outils tels que Apache Spark, Vert.x ou D3.js/Vega.js.\n\nJavaiste depuis les premières bétas et membre de la fondation Apache depuis plus de 15 ans, j'ai contribué à plusieurs projets Apache Jakarta donc Jetspeed et JMeter.",
+    "company": "Aptiwan",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "0tlWjfqJzrYCGuUzUj9QAifRYjZ2",
+    "name": "Antoine Wacheux",
+    "avatar": "https://pbs.twimg.com/profile_images/1591071618884931586/HLextC7G_400x400.jpg",
+    "github": "shiroy",
+    "twitter": "AntoineWacheux",
+    "bio": "If you ask me why I got into IT, I'd say it was a natural path for me.\n\nAs a kid, I discovered it as a hobby. I wanted to be like these cool hackers in movies. I still remember my very first programming language: `QBasic`.  The internet is like a massive free university. I had so much fun learning `C`, `C++`, and `PHP`and working on tons of fun hobby projects at that time!\n\nNaturally, I've been through a computer engineering degree at UTC, Compiègne, France. It was tough but enlightening. I had skills in different domains and this degree brought all the pieces together.\n\nMy first job as a software engineer at Bloomberg LP, London, was very challenging but it felt weird at the same time. The company, the people and the projects were awesome but I couldn't get used to professional software development. It was too different to what I used to like as a hobby. Maybe this job was not for me.\n\nIn 2018, cloud computing was trending and I had no experience with it. I joined D2SI (now Devoteam Revolve) as a junior cloud computing consultant where I worked on many different and challenging projects. As a consultant, I was the knowledgable guy. I discovered that I love teaching!\n\nFinally, I had the opportunity to join AWS in 2020 as a Solutions Architect. I discover the business world thanks to this position. It's an awesome role to hone my business and teaching skills.\n\nNow here I am! I can't wait to share what I learned with you!",
+    "company": "Amazon Web Services",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "XOJLT9cNygdhPYC75sIPWYA6zna2",
+    "name": "Audrey Dubois",
+    "avatar": "https://avatars.githubusercontent.com/u/52108241?v=4",
+    "github": "https://github.com/aydubois",
+    "twitter": "https://twitter.com/ay_Ponyo",
+    "bio": null,
+    "company": "Capgemini",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "biWKM3edJtX6IkI0Nc128sYFYkO2",
+    "name": "Marc DUGUE",
+    "avatar": "https://lh3.googleusercontent.com/a-/AOh14GjgH5V8kkSvgkWInpRtEAsVXDtnIE1CFxSPPj5JeQ",
+    "twitter": "Marc_DUGUE",
+    "bio": "Après 15 ans de gestion et direction de projet dans les télécoms et la data, ma vie a basculé quand une collègue m’a dit « Au lieu de dessiner n’importe quoi en réunion, tu ferais mieux de dessiner la réunion : cela s’appelle la facilitation graphique ! »\n\nDevenu un passionné de toutes les pratiques visuelles au service des interactions de groupes ou de la performance personnelle, je contribue activement au développement de la facilitation graphique en France à travers l’équipe « UnPictoParJour » et sur Nantes via l’animation de « UnPictoParJour, le Meetup » une fois par mois. \n\nFort de plus de 5ans d’expérience en facilitation graphique, j’ai dispensé des formations au sein de grands groupe comme EDF, SNCF, Engie, Système U, La Poste, Caisse d’épargne, et bien d’autres. ",
+    "company": "conserto",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
+    "name": "Eric Aboudaram",
+    "avatar": "https://pbs.twimg.com/profile_images/1834436625/image_normal.jpg",
+    "twitter": "@nabou08",
+    "bio": "20 d'experience dans le monde du développement\ndont 10 en tant que TechLead, Architecte JAVA\n\nFormateur java, springboot, angular\n\nL'informatique est une passion et pas un métier\n",
+    "company": "conserto",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "mODnTNL9onNOU1odUO9jb2tbpQj2",
+    "name": "Antoine CARON",
+    "avatar": "https://avatars0.githubusercontent.com/u/6263857?v=4",
+    "github": "@Slashgear",
+    "twitter": "@Slashgear_",
+    "bio": "Trublion d'openspace, enseignant à la fac et développeur Web pour M6 depuis plus de 2 ans.",
+    "company": "Bedrock Streaming",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
+    "name": "Julien Jimenez",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu05CZ3QS3Abj6VRab68fMlBmOsGIQyv-NkqKF0n=s96-c",
+    "company": "Worldline",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
+    "name": "Amélie Avignon",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu0g8WnOJudW4cMCFwkD6oZGEsWapQAbBu1_Q-U0=s96-c",
+    "company": "Worldline",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "LBXSNoYRKbWwvirzjnpHzMk03cM2",
+    "name": "Lise Quesnel",
+    "avatar": "https://lh3.googleusercontent.com/-4_4dOg_V9C4/AAAAAAAAAAI/AAAAAAAAAFU/9-fQ0kBWKIQ/photo.jpg",
+    "github": "lisequesnel",
+    "twitter": "@QuesnelLise",
+    "bio": "Lise est développeuse web et Lead dev. Elle sait être moteur tant sur le plan humain que technique. Les bonnes pratiques de développement sont pour elle le ciment de tout projet. Elle porte également une attention toute particulière à l’expérience utilisateur. Grande curieuse, elle aime découvrir sans cesse de nouvelles choses.",
+    "company": "Zenika",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "fKYBrUjZFxOy5ykacYFQZTtUS7W2",
+    "name": "Thomas GUIBERT",
+    "avatar": "https://lh3.googleusercontent.com/a/ALm5wu3kTtFlhAEF4omcrRGNidrWWaaIlPPzXfdK_JDt=s96-c",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
+    "name": "Fabien Trégan",
+    "avatar": "https://pbs.twimg.com/profile_images/981531162790285313/6ZcVrehB_normal.jpg",
+    "github": "fabientregan",
+    "twitter": "@ftregan",
+    "bio": "Je n'ai rien à vendre.\n\n(mais n'hésitez pas à venir dire bonjour :) )",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "zQ0mhj745ZgtNDL3QL6pVT316ai2",
+    "name": "Olivier PONCET",
+    "avatar": "https://avatars.githubusercontent.com/u/29702924?v=4",
+    "github": "@ponceto",
+    "twitter": "@ponceto91",
+    "bio": "Geek, ex-nerd repenti, je code, je teste, je bricole, je soude et parfois fait sauter les plombs. CTO et spécialiste du magiciel, je suis aussi libriste dans l'âme et très impliqué dans le mouvement des logiciels libres.",
+    "company": "HAWKSWELL",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "g9esU5Tes3Y6vkpbHLKwJLEwMBF2",
+    "name": "Quentin KLEIN",
+    "avatar": "https://lh5.googleusercontent.com/-s8ZeRNMdMUY/AAAAAAAAAAI/AAAAAAAAIAg/tMefLw4P54Y/photo.jpg",
+    "github": "quentin7b",
+    "twitter": "kleinquentin",
+    "bio": "Dev Android, puis Flutter, puis Lead Tech, j'ai une admiration pour les belles applications et les API bien faites.\n\nAu jour le jour, j'aime apprendre des autres et partager ce que j'apprends.\n\nHa, et aussi j'aime challenger les organisations en place et défendre l'agilité !",
+    "company": "La Mobilery",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
+    "name": "Christelle Murté",
+    "avatar": "https://lh5.googleusercontent.com/-IiaK2sZPRWA/AAAAAAAAAAI/AAAAAAAAAAQ/2FzPc3t8Ipk/photo.jpg",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "9XiNHiC9vzfHLs7bDN3B9XS62Fp1",
+    "name": "Loïc LEFEVRE",
+    "avatar": "https://avatars.githubusercontent.com/u/21245376?v=4",
+    "github": "loiclefevre",
+    "twitter": "Loic__Lefevere",
+    "bio": "Développeur depuis l’âge de 8 ans, je multiplie mes expériences professionnelles depuis plus de 20 ans : startups, grands comptes de la finance et actuellement chez Oracle. Fullstack developer, architecte cloud et DBA applicatif, j’adore les challenges liés au développement d’applications modernes et à la gestion de l’information. Désormais Product Manager pour la base de données Oracle, je participe à l’élaboration des nouvelles fonctionnalités pour tous les développeurs : frontend, backend, low-code, data engineer, business analyst et même data scientist !",
+    "company": "Oracle",
+    "city": "",
+    "confirmed": true
+  },
+  {
+    "id": "Ny2h9DGprRgd9n6PJYFijyYI0OQ2",
+    "name": "Helvira G",
+    "avatar": "https://pbs.twimg.com/profile_images/1601255670598320131/UO3hhXS9_400x400.jpg",
+    "github": "HelviraG",
+    "twitter": "helvira_g",
+    "bio": "Développeuse web, essentiellement dresseuse d'éléphpants, depuis plus de 3 ans, c'est avec l'envie de montrer aux femmes que le développement est une voie professionnelle envisageable qu'Helvira crée Motiv'Her en 2021.",
+    "company": null,
+    "city": "",
+    "confirmed": true
+  }
+]
