@@ -566,24 +566,6 @@
       }
     },
     {
-      "id": "MnLFazhk1ABu9anMepx2",
-      "title": "De JavaScript à l'impression 3D, promenons nous dans les jardins de Babylon",
-      "state": "confirmed",
-      "level": "beginner",
-      "abstract": "De nos jours, l'impression 3D est de plus en plus accessible, on en voit de plus en plus dans les foyers. Il est facile de télécharger un modèle sur Thingiverse, ou encore Cults3D. Mais, lorsque l'on veut créer nos propres modèles cela devient plus compliqué.\n\nEn effet, il faut apprendre à manipuler un logiciel de CAD (Conception Assistée par Ordinateur). Même pour créer des modèles simples, il n'y a pas grand chose sur le marché. Il existe bien OpenSCAD, mais il faut également apprendre un nouveau langage.\n\nD'un autre côté, beaucoup de développeuses et développeurs connaissent le JavaScript et Il existe des bibliothèques comme ThreeJS, BabylonJS, ... pour faire de la 3D.\n\nAlors comment faire le lien ?\n\nA travers un projet à destination éducative que j'ai créé pour les enfants, \"Kody\", j'explique le fonctionnement d'une imprimante 3D, du format STL et de comment, depuis BabylonJS et une librairie codée pour Kody, je peux imprimer des cartes perforées en quelques lignes de codes.",
-      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
-      "speakers": [
-        "IlVQ3DcdvccEIvzcYr75msiHJUo1"
-      ],
-      "comments": "Bon courage pour les délibérations.\n\nAu plaisir de vous revoir",
-      "language": "French",
-      "createTimestamp": {
-        "_seconds": 1697216123,
-        "_nanoseconds": 118000000
-      }
-    },
-    {
       "id": "PtSf1rNOWg5jSetBVKvO",
       "title": "⚡Une application résiliente, dans un monde partiellement dégradé ⚡",
       "state": "accepted",
