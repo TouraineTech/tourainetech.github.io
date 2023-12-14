@@ -31,7 +31,7 @@
 
 .speaker--grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
   margin-bottom: 2rem;
   align-items: stretch;
