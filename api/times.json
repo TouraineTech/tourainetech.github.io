@@ -21,6 +21,7 @@
   {"timeIndex": "19", "time": "15:55", "days" : [1,2]},
   {"timeIndex": "20", "time": "16:45", "days" : [1,2]},
   {"timeIndex": "21", "time": "16:55", "days" : [1]},
+  {"timeIndex": "21Bis", "time": "16:50", "days" : [2]},
   {"timeIndex": "22", "time": "17:45", "days" : [1]},
   {"timeIndex": "23", "time": "17:50", "days" : [1]},
   {"timeIndex": "23", "time": "18:20", "days" : [1]}

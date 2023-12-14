@@ -433,7 +433,8 @@ $color-alien: #066420;
 }
 
 .schedule-talk-time1--cell p.schedule-room--duration-level,
-.schedule-talk-time23--cell p.schedule-room--duration-level {
+.schedule-talk-time23--cell p.schedule-room--duration-level,
+#keynoteCloture2 p.schedule-room--duration-level {
   display: none;
 }
 
