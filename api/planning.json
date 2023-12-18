@@ -503,11 +503,11 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [
-      4
+      2
     ],
-    "day": 1,
+    "day": 2,
     "times": [
-      19
+      3
     ]
   },
   {
@@ -611,11 +611,11 @@
     "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [
-      2
+      4
     ],
-    "day": 2,
+    "day": 1,
     "times": [
-      3
+      19
     ]
   },
   {
