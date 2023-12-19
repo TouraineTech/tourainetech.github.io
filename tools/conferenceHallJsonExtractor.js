@@ -148,13 +148,13 @@ async function doWork() {
     categories,
     formats
   } = conferenceHallDatas;
-
+  const formattedFormats = formats.map(({id, name}) => ({id, name: name.replace("Débutant·e ", "")}))
   const {talks: rawTalks} = getTalks(conferenceHallDatas);
   const rawSpeakers = getSpeakers(conferenceHallDatas, rawTalks);
 
   const {talks, speakers} = doSomeCorrection(rawTalks, rawSpeakers);
 
-  writeConferenceHallDataFile(talks, speakers, categories, formats);
+  writeConferenceHallDataFile(talks, speakers, categories, formattedFormats);
 
 }
 

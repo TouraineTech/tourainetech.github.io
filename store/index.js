@@ -38,7 +38,9 @@ function addPlanningToTalks(TALKS) {
       "language": "French"
     },]
 
-  return [...TALKS, ...dummies].map(talk => {
+  return [...TALKS, ...dummies].filter(talk => {
+    return planningByTalkId[talk.id] && planningByTalkId[talk.id].rooms.length > 0 && planningByTalkId[talk.id].times.length > 0 && planningByTalkId[talk.id].day
+  }).map(talk => {
     talk.rooms = planningByTalkId[talk.id].rooms;
     talk.times = planningByTalkId[talk.id].times;
     talk.day = planningByTalkId[talk.id].day;

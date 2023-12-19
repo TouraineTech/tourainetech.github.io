@@ -314,7 +314,7 @@
     {
       "id": "CLPGvWsMndxnLSeG8sD1",
       "title": "Comment intégrer au mieux une personne autiste en entreprise",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "L'autisme, tout le monde croit savoir ce que c'est, beaucoup de mythes sont construits autour, et peu de personnes savent travailler avec, alors que les personnes autistes représentent 1% de la population.\n\nAujourd'hui, on casse les clichés, définissons l'autisme, récoltons quelques clefs pour le comprendre, l'identifier, réagir et accueillir une personne autiste dans vos équipes.\n\nOn va voir ensemble comment la mise en place quelques astuces pour rendre l'environnement moins agressif, et pour une meilleure inclusion des personnes issus de la neurodiversité, vous permettra d'évoluer dans un cadre plus bénéfique aussi pour vous.",
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
@@ -566,9 +566,27 @@
       }
     },
     {
+      "id": "MnLFazhk1ABu9anMepx2",
+      "title": "De JavaScript à l'impression 3D, promenons nous dans les jardins de Babylon",
+      "state": "confirmed",
+      "level": "beginner",
+      "abstract": "De nos jours, l'impression 3D est de plus en plus accessible, on en voit de plus en plus dans les foyers. Il est facile de télécharger un modèle sur Thingiverse, ou encore Cults3D. Mais, lorsque l'on veut créer nos propres modèles cela devient plus compliqué.\n\nEn effet, il faut apprendre à manipuler un logiciel de CAD (Conception Assistée par Ordinateur). Même pour créer des modèles simples, il n'y a pas grand chose sur le marché. Il existe bien OpenSCAD, mais il faut également apprendre un nouveau langage.\n\nD'un autre côté, beaucoup de développeuses et développeurs connaissent le JavaScript et Il existe des bibliothèques comme ThreeJS, BabylonJS, ... pour faire de la 3D.\n\nAlors comment faire le lien ?\n\nA travers un projet à destination éducative que j'ai créé pour les enfants, \"Kody\", j'explique le fonctionnement d'une imprimante 3D, du format STL et de comment, depuis BabylonJS et une librairie codée pour Kody, je peux imprimer des cartes perforées en quelques lignes de codes.",
+      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "IlVQ3DcdvccEIvzcYr75msiHJUo1"
+      ],
+      "comments": "Bon courage pour les délibérations.\n\nAu plaisir de vous revoir",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1697216123,
+        "_nanoseconds": 118000000
+      }
+    },
+    {
       "id": "PtSf1rNOWg5jSetBVKvO",
       "title": "⚡Une application résiliente, dans un monde partiellement dégradé ⚡",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "intermediate",
       "abstract": "Dans un monde en perpétuelle évolution, pouvons-nous toujours atteindre « four-nines » de disponibilité ? Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent et se complexifient. Au prix d’une certaine fragilité ?\n\nNous commencerons par définir SLA, SLO et SLI et rappeler la signification de ces X-nines. Nous montrerons ensuite comment, dans un contexte en permanence partiellement dégradé, nos assemblages de services distribués nuisent à la fiabilité de nos plateformes.\n\nEn profitant de l’expérience acquise sur 6play, nous verrons quelques pistes pour améliorer la résilience de nos applications, pour qu’elles répondent à nouveau aux besoins de notre public. Nous prononcerons peut-être même le terme de « Chaos Engineering » ;-)",
       "categories": "63920d15-9b86-58e5-875c-441301f6dbb9",
@@ -580,6 +598,24 @@
       "createTimestamp": {
         "_seconds": 1701257746,
         "_nanoseconds": 346000000
+      }
+    },
+    {
+      "id": "Q2yClw1lrImz1OgCksy2",
+      "title": "GenAI dans tous ses états",
+      "state": "accepted",
+      "level": "intermediate",
+      "abstract": "Au cours de cette présentation nous vulgarisons ce qu’est le GenAI et comment les modèles LLM sont construits en repartant de la notion de Token ainsi que leurs impacts techniques sur la puissance nécessaire de calcul. Nous présenterons aussi les avantages et les limites des modèles LLM existants, chacun pouvant répondre à des besoins différents.\n\nDans la deuxième partie de notre conférence, nous passerons à l'action en présentant un cas d'utilisation métier concret. Vous découvrirez comment, à partir de modèles open source, nous pouvons réaliser un apprentissage à partir de données existantes de l’entreprise, permettant ainsi au modèle entraîné de répondre à toutes sortes de questions, sans avoir à chercher exhaustivement dans ces données. Cette démonstration vous donnera un aperçu pratique de la puissance de la GenAI dans le monde professionnel.\n\nDans une troisième partie, nous réaliserons un parallèle pour le monde du développement en démontrant la vélocité que peut avoir un développeur sur le cycle de développement d’une application, en générant automatiquement du code, des tests mais aussi de la documentation, via une solution éditeur comme DuetAI.",
+      "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2",
+        "9NuaIKzyv6gxUGq59NFdkiMEPrO2"
+      ],
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1700516936,
+        "_nanoseconds": 292000000
       }
     },
     {
@@ -692,7 +728,7 @@
     {
       "id": "VUwBEI5QjFXwpcQHQnvL",
       "title": "L'accessibilité, les yeux fermés.",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "Les formations à distance se multiplient ces dernières années. Cependant certaines plateformes d'e-learning ne sont pas accessibles aux personnes en situation de handicap.\nPourtant, afin d'assurer un accès équitable à tous les utilisateurs, il est primordial de comprendre leurs besoins et de les prendre en compte.\nC'est en me frottant de près aux défauts d'accessibilité d'un centre de formation que j'ai pris conscience de l'ampleur du problème et de la nécessité de sensibiliser autour du handicap.\nDans ce talk, je vais vous raconter tout ce que j'ai appris en voulant faire prendre conscience à mon école de la nécessité d'intégrer l'accessibilité web dans les plateformes.\nNous suivrons pas à pas la conception et le développement d'un projet web accessible, les différentes étapes à travers lesquelles nous sommes passés pour répondre aux besoins de nos utilisateurs, et le bilan que nous en avons fait après une année sur ce projet.",
       "categories": "46293012-ca7f-5197-8c58-69bc9a6c7a4b",
@@ -708,9 +744,45 @@
       }
     },
     {
+      "id": "WZ4ko80ECVMs5jAbXz4K",
+      "title": "S'il vous plaît... dessine-moi une clé SSH ! Le Petit Prince au pays de la cryptographie",
+      "state": "accepted",
+      "level": "beginner",
+      "abstract": "_Aussi absurde que cela me semblât à mille milles de tous les endroits habités et en danger de mort, je sortis de ma poche une feuille de papier et un stylographe. Mais je me rappelai alors que j'avais surtout étudié la géographie, l'histoire, le calcul et la grammaire et je dis au petit bonhomme (avec un peu de mauvaise humeur) que je ne savais pas dessiner. Il me répondit :_\n\n_\\- Ça ne fait rien. Dessine-moi une clé SSH._\n\n_Alors j'ai dessiné._\n<code>\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDC06MWNQkz5jSMPlk4aE+3ZzUrIGqDmJValpsnDUuU75MRizdiyvGrdLS3hEsQgwfjRm4dF2tJEVVYuMyU9f7YkrcW8sxk20lYAck4COB1HEP5SMCYVmbVmVZ\nhCKY8O4kKInRkaG6k0YwBtmzU43qsaDjOaG07L0XpIAIhYsBejWWEV2Se/HTkb7dqD0cOOcaZgjIqhv/awBAzk4PMzMmSyYCAiJ/k96i9/GPVyHcAjb/3bcIv9dTH+PtX0We7KbZ9NYrb/UeXNkzeUSxeFKtgQlbksiyLfd5VzFE5rT2vcrtMe8iNVM0olpofNlecw2DjWtzowjy8eEQkvwbiybmeO82Pw+aNmhlhJ4lnkzvDAgbGJWdkWJZUaHTlhoZESi1VWJJxZwhSYCyg5Oiv/p/ZQupaYb9QI/PXpu8zg1SSTOK6OHi33BC9l2Nb/DMUUOqH+Q5FGUtoC+K9d/QEeV337tiLwj0csjN26DJzgPqlbtditab+qwCrpoXNNc45orE= user@hostname\n</code>\n\n_Il regarda attentivement, puis :_\n\n_\\- Non ! Cette clé publique est trop longue pour être facilement partagée. Fais-en un autre._\n\n_Je dessinai :_\n<code>\n3072 SHA256:fNKLpf0MtgSDzcEl8dNTJ/l3v/fr5TVdftSxWRIH6eY user@hostname (RSA)\n</code>\n\n_Mais il fut refusé, comme le précédent :_\n\n_\\- Cette empreinte de clé publique est illisible. Je veux un dessin reconnaissable en un coup d’œil._\n\n_Alors, faute de patience, comme j'avais hâte de commencer le démontage de mon moteur, je griffonnai ce dessin-ci._\n<code>\n+---[RSA&nbsp;3072]----+\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;..o|\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o&nbsp;++|\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;.+|\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;S&nbsp;&nbsp;.&nbsp;o&nbsp;&nbsp;+|\n|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;=&nbsp;oo.|\n|.&nbsp;&nbsp;&nbsp;.&nbsp;o&nbsp;&nbsp;.&nbsp;=&nbsp;.ooo|\n|&nbsp;o&nbsp;.&nbsp;o&nbsp;.&nbsp;.o.O+=oE|\n|&nbsp;&nbsp;o..&nbsp;&nbsp;&nbsp;o+=.+.=@.|\n+----[SHA256]-----+\n</code>\n\n\n_Et je lançai :_\n\n_\\- Ça, c'est un randomart. Ce n'est pas vraiment une clé SSH, c'est une représentation visuelle unique de celle-ci._\n\n_Mais je fus bien surpris de voir s'illuminer le visage de mon jeune juge :_\n\n_\\- C'est tout à fait comme ça que je le voulais !_\n\nDécouvrons ensemble ce que représente ce randomart et comment il est généré !",
+      "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "AjTjKO7pa6dhaaINz1J0QYBcVxf1"
+      ],
+      "comments": "Rien de spécial à prévoir :)",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1701373901,
+        "_nanoseconds": 962000000
+      }
+    },
+    {
+      "id": "YBmGSlLWwIroED6yxxdi",
+      "title": "Quelle est la place des introverti·e·s dans une équipe agile ?",
+      "state": "accepted",
+      "level": "beginner",
+      "abstract": "Dans un environnement agile qui favorise le travail de groupe, l'idéation collective et les évènements fréquents, qu'est-ce que les introverti·e·s apportent ? Qu'est-ce que l'agilité peut leur apporter ? Peuvent-ils·elles y trouver leur compte ?\n\nEn réfléchissant à ces questions, nous allons explorer plus en détail ce qu'est un·e introverti·e par rapport à un·e extraverti·e, ainsi que par rapport à la vision que nous en avons généralement, pour finalement y réfléchir dans le cadre d'une équipe agile.",
+      "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "sfqORSTEU5f78k9gZ72VG84d2iF2"
+      ],
+      "comments": "Bonjour ! J'ai hésité entre les catégories Humain&Tech et Alien, n'hésitez pas à me prévenir si en fait je me suis trompée :) \nMerci, et bonne journée.",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1699602329,
+        "_nanoseconds": 394000000
+      }
+    },
+    {
       "id": "YPsuYQYS1gWLrKb4f2SA",
       "title": "J’ai beaucoup de taf 😱 mais je gère 😎",
-      "state": "accepted",
+      "state": "confirmed",
       "abstract": "On court toujours après le temps, dans notre vie perso, dans notre vie pro. Et si on essayait d’être plus productif non pas pour produire plus (enfin si un peu 😇) mais plutôt pour regagner du temps dans sa vie perso et arrêter de se sentir tous les jours surchargés.\nC’est ce que je vous propose à travers cette session qui revient sur ce que j’ai pu mettre en place dans mon organisation au quotidien et comment je m’y suis pris.\n\n\n",
       "categories": "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9",
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
@@ -979,7 +1051,7 @@
     {
       "id": "oVFqGQVuSwZBRIfpXwVd",
       "title": "La recherche à l'ère de l'IA",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "beginner",
       "abstract": "La recherche ne se contente plus de l'approche maintenant traditionnelle basée sur la fréquence des termes (TF/IDF ou BM25) mais plus sur la tendance actuelle du machine learning où les nouveaux modèles ont ouvert une nouvelle dimension pour la recherche.\n\nCette conférence donne un aperçu de :\n\n* La recherche \"Classique\" et ses limitations\n* Qu'est qu'un modèle de machine learning et comment vous pouvez l'utiliser\n* Comment utiliser la recherche vectorielle ou la recherche hybride dans Elasticsearch\n* Comment ChatGPT d'OpenAI ou les \"large language models\" (LLMs) similaires viennent jouer naturellement avec Elastic\n",
       "categories": "87b16802-9e01-5a51-910f-71141789a8b8",
@@ -1141,7 +1213,7 @@
     {
       "id": "rVkg499GPkGqHbiDu3nA",
       "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
-      "state": "accepted",
+      "state": "confirmed",
       "level": "intermediate",
       "abstract": "👩‍💻 Toi, **SRE** ou **dev**, tu ne t'es jamais demandé.e comment faire prioriser un ***pipeline CI/CD***  à ton PM plutôt qu'une fonctionnalité ?\n\n👀  Toi, **QA**  ou responsable qualité, combien de fois as-tu milité pour l'**automatisation des tests** des exigences critiques de ton application ?\n\n👨‍💼 Toi **DSI**, à combien de CoDir tu as participé en tant que médiatrice entre les acteurs de la production et du métier pour trouver un compromis coût  / qualité / d'impact sans avoir d'arguments factuels ?\n\nAprès avoir accompagné **plus de 50 équipes** dans leur **transformations DevOps**, je vous partage comment je m'y prends pour leur faire gagner de **30% à 500%**  de temps moyen de *delivery*, respectivement de 15j-->10j  et 4mois -->3 semaines  !\n\nCe qui est sûr, c'est que vous aviez tous raison : **bonne performances financière d’entreprise = bonnes pratiques d’ingénierie logicielle** : test, CI/CD, agilité, observabilité … Les auteurs du livre *__Accelerate__* nous le confirment statistiquement et nous disent même ce qui fait que les leaders réussissent. La clé … c’est l’accélération !\n\n[Accelerate [2018 Forsgren, Humble, Kim] (ISBN 1942788339)](https://www.goodreads.com/book/show/40313863-accelerate)",
       "categories": "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa",
@@ -1762,6 +1834,16 @@
       "github": "laurentgrangeau"
     },
     {
+      "uid": "9NuaIKzyv6gxUGq59NFdkiMEPrO2",
+      "displayName": "Tony Jarriault",
+      "bio": "Depuis mes premier pas en informatique, j'ai toujours été fasciné par les enjeux liés à la sécurité numérique, je suis également cloud addict. Le cloud nous apporte une très grande agilité, pour nous donner accès à l’innovation !\n\nJ'ai été responsable technique pour le build et le run de plate forme infogérée. J'ai participé au coaching des équipes sur le volet technique.\nJ’accompagne nos clients dans la définition de leur besoin et de la mise en œuvre des solutions. \n",
+      "speakerReferences": "J'ai également présenté des talks :\nAWS vs Azure vs GCP. Quelle compétition est possible entre les 3 principaux clouders publics ? ».  à Devoxx Morocco en novembre 2019\nInitiation au Finops lors de cloud sud 2021 et bien d'autres présentations (DevFest, Cloudsud, Capitole du libre, Opensource experience)\nAu secours mon mon SI est ouvert (sujet zerotrust) lors de devoxx France 2022 / Cloud ouest 2022\n\n",
+      "company": "CAPGEMINI",
+      "photoURL": "https://avatars.githubusercontent.com/u/7701382",
+      "twitter": "@JarriaultTony",
+      "github": "TJarriault"
+    },
+    {
       "uid": "9R617aT0qaXh4bJMIIrcab9akex1",
       "displayName": "Loïc CHAU",
       "bio": "Hi ! I'm Loïc 😄\n\nI'm a fullstack developper with a strong interest in frontend.\n\nI'm obsessed with clean UIs and devx.\n\nI try to use Vim in VSCode but I'm far from mastering it, I love it nonetheless !",
@@ -2102,26 +2184,24 @@
   ],
   "formats": [
     {
-      "name": "Lightning (15min)",
-      "id": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177"
+      "id": "e1af170f-dbcf-5d6e-9ffa-587a55f7a177",
+      "name": "Lightning (15min)"
     },
     {
-      "name": "Conférence (50min)",
-      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "id": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "name": "Conférence (50min)"
     },
     {
-      "name": "Hands-on (120min)",
-      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b"
+      "id": "95d5ba79-ebfc-5e1a-8b45-184925424f1b",
+      "name": "Hands-on (120min)"
     },
     {
-      "name": "Lightning Débutant·e (15min)",
-      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakeuses et/ou speaker·euse issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
-      "id": "338780b9-2b80-561c-b303-70c6048eb2a0"
+      "id": "338780b9-2b80-561c-b303-70c6048eb2a0",
+      "name": "Lightning (15min)"
     },
     {
-      "name": "Conférence Débutant·e (50min)",
-      "description": "Vous bénéficierez de conseils sur la rédaction de votre sujet, un accompagnement dans la préparation de votre support et de votre discours et une occasion de répéter devant quelqu’un pour avoir des conseils personnalisés.\n\nNous voulons vous offrir un environnement safe et ouvert à la diversité particulièrement pour les speakeuses et/ou speaker·euse issu(e)s de minorités. Vous aurez notamment le choix de votre mentor parmi nos volontaires femmes et hommes et pourrez décider de la forme d'accompagnement dont vous souhaitez bénéficier.",
-      "id": "2d0b4c99-c723-5e89-8632-e76e0c52ce1d"
+      "id": "2d0b4c99-c723-5e89-8632-e76e0c52ce1d",
+      "name": "Conférence (50min)"
     }
   ]
 }
