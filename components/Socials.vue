@@ -41,7 +41,7 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/linkedin.svg"
+            src="@/assets/img/linkedin-icon.svg"
             alt="Linked in logo"
           >
         </a>
