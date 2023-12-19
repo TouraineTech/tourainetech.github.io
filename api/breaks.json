@@ -45,8 +45,32 @@
     "days": [1,2]
   },
   {
+    "id": "am2",
+    "name": "Pause",
+    "format": "break",
+    "rooms": [
+      2
+    ],
+    "times": [
+      6
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "am2Bis",
+    "name": "Pause",
+    "format": "break",
+    "rooms": [
+      4
+    ],
+    "times": [
+      6
+    ],
+    "days": [1,2]
+  },
+  {
     "id": "dejeuner",
-    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Quickie)",
+    "name": "🍽 Début Pause déjeuner",
     "format": "break",
     "rooms": [
       1,
@@ -55,7 +79,7 @@
       4
     ],
     "times": [
-      6
+      8
     ],
     "days": [1,2]
   },
@@ -70,13 +94,13 @@
       4
     ],
     "times": [
-      8
+      10
     ],
     "days": [1,2]
   },
   {
     "id": "dejeuner2",
-    "name": "🍽 fin de la pause déjeuner (15 min)",
+    "name": "🍽 fin de la pause déjeuner (40 min)",
     "format": "break",
     "rooms": [
       1,
@@ -90,22 +114,7 @@
     "days": [1,2]
   },
   {
-    "id": "dejeuner3",
-    "name": "",
-    "format": "break",
-    "rooms": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "times": [
-      10
-    ],
-    "days": [1,2]
-  },
-  {
-    "id": "pm1",
+    "id": "pm0",
     "name": "☕ Pause café (10 min)",
     "format": "break",
     "rooms": [
@@ -120,8 +129,8 @@
     "days": [1,2]
   },
   {
-    "id": "pm2",
-    "name": "☕ Pause café (25 min)",
+    "id": "pm1",
+    "name": "☕ Pause café (10 min)",
     "format": "break",
     "rooms": [
       1,
@@ -135,7 +144,7 @@
     "days": [1,2]
   },
   {
-    "id": "gouter",
+    "id": "pm2",
     "name": "☕ Pause café (10 min)",
     "format": "break",
     "rooms": [
@@ -150,6 +159,21 @@
     "days": [1,2]
   },
   {
+    "id": "gouter",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      20
+    ],
+    "days": [1,2]
+  },
+  {
     "id": "soSmall2",
     "name": "",
     "format": "break",
@@ -160,7 +184,7 @@
       4
     ],
     "times": [
-      20
+      22
     ],
     "days": [1]
   }
