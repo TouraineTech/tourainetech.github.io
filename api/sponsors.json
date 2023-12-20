@@ -44,10 +44,10 @@
     "image": "apside-top.png",
     "link": "https://www.apside.com/",
     "type": "gold",
-    "linkedIn" : "https://www.linkedin.com/company/apside/",
-    "twitter" : "https://twitter.com/ApsideGroupe",
-    "instagram" : "https://www.instagram.com/apsidegroupe/",
-    "facebook" : "https://www.facebook.com/ApsideGroupe/",
+    "linkedIn": "https://www.linkedin.com/company/apside/",
+    "twitter": "https://twitter.com/ApsideGroupe",
+    "instagram": "https://www.instagram.com/apsidegroupe/",
+    "facebook": "https://www.facebook.com/ApsideGroupe/",
     "desc": "Un esprit start-up avec la stabilité d’un grand groupe, qui favorise l’agilité, le travail d’équipe et la proximité. Alors qu’Apside ne cesse d'agrandir sa famille déjà forte de plus de 3000 consultants, nous sommes à la recherche de nos nouveaux talents ! <br><br> <ul><li>Intégrez une structure à taille humaine ! Vous rejoindrez 220 collaborateurs d’Apside TOP, filiale du groupe, pour développer notre activité en région ! Ambiance saine et conviviale sont les mots d’ordre ! </li><li>Vous êtes force de proposition ? Participez et animez nos évents techniques et devenez speaker (ApsideCamp, Devoxx, etc..) et faites-nous découvrir votre univers grâce à vos projets associatifs !</li><li>Développez votre réseau (soirées trimestrielles, afterworks, soirées d’intégration…).</li><li>Contribuez à l’Apside Academy en tant que créateurs de parcours pédagogiques et/ou formateurs.</li><li>Vous souhaitez relever des défis dans un environnement digital et multi-technologies ? Rejoignez notre Communautés d’Experts ! </li></ul><br>Notre savoir-faire et notre savoir-être vous accompagnent au cœur de plusieurs métiers : l’ingénierie en systèmes d'information et informatique industrielle, scientifique, aéronautique, automobile et financière.",
     "jobOffers": [
       {
@@ -59,6 +59,30 @@
         "id": "apsideTwo",
         "title": "Ingénieur IT Sénior Web / Data / Cloud / DevOps (H/F)",
         "pdf": "Offre_Ingenieur_IT_Senior.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Worldline",
+    "id": "worldline",
+    "image": "worldline.png",
+    "link": "https://fr.worldline.com/fr/home.html",
+    "type": "gold",
+    "desc": "Worldline est un leader mondial de la sécurisation des paiements et des transactions. Nous sommes à l’avant-garde de la révolution numérique, gage de nouvelles façons de payer, vivre, travailler et nouer des relations reposant sur la confiance tout au long de la chaîne de valeur des paiements.",
+    "linkedIn": "https://worldline.com/linkedin",
+    "youtube": "https://www.youtube.com/@TechAtWorldline",
+    "twitter": "https://twitter.com/worldlinetech",
+    "github": "https://github.com/worldline",
+    "jobOffers": [
+      {
+        "id": "wlOne",
+        "title": "Blois Product Manager Terminals (W/M)",
+        "url": "https://careers.worldline.com/fr/emploi/blois/product-manager-terminals-w-m/35538/54382472928"
+      },
+      {
+        "id": "wlTwo",
+        "title": "Lyon Responsable d'application Contact (F/H)",
+        "url": "https://careers.worldline.com/fr/emploi/seclin/responsable-d-application-contact-f-h/35538/56027708112"
       }
     ]
   }
