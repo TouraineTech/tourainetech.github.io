@@ -11,6 +11,12 @@ speakers
   .forEach(async (s) => {
     console.log(`Downloading ${s.photoURL} for ${s.displayName}`)
     const response = await fetch(s.photoURL)
-    response.body.pipe(fs.createWriteStream(`../assets/img/speakers/${s.uid}.png`))
+    if(response.ok)
+      response.body.pipe(fs.createWriteStream(`../assets/img/speakers/${s.uid}.png`))
+    else {
+      const defaultImg = fs.createReadStream('../assets/img/speakers/default.jpeg');
+      defaultImg.pipe(fs.createWriteStream(`../assets/img/speakers/${s.uid}.png`));
+    }
+
 })
 
