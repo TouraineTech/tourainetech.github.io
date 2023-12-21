@@ -85,5 +85,30 @@
         "link": "https://careers.worldline.com/fr/emploi/seclin/responsable-d-application-contact-f-h/35538/56027708112"
       }
     ]
+  },
+  {
+    "id": "ippon",
+    "name": "Ippon Technologies",
+    "image": "ippon.svg",
+    "link": "https://blog.ippon.fr/",
+    "twitter" : "https://twitter.com/ippontech",
+    "linkedIn" : "https://www.linkedin.com/company/ippon-technologies/",
+    "instagram" : "https://www.instagram.com/ippon_technologies/",
+    "twitch": "https://www.twitch.tv/ippontech",
+    "youtube" : "https://www.youtube.com/@ippontechtv",
+    "type": "gold",
+    "desc": "Ippon, c'est un cabinet de conseil et d'expertises en technologie, issu de la rencontre entre un Tech et un Judoka ! </br> Leurs fondations sont ainsi influencées par les valeurs du sport et de la tech :</br></br> <ul><li>Le dépassement de soi : programme de mentoring individualisé : BlackBelt</li><li>Le collectif : communautés d’expertises, intervention en équipe Ippon</li><li>Le partage : formations, blog technique et conférences</li></br>Ippon est organisé en communautés (Fullstack, Mobile, Cloud, DevOps, Data, Agilité, Architecture, Produit, Design), et regroupe 700 passionnés de tech en France et à l'étranger. </br> Ippon accompagne plus d’une centaine de clients par an, sur leurs enjeux de transformation et d’innovation.</br></br>Chez Ippon, ils sont convaincus que la tech est source de progrès pour les organisations comme pour l’ensemble de la Société. Ils entretiennent une culture positive, entre humanisme, générosité et bienveillance. Ces valeurs se retrouvent dans leurs initiatives environnementales et sociétales, portées par la Fondation Ippon, Ippon Go for Good et Ippon Go for Women.</br></br>Enfin, Ippon est présent sur la région Centre-Val de Loire depuis mars 2023 avec des locaux sur Tours. </br>Dès leur première année, ils prennent part activement aux communautés Tech (meetup, Touraine Tech, Digital Loire Valley...) car le partage fait partie intégrante de leurs valeurs.<br/></br>Sentez-vous libre de discuter avec eux sur leur stand et/ou d'assister à leurs talks ! </br></br> <div style='display:flex; flex-direction: column;align-items: center;'><span>Leur devise ?</span><span>“It is not important to be better than someone else, but to be better than yesterday”</span></div>",
+    "jobOffers": [
+      {
+        "id": "ipponOne",
+        "title": "Software Crafteur·euse",
+        "pdf": "annonce_crafter_2024.pdf"
+      },
+      {
+        "id": "ipponTwo",
+        "title": "Consultant·e Data",
+        "pdf": "annonce_data_2024.pdf"
+      }
+    ]
   }
 ]
