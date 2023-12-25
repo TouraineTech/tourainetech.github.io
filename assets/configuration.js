@@ -6,7 +6,7 @@ export default {
     eventEdition: '24',
     isRegisterOpen: true,
     isSoldOut: false,
-    isScheduleOnline: false,
+    isScheduleOnline: true,
     isEditionOpen: true,
     isVideoOnline: false,
     isPhotoOnline: false,

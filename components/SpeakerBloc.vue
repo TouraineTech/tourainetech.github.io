@@ -29,11 +29,11 @@ export default {
       border-radius: 2px;
       padding: 1rem;
       color: white;
-      height: available;
+      height: 100%;
 
       img{
-          width: 100px;
-          height: 100px;
+          width: 75px;
+          height: 75px;
           border-radius: 50%;
           border: 3px solid white;
       }

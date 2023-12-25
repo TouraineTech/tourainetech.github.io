@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const fetch = require("node-fetch");
+const eventId = 'J2VpXPXWngD69u0nrA3R';
 
 const {API_KEY: apiKey, WRITE_RAW_FILE: createRawConferenceHallDataFile} = process.env;
 
@@ -28,9 +28,8 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
 }
 
 async function retrieveData(apiKey) {
-  const response = await fetch(`https://conference-hall.io/api/v1/event/3lWSdH0pfZkHEAL7RWSJ?key=${apiKey}`);
-  const json = await response.json();
-  return json;
+  const response = await fetch(`https://conference-hall.io/api/v1/event/${eventId}?key=${apiKey}`);
+  return await response.json();
 }
 
 function talksFilter(...states) {
@@ -44,8 +43,8 @@ function keynoteTalkFilter() {
 
 function getTalks(conferenceHallDatas) {
   console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
-  const talksNeedToBeForceConfirmed = ['TuXPjtB8tUG4yaSnj6pn', 'RKdpxRlsknOPkd4Lazye', 'QL23LjbKcwLMnCVGYAn8', 'vWqRo4G2Zt787YV5hu0p', '9mx91dnbQegxuMZPrp8m', 'SltiD9i2aW0hxWmNWWop' ]
-  const talksNeedToBeForceRefused = ['vlxojaVlUVeS6ZbF6dcm', 'J7gGsPyGOyyIxADiHN04', ]
+  const talksNeedToBeForceConfirmed = []
+  const talksNeedToBeForceRefused = []
   const talks = conferenceHallDatas.talks.map(t => {
     if(talksNeedToBeForceConfirmed.includes(t.id)) {
       t.state = 'confirmed';
@@ -149,13 +148,13 @@ async function doWork() {
     categories,
     formats
   } = conferenceHallDatas;
-
+  const formattedFormats = formats.map(({id, name}) => ({id, name: name.replace("Débutant·e ", "")}))
   const {talks: rawTalks} = getTalks(conferenceHallDatas);
   const rawSpeakers = getSpeakers(conferenceHallDatas, rawTalks);
 
   const {talks, speakers} = doSomeCorrection(rawTalks, rawSpeakers);
 
-  writeConferenceHallDataFile(talks, speakers, categories, formats);
+  writeConferenceHallDataFile(talks, speakers, categories, formattedFormats);
 
 }
 
