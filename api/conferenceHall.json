@@ -222,6 +222,24 @@
       }
     },
     {
+      "id": "AoR9C38gjTBavpbs233l",
+      "title": "🧑‍🎤🎸 La preuve de programme vous fera apprécier les tests",
+      "state": "confirmed",
+      "level": "intermediate",
+      "abstract": "La pratique de Développement piloté par les tests (TDD) est formalisée depuis au moins 1999. La famille d'outils de test automatisé xUnit existe depuis 1998 et ne cesse de s'améliorer. Pourtant le test automatisé est encore perçu comme un poids pour les équipes de développement.\n\nPour aider à relativiser, je vous invite à découvrir le mode encore plus hard-core : la preuve de programme vérifiée. Dans une session de live-coding nous comparerons l'effort à faire pour tester et pour prouver un même algorithme. Eh oui, il existe des langages de programmation qui permettent d'énoncer un théorème sur un programme et d'en écrire la preuve, laquelle sera vérifiée par le compilateur 🤯\n\nVous repartirez avec les oreilles cassées, des neurones pétés, les doigts musclés et le système vacciné.",
+      "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
+      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+      "speakers": [
+        "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2"
+      ],
+      "comments": "❤️❤️❤️",
+      "language": "French",
+      "createTimestamp": {
+        "_seconds": 1699041792,
+        "_nanoseconds": 170000000
+      }
+    },
+    {
       "id": "AtbUgkuLuuppJ9S5Hlq5",
       "title": "Documentation as code, par où commencer ?",
       "state": "confirmed",
@@ -1441,7 +1459,7 @@
       "bio": "Je suis architecte et développeur sénior chez Worldline. Mon activité consiste à coder (principalement en Java), coacher des développeurs et concevoir des architectures. \n\nBlog: https://blog.touret.info",
       "speakerReferences": "J'ai été speaker dans le cadre des événements suivants:\n\n- DEVFEST LILLE (FR): \"Le versionning des APIs REST: dans la vraie vie on fait comment ?\"\n- VOXXED DAYS BRUSSELS 2023 (EN): \"The hitchhiker's guide to software architecture design\"\n- SnowCampIO 2023 (FR): \"Le versionning des APIs REST par la pratique?\"\n- SnowCampIO 2023 (FR): \"Une plateforme à concevoir, deux architectes: trois possibilités?\"\n- Devoxx BE 2022 (EN): \"Architecture Katas : Improve your system architecture design skills in a funny way !\"\n- Cloud Nord 2022 (FR) :  \"Java dans le Cloud: avec Spring ou Quarkus\"\n- Malt Academy 2022 (FR): \"Java dans le Cloud: avec Spring ou Quarkus\"\n- Jug Summer Camp 2022 (FR) :  \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- Breizhcamp 2022 (FR) :  \"Java dans le Cloud: avec Spring ou Quarkus\"\n- VOXXEDDAYS Luxembourg 2022 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- Camping des Speakers 2022 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- Nantes JUG 2022 (FR-Meetup) : \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- Nantes JUG 2022 (FR-Meetup) : \"Checklist pour concevoir une application dans le cloud\"\n- SnowcampIO 2022 (FR):  \"Checklist pour concevoir une application dans le cloud\"\n- Touraine Tech 2022 (FR): \"Java dans le Cloud: avec Spring ou Quarkus\"\n- Devoxx UK 2021 (EN): \"Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\"\n- Devoxx UK 2021 (EN): \"Architecture Katas : Improve your system architecture design skills in a funny way !\"\n- Volcamp IO 2021: Améliorer les compétences et les infrastructures avec les katas d'architecture\n- JNation 2021 (EN): Kubernetes & Co, beyond the hype: 10 tips for designers who want to create cloud native apps\n- The Cloud First 2021 (FR): \"Améliorer les compétences et les infrastructures avec les katas d'architecture\"\n- The Cloud First 2021 (FR): \"Checklist pour concevoir une application dans le cloud\"\n- Worldline Expert Community - \"Cloud Day\" Live event 2020 (EN) : \"K8S & Co : beyond the hype\"\n- Techforum Iberia 2020: Java Next Steps (EN)\n- Orleans Tech 2019 (FR): \"Unifiez vos traitements Batch et Streaming avec Apache Beam\"\n- Techforum 2019: Java Next Steps (EN)\n- Touraine Tech 2019 (FR): \"Architecture Hands-on\"\n- Touraine Tech 2018 (FR): \"Jenkins 2 : Le retour (d'expérience)\"\n\nVous pourrez trouver les slides de quelques présentations que j'ai pu faire sur [mon compte speakerdeck](https://speakerdeck.com/alexandretouret).\nJ'ai également écrit plusieurs articles sur [le blog technique de mon entreprise](https://blog.worldline.tech/authors/#alexandre-touret).\n\nEnfin, vous pourrez retrouver les vidéos sur Youtube via [cette playlist](https://www.youtube.com/watch?v=DKfR5AVD_AM&list=PL_s9loQqLrqrKakCB6LbOoxn2PrwCntQt)\n",
       "company": "WORLDLINE",
-      "photoURL": "https://raw.githubusercontent.com/alexandre-touret/alexandre-touret.github.io/main/assets/images/alexandre.touret.webp",
+      "photoURL": "https://raw.githubusercontent.com/alexandre-touret/alexandre-touret.github.io/main/static/assets/images/alexandre.touret.webp",
       "twitter": "@touret_alex",
       "github": "alexandre-touret"
     },
@@ -1459,7 +1477,7 @@
       "uid": "Roi8virSihT7L9JqhwISBoUPfVg2",
       "displayName": "Beldjilali Mehdi",
       "speakerReferences": "1. Articles\n-> https://medium.com/@ConstruireLeFigaro/pourquoi-et-surtout-comment-le-figaro-a-choisi-la-technologie-graphql-pour-moderniser-ses-api-87cc79696dd1\n-> https://medium.com/@ConstruireLeFigaro/comment-le-figaro-a-imagin%C3%A9-une-strat%C3%A9gie-de-tests-innovante-et-durable-d1fb1dec06f\n\n2. Conférence sur le sujet \"Les frameworks sont-ils indispensables ?\" \n-> https://www.youtube.com/watch?v=cyXG5U4b4Qc\n-> https://www.youtube.com/watch?v=USev3g-oCtk",
-      "photoURL": "https://avatars.githubusercontent.com/u/5889926?v=4",
+      "photoURL": "https://avatars.githubusercontent.com/u/5889926?s=400&u=462c3f571b4e0c175da30ac782babff2a9ed4c1d&v=4",
       "github": "https://github.com/mehdibeldjilali/"
     },
     {
@@ -1539,7 +1557,7 @@
       "bio": "Développeur de formation, un peu touche-à-tout à force d'être particulièrement curieux.\n\nAmateur de calembours et de houblon.",
       "speakerReferences": "# Conférences déjà données\n## XebiCon\n* 2018 : [Conférence 45 min : Ce que l'histoire du métro parisien m'a enseigné sur la création logicielle](https://www.youtube.com/watch?v=8ARwQbdWARQ)\n* 2019 : [Quickie 15 min : What the UTC?](https://www.youtube.com/watch?v=oG7OlXwalcY)\n\n## BreizhCamp\n* 2019 : [University 2h : Chérie, j'ai mis du fonctionnel dans mon Java !](https://www.youtube.com/watch?v=_wUBpEb5xWs)\n* 2022 : [Tool in Action 25 min : Optimiser vos conteneurs Spring avec le Jar layering et la Modularité](https://www.youtube.com/watch?v=eCCeSlR4B88)\n* 2023 : Conférence 50 min : Rust sans (trop) roter du sang\n\n## Touraine Tech\n* 2022 : Conférence 50 min : Poser une boîte à lettres, envoyer un humain sur Mars : même combat ?\n* 2023 : Conférence 50 min : Rust sans (trop) roter du sang",
       "company": "WeScale",
-      "photoURL": "https://lh3.googleusercontent.com/a-/AOh14GiE6mmdxP0ib4guRrl5f5xeF9JcqRjgkpBOcRnc=s96-c"
+      "photoURL": "http://zir0faive.free.fr/img/profil.jpg"
     },
     {
       "uid": "jP8YeUsQW1T3cGw3gGLQaPm2QDz1",
@@ -1596,6 +1614,16 @@
       "github": "jeanphibaconnais"
     },
     {
+      "uid": "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2",
+      "displayName": "William Bartlett",
+      "bio": "Second generation developer, William had his first email account in 1990 at the age of 6 and fell into IT at the age of 10. On his journey across the universe of programming, he has roamed the superpowers of procedural and object-oriented where C, Python or Java are natively spoken. He has also embarked on several treks to the more exotic lands of the functional world, equipped only with a lambda and a few parentheses. His familiar is the penguin and his motto is “Use the right tool at the right time”.",
+      "speakerReferences": "I have been speaking at conferences for a few years now. In 2018. I presented talks at the [DevOps D-Day](https://youtu.be/blCfIwccnnI), [API Days](https://youtu.be/EzPvH-2C7U8) and CloudExpo Europe. I have also presented at a few meetups, notably MarsJUG in June 2018 and a 6th Docker Birthday event.\nIn 2019, I had the honour of speaking at [Devoxx Belgium](https://devoxx.be/speaker-details/?id=21408) for the first time.\nIn 2020, [SnowCamp](https://sched.co/XoPk).\nIn 2021, DevFest Nantes, Agile Tour Nantais and Agile Tour Grenoble.\nIn 2022, AgiLeMans, Agile Niort, Le Camping des Speakers and Voxxed Thessaloniki.\n\nI started doing presentations while I was preparing a doctorate from 2009 to 2012. I have done some theatre and I like to keep my presentations professional yet fun and original.",
+      "company": "Zenika",
+      "photoURL": "https://namrats.net/images/Photo-2019-square.jpg",
+      "twitter": "@bartlettstarman",
+      "github": "punkstarman"
+    },
+    {
       "uid": "ZgBHzoIftIPHcnyhXbo5FQ8JMPy2",
       "displayName": "Jérémy Chauvin",
       "bio": null,
@@ -1616,7 +1644,7 @@
       "uid": "ETZHP80Ca4buwA294HkQ7Vvkv3r1",
       "displayName": "Jérôme Tama",
       "bio": "Techlead/Architecte applicatif, je viens du monde java et j'aime ça.\n\nMon travail de tous les jours s'éparpille entre :\n\n- Le dev\n- Le monde des conteneurs\n- Le coaching technique\n- Faire aimer la qualité \n\n[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/j%C3%A9r%C3%B4me-tama-591699/)",
-      "speakerReferences": "# Conférences\n\n- Devfest  Toulouse 2023\n- Devfest  Lille 2023\n- DevoxxFR 2023\n- Touraine Tech 2023\n- Bdx.io 2022\n\n\n# Talks\n\n- Les super pouvoirs du package `java.util.function` [Devfest Toulouse 2023](https://youtu.be/ZSXqUFvDqUg?si=dZ41wKrPDXiRltyI)\n- Alice au pays d’OpenTelemetry [DevoxxFR 2023](https://youtu.be/0xSCUgHxZu0) [Bdx.io 2022](https://youtu.be/ArjNjrsnW6A)\n- Vous allez finir par les aimer les `Optionals`??? [Touraine Tech 2023](https://youtu.be/0LVkoF5D1eE)\n\n# Articles\n\nPublications sur [dev.to](https://dev.to/jtama)\n\n# Meetup\n\n- [Quarkus Insights #109: Quarkiverse Extension Spotlight: Minio Client](https://www.youtube.com/watch?v=ScSdgWx6aAM&list=PLsM3ZE5tGAVatO65JIxgskQh-OKoqM4F2)\n\n- [Quarkus natif, so easy ?](https://youtu.be/BjXiEKCMkdA)",
+      "speakerReferences": "# Conférences\n\n- Devfest  Toulouse 2023\n- Devfest  Lille 2023\n- DevoxxFR 2023\n- Touraine Tech 2023\n- Bdx.io 2022\n\n\n# Talks\n\n- Les super pouvoirs du package `java.util.function` [Devfest Toulouse 2023](https://youtu.be/ZSXqUFvDqUg?si=dZ41wKrPDXiRltyI)\n- Alice au pays d’OpenTelemetry [DevoxxFR 2023](https://youtu.be/0xSCUgHxZu0) [Bdx.io 2022](https://youtu.be/ArjNjrsnW6A) [Devfest Lille 2023](https://youtu.be/Y-13iEwlqV0?si=NgtlUrD7gbxSZtFW)\n- Vous allez finir par les aimer les `Optionals`??? [Touraine Tech 2023](https://youtu.be/0LVkoF5D1eE)\n\n# Articles\n\nPublications sur [dev.to](https://dev.to/jtama)\n\n# Meetup\n\n- [Quarkus Insights #109: Quarkiverse Extension Spotlight: Minio Client](https://www.youtube.com/watch?v=ScSdgWx6aAM&list=PLsM3ZE5tGAVatO65JIxgskQh-OKoqM4F2)\n\n- [Quarkus natif, so easy ?](https://youtu.be/BjXiEKCMkdA)",
       "company": "Onepoint",
       "photoURL": "https://gravatar.com/userimage/15652496/0a3524aa20e96f5d93fe625bfd10fca8.jpeg?size=256",
       "github": "jtama"
@@ -1625,7 +1653,7 @@
       "uid": "DJJkbkAM87ePw4mnnmdSw5ekHL92",
       "displayName": "Damien Lucas",
       "bio": "Ayant commencé ma carrière dans le mainframe, je suis maintenant développeur et Tech Lead Java depuis plusieurs années. J'adore lire la doc avant de me lancer dans le code. Et par dessus tout, j'aime échanger et transmettre sur ce que j'ai pu apprendre de mes expériences, des discussions avec mes pairs, des conférences vues ...\n\n[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/damien-lucas)",
-      "speakerReferences": "# Talks\n\n* Les super-pouvoirs du package java.util.function - ([lien youtube](https://www.youtube.com/watch?v=ZSXqUFvDqUg))\n* Migration Oracle -> PostgreSQL : il n'y a que le driver à changer! Non ? - ([lien youtube](https://www.youtube.com/watch?v=q9tbKeN_UJQ))\n\n# Conférences\n\n* DevFest Toulouse 2023\n\n# Formations internes\n\n* Java, les fondamentaux\n* Tests automatisés",
+      "speakerReferences": "## Talks\n\n* Les super-pouvoirs du package java.util.function - ([lien youtube](https://www.youtube.com/watch?v=ZSXqUFvDqUg))\n* Migration Oracle -> PostgreSQL : il n'y a que le driver à changer! Non ? - ([lien youtube](https://www.youtube.com/watch?v=q9tbKeN_UJQ))\n* Onepoint x AWS, un petit pas pour l’Homme, un grand pas pour nos clients - ([lien youtube](https://www.youtube.com/watch?v=RPMN0IW2Un8))\n\n## Conférences\n\n* Touraine Tech 2024\n* DevFest Toulouse 2023\n\n## Formations internes onepoint\n\n* Java, les fondamentaux\n* Tests automatisés",
       "company": "onepoint",
       "photoURL": "https://avatars.githubusercontent.com/u/8418431?v=4",
       "github": "dlucasd"
