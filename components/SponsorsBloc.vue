@@ -9,7 +9,7 @@
         :key="sponsor.id"
         :to="`/sponsor/${sponsor.id}`"
       >
-        <img :src="require(`@/assets/img/sponsors/${sponsor.image}`)" :alt="sponsor.name">
+        <img :src="require(`@/assets/img/sponsors/${sponsor.image}`)" width="100%" :alt="sponsor.name">
       </nuxt-link>
     </div>
   </div>
