@@ -11,9 +11,6 @@
  */
 
 
-/*! showdown v 2.1.0 - 21-04-2022 */
-
-
 /*
 object-assign
 (c) Sindre Sorhus
@@ -48,3 +45,6 @@ object-assign
  */
 
 /*! For license information please see vue-image-lightbox.min.js.LICENSE.txt */
+
+
+/*! showdown v 2.1.0 - 21-04-2022 */
