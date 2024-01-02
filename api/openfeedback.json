@@ -1,946 +1,1146 @@
 {
   "sessions": {
-    "07vraokDo3cMoivHt8SD": {
-      "speakers": [
-        "vTyhTPQNomd3MwKBg1HAQmWfYW93"
-      ],
-      "id": "07vraokDo3cMoivHt8SD",
-      "title": "Edge AI : allez viens, on embarque notre intelligence artificielle !",
-      "trackTitle": "Turing",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T11:10:00+01:00",
-      "endDate": "2023-01-19T11:40:00+01:00"
-    },
-    "0BCYtAIapzP7FOTAoaih": {
-      "speakers": [
-        "ATWxmgrBTEcstZyQjR25MPP5wJS2"
-      ],
-      "id": "0BCYtAIapzP7FOTAoaih",
-      "title": "La contribution aux communs numériques",
-      "trackTitle": "Turing",
-      "tags": [
-        "Alien",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:35:00+01:00",
-      "endDate": "2023-01-19T13:05:00+01:00"
-    },
-    "3vity7gCVOrIPLbr5anu": {
-      "speakers": [
-        "z40htDnoNBgrrGeOikcH3MaKimO2",
-        "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2"
-      ],
-      "id": "3vity7gCVOrIPLbr5anu",
-      "title": "Rust sans (trop) roter du sang",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T13:30:00+01:00",
-      "endDate": "2023-01-19T14:00:00+01:00"
-    },
-    "4ZuVgkJsSPF3AgU7aSBn": {
-      "speakers": [
-        "IlVQ3DcdvccEIvzcYr75msiHJUo1"
-      ],
-      "id": "4ZuVgkJsSPF3AgU7aSBn",
-      "title": "Comment gérer des journées de 35h ?",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Humain & Tech",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T12:35:00+01:00",
-      "endDate": "2023-01-20T13:05:00+01:00"
-    },
-    "6hVZGT7mDHObwqc7iVk4": {
-      "speakers": [
-        "9g2TJuw97VMd8Zwn9y2x0g0w7SB2"
-      ],
-      "id": "6hVZGT7mDHObwqc7iVk4",
-      "title": "Sensibilisation aux problématiques des systèmes distribués",
-      "trackTitle": "Lovelace",
+    "H9pJdUn2l1GJf03lCgPd": {
+      "id": "H9pJdUn2l1GJf03lCgPd",
+      "title": "Microservices, maxi supplice",
+      "trackTitle": "F21",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T11:10:00+01:00",
-      "endDate": "2023-01-19T11:40:00+01:00"
-    },
-    "82PVJ8pWAf3XUBuobgt1": {
       "speakers": [
-        "U9hxvBPi6MfRegXDRIWbQZ0daXm2"
+        "pPy3KSGVNjUzP196YUsM7ZF7J8K2",
+        "NIcR3KYAgYdkLnleO2GQnYBUlhV2"
       ],
-      "id": "82PVJ8pWAf3XUBuobgt1",
-      "title": "Ne jette pas ton ordi,  ... répare le futur ! 🌍",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Humain & Tech",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:10:00+01:00",
-      "endDate": "2023-01-19T12:40:00+01:00"
+      "startTime": "2024-02-08T10:10:00+01:00",
+      "endTime": "2024-02-08T11:00:00+01:00"
     },
-    "8Y1SA6Pfjj2LIrbUa037": {
-      "speakers": [
-        "EEd8VQHPxORw8iWh2ZIfieTC5c32",
-        "guillaumeAzam"
-      ],
-      "id": "8Y1SA6Pfjj2LIrbUa037",
-      "title": "Apprenez Rust pas à pas en construisant une application en ligne de commande",
-      "trackTitle": "TD1",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Hands-on (120min)"
-      ],
-      "startTime": "2023-01-19T10:10:00+01:00",
-      "endDate": "2023-01-19T10:40:00+01:00"
-    },
-    "9mUt36g9CuvlJdvGLDVS": {
-      "speakers": [
-        "aFcfKeGfODWBN6Q2BJDLH988NwI3",
-        "bmcEG5lA35c8hrqifZ9kRkhZKXl2"
-      ],
-      "id": "9mUt36g9CuvlJdvGLDVS",
-      "title": "J'écris mes CLI en Java, pas vous ?",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T13:30:00+01:00",
-      "endDate": "2023-01-20T14:00:00+01:00"
-    },
-    "9mx91dnbQegxuMZPrp8m": {
-      "speakers": [
-        "3jAixvFWDwMpoISHbnkL3IqGNjP2"
-      ],
-      "id": "9mx91dnbQegxuMZPrp8m",
-      "title": "Développer et enseigner, une bonne idée ?",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Humain & Tech",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:10:00+01:00",
-      "endDate": "2023-01-19T12:40:00+01:00"
-    },
-    "DMbEta12hz6HS1I3rWym": {
-      "speakers": [
-        "i0pl2yBPWmV1BUFj1cc7QfQUdZu1"
-      ],
-      "id": "DMbEta12hz6HS1I3rWym",
-      "title": "Le DevOps expliqué à mon père, agriculteur à la retraite.",
-      "trackTitle": "Turing",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T13:30:00+01:00",
-      "endDate": "2023-01-20T14:00:00+01:00"
-    },
-    "ESyHvSv5gDz2deOwaFkZ": {
-      "speakers": [
-        "yBuTCMIOkLTJMFhtXvj6ulzL4Rp1"
-      ],
-      "id": "ESyHvSv5gDz2deOwaFkZ",
-      "title": "On peut écouter 1 fois un utilisateur, ou écouter 1 milliard d'utilisateurs.",
-      "trackTitle": "Turing",
-      "tags": [
-        "Design, UI, UX",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T14:30:00+01:00",
-      "endDate": "2023-01-20T15:00:00+01:00"
-    },
-    "H3Z9ga1ideEdq1Q2UDOa": {
-      "speakers": [
-        "OFR3coK7G1c4zwBlMcHNv295b0q2"
-      ],
-      "id": "H3Z9ga1ideEdq1Q2UDOa",
-      "title": "Live-coding, Space invaderes en vanilla JS en partant de zéro",
-      "trackTitle": "Pascal",
+    "jxFaIS5OTMkZEkFL8bHR": {
+      "id": "jxFaIS5OTMkZEkFL8bHR",
+      "title": "CSS renaît de ses cendres: (re)devenez copains avec votre feuille de style",
+      "trackTitle": "F22",
       "tags": [
         "Front web",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T15:45:00+01:00",
-      "endDate": "2023-01-19T16:15:00+01:00"
-    },
-    "HWmC1kHb5oxthqwbyrXW": {
       "speakers": [
-        "IPck78ZRNPaINM4qaagRuJnDZvR2",
-        "3v72z5xWXfbL94DpKVI1snjC7Jr1"
+        "T5VqnaJD8MPK6FO56sicZOKo0iE2",
+        "DNlgKL7C5DNK0y48Lf7ylPB4bmk2"
       ],
-      "id": "HWmC1kHb5oxthqwbyrXW",
-      "title": "Streetriders : Vous aimez jouer ? Ok ! On vous raconte comment on l'a développé...",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T13:30:00+01:00",
-      "endDate": "2023-01-20T14:00:00+01:00"
+      "startTime": "2024-02-08T10:10:00+01:00",
+      "endTime": "2024-02-08T11:00:00+01:00"
     },
-    "IezpFmDwL1no9qNdYQIG": {
-      "speakers": [
-        "Fhjjvv3C2TYVltqjim6rtTgf48x1"
-      ],
-      "id": "IezpFmDwL1no9qNdYQIG",
-      "title": "Développer publiquement un site en milieu hostile : retour d'expérience",
-      "trackTitle": "Turing",
-      "tags": [
-        "Humain & Tech",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T13:00:00+01:00",
-      "endDate": "2023-01-20T13:30:00+01:00"
-    },
-    "JPFFlmGXccsFCvny4idC": {
-      "speakers": [
-        "dnahDuhtlpNv9d15xbIbpS896sC2",
-        "aHchGCaQStWhoqQtDKBjBpkEnLF2"
-      ],
-      "id": "JPFFlmGXccsFCvny4idC",
-      "title": "Venez faire un petit Tours de la programmation IoT 📟 ?",
-      "trackTitle": "TD1",
-      "tags": [
-        "Mobile, Internet des objets",
-        "Hands-on (120min)"
-      ],
-      "startTime": "2023-01-20T13:30:00+01:00",
-      "endDate": "2023-01-20T14:00:00+01:00"
-    },
-    "MktwHZRwKOdE031ba80B": {
-      "speakers": [
-        "ffbnsZEQaCebGS2Dlip8JifuVIn2"
-      ],
-      "id": "MktwHZRwKOdE031ba80B",
-      "title": "Lost in abstraction",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Outillage, pratiques de développement",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T13:00:00+01:00",
-      "endDate": "2023-01-20T13:30:00+01:00"
-    },
-    "OIJZAyTGJRnFpG7F1J77": {
-      "speakers": [
-        "h3nuOK0PgNYxAMuffMX3lbGSiTH2"
-      ],
-      "id": "OIJZAyTGJRnFpG7F1J77",
-      "title": "User vs Human Experience",
-      "trackTitle": "Turing",
-      "tags": [
-        "Design, UI, UX",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:10:00+01:00",
-      "endDate": "2023-01-19T12:40:00+01:00"
-    },
-    "PZhCax4A1hSIflgKWUGS": {
-      "speakers": [
-        "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2",
-        "HfBwLxQ1wyO4giltVDafRIFILLJ2"
-      ],
-      "id": "PZhCax4A1hSIflgKWUGS",
-      "title": "As a UI designer, how to mess up your project? ",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Design, UI, UX",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T13:30:00+01:00",
-      "endDate": "2023-01-19T14:00:00+01:00"
-    },
-    "QL23LjbKcwLMnCVGYAn8": {
-      "speakers": [
-        "p4lQkz4mvnTox9AZz9nsRV5Iedg1"
-      ],
-      "id": "QL23LjbKcwLMnCVGYAn8",
-      "title": "DALL-E V2 -  un robot et un peintre font de la génération d'image par IA ",
-      "trackTitle": "Turing",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T16:45:00+01:00",
-      "endDate": "2023-01-19T17:15:00+01:00"
-    },
-    "RKdpxRlsknOPkd4Lazye": {
-      "speakers": [
-        "w9K4w1seusO2SDPlDFCUbw2apCh2"
-      ],
-      "id": "RKdpxRlsknOPkd4Lazye",
-      "title": "[Conférence dessinée] Regard scientifique sur l'artisanat logiciel",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Outillage, pratiques de développement",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T10:10:00+01:00",
-      "endDate": "2023-01-19T10:40:00+01:00"
-    },
-    "RSFB4Oq1k0AafqRJeZ4z": {
-      "speakers": [
-        "MKkYzwlXx6dLM9cfE5vXYqJo5d43"
-      ],
-      "id": "RSFB4Oq1k0AafqRJeZ4z",
-      "title": "(Et si on apprenait à) Apprendre et partager autrement",
-      "trackTitle": "Lovelace",
+    "gRs9fgxRhsy7xlN85FDj": {
+      "id": "gRs9fgxRhsy7xlN85FDj",
+      "title": "Est-il (encore) possible d'héberger son propre serveur de messagerie ?",
+      "trackTitle": "Bio",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-20T11:10:00+01:00",
-      "endDate": "2023-01-20T11:40:00+01:00"
-    },
-    "SltiD9i2aW0hxWmNWWop": {
       "speakers": [
-        "vTyhTPQNomd3MwKBg1HAQmWfYW93",
-        "pNFXh8L1wecfg2Mdg1sFKJKrENV2"
+        "QlZ1odt0SiN7Trn7zuppb8blZtJ2"
       ],
-      "id": "SltiD9i2aW0hxWmNWWop",
-      "title": "Si on aidait le capitaine Némo à classifier les monstres marins ?",
-      "trackTitle": "Turing",
+      "startTime": "2024-02-08T10:10:00+01:00",
+      "endTime": "2024-02-08T11:00:00+01:00"
+    },
+    "sdg8NifVhjZfA7XW0NrT": {
+      "id": "sdg8NifVhjZfA7XW0NrT",
+      "title": "DevGreenOps : mettons un peu de Green dans le DevOps 🌱",
+      "trackTitle": "Physique",
       "tags": [
-        "Backend, Cloud, Big Data",
+        "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-20T15:45:00+01:00",
-      "endDate": "2023-01-20T16:15:00+01:00"
-    },
-    "TBitgNi5VAJ7maDvY2ZC": {
       "speakers": [
-        "UgdeZxl1gBfhw0o8BepkqscBTiq2"
+        "9tSdFUsqM7UePJiKoIP08yGm13I2"
       ],
-      "id": "TBitgNi5VAJ7maDvY2ZC",
-      "title": "Storybook, une vraie bonne idée ?",
-      "trackTitle": "Turing",
+      "startTime": "2024-02-08T10:10:00+01:00",
+      "endTime": "2024-02-08T11:00:00+01:00"
+    },
+    "5iVIRrauYYhD7Nzwtlpo": {
+      "id": "5iVIRrauYYhD7Nzwtlpo",
+      "title": "Maîtriser Angular 17: Développement Avancé et Techniques Novatrices",
+      "trackTitle": "TD1 (premier étage)",
       "tags": [
         "Front web",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T12:10:00+01:00",
-      "endDate": "2023-01-20T12:40:00+01:00"
-    },
-    "TuXPjtB8tUG4yaSnj6pn": {
-      "speakers": [
-        "FlNY2ihscVdQLvxKpqsxDrt6PrF2"
-      ],
-      "id": "TuXPjtB8tUG4yaSnj6pn",
-      "title": "Le guide 2023 du recrutement technique",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T10:10:00+01:00",
-      "endDate": "2023-01-20T10:40:00+01:00"
-    },
-    "TvfUGgFtJJ5z8zp5KcLB": {
-      "speakers": [
-        "7wztvu44o2WD7A5spiPkezLH7Rx2"
-      ],
-      "id": "TvfUGgFtJJ5z8zp5KcLB",
-      "title": "Web dans le cloud, piloter ses décisions par les coûts",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Conception, architecture",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T14:30:00+01:00",
-      "endDate": "2023-01-20T15:00:00+01:00"
-    },
-    "TzYjfulaUQkXB1Stkrer": {
-      "speakers": [
-        "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-        "Et0TICQLYudeoQ5KjUZ55X2rU9M2"
-      ],
-      "id": "TzYjfulaUQkXB1Stkrer",
-      "title": "Apprenons ensemble grâce aux bookclubs",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Alien",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T12:10:00+01:00",
-      "endDate": "2023-01-20T12:40:00+01:00"
-    },
-    "Uix3DyDf349JzrHJptTl": {
-      "speakers": [
-        "nhFyEmSJYZZiMa989nAp7qxGAkp2",
-        "sVESMnd80YXh3z7emZKgJ1viq3b2"
-      ],
-      "id": "Uix3DyDf349JzrHJptTl",
-      "title": "H@ck your house!",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Mobile, Internet des objets",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T15:45:00+01:00",
-      "endDate": "2023-01-19T16:15:00+01:00"
-    },
-    "UjwT58pQSRJUK8aLYfna": {
-      "speakers": [
-        "WCr1V33vb0cIZWLSA6eD0dy39l33"
-      ],
-      "id": "UjwT58pQSRJUK8aLYfna",
-      "title": "Décommissionnement progressif de code legacy à l’aide d’AST",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Outillage, pratiques de développement",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T10:10:00+01:00",
-      "endDate": "2023-01-20T10:40:00+01:00"
-    },
-    "VaECb4MkKg6Si1uzVFK2": {
-      "speakers": [
-        "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
-        "ignPtVvWplSLmOo8aO9byUt8pIl2"
-      ],
-      "id": "VaECb4MkKg6Si1uzVFK2",
-      "title": "Facilitez-vous les releases, utilisez semantic release (et donnez du sens à vos commits)",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Outillage, pratiques de développement",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T14:30:00+01:00",
-      "endDate": "2023-01-20T15:00:00+01:00"
-    },
-    "Y3UvX1gfVgRQtncTbfSa": {
-      "speakers": [
-        "hDgeovtbpYUe248iONsiVDFsTn53"
-      ],
-      "id": "Y3UvX1gfVgRQtncTbfSa",
-      "title": "Lego Flow Game : le Waterfall, le Scrum et le Kanban tu différencieras !",
-      "trackTitle": "TD1",
-      "tags": [
-        "Outillage, pratiques de développement",
         "Hands-on (120min)"
       ],
-      "startTime": "2023-01-19T13:30:00+01:00",
-      "endDate": "2023-01-19T14:00:00+01:00"
-    },
-    "Yta40p2efXdTF7BvmnJ9": {
       "speakers": [
-        "eiyfzMG3oWQKwt2X8LyUnSx5fdW2"
+        "ueI0ViTbp7OXFIwXQFBrCMNlVYt1",
+        "9oyqt628ahc8bsuGAOlI1GWxcRD3"
       ],
-      "id": "Yta40p2efXdTF7BvmnJ9",
-      "title": "Améliorer les performances de son backend",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Conception, architecture",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:35:00+01:00",
-      "endDate": "2023-01-19T13:05:00+01:00"
+      "startTime": "2024-02-08T10:10:00+01:00",
+      "endTime": "2024-02-08T12:10:00+01:00"
     },
-    "cTeyrIyyeQTdDc7x2kLK": {
-      "speakers": [
-        "ZdNase96oBSI6QdrWySX9eCtJgs1"
-      ],
-      "id": "cTeyrIyyeQTdDc7x2kLK",
-      "title": "Loi de Conway : Lorsque votre conception produit se fâche avec votre organisation",
-      "trackTitle": "Turing",
+    "J7gGsPyGOyyIxADiHN04": {
+      "id": "J7gGsPyGOyyIxADiHN04",
+      "title": "Ahead Of Time et Native avec Spring Boot 3",
+      "trackTitle": "F21",
       "tags": [
-        "Conception, architecture",
+        "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T13:30:00+01:00",
-      "endDate": "2023-01-19T14:00:00+01:00"
-    },
-    "cqhVPs2RgbRvlBNQZyN5": {
       "speakers": [
-        "0ZbtTwugPpTsYEAbDRbt6Voqcca2"
+        "hVZgJxVUtNZd7qiTYazHAdJC7uX2"
       ],
-      "id": "cqhVPs2RgbRvlBNQZyN5",
-      "title": "Oh crab ! My watch speaks Rust 🦀",
-      "trackTitle": "Turing",
+      "startTime": "2024-02-08T11:10:00+01:00",
+      "endTime": "2024-02-08T12:00:00+01:00"
+    },
+    "AZADuj9bFjpni5WMPb6N": {
+      "id": "AZADuj9bFjpni5WMPb6N",
+      "title": "Késako ⁉, il crée son propre runner GitLab quand il démarre son environnement de dev Gitpod : 🤯",
+      "trackTitle": "F22",
       "tags": [
-        "Mobile, Internet des objets",
-        "Conférence (50min)"
+        "Backend, Cloud, Big Data",
+        "Lightning (15min)"
       ],
-      "startTime": "2023-01-20T10:10:00+01:00",
-      "endDate": "2023-01-20T10:40:00+01:00"
-    },
-    "eMlIQizK95KpLycTP70y": {
       "speakers": [
-        "Npd1iKHS7kfua1fYYOsfF8gAUbW2"
+        "BHW8h7LzhBSqs80aZEVwrDiAUDj2"
       ],
-      "id": "eMlIQizK95KpLycTP70y",
-      "title": "Féminisation dans la tech : la communication, ou l'échec de tout un secteur",
-      "trackTitle": "Pascal",
+      "startTime": "2024-02-08T11:10:00+01:00",
+      "endTime": "2024-02-08T11:25:00+01:00"
+    },
+    "rVkg499GPkGqHbiDu3nA": {
+      "id": "rVkg499GPkGqHbiDu3nA",
+      "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
+      "trackTitle": "Physique",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T11:10:00+01:00",
-      "endDate": "2023-01-19T11:40:00+01:00"
-    },
-    "fADNfLumOONTJin3kcOQ": {
       "speakers": [
-        "YwH0iCA69oaFgyQu31I9Yy79X142"
+        "5VqrVGncEOcRZVisanoLuMow7jP2"
       ],
-      "id": "fADNfLumOONTJin3kcOQ",
-      "title": "J’ai expliqué notre métier à un pote âgé 🧑‍🌾🥕 ",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Alien",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T13:00:00+01:00",
-      "endDate": "2023-01-19T13:30:00+01:00"
+      "startTime": "2024-02-08T11:35:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
     },
-    "hRCioWdYNuGOTw59bLm9": {
-      "speakers": [
-        "ETZHP80Ca4buwA294HkQ7Vvkv3r1"
-      ],
-      "id": "hRCioWdYNuGOTw59bLm9",
-      "title": "Vous allez finir par les aimer les `Optionals`???",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T12:35:00+01:00",
-      "endDate": "2023-01-19T13:05:00+01:00"
-    },
-    "i8RUBCZSCXX1EpP5Ce3T": {
-      "speakers": [
-        "lVp57FlvF1fKYwqk8yNinu3uFv92"
-      ],
-      "id": "i8RUBCZSCXX1EpP5Ce3T",
-      "title": "Corn Hole 2 Turbo : Mes premiers pas dans l'embarqué",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T16:45:00+01:00",
-      "endDate": "2023-01-19T17:15:00+01:00"
-    },
-    "iqyLnwdkN4a8O5WcpV7i": {
-      "speakers": [
-        "3sdJi27e0DcE50hVB8pz1IZ2dzZ2"
-      ],
-      "id": "iqyLnwdkN4a8O5WcpV7i",
-      "title": "10+ ans de développement Android: La Rétrospective",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Mobile, Internet des objets",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T14:30:00+01:00",
-      "endDate": "2023-01-19T15:00:00+01:00"
-    },
-    "kgKT9TgmJggaYZ5VVn9a": {
-      "speakers": [
-        "4eLdIkDMEmUwtor4mlu8wJJfUqh1"
-      ],
-      "id": "kgKT9TgmJggaYZ5VVn9a",
-      "title": "Wolfy - de 2000 à 20 000 joueurs connectés ",
-      "trackTitle": "Turing",
+    "2JjdOJEGBXpAVzz3jcNf": {
+      "id": "2JjdOJEGBXpAVzz3jcNf",
+      "title": "Les classes abstraites c’est fini (et c’est la faute à TDD)",
+      "trackTitle": "Bio",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T15:45:00+01:00",
-      "endDate": "2023-01-19T16:15:00+01:00"
-    },
-    "l23b0hpll77Fk1LNLIWN": {
       "speakers": [
-        "PRuMzxC7NVbsVnJP07AbHR2cNFx2"
+        "3x26PcPzHrN46vELjwdoj6zIFmt2"
       ],
-      "id": "l23b0hpll77Fk1LNLIWN",
-      "title": "Tester pour ne plus douter : à la recherche du test idéal",
-      "trackTitle": "Turing",
+      "startTime": "2024-02-08T11:10:00+01:00",
+      "endTime": "2024-02-08T12:00:00+01:00"
+    },
+    "qvkgg52JuoQHqZcOkBxT": {
+      "id": "qvkgg52JuoQHqZcOkBxT",
+      "title": "Comment devenir un parfait \"boyscout\" ?",
+      "trackTitle": "Physique",
       "tags": [
-        "Outillage, pratiques de développement",
-        "Quickie (15min)"
+        "Humain & Tech",
+        "Lightning (15min)"
       ],
-      "startTime": "2023-01-19T13:00:00+01:00",
-      "endDate": "2023-01-19T13:30:00+01:00"
-    },
-    "mAzMafjZzEjUvK5w8hct": {
       "speakers": [
-        "TuQxXI5DPLMTSuaeNWiS85P0eGk2"
+        "aNVrHPLO0kQQeXk7Zp4iB44o41z1"
       ],
-      "id": "mAzMafjZzEjUvK5w8hct",
-      "title": "Tester vos microservices sans peine avec Micronaut Test Resources",
-      "trackTitle": "Pascal",
+      "startTime": "2024-02-08T11:10:00+01:00",
+      "endTime": "2024-02-08T11:25:00+01:00"
+    },
+    "uLmgjciIAgWDcrilUOPm": {
+      "id": "uLmgjciIAgWDcrilUOPm",
+      "title": "Du code source à l'exécutable : plongée dans les entrailles de la compilation en Rust",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T14:30:00+01:00",
-      "endDate": "2023-01-19T15:00:00+01:00"
-    },
-    "mR9GTCYeKujpZ6YkFr0y": {
       "speakers": [
-        "9Krfeqq5mpO5cY2R81DKdktW9gy1"
+        "z40htDnoNBgrrGeOikcH3MaKimO2"
       ],
-      "id": "mR9GTCYeKujpZ6YkFr0y",
-      "title": "Les lois universelles de la performance",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Conception, architecture",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T15:45:00+01:00",
-      "endDate": "2023-01-20T16:15:00+01:00"
+      "startTime": "2024-02-08T11:35:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
     },
-    "neprDB8HcIu0LJn0XexY": {
+    "m4Iz8brAbFGWU1Jm5zRC": {
+      "id": "m4Iz8brAbFGWU1Jm5zRC",
+      "title": "Comment merger sa PR en 10 secondes ? Avez-vous essayé les mob code review ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "VEcIIrzY2kVRjN5rPYrl4MqOcIo1"
+      ],
+      "startTime": "2024-02-08T12:10:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
+    },
+    "6EYUeaaOxvLHPPVBAMd6": {
+      "id": "6EYUeaaOxvLHPPVBAMd6",
+      "title": " De l’ignorance à la dépendance : Comment l’IA a changé ma façon de coder?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "8YvY0nMLXIeYaL2ZgLCPRj0S1Kz1"
+      ],
+      "startTime": "2024-02-08T12:10:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
+    },
+    "5BjFotoi6xV8vWKRnnKZ": {
+      "id": "5BjFotoi6xV8vWKRnnKZ",
+      "title": "Tous Designer",
+      "trackTitle": "F21",
+      "tags": [
+        "Design, UI, UX",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "yPuUNngRNaQOV2G7RFRNAybKPDy2"
+      ],
+      "startTime": "2024-02-08T12:35:00+01:00",
+      "endTime": "2024-02-08T12:50:00+01:00"
+    },
+    "jIPuwvxNcjTE2VvXZ5LR": {
+      "id": "jIPuwvxNcjTE2VvXZ5LR",
+      "title": "Développeur: prenez le contrôle de votre poste, et commencez à provisionner vos \"dotfiles\" !",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33"
+      ],
+      "startTime": "2024-02-08T12:35:00+01:00",
+      "endTime": "2024-02-08T12:50:00+01:00"
+    },
+    "ESZwlueyjlJr7a6PiMyV": {
+      "id": "ESZwlueyjlJr7a6PiMyV",
+      "title": "Au secours ! Ils ont recruté Sheldon, Shaun et Raymond !",
+      "trackTitle": "Bio",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "M4qQ8EuaN8TMXcuIMQMwvyDCenX2"
+      ],
+      "startTime": "2024-02-08T12:35:00+01:00",
+      "endTime": "2024-02-08T12:50:00+01:00"
+    },
+    "ydNBbHEslbYDqWxvynFr": {
+      "id": "ydNBbHEslbYDqWxvynFr",
+      "title": "CSS moderne et Pré-processeurs CSS : Une Coexistence Nécessaire ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Front web",
+        "Lightning (15min)"
+      ],
       "speakers": [
         "XOJLT9cNygdhPYC75sIPWYA6zna2"
       ],
-      "id": "neprDB8HcIu0LJn0XexY",
-      "title": "Démystifions le CSS",
-      "trackTitle": "TD1",
+      "startTime": "2024-02-08T12:35:00+01:00",
+      "endTime": "2024-02-08T12:50:00+01:00"
+    },
+    "oVFqGQVuSwZBRIfpXwVd": {
+      "id": "oVFqGQVuSwZBRIfpXwVd",
+      "title": "La recherche à l'ère de l'IA",
+      "trackTitle": "F21",
       "tags": [
-        "Front web",
+        "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T15:45:00+01:00",
-      "endDate": "2023-01-19T16:15:00+01:00"
-    },
-    "omWyNKhCM0MT1GwS9wWG": {
       "speakers": [
-        "biWKM3edJtX6IkI0Nc128sYFYkO2",
-        "oqMr9PXJTSWJ8wJKtHl5pj9bs412"
+        "eMFPF8fp2UTnePLtRCc0XgQddy12"
       ],
-      "id": "omWyNKhCM0MT1GwS9wWG",
-      "title": "Votre équipe de développement à l'ère post-covid",
-      "trackTitle": "Turing",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T10:10:00+01:00",
-      "endDate": "2023-01-19T10:40:00+01:00"
+      "startTime": "2024-02-08T13:30:00+01:00",
+      "endTime": "2024-02-08T14:20:00+01:00"
     },
-    "opMtA5pHQNvWz9AEJd6F": {
-      "speakers": [
-        "mODnTNL9onNOU1odUO9jb2tbpQj2",
-        "eGA6OY0HEhP9d6WQ7HZtq054tW22"
-      ],
-      "id": "opMtA5pHQNvWz9AEJd6F",
-      "title": "Remotion : le 7ème art à porté de composants web et d'API 🎬",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T15:45:00+01:00",
-      "endDate": "2023-01-20T16:15:00+01:00"
-    },
-    "p77AbCE87X3s091WvRcb": {
-      "speakers": [
-        "GaTXktSpMGXO1RIGafgjJ9m87oB3"
-      ],
-      "id": "p77AbCE87X3s091WvRcb",
-      "title": "sécurité + open source = ❤️",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Conception, architecture",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T12:35:00+01:00",
-      "endDate": "2023-01-20T13:05:00+01:00"
-    },
-    "r1Bi03rwl8MUWDrFv2BW": {
-      "speakers": [
-        "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
-        "cXT2k96AMcUHl3DWRDRmcdUbkU72"
-      ],
-      "id": "r1Bi03rwl8MUWDrFv2BW",
-      "title": "Comment hacker vos applications mobiles ?",
-      "trackTitle": "Pascal",
+    "SscWaiKDpIrIWiGv7Nj0": {
+      "id": "SscWaiKDpIrIWiGv7Nj0",
+      "title": "Discutons avec nos cartes bancaires depuis nos smartphones",
+      "trackTitle": "F22",
       "tags": [
         "Mobile, Internet des objets",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T16:45:00+01:00",
-      "endDate": "2023-01-19T17:15:00+01:00"
-    },
-    "txsbzctz75bYv2CHpoit": {
       "speakers": [
-        "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1"
+        "mLINCL2RdTU4dp7CZRs3KkzsDee2",
+        "h3nuOK0PgNYxAMuffMX3lbGSiTH2"
       ],
-      "id": "txsbzctz75bYv2CHpoit",
-      "title": "La sécurité, par où commencer ? Install party 🎉",
-      "trackTitle": "TD1",
-      "tags": [
-        "Outillage, pratiques de développement",
-        "Hands-on (120min)"
-      ],
-      "startTime": "2023-01-20T10:10:00+01:00",
-      "endDate": "2023-01-20T10:40:00+01:00"
+      "startTime": "2024-02-08T13:30:00+01:00",
+      "endTime": "2024-02-08T14:20:00+01:00"
     },
-    "uYdE2DzqELvT4lEL9OAc": {
-      "speakers": [
-        "LBXSNoYRKbWwvirzjnpHzMk03cM2"
-      ],
-      "id": "uYdE2DzqELvT4lEL9OAc",
-      "title": "Les post-mortems ou comment sortir heureux d’un carnage",
-      "trackTitle": "Turing",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-19T14:30:00+01:00",
-      "endDate": "2023-01-19T15:00:00+01:00"
-    },
-    "uhJk2QvrixVicAGP5ZLF": {
-      "speakers": [
-        "0tlWjfqJzrYCGuUzUj9QAifRYjZ2"
-      ],
-      "id": "uhJk2QvrixVicAGP5ZLF",
-      "title": "Mais au fait, que se passe-t-il quand je mets en ligne une vidéo ?",
-      "trackTitle": "Pascal",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T11:10:00+01:00",
-      "endDate": "2023-01-20T11:40:00+01:00"
-    },
-    "v1zt5Tr807oFayaQ722R": {
-      "speakers": [
-        "fKYBrUjZFxOy5ykacYFQZTtUS7W2"
-      ],
-      "id": "v1zt5Tr807oFayaQ722R",
-      "title": "Rendu 3D, la grande illusion expliquée",
-      "trackTitle": "Lovelace",
-      "tags": [
-        "Alien",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-20T13:00:00+01:00",
-      "endDate": "2023-01-20T13:30:00+01:00"
-    },
-    "vSHKQqPa25JkOZrGKfBa": {
-      "speakers": [
-        "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-        "zQ0mhj745ZgtNDL3QL6pVT316ai2"
-      ],
-      "id": "vSHKQqPa25JkOZrGKfBa",
-      "title": "Entiers, virgules flottantes ou représentations exotiques : parlons d'élégance ",
-      "trackTitle": "Turing",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "startTime": "2023-01-20T11:10:00+01:00",
-      "endDate": "2023-01-20T11:40:00+01:00"
-    },
-    "vWqRo4G2Zt787YV5hu0p": {
-      "speakers": [
-        "g9esU5Tes3Y6vkpbHLKwJLEwMBF2"
-      ],
-      "id": "vWqRo4G2Zt787YV5hu0p",
-      "title": "Du code SOLID comme un rock, c’est vraiment utile ?",
-      "trackTitle": "Pascal",
+    "PtSf1rNOWg5jSetBVKvO": {
+      "id": "PtSf1rNOWg5jSetBVKvO",
+      "title": "⚡Une application résiliente, dans un monde partiellement dégradé ⚡",
+      "trackTitle": "Bio",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T10:10:00+01:00",
-      "endDate": "2023-01-19T10:40:00+01:00"
-    },
-    "xn10AFjRHyYPFPeVv69O": {
       "speakers": [
-        "FHxMDyr6LiRP3TDGOqKaRxlqLar1"
+        "RRXo2IPIRHONGucBWEaf5tCz1bv2"
       ],
-      "id": "xn10AFjRHyYPFPeVv69O",
-      "title": "Product owners et développeurs/développeuses, apprenons à dire \"Non ! \"",
-      "trackTitle": "Lovelace",
+      "startTime": "2024-02-08T13:30:00+01:00",
+      "endTime": "2024-02-08T14:20:00+01:00"
+    },
+    "B6lliC78MrFUFIGZvOYl": {
+      "id": "B6lliC78MrFUFIGZvOYl",
+      "title": "Les aventuriers de la motivation perdue ",
+      "trackTitle": "Physique",
       "tags": [
         "Humain & Tech",
-        "Quickie (15min)"
+        "Conférence (50min)"
       ],
-      "startTime": "2023-01-20T12:10:00+01:00",
-      "endDate": "2023-01-20T12:40:00+01:00"
-    },
-    "zvFb4Oj4FfNaxbaWPHE9": {
       "speakers": [
-        "9XiNHiC9vzfHLs7bDN3B9XS62Fp1"
+        "NK4O0xWpOpbKIz7xtsEHXO84sBH3"
       ],
-      "id": "zvFb4Oj4FfNaxbaWPHE9",
-      "title": "NoSQL et SQL, les grands esprits se rencontrent... enfin !",
-      "trackTitle": "Turing",
+      "startTime": "2024-02-08T13:30:00+01:00",
+      "endTime": "2024-02-08T14:20:00+01:00"
+    },
+    "MLn1MLrS3AjI1BGIFo4Y": {
+      "id": "MLn1MLrS3AjI1BGIFo4Y",
+      "title": "L'accessibilité ça se manipule, ça se teste, ça se corrige ",
+      "trackTitle": "TD1 (premier étage)",
+      "tags": [
+        "Front web",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+        "rl938wcCxaUHIH2Yn02D3ms2bVE3"
+      ],
+      "startTime": "2024-02-08T13:30:00+01:00",
+      "endTime": "2024-02-08T15:30:00+01:00"
+    },
+    "H2VvpBz6eD8Nrk7uswmL": {
+      "id": "H2VvpBz6eD8Nrk7uswmL",
+      "title": "La douceur est-elle un avantage dans ce monde de brutes ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "sfqORSTEU5f78k9gZ72VG84d2iF2"
+      ],
+      "startTime": "2024-02-08T14:30:00+01:00",
+      "endTime": "2024-02-08T15:20:00+01:00"
+    },
+    "H6F0PNxSvTqgtSlGrE1r": {
+      "id": "H6F0PNxSvTqgtSlGrE1r",
+      "title": "TinyGo, petit mais costaud ! 💪",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "MKkYzwlXx6dLM9cfE5vXYqJo5d43",
+        "yqIl5xbLdUggLokN5jdFmbpZZwy2"
+      ],
+      "startTime": "2024-02-08T14:30:00+01:00",
+      "endTime": "2024-02-08T15:20:00+01:00"
+    },
+    "pPZ0oyjjemq2F2m71THd": {
+      "id": "pPZ0oyjjemq2F2m71THd",
+      "title": "Comment rendre une web app accessible à une personne non voyante ?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Front web",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "KWlesYn7ciZTRyCHSu3NQqMuGVi2"
+      ],
+      "startTime": "2024-02-08T14:30:00+01:00",
+      "endTime": "2024-02-08T15:20:00+01:00"
+    },
+    "0c0XUiGGBopHjZubyUcP": {
+      "id": "0c0XUiGGBopHjZubyUcP",
+      "title": "Quand la cybersécurité n'est pas qu'une affaire de failles ",
+      "trackTitle": "Physique",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "AjTjKO7pa6dhaaINz1J0QYBcVxf1"
+      ],
+      "startTime": "2024-02-08T14:30:00+01:00",
+      "endTime": "2024-02-08T15:20:00+01:00"
+    },
+    "YlWLk6U3KeWCMNHdwGOS": {
+      "id": "YlWLk6U3KeWCMNHdwGOS",
+      "title": "Vis ma vie de commerciale dans la tech !",
+      "trackTitle": "F21",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "PPxaqjzPv1Q1Ui8e7G0DQeiZXLD2"
+      ],
+      "startTime": "2024-02-08T15:30:00+01:00",
+      "endTime": "2024-02-08T15:45:00+01:00"
+    },
+    "qODqIpj4Xrz7XLr0nNor": {
+      "id": "qODqIpj4Xrz7XLr0nNor",
+      "title": "Qu'est ce que les champignons nous apprennent sur l'intelligence artificielle?",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
-        "Quickie (15min)"
+        "Lightning (15min)"
       ],
-      "startTime": "2023-01-20T12:35:00+01:00",
-      "endDate": "2023-01-20T13:05:00+01:00"
-    },
-    "ZmvGwBSs3jNHkA7ZDF8v": {
       "speakers": [
-        "Ny2h9DGprRgd9n6PJYFijyYI0OQ2"
+        "AeTp5EqadPaJeFOqMqj7XzYIwxx1"
       ],
-      "id": "ZmvGwBSs3jNHkA7ZDF8v",
-      "title": "Les reconvertis: cette nouvelle vague de profils dans le dev",
-      "trackTitle": "Lovelace",
+      "startTime": "2024-02-08T15:30:00+01:00",
+      "endTime": "2024-02-08T15:45:00+01:00"
+    },
+    "piIH6zwUdHJHMAwuBEE2": {
+      "id": "piIH6zwUdHJHMAwuBEE2",
+      "title": "Et pourquoi pas les monorepo ?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "ZgBHzoIftIPHcnyhXbo5FQ8JMPy2"
+      ],
+      "startTime": "2024-02-08T15:30:00+01:00",
+      "endTime": "2024-02-08T15:45:00+01:00"
+    },
+    "qawOJYQupnk8xaXZTP8y": {
+      "id": "qawOJYQupnk8xaXZTP8y",
+      "title": "La retro de ma “worst life”",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "bAkrQrssjgU1zb5V2y2QpVnuCmf1",
+        "JkWN4X6967cvBrV2x8vKf1QrHS93"
+      ],
+      "startTime": "2024-02-08T15:30:00+01:00",
+      "endTime": "2024-02-08T15:45:00+01:00"
+    },
+    "d19qu8r78nc1aI31Rm7N": {
+      "id": "d19qu8r78nc1aI31Rm7N",
+      "title": "Grosse fonctionnalité, petites livraisons : l'art du découpage",
+      "trackTitle": "F21",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "lrI6gAvw7EU8fseDc5NfOoYWQJx2"
+      ],
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
+    },
+    "qkH2igCTn0r6Hq3VQFi7": {
+      "id": "qkH2igCTn0r6Hq3VQFi7",
+      "title": "Manifeste pour un artisanat logiciel responsable",
+      "trackTitle": "F22",
       "tags": [
         "Humain & Tech",
-        "Quickie (15min)"
-      ],
-      "startTime": "2023-01-19T13:00:00+01:00",
-      "endDate": "2023-01-19T13:30:00+01:00"
-    },
-    "keynoteOuverture1": {
-      "speakers": [],
-      "id": "keynoteOuverture1",
-      "title": "Keynote d'ouverture jeudi",
-      "trackTitle": "Keynote",
-      "tags": [
-        null,
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T09:00:00+01:00",
-      "endDate": "2023-01-19T09:30:00+01:00"
+      "speakers": [
+        "MFT4lwPv0Ifp7qEXiyFbWNeO4Np2"
+      ],
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
     },
-    "keynoteCloture1": {
-      "speakers": [],
-      "id": "keynoteCloture1",
-      "title": "Keynote de clôture jeudi",
-      "trackTitle": "Keynote",
+    "0OddTfb8Fjkw63X5xUzT": {
+      "id": "0OddTfb8Fjkw63X5xUzT",
+      "title": "Grafana en action : Tests de charge, performance et troubleshooting",
+      "trackTitle": "Bio",
       "tags": [
-        null,
+        "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-19T17:40:00+01:00",
-      "endDate": "2023-01-19T18:10:00+01:00"
+      "speakers": [
+        "68nJX1jMeITxyROME6zh52ptPLz1",
+        "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
+      ],
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
     },
-    "keynoteOuverture2": {
-      "speakers": [],
-      "id": "keynoteOuverture2",
-      "title": "Keynote d'ouverture vendredi",
-      "trackTitle": "Keynote",
+    "juptBx71BJ9CRj5RxhKK": {
+      "id": "juptBx71BJ9CRj5RxhKK",
+      "title": "Generative AI par la pratique : cas concrets d’utilisation d’un LLM en Java, avec l’API PaLM",
+      "trackTitle": "F22",
       "tags": [
-        null,
+        "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-20T09:00:00+01:00",
-      "endDate": "2023-01-20T09:30:00+01:00"
+      "speakers": [
+        "T0c4tdkG6PTJTDajvQVpJRzFsU63"
+      ],
+      "startTime": "2024-02-09T10:10:00+01:00",
+      "endTime": "2024-02-09T11:00:00+01:00"
     },
-    "keynoteCloture2": {
-      "speakers": [],
-      "id": "keynoteCloture2",
-      "title": "Keynote de clôture vendredi",
-      "trackTitle": "Keynote",
+    "8myJ9pEIIQdi84tmn7S9": {
+      "id": "8myJ9pEIIQdi84tmn7S9",
+      "title": "Un ChatGPT sur vos propres données : comment ça marche ?",
+      "trackTitle": "F21",
       "tags": [
-        null,
+        "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
-      "startTime": "2023-01-20T16:45:00+01:00",
-      "endDate": "2023-01-20T17:15:00+01:00"
+      "speakers": [
+        "jP8YeUsQW1T3cGw3gGLQaPm2QDz1"
+      ],
+      "startTime": "2024-02-08T16:55:00+01:00",
+      "endTime": "2024-02-08T17:45:00+01:00"
+    },
+    "BTNWmoJAGTZUVfjLh24x": {
+      "id": "BTNWmoJAGTZUVfjLh24x",
+      "title": "Les super pouvoirs du package java.util.function ",
+      "trackTitle": "F22",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "ETZHP80Ca4buwA294HkQ7Vvkv3r1",
+        "DJJkbkAM87ePw4mnnmdSw5ekHL92"
+      ],
+      "startTime": "2024-02-08T16:55:00+01:00",
+      "endTime": "2024-02-08T17:45:00+01:00"
+    },
+    "VUwBEI5QjFXwpcQHQnvL": {
+      "id": "VUwBEI5QjFXwpcQHQnvL",
+      "title": "L'accessibilité, les yeux fermés.",
+      "trackTitle": "Bio",
+      "tags": [
+        "Design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "87SIxkvV4NUULTFQNUPM4Ex4q6h2"
+      ],
+      "startTime": "2024-02-08T16:55:00+01:00",
+      "endTime": "2024-02-08T17:45:00+01:00"
+    },
+    "CLPGvWsMndxnLSeG8sD1": {
+      "id": "CLPGvWsMndxnLSeG8sD1",
+      "title": "Comment intégrer au mieux une personne autiste en entreprise",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "UXsGQa70cCY26HWQtoDENiQwGls2"
+      ],
+      "startTime": "2024-02-08T16:55:00+01:00",
+      "endTime": "2024-02-08T17:45:00+01:00"
+    },
+    "HfZE9MCurrxlKrMf5Ui3": {
+      "id": "HfZE9MCurrxlKrMf5Ui3",
+      "title": "Comment rendre possible (et sécurisée) l'authentification sans mot de passe",
+      "trackTitle": "F21",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "cXT2k96AMcUHl3DWRDRmcdUbkU72",
+        "xf0KkBiaWxPLSevQFHnzbqbnkuw1"
+      ],
+      "startTime": "2024-02-09T10:10:00+01:00",
+      "endTime": "2024-02-09T11:00:00+01:00"
+    },
+    "c7ai9Xgr9lQsc91AToU0": {
+      "id": "c7ai9Xgr9lQsc91AToU0",
+      "title": "Pulumi : Gérer son infrastructure avec son langage de programmation préféré",
+      "trackTitle": "Physique",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "ZuQe3ExYcMTKpcbdl2bFhV6Oon43"
+      ],
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
+    },
+    "jyD7HLxwLIiuEjyoqW7c": {
+      "id": "jyD7HLxwLIiuEjyoqW7c",
+      "title": "NoEstimates vs Story Points : fact-checking dessiné",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "w9K4w1seusO2SDPlDFCUbw2apCh2"
+      ],
+      "startTime": "2024-02-09T10:10:00+01:00",
+      "endTime": "2024-02-09T11:00:00+01:00"
+    },
+    "xlORqKhzTikvV2R3N9q5": {
+      "id": "xlORqKhzTikvV2R3N9q5",
+      "title": "STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍♂️ ",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "eCeyFrLh28du3ptcHH3w6HDdMT13",
+        "eGA6OY0HEhP9d6WQ7HZtq054tW22"
+      ],
+      "startTime": "2024-02-09T10:10:00+01:00",
+      "endTime": "2024-02-09T11:00:00+01:00"
+    },
+    "okGdto0fdv6wSO5ckWU1": {
+      "id": "okGdto0fdv6wSO5ckWU1",
+      "title": "The blind test : mets-toi dans la situation d’un non voyant et développe accessible !",
+      "trackTitle": "TD1 (premier étage)",
+      "tags": [
+        "Front web",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
+        "H9omJme1XaTAF5hzBztVy2825my2"
+      ],
+      "startTime": "2024-02-09T10:10:00+01:00",
+      "endTime": "2024-02-09T12:10:00+01:00"
+    },
+    "LXIJmGLiQLxQrxIfEXFE": {
+      "id": "LXIJmGLiQLxQrxIfEXFE",
+      "title": "Opinions, Faits et Fakes : le cas de l'écologie",
+      "trackTitle": "F21",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Mj1VpBTCfVgAXpUgmHkWStyryke2"
+      ],
+      "startTime": "2024-02-09T11:10:00+01:00",
+      "endTime": "2024-02-09T12:00:00+01:00"
+    },
+    "QzJDiBefA6Bg8gPQjqgZ": {
+      "id": "QzJDiBefA6Bg8gPQjqgZ",
+      "title": "Rebase vers le futur : réécrivez l’historique Git",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "9R617aT0qaXh4bJMIIrcab9akex1"
+      ],
+      "startTime": "2024-02-09T11:10:00+01:00",
+      "endTime": "2024-02-09T11:25:00+01:00"
+    },
+    "sxuXYZ9LFxNrSVqKAGTu": {
+      "id": "sxuXYZ9LFxNrSVqKAGTu",
+      "title": "3615 Twitch, un bot sur Minitel ?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Mobile, Internet des objets",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "IlVQ3DcdvccEIvzcYr75msiHJUo1"
+      ],
+      "startTime": "2024-02-09T11:10:00+01:00",
+      "endTime": "2024-02-09T12:00:00+01:00"
+    },
+    "TvJJgLrhkt8TEyPRzekR": {
+      "id": "TvJJgLrhkt8TEyPRzekR",
+      "title": "Introduction aux outils de  tests de sécurité d'application statique (SAST)",
+      "trackTitle": "Physique",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "GaTXktSpMGXO1RIGafgjJ9m87oB3"
+      ],
+      "startTime": "2024-02-09T11:10:00+01:00",
+      "endTime": "2024-02-09T11:25:00+01:00"
+    },
+    "Ecsm2SrwTZWdYHlAFR4b": {
+      "id": "Ecsm2SrwTZWdYHlAFR4b",
+      "title": "Apprenons à identifier les exigences techniques pour mieux concevoir",
+      "trackTitle": "F22",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "bzA5gGJEX8O2NAvaYvM7apE3NUe2",
+        "01ltKvLucIZz1xRZMWu2jSGBh7m1"
+      ],
+      "startTime": "2024-02-09T11:35:00+01:00",
+      "endTime": "2024-02-09T12:25:00+01:00"
+    },
+    "gU9GtCp9i4YtgqDqtvE5": {
+      "id": "gU9GtCp9i4YtgqDqtvE5",
+      "title": "Comment j'ai remplacé mon extincteur par un manuel des castors juniors",
+      "trackTitle": "Physique",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "ON9EiZmBhTemqrELzEKfVr569ED2",
+        "01FcOiy6gFRPFbEAtWUvhz0WkLH3"
+      ],
+      "startTime": "2024-02-09T11:35:00+01:00",
+      "endTime": "2024-02-09T12:25:00+01:00"
+    },
+    "zTXDTeutxWuAXzPzPPGQ": {
+      "id": "zTXDTeutxWuAXzPzPPGQ",
+      "title": "Faire de l'embarqué en remote ? Et pourquoi pas ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "rwtqE0FNcjMfwuyvtEAel6cjvNq1"
+      ],
+      "startTime": "2024-02-09T12:10:00+01:00",
+      "endTime": "2024-02-09T12:25:00+01:00"
+    },
+    "Zio48fNHGAI7EX4XyERP": {
+      "id": "Zio48fNHGAI7EX4XyERP",
+      "title": "Woop woop assassin de la police...",
+      "trackTitle": "Bio",
+      "tags": [
+        "Front web",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "N3WXSJgzBeftTqCmqFS05lQvTKj1"
+      ],
+      "startTime": "2024-02-09T12:10:00+01:00",
+      "endTime": "2024-02-09T12:25:00+01:00"
+    },
+    "EEqjaicig5mWQUysBP7G": {
+      "id": "EEqjaicig5mWQUysBP7G",
+      "title": "Avec Vector, reprenez le contrôle sur vos données d'observabilité",
+      "trackTitle": "F21",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "TOBhzlgpSidp7kzdCx5DaryAxaB3"
+      ],
+      "startTime": "2024-02-09T12:35:00+01:00",
+      "endTime": "2024-02-09T12:50:00+01:00"
+    },
+    "DwCzaBfJ0SnbNSaRAcsW": {
+      "id": "DwCzaBfJ0SnbNSaRAcsW",
+      "title": "Construire le futur grâce au mentorat",
+      "trackTitle": "F22",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "CU7xNaqREAhFTlA5wOR7cX7tdWz2"
+      ],
+      "startTime": "2024-02-09T12:35:00+01:00",
+      "endTime": "2024-02-09T12:50:00+01:00"
+    },
+    "AtbUgkuLuuppJ9S5Hlq5": {
+      "id": "AtbUgkuLuuppJ9S5Hlq5",
+      "title": "Documentation as code, par où commencer ?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "IPck78ZRNPaINM4qaagRuJnDZvR2"
+      ],
+      "startTime": "2024-02-09T12:35:00+01:00",
+      "endTime": "2024-02-09T12:50:00+01:00"
+    },
+    "M7KxGoz471yZdaUkK8hb": {
+      "id": "M7KxGoz471yZdaUkK8hb",
+      "title": "La documentation en renfort de l’accessibilité de vos composants",
+      "trackTitle": "F21",
+      "tags": [
+        "Design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
+      ],
+      "startTime": "2024-02-09T13:30:00+01:00",
+      "endTime": "2024-02-09T14:20:00+01:00"
+    },
+    "B87CHSj7fBEpehgjzvsD": {
+      "id": "B87CHSj7fBEpehgjzvsD",
+      "title": "Quarkus : Greener, Better, Faster, stronger.",
+      "trackTitle": "F22",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "ETZHP80Ca4buwA294HkQ7Vvkv3r1"
+      ],
+      "startTime": "2024-02-09T13:30:00+01:00",
+      "endTime": "2024-02-09T14:20:00+01:00"
+    },
+    "9wHCrlM2PF559LUk5XSk": {
+      "id": "9wHCrlM2PF559LUk5XSk",
+      "title": "Construire soi-même son clavier mécanique, idée bizarre ou idée de génie ?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Xq1dkEyo0hVpuTaPzTda2RY7xYx1"
+      ],
+      "startTime": "2024-02-09T13:30:00+01:00",
+      "endTime": "2024-02-09T14:20:00+01:00"
+    },
+    "LjjqLJvbKnDBk7puNnBG": {
+      "id": "LjjqLJvbKnDBk7puNnBG",
+      "title": "ESI : le cache HTTP en petits bouts",
+      "trackTitle": "Physique",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "oJNplsSYqEY5TS3ywPNME2mtUb23"
+      ],
+      "startTime": "2024-02-09T13:30:00+01:00",
+      "endTime": "2024-02-09T14:20:00+01:00"
+    },
+    "09KU9iXHIlMYuhQMevrD": {
+      "id": "09KU9iXHIlMYuhQMevrD",
+      "title": "Changer son environnement fullstack en un clin d'oeil avec devenv",
+      "trackTitle": "TD1 (premier étage)",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "CuYuyZwyPTcLU1Hg4Or8qpmefn73",
+        "CBwy8fbFHWViM3gYCGxJt1bYqq42"
+      ],
+      "startTime": "2024-02-09T13:30:00+01:00",
+      "endTime": "2024-02-09T15:30:00+01:00"
+    },
+    "9rpUPWsKvkKWB9ngLNJi": {
+      "id": "9rpUPWsKvkKWB9ngLNJi",
+      "title": "Délivrer de l'architecture en continu ... nan mais ... concrètement ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "5VqrVGncEOcRZVisanoLuMow7jP2",
+        "rar3zyT9RseftpQbINL7DO48OEC3"
+      ],
+      "startTime": "2024-02-09T14:30:00+01:00",
+      "endTime": "2024-02-09T15:20:00+01:00"
+    },
+    "ioc2x2nW4KV5zrt69ZQm": {
+      "id": "ioc2x2nW4KV5zrt69ZQm",
+      "title": "Dessine moi un graphique (en CSS)",
+      "trackTitle": "F22",
+      "tags": [
+        "Front web",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "YtwBB1tQOvPPUtv5kF729IErT4A2"
+      ],
+      "startTime": "2024-02-09T14:30:00+01:00",
+      "endTime": "2024-02-09T15:20:00+01:00"
+    },
+    "qrcPurz54OuOV0664DVC": {
+      "id": "qrcPurz54OuOV0664DVC",
+      "title": "📝 ✅ La checklist ultime pour rendre vos applications cloud native !",
+      "trackTitle": "Bio",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "SOMb4rd126UADiDIRvkUCJt9yO12"
+      ],
+      "startTime": "2024-02-09T14:30:00+01:00",
+      "endTime": "2024-02-09T15:20:00+01:00"
+    },
+    "YPsuYQYS1gWLrKb4f2SA": {
+      "id": "YPsuYQYS1gWLrKb4f2SA",
+      "title": "J’ai beaucoup de taf 😱 mais je gère 😎",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "bAkrQrssjgU1zb5V2y2QpVnuCmf1"
+      ],
+      "startTime": "2024-02-09T14:30:00+01:00",
+      "endTime": "2024-02-09T15:20:00+01:00"
+    },
+    "QxsCav05hcJ0iHwxX57V": {
+      "id": "QxsCav05hcJ0iHwxX57V",
+      "title": "PO/Designer, Duo-gagnant pour la conception de vos services et produits ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "iVqsQPuZKfM5wohJfIJ6Ta0GuZc2"
+      ],
+      "startTime": "2024-02-09T15:30:00+01:00",
+      "endTime": "2024-02-09T15:45:00+01:00"
+    },
+    "CGUBZLegnfpo3DLimMCH": {
+      "id": "CGUBZLegnfpo3DLimMCH",
+      "title": "Come to the dart side : Ma première CLI en dart",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "g9esU5Tes3Y6vkpbHLKwJLEwMBF2"
+      ],
+      "startTime": "2024-02-09T15:30:00+01:00",
+      "endTime": "2024-02-09T15:45:00+01:00"
+    },
+    "tV8raRWa8QwRMgqmt5nJ": {
+      "id": "tV8raRWa8QwRMgqmt5nJ",
+      "title": "Deep-Link abuse : vos redirections ne sont pas si sûres ",
+      "trackTitle": "Bio",
+      "tags": [
+        "Mobile, Internet des objets",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "4fixT0NhwGgtLYwoQiGbHx9LWSN2"
+      ],
+      "startTime": "2024-02-09T15:30:00+01:00",
+      "endTime": "2024-02-09T15:45:00+01:00"
+    },
+    "anOldGi7qzAGSBM90IDy": {
+      "id": "anOldGi7qzAGSBM90IDy",
+      "title": "Dédramatisons l'accessibilité",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "7YSzr05x4XUGZ8SsUtRUnNX6pIf2",
+        "HejjXL871HSYUhQxJUh1lJtueOp1"
+      ],
+      "startTime": "2024-02-09T15:30:00+01:00",
+      "endTime": "2024-02-09T15:45:00+01:00"
+    },
+    "RerbP7HuGeP9AwDzPuiI": {
+      "id": "RerbP7HuGeP9AwDzPuiI",
+      "title": "A la découverte du Token d'Authentification Biscuit 🥠",
+      "trackTitle": "F21",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "MuWScV92XwTtOfoRhSirMe9sOea2"
+      ],
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
+    },
+    "jxLjlCEWmmbuppcdSSvh": {
+      "id": "jxLjlCEWmmbuppcdSSvh",
+      "title": "👨‍🎓Back to basics - J’ai une 🔑clé SSH💻, et maintenant🤷🏻‍♂️ ?",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
+        "VeBTP8lqOYaXBCpwTlGjBW2n1yH2"
+      ],
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
+    },
+    "3PRVeyTEeIhe9XxNjBFe": {
+      "id": "3PRVeyTEeIhe9XxNjBFe",
+      "title": "Pourquoi Le Figaro a choisi la technologie GraphQL pour moderniser ses API",
+      "trackTitle": "Bio",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Roi8virSihT7L9JqhwISBoUPfVg2",
+        "IeMf4WUUT8gXUuOZSqVXvBrXmUw2"
+      ],
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
+    },
+    "Rwj5JAo1Ed2D3623l2c8": {
+      "id": "Rwj5JAo1Ed2D3623l2c8",
+      "title": "Découvrir le Pentesting : une immersion ludique dans l'univers des CTFs",
+      "trackTitle": "Physique",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "8mOV9PtjdeMkJvfmF4QRWEPPFMq2"
+      ],
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
     }
   },
   "speakers": {
-    "vTyhTPQNomd3MwKBg1HAQmWfYW93": {
-      "id": "vTyhTPQNomd3MwKBg1HAQmWfYW93",
-      "name": "Eléa Petton",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/vTyhTPQNomd3MwKBg1HAQmWfYW93.png",
+    "CuYuyZwyPTcLU1Hg4Or8qpmefn73": {
+      "id": "CuYuyZwyPTcLU1Hg4Or8qpmefn73",
+      "name": "Anthony Pena",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/CuYuyZwyPTcLU1Hg4Or8qpmefn73.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@EleaPetton"
+          "link": "@_Anthony_Pena"
         },
         {
           "name": "github",
-          "link": "eleapttn"
+          "link": "kuroidoruido"
         }
       ]
     },
-    "ATWxmgrBTEcstZyQjR25MPP5wJS2": {
-      "id": "ATWxmgrBTEcstZyQjR25MPP5wJS2",
-      "name": "Jean Couteau",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ATWxmgrBTEcstZyQjR25MPP5wJS2.png",
+    "CBwy8fbFHWViM3gYCGxJt1bYqq42": {
+      "id": "CBwy8fbFHWViM3gYCGxJt1bYqq42",
+      "name": "Julien Tanguy",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/CBwy8fbFHWViM3gYCGxJt1bYqq42.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@jcouteau"
-        },
-        null
-      ]
-    },
-    "GaTXktSpMGXO1RIGafgjJ9m87oB3": {
-      "id": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
-      "name": "Adrien PESSU",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/GaTXktSpMGXO1RIGafgjJ9m87oB3.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@adrienpessu"
+          "link": "@jutanguy"
         },
         {
           "name": "github",
-          "link": "@adrienpessu"
+          "link": "jtanguy"
         }
       ]
     },
-    "aHchGCaQStWhoqQtDKBjBpkEnLF2": {
-      "id": "aHchGCaQStWhoqQtDKBjBpkEnLF2",
-      "name": "Guillaume Membré",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/aHchGCaQStWhoqQtDKBjBpkEnLF2.png",
+    "68nJX1jMeITxyROME6zh52ptPLz1": {
+      "id": "68nJX1jMeITxyROME6zh52ptPLz1",
+      "name": "Clément Duveau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/68nJX1jMeITxyROME6zh52ptPLz1.png",
       "socials": [
         {
-          "name": "twitter",
-          "link": "@GuillaumeMembre"
-        },
-        {
           "name": "github",
-          "link": "gmembre-zenika"
+          "link": "clementduveau"
         }
       ]
     },
-    "z40htDnoNBgrrGeOikcH3MaKimO2": {
-      "id": "z40htDnoNBgrrGeOikcH3MaKimO2",
-      "name": "Édouard Siha",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/z40htDnoNBgrrGeOikcH3MaKimO2.png",
+    "FjmEcWGtDNUqKmkd0Pwu24oL87G2": {
+      "id": "FjmEcWGtDNUqKmkd0Pwu24oL87G2",
+      "name": "Robin Marechal",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/FjmEcWGtDNUqKmkd0Pwu24oL87G2.png",
       "socials": [
-        null,
-        null
-      ]
-    },
-    "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2": {
-      "id": "ZkWFBC7R4ZgiPCzCXXsTExeA0JA2",
-      "name": "Alexis \"Horgix\" Chotard",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ZkWFBC7R4ZgiPCzCXXsTExeA0JA2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@Horgix"
-        },
         {
           "name": "github",
-          "link": "Horgix"
+          "link": "RobinMarechal"
         }
       ]
     },
-    "IlVQ3DcdvccEIvzcYr75msiHJUo1": {
-      "id": "IlVQ3DcdvccEIvzcYr75msiHJUo1",
-      "name": "Sylvain Gougouzian",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/IlVQ3DcdvccEIvzcYr75msiHJUo1.png",
+    "AjTjKO7pa6dhaaINz1J0QYBcVxf1": {
+      "id": "AjTjKO7pa6dhaaINz1J0QYBcVxf1",
+      "name": "Sonia Seddiki",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/AjTjKO7pa6dhaaINz1J0QYBcVxf1.png",
+      "socials": []
+    },
+    "3x26PcPzHrN46vELjwdoj6zIFmt2": {
+      "id": "3x26PcPzHrN46vELjwdoj6zIFmt2",
+      "name": "Dorra Bartaguiz",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/3x26PcPzHrN46vELjwdoj6zIFmt2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "gouz"
+          "link": "DorraBartaguiz"
         },
         {
           "name": "github",
-          "link": "gouz"
+          "link": "iAmDorra"
+        }
+      ]
+    },
+    "bzA5gGJEX8O2NAvaYvM7apE3NUe2": {
+      "id": "bzA5gGJEX8O2NAvaYvM7apE3NUe2",
+      "name": "Alexandre Touret",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/bzA5gGJEX8O2NAvaYvM7apE3NUe2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@touret_alex"
+        },
+        {
+          "name": "github",
+          "link": "alexandre-touret"
+        }
+      ]
+    },
+    "eGA6OY0HEhP9d6WQ7HZtq054tW22": {
+      "id": "eGA6OY0HEhP9d6WQ7HZtq054tW22",
+      "name": "Mickael Alves",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/eGA6OY0HEhP9d6WQ7HZtq054tW22.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@CruuzAzul"
+        },
+        {
+          "name": "github",
+          "link": "CruuzAzul"
+        }
+      ]
+    },
+    "Roi8virSihT7L9JqhwISBoUPfVg2": {
+      "id": "Roi8virSihT7L9JqhwISBoUPfVg2",
+      "name": "Beldjilali Mehdi",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Roi8virSihT7L9JqhwISBoUPfVg2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "https://github.com/mehdibeldjilali/"
+        }
+      ]
+    },
+    "IeMf4WUUT8gXUuOZSqVXvBrXmUw2": {
+      "id": "IeMf4WUUT8gXUuOZSqVXvBrXmUw2",
+      "name": "Chi Thanh BUi",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/IeMf4WUUT8gXUuOZSqVXvBrXmUw2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "ctbui"
+        },
+        {
+          "name": "github",
+          "link": "https://github.com/ctbui"
         }
       ]
     },
@@ -959,267 +1159,56 @@
         }
       ]
     },
-    "yBuTCMIOkLTJMFhtXvj6ulzL4Rp1": {
-      "id": "yBuTCMIOkLTJMFhtXvj6ulzL4Rp1",
-      "name": "Christopher MANEU",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/yBuTCMIOkLTJMFhtXvj6ulzL4Rp1.png",
+    "yPuUNngRNaQOV2G7RFRNAybKPDy2": {
+      "id": "yPuUNngRNaQOV2G7RFRNAybKPDy2",
+      "name": "Eline Sekerger",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/yPuUNngRNaQOV2G7RFRNAybKPDy2.png",
+      "socials": []
+    },
+    "RRXo2IPIRHONGucBWEaf5tCz1bv2": {
+      "id": "RRXo2IPIRHONGucBWEaf5tCz1bv2",
+      "name": "Pascal MARTIN",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/RRXo2IPIRHONGucBWEaf5tCz1bv2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@cmaneu"
-        },
-        {
-          "name": "github",
-          "link": "cmaneu"
+          "link": "pascal_martin"
         }
       ]
     },
-    "9g2TJuw97VMd8Zwn9y2x0g0w7SB2": {
-      "id": "9g2TJuw97VMd8Zwn9y2x0g0w7SB2",
-      "name": "Delegue Alexandre",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9g2TJuw97VMd8Zwn9y2x0g0w7SB2.png",
+    "ueI0ViTbp7OXFIwXQFBrCMNlVYt1": {
+      "id": "ueI0ViTbp7OXFIwXQFBrCMNlVYt1",
+      "name": "juliette parillot",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ueI0ViTbp7OXFIwXQFBrCMNlVYt1.png",
+      "socials": []
+    },
+    "9oyqt628ahc8bsuGAOlI1GWxcRD3": {
+      "id": "9oyqt628ahc8bsuGAOlI1GWxcRD3",
+      "name": "Yann-Thomas Le Moigne",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9oyqt628ahc8bsuGAOlI1GWxcRD3.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@chanksleroux"
+          "link": "Yatho91"
         },
         {
           "name": "github",
-          "link": "larousso"
+          "link": "Yatho"
         }
       ]
     },
-    "U9hxvBPi6MfRegXDRIWbQZ0daXm2": {
-      "id": "U9hxvBPi6MfRegXDRIWbQZ0daXm2",
-      "name": "OLIVIER DEIBER",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/U9hxvBPi6MfRegXDRIWbQZ0daXm2.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "EEd8VQHPxORw8iWh2ZIfieTC5c32": {
-      "id": "EEd8VQHPxORw8iWh2ZIfieTC5c32",
-      "name": "julien rollin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/EEd8VQHPxORw8iWh2ZIfieTC5c32.png",
+    "8YvY0nMLXIeYaL2ZgLCPRj0S1Kz1": {
+      "id": "8YvY0nMLXIeYaL2ZgLCPRj0S1Kz1",
+      "name": "Benoît Prioux",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/8YvY0nMLXIeYaL2ZgLCPRj0S1Kz1.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "julienrollin"
+          "link": "@binout"
         },
         {
           "name": "github",
-          "link": "jrollin"
-        }
-      ]
-    },
-    "aFcfKeGfODWBN6Q2BJDLH988NwI3": {
-      "id": "aFcfKeGfODWBN6Q2BJDLH988NwI3",
-      "name": "Kevin Toublanc",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/aFcfKeGfODWBN6Q2BJDLH988NwI3.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "ktoublanc"
-        },
-        {
-          "name": "github",
-          "link": "ktoublanc-ws"
-        }
-      ]
-    },
-    "bmcEG5lA35c8hrqifZ9kRkhZKXl2": {
-      "id": "bmcEG5lA35c8hrqifZ9kRkhZKXl2",
-      "name": "Mathieu Laude",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/bmcEG5lA35c8hrqifZ9kRkhZKXl2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "mkassovix"
-        },
-        {
-          "name": "github",
-          "link": "kassovix"
-        }
-      ]
-    },
-    "3jAixvFWDwMpoISHbnkL3IqGNjP2": {
-      "id": "3jAixvFWDwMpoISHbnkL3IqGNjP2",
-      "name": "Jimmy Kasprzak",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/3jAixvFWDwMpoISHbnkL3IqGNjP2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@JimmyKasprzak"
-        },
-        {
-          "name": "github",
-          "link": "Orodan"
-        }
-      ]
-    },
-    "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33": {
-      "id": "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
-      "name": "Antoine Meausoone",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/tQ2JiQjbJ2ZCS81oy3c7mRdSpp33.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "ameausoone"
-        },
-        {
-          "name": "github",
-          "link": "ameausoone"
-        }
-      ]
-    },
-    "ETZHP80Ca4buwA294HkQ7Vvkv3r1": {
-      "id": "ETZHP80Ca4buwA294HkQ7Vvkv3r1",
-      "name": "Jérôme Tama",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ETZHP80Ca4buwA294HkQ7Vvkv3r1.png",
-      "socials": [
-        null,
-        {
-          "name": "github",
-          "link": "jtama"
-        }
-      ]
-    },
-    "ZdNase96oBSI6QdrWySX9eCtJgs1": {
-      "id": "ZdNase96oBSI6QdrWySX9eCtJgs1",
-      "name": "Julien Topçu",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ZdNase96oBSI6QdrWySX9eCtJgs1.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@JulienTopcu"
-        },
-        {
-          "name": "github",
-          "link": "julien-topcu"
-        }
-      ]
-    },
-    "i0pl2yBPWmV1BUFj1cc7QfQUdZu1": {
-      "id": "i0pl2yBPWmV1BUFj1cc7QfQUdZu1",
-      "name": "Philippe MORISSEAU",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/i0pl2yBPWmV1BUFj1cc7QfQUdZu1.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://twitter.com/morisseauphi"
-        },
-        {
-          "name": "github",
-          "link": "https://pmorisseau.ineaweb.net/"
-        }
-      ]
-    },
-    "IPck78ZRNPaINM4qaagRuJnDZvR2": {
-      "id": "IPck78ZRNPaINM4qaagRuJnDZvR2",
-      "name": "Nicolas GIRAUD",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/IPck78ZRNPaINM4qaagRuJnDZvR2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@nicgiro"
-        },
-        {
-          "name": "github",
-          "link": "arcanneero"
-        }
-      ]
-    },
-    "dnahDuhtlpNv9d15xbIbpS896sC2": {
-      "id": "dnahDuhtlpNv9d15xbIbpS896sC2",
-      "name": "Guillaume Renaudin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/dnahDuhtlpNv9d15xbIbpS896sC2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://twitter.com/RGuillome"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/rguillome"
-        }
-      ]
-    },
-    "OFR3coK7G1c4zwBlMcHNv295b0q2": {
-      "id": "OFR3coK7G1c4zwBlMcHNv295b0q2",
-      "name": "Fabien Lamarque",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/OFR3coK7G1c4zwBlMcHNv295b0q2.png",
-      "socials": [
-        null,
-        {
-          "name": "github",
-          "link": "Fabinout"
-        }
-      ]
-    },
-    "eGA6OY0HEhP9d6WQ7HZtq054tW22": {
-      "id": "eGA6OY0HEhP9d6WQ7HZtq054tW22",
-      "name": "Alves Mickaël",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/eGA6OY0HEhP9d6WQ7HZtq054tW22.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@CruuzAzul"
-        },
-        {
-          "name": "github",
-          "link": "CruuzAzul"
-        }
-      ]
-    },
-    "3v72z5xWXfbL94DpKVI1snjC7Jr1": {
-      "id": "3v72z5xWXfbL94DpKVI1snjC7Jr1",
-      "name": "Sylvain Bestion",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/3v72z5xWXfbL94DpKVI1snjC7Jr1.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "Fhjjvv3C2TYVltqjim6rtTgf48x1": {
-      "id": "Fhjjvv3C2TYVltqjim6rtTgf48x1",
-      "name": "Alexis Lozano",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Fhjjvv3C2TYVltqjim6rtTgf48x1.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "alexislozano__"
-        },
-        {
-          "name": "github",
-          "link": "alexislozano"
-        }
-      ]
-    },
-    "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1": {
-      "id": "Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1",
-      "name": "David Aparicio",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Y6vBesjiB6Tx0pqzmh9RyKSh0Hn1.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "dadideo"
-        },
-        {
-          "name": "github",
-          "link": "davidaparicio"
-        }
-      ]
-    },
-    "ffbnsZEQaCebGS2Dlip8JifuVIn2": {
-      "id": "ffbnsZEQaCebGS2Dlip8JifuVIn2",
-      "name": "Pierre Robillard",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ffbnsZEQaCebGS2Dlip8JifuVIn2.png",
-      "socials": [
-        null,
-        {
-          "name": "github",
-          "link": "github.com/age2pierre"
+          "link": "binout"
         }
       ]
     },
@@ -1238,486 +1227,149 @@
         }
       ]
     },
-    "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2": {
-      "id": "RUqBhFuLU4Wtd3eA9zYOQcaz3nr2",
-      "name": "Dorian Delorme",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/RUqBhFuLU4Wtd3eA9zYOQcaz3nr2.png",
+    "z40htDnoNBgrrGeOikcH3MaKimO2": {
+      "id": "z40htDnoNBgrrGeOikcH3MaKimO2",
+      "name": "Édouard Siha",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/z40htDnoNBgrrGeOikcH3MaKimO2.png",
+      "socials": []
+    },
+    "jP8YeUsQW1T3cGw3gGLQaPm2QDz1": {
+      "id": "jP8YeUsQW1T3cGw3gGLQaPm2QDz1",
+      "name": "Hugo Vassard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/jP8YeUsQW1T3cGw3gGLQaPm2QDz1.png",
+      "socials": []
+    },
+    "5VqrVGncEOcRZVisanoLuMow7jP2": {
+      "id": "5VqrVGncEOcRZVisanoLuMow7jP2",
+      "name": "Jean-Rémy Revy",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/5VqrVGncEOcRZVisanoLuMow7jP2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "d_del_s"
+          "link": "@JeanRemyRevy"
         },
         {
           "name": "github",
-          "link": "doriandel"
+          "link": "jrrevy"
         }
       ]
     },
-    "HfBwLxQ1wyO4giltVDafRIFILLJ2": {
-      "id": "HfBwLxQ1wyO4giltVDafRIFILLJ2",
-      "name": "Rudy Baer",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/HfBwLxQ1wyO4giltVDafRIFILLJ2.png",
+    "rar3zyT9RseftpQbINL7DO48OEC3": {
+      "id": "rar3zyT9RseftpQbINL7DO48OEC3",
+      "name": "Stephane LANGONNET",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/rar3zyT9RseftpQbINL7DO48OEC3.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "RudyBaer"
-        },
-        {
-          "name": "github",
-          "link": "RudyBaer"
+          "link": "edonis"
         }
       ]
     },
-    "p4lQkz4mvnTox9AZz9nsRV5Iedg1": {
-      "id": "p4lQkz4mvnTox9AZz9nsRV5Iedg1",
-      "name": "Olivier Mertens",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/p4lQkz4mvnTox9AZz9nsRV5Iedg1.png",
+    "Xq1dkEyo0hVpuTaPzTda2RY7xYx1": {
+      "id": "Xq1dkEyo0hVpuTaPzTda2RY7xYx1",
+      "name": "Benjamin Legrand",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Xq1dkEyo0hVpuTaPzTda2RY7xYx1.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "xam1311"
+          "link": "benjilegnard"
         },
         {
           "name": "github",
-          "link": "olivMertens"
+          "link": "benjilegnard"
         }
       ]
     },
-    "w9K4w1seusO2SDPlDFCUbw2apCh2": {
-      "id": "w9K4w1seusO2SDPlDFCUbw2apCh2",
-      "name": "Victor Lambret",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/w9K4w1seusO2SDPlDFCUbw2apCh2.png",
+    "IPck78ZRNPaINM4qaagRuJnDZvR2": {
+      "id": "IPck78ZRNPaINM4qaagRuJnDZvR2",
+      "name": "Nicolas GIRAUD",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/IPck78ZRNPaINM4qaagRuJnDZvR2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "VictorLambret"
+          "link": "@nicgiro"
         },
         {
           "name": "github",
-          "link": "VLambret"
+          "link": "arcanneero"
         }
       ]
     },
-    "sVESMnd80YXh3z7emZKgJ1viq3b2": {
-      "id": "sVESMnd80YXh3z7emZKgJ1viq3b2",
-      "name": "Nicolas Carlier",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/sVESMnd80YXh3z7emZKgJ1viq3b2.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "pNFXh8L1wecfg2Mdg1sFKJKrENV2": {
-      "id": "pNFXh8L1wecfg2Mdg1sFKJKrENV2",
-      "name": "Stéphane Philippart",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/pNFXh8L1wecfg2Mdg1sFKJKrENV2.png",
+    "BHW8h7LzhBSqs80aZEVwrDiAUDj2": {
+      "id": "BHW8h7LzhBSqs80aZEVwrDiAUDj2",
+      "name": "Jean-Phi Baconnais",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/BHW8h7LzhBSqs80aZEVwrDiAUDj2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@wildagsx"
+          "link": "@JPhi_Baconnais"
         },
         {
           "name": "github",
-          "link": "philippart-s"
+          "link": "jeanphibaconnais"
         }
       ]
     },
-    "UgdeZxl1gBfhw0o8BepkqscBTiq2": {
-      "id": "UgdeZxl1gBfhw0o8BepkqscBTiq2",
-      "name": "Sara Attallah",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/UgdeZxl1gBfhw0o8BepkqscBTiq2.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "FlNY2ihscVdQLvxKpqsxDrt6PrF2": {
-      "id": "FlNY2ihscVdQLvxKpqsxDrt6PrF2",
-      "name": "Mathis Hammel",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/FlNY2ihscVdQLvxKpqsxDrt6PrF2.png",
+    "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2": {
+      "id": "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2",
+      "name": "William Bartlett",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Q3gF8NTUrnMPDDJ8HWfe00qYw5q2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@MathisHammel"
+          "link": "@bartlettstarman"
         },
         {
           "name": "github",
-          "link": "MathisHammel"
+          "link": "punkstarman"
         }
       ]
     },
-    "7wztvu44o2WD7A5spiPkezLH7Rx2": {
-      "id": "7wztvu44o2WD7A5spiPkezLH7Rx2",
-      "name": "Matthieu Werner",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/7wztvu44o2WD7A5spiPkezLH7Rx2.png",
+    "ZgBHzoIftIPHcnyhXbo5FQ8JMPy2": {
+      "id": "ZgBHzoIftIPHcnyhXbo5FQ8JMPy2",
+      "name": "Jérémy Chauvin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ZgBHzoIftIPHcnyhXbo5FQ8JMPy2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "WernerMatthieu"
+          "link": "Singebob"
         },
         {
           "name": "github",
-          "link": "matthieuwerner"
+          "link": "Singebob"
         }
       ]
     },
-    "FWVM1VNw2JZqt5EMjPjUJd2DKxB3": {
-      "id": "FWVM1VNw2JZqt5EMjPjUJd2DKxB3",
-      "name": "Marion Valentin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/FWVM1VNw2JZqt5EMjPjUJd2DKxB3.png",
+    "NK4O0xWpOpbKIz7xtsEHXO84sBH3": {
+      "id": "NK4O0xWpOpbKIz7xtsEHXO84sBH3",
+      "name": "Noémie Delrue",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/NK4O0xWpOpbKIz7xtsEHXO84sBH3.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "@MarionBarr2"
-        },
-        {
-          "name": "github",
-          "link": "marionnousvalentin"
+          "link": "https://twitter.com/NoemieDelrue"
         }
       ]
     },
-    "Et0TICQLYudeoQ5KjUZ55X2rU9M2": {
-      "id": "Et0TICQLYudeoQ5KjUZ55X2rU9M2",
-      "name": "Yvonnick FRIN",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Et0TICQLYudeoQ5KjUZ55X2rU9M2.png",
+    "ETZHP80Ca4buwA294HkQ7Vvkv3r1": {
+      "id": "ETZHP80Ca4buwA294HkQ7Vvkv3r1",
+      "name": "Jérôme Tama",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ETZHP80Ca4buwA294HkQ7Vvkv3r1.png",
       "socials": [
         {
-          "name": "twitter",
-          "link": "YvonnickFrin"
-        },
-        {
           "name": "github",
-          "link": "frinyvonnick"
+          "link": "jtama"
         }
       ]
     },
-    "nhFyEmSJYZZiMa989nAp7qxGAkp2": {
-      "id": "nhFyEmSJYZZiMa989nAp7qxGAkp2",
-      "name": "Loïc Rodier",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/nhFyEmSJYZZiMa989nAp7qxGAkp2.png",
+    "DJJkbkAM87ePw4mnnmdSw5ekHL92": {
+      "id": "DJJkbkAM87ePw4mnnmdSw5ekHL92",
+      "name": "Damien Lucas",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/DJJkbkAM87ePw4mnnmdSw5ekHL92.png",
       "socials": [
-        null,
-        null
-      ]
-    },
-    "WCr1V33vb0cIZWLSA6eD0dy39l33": {
-      "id": "WCr1V33vb0cIZWLSA6eD0dy39l33",
-      "name": "Adrien JOLY",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/WCr1V33vb0cIZWLSA6eD0dy39l33.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://twitter.com/adrienjoly"
-        },
         {
           "name": "github",
-          "link": "https://github.com/adrienjoly"
-        }
-      ]
-    },
-    "3sdJi27e0DcE50hVB8pz1IZ2dzZ2": {
-      "id": "3sdJi27e0DcE50hVB8pz1IZ2dzZ2",
-      "name": "Julien Salvi",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/3sdJi27e0DcE50hVB8pz1IZ2dzZ2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@JulienSalvi"
-        },
-        {
-          "name": "github",
-          "link": "Oleur"
-        }
-      ]
-    },
-    "ignPtVvWplSLmOo8aO9byUt8pIl2": {
-      "id": "ignPtVvWplSLmOo8aO9byUt8pIl2",
-      "name": "Gaetan BOGAERT",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ignPtVvWplSLmOo8aO9byUt8pIl2.png",
-      "socials": [
-        null,
-        {
-          "name": "github",
-          "link": "https://github.com/bogaertg"
-        }
-      ]
-    },
-    "Npd1iKHS7kfua1fYYOsfF8gAUbW2": {
-      "id": "Npd1iKHS7kfua1fYYOsfF8gAUbW2",
-      "name": "Amélie ABDALLAH",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Npd1iKHS7kfua1fYYOsfF8gAUbW2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "AlonahAmelie"
-        },
-        {
-          "name": "github",
-          "link": "AmelieAlonah"
-        }
-      ]
-    },
-    "hDgeovtbpYUe248iONsiVDFsTn53": {
-      "id": "hDgeovtbpYUe248iONsiVDFsTn53",
-      "name": "Fanny Klauk",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/hDgeovtbpYUe248iONsiVDFsTn53.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@klf37"
-        },
-        {
-          "name": "github",
-          "link": "klaukf"
-        }
-      ]
-    },
-    "eiyfzMG3oWQKwt2X8LyUnSx5fdW2": {
-      "id": "eiyfzMG3oWQKwt2X8LyUnSx5fdW2",
-      "name": "Antoine DESSAIGNE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/eiyfzMG3oWQKwt2X8LyUnSx5fdW2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "adessaigne"
-        },
-        {
-          "name": "github",
-          "link": "adessaigne"
-        }
-      ]
-    },
-    "0ZbtTwugPpTsYEAbDRbt6Voqcca2": {
-      "id": "0ZbtTwugPpTsYEAbDRbt6Voqcca2",
-      "name": "Pierre-Yves Aillet",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/0ZbtTwugPpTsYEAbDRbt6Voqcca2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@pyaillet"
-        },
-        {
-          "name": "github",
-          "link": "pyaillet"
-        }
-      ]
-    },
-    "YwH0iCA69oaFgyQu31I9Yy79X142": {
-      "id": "YwH0iCA69oaFgyQu31I9Yy79X142",
-      "name": "Nicolas Dauphin-Moulin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/YwH0iCA69oaFgyQu31I9Yy79X142.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "lVp57FlvF1fKYwqk8yNinu3uFv92": {
-      "id": "lVp57FlvF1fKYwqk8yNinu3uFv92",
-      "name": "Paul ROYE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/lVp57FlvF1fKYwqk8yNinu3uFv92.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "Paulo_Del_Rey"
-        },
-        {
-          "name": "github",
-          "link": "paul-roye"
-        }
-      ]
-    },
-    "4eLdIkDMEmUwtor4mlu8wJJfUqh1": {
-      "id": "4eLdIkDMEmUwtor4mlu8wJJfUqh1",
-      "name": "Kevin Jean",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/4eLdIkDMEmUwtor4mlu8wJJfUqh1.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "PRuMzxC7NVbsVnJP07AbHR2cNFx2": {
-      "id": "PRuMzxC7NVbsVnJP07AbHR2cNFx2",
-      "name": "Benjamin Cavy",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/PRuMzxC7NVbsVnJP07AbHR2cNFx2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@benjamin_cavy"
-        },
-        {
-          "name": "github",
-          "link": "ptitFicus"
-        }
-      ]
-    },
-    "TuQxXI5DPLMTSuaeNWiS85P0eGk2": {
-      "id": "TuQxXI5DPLMTSuaeNWiS85P0eGk2",
-      "name": "Cédric Champeau",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/TuQxXI5DPLMTSuaeNWiS85P0eGk2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@CedricChampeau"
-        },
-        {
-          "name": "github",
-          "link": "melix"
-        }
-      ]
-    },
-    "9Krfeqq5mpO5cY2R81DKdktW9gy1": {
-      "id": "9Krfeqq5mpO5cY2R81DKdktW9gy1",
-      "name": "Raphaël Luta",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9Krfeqq5mpO5cY2R81DKdktW9gy1.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@raphaelluta"
-        },
-        {
-          "name": "github",
-          "link": "rluta"
-        }
-      ]
-    },
-    "0tlWjfqJzrYCGuUzUj9QAifRYjZ2": {
-      "id": "0tlWjfqJzrYCGuUzUj9QAifRYjZ2",
-      "name": "Antoine Wacheux",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/0tlWjfqJzrYCGuUzUj9QAifRYjZ2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "AntoineWacheux"
-        },
-        {
-          "name": "github",
-          "link": "shiroy"
-        }
-      ]
-    },
-    "XOJLT9cNygdhPYC75sIPWYA6zna2": {
-      "id": "XOJLT9cNygdhPYC75sIPWYA6zna2",
-      "name": "Audrey Dubois",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/XOJLT9cNygdhPYC75sIPWYA6zna2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://twitter.com/ay_Ponyo"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/aydubois"
-        }
-      ]
-    },
-    "biWKM3edJtX6IkI0Nc128sYFYkO2": {
-      "id": "biWKM3edJtX6IkI0Nc128sYFYkO2",
-      "name": "Marc DUGUE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/biWKM3edJtX6IkI0Nc128sYFYkO2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "Marc_DUGUE"
-        },
-        null
-      ]
-    },
-    "oqMr9PXJTSWJ8wJKtHl5pj9bs412": {
-      "id": "oqMr9PXJTSWJ8wJKtHl5pj9bs412",
-      "name": "Eric Aboudaram",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/oqMr9PXJTSWJ8wJKtHl5pj9bs412.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@nabou08"
-        },
-        null
-      ]
-    },
-    "mODnTNL9onNOU1odUO9jb2tbpQj2": {
-      "id": "mODnTNL9onNOU1odUO9jb2tbpQj2",
-      "name": "Antoine CARON",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/mODnTNL9onNOU1odUO9jb2tbpQj2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@Slashgear_"
-        },
-        {
-          "name": "github",
-          "link": "@Slashgear"
-        }
-      ]
-    },
-    "xf0KkBiaWxPLSevQFHnzbqbnkuw1": {
-      "id": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
-      "name": "Julien Jimenez",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/xf0KkBiaWxPLSevQFHnzbqbnkuw1.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "cXT2k96AMcUHl3DWRDRmcdUbkU72": {
-      "id": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
-      "name": "Amélie Avignon",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/cXT2k96AMcUHl3DWRDRmcdUbkU72.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "LBXSNoYRKbWwvirzjnpHzMk03cM2": {
-      "id": "LBXSNoYRKbWwvirzjnpHzMk03cM2",
-      "name": "Lise Quesnel",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/LBXSNoYRKbWwvirzjnpHzMk03cM2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@QuesnelLise"
-        },
-        {
-          "name": "github",
-          "link": "lisequesnel"
-        }
-      ]
-    },
-    "fKYBrUjZFxOy5ykacYFQZTtUS7W2": {
-      "id": "fKYBrUjZFxOy5ykacYFQZTtUS7W2",
-      "name": "Thomas GUIBERT",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/fKYBrUjZFxOy5ykacYFQZTtUS7W2.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "ZzM9y7R7msb0LDFW8fdwRBYthlJ2": {
-      "id": "ZzM9y7R7msb0LDFW8fdwRBYthlJ2",
-      "name": "Fabien Trégan",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ZzM9y7R7msb0LDFW8fdwRBYthlJ2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@ftregan"
-        },
-        {
-          "name": "github",
-          "link": "fabientregan"
-        }
-      ]
-    },
-    "zQ0mhj745ZgtNDL3QL6pVT316ai2": {
-      "id": "zQ0mhj745ZgtNDL3QL6pVT316ai2",
-      "name": "Olivier PONCET",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/zQ0mhj745ZgtNDL3QL6pVT316ai2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@ponceto91"
-        },
-        {
-          "name": "github",
-          "link": "@ponceto"
+          "link": "dlucasd"
         }
       ]
     },
@@ -1736,52 +1388,690 @@
         }
       ]
     },
-    "FHxMDyr6LiRP3TDGOqKaRxlqLar1": {
-      "id": "FHxMDyr6LiRP3TDGOqKaRxlqLar1",
-      "name": "Christelle Murté",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/FHxMDyr6LiRP3TDGOqKaRxlqLar1.png",
-      "socials": [
-        null,
-        null
-      ]
-    },
-    "9XiNHiC9vzfHLs7bDN3B9XS62Fp1": {
-      "id": "9XiNHiC9vzfHLs7bDN3B9XS62Fp1",
-      "name": "Loïc LEFEVRE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9XiNHiC9vzfHLs7bDN3B9XS62Fp1.png",
+    "UXsGQa70cCY26HWQtoDENiQwGls2": {
+      "id": "UXsGQa70cCY26HWQtoDENiQwGls2",
+      "name": "Angi ❄️| team red🩸",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/UXsGQa70cCY26HWQtoDENiQwGls2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "Loic__Lefevere"
-        },
-        {
-          "name": "github",
-          "link": "loiclefevre"
+          "link": "angig29"
         }
       ]
     },
-    "Ny2h9DGprRgd9n6PJYFijyYI0OQ2": {
-      "id": "Ny2h9DGprRgd9n6PJYFijyYI0OQ2",
-      "name": "Helvira G",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Ny2h9DGprRgd9n6PJYFijyYI0OQ2.png",
+    "CU7xNaqREAhFTlA5wOR7cX7tdWz2": {
+      "id": "CU7xNaqREAhFTlA5wOR7cX7tdWz2",
+      "name": "Parisot Mathieu",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/CU7xNaqREAhFTlA5wOR7cX7tdWz2.png",
+      "socials": []
+    },
+    "4fixT0NhwGgtLYwoQiGbHx9LWSN2": {
+      "id": "4fixT0NhwGgtLYwoQiGbHx9LWSN2",
+      "name": "Thomas Boutin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/4fixT0NhwGgtLYwoQiGbHx9LWSN2.png",
       "socials": [
         {
           "name": "twitter",
-          "link": "helvira_g"
+          "link": "https://twitter.com/tbout1"
         },
         {
           "name": "github",
-          "link": "HelviraG"
+          "link": "Thomas-Boutin"
         }
       ]
     },
-    "guillaumeAzam": {
-      "id": "guillaumeAzam",
-      "name": "Guillaume Azam",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/guillaumeAzam.png",
+    "TOBhzlgpSidp7kzdCx5DaryAxaB3": {
+      "id": "TOBhzlgpSidp7kzdCx5DaryAxaB3",
+      "name": "David Drugeon-Hamon",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/TOBhzlgpSidp7kzdCx5DaryAxaB3.png",
       "socials": [
-        null,
-        null
+        {
+          "name": "twitter",
+          "link": "zebeurton"
+        },
+        {
+          "name": "github",
+          "link": "ddrugeon"
+        }
+      ]
+    },
+    "M4qQ8EuaN8TMXcuIMQMwvyDCenX2": {
+      "id": "M4qQ8EuaN8TMXcuIMQMwvyDCenX2",
+      "name": "Véronique SERMAGE",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/M4qQ8EuaN8TMXcuIMQMwvyDCenX2.png",
+      "socials": []
+    },
+    "01ltKvLucIZz1xRZMWu2jSGBh7m1": {
+      "id": "01ltKvLucIZz1xRZMWu2jSGBh7m1",
+      "name": "Philippe Duval",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/01ltKvLucIZz1xRZMWu2jSGBh7m1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "malkav30"
+        },
+        {
+          "name": "github",
+          "link": "malkav30"
+        }
+      ]
+    },
+    "bAkrQrssjgU1zb5V2y2QpVnuCmf1": {
+      "id": "bAkrQrssjgU1zb5V2y2QpVnuCmf1",
+      "name": "jean-francois garreau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/bAkrQrssjgU1zb5V2y2QpVnuCmf1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "jefbinomed"
+        },
+        {
+          "name": "github",
+          "link": "jefbinomed"
+        }
+      ]
+    },
+    "Mj1VpBTCfVgAXpUgmHkWStyryke2": {
+      "id": "Mj1VpBTCfVgAXpUgmHkWStyryke2",
+      "name": "Thomas GAUBERT",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Mj1VpBTCfVgAXpUgmHkWStyryke2.png",
+      "socials": []
+    },
+    "sfqORSTEU5f78k9gZ72VG84d2iF2": {
+      "id": "sfqORSTEU5f78k9gZ72VG84d2iF2",
+      "name": "Anaïs Huet",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/sfqORSTEU5f78k9gZ72VG84d2iF2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@anais_huet_"
+        }
+      ]
+    },
+    "yqIl5xbLdUggLokN5jdFmbpZZwy2": {
+      "id": "yqIl5xbLdUggLokN5jdFmbpZZwy2",
+      "name": "Thierry Chantier",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/yqIl5xbLdUggLokN5jdFmbpZZwy2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@titimoby"
+        },
+        {
+          "name": "github",
+          "link": "titimoby"
+        }
+      ]
+    },
+    "pPy3KSGVNjUzP196YUsM7ZF7J8K2": {
+      "id": "pPy3KSGVNjUzP196YUsM7ZF7J8K2",
+      "name": "Alexis Stefanski (Alex Stef)",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/pPy3KSGVNjUzP196YUsM7ZF7J8K2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "AlexStef"
+        }
+      ]
+    },
+    "NIcR3KYAgYdkLnleO2GQnYBUlhV2": {
+      "id": "NIcR3KYAgYdkLnleO2GQnYBUlhV2",
+      "name": "Yann Jacquot",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/NIcR3KYAgYdkLnleO2GQnYBUlhV2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "yannj"
+        }
+      ]
+    },
+    "cXT2k96AMcUHl3DWRDRmcdUbkU72": {
+      "id": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
+      "name": "Amélie Avignon",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/cXT2k96AMcUHl3DWRDRmcdUbkU72.png",
+      "socials": []
+    },
+    "xf0KkBiaWxPLSevQFHnzbqbnkuw1": {
+      "id": "xf0KkBiaWxPLSevQFHnzbqbnkuw1",
+      "name": "Julien Jimenez",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/xf0KkBiaWxPLSevQFHnzbqbnkuw1.png",
+      "socials": []
+    },
+    "hVZgJxVUtNZd7qiTYazHAdJC7uX2": {
+      "id": "hVZgJxVUtNZd7qiTYazHAdJC7uX2",
+      "name": "Stéphane Nicoll",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/hVZgJxVUtNZd7qiTYazHAdJC7uX2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "snicoll"
+        },
+        {
+          "name": "github",
+          "link": "snicoll"
+        }
+      ]
+    },
+    "iVqsQPuZKfM5wohJfIJ6Ta0GuZc2": {
+      "id": "iVqsQPuZKfM5wohJfIJ6Ta0GuZc2",
+      "name": "Noémie M. Rivière",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/iVqsQPuZKfM5wohJfIJ6Ta0GuZc2.png",
+      "socials": []
+    },
+    "oJNplsSYqEY5TS3ywPNME2mtUb23": {
+      "id": "oJNplsSYqEY5TS3ywPNME2mtUb23",
+      "name": "Yann Schepens",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/oJNplsSYqEY5TS3ywPNME2mtUb23.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "YannSchepens"
+        },
+        {
+          "name": "github",
+          "link": "yannschepens"
+        }
+      ]
+    },
+    "mnKCXR65CudbqcmnzEonfNGs1Jk2": {
+      "id": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
+      "name": "Cécile Freyd-Foucault",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/mnKCXR65CudbqcmnzEonfNGs1Jk2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@cecilefreydf"
+        }
+      ]
+    },
+    "rl938wcCxaUHIH2Yn02D3ms2bVE3": {
+      "id": "rl938wcCxaUHIH2Yn02D3ms2bVE3",
+      "name": "Gauthier Fiorentino",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/rl938wcCxaUHIH2Yn02D3ms2bVE3.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "https://github.com/Mintoo200"
+        }
+      ]
+    },
+    "IlVQ3DcdvccEIvzcYr75msiHJUo1": {
+      "id": "IlVQ3DcdvccEIvzcYr75msiHJUo1",
+      "name": "Sylvain Gougouzian",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/IlVQ3DcdvccEIvzcYr75msiHJUo1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "gouz"
+        },
+        {
+          "name": "github",
+          "link": "gouz"
+        }
+      ]
+    },
+    "GaTXktSpMGXO1RIGafgjJ9m87oB3": {
+      "id": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
+      "name": "Adrien PESSU",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/GaTXktSpMGXO1RIGafgjJ9m87oB3.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@adrienpessu"
+        },
+        {
+          "name": "github",
+          "link": "@adrienpessu"
+        }
+      ]
+    },
+    "VeBTP8lqOYaXBCpwTlGjBW2n1yH2": {
+      "id": "VeBTP8lqOYaXBCpwTlGjBW2n1yH2",
+      "name": "Laurent Grangeau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/VeBTP8lqOYaXBCpwTlGjBW2n1yH2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@laurentgrangeau"
+        },
+        {
+          "name": "github",
+          "link": "laurentgrangeau"
+        }
+      ]
+    },
+    "9NuaIKzyv6gxUGq59NFdkiMEPrO2": {
+      "id": "9NuaIKzyv6gxUGq59NFdkiMEPrO2",
+      "name": "Tony Jarriault",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9NuaIKzyv6gxUGq59NFdkiMEPrO2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@JarriaultTony"
+        },
+        {
+          "name": "github",
+          "link": "TJarriault"
+        }
+      ]
+    },
+    "9R617aT0qaXh4bJMIIrcab9akex1": {
+      "id": "9R617aT0qaXh4bJMIIrcab9akex1",
+      "name": "Loïc CHAU",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9R617aT0qaXh4bJMIIrcab9akex1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@Loiklak"
+        },
+        {
+          "name": "github",
+          "link": "@Loiklak"
+        }
+      ]
+    },
+    "8mOV9PtjdeMkJvfmF4QRWEPPFMq2": {
+      "id": "8mOV9PtjdeMkJvfmF4QRWEPPFMq2",
+      "name": "Kévin Descoubes",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/8mOV9PtjdeMkJvfmF4QRWEPPFMq2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "kevindescoubes"
+        },
+        {
+          "name": "github",
+          "link": "kevindescoubes"
+        }
+      ]
+    },
+    "MuWScV92XwTtOfoRhSirMe9sOea2": {
+      "id": "MuWScV92XwTtOfoRhSirMe9sOea2",
+      "name": "Yannick Guern",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/MuWScV92XwTtOfoRhSirMe9sOea2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@_Akanoa_"
+        },
+        {
+          "name": "github",
+          "link": "akanoa"
+        }
+      ]
+    },
+    "mLINCL2RdTU4dp7CZRs3KkzsDee2": {
+      "id": "mLINCL2RdTU4dp7CZRs3KkzsDee2",
+      "name": "Loïc Fallon",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/mLINCL2RdTU4dp7CZRs3KkzsDee2.png",
+      "socials": []
+    },
+    "87SIxkvV4NUULTFQNUPM4Ex4q6h2": {
+      "id": "87SIxkvV4NUULTFQNUPM4Ex4q6h2",
+      "name": "Alex PALMA",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/87SIxkvV4NUULTFQNUPM4Ex4q6h2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "elya29"
+        }
+      ]
+    },
+    "PPxaqjzPv1Q1Ui8e7G0DQeiZXLD2": {
+      "id": "PPxaqjzPv1Q1Ui8e7G0DQeiZXLD2",
+      "name": "Louise Guillebaud",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/PPxaqjzPv1Q1Ui8e7G0DQeiZXLD2.png",
+      "socials": []
+    },
+    "N3WXSJgzBeftTqCmqFS05lQvTKj1": {
+      "id": "N3WXSJgzBeftTqCmqFS05lQvTKj1",
+      "name": "François-Xavier Lair",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/N3WXSJgzBeftTqCmqFS05lQvTKj1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@lair_net"
+        }
+      ]
+    },
+    "9tSdFUsqM7UePJiKoIP08yGm13I2": {
+      "id": "9tSdFUsqM7UePJiKoIP08yGm13I2",
+      "name": "Matthieu Vincent",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/9tSdFUsqM7UePJiKoIP08yGm13I2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "yodamad03"
+        },
+        {
+          "name": "github",
+          "link": "yodamad"
+        }
+      ]
+    },
+    "7YSzr05x4XUGZ8SsUtRUnNX6pIf2": {
+      "id": "7YSzr05x4XUGZ8SsUtRUnNX6pIf2",
+      "name": "Céline Merand",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/7YSzr05x4XUGZ8SsUtRUnNX6pIf2.png",
+      "socials": []
+    },
+    "HejjXL871HSYUhQxJUh1lJtueOp1": {
+      "id": "HejjXL871HSYUhQxJUh1lJtueOp1",
+      "name": "charline humeau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/HejjXL871HSYUhQxJUh1lJtueOp1.png",
+      "socials": []
+    },
+    "ON9EiZmBhTemqrELzEKfVr569ED2": {
+      "id": "ON9EiZmBhTemqrELzEKfVr569ED2",
+      "name": "Ambre PERSON",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ON9EiZmBhTemqrELzEKfVr569ED2.png",
+      "socials": []
+    },
+    "ZuQe3ExYcMTKpcbdl2bFhV6Oon43": {
+      "id": "ZuQe3ExYcMTKpcbdl2bFhV6Oon43",
+      "name": "Julien Briault",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/ZuQe3ExYcMTKpcbdl2bFhV6Oon43.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "ju_hnny5"
+        },
+        {
+          "name": "github",
+          "link": "juhnny5"
+        }
+      ]
+    },
+    "lrI6gAvw7EU8fseDc5NfOoYWQJx2": {
+      "id": "lrI6gAvw7EU8fseDc5NfOoYWQJx2",
+      "name": "Yann Bertrand",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/lrI6gAvw7EU8fseDc5NfOoYWQJx2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "_YannBertrand"
+        },
+        {
+          "name": "github",
+          "link": "yannbertrand"
+        }
+      ]
+    },
+    "QlZ1odt0SiN7Trn7zuppb8blZtJ2": {
+      "id": "QlZ1odt0SiN7Trn7zuppb8blZtJ2",
+      "name": "Hugues Lepesant",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/QlZ1odt0SiN7Trn7zuppb8blZtJ2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "hlepesant"
+        },
+        {
+          "name": "github",
+          "link": "hlepesant"
+        }
+      ]
+    },
+    "01FcOiy6gFRPFbEAtWUvhz0WkLH3": {
+      "id": "01FcOiy6gFRPFbEAtWUvhz0WkLH3",
+      "name": "Gwenaël Bec",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/01FcOiy6gFRPFbEAtWUvhz0WkLH3.png",
+      "socials": []
+    },
+    "YtwBB1tQOvPPUtv5kF729IErT4A2": {
+      "id": "YtwBB1tQOvPPUtv5kF729IErT4A2",
+      "name": "Gaël Poupard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/YtwBB1tQOvPPUtv5kF729IErT4A2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "ffoodd_fr"
+        },
+        {
+          "name": "github",
+          "link": "ffoodd"
+        }
+      ]
+    },
+    "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33": {
+      "id": "tQ2JiQjbJ2ZCS81oy3c7mRdSpp33",
+      "name": "Antoine Meausoone",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/tQ2JiQjbJ2ZCS81oy3c7mRdSpp33.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "ameausoone"
+        },
+        {
+          "name": "github",
+          "link": "ameausoone"
+        }
+      ]
+    },
+    "T0c4tdkG6PTJTDajvQVpJRzFsU63": {
+      "id": "T0c4tdkG6PTJTDajvQVpJRzFsU63",
+      "name": "Guillaume Laforge",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/T0c4tdkG6PTJTDajvQVpJRzFsU63.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@glaforge"
+        },
+        {
+          "name": "github",
+          "link": "glaforge"
+        }
+      ]
+    },
+    "T5VqnaJD8MPK6FO56sicZOKo0iE2": {
+      "id": "T5VqnaJD8MPK6FO56sicZOKo0iE2",
+      "name": "Yohan Lasorsa",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/T5VqnaJD8MPK6FO56sicZOKo0iE2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@sinedied"
+        },
+        {
+          "name": "github",
+          "link": "sinedied"
+        }
+      ]
+    },
+    "DNlgKL7C5DNK0y48Lf7ylPB4bmk2": {
+      "id": "DNlgKL7C5DNK0y48Lf7ylPB4bmk2",
+      "name": "Olivier Leplus",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/DNlgKL7C5DNK0y48Lf7ylPB4bmk2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@olivierleplus"
+        },
+        {
+          "name": "github",
+          "link": "tagazok"
+        }
+      ]
+    },
+    "6gcb9OjG5cgl14IQBEt5yu4TmTT2": {
+      "id": "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
+      "name": "Ludovic Piot",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/6gcb9OjG5cgl14IQBEt5yu4TmTT2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@lpiot"
+        },
+        {
+          "name": "github",
+          "link": "lpiot"
+        }
+      ]
+    },
+    "w9K4w1seusO2SDPlDFCUbw2apCh2": {
+      "id": "w9K4w1seusO2SDPlDFCUbw2apCh2",
+      "name": "Victor Lambret",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/w9K4w1seusO2SDPlDFCUbw2apCh2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "VictorLambret"
+        },
+        {
+          "name": "github",
+          "link": "VLambret"
+        }
+      ]
+    },
+    "VEcIIrzY2kVRjN5rPYrl4MqOcIo1": {
+      "id": "VEcIIrzY2kVRjN5rPYrl4MqOcIo1",
+      "name": "ThibautCantet",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/VEcIIrzY2kVRjN5rPYrl4MqOcIo1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "thibautcantet"
+        },
+        {
+          "name": "github",
+          "link": "thibautcantet"
+        }
+      ]
+    },
+    "SOMb4rd126UADiDIRvkUCJt9yO12": {
+      "id": "SOMb4rd126UADiDIRvkUCJt9yO12",
+      "name": "Katia HIMEUR",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/SOMb4rd126UADiDIRvkUCJt9yO12.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@katia_tal"
+        }
+      ]
+    },
+    "eMFPF8fp2UTnePLtRCc0XgQddy12": {
+      "id": "eMFPF8fp2UTnePLtRCc0XgQddy12",
+      "name": "David Pilato",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/eMFPF8fp2UTnePLtRCc0XgQddy12.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@dadoonet"
+        },
+        {
+          "name": "github",
+          "link": "dadoonet"
+        }
+      ]
+    },
+    "KWlesYn7ciZTRyCHSu3NQqMuGVi2": {
+      "id": "KWlesYn7ciZTRyCHSu3NQqMuGVi2",
+      "name": "Hervé Boisgontier",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/KWlesYn7ciZTRyCHSu3NQqMuGVi2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "https://github.com/hboisgontier"
+        }
+      ]
+    },
+    "H9omJme1XaTAF5hzBztVy2825my2": {
+      "id": "H9omJme1XaTAF5hzBztVy2825my2",
+      "name": "Marie Le Guilly",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/H9omJme1XaTAF5hzBztVy2825my2.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "marielgy"
+        }
+      ]
+    },
+    "AeTp5EqadPaJeFOqMqj7XzYIwxx1": {
+      "id": "AeTp5EqadPaJeFOqMqj7XzYIwxx1",
+      "name": "Marine Sobas",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/AeTp5EqadPaJeFOqMqj7XzYIwxx1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "Marine_Sobas"
+        },
+        {
+          "name": "github",
+          "link": "Marsobad"
+        }
+      ]
+    },
+    "JkWN4X6967cvBrV2x8vKf1QrHS93": {
+      "id": "JkWN4X6967cvBrV2x8vKf1QrHS93",
+      "name": "Estelle Landry ☀️",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/JkWN4X6967cvBrV2x8vKf1QrHS93.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "@estelandry"
+        }
+      ]
+    },
+    "MFT4lwPv0Ifp7qEXiyFbWNeO4Np2": {
+      "id": "MFT4lwPv0Ifp7qEXiyFbWNeO4Np2",
+      "name": "Cécilia Bossard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/MFT4lwPv0Ifp7qEXiyFbWNeO4Np2.png",
+      "socials": []
+    },
+    "aNVrHPLO0kQQeXk7Zp4iB44o41z1": {
+      "id": "aNVrHPLO0kQQeXk7Zp4iB44o41z1",
+      "name": "Aurélie GUILLAUME",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/aNVrHPLO0kQQeXk7Zp4iB44o41z1.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "slig36"
+        },
+        {
+          "name": "github",
+          "link": "slig36"
+        }
+      ]
+    },
+    "eCeyFrLh28du3ptcHH3w6HDdMT13": {
+      "id": "eCeyFrLh28du3ptcHH3w6HDdMT13",
+      "name": "Etienne IDOUX",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/eCeyFrLh28du3ptcHH3w6HDdMT13.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "PopsIDX"
+        },
+        {
+          "name": "github",
+          "link": "PopsIDX"
+        }
+      ]
+    },
+    "XOJLT9cNygdhPYC75sIPWYA6zna2": {
+      "id": "XOJLT9cNygdhPYC75sIPWYA6zna2",
+      "name": "Audrey Dubois",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/XOJLT9cNygdhPYC75sIPWYA6zna2.png",
+      "socials": [
+        {
+          "name": "twitter",
+          "link": "https://twitter.com/ay_dubois"
+        },
+        {
+          "name": "github",
+          "link": "https://github.com/aydubois"
+        }
+      ]
+    },
+    "rwtqE0FNcjMfwuyvtEAel6cjvNq1": {
+      "id": "rwtqE0FNcjMfwuyvtEAel6cjvNq1",
+      "name": "Bastien JAUNY",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/rwtqE0FNcjMfwuyvtEAel6cjvNq1.png",
+      "socials": [
+        {
+          "name": "github",
+          "link": "bjauny"
+        }
       ]
     }
   }
