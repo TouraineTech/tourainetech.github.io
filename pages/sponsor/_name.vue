@@ -48,13 +48,19 @@
             <img src="@/assets/img/twitch-icon.svg" width="50px" alt="Twitch logo">
           </a>
         </div>
+        <div v-if="sponsor.github">
+          <a :href="sponsor.github" target="_blank">
+            <img src="@/assets/img/github-icon.svg" width="50px" alt="Github logo">
+          </a>
+        </div>
       </div>
     </div>
     <div class="job-offer-bloc description--container" v-if="sponsor.jobOffers && sponsor.jobOffers.length !== 0">
       <h3>Offres d'emploi</h3>
-      <a v-for="jobOffer in sponsor.jobOffers"
-         :key="jobOffer.id"
-         :id="jobOffer.id" :href="jobOffer.pdf ? `/sponsors/${sponsor.id}/${jobOffer.pdf}` : `${jobOffer.link}`" target="_blank"
+      <a
+        v-for="jobOffer in sponsor.jobOffers"
+        :key="jobOffer.id"
+        :id="jobOffer.id" :href="jobOffer.pdf ? `/sponsors/${sponsor.id}/${jobOffer.pdf}` : `${jobOffer.link}`" target="_blank"
       ><h3 v-html="jobOffer.title"></h3></a>
     </div>
   </div>
