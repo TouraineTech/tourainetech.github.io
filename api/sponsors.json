@@ -132,5 +132,17 @@
         "pdf": "Developpeur_Java_Tours.pdf"
       }
     ]
+  },
+  {
+    "name": "Cat-Amania",
+    "id": "cat-amania",
+    "image": "catamania.png",
+    "link": "https://www.cat-amania.com/",
+    "linkedIn": "https://www.linkedin.com/company/cat-amania/",
+    "twitter": "https://twitter.com/Cat_Amania",
+    "facebook" : "https://www.facebook.com/Catamania/",
+    "type": "bronze",
+    "desc": "Cat-Amania est une société de conseil et de services numériques créée pour réaliser la transformation digitale de ses clients. Elle se fonde sur ses expertises métier, technique et méthodologique pour accompagner ses clients dans leurs grands projets de transformation. <br><br> Cat-Amania définit et participe à l’évolution du système d’information de ses clients dans les domaines de la banque, de l’assurance, de la grande distribution et de l’industrie. Avec plus de 20 ans d’expérience, Cat-Amania est en mesure de répondre aux besoins de ses clients avec des offres adaptables sur les thématiques d’Architecture, de Conseil, d’Etude, de Développement, de Test, de Paramétrage et de Pilotage.",
+    "jobOffers": []
   }
 ]
