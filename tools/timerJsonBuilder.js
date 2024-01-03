@@ -1,18 +1,17 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
+const fse = require('fs-extra');
 const path = require('path');
 
 const times = require('../api/times');
-const rooms = require('../api/rooms');
-const planning = require('../api/planning');
-const breaks = require('../api/breaks');
-const conferenceHall = require('../api/conferenceHall');
+const rooms = require('../api/rooms')
+const planning = require('../api/planning')
+const breaks = require('../api/breaks')
+const conferenceHall = require('../api/conferenceHall')
 
 // expected output format example :
-// room_time_talks.json
-// {
-//   "Turing": [
+// api/day{dayNumber}/{roomName}.json
+
 //     {"time": "08:00", "talk": {"id": "break","name": "\uD83D\uDC4B Accueil et petit déjeuner ","speakers": []}},
 //     {"time": "09:00", "talk": {"id": "keynote","name": "Keynote d'ouverture","speakers": []}},
 //     {"time": "09:50", "talk": {"id": "break","name": "\uD83E\uDD50 Suite du petit déjeuner ","speakers": []}},
@@ -34,46 +33,70 @@ const conferenceHall = require('../api/conferenceHall');
 //     {"time": "17:35", "talk": {"id": "break","name": "This is the end","speakers": []}},
 //     {"time": "17:40", "talk": {"id": "keynoteend", "name": "Keynote de clôture","speakers": []}},
 //     {"time": "18:00", "talk": {"id": "goodBye","name": "goodBye","speakers": []}}
-//   ]
-// }
 //
 
-//  speakers.json
-// [
-//   {
-//     "id": "QwcKfwwftjf2bkRj4oA2LB74K6Z2",
-//     "name": "Marie Guillaumet",
-//     "avatar": "https://lh3.googleusercontent.com/-QOui2dBSFZc/AAAAAAAAAAI/AAAAAAAAAAc/ZGf2GDfZrbc/photo.jpg",
-//     "github": "kreestal",
-//     "twitter": "@kreestal",
-//     "bio": "Web designer et intégratrice web senior, Marie Guillaumet est consultante en accessibilité numérique chez [Access42](https://access42.net/). Elle vit et travaille à Rennes, en full remote. Elle a écrit de nombreux articles sur le web design et l’intégration, et partage régulièrement ses découvertes sur [Twitter](https://twitter.com/kReEsTaL) ou lors de conférences. Diplômée de Sciences Po Grenoble et du CELSA, Marie s’intéresse tout particulièrement à la dimension anthropologique et symbolique du web. Sa spécialisation en accessibilité numérique lui permet de concilier design, technique et implication sociale.",
-//     "company": "Access42",
-//     "city": "Rennes, France",
-//     "confirmed": true
-//   }
-// ]
 
-function writeTimerDataFiles(slots, filename) {
+function writeTimerDayDataFiles(slots, filename, day) {
+  const paths = `../api/day${day}/${filename}.json`;
+  writeTimerDataFiles(slots, paths);
+}
+
+function writeTimerDataFiles(slots, paths) {
+
   let datas = JSON.stringify(slots, null, '  ');
+  const completePath = path.join(__dirname, paths);
 
-  fs.writeFile(
-    path.join(__dirname, `../api/${filename}.json`),
+  fse.outputFile(
+    completePath,
     datas,
     readErr => {
       if (readErr) {
-        console.log(err);
+        console.log(readErr);
         process.exit(2);
       }
-      console.log(`The file ${filename}.json was saved!`);
+      console.log(`The file ${completePath} was saved!`);
     });
 }
 
-function getRoomData(allSlots, roomIndex) {
+function getRoomData(allSlots, roomIndex, times) {
   return allSlots
     .filter(({rooms}) => rooms.includes(roomIndex))
-    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => {
-      return {time: times[thisTime], talk: {speakers, ...rest}};
+    .map(({times: [thisTime], rooms, speakers = [], ...rest}) => ({
+      time: times[thisTime].time,
+      talk: {speakers, ...rest}
+    }));
+}
+
+const getOutputDataByDay = (myPlanning, breaks, times, selectedDay, talksById, rooms)  => {
+  const completeTalks = myPlanning
+    .filter(({id}) => !["dummy1", "dummy2"].includes(id))
+    .filter(({day}) => day === selectedDay)
+    .map(({id, rooms, times}) => {
+      const talk = talksById[id];
+      times.sort();
+      rooms.sort();
+      return {...talk, rooms, times};
+    })
+    .filter(({rooms}) => rooms.length !== 0);
+
+  const cleanedBreaks = breaks
+    .filter(({days}) => days.includes(selectedDay))
+    .map(({format, rooms, days, ...rest}) => {
+      return {rooms, ...rest}
     });
+
+  const allSlots = [...completeTalks, ...cleanedBreaks];
+
+  allSlots.sort(({times: [timeA], rooms: [roomA]}, {
+    times: [timeB],
+    rooms: [roomB]
+  }) => (timeA - timeB) !== 0 ? (timeA - timeB) : (roomA - roomB));
+
+  const filteredTimesPerDay = times.filter(({days}) => days.includes(selectedDay));
+
+  return rooms
+    .map((roomName, index) => ({roomName, roomData: getRoomData(allSlots, index + 1, filteredTimesPerDay)}))
+    .reduce((acc, {roomName, roomData}) => ({...acc, [roomName]: roomData}), {});
 }
 
 async function doWork() {
@@ -83,59 +106,23 @@ async function doWork() {
     speakers
   } = conferenceHall;
 
+  const days = [...new Set(times.flatMap(({days}) => days))];
+
   const talksById = talks
     .reduce((acc, {id, title, speakers}) => {
       acc[id] = {id, name: title, speakers};
       return acc
     }, {});
 
-  const completeTalks = planning
-    .map(({id, rooms, times}) => {
-      const talk = talksById[id];
-      times.sort();
-      rooms.sort();
-      return {...talk, rooms, times};
-    })
-    .filter(({rooms}) => rooms.length !== 0);
+  const datasByDay = days.map(day => ({day, outputData: getOutputDataByDay(planning, breaks, times, day, talksById, rooms)}))
 
-  const cleanedBreaks = breaks.map(({format, rooms, ...rest}) => {
-    return {rooms, ...rest}
-  });
-  const allSlots = [...completeTalks, ...cleanedBreaks];
+  for ({day, outputData} of datasByDay) {
+    for (const [roomName, roomDatas] of Object.entries(outputData)) {
+      writeTimerDayDataFiles(roomDatas, roomName, day);
+    }
+  }
 
-  allSlots.sort(({times: [timeA], rooms: [roomA]}, {times: [timeB], rooms: [roomB]}) => (timeA - timeB) !== 0 ? (timeA - timeB) : (roomA - roomB));
-
-  const [turing, pascal, lovelace, td1, td2] = rooms;
-
-  const turingData = getRoomData(allSlots, 1);
-  const pascalData = getRoomData(allSlots, 2);
-  const lovelaceData = getRoomData(allSlots, 3);
-  const td1Data = getRoomData(allSlots, 4);
-  const td2Data = getRoomData(allSlots, 5);
-
-  const output = {
-    [turing]: turingData,
-    [pascal]: pascalData,
-    [lovelace]: lovelaceData,
-    [td1]: td1Data,
-    [td2]: td2Data
-  };
-
-  writeTimerDataFiles(output, "room_time_talks");
-
-  const correctedSpeakers = speakers.map(({uid, displayName, photoURL, github, twitter, bio, company}) => {
-    return {id: uid,
-    name: displayName,
-    avatar: photoURL,
-    github,
-    twitter,
-    bio,
-    company,
-    city: "",
-    confirmed: true
-  }});
-  writeTimerDataFiles(correctedSpeakers, "speakers");
-
+  writeTimerDataFiles(days, '../api/days.json')
 }
 
 doWork();
