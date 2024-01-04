@@ -1,5 +1,7 @@
 import SPONSORS from './api/sponsors.json'
 import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "./api/conferenceHall";
+import DAYS from './api/days.json';
+import ROOMS from './api/rooms.json';
 import CONFIGURATION from './assets/configuration'
 const pkg = require('./package')
 
@@ -16,7 +18,7 @@ module.exports = {
     title: title,
     // this htmlAttrs you need
     htmlAttrs: {
-      lang: 'fr',
+      lang: 'fr'
     },
     meta: [
       {charset: 'utf-8'},
@@ -42,7 +44,7 @@ module.exports = {
       {name: 'theme-color', content: '#ffffff'},
       // Smartbanner
       {name:"apple-itunes-app",content:"app-id=1599891078"},
-      {name:"google-play-app",content:"app-id=to.chapi.tnt"},
+      {name:"google-play-app",content:"app-id=to.chapi.tnt"}
     ],
     link: [
 
@@ -117,10 +119,14 @@ module.exports = {
 
   generate: {
     routes: function () {
+      const cartesian = (...a) => a.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())));
+
       return [
         ...SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`),
         ...SPEAKERS.map(speaker => `/speaker/${speaker.displayName}`),
-        ...TALKS.filter(({backup}) => !backup).map(talk => `/talk/${talk.id}`)
+        ...TALKS.filter(({backup}) => !backup).map(talk => `/talk/${talk.id}`),
+        ...DAYS.map(day => `/timer/days/${day}`),
+        ...cartesian(DAYS, ROOMS).map(([day, room]) => `/timer/days/${day}/rooms/${room}`)
       ]
     }
   }

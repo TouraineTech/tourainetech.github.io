@@ -5,9 +5,10 @@ import BREAKS from '../api/breaks.json'
 
 import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/conferenceHall";
 import PLANNING from '../api/planning';
-import TIMES from '../api/times'
-import ROOMS from '../api/rooms'
-import PHOTOS from '../api/photos_72177720306535189.json'
+import TIMES from '../api/times';
+import ROOMS from '../api/rooms';
+import PHOTOS from '../api/photos_72177720306535189.json';
+import DAYS from '../api/days.json';
 import CONFIGURATION from '../assets/configuration'
 
 
@@ -60,6 +61,7 @@ const createStore = () => {
       formats: [],
       times: [],
       rooms: [],
+      days: [],
       photos: [],
       configuration: {},
     },
@@ -91,6 +93,9 @@ const createStore = () => {
       rooms ({rooms}) {
         return rooms
       },
+      days ({days}) {
+        return days
+      },
       photos ({photos}) {
         return photos
       },
@@ -110,6 +115,7 @@ const createStore = () => {
         commit('SET_TIMES', TIMES);
         commit('SET_ROOMS', ROOMS);
         commit('SET_PHOTOS', PHOTOS);
+        commit('SET_DAYS', DAYS);
         commit('SET_CONFIGURATION', CONFIGURATION);
       }
     },
@@ -143,6 +149,9 @@ const createStore = () => {
       },
       SET_PHOTOS (state, photos) {
         state.photos = photos.sort((a,b) => new Date(a.date) - new Date(b.date));
+      },
+      SET_DAYS (state, days) {
+        state.days = days;
       },
       SET_CONFIGURATION (state, configuration) {
         state.configuration = configuration;

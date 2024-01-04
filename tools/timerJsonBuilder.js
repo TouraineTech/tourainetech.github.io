@@ -37,7 +37,7 @@ const conferenceHall = require('../api/conferenceHall')
 
 
 function writeTimerDayDataFiles(slots, filename, day) {
-  const paths = `../api/day${day}/${filename}.json`;
+  const paths = `../assets/timer/day${day}/${filename}.json`;
   writeTimerDataFiles(slots, paths);
 }
 
@@ -103,7 +103,7 @@ async function doWork() {
 
   const {
     talks,
-    speakers
+    // speakers
   } = conferenceHall;
 
   const days = [...new Set(times.flatMap(({days}) => days))];
@@ -122,7 +122,21 @@ async function doWork() {
     }
   }
 
-  writeTimerDataFiles(days, '../api/days.json')
+  // const correctedSpeakers = speakers.map(({uid, displayName, photoURL, github, twitter, bio, company}) => {
+  //   return {id: uid,
+  //     name: displayName,
+  //     avatar: photoURL,
+  //     github,
+  //     twitter,
+  //     bio,
+  //     company,
+  //     city: "",
+  //     confirmed: true
+  //   }});
+  // writeTimerDataFiles(correctedSpeakers, `../assets/timer/speakers.json`);
+  // writeTimerDataFiles(days, '../api/days.json');
+  // writeTimerDataFiles(rooms, '../assets/timer/rooms.json');
+
 }
 
 doWork();
