@@ -7,6 +7,7 @@
   "scripts": {
     "predev": "npm run extract:timerDatas",
     "prebuild": "npm run extract:timerDatas",
+    "pregenerate": "npm run extract:timerDatas",
     "dev": "cross-env HOST=0.0.0.0 PORT=3000 nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
