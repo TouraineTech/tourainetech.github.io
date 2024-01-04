@@ -1,6 +1,7 @@
 <template>
-  <div class="container--white">
+  <div class="container--white fullWidth">
     Room page {{ room }} for day {{ day }}
+    <img class="logoContainer" src="@/assets/img/logo.svg" alt="logo TNT" />
     <div
       v-for="talk of talks"
       :key="talk?.talk?.id"
@@ -32,7 +33,8 @@ export default {
   async created() {
     const talks = await import(`@/assets/timer/day${this.day}/${this.room}.json`);
 
-    const enhancedTalks = Object.entries(talks).map(([, talk], index) => {
+    const { ["default"]: toto, ["__ob__"]: toto2, ...rest } = talks;
+    const enhancedTalks = Object.entries(rest).map(([, talk], index) => {
       return {...talk, endTime: talks[index + 1]?.time, nextTalkId: talks[index + 1]?.talk?.id, nextTalkName: talks[index + 1]?.talk?.name}
     });
     const currentDate = new Date();
@@ -42,7 +44,12 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      window.scroll({top: document.getElementById(this.currentTalkOnPageLoad.talk.id).offsetTop});
+      if (this.currentTalkOnPageLoad?.talk?.id) {
+        window.scroll({top: document.getElementById(this.currentTalkOnPageLoad.talk.id).offsetTop});
+      } else {
+        console.log("No scroll because of no this.currentTalkOnPageLoad.talk.id");
+      }
+
     }, 2000);
   }
 }
@@ -51,7 +58,21 @@ export default {
 <style lang="scss" scoped>
 @import "../../../assets/scss/variables";
 
+.fullWidth {
+  width: 100vw;
+}
 .talk--bloc {
-  height: 100vh
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  position: sticky;
+  top: 2vh;
+  left: 95vw;
+  height: 10vh;
 }
 </style>

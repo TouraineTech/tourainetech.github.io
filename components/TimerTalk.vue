@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div>{{ talk?.talk?.name }}</div>
-    <div class="chrono">
+  <div class="timerTalk">
+    <h1>{{ talk?.talk?.name }}</h1>
+    <h2 class="chrono">
       {{ remainingTime.asString }}
-    </div>
-    <div>Prochain sujet :  {{ talk.nextTalkName }}</div>
+    </h2>
+    <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ function calculateRemainingTime(endTime) {
   const currentDate = new Date();
   const remainingInSeconds = (endDate.getTime() - currentDate.getTime()) / 1000;
   return {
-    asString: `${Math.floor(remainingInSeconds / 60)} : ${String(Math.floor(remainingInSeconds - (Math.floor(remainingInSeconds / 60) * 60))).padStart(2, '0')}`,
+    asString: `${String(Math.floor(remainingInSeconds / 60)).padStart(2, '0')} : ${String(Math.floor(remainingInSeconds - (Math.floor(remainingInSeconds / 60) * 60))).padStart(2, '0')}`,
     remainingInSeconds
   };
 }
@@ -55,3 +55,25 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import "../assets/scss/variables";
+
+.timerTalk h1, .timerTalk h2, .timerTalk h3 {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.timerTalk h1 {
+  font-size: 4rem;
+}
+
+.timerTalk h2 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+.timerTalk h3 {
+  font-size: large;
+}
+</style>
