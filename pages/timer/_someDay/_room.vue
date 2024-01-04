@@ -19,6 +19,12 @@ export default {
   components: {
     TimerTalk
   },
+  asyncData({params}) {
+    return {
+      day: params.someDay,
+      room: params.room
+    };
+  },
   data: () => ({
     talks: [],
     currentTalkOnPageLoad: {}
@@ -31,21 +37,13 @@ export default {
     });
     const currentDate = new Date();
 
-    this.currentTalkOnPageLoad = enhancedTalks.filter(({endTime = "00:00"}) => endTime.split(":")[1] >= currentDate.getMinutes() && endTime.split(":")[0] >= currentDate.getHours())[0];
+    this.currentTalkOnPageLoad = enhancedTalks.filter(({endTime = "00:00"}) => endTime.split(":")[1] > currentDate.getMinutes() && endTime.split(":")[0] >= currentDate.getHours())[0];
     this.talks = enhancedTalks;
-
-  },
-  asyncData({store, params}) {
-    return {
-      day: params.someDay,
-      room: params.room
-    };
   },
   mounted() {
     setTimeout(() => {
-      console.log(this.currentTalkOnPageLoad)
       window.scroll({top: document.getElementById(this.currentTalkOnPageLoad.talk.id).offsetTop});
-    }, 500);
+    }, 2000);
   }
 }
 </script>
