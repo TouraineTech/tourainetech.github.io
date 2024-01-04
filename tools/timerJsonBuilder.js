@@ -134,7 +134,7 @@ async function doWork() {
   //     confirmed: true
   //   }});
   // writeTimerDataFiles(correctedSpeakers, `../assets/timer/speakers.json`);
-  // writeTimerDataFiles(days, '../api/days.json');
+  writeTimerDataFiles(days, '../api/days.json');
   // writeTimerDataFiles(rooms, '../assets/timer/rooms.json');
 
 }
