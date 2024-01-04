@@ -4,7 +4,7 @@
 
     <nuxt-link
       v-for="room of rooms"
-      :to="`/timer/days/${day}/rooms/${room}`"
+      :to="`/timer/${day}/${room}`"
       :key="`${room}${day}`"
     >
       <h4>

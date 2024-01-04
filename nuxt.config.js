@@ -125,8 +125,8 @@ module.exports = {
         ...SPONSORS.map(sponsor => `/sponsor/${sponsor.id}/`),
         ...SPEAKERS.map(speaker => `/speaker/${speaker.displayName}`),
         ...TALKS.filter(({backup}) => !backup).map(talk => `/talk/${talk.id}`),
-        ...DAYS.map(day => `/timer/days/${day}`),
-        ...cartesian(DAYS, ROOMS).map(([day, room]) => `/timer/days/${day}/rooms/${room}`)
+        ...DAYS.map(day => `/timer/${day}`),
+        ...cartesian(DAYS, ROOMS).map(([day, room]) => `/timer/${day}/${room}`)
       ]
     }
   }

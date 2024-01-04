@@ -11,7 +11,7 @@ export default {
     Welcome
     <nuxt-link
       v-for="day of days"
-      :to="`/timer/days/${day}`"
+      :to="`/timer/${day}`"
       :key="day"
     >
       <h4>
