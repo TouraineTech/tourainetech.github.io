@@ -1,7 +1,7 @@
 <template>
   <div class="timerTalk">
     <h1>{{ talk?.talk?.name }}</h1>
-    <h2 class="chrono">
+    <h2 class="chrono" :class="{'blink': lowRemainingTime}">
       {{ remainingTime.asString }}
     </h2>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
@@ -19,6 +19,19 @@ function calculateRemainingTime(endTime) {
     remainingInSeconds
   };
 }
+
+function calculateTime(endTime, startTime) {
+  const endDate = new Date();
+  endDate.setHours(endTime.split(":")[0], endTime.split(":")[1], 0);
+  const startDate = new Date();
+  startDate.setHours(startTime.split(":")[0], startTime.split(":")[1], 0);
+  const remainingInSeconds = (endDate.getTime() - startDate.getTime()) / 1000;
+  return {
+    asString: `${String(Math.floor(remainingInSeconds / 60)).padStart(2, '0')} : ${String(Math.floor(remainingInSeconds - (Math.floor(remainingInSeconds / 60) * 60))).padStart(2, '0')}`,
+    remainingInSeconds
+  };
+}
+
 export default {
   props: {
     talk: {
@@ -38,7 +51,8 @@ export default {
   },
   data: () => ({
     remainingTime: {},
-    intervalId: null
+    intervalId: null,
+    lowRemainingTime: false
   }),
   mounted() {
     const currentDate = new Date();
@@ -47,9 +61,13 @@ export default {
     const splitted = (this.talk.endTime || "00:00").split(":");
     const endDate = Date.parse(`01/01/2001 ${splitted[0]}:${splitted[1]}:00`)
     const date = Date.parse(`01/01/2001 ${hours}:${minutes}:00`)
+    const talksDuration = calculateTime(this.talk.endTime || "00:00", this.talk.time)
     if (this.talk.endTime && endDate > date) {
       this.intervalId = setInterval(() => {
         const remainingTime = calculateRemainingTime(this.talk.endTime);
+        if (remainingTime.remainingInSeconds < talksDuration.remainingInSeconds/10) {
+          this.lowRemainingTime = true;
+        }
         if (remainingTime.remainingInSeconds < 0) {
           window.scroll({top: document.getElementById(this.talk.nextTalkId).offsetTop});
           clearInterval(this.intervalId)
@@ -80,5 +98,15 @@ export default {
 }
 .timerTalk h3 {
   font-size: large;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 </style>
