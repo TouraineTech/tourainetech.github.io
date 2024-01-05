@@ -60,6 +60,8 @@ export default {
 
 .fullWidth {
   width: 100vw;
+  background-color: $color-primary;
+  color: white;
 }
 .talk--bloc {
   height: 100vh;
@@ -74,5 +76,6 @@ export default {
   top: 2vh;
   left: 95vw;
   height: 10vh;
+  filter: drop-shadow(0px 0px 5px #fff);
 }
 </style>
