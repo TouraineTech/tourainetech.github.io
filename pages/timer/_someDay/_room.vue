@@ -38,8 +38,18 @@ export default {
       return {...talk, endTime: talks[index + 1]?.time, nextTalkId: talks[index + 1]?.talk?.id, nextTalkName: talks[index + 1]?.talk?.name}
     });
     const currentDate = new Date();
-
-    this.currentTalkOnPageLoad = enhancedTalks.filter(({endTime = "00:00"}) => endTime.split(":")[1] > currentDate.getMinutes() && endTime.split(":")[0] >= currentDate.getHours())[0];
+    const minutes = currentDate.getMinutes();
+    const hours = currentDate.getHours();
+    const filterElement = enhancedTalks.filter(({endTime = "00:00"}) => {
+      const splitted = endTime.split(":");
+      const endDate = Date.parse(`01/01/2001 ${splitted[0]}:${splitted[1]}:00`)
+      const date = Date.parse(`01/01/2001 ${hours}:${minutes}:00`)
+      const result = endDate > date;
+      console.log({splitted, result})
+      return result;
+    })[0];
+    console.log({filterElement, enhancedTalks, minutes, hours})
+    this.currentTalkOnPageLoad = filterElement;
     this.talks = enhancedTalks;
   },
   mounted() {

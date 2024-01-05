@@ -42,7 +42,12 @@ export default {
   }),
   mounted() {
     const currentDate = new Date();
-    if (this.talk.endTime && this.talk.endTime.split(":")[1] >= currentDate.getMinutes() && this.talk.endTime.split(":")[0] >= currentDate.getHours() ) {
+    const minutes = currentDate.getMinutes();
+    const hours = currentDate.getHours();
+    const splitted = (this.talk.endTime || "00:00").split(":");
+    const endDate = Date.parse(`01/01/2001 ${splitted[0]}:${splitted[1]}:00`)
+    const date = Date.parse(`01/01/2001 ${hours}:${minutes}:00`)
+    if (this.talk.endTime && endDate > date) {
       this.intervalId = setInterval(() => {
         const remainingTime = calculateRemainingTime(this.talk.endTime);
         if (remainingTime.remainingInSeconds < 0) {
