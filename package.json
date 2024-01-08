@@ -5,6 +5,9 @@
   "author": "Benjamin Cousin",
   "private": true,
   "scripts": {
+    "predev": "npm run extract:timerDatas",
+    "prebuild": "npm run extract:timerDatas",
+    "pregenerate": "npm run extract:timerDatas",
     "dev": "cross-env HOST=0.0.0.0 PORT=3000 nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -22,8 +25,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "cross-env": "^7.0.3",
+    "fs-extra": "^11.2.0",
+    "nuxt": "^2.17.2",
     "date-fns": "^3.0.6",
-    "nuxt": "^2.17.1",
     "showdown": "^2.1.0",
     "smart-app-banner": "^2.0.0",
     "smoothscroll-polyfill": "^0.4.4",
