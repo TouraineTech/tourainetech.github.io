@@ -50,6 +50,8 @@
 
 <script>
 import SpeakerBloc from "../../components/SpeakerBloc";
+import CONFIGURATION from '../../assets/configuration'
+
 
 const showdown = require("showdown");
 const converter = new showdown.Converter();
@@ -80,7 +82,7 @@ export default {
     };
   },
   head() {
-    const title = `Touraine Tech 2022 - ${this.talk.title}`;
+    const title = `Touraine Tech 20${CONFIGURATION.eventEdition} - ${this.talk.title}`;
     const url = `https://touraine.tech/talk/${this.talk.id}`;
     return {
       titleTemplate: title,
