@@ -152,5 +152,30 @@
     "link": "https://polytech.univ-tours.fr/",
     "type": "gold",
     "desc": "L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2017 à délivrer un diplôme d'ingénieur.<br/> Elle est située à Tours, en Indre-et-Loire, dans la région Centre, en France, plus précisément dans le quartier des Deux-Lions (aussi appelé « Technopôle ») dans le sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « formations par alternance » et « premier cycle »), site Dassault (départements « mécanique et système », et « électronique et énergie ») et site Lesseps (département « aménagement et environnement »).<br/>Elle fait partie du réseau Polytech, groupement de seize écoles d'ingénieurs au sein des universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Elle est également une composante de l'université François-Rabelais de Tours."
+  },
+  {
+    "name": "MAIF",
+    "id": "maif",
+    "image": "maif.png",
+    "link": "https://www.maif.fr/",
+    "type": "gold",
+    "desc" : "Créée il y a près de quatre-vingt-dix ans, la MAIF a développé un modèle d'assurance mutualiste centré sur l’humain. Cette singularité se reflète depuis nos origines dans notre organisation, nos missions, nos actions. A fin 2022, notre mutuelle d'assurance et ses filiales assurent et accompagnent près 4 millions de ménages. La MAIF est classée numéro 1 du Podium de la Relation Client du secteur assurance pour la dix-neuvième année en 2023.<br/> <br/>Nous recrutons notamment des informaticiens pour renforcer les équipes de la filière SI (400 postes sont à pourvoir), n'hésitez pas à consulter nos offres sur <a href='https://recrutement.maif.fr'>https://recrutement.maif.fr<a/> !",
+    "facebook" : "https://www.facebook.com/MAIFassureur/",
+    "twitter" : "https://twitter.com/MAIF",
+    "instagram" : "https://www.instagram.com/maif.fr/",
+    "youtube" : "https://www.youtube.com/@maif/featured",
+    "linkedIn" : "https://www.linkedin.com/company/maif/mycompany/",
+    "jobOffers": [
+      {
+        "id": "maifOne",
+        "title": "Developpeur software engineering",
+        "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-developpeur-software-engineer-f-h_5694.aspx"
+      },
+      {
+        "id": "maifTwo",
+        "title": "Lead Developpeur-se Fullstack",
+        "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-lead-developer-fullstack-h-f_5495.aspx"
+      }
+    ]
   }
 ]
