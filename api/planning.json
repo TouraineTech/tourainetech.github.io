@@ -462,9 +462,9 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [
-      3
+      2
     ],
-    "day": 1,
+    "day": 2,
     "times": [
       19
     ]
@@ -984,9 +984,9 @@
     "categories": "dbda76a4-7b09-5487-ad6b-6e67d86e9337",
     "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
     "rooms": [
-      2
+      3
     ],
-    "day": 2,
+    "day": 1,
     "times": [
       19
     ]
