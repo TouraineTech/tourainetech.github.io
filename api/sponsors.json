@@ -166,15 +166,41 @@
     "youtube" : "https://www.youtube.com/@maif/featured",
     "linkedIn" : "https://www.linkedin.com/company/maif/mycompany/",
     "jobOffers": [
+        {
+          "id": "maifOne",
+          "title": "Developpeur software engineering",
+          "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-developpeur-software-engineer-f-h_5694.aspx"
+        },
+        {
+          "id": "maifTwo",
+          "title": "Lead Developpeur-se Fullstack",
+          "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-lead-developer-fullstack-h-f_5495.aspx"
+        }
+      ]
+    },
+    {
+    "name": "SopraSteria",
+    "id": "sopra-steria",
+    "image": "sopra.png",
+    "link": "https://www.soprasteria.com/",
+    "type": "gold",
+    "linkedIn" :"https://www.linkedin.com/company/soprasteria",
+    "twitter" : "https://twitter.com/SopraSteria_fr",
+    "facebook" : "https://www.facebook.com/soprasteria/",
+    "instagram" : "https://www.instagram.com/soprasteria_fr/",
+    "youtube" : "https://www.youtube.com/c/SopraSteriaGroup",
+    "twitch" : "https://www.twitch.tv/soprasteria",
+    "desc": "Sopra Steria, acteur majeur de la Tech en Europe, reconnu pour ses activités de conseil, de services numériques et d’édition de logiciels, aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Il apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, combinant une connaissance approfondie des secteurs d’activité et des technologies innovantes à une approche résolument collaborative. Sopra Steria place l’humain au centre de son action et s’engage auprès de ses clients à tirer le meilleur parti du digital pour construire un avenir positif. Fort de 50 000 collaborateurs dans 30 pays, le Groupe a réalisé un chiffre d’affaires de 5,1 milliards d’euros en 2022.<br/><br/><b>The world is how we shape it.</b>",
+    "jobOffers": [
       {
-        "id": "maifOne",
-        "title": "Developpeur software engineering",
-        "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-developpeur-software-engineer-f-h_5694.aspx"
+        "id": "sopraOne",
+        "title": "Architecte CLOUD H/F",
+        "pdf": "Architecte_CLOUD_Tours.pdf"
       },
       {
-        "id": "maifTwo",
-        "title": "Lead Developpeur-se Fullstack",
-        "link": "https://recrutement.maif.fr/offre-de-emploi/emploi-lead-developer-fullstack-h-f_5495.aspx"
+        "id": "sopraTwo",
+        "title": "Manager H/F",
+        "pdf": "Manager_Tours.pdf"
       }
     ]
   }
