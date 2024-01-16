@@ -7,12 +7,13 @@
     <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="big-icon" transform="translate(-238.000000, -58.000000)">
             <g id="TNT" transform="translate(238.000000, 58.000000)">
-                <g id="Tours" fill="#222333">
-                  <rect id="upperLeftTours" x="0" y="0" width="56" height="56"></rect>
-                  <rect id="upperMiddleTours" x="60" y="0" width="56" height="56"></rect>
-                  <rect id="upperRightTours" x="120" y="0" width="56" height="56"></rect>
-                  <rect id="middleTours" x="60" y="60" width="56" height="56"></rect>
-                  <rect id="lowerTours" x="60" y="120" width="56" height="56"></rect>
+                <g id="T" transform="translate(240.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#222333" x="60" y="120" width="56" height="56"></rect>
+                    <rect id="Rectangle" fill="#222333" x="60" y="60" width="56" height="56"></rect>
+                    <rect id="Rectangle" fill="#222333" x="60" y="0" width="56" height="56"></rect>
+                    <rect id="Rectangle" fill="#222333" x="0" y="0" width="56" height="56"></rect>
+                    <rect id="Rectangle" fill="#222333" x="120" y="0" width="56" height="56"></rect>
+                    <polygon id="Rectangle" fill="#6ABFAD" points="0 0 56 56 0 56"></polygon>
                 </g>
                 <g id="N" transform="translate(120.000000, 60.000000)" fill="#6ABFAD">
                     <rect id="Rectangle" x="0" y="0" width="56" height="56"></rect>
@@ -22,13 +23,12 @@
                     <rect id="Rectangle" x="120" y="0" width="56" height="56"></rect>
                     <rect id="Rectangle" x="120" y="60" width="56" height="56"></rect>
                 </g>
-                <g id="Tech" transform="translate(240.000000, 0.000000)" fill="#222333">
-                  <rect id="Rectangle" x="60" y="120" width="56" height="56"></rect>
-                  <rect id="Rectangle" x="60" y="60" width="56" height="56"></rect>
-                  <rect id="Rectangle" x="60" y="0" width="56" height="56"></rect>
-                  <rect id="Rectangle" x="0" y="0" width="56" height="56"></rect>
-                  <rect id="Rectangle" x="120" y="0" width="56" height="56"></rect>
-                  <polygon id="Rectangle" points="0 0 56 56 0 56"></polygon>
+                <g id="T" fill="#222333">
+                    <rect id="Rectangle" x="60" y="120" width="56" height="56"></rect>
+                    <rect id="Rectangle" x="60" y="60" width="56" height="56"></rect>
+                    <rect id="Rectangle" x="60" y="0" width="56" height="56"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="56" height="56"></rect>
+                    <rect id="Rectangle" x="120" y="0" width="56" height="56"></rect>
                 </g>
                 <polygon id="Rectangle" fill="#6ABFAD" points="120 0 176 56 120 56"></polygon>
             </g>
