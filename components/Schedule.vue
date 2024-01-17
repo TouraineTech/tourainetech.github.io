@@ -1,13 +1,15 @@
 <template>
   <section id="schedule" class="container--white">
-    <div class="container--fix container--center">
-      <h2>Le programme</h2>
-      <h3>
-        L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a>
-        <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a>
-      </h3>
-    </div>
-    <br>
+    <template v-if="!forApp">
+      <div class="container--fix container--center">
+        <h2>Le programme</h2>
+        <h3>
+          L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a>
+          <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a>
+        </h3>
+      </div>
+      <br>
+    </template>
     <div class="container-days">
       <div class="schedule-room--cell" :style="{'opacity' : day === 1 ? 1 : 0.5 }" @click="day=1">
         Jeudi
@@ -93,6 +95,12 @@
 
 <script>
 export default {
+  props: {
+    forApp: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       day: 1
