@@ -203,5 +203,21 @@
         "pdf": "Manager_Tours.pdf"
       }
     ]
+  },
+  {
+    "name": "Hamonie Mutuelle",
+    "id": "harmonie-mutuelle",
+    "image": "HM.png",
+    "link": "https://www.harmonie-mutuelle.fr/marque/a-propos/espace-emploi/nous-rejoindre/decouvrir-nos-metiers/rejoignez-notre-DSI",
+    "linkedIn": "https://www.linkedin.com/company/harmoniemutuelle/",
+    "twitter": "https://twitter.com/hmutuelle",
+    "facebook": "https://www.facebook.com/harmoniemutuelle/",
+    "instagram": "https://www.instagram.com/harmoniemutuelle/",
+    "youtube": "https://www.youtube.com/user/HarmonieMutuelle",
+    "type": "gold",
+    "desc": "Harmonie Mutuelle une entreprise à la pointe dans les métiers de l'IT ! <br/><br/>Venez nous rendre visite sur le stand Harmonie Mutuelle pour en apprendre davantage sur nos métiers IT (nous recrutons), notre organisation et nos technos !<br/><br/>Présence également de MGEN Tech.",
+    "jobOffers": [
+
+    ]
   }
 ]
