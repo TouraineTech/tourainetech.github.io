@@ -55,22 +55,26 @@
             </h5>
           </nuxt-link>
           <ul class="schedule-talk-category">
-            <li :class="['schedule-talk-'+talk.categories+'--category']">
-              {{ talkName(talk.categories) }}
+            <li :class="['schedule-talk-'+talk.categories+'--category']" style="display: flex; align-items: center; gap: 5px">
+              <img v-if="talk.categories" :src="require(`@/assets/img/${talk.categories}.png`)" alt="" style="width: 20px; height: 20px; border-radius: 50%;">
+              <span>{{ talkName(talk.categories) }}</span>
             </li>
           </ul>
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
-            <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img class="icon"
-                                                                                       src="@/assets/img/cinema.svg"
-                                                                                       alt="icon cinema"
+            <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/cinema.svg"
+              alt="icon cinema"
             /></a>
-            <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon"
-                                                                                             src="@/assets/img/dailymotion.svg"
-                                                                                             alt="icon dailymotion"
+            <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/dailymotion.svg"
+              alt="icon dailymotion"
             /></a>
-            <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img class="icon"
-                                                                                     src="@/assets/img/youtube.svg"
-                                                                                     alt="icon youtube"
+            <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/youtube.svg"
+              alt="icon youtube"
             /></a>
           </span>
           <span class="schedule-talk-slidesLinks" v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
@@ -78,8 +82,9 @@
               v-for="slidesLink of talk.slidesLinks"
               :key="slidesLink"
             >
-              <a :href="slidesLink" target="_blank"><img class="icon" src="@/assets/img/presentation.svg"
-                                                         alt="icon presentation"
+              <a :href="slidesLink" target="_blank"><img
+                class="icon" src="@/assets/img/presentation.svg"
+                alt="icon presentation"
               />
               </a>
             </p>
@@ -298,7 +303,6 @@ $color-alien: #066420;
     li {
       display: inline-block;
       font-size: 0.8em;
-      padding-left: 0.5rem;
       padding-right: 0.5rem;
       border-radius: 0.5rem;
     }
