@@ -36,6 +36,7 @@ export default {
           height: 75px;
           border-radius: 50%;
           border: 3px solid white;
+          object-fit: cover;
       }
 
       h3{

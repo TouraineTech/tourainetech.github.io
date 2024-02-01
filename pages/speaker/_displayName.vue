@@ -202,9 +202,11 @@ h2 {
 
   img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     align-self: center;
     flex: 0 0 auto;
+    object-fit: cover;
   }
 }
 
