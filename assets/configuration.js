@@ -5,7 +5,7 @@ export default {
     eventDate: '8 & 9 fevrier 2024',
     eventEdition: '24',
     isRegisterOpen: true,
-    isSoldOut: false,
+    isSoldOut: true,
     isScheduleOnline: true,
     isEditionOpen: true,
     isVideoOnline: false,
