@@ -5,7 +5,7 @@
   >
     <div class="container--fix container--center">
       <h2>Billetterie</h2>
-      <span class="RegisterButton">Ouverture de la billetterie le 30 octobre 2023 à 13h00</span>
+      <!--      <span class="RegisterButton">Ouverture de la billetterie le 30 octobre 2023 à 13h00</span>-->
       <!--      <div>-->
       <!--        <a-->
       <!--          href="https://billetterie.touraine.tech"-->
@@ -22,7 +22,7 @@
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc"
+          class="PriceBloc PriceBloc--closed"
           href="https://billetterie.touraine.tech"
           target="_blank"
         >
@@ -107,6 +107,28 @@
     }
     &:before {
       content:"ÉPUISÉ";
+      font-size: 3rem;
+      color: white;
+      background-color: #222333;
+      display: inline-block;
+      transform: rotate(-45deg);
+      position: relative;
+      top: 2em;
+      width: 5em;
+    }
+    &:hover {
+      transform: none;
+    }
+  }
+
+  &--closed {
+    &--wave {
+      &:before {
+        content:"FERMÉ *" !important;
+      }
+    }
+    &:before {
+      content:"FERMÉ";
       font-size: 3rem;
       color: white;
       background-color: #222333;
