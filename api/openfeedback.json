@@ -61,7 +61,7 @@
     "5iVIRrauYYhD7Nzwtlpo": {
       "id": "5iVIRrauYYhD7Nzwtlpo",
       "title": "Maîtriser Angular 17: Développement Avancé et Techniques Novatrices",
-      "trackTitle": "TD1 (premier étage)",
+      "trackTitle": "F123",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -101,20 +101,6 @@
       "startTime": "2024-02-08T11:10:00+01:00",
       "endTime": "2024-02-08T11:25:00+01:00"
     },
-    "rVkg499GPkGqHbiDu3nA": {
-      "id": "rVkg499GPkGqHbiDu3nA",
-      "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
-      "trackTitle": "Physique",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "5VqrVGncEOcRZVisanoLuMow7jP2"
-      ],
-      "startTime": "2024-02-08T11:35:00+01:00",
-      "endTime": "2024-02-08T12:25:00+01:00"
-    },
     "2JjdOJEGBXpAVzz3jcNf": {
       "id": "2JjdOJEGBXpAVzz3jcNf",
       "title": "Les classes abstraites c’est fini (et c’est la faute à TDD)",
@@ -153,6 +139,20 @@
       ],
       "speakers": [
         "z40htDnoNBgrrGeOikcH3MaKimO2"
+      ],
+      "startTime": "2024-02-08T11:35:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
+    },
+    "rVkg499GPkGqHbiDu3nA": {
+      "id": "rVkg499GPkGqHbiDu3nA",
+      "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "5VqrVGncEOcRZVisanoLuMow7jP2"
       ],
       "startTime": "2024-02-08T11:35:00+01:00",
       "endTime": "2024-02-08T12:25:00+01:00"
@@ -301,7 +301,7 @@
     "MLn1MLrS3AjI1BGIFo4Y": {
       "id": "MLn1MLrS3AjI1BGIFo4Y",
       "title": "L'accessibilité ça se manipule, ça se teste, ça se corrige ",
-      "trackTitle": "TD1 (premier étage)",
+      "trackTitle": "F123",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -458,7 +458,7 @@
     "0OddTfb8Fjkw63X5xUzT": {
       "id": "0OddTfb8Fjkw63X5xUzT",
       "title": "Grafana en action : Tests de charge, performance et troubleshooting",
-      "trackTitle": "Bio",
+      "trackTitle": "F22",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -467,8 +467,8 @@
         "68nJX1jMeITxyROME6zh52ptPLz1",
         "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
       ],
-      "startTime": "2024-02-08T15:55:00+01:00",
-      "endTime": "2024-02-08T16:45:00+01:00"
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
     },
     "juptBx71BJ9CRj5RxhKK": {
       "id": "juptBx71BJ9CRj5RxhKK",
@@ -602,7 +602,7 @@
     "okGdto0fdv6wSO5ckWU1": {
       "id": "okGdto0fdv6wSO5ckWU1",
       "title": "The blind test : mets-toi dans la situation d’un non voyant et développe accessible !",
-      "trackTitle": "TD1 (premier étage)",
+      "trackTitle": "F123",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -770,16 +770,16 @@
       "startTime": "2024-02-09T12:35:00+01:00",
       "endTime": "2024-02-09T12:50:00+01:00"
     },
-    "M7KxGoz471yZdaUkK8hb": {
-      "id": "M7KxGoz471yZdaUkK8hb",
-      "title": "La documentation en renfort de l’accessibilité de vos composants",
+    "AoR9C38gjTBavpbs233l": {
+      "id": "AoR9C38gjTBavpbs233l",
+      "title": "🧑‍🎤🎸 La preuve de programme vous fera apprécier les tests",
       "trackTitle": "F21",
       "tags": [
-        "Design, UI, UX",
+        "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
+        "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2"
       ],
       "startTime": "2024-02-09T13:30:00+01:00",
       "endTime": "2024-02-09T14:20:00+01:00"
@@ -829,7 +829,7 @@
     "09KU9iXHIlMYuhQMevrD": {
       "id": "09KU9iXHIlMYuhQMevrD",
       "title": "Changer son environnement fullstack en un clin d'oeil avec devenv",
-      "trackTitle": "TD1 (premier étage)",
+      "trackTitle": "F123",
       "tags": [
         "Outils, pratiques de dev",
         "Hands-on (120min)"
@@ -972,7 +972,7 @@
     "jxLjlCEWmmbuppcdSSvh": {
       "id": "jxLjlCEWmmbuppcdSSvh",
       "title": "👨‍🎓Back to basics - J’ai une 🔑clé SSH💻, et maintenant🤷🏻‍♂️ ?",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -981,8 +981,8 @@
         "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
         "VeBTP8lqOYaXBCpwTlGjBW2n1yH2"
       ],
-      "startTime": "2024-02-09T15:55:00+01:00",
-      "endTime": "2024-02-09T16:45:00+01:00"
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
     },
     "3PRVeyTEeIhe9XxNjBFe": {
       "id": "3PRVeyTEeIhe9XxNjBFe",
@@ -1125,7 +1125,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/mehdibeldjilali/"
+          "link": "mehdibeldjilali"
         }
       ]
     },
@@ -1140,7 +1140,7 @@
         },
         {
           "name": "github",
-          "link": "https://github.com/ctbui"
+          "link": "ctbui"
         }
       ]
     },
@@ -1527,7 +1527,7 @@
     },
     "cXT2k96AMcUHl3DWRDRmcdUbkU72": {
       "id": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
-      "name": "Amélie Avignon",
+      "name": "Kevin Heraud",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/cXT2k96AMcUHl3DWRDRmcdUbkU72.png",
       "socials": []
     },
@@ -1575,14 +1575,9 @@
     },
     "mnKCXR65CudbqcmnzEonfNGs1Jk2": {
       "id": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-      "name": "Cécile Freyd-Foucault",
+      "name": "Iris Naudin",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/mnKCXR65CudbqcmnzEonfNGs1Jk2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@cecilefreydf"
-        }
-      ]
+      "socials": []
     },
     "rl938wcCxaUHIH2Yn02D3ms2bVE3": {
       "id": "rl938wcCxaUHIH2Yn02D3ms2bVE3",
@@ -1591,7 +1586,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/Mintoo200"
+          "link": "Mintoo200"
         }
       ]
     },
@@ -1971,7 +1966,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/hboisgontier"
+          "link": "hboisgontier"
         }
       ]
     },
@@ -2059,7 +2054,7 @@
         },
         {
           "name": "github",
-          "link": "https://github.com/aydubois"
+          "link": "aydubois"
         }
       ]
     },
