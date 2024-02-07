@@ -3,7 +3,7 @@
     "H9pJdUn2l1GJf03lCgPd": {
       "id": "H9pJdUn2l1GJf03lCgPd",
       "title": "Microservices, maxi supplice",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -18,7 +18,7 @@
     "jxFaIS5OTMkZEkFL8bHR": {
       "id": "jxFaIS5OTMkZEkFL8bHR",
       "title": "CSS renaît de ses cendres: (re)devenez copains avec votre feuille de style",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Front web",
         "Conférence (50min)"
@@ -33,7 +33,7 @@
     "gRs9fgxRhsy7xlN85FDj": {
       "id": "gRs9fgxRhsy7xlN85FDj",
       "title": "Est-il (encore) possible d'héberger son propre serveur de messagerie ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
@@ -47,7 +47,7 @@
     "sdg8NifVhjZfA7XW0NrT": {
       "id": "sdg8NifVhjZfA7XW0NrT",
       "title": "DevGreenOps : mettons un peu de Green dans le DevOps 🌱",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -61,7 +61,6 @@
     "5iVIRrauYYhD7Nzwtlpo": {
       "id": "5iVIRrauYYhD7Nzwtlpo",
       "title": "Maîtriser Angular 17: Développement Avancé et Techniques Novatrices",
-      "trackTitle": "TD1 (premier étage)",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -76,7 +75,7 @@
     "J7gGsPyGOyyIxADiHN04": {
       "id": "J7gGsPyGOyyIxADiHN04",
       "title": "Ahead Of Time et Native avec Spring Boot 3",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -90,7 +89,7 @@
     "AZADuj9bFjpni5WMPb6N": {
       "id": "AZADuj9bFjpni5WMPb6N",
       "title": "Késako ⁉, il crée son propre runner GitLab quand il démarre son environnement de dev Gitpod : 🤯",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Lightning (15min)"
@@ -101,24 +100,10 @@
       "startTime": "2024-02-08T11:10:00+01:00",
       "endTime": "2024-02-08T11:25:00+01:00"
     },
-    "rVkg499GPkGqHbiDu3nA": {
-      "id": "rVkg499GPkGqHbiDu3nA",
-      "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
-      "trackTitle": "Physique",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "5VqrVGncEOcRZVisanoLuMow7jP2"
-      ],
-      "startTime": "2024-02-08T11:35:00+01:00",
-      "endTime": "2024-02-08T12:25:00+01:00"
-    },
     "2JjdOJEGBXpAVzz3jcNf": {
       "id": "2JjdOJEGBXpAVzz3jcNf",
       "title": "Les classes abstraites c’est fini (et c’est la faute à TDD)",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -132,7 +117,7 @@
     "qvkgg52JuoQHqZcOkBxT": {
       "id": "qvkgg52JuoQHqZcOkBxT",
       "title": "Comment devenir un parfait \"boyscout\" ?",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -146,7 +131,7 @@
     "uLmgjciIAgWDcrilUOPm": {
       "id": "uLmgjciIAgWDcrilUOPm",
       "title": "Du code source à l'exécutable : plongée dans les entrailles de la compilation en Rust",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -157,10 +142,24 @@
       "startTime": "2024-02-08T11:35:00+01:00",
       "endTime": "2024-02-08T12:25:00+01:00"
     },
+    "rVkg499GPkGqHbiDu3nA": {
+      "id": "rVkg499GPkGqHbiDu3nA",
+      "title": "Accélérer sa transformation DevOps ... avec Accelerate !",
+      "trackTitle": "F123",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "5VqrVGncEOcRZVisanoLuMow7jP2"
+      ],
+      "startTime": "2024-02-08T11:35:00+01:00",
+      "endTime": "2024-02-08T12:25:00+01:00"
+    },
     "m4Iz8brAbFGWU1Jm5zRC": {
       "id": "m4Iz8brAbFGWU1Jm5zRC",
       "title": "Comment merger sa PR en 10 secondes ? Avez-vous essayé les mob code review ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -174,7 +173,7 @@
     "6EYUeaaOxvLHPPVBAMd6": {
       "id": "6EYUeaaOxvLHPPVBAMd6",
       "title": " De l’ignorance à la dépendance : Comment l’IA a changé ma façon de coder?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -188,7 +187,7 @@
     "5BjFotoi6xV8vWKRnnKZ": {
       "id": "5BjFotoi6xV8vWKRnnKZ",
       "title": "Tous Designer",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Design, UI, UX",
         "Lightning (15min)"
@@ -202,7 +201,7 @@
     "jIPuwvxNcjTE2VvXZ5LR": {
       "id": "jIPuwvxNcjTE2VvXZ5LR",
       "title": "Développeur: prenez le contrôle de votre poste, et commencez à provisionner vos \"dotfiles\" !",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -216,7 +215,7 @@
     "ESZwlueyjlJr7a6PiMyV": {
       "id": "ESZwlueyjlJr7a6PiMyV",
       "title": "Au secours ! Ils ont recruté Sheldon, Shaun et Raymond !",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -230,7 +229,7 @@
     "ydNBbHEslbYDqWxvynFr": {
       "id": "ydNBbHEslbYDqWxvynFr",
       "title": "CSS moderne et Pré-processeurs CSS : Une Coexistence Nécessaire ?",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Front web",
         "Lightning (15min)"
@@ -244,7 +243,7 @@
     "oVFqGQVuSwZBRIfpXwVd": {
       "id": "oVFqGQVuSwZBRIfpXwVd",
       "title": "La recherche à l'ère de l'IA",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -258,7 +257,7 @@
     "SscWaiKDpIrIWiGv7Nj0": {
       "id": "SscWaiKDpIrIWiGv7Nj0",
       "title": "Discutons avec nos cartes bancaires depuis nos smartphones",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Mobile, Internet des objets",
         "Conférence (50min)"
@@ -273,7 +272,7 @@
     "PtSf1rNOWg5jSetBVKvO": {
       "id": "PtSf1rNOWg5jSetBVKvO",
       "title": "⚡Une application résiliente, dans un monde partiellement dégradé ⚡",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -287,7 +286,7 @@
     "B6lliC78MrFUFIGZvOYl": {
       "id": "B6lliC78MrFUFIGZvOYl",
       "title": "Les aventuriers de la motivation perdue ",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
@@ -301,7 +300,6 @@
     "MLn1MLrS3AjI1BGIFo4Y": {
       "id": "MLn1MLrS3AjI1BGIFo4Y",
       "title": "L'accessibilité ça se manipule, ça se teste, ça se corrige ",
-      "trackTitle": "TD1 (premier étage)",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -316,7 +314,7 @@
     "H2VvpBz6eD8Nrk7uswmL": {
       "id": "H2VvpBz6eD8Nrk7uswmL",
       "title": "La douceur est-elle un avantage dans ce monde de brutes ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -330,7 +328,7 @@
     "H6F0PNxSvTqgtSlGrE1r": {
       "id": "H6F0PNxSvTqgtSlGrE1r",
       "title": "TinyGo, petit mais costaud ! 💪",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -345,7 +343,7 @@
     "pPZ0oyjjemq2F2m71THd": {
       "id": "pPZ0oyjjemq2F2m71THd",
       "title": "Comment rendre une web app accessible à une personne non voyante ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Front web",
         "Conférence (50min)"
@@ -359,7 +357,7 @@
     "0c0XUiGGBopHjZubyUcP": {
       "id": "0c0XUiGGBopHjZubyUcP",
       "title": "Quand la cybersécurité n'est pas qu'une affaire de failles ",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -373,7 +371,7 @@
     "YlWLk6U3KeWCMNHdwGOS": {
       "id": "YlWLk6U3KeWCMNHdwGOS",
       "title": "Vis ma vie de commerciale dans la tech !",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -387,7 +385,7 @@
     "qODqIpj4Xrz7XLr0nNor": {
       "id": "qODqIpj4Xrz7XLr0nNor",
       "title": "Qu'est ce que les champignons nous apprennent sur l'intelligence artificielle?",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Lightning (15min)"
@@ -401,7 +399,7 @@
     "piIH6zwUdHJHMAwuBEE2": {
       "id": "piIH6zwUdHJHMAwuBEE2",
       "title": "Et pourquoi pas les monorepo ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -415,7 +413,7 @@
     "qawOJYQupnk8xaXZTP8y": {
       "id": "qawOJYQupnk8xaXZTP8y",
       "title": "La retro de ma “worst life”",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Alien",
         "Lightning (15min)"
@@ -430,7 +428,7 @@
     "d19qu8r78nc1aI31Rm7N": {
       "id": "d19qu8r78nc1aI31Rm7N",
       "title": "Grosse fonctionnalité, petites livraisons : l'art du découpage",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -444,7 +442,7 @@
     "qkH2igCTn0r6Hq3VQFi7": {
       "id": "qkH2igCTn0r6Hq3VQFi7",
       "title": "Manifeste pour un artisanat logiciel responsable",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
@@ -467,13 +465,13 @@
         "68nJX1jMeITxyROME6zh52ptPLz1",
         "FjmEcWGtDNUqKmkd0Pwu24oL87G2"
       ],
-      "startTime": "2024-02-08T15:55:00+01:00",
-      "endTime": "2024-02-08T16:45:00+01:00"
+      "startTime": "2024-02-09T15:55:00+01:00",
+      "endTime": "2024-02-09T16:45:00+01:00"
     },
     "juptBx71BJ9CRj5RxhKK": {
       "id": "juptBx71BJ9CRj5RxhKK",
       "title": "Generative AI par la pratique : cas concrets d’utilisation d’un LLM en Java, avec l’API PaLM",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -487,7 +485,7 @@
     "8myJ9pEIIQdi84tmn7S9": {
       "id": "8myJ9pEIIQdi84tmn7S9",
       "title": "Un ChatGPT sur vos propres données : comment ça marche ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -501,7 +499,7 @@
     "BTNWmoJAGTZUVfjLh24x": {
       "id": "BTNWmoJAGTZUVfjLh24x",
       "title": "Les super pouvoirs du package java.util.function ",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -516,7 +514,7 @@
     "VUwBEI5QjFXwpcQHQnvL": {
       "id": "VUwBEI5QjFXwpcQHQnvL",
       "title": "L'accessibilité, les yeux fermés.",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Design, UI, UX",
         "Conférence (50min)"
@@ -530,7 +528,7 @@
     "CLPGvWsMndxnLSeG8sD1": {
       "id": "CLPGvWsMndxnLSeG8sD1",
       "title": "Comment intégrer au mieux une personne autiste en entreprise",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
@@ -544,7 +542,7 @@
     "HfZE9MCurrxlKrMf5Ui3": {
       "id": "HfZE9MCurrxlKrMf5Ui3",
       "title": "Comment rendre possible (et sécurisée) l'authentification sans mot de passe",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -559,7 +557,7 @@
     "c7ai9Xgr9lQsc91AToU0": {
       "id": "c7ai9Xgr9lQsc91AToU0",
       "title": "Pulumi : Gérer son infrastructure avec son langage de programmation préféré",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -573,7 +571,7 @@
     "jyD7HLxwLIiuEjyoqW7c": {
       "id": "jyD7HLxwLIiuEjyoqW7c",
       "title": "NoEstimates vs Story Points : fact-checking dessiné",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -587,7 +585,7 @@
     "xlORqKhzTikvV2R3N9q5": {
       "id": "xlORqKhzTikvV2R3N9q5",
       "title": "STOP à l’espionnage ! Comment disparaître d’internet ? 🕵🏼‍♂️ ",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -602,7 +600,6 @@
     "okGdto0fdv6wSO5ckWU1": {
       "id": "okGdto0fdv6wSO5ckWU1",
       "title": "The blind test : mets-toi dans la situation d’un non voyant et développe accessible !",
-      "trackTitle": "TD1 (premier étage)",
       "tags": [
         "Front web",
         "Hands-on (120min)"
@@ -617,7 +614,7 @@
     "LXIJmGLiQLxQrxIfEXFE": {
       "id": "LXIJmGLiQLxQrxIfEXFE",
       "title": "Opinions, Faits et Fakes : le cas de l'écologie",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -631,7 +628,7 @@
     "QzJDiBefA6Bg8gPQjqgZ": {
       "id": "QzJDiBefA6Bg8gPQjqgZ",
       "title": "Rebase vers le futur : réécrivez l’historique Git",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -645,7 +642,7 @@
     "sxuXYZ9LFxNrSVqKAGTu": {
       "id": "sxuXYZ9LFxNrSVqKAGTu",
       "title": "3615 Twitch, un bot sur Minitel ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Mobile, Internet des objets",
         "Conférence (50min)"
@@ -659,7 +656,7 @@
     "TvJJgLrhkt8TEyPRzekR": {
       "id": "TvJJgLrhkt8TEyPRzekR",
       "title": "Introduction aux outils de  tests de sécurité d'application statique (SAST)",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -673,7 +670,7 @@
     "Ecsm2SrwTZWdYHlAFR4b": {
       "id": "Ecsm2SrwTZWdYHlAFR4b",
       "title": "Apprenons à identifier les exigences techniques pour mieux concevoir",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -688,7 +685,7 @@
     "gU9GtCp9i4YtgqDqtvE5": {
       "id": "gU9GtCp9i4YtgqDqtvE5",
       "title": "Comment j'ai remplacé mon extincteur par un manuel des castors juniors",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -703,7 +700,7 @@
     "zTXDTeutxWuAXzPzPPGQ": {
       "id": "zTXDTeutxWuAXzPzPPGQ",
       "title": "Faire de l'embarqué en remote ? Et pourquoi pas ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -717,7 +714,7 @@
     "Zio48fNHGAI7EX4XyERP": {
       "id": "Zio48fNHGAI7EX4XyERP",
       "title": "Woop woop assassin de la police...",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Front web",
         "Lightning (15min)"
@@ -731,7 +728,7 @@
     "EEqjaicig5mWQUysBP7G": {
       "id": "EEqjaicig5mWQUysBP7G",
       "title": "Avec Vector, reprenez le contrôle sur vos données d'observabilité",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
         "Lightning (15min)"
@@ -745,7 +742,7 @@
     "DwCzaBfJ0SnbNSaRAcsW": {
       "id": "DwCzaBfJ0SnbNSaRAcsW",
       "title": "Construire le futur grâce au mentorat",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -759,7 +756,7 @@
     "AtbUgkuLuuppJ9S5Hlq5": {
       "id": "AtbUgkuLuuppJ9S5Hlq5",
       "title": "Documentation as code, par où commencer ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -770,16 +767,16 @@
       "startTime": "2024-02-09T12:35:00+01:00",
       "endTime": "2024-02-09T12:50:00+01:00"
     },
-    "M7KxGoz471yZdaUkK8hb": {
-      "id": "M7KxGoz471yZdaUkK8hb",
-      "title": "La documentation en renfort de l’accessibilité de vos composants",
-      "trackTitle": "F21",
+    "AoR9C38gjTBavpbs233l": {
+      "id": "AoR9C38gjTBavpbs233l",
+      "title": "🧑‍🎤🎸 La preuve de programme vous fera apprécier les tests",
+      "trackTitle": "F22",
       "tags": [
-        "Design, UI, UX",
+        "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
       "speakers": [
-        "mnKCXR65CudbqcmnzEonfNGs1Jk2"
+        "Q3gF8NTUrnMPDDJ8HWfe00qYw5q2"
       ],
       "startTime": "2024-02-09T13:30:00+01:00",
       "endTime": "2024-02-09T14:20:00+01:00"
@@ -787,7 +784,7 @@
     "B87CHSj7fBEpehgjzvsD": {
       "id": "B87CHSj7fBEpehgjzvsD",
       "title": "Quarkus : Greener, Better, Faster, stronger.",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -801,7 +798,7 @@
     "9wHCrlM2PF559LUk5XSk": {
       "id": "9wHCrlM2PF559LUk5XSk",
       "title": "Construire soi-même son clavier mécanique, idée bizarre ou idée de génie ?",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -815,7 +812,7 @@
     "LjjqLJvbKnDBk7puNnBG": {
       "id": "LjjqLJvbKnDBk7puNnBG",
       "title": "ESI : le cache HTTP en petits bouts",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -829,7 +826,6 @@
     "09KU9iXHIlMYuhQMevrD": {
       "id": "09KU9iXHIlMYuhQMevrD",
       "title": "Changer son environnement fullstack en un clin d'oeil avec devenv",
-      "trackTitle": "TD1 (premier étage)",
       "tags": [
         "Outils, pratiques de dev",
         "Hands-on (120min)"
@@ -844,7 +840,7 @@
     "9rpUPWsKvkKWB9ngLNJi": {
       "id": "9rpUPWsKvkKWB9ngLNJi",
       "title": "Délivrer de l'architecture en continu ... nan mais ... concrètement ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -859,7 +855,7 @@
     "ioc2x2nW4KV5zrt69ZQm": {
       "id": "ioc2x2nW4KV5zrt69ZQm",
       "title": "Dessine moi un graphique (en CSS)",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Front web",
         "Conférence (50min)"
@@ -873,7 +869,7 @@
     "qrcPurz54OuOV0664DVC": {
       "id": "qrcPurz54OuOV0664DVC",
       "title": "📝 ✅ La checklist ultime pour rendre vos applications cloud native !",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -887,7 +883,7 @@
     "YPsuYQYS1gWLrKb4f2SA": {
       "id": "YPsuYQYS1gWLrKb4f2SA",
       "title": "J’ai beaucoup de taf 😱 mais je gère 😎",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -901,7 +897,7 @@
     "QxsCav05hcJ0iHwxX57V": {
       "id": "QxsCav05hcJ0iHwxX57V",
       "title": "PO/Designer, Duo-gagnant pour la conception de vos services et produits ?",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -915,7 +911,7 @@
     "CGUBZLegnfpo3DLimMCH": {
       "id": "CGUBZLegnfpo3DLimMCH",
       "title": "Come to the dart side : Ma première CLI en dart",
-      "trackTitle": "F22",
+      "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
@@ -929,7 +925,7 @@
     "tV8raRWa8QwRMgqmt5nJ": {
       "id": "tV8raRWa8QwRMgqmt5nJ",
       "title": "Deep-Link abuse : vos redirections ne sont pas si sûres ",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Mobile, Internet des objets",
         "Lightning (15min)"
@@ -943,7 +939,7 @@
     "anOldGi7qzAGSBM90IDy": {
       "id": "anOldGi7qzAGSBM90IDy",
       "title": "Dédramatisons l'accessibilité",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
@@ -958,7 +954,7 @@
     "RerbP7HuGeP9AwDzPuiI": {
       "id": "RerbP7HuGeP9AwDzPuiI",
       "title": "A la découverte du Token d'Authentification Biscuit 🥠",
-      "trackTitle": "F21",
+      "trackTitle": "F22",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -972,7 +968,7 @@
     "jxLjlCEWmmbuppcdSSvh": {
       "id": "jxLjlCEWmmbuppcdSSvh",
       "title": "👨‍🎓Back to basics - J’ai une 🔑clé SSH💻, et maintenant🤷🏻‍♂️ ?",
-      "trackTitle": "F22",
+      "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
@@ -981,13 +977,13 @@
         "6gcb9OjG5cgl14IQBEt5yu4TmTT2",
         "VeBTP8lqOYaXBCpwTlGjBW2n1yH2"
       ],
-      "startTime": "2024-02-09T15:55:00+01:00",
-      "endTime": "2024-02-09T16:45:00+01:00"
+      "startTime": "2024-02-08T15:55:00+01:00",
+      "endTime": "2024-02-08T16:45:00+01:00"
     },
     "3PRVeyTEeIhe9XxNjBFe": {
       "id": "3PRVeyTEeIhe9XxNjBFe",
       "title": "Pourquoi Le Figaro a choisi la technologie GraphQL pour moderniser ses API",
-      "trackTitle": "Bio",
+      "trackTitle": "Physique",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
@@ -1002,7 +998,7 @@
     "Rwj5JAo1Ed2D3623l2c8": {
       "id": "Rwj5JAo1Ed2D3623l2c8",
       "title": "Découvrir le Pentesting : une immersion ludique dans l'univers des CTFs",
-      "trackTitle": "Physique",
+      "trackTitle": "F123",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -1125,7 +1121,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/mehdibeldjilali/"
+          "link": "mehdibeldjilali"
         }
       ]
     },
@@ -1140,7 +1136,7 @@
         },
         {
           "name": "github",
-          "link": "https://github.com/ctbui"
+          "link": "ctbui"
         }
       ]
     },
@@ -1527,7 +1523,7 @@
     },
     "cXT2k96AMcUHl3DWRDRmcdUbkU72": {
       "id": "cXT2k96AMcUHl3DWRDRmcdUbkU72",
-      "name": "Amélie Avignon",
+      "name": "Kevin Heraud",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/cXT2k96AMcUHl3DWRDRmcdUbkU72.png",
       "socials": []
     },
@@ -1575,14 +1571,9 @@
     },
     "mnKCXR65CudbqcmnzEonfNGs1Jk2": {
       "id": "mnKCXR65CudbqcmnzEonfNGs1Jk2",
-      "name": "Cécile Freyd-Foucault",
+      "name": "Iris Naudin",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/mnKCXR65CudbqcmnzEonfNGs1Jk2.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "@cecilefreydf"
-        }
-      ]
+      "socials": []
     },
     "rl938wcCxaUHIH2Yn02D3ms2bVE3": {
       "id": "rl938wcCxaUHIH2Yn02D3ms2bVE3",
@@ -1591,7 +1582,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/Mintoo200"
+          "link": "Mintoo200"
         }
       ]
     },
@@ -1971,7 +1962,7 @@
       "socials": [
         {
           "name": "github",
-          "link": "https://github.com/hboisgontier"
+          "link": "hboisgontier"
         }
       ]
     },
@@ -2059,7 +2050,7 @@
         },
         {
           "name": "github",
-          "link": "https://github.com/aydubois"
+          "link": "aydubois"
         }
       ]
     },
