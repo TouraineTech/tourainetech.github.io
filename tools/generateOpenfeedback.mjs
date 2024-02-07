@@ -33,7 +33,7 @@ const sessions = planningData.filter(p => !['keynoteCloture1', 'keynoteCloture2'
     ...obj, [p.id]: {
       id: p.id,
       title: p.title,
-      trackTitle: rooms[p.rooms[0]],
+      trackTitle: rooms[p.rooms[0]-1],
       tags: [categories[p.categories], formats[p.formats].name],
       speakers: talksConferenceHall[p.id]?.speakers,
       startTime: formatISO(startTime),
