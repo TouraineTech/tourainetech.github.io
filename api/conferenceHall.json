@@ -1457,15 +1457,19 @@
     },
     {
       "id": "keynoteCloture1",
-      "title": "Keynote de clôture : De JavaScript à l'impression 3D\\n\\nPromenons-nous dans les jardins de Babylon.js",
-      "speakers": [],
+      "title": "Keynote de clôture : De JavaScript à l'impression 3D. Promenons-nous dans les jardins de Babylon.js",
+      "speakers": [
+        "IlVQ3DcdvccEIvzcYr75msiHJUo1"
+      ],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "slidesLinks": ["https://gouz.github.io/talk-babylon/#"]
     },
     {
       "id": "keynoteOuverture2",
       "title": "Keynote d'ouverture : PostgreSQL et l'Anarchie Organisée",
-      "speakers": [],
+      "speakers": [
+        "LAvrot"
+      ],
       "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
       "slidesLinks": ["https://l_avrot.gitlab.io/slides/anarchy_20240209.html#/"]
     },
@@ -1917,6 +1921,11 @@
       "photoURL": "https://sylvain.gougouzian.fr/apple-touch-icon.png",
       "twitter": "gouz",
       "github": "gouz"
+    },
+    {
+      "uid": "LAvrot",
+      "displayName": "Lætitia Avrot",
+      "photoURL": "default.jpeg"
     },
     {
       "uid": "GaTXktSpMGXO1RIGafgjJ9m87oB3",
