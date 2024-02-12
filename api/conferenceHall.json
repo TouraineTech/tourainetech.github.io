@@ -307,7 +307,7 @@
         "_seconds": 1697224910,
         "_nanoseconds": 164000000
       },
-      "slidesLinks": []
+      "slidesLinks": ["https://github.com/jtama/quarkus-extension-demo", "https://dev.to/onepoint/quarkus-greener-better-faster-stronger-55ea\n"]
     },
     {
       "id": "BTNWmoJAGTZUVfjLh24x",
@@ -327,7 +327,7 @@
         "_seconds": 1697225132,
         "_nanoseconds": 976000000
       },
-      "slidesLinks": []
+      "slidesLinks": ["https://github.com/jtama/les-super-pouvoirs-du-package-java.util.function"]
     },
     {
       "id": "CGUBZLegnfpo3DLimMCH",
