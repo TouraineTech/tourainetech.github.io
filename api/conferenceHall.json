@@ -1009,7 +1009,7 @@
         "_seconds": 1699261364,
         "_nanoseconds": 361000000
       },
-      "slidesLinks": []
+      "slidesLinks": ["https://www.ffoodd.fr/tnt/", "https://ffoodd.github.io/chaarts/"]
     },
     {
       "id": "jIPuwvxNcjTE2VvXZ5LR",
@@ -2091,7 +2091,6 @@
       "speakerReferences": "- « Comprendre et prendre en compte les situations de handicap sur le web » au premier meetup de Nantes Numérique Responsable : [événement](https://www.meetup.com/fr-FR/nantesnr/events/273921309/), [slides](https://www.ffoodd.fr/nnr/)\n- « Des propriétés personnalisées très, très personnalisées » à Paris Web 2020 : [événement](https://www.paris-web.fr/2020/conferences/des-proprietes-personnalisees-tres-tres-personnalisees.php), [slides](https://www.ffoodd.fr/paris-web.2020/), [vidéo](https://vimeo.com/462093074)\n- « La donnée graphique avec HTML et CSS », à Paris Web 2018 et augmentée au Web2Day 2019 : [événement 2018](https://www.paris-web.fr/2018/), [vidéo 2018](https://vimeo.com/296245804), [événement 2019](https://web2day.co/event/les-graphiques-de-donnees-avec-html-et-css/), [vidéo 2019](https://www.youtube.com/watch?v=1AHBcoKe56E&list=PLAgO0SKz6lC8lUo46-smKn_bpfv32iPYL&index=37&t=0s), [slides](https://www.ffoodd.fr/web2day/)\n- « Un plan de tests automatisés pour votre _front-end_ » au WP Tech 2018 : [slides](https://www.ffoodd.fr/wp-tech.2018/), [vidéo](https://www.youtube.com/watch?v=JD1nrs2yH88&feature=youtu.be&a=)\n- « Visite guidée du _customizer_ » au Meetup WordPress Nantes en 2017 : [événement](https://www.meetup.com/fr-FR/Nantes-WordPress-Meetup/events/243486324/), [slides](https://www.ffoodd.fr/customizer/), [vidéo](https://www.youtube.com/watch?v=5umS5IDY-SU)\n- « Il n’y a pas que `class` et` id` dans la vie » à Paris Web 2016 : [événement](https://www.paris-web.fr/), [slides](https://www.ffoodd.fr/paris-web/index-transcript.html), [vidéo](https://www.paris-web.fr/2016/conferences/il-ny-a-pas-que-class-et-id-dans-la-vie.php)\n- « _Workflow_ moderne cherche graphiste à l’ancienne » à la KiwiParty 2016 : [slides](https://www.ffoodd.fr/kiwiparty/), [vidéo](https://vimeo.com/181158986)\n- « L’accessibilité via les thèmes enfants » au 21e séminaire AccessiWeb en 2015 : [slides](https://www.ffoodd.fr/gta21/)\n- « Accessibilité et efficience » au WPMX 2015 : [slides](https://www.ffoodd.fr/wpmx/), [vidéo](http://wpmx.org/conferences-wpmx-day-2015-video/)\n- « Les thèmes enfants » au WP Tech 2014 : [slides](https://www.ffoodd.fr/wp-tech/), [vidéo](https://www.youtube.com/watch?v=WqBVKpq4dGA)",
       "company": "Onepoint",
       "photoURL": "https://avatars.githubusercontent.com/u/2890570?v=4",
-      "twitter": "ffoodd_fr",
       "github": "ffoodd"
     },
     {
