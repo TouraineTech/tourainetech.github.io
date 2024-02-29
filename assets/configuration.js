@@ -9,7 +9,7 @@ export default {
     isScheduleOnline: true,
     isEditionOpen: true,
     isVideoOnline: false,
-    isPhotoOnline: false,
+    isPhotoOnline: true,
     nbEdition: 6,
     displaySponsors : true,
     displayBeginnerSpeakers: false,

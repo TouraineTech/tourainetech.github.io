@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import parser from 'fast-xml-parser';
+import {XMLParser} from 'fast-xml-parser';
 import fs from 'fs';
 
 const {API_KEY: apiKey} = process.env;
@@ -9,7 +9,7 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const parse = (body) => (parser.parse(body, {ignoreAttributes: false}));
+const parse = (body) => (new XMLParser({ignoreAttributes: false}).parse(body));
 
 const createPhotoJSON = async (albumId) => {
   const responsePage1 = await fetch('https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=' + albumId + '&api_key=' + apiKey + '&per_page=500&extras=url_s,url_o,date_taken')
@@ -32,4 +32,4 @@ const createPhotoJSON = async (albumId) => {
   fs.writeFile('api/photos_' + albumId + '.json', JSON.stringify(allPhotos), () => {});
 };
 
-createPhotoJSON('72177720306535189');
+createPhotoJSON('72177720315139801');
