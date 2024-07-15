@@ -1,7 +1,7 @@
 export default {
     isCfpOpen: true,
-    cfpDeliberationDate: 'vendredi 15 novembre 2024',
-    cfClosingDate: 'jeudi 31 octobre 2023',
+    cfpDeliberationDate: 'novembre 2024',
+    cfClosingDate: 'jeudi 31 octobre 2024',
     eventDate: '6 & 7 fevrier 2025',
     eventEdition: '25',
     isRegisterOpen: false,
