@@ -14,7 +14,7 @@
       <template v-else>
         Le CFP est clos pour cette édition,
       </template>
-      La délibération se fera le <span class="label--text label--green">{{ configuration.cfpDeliberationDate }}</span>
+      La délibération se fera courant <span class="label--text label--green">{{ configuration.cfpDeliberationDate }}</span>
     </div>
   </section>
 </template>
