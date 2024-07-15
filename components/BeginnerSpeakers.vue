@@ -1,19 +1,19 @@
 <template>
   <section id="beginner-speakers" class="container--white">
     <div class="container--fix container--center">
-      <h2>Acccompagnement des nouvelles speakeuses et nouveaux speakers</h2>
+      <h2>Accompagnement des nouvelles et nouveaux speakeurs</h2>
       <p>
         Depuis ses débuts, Touraine Tech souhaite offrir sa chance aux
-        <strong>speaker·euse·s débutant·e·s</strong>, donner la parole à tout le monde
-        et favoriser la diversité dans notre milieu et plus particulièrement pour
-        les speakeuses et/ou speaker·euse·s issu·e·s de minorités.
+        <strong>speakers débutant·e·s</strong>, donner la parole à tout le monde
+        et favoriser la diversité dans notre milieu et plus particulièrement
+        pour les speakers femmes et/ou speakers issu·e·s de minorités.
       </p>
       <p>
         Inspirés par des évènements comme le YoungBlood et le Tremplin des
         speakers (organisé par CraftRecords, TADx et le Camping des speakers),
         nous voulons nous investir davantage cette année en offrant un
-        <strong>accompagnement aux speaker·euse·s débutant·e·s</strong>, particulièrement
-        si vous avez peur de vous lancer !
+        <strong>accompagnement aux speakers débutant·e·s</strong>,
+        particulièrement si vous avez peur de vous lancer !
       </p>
       <p>
         Vous bénéficierez de conseils sur la rédaction de vos sujets, un
@@ -22,12 +22,17 @@
         personnalisés.
       </p>
       <p>
-        L'idée est de vous offrir un évènement où vous vous sentez en sécurité pour faire vos premiers pas
-        dans le monde des conférences, c'est pourquoi vous êtes libre de décider de quelle forme d'accompagnement
-        vous souhaitez bénéficier et vous aurez libre choix de votre mentor femme ou homme parmi nos volontaires.
+        L'idée est de vous offrir un évènement où vous vous sentez en sécurité
+        pour faire vos premiers pas dans le monde des conférences, c'est
+        pourquoi vous êtes libre de décider de quelle forme d'accompagnement
+        vous souhaitez bénéficier et vous aurez libre choix de votre mentor
+        femme ou homme parmi nos volontaires.
       </p>
       <p>
-        <strong>Choisissez l'un des formats "Speaker·euse débutant·e" en remplissant le CFP</strong>, ou contactez-nous directement !
+        <strong
+          >Choisissez l'un des formats "Speaker débutant·e" en remplissant le
+          CFP</strong
+        >, ou contactez-nous directement !
       </p>
 
       <ul class="contact-list">
@@ -47,7 +52,7 @@
 </template>
 
 <script>
-const mailSubject = "Speaker·euse·s débutant·e·s";
+const mailSubject = "Speakers débutant·e·s";
 const mailBody = `Bonjour,
 
 Je n'ai jamais ou peu parlé en conférences avant et souhaiterais être accompagné·e dans la création du CFP, la préparation et les répétitions de mon talk.
@@ -60,9 +65,9 @@ export default {
     return {
       mailLink: `mailto:team@touraine.tech?subject=${encodeURIComponent(
         mailSubject
-      )}&body=${encodeURIComponent(mailBody)}`
+      )}&body=${encodeURIComponent(mailBody)}`,
     };
-  }
+  },
 };
 </script>
 
