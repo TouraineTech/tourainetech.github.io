@@ -1,8 +1,5 @@
 <template>
   <div class="HeaderPhrase">
-    <div style="display: none">
-      Bien joué : C'est entre le 09/01/2023 et le 12/02/2023
-    </div>
     <h1 class="HeaderPhrase-title">
       Touraine <span class="HeaderPhrase-title--green">Tech</span> #{{ configuration.eventEdition }}
     </h1>
