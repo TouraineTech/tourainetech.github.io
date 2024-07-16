@@ -20,6 +20,13 @@
         <li>
           <a
             rel="noreferrer"
+            href="https://2024.touraine.tech/"
+            target="_blank"
+          >Édition 2024</a>
+        </li>
+        <li>
+          <a
+            rel="noreferrer"
             href="https://2023.touraine.tech/"
             target="_blank"
           >Édition 2023</a>
