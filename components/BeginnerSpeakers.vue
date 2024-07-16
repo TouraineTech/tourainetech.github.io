@@ -1,7 +1,7 @@
 <template>
   <section id="beginner-speakers" class="container--green">
     <div class="container--fix container--center">
-      <h2>Accompagnement des speakeurs débutant·e·s</h2>
+      <h2>Accompagnement des speakers débutant·e·s</h2>
       <p>
         Depuis ses débuts, Touraine Tech souhaite offrir sa chance aux
         <strong>speakers débutant·e·s</strong>, donner la parole à tout le monde
@@ -29,10 +29,8 @@
         femme ou homme parmi nos volontaires.
       </p>
       <p>
-        <strong
-          >Choisissez l'un des formats "Speaker débutant·e" en remplissant le
-          CFP</strong
-        >, ou contactez-nous directement !
+        <strong>Choisissez l'un des formats "Speaker débutant·e" en remplissant le
+          CFP</strong>, ou contactez-nous directement !
       </p>
 
       <ul class="contact-list">
