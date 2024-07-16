@@ -4,7 +4,7 @@
     target="_blank"
     class="HeaderButton"
   >
-    <span class="HeaderButton-title RegisterSpeaker-title">Devenez speaker·euse</span>
+    <span class="HeaderButton-title RegisterSpeaker-title">Devenez speaker</span>
     <span class="HeaderButton-subtitle RegisterSpeaker-subtitle">dépêchez-vous, fermeture du CFP le 31/10/2024 à 23h59</span>
   </a>
 </template>
