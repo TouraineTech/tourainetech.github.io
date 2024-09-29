@@ -7,14 +7,14 @@
       <h2>Nos sponsors</h2>
       <p>
         Vous souhaitez être sponsor, consultez notre         <a
-          href="/sponsor_2024.pdf"
+          href="/sponsor_2025.pdf"
           target="_blank"
         >dossier de sponsoring</a>
       </p>
       <p>
         <a
           class="button--link button--green"
-          href="https://sponsoring2024.touraine.tech"
+          href="https://sponsoring2025.touraine.tech"
           target="_blank"
         >Devenez sponsor</a>
       </p>
