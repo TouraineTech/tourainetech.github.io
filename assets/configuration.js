@@ -1,11 +1,11 @@
 export default {
-    isCfpOpen: true,
+    isCfpOpen: false,
     cfpDeliberationDate: 'novembre 2024',
     cfClosingDate: 'jeudi 31 octobre 2024',
     eventDate: '6 & 7 fevrier 2025',
     eventEdition: '25',
     isRegisterOpen: true,
-    isSoldOut: true,
+    isSoldOut: false,
     isScheduleOnline: false,
     isEditionOpen: true,
     isVideoOnline: false,
