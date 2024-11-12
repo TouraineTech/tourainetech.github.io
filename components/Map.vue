@@ -7,7 +7,7 @@
       style="border:0"
       title="Map of the event"
       allowfullscreen
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10811.251438586269!2d0.702716!3d47.3570515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5e89bf4475b%3A0xe8018091db1e4271!2sUniversit%C3%A9%20de%20Tours%20-%20Facult%C3%A9%20des%20Sciences%20et%20Techniques!5e0!3m2!1sfr!2sfr!4v1698054824967!5m2!1sfr!2sfr"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1351.4019759669725!2d0.7032385!3d47.3572254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd70053e4f879%3A0x31be2c02e60c1d82!2sUFR%20des%20sciences%20et%20techniques!5e0!3m2!1sfr!2sfr!4v1731408085815!5m2!1sfr!2sfr"
     ></iframe>
   </section>
 </template>
