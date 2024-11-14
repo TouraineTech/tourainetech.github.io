@@ -109,7 +109,7 @@ const createStore = () => {
         commit('SET_TEAM', TEAM.sort((a, b) => a.name.localeCompare(b.name)));
         commit('SET_TALKS', addPlanningToTalks(TALKS));
         commit('SET_BREAKS', BREAKS);
-        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.displayName.localeCompare(b.displayName)));
+        commit('SET_SPEAKERS', SPEAKERS.sort((a, b) => a.uid.localeCompare(b.uid)));
         commit('SET_CATEGORIES', categories);
         commit('SET_FORMATS', formats);
         commit('SET_TIMES', TIMES);

@@ -45,36 +45,26 @@
     "days": [1,2]
   },
   {
-    "id": "am2",
-    "name": "Pause",
-    "format": "break",
-    "rooms": [
-      2
-    ],
-    "times": [
-      6
-    ],
-    "days": [1,2]
-  },
-  {
-    "id": "am2Bis",
-    "name": "Pause",
-    "format": "break",
-    "rooms": [
-      4
-    ],
-    "times": [
-      6
-    ],
-    "days": [1,2]
-  },
-  {
     "id": "dejeuner",
-    "name": "🍽 Début Pause déjeuner",
+    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Quickie) ",
+    "format": "break",
+    "rooms": [
+      1,2,3,4
+    ],
+    "times": [
+      6
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "dejeuner1",
+    "name": "",
     "format": "break",
     "rooms": [
       1,
-      3
+      2,
+      3,
+      4
     ],
     "times": [
       8
@@ -128,7 +118,7 @@
   },
   {
     "id": "pm1",
-    "name": "☕ Pause café (10 min)",
+    "name": "☕ Pause café (25 min)",
     "format": "break",
     "rooms": [
       1,
@@ -143,7 +133,7 @@
   },
   {
     "id": "pm2",
-    "name": "☕ Pause café (10 min)",
+    "name": "Pause",
     "format": "break",
     "rooms": [
       1,
@@ -158,21 +148,6 @@
   },
   {
     "id": "gouter",
-    "name": "☕ Pause café (10 min)",
-    "format": "break",
-    "rooms": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "times": [
-      20
-    ],
-    "days": [1,2]
-  },
-  {
-    "id": "soSmall2",
     "name": "",
     "format": "break",
     "rooms": [
@@ -182,7 +157,7 @@
       4
     ],
     "times": [
-      22
+      20
     ],
     "days": [1]
   }

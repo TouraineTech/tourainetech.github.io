@@ -7,10 +7,10 @@ const __dirname = path.resolve(path.dirname(''));
 const speakers = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/conferenceHall.json'), 'utf8')).speakers;
 
 speakers
-  .filter(({photoURL}) => !!photoURL)
+  .filter(({picture}) => !!picture)
   .forEach(async (s) => {
-    console.log(`Downloading ${s.photoURL} for ${s.displayName}`)
-    const response = await fetch(s.photoURL)
+    console.log(`Downloading ${s.picture} for ${s.name}`)
+    const response = await fetch(s.picture)
     if(response.ok)
       response.body.pipe(fs.createWriteStream(`../assets/img/speakers/${s.uid}.png`))
     else {

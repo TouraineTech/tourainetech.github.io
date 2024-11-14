@@ -114,7 +114,7 @@ export default {
         }).map(talk => {
           return {
             ...talk,
-            speakerNames: this.$store.getters.getSpeakerForIds(talk.speakers).map(s => s.displayName).join(', ')
+            speakerNames: this.$store.getters.getSpeakerForIds(talk.speakers).map(s => s.name).join(', ')
           }
         })
       ]
@@ -147,21 +147,19 @@ export default {
     },
     talkCssClass({formats, categories, times}) {
       const category = {
-        "46293012-ca7f-5197-8c58-69bc9a6c7a4b": "design",
-        "78e751d2-e8f0-5aca-9e0e-373fc79208c3": "front",
-        "87b16802-9e01-5a51-910f-71141789a8b8": "backend",
-        "ef452c33-83cf-5472-8e72-acd374e24b58": "iot",
-        "63920d15-9b86-58e5-875c-441301f6dbb9": "architecture",
-        "18c44d7d-ed48-5dde-94ba-8b4477a84db3": "tools",
-        "3035cc9f-f3b2-5164-b9c1-1737e6fd04fa": "game",
-        "ed8afd05-a6aa-58e7-a6fd-7413d262a8b9": "alien"
+        "clzyaamxk102o13hpbki089rf": "design",
+        "clzyaamxk102p13hpw8tzwls8": "front",
+        "clzyaamxk102q13hp7nja505n": "backend",
+        "clzyaamxk102r13hpan99q8vi": "iot",
+        "clzyaamxk102s13hpkwipk45v": "architecture",
+        "clzyaamxk102t13hp9akxg5en": "tools",
+        "clzyaamxk102u13hpzlab3f0w": "human",
+        "clzyaamxk102v13hplgi4r5fy": "alien"
       }[categories];
       const format = {
-        "338780b9-2b80-561c-b303-70c6048eb2a0": "quickie",
-        "e1af170f-dbcf-5d6e-9ffa-587a55f7a177": "quickie",
-        "84638839-c9f7-5eaf-9df5-5fcb578c2c6d": "conference",
-        "2d0b4c99-c723-5e89-8632-e76e0c52ce1d": "conference",
-        "95d5ba79-ebfc-5e1a-8b45-184925424f1b": "hands-on"
+        "clzyaamxk102w13hpk1e1095a": "quickie",
+        "clzyaamxk102x13hp665tzg4v": "conference",
+        "clzyaamxk102y13hp61scz1oh": "hands-on"
       }[formats];
       return [
         "schedule-talk--cell",
