@@ -68,7 +68,7 @@ const createStore = () => {
     getters: {
       speakers ({speakers}) {
         return speakers.map(s => {
-          s.photoURL=`@/assets/img/speakers/${s.uid}.png`;
+          s.picture=`@/assets/img/speakers/${s.uid}.png`;
           return s;
         })
       },

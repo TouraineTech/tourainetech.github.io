@@ -1,12 +1,12 @@
 <template>
   <div class="page--speakers">
-    <TopSpeakers/>
+    <TopSpeakers />
   </div>
 </template>
 
 <script>
   import TopSpeakers from '~/components/TopSpeakers'
-  
+
   export default {
     components: {
       TopSpeakers
