@@ -46,7 +46,7 @@
   },
   {
     "id": "dejeuner",
-    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Quickie) ",
+    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
     "format": "break",
     "rooms": [
       1,2,3,4

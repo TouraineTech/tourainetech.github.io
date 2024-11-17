@@ -60,17 +60,20 @@
             </li>
           </ul>
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
-            <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img class="icon"
-                                                                                       src="@/assets/img/cinema.svg"
-                                                                                       alt="icon cinema"
+            <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/cinema.svg"
+              alt="icon cinema"
             /></a>
-            <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img class="icon"
-                                                                                             src="@/assets/img/dailymotion.svg"
-                                                                                             alt="icon dailymotion"
+            <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/dailymotion.svg"
+              alt="icon dailymotion"
             /></a>
-            <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img class="icon"
-                                                                                     src="@/assets/img/youtube.svg"
-                                                                                     alt="icon youtube"
+            <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img
+              class="icon"
+              src="@/assets/img/youtube.svg"
+              alt="icon youtube"
             /></a>
           </span>
           <span class="schedule-talk-slidesLinks" v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
@@ -78,8 +81,9 @@
               v-for="slidesLink of talk.slidesLinks"
               :key="slidesLink"
             >
-              <a :href="slidesLink" target="_blank"><img class="icon" src="@/assets/img/presentation.svg"
-                                                         alt="icon presentation"
+              <a :href="slidesLink" target="_blank"><img
+                class="icon" src="@/assets/img/presentation.svg"
+                alt="icon presentation"
               />
               </a>
             </p>
@@ -157,7 +161,7 @@ export default {
         "clzyaamxk102v13hplgi4r5fy": "alien"
       }[categories];
       const format = {
-        "clzyaamxk102w13hpk1e1095a": "quickie",
+        "clzyaamxk102w13hpk1e1095a": "lightning",
         "clzyaamxk102x13hp665tzg4v": "conference",
         "clzyaamxk102y13hp61scz1oh": "hands-on"
       }[formats];
@@ -425,7 +429,7 @@ $color-alien: #066420;
 }
 
 .schedule-talk-conference--cell .schedule-title,
-.schedule-talk-quickie--cell .schedule-title,
+.schedule-talk-lightning--cell .schedule-title 
 {
   overflow: hidden;
   text-overflow: ellipsis;
