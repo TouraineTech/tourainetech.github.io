@@ -3,10 +3,10 @@
     <template v-if="!forApp">
       <div class="container--fix container--center">
         <h2>Le programme</h2>
-        <h3>
-          L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a>
-          <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a>
-        </h3>
+        <!--        <h3>-->
+        <!--          L'application du programme <a href="https://apps.apple.com/fr/app/touraine-tech-2022/id1599891078">Apple</a>-->
+        <!--          <a href="https://play.google.com/store/apps/details?id=to.chapi.tnt">Android</a>-->
+        <!--        </h3>-->
       </div>
       <br>
     </template>
@@ -429,7 +429,7 @@ $color-alien: #066420;
 }
 
 .schedule-talk-conference--cell .schedule-title,
-.schedule-talk-lightning--cell .schedule-title 
+.schedule-talk-lightning--cell .schedule-title
 {
   overflow: hidden;
   text-overflow: ellipsis;
