@@ -65,7 +65,7 @@
         "fr"
       ],
       "speakers": [
-        "Jean_Philippe LE GOFF"
+        "Jean_Philippe_LE_GOFF"
       ],
       "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102t13hp9akxg5en"
@@ -108,7 +108,7 @@
       ],
       "speakers": [
         "Laurent_Grangeau",
-        "Magali_de Labareyre"
+        "Magali_de_Labareyre"
       ],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102u13hpzlab3f0w"
@@ -487,7 +487,7 @@
         "fr"
       ],
       "speakers": [
-        "benoit_El Amrani"
+        "benoit_El_Amrani"
       ],
       "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102p13hpw8tzwls8"
@@ -758,7 +758,7 @@
         "fr"
       ],
       "speakers": [
-        "Marine_du Mesnil"
+        "Marine_du_Mesnil"
       ],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102q13hp7nja505n"
@@ -1331,17 +1331,6 @@
       "company": null,
       "picture": "https://avatars.githubusercontent.com/u/150451279?v=4",
       "socials": {}
-    },
-    {
-      "uid": "Horacio_Gonzalez_(LostInBrittany)",
-      "name": "Horacio Gonzalez (LostInBrittany)",
-      "bio": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une vingtaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\n\nAprès quelques années comme Directeur de Developer Relations chez [OVHcloud](https://twitter.com/OVHcloud), Horacio travaille actuellement comme Head of DevRel chez [Clever Cloud](https://www.clever-cloud.com/). Il est cofondateur du  [@FinistDevs](https://twitter.com/finistdevs/), et des [@RdvSpeakers](https://twitter.com/RdvSpeakers).\n\nPassionné par le développement web et tout ce qui gravite autour des composants web et des standards web, Horacio aime aussi discuter de Kubernetes, AI et le cloud en général. Il est [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez)  en Web Technologies and Flutter.",
-      "company": "Clever Cloud",
-      "picture": "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg",
-      "socials": {
-        "github": "LostInBrittany",
-        "twitter": "LostInBrittany"
-      }
     },
     {
       "uid": "Quentin_JOLY",
