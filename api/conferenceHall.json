@@ -286,34 +286,6 @@
       "categories": "clzyaamxk102u13hpzlab3f0w"
     },
     {
-      "id": "cm2myvt980115iupxx2inmwwe",
-      "title": "Les mystères des permissions",
-      "abstract": "Au début de votre projet, vous avez simplement géré l'authentification de votre utilisateur, puis petit à petit, vous avez ajouté une notion de rôles utilisateur. Et plus le temps passe, plus votre product manager vous demande d’affiner cette gestion et moins cette gestion par rôle va suffire.\n\nPeut-être avez-vous déjà eu l’impression que la gestion des permissions est quelque d’assez obscure ou complexe. On sait qu’on doit le faire, mais on ne sait pas trop comment, ni même pourquoi. Parfois, on confond même avec l'authentification. Mais alors, en quoi ça consiste réellement et comment on peut l'appliquer ?\n\nA chaque situation, sa solution. Nous pourrons voir comment répondre aux besoins les plus fréquents, ainsi que leurs avantages et leurs inconvénients.\n\nNotre objectif ? Avoir la gestion des permissions adaptée à notre situation, sans pour autant ajouter une masse de complexité dans toute notre application.",
-      "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Céline_Louvet"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102s13hpkwipk45v"
-    },
-    {
-      "id": "cm2myswah010uiupxh9tlkn8o",
-      "title": "Highway to fail, ou l'histoire d'un échec prévisible",
-      "abstract": "Vous hésitez à vous lancer dans l’aventure de la startup ? Vous vous verriez bien créer votre propre société, mais vous n’osez pas ? En effet, on le sait maintenant, 90 % des start-up font faillite, dont 10 % dès la première année.\n\nFin 2017, je rejoignais 2 autres cofondateurs pour créer notre première startup. Et mi-2019, nous mettions la clé sous la porte. Pourquoi ? Entre produit, technique, business et humain, il est parfois difficile d’ajuster le curseur.\n\nA travers mon retour d’expérience entrepreneuriale, je souhaite revenir sur certaines de nos erreurs et voir s’il aurait été possible de faire autrement. Peut-être que cette introspection pleine d’honnêteté pourra vous permettre d’éviter certains écueils.",
-      "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Céline_Louvet"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102u13hpzlab3f0w"
-    },
-    {
       "id": "cm2lughcr00ldiupxnqdw8o1g",
       "title": "Transformer vos modèles anémiques en modèles riches grâce au DDD tactique",
       "abstract": "Un CRUD, c’est simple et rapide, mais est-ce suffisant pour concevoir n'importe quelle application ? Attention spoiler alert : la réponse est non.\n\nIl y a quelques années, j'ai intégré la core team du projet open source Sylius où j'ai principalement contribué au développement d'un outil facilitant la gestion des CRUD. Travaillant alors dans une web agency, cela m'a permis d'être très efficace. Cependant, en rejoignant Akeneo, un éditeur logiciel, j'ai vite compris que les CRUD ne suffisaient pas.\n\nPendant cette présentation, je vais partager les problèmes que j’ai rencontrés avec les CRUD et expliquer comment concevoir des modèles riches et orientés métier grâce aux patterns tactique Domain-Driven Design (DDD).",
@@ -326,6 +298,20 @@
       ],
       "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102s13hpkwipk45v"
+    },
+    {
+      "id": "cm2ir7a6y007ja0zn28ql8hns",
+      "title": "Le cauchemar des attaquants : une infrastructure sans secret",
+      "abstract": "La gestion des secrets a toujours été un sujet complexe : comment et où les stocker, comment les partager,qui les utilise, ont-ils été volés ? Quand avez-vous changé le mot de passe de votre base de données pour la dernière fois ? Selon les chiffres de Verizon, 49% des attaques informatiques impliquent le vol et l'utilisation de secrets, parfois des mois après leur exfiltration. \n\nEst-il possible de construire un écosystème sans secret long-terme, en coupant ainsi l’herbe sous le pied des hackers ? Les avancées technologiques récentes (SSO, OIDC, Cloud IAM, Workload Identity, Vault credential brokering, Just-in-Time access) rendent ce rêve non seulement réalisable, mais en prime, elles simplifient la vie des développeurs. \n\nA la lumière de plus d’une dizaine de missions dans des écosystèmes différents, Thibault se propose de vous montrer par des exemples concrets le chemin vers l’infrastructure “Zero-Creds” : \n\n- Comment supprimer les secrets utilisés par les développeurs ? (applicatifs, base de données, clés SSH…)\n- Quels mécanismes et outils permettent la rotation automatique des secrets utilisés par les machines ?\n\nA la fin du talk, vous connaitrez toutes les bonnes pratiques et outils pour supprimer tout secret long-terme de votre écosystème.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Thibault_Lengagne"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102q13hp7nja505n"
     },
     {
       "id": "cm2erk9nx01emvm4hg2sb7kuu",
@@ -354,7 +340,7 @@
     {
       "id": "cm2bi8b4f00thxalm8nrlynuu",
       "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
-      "abstract": "Lorsque l'on crée un cluster Kubernetes, on se pose **toujours** les mêmes questions : \n\n- Où j'installe mes nœuds ? Ai-je des dépendances liées à la plateforme utilisée ? *(ex : VM, Kubernetes managés...)*\n- Comment bootstrap mon cluster *(kOPS ? KubeSpray ? Kubeadm ?)* ?\n- Comment gérer proprement les mises à jour de mes nœuds ?\n- En combien de temps puis-je recréer mon cluster *(PRA)* ?\n- Comment mettre à jour mon cluster Kubernetes *sans* me prendre la tête ?\n\nDe nombreuses questions dont la réponse est toujours \"*ça dépend*\" 🫠​.\n\nL'objectif de ce talk est alors de vous montrer comment nous avons réussi à répondre à la majorité de ces questions avec un seul et même outil : [Talos](https://www.talos.dev/). C'est une distribution minimaliste et immuable dédiée à la création de nœuds Kubernetes qui écourtera vos matinées déploiements ⌛!\n\nQue vous soyez développeur, SRE, ou juste curieux : vous ne souffrirez plus de l'installation de vos clusters, qu'ils soient en dev, ou en production 🤩\n\nSpoiler : votre CISO va adorer.",
+      "abstract": "Lorsque l'on crée un cluster Kubernetes, on se pose **toujours** les mêmes questions : \n\n- Où j'installe mes nœuds ? Ai-je des dépendances liées à la plateforme utilisée ? *(ex : VM, Kubernetes managés...)*\n- Comment bootstrap mon cluster *(kOPS ? KubeSpray ? Kubeadm ?)* ?\n- Comment gérer proprement les mises à jour de mes nœuds ?\n- En combien de temps puis-je recréer mon cluster *(PRA)* ?\n- Comment mettre à jour mon cluster Kubernetes *sans* me prendre la tête ?\n\nDe nombreuses questions dont la réponse est toujours \"*ça dépend*\" 🫠​.\n\nL'objectif de ce talk est alors de vous montrer comment nous avons réussi à répondre à la majorité de ces questions avec un seul et même outil : [Talos](https://www.talos.dev/). C'est une distribution minimaliste et immuable dédiée à la création de nœuds Kubernetes qui écourtera vos matinées déploiements ⌛!\n\nQue vous soyez développeur, SRE, ou juste curieux : vous ne souffrirez plus de l'installation de vos clusters, qu'ils soient en dev, ou en production 🤩\n\nSpoiler : votre CISO va adorer.",
       "tags": [],
       "languages": [
         "fr"
@@ -419,6 +405,20 @@
         "Alexandre_Touret"
       ],
       "formats": "clzyaamxk102y13hp61scz1oh",
+      "categories": "clzyaamxk102q13hp7nja505n"
+    },
+    {
+      "id": "cm21z8ot704td1139n648womz",
+      "title": "G.I. Go - Générateurs et itérateurs en Go",
+      "abstract": "La version 1.23 de Go publiée cet été introduit la notion d'**itérateurs**, pour unifier des pratiques variées. Désormais, on peut « _range_ » sur n'importe quel objet, pourvu qu'on ait défini programmatiquement comment itérer dessus !\n\nNous verrons comment cela fonctionne, avec du code illustrant quelques cas d'usage pratiques, en mesurant les avantages et inconvénients par rapport aux alternatives usuelles.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Benoît_Masson"
+      ],
+      "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102q13hp7nja505n"
     },
     {
@@ -509,7 +509,7 @@
     {
       "id": "cm1kco8r300rt6vei2cqvz6gj",
       "title": "React Compiler : Easier, Better, Faster, Stronger 🤖",
-      "abstract": "Imaginez une nouvelle version de React encore plus attendue qu’un album des Daft Punk 💽 Avec les nouveaux hooks, les actions, les React Server Components et bien plus, la version 19 de React s’annonce révolutionnaire ! 🤯 Et c’est sans compter le hit de la version : **Le React Compiler** !\n\nAu travers d’exemples concrets et de démonstrations, parcourons ensemble cette feature inédite pour en comprendre le besoin initial et son fonctionnement ⚙️ En quelques notes de code, découvrons comment React vous promet désormais performance et optimisation en toute facilité !\n\nLe React Compiler, véritable chef-d'œuvre de cette mise à jour, s'annonce comme un remix parfait pour vos applications passées et futures ! Venez vibrer avec nous et laissez-vous emporter par le rythme du React Compiler ! 🚀",
+      "abstract": "Imaginez une nouvelle version de React encore plus attendue qu’un album des Daft Punk 💽 Avec les nouveaux hooks, les actions, les React Server Components et bien plus, la version 19 de React s’annonce révolutionnaire ! 🤯 Et c’est sans compter le hit de la version : **Le React Compiler** !\n\nAu travers d’exemples concrets et de démonstrations, parcourons ensemble cette feature inédite pour en comprendre le besoin initial et son fonctionnement ⚙️ En quelques notes de code, découvrons comment React vous promet désormais performance et optimisation en toute facilité !\n\nLe React Compiler, véritable chef-d'œuvre de cette mise à jour, s'annonce comme un remix parfait pour vos applications passées et futures ! Venez vibrer avec nous et laissez-vous emporter par le rythme du React Compiler ! 🚀",
       "tags": [],
       "languages": [
         "fr"
@@ -708,6 +708,20 @@
       "categories": "clzyaamxk102u13hpzlab3f0w"
     },
     {
+      "id": "cm05d2djy00esoh1upshfx4pa",
+      "title": "« Pourquoi une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)",
+      "abstract": "Description\n\n« Honnêtement, qu’est-ce que tu nous emm*** avec une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)\n\nJe vous propose de monter dans la barque avec moi pour vous raconter l’aventure d’une grille de salaire, pourquoi, comment, et ce qu’on en a retiré. Ça parait simple quand on s’engage mais il y a eu des hauts fonds sur tout le trajet.\n\nEn sortant, vous aurez des billes supplémentaires pour savoir où aller de votre côté, faire vos choix ou poussez les bons enjeux dans vos équipes.\n\nNous parlerons, avec un mode retour d’expérience et discussion, de géographie, de niveaux et rôles, de télétravail et présentiel, de négociation et augmentation automatique, d’expérience et de diplôme, de comparaison au marché. Rien que se positionner dans le marché a été tout sauf simple et j’espère bien vous éviter nos difficultés.\n\n* avec plein de respect pour les fonctionnaires, qui ont justement compris le besoin d'avoir des grilles de salaire",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Éric_Daspet"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102u13hpzlab3f0w"
+    },
+    {
       "id": "cm00sa3ru001coh1u5uiypqr4",
       "title": "Les signals avec Angular : comment ça marche ?",
       "abstract": "On était tranquille là à faire de la réactivité avec RxJS dans nos applications angular,\n\nEt voilà que la core team nous sort une nouvelle primitive pour ça : signal().\n\nC'est quoi la réactivité d'abord ? C'est quoi un signal ?\n\nEst ce que vous devez absolument les utiliser au lieu d'RxJS ? ( spoiler: non )\n\nBref, comment ça marche les signals en angular ? ( quoi, on dit des signaux ? )",
@@ -806,20 +820,6 @@
       "categories": "clzyaamxk102u13hpzlab3f0w"
     },
     {
-      "id": "clzyeb7jr311513hpyfy656rw",
-      "title": "Impression 3D : poison et antidote de la transition écologique",
-      "abstract": "Combien de fois ai-je entendu \"Rahhh l'impression 3D, y'a rien d'écolo dans tout ça, c'est du plastique!\"\nou encore \n\"Et vous en faites quoi des déchets ?\"...\n\nCes injonctions sont intéressantes car elles questionnent les usages de cette ~~pas si~~ jeune techno.\nContrairement à beaucoup d'idées reçues, les imprimantes 3D ne servent pas uniquement à imprimer des figurines *Pokémon* qui prendront la poussière.\n\nEnsemble, voyons la sombre face de l'impression 3D, et comment pouvons nous faire de cet outil, un levier intéressant de la transition écologique.",
-      "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Baptiste_Ingoglia"
-      ],
-      "formats": "clzyaamxk102w13hpk1e1095a",
-      "categories": "clzyaamxk102v13hplgi4r5fy"
-    },
-    {
       "id": "clzyeblr4313w13hpqfq2p87s",
       "title": "Accessibilité: l'heure des comptes",
       "abstract": "En juin 2025, la loi européenne sur l’accessibilité sera appliquée à ses États-membres. \n\nCes nouvelles réglementations plus contraignantes sont l’occasion de réfléchir aux opportunités que l’accessibilité peut apporter, autant en termes de marché que sur l’expérience utilisateur. \n\nLe respect de ces précises législations amenant l’amélioration du confort de visite pour tous tout en améliorant l'expérience développeur, il est important aujourd'hui de s'y pencher.\n\nComment convaincre des bienfaits techniques et fonctionnels d’une implémentation complète dans votre projet? \nQuels sont les leviers d’action à votre disposition? \nQuels sont les réels impacts que peut avoir l’accessibilité sur l’expérience développeur et l’expérience utilisateur? \n\nROI, SEO, bonnes pratiques, lois et amendes, vous aurez les justifications et solutions nécessaires pour proposer de faire gagner à l’accessibilité la place qu’elle mérite dans vos process et votre codebase.",
@@ -914,7 +914,7 @@
         "fr"
       ],
       "speakers": [
-        "Thomas_DA ROCHA"
+        "Thomas_DA_ROCHA"
       ],
       "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102t13hp9akxg5en"
@@ -1005,6 +1005,20 @@
       "categories": "clzyaamxk102t13hp9akxg5en"
     },
     {
+      "id": "clzyec9y4317213hpidji5r27",
+      "title": "Les Méta-Lois, vous ne leur échapperez pas !",
+      "abstract": "Elles sont tapies dans la toile de fond de nos entreprises, de nos sociétés, de notre façon de penser, même !\nOn a beau essayer de lutter contre, de les fuir ou de les contourner, elles finissent toujours par nous retomber dessus.\n\nCe sont… Les Méta-lois ! 😱\n\nPlan:\n- Ce qu'on appelle une Méta-loi: la plus connue est la loi de Conway, mais il y en a bien d'autres ! Qu'est-ce qui les caractérise ? Où est la limite à « penser en Meta-Loi » ?\n- Inventaire à la Prévert des différentes Méta-Lois (Le \"Chesterton Fence\" et le raisonnement de second ordre, La Loi de Hyrum qui rappelle que tout comportement d'une API finit par avoir un client qui en dépend, ou encore la Loi de Tesler qui explique qu'on ne fait jamais vraiment disparaître de la complexité, et bien d'autres !), et pour chacune une explication/illustration de pourquoi on n'y échappe pas, en général\n- Remédiation, Déni, Changement de paradigme: Comment s'en sortir et pourquoi ça ne sera pas simple.\n\nVous pensez que votre projet se passe bien ? Regardez bien sous votre IDE en vous couchant ce soir, fermez vos fenêtres et vos dossiers à double tour, car sinon les Méta-loi ne feront qu'une bouchée de vous ! 🎃\n\nUne conférence sous le signe de la bienveillance, de l'humilité, et de l'humour ;)",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Stéphane_Trebel"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102v13hplgi4r5fy"
+    },
+    {
       "id": "clzyec860316u13hpx3shl9ax",
       "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
       "abstract": "Avec l'approche GitOps, on associe souvent la vision du Seigneur des Anneaux : un outil pour les gouverner tous.\nMais qui sera ce seigneur ? Dans le monde de l'OpenSource, deux solutions semblent sortir du lot : ArgoCD et Flux.\n\nAlors avec Paul (pro-Argo) et Matthieu (pro-Flux), venez découvrir les points communs et les différences de ces deux outils et ainsi savoir qui pourrait devenir le Seigneur du GitOps.\n\nOn vous rappellera ce qu'est l'approche GitOps et le pattern \"App for Apps\", puis on se plongera dans un comparatif, illustré par des démos, d'ArgoCD et de Flux.\n\nEnfin, on vous dira s'il y a un Seigneur du GitOps (ou pas 😉)  ou, à minima, dans quel cas il parait plus utile d'utiliser l'un plutôt que l'autre.\n",
@@ -1018,6 +1032,20 @@
       ],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102t13hp9akxg5en"
+    },
+    {
+      "id": "clzyebpw7314o13hp85z4ji0t",
+      "title": "Comment nous avons transformé les Restos du Cœur en Cloud Provider",
+      "abstract": "Cette conférence vous plongera au cœur d'une transformation audacieuse, où les Restos du Cœur ont évolué pour devenir un fournisseur de services Cloud (en interne).\n\n\nÀ travers cette histoire captivante, nous explorerons en détail le projet de construction d'une plateforme de cloud privé reposant sur les technologies robustes d'OpenStack et de Kubernetes, intégrant une prise en compte proactive de l'énergie.\n\n\nNous aborderons les motivations derrière cette initiative avant-gardiste, mettant en lumière les défis uniques rencontrés dans l'adaptation de concepts de cloud computing au sein d'une organisation à but non lucratif.\n\n\nAu cours de la présentation, nous plongerons dans les détails techniques de l'infrastructure, décrivant la conception de la plateforme de cloud privé, son architecture basée sur OpenStack et Kubernetes, ainsi que les choix de configuration spécifiques qui ont été faits pour répondre aux besoins particuliers des Restos du Cœur, tout en mettant en avant l'approche \"Bare Metal forecasting\" pour une gestion dynamique et efficiente de l'énergie.\n\n\nDes retours d'expérience concrets seront partagés, mettant en lumière les succès, les leçons apprises et les perspectives d'avenir pour cette initiative novatrice.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Julien_Briault"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102s13hpkwipk45v"
     },
     {
       "id": "keynoteOuverture1",
@@ -1211,7 +1239,8 @@
       "company": "Max Digital Services",
       "picture": "https://sessionize.com/image/6f61-200o200o2-L5diZYXvaQSLyXAb2aVufH.png",
       "socials": {
-        "github": "github.com/Firnael"
+        "github": "github.com/Firnael",
+        "twitter": "AudrenBrlt"
       }
     },
     {
@@ -1219,7 +1248,7 @@
       "name": "Yuriy Tyukhnin",
       "bio": "Né en Ukraine en 1982, je suis arrivé en France en 2011. \n\nJ'ai appris le français ici en France, grâce à mes collègues, à qui je suis énormément reconnaissant. Et je parle aussi anglais, ukrainien et russe.\n\nAvec 20 ans d'expérience dans le développement de logiciels, j'ai exercé dans divers secteurs, notamment le génie civil, la finance, le marketing par e-mail, l'ad-tech et l'hôtellerie. J'ai plus de six ans d'expérience en management d'équipes techniques ainsi qu'à la gestion de projets et programmes avec une spécialisation récente en **Expérience Développeur (DevEx)**, domaine qui me passionne.\n\nJe suis également secrétaire d'une association culturelle franco-ukrainienne, _La Maison Ukrainienne_ à Saint-Germain-en-Laye en région parisienne. \n\nPassionné par les questions techniques et le bien-être au travail, et fort de mon expérience d’élu au Comité social et économique (CSE), j'ai fondé _DevEx Consulting_ pour accompagner mes clients à s'adapter au paysage technologique en évolution tout en améliorant la satisfaction professionnelle de leurs équipes.",
       "company": "DevEx Consulting",
-      "picture": "https://lh3.googleusercontent.com/a-/ALV-UjW7VheiruDoCgtvs38uZkIT7IfTMmtkVsB9_DV6BuGhnhZ3vmwJQAbG3vL-zT1EVAj8WZAGnQf7y2zQXjDm0RsJiAZEi1s21AaRvhJfRJG7NWLKVSjsoFhFzqgxvgNgC-pT4RBGyL7kVcCcvKSjaPf-JjComjPG1Mtr4-OatE1i8_pLxEKQT809e3mMpNjbMpsLu3qoLBvDV_zDObRcrAmU4CQC1EvDX2WfZPiTYvIkDS8Fz6b6El3comNV_H3KzgfSxpMiuHUGWAiSNoXow8s-S65I1tXbQ2Qepwtnv1f8rZS-5uBymI_sSkpGzh-hhg-oeIW-lpLhHJ0nYfT9TOYrCClGa53M9b3_4kbW0lewH34g5KNd3qddta0qEbmcB8KOQK9UeXp90Rk2CfFUoCjzx9gJfsCtvvHUjqBVfSDUYBx1bec5MFkvRodUjTH90E1mz81kaYSiryMj7lvV_OozxUT9jjYFRq6mGutw_K265roYE6bFnjvwzMRqtPSJtcbgcgDdNDGE-1Ncv1QikAk879UtDcuaC24MTh-Lrbk-JWB4WFzdqpGwUi3knLLsgwdouaxMvwc8S9eOtCNTNIR9n4l3wcDcUPYnY0xRXIwI0cFxfcsXD-VTZ5MV0q8J_j1oPpDmKIM4awLqzHGC2XpoZ1zLN-3hSgUomhG2xeQ0FQlXWvHkYDUj9v4tkLTfREqaz1sSmMEyNqXHnWDGdRrTpkT04kkl8H31ossK-01tHmcYc0caAePqQfzu0axuN8rtDa1CmojpkNZ_HhZZ3YPZKhDxzLiz7G7ne09HFpODgyDbfYF3dz6IYWMGkEN38LXDqLhgKM2cxKwie5-xPCrpktN0__yH9IhJRk3XwrwP_kJxBcjtLGV1SGL0no2XlZB4CuCzk0NRQyER4Tj8IbHpSAyOdFencbic77eqnnJ86JHv0mL998LWSzokhma2KX_IC_cMeRCKQmCxgoO6KE99Cq4=s83-c-mo",
+      "picture": "https://tyukhnin.com/33x4Yte-profile/PXL_20241121_190443441.PORTRAIT.ORIGINAL.1.jpg",
       "socials": {
         "github": null,
         "twitter": null
@@ -1275,17 +1304,6 @@
       }
     },
     {
-      "uid": "Céline_Louvet",
-      "name": "Céline Louvet",
-      "bio": "Développeuse backend passionnée depuis 20 ans, actuellement lead developer chez Shine, j'aime la recherche de stabilité et de qualité d'une application. Je me suis spécialisée sur les architectures cloud.",
-      "company": "Shine",
-      "picture": "https://storage.googleapis.com/celinelouvet-cv.appspot.com/Public/square.png",
-      "socials": {
-        "github": "celinelouvet",
-        "twitter": "celine_louvet"
-      }
-    },
-    {
       "uid": "Arnaud_Langlade",
       "name": "Arnaud Langlade",
       "bio": "Artisan logiciel indépendant à deux casquettes. D'abord, le coaching et la formation : Arnaud adore transmettre ce que j'ai appris ces 15 dernières années. Ensuite, l'architecture logicielle : Arnaud aime comprendre les problèmes métier et trouver les solutions les plus adaptées pour y répondre. Arnaud est également coorganisateur de l'événement Agile Pays Basque.",
@@ -1294,6 +1312,16 @@
       "socials": {
         "github": "arnolanglade",
         "twitter": "arnolanglade"
+      }
+    },
+    {
+      "uid": "Thibault_Lengagne",
+      "name": "Thibault Lengagne",
+      "bio": "Head of Cybersecurity à Padok, Thibault est en charge de la branche spécialisée en sécurité Cloud, en tant que directeur technique. Son but : allier Sécurité et DevOps pour trouver des solutions innovantes qui protègent les systèmes tout en améliorant le quotidien des développeurs.",
+      "company": "Padok",
+      "picture": "https://lh3.googleusercontent.com/a/AAcHTtckxHTFexPtVnSP8lyoOOvwsxmFH03D7ltjAjlhmlAc=s96-c",
+      "socials": {
+        "github": "ThibaultLengagne"
       }
     },
     {
@@ -1318,7 +1346,7 @@
     {
       "uid": "Quentin_JOLY",
       "name": "Quentin JOLY",
-      "bio": "SRE chez Lucca. Le partage est d'après moi une qualité indispensable dans notre domaine. Je partage ma veille sur [mon petit blog](https://une-tasse-de.cafe) ou en duo avec un collègue (@jseguillon) via l'animation d'un live Hebdomadaire sur Twitch dans lequel nous découvrons des produits liés à notre métier (DevOps / Infra).\n\nToujours disponible pour discuter tech autour d'un petit café !",
+      "bio": "Bambin de la tech, je ne cesse d'apprendre chaque jour en portant la casquette de SRE chez Lucca. J'alimente cette passion au quotidien en partageant mes découvertes et mes inspirations sur mon petit blog \"une-tasse-de.cafe\". Je suis toujours disponible pour blablater autour d'un bon café !",
       "company": "Lucca",
       "picture": "https://avatars.githubusercontent.com/u/82603435?v=4",
       "socials": {
@@ -1365,6 +1393,16 @@
       "socials": {
         "github": "alexandre-touret",
         "twitter": "touret_alex"
+      }
+    },
+    {
+      "uid": "Benoît_Masson",
+      "name": "Benoît Masson",
+      "bio": "Tombé dans la potion quand j'étais petit, je m'intéresse depuis toujours à l'informatique : d'abord joueur, bidouilleur et développeur sur calculatrice, puis professionnellement en tant que chercheur et formateur, et finalement de retour au développement web full-stack depuis quelques années.\n\nPassionné par les langages modernes, de bas niveau (Go, Rust) ou fonctionnels (Caml, Elm) permettant par leur conception de limiter les risques d'erreur humaine, je m'implique dans les communautés locales pour partager mes expériences et améliorer mes pratiques.\n\nActuellement développeur dans l'équipe Noms de Domaines chez [OVHcloud](https://www.ovhcloud.com/fr/).",
+      "company": "OVHcloud",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocJGVc7RaRuFUo-M3yNT7Vqkh5fHiKUHoT2tcUFE6iq6ov14kHtF2fpmH_iztp2ep6_6cpi-IXYcMm84Ua7lDW5H8kY1bQYi=s288-c-no",
+      "socials": {
+        "github": "benoitmasson"
       }
     },
     {
@@ -1576,6 +1614,17 @@
       }
     },
     {
+      "uid": "Éric_Daspet",
+      "name": "Éric Daspet",
+      "bio": "Après des années comme développeur web, j'ai un peu changé de métier pour faire de la direction technique et du management. Non ce n'est pas sale, juste un autre rôle dans la même direction.\n\nPar le passé j'ai eu l'occasion de fonder les conférences Paris-Web, co-écrire le livre « PHP 5 avancé » (désormais PHP 7 avancé), co-fonder la plateforme de livres numériques Vivlio et diriger les équipes de La Ruche Qui Dit Oui puis de Cozy Cloud.\n\nJusque fin 2024 j'ai accompagné les équipes d'Indy.fr comme VP Engineering. Je parle beaucoup management, organisation collective, responsabilité et éthique, sécurité, et architecture des applications web. \n\n[Linkedin](https://www.linkedin.com/in/ericdaspet/) - [Accompagnement de directeurs techniques](https://e3d5.fr/)",
+      "company": "Indy.fr",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocI_wAZZe0qOHs-vHpxJu1e8Bbfb7rjCTPGu1cIpZtBIGv-q9svs=s96-c",
+      "socials": {
+        "github": "edas",
+        "twitter": "edasfr"
+      }
+    },
+    {
       "uid": "Benjamin_Legrand",
       "name": "Benjamin Legrand",
       "bio": "Tombé dans la marmite du web étant petit en regardant la source des pages html, c'est tout naturellement que Benjamin fit depuis 2008 du développement web son métier.\n\nD'abord full-stack, puis en fait full fronteux, parfois défricheur de frameworks javascript bizarres, amoureux du Typescript, fanboy d'Angular. touche à tout musicien. \n\nIntervenu sur plein de projets variés, de l'e-commerce à l'industrie, en passant par les telecoms . \n\nAujourd'hui Tech Lead front / Architecte Logiciel chez Onepoint",
@@ -1639,14 +1688,6 @@
       }
     },
     {
-      "uid": "Baptiste_Ingoglia",
-      "name": "Baptiste Ingoglia",
-      "bio": null,
-      "company": "onepoint",
-      "picture": "https://avatars.githubusercontent.com/u/35631246?v=4",
-      "socials": {}
-    },
-    {
       "uid": "Pierre_LECLAIRE",
       "name": "Pierre LECLAIRE",
       "bio": "Passionné d'accessibilité depuis plusieurs années suite à un DevFest qui avait mis le sujet au cœur de sa programmation, j'ai décidé d'en faire mon sujet d'expertise professionnelle. \nDepuis j'ai écris et je donne la principale formation sur le sujet dans mon actuelle entreprise, SFEIR. J'ai également eu l'occasion de donner plusieurs talks dans mon agence sur ce sujet: un talk d'introduction en interne ainsi qu'un retour d'expérience ouvert à toutes et tous. \nJ'ai aujourd'hui à cœur de faire connaitre et de partager ce sujet, mais aussi plus globalement celui de la responsabilité numérique, faisant partie d'un cercle Numérique Responsable avec d'autres collègues engagés sur le sujet.",
@@ -1707,7 +1748,7 @@
     {
       "uid": "geoffrey_graveaud",
       "name": "geoffrey graveaud",
-      "bio": "I have been working in the field of computer science for over 15 years. \n\nI am interested in all areas:  DevSecOps, Security,  Agility, Method, Product  etc…\n\nI gained extensive experience because I had the opportunity to work for thirty different organizations. \n\nIn my last experiences, I was CTO, Coach, Head of a consulting department, speaker, trainer, facilitator and event organizer.\n\nI have been a speaker for 2 years (Voxxed Days, DevOxx, DevFest Agile Tour, MixIt, JugSummerCamp, Sunny Tech, BDX.io, etc.) \n\nCurrently, I am passionate about speaking coaching. In 1 year, I have already accompanied several 15 people especially for the preparation of TEDX, for the contest of Miss Aquitaine and for the springboards of speakers of Craft Records.\n\nThis year, I accompagny the [Craft Records association](https://www.linkedin.com/company/craftsrecords/) and [Women In Tech Bordeaux](https://www.meetup.com/fr-FR/women-in-tech-bordeaux/).  Since May, I challenge myself to coach a team of coaches for speaking for the \"Tremplin des speakers Bordeaux\"",
+      "bio": "I have been working in the field of computer science for over 15 years. \n\nI am interested in all areas:  DevSecOps, Security,  Agility, Method, Product  etc…\n\nI gained extensive experience because I had the opportunity to work for thirty different organizations. \n\nIn my last experiences, I was CTO, Coach, Head of a consulting department, speaker, trainer, facilitator and event organizer.\n\nI have been a speaker for 2 years (Voxxed Days, DevOxx, DevFest Agile Tour, MixIt, JugSummerCamp, Sunny Tech, BDX.io, etc.) \n\nCurrently, I am passionate about speaking coaching. In 1 year and half, I have already accompanied several 32 people especially for the preparation of TEDX, School of Product, for the contest of Miss Aquitaine, Opening Keynotes and for the springboards of speakers of Craft Records.\n\nThis year, I accompagny the [Craft Records association](https://www.linkedin.com/company/craftsrecords/) and [Women In Tech Bordeaux](https://www.meetup.com/fr-FR/women-in-tech-bordeaux/).  Since May, I challenge myself to coach a team of coaches for speaking for the \"Tremplin des speakers Bordeaux\"",
       "company": "N/A",
       "picture": "https://lh3.googleusercontent.com/a/ACg8ocLQ1diNw19SU_Jo-n3NGOqOnb4Zj2qnBAL0RMclwfb1GDuXszUl=s96-c",
       "socials": {
@@ -1740,9 +1781,9 @@
     {
       "uid": "Manon_Carbonnel",
       "name": "Manon Carbonnel",
-      "bio": "Je suis développeuse web (PHP, Python, JS), experte en intégration web (HTML CSS) et tests d'UI, et facilitatrice Agile chez [Shodo Nantes](https://shodo.io/).\nJ'aime apprendre le software craft et les tests, et je crois énormément aux cultures Agile et DevOps.\n\n🤝 J'adore travailler en mob programming et je facilite des sessions de découverte pour le meetup [Mob Programming Francophone](https://www.meetup.com/paris-mob-programming/)\n\n🌊 Je suis passionnée par le HTML/CSS et j'ai créé [@Csscade](https://csscade.fr/), une communauté française sur l'intégration web.\n\n✊ Je participe fièrement à un mouvement intersectionnel dans la tech pour promouvoir et aider les femmes et les personnes LGBT+ dans notre domaine. Je suis membre de [Duchess France](https://www.duchess-france.fr/), animatrice de [La Fresque Du Sexisme](https://fresque-du-sexisme.org/), mentor/marraine de devs junior, membre du CoPil d'organisation de la conférence [Who Run The Tech](https://whorunthetech.com/).",
-      "company": "Shodo Nantes",
-      "picture": "https://lh3.googleusercontent.com/a/ALm5wu1Z-vVHKjHIAXzn9bmOvFFDsuSvGZvVI4jAbiHnzg=s96-c",
+      "bio": "Je suis développeuse web (PHP, Python, JS), experte en intégration web et facilitatrice Agile chez [Shodo](https://shodo.io/).\nJ'adore travailler en mob programming et je facilite des sessions de découverte pour [@mobprogfr](https://www.linkedin.com/company/mob-programming-francophone).\nJe suis passionnée par le HTML/CSS et j'ai créé [@Csscade](https://csscade.fr/), une communauté française sur l'intégration web.\nJ'aime apprendre le software craft et les tests, et je crois énormément aux cultures Agile et DevOps.",
+      "company": "Shodo",
+      "picture": "https://cache.sessionize.com/image/2bd4-400o400o2-w4Npq2p6gdvY1mhe1kjG2e.jpg",
       "socials": {
         "github": "manoncarbonnel",
         "twitter": "manoncarbonnel_"
@@ -1751,7 +1792,7 @@
     {
       "uid": "Cyril_Hue",
       "name": "Cyril Hue",
-      "bio": "Software Ingeneer chez Société Générale. \nOrganisateur Meetup Design Systems Nantes & React Nantes.\nParticipe régulièrement aux meetups nantais que ça soit en spectateur mais aussi en speaker.\nDe nombreux projets perso au compteur sur github !\n\nhttps://horsty80.github.io/",
+      "bio": "Software Ingeneer chez Société Générale. \nOrganisateur Meetup Design Systems Nantes & React Nantes.\n\nhttps://horsty80.github.io/",
       "company": "Société Générale",
       "picture": "https://avatars.githubusercontent.com/u/15615569?v=4",
       "socials": {
@@ -1825,6 +1866,17 @@
       }
     },
     {
+      "uid": "Stéphane_Trebel",
+      "name": "Stéphane Trebel",
+      "bio": "Je bourlingue depuis une vingtaine d'années dans le monde du numérique, entre développement web full-stack et architecture de solutions diverses et variées\n\nMes intérêts:\n- Le code, quel que soit le langage, avec quand même une grosse préférence pour la Programmation Fonctionnelle et la Qualité Logicielle\n- L'automatisation, quelle qu'elle soit, en particulier des tests, et donc l'Intégration Continue\n- L'itération, et donc le DevOps\n- Les memes, partout, toujours, tout le temps",
+      "company": "WeScale",
+      "picture": "https://lh3.googleusercontent.com/a/AEdFTp4Dupbk9-h3ocILxt_LbrNX1DHLxVwJiANI0hqN=s96-c",
+      "socials": {
+        "github": "StephaneTrebel",
+        "twitter": "stephanetrebel"
+      }
+    },
+    {
       "uid": "Matthieu_Vincent",
       "name": "Matthieu Vincent",
       "bio": "* All my contributions are available on https://me.yodamad.fr\n* TechAdvocate @ Sopra Steria \n* Platform Engineering Leader @ Sopra Steria\n* Co-Founder of Volcamp IT Conference @ Clermont-Fd (https://volcamp.io)\n* Speaker since 2022 @ Devoxx, Snowcamp, Breizhcamp, ...\n* GitLab Hero\n* R2devops Ambassador\n* Open-source owner of svn2git tool (https://github.com/yodamad/svn2git) & gitlab-emoji (https://github.com/yodamad/gitlab-emoji) & heimdall (https://github.com/yodamad/heimdall)",
@@ -1842,6 +1894,17 @@
       "company": "SOPRA STERIA",
       "picture": "https://lh3.googleusercontent.com/a/ACg8ocJW9rh6TVR97VkbH9StbkmHgSIiV0NIPLRVXBBygIfK5vPMU2OTpqDNxZtS60jJVU0-8obFEQ3jxzihUhlMY_5XFYc=s360-c-no",
       "socials": {}
+    },
+    {
+      "uid": "Julien_Briault",
+      "name": "Julien Briault",
+      "bio": "Ingénieur Réseau / SRE chez Deezer la journée, et manager d’infrastructure bénévole aux Restos du Cœur le soir, je suis un peu le Batman de l’IT : un clavier pour le boulot, un autre pour les Restos.\n\nPassionné par l’informatique, j’ai décidé d'ajouter un peu d’humanité sur un métier souvent déconnecté de la réalité … ! À côté de ça, je suis DJ et producteur de musique – donc si vous me croisez en festival, je ne déploie pas un serveur, je mixe.",
+      "company": "Deezer & Restos du Coeur",
+      "picture": "https://lh3.googleusercontent.com/a-/AOh14GiRTQQrJ8Zy4T5n-ib23gO946fUeB486fwPFZmY=s96-c",
+      "socials": {
+        "github": "juhnny5",
+        "twitter": "ju_hnny5"
+      }
     }
   ],
   "categories": [

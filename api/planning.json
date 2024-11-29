@@ -27,6 +27,15 @@
     "day": 1
   },
   {
+    "id": "cm05d2djy00esoh1upshfx4pa",
+    "title": "« Pourquoi une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)",
+    "categories": "clzyaamxk102u13hpzlab3f0w",
+    "formats": "clzyaamxk102x13hp665tzg4v",
+    "rooms": [1],
+    "times": [19],
+    "day": 1
+  },
+  {
     "id": "cm2xkwfqt005h13dzqmtq2jxe",
     "title": "Retour vers le futur du web : voyage au pays des rendus évolutifs",
     "categories": "clzyaamxk102q13hp7nja505n",
@@ -78,16 +87,16 @@
     "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [1],
     "times": [15],
-    "day": 2
+    "day": 1
   },
   {
     "id": "cm2u9hcnt00onty2a0bvbr7u5",
     "title": "Vol au dessus d’un nid de vulnérabilités",
     "categories": "clzyaamxk102t13hp9akxg5en",
     "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [3],
-    "times": [3],
-    "day": 1
+    "rooms": [4],
+    "times": [5],
+    "day": 2
   },
   {
     "id": "cm2tgf2tn00mpty2ajhsz55yr",
@@ -180,21 +189,21 @@
     "day": 1
   },
   {
-    "id": "cm2myvt980115iupxx2inmwwe",
-    "title": "Les mystères des permissions",
-    "categories": "clzyaamxk102s13hpkwipk45v",
+    "id": "clzyec860316u13hpx3shl9ax",
+    "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
+    "categories": "clzyaamxk102t13hp9akxg5en",
     "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [1],
     "times": [13],
     "day": 1
   },
   {
-    "id": "cm2myswah010uiupxh9tlkn8o",
-    "title": "Highway to fail, ou l'histoire d'un échec prévisible",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
+    "id": "cm2ir7a6y007ja0zn28ql8hns",
+    "title": "Le cauchemar des attaquants : une infrastructure sans secret",
+    "categories": "clzyaamxk102q13hp7nja505n",
     "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [1],
-    "times": [19],
+    "times": [17],
     "day": 1
   },
   {
@@ -330,7 +339,7 @@
     "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [1],
     "times": [15],
-    "day": 1
+    "day": 2
   },
   {
     "id": "cm1i0auyi00lu6veiq1pkapjx",
@@ -418,9 +427,9 @@
     "title": "Les outils DevOps au service de la formation DevOps",
     "categories": "clzyaamxk102s13hpkwipk45v",
     "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [4],
+    "rooms": [3],
     "times": [9],
-    "day": 2
+    "day": 1
   },
   {
     "id": "cm0vg2pnh0357odc9uel900qf",
@@ -445,9 +454,9 @@
     "title": "L’IA en Afrique: Comment Rebondir?",
     "categories": "clzyaamxk102u13hpzlab3f0w",
     "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [3],
+    "rooms": [4],
     "times": [9],
-    "day": 1
+    "day": 2
   },
   {
     "id": "cm00sa3ru001coh1u5uiypqr4",
@@ -544,9 +553,9 @@
     "title": "CQRS / ES : nos heuristiques après plusieurs années de production",
     "categories": "clzyaamxk102s13hpkwipk45v",
     "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [1],
-    "times": [5],
-    "day": 2
+    "rooms": [4],
+    "times": [3],
+    "day": 1
   },
   {
     "id": "clzyebc1i312013hpqs60agw7",
@@ -585,6 +594,15 @@
     "day": 2
   },
   {
+    "id": "cm21z8ot704td1139n648womz",
+    "title": "G.I. Go - Générateurs et itérateurs en Go",
+    "categories": "clzyaamxk102q13hp7nja505n",
+    "formats": "clzyaamxk102w13hpk1e1095a",
+    "rooms": [4],
+    "times": [7],
+    "day": 2
+  },
+  {
     "id": "clzyeb6z8311113hppljm7k4c",
     "title": "Redécouvrir la coopération : Atelier de Mob Programming",
     "categories": "clzyaamxk102t13hp9akxg5en",
@@ -607,9 +625,9 @@
     "title": "L'Architecture Hexagonale par la pratique, le live coding qui rendra vos applications plus pérennes",
     "categories": "clzyaamxk102s13hpkwipk45v",
     "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [4],
-    "times": [3],
-    "day": 1
+    "rooms": [1],
+    "times": [5],
+    "day": 2
   },
   {
     "id": "clzyebuz6315g13hppah52bp5",
@@ -634,18 +652,10 @@
     "title": "DevLake : Un voyage au pays du DORA",
     "categories": "clzyaamxk102t13hp9akxg5en",
     "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [4],
-    "times": [5],
-    "day": 2
-  },
-  {
-    "id": "clzyec860316u13hpx3shl9ax",
-    "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [1],
-    "times": [17],
+    "rooms": [3],
+    "times": [3],
     "day": 1
+
   },
   {
     "id": "keynoteOuverture1",
