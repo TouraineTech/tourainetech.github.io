@@ -56,6 +56,9 @@ module.exports = {
       {rel: 'mask-icon', href: '/safari-pinned-tab.svg?v=WGoYma5yEm', color: '#333333'},
       {rel: 'shortcut icon', href: '/favicon.ico?v=WGoYma5yEm'}
 
+    ],
+    script: [
+      { defer:true,  src: 'https://cloud.umami.is/script.js', 'data-website-id': '61e0351a-e30c-43c4-8464-3a673ece80f7', 'data-domains': 'touraine.tech' }
     ]
   },
 
