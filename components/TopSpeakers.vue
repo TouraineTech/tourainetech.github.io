@@ -1,9 +1,9 @@
 <template>
   <section id="speakers" class="container--white">
     <div class="container--fix container--center">
-      <h2>Nos talentueux·euses speaker·euse·s</h2>
+      <h2>Nos talentueux·euses speakers</h2>
       <div class="speaker--grid">
-        <nuxt-link :to="`/speaker/${speaker.displayName}`" v-for="speaker in speakers" :key="speaker.displayName">
+        <nuxt-link :to="`/speaker/${speaker.uid}`" v-for="speaker in speakers" :key="speaker.uid">
           <SpeakerBloc :speaker="speaker"></SpeakerBloc>
         </nuxt-link>
       </div>

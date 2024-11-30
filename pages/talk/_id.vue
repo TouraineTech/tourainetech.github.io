@@ -3,7 +3,7 @@
     <h1>{{ talk.title }}</h1>
     <div class="talk-speakers--grid">
       <nuxt-link
-        :to="`/speaker/${speaker.displayName}`"
+        :to="`/speaker/${speaker.uid}`"
         v-for="speaker in speakers"
         :key="speaker.uid"
       >
@@ -62,16 +62,6 @@ export default {
   validate({ store, params }) {
     return store.getters.talks.filter(({ id }) => id === params.id).length > 0;
   },
-  computed: {
-    abstractHTML() {
-      return converter.makeHtml(this.talk.abstract);
-    },
-    speakers() {
-      return this.$store.getters.speakers.filter(({uid}) =>
-        this.talk.speakers.includes(uid)
-      );
-    }
-  },
   asyncData({ store, params }) {
     const times = store.getters.times
     const rooms = store.getters.rooms
@@ -112,6 +102,16 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    abstractHTML() {
+      return converter.makeHtml(this.talk.abstract);
+    },
+    speakers() {
+      return this.$store.getters.speakers.filter(({uid}) =>
+        this.talk.speakers.includes(uid)
+      );
+    }
   }
 };
 </script>

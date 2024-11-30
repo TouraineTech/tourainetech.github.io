@@ -29,23 +29,24 @@ export default {
   },
   mounted() {
     this.$smoothScroll.polyfill();
-    new this.SmartBanner({
-          daysHidden: 15,
-          daysReminder: 90,
-          appStoreLanguage: 'fr',
-          title: 'Touraine Tech',
-          author: 'Chapito',
-          button: 'Ouvrir',
-          store: {
-              ios: 'Sur l\'App Store',
-              android: 'Sur Google Play'
-          },
-          price: {
-              ios: 'Gratuit',
-              android: 'Gratuit'
-          }
-    });
-  }
+    // TODO uncomment when app is ready
+    // new this.SmartBanner({
+    //       daysHidden: 15,
+    //       daysReminder: 90,
+    //       appStoreLanguage: 'fr',
+    //       title: 'Touraine Tech',
+    //       author: 'Chapito',
+    //       button: 'Ouvrir',
+    //       store: {
+    //           ios: 'Sur l\'App Store',
+    //           android: 'Sur Google Play'
+    //       },
+    //       price: {
+    //           ios: 'Gratuit',
+    //           android: 'Gratuit'
+    //       }
+    // });
+  },
 };
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <div class="speaker--bloc">
-    <div v-if="speaker.photoURL" class="container--image">
-      <img :src="require(`@/assets/img/speakers/${speaker.uid}.png`)" :alt="speaker.displayName">
+    <div v-if="speaker.picture" class="container--image">
+      <img :src="require(`@/assets/img/speakers/${speaker.uid}.png`)" :alt="speaker.name">
     </div>
-    <h3>{{ speaker.displayName }}</h3>
+    <h3>{{ speaker.name }}</h3>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const eventId = 'J2VpXPXWngD69u0nrA3R';
+const eventId = 'touraine-tech-2025';
 
 const {API_KEY: apiKey, WRITE_RAW_FILE: createRawConferenceHallDataFile} = process.env;
 
@@ -28,12 +28,13 @@ function writeConferenceHallDataFile(talks, speakers, categories, formats) {
 }
 
 async function retrieveData(apiKey) {
-  const response = await fetch(`https://conference-hall.io/api/v1/event/${eventId}?key=${apiKey}`);
-  return await response.json();
+  return JSON.parse(fs.readFileSync(path.join(__dirname, '../api/conferenceHallRawDatas.json'), { encoding: 'utf8', flag: 'r' }));
+  // const response = await fetch(`https://conference-hall.io/api/v1/event/${eventId}?key=${apiKey}`);
+  // return await response.json();
 }
 
 function talksFilter(...states) {
-  return ({id, state}) => (states.includes(state));
+  return ({id, confirmationStatus}) => (states.includes(confirmationStatus));
 }
 
 
@@ -41,37 +42,42 @@ function keynoteTalkFilter() {
   return ({id}) => id !== 'w96GMrchHy0os6sN5LRD' && id !== '5NCjyjA6K1EsbxtW2Mn6';
 }
 
-function getTalks(conferenceHallDatas) {
-  console.log(`raw talks count : ${conferenceHallDatas.talks.length}`);
+function getTalks(conferenceHallDatas, speakers) {
+  console.log(`raw talks count : ${conferenceHallDatas.length}`);
   const talksNeedToBeForceConfirmed = []
   const talksNeedToBeForceRefused = []
-  const talks = conferenceHallDatas.talks.map(t => {
+  const talks = conferenceHallDatas.map(t => {
     if(talksNeedToBeForceConfirmed.includes(t.id)) {
-      t.state = 'confirmed';
+      t.confirmationStatus = 'confirmed';
     }
     if(talksNeedToBeForceRefused.includes(t.id)) {
-      t.state = 'refused'
+      t.confirmationStatus = 'refused'
     }
     return t
   })
   const confirmedTalks = talks
     .filter(talksFilter('confirmed'));
   const confirmedTalksSpeakersId = talks
-    .filter(talksFilter('confirmed'))
+    // .filter(talksFilter('confirmed'))
     .map(({speakers}) => {
       return speakers
     })
     .reduce((a, b) => a.concat(b), []);
 
-  console.log(`raw speaker count : ${conferenceHallDatas.speakers.length}`);
+  console.log(`raw speaker count : ${speakers.length}`);
   console.log(`confirmed speaker count : ${confirmedTalksSpeakersId.length}`);
 
   const allTalks = talks
     .map((
-      {organizersThread, rating, loves, hates, ...datas}) => {
-      return {...datas};
+      {organizersThread, rating, reviews, references, deliberationStatus, confirmationStatus, level, loves, hates, speakers, formats, categories, ...datas}) => {
+      return {
+        ...datas,
+        speakers: speakers.map(({name}) => name.replace(" ", "_")),
+        formats: formats.flatMap(({id}) => id)[0],
+        categories: categories.flatMap(({id}) => id)[0]
+      };
     })
-    .filter(talksFilter('confirmed','accepted'))
+    // .filter(talksFilter('confirmed','accepted'))
     .filter(keynoteTalkFilter());
 
   allTalks.push(
@@ -111,7 +117,7 @@ function getSpeakers(conferenceHallDatas, talks) {
     .reduce((a, b) => a.concat(b), []);
 
   const speakers = conferenceHallDatas.speakers
-    .map(({email, phone, address, comments, state, ...datas}) => {
+    .map(({email, phone, address, comments, state, references, ...datas}) => {
       return {...datas}
     })
     .filter(({uid}) => confirmedSpeakersId.includes(uid));
@@ -121,8 +127,8 @@ function getSpeakers(conferenceHallDatas, talks) {
 }
 
 function doSomeCorrection(rawTalks, rawSpeakers) {
-  const talks = [...rawTalks];
-  const speakers = [...rawSpeakers];
+  const talks = rawTalks;
+  const speakers = rawSpeakers.map(({name, ...speaker}) => ({uid: name.replaceAll(" ", "_"),name, ...speaker}));
 
   return {talks, speakers};
 }
@@ -144,17 +150,35 @@ async function doWork() {
     );
   }
 
-  const {
-    categories,
-    formats
-  } = conferenceHallDatas;
-  const formattedFormats = formats.map(({id, name}) => ({id, name: name.replace("Débutant·e ", "")}))
-  const {talks: rawTalks} = getTalks(conferenceHallDatas);
-  const rawSpeakers = getSpeakers(conferenceHallDatas, rawTalks);
+  const categoriesWithDuplicates = conferenceHallDatas.flatMap(({categories}) => categories);
+  const categories = Array.from(new Set(categoriesWithDuplicates.map(a => a.id)))
+    .map(id => {
+      return categoriesWithDuplicates.find(a => a.id === id)
+    });
 
-  const {talks, speakers} = doSomeCorrection(rawTalks, rawSpeakers);
+  const formatsWithDuplicates = conferenceHallDatas.flatMap(({formats}) => formats);
+  const formats = Array.from(new Set(formatsWithDuplicates.map(a => a.id)))
+    .map(id => {
+      return formatsWithDuplicates.find(a => a.id === id)
+    });
 
-  writeConferenceHallDataFile(talks, speakers, categories, formattedFormats);
+  const speakersWithDuplicates = conferenceHallDatas.flatMap(({speakers}) => speakers);
+  const speakerList = Array.from(new Set(speakersWithDuplicates.map(a => a.name)))
+    .map(name => {
+      return speakersWithDuplicates.find(a => a.name === name)
+    }).map(({email, phone, address, comments, state, location, references, ...datas}) => {
+      return {...datas}
+    });
+
+  // const formattedFormats = formats.map(({id, name}) => ({id, name: name.replace("Débutant·e ", "")}))
+
+  const {talks: rawTalks} = getTalks(conferenceHallDatas, speakerList);
+
+  console.log({rawTalks})
+  // const rawSpeakers = getSpeakers(conferenceHallDatas, rawTalks);
+  //
+  const {talks, speakers} = doSomeCorrection(rawTalks, speakerList);
+  writeConferenceHallDataFile(talks, speakers, categories, formats);
 
 }
 

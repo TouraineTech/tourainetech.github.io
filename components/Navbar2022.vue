@@ -40,13 +40,14 @@ export default {
     if(configuration.displaySponsors) {
       sections.push({ name: "Sponsors", anchor: "#sponsors", mobile: true })
     }
+    if(configuration.isCfpOpened) {
       sections.push({ name: "Proposer un talk", anchor: "#cfp", mobile: true })
-
+    }
     if(configuration.isRegisterOpen) {
       sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
     }
     if(configuration.isScheduleOnline) {
-      sections.push({ name: "Nos speaker·euse·s", anchor: "#speakers", mobile: false })
+      sections.push({ name: "Nos speakers", anchor: "#speakers", mobile: false })
       sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
     }
     if(configuration.isPhotoOnline) {
