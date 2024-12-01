@@ -3,7 +3,7 @@
     <h3 class="type--title">
       <span>{{ type }}</span>
     </h3>
-    <div class="sponsors--container">
+    <div class="sponsors--container" :class="`sponsor-${type}`">
       <nuxt-link
         v-for="sponsor in sponsors"
         :key="sponsor.id"
@@ -34,6 +34,21 @@
 <style lang="scss">
   @import "./../assets/scss/variables";
 
+  .sponsor-Gold {
+    --img-max-width: 300px;
+    --img-max-height: 300px;
+  }
+
+  .sponsor-Silver {
+    --img-max-width: 200px;
+    --img-max-height: 200px;
+  }
+
+  .sponsor-Bronze {
+    --img-max-width: 150px;
+    --img-max-height: 150px;
+  }
+
   h3.type--title {
     font-weight: 300;
     position: relative;
@@ -63,14 +78,20 @@
     justify-content: center;
     align-items: center;
 
-    & > a{
+    & > a {
       margin: 1rem;
 
       img {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: var(--img-max-width, 150px);
+        max-height: var(--img-max-height, 150px);
       }
     }
+
+
+
   }
+
+
+
 
 </style>
