@@ -1116,51 +1116,6 @@
     }
   },
   {
-    "id": "cm2bls2ld0012tfyihz848162",
-    "title": "HTMX 2.0 & Web Components : un combo parfait pour le développement web",
-    "abstract": "Dans ce retour d'expérience, nous explorerons HTMX 2.0, la dernière version de HTMX, conçue pour améliorer et simplifier le développement frontend. Nous examinerons les nouvelles fonctionnalités de HTMX 2.0 à travers des extraits de code illustrant ses capacités.\n\nEnsuite, nous aborderons les Web Components, des éléments HTML réutilisables et encapsulés, et nous vous présenterons la bibliothèque Lit. En démontrant un élément simple créé avec Lit, nous montrerons comment cette bibliothèque facilite la création de composants web dynamiques et complexes.\n\nLe cœur de la session sera consacré à l'intégration de HTMX 2.0 avec les Web Components. Nous démontrerons comment l'association de HTMX avec Lit améliore la fonctionnalité et l'efficacité des deux outils, simplifiant ainsi la construction d'applications web robustes et modulaires. À travers des exemples pratiques, vous découvrirez comment HTMX 2.0 et Lit travaillent ensemble pour offrir une solution optimale pour le développement frontend moderne.",
-    "deliberationStatus": "ACCEPTED",
-    "confirmationStatus": "PENDING",
-    "level": "BEGINNER",
-    "references": "C'est un nouveau talk, pour le moment je l'ai donné au FinistDevs à Brest.\n\nJ'utilise le combo HTMX / Web Components depuis un bon moment déjà, et la sortie de HTMX 2.0 a été une vraie bouffé d'air, en gommant plein de petits soucis que j'avais au quotidien. HTMX et Lit sont maintenant assez murs pour être une superbe solution, légère et efficace (et respectueuse des standards web !) pour le dev web, et j'ai hâte de la partager et la faire connaître avec d'autres devs !",
-    "formats": [
-      {
-        "id": "clzyaamxk102x13hp665tzg4v",
-        "name": "Conférence (50min)",
-        "description": null
-      }
-    ],
-    "categories": [
-      {
-        "id": "clzyaamxk102p13hpw8tzwls8",
-        "name": "Front web",
-        "description": null
-      }
-    ],
-    "tags": [],
-    "languages": [],
-    "speakers": [
-      {
-        "name": "Horacio Gonzalez (LostInBrittany)",
-        "bio": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une vingtaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\n\nAprès quelques années comme Directeur de Developer Relations chez [OVHcloud](https://twitter.com/OVHcloud), Horacio travaille actuellement comme Head of DevRel chez [Clever Cloud](https://www.clever-cloud.com/). Il est cofondateur du  [@FinistDevs](https://twitter.com/finistdevs/), et des [@RdvSpeakers](https://twitter.com/RdvSpeakers).\n\nPassionné par le développement web et tout ce qui gravite autour des composants web et des standards web, Horacio aime aussi discuter de Kubernetes, AI et le cloud en général. Il est [Google Developer Expert (GDE)](https://developers.google.com/experts/people/horacio-gonzalez)  en Web Technologies and Flutter.",
-        "company": "Clever Cloud",
-        "references": "I have been several times speaker at Devoxx Belgium, Devoxx France, Kubecon Europe, Codemotion Rome, Codemotion Madrid and Codemotion Amsterdam. I have done a keynote at MobiConf in Poland, and been speaker at many regional conferences: DevFest Nantes, DevFest Toulouse, DevFest Paris, Mix It, Sunny Tech, Riviera Dev... And of course lots and lots of meetups, JUGs and GDGs, because those are my roots. \n\nYou can see more about my speaker activity (with links to slides and videos) at https://noti.st/lostinbrittany",
-        "picture": "https://lh4.googleusercontent.com/-6krIgoWnkGk/AAAAAAAAAAI/AAAAAAABR4o/EJH0Fh-m16k/photo.jpg",
-        "location": "Brest, France",
-        "email": "horacio.gonzalez@gmail.com",
-        "socials": {
-          "github": "LostInBrittany",
-          "twitter": "LostInBrittany"
-        }
-      }
-    ],
-    "reviews": {
-      "average": 4.333333333333333,
-      "positives": 1,
-      "negatives": 0
-    }
-  },
-  {
     "id": "cm2bi8b4f00thxalm8nrlynuu",
     "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
     "abstract": "Lorsque l'on crée un cluster Kubernetes, on se pose **toujours** les mêmes questions : \n\n- Où j'installe mes nœuds ? Ai-je des dépendances liées à la plateforme utilisée ? *(ex : VM, Kubernetes managés...)*\n- Comment bootstrap mon cluster *(kOPS ? KubeSpray ? Kubeadm ?)* ?\n- Comment gérer proprement les mises à jour de mes nœuds ?\n- En combien de temps puis-je recréer mon cluster *(PRA)* ?\n- Comment mettre à jour mon cluster Kubernetes *sans* me prendre la tête ?\n\nDe nombreuses questions dont la réponse est toujours \"*ça dépend*\" 🫠​.\n\nL'objectif de ce talk est alors de vous montrer comment nous avons réussi à répondre à la majorité de ces questions avec un seul et même outil : [Talos](https://www.talos.dev/). C'est une distribution minimaliste et immuable dédiée à la création de nœuds Kubernetes qui écourtera vos matinées déploiements ⌛!\n\nQue vous soyez développeur, SRE, ou juste curieux : vous ne souffrirez plus de l'installation de vos clusters, qu'ils soient en dev, ou en production 🤩\n\nSpoiler : votre CISO va adorer.",
@@ -3605,6 +3560,53 @@
     "reviews": {
       "average": 4.875,
       "positives": 3,
+      "negatives": 0
+    }
+  },
+  {
+    "id": "cm2myp4f1010kiupx0qd7dqkt",
+    "title": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible",
+    "abstract": "S’ils sont accessibles, les lecteurs multimédia permettant de lire du contenu vidéo sont de véritables atouts pour prendre en compte les besoins des personnes handicapées sur le web. Le problème, c’est que l’accessibilité d’un lecteur multimédia, mais aussi l'accessibilité du contenu multimédia lui-même, peuvent être très problématiques à réaliser dans un projet. C’est pourtant essentiel pour n’exclure personne. Alors, par où commencer ? \n\nDécouvrez comment satisfaire aux besoins des personnes handicapées plus simplement que vous ne l’auriez pensé, grâce à des démonstrations en direct de différents lecteurs multimédia, réalisées à l’aide de lecteurs d’écrans. \n\nVous ferez notamment connaissance avec des fonctionnalités d’accessibilité souvent méconnues comme les sous-titres vocalisés, l’audiodescription et les fonctionnalités « text-to-speech ». \n\nVous vous familiariserez aussi avec une sélection de lecteurs multimédia qui offrent des options permettant d’implémenter l’accessibilité avec plus de facilité.",
+    "deliberationStatus": "ACCEPTED",
+    "confirmationStatus": "CONFIRMED",
+    "level": "INTERMEDIATE",
+    "references": null,
+    "formats": [
+      {
+        "id": "clzyaamxk102x13hp665tzg4v",
+        "name": "Conférence (50min)",
+        "description": null
+      }
+    ],
+    "categories": [
+      {
+        "id": "clzyaamxk102p13hpw8tzwls8",
+        "name": "Front web",
+        "description": null
+      }
+    ],
+    "tags": [],
+    "languages": [
+      "fr"
+    ],
+    "speakers": [
+      {
+        "name": "Audrey Maniez",
+        "bio": "Audrey Maniez est experte senior en accessibilité numérique, formatrice, directrice pédagogique et co-gérante d’[Access42](https://access42.net/). Audrey a une maîtrise poussée des différentes normes d’accessibilité numérique (WCAG, ATAG). Elle réalise des audits d’accessibilité et accompagne des clients institutionnels et privés. Elle prend aussi part à travaux normatifs d’envergure, comme la rédaction ou co-rédaction de référentiels techniques (RGAA 3, RAAM 1, RAWeb) ou, plus récemment, la traduction des WCAG 2.1 et des WCAG 2.2 en français pour le W3C.",
+        "company": "Access42",
+        "references": "- 2024 : table ronde « Quel avenir pour le Référentiel Général d’Amélioration de l’Accessibilité ? », A11y Paris \n- 2023 : participation au symposium « Evaluating Accessibility: Meeting Key Challenges Online Research » organisé par la WAI (Web Accessibility Initiative) du W3C \n- 2023 : atelier « L’accessibilité numérique pour une éco-conception inclusive de vos services numériques », The Green IT Day \n- 2022 : table ronde « La plate-forme Moodle : accessibilité et pédagogie inclusive dans nos universités » animée par Endjy Guerchet, Journées Universitaires de l’Accessibilité Universelle, Université de La Réunion \n- 2020 : conférence « Retour d’expérience sur les tests d’accessibilité dans le cadre de la mise en place d’un logiciel en JavaFX » avec Olivier Motelet (iMSA), Club Qualité Logicielle \n- 2020 : conférence « Accessibilité : et si on laissait les utilisateurs personnaliser l’interface ? » avec Marie Guillaumet, Touraine Tech et DevFest Brest",
+        "picture": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
+        "location": "Carcassonne, France",
+        "email": "audreymaniez@gmail.com",
+        "socials": {
+          "github": "audreymaniez",
+          "twitter": "audreyblabla"
+        }
+      }
+    ],
+    "reviews": {
+      "average": 4.125,
+      "positives": 0,
       "negatives": 0
     }
   }
