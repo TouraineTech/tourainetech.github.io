@@ -326,18 +326,6 @@
       "categories": "clzyaamxk102p13hpw8tzwls8"
     },
     {
-      "id": "cm2bls2ld0012tfyihz848162",
-      "title": "HTMX 2.0 & Web Components : un combo parfait pour le développement web",
-      "abstract": "Dans ce retour d'expérience, nous explorerons HTMX 2.0, la dernière version de HTMX, conçue pour améliorer et simplifier le développement frontend. Nous examinerons les nouvelles fonctionnalités de HTMX 2.0 à travers des extraits de code illustrant ses capacités.\n\nEnsuite, nous aborderons les Web Components, des éléments HTML réutilisables et encapsulés, et nous vous présenterons la bibliothèque Lit. En démontrant un élément simple créé avec Lit, nous montrerons comment cette bibliothèque facilite la création de composants web dynamiques et complexes.\n\nLe cœur de la session sera consacré à l'intégration de HTMX 2.0 avec les Web Components. Nous démontrerons comment l'association de HTMX avec Lit améliore la fonctionnalité et l'efficacité des deux outils, simplifiant ainsi la construction d'applications web robustes et modulaires. À travers des exemples pratiques, vous découvrirez comment HTMX 2.0 et Lit travaillent ensemble pour offrir une solution optimale pour le développement frontend moderne.",
-      "tags": [],
-      "languages": [],
-      "speakers": [
-        "Horacio_Gonzalez (LostInBrittany)"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102p13hpw8tzwls8"
-    },
-    {
       "id": "cm2bi8b4f00thxalm8nrlynuu",
       "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
       "abstract": "Lorsque l'on crée un cluster Kubernetes, on se pose **toujours** les mêmes questions : \n\n- Où j'installe mes nœuds ? Ai-je des dépendances liées à la plateforme utilisée ? *(ex : VM, Kubernetes managés...)*\n- Comment bootstrap mon cluster *(kOPS ? KubeSpray ? Kubeadm ?)* ?\n- Comment gérer proprement les mises à jour de mes nœuds ?\n- En combien de temps puis-je recréer mon cluster *(PRA)* ?\n- Comment mettre à jour mon cluster Kubernetes *sans* me prendre la tête ?\n\nDe nombreuses questions dont la réponse est toujours \"*ça dépend*\" 🫠​.\n\nL'objectif de ce talk est alors de vous montrer comment nous avons réussi à répondre à la majorité de ces questions avec un seul et même outil : [Talos](https://www.talos.dev/). C'est une distribution minimaliste et immuable dédiée à la création de nœuds Kubernetes qui écourtera vos matinées déploiements ⌛!\n\nQue vous soyez développeur, SRE, ou juste curieux : vous ne souffrirez plus de l'installation de vos clusters, qu'ils soient en dev, ou en production 🤩\n\nSpoiler : votre CISO va adorer.",
@@ -1046,6 +1034,20 @@
       ],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102s13hpkwipk45v"
+    },
+    {
+      "id": "cm2myp4f1010kiupx0qd7dqkt",
+      "title": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible",
+      "abstract": "S’ils sont accessibles, les lecteurs multimédia permettant de lire du contenu vidéo sont de véritables atouts pour prendre en compte les besoins des personnes handicapées sur le web. Le problème, c’est que l’accessibilité d’un lecteur multimédia, mais aussi l'accessibilité du contenu multimédia lui-même, peuvent être très problématiques à réaliser dans un projet. C’est pourtant essentiel pour n’exclure personne. Alors, par où commencer ? \n\nDécouvrez comment satisfaire aux besoins des personnes handicapées plus simplement que vous ne l’auriez pensé, grâce à des démonstrations en direct de différents lecteurs multimédia, réalisées à l’aide de lecteurs d’écrans. \n\nVous ferez notamment connaissance avec des fonctionnalités d’accessibilité souvent méconnues comme les sous-titres vocalisés, l’audiodescription et les fonctionnalités « text-to-speech ». \n\nVous vous familiariserez aussi avec une sélection de lecteurs multimédia qui offrent des options permettant d’implémenter l’accessibilité avec plus de facilité.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Audrey_Maniez"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102p13hpw8tzwls8"
     },
     {
       "id": "keynoteOuverture1",
@@ -1893,6 +1895,17 @@
       "socials": {
         "github": "juhnny5",
         "twitter": "ju_hnny5"
+      }
+    },
+    {
+      "uid": "Audrey_Maniez",
+      "name": "Audrey Maniez",
+      "bio": "Audrey Maniez est experte senior en accessibilité numérique, formatrice, directrice pédagogique et co-gérante d’[Access42](https://access42.net/). Audrey a une maîtrise poussée des différentes normes d’accessibilité numérique (WCAG, ATAG). Elle réalise des audits d’accessibilité et accompagne des clients institutionnels et privés. Elle prend aussi part à travaux normatifs d’envergure, comme la rédaction ou co-rédaction de référentiels techniques (RGAA 3, RAAM 1, RAWeb) ou, plus récemment, la traduction des WCAG 2.1 et des WCAG 2.2 en français pour le W3C.",
+      "company": "Access42",
+      "picture": "https://lh6.googleusercontent.com/-HuLAkcgSJJY/AAAAAAAAAAI/AAAAAAAAAVs/6J60IVvbSxQ/photo.jpg",
+      "socials": {
+        "github": "audreymaniez",
+        "twitter": "audreyblabla"
       }
     }
   ],

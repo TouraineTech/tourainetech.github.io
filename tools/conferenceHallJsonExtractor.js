@@ -72,7 +72,7 @@ function getTalks(conferenceHallDatas, speakers) {
       {organizersThread, rating, reviews, references, deliberationStatus, confirmationStatus, level, loves, hates, speakers, formats, categories, ...datas}) => {
       return {
         ...datas,
-        speakers: speakers.map(({name}) => name.replace(" ", "_")),
+        speakers: speakers.map(({name}) => name.replaceAll(" ", "_")),
         formats: formats.flatMap(({id}) => id)[0],
         categories: categories.flatMap(({id}) => id)[0]
       };
