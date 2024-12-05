@@ -17,7 +17,7 @@
         >Visiter leur site internet</a>
       </div>
 
-      <div style="margin-top: 2rem; display: flex; justify-content: space-evenly">
+      <div style="margin-top: 2rem; display: flex; justify-content: space-evenly; align-items: center">
         <div v-if="sponsor.linkedIn">
           <a :href="sponsor.linkedIn" target="_blank">
             <img src="@/assets/img/linkedin-icon.svg" width="50px" alt="linkedIn logo">
@@ -26,6 +26,11 @@
         <div v-if="sponsor.twitter">
           <a :href="sponsor.twitter" target="_blank">
             <img src="@/assets/img/x.svg" style="filter: invert(); padding: 4px" width="50px" alt="twitter logo">
+          </a>
+        </div>
+        <div v-if="sponsor.bluesky">
+          <a :href="sponsor.bluesky" target="_blank">
+            <img src="@/assets/img/Bluesky_Logo.svg" style="padding: 4px" width="50px" alt="bluesky logo">
           </a>
         </div>
         <div v-if="sponsor.facebook">

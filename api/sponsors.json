@@ -57,5 +57,18 @@
         "link" : "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Business-Analyst-Tours_JR101662?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
       }
     ]
+  },
+  {
+    "name": "Worldline",
+    "id": "worldline",
+    "image": "worldline.png",
+    "link": "https://worldline.com/fr-fr/home",
+    "type": "bronze",
+    "desc": "Worldline est un leader mondial des technologies de paiement, rassemblant plus de 7 000 profils tech. Notre technologie contribue à la croissance de millions d'entreprises à travers le monde : de votre commerçant de quartier, aux acteurs mondiaux de l'e-commerce et aux banques internationales.",
+    "linkedIn": "https://worldline.com/linkedin",
+    "youtube": "https://www.youtube.com/@TechAtWorldline",
+    "twitter": "https://twitter.com/worldlinetech",
+    "github": "https://github.com/worldline",
+    "bluesky": "https://bsky.app/profile/techatworldline.bsky.social"
   }
 ]
