@@ -70,5 +70,29 @@
     "twitter": "https://twitter.com/worldlinetech",
     "github": "https://github.com/worldline",
     "bluesky": "https://bsky.app/profile/techatworldline.bsky.social"
+  },
+  {
+    "name": "MAIF",
+    "id": "maif",
+    "image": "maif.svg",
+    "type": "gold",
+    "link": "https://entreprise.maif.fr/accueil",
+    "desc": "MAIF est une mutuelle d’assurance engagée qui œuvre pour une société plus juste et plus durable avec 8000 collaborateurs en France. Fondée en 1934, MAIF couvre aujourd’hui les besoins en assurance de plus de 4 millions de sociétaires. MAIF n’a pas d’actionnaire, chaque sociétaire y est à la fois assureur et assuré. Devenue l’une des premières sociétés à mission en France, notre mutuelle a la volonté de développer un modèle d’entreprise dont la performance est fondée sur l’attention sincère portée à toutes ses parties prenantes. Nous souhaitons démontrer que l’on peut, au plus grand bénéfice de tous, aligner les attentes de nos sociétaires, les aspirations de nos collaborateurs, la sauvegarde de l’environnement et les intérêts de long terme de l’entreprise. Pour cela, nous pesons chacune de nos décisions et chacun de nos actes pour qu’ils génèrent un impact positif. #ChaqueActeCompte",
+    "linkedIn" : "https://www.linkedin.com/company/maif/",
+    "twitter" : "https://x.com/MAIF",
+    "instagram" : "https://www.instagram.com/maif.fr/?hl=fr",
+    "youtube" : "https://www.youtube.com/user/maif",
+    "jobOffers": [
+      {
+        "id": "maifOne",
+        "title": "DEVELOPPEUR FULLSTACK POUR LA DIGITAL FACTORY F/H",
+        "pdf": "Offre_Dev_Fullstack_Digital_Factory_MAIF.pdf"
+      },
+      {
+        "id": "maifTwo",
+        "title": "Développeur Fullstack F/H",
+        "pdf": "Offre_Dev_Fullstack_MAIF.pdf"
+      }
+    ]
   }
 ]

@@ -43,6 +43,11 @@
             <img src="@/assets/img/instagram-icon.svg" width="50px" alt="Instragram logo">
           </a>
         </div>
+        <div v-if="sponsor.tiktok">
+          <a :href="sponsor.tiktok" target="_blank">
+            <img src="@/assets/img/tiktok-icon.svg" width="50px" alt="tiktok logo">
+          </a>
+        </div>
         <div v-if="sponsor.youtube">
           <a :href="sponsor.youtube" target="_blank">
             <img src="@/assets/img/youtube.svg" width="50px" alt="Youtube logo">
