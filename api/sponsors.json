@@ -5,11 +5,11 @@
     "image": "apside-top.png",
     "link": "https://www.apside.com/fr/",
     "type": "gold",
-    "linkedIn" : "https://fr.linkedin.com/company/apside",
-    "twitter" : "https://twitter.com/ApsideGroupe",
-    "instagram" : "https://www.instagram.com/apsidegroupe/",
-    "facebook" : "https://www.facebook.com/ApsideGroupe/",
-    "youtube" : "https://www.youtube.com/@apsidegroupe261",
+    "linkedIn": "https://fr.linkedin.com/company/apside",
+    "twitter": "https://twitter.com/ApsideGroupe",
+    "instagram": "https://www.instagram.com/apsidegroupe/",
+    "facebook": "https://www.facebook.com/ApsideGroupe/",
+    "youtube": "https://www.youtube.com/@apsidegroupe261",
     "desc": "Un esprit start-up avec la stabilité d’un grand groupe, qui favorise l’agilité, le travail d’équipe et la proximité. Alors qu’Apside ne cesse d'agrandir sa famille déjà forte de plus de 3000 consultants, nous sommes à la recherche de nos nouveaux talents ! <br><br> <ul><li>Intégrez une structure à taille humaine ! Vous rejoindrez 250 collaborateurs d’Apside TOP, entité du groupe présente sur 4 agences (Tours, Orléans, Le Mans, Niort), pour développer notre activité en région ! Ambiance saine et conviviale sont les mots d’ordre ! </li><li>Vous êtes force de proposition ? Participez et animez nos évents techniques et devenez speaker (ApsideCamp, Devoxx, etc..) et faites-nous découvrir votre univers grâce à vos projets associatifs !</li><li>Développez votre réseau (soirées trimestrielles, afterworks, soirées d’intégration…).</li><li>Contribuez à l’Apside Academy en tant que créateurs de parcours pédagogiques et/ou formateurs.</li><li>Vous souhaitez relever des défis dans un environnement digital et multi-technologies ? Rejoignez notre Communautés d’Experts ! </li></ul><br>Notre savoir-faire et notre savoir-être vous accompagnent au cœur de plusieurs métiers : l’ingénierie en systèmes d'information et informatique industrielle, scientifique, aéronautique, automobile et financière.",
     "jobOffers": [
       {
@@ -35,26 +35,26 @@
     "desc": "Créée en 2003 à Paris, ACENSI s’est développée sur la région Centre depuis 2015 autour de ses 2  agences : Orléans et Tours, puis en région Niortaise depuis 2018. <br/><br/> Spécialisé dans le conseil en systèmes d'information, ACENSI accompagne ses clients dans leurs  projets de transformation, depuis la définition des processus et l'analyse des besoins jusqu'au  développement et à la maintenance de leur système d'information. Le groupe ACENSI est présent en  France comme à l'international avec une expertise métier reconnue notamment dans les télécoms,  l'assurance, la finance et l'énergie.  <br/><br/> Nos équipes en région Centre et Niort sont historiquement présentes auprès de l'ensemble des  acteurs de l'Assurance et de la Protection Sociale (Assureurs et Bancassureurs, Mutuelles, Groupes  de Protection Sociale, Courtiers, Editeurs). <br/><br/> Nos équipes interviennent particulièrement sur les projets liés : <ul><li>Au métier : Support, Test/Recette, Pilote de Recette, AMOA, Business Analyst, Product  Owner, Chef de Projet, Expert fonctionnel, </li><li>A la technique : Ingénieur d'études, Analyste, Lead Dev, Test Manager, Support MCO. </li></ul><br/>Chez ACENSI, vous bénéficiez d'un suivi individualisé avec votre manager. Des points individuels tout  au long de l'année qui vous permettront grâce à nos solutions de formation certifiante de monter en  compétences et d'atteindre votre objectif de carrière ! <br/><br/>ACENSI c'est également une société proche de ses consultants, avec l'organisation d'événements  (rencontre sportive, afterwork, meetup...) une fois par mois ! <br/><br/> Envie d’en savoir plus ? N’hésitez pas à venir nous voir à notre stand !"
   },
   {
-    "name" : "Néosoft",
+    "name": "Néosoft",
     "id": "neosoft",
     "image": "neosoft.png",
     "type": "gold",
     "link": "https://www.neosoft.fr/",
-    "linkedIn" : "https://www.linkedin.com/company/neosoft_",
-    "twitter" : "https://twitter.com/neosoft_",
-    "instagram" : "https://www.instagram.com/neosoft__",
-    "youtube" : "https://www.youtube.com/@neosoft_",
+    "linkedIn": "https://www.linkedin.com/company/neosoft_",
+    "twitter": "https://twitter.com/neosoft_",
+    "instagram": "https://www.instagram.com/neosoft__",
+    "youtube": "https://www.youtube.com/@neosoft_",
     "desc": "Néosoft est un groupe indépendant de conseil en transformation digitale de 1800 collaborateurs réunis en communautés d’experts : Conseil & Agilité, Cybersécurité, Data, DevOps, Infrastructures & Cloud et Software Engineering.<br>Depuis sa création à Rennes en 2005, Néosoft conseille et accompagne ses clients à 360° dans leurs projets d’innovation. En créant un environnement de travail plus respectueux de la planète, le groupe s’engage à réduire son impact carbone et à favoriser l’inclusion par le numérique. Animés par une forte exigence sociétale et engagés sur les enjeux environnementaux, nous nous mobilisons au quotidien pour le bien-être de nos consultants, une démarche récompensée par le label Engagé RSE et l’obtention du label Happy At Work depuis 6 ans.<br><br>Créé en 2014, Néosoft Tours compte désormais 60 collaborateurs passionnés. Avec une ambiance familiale, des projets hébergés dans nos locaux et de nombreux événements organisés tout au long de l'année, l'agence poursuit son développement en Centre-Val de Loire. Aujourd'hui, Néosoft s'impose progressivement comme un acteur majeur auprès des grands comptes de la région, notamment dans les domaines de la santé, des assurances et des télécoms sur les activités de conception & développement, d'infrastructures des systèmes et de conseil & agilité.",
     "jobOffers": [
       {
         "id": "neoSoftOne",
-        "title" : "Développeur Web Tours",
-        "link" : "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Dveloppeur-Full-Stack--H-F-_JR101690?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
+        "title": "Développeur Web Tours",
+        "link": "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Dveloppeur-Full-Stack--H-F-_JR101690?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
       },
       {
         "id": "neoSoftOne",
-        "title" : "Business Analyst Tours",
-        "link" : "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Business-Analyst-Tours_JR101662?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
+        "title": "Business Analyst Tours",
+        "link": "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Business-Analyst-Tours_JR101662?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
       }
     ]
   },
@@ -78,10 +78,10 @@
     "type": "gold",
     "link": "https://entreprise.maif.fr/accueil",
     "desc": "MAIF est une mutuelle d’assurance engagée qui œuvre pour une société plus juste et plus durable avec 8000 collaborateurs en France. Fondée en 1934, MAIF couvre aujourd’hui les besoins en assurance de plus de 4 millions de sociétaires. MAIF n’a pas d’actionnaire, chaque sociétaire y est à la fois assureur et assuré. Devenue l’une des premières sociétés à mission en France, notre mutuelle a la volonté de développer un modèle d’entreprise dont la performance est fondée sur l’attention sincère portée à toutes ses parties prenantes. Nous souhaitons démontrer que l’on peut, au plus grand bénéfice de tous, aligner les attentes de nos sociétaires, les aspirations de nos collaborateurs, la sauvegarde de l’environnement et les intérêts de long terme de l’entreprise. Pour cela, nous pesons chacune de nos décisions et chacun de nos actes pour qu’ils génèrent un impact positif. #ChaqueActeCompte",
-    "linkedIn" : "https://www.linkedin.com/company/maif/",
-    "twitter" : "https://x.com/MAIF",
-    "instagram" : "https://www.instagram.com/maif.fr/?hl=fr",
-    "youtube" : "https://www.youtube.com/user/maif",
+    "linkedIn": "https://www.linkedin.com/company/maif/",
+    "twitter": "https://x.com/MAIF",
+    "instagram": "https://www.instagram.com/maif.fr/?hl=fr",
+    "youtube": "https://www.youtube.com/user/maif",
     "jobOffers": [
       {
         "id": "maifOne",
@@ -92,6 +92,25 @@
         "id": "maifTwo",
         "title": "Développeur Fullstack F/H",
         "pdf": "Offre_Dev_Fullstack_MAIF.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Code-Troopers",
+    "id": "code-troopers",
+    "image": "codetroopers.png",
+    "type": "silver",
+    "link": "https://code-troopers.com",
+    "linkedIn": "https://www.linkedin.com/company/codetroopers",
+    "twitter": "https://x.com/codetroopers",
+    "instagram": "https://www.instagram.com/codetroopers/",
+    "bluesky": "https://bsky.app/profile/code-troopers.com",
+    "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br><br>Après plus de 15 ans d’expérience, l’équipe est constituée aujourd’hui de 14 Troopers  !  Des start-ups aux grands groupes, Code-Troopers accompagne leurs clients tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.<br><br>Vous avez toujours rêvé d’être un Trooper ? Rejoignez l’équipe.",
+    "jobOffers": [
+      {
+        "id": "ctOne",
+        "title": "Développeur Front (H/F)",
+        "pdf": "developpeur-front.pdf"
       }
     ]
   }
