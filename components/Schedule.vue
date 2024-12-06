@@ -55,8 +55,9 @@
             </h5>
           </nuxt-link>
           <ul class="schedule-talk-category">
-            <li :class="['schedule-talk-'+talk.categories+'--category']">
-              {{ talkName(talk.categories) }}
+            <li :class="['schedule-talk-'+talk.categories+'--category']" style="display: flex; align-items: center; gap: 5px">
+              <img v-if="talk.categories" :src="require(`@/assets/img/${talk.categories}.png`)" alt="" style="width: 20px; height: 20px; border-radius: 50%;">
+              <span>{{ talkName(talk.categories) }}</span>
             </li>
           </ul>
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
@@ -300,7 +301,6 @@ $color-alien: #066420;
     li {
       display: inline-block;
       font-size: 0.8em;
-      padding-left: 0.5rem;
       padding-right: 0.5rem;
       border-radius: 0.5rem;
     }
