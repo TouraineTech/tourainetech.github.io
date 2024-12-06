@@ -1,7 +1,12 @@
 <template>
   <div class="container--fix">
     <h1>{{ sponsor.name }}</h1>
-    <h2>Sponsor {{ sponsor.type.toLocaleUpperCase() }}</h2>
+    <h2 v-if="sponsor.type !== 'partenaires'">
+      Sponsor {{ sponsor.type.toLocaleUpperCase() }}
+    </h2>
+    <h2 v-else>
+      Partenaire
+    </h2>
     <div class="container--image">
       <img
         :src="require(`@/assets/img/sponsors/${sponsor.image}`)"

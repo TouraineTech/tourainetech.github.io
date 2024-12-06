@@ -113,5 +113,14 @@
         "pdf": "developpeur-front.pdf"
       }
     ]
+  },
+  {
+    "id": "gladia",
+    "name" : "Gladia",
+    "desc" : "Gladia provides a speech-to-text and audio intelligence API for building virtual meeting and note-taking apps, call center platforms, and media products, providing transcription, translation, and insights powered by best-in-class ASR, LLMs and GenAI models.",
+    "image" : "gladia.png",
+    "type" : "partenaires",
+    "link" : "https://www.gladia.io/"
+
   }
 ]
