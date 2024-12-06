@@ -74,7 +74,8 @@ function getTalks(conferenceHallDatas, speakers) {
         ...datas,
         speakers: speakers.map(({name}) => name.replaceAll(" ", "_")),
         formats: formats.flatMap(({id}) => id)[0],
-        categories: categories.flatMap(({id}) => id)[0]
+        categories: categories.flatMap(({id}) => id)[0],
+        level
       };
     })
     // .filter(talksFilter('confirmed','accepted'))
