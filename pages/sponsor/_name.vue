@@ -133,11 +133,6 @@ export default {
         }
       ]
     };
-  },
-  computed: {
-    sponsors() {
-      return sponsors
-    }
   }
 };
 </script>
