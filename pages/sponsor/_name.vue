@@ -83,7 +83,6 @@
 
 <script>
 import CONFIGURATION from '../../assets/configuration'
-import sponsors from "@/components/Sponsors.vue";
 export default {
   validate({ store, params }) {
     return (
