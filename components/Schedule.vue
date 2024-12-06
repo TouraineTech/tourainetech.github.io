@@ -88,9 +88,14 @@
               </a>
             </p>
           </span>
-          <p class="schedule-room--duration-level">
-            ⏱{{ duration(talk.formats) }}
-          </p>
+          <div class="schedule-room--duration-level">
+            <p>
+              🕒 {{ duration(talk.formats) }}
+            </p>
+            <p>
+              🎯 {{ levelName(talk.level) }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -182,11 +187,11 @@ export default {
     },
     levelName(level) {
       switch (level) {
-        case "beginner":
+        case "BEGINNER":
           return "Débutant"
-        case "intermediate":
+        case "INTERMEDIATE":
           return "Intermédiaire"
-        case "hard":
+        case "HARD":
           return "Confirmé"
         default:
           return level
