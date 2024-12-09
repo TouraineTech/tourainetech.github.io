@@ -88,7 +88,7 @@
               </a>
             </p>
           </span>
-          <div class="schedule-room--duration-level">
+          <div class="schedule-room--duration-level" v-if="duration(talk.formats)">
             <p>
               🕒 {{ duration(talk.formats) }}
             </p>
@@ -191,7 +191,7 @@ export default {
           return "Débutant"
         case "INTERMEDIATE":
           return "Intermédiaire"
-        case "HARD":
+        case "ADVANCED":
           return "Confirmé"
         default:
           return level
