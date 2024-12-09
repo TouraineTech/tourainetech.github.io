@@ -82,6 +82,12 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
 
+.timerTalk {
+  //border: 2px solid yellow;
+  height: 100vh;
+  width: 100vw;
+}
+
 .timerTalk h1, .timerTalk h2, .timerTalk h3 {
   width:100%;
   display: flex;
@@ -89,15 +95,26 @@ export default {
 }
 
 .timerTalk h1 {
-  font-size: 4rem;
+  width: 85%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 3rem;
+  height: 30vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .timerTalk h2 {
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: bold;
+  height: 40vh;
 }
 .timerTalk h3 {
   font-size: large;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .blink {
