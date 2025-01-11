@@ -988,16 +988,6 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyec9y4317213hpidji5r27",
-    "title": "Les Méta-Lois, vous ne leur échapperez pas !",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [],
-    "times": [],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
     "id": "clzyec860316u13hpx3shl9ax",
     "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
     "categories": "clzyaamxk102t13hp9akxg5en",
@@ -1010,16 +1000,6 @@
     ],
     "day": 1,
     "level": "BEGINNER"
-  },
-  {
-    "id": "clzyebpw7314o13hp85z4ji0t",
-    "title": "Comment nous avons transformé les Restos du Cœur en Cloud Provider",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [],
-    "times": [],
-    "day": 1,
-    "level": "INTERMEDIATE"
   },
   {
     "id": "cm2myp4f1010kiupx0qd7dqkt",
@@ -1038,7 +1018,7 @@
   {
     "id": "keynoteOuverture1",
     "title": "Keynote d'ouverture",
-    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [
       1,
       2
@@ -1051,7 +1031,7 @@
   {
     "id": "keynoteCloture1",
     "title": "Keynote de clôture",
-    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [
       1,
       2
@@ -1064,7 +1044,7 @@
   {
     "id": "keynoteOuverture2",
     "title": "Keynote d'ouverture",
-    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [
       1,
       2
@@ -1077,7 +1057,7 @@
   {
     "id": "keynoteCloture2",
     "title": "Keynote de clôture",
-    "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d",
+    "formats": "clzyaamxk102x13hp665tzg4v",
     "rooms": [
       1,
       2

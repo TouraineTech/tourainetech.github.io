@@ -1126,29 +1126,40 @@
     {
       "id": "keynoteOuverture1",
       "title": "Keynote d'ouverture",
-      "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "speakers": ["Astropierre"],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "level": "BEGINNER"
     },
     {
       "id": "keynoteCloture1",
       "title": "Keynote de clôture",
-      "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "speakers": ["Stéphane_Trebel"],
+      "formats": "yqbagfi1gmkplgemmuwmlket",
+      "level": "BEGINNER"
     },
     {
       "id": "keynoteOuverture2",
       "title": "Keynote d'ouverture",
-      "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "speakers": ["Julien_Briault"],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "level": "INTERMEDIATE"
     },
     {
       "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "speakers": [],
-      "formats": "84638839-c9f7-5eaf-9df5-5fcb578c2c6d"
+      "formats": "clzyaamxk102x13hp665tzg4v"
     }
   ],
   "speakers": [
+    {
+      "uid": "Astropierre",
+      "name": "Pierre Henriquet (@astropierre)",
+      "bio": "Pierre HENRIQUET (@astropierre) est actuellement médiateur scientifique, conférencier et chargé de projet. Après avoir validé un doctorat en Physique Nucléaire appliqué à la Médecine et un diplôme universitaire en Astronomie/Astrophysique, il a travaillé pendant 10 ans au Planétarium de Vaulx-enVelin, où il a continué à développer ses compétences de vulgarisation auprès de multiples publics (novices ou spécialisés). Aujourd'hui, il propose ses services de médiation scientifique en freelance.",
+      "socials": {
+        "twitter": "astropierre"
+      }
+    },
     {
       "uid": "Olivier_Cloirec",
       "name": "Olivier Cloirec",
@@ -2034,6 +2045,11 @@
     {
       "id": "clzyaamxk102x13hp665tzg4v",
       "name": "Conférence (50min)",
+      "description": null
+    },
+    {
+      "id": "yqbagfi1gmkplgemmuwmlket",
+      "name": "Conférence (30min)",
       "description": null
     },
     {
