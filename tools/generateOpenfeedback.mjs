@@ -12,7 +12,6 @@ const planningData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'api/
 const conferenceHall = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'api/conferenceHall.json'), 'utf8'));
 const times = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'api/times.json'), 'utf8'));
 const rooms = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'api/rooms.json'), 'utf8'));
-
 const categories = conferenceHall.categories.reduce((obj, item) => ({...obj, [item.id]: item.name}), {});
 const formats = conferenceHall.formats.reduce((obj, item) => ({
   ...obj,
@@ -23,8 +22,8 @@ const formats = conferenceHall.formats.reduce((obj, item) => ({
 }), {});
 const talksConferenceHall = conferenceHall.talks.reduce((obj, item) => ({...obj, [item.id]: item}), {});
 const date = {
-  1: '2024-02-08',
-  2: '2024-02-09'
+  1: '2025-02-06',
+  2: '2025-02-07'
 }
 const sessions = planningData.filter(p => !['keynoteCloture1', 'keynoteCloture2', 'keynoteOuverture1', 'keynoteOuverture2', 'dummy1', 'dummy2'].includes(p.id)).reduce((obj, p) => {
   const startTime = parseISO(`${date[p.day]}T${times[p.times[0]].time}:00`)
@@ -39,16 +38,21 @@ const sessions = planningData.filter(p => !['keynoteCloture1', 'keynoteCloture2'
       startTime: formatISO(startTime),
       endTime: formatISO(endTime),
     }
-  };
+}
+
 }, {});
 
 const speakers = conferenceHall.speakers.reduce((obj, item) => ({
-  ...obj, [item.uid]: {
+  ...obj,
+  [item.uid]: {
     id: item.uid,
-    name: item.displayName,
+    name: item.name,
     photoUrl: `https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/${item.uid}.png`,
-    socials: [{name: 'twitter', link: item.twitter}, {name: 'github', link: item.github}].filter(s => s.link),
-  }
+    socials: [
+      item.socials?.twitter && { name: 'twitter', link: `https://x.com/${item.socials.twitter}` },
+      item.socials?.github && { name: 'github', link: `https://github.com/${item.socials.github}` }
+    ].filter(Boolean), // Filtrer pour enlever les valeurs null ou undefined
+  },
 }), {});
 
 fs.writeFile(
@@ -59,6 +63,6 @@ fs.writeFile(
       console.log(readErr);
       process.exit(2);
     }
-    console.log(`The file talks.json was saved!`);
+    console.log(`The file openfeedback.json was saved!`);
   });
 
