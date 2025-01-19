@@ -122,5 +122,17 @@
     "type" : "partenaires",
     "link" : "https://www.gladia.io/"
 
+  },
+  {
+    "name": "Clever Cloud",
+    "id": "clever-cloud",
+    "image": "clever-cloud.png",
+    "link": "https://www.clever-cloud.com/",
+    "type": "silver",
+    "linkedIn" :"https://www.linkedin.com/company/clever-cloud/ ",
+    "twitter" : "https://twitter.com/clever_cloudFR",
+    "twitch" : "https://www.twitch.tv/clevercloud",
+    "desc": "<b>Clever Cloud</b> est un PaaS (Platform as a Service) qui simplifie vos releases produit.<br/>Envoyez simplement votre code, et nous nous occupons du reste.<br/><br/>Du déploiement à l’hébergement en passant par le maintien en condition opérationnelle et la scalabilité automatique : tout est intégré. Facile à prendre en main et sans lock-in, Clever Cloud est compatible avec la majorité des technologies du marché.<br/><br/>Enfin un cloud pensé pour les développeurs ! ",
+    "jobOffers": []
   }
 ]
