@@ -142,5 +142,15 @@
     "link": "https://polytech.univ-tours.fr/",
     "type": "partenaires",
     "desc": "L&#39;École polytechnique de l&#39;université de Tours (Polytech Tours) est l&#39;une des 207</b>écoles d&#39;ingénieurs françaises accréditées au 1 er septembre 2022 à délivrer un</b>diplôme d&#39;ingénieur.</b>Elle est située à Tours, en Indre-et-Loire, dans la région Centre, plus</b>précisément dans le quartier des Deux-Lions, au le sud de la ville. Ses activités</b>sont réparties sur trois sites éloignés de quelques centaines de mètres : site</b>Portalis (départements « informatique », « informatique embarquée » et «</b>premier cycle »), site Dassault (départements « mécanique et conception des</b>systèmes », et « électronique et énergie électrique ») et le site Lesseps</b>(département « Génie de l’aménagement et de l’environnement »). La</b>construction en-cours d’un nouveau bâtiment va permettre rapidement de</b>dynamiser son activité avec des formations transversales aux domaines actuels.</b>Elle fait partie du réseau Polytech, groupement de seize écoles d&#39;ingénieurs</b>internes aux universités. Elle est habilitée par la Commission des titres</b>d&#39;ingénieur et membre de la Conférence des grandes écoles. Composante de</b>l&#39;université de Tours, l’Ecole participe à la notoriété de l’université et aux projets</b>communs développés avec les autres composantes."
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "desc": "Grafana Labs soutient les entreprises dans leur observabilité avec la stack LGTM (logs, métriques, traces, dashboards) et Grafana Cloud, une plateforme cloud proposant des solutions clé en main pour le monitoring de Kubernetes, l’observabilité des applications et bien plus.",
+    "image": "grafana.png",
+    "type": "bronze",
+    "link": "https://grafana.com/",
+    "linkedIn": "https://www.linkedin.com/company/grafana-labs/posts/?feedView=all",
+    "twitter": "https://x.com/grafana?mx=2"
   }
 ]
