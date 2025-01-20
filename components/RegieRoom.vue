@@ -2,16 +2,33 @@
   <div class="regie--room">
     <iframe
       allowfullscreen
-      src="http://obs-web.niek.tv/"
+      :src="obs"
     ></iframe>
     <iframe
       allowfullscreen
-      src="https://www.youtube.com/embed/g79SX2lU8Gw"
+      :src="youtube"
     ></iframe>
   </div>
 </template>
 
-<script setup lang="ts">
+<script>
+
+export default {
+  props: {
+    obs: {
+      type: String,
+      default() {
+        return "";
+      }
+    },
+    youtube: {
+      type: String,
+      default() {
+        return "";
+      }
+    }
+  }
+}
 </script>
 
 <style>
