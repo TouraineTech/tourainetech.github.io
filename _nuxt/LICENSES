@@ -1,6 +1,3 @@
-/*! showdown v 2.1.0 - 21-04-2022 */
-
-
 /*
 object-assign
 (c) Sindre Sorhus
@@ -39,3 +36,6 @@ object-assign
  * (c) 2021 Evan You
  * @license MIT
  */
+
+
+/*! showdown v 2.1.0 - 21-04-2022 */
