@@ -4,10 +4,10 @@
     <p>Passer les paramètres des url youtube comme le lien suivant :</p>
     <p>https://touraine.tech/regie?F21=codeVideoYoutubeSalleF21&F22=codeVideoYoutubeSalleF22&bio=codeVideoYoutubeSalleBio&physique=codeVideoYoutubeSallePhysique</p>
     <section id="regie" class="container--grid">
-      <RegieRoom :obs="'wss://starfish-fair-unicorn.ngrok-free.app/'" :youtube="F21" />
-      <RegieRoom :obs="'wss://labrador-happy-unduly.ngrok-free.app/'" :youtube="F22" />
-      <RegieRoom :obs="'wss://innocent-python-premium.ngrok-free.app/'" :youtube="bio" />
-      <RegieRoom :obs="'wss://vital-raccoon-preferably.ngrok-free.app/'" :youtube="physique" />
+      <RegieRoom :obs="'https://obs-web.niek.tv/#wss://starfish-fair-unicorn.ngrok-free.app/'" :youtube="F21" />
+      <RegieRoom :obs="'https://obs-web.niek.tv/#wss://labrador-happy-unduly.ngrok-free.app/'" :youtube="F22" />
+      <RegieRoom :obs="'https://obs-web.niek.tv/#wss://innocent-python-premium.ngrok-free.app/'" :youtube="bio" />
+      <RegieRoom :obs="'https://obs-web.niek.tv/#wss://vital-raccoon-preferably.ngrok-free.app/'" :youtube="physique" />
     </section>
   </div>
 </template>
