@@ -152,5 +152,30 @@
     "link": "https://grafana.com/",
     "linkedIn": "https://www.linkedin.com/company/grafana-labs/posts/?feedView=all",
     "twitter": "https://x.com/grafana?mx=2"
+  },
+  {
+    "id": "mgen",
+    "name": "MGEN",
+    "image": "mgen.png",
+    "type": "gold",
+    "link": "https://www.mgen.fr/",
+    "linkedIn": "https://fr.linkedin.com/company/mgen",
+    "twitter": "https://x.com/mgen_officiel?lang=fr&mx=2",
+    "instagram": "https://www.instagram.com/mgenetvous/?hl=fr",
+    "youtube": "https://www.youtube.com/channel/UC5Ts3K6gaMnnoVGd6WVWiPg",
+    "facebook": "https://www.facebook.com/MGEN.et.vous/?locale=fr_FR",
+    "jobOffers": [
+      {
+        "id": "mgenOne",
+        "title": "Plateforme Manager Système d'Information de Gestion des Prestations Santé H/F",
+        "link": "https://recrutement.mgen.fr/offre-de-emploi/emploi-plateforme-manager-systeme-d-information-de-gestion-des-prestations-sante-h-f_3541.aspx"
+      },
+      {
+        "id": "mgenTwo",
+        "title": "DevOps Cloud - Alternance H/F",
+        "link": "https://recrutement.mgen.fr/offre-de-emploi/emploi--devops-cloud-alternance-h-f_3389.aspx"
+      }
+    ],
+    "desc": "Connaissez-vous <b>MGEN</b> ?<br/><br/>·Un <b>employeur de l’ESS</b> qui réconcilie <b>éthique et économie, solidarité et performance</b><br/>·Un acteur majeur en <b>santé et prévoyance</b> avec plus de 4 millions de personnes protégées<br/>·<b>10 000</b> salariés et <b>250 métiers</b> diversifiés (assurance, soins, IT, fonctions support …)<br/>·Une <b>implantation nationale</b> forte avec plus de 200 sites dont 60 services de soins et d’accompagnement mutualistes<br/><br/><b>Membre fondateur du Groupe VYV</b> (50 000 collaborateurs), premier groupe de protection sociale mutualiste et solidaire, <b>pour une santé accessible à tous.</b>"
   }
 ]
