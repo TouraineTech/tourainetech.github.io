@@ -5,7 +5,7 @@ export default {
     eventDate: '6 & 7 fevrier 2025',
     eventEdition: '25',
     eventAddressName: 'Université de Tours - Faculté des Sciences et Techniques',
-    eventAddressDetail: 'Parc Grandmont, 31 Av. Monge Bâtiment G, 37200 Tours',
+    eventAddressDetail: 'Parc Grandmont, 31 Av. Monge Bâtiment F, 37200 Tours',
     addressOSMLink: 'https://www.openstreetmap.org/export/embed.html?bbox=0.7009148597717286%2C47.35612733022247%2C0.7038250565528871%2C47.35843127917653&layer=mapnik&marker=47.35727931727454%2C0.7023699581623077',
     isRegisterOpen: true,
     isSoldOut: false,
