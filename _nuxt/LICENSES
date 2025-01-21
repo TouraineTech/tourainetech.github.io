@@ -25,6 +25,9 @@ object-assign
 /*! For license information please see vue-image-lightbox.min.js.LICENSE.txt */
 
 
+/*! showdown v 2.1.0 - 21-04-2022 */
+
+
 /*!
  * Vue.js v2.7.16
  * (c) 2014-2023 Evan You
@@ -36,6 +39,3 @@ object-assign
  * (c) 2021 Evan You
  * @license MIT
  */
-
-
-/*! showdown v 2.1.0 - 21-04-2022 */
