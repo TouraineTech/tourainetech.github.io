@@ -183,13 +183,12 @@ export default {
   }
 
   .sponsors {
+    margin: auto;
     display: flex;
     align-self: end;
     position: sticky;
-    width: 300%;
-    height: 20vh;
+    height: 25vh;
     max-width: 150%;
-    overflow-x: hidden;
   }
 }
 </style>
