@@ -58,7 +58,7 @@ export default {
 
 @keyframes marquee_animation {
   0% {
-    transform: translateX(-90%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(100%);
