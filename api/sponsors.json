@@ -25,16 +25,6 @@
     ]
   },
   {
-    "name": "ACENSI",
-    "id": "acensi",
-    "image": "acensi.png",
-    "link": "https://www.acensi.fr/page/accueil/fr_fr",
-    "linkedIn": "https://fr.linkedin.com/showcase/acensi-centre-ouest/",
-    "instagram": "https://instagram.com/acensisana?igshid=YmMyMTA2M2Y=",
-    "type": "silver",
-    "desc": "Créée en 2003 à Paris, ACENSI s’est développée sur la région Centre depuis 2015 autour de ses 2  agences : Orléans et Tours, puis en région Niortaise depuis 2018. <br/><br/> Spécialisé dans le conseil en systèmes d'information, ACENSI accompagne ses clients dans leurs  projets de transformation, depuis la définition des processus et l'analyse des besoins jusqu'au  développement et à la maintenance de leur système d'information. Le groupe ACENSI est présent en  France comme à l'international avec une expertise métier reconnue notamment dans les télécoms,  l'assurance, la finance et l'énergie.  <br/><br/> Nos équipes en région Centre et Niort sont historiquement présentes auprès de l'ensemble des  acteurs de l'Assurance et de la Protection Sociale (Assureurs et Bancassureurs, Mutuelles, Groupes  de Protection Sociale, Courtiers, Editeurs). <br/><br/> Nos équipes interviennent particulièrement sur les projets liés : <ul><li>Au métier : Support, Test/Recette, Pilote de Recette, AMOA, Business Analyst, Product  Owner, Chef de Projet, Expert fonctionnel, </li><li>A la technique : Ingénieur d'études, Analyste, Lead Dev, Test Manager, Support MCO. </li></ul><br/>Chez ACENSI, vous bénéficiez d'un suivi individualisé avec votre manager. Des points individuels tout  au long de l'année qui vous permettront grâce à nos solutions de formation certifiante de monter en  compétences et d'atteindre votre objectif de carrière ! <br/><br/>ACENSI c'est également une société proche de ses consultants, avec l'organisation d'événements  (rencontre sportive, afterwork, meetup...) une fois par mois ! <br/><br/> Envie d’en savoir plus ? N’hésitez pas à venir nous voir à notre stand !"
-  },
-  {
     "name": "Néosoft",
     "id": "neosoft",
     "image": "neosoft.png",
@@ -57,19 +47,6 @@
         "link": "https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/details/Business-Analyst-Tours_JR101662?primaryLocation=20f778f71e331001ac7fbd0e542a0000"
       }
     ]
-  },
-  {
-    "name": "Worldline",
-    "id": "worldline",
-    "image": "worldline.png",
-    "link": "https://worldline.com/fr-fr/home",
-    "type": "bronze",
-    "desc": "Worldline est un leader mondial des technologies de paiement, rassemblant plus de 7 000 profils tech. Notre technologie contribue à la croissance de millions d'entreprises à travers le monde : de votre commerçant de quartier, aux acteurs mondiaux de l'e-commerce et aux banques internationales.",
-    "linkedIn": "https://worldline.com/linkedin",
-    "youtube": "https://www.youtube.com/@TechAtWorldline",
-    "twitter": "https://twitter.com/worldlinetech",
-    "github": "https://github.com/worldline",
-    "bluesky": "https://bsky.app/profile/techatworldline.bsky.social"
   },
   {
     "name": "MAIF",
@@ -96,64 +73,6 @@
     ]
   },
   {
-    "name": "Code-Troopers",
-    "id": "code-troopers",
-    "image": "codetroopers.png",
-    "type": "silver",
-    "link": "https://code-troopers.com",
-    "linkedIn": "https://www.linkedin.com/company/codetroopers",
-    "twitter": "https://x.com/codetroopers",
-    "instagram": "https://www.instagram.com/codetroopers/",
-    "bluesky": "https://bsky.app/profile/code-troopers.com",
-    "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br><br>Après plus de 15 ans d’expérience, l’équipe est constituée aujourd’hui de 14 Troopers  !  Des start-ups aux grands groupes, Code-Troopers accompagne leurs clients tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.<br><br>Vous avez toujours rêvé d’être un Trooper ? Rejoignez l’équipe.",
-    "jobOffers": [
-      {
-        "id": "ctOne",
-        "title": "Développeur Front (H/F)",
-        "pdf": "developpeur-front.pdf"
-      }
-    ]
-  },
-  {
-    "id": "gladia",
-    "name" : "Gladia",
-    "desc" : "Gladia provides a speech-to-text and audio intelligence API for building virtual meeting and note-taking apps, call center platforms, and media products, providing transcription, translation, and insights powered by best-in-class ASR, LLMs and GenAI models.",
-    "image" : "gladia.png",
-    "type" : "partenaires",
-    "link" : "https://www.gladia.io/"
-
-  },
-  {
-    "name": "Clever Cloud",
-    "id": "clever-cloud",
-    "image": "clever-cloud.png",
-    "link": "https://www.clever-cloud.com/",
-    "type": "silver",
-    "linkedIn" :"https://www.linkedin.com/company/clever-cloud/ ",
-    "twitter" : "https://twitter.com/clever_cloudFR",
-    "twitch" : "https://www.twitch.tv/clevercloud",
-    "desc": "<b>Clever Cloud</b> est un PaaS (Platform as a Service) qui simplifie vos releases produit.<br/>Envoyez simplement votre code, et nous nous occupons du reste.<br/><br/>Du déploiement à l’hébergement en passant par le maintien en condition opérationnelle et la scalabilité automatique : tout est intégré. Facile à prendre en main et sans lock-in, Clever Cloud est compatible avec la majorité des technologies du marché.<br/><br/>Enfin un cloud pensé pour les développeurs ! ",
-    "jobOffers": []
-  },
-  {
-    "name": "Polytech'Tours",
-    "id": "polytechtours",
-    "image": "logo-polytech-UFR.png",
-    "link": "https://polytech.univ-tours.fr/",
-    "type": "partenaires",
-    "desc": "L&#39;École polytechnique de l&#39;université de Tours (Polytech Tours) est l&#39;une des 207</b>écoles d&#39;ingénieurs françaises accréditées au 1 er septembre 2022 à délivrer un</b>diplôme d&#39;ingénieur.</b>Elle est située à Tours, en Indre-et-Loire, dans la région Centre, plus</b>précisément dans le quartier des Deux-Lions, au le sud de la ville. Ses activités</b>sont réparties sur trois sites éloignés de quelques centaines de mètres : site</b>Portalis (départements « informatique », « informatique embarquée » et «</b>premier cycle »), site Dassault (départements « mécanique et conception des</b>systèmes », et « électronique et énergie électrique ») et le site Lesseps</b>(département « Génie de l’aménagement et de l’environnement »). La</b>construction en-cours d’un nouveau bâtiment va permettre rapidement de</b>dynamiser son activité avec des formations transversales aux domaines actuels.</b>Elle fait partie du réseau Polytech, groupement de seize écoles d&#39;ingénieurs</b>internes aux universités. Elle est habilitée par la Commission des titres</b>d&#39;ingénieur et membre de la Conférence des grandes écoles. Composante de</b>l&#39;université de Tours, l’Ecole participe à la notoriété de l’université et aux projets</b>communs développés avec les autres composantes."
-  },
-  {
-    "id": "grafana",
-    "name": "Grafana",
-    "desc": "Grafana Labs soutient les entreprises dans leur observabilité avec la stack LGTM (logs, métriques, traces, dashboards) et Grafana Cloud, une plateforme cloud proposant des solutions clé en main pour le monitoring de Kubernetes, l’observabilité des applications et bien plus.",
-    "image": "grafana.png",
-    "type": "bronze",
-    "link": "https://grafana.com/",
-    "linkedIn": "https://www.linkedin.com/company/grafana-labs/posts/?feedView=all",
-    "twitter": "https://x.com/grafana?mx=2"
-  },
-  {
     "id": "mgen",
     "name": "MGEN",
     "image": "mgen.png",
@@ -177,5 +96,86 @@
       }
     ],
     "desc": "Connaissez-vous <b>MGEN</b> ?<br/><br/>·Un <b>employeur de l’ESS</b> qui réconcilie <b>éthique et économie, solidarité et performance</b><br/>·Un acteur majeur en <b>santé et prévoyance</b> avec plus de 4 millions de personnes protégées<br/>·<b>10 000</b> salariés et <b>250 métiers</b> diversifiés (assurance, soins, IT, fonctions support …)<br/>·Une <b>implantation nationale</b> forte avec plus de 200 sites dont 60 services de soins et d’accompagnement mutualistes<br/><br/><b>Membre fondateur du Groupe VYV</b> (50 000 collaborateurs), premier groupe de protection sociale mutualiste et solidaire, <b>pour une santé accessible à tous.</b>"
+  },
+  {
+    "name": "ACENSI",
+    "id": "acensi",
+    "image": "acensi.png",
+    "link": "https://www.acensi.fr/page/accueil/fr_fr",
+    "linkedIn": "https://fr.linkedin.com/showcase/acensi-centre-ouest/",
+    "instagram": "https://instagram.com/acensisana?igshid=YmMyMTA2M2Y=",
+    "type": "silver",
+    "desc": "Créée en 2003 à Paris, ACENSI s’est développée sur la région Centre depuis 2015 autour de ses 2  agences : Orléans et Tours, puis en région Niortaise depuis 2018. <br/><br/> Spécialisé dans le conseil en systèmes d'information, ACENSI accompagne ses clients dans leurs  projets de transformation, depuis la définition des processus et l'analyse des besoins jusqu'au  développement et à la maintenance de leur système d'information. Le groupe ACENSI est présent en  France comme à l'international avec une expertise métier reconnue notamment dans les télécoms,  l'assurance, la finance et l'énergie.  <br/><br/> Nos équipes en région Centre et Niort sont historiquement présentes auprès de l'ensemble des  acteurs de l'Assurance et de la Protection Sociale (Assureurs et Bancassureurs, Mutuelles, Groupes  de Protection Sociale, Courtiers, Editeurs). <br/><br/> Nos équipes interviennent particulièrement sur les projets liés : <ul><li>Au métier : Support, Test/Recette, Pilote de Recette, AMOA, Business Analyst, Product  Owner, Chef de Projet, Expert fonctionnel, </li><li>A la technique : Ingénieur d'études, Analyste, Lead Dev, Test Manager, Support MCO. </li></ul><br/>Chez ACENSI, vous bénéficiez d'un suivi individualisé avec votre manager. Des points individuels tout  au long de l'année qui vous permettront grâce à nos solutions de formation certifiante de monter en  compétences et d'atteindre votre objectif de carrière ! <br/><br/>ACENSI c'est également une société proche de ses consultants, avec l'organisation d'événements  (rencontre sportive, afterwork, meetup...) une fois par mois ! <br/><br/> Envie d’en savoir plus ? N’hésitez pas à venir nous voir à notre stand !"
+  },
+  {
+    "name": "Code-Troopers",
+    "id": "code-troopers",
+    "image": "codetroopers.png",
+    "type": "silver",
+    "link": "https://code-troopers.com",
+    "linkedIn": "https://www.linkedin.com/company/codetroopers",
+    "twitter": "https://x.com/codetroopers",
+    "instagram": "https://www.instagram.com/codetroopers/",
+    "bluesky": "https://bsky.app/profile/code-troopers.com",
+    "desc": "Code-Troopers est une agence spécialisée dans le développement logiciel et la conception d’applications web et mobiles sur-mesure.<br><br>Après plus de 15 ans d’expérience, l’équipe est constituée aujourd’hui de 14 Troopers  !  Des start-ups aux grands groupes, Code-Troopers accompagne leurs clients tout au long de leurs projets informatiques (conception, développement, tests, maintenances) en utilisant des méthodes agiles.<br><br>Vous avez toujours rêvé d’être un Trooper ? Rejoignez l’équipe.",
+    "jobOffers": [
+      {
+        "id": "ctOne",
+        "title": "Développeur Front (H/F)",
+        "pdf": "developpeur-front.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Clever Cloud",
+    "id": "clever-cloud",
+    "image": "clever-cloud.png",
+    "link": "https://www.clever-cloud.com/",
+    "type": "silver",
+    "linkedIn" :"https://www.linkedin.com/company/clever-cloud/ ",
+    "twitter" : "https://twitter.com/clever_cloudFR",
+    "twitch" : "https://www.twitch.tv/clevercloud",
+    "desc": "<b>Clever Cloud</b> est un PaaS (Platform as a Service) qui simplifie vos releases produit.<br/>Envoyez simplement votre code, et nous nous occupons du reste.<br/><br/>Du déploiement à l’hébergement en passant par le maintien en condition opérationnelle et la scalabilité automatique : tout est intégré. Facile à prendre en main et sans lock-in, Clever Cloud est compatible avec la majorité des technologies du marché.<br/><br/>Enfin un cloud pensé pour les développeurs ! ",
+    "jobOffers": []
+  },
+  {
+    "name": "Worldline",
+    "id": "worldline",
+    "image": "worldline.png",
+    "link": "https://worldline.com/fr-fr/home",
+    "type": "bronze",
+    "desc": "Worldline est un leader mondial des technologies de paiement, rassemblant plus de 7 000 profils tech. Notre technologie contribue à la croissance de millions d'entreprises à travers le monde : de votre commerçant de quartier, aux acteurs mondiaux de l'e-commerce et aux banques internationales.",
+    "linkedIn": "https://worldline.com/linkedin",
+    "youtube": "https://www.youtube.com/@TechAtWorldline",
+    "twitter": "https://twitter.com/worldlinetech",
+    "github": "https://github.com/worldline",
+    "bluesky": "https://bsky.app/profile/techatworldline.bsky.social"
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "desc": "Grafana Labs soutient les entreprises dans leur observabilité avec la stack LGTM (logs, métriques, traces, dashboards) et Grafana Cloud, une plateforme cloud proposant des solutions clé en main pour le monitoring de Kubernetes, l’observabilité des applications et bien plus.",
+    "image": "grafana.png",
+    "type": "bronze",
+    "link": "https://grafana.com/",
+    "linkedIn": "https://www.linkedin.com/company/grafana-labs/posts/?feedView=all",
+    "twitter": "https://x.com/grafana?mx=2"
+  },
+  {
+    "id": "gladia",
+    "name" : "Gladia",
+    "desc" : "Gladia provides a speech-to-text and audio intelligence API for building virtual meeting and note-taking apps, call center platforms, and media products, providing transcription, translation, and insights powered by best-in-class ASR, LLMs and GenAI models.",
+    "image" : "gladia.png",
+    "type" : "partenaires",
+    "link" : "https://www.gladia.io/"
+
+  },
+  {
+    "name": "Polytech'Tours",
+    "id": "polytechtours",
+    "image": "logo-polytech-UFR.png",
+    "link": "https://polytech.univ-tours.fr/",
+    "type": "partenaires",
+    "desc": "L&#39;École polytechnique de l&#39;université de Tours (Polytech Tours) est l&#39;une des 207</b>écoles d&#39;ingénieurs françaises accréditées au 1 er septembre 2022 à délivrer un</b>diplôme d&#39;ingénieur.</b>Elle est située à Tours, en Indre-et-Loire, dans la région Centre, plus</b>précisément dans le quartier des Deux-Lions, au le sud de la ville. Ses activités</b>sont réparties sur trois sites éloignés de quelques centaines de mètres : site</b>Portalis (départements « informatique », « informatique embarquée » et «</b>premier cycle »), site Dassault (départements « mécanique et conception des</b>systèmes », et « électronique et énergie électrique ») et le site Lesseps</b>(département « Génie de l’aménagement et de l’environnement »). La</b>construction en-cours d’un nouveau bâtiment va permettre rapidement de</b>dynamiser son activité avec des formations transversales aux domaines actuels.</b>Elle fait partie du réseau Polytech, groupement de seize écoles d&#39;ingénieurs</b>internes aux universités. Elle est habilitée par la Commission des titres</b>d&#39;ingénieur et membre de la Conférence des grandes écoles. Composante de</b>l&#39;université de Tours, l’Ecole participe à la notoriété de l’université et aux projets</b>communs développés avec les autres composantes."
   }
 ]

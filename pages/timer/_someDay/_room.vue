@@ -72,6 +72,7 @@ export default {
   width: 100vw;
   background-color: $color-primary;
   color: white;
+  overflow-x: hidden;
 }
 .talk--bloc {
   height: 100vh;
@@ -87,5 +88,11 @@ export default {
   left: 95vw;
   height: 10vh;
   filter: drop-shadow(0px 0px 5px #fff);
+}
+@media (min-width: 1300px) {
+  .fullWidth {
+    background-color: white;
+    color: $color-primary;
+  }
 }
 </style>

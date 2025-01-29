@@ -5,10 +5,13 @@
       {{ remainingTime.asString }}
     </h2>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
+    <Sponsors class="sponsors" />
   </div>
 </template>
 
 <script>
+import Sponsors from "@/components/TimerSponsors.vue";
+
 function calculateRemainingTime(endTime) {
   const endDate = new Date();
   endDate.setHours(endTime.split(":")[0], endTime.split(":")[1], 0);
@@ -33,6 +36,7 @@ function calculateTime(endTime, startTime) {
 }
 
 export default {
+  components: {Sponsors},
   props: {
     talk: {
       type: Object,
@@ -86,6 +90,8 @@ export default {
   //border: 2px solid yellow;
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .timerTalk h1, .timerTalk h2, .timerTalk h3 {
@@ -124,6 +130,36 @@ export default {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+.sponsors {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+
+  .timerTalk h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    height: 40vh;
+  }
+  .timerTalk h3 {
+    font-size: xxx-large;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sponsors {
+    display: flex;
+    align-self: end;
+    position: sticky;
+    top: 95vh;
+    width: 300%;
+    height: 20vh;
+    max-width: 150%;
+    overflow-x: hidden;
   }
 }
 </style>
