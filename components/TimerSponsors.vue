@@ -24,25 +24,10 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
 
-.sponsor-gold {
-  --img-max-width: 350px;
-  --img-max-height: 350px;
-}
-
-.sponsor-silver {
-  --img-max-width: 300px;
-  --img-max-height: 300px;
-}
-
-.sponsor-bronze {
-  --img-max-width: 200px;
-  --img-max-height: 200px;
-}
-
 .logo {
   margin: auto 20px;
-  max-width: var(--img-max-width);
-  max-height: var(--img-max-height);
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .marquee {
