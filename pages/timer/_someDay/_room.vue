@@ -8,7 +8,7 @@
       :id="talk?.talk?.id"
       class="talk--bloc"
     >
-      <TimerTalk :talk="talk" />
+      <TimerTalk :talk="talk" :room="room" />
     </div>
   </div>
 </template>
@@ -88,11 +88,5 @@ export default {
   left: 95vw;
   height: 10vh;
   filter: drop-shadow(0px 0px 5px #fff);
-}
-@media (min-width: 1300px) {
-  .fullWidth {
-    background-color: white;
-    color: $color-primary;
-  }
 }
 </style>
