@@ -25,15 +25,16 @@ export default {
 @import "../assets/scss/variables";
 
 .logo {
-  margin: auto 20px;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 20vh;
+  max-height: 100%;
 }
 
 .marquee {
   flex-direction: row;
   justify-content: space-around;
   align-content: end;
+  align-items: center;
+  gap: 48px;
   position: relative;
   animation-name: marquee_animation;
   animation-duration: 20s;

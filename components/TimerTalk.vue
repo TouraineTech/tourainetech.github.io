@@ -4,7 +4,9 @@
     <h2 class="chrono" :class="{'blink': lowRemainingTime}">
       {{ remainingTime.asString }}
     </h2>
-    <Sponsors class="sponsors" />
+    <div class="container--sponsors">
+      <Sponsors class="sponsors" />
+    </div>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
@@ -137,7 +139,7 @@ export default {
   }
 }
 
-.sponsors {
+.container--sponsors {
   display: none;
 }
 
@@ -182,12 +184,19 @@ export default {
     white-space: nowrap;
   }
 
+  .container--sponsors {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    position: sticky;
+    height: 20vh;
+    margin: 2vh 0;
+  }
+
   .sponsors {
     margin: auto;
     display: flex;
     align-self: end;
-    position: sticky;
-    height: 25vh;
+    height: 100%;
     max-width: 150%;
   }
 }
