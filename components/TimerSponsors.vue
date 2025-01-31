@@ -3,7 +3,20 @@
     <img
       v-for="sponsor in sponsors" :key="sponsor.id"
       :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
-      width="100%"
+      :alt="sponsor.name"
+      class="logo"
+      :class="`sponsor-${sponsor.type}`"
+    />
+    <img
+      v-for="sponsor in sponsors" :key="sponsor.id"
+      :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
+      :alt="sponsor.name"
+      class="logo"
+      :class="`sponsor-${sponsor.type}`"
+    />
+    <img
+      v-for="sponsor in sponsors" :key="sponsor.id"
+      :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
       :alt="sponsor.name"
       class="logo"
       :class="`sponsor-${sponsor.type}`"
@@ -25,8 +38,9 @@ export default {
 @import "../assets/scss/variables";
 
 .logo {
-  max-width: 20vh;
-  max-height: 100%;
+  height: auto;
+  max-width: 22vh;
+  max-height: 80%;
 }
 
 .marquee {
@@ -44,10 +58,10 @@ export default {
 
 @keyframes marquee_animation {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-26%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(127%);
   }
 }
 
