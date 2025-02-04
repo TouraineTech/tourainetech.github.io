@@ -24,20 +24,28 @@ export default {
     RegieRoom
   },
   data: () => ({
-    F21:"",
-    F22:"",
-    bio:"",
-    physique:""
+    F21:"https://www.youtube.com/embed/kNB8dfP4zcs",
+    F22:"https://www.youtube.com/embed/uogzR8Wrxy4",
+    bio:"https://www.youtube.com/embed/L-PJfQKM0dE",
+    physique:"https://www.youtube.com/embed/27IO_EVL_CQ"
   }),
   mounted() {
     setTimeout(() => {
-      window.scroll({top: document.getElementById("regie").offsetTop - 24});
+      window.scroll({top: document.getElementById("regie").offsetTop});
     }, 2000);
 
-    this.F21 = `https://www.youtube.com/embed/${this.$route.query.F21}`;
-    this.F22 = `https://www.youtube.com/embed/${this.$route.query.F22}`;
-    this.bio = `https://www.youtube.com/embed/${this.$route.query.bio}`;
-    this.physique = `https://www.youtube.com/embed/${this.$route.query.physique}`;
+    if (this.$route.query.F21) {
+      this.F21 = `https://www.youtube.com/embed/${this.$route.query.F21}`;
+    }
+    if (this.$route.query.F22) {
+      this.F22 = `https://www.youtube.com/embed/${this.$route.query.F22}`;
+    }
+    if (this.$route.query.bio) {
+      this.bio = `https://www.youtube.com/embed/${this.$route.query.bio}`;
+    }
+    if (this.$route.query.physique) {
+      this.physique = `https://www.youtube.com/embed/${this.$route.query.physique}`;
+    }
   }
 }
 </script>
