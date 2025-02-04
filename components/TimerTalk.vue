@@ -1,14 +1,19 @@
 <template>
-  <div class="timerTalk">
+  <div class="timerTalk" :class="`timerTalk-${room}`">
     <h1>{{ talk?.talk?.name }}</h1>
     <h2 class="chrono" :class="{'blink': lowRemainingTime}">
       {{ remainingTime.asString }}
     </h2>
+    <div class="container--sponsors">
+      <Sponsors class="sponsors" />
+    </div>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
 
 <script>
+import Sponsors from "@/components/TimerSponsors.vue";
+
 function calculateRemainingTime(endTime) {
   const endDate = new Date();
   endDate.setHours(endTime.split(":")[0], endTime.split(":")[1], 0);
@@ -33,7 +38,12 @@ function calculateTime(endTime, startTime) {
 }
 
 export default {
+  components: {Sponsors},
   props: {
+    room: {
+      type: String,
+      default() {return "F21"}
+    },
     talk: {
       type: Object,
       default () {
@@ -86,6 +96,8 @@ export default {
   //border: 2px solid yellow;
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .timerTalk h1, .timerTalk h2, .timerTalk h3 {
@@ -124,6 +136,68 @@ export default {
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+.container--sponsors {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .timerTalk {
+    background-size: 100vw 100vh;
+  }
+
+  .timerTalk-F21 {
+    background-image: url('~assets/img/visualArt/fondF21.png');
+    background-size: 100vw 100vh;
+  }
+  .timerTalk-F22 {
+    background-image: url('~assets/img/visualArt/fondF22.png');
+    background-size: 100vw 100vh;
+  }
+  .timerTalk-Physique {
+    background-image: url('~assets/img/visualArt/fondPhysique.png');
+    background-size: 100vw 100vh;
+  }
+  .timerTalk-Bio {
+    background-image: url('~assets/img/visualArt/fondBio.png');
+    background-size: 100vw 100vh;
+  }
+
+  .timerTalk h1 {
+    width: 100%;
+    margin-top: 25vh;
+    height: 5vh;
+    text-align: center;
+  }
+
+  .timerTalk h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    height: 10vh;
+  }
+  .timerTalk h3 {
+    font-size: xxx-large;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .container--sponsors {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    position: sticky;
+    height: 20vh;
+    margin: 2vh 0;
+  }
+
+  .sponsors {
+    margin: auto;
+    display: flex;
+    align-self: end;
+    height: 100%;
+    max-width: 150%;
   }
 }
 </style>
