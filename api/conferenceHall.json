@@ -835,21 +835,6 @@
       "level": "BEGINNER"
     },
     {
-      "id": "clzyebs6j315413hpbz86etx4",
-      "title": "Déployer une application mobile dans la vraie vie",
-      "abstract": "Avez-vous connu l'époque où déployer une application web signifiait envoyer des fichiers en production via FTP ? C'était simple et direct.\nAujourd'hui, nous avons de nombreuses étapes pour déployer, il faut penser Git flow, CI/CD, scalabilité, cloud provider et j'en passe.\n\nMais qu'en est-il des applications mobiles ? Sans surprise, c'est pareil !\n\nLoin de l'âge d'or où 4 heures suffisaient à avoir une application disponible en production, déployer sur l'AppStore ou le PlayStore est devenu un véritable parcours du combattant, avec une complexité qui ne cesse de croître.\n\nEt si nous explorions ce défi ?\n\nEnsemble, évadons-nous du labyrinthe qu'est le monde des stores d'applications mobiles. \nNous passerons en revue les étapes, les bonnes pratiques, et les pièges à éviter pour déployer efficacement une application mobile.\n\nQue vous soyez développeur web ou mobile, novice ou expérimenté, ce talk vous montrera les différentes étapes qui ont été nécessaires pour que vous puissiez partager vos comptes en week-end, faire un virement, lire vos mails ou encore fusionner des bonbons sur vos smartphones.\n\nRejoignez-moi pour démystifier le déploiement mobile et apprendre comment transformer cette tâche ardue en une routine maîtrisée.\n",
-      "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Quentin_KLEIN"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102r13hpan99q8vi",
-      "level": "BEGINNER"
-    },
-    {
       "id": "clzyec355316b13hp6t3idc94",
       "title": "Intégrons, faisons grandir et progresser les jeunes devs: Bonnes pratiques et retours d'expériences à l'intention des (vieux) devs.",
       "abstract": "Êtes-vous confronté au défi d'encadrer et de développer les compétences des jeunes développeurs ?\nEn tant que lead développeur ou développeur expérimenté, vous êtes souvent amené à guider techniquement de nouveaux talents. Mais quelle approche adopter pour assurer leur progression de manière optimale ?\n\nDepuis plusieurs années, je participe à différentes initiatives de mentorat et d'accompagnement de jeunes développeurs. Je vous propose donc de partager les bonnes pratiques que j'ai pu mettre en oeuvre ainsi que les écueils que j'ai rencontré.\n\nNous saurons donc à la fin de cette présentation comment intégrer et rendre autonomes les nouveaux arrivant.es le plus efficacement possible.",
@@ -1750,17 +1735,6 @@
       "socials": {
         "github": "alekmaul",
         "twitter": "alekmaul"
-      }
-    },
-    {
-      "uid": "Quentin_KLEIN",
-      "name": "Quentin KLEIN",
-      "bio": "J'essaye de faire fonctionner des trucs en écrivant du code.",
-      "company": "La Mobilery",
-      "picture": "https://lh5.googleusercontent.com/-s8ZeRNMdMUY/AAAAAAAAAAI/AAAAAAAAIAg/tMefLw4P54Y/photo.jpg",
-      "socials": {
-        "github": "quentin7b",
-        "twitter": "kleinquentin"
       }
     },
     {
