@@ -336,19 +336,6 @@
       "level": "ADVANCED"
     },
     {
-      "id": "cm2erk9nx01emvm4hg2sb7kuu",
-      "title": "Nouveautés et futur du JavaScript avec son écosystème",
-      "abstract": "Les développeurs Front parlent souvent des nouvelles versions d'Angular, Vue et autres packages, mais très peu des nouveautés du JavaScript en lui-même.\n\nJe suis là pour corriger cette injustice 😊\n\nDans ce talk, nous **coderons** sur des cas concrets :\n- les nouveautés du JavaScript.\n- les propositions pour les futures versions.\n- l'évolution de l'écosystème JS.",
-      "tags": [],
-      "languages": [],
-      "speakers": [
-        "Bastien_Rousseau"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102p13hpw8tzwls8",
-      "level": null
-    },
-    {
       "id": "cm2bi8b4f00thxalm8nrlynuu",
       "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
       "abstract": "Lorsque l'on crée un cluster Kubernetes, on se pose **toujours** les mêmes questions : \n\n- Où j'installe mes nœuds ? Ai-je des dépendances liées à la plateforme utilisée ? *(ex : VM, Kubernetes managés...)*\n- Comment bootstrap mon cluster *(kOPS ? KubeSpray ? Kubeadm ?)* ?\n- Comment gérer proprement les mises à jour de mes nœuds ?\n- En combien de temps puis-je recréer mon cluster *(PRA)* ?\n- Comment mettre à jour mon cluster Kubernetes *sans* me prendre la tête ?\n\nDe nombreuses questions dont la réponse est toujours \"*ça dépend*\" 🫠​.\n\nL'objectif de ce talk est alors de vous montrer comment nous avons réussi à répondre à la majorité de ces questions avec un seul et même outil : [Talos](https://www.talos.dev/). C'est une distribution minimaliste et immuable dédiée à la création de nœuds Kubernetes qui écourtera vos matinées déploiements ⌛!\n\nQue vous soyez développeur, SRE, ou juste curieux : vous ne souffrirez plus de l'installation de vos clusters, qu'ils soient en dev, ou en production 🤩\n\nSpoiler : votre CISO va adorer.",
@@ -728,23 +715,6 @@
       "level": "BEGINNER"
     },
     {
-      "id": "cm09o1gh4000hpogqepwja8kg",
-      "title": "L’IA en Afrique: Comment Rebondir?",
-      "abstract": "L'intelligence artificielle ne se contente pas de bouleverser les paradigmes, elle les écrase. Dans cette présentation, nous explorerons comment l'IA est en train de bouleverser les dynamiques économiques, politiques et géopolitiques avec une insouciance presque cruelle\n\nÀ travers des illustrations précises, nous explorerons non seulement l'impact de l'IA sur la société, mais aussi comment elle influence les décisions stratégiques au niveau géopolitique, pas seulement, nous découvrirons aussi comment les marchés financières sont devenus marionnettes d’algorithmes capables de générer des prédictions financières influençant les décisions des investisseurs à l'échelle mondiale.\n\nPuis, nous tournerons notre regard vers l'Afrique. Ce continent, trop souvent relégué au rôle d'observateur dans la course technologique, pourrait bien tenir, grâce à l'IA, sa revanche. L'adoption de technologies telles que l'agriculture de précision, la santé numérique et l'éducation assistée par l'IA, loin de simplement combler les fossés du développement, pourrait propulser l'Afrique sur le devant de la scène mondiale, en en faisant un acteur incontournable du XXIe siècle.",
-      "tags": [],
-      "languages": [
-        "fr",
-        "en",
-        "ar"
-      ],
-      "speakers": [
-        "Ayoub_ALOUANE"
-      ],
-      "formats": "clzyaamxk102w13hpk1e1095a",
-      "categories": "clzyaamxk102u13hpzlab3f0w",
-      "level": "BEGINNER"
-    },
-    {
       "id": "cm05d2djy00esoh1upshfx4pa",
       "title": "« Pourquoi une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)",
       "abstract": "Description\n\n« Honnêtement, qu’est-ce que tu nous emm*** avec une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)\n\nJe vous propose de monter dans la barque avec moi pour vous raconter l’aventure d’une grille de salaire, pourquoi, comment, et ce qu’on en a retiré. Ça parait simple quand on s’engage mais il y a eu des hauts fonds sur tout le trajet.\n\nEn sortant, vous aurez des billes supplémentaires pour savoir où aller de votre côté, faire vos choix ou poussez les bons enjeux dans vos équipes.\n\nNous parlerons, avec un mode retour d’expérience et discussion, de géographie, de niveaux et rôles, de télétravail et présentiel, de négociation et augmentation automatique, d’expérience et de diplôme, de comparaison au marché. Rien que se positionner dans le marché a été tout sauf simple et j’espère bien vous éviter nos difficultés.\n\n* avec plein de respect pour les fonctionnaires, qui ont justement compris le besoin d'avoir des grilles de salaire",
@@ -832,21 +802,6 @@
       ],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102v13hplgi4r5fy",
-      "level": "BEGINNER"
-    },
-    {
-      "id": "clzyebs6j315413hpbz86etx4",
-      "title": "Déployer une application mobile dans la vraie vie",
-      "abstract": "Avez-vous connu l'époque où déployer une application web signifiait envoyer des fichiers en production via FTP ? C'était simple et direct.\nAujourd'hui, nous avons de nombreuses étapes pour déployer, il faut penser Git flow, CI/CD, scalabilité, cloud provider et j'en passe.\n\nMais qu'en est-il des applications mobiles ? Sans surprise, c'est pareil !\n\nLoin de l'âge d'or où 4 heures suffisaient à avoir une application disponible en production, déployer sur l'AppStore ou le PlayStore est devenu un véritable parcours du combattant, avec une complexité qui ne cesse de croître.\n\nEt si nous explorions ce défi ?\n\nEnsemble, évadons-nous du labyrinthe qu'est le monde des stores d'applications mobiles. \nNous passerons en revue les étapes, les bonnes pratiques, et les pièges à éviter pour déployer efficacement une application mobile.\n\nQue vous soyez développeur web ou mobile, novice ou expérimenté, ce talk vous montrera les différentes étapes qui ont été nécessaires pour que vous puissiez partager vos comptes en week-end, faire un virement, lire vos mails ou encore fusionner des bonbons sur vos smartphones.\n\nRejoignez-moi pour démystifier le déploiement mobile et apprendre comment transformer cette tâche ardue en une routine maîtrisée.\n",
-      "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Quentin_KLEIN"
-      ],
-      "formats": "clzyaamxk102x13hp665tzg4v",
-      "categories": "clzyaamxk102r13hpan99q8vi",
       "level": "BEGINNER"
     },
     {
@@ -1412,14 +1367,6 @@
       }
     },
     {
-      "uid": "Bastien_Rousseau",
-      "name": "Bastien Rousseau",
-      "bio": "Je suis Tech Lead chez Apside TOP, actuellement je développe les librairies d'un socle Angular et la mise en place d'une architecture micro-frontend. \n10 ans d'expérience dans le développement : 75% Front dont beaucoup d'Angular (toutes les versions enfaite !)\nCe qui m'intéresse vraiment c'est ce qu'il y a sous le capot, le JavaScript et ce qu'il y a autour, c'est là que je passe beaucoup de temps.\nJ'ai une envie de partager mes connaissances et donner envie à d'autres personnes à s'intéresser à ces sujets.",
-      "company": null,
-      "picture": "https://avatars.githubusercontent.com/u/150451279?v=4",
-      "socials": {}
-    },
-    {
       "uid": "Quentin_JOLY",
       "name": "Quentin JOLY",
       "bio": "Bambin de la tech, je ne cesse d'apprendre chaque jour en portant la casquette de SRE chez Lucca. J'alimente cette passion au quotidien en partageant mes découvertes et mes inspirations sur mon petit blog \"une-tasse-de.cafe\". Je suis toujours disponible pour blablater autour d'un bon café !",
@@ -1680,16 +1627,6 @@
       "socials": {}
     },
     {
-      "uid": "Ayoub_ALOUANE",
-      "name": "Ayoub ALOUANE",
-      "bio": "I am Ayoub Alouane, working as a CTO Academy at Adservio, Software Engineer & Exec MBA Student, as a Speaker and Trainer, I'm trying to build a consciousness about performance and AI Impact in our community of devs.\n\nBlog:\n\nhttps://dev.to/ayoub_alouane\nhttps://circledam.com/blog/\n\nSome videos: \n\nhttps://www.youtube.com/watch?v=M6lGKtA37uE\nhttps://www.youtube.com/watch?v=OSwMq0KgKMA\nhttps://www.youtube.com/watch?v=Xj8j7lQ49a0\nhttps://www.youtube.com/watch?v=U0w616gGykM\nhttps://www.youtube.com/watch?v=W1zq2YfeLFE\nhttps://www.youtube.com/watch?v=BI9C_uH2Y2E\nhttps://www.youtube.com/watch?v=t5khUidhtwc",
-      "company": "Adservio Group",
-      "picture": "https://cache.sessionize.com/image/b0cb-200o200o2-YH1o4vLSdgG7nXazZBv56b.jpg",
-      "socials": {
-        "twitter": "alouane_med"
-      }
-    },
-    {
       "uid": "Éric_Daspet",
       "name": "Éric Daspet",
       "bio": "Après des années comme développeur web, j'ai un peu changé de métier pour faire de la direction technique et du management. Non ce n'est pas sale, juste un autre rôle dans la même direction.\n\nPar le passé j'ai eu l'occasion de fonder les conférences Paris-Web, co-écrire le livre « PHP 5 avancé » (désormais PHP 7 avancé), co-fonder la plateforme de livres numériques Vivlio et diriger les équipes de La Ruche Qui Dit Oui puis de Cozy Cloud.\n\nJusque fin 2024 j'ai accompagné les équipes d'Indy.fr comme VP Engineering. Je parle beaucoup management, organisation collective, responsabilité et éthique, sécurité, et architecture des applications web. \n\n[Linkedin](https://www.linkedin.com/in/ericdaspet/) - [Accompagnement de directeurs techniques](https://e3d5.fr/)",
@@ -1750,17 +1687,6 @@
       "socials": {
         "github": "alekmaul",
         "twitter": "alekmaul"
-      }
-    },
-    {
-      "uid": "Quentin_KLEIN",
-      "name": "Quentin KLEIN",
-      "bio": "J'essaye de faire fonctionner des trucs en écrivant du code.",
-      "company": "La Mobilery",
-      "picture": "https://lh5.googleusercontent.com/-s8ZeRNMdMUY/AAAAAAAAAAI/AAAAAAAAIAg/tMefLw4P54Y/photo.jpg",
-      "socials": {
-        "github": "quentin7b",
-        "twitter": "kleinquentin"
       }
     },
     {
