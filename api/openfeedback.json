@@ -347,14 +347,14 @@
     },
     "cm2erk9nx01emvm4hg2sb7kuu": {
       "id": "cm2erk9nx01emvm4hg2sb7kuu",
-      "title": "Nouveautés et futur du JavaScript avec son écosystème",
+      "title": "REST next level : Ecrire des APIs web orientées métier",
       "trackTitle": "Physique",
       "tags": [
         "Front web",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Bastien_Rousseau"
+        "Julien_Topçu"
       ],
       "startTime": "2025-02-07T13:30:00+01:00",
       "endTime": "2025-02-07T14:20:00+01:00"
@@ -715,14 +715,14 @@
     },
     "cm09o1gh4000hpogqepwja8kg": {
       "id": "cm09o1gh4000hpogqepwja8kg",
-      "title": "L’IA en Afrique: Comment Rebondir?",
+      "title": "SOPS, Passez un savon à vos secrets en clair !",
       "trackTitle": "Physique",
       "tags": [
         "Humain & Tech",
         "Lightning (15min)"
       ],
       "speakers": [
-        "Ayoub_ALOUANE"
+        "Sylvain_METAYER"
       ],
       "startTime": "2025-02-07T12:35:00+01:00",
       "endTime": "2025-02-07T12:50:00+01:00"
@@ -813,14 +813,14 @@
     },
     "clzyebs6j315413hpbz86etx4": {
       "id": "clzyebs6j315413hpbz86etx4",
-      "title": "Déployer une application mobile dans la vraie vie",
+      "title": "Tour d’horizon de Kotlin et de son écosystème",
       "trackTitle": "Physique",
       "tags": [
         "Mobile, Internet des objets",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Quentin_KLEIN"
+        "Yassine_Benabbas"
       ],
       "startTime": "2025-02-07T15:45:00+01:00",
       "endTime": "2025-02-07T16:35:00+01:00"
