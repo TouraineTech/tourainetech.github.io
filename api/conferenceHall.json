@@ -80,12 +80,19 @@
       "title": "Comment j'ai porté Doom sur navigateur grâce au Web Assembly",
       "abstract": "Le portage de jeux vidéos permet de découvrir de nouvelles technologies tout en s'amusant. En plus, c'est un excellent point d'entrée dans le monde du développement de jeux vidéos. Cela est d'autant plus vrai grâce au **Web Assembly** qui simplifie le portage de jeux sur navigateur.\n\nDurant cette session, je partage mon retour d'expérience sur la réalisation de mon premier portage. Je vous expliquerai pourquoi j'ai choisi de porter **Doom**.\nEnsuite, je montrerai étape par étape comment j'ai réussi à intégerer le **Canvas** et l'**AudioContext** en **JavaScript** pour avoir un rendu qui peut aller jusqu'à 60 fps.\n\nA l'issue de cette conférence, vous ne verrez plus le portage de jeux vidéos de la même manière. Donc, si vous êtes passionnés par les jeux vidéos ou que vous souhaitez découvrir comme le WASM contribue aux portage de jeux, cette session est faite pour vous.",
       "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Yassine_Benabbas"
-      ],
+      "languages": ["fr"],
+      "speakers": ["Yassine_Benabbas"],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102p13hpw8tzwls8",
+      "level": "BEGINNER"
+    },
+    {
+      "id": "yassine2",
+      "title": "Tour d’horizon de Kotlin et de son écosystème",
+      "abstract": "Kotlin est un langage concis, moderne et compatible avec la JVM. L’engouement pour ce langage ne cesse de croître, en faisant ainsi le deuxième langage de la JVM. De plus, il a bénéficié ces derniers mois d’évolutions importantes, le rendant ainsi multiplateforme et fullstack. C’est donc le moment parfait pour faire le point sur Kotlin.\n\nCette session présente un état des lieux de l’écosystème Kotlin. J’y présenterai les fonctionnalités actuelles et futures du langage tout en faisant le parallèle avec Java. Je présenterai aussi les différents types d’applications que l’on peut développer avec Kotlin/JVM et au-delà. Vous serez surpris par certaines possibilités 😁.\n\nRejoignez-nous pour cette vue d’ensemble actualisée de Kotlin, qui permettra de démystifier vos doutes et questionnements sur ce langage.",
+      "tags": [],
+      "languages": ["fr"],
+      "speakers": ["Yassine_Benabbas"],
       "formats": "clzyaamxk102x13hp665tzg4v",
       "categories": "clzyaamxk102p13hpw8tzwls8",
       "level": "BEGINNER"
@@ -370,12 +377,19 @@
       "title": "Automatisez l'installation de votre poste de travail !",
       "abstract": "Quand l'on parle de notre $HOME sur Linux/MacOS, nous avons tous nos préférences, que cela soit notre éditeur de texte (le débat vim/emacs fait toujours rage), le prompt customisé, nos logiciels favoris... Et nous y tenons !\n\nA nos clients, nous recommandons toujours de prévoir une sauvegarde. Mais si demain votre poste de travail rend l'âme, combien de temps estimez-vous qu'il vous faudra pour reconfigurer votre joli ZSH avec ses 50 plugins, votre config vim aux petits oignons, votre configuration SSH avec la vingtaine d'hosts configuré, retrouver le nom de tous ces outils qui vous sont cher, ou encore tous ces alias fort utiles dont vous abusez au quotidien ?\n\nEmbarquons pour une découverte de quelques unes des façons de sauvegarder votre configuration et voyons comment ansible peut vous aider !",
       "tags": [],
-      "languages": [
-        "fr"
-      ],
-      "speakers": [
-        "Sylvain_METAYER"
-      ],
+      "languages": ["fr"],
+      "speakers": ["Sylvain_METAYER"],
+      "formats": "clzyaamxk102w13hpk1e1095a",
+      "categories": "clzyaamxk102t13hp9akxg5en",
+      "level": "BEGINNER"
+    },
+    {
+      "id": "sylvain2",
+      "title": "SOPS, Passez un savon à vos secrets en clair !",
+      "abstract": "Chacun à ses secrets. Vos applications également.\n\nCependant, tout comme nous avons droit à notre jardin secret, nos secrets aimeraient bien avoir leur petit coin ou ils peuvent indiquer leur données sensibles. Si vous n’avez pas de Secret Manager pour centraliser vos secrets, par choix ou non, ces derniers risquent de se retrouver à la vue de tous dans un dépôt Git, en clair.\n\nPas terrible me direz-vous. Venez voir comment https://github.com/getsops/sops/releases, un outil open source, peut vous aider, et vous pourrez ensuite passer un savon à quiconque pousse des secrets en clair sur vos dépôts !",
+      "tags": [],
+      "languages": ["fr"],
+      "speakers": ["Sylvain_METAYER"],
       "formats": "clzyaamxk102w13hpk1e1095a",
       "categories": "clzyaamxk102t13hp9akxg5en",
       "level": "BEGINNER"
@@ -959,6 +973,21 @@
       "id": "clzyebhpv313413hpg3xibbl4",
       "title": "L'Architecture Hexagonale par la pratique, le live coding qui rendra vos applications plus pérennes",
       "abstract": "Il arrive toujours un moment où, le logiciel est tellement gros et vieux qu’il devient inmaintenable. Impossible de mettre à jour la stack technique sans tout casser, les nouvelles fonctionnalités deviennent de plus en plus longue à implémenter et la dette technique étant tellement lourde que le refactoring devient exorbitant.\n\nEt si on vous disait que tout ça était plus un problème de pratique qu’un problème de vieillesse du logiciel ?\n\nVenez découvrir par ce live coding, comment l’Architecture Hexagonale peut tacler la complexité logicielle en vous permettant d’être évolutif et pérenne tout en vous aidant à mieux gérer votre dette technique.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Julien_Topçu"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102s13hpkwipk45v",
+      "level": "BEGINNER"
+    },
+    {
+      "id": "julien2",
+      "title": "REST next level : Ecrire des APIs web orientées métier",
+      "abstract": "Vous venez de coder votre logique métier, et peut-être que vous avez même fait l'effort d'appliquer les principes du Domain-Driven Design !\n\nMais au moment de l'écriture de votre API... Catastrophe ! Toute l'intention et l'expression de votre domaine partent en fumée pour rentrer dans le moule des méthodes GET, POST, etc. Dénaturé par la couche REST, le métier se voit alors en partie réimplémenté côté front pour compenser le vocabulaire limité de ce protocole basé sur un CRUD...\n\nLors de ce talk, nous verrons comment HATEOAS - le dernier niveau de maturité d'une architecture REST - peut nous aider à écrire une API web orientée métier qui aura la puissance de guider vos consommateurs à travers le workflow de votre domaine.",
       "tags": [],
       "languages": [
         "fr"
