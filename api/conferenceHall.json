@@ -985,6 +985,21 @@
       "level": "BEGINNER"
     },
     {
+      "id": "julien2",
+      "title": "REST next level : Ecrire des APIs web orientées métier",
+      "abstract": "Vous venez de coder votre logique métier, et peut-être que vous avez même fait l'effort d'appliquer les principes du Domain-Driven Design !\n\nMais au moment de l'écriture de votre API... Catastrophe ! Toute l'intention et l'expression de votre domaine partent en fumée pour rentrer dans le moule des méthodes GET, POST, etc. Dénaturé par la couche REST, le métier se voit alors en partie réimplémenté côté front pour compenser le vocabulaire limité de ce protocole basé sur un CRUD...\n\nLors de ce talk, nous verrons comment HATEOAS - le dernier niveau de maturité d'une architecture REST - peut nous aider à écrire une API web orientée métier qui aura la puissance de guider vos consommateurs à travers le workflow de votre domaine.",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "speakers": [
+        "Julien_Topçu"
+      ],
+      "formats": "clzyaamxk102x13hp665tzg4v",
+      "categories": "clzyaamxk102s13hpkwipk45v",
+      "level": "BEGINNER"
+    },
+    {
       "id": "clzyebuz6315g13hppah52bp5",
       "title": "“Question pour un conteneur” : Quiz interactif sur les images, les conteneurs, OCI & Docker",
       "abstract": "Les conteneurs, ainsi que les technologies permettant de les manipuler, font partie du quotidien de notre vie de Dev ou d'Ops depuis une dizaine d'années maintenant. Nous les utilisons au quotidien, mais les connaît-on si bien ?\n\nTout au long de ce talk, avec un mix de quiz et de démos en live, vous apprendrez, entre autre, les différents formats qui existent, ainsi que les bonnes pratiques pour les sécuriser, les stocker, leur faire subir un régime et les utiliser sereinement sur plusieurs plateformes.\n\nUn format original avec un quiz, du fun et des démos, pour les débutants et les confirmés, afin de développer vos connaissances sur le merveilleux monde des conteneurs et les technologies ou réviser tout en s'amusant.\n\nSoyez la ou le plus rapide pour tenter de gagner des cadeaux !",
