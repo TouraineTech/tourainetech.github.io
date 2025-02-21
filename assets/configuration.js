@@ -13,7 +13,7 @@ export default {
     isCfpOpened: false,
     isEditionOpen: true,
     isVideoOnline: false,
-    isPhotoOnline: false,
+    isPhotoOnline: true,
     nbEdition: 7,
     displaySponsors : true,
     displayBeginnerSpeakers: false,

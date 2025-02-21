@@ -7,7 +7,7 @@ import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/
 import PLANNING from '../api/planning';
 import TIMES from '../api/times';
 import ROOMS from '../api/rooms';
-import PHOTOS from '../api/photos_72177720315139801.json';
+import PHOTOS from '../api/photos_72177720323970146.json';
 import DAYS from '../api/days.json';
 import CONFIGURATION from '../assets/configuration'
 
