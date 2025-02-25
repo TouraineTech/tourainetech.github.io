@@ -330,8 +330,8 @@ $color-alien: #066420;
 
   .schedule-talk-videoLinks {
     position: absolute;
-    bottom: 2em;
-    left: 25px;
+    bottom: 3em;
+    left: 5px;
     text-align: left;
 
     .icon {
