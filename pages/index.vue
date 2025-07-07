@@ -5,7 +5,7 @@
       <About></About>
       <Sponsors v-if="configuration.displaySponsors"></Sponsors>
       <Register v-if="configuration.isRegisterOpen"></Register>
-      <CFP v-if="!configuration.isScheduleOnline"></CFP>
+      <!--      <CFP v-if="!configuration.isScheduleOnline"></CFP>-->
       <BeginnerSpeakers v-if="!configuration.isScheduleOnline && configuration.isCfpOpen"></BeginnerSpeakers>
       <TopSpeakers v-if="configuration.isScheduleOnline"></TopSpeakers>
       <Schedule v-if="configuration.isScheduleOnline"></Schedule>
@@ -48,7 +48,7 @@ export default {
     About,
     Map,
     Team,
-    CFP,
+    // CFP,
     RendezVous,
     BeginnerSpeakers
   },
