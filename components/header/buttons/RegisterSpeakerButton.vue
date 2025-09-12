@@ -1,11 +1,11 @@
 <template>
   <a
-    href="https://cfp.touraine.tech"
+    href="https://cfp26.touraine.tech"
     target="_blank"
     class="HeaderButton"
   >
     <span class="HeaderButton-title RegisterSpeaker-title">Devenez speaker</span>
-    <span class="HeaderButton-subtitle RegisterSpeaker-subtitle">dépêchez-vous, fermeture du CFP le 31/10/2024 à 23h59</span>
+    <span class="HeaderButton-subtitle RegisterSpeaker-subtitle">dépêchez-vous, fermeture du CFP le 16/11/2025 à 23h59</span>
   </a>
 </template>
 

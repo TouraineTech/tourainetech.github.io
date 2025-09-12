@@ -5,7 +5,7 @@
       <template v-if="configuration.isCfpOpen">
         <p>
           Le
-          <a href="https://cfp.touraine.tech" target="_blank">
+          <a href="https://cfp26.touraine.tech" target="_blank">
             CFP est ouvert
           </a>
         </p>

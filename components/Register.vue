@@ -5,28 +5,28 @@
   >
     <div class="container--fix container--center">
       <h2>Billetterie</h2>
-      <!--      <span class="RegisterButton">Ouverture de la billetterie le mardi 08 octobre 2024 à 12h00</span>-->
-      <!--      <div>-->
-      <!--        <a-->
-      <!--          href="https://billetterie.touraine.tech"-->
-      <!--          target="_blank"-->
-      <!--          class="RegisterButton button&#45;&#45;link button&#45;&#45;white"-->
-      <!--        >Achetez votre place !</a>-->
-      <!--      </div>-->
+      <span class="RegisterButton">Ouverture de la billetterie le mardi 7 octobre 2025 12h30</span>
+      <div>
+        <a
+          href="https://billetterie26.touraine.tech"
+          target="_blank"
+          class="RegisterButton button--link button--white"
+        >Achetez votre place !</a>
+      </div>
       <div class="PriceBloc-wrapper">
         <a
-          class="PriceBloc PriceBloc--early PriceBloc--soldOut"
+          class="PriceBloc PriceBloc--early"
         >
           <h3 class="PriceBloc-title">Early-bird</h3>
-          <div class="PriceBloc-price">30 €</div>
+          <div class="PriceBloc-price">50 €</div>
           <div class="PriceBloc-quota">places limitées</div>
         </a>
         <a
-          class="PriceBloc PriceBloc--closed"
+          class="PriceBloc"
           target="_blank"
         >
           <h3 class="PriceBloc-title">Plein tarif</h3>
-          <div class="PriceBloc-price">50 €</div>
+          <div class="PriceBloc-price">70 €</div>
         </a>
       </div>
 

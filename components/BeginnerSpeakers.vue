@@ -29,8 +29,7 @@
         femme ou homme parmi nos volontaires.
       </p>
       <p>
-        <strong>Choisissez l'un des formats "Speaker débutant·e" en remplissant le
-          CFP</strong>, ou contactez-nous directement !
+        Contactez-nous en indiquant que vous souhaitez rejoindre l'aventure !
       </p>
 
       <ul class="contact-list">
