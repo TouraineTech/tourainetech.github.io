@@ -50,7 +50,7 @@ export default {
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(60, 60, 60, 0.10);
   padding: 3rem 2rem 2.5rem 2rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -78,15 +78,19 @@ export default {
   background: #e0f7f4;
   color: #21867b;
   font-weight: 600;
-  border-radius: 16px;
+  border-radius: 30px;
   padding: 0.6rem 1.2em;
   font-size: 1.1rem;
   text-decoration: none;
-  transition: background 0.15s;
+  transition: background 0.15s, color 0.15s, box-shadow 0.12s, transform 0.12s;
   min-height: 2.4rem;
+  box-shadow: 0 2px 8px rgba(94, 195, 182, 0.13);
 }
 .sponsors-badge:hover {
   background: #c2ece6;
+  color: #21867b;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(94, 195, 182, 0.22);
 }
 .sponsors-badge-icon {
   display: inline-block;

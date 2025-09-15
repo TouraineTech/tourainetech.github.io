@@ -1,6 +1,6 @@
 export default {
     isCfpOpen: true,
-    cfpDeliberationDate: 'decembre 2025',
+    cfpDeliberationDate: 'décembre 2025',
     cfClosingDate: '16 novembre 2025',
     eventDate: '12 & 13 fevrier 2026',
     eventEdition: '26',

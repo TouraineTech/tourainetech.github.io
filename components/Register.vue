@@ -12,7 +12,7 @@
         Billetterie
       </h2>
       <div class="register-badge">
-        Ouverture de la billetterie le mardi 7 octobre 2025 12h30
+        Ouverture de la billetterie le mardi 7 octobre 2025 à 12h30
       </div>
       <div>
         <a
@@ -65,7 +65,7 @@
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(60, 60, 60, 0.12);
   padding: 3rem 2rem 2.5rem 2rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   position: relative;
