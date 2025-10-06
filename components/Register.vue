@@ -24,23 +24,35 @@
         </a>
       </div>
       <div class="PriceBloc-wrapper">
-        <div class="PriceBloc PriceBloc--early">
-          <h3 class="PriceBloc-title">
-            Early-bird
-          </h3>
-          <div class="PriceBloc-price">
-            50 €
+        <div class="PriceBloc-row">
+          <div class="PriceBloc PriceBloc--early">
+            <h3 class="PriceBloc-title">
+              Early-bird
+            </h3>
+            <div class="PriceBloc-price">
+              50 €
+            </div>
+            <div class="PriceBloc-quota">
+              places limitées
+            </div>
           </div>
-          <div class="PriceBloc-quota">
-            places limitées
+          <div class="PriceBloc">
+            <h3 class="PriceBloc-title">
+              Plein tarif
+            </h3>
+            <div class="PriceBloc-price">
+              70 €
+            </div>
           </div>
         </div>
-        <div class="PriceBloc">
-          <h3 class="PriceBloc-title">
-            Plein tarif
-          </h3>
-          <div class="PriceBloc-price">
-            70 €
+        <div class="PriceBloc-row PriceBloc-row--single">
+          <div class="PriceBloc">
+            <h3 class="PriceBloc-title">
+              T-shirt
+            </h3>
+            <div class="PriceBloc-price">
+              20 €
+            </div>
           </div>
         </div>
       </div>
@@ -114,13 +126,40 @@
 }
 .PriceBloc-wrapper {
   display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.PriceBloc-row {
+  display: flex;
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
-  margin-bottom: 2.5rem;
-  @media screen and (max-width: $mobile-step) {
-    display: block;
+  align-items: center;
+}
+.PriceBloc-row--single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: $mobile-step) {
+  .PriceBloc-row,
+  .PriceBloc-row--single {
+    flex-direction: column;
+    display: flex;
     gap: 0;
+    align-items: center;
+  }
+  .PriceBloc {
+    margin: 1rem auto;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .register-card {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .register-title {
+    font-size: 1.4rem;
   }
 }
 .PriceBloc {
@@ -130,14 +169,16 @@
   text-decoration: none;
   background-color: #fff;
   color: $color-primary;
-  flex: 1;
+  flex: unset;
   margin: 1rem;
   padding: 2rem 1rem 1.5rem 1rem;
   border-radius: 16px;
   box-shadow: 0 4px 18px rgba(60, 60, 60, 0.08);
   transition: transform 0.12s, box-shadow 0.12s;
+  max-width: 320px;
+  width: 100%;
   @media screen and (min-width: $mobile-step) {
-    margin: 2rem;
+    margin: 2rem auto;
     padding: 2rem 1rem 1.5rem 1rem;
     &:hover {
       transform: scale(1.07);
@@ -177,20 +218,19 @@
   padding: 1.2rem 1rem;
   display: inline-block;
 }
+.PriceBloc-row--single .PriceBloc {
+  flex: unset;
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: $mobile-step) {
   .register-card {
     padding: 2rem 0.5rem 1.5rem 0.5rem;
   }
   .register-title {
     font-size: 1.4rem;
-  }
-  .PriceBloc-wrapper {
-    display: block;
-    gap: 0;
-  }
-  .PriceBloc {
-    margin: 1rem 0;
-    padding: 1.2rem 0.5rem 1rem 0.5rem;
   }
 }
 </style>
