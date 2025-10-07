@@ -25,7 +25,7 @@
       </div>
       <div class="PriceBloc-wrapper">
         <div class="PriceBloc-row">
-          <div class="PriceBloc PriceBloc--early">
+          <div class="PriceBloc PriceBloc--early PriceBloc--soldOut">
             <h3 class="PriceBloc-title">
               Early-bird
             </h3>
@@ -166,6 +166,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   background-color: #fff;
   color: $color-primary;
@@ -177,9 +178,12 @@
   transition: transform 0.12s, box-shadow 0.12s;
   max-width: 320px;
   width: 100%;
+  min-height: 200px;
+
   @media screen and (min-width: $mobile-step) {
     margin: 2rem auto;
     padding: 2rem 1rem 1.5rem 1rem;
+    min-height: 240px;
     &:hover {
       transform: scale(1.07);
       box-shadow: 0 8px 32px rgba(60, 60, 60, 0.13);
@@ -207,6 +211,144 @@
     font-size: 1rem;
     font-weight: 600;
     margin-top: 0.5em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+  }
+
+  // Ajout d'un élément invisible pour maintenir l'alignement
+  &:not(.PriceBloc--early):after {
+    content: "";
+    height: 1.8em;
+    margin-top: 0.5em;
+    visibility: hidden;
+  }
+
+  &--soldOut {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "ÉPUISÉ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background: linear-gradient(45deg, #e74c3c, #c0392b);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 0.5rem 3rem;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+      z-index: 10;
+      border-radius: 4px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 5;
+    }
+
+
+    &:hover {
+      transform: none !important;
+      box-shadow: 0 4px 18px rgba(60, 60, 60, 0.08) !important;
+    }
+  }
+  &--closed {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "FERMÉ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background: linear-gradient(45deg, #6c757d, #495057);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 0.5rem 3rem;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+      z-index: 10;
+      border-radius: 4px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 5;
+    }
+
+    * {
+      position: relative;
+      z-index: 1;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      transform: none !important;
+      box-shadow: 0 4px 18px rgba(60, 60, 60, 0.08) !important;
+    }
+  }
+}
+
+// Mode fermé pour toute la section
+.register-card--closed {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "BILLETTERIE FERMÉE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background: linear-gradient(45deg, #6c757d, #495057);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem 4rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(108, 117, 125, 0.4);
+    z-index: 100;
+    border-radius: 6px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 50;
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+    opacity: 0.4;
+  }
+
+  .register-btn {
+    pointer-events: none;
+    opacity: 0.3 !important;
   }
 }
 .RegisterHelp {
