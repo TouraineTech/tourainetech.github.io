@@ -2,129 +2,173 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
-      "speakers": []
+      "id": "cmgi079ue00271emj06wwt4nr",
+      "name": "La face cachée de la performance des équipes de développements",
+      "speakers": [
+        "geoffrey_graveaud"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
-      "speakers": []
+      "id": "cmg6lz5ru008v1elb3xxe2y9k",
+      "name": "Super apps : on voulait un skateboard, on construit un porte-avion",
+      "speakers": [
+        "Baptiste_CARLIER",
+        "Antoine_Robiez"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
-      "speakers": []
+      "id": "cmg3gkgyx00711envtmmew8ww",
+      "name": "De Warhol à Basquiat : Le vibe coding démocratise-t-il vraiment la création logicielle ?",
+      "speakers": [
+        "Alexis_Kovalenko"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
-      "speakers": []
+      "id": "cmfl0nv2n03xgml1e2jdbcc9g",
+      "name": "TikTok avec son framework LynxJS peut-il détrôner React Native et Flutter ?",
+      "speakers": [
+        "Simon_Bernardin"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
-      "speakers": []
+      "id": "cmfl4jghf046hml1ecampkjzq",
+      "name": "Handicap invisible : l’accessibilité commence dans les réunions (et l'IA peut aider)",
+      "speakers": [
+        "Anaïs_Moulin"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
-      "speakers": []
+      "id": "cmfpr4j8d00191el7dfaur789",
+      "name": "Respectons (enfin) l'article 25 du RGPD avec PostgreSQL Anonymiser",
+      "speakers": [
+        "Nicolas_GUILHEM"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
-      "speakers": []
+      "id": "cmfmjg2hg06himl1ed3cyjum6",
+      "name": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+      "speakers": [
+        "Estelle_Landry_☀️",
+        "Emilie_Goubin"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
-      "speakers": []
+      "id": "cmfl5qm6y049qml1eqf13uojk",
+      "name": "J'ai packagé mon application en image Docker, et maintenant ?",
+      "speakers": [
+        "Aurélie_Vache"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
+      "id": "cmfl0vubz03xuml1ejt5ihvek",
+      "name": "Another World, une belle leçon d’architecture logicielle",
+      "speakers": [
+        "Olivier_PONCET"
+      ]
+    }
+  },
+  {
+    "time": "16:35",
+    "talk": {
       "id": "pm2",
-      "name": "Pause"
+      "name": "Pause",
+      "speakers": []
     }
   }
 ]

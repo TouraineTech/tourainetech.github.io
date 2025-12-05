@@ -2,140 +2,188 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:00",
     "talk": {
+      "id": "keynoteOuverture2",
+      "name": "Keynote d'ouverture",
       "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
-      "speakers": []
+      "id": "cmghzal70001w1emj2wqelocf",
+      "name": "Révolution TanStack Query : Enfin une bonne gestion d’état 🗂️",
+      "speakers": [
+        "Lucas_Audart",
+        "Mickael_Alves"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
-      "speakers": []
+      "id": "cmfl3j2to043zml1efob6dcdf",
+      "name": "Accessibilité en action : rendre vos formulaires utilisables par tous",
+      "speakers": [
+        "François-Xavier_Lair"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
-      "speakers": []
+      "id": "cmicafa39000t01pd111ht6na",
+      "name": "Mieux écrire, mieux trouver : Diátaxis comme guide de documentation",
+      "speakers": [
+        "Alexis_\"Horgix\"_Chotard"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
-      "speakers": []
+      "id": "cmh898i6n00cn1eocmqh5tv17",
+      "name": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+      "speakers": [
+        "Estéban_S"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
-      "speakers": []
+      "id": "cmfpfohv100bonb1e3vmg9lao",
+      "name": "Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech",
+      "speakers": [
+        "Yann_Schepens"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
-      "speakers": []
+      "id": "cmgah8mo800fj1elbs7lmahsn",
+      "name": "Au secours ! Mes images pourrissent mes perfs",
+      "speakers": [
+        "Antoine_CARON",
+        "Mathieu_Mure"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
-      "speakers": []
+      "id": "cmfz7neh8001o1enve10obqb4",
+      "name": "Local-first et sync-engines, l'architecture du futur ?",
+      "speakers": [
+        "Benjamin_Legrand"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
-      "speakers": []
+      "id": "cmfoiit6c000cnb1ean32406l",
+      "name": "Plongez au coeur des structures de données en java",
+      "speakers": [
+        "Thibault_Monégier_du_Sorbier"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
-      "id": "pm2",
-      "name": "Pause"
+      "id": "cmfm5pib505owml1ezi0buel3",
+      "name": "Async/Await et Java",
+      "speakers": [
+        "Didier_Plaindoux"
+      ]
     }
   },
   {
-    "time": "16:40",
+    "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "17:30",
+    "talk": {
+      "id": "keynoteCloture2",
+      "name": "Keynote de clôture",
       "speakers": []
     }
   }

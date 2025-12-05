@@ -16,11 +16,13 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "deploy": "gh-pages --dotfiles -d dist -b master",
-    "extract:all": "node tools/conferenceHallJsonExtractor.js",
-    "extract:preBuildPlanning": "node tools/prePlanningBuilder.js",
-    "extract:timerDatas": "node tools/timerJsonBuilder.js",
-    "extract:flickr": "node tools/flickr.mjs",
-    "extract:speakersPicture": "node tools/extractSpeakersPictures.mjs"
+    "planning:fetch": "node tools/fetch.mjs",
+    "planning:build": "node tools/build.mjs",
+    "planning:validate": "node tools/build.mjs --validate-only",
+    "planning:photos": "node tools/photos.mjs",
+    "planning:all": "npm run planning:build && npm run planning:photos",
+    "extract:timerDatas": "node tools/timerJsonBuilder.mjs",
+    "extract:flickr": "node tools/flickr.mjs"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

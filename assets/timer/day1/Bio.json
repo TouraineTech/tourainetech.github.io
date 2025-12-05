@@ -2,143 +2,180 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
-      "speakers": []
+      "id": "cmh8999v200cq1eocr6qsonxd",
+      "name": "La réactivité et les signaux : démystifions la magie du frontend",
+      "speakers": [
+        "Estéban_S"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
-      "speakers": []
+      "id": "cmhz1lest005q1eqwd1db1r7k",
+      "name": "Valoriser sans survendre : l’art moderne de pitcher son code",
+      "speakers": [
+        "Hugo_Massing"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
-      "speakers": []
+      "id": "cmiakph7m000501mdh18ph2gv",
+      "name": "Pas de use case, pas de produit",
+      "speakers": [
+        "Vincent_Péchon"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
-      "speakers": []
+      "id": "cmi0qaihi008i1eqwjvcnoxx1",
+      "name": "D-Bus pour les buses : intégration du gestionnaire de mots de passe Bitwarden dans les environnements de bureau Linux",
+      "speakers": [
+        "Ronan_Bocquillon"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
-      "speakers": []
+      "id": "cmhhvwum6002b1esel27gye48",
+      "name": "@Transactional : Facile à utiliser, difficile à maîtriser",
+      "speakers": [
+        "Benoit_MARTIN"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
-      "speakers": []
+      "id": "cmhurnq7v00081eqwwkn03wlr",
+      "name": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+      "speakers": [
+        "Antoine_DESSAIGNE"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
-      "speakers": []
+      "id": "cmh35770c000i1eoczsnuq2x2",
+      "name": "Fatiguée de la POO ? Passez à la DOP !",
+      "speakers": [
+        "Jérôme_Tama"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
-      "speakers": []
+      "id": "cmgrsifk400rn1epd99q5uw9o",
+      "name": "Les Agents : l'ordre dans le chaos des IA",
+      "speakers": [
+        "Thierry_Chantier"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
-      "id": "pm2",
-      "name": "Pause"
+      "id": "cmgjlphf700501epdnp49avm7",
+      "name": "IA générative et réchauffement climatique : comment réduire la facture?",
+      "speakers": [
+        "Arielle_Villa-Massone",
+        "Emilie_GREFF"
+      ]
     }
   },
   {
-    "time": "16:45",
+    "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
       "speakers": []
     }
   },
   {
-    "time": "17:35",
+    "time": "16:40",
     "talk": {
-      "speakers": [],
       "id": "gouter",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   }
 ]
