@@ -133,6 +133,43 @@ function timeStringToIndex(timeStr) {
   return idx === -1 ? null : idx;
 }
 
+// Convert "HH:MM" to minutes since midnight
+function timeToMinutes(timeStr) {
+  const [h, m] = timeStr.split(':').map(Number);
+  return h * 60 + m;
+}
+
+// Extract duration from format string (e.g., "Hands-on (120min)" → 110)
+// Note: 120min hands-on = 110min for slot calculation (3 slots, not 4)
+function getDurationFromFormat(formatStr) {
+  if (!formatStr) return 50; // default
+  const match = formatStr.match(/\((\d+)min\)/);
+  if (!match) return 50;
+  const minutes = parseInt(match[1], 10);
+  // Hands-on 120min → 3 slots (finit avant la pause déjeuner)
+  if (minutes === 120) return 110;
+  return minutes;
+}
+
+// Calculate all time slot indices that a talk occupies based on start time and duration
+function calculateTimeSlots(startTimeStr, durationMinutes, dayNumber) {
+  const startMinutes = timeToMinutes(startTimeStr);
+  const endMinutes = startMinutes + durationMinutes;
+
+  // Filter times for this day and find slots within the duration
+  const slots = [];
+  for (let i = 0; i < times.length; i++) {
+    const slot = times[i];
+    if (!slot.days.includes(dayNumber)) continue;
+
+    const slotMinutes = timeToMinutes(slot.time);
+    if (slotMinutes >= startMinutes && slotMinutes < endMinutes) {
+      slots.push(i);
+    }
+  }
+  return slots;
+}
+
 function dayStringToNumber(dayStr) {
   if (dayStr === 'jeudi') return 1;
   if (dayStr === 'vendredi') return 2;
@@ -163,22 +200,17 @@ for (const [day, slots] of Object.entries(planningSource)) {
         continue;
       }
 
-      // Convert times
-      let timesIdx;
-      if (entry.times && entry.times.length > 1) {
-        // Multi-slot (hands-on)
-        timesIdx = entry.times.map(t => timeStringToIndex(t)).filter(t => t !== null);
-      } else {
-        const idx = timeStringToIndex(time);
-        timesIdx = idx !== null ? [idx] : [];
-      }
+      // Calculate time slots based on format duration
+      const talk = talks.find(t => t.id === entry.id);
+      const duration = getDurationFromFormat(talk.formats);
+      const dayNum = dayStringToNumber(day);
+      const timesIdx = calculateTimeSlots(time, duration, dayNum);
 
       if (timesIdx.length === 0) {
         errors.push(`❌ Invalid time for ${entry.id}: ${time}`);
         continue;
       }
 
-      const talk = talks.find(t => t.id === entry.id);
       schedule.push({
         id: entry.id,
         title: talk.title,
