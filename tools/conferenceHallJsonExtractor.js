@@ -35,7 +35,9 @@ async function retrieveData(apiKey) {
 }
 
 function talksFilter(...states) {
-  return ({id, confirmationStatus}) => (states.includes(confirmationStatus));
+  return ({confirmationStatus, deliberationStatus}) => (
+    states.includes(confirmationStatus) || states.includes(deliberationStatus)
+  );
 }
 
 
@@ -57,6 +59,7 @@ function getTalks(conferenceHallDatas, speakers) {
   console.log(`raw speaker count : ${speakers.length}`);
 
   const allTalks = talks
+    .filter(talksFilter('confirmed', 'ACCEPTED'))
     .map((
       {organizersThread, rating, reviews, references, deliberationStatus, confirmationStatus, level, loves, hates, speakers, formats, categories, ...datas}) => {
       return {
@@ -66,8 +69,7 @@ function getTalks(conferenceHallDatas, speakers) {
         categories: categories[0],
         level
       };
-    });
-    // .filter(talksFilter('confirmed','accepted'))
+    })
 
   console.log(`confirmed talks count : ${confirmedTalks.length}/${allTalks.length}`);
 

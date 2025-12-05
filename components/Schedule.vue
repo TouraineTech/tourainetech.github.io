@@ -55,7 +55,7 @@
             </h5>
           </nuxt-link>
           <ul class="schedule-talk-category">
-            <li :class="['schedule-talk-'+talk.categories+'--category']">
+            <li :class="['schedule-talk-'+categoryClass(talk.categories)+'--category']">
               {{ talkName(talk.categories) }}
             </li>
           </ul>
@@ -88,9 +88,9 @@
               </a>
             </p>
           </span>
-          <div class="schedule-room--duration-level" v-if="duration(talk.formats)">
+          <div class="schedule-room--duration-level" v-if="talk.formats">
             <p>
-              🕒 {{ duration(talk.formats) }}
+              📋 {{ formatName(talk.formats) }} ({{ duration(talk.formats) }})
             </p>
             <p>
               🎯 {{ levelName(talk.level) }}
@@ -156,16 +156,6 @@ export default {
     },
     talkCssClass({formats, categories, times}) {
       const category = {
-        // Legacy IDs (2025 and before)
-        "clzyaamxk102o13hpbki089rf": "design",
-        "clzyaamxk102p13hpw8tzwls8": "front",
-        "clzyaamxk102q13hp7nja505n": "backend",
-        "clzyaamxk102r13hpan99q8vi": "iot",
-        "clzyaamxk102s13hpkwipk45v": "architecture",
-        "clzyaamxk102t13hp9akxg5en": "tools",
-        "clzyaamxk102u13hpzlab3f0w": "human",
-        "clzyaamxk102v13hplgi4r5fy": "alien",
-        // New text names (2026+)
         "Design, UI, UX": "design",
         "Front web, design, UI, UX": "front",
         "Backend, Cloud, Big Data": "backend",
@@ -174,14 +164,9 @@ export default {
         "Outils, pratiques de dev": "tools",
         "Humain & Tech": "human",
         "Alien": "alien",
-        "Intelligence Artificielle": "alien"
+        "Intelligence Artificielle": "ia"
       }[categories];
       const format = {
-        // Legacy IDs
-        "clzyaamxk102w13hpk1e1095a": "lightning",
-        "clzyaamxk102x13hp665tzg4v": "conference",
-        "clzyaamxk102y13hp61scz1oh": "hands-on",
-        // New text names
         "Lightning (15min)": "lightning",
         "Conférence (50min)": "conference",
         "Hands-on (120min)": "hands-on"
@@ -194,9 +179,21 @@ export default {
       ];
     },
     talkName(category) {
-      return this.$store.getters.categories
-        .filter(({id}) => id === category)
-        .map(({name}) => name)[0];
+      return category;
+    },
+    categoryClass(category) {
+      const mapping = {
+        "Design, UI, UX": "design",
+        "Front web, design, UI, UX": "front",
+        "Backend, Cloud, Big Data": "backend",
+        "IOT, embarqué, mobile": "iot",
+        "Conception, architecture": "architecture",
+        "Outils, pratiques de dev": "tools",
+        "Humain & Tech": "human",
+        "Alien": "alien",
+        "Intelligence Artificielle": "ia"
+      };
+      return mapping[category] || category;
     },
     roomName(room) {
       return this.rooms[room - 1];
@@ -214,9 +211,14 @@ export default {
       }
     },
     duration(format) {
-      return this.$store.getters.formats
-        .filter(({id}) => id === format)
-        .map(({name}) => name)[0];
+      // Extract duration from format string like "Conférence (50min)"
+      const match = format?.match(/\((\d+min)\)/);
+      return match ? match[1] : null;
+    },
+    formatName(format) {
+      // Extract format name from string like "Conférence (50min)"
+      const match = format?.match(/^([^(]+)/);
+      return match ? match[1].trim() : format;
     }
   },
 }
@@ -233,6 +235,7 @@ $color-front: #0077c2;
 $color-design: #ff75cc;
 $color-backend: #345264;
 $color-alien: #066420;
+$color-ia: #9b59b6;
 
 #schedule {
   max-width: 1280px;
@@ -416,6 +419,10 @@ $color-alien: #066420;
   border-color: $color-backend;
 }
 
+.schedule-talk-ia--cell {
+  border-color: $color-ia;
+}
+
 .schedule-talk-iot--category {
   background-color: $color-iot;
   color: black;
@@ -447,6 +454,14 @@ $color-alien: #066420;
 
 .schedule-talk-backend--category {
   background-color: $color-backend;
+}
+
+.schedule-talk-alien--category {
+  background-color: $color-alien;
+}
+
+.schedule-talk-ia--category {
+  background-color: $color-ia;
 }
 
 .schedule-talk-conference--cell .schedule-title,
