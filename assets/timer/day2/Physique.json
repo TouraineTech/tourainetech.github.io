@@ -18,11 +18,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Nathan_Castelein"
-      ],
-      "id": "cm21usvqb046z1139htko61hv",
-      "name": "Réinventer les masculinités, un chemin vers plus d’inclusion dans la tech"
+      "speakers": []
     }
   },
   {
@@ -36,11 +32,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Damien_Lucas"
-      ],
-      "id": "cm2u9hcnt00onty2a0bvbr7u5",
-      "name": "Vol au dessus d’un nid de vulnérabilités"
+      "speakers": []
     }
   },
   {
@@ -54,11 +46,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Benoît_Masson"
-      ],
-      "id": "cm21z8ot704td1139n648womz",
-      "name": "G.I. Go - Générateurs et itérateurs en Go"
+      "speakers": []
     }
   },
   {
@@ -72,11 +60,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Sylvain_METAYER"
-      ],
-      "id": "sylvain2",
-      "name": "SOPS, Passez un savon à vos secrets en clair !"
+      "speakers": []
     }
   },
   {
@@ -90,11 +74,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "benoit_El_Amrani"
-      ],
-      "id": "cm1oyl54a00d2c6s9jlvx32jd",
-      "name": "V0 by Vercel : L'IA qui va booster ta productivité front-end"
+      "speakers": []
     }
   },
   {
@@ -108,11 +88,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Julien_Topçu"
-      ],
-      "id": "julien2",
-      "name": "REST next level : Ecrire des APIs web orientées métier"
+      "speakers": []
     }
   },
   {
@@ -126,12 +102,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Laurent_Grangeau",
-        "Magali_de_Labareyre"
-      ],
-      "id": "cm2uz9j6v0153ty2afjjc8ceg",
-      "name": "(con)test-és et (dé)test-és MAIS (at)test-ables ? Les tests techniques dans le cadre des recrutements de profils techs"
+      "speakers": []
     }
   },
   {
@@ -145,11 +116,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "Yassine_Benabbas"
-      ],
-      "id": "yassine2",
-      "name": "Tour d’horizon de Kotlin et de son écosystème"
+      "speakers": []
     }
   },
   {

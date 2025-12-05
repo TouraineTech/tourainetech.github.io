@@ -10,11 +10,7 @@
   {
     "time": "09:00",
     "talk": {
-      "speakers": [
-        "Julien_Briault"
-      ],
-      "id": "keynoteOuverture2",
-      "name": "Comment nous avons transformé les Restos du Cœur en Cloud Provider"
+      "speakers": []
     }
   },
   {
@@ -28,11 +24,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "David_Pilato"
-      ],
-      "id": "clzyebffk312o13hpv73ml7xb",
-      "name": "Elasticsearch Query Language: ES|QL"
+      "speakers": []
     }
   },
   {
@@ -46,11 +38,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Julien_Topçu"
-      ],
-      "id": "clzyebhpv313413hpg3xibbl4",
-      "name": "L'Architecture Hexagonale par la pratique, le live coding qui rendra vos applications plus pérennes"
+      "speakers": []
     }
   },
   {
@@ -64,11 +52,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Thomas_DA_ROCHA"
-      ],
-      "id": "clzyec8tz316x13hpb8nl05lv",
-      "name": "🐋 Simplifiez la conteneurisation de vos idées !"
+      "speakers": []
     }
   },
   {
@@ -82,11 +66,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Sylvain_Gougouzian"
-      ],
-      "id": "cm16vnmaf00if1bi2tzbruawt",
-      "name": "Elysia: un cousin d'ExpressJS sous Bun"
+      "speakers": []
     }
   },
   {
@@ -100,11 +80,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Yuriy_Tyukhnin"
-      ],
-      "id": "cm2rvg3fw010aap20wkyqw5q8",
-      "name": "DevEx : Qu'est-ce que l'Expérience Développeur ?"
+      "speakers": []
     }
   },
   {
@@ -118,11 +94,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Thierry_Chantier"
-      ],
-      "id": "cm10pfr0o03u5odc9l1k762yk",
-      "name": "Quand le Terminal dévore la UI : TUI pour tout le monde !"
+      "speakers": []
     }
   },
   {
@@ -136,12 +108,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Lucas_AUDART",
-        "Mickael_Alves"
-      ],
-      "id": "cm1kco8r300rt6vei2cqvz6gj",
-      "name": "React Compiler : Easier, Better, Faster, Stronger 🤖"
+      "speakers": []
     }
   },
   {
@@ -155,11 +122,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "Audren_Burlot"
-      ],
-      "id": "cm2ss5f14001uty2akwj0rzat",
-      "name": "Racine carrée, bit-shifting et paracétamol"
+      "speakers": []
     }
   },
   {
@@ -173,9 +136,7 @@
   {
     "time": "16:40",
     "talk": {
-      "speakers": [],
-      "id": "keynoteCloture2",
-      "name": "Keynote de clôture"
+      "speakers": []
     }
   }
 ]

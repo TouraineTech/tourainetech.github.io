@@ -18,12 +18,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Romain_BERTHON",
-        "Aurélien_BOUDOUX"
-      ],
-      "id": "clzyebwkf315m13hpmpuurbyh",
-      "name": "CQRS / ES : nos heuristiques après plusieurs années de production"
+      "speakers": []
     }
   },
   {
@@ -37,11 +32,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Benjamin_Cavy"
-      ],
-      "id": "cm14qcii9002i1bi2a4a82tbi",
-      "name": "Les feature flags : le couteau suisse de votre flow de développement"
+      "speakers": []
     }
   },
   {
@@ -55,11 +46,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Sylvain_METAYER"
-      ],
-      "id": "cm28x3w3s00dk6gvvmsyrb4mr",
-      "name": "Automatisez l'installation de votre poste de travail !"
+      "speakers": []
     }
   },
   {
@@ -73,11 +60,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "David_Maurin"
-      ],
-      "id": "cm2t1bthp00goty2akav1zf0a",
-      "name": "StyleX est-il le React du CSS ?"
+      "speakers": []
     }
   },
   {
@@ -91,11 +74,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Jean-Philippe_Foures"
-      ],
-      "id": "clzyebug7315e13hpaewg0wg7",
-      "name": "La Quantification ou comment compresser les LLMs pour un usage plus responsable."
+      "speakers": []
     }
   },
   {
@@ -109,11 +88,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Benjamin_Legrand"
-      ],
-      "id": "cm00sa3ru001coh1u5uiypqr4",
-      "name": "Les signals avec Angular : comment ça marche ?"
+      "speakers": []
     }
   },
   {
@@ -127,11 +102,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Jérôme_Tama"
-      ],
-      "id": "cm1627z6900dh1bi2mk033axc",
-      "name": "To Gather, or not to Gather, that is the question."
+      "speakers": []
     }
   },
   {
@@ -145,12 +116,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "Sylvain_Gougouzian",
-        "Thierry_Chantier"
-      ],
-      "id": "cm2n4r61c012biupxlnrlkwtw",
-      "name": "Et si Mozart, Daft Punk et Bob Marley avaient été des techs ? 🎶"
+      "speakers": []
     }
   },
   {
@@ -164,12 +130,7 @@
   {
     "time": "16:45",
     "talk": {
-      "speakers": [
-        "Aurélie_Vache",
-        "sherine_khoury"
-      ],
-      "id": "clzyebuz6315g13hppah52bp5",
-      "name": "“Question pour un conteneur” : Quiz interactif sur les images, les conteneurs, OCI & Docker"
+      "speakers": []
     }
   },
   {

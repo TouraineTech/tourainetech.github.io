@@ -10,11 +10,7 @@
   {
     "time": "09:00",
     "talk": {
-      "speakers": [
-        "Julien_Briault"
-      ],
-      "id": "keynoteOuverture2",
-      "name": "Comment nous avons transformé les Restos du Cœur en Cloud Provider"
+      "speakers": []
     }
   },
   {
@@ -28,11 +24,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Audrey_Maniez"
-      ],
-      "id": "cm2myp4f1010kiupx0qd7dqkt",
-      "name": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible"
+      "speakers": []
     }
   },
   {
@@ -46,11 +38,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Kevin_Davin"
-      ],
-      "id": "cm1mj97e7017q6veiowes6b18",
-      "name": "SELECT 'amazing_features' FROM \"posgresql\""
+      "speakers": []
     }
   },
   {
@@ -64,11 +52,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Khadija_ABDELOUALI"
-      ],
-      "id": "cm2wc7sr901ffty2ajckhcp52",
-      "name": "Révolutionnez votre expérience utilisateur avec les Progressive Web Apps"
+      "speakers": []
     }
   },
   {
@@ -82,11 +66,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Jean_Philippe_LE_GOFF"
-      ],
-      "id": "cm2x01tgg000nweqsq57yteb1",
-      "name": "Mise en œuvre de l'Approche Accelerate chez Decathlon : De la Théorie à Pratique"
+      "speakers": []
     }
   },
   {
@@ -100,11 +80,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Julie_Galia"
-      ],
-      "id": "cm2tgf2tn00mpty2ajhsz55yr",
-      "name": "Delta Lake : le recalcul sans fracas ni tracas"
+      "speakers": []
     }
   },
   {
@@ -118,11 +94,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Emmanuel-Lin_Toulemonde"
-      ],
-      "id": "cm1uuns7z025ec6s9k3outfue",
-      "name": "Optimisation de performance bénéfice ou sacrifice ?"
+      "speakers": []
     }
   },
   {
@@ -136,11 +108,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Olivier_PONCET"
-      ],
-      "id": "cm1qdss7c017yc6s94jfr8we3",
-      "name": "Anatomie d'une faille"
+      "speakers": []
     }
   },
   {
@@ -154,11 +122,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "Anaïs_Moulin"
-      ],
-      "id": "cm2ajxoas009jxalm0m81be0w",
-      "name": "\"On a 34 % de femmes, venez chez nous, on fait des trucs pour vous !\""
+      "speakers": []
     }
   },
   {
@@ -172,9 +136,7 @@
   {
     "time": "16:40",
     "talk": {
-      "speakers": [],
-      "id": "keynoteCloture2",
-      "name": "Keynote de clôture"
+      "speakers": []
     }
   }
 ]

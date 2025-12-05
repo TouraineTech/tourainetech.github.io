@@ -10,11 +10,7 @@
   {
     "time": "09:00",
     "talk": {
-      "speakers": [
-        "Astropierre"
-      ],
-      "id": "keynoteOuverture1",
-      "name": "Keynote d'ouverture"
+      "speakers": []
     }
   },
   {
@@ -28,11 +24,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Pierre_LECLAIRE"
-      ],
-      "id": "clzyeblr4313w13hpqfq2p87s",
-      "name": "Accessibilité: l'heure des comptes"
+      "speakers": []
     }
   },
   {
@@ -46,11 +38,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Quentin_JOLY"
-      ],
-      "id": "cm2bi8b4f00thxalm8nrlynuu",
-      "name": "Un cluster de production en un éclair avec Talos ⚡️☸️"
+      "speakers": []
     }
   },
   {
@@ -64,11 +52,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Alexandre_Touret"
-      ],
-      "id": "clzyec355316b13hp6t3idc94",
-      "name": "Intégrons, faisons grandir et progresser les jeunes devs: Bonnes pratiques et retours d'expériences à l'intention des (vieux) devs."
+      "speakers": []
     }
   },
   {
@@ -82,11 +66,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Heraud_Kevin"
-      ],
-      "id": "cm2p2dthe004f2ts4afn2ekgz",
-      "name": "Dev Containers : Le super-pouvoir caché de VS Code !"
+      "speakers": []
     }
   },
   {
@@ -100,11 +80,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Tugdual_Grall"
-      ],
-      "id": "cm2xn8bay006513dzvfeuvm8w",
-      "name": "De Copilot à LangChain4j : Comment je suis passé d'un simple utilisateur à un développeur d'IA"
+      "speakers": []
     }
   },
   {
@@ -118,11 +94,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Diane_Havlicek"
-      ],
-      "id": "cm1i0auyi00lu6veiq1pkapjx",
-      "name": "Inclure la neurodiversité dans la tech"
+      "speakers": []
     }
   },
   {
@@ -136,11 +108,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Yann_Schepens"
-      ],
-      "id": "cm10ymfd903viodc9j5agmtmd",
-      "name": "De l'infra à la config', as code en 3 temps"
+      "speakers": []
     }
   },
   {
@@ -154,11 +122,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "geoffrey_graveaud"
-      ],
-      "id": "clzyebz86315w13hpajzohvjv",
-      "name": " Au secours ! Mon manager me demande des KPIs !"
+      "speakers": []
     }
   },
   {
@@ -172,11 +136,7 @@
   {
     "time": "16:45",
     "talk": {
-      "speakers": [
-        "Tugdual_Grall"
-      ],
-      "id": "cm2xn12iu005z13dzj2oynfer",
-      "name": "Developper et Deployer dans le Cloud avec GitHub, Codespaces, Copilot et Actions!"
+      "speakers": []
     }
   },
   {
@@ -190,11 +150,7 @@
   {
     "time": "17:40",
     "talk": {
-      "speakers": [
-        "Stéphane_Trebel"
-      ],
-      "id": "keynoteCloture1",
-      "name": "Les Méta-Lois, vous ne leur échapperez pas !"
+      "speakers": []
     }
   }
 ]
