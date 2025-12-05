@@ -1,177 +1,9 @@
 [
   {
-    "id": "cm2xu4rgm007j13dz0nbgz0px",
-    "title": "Le CRC expliqué à ma grand-mère",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      3
-    ],
-    "times": [
-      11
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2xn8bay006513dzvfeuvm8w",
-    "title": "De Copilot à LangChain4j : Comment je suis passé d'un simple utilisateur à un développeur d'IA",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      2
-    ],
-    "times": [
-      11
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2xn12iu005z13dzj2oynfer",
-    "title": "Developper et Deployer dans le Cloud avec GitHub, Codespaces, Copilot et Actions!",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      19
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm2xkwfqt005h13dzqmtq2jxe",
-    "title": "Retour vers le futur du web : voyage au pays des rendus évolutifs",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      3
-    ],
-    "times": [
-      7
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2x01tgg000nweqsq57yteb1",
-    "title": "Mise en œuvre de l'Approche Accelerate chez Decathlon : De la Théorie à Pratique",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      2
-    ],
-    "times": [
-      9
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm2wdxlyg01fxty2au9ecnpet",
-    "title": "Comment j'ai porté Doom sur navigateur grâce au Web Assembly",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      3
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2wc7sr901ffty2ajckhcp52",
-    "title": "Révolutionnez votre expérience utilisateur avec les Progressive Web Apps",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      2
-    ],
-    "times": [
-      7
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2uz9j6v0153ty2afjjc8ceg",
-    "title": "(con)test-és et (dé)test-és MAIS (at)test-ables ? Les tests techniques dans le cadre des recrutements de profils techs",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      15
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2uamr4f00ovty2aj9z5s0r9",
-    "title": "10 fonctionnalités utiles du web que vous ne connaissez pas",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      15
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm2u9hcnt00onty2a0bvbr7u5",
-    "title": "Vol au dessus d’un nid de vulnérabilités",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      5
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2tgf2tn00mpty2ajhsz55yr",
-    "title": "Delta Lake : le recalcul sans fracas ni tracas",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      2
-    ],
-    "times": [
-      11
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2t1bthp00goty2akav1zf0a",
-    "title": "StyleX est-il le React du CSS ?",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      4
-    ],
-    "times": [
-      9
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2sx9e91007dty2as5hm5mqn",
-    "title": "Les LLMs par la pratique, avec Gemini et LangChain4j en Java",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102y13hp61scz1oh",
+    "id": "cmi8qyrm000hz1eqwm1ote3eh",
+    "title": "1h50min pour créer une App Front avec la Clean Archigonale ©️",
+    "categories": "Conception, architecture",
+    "formats": "Hands-on (120min)",
     "rooms": [
       5
     ],
@@ -181,490 +13,45 @@
       5
     ],
     "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2swg9ty006tty2a2h6c4w5h",
-    "title": "Sous le capot des LLMs : toutes ces questions que vous n’avez jamais osé poser",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      13
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2ss5f14001uty2akwj0rzat",
-    "title": "Racine carrée, bit-shifting et paracétamol",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      17
-    ],
-    "day": 2,
     "level": "INTERMEDIATE"
   },
   {
-    "id": "cm2rvg3fw010aap20wkyqw5q8",
-    "title": "DevEx : Qu'est-ce que l'Expérience Développeur ?",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmhw5c0dk002p1eqwx0wyhmih",
+    "title": "Maîtrise Typescript par la pratique",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Hands-on (120min)",
     "rooms": [
-      1
+      5
     ],
     "times": [
-      11
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm2rp7md900kwap20pxm3ich3",
-    "title": "J'ai peur de parler en public, pas vous ?",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
+      13,
+      14,
       15
     ],
     "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2p2dthe004f2ts4afn2ekgz",
-    "title": "Dev Containers : Le super-pouvoir caché de VS Code !",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      2
-    ],
-    "times": [
-      9
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2oj1h7p001h2ts4samx2kxs",
-    "title": "Arrêtons de se moquer des mocks avec Mockoon !",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      1
-    ],
-    "times": [
-      7
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2n4r61c012biupxlnrlkwtw",
-    "title": "Et si Mozart, Daft Punk et Bob Marley avaient été des techs ? 🎶",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      17
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2lughcr00ldiupxnqdw8o1g",
-    "title": "Transformer vos modèles anémiques en modèles riches grâce au DDD tactique",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      3
-    ],
-    "times": [
-      7
-    ],
-    "day": 2,
     "level": "INTERMEDIATE"
   },
   {
-    "id": "cm2ir7a6y007ja0zn28ql8hns",
-    "title": "Le cauchemar des attaquants : une infrastructure sans secret",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      17
-    ],
-    "day": 1,
-    "level": "ADVANCED"
-  },
-  {
-    "id": "julien2",
-    "title": "REST next level : Ecrire des APIs web orientées métier",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      13
-    ],
-    "day": 2
-  },
-  {
-    "id": "cm2bi8b4f00thxalm8nrlynuu",
-    "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      5
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm2ajxoas009jxalm0m81be0w",
-    "title": "\"On a 34 % de femmes, venez chez nous, on fait des trucs pour vous !\"",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      17
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm28x3w3s00dk6gvvmsyrb4mr",
-    "title": "Automatisez l'installation de votre poste de travail !",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      4
-    ],
-    "times": [
-      7
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm27zogf3005d6gvvgopui5g6",
-    "title": "Comme Alice, osez suivre le lapin blanc et plongez dans la JVM pour comprendre son fonctionnement",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      13
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm24uc0y200f9h2uwddb3cnmx",
-    "title": "Créer des API REST en Java avec une approche API-First : Mise en pratique et retours d'expérience",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102y13hp61scz1oh",
-    "rooms": [
-      5
-    ],
-    "times": [
-      3,
-      4,
-      5
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm21z8ot704td1139n648womz",
-    "title": "G.I. Go - Générateurs et itérateurs en Go",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      4
-    ],
-    "times": [
-      7
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm21usvqb046z1139htko61hv",
-    "title": "Réinventer les masculinités, un chemin vers plus d’inclusion dans la tech",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      3
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1uuns7z025ec6s9k3outfue",
-    "title": "Optimisation de performance bénéfice ou sacrifice ?",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      13
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm1ujp5nt022oc6s93jysgz22",
-    "title": "Dark Mode : analyse et conception",
-    "categories": "clzyaamxk102o13hpbki089rf",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      5
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1qdss7c017yc6s94jfr8we3",
-    "title": "Anatomie d'une faille",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      15
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1oyl54a00d2c6s9jlvx32jd",
-    "title": "V0 by Vercel : L'IA qui va booster ta productivité front-end",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      4
-    ],
-    "times": [
-      11
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm1mj97e7017q6veiowes6b18",
-    "title": "SELECT 'amazing_features' FROM \"posgresql\"",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      5
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm1kco8r300rt6vei2cqvz6gj",
-    "title": "React Compiler : Easier, Better, Faster, Stronger 🤖",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      15
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1i0auyi00lu6veiq1pkapjx",
-    "title": "Inclure la neurodiversité dans la tech",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      13
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm16vnmaf00if1bi2tzbruawt",
-    "title": "Elysia: un cousin d'ExpressJS sous Bun",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      1
-    ],
-    "times": [
-      9
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1627z6900dh1bi2mk033axc",
-    "title": "To Gather, or not to Gather, that is the question.",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
-      15
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm1625fjo00dd1bi2r2yqzotb",
-    "title": "OpenRewrite: Refactoring as code",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      1
-    ],
-    "times": [
-      9
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm14qg801002m1bi26rh6ur6l",
+    "id": "cmfma87kf05uhml1e0xx58mjb",
     "title": "Playwright : tester vos applications devient un jeu d'enfant",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Hands-on (120min)",
     "rooms": [
-      1
-    ],
-    "times": [
-      11
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm14qcii9002i1bi2a4a82tbi",
-    "title": "Les feature flags : le couteau suisse de votre flow de développement",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      4
-    ],
-    "times": [
       5
     ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm14q8q8o00291bi25uo0k2v0",
-    "title": "Server side WASM, le prochain game changer ?",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
     "times": [
-      15
-    ],
-    "day": 2,
-    "level": "ADVANCED"
-  },
-  {
-    "id": "cm10ymfd903viodc9j5agmtmd",
-    "title": "De l'infra à la config', as code en 3 temps",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      2
-    ],
-    "times": [
-      15
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm10pfr0o03u5odc9l1k762yk",
-    "title": "Quand le Terminal dévore la UI : TUI pour tout le monde !",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      13
+      3,
+      4,
+      5
     ],
     "day": 2,
     "level": "BEGINNER"
   },
   {
-    "id": "cm0we5zox039rodc9nq4h5xxd",
-    "title": "Les outils DevOps au service de la formation DevOps",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      3
-    ],
-    "times": [
-      9
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cm0vg2pnh0357odc9uel900qf",
-    "title": "🧑‍🎨 L’art de bien rater sa conférence 🥱",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      17
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm0gowkzv00kwodc9pvcyscql",
-    "title": "Atelier : 10 tests simples pour améliorer l'accessibilité de votre site",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102y13hp61scz1oh",
+    "id": "cmgq77rnb00k31epdyed8t9v3",
+    "title": "Codez votre Game Master de JDR grâce à l'IA agentique et le SDK Strands Agents.",
+    "categories": "Intelligence Artificielle",
+    "formats": "Hands-on (120min)",
     "rooms": [
       5
     ],
@@ -673,42 +60,168 @@
       14,
       15
     ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "sylvain2",
-    "title": "SOPS, Passez un savon à vos secrets en clair !",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102w13hpk1e1095a",
-    "rooms": [
-      4
-    ],
-    "times": [
-      9
-    ],
     "day": 2,
-    "level": "BEGINNER"
+    "level": "INTERMEDIATE"
   },
   {
-    "id": "cm05d2djy00esoh1upshfx4pa",
-    "title": "« Pourquoi une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmicalnsk000w01pdhbaxt8cr",
+    "title": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
     "rooms": [
       1
     ],
     "times": [
-      19
+      3
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmi0u7gdo008t1eqwmbw14pj3",
+    "title": "Le Magicien Zod : Emmenez TypeScript au-delà du build 🧙",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      3
     ],
     "day": 1,
     "level": "BEGINNER"
   },
   {
-    "id": "cm00sa3ru001coh1u5uiypqr4",
-    "title": "Les signals avec Angular : comment ça marche ?",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmh8999v200cq1eocr6qsonxd",
+    "title": "La réactivité et les signaux : démystifions la magie du frontend",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      3
+    ],
+    "day": 1,
+    "level": "ADVANCED"
+  },
+  {
+    "id": "cmgb8qdfb00ix1elb5spxgtxc",
+    "title": "Mes trains Jouef passent au numérique, avec des Raspberry et TinyGo !",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      3
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgardqoe00gi1elbnoz01mz5",
+    "title": "Makers de Père en Fils",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      5
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmg72szhs00a51elbjk4mrfru",
+    "title": "Redécouvrir PHP : pratiques modernes au-delà de l’héritage",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      5
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmhz1lest005q1eqwd1db1r7k",
+    "title": "Valoriser sans survendre : l’art moderne de pitcher son code",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      5
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmhz04xeo005j1eqw6cw1ood7",
+    "title": "Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      5
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmhyzhf87005b1eqwfbahyxcw",
+    "title": "On est tous responsables de la génération suivante.",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      13
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmhursm9y000c1eqwwnrrh4op",
+    "title": "L’animation web responsable : faire bouger sans alourdir",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      13
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmhurnq7v00081eqwwkn03wlr",
+    "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      13
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmh20nf6b00hd1eqqfsy4ycjh",
+    "title": "Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle !",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
     "rooms": [
       4
     ],
@@ -719,66 +232,444 @@
     "level": "INTERMEDIATE"
   },
   {
-    "id": "clzyebrnk315213hpem0a8riw",
-    "title": "Introduction à la programmation réactive, de zero à Super Mario",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmhsw7itb000g1eovd27h9o3b",
+    "title": "Noms de domaines : la grande histoire des petites extensions",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
     "rooms": [
-      3
+      1
     ],
     "times": [
-      5
+      15
     ],
     "day": 1,
     "level": "BEGINNER"
   },
   {
-    "id": "clzyebe9i312g13hp9xxln9qk",
-    "title": "CI / CD: Correct Implementation or Continuous Deception",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmhkes3jq006g1esen8ao5y6c",
+    "title": "Comment concevoir et tester un site accessible ?",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      15
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmh35770c000i1eoczsnuq2x2",
+    "title": "Fatiguée de la POO ? Passez à la DOP !",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      15
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmh0hncaz00ar1eqqkwzkszm4",
+    "title": "It's a brick, retour au (code) source",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      15
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmhn775l500c91eseahc5i0s9",
+    "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      17
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgtb4fr4018a1epd1a602gss",
+    "title": "Un jardin sur sol vivant connecté, pourquoi et comment ?",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      17
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgrsifk400rn1epd99q5uw9o",
+    "title": "Les Agents : l'ordre dans le chaos des IA",
+    "categories": "Intelligence Artificielle",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      17
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgp7m5ko00gd1epdis578ri7",
+    "title": "L’architecture hexagonale au pays des irréductibles développeurs",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      17
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgnznz6e00cl1epd5eysrjz6",
+    "title": "Un voyage dans le temps sur le passé, le présent et l'avenir de la protection de la mémoire",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      18
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgkxto2q008h1epdujofui82",
+    "title": "Web Components : chronique d'une renaissance",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      18
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgjlphf700501epdnp49avm7",
+    "title": "IA générative et réchauffement climatique : comment réduire la facture?",
+    "categories": "Intelligence Artificielle",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      18
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgds4c25000i1emjxzezk8is",
+    "title": "Open-source : Pourquoi ? Comment ?",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      18
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmghzal70001w1emj2wqelocf",
+    "title": "Révolution TanStack Query : Enfin une bonne gestion d’état 🗂️",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
     "rooms": [
       1
     ],
     "times": [
       3
     ],
-    "day": 1,
-    "level": "INTERMEDIATE"
+    "day": 2,
+    "level": "BEGINNER"
   },
   {
-    "id": "clzyebug7315e13hpaewg0wg7",
-    "title": "La Quantification ou comment compresser les LLMs pour un usage plus responsable.",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmgb8p87t00iu1elbwzenncmt",
+    "title": "Lorsqu'un simple bug réseau vous emmène dans les entrailles de Linux...",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
     "rooms": [
-      4
+      2
     ],
     "times": [
-      11
+      3
     ],
-    "day": 1,
+    "day": 2,
     "level": "INTERMEDIATE"
   },
   {
-    "id": "clzyec5b6316k13hpsaxygky2",
-    "title": "Du rêve à la réalité, coder un jeu sur Super Nintendo",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmg72evd7009y1elbj2qg1rlk",
+    "title": "Serveurs MCP au-delà des bases : bonnes pratiques, choix de conception et leurs conséquences",
+    "categories": "Intelligence Artificielle",
+    "formats": "Conférence (50min)",
     "rooms": [
       3
     ],
     "times": [
-      19
+      3
     ],
-    "day": 1,
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgi079ue00271emj06wwt4nr",
+    "title": "La face cachée de la performance des équipes de développements",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      3
+    ],
+    "day": 2,
     "level": "BEGINNER"
   },
   {
-    "id": "yassine2",
-    "title": "Tour d’horizon de Kotlin et de son écosystème",
-    "categories": "clzyaamxk102r13hpan99q8vi",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmfl3j2to043zml1efob6dcdf",
+    "title": "Accessibilité en action : rendre vos formulaires utilisables par tous",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      5
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgdppqat00031emj0fncou7u",
+    "title": "L’ampoule qui en savait trop : voyage au cœur de la sécurité des objets connectés",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      5
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgapz81z00gd1elb5e5rp0qc",
+    "title": "🤖 Astro GitOps - Press ⓧ to start",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      5
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmg6lz5ru008v1elb3xxe2y9k",
+    "title": "Super apps : on voulait un skateboard, on construit un porte-avion",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      5
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgah8mo800fj1elbs7lmahsn",
+    "title": "Au secours ! Mes images pourrissent mes perfs",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      13
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmg80g4fj00b41elbdpqgxarg",
+    "title": "Récit d'une modélisation : de l'exploration à la révélation !",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      13
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfthbs3r00581ekebwe0h562",
+    "title": "Pairing is caring!",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      13
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfpr4j8d00191el7dfaur789",
+    "title": "Respectons (enfin) l'article 25 du RGPD avec PostgreSQL Anonymiser",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      13
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfz7neh8001o1enve10obqb4",
+    "title": "Local-first et sync-engines, l'architecture du futur ?",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      15
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmftql18d005r1ekejaszpaqy",
+    "title": "Haute couture du Web : le défilé des approches CSS 🎨",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      15
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfo17lm807shml1exdvpdkr3",
+    "title": "Votre code mérite mieux. Offrez-lui un linter !",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      15
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfmjg2hg06himl1ed3cyjum6",
+    "title": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+    "categories": "Humain & Tech",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      15
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfoiit6c000cnb1ean32406l",
+    "title": "Plongez au coeur des structures de données en java",
+    "categories": "Conception, architecture",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      17
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfnnbo2e07kbml1esffxazcj",
+    "title": "Git : le super-héros mal aimé de ton repo",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      17
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfmd7m81060eml1eta12tr9p",
+    "title": "REX : Notre IA et nous contre le legacy : REX d'une reprise de contrôle assistée",
+    "categories": "Intelligence Artificielle",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      17
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfl5qm6y049qml1eqf13uojk",
+    "title": "J'ai packagé mon application en image Docker, et maintenant ?",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Conférence (50min)",
     "rooms": [
       4
     ],
@@ -789,10 +680,80 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyec355316b13hp6t3idc94",
-    "title": "Intégrons, faisons grandir et progresser les jeunes devs: Bonnes pratiques et retours d'expériences à l'intention des (vieux) devs.",
-    "categories": "clzyaamxk102u13hpzlab3f0w",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmfm5pib505owml1ezi0buel3",
+    "title": "Async/Await et Java",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      18
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfl2vyvf041pml1eg6tp42u2",
+    "title": "Let's play Factorio",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      18
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfl90bm104f5ml1egkfcc0by",
+    "title": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      18
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfl0vubz03xuml1ejt5ihvek",
+    "title": "Another World, une belle leçon d’architecture logicielle",
+    "categories": "Alien",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      18
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgtc5c1i018f1epdv6rky64p",
+    "title": "La transactionalité expliquée",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      7
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmfl3nxjo0449ml1er4av6dur",
+    "title": "Title, ce faux ami de l’accessibilité",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Lightning (15min)",
     "rooms": [
       2
     ],
@@ -803,68 +764,96 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyeblr4313w13hpqfq2p87s",
-    "title": "Accessibilité: l'heure des comptes",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmiakph7m000501mdh18ph2gv",
+    "title": "Pas de use case, pas de produit",
+    "categories": "Conception, architecture",
+    "formats": "Lightning (15min)",
     "rooms": [
-      2
+      3
     ],
     "times": [
-      3
+      7
     ],
     "day": 1,
     "level": "BEGINNER"
   },
   {
-    "id": "clzyec3nt316d13hpmqglshl4",
-    "title": "Les petites aventures de CSS, saison 2025",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      5
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "clzyebwkf315m13hpmpuurbyh",
-    "title": "CQRS / ES : nos heuristiques après plusieurs années de production",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmi2447u200bs1eqwaoydda9d",
+    "title": "Comment faire vivre les logiciels plus de 40 ans?",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
     "rooms": [
       4
     ],
     "times": [
-      3
-    ],
-    "day": 1,
-    "level": "INTERMEDIATE"
-  },
-  {
-    "id": "clzyebc1i312013hpqs60agw7",
-    "title": "Theming : Faites peau neuve en 50 minutes top chrono",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      17
+      7
     ],
     "day": 1,
     "level": "BEGINNER"
   },
   {
-    "id": "clzyebgja312w13hpg7gx9qrc",
-    "title": "Merge confliture sur mes gitscottes : découper ses PR sans pleurer",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmi36xifp00cn1eqwyb8n9hu2",
+    "title": "Reactivity from scratch",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      9
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmi15i4ad00901eqwb4h2epxz",
+    "title": "Le hasard fait bien les tests",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      9
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmi0qaihi008i1eqwjvcnoxx1",
+    "title": "D-Bus pour les buses : intégration du gestionnaire de mots de passe Bitwarden dans les environnements de bureau Linux",
+    "categories": "Alien",
+    "formats": "Lightning (15min)",
     "rooms": [
       3
+    ],
+    "times": [
+      9
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmhw3evtr002j1eqwse48kxb9",
+    "title": "Eco-conception ou comment revenir à la base",
+    "categories": "Conception, architecture",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      9
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmhteh41l001z1eovbqkjk0tl",
+    "title": "Bug de process interne : besoin d'un patch ?",
+    "categories": "Humain & Tech",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      1
     ],
     "times": [
       11
@@ -873,24 +862,52 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyebz86315w13hpajzohvjv",
-    "title": " Au secours ! Mon manager me demande des KPIs !",
-    "categories": "clzyaamxk102v13hplgi4r5fy",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmhnwc64500ev1ese828x3uvf",
+    "title": "Jeux Vidéo et LLM: pas si différent",
+    "categories": "Intelligence Artificielle",
+    "formats": "Lightning (15min)",
     "rooms": [
       2
     ],
     "times": [
-      17
+      11
     ],
     "day": 1,
-    "level": "ADVANCED"
+    "level": "BEGINNER"
   },
   {
-    "id": "clzyec8tz316x13hpb8nl05lv",
-    "title": "🐋 Simplifiez la conteneurisation de vos idées !",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmhhvwum6002b1esel27gye48",
+    "title": "@Transactional : Facile à utiliser, difficile à maîtriser",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      11
+    ],
+    "day": 1,
+    "level": "INTERMEDIATE"
+  },
+  {
+    "id": "cmgxuaaii00241eqqyrgmql72",
+    "title": "Les Dessous de vos Cartes : À la découverte de la contribution OpenStreetMap",
+    "categories": "Alien",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      11
+    ],
+    "day": 1,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmicafa39000t01pd111ht6na",
+    "title": "Mieux écrire, mieux trouver : Diátaxis comme guide de documentation",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
     "rooms": [
       1
     ],
@@ -901,26 +918,80 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyeb6z8311113hppljm7k4c",
-    "title": "Redécouvrir la coopération : Atelier de Mob Programming",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102y13hp61scz1oh",
+    "id": "cmfqkp1gy006d1el7o5hhsq9m",
+    "title": "🎶 🎒🥾Promenons-nous dans les bois, ceux que l'on ne connaît pas 🎶",
+    "categories": "Conception, architecture",
+    "formats": "Lightning (15min)",
     "rooms": [
-      5
+      2
     ],
     "times": [
-      13,
-      14,
-      15
+      7
     ],
     "day": 2,
     "level": "BEGINNER"
   },
   {
-    "id": "clzyeb6f8310x13hp4d2tyny0",
-    "title": "Tester une application React avec Vitest, React Testing Library et MSW: une introduction pratique",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102w13hpk1e1095a",
+    "id": "cmh5a7snp005o1eoc9ch38wt1",
+    "title": "Silence... Ça tourne ! : De l'éco-volontariat à la promotion de mon side project en Australie",
+    "categories": "Humain & Tech",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      7
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmg3gkgyx00711envtmmew8ww",
+    "title": "De Warhol à Basquiat : Le vibe coding démocratise-t-il vraiment la création logicielle ?",
+    "categories": "Intelligence Artificielle",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      7
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmh898i6n00cn1eocmqh5tv17",
+    "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      9
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmgzj314m008c1eqqdaxeuiyk",
+    "title": "Open source et gouvernance, quand les communautés s'embrasent",
+    "categories": "Humain & Tech",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      2
+    ],
+    "times": [
+      9
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfp2f4gv003inb1eaon5kvu4",
+    "title": "Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey",
+    "categories": "Backend, Cloud, Big Data",
+    "formats": "Lightning (15min)",
     "rooms": [
       3
     ],
@@ -931,93 +1002,79 @@
     "level": "BEGINNER"
   },
   {
-    "id": "clzyebhpv313413hpg3xibbl4",
-    "title": "L'Architecture Hexagonale par la pratique, le live coding qui rendra vos applications plus pérennes",
-    "categories": "clzyaamxk102s13hpkwipk45v",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      5
-    ],
-    "day": 2,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "clzyebuz6315g13hppah52bp5",
-    "title": "“Question pour un conteneur” : Quiz interactif sur les images, les conteneurs, OCI & Docker",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmfl0nv2n03xgml1e2jdbcc9g",
+    "title": "TikTok avec son framework LynxJS peut-il détrôner React Native et Flutter ?",
+    "categories": "Front web, design, UI, UX",
+    "formats": "Lightning (15min)",
     "rooms": [
       4
     ],
     "times": [
-      19
+      9
     ],
-    "day": 1,
-    "level": "BEGINNER"
+    "day": 2,
+    "level": "INTERMEDIATE"
   },
   {
-    "id": "clzyebffk312o13hpv73ml7xb",
-    "title": "Elasticsearch Query Language: ES|QL",
-    "categories": "clzyaamxk102q13hp7nja505n",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmfpfohv100bonb1e3vmg9lao",
+    "title": "Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech",
+    "categories": "Humain & Tech",
+    "formats": "Lightning (15min)",
     "rooms": [
       1
     ],
     "times": [
-      3
+      11
     ],
     "day": 2,
     "level": "BEGINNER"
   },
   {
-    "id": "clzyec474316f13hpsvbb5y16",
-    "title": "DevLake : Un voyage au pays du DORA",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      3
-    ],
-    "times": [
-      3
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "clzyec860316u13hpx3shl9ax",
-    "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
-    "categories": "clzyaamxk102t13hp9akxg5en",
-    "formats": "clzyaamxk102x13hp665tzg4v",
-    "rooms": [
-      1
-    ],
-    "times": [
-      13
-    ],
-    "day": 1,
-    "level": "BEGINNER"
-  },
-  {
-    "id": "cm2myp4f1010kiupx0qd7dqkt",
-    "title": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible",
-    "categories": "clzyaamxk102p13hpw8tzwls8",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "id": "cmfp4h6550053nb1euv1kgrhv",
+    "title": "Un mot de passe ? Non merci, j’ai une passkey.",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
     "rooms": [
       2
     ],
     "times": [
-      3
+      11
     ],
     "day": 2,
-    "level": "INTERMEDIATE"
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+    "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
+    "categories": "Outils, pratiques de dev",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      3
+    ],
+    "times": [
+      11
+    ],
+    "day": 2,
+    "level": "BEGINNER"
+  },
+  {
+    "id": "cmfl4jghf046hml1ecampkjzq",
+    "title": "Handicap invisible : l’accessibilité commence dans les réunions (et l'IA peut aider)",
+    "categories": "Humain & Tech",
+    "formats": "Lightning (15min)",
+    "rooms": [
+      4
+    ],
+    "times": [
+      11
+    ],
+    "day": 2,
+    "level": "BEGINNER"
   },
   {
     "id": "keynoteOuverture1",
     "title": "Keynote d'ouverture",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "formats": "Conférence (50min)",
     "rooms": [
       1,
       2
@@ -1030,7 +1087,7 @@
   {
     "id": "keynoteCloture1",
     "title": "Keynote de clôture",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "formats": "Conférence (50min)",
     "rooms": [
       1,
       2
@@ -1043,7 +1100,7 @@
   {
     "id": "keynoteOuverture2",
     "title": "Keynote d'ouverture",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "formats": "Conférence (50min)",
     "rooms": [
       1,
       2
@@ -1056,13 +1113,13 @@
   {
     "id": "keynoteCloture2",
     "title": "Keynote de clôture",
-    "formats": "clzyaamxk102x13hp665tzg4v",
+    "formats": "Conférence (50min)",
     "rooms": [
       1,
       2
     ],
     "times": [
-      19
+      24
     ],
     "day": 2
   }

@@ -58,7 +58,7 @@ function talkCssClass({ formats: formatId, categories: categoryId, times: timesA
     'Outils, pratiques de dev': 'tools',
     'Humain & Tech': 'human',
     'Alien': 'alien',
-    'Intelligence Artificielle': 'alien'
+    'Intelligence Artificielle': 'ia'
   }
   const format: Record<string, string> = {
     // Legacy IDs
@@ -78,10 +78,33 @@ function talkCssClass({ formats: formatId, categories: categoryId, times: timesA
   ]
 }
 
-function talkName(categoryId: string) {
-  return categories.value
-    .filter(({ id }) => id === categoryId)
-    .map(({ name }) => name)[0]
+function talkName(category: string) {
+  return category
+}
+
+function categoryClass(category: string) {
+  const mapping: Record<string, string> = {
+    // Legacy IDs (2025 and before)
+    'clzyaamxk102o13hpbki089rf': 'design',
+    'clzyaamxk102p13hpw8tzwls8': 'front',
+    'clzyaamxk102q13hp7nja505n': 'backend',
+    'clzyaamxk102r13hpan99q8vi': 'iot',
+    'clzyaamxk102s13hpkwipk45v': 'architecture',
+    'clzyaamxk102t13hp9akxg5en': 'tools',
+    'clzyaamxk102u13hpzlab3f0w': 'human',
+    'clzyaamxk102v13hplgi4r5fy': 'alien',
+    // New text names (2026+)
+    'Design, UI, UX': 'design',
+    'Front web, design, UI, UX': 'front',
+    'Backend, Cloud, Big Data': 'backend',
+    'IOT, embarqué, mobile': 'iot',
+    'Conception, architecture': 'architecture',
+    'Outils, pratiques de dev': 'tools',
+    'Humain & Tech': 'human',
+    'Alien': 'alien',
+    'Intelligence Artificielle': 'ia'
+  }
+  return mapping[category] || category
 }
 
 function roomName(room: number) {
@@ -101,10 +124,14 @@ function levelName(level: string) {
   }
 }
 
-function duration(formatId: string) {
-  return formats.value
-    .filter(({ id }) => id === formatId)
-    .map(({ name }) => name)[0]
+function duration(format: string) {
+  const match = format?.match(/\((\d+min)\)/)
+  return match ? match[1] : null
+}
+
+function formatName(format: string) {
+  const match = format?.match(/^([^(]+)/)
+  return match ? match[1].trim() : format
 }
 </script>
 
@@ -165,7 +192,7 @@ function duration(formatId: string) {
             </h5>
           </NuxtLink>
           <ul class="schedule-talk-category">
-            <li :class="['schedule-talk-'+talk.categories+'--category']">
+            <li :class="['schedule-talk-'+categoryClass(talk.categories)+'--category']">
               {{ talkName(talk.categories) }}
             </li>
           </ul>
@@ -198,9 +225,9 @@ function duration(formatId: string) {
               </a>
             </p>
           </span>
-          <div class="schedule-room--duration-level" v-if="duration(talk.formats)">
+          <div class="schedule-room--duration-level" v-if="talk.formats">
             <p>
-              🕒 {{ duration(talk.formats) }}
+              📋 {{ formatName(talk.formats) }} ({{ duration(talk.formats) }})
             </p>
             <p>
               🎯 {{ levelName(talk.level) }}
@@ -223,6 +250,7 @@ $color-front: #0077c2;
 $color-design: #ff75cc;
 $color-backend: #345264;
 $color-alien: #066420;
+$color-ia: #9b59b6;
 
 #schedule {
   max-width: 1280px;
@@ -406,6 +434,10 @@ $color-alien: #066420;
   border-color: $color-backend;
 }
 
+.schedule-talk-ia--cell {
+  border-color: $color-ia;
+}
+
 .schedule-talk-iot--category {
   background-color: $color-iot;
   color: black;
@@ -437,6 +469,14 @@ $color-alien: #066420;
 
 .schedule-talk-backend--category {
   background-color: $color-backend;
+}
+
+.schedule-talk-alien--category {
+  background-color: $color-alien;
+}
+
+.schedule-talk-ia--category {
+  background-color: $color-ia;
 }
 
 .schedule-talk-conference--cell .schedule-title,
