@@ -1,14 +1,14 @@
 import Vuex from 'vuex'
 import SPONSORS from '../api/sponsors.json'
 import TEAM from '../api/team.json'
-import BREAKS from '../api/breaks.json'
+import BREAKS from '../api/config/breaks.json'
 
-import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/conferenceHall";
-import PLANNING from '../api/planning';
-import TIMES from '../api/times';
-import ROOMS from '../api/rooms';
+import {speakers as SPEAKERS, talks as TALKS, categories, formats} from "../api/generated/conferenceHall.json";
+import PLANNING from '../api/generated/schedule.json';
+import TIMES from '../api/config/times.json';
+import ROOMS from '../api/config/rooms.json';
 import PHOTOS from '../api/photos_72177720323970146.json';
-import DAYS from '../api/days.json';
+import DAYS from '../api/config/days.json';
 import CONFIGURATION from '../assets/configuration'
 
 

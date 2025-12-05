@@ -2,13 +2,23 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": []
+      "id": "cmfma87kf05uhml1e0xx58mjb",
+      "name": "Playwright : tester vos applications devient un jeu d'enfant",
+      "speakers": [
+        "Benjamin_Cavy"
+      ]
     }
   },
   {
     "time": "13:30",
     "talk": {
-      "speakers": []
+      "id": "cmgq77rnb00k31epdyed8t9v3",
+      "name": "Codez votre Game Master de JDR grâce à l'IA agentique et le SDK Strands Agents.",
+      "speakers": [
+        "Olivier_Leplus",
+        "Adrien_Lebret",
+        "Tiffany_Souterre"
+      ]
     }
   }
 ]

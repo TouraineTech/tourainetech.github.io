@@ -2,129 +2,173 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
-      "speakers": []
+      "id": "cmg72evd7009y1elbj2qg1rlk",
+      "name": "Serveurs MCP au-delà des bases : bonnes pratiques, choix de conception et leurs conséquences",
+      "speakers": [
+        "Horacio_Gonzalez_(LostInBrittany)"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
-      "speakers": []
+      "id": "cmgapz81z00gd1elb5e5rp0qc",
+      "name": "🤖 Astro GitOps - Press ⓧ to start",
+      "speakers": [
+        "Kevin_Davin"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
-      "speakers": []
+      "id": "cmh5a7snp005o1eoc9ch38wt1",
+      "name": "Silence... Ça tourne ! : De l'éco-volontariat à la promotion de mon side project en Australie",
+      "speakers": [
+        "Nicolas_GUILLOT"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
-      "speakers": []
+      "id": "cmfp2f4gv003inb1eaon5kvu4",
+      "name": "Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey",
+      "speakers": [
+        "Erwan_Le_Tutour"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
-      "speakers": []
+      "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+      "name": "JBang, un fichier Java pour les gouverner tous ? 💍",
+      "speakers": [
+        "Stéphane_Philippart"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
-      "speakers": []
+      "id": "cmfthbs3r00581ekebwe0h562",
+      "name": "Pairing is caring!",
+      "speakers": [
+        "Olivier_Breda"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
-      "speakers": []
+      "id": "cmfo17lm807shml1exdvpdkr3",
+      "name": "Votre code mérite mieux. Offrez-lui un linter !",
+      "speakers": [
+        "Sébastien_Ferrer",
+        "Gabriel_Augendre"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
-      "speakers": []
+      "id": "cmfmd7m81060eml1eta12tr9p",
+      "name": "REX : Notre IA et nous contre le legacy : REX d'une reprise de contrôle assistée",
+      "speakers": [
+        "Benjamin_Lacroix",
+        "Jordan_NOURRY"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
+      "id": "cmfl90bm104f5ml1egkfcc0by",
+      "name": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
+      "speakers": [
+        "Stéphane_Trebel"
+      ]
+    }
+  },
+  {
+    "time": "16:35",
+    "talk": {
       "id": "pm2",
-      "name": "Pause"
+      "name": "Pause",
+      "speakers": []
     }
   }
 ]

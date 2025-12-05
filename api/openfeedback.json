@@ -1,409 +1,352 @@
 {
   "sessions": {
-    "keynote1": {
-      "id": "keynote1",
-      "title": "Keynote Ouverture jeudi",
-      "trackTitle": "Keynote",
-      "tags": [],
-      "speakers": [
-        "Astropierre"
-      ],
-      "startTime": "2025-02-06T09:00:00+01:00",
-      "endTime": "2025-02-06T09:50:00+01:00"
-    },
-    "keynote2": {
-      "id": "keynote2",
-      "title": "Keynote cloture jeudi",
-      "trackTitle": "Keynote",
-      "tags": [],
-      "speakers": [
-        "Stéphane_Trebel"
-      ],
-      "startTime": "2025-02-06T17:40:00+01:00",
-      "endTime": "2025-02-06T18:00:00+01:00"
-    },
-    "keynote3": {
-      "id": "keynote3",
-      "title": "Keynote Ouverture vendredi",
-      "trackTitle": "Keynote",
-      "tags": [],
-      "speakers": [
-        "Julien_Briault"
-      ],
-      "startTime": "2025-02-07T09:00:00+01:00",
-      "endTime": "2025-02-07T09:50:00+01:00"
-    },
-    "cm2xu4rgm007j13dz0nbgz0px": {
-      "id": "cm2xu4rgm007j13dz0nbgz0px",
-      "title": "Le CRC expliqué à ma grand-mère",
-      "trackTitle": "Bio",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Olivier_Cloirec"
-      ],
-      "startTime": "2025-02-07T13:00:00+01:00",
-      "endTime": "2025-02-07T13:15:00+01:00"
-    },
-    "cm2xn8bay006513dzvfeuvm8w": {
-      "id": "cm2xn8bay006513dzvfeuvm8w",
-      "title": "De Copilot à LangChain4j : Comment je suis passé d'un simple utilisateur à un développeur d'IA",
-      "trackTitle": "F22",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Tugdual_Grall"
-      ],
-      "startTime": "2025-02-06T13:00:00+01:00",
-      "endTime": "2025-02-06T13:15:00+01:00"
-    },
-    "cm2xn12iu005z13dzj2oynfer": {
-      "id": "cm2xn12iu005z13dzj2oynfer",
-      "title": "Developper et Deployer dans le Cloud avec GitHub, Codespaces, Copilot et Actions!",
-      "trackTitle": "F22",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Tugdual_Grall"
-      ],
-      "startTime": "2025-02-06T16:45:00+01:00",
-      "endTime": "2025-02-06T17:35:00+01:00"
-    },
-    "cm2xkwfqt005h13dzqmtq2jxe": {
-      "id": "cm2xkwfqt005h13dzqmtq2jxe",
-      "title": "Retour vers le futur du web : voyage au pays des rendus évolutifs",
-      "trackTitle": "Bio",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Marie-Cécile_TREGOUËT"
-      ],
-      "startTime": "2025-02-06T12:10:00+01:00",
-      "endTime": "2025-02-06T12:25:00+01:00"
-    },
-    "cm2x01tgg000nweqsq57yteb1": {
-      "id": "cm2x01tgg000nweqsq57yteb1",
-      "title": "Mise en œuvre de l'Approche Accelerate chez Decathlon : De la Théorie à Pratique",
-      "trackTitle": "F22",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Jean_Philippe_LE_GOFF"
-      ],
-      "startTime": "2025-02-07T12:35:00+01:00",
-      "endTime": "2025-02-07T12:50:00+01:00"
-    },
-    "cm2wdxlyg01fxty2au9ecnpet": {
-      "id": "cm2wdxlyg01fxty2au9ecnpet",
-      "title": "Comment j'ai porté Doom sur navigateur grâce au Web Assembly",
-      "trackTitle": "Bio",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Yassine_Benabbas"
-      ],
-      "startTime": "2025-02-07T10:10:00+01:00",
-      "endTime": "2025-02-07T11:00:00+01:00"
-    },
-    "cm2wc7sr901ffty2ajckhcp52": {
-      "id": "cm2wc7sr901ffty2ajckhcp52",
-      "title": "Révolutionnez votre expérience utilisateur avec les Progressive Web Apps",
-      "trackTitle": "F22",
-      "tags": [
-        "Front web",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Khadija_ABDELOUALI"
-      ],
-      "startTime": "2025-02-07T12:10:00+01:00",
-      "endTime": "2025-02-07T12:25:00+01:00"
-    },
-    "cm2uz9j6v0153ty2afjjc8ceg": {
-      "id": "cm2uz9j6v0153ty2afjjc8ceg",
-      "title": "(con)test-és et (dé)test-és MAIS (at)test-ables ? Les tests techniques dans le cadre des recrutements de profils techs",
-      "trackTitle": "Physique",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Laurent_Grangeau",
-        "Magali_de_Labareyre"
-      ],
-      "startTime": "2025-02-07T14:30:00+01:00",
-      "endTime": "2025-02-07T15:20:00+01:00"
-    },
-    "cm2uamr4f00ovty2aj9z5s0r9": {
-      "id": "cm2uamr4f00ovty2aj9z5s0r9",
-      "title": "10 fonctionnalités utiles du web que vous ne connaissez pas",
-      "trackTitle": "F21",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Olivier_Leplus",
-        "Yohan_Lasorsa"
-      ],
-      "startTime": "2025-02-06T14:30:00+01:00",
-      "endTime": "2025-02-06T15:20:00+01:00"
-    },
-    "cm2u9hcnt00onty2a0bvbr7u5": {
-      "id": "cm2u9hcnt00onty2a0bvbr7u5",
-      "title": "Vol au dessus d’un nid de vulnérabilités",
-      "trackTitle": "Physique",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Damien_Lucas"
-      ],
-      "startTime": "2025-02-07T11:10:00+01:00",
-      "endTime": "2025-02-07T12:00:00+01:00"
-    },
-    "cm2tgf2tn00mpty2ajhsz55yr": {
-      "id": "cm2tgf2tn00mpty2ajhsz55yr",
-      "title": "Delta Lake : le recalcul sans fracas ni tracas",
-      "trackTitle": "F22",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Julie_Galia"
-      ],
-      "startTime": "2025-02-07T13:00:00+01:00",
-      "endTime": "2025-02-07T13:15:00+01:00"
-    },
-    "cm2t1bthp00goty2akav1zf0a": {
-      "id": "cm2t1bthp00goty2akav1zf0a",
-      "title": "StyleX est-il le React du CSS ?",
-      "trackTitle": "Physique",
-      "tags": [
-        "Front web",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "David_Maurin"
-      ],
-      "startTime": "2025-02-06T12:35:00+01:00",
-      "endTime": "2025-02-06T12:50:00+01:00"
-    },
-    "cm2sx9e91007dty2as5hm5mqn": {
-      "id": "cm2sx9e91007dty2as5hm5mqn",
-      "title": "Les LLMs par la pratique, avec Gemini et LangChain4j en Java",
+    "cmi8qyrm000hz1eqwm1ote3eh": {
+      "id": "cmi8qyrm000hz1eqwm1ote3eh",
+      "title": "1h50min pour créer une App Front avec la Clean Archigonale ©️",
       "trackTitle": "F23",
       "tags": [
-        "Backend, Cloud, Big Data",
+        "Conception, architecture",
         "Hands-on (120min)"
       ],
       "speakers": [
-        "Guillaume_Laforge",
-        "Valentin_Deleplace"
+        "Dorian_Lamandé",
+        "Guillaume_Chauvet"
       ],
-      "startTime": "2025-02-06T10:10:00+01:00",
-      "endTime": "2025-02-06T12:10:00+01:00"
+      "startTime": "2026-02-05T10:10:00+01:00",
+      "endTime": "2026-02-05T12:10:00+01:00"
     },
-    "cm2swg9ty006tty2a2h6c4w5h": {
-      "id": "cm2swg9ty006tty2a2h6c4w5h",
-      "title": "Sous le capot des LLMs : toutes ces questions que vous n’avez jamais osé poser",
-      "trackTitle": "Bio",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Guillaume_Laforge"
-      ],
-      "startTime": "2025-02-07T13:30:00+01:00",
-      "endTime": "2025-02-07T14:20:00+01:00"
-    },
-    "cm2ss5f14001uty2akwj0rzat": {
-      "id": "cm2ss5f14001uty2akwj0rzat",
-      "title": "Racine carrée, bit-shifting et paracétamol",
-      "trackTitle": "F21",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Audren_Burlot"
-      ],
-      "startTime": "2025-02-07T15:45:00+01:00",
-      "endTime": "2025-02-07T16:35:00+01:00"
-    },
-    "cm2rvg3fw010aap20wkyqw5q8": {
-      "id": "cm2rvg3fw010aap20wkyqw5q8",
-      "title": "DevEx : Qu'est-ce que l'Expérience Développeur ?",
-      "trackTitle": "F21",
-      "tags": [
-        "Humain & Tech",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Yuriy_Tyukhnin"
-      ],
-      "startTime": "2025-02-07T13:00:00+01:00",
-      "endTime": "2025-02-07T13:15:00+01:00"
-    },
-    "cm2rp7md900kwap20pxm3ich3": {
-      "id": "cm2rp7md900kwap20pxm3ich3",
-      "title": "J'ai peur de parler en public, pas vous ?",
-      "trackTitle": "Bio",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Clara_MAMET"
-      ],
-      "startTime": "2025-02-06T14:30:00+01:00",
-      "endTime": "2025-02-06T15:20:00+01:00"
-    },
-    "cm2p2dthe004f2ts4afn2ekgz": {
-      "id": "cm2p2dthe004f2ts4afn2ekgz",
-      "title": "Dev Containers : Le super-pouvoir caché de VS Code !",
+    "cmi0u7gdo008t1eqwmbw14pj3": {
+      "id": "cmi0u7gdo008t1eqwmbw14pj3",
+      "title": "Le Magicien Zod : Emmenez TypeScript au-delà du build 🧙",
       "trackTitle": "F22",
       "tags": [
         "Outils, pratiques de dev",
-        "Lightning (15min)"
+        "Conférence (50min)"
       ],
       "speakers": [
-        "Heraud_Kevin"
+        "Mickael_Alves",
+        "Lucas_Audart"
       ],
-      "startTime": "2025-02-06T12:35:00+01:00",
-      "endTime": "2025-02-06T12:50:00+01:00"
+      "startTime": "2026-02-05T10:10:00+01:00",
+      "endTime": "2026-02-05T11:00:00+01:00"
     },
-    "cm2oj1h7p001h2ts4samx2kxs": {
-      "id": "cm2oj1h7p001h2ts4samx2kxs",
-      "title": "Arrêtons de se moquer des mocks avec Mockoon !",
+    "cmh8999v200cq1eocr6qsonxd": {
+      "id": "cmh8999v200cq1eocr6qsonxd",
+      "title": "La réactivité et les signaux : démystifions la magie du frontend",
+      "trackTitle": "Bio",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Estéban_S"
+      ],
+      "startTime": "2026-02-05T10:10:00+01:00",
+      "endTime": "2026-02-05T11:00:00+01:00"
+    },
+    "cmgb8qdfb00ix1elb5spxgtxc": {
+      "id": "cmgb8qdfb00ix1elb5spxgtxc",
+      "title": "Mes trains Jouef passent au numérique, avec des Raspberry et TinyGo !",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Florian_Forestier",
+        "Justine_Bachelard"
+      ],
+      "startTime": "2026-02-05T10:10:00+01:00",
+      "endTime": "2026-02-05T11:00:00+01:00"
+    },
+    "cmgp7m5ko00gd1epdis578ri7": {
+      "id": "cmgp7m5ko00gd1epdis578ri7",
+      "title": "L’architecture hexagonale au pays des irréductibles développeurs",
       "trackTitle": "F21",
       "tags": [
-        "Outils, pratiques de dev",
-        "Lightning (15min)"
+        "Conception, architecture",
+        "Conférence (50min)"
       ],
       "speakers": [
-        "Florian_Montalbano"
+        "Nathan_Castelein",
+        "Ambre_Person"
       ],
-      "startTime": "2025-02-06T12:10:00+01:00",
-      "endTime": "2025-02-06T12:25:00+01:00"
+      "startTime": "2026-02-05T10:10:00+01:00",
+      "endTime": "2026-02-05T11:00:00+01:00"
     },
-    "cm2n4r61c012biupxlnrlkwtw": {
-      "id": "cm2n4r61c012biupxlnrlkwtw",
-      "title": "Et si Mozart, Daft Punk et Bob Marley avaient été des techs ? 🎶",
-      "trackTitle": "Physique",
+    "cmgardqoe00gi1elbnoz01mz5": {
+      "id": "cmgardqoe00gi1elbnoz01mz5",
+      "title": "Makers de Père en Fils",
+      "trackTitle": "F21",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Sylvain_Gougouzian",
-        "Thierry_Chantier"
+        "Matthias_Gougouzian",
+        "Sylvain_Gougouzian"
       ],
-      "startTime": "2025-02-06T15:45:00+01:00",
-      "endTime": "2025-02-06T16:35:00+01:00"
+      "startTime": "2026-02-05T11:10:00+01:00",
+      "endTime": "2026-02-05T12:00:00+01:00"
     },
-    "cm2lughcr00ldiupxnqdw8o1g": {
-      "id": "cm2lughcr00ldiupxnqdw8o1g",
-      "title": "Transformer vos modèles anémiques en modèles riches grâce au DDD tactique",
+    "cmg72szhs00a51elbjk4mrfru": {
+      "id": "cmg72szhs00a51elbjk4mrfru",
+      "title": "Redécouvrir PHP : pratiques modernes au-delà de l’héritage",
+      "trackTitle": "F22",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Horacio_Gonzalez_(LostInBrittany)"
+      ],
+      "startTime": "2026-02-05T11:10:00+01:00",
+      "endTime": "2026-02-05T12:00:00+01:00"
+    },
+    "cmhz1lest005q1eqwd1db1r7k": {
+      "id": "cmhz1lest005q1eqwd1db1r7k",
+      "title": "Valoriser sans survendre : l’art moderne de pitcher son code",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Hugo_Massing"
+      ],
+      "startTime": "2026-02-05T11:10:00+01:00",
+      "endTime": "2026-02-05T12:00:00+01:00"
+    },
+    "cmhz04xeo005j1eqw6cw1ood7": {
+      "id": "cmhz04xeo005j1eqw6cw1ood7",
+      "title": "Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes",
+      "trackTitle": "Physique",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Quentin_JOLY",
+        "Denis_GERMAIN"
+      ],
+      "startTime": "2026-02-05T11:10:00+01:00",
+      "endTime": "2026-02-05T12:00:00+01:00"
+    },
+    "cmgtc5c1i018f1epdv6rky64p": {
+      "id": "cmgtc5c1i018f1epdv6rky64p",
+      "title": "La transactionalité expliquée",
+      "trackTitle": "F21",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Benjamin_Cavy"
+      ],
+      "startTime": "2026-02-05T12:10:00+01:00",
+      "endTime": "2026-02-05T12:25:00+01:00"
+    },
+    "cmfl3nxjo0449ml1er4av6dur": {
+      "id": "cmfl3nxjo0449ml1er4av6dur",
+      "title": "Title, ce faux ami de l’accessibilité",
+      "trackTitle": "F22",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "François-Xavier_Lair"
+      ],
+      "startTime": "2026-02-05T12:10:00+01:00",
+      "endTime": "2026-02-05T12:25:00+01:00"
+    },
+    "cmiakph7m000501mdh18ph2gv": {
+      "id": "cmiakph7m000501mdh18ph2gv",
+      "title": "Pas de use case, pas de produit",
       "trackTitle": "Bio",
       "tags": [
         "Conception, architecture",
         "Lightning (15min)"
       ],
       "speakers": [
-        "Arnaud_Langlade"
+        "Vincent_Péchon"
       ],
-      "startTime": "2025-02-07T12:10:00+01:00",
-      "endTime": "2025-02-07T12:25:00+01:00"
+      "startTime": "2026-02-05T12:10:00+01:00",
+      "endTime": "2026-02-05T12:25:00+01:00"
     },
-    "cm2ir7a6y007ja0zn28ql8hns": {
-      "id": "cm2ir7a6y007ja0zn28ql8hns",
-      "title": "Le cauchemar des attaquants : une infrastructure sans secret",
-      "trackTitle": "F21",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Thibault_Lengagne"
-      ],
-      "startTime": "2025-02-06T15:45:00+01:00",
-      "endTime": "2025-02-06T16:35:00+01:00"
-    },
-    "cm2erk9nx01emvm4hg2sb7kuu": {
-      "id": "cm2erk9nx01emvm4hg2sb7kuu",
-      "title": "REST next level : Ecrire des APIs web orientées métier",
-      "trackTitle": "Physique",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Julien_Topçu"
-      ],
-      "startTime": "2025-02-07T13:30:00+01:00",
-      "endTime": "2025-02-07T14:20:00+01:00"
-    },
-    "cm2bi8b4f00thxalm8nrlynuu": {
-      "id": "cm2bi8b4f00thxalm8nrlynuu",
-      "title": "Un cluster de production en un éclair avec Talos ⚡️☸️",
-      "trackTitle": "F22",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Quentin_JOLY"
-      ],
-      "startTime": "2025-02-06T11:10:00+01:00",
-      "endTime": "2025-02-06T12:00:00+01:00"
-    },
-    "cm2ajxoas009jxalm0m81be0w": {
-      "id": "cm2ajxoas009jxalm0m81be0w",
-      "title": "\"On a 34 % de femmes, venez chez nous, on fait des trucs pour vous !\"",
-      "trackTitle": "F22",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Anaïs_Moulin"
-      ],
-      "startTime": "2025-02-07T15:45:00+01:00",
-      "endTime": "2025-02-07T16:35:00+01:00"
-    },
-    "cm28x3w3s00dk6gvvmsyrb4mr": {
-      "id": "cm28x3w3s00dk6gvvmsyrb4mr",
-      "title": "Automatisez l'installation de votre poste de travail !",
+    "cmi2447u200bs1eqwaoydda9d": {
+      "id": "cmi2447u200bs1eqwaoydda9d",
+      "title": "Comment faire vivre les logiciels plus de 40 ans?",
       "trackTitle": "Physique",
       "tags": [
         "Outils, pratiques de dev",
         "Lightning (15min)"
       ],
       "speakers": [
-        "Sylvain_METAYER"
+        "Herve_Chaminaud"
       ],
-      "startTime": "2025-02-06T12:10:00+01:00",
-      "endTime": "2025-02-06T12:25:00+01:00"
+      "startTime": "2026-02-05T12:10:00+01:00",
+      "endTime": "2026-02-05T12:25:00+01:00"
     },
-    "cm27zogf3005d6gvvgopui5g6": {
-      "id": "cm27zogf3005d6gvvgopui5g6",
-      "title": "Comme Alice, osez suivre le lapin blanc et plongez dans la JVM pour comprendre son fonctionnement",
+    "cmi36xifp00cn1eqwyb8n9hu2": {
+      "id": "cmi36xifp00cn1eqwyb8n9hu2",
+      "title": "Reactivity from scratch",
+      "trackTitle": "F21",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Pierre_Robillard"
+      ],
+      "startTime": "2026-02-05T12:35:00+01:00",
+      "endTime": "2026-02-05T12:50:00+01:00"
+    },
+    "cmi15i4ad00901eqwb4h2epxz": {
+      "id": "cmi15i4ad00901eqwb4h2epxz",
+      "title": "Le hasard fait bien les tests",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "David_Pilato"
+      ],
+      "startTime": "2026-02-05T12:35:00+01:00",
+      "endTime": "2026-02-05T12:50:00+01:00"
+    },
+    "cmi0qaihi008i1eqwjvcnoxx1": {
+      "id": "cmi0qaihi008i1eqwjvcnoxx1",
+      "title": "D-Bus pour les buses : intégration du gestionnaire de mots de passe Bitwarden dans les environnements de bureau Linux",
+      "trackTitle": "Bio",
+      "tags": [
+        "Alien",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Ronan_Bocquillon"
+      ],
+      "startTime": "2026-02-05T12:35:00+01:00",
+      "endTime": "2026-02-05T12:50:00+01:00"
+    },
+    "cmhw3evtr002j1eqwse48kxb9": {
+      "id": "cmhw3evtr002j1eqwse48kxb9",
+      "title": "Eco-conception ou comment revenir à la base",
+      "trackTitle": "Physique",
+      "tags": [
+        "Conception, architecture",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Aurélie_Jollet"
+      ],
+      "startTime": "2026-02-05T12:35:00+01:00",
+      "endTime": "2026-02-05T12:50:00+01:00"
+    },
+    "cmhteh41l001z1eovbqkjk0tl": {
+      "id": "cmhteh41l001z1eovbqkjk0tl",
+      "title": "Bug de process interne : besoin d'un patch ?",
+      "trackTitle": "F21",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Theo_DOUARE"
+      ],
+      "startTime": "2026-02-05T13:00:00+01:00",
+      "endTime": "2026-02-05T13:15:00+01:00"
+    },
+    "cmhnwc64500ev1ese828x3uvf": {
+      "id": "cmhnwc64500ev1ese828x3uvf",
+      "title": "Jeux Vidéo et LLM: pas si différent",
+      "trackTitle": "F22",
+      "tags": [
+        "Intelligence Artificielle",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "guillaume_blaquiere"
+      ],
+      "startTime": "2026-02-05T13:00:00+01:00",
+      "endTime": "2026-02-05T13:15:00+01:00"
+    },
+    "cmhhvwum6002b1esel27gye48": {
+      "id": "cmhhvwum6002b1esel27gye48",
+      "title": "@Transactional : Facile à utiliser, difficile à maîtriser",
+      "trackTitle": "Bio",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Benoit_MARTIN"
+      ],
+      "startTime": "2026-02-05T13:00:00+01:00",
+      "endTime": "2026-02-05T13:15:00+01:00"
+    },
+    "cmgxuaaii00241eqqyrgmql72": {
+      "id": "cmgxuaaii00241eqqyrgmql72",
+      "title": "Les Dessous de vos Cartes : À la découverte de la contribution OpenStreetMap",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Rémi_Dehenne"
+      ],
+      "startTime": "2026-02-05T13:00:00+01:00",
+      "endTime": "2026-02-05T13:15:00+01:00"
+    },
+    "cmhw5c0dk002p1eqwx0wyhmih": {
+      "id": "cmhw5c0dk002p1eqwx0wyhmih",
+      "title": "Maîtrise Typescript par la pratique",
+      "trackTitle": "F23",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "Johan_Rouve",
+        "Marjorie_Aubert",
+        "Bastien_Tran"
+      ],
+      "startTime": "2026-02-05T13:30:00+01:00",
+      "endTime": "2026-02-05T15:30:00+01:00"
+    },
+    "cmhyzhf87005b1eqwfbahyxcw": {
+      "id": "cmhyzhf87005b1eqwfbahyxcw",
+      "title": "On est tous responsables de la génération suivante.",
+      "trackTitle": "F21",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Julien_Gidel"
+      ],
+      "startTime": "2026-02-05T13:30:00+01:00",
+      "endTime": "2026-02-05T14:20:00+01:00"
+    },
+    "cmhursm9y000c1eqwwnrrh4op": {
+      "id": "cmhursm9y000c1eqwwnrrh4op",
+      "title": "L’animation web responsable : faire bouger sans alourdir",
+      "trackTitle": "F22",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Josiane_MAKELELE"
+      ],
+      "startTime": "2026-02-05T13:30:00+01:00",
+      "endTime": "2026-02-05T14:20:00+01:00"
+    },
+    "cmhurnq7v00081eqwwkn03wlr": {
+      "id": "cmhurnq7v00081eqwwkn03wlr",
+      "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
       "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
@@ -412,169 +355,56 @@
       "speakers": [
         "Antoine_DESSAIGNE"
       ],
-      "startTime": "2025-02-06T13:30:00+01:00",
-      "endTime": "2025-02-06T14:20:00+01:00"
+      "startTime": "2026-02-05T13:30:00+01:00",
+      "endTime": "2026-02-05T14:20:00+01:00"
     },
-    "cm24uc0y200f9h2uwddb3cnmx": {
-      "id": "cm24uc0y200f9h2uwddb3cnmx",
-      "title": "Créer des API REST en Java avec une approche API-First : Mise en pratique et retours d'expérience",
-      "trackTitle": "F23",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Hands-on (120min)"
-      ],
-      "speakers": [
-        "Alexandre_Touret"
-      ],
-      "startTime": "2025-02-07T10:10:00+01:00",
-      "endTime": "2025-02-07T12:10:00+01:00"
-    },
-    "cm21z8ot704td1139n648womz": {
-      "id": "cm21z8ot704td1139n648womz",
-      "title": "G.I. Go - Générateurs et itérateurs en Go",
+    "cmh20nf6b00hd1eqqfsy4ycjh": {
+      "id": "cmh20nf6b00hd1eqqfsy4ycjh",
+      "title": "Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle !",
       "trackTitle": "Physique",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Benoît_Masson"
-      ],
-      "startTime": "2025-02-07T12:10:00+01:00",
-      "endTime": "2025-02-07T12:25:00+01:00"
-    },
-    "cm21usvqb046z1139htko61hv": {
-      "id": "cm21usvqb046z1139htko61hv",
-      "title": "Réinventer les masculinités, un chemin vers plus d’inclusion dans la tech",
-      "trackTitle": "Physique",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Nathan_Castelein"
-      ],
-      "startTime": "2025-02-07T10:10:00+01:00",
-      "endTime": "2025-02-07T11:00:00+01:00"
-    },
-    "cm1uuns7z025ec6s9k3outfue": {
-      "id": "cm1uuns7z025ec6s9k3outfue",
-      "title": "Optimisation de performance bénéfice ou sacrifice ?",
-      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Emmanuel-Lin_Toulemonde"
+        "Julien_Briault"
       ],
-      "startTime": "2025-02-07T13:30:00+01:00",
-      "endTime": "2025-02-07T14:20:00+01:00"
+      "startTime": "2026-02-05T13:30:00+01:00",
+      "endTime": "2026-02-05T14:20:00+01:00"
     },
-    "cm1ujp5nt022oc6s93jysgz22": {
-      "id": "cm1ujp5nt022oc6s93jysgz22",
-      "title": "Dark Mode : analyse et conception",
+    "cmhsw7itb000g1eovd27h9o3b": {
+      "id": "cmhsw7itb000g1eovd27h9o3b",
+      "title": "Noms de domaines : la grande histoire des petites extensions",
       "trackTitle": "F21",
-      "tags": [
-        "Design, UI, UX",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Simon_Mercier",
-        "Antoine_CANDY"
-      ],
-      "startTime": "2025-02-06T11:10:00+01:00",
-      "endTime": "2025-02-06T12:00:00+01:00"
-    },
-    "cm1qdss7c017yc6s94jfr8we3": {
-      "id": "cm1qdss7c017yc6s94jfr8we3",
-      "title": "Anatomie d'une faille",
-      "trackTitle": "F22",
-      "tags": [
-        "Alien",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Olivier_PONCET"
-      ],
-      "startTime": "2025-02-07T14:30:00+01:00",
-      "endTime": "2025-02-07T15:20:00+01:00"
-    },
-    "cm1oyl54a00d2c6s9jlvx32jd": {
-      "id": "cm1oyl54a00d2c6s9jlvx32jd",
-      "title": "V0 by Vercel : L'IA qui va booster ta productivité front-end",
-      "trackTitle": "Physique",
-      "tags": [
-        "Front web",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "benoit_El_Amrani"
-      ],
-      "startTime": "2025-02-07T13:00:00+01:00",
-      "endTime": "2025-02-07T13:15:00+01:00"
-    },
-    "cm1mj97e7017q6veiowes6b18": {
-      "id": "cm1mj97e7017q6veiowes6b18",
-      "title": "SELECT 'amazing_features' FROM \"posgresql\"",
-      "trackTitle": "F22",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Kevin_Davin"
-      ],
-      "startTime": "2025-02-07T11:10:00+01:00",
-      "endTime": "2025-02-07T12:00:00+01:00"
-    },
-    "cm1kco8r300rt6vei2cqvz6gj": {
-      "id": "cm1kco8r300rt6vei2cqvz6gj",
-      "title": "React Compiler : Easier, Better, Faster, Stronger 🤖",
-      "trackTitle": "F21",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Lucas_AUDART",
-        "Mickael_Alves"
-      ],
-      "startTime": "2025-02-07T14:30:00+01:00",
-      "endTime": "2025-02-07T15:20:00+01:00"
-    },
-    "cm1i0auyi00lu6veiq1pkapjx": {
-      "id": "cm1i0auyi00lu6veiq1pkapjx",
-      "title": "Inclure la neurodiversité dans la tech",
-      "trackTitle": "F22",
       "tags": [
         "Humain & Tech",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Diane_Havlicek"
+        "Benoît_Masson",
+        "Théo_Bougé"
       ],
-      "startTime": "2025-02-06T13:30:00+01:00",
-      "endTime": "2025-02-06T14:20:00+01:00"
+      "startTime": "2026-02-05T14:30:00+01:00",
+      "endTime": "2026-02-05T15:20:00+01:00"
     },
-    "cm16vnmaf00if1bi2tzbruawt": {
-      "id": "cm16vnmaf00if1bi2tzbruawt",
-      "title": "Elysia: un cousin d'ExpressJS sous Bun",
-      "trackTitle": "F21",
+    "cmhkes3jq006g1esen8ao5y6c": {
+      "id": "cmhkes3jq006g1esen8ao5y6c",
+      "title": "Comment concevoir et tester un site accessible ?",
+      "trackTitle": "F22",
       "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
       ],
       "speakers": [
-        "Sylvain_Gougouzian"
+        "Emmanuelle_ABOAF"
       ],
-      "startTime": "2025-02-07T12:35:00+01:00",
-      "endTime": "2025-02-07T12:50:00+01:00"
+      "startTime": "2026-02-05T14:30:00+01:00",
+      "endTime": "2026-02-05T15:20:00+01:00"
     },
-    "cm1627z6900dh1bi2mk033axc": {
-      "id": "cm1627z6900dh1bi2mk033axc",
-      "title": "To Gather, or not to Gather, that is the question.",
-      "trackTitle": "Physique",
+    "cmh35770c000i1eoczsnuq2x2": {
+      "id": "cmh35770c000i1eoczsnuq2x2",
+      "title": "Fatiguée de la POO ? Passez à la DOP !",
+      "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
@@ -582,225 +412,13 @@
       "speakers": [
         "Jérôme_Tama"
       ],
-      "startTime": "2025-02-06T14:30:00+01:00",
-      "endTime": "2025-02-06T15:20:00+01:00"
+      "startTime": "2026-02-05T14:30:00+01:00",
+      "endTime": "2026-02-05T15:20:00+01:00"
     },
-    "cm1625fjo00dd1bi2r2yqzotb": {
-      "id": "cm1625fjo00dd1bi2r2yqzotb",
-      "title": "OpenRewrite: Refactoring as code",
-      "trackTitle": "F21",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Jérôme_Tama"
-      ],
-      "startTime": "2025-02-06T12:35:00+01:00",
-      "endTime": "2025-02-06T12:50:00+01:00"
-    },
-    "cm14qg801002m1bi26rh6ur6l": {
-      "id": "cm14qg801002m1bi26rh6ur6l",
-      "title": "Playwright : tester vos applications devient un jeu d'enfant",
-      "trackTitle": "F21",
-      "tags": [
-        "Front web",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Benjamin_Cavy"
-      ],
-      "startTime": "2025-02-06T13:00:00+01:00",
-      "endTime": "2025-02-06T13:15:00+01:00"
-    },
-    "cm14qcii9002i1bi2a4a82tbi": {
-      "id": "cm14qcii9002i1bi2a4a82tbi",
-      "title": "Les feature flags : le couteau suisse de votre flow de développement",
+    "cmh0hncaz00ar1eqqkwzkszm4": {
+      "id": "cmh0hncaz00ar1eqqkwzkszm4",
+      "title": "It's a brick, retour au (code) source",
       "trackTitle": "Physique",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Benjamin_Cavy"
-      ],
-      "startTime": "2025-02-06T11:10:00+01:00",
-      "endTime": "2025-02-06T12:00:00+01:00"
-    },
-    "cm14q8q8o00291bi25uo0k2v0": {
-      "id": "cm14q8q8o00291bi25uo0k2v0",
-      "title": "Server side WASM, le prochain game changer ?",
-      "trackTitle": "Bio",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Etienne_ANNE",
-        "Mathieu_ANCELIN"
-      ],
-      "startTime": "2025-02-07T14:30:00+01:00",
-      "endTime": "2025-02-07T15:20:00+01:00"
-    },
-    "cm10ymfd903viodc9j5agmtmd": {
-      "id": "cm10ymfd903viodc9j5agmtmd",
-      "title": "De l'infra à la config', as code en 3 temps",
-      "trackTitle": "F22",
-      "tags": [
-        "Conception, architecture",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Yann_Schepens"
-      ],
-      "startTime": "2025-02-06T14:30:00+01:00",
-      "endTime": "2025-02-06T15:20:00+01:00"
-    },
-    "cm10pfr0o03u5odc9l1k762yk": {
-      "id": "cm10pfr0o03u5odc9l1k762yk",
-      "title": "Quand le Terminal dévore la UI : TUI pour tout le monde !",
-      "trackTitle": "F21",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Thierry_Chantier"
-      ],
-      "startTime": "2025-02-07T13:30:00+01:00",
-      "endTime": "2025-02-07T14:20:00+01:00"
-    },
-    "cm0we5zox039rodc9nq4h5xxd": {
-      "id": "cm0we5zox039rodc9nq4h5xxd",
-      "title": "Les outils DevOps au service de la formation DevOps",
-      "trackTitle": "Bio",
-      "tags": [
-        "Conception, architecture",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Hugues_Lepesant"
-      ],
-      "startTime": "2025-02-06T12:35:00+01:00",
-      "endTime": "2025-02-06T12:50:00+01:00"
-    },
-    "cm0vg2pnh0357odc9uel900qf": {
-      "id": "cm0vg2pnh0357odc9uel900qf",
-      "title": "🧑‍🎨 L’art de bien rater sa conférence 🥱",
-      "trackTitle": "Bio",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "jean-francois_garreau"
-      ],
-      "startTime": "2025-02-07T15:45:00+01:00",
-      "endTime": "2025-02-07T16:35:00+01:00"
-    },
-    "cm0gowkzv00kwodc9pvcyscql": {
-      "id": "cm0gowkzv00kwodc9pvcyscql",
-      "title": "Atelier : 10 tests simples pour améliorer l'accessibilité de votre site",
-      "trackTitle": "F23",
-      "tags": [
-        "Front web",
-        "Hands-on (120min)"
-      ],
-      "speakers": [
-        "François-Xavier_Lair",
-        "Henri_Gauffriau"
-      ],
-      "startTime": "2025-02-06T13:30:00+01:00",
-      "endTime": "2025-02-06T15:30:00+01:00"
-    },
-    "cm09o1gh4000hpogqepwja8kg": {
-      "id": "cm09o1gh4000hpogqepwja8kg",
-      "title": "SOPS, Passez un savon à vos secrets en clair !",
-      "trackTitle": "Physique",
-      "tags": [
-        "Humain & Tech",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Sylvain_METAYER"
-      ],
-      "startTime": "2025-02-07T12:35:00+01:00",
-      "endTime": "2025-02-07T12:50:00+01:00"
-    },
-    "cm05d2djy00esoh1upshfx4pa": {
-      "id": "cm05d2djy00esoh1upshfx4pa",
-      "title": "« Pourquoi une grille de salaire ? On n’est pas chez les fonctionnaires ! » (*)",
-      "trackTitle": "F21",
-      "tags": [
-        "Humain & Tech",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Éric_Daspet"
-      ],
-      "startTime": "2025-02-06T16:45:00+01:00",
-      "endTime": "2025-02-06T17:35:00+01:00"
-    },
-    "cm00sa3ru001coh1u5uiypqr4": {
-      "id": "cm00sa3ru001coh1u5uiypqr4",
-      "title": "Les signals avec Angular : comment ça marche ?",
-      "trackTitle": "Physique",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Benjamin_Legrand"
-      ],
-      "startTime": "2025-02-06T13:30:00+01:00",
-      "endTime": "2025-02-06T14:20:00+01:00"
-    },
-    "clzyebrnk315213hpem0a8riw": {
-      "id": "clzyebrnk315213hpem0a8riw",
-      "title": "Introduction à la programmation réactive, de zero à Super Mario",
-      "trackTitle": "Bio",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "damien_rouxel"
-      ],
-      "startTime": "2025-02-06T11:10:00+01:00",
-      "endTime": "2025-02-06T12:00:00+01:00"
-    },
-    "clzyebe9i312g13hp9xxln9qk": {
-      "id": "clzyebe9i312g13hp9xxln9qk",
-      "title": "CI / CD: Correct Implementation or Continuous Deception",
-      "trackTitle": "F21",
-      "tags": [
-        "Backend, Cloud, Big Data",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Marine_du_Mesnil"
-      ],
-      "startTime": "2025-02-06T10:10:00+01:00",
-      "endTime": "2025-02-06T11:00:00+01:00"
-    },
-    "clzyebug7315e13hpaewg0wg7": {
-      "id": "clzyebug7315e13hpaewg0wg7",
-      "title": "La Quantification ou comment compresser les LLMs pour un usage plus responsable.",
-      "trackTitle": "Physique",
-      "tags": [
-        "Alien",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Jean-Philippe_Foures"
-      ],
-      "startTime": "2025-02-06T13:00:00+01:00",
-      "endTime": "2025-02-06T13:15:00+01:00"
-    },
-    "clzyec5b6316k13hpsaxygky2": {
-      "id": "clzyec5b6316k13hpsaxygky2",
-      "title": "Du rêve à la réalité, coder un jeu sur Super Nintendo",
-      "trackTitle": "Bio",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -808,113 +426,183 @@
       "speakers": [
         "alekmaul"
       ],
-      "startTime": "2025-02-06T16:45:00+01:00",
-      "endTime": "2025-02-06T17:35:00+01:00"
+      "startTime": "2026-02-05T14:30:00+01:00",
+      "endTime": "2026-02-05T15:20:00+01:00"
     },
-    "clzyebs6j315413hpbz86etx4": {
-      "id": "clzyebs6j315413hpbz86etx4",
-      "title": "Tour d’horizon de Kotlin et de son écosystème",
-      "trackTitle": "Physique",
-      "tags": [
-        "Mobile, Internet des objets",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Yassine_Benabbas"
-      ],
-      "startTime": "2025-02-07T15:45:00+01:00",
-      "endTime": "2025-02-07T16:35:00+01:00"
-    },
-    "clzyec355316b13hp6t3idc94": {
-      "id": "clzyec355316b13hp6t3idc94",
-      "title": "Intégrons, faisons grandir et progresser les jeunes devs: Bonnes pratiques et retours d'expériences à l'intention des (vieux) devs.",
-      "trackTitle": "F22",
-      "tags": [
-        "Humain & Tech",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Alexandre_Touret"
-      ],
-      "startTime": "2025-02-06T12:10:00+01:00",
-      "endTime": "2025-02-06T12:25:00+01:00"
-    },
-    "clzyeblr4313w13hpqfq2p87s": {
-      "id": "clzyeblr4313w13hpqfq2p87s",
-      "title": "Accessibilité: l'heure des comptes",
-      "trackTitle": "F22",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Pierre_LECLAIRE"
-      ],
-      "startTime": "2025-02-06T10:10:00+01:00",
-      "endTime": "2025-02-06T11:00:00+01:00"
-    },
-    "clzyec3nt316d13hpmqglshl4": {
-      "id": "clzyec3nt316d13hpmqglshl4",
-      "title": "Les petites aventures de CSS, saison 2025",
-      "trackTitle": "Bio",
-      "tags": [
-        "Front web",
-        "Conférence (50min)"
-      ],
-      "speakers": [
-        "Raphael_Goetter"
-      ],
-      "startTime": "2025-02-07T11:10:00+01:00",
-      "endTime": "2025-02-07T12:00:00+01:00"
-    },
-    "clzyebwkf315m13hpmpuurbyh": {
-      "id": "clzyebwkf315m13hpmpuurbyh",
-      "title": "CQRS / ES : nos heuristiques après plusieurs années de production",
+    "cmicalnsk000w01pdhbaxt8cr": {
+      "id": "cmicalnsk000w01pdhbaxt8cr",
+      "title": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
       "trackTitle": "Physique",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Romain_BERTHON",
-        "Aurélien_BOUDOUX"
+        "Alexis_\"Horgix\"_Chotard"
       ],
-      "startTime": "2025-02-06T10:10:00+01:00",
-      "endTime": "2025-02-06T11:00:00+01:00"
+      "startTime": "2026-02-05T15:45:00+01:00",
+      "endTime": "2026-02-05T16:35:00+01:00"
     },
-    "clzyebc1i312013hpqs60agw7": {
-      "id": "clzyebc1i312013hpqs60agw7",
-      "title": "Theming : Faites peau neuve en 50 minutes top chrono",
-      "trackTitle": "Bio",
+    "cmhn775l500c91eseahc5i0s9": {
+      "id": "cmhn775l500c91eseahc5i0s9",
+      "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
+      "trackTitle": "F21",
       "tags": [
-        "Front web",
+        "Humain & Tech",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Gauthier_Fiorentino"
+        "Hafsa_ELMAIZI"
       ],
-      "startTime": "2025-02-06T15:45:00+01:00",
-      "endTime": "2025-02-06T16:35:00+01:00"
+      "startTime": "2026-02-05T15:45:00+01:00",
+      "endTime": "2026-02-05T16:35:00+01:00"
     },
-    "clzyebgja312w13hpg7gx9qrc": {
-      "id": "clzyebgja312w13hpg7gx9qrc",
-      "title": "Merge confliture sur mes gitscottes : découper ses PR sans pleurer",
-      "trackTitle": "Bio",
+    "cmgtb4fr4018a1epd1a602gss": {
+      "id": "cmgtb4fr4018a1epd1a602gss",
+      "title": "Un jardin sur sol vivant connecté, pourquoi et comment ?",
+      "trackTitle": "F22",
       "tags": [
-        "Outils, pratiques de dev",
-        "Lightning (15min)"
+        "Alien",
+        "Conférence (50min)"
       ],
       "speakers": [
-        "Julie_Brunetto",
-        "Gauthier_Fiorentino"
+        "Delegue_Alexandre"
       ],
-      "startTime": "2025-02-06T13:00:00+01:00",
-      "endTime": "2025-02-06T13:15:00+01:00"
+      "startTime": "2026-02-05T15:45:00+01:00",
+      "endTime": "2026-02-05T16:35:00+01:00"
     },
-    "clzyebz86315w13hpajzohvjv": {
-      "id": "clzyebz86315w13hpajzohvjv",
-      "title": " Au secours ! Mon manager me demande des KPIs !",
+    "cmgrsifk400rn1epd99q5uw9o": {
+      "id": "cmgrsifk400rn1epd99q5uw9o",
+      "title": "Les Agents : l'ordre dans le chaos des IA",
+      "trackTitle": "Bio",
+      "tags": [
+        "Intelligence Artificielle",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Thierry_Chantier"
+      ],
+      "startTime": "2026-02-05T15:45:00+01:00",
+      "endTime": "2026-02-05T16:35:00+01:00"
+    },
+    "cmgnznz6e00cl1epd5eysrjz6": {
+      "id": "cmgnznz6e00cl1epd5eysrjz6",
+      "title": "Un voyage dans le temps sur le passé, le présent et l'avenir de la protection de la mémoire",
+      "trackTitle": "F21",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Laurent_Grangeau"
+      ],
+      "startTime": "2026-02-05T16:35:00+01:00",
+      "endTime": "2026-02-05T17:25:00+01:00"
+    },
+    "cmgkxto2q008h1epdujofui82": {
+      "id": "cmgkxto2q008h1epdujofui82",
+      "title": "Web Components : chronique d'une renaissance",
       "trackTitle": "F22",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Bastien_Rousseau"
+      ],
+      "startTime": "2026-02-05T16:35:00+01:00",
+      "endTime": "2026-02-05T17:25:00+01:00"
+    },
+    "cmgjlphf700501epdnp49avm7": {
+      "id": "cmgjlphf700501epdnp49avm7",
+      "title": "IA générative et réchauffement climatique : comment réduire la facture?",
+      "trackTitle": "Bio",
+      "tags": [
+        "Intelligence Artificielle",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Arielle_Villa-Massone",
+        "Emilie_GREFF"
+      ],
+      "startTime": "2026-02-05T16:35:00+01:00",
+      "endTime": "2026-02-05T17:25:00+01:00"
+    },
+    "cmgds4c25000i1emjxzezk8is": {
+      "id": "cmgds4c25000i1emjxzezk8is",
+      "title": "Open-source : Pourquoi ? Comment ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Julien_Deniau"
+      ],
+      "startTime": "2026-02-05T16:35:00+01:00",
+      "endTime": "2026-02-05T17:25:00+01:00"
+    },
+    "cmfma87kf05uhml1e0xx58mjb": {
+      "id": "cmfma87kf05uhml1e0xx58mjb",
+      "title": "Playwright : tester vos applications devient un jeu d'enfant",
+      "trackTitle": "F23",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "Benjamin_Cavy"
+      ],
+      "startTime": "2026-02-06T10:10:00+01:00",
+      "endTime": "2026-02-06T12:10:00+01:00"
+    },
+    "cmghzal70001w1emj2wqelocf": {
+      "id": "cmghzal70001w1emj2wqelocf",
+      "title": "Révolution TanStack Query : Enfin une bonne gestion d’état 🗂️",
+      "trackTitle": "F21",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Lucas_Audart",
+        "Mickael_Alves"
+      ],
+      "startTime": "2026-02-06T10:10:00+01:00",
+      "endTime": "2026-02-06T11:00:00+01:00"
+    },
+    "cmgb8p87t00iu1elbwzenncmt": {
+      "id": "cmgb8p87t00iu1elbwzenncmt",
+      "title": "Lorsqu'un simple bug réseau vous emmène dans les entrailles de Linux...",
+      "trackTitle": "F22",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Florian_Forestier"
+      ],
+      "startTime": "2026-02-06T10:10:00+01:00",
+      "endTime": "2026-02-06T11:00:00+01:00"
+    },
+    "cmg72evd7009y1elbj2qg1rlk": {
+      "id": "cmg72evd7009y1elbj2qg1rlk",
+      "title": "Serveurs MCP au-delà des bases : bonnes pratiques, choix de conception et leurs conséquences",
+      "trackTitle": "Bio",
+      "tags": [
+        "Intelligence Artificielle",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Horacio_Gonzalez_(LostInBrittany)"
+      ],
+      "startTime": "2026-02-06T10:10:00+01:00",
+      "endTime": "2026-02-06T11:00:00+01:00"
+    },
+    "cmgi079ue00271emj06wwt4nr": {
+      "id": "cmgi079ue00271emj06wwt4nr",
+      "title": "La face cachée de la performance des équipes de développements",
+      "trackTitle": "Physique",
       "tags": [
         "Alien",
         "Conférence (50min)"
@@ -922,425 +610,739 @@
       "speakers": [
         "geoffrey_graveaud"
       ],
-      "startTime": "2025-02-06T15:45:00+01:00",
-      "endTime": "2025-02-06T16:35:00+01:00"
+      "startTime": "2026-02-06T10:10:00+01:00",
+      "endTime": "2026-02-06T11:00:00+01:00"
     },
-    "clzyec8tz316x13hpb8nl05lv": {
-      "id": "clzyec8tz316x13hpb8nl05lv",
-      "title": "🐋 Simplifiez la conteneurisation de vos idées !",
+    "cmfl3j2to043zml1efob6dcdf": {
+      "id": "cmfl3j2to043zml1efob6dcdf",
+      "title": "Accessibilité en action : rendre vos formulaires utilisables par tous",
       "trackTitle": "F21",
       "tags": [
-        "Outils, pratiques de dev",
-        "Lightning (15min)"
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
       ],
       "speakers": [
-        "Thomas_DA_ROCHA"
+        "François-Xavier_Lair"
       ],
-      "startTime": "2025-02-07T12:10:00+01:00",
-      "endTime": "2025-02-07T12:25:00+01:00"
+      "startTime": "2026-02-06T11:10:00+01:00",
+      "endTime": "2026-02-06T12:00:00+01:00"
     },
-    "clzyeb6z8311113hppljm7k4c": {
-      "id": "clzyeb6z8311113hppljm7k4c",
-      "title": "Redécouvrir la coopération : Atelier de Mob Programming",
-      "trackTitle": "F23",
-      "tags": [
-        "Outils, pratiques de dev",
-        "Hands-on (120min)"
-      ],
-      "speakers": [
-        "Marjorie_Aubert",
-        "Manon_Carbonnel"
-      ],
-      "startTime": "2025-02-07T13:30:00+01:00",
-      "endTime": "2025-02-07T15:30:00+01:00"
-    },
-    "clzyeb6f8310x13hp4d2tyny0": {
-      "id": "clzyeb6f8310x13hp4d2tyny0",
-      "title": "Tester une application React avec Vitest, React Testing Library et MSW: une introduction pratique",
-      "trackTitle": "Bio",
-      "tags": [
-        "Front web",
-        "Lightning (15min)"
-      ],
-      "speakers": [
-        "Cyril_Hue"
-      ],
-      "startTime": "2025-02-07T12:35:00+01:00",
-      "endTime": "2025-02-07T12:50:00+01:00"
-    },
-    "clzyebhpv313413hpg3xibbl4": {
-      "id": "clzyebhpv313413hpg3xibbl4",
-      "title": "L'Architecture Hexagonale par la pratique, le live coding qui rendra vos applications plus pérennes",
-      "trackTitle": "F21",
+    "cmgdppqat00031emj0fncou7u": {
+      "id": "cmgdppqat00031emj0fncou7u",
+      "title": "L’ampoule qui en savait trop : voyage au cœur de la sécurité des objets connectés",
+      "trackTitle": "F22",
       "tags": [
         "Conception, architecture",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Julien_Topçu"
+        "Paul_Pinault"
       ],
-      "startTime": "2025-02-07T11:10:00+01:00",
-      "endTime": "2025-02-07T12:00:00+01:00"
+      "startTime": "2026-02-06T11:10:00+01:00",
+      "endTime": "2026-02-06T12:00:00+01:00"
     },
-    "clzyebuz6315g13hppah52bp5": {
-      "id": "clzyebuz6315g13hppah52bp5",
-      "title": "“Question pour un conteneur” : Quiz interactif sur les images, les conteneurs, OCI & Docker",
+    "cmgapz81z00gd1elb5e5rp0qc": {
+      "id": "cmgapz81z00gd1elb5e5rp0qc",
+      "title": "🤖 Astro GitOps - Press ⓧ to start",
+      "trackTitle": "Bio",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Kevin_Davin"
+      ],
+      "startTime": "2026-02-06T11:10:00+01:00",
+      "endTime": "2026-02-06T12:00:00+01:00"
+    },
+    "cmg6lz5ru008v1elb3xxe2y9k": {
+      "id": "cmg6lz5ru008v1elb3xxe2y9k",
+      "title": "Super apps : on voulait un skateboard, on construit un porte-avion",
+      "trackTitle": "Physique",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Baptiste_CARLIER",
+        "Antoine_Robiez"
+      ],
+      "startTime": "2026-02-06T11:10:00+01:00",
+      "endTime": "2026-02-06T12:00:00+01:00"
+    },
+    "cmicafa39000t01pd111ht6na": {
+      "id": "cmicafa39000t01pd111ht6na",
+      "title": "Mieux écrire, mieux trouver : Diátaxis comme guide de documentation",
+      "trackTitle": "F21",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Alexis_\"Horgix\"_Chotard"
+      ],
+      "startTime": "2026-02-06T12:10:00+01:00",
+      "endTime": "2026-02-06T12:25:00+01:00"
+    },
+    "cmfqkp1gy006d1el7o5hhsq9m": {
+      "id": "cmfqkp1gy006d1el7o5hhsq9m",
+      "title": "🎶 🎒🥾Promenons-nous dans les bois, ceux que l'on ne connaît pas 🎶",
+      "trackTitle": "F22",
+      "tags": [
+        "Conception, architecture",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Sylvain_Gougouzian"
+      ],
+      "startTime": "2026-02-06T12:10:00+01:00",
+      "endTime": "2026-02-06T12:25:00+01:00"
+    },
+    "cmh5a7snp005o1eoc9ch38wt1": {
+      "id": "cmh5a7snp005o1eoc9ch38wt1",
+      "title": "Silence... Ça tourne ! : De l'éco-volontariat à la promotion de mon side project en Australie",
+      "trackTitle": "Bio",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Nicolas_GUILLOT"
+      ],
+      "startTime": "2026-02-06T12:10:00+01:00",
+      "endTime": "2026-02-06T12:25:00+01:00"
+    },
+    "cmg3gkgyx00711envtmmew8ww": {
+      "id": "cmg3gkgyx00711envtmmew8ww",
+      "title": "De Warhol à Basquiat : Le vibe coding démocratise-t-il vraiment la création logicielle ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Intelligence Artificielle",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Alexis_Kovalenko"
+      ],
+      "startTime": "2026-02-06T12:10:00+01:00",
+      "endTime": "2026-02-06T12:25:00+01:00"
+    },
+    "cmh898i6n00cn1eocmqh5tv17": {
+      "id": "cmh898i6n00cn1eocmqh5tv17",
+      "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+      "trackTitle": "F21",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Estéban_S"
+      ],
+      "startTime": "2026-02-06T12:35:00+01:00",
+      "endTime": "2026-02-06T12:50:00+01:00"
+    },
+    "cmgzj314m008c1eqqdaxeuiyk": {
+      "id": "cmgzj314m008c1eqqdaxeuiyk",
+      "title": "Open source et gouvernance, quand les communautés s'embrasent",
+      "trackTitle": "F22",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Matthieu_Lempereur"
+      ],
+      "startTime": "2026-02-06T12:35:00+01:00",
+      "endTime": "2026-02-06T12:50:00+01:00"
+    },
+    "cmfp2f4gv003inb1eaon5kvu4": {
+      "id": "cmfp2f4gv003inb1eaon5kvu4",
+      "title": "Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey",
+      "trackTitle": "Bio",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Erwan_Le_Tutour"
+      ],
+      "startTime": "2026-02-06T12:35:00+01:00",
+      "endTime": "2026-02-06T12:50:00+01:00"
+    },
+    "cmfl0nv2n03xgml1e2jdbcc9g": {
+      "id": "cmfl0nv2n03xgml1e2jdbcc9g",
+      "title": "TikTok avec son framework LynxJS peut-il détrôner React Native et Flutter ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Simon_Bernardin"
+      ],
+      "startTime": "2026-02-06T12:35:00+01:00",
+      "endTime": "2026-02-06T12:50:00+01:00"
+    },
+    "cmfpfohv100bonb1e3vmg9lao": {
+      "id": "cmfpfohv100bonb1e3vmg9lao",
+      "title": "Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech",
+      "trackTitle": "F21",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Yann_Schepens"
+      ],
+      "startTime": "2026-02-06T13:00:00+01:00",
+      "endTime": "2026-02-06T13:15:00+01:00"
+    },
+    "cmfp4h6550053nb1euv1kgrhv": {
+      "id": "cmfp4h6550053nb1euv1kgrhv",
+      "title": "Un mot de passe ? Non merci, j’ai une passkey.",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Quentin_Aubert"
+      ],
+      "startTime": "2026-02-06T13:00:00+01:00",
+      "endTime": "2026-02-06T13:15:00+01:00"
+    },
+    "cmfmc8jsu05zqml1e0y7i8gu8": {
+      "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+      "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Stéphane_Philippart"
+      ],
+      "startTime": "2026-02-06T13:00:00+01:00",
+      "endTime": "2026-02-06T13:15:00+01:00"
+    },
+    "cmfl4jghf046hml1ecampkjzq": {
+      "id": "cmfl4jghf046hml1ecampkjzq",
+      "title": "Handicap invisible : l’accessibilité commence dans les réunions (et l'IA peut aider)",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Lightning (15min)"
+      ],
+      "speakers": [
+        "Anaïs_Moulin"
+      ],
+      "startTime": "2026-02-06T13:00:00+01:00",
+      "endTime": "2026-02-06T13:15:00+01:00"
+    },
+    "cmgq77rnb00k31epdyed8t9v3": {
+      "id": "cmgq77rnb00k31epdyed8t9v3",
+      "title": "Codez votre Game Master de JDR grâce à l'IA agentique et le SDK Strands Agents.",
+      "trackTitle": "F23",
+      "tags": [
+        "Intelligence Artificielle",
+        "Hands-on (120min)"
+      ],
+      "speakers": [
+        "Olivier_Leplus",
+        "Adrien_Lebret",
+        "Tiffany_Souterre"
+      ],
+      "startTime": "2026-02-06T13:30:00+01:00",
+      "endTime": "2026-02-06T15:30:00+01:00"
+    },
+    "cmgah8mo800fj1elbs7lmahsn": {
+      "id": "cmgah8mo800fj1elbs7lmahsn",
+      "title": "Au secours ! Mes images pourrissent mes perfs",
+      "trackTitle": "F21",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Antoine_CARON",
+        "Mathieu_Mure"
+      ],
+      "startTime": "2026-02-06T13:30:00+01:00",
+      "endTime": "2026-02-06T14:20:00+01:00"
+    },
+    "cmg80g4fj00b41elbdpqgxarg": {
+      "id": "cmg80g4fj00b41elbdpqgxarg",
+      "title": "Récit d'une modélisation : de l'exploration à la révélation !",
+      "trackTitle": "F22",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Maxime_Sanglan-Charlier",
+        "Nick_Tune"
+      ],
+      "startTime": "2026-02-06T13:30:00+01:00",
+      "endTime": "2026-02-06T14:20:00+01:00"
+    },
+    "cmfthbs3r00581ekebwe0h562": {
+      "id": "cmfthbs3r00581ekebwe0h562",
+      "title": "Pairing is caring!",
+      "trackTitle": "Bio",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Olivier_Breda"
+      ],
+      "startTime": "2026-02-06T13:30:00+01:00",
+      "endTime": "2026-02-06T14:20:00+01:00"
+    },
+    "cmfpr4j8d00191el7dfaur789": {
+      "id": "cmfpr4j8d00191el7dfaur789",
+      "title": "Respectons (enfin) l'article 25 du RGPD avec PostgreSQL Anonymiser",
       "trackTitle": "Physique",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Aurélie_Vache",
-        "sherine_khoury"
+        "Nicolas_GUILHEM"
       ],
-      "startTime": "2025-02-06T16:45:00+01:00",
-      "endTime": "2025-02-06T17:35:00+01:00"
+      "startTime": "2026-02-06T13:30:00+01:00",
+      "endTime": "2026-02-06T14:20:00+01:00"
     },
-    "clzyebffk312o13hpv73ml7xb": {
-      "id": "clzyebffk312o13hpv73ml7xb",
-      "title": "Elasticsearch Query Language: ES|QL",
+    "cmfz7neh8001o1enve10obqb4": {
+      "id": "cmfz7neh8001o1enve10obqb4",
+      "title": "Local-first et sync-engines, l'architecture du futur ?",
       "trackTitle": "F21",
       "tags": [
-        "Backend, Cloud, Big Data",
+        "Conception, architecture",
         "Conférence (50min)"
       ],
       "speakers": [
-        "David_Pilato"
+        "Benjamin_Legrand"
       ],
-      "startTime": "2025-02-07T10:10:00+01:00",
-      "endTime": "2025-02-07T11:00:00+01:00"
+      "startTime": "2026-02-06T14:30:00+01:00",
+      "endTime": "2026-02-06T15:20:00+01:00"
     },
-    "clzyec474316f13hpsvbb5y16": {
-      "id": "clzyec474316f13hpsvbb5y16",
-      "title": "DevLake : Un voyage au pays du DORA",
+    "cmftql18d005r1ekejaszpaqy": {
+      "id": "cmftql18d005r1ekejaszpaqy",
+      "title": "Haute couture du Web : le défilé des approches CSS 🎨",
+      "trackTitle": "F22",
+      "tags": [
+        "Front web, design, UI, UX",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Etienne_IDOUX",
+        "Audrey_GENTILI"
+      ],
+      "startTime": "2026-02-06T14:30:00+01:00",
+      "endTime": "2026-02-06T15:20:00+01:00"
+    },
+    "cmfo17lm807shml1exdvpdkr3": {
+      "id": "cmfo17lm807shml1exdvpdkr3",
+      "title": "Votre code mérite mieux. Offrez-lui un linter !",
       "trackTitle": "Bio",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Morgan_Blanloeil",
-        "Kevin_Toublanc"
+        "Sébastien_Ferrer",
+        "Gabriel_Augendre"
       ],
-      "startTime": "2025-02-06T10:10:00+01:00",
-      "endTime": "2025-02-06T11:00:00+01:00"
+      "startTime": "2026-02-06T14:30:00+01:00",
+      "endTime": "2026-02-06T15:20:00+01:00"
     },
-    "clzyec860316u13hpx3shl9ax": {
-      "id": "clzyec860316u13hpx3shl9ax",
-      "title": "ArgoCD vs Flux : qui sera le seigneur du GitOps ?",
+    "cmfmjg2hg06himl1ed3cyjum6": {
+      "id": "cmfmjg2hg06himl1ed3cyjum6",
+      "title": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Humain & Tech",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Estelle_Landry_☀️",
+        "Emilie_Goubin"
+      ],
+      "startTime": "2026-02-06T14:30:00+01:00",
+      "endTime": "2026-02-06T15:20:00+01:00"
+    },
+    "cmfoiit6c000cnb1ean32406l": {
+      "id": "cmfoiit6c000cnb1ean32406l",
+      "title": "Plongez au coeur des structures de données en java",
+      "trackTitle": "F21",
+      "tags": [
+        "Conception, architecture",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Thibault_Monégier_du_Sorbier"
+      ],
+      "startTime": "2026-02-06T15:45:00+01:00",
+      "endTime": "2026-02-06T16:35:00+01:00"
+    },
+    "cmfnnbo2e07kbml1esffxazcj": {
+      "id": "cmfnnbo2e07kbml1esffxazcj",
+      "title": "Git : le super-héros mal aimé de ton repo",
+      "trackTitle": "F22",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Yann-Thomas_Le_Moigne"
+      ],
+      "startTime": "2026-02-06T15:45:00+01:00",
+      "endTime": "2026-02-06T16:35:00+01:00"
+    },
+    "cmfmd7m81060eml1eta12tr9p": {
+      "id": "cmfmd7m81060eml1eta12tr9p",
+      "title": "REX : Notre IA et nous contre le legacy : REX d'une reprise de contrôle assistée",
+      "trackTitle": "Bio",
+      "tags": [
+        "Intelligence Artificielle",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Benjamin_Lacroix",
+        "Jordan_NOURRY"
+      ],
+      "startTime": "2026-02-06T15:45:00+01:00",
+      "endTime": "2026-02-06T16:35:00+01:00"
+    },
+    "cmfl5qm6y049qml1eqf13uojk": {
+      "id": "cmfl5qm6y049qml1eqf13uojk",
+      "title": "J'ai packagé mon application en image Docker, et maintenant ?",
+      "trackTitle": "Physique",
+      "tags": [
+        "Backend, Cloud, Big Data",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Aurélie_Vache"
+      ],
+      "startTime": "2026-02-06T15:45:00+01:00",
+      "endTime": "2026-02-06T16:35:00+01:00"
+    },
+    "cmfm5pib505owml1ezi0buel3": {
+      "id": "cmfm5pib505owml1ezi0buel3",
+      "title": "Async/Await et Java",
       "trackTitle": "F21",
       "tags": [
         "Outils, pratiques de dev",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Matthieu_Vincent",
-        "Paul_Vulliemin"
+        "Didier_Plaindoux"
       ],
-      "startTime": "2025-02-06T13:30:00+01:00",
-      "endTime": "2025-02-06T14:20:00+01:00"
+      "startTime": "2026-02-06T16:35:00+01:00",
+      "endTime": "2026-02-06T17:25:00+01:00"
     },
-    "cm2myp4f1010kiupx0qd7dqkt": {
-      "id": "cm2myp4f1010kiupx0qd7dqkt",
-      "title": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible",
+    "cmfl2vyvf041pml1eg6tp42u2": {
+      "id": "cmfl2vyvf041pml1eg6tp42u2",
+      "title": "Let's play Factorio",
       "trackTitle": "F22",
       "tags": [
-        "Front web",
+        "Alien",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Audrey_Maniez"
+        "Julien_WITTOUCK"
       ],
-      "startTime": "2025-02-07T10:10:00+01:00",
-      "endTime": "2025-02-07T11:00:00+01:00"
+      "startTime": "2026-02-06T16:35:00+01:00",
+      "endTime": "2026-02-06T17:25:00+01:00"
+    },
+    "cmfl90bm104f5ml1egkfcc0by": {
+      "id": "cmfl90bm104f5ml1egkfcc0by",
+      "title": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
+      "trackTitle": "Bio",
+      "tags": [
+        "Outils, pratiques de dev",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Stéphane_Trebel"
+      ],
+      "startTime": "2026-02-06T16:35:00+01:00",
+      "endTime": "2026-02-06T17:25:00+01:00"
+    },
+    "cmfl0vubz03xuml1ejt5ihvek": {
+      "id": "cmfl0vubz03xuml1ejt5ihvek",
+      "title": "Another World, une belle leçon d’architecture logicielle",
+      "trackTitle": "Physique",
+      "tags": [
+        "Alien",
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Olivier_PONCET"
+      ],
+      "startTime": "2026-02-06T16:35:00+01:00",
+      "endTime": "2026-02-06T17:25:00+01:00"
     }
   },
   "speakers": {
-
-    "Astropierre": {
-      "id": "Astropierre",
-      "name": "Pierre Henriquet (@astropierre)",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Astropierre.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/astropierre"
-        }
-      ]
-    },
-    "Olivier_Cloirec": {
-      "id": "Olivier_Cloirec",
-      "name": "Olivier Cloirec",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_Cloirec.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/clook0"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/clook"
-        }
-      ]
-    },
-    "Tugdual_Grall": {
-      "id": "Tugdual_Grall",
-      "name": "Tugdual Grall",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Tugdual_Grall.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/tgrall"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/tgrall"
-        }
-      ]
-    },
-    "Marie-Cécile_TREGOUËT": {
-      "id": "Marie-Cécile_TREGOUËT",
-      "name": "Marie-Cécile TREGOUËT",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Marie-Cécile_TREGOUËT.png",
+    "Alexis_\"Horgix\"_Chotard": {
+      "id": "Alexis_\"Horgix\"_Chotard",
+      "name": "Alexis \"Horgix\" Chotard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Alexis_\"Horgix\"_Chotard.png",
       "socials": []
     },
-    "Jean_Philippe_LE_GOFF": {
-      "id": "Jean_Philippe_LE_GOFF",
-      "name": "Jean Philippe LE GOFF",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Jean_Philippe_LE_GOFF.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/jplegoff"
-        }
-      ]
-    },
-    "Yassine_Benabbas": {
-      "id": "Yassine_Benabbas",
-      "name": "Yassine Benabbas",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yassine_Benabbas.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/yostane"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/yostane"
-        }
-      ]
-    },
-    "Khadija_ABDELOUALI": {
-      "id": "Khadija_ABDELOUALI",
-      "name": "Khadija ABDELOUALI",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Khadija_ABDELOUALI.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/kabdelouali"
-        }
-      ]
-    },
-    "Laurent_Grangeau": {
-      "id": "Laurent_Grangeau",
-      "name": "Laurent Grangeau",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Laurent_Grangeau.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/laurentgrangeau"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/laurentgrangeau"
-        }
-      ]
-    },
-    "Magali_de_Labareyre": {
-      "id": "Magali_de_Labareyre",
-      "name": "Magali de Labareyre",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Magali_de_Labareyre.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/mag_ovh"
-        }
-      ]
-    },
-    "Olivier_Leplus": {
-      "id": "Olivier_Leplus",
-      "name": "Olivier Leplus",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_Leplus.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/olivierleplus"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/tagazok"
-        }
-      ]
-    },
-    "Yohan_Lasorsa": {
-      "id": "Yohan_Lasorsa",
-      "name": "Yohan Lasorsa",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yohan_Lasorsa.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/sinedied"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/sinedied"
-        }
-      ]
-    },
-    "Damien_Lucas": {
-      "id": "Damien_Lucas",
-      "name": "Damien Lucas",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Damien_Lucas.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/dlucasd_"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/dlucasd"
-        }
-      ]
-    },
-    "Julie_Galia": {
-      "id": "Julie_Galia",
-      "name": "Julie Galia",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julie_Galia.png",
+    "Vincent_Péchon": {
+      "id": "Vincent_Péchon",
+      "name": "Vincent Péchon",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Vincent_Péchon.png",
       "socials": []
     },
-    "David_Maurin": {
-      "id": "David_Maurin",
-      "name": "David Maurin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/David_Maurin.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/d_maurin"
-        }
-      ]
-    },
-    "Guillaume_Laforge": {
-      "id": "Guillaume_Laforge",
-      "name": "Guillaume Laforge",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Guillaume_Laforge.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/glaforge"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/glaforge"
-        }
-      ]
-    },
-    "Valentin_Deleplace": {
-      "id": "Valentin_Deleplace",
-      "name": "Valentin Deleplace",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Valentin_Deleplace.png",
+    "Dorian_Lamandé": {
+      "id": "Dorian_Lamandé",
+      "name": "Dorian Lamandé",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Dorian_Lamandé.png",
       "socials": []
     },
-    "Audren_Burlot": {
-      "id": "Audren_Burlot",
-      "name": "Audren Burlot",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Audren_Burlot.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/AudrenBrlt"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/github.com/Firnael"
-        }
-      ]
-    },
-    "Yuriy_Tyukhnin": {
-      "id": "Yuriy_Tyukhnin",
-      "name": "Yuriy Tyukhnin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yuriy_Tyukhnin.png",
+    "Guillaume_Chauvet": {
+      "id": "Guillaume_Chauvet",
+      "name": "Guillaume Chauvet",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Guillaume_Chauvet.png",
       "socials": []
     },
-    "Clara_MAMET": {
-      "id": "Clara_MAMET",
-      "name": "Clara MAMET",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Clara_MAMET.png",
+    "Pierre_Robillard": {
+      "id": "Pierre_Robillard",
+      "name": "Pierre Robillard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Pierre_Robillard.png",
       "socials": []
     },
-    "Heraud_Kevin": {
-      "id": "Heraud_Kevin",
-      "name": "Heraud Kevin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Heraud_Kevin.png",
+    "Herve_Chaminaud": {
+      "id": "Herve_Chaminaud",
+      "name": "Herve Chaminaud",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Herve_Chaminaud.png",
       "socials": []
     },
-    "Florian_Montalbano": {
-      "id": "Florian_Montalbano",
-      "name": "Florian Montalbano",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Florian_Montalbano.png",
+    "David_Pilato": {
+      "id": "David_Pilato",
+      "name": "David Pilato",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/David_Pilato.png",
       "socials": []
     },
-    "Sylvain_Gougouzian": {
-      "id": "Sylvain_Gougouzian",
-      "name": "Sylvain Gougouzian",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Sylvain_Gougouzian.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/gouz"
-        }
-      ]
+    "Mickael_Alves": {
+      "id": "Mickael_Alves",
+      "name": "Mickael Alves",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Mickael_Alves.png",
+      "socials": []
+    },
+    "Lucas_Audart": {
+      "id": "Lucas_Audart",
+      "name": "Lucas Audart",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Lucas_Audart.png",
+      "socials": []
+    },
+    "Ronan_Bocquillon": {
+      "id": "Ronan_Bocquillon",
+      "name": "Ronan Bocquillon",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Ronan_Bocquillon.png",
+      "socials": []
+    },
+    "Hugo_Massing": {
+      "id": "Hugo_Massing",
+      "name": "Hugo Massing",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Hugo_Massing.png",
+      "socials": []
+    },
+    "Quentin_JOLY": {
+      "id": "Quentin_JOLY",
+      "name": "Quentin JOLY",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Quentin_JOLY.png",
+      "socials": []
+    },
+    "Denis_GERMAIN": {
+      "id": "Denis_GERMAIN",
+      "name": "Denis GERMAIN",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Denis_GERMAIN.png",
+      "socials": []
+    },
+    "Julien_Gidel": {
+      "id": "Julien_Gidel",
+      "name": "Julien Gidel",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_Gidel.png",
+      "socials": []
+    },
+    "Johan_Rouve": {
+      "id": "Johan_Rouve",
+      "name": "Johan Rouve",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Johan_Rouve.png",
+      "socials": []
+    },
+    "Marjorie_Aubert": {
+      "id": "Marjorie_Aubert",
+      "name": "Marjorie Aubert",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Marjorie_Aubert.png",
+      "socials": []
+    },
+    "Bastien_Tran": {
+      "id": "Bastien_Tran",
+      "name": "Bastien Tran",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Bastien_Tran.png",
+      "socials": []
+    },
+    "Aurélie_Jollet": {
+      "id": "Aurélie_Jollet",
+      "name": "Aurélie Jollet",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Aurélie_Jollet.png",
+      "socials": []
+    },
+    "Josiane_MAKELELE": {
+      "id": "Josiane_MAKELELE",
+      "name": "Josiane MAKELELE",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Josiane_MAKELELE.png",
+      "socials": []
+    },
+    "Antoine_DESSAIGNE": {
+      "id": "Antoine_DESSAIGNE",
+      "name": "Antoine DESSAIGNE",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Antoine_DESSAIGNE.png",
+      "socials": []
+    },
+    "Theo_DOUARE": {
+      "id": "Theo_DOUARE",
+      "name": "Theo DOUARE",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Theo_DOUARE.png",
+      "socials": []
+    },
+    "Benoît_Masson": {
+      "id": "Benoît_Masson",
+      "name": "Benoît Masson",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benoît_Masson.png",
+      "socials": []
+    },
+    "Théo_Bougé": {
+      "id": "Théo_Bougé",
+      "name": "Théo Bougé",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Théo_Bougé.png",
+      "socials": []
+    },
+    "guillaume_blaquiere": {
+      "id": "guillaume_blaquiere",
+      "name": "guillaume blaquiere",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/guillaume_blaquiere.png",
+      "socials": []
+    },
+    "Hafsa_ELMAIZI": {
+      "id": "Hafsa_ELMAIZI",
+      "name": "Hafsa ELMAIZI",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Hafsa_ELMAIZI.png",
+      "socials": []
+    },
+    "Emmanuelle_ABOAF": {
+      "id": "Emmanuelle_ABOAF",
+      "name": "Emmanuelle ABOAF",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Emmanuelle_ABOAF.png",
+      "socials": []
+    },
+    "Benoit_MARTIN": {
+      "id": "Benoit_MARTIN",
+      "name": "Benoit MARTIN",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benoit_MARTIN.png",
+      "socials": []
+    },
+    "Estéban_S": {
+      "id": "Estéban_S",
+      "name": "Estéban S",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Estéban_S.png",
+      "socials": []
+    },
+    "Nicolas_GUILLOT": {
+      "id": "Nicolas_GUILLOT",
+      "name": "Nicolas GUILLOT",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Nicolas_GUILLOT.png",
+      "socials": []
+    },
+    "Jérôme_Tama": {
+      "id": "Jérôme_Tama",
+      "name": "Jérôme Tama",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Jérôme_Tama.png",
+      "socials": []
+    },
+    "Julien_Briault": {
+      "id": "Julien_Briault",
+      "name": "Julien Briault",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_Briault.png",
+      "socials": []
+    },
+    "alekmaul": {
+      "id": "alekmaul",
+      "name": "alekmaul",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/alekmaul.png",
+      "socials": []
+    },
+    "Matthieu_Lempereur": {
+      "id": "Matthieu_Lempereur",
+      "name": "Matthieu Lempereur",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Matthieu_Lempereur.png",
+      "socials": []
+    },
+    "Rémi_Dehenne": {
+      "id": "Rémi_Dehenne",
+      "name": "Rémi Dehenne",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Rémi_Dehenne.png",
+      "socials": []
+    },
+    "Benjamin_Cavy": {
+      "id": "Benjamin_Cavy",
+      "name": "Benjamin Cavy",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benjamin_Cavy.png",
+      "socials": []
+    },
+    "Delegue_Alexandre": {
+      "id": "Delegue_Alexandre",
+      "name": "Delegue Alexandre",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Delegue_Alexandre.png",
+      "socials": []
     },
     "Thierry_Chantier": {
       "id": "Thierry_Chantier",
       "name": "Thierry Chantier",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Thierry_Chantier.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/titimoby"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/titimoby"
-        }
-      ]
+      "socials": []
     },
-    "Arnaud_Langlade": {
-      "id": "Arnaud_Langlade",
-      "name": "Arnaud Langlade",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Arnaud_Langlade.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/arnolanglade"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/arnolanglade"
-        }
-      ]
+    "Olivier_Leplus": {
+      "id": "Olivier_Leplus",
+      "name": "Olivier Leplus",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_Leplus.png",
+      "socials": []
     },
-    "Thibault_Lengagne": {
-      "id": "Thibault_Lengagne",
-      "name": "Thibault Lengagne",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Thibault_Lengagne.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/ThibaultLengagne"
-        }
-      ]
+    "Adrien_Lebret": {
+      "id": "Adrien_Lebret",
+      "name": "Adrien Lebret",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Adrien_Lebret.png",
+      "socials": []
+    },
+    "Tiffany_Souterre": {
+      "id": "Tiffany_Souterre",
+      "name": "Tiffany Souterre",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Tiffany_Souterre.png",
+      "socials": []
+    },
+    "Nathan_Castelein": {
+      "id": "Nathan_Castelein",
+      "name": "Nathan Castelein",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Nathan_Castelein.png",
+      "socials": []
+    },
+    "Ambre_Person": {
+      "id": "Ambre_Person",
+      "name": "Ambre Person",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Ambre_Person.png",
+      "socials": []
+    },
+    "Laurent_Grangeau": {
+      "id": "Laurent_Grangeau",
+      "name": "Laurent Grangeau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Laurent_Grangeau.png",
+      "socials": []
     },
     "Bastien_Rousseau": {
       "id": "Bastien_Rousseau",
@@ -1348,503 +1350,17 @@
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Bastien_Rousseau.png",
       "socials": []
     },
-    "Quentin_JOLY": {
-      "id": "Quentin_JOLY",
-      "name": "Quentin JOLY",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Quentin_JOLY.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/thebidouilleur"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/qjoly"
-        }
-      ]
-    },
-    "Anaïs_Moulin": {
-      "id": "Anaïs_Moulin",
-      "name": "Anaïs Moulin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Anaïs_Moulin.png",
+    "Arielle_Villa-Massone": {
+      "id": "Arielle_Villa-Massone",
+      "name": "Arielle Villa-Massone",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Arielle_Villa-Massone.png",
       "socials": []
     },
-    "Sylvain_METAYER": {
-      "id": "Sylvain_METAYER",
-      "name": "Sylvain METAYER",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Sylvain_METAYER.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/sylvain_metayer"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/sylvainmetayer"
-        }
-      ]
-    },
-    "Antoine_DESSAIGNE": {
-      "id": "Antoine_DESSAIGNE",
-      "name": "Antoine DESSAIGNE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Antoine_DESSAIGNE.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/adessaigne"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/adessaigne"
-        }
-      ]
-    },
-    "Alexandre_Touret": {
-      "id": "Alexandre_Touret",
-      "name": "Alexandre Touret",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Alexandre_Touret.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/touret_alex"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/alexandre-touret"
-        }
-      ]
-    },
-    "Benoît_Masson": {
-      "id": "Benoît_Masson",
-      "name": "Benoît Masson",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benoît_Masson.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/benoitmasson"
-        }
-      ]
-    },
-    "Nathan_Castelein": {
-      "id": "Nathan_Castelein",
-      "name": "Nathan Castelein",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Nathan_Castelein.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/GC_Nathan"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/nathancastelein"
-        }
-      ]
-    },
-    "Emmanuel-Lin_Toulemonde": {
-      "id": "Emmanuel-Lin_Toulemonde",
-      "name": "Emmanuel-Lin Toulemonde",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Emmanuel-Lin_Toulemonde.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/eltoulemonde"
-        }
-      ]
-    },
-    "Simon_Mercier": {
-      "id": "Simon_Mercier",
-      "name": "Simon Mercier",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Simon_Mercier.png",
+    "Emilie_GREFF": {
+      "id": "Emilie_GREFF",
+      "name": "Emilie GREFF",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Emilie_GREFF.png",
       "socials": []
-    },
-    "Antoine_CANDY": {
-      "id": "Antoine_CANDY",
-      "name": "Antoine CANDY",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Antoine_CANDY.png",
-      "socials": []
-    },
-    "Olivier_PONCET": {
-      "id": "Olivier_PONCET",
-      "name": "Olivier PONCET",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_PONCET.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/ponceto91"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/ponceto"
-        }
-      ]
-    },
-    "benoit_El_Amrani": {
-      "id": "benoit_El_Amrani",
-      "name": "benoit El Amrani",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/benoit_El_Amrani.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/bentah31"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/belamrani"
-        }
-      ]
-    },
-    "Kevin_Davin": {
-      "id": "Kevin_Davin",
-      "name": "Kevin Davin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Kevin_Davin.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/davinkevin"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/davinkevin"
-        }
-      ]
-    },
-    "Lucas_AUDART": {
-      "id": "Lucas_AUDART",
-      "name": "Lucas AUDART",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Lucas_AUDART.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/Slocalyy"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/Slocaly"
-        }
-      ]
-    },
-    "Mickael_Alves": {
-      "id": "Mickael_Alves",
-      "name": "Mickael Alves",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Mickael_Alves.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/CruuzAzul"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/CruuzAzul"
-        }
-      ]
-    },
-    "Diane_Havlicek": {
-      "id": "Diane_Havlicek",
-      "name": "Diane Havlicek",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Diane_Havlicek.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/ArthurHav"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/arthur-hav"
-        }
-      ]
-    },
-    "Jérôme_Tama": {
-      "id": "Jérôme_Tama",
-      "name": "Jérôme Tama",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Jérôme_Tama.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/jtama_"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/jtama"
-        }
-      ]
-    },
-    "Benjamin_Cavy": {
-      "id": "Benjamin_Cavy",
-      "name": "Benjamin Cavy",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benjamin_Cavy.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/benjamin_cavy"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/ptitFicus"
-        }
-      ]
-    },
-    "Etienne_ANNE": {
-      "id": "Etienne_ANNE",
-      "name": "Etienne ANNE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Etienne_ANNE.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/Zwiterrion_"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/Zwiterrion"
-        }
-      ]
-    },
-    "Mathieu_ANCELIN": {
-      "id": "Mathieu_ANCELIN",
-      "name": "Mathieu ANCELIN",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Mathieu_ANCELIN.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/TrevorReznik"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/mathieuancelin"
-        }
-      ]
-    },
-    "Yann_Schepens": {
-      "id": "Yann_Schepens",
-      "name": "Yann Schepens",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yann_Schepens.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/YannSchepens"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/yannschepens"
-        }
-      ]
-    },
-    "Hugues_Lepesant": {
-      "id": "Hugues_Lepesant",
-      "name": "Hugues Lepesant",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Hugues_Lepesant.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/hlepesant"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/hlepesant"
-        }
-      ]
-    },
-    "jean-francois_garreau": {
-      "id": "jean-francois_garreau",
-      "name": "jean-francois garreau",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/jean-francois_garreau.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/jefbinomed"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/jefbinomed"
-        }
-      ]
-    },
-    "François-Xavier_Lair": {
-      "id": "François-Xavier_Lair",
-      "name": "François-Xavier Lair",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/François-Xavier_Lair.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/lair_net"
-        }
-      ]
-    },
-    "Henri_Gauffriau": {
-      "id": "Henri_Gauffriau",
-      "name": "Henri Gauffriau",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Henri_Gauffriau.png",
-      "socials": []
-    },
-    "Ayoub_ALOUANE": {
-      "id": "Ayoub_ALOUANE",
-      "name": "Ayoub ALOUANE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Ayoub_ALOUANE.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/alouane_med"
-        }
-      ]
-    },
-    "Éric_Daspet": {
-      "id": "Éric_Daspet",
-      "name": "Éric Daspet",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Éric_Daspet.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/edasfr"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/edas"
-        }
-      ]
-    },
-    "Benjamin_Legrand": {
-      "id": "Benjamin_Legrand",
-      "name": "Benjamin Legrand",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benjamin_Legrand.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/benjilegnard"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/benjilegnard"
-        }
-      ]
-    },
-    "damien_rouxel": {
-      "id": "damien_rouxel",
-      "name": "damien rouxel",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/damien_rouxel.png",
-      "socials": []
-    },
-    "Marine_du_Mesnil": {
-      "id": "Marine_du_Mesnil",
-      "name": "Marine du Mesnil",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Marine_du_Mesnil.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/marine_mesnil"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/marine-mb"
-        }
-      ]
-    },
-    "Jean-Philippe_Foures": {
-      "id": "Jean-Philippe_Foures",
-      "name": "Jean-Philippe Foures",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Jean-Philippe_Foures.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/jpfoures"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/jaypif"
-        }
-      ]
-    },
-    "alekmaul": {
-      "id": "alekmaul",
-      "name": "alekmaul",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/alekmaul.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/alekmaul"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/alekmaul"
-        }
-      ]
-    },
-    "Quentin_KLEIN": {
-      "id": "Quentin_KLEIN",
-      "name": "Quentin KLEIN",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Quentin_KLEIN.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/kleinquentin"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/quentin7b"
-        }
-      ]
-    },
-    "Pierre_LECLAIRE": {
-      "id": "Pierre_LECLAIRE",
-      "name": "Pierre LECLAIRE",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Pierre_LECLAIRE.png",
-      "socials": []
-    },
-    "Raphael_Goetter": {
-      "id": "Raphael_Goetter",
-      "name": "Raphael Goetter",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Raphael_Goetter.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/goetter"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/raphaelgoetter"
-        }
-      ]
-    },
-    "Romain_BERTHON": {
-      "id": "Romain_BERTHON",
-      "name": "Romain BERTHON",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Romain_BERTHON.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/RomainTrm"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/RomainTrm"
-        }
-      ]
-    },
-    "Aurélien_BOUDOUX": {
-      "id": "Aurélien_BOUDOUX",
-      "name": "Aurélien BOUDOUX",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Aurélien_BOUDOUX.png",
-      "socials": []
-    },
-    "Gauthier_Fiorentino": {
-      "id": "Gauthier_Fiorentino",
-      "name": "Gauthier Fiorentino",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Gauthier_Fiorentino.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/Mintoo200"
-        }
-      ]
-    },
-    "Julie_Brunetto": {
-      "id": "Julie_Brunetto",
-      "name": "Julie Brunetto",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julie_Brunetto.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/https://github.com/juliebrunetto83"
-        }
-      ]
     },
     "geoffrey_graveaud": {
       "id": "geoffrey_graveaud",
@@ -1852,213 +1368,245 @@
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/geoffrey_graveaud.png",
       "socials": []
     },
-    "Thomas_DA_ROCHA": {
-      "id": "Thomas_DA_ROCHA",
-      "name": "Thomas DA ROCHA",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Thomas_DA_ROCHA.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/taorepoara"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/taorepoara"
-        }
-      ]
+    "Julien_Deniau": {
+      "id": "Julien_Deniau",
+      "name": "Julien Deniau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_Deniau.png",
+      "socials": []
     },
-    "Marjorie_Aubert": {
-      "id": "Marjorie_Aubert",
-      "name": "Marjorie Aubert",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Marjorie_Aubert.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/Tagada2022"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/Tagada26"
-        }
-      ]
+    "Paul_Pinault": {
+      "id": "Paul_Pinault",
+      "name": "Paul Pinault",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Paul_Pinault.png",
+      "socials": []
     },
-    "Manon_Carbonnel": {
-      "id": "Manon_Carbonnel",
-      "name": "Manon Carbonnel",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Manon_Carbonnel.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/manoncarbonnel_"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/manoncarbonnel"
-        }
-      ]
+    "Florian_Forestier": {
+      "id": "Florian_Forestier",
+      "name": "Florian Forestier",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Florian_Forestier.png",
+      "socials": []
     },
-    "Cyril_Hue": {
-      "id": "Cyril_Hue",
-      "name": "Cyril Hue",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Cyril_Hue.png",
-      "socials": [
-        {
-          "name": "github",
-          "link": "https://github.com/Horsty80"
-        }
-      ]
+    "Justine_Bachelard": {
+      "id": "Justine_Bachelard",
+      "name": "Justine Bachelard",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Justine_Bachelard.png",
+      "socials": []
     },
-    "Julien_Topçu": {
-      "id": "Julien_Topçu",
-      "name": "Julien Topçu",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_Topçu.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/JulienTopcu"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/julien-topcu"
-        }
-      ]
+    "Matthias_Gougouzian": {
+      "id": "Matthias_Gougouzian",
+      "name": "Matthias Gougouzian",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Matthias_Gougouzian.png",
+      "socials": []
     },
-    "Aurélie_Vache": {
-      "id": "Aurélie_Vache",
-      "name": "Aurélie Vache",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Aurélie_Vache.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/aurelievache"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/scraly"
-        }
-      ]
+    "Sylvain_Gougouzian": {
+      "id": "Sylvain_Gougouzian",
+      "name": "Sylvain Gougouzian",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Sylvain_Gougouzian.png",
+      "socials": []
     },
-    "sherine_khoury": {
-      "id": "sherine_khoury",
-      "name": "sherine khoury",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/sherine_khoury.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/srinerine"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/sherine-k"
-        }
-      ]
+    "Kevin_Davin": {
+      "id": "Kevin_Davin",
+      "name": "Kevin Davin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Kevin_Davin.png",
+      "socials": []
     },
-    "David_Pilato": {
-      "id": "David_Pilato",
-      "name": "David Pilato",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/David_Pilato.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/dadoonet"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/dadoonet"
-        }
-      ]
+    "Antoine_CARON": {
+      "id": "Antoine_CARON",
+      "name": "Antoine CARON",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Antoine_CARON.png",
+      "socials": []
     },
-    "Morgan_Blanloeil": {
-      "id": "Morgan_Blanloeil",
-      "name": "Morgan Blanloeil",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Morgan_Blanloeil.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/morganBlan"
-        }
-      ]
+    "Mathieu_Mure": {
+      "id": "Mathieu_Mure",
+      "name": "Mathieu Mure",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Mathieu_Mure.png",
+      "socials": []
     },
-    "Kevin_Toublanc": {
-      "id": "Kevin_Toublanc",
-      "name": "Kevin Toublanc",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Kevin_Toublanc.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/ktoublanc"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/ktoublanc"
-        }
-      ]
+    "Maxime_Sanglan-Charlier": {
+      "id": "Maxime_Sanglan-Charlier",
+      "name": "Maxime Sanglan-Charlier",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Maxime_Sanglan-Charlier.png",
+      "socials": []
+    },
+    "Nick_Tune": {
+      "id": "Nick_Tune",
+      "name": "Nick Tune",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Nick_Tune.png",
+      "socials": []
+    },
+    "Horacio_Gonzalez_(LostInBrittany)": {
+      "id": "Horacio_Gonzalez_(LostInBrittany)",
+      "name": "Horacio Gonzalez (LostInBrittany)",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Horacio_Gonzalez_(LostInBrittany).png",
+      "socials": []
+    },
+    "Baptiste_CARLIER": {
+      "id": "Baptiste_CARLIER",
+      "name": "Baptiste CARLIER",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Baptiste_CARLIER.png",
+      "socials": []
+    },
+    "Antoine_Robiez": {
+      "id": "Antoine_Robiez",
+      "name": "Antoine Robiez",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Antoine_Robiez.png",
+      "socials": []
+    },
+    "Alexis_Kovalenko": {
+      "id": "Alexis_Kovalenko",
+      "name": "Alexis Kovalenko",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Alexis_Kovalenko.png",
+      "socials": []
+    },
+    "Benjamin_Legrand": {
+      "id": "Benjamin_Legrand",
+      "name": "Benjamin Legrand",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benjamin_Legrand.png",
+      "socials": []
+    },
+    "Etienne_IDOUX": {
+      "id": "Etienne_IDOUX",
+      "name": "Etienne IDOUX",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Etienne_IDOUX.png",
+      "socials": []
+    },
+    "Audrey_GENTILI": {
+      "id": "Audrey_GENTILI",
+      "name": "Audrey GENTILI",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Audrey_GENTILI.png",
+      "socials": []
+    },
+    "Olivier_Breda": {
+      "id": "Olivier_Breda",
+      "name": "Olivier Breda",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_Breda.png",
+      "socials": []
+    },
+    "Nicolas_GUILHEM": {
+      "id": "Nicolas_GUILHEM",
+      "name": "Nicolas GUILHEM",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Nicolas_GUILHEM.png",
+      "socials": []
+    },
+    "Yann_Schepens": {
+      "id": "Yann_Schepens",
+      "name": "Yann Schepens",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yann_Schepens.png",
+      "socials": []
+    },
+    "Quentin_Aubert": {
+      "id": "Quentin_Aubert",
+      "name": "Quentin Aubert",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Quentin_Aubert.png",
+      "socials": []
+    },
+    "Erwan_Le_Tutour": {
+      "id": "Erwan_Le_Tutour",
+      "name": "Erwan Le Tutour",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Erwan_Le_Tutour.png",
+      "socials": []
+    },
+    "Thibault_Monégier_du_Sorbier": {
+      "id": "Thibault_Monégier_du_Sorbier",
+      "name": "Thibault Monégier du Sorbier",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Thibault_Monégier_du_Sorbier.png",
+      "socials": []
+    },
+    "Sébastien_Ferrer": {
+      "id": "Sébastien_Ferrer",
+      "name": "Sébastien Ferrer",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Sébastien_Ferrer.png",
+      "socials": []
+    },
+    "Gabriel_Augendre": {
+      "id": "Gabriel_Augendre",
+      "name": "Gabriel Augendre",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Gabriel_Augendre.png",
+      "socials": []
+    },
+    "Yann-Thomas_Le_Moigne": {
+      "id": "Yann-Thomas_Le_Moigne",
+      "name": "Yann-Thomas Le Moigne",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Yann-Thomas_Le_Moigne.png",
+      "socials": []
+    },
+    "Estelle_Landry_☀️": {
+      "id": "Estelle_Landry_☀️",
+      "name": "Estelle Landry ☀️",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Estelle_Landry_☀️.png",
+      "socials": []
+    },
+    "Emilie_Goubin": {
+      "id": "Emilie_Goubin",
+      "name": "Emilie Goubin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Emilie_Goubin.png",
+      "socials": []
+    },
+    "Benjamin_Lacroix": {
+      "id": "Benjamin_Lacroix",
+      "name": "Benjamin Lacroix",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Benjamin_Lacroix.png",
+      "socials": []
+    },
+    "Jordan_NOURRY": {
+      "id": "Jordan_NOURRY",
+      "name": "Jordan NOURRY",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Jordan_NOURRY.png",
+      "socials": []
+    },
+    "Stéphane_Philippart": {
+      "id": "Stéphane_Philippart",
+      "name": "Stéphane Philippart",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Stéphane_Philippart.png",
+      "socials": []
+    },
+    "Didier_Plaindoux": {
+      "id": "Didier_Plaindoux",
+      "name": "Didier Plaindoux",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Didier_Plaindoux.png",
+      "socials": []
     },
     "Stéphane_Trebel": {
       "id": "Stéphane_Trebel",
       "name": "Stéphane Trebel",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Stéphane_Trebel.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/stephanetrebel"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/StephaneTrebel"
-        }
-      ]
-    },
-    "Matthieu_Vincent": {
-      "id": "Matthieu_Vincent",
-      "name": "Matthieu Vincent",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Matthieu_Vincent.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/yodamad03"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/yodamad"
-        }
-      ]
-    },
-    "Paul_Vulliemin": {
-      "id": "Paul_Vulliemin",
-      "name": "Paul Vulliemin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Paul_Vulliemin.png",
       "socials": []
     },
-    "Julien_Briault": {
-      "id": "Julien_Briault",
-      "name": "Julien Briault",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_Briault.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/ju_hnny5"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/juhnny5"
-        }
-      ]
+    "Aurélie_Vache": {
+      "id": "Aurélie_Vache",
+      "name": "Aurélie Vache",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Aurélie_Vache.png",
+      "socials": []
     },
-    "Audrey_Maniez": {
-      "id": "Audrey_Maniez",
-      "name": "Audrey Maniez",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Audrey_Maniez.png",
-      "socials": [
-        {
-          "name": "twitter",
-          "link": "https://x.com/audreyblabla"
-        },
-        {
-          "name": "github",
-          "link": "https://github.com/audreymaniez"
-        }
-      ]
+    "Anaïs_Moulin": {
+      "id": "Anaïs_Moulin",
+      "name": "Anaïs Moulin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Anaïs_Moulin.png",
+      "socials": []
+    },
+    "François-Xavier_Lair": {
+      "id": "François-Xavier_Lair",
+      "name": "François-Xavier Lair",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/François-Xavier_Lair.png",
+      "socials": []
+    },
+    "Julien_WITTOUCK": {
+      "id": "Julien_WITTOUCK",
+      "name": "Julien WITTOUCK",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Julien_WITTOUCK.png",
+      "socials": []
+    },
+    "Olivier_PONCET": {
+      "id": "Olivier_PONCET",
+      "name": "Olivier PONCET",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Olivier_PONCET.png",
+      "socials": []
+    },
+    "Simon_Bernardin": {
+      "id": "Simon_Bernardin",
+      "name": "Simon Bernardin",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/Simon_Bernardin.png",
+      "socials": []
     }
   }
 }

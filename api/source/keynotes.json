@@ -1,0 +1,38 @@
+[
+  {
+    "id": "keynoteOuverture1",
+    "title": "Keynote d'ouverture",
+    "abstract": "Keynote d'ouverture du jeudi",
+    "formats": "Conférence (50min)",
+    "categories": null,
+    "level": null,
+    "speakers": []
+  },
+  {
+    "id": "keynoteCloture1",
+    "title": "Keynote de clôture",
+    "abstract": "Keynote de clôture du jeudi",
+    "formats": "Conférence (50min)",
+    "categories": null,
+    "level": null,
+    "speakers": []
+  },
+  {
+    "id": "keynoteOuverture2",
+    "title": "Keynote d'ouverture",
+    "abstract": "Keynote d'ouverture du vendredi",
+    "formats": "Conférence (50min)",
+    "categories": null,
+    "level": null,
+    "speakers": []
+  },
+  {
+    "id": "keynoteCloture2",
+    "title": "Keynote de clôture",
+    "abstract": "Keynote de clôture du vendredi",
+    "formats": "Conférence (50min)",
+    "categories": null,
+    "level": null,
+    "speakers": []
+  }
+]
