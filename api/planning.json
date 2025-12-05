@@ -69,10 +69,10 @@
     "categories": "Conception, architecture",
     "formats": "Conférence (50min)",
     "rooms": [
-      1
+      4
     ],
     "times": [
-      3
+      17
     ],
     "day": 1,
     "level": "INTERMEDIATE"
@@ -335,10 +335,10 @@
     "categories": "Conception, architecture",
     "formats": "Conférence (50min)",
     "rooms": [
-      4
+      1
     ],
     "times": [
-      17
+      3
     ],
     "day": 1,
     "level": "BEGINNER"

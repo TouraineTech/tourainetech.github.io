@@ -60,10 +60,10 @@
     "title": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
     "categories": "Conception, architecture",
     "formats": "Conférence (50min)",
-    "room": "F21",
+    "room": "Physique",
     "day": "jeudi",
     "level": "INTERMEDIATE",
-    "time": "10:10"
+    "time": "15:45"
   },
   {
     "id": "cmi0u7gdo008t1eqwmbw14pj3",
@@ -250,10 +250,10 @@
     "title": "L’architecture hexagonale au pays des irréductibles développeurs",
     "categories": "Conception, architecture",
     "formats": "Conférence (50min)",
-    "room": "Physique",
+    "room": "F21",
     "day": "jeudi",
     "level": "BEGINNER",
-    "time": "15:45"
+    "time": "10:10"
   },
   {
     "id": "cmgnznz6e00cl1epd5eysrjz6",
