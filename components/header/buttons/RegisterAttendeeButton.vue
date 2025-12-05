@@ -3,8 +3,7 @@
     href="#register"
     class="HeaderButton"
   >
-    <span class="HeaderButton-title RegisterAttendee-title">Ouverture de la billetterie le 7 octobre à 12h30</span>
-    <!--    <span class="HeaderButton-title RegisterAttendee-title">La billetterie est ouverte</span>-->
+    <span class="HeaderButton-title RegisterAttendee-title">La billetterie est ouverte</span>
   </a>
 </template>
 

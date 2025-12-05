@@ -1,5 +1,5 @@
 export default {
-    isCfpOpen: true,
+    isCfpOpen: false,
     cfpDeliberationDate: 'décembre 2025',
     cfClosingDate: '16 novembre 2025',
     eventDate: '12 & 13 fevrier 2026',
@@ -10,7 +10,7 @@ export default {
     isRegisterOpen: true,
     isSoldOut: false,
     isScheduleOnline: false,
-    isCfpOpened: true,
+    isCfpOpened: false,
     isEditionOpen: true,
     isVideoOnline: false,
     isPhotoOnline: false,
