@@ -1615,6 +1615,82 @@
       "formats": "Lightning (15min)",
       "categories": "Front web, design, UI, UX",
       "level": "INTERMEDIATE"
+    },
+    {
+      "id": "keynoteOuverture1",
+      "title": "Keynote d'ouverture",
+      "abstract": "Keynote d'ouverture du jeudi",
+      "publicationStatus": "NOT_PUBLISHED",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "review": {
+        "average": 0,
+        "positives": 0,
+        "negatives": 0
+      },
+      "speakers": [],
+      "formats": "Conférence (50min)",
+      "categories": null,
+      "level": null
+    },
+    {
+      "id": "keynoteCloture1",
+      "title": "Keynote de clôture",
+      "abstract": "Keynote de clôture du jeudi",
+      "publicationStatus": "NOT_PUBLISHED",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "review": {
+        "average": 0,
+        "positives": 0,
+        "negatives": 0
+      },
+      "speakers": [],
+      "formats": "Conférence (50min)",
+      "categories": null,
+      "level": null
+    },
+    {
+      "id": "keynoteOuverture2",
+      "title": "Keynote d'ouverture",
+      "abstract": "Keynote d'ouverture du vendredi",
+      "publicationStatus": "NOT_PUBLISHED",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "review": {
+        "average": 0,
+        "positives": 0,
+        "negatives": 0
+      },
+      "speakers": [],
+      "formats": "Conférence (50min)",
+      "categories": null,
+      "level": null
+    },
+    {
+      "id": "keynoteCloture2",
+      "title": "Keynote de clôture",
+      "abstract": "Keynote de clôture du vendredi",
+      "publicationStatus": "NOT_PUBLISHED",
+      "tags": [],
+      "languages": [
+        "fr"
+      ],
+      "review": {
+        "average": 0,
+        "positives": 0,
+        "negatives": 0
+      },
+      "speakers": [],
+      "formats": "Conférence (50min)",
+      "categories": null,
+      "level": null
     }
   ],
   "speakers": [
