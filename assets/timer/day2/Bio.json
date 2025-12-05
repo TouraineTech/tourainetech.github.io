@@ -18,11 +18,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Yassine_Benabbas"
-      ],
-      "id": "cm2wdxlyg01fxty2au9ecnpet",
-      "name": "Comment j'ai porté Doom sur navigateur grâce au Web Assembly"
+      "speakers": []
     }
   },
   {
@@ -36,11 +32,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "Raphael_Goetter"
-      ],
-      "id": "clzyec3nt316d13hpmqglshl4",
-      "name": "Les petites aventures de CSS, saison 2025"
+      "speakers": []
     }
   },
   {
@@ -54,11 +46,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Arnaud_Langlade"
-      ],
-      "id": "cm2lughcr00ldiupxnqdw8o1g",
-      "name": "Transformer vos modèles anémiques en modèles riches grâce au DDD tactique"
+      "speakers": []
     }
   },
   {
@@ -72,11 +60,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Cyril_Hue"
-      ],
-      "id": "clzyeb6f8310x13hp4d2tyny0",
-      "name": "Tester une application React avec Vitest, React Testing Library et MSW: une introduction pratique"
+      "speakers": []
     }
   },
   {
@@ -90,11 +74,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Olivier_Cloirec"
-      ],
-      "id": "cm2xu4rgm007j13dz0nbgz0px",
-      "name": "Le CRC expliqué à ma grand-mère"
+      "speakers": []
     }
   },
   {
@@ -108,11 +88,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Guillaume_Laforge"
-      ],
-      "id": "cm2swg9ty006tty2a2h6c4w5h",
-      "name": "Sous le capot des LLMs : toutes ces questions que vous n’avez jamais osé poser"
+      "speakers": []
     }
   },
   {
@@ -126,12 +102,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Etienne_ANNE",
-        "Mathieu_ANCELIN"
-      ],
-      "id": "cm14q8q8o00291bi25uo0k2v0",
-      "name": "Server side WASM, le prochain game changer ?"
+      "speakers": []
     }
   },
   {
@@ -145,11 +116,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "jean-francois_garreau"
-      ],
-      "id": "cm0vg2pnh0357odc9uel900qf",
-      "name": "🧑‍🎨 L’art de bien rater sa conférence 🥱"
+      "speakers": []
     }
   },
   {

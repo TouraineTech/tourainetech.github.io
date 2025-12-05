@@ -18,12 +18,7 @@
   {
     "time": "10:10",
     "talk": {
-      "speakers": [
-        "Morgan_Blanloeil",
-        "Kevin_Toublanc"
-      ],
-      "id": "clzyec474316f13hpsvbb5y16",
-      "name": "DevLake : Un voyage au pays du DORA"
+      "speakers": []
     }
   },
   {
@@ -37,11 +32,7 @@
   {
     "time": "11:10",
     "talk": {
-      "speakers": [
-        "damien_rouxel"
-      ],
-      "id": "clzyebrnk315213hpem0a8riw",
-      "name": "Introduction à la programmation réactive, de zero à Super Mario"
+      "speakers": []
     }
   },
   {
@@ -55,11 +46,7 @@
   {
     "time": "12:10",
     "talk": {
-      "speakers": [
-        "Marie-Cécile_TREGOUËT"
-      ],
-      "id": "cm2xkwfqt005h13dzqmtq2jxe",
-      "name": "Retour vers le futur du web : voyage au pays des rendus évolutifs"
+      "speakers": []
     }
   },
   {
@@ -73,11 +60,7 @@
   {
     "time": "12:35",
     "talk": {
-      "speakers": [
-        "Hugues_Lepesant"
-      ],
-      "id": "cm0we5zox039rodc9nq4h5xxd",
-      "name": "Les outils DevOps au service de la formation DevOps"
+      "speakers": []
     }
   },
   {
@@ -91,12 +74,7 @@
   {
     "time": "13:00",
     "talk": {
-      "speakers": [
-        "Julie_Brunetto",
-        "Gauthier_Fiorentino"
-      ],
-      "id": "clzyebgja312w13hpg7gx9qrc",
-      "name": "Merge confliture sur mes gitscottes : découper ses PR sans pleurer"
+      "speakers": []
     }
   },
   {
@@ -110,11 +88,7 @@
   {
     "time": "13:30",
     "talk": {
-      "speakers": [
-        "Antoine_DESSAIGNE"
-      ],
-      "id": "cm27zogf3005d6gvvgopui5g6",
-      "name": "Comme Alice, osez suivre le lapin blanc et plongez dans la JVM pour comprendre son fonctionnement"
+      "speakers": []
     }
   },
   {
@@ -128,11 +102,7 @@
   {
     "time": "14:30",
     "talk": {
-      "speakers": [
-        "Clara_MAMET"
-      ],
-      "id": "cm2rp7md900kwap20pxm3ich3",
-      "name": "J'ai peur de parler en public, pas vous ?"
+      "speakers": []
     }
   },
   {
@@ -146,11 +116,7 @@
   {
     "time": "15:45",
     "talk": {
-      "speakers": [
-        "Gauthier_Fiorentino"
-      ],
-      "id": "clzyebc1i312013hpqs60agw7",
-      "name": "Theming : Faites peau neuve en 50 minutes top chrono"
+      "speakers": []
     }
   },
   {
@@ -164,11 +130,7 @@
   {
     "time": "16:45",
     "talk": {
-      "speakers": [
-        "alekmaul"
-      ],
-      "id": "clzyec5b6316k13hpsaxygky2",
-      "name": "Du rêve à la réalité, coder un jeu sur Super Nintendo"
+      "speakers": []
     }
   },
   {

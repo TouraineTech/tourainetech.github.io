@@ -156,6 +156,7 @@ export default {
     },
     talkCssClass({formats, categories, times}) {
       const category = {
+        // Legacy IDs (2025 and before)
         "clzyaamxk102o13hpbki089rf": "design",
         "clzyaamxk102p13hpw8tzwls8": "front",
         "clzyaamxk102q13hp7nja505n": "backend",
@@ -163,12 +164,27 @@ export default {
         "clzyaamxk102s13hpkwipk45v": "architecture",
         "clzyaamxk102t13hp9akxg5en": "tools",
         "clzyaamxk102u13hpzlab3f0w": "human",
-        "clzyaamxk102v13hplgi4r5fy": "alien"
+        "clzyaamxk102v13hplgi4r5fy": "alien",
+        // New text names (2026+)
+        "Design, UI, UX": "design",
+        "Front web, design, UI, UX": "front",
+        "Backend, Cloud, Big Data": "backend",
+        "IOT, embarqué, mobile": "iot",
+        "Conception, architecture": "architecture",
+        "Outils, pratiques de dev": "tools",
+        "Humain & Tech": "human",
+        "Alien": "alien",
+        "Intelligence Artificielle": "alien"
       }[categories];
       const format = {
+        // Legacy IDs
         "clzyaamxk102w13hpk1e1095a": "lightning",
         "clzyaamxk102x13hp665tzg4v": "conference",
-        "clzyaamxk102y13hp61scz1oh": "hands-on"
+        "clzyaamxk102y13hp61scz1oh": "hands-on",
+        // New text names
+        "Lightning (15min)": "lightning",
+        "Conférence (50min)": "conference",
+        "Hands-on (120min)": "hands-on"
       }[formats];
       return [
         "schedule-talk--cell",
