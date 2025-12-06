@@ -45,7 +45,7 @@
   .homepage-header-bg {
     grid-column: 1;
     grid-row: 1;
-    background-image: url('./../assets/img/logo.svg');
+    background-image: url('/img/logo.svg');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -184,5 +184,5 @@
 }
 </style>
 
-<script>
+<script setup lang="ts">
 </script>

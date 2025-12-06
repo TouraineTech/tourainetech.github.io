@@ -1,23 +1,20 @@
 <template>
   <div class="speaker--bloc">
     <div v-if="speaker.picture" class="container--image">
-      <img :src="require(`@/assets/img/speakers/${speaker.uid}.png`)" :alt="speaker.name">
+      <img :src="`/img/speakers/${speaker.uid}.png`" :alt="speaker.name">
     </div>
     <h3>{{ speaker.name }}</h3>
   </div>
 </template>
 
-<script>
-export default {
-    props: {
-        speaker: {
-            type: Object,
-            default () {
-                return {}
-            }
-        }
-    }
-}
+<script setup lang="ts">
+defineProps<{
+  speaker: {
+    uid: string
+    name: string
+    picture?: boolean
+  }
+}>()
 </script>
 
 <style lang="scss" scoped>

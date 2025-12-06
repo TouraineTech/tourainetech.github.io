@@ -1,33 +1,26 @@
+<script setup lang="ts">
+const store = useMainStore()
+
+const talks = computed(() => {
+  const confirmedSpeakersId = store.speakers.map(s => s.uid)
+  return store.talks
+    .filter(({ speakers }) => speakers.every(s => confirmedSpeakersId.indexOf(s) >= 0))
+    .filter(({ id }) => id !== 'keynote')
+})
+</script>
+
 <template>
   <section id="talks" class="container--white">
     <div class="container--fix container--center">
       <h2>Les talks</h2>
       <div class="talk--grid">
-        <nuxt-link :to="`/talk/${talk.id}`" v-for="talk in talks" :key="talk.id">
-          <TalkBloc :talk="talk"/>
-        </nuxt-link>
+        <NuxtLink v-for="talk in talks" :key="talk.id" :to="`/talk/${talk.id}`">
+          <TalkBloc :talk="talk" />
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-  import TalkBloc from '~/components/TalkBloc'
-
-  export default {
-    components: {
-      TalkBloc
-    },
-    computed: {
-      talks() {
-        let confirmedSpeakersId = this.$store.getters.speakers.map(s => s.id)
-        return this.$store.getters.talks
-        .filter(({speakers}) => speakers.every(s => confirmedSpeakersId.indexOf(s) >= 0))
-        .filter(({id}) => id !== "keynote")
-      }
-    }
-  }
-</script>
 
 <style lang="scss" scoped>
   @import "./../assets/scss/variables";

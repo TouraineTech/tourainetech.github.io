@@ -3,9 +3,9 @@
     <div class="footer--links">
       <ul>
         <li>
-          <nuxt-link :to="`/coc`">
+          <NuxtLink :to="`/coc`">
             Code de conduite
-          </nuxt-link>
+          </NuxtLink>
         </li>
         <li>
           <a
@@ -72,22 +72,13 @@
   </footer>
 </template>
 
-<script>
-import Socials from "~/components/Socials.vue";
-
-export default {
-  components: {
-    Socials
-  },
-  methods: {
-    mailTo() {
-      // split the email to avoid most simple robot spam
-      const address = "team";
-      const domain = "touraine.tech";
-      window.open(`mailto:${address}@${domain}`, 'mail')
-    }
-  }
-};
+<script setup lang="ts">
+const mailTo = () => {
+  // split the email to avoid most simple robot spam
+  const address = "team";
+  const domain = "touraine.tech";
+  window.open(`mailto:${address}@${domain}`, 'mail')
+}
 </script>
 
 

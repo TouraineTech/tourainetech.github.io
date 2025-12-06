@@ -20,24 +20,17 @@
         </a>
       </div>
       <div class="sponsors-blocs">
-        <sponsors-bloc type="Platinium"></sponsors-bloc>
-        <sponsors-bloc type="Gold"></sponsors-bloc>
-        <sponsors-bloc type="Silver"></sponsors-bloc>
-        <sponsors-bloc type="Bronze"></sponsors-bloc>
-        <sponsors-bloc type="Partenaires"></sponsors-bloc>
+        <SponsorsBloc type="Platinium"></SponsorsBloc>
+        <SponsorsBloc type="Gold"></SponsorsBloc>
+        <SponsorsBloc type="Silver"></SponsorsBloc>
+        <SponsorsBloc type="Bronze"></SponsorsBloc>
+        <SponsorsBloc type="Partenaires"></SponsorsBloc>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-import SponsorsBloc from "./SponsorsBloc.vue";
-
-export default {
-  components: {
-    SponsorsBloc
-  }
-};
+<script setup lang="ts">
 </script>
 
 <style scoped>

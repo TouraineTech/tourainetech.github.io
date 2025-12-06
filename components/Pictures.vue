@@ -10,15 +10,7 @@
   </section>
 </template>
 
-<script>
-import PhotoGallery from './PhotoGallery.vue';
-
-export default {
-  components: {
-    PhotoGallery
-  }
-  
-}
+<script setup lang="ts">
 </script>
 
 <style lang="scss" scoped>

@@ -1,35 +1,30 @@
+<script setup lang="ts">
+const props = defineProps<{
+  type?: string
+}>()
+
+const store = useMainStore()
+const sponsors = computed(() =>
+  store.sponsors.filter(sp => sp.type === (props.type || '').toLowerCase())
+)
+</script>
+
 <template>
   <div v-if="sponsors.length > 0">
     <h3 class="type--title">
       <span>{{ type }}</span>
     </h3>
     <div class="sponsors--container" :class="`sponsor-${type}`">
-      <nuxt-link
+      <NuxtLink
         v-for="sponsor in sponsors"
         :key="sponsor.id"
         :to="`/sponsor/${sponsor.id}`"
       >
-        <img :src="require(`@/assets/img/sponsors/${sponsor.image}`)" width="100%" :alt="sponsor.name">
-      </nuxt-link>
+        <img :src="`/img/sponsors/${sponsor.image}`" width="100%" :alt="sponsor.name">
+      </NuxtLink>
     </div>
   </div>
 </template>
-
-<script>
-  export default {
-    props: {
-      type: {
-        type: String,
-        default: ""
-      }
-    },
-    computed: {
-      sponsors() {
-        return this.$store.state.sponsors.filter(sp => sp.type === this.type.toLowerCase())
-      }
-    }
-  }
-</script>
 
 <style lang="scss">
   @import "./../assets/scss/variables";

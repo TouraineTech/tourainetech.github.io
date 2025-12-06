@@ -2,6 +2,9 @@
   <a class="beginner-speakers-link" href="#beginner-speakers">Speaker débutant·e ? On vous accompagne !</a>
 </template>
 
+<script setup lang="ts">
+</script>
+
 <style lang="scss" scoped>
 @import "./../../../assets/scss/variables";
 

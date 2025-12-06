@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const store = useMainStore()
+const configuration = computed(() => store.configuration)
+</script>
+
 <template>
   <div class="HeaderPhrase">
     <h1 class="HeaderPhrase-title">
@@ -16,16 +21,6 @@
     </h2>
   </div>
 </template>
-
-<script>
-export default {
-  computed: {
-    configuration() {
-      return this.$store.getters.configuration;
-    }
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 @import "./../../assets/scss/variables";
