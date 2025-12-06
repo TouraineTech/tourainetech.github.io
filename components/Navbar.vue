@@ -1,9 +1,71 @@
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  alwaysVisible?: boolean
+}>(), {
+  alwaysVisible: false
+})
+
+const router = useRouter()
+const route = useRoute()
+
+const scrolled = ref(false)
+
+const sections = [
+  { name: '#BackToSchool', anchor: '#backtoschool', mobile: false },
+  { name: 'Sponsors', anchor: '#sponsors', mobile: true },
+  { name: 'Le programme', anchor: '#schedule', mobile: true },
+  { name: "L'équipe", anchor: '#team', mobile: false },
+  { name: "L'actu", anchor: '#news', mobile: false }
+]
+
+function isHome() {
+  return route.path === '/'
+}
+
+function handleScroll() {
+  scrolled.value = window.scrollY > window.innerHeight - 100
+}
+
+function scrollTo(target: string) {
+  if (import.meta.client) {
+    if (isHome()) {
+      const el = document.querySelector(target)
+      if (el) {
+        window.scrollTo({
+          behavior: 'smooth',
+          top: (el as HTMLElement).offsetTop - 70
+        })
+      }
+    } else {
+      router.push(`/${target}`)
+    }
+  }
+  return false
+}
+
+function goToHome() {
+  router.push('/')
+}
+
+onMounted(() => {
+  if (isHome()) {
+    window.addEventListener('scroll', handleScroll)
+  }
+})
+
+onUnmounted(() => {
+  if (isHome()) {
+    window.removeEventListener('scroll', handleScroll)
+  }
+})
+</script>
+
 <template>
   <nav :class="{'navbar--visible': scrolled, 'navbar--fixed': alwaysVisible}">
     <img
       @touch="goToHome()"
       @click="goToHome()"
-      src="../assets/img/logo.svg"
+      src="/img/logo.svg"
       alt="Logo Touraine Tech' 2019"
     >
     <ul>
@@ -18,65 +80,6 @@
     </ul>
   </nav>
 </template>
-
-<script>
-export default {
-  props: {
-    alwaysVisible: {
-      type: Boolean,
-      default: false
-    }
-  },
-  data() {
-    return {
-      scrolled: false,
-      sections: [
-        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false },
-        { name: "Sponsors", anchor: "#sponsors", mobile: true },
-        //{name: 'Inscription', anchor: '#register', mobile: true},
-        //{name: 'Talks', anchor: '#talks', mobile: true},
-        { name: "Le programme", anchor: "#schedule", mobile: true },
-        { name: "L'équipe", anchor: "#team", mobile: false },
-        { name: "L'actu", anchor: "#news", mobile: false }
-      ]
-    };
-  },
-  created() {
-    if (process.browser && this.isHome()) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
-  },
-  destroyed() {
-    if (process.browser && this.isHome()) {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
-  },
-  methods: {
-    handleScroll() {
-      this.scrolled = window.scrollY > window.innerHeight - 100;
-    },
-    scrollTo(target) {
-      if (process.browser) {
-        if (this.isHome()) {
-          window.scrollTo({
-            behavior: "smooth",
-            top: document.querySelector(target).offsetTop - 70
-          });
-        } else {
-          this.$router.push(`/${target}`);
-        }
-      }
-      return false;
-    },
-    goToHome() {
-      this.$router.push("/");
-    },
-    isHome() {
-      return this.$route.path === "/";
-    }
-  }
-};
-</script>
 
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";

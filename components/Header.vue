@@ -1,8 +1,11 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <section class="container--header">
     <div class="logo">
       <img
-        src="../assets/img/logo.svg"
+        src="/img/logo.svg"
         alt="Logo Touraine Tech' 2019">
     </div>
     <h1 class="title">
@@ -14,10 +17,10 @@
     <p>
       La conférence technique en région centre sur les nouvelles technologies du numérique
     </p>
-    <socials/>
+    <Socials />
     <div class="mouse_scroll">
       <img
-        src="@/assets/img/mouse_scroll.svg"
+        src="/img/mouse_scroll.svg"
         alt="scroll">
     </div>
   </section>
@@ -62,7 +65,7 @@
     padding-bottom: 15px;
   }
 
-  /deep/ .socials {
+  :deep(.socials) {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -98,7 +101,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url("../assets/img/cover_home.jpg") 50% 50%;
+    background: url("/img/cover_home.jpg") 50% 50%;
     background-size: cover;
   }
 
@@ -127,15 +130,3 @@
   }
 
 </style>
-
-
-<script>
-  import Socials from '~/components/Socials.vue'
-
-  export default {
-    components: {
-      Socials
-    }
-  }
-</script>
-

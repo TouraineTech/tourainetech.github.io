@@ -5,18 +5,41 @@
       {{ remainingTime.asString }}
     </h2>
     <div class="container--sponsors">
-      <Sponsors class="sponsors" />
+      <TimerSponsors class="sponsors" />
     </div>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
 
-<script>
-import Sponsors from "@/components/TimerSponsors.vue";
+<script setup lang="ts">
+interface Talk {
+  time: string
+  talk: {
+    name: string
+    id: string
+  }
+  endTime: string
+  nextTalkId: string
+  nextTalkName?: string
+}
 
-function calculateRemainingTime(endTime) {
+interface RemainingTime {
+  asString: string
+  remainingInSeconds: number
+}
+
+const props = defineProps<{
+  room?: string
+  talk?: Talk
+}>()
+
+const remainingTime = ref<RemainingTime>({ asString: '00 : 00', remainingInSeconds: 0 })
+const intervalId = ref<number | null>(null)
+const lowRemainingTime = ref(false)
+
+function calculateRemainingTime(endTime: string): RemainingTime {
   const endDate = new Date();
-  endDate.setHours(endTime.split(":")[0], endTime.split(":")[1], 0);
+  endDate.setHours(Number(endTime.split(":")[0]), Number(endTime.split(":")[1]), 0);
   const currentDate = new Date();
   const remainingInSeconds = (endDate.getTime() - currentDate.getTime()) / 1000;
   return {
@@ -25,68 +48,56 @@ function calculateRemainingTime(endTime) {
   };
 }
 
-function calculateTime(endTime, startTime) {
+function calculateTime(endTime: string, startTime: string): RemainingTime {
   const endDate = new Date();
-  endDate.setHours(endTime.split(":")[0], endTime.split(":")[1], 0);
+  endDate.setHours(Number(endTime.split(":")[0]), Number(endTime.split(":")[1]), 0);
   const startDate = new Date();
-  startDate.setHours(startTime.split(":")[0], startTime.split(":")[1], 0);
-  const remainingInSeconds = (endDate.getTime() - startDate.getTime()) / 1000;
+  startDate.setHours(Number(startTime.split(":")[0]), Number(startTime.split(":")[1]), 0);
+  const remainingInSecondsVal = (endDate.getTime() - startDate.getTime()) / 1000;
   return {
-    asString: `${String(Math.floor(remainingInSeconds / 60)).padStart(2, '0')} : ${String(Math.floor(remainingInSeconds - (Math.floor(remainingInSeconds / 60) * 60))).padStart(2, '0')}`,
-    remainingInSeconds
+    asString: `${String(Math.floor(remainingInSecondsVal / 60)).padStart(2, '0')} : ${String(Math.floor(remainingInSecondsVal - (Math.floor(remainingInSecondsVal / 60) * 60))).padStart(2, '0')}`,
+    remainingInSeconds: remainingInSecondsVal
   };
 }
 
-export default {
-  components: {Sponsors},
-  props: {
-    room: {
-      type: String,
-      default() {return "F21"}
-    },
-    talk: {
-      type: Object,
-      default () {
-        return {
-          time: "00:00",
-          talk: {
-            name: "No name",
-            id: "random"
-          },
-          endTime: "00:00",
-          nextTalkId: "random"
+onMounted(() => {
+  if (!props.talk) return
+
+  const currentDate = new Date();
+  const minutes = currentDate.getMinutes();
+  const hours = currentDate.getHours();
+  const splitted = (props.talk.endTime || "00:00").split(":");
+  const endDate = Date.parse(`01/01/2001 ${splitted[0]}:${splitted[1]}:00`)
+  const date = Date.parse(`01/01/2001 ${hours}:${minutes}:00`)
+  const talksDuration = calculateTime(props.talk.endTime || "00:00", props.talk.time)
+
+  if (props.talk.endTime && endDate > date) {
+    intervalId.value = window.setInterval(() => {
+      if (!props.talk) return
+
+      const remaining = calculateRemainingTime(props.talk.endTime);
+      if (remaining.remainingInSeconds < talksDuration.remainingInSeconds/10) {
+        lowRemainingTime.value = true;
+      }
+      if (remaining.remainingInSeconds < 0) {
+        const nextElement = document.getElementById(props.talk.nextTalkId)
+        if (nextElement) {
+          window.scroll({top: nextElement.offsetTop});
+        }
+        if (intervalId.value) {
+          clearInterval(intervalId.value)
         }
       }
-    }
-  },
-  data: () => ({
-    remainingTime: {},
-    intervalId: null,
-    lowRemainingTime: false
-  }),
-  mounted() {
-    const currentDate = new Date();
-    const minutes = currentDate.getMinutes();
-    const hours = currentDate.getHours();
-    const splitted = (this.talk.endTime || "00:00").split(":");
-    const endDate = Date.parse(`01/01/2001 ${splitted[0]}:${splitted[1]}:00`)
-    const date = Date.parse(`01/01/2001 ${hours}:${minutes}:00`)
-    const talksDuration = calculateTime(this.talk.endTime || "00:00", this.talk.time)
-    if (this.talk.endTime && endDate > date) {
-      this.intervalId = setInterval(() => {
-        const remainingTime = calculateRemainingTime(this.talk.endTime);
-        if (remainingTime.remainingInSeconds < talksDuration.remainingInSeconds/10) {
-          this.lowRemainingTime = true;
-        }
-        if (remainingTime.remainingInSeconds < 0) {
-          window.scroll({top: document.getElementById(this.talk.nextTalkId).offsetTop});
-          clearInterval(this.intervalId)
-        }
-        this.remainingTime = remainingTime;
-      }, 500);
-    }
+      remainingTime.value = remaining;
+    }, 500);
   }
-}
+})
+
+onUnmounted(() => {
+  if (intervalId.value) {
+    clearInterval(intervalId.value)
+  }
+})
 </script>
 
 <style lang="scss" scoped>
@@ -149,19 +160,19 @@ export default {
   }
 
   .timerTalk-F21 {
-    background-image: url('~assets/img/visualArt/fondF21.png');
+    background-image: url('/img/visualArt/fondF21.png');
     background-size: 100vw 100vh;
   }
   .timerTalk-F22 {
-    background-image: url('~assets/img/visualArt/fondF22.png');
+    background-image: url('/img/visualArt/fondF22.png');
     background-size: 100vw 100vh;
   }
   .timerTalk-Physique {
-    background-image: url('~assets/img/visualArt/fondPhysique.png');
+    background-image: url('/img/visualArt/fondPhysique.png');
     background-size: 100vw 100vh;
   }
   .timerTalk-Bio {
-    background-image: url('~assets/img/visualArt/fondBio.png');
+    background-image: url('/img/visualArt/fondBio.png');
     background-size: 100vw 100vh;
   }
 

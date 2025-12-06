@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="socials">
     <ul>
@@ -7,7 +10,7 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/x.svg"
+            src="/img/x.svg"
             alt="Twitter/X logo"
             style="padding: 4px"
           >
@@ -19,7 +22,7 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/facebook.png"
+            src="/img/facebook.png"
             alt="Facebook logo"
           >
         </a>
@@ -30,7 +33,7 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/youtube.svg"
+            src="/img/youtube.svg"
             alt="Youtube logo"
           >
         </a>
@@ -41,7 +44,7 @@
           target="_blank"
         >
           <img
-            src="@/assets/img/linkedin-icon.svg"
+            src="/img/linkedin-icon.svg"
             alt="Linked in logo"
           >
         </a>
@@ -50,9 +53,8 @@
   </div>
 </template>
 
-
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@import "~/assets/scss/variables";
 
 .socials ul {
   justify-content: center;

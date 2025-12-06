@@ -1,41 +1,49 @@
 <template>
   <div>
-    <client-only>
+    <ClientOnly>
       <div class="photo--container">
         <div
           v-for="(image, index) in photos"
           :key="index"
           class="photo--cell"
-          v-lazy:background-image="image.thumb || image.src"
+          :style="{ backgroundImage: `url(${image.thumb || image.src})` }"
           @click="openGallery(index)"
         >
         </div>
       </div>
 
-      <v-light-box :media="photos" ref="lightbox"
-                   :show-caption="false"
-                   :show-light-box="false"
-      ></v-light-box>
-    </client-only>
+      <vue-easy-lightbox
+        :visible="visible"
+        :imgs="photos"
+        :index="photoIndex"
+        @hide="handleHide"
+      ></vue-easy-lightbox>
+    </ClientOnly>
   </div>
 </template>
 
-<script>
-require('vue-image-lightbox/dist/vue-image-lightbox.min.css')
+<script setup lang="ts">
+import VueEasyLightbox from 'vue-easy-lightbox'
 
-export default {
-  computed: {
-      photos() {
-          return this.$store.getters.photos.map(
-            photo => ({thumb: photo.small, src: photo.original})
-          )
-      }
-  },
-  methods: {
-    openGallery(index) {
-      this.$refs.lightbox.showImage(index)
-    }
-  }
+const store = useMainStore()
+
+const photos = computed(() =>
+  store.photos.map(photo => ({
+    thumb: photo.small,
+    src: photo.original
+  }))
+)
+
+const visible = ref(false)
+const photoIndex = ref(0)
+
+const openGallery = (index: number) => {
+  photoIndex.value = index
+  visible.value = true
+}
+
+const handleHide = () => {
+  visible.value = false
 }
 </script>
 
@@ -57,10 +65,6 @@ export default {
     background-size: cover;
     cursor: pointer;
     background-position: 50% 50%;
-
-    &[lazy=loading] {
-      background-color: lightgray;
-    }
   }
 }
 </style>

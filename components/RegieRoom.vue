@@ -14,30 +14,12 @@
   </div>
 </template>
 
-<script>
-
-export default {
-  props: {
-    title: {
-      type: String,
-      default() {
-        return "";
-      }
-    },
-    obs: {
-      type: String,
-      default() {
-        return "";
-      }
-    },
-    youtube: {
-      type: String,
-      default() {
-        return "";
-      }
-    }
-  }
-}
+<script setup lang="ts">
+defineProps<{
+  title?: string
+  obs?: string
+  youtube?: string
+}>()
 </script>
 
 <style>

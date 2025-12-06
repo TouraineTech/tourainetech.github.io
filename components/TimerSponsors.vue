@@ -2,21 +2,21 @@
   <span class="marquee">
     <img
       v-for="sponsor in sponsors" :key="sponsor.id"
-      :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
+      :src="`/img/sponsors/${sponsor.image}`"
       :alt="sponsor.name"
       class="logo"
       :class="`sponsor-${sponsor.type}`"
     />
     <img
       v-for="sponsor in sponsors" :key="sponsor.id"
-      :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
+      :src="`/img/sponsors/${sponsor.image}`"
       :alt="sponsor.name"
       class="logo"
       :class="`sponsor-${sponsor.type}`"
     />
     <img
       v-for="sponsor in sponsors" :key="sponsor.id"
-      :src="require(`@/assets/img/sponsors/${sponsor.image}`)"
+      :src="`/img/sponsors/${sponsor.image}`"
       :alt="sponsor.name"
       class="logo"
       :class="`sponsor-${sponsor.type}`"
@@ -24,14 +24,9 @@
   </span>
 </template>
 
-<script>
-export default {
-  computed: {
-    sponsors() {
-      return [...this.$store.state.sponsors].reverse()
-    }
-  }
-}
+<script setup lang="ts">
+const store = useMainStore()
+const sponsors = computed(() => [...store.sponsors].reverse())
 </script>
 
 <style lang="scss" scoped>

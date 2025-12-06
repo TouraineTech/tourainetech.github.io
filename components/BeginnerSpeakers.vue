@@ -1,3 +1,17 @@
+<script setup lang="ts">
+const mailSubject = "Speakers débutant·e·s"
+const mailBody = `Bonjour,
+
+Je n'ai jamais ou peu parlé en conférences avant et souhaiterais être accompagné·e dans la création du CFP, la préparation et les répétitions de mon talk.
+
+Mon idée de sujet est la suivante :
+Je pensais partir sur un format xx minutes.`
+
+const mailLink = `mailto:team@touraine.tech?subject=${encodeURIComponent(
+  mailSubject
+)}&body=${encodeURIComponent(mailBody)}`
+</script>
+
 <template>
   <section id="beginner-speakers" class="container--green">
     <div class="beginners-card container--fix container--center">
@@ -25,7 +39,7 @@
         <p>
           Vous bénéficierez de conseils sur la rédaction de vos sujets, un
           accompagnement dans la préparation de votre support et de votre discours
-          et une occasion de répéter devant quelqu’un pour avoir des conseils
+          et une occasion de répéter devant quelqu'un pour avoir des conseils
           personnalisés.
         </p>
         <p>
@@ -49,7 +63,7 @@
         <li>
           <a class="contact-button" href="https://bsky.app/profile/tourainetech.bsky.social">
             <span class="contact-button-icon bluesky-icon" aria-hidden="true">
-              <img src="@/assets/img/Bluesky_Logo.svg" alt="bluesky logo" />
+              <img src="/img/Bluesky_Logo.svg" alt="bluesky logo" />
             </span>
             Via Bluesky à @tourainetech
           </a>
@@ -58,26 +72,6 @@
     </div>
   </section>
 </template>
-
-<script>
-const mailSubject = "Speakers débutant·e·s";
-const mailBody = `Bonjour,
-
-Je n'ai jamais ou peu parlé en conférences avant et souhaiterais être accompagné·e dans la création du CFP, la préparation et les répétitions de mon talk.
-
-Mon idée de sujet est la suivante :
-Je pensais partir sur un format xx minutes.`;
-
-export default {
-  data() {
-    return {
-      mailLink: `mailto:team@touraine.tech?subject=${encodeURIComponent(
-        mailSubject
-      )}&body=${encodeURIComponent(mailBody)}`,
-    };
-  },
-};
-</script>
 
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";

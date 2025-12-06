@@ -1,3 +1,97 @@
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  forApp?: boolean
+}>(), {
+  forApp: false
+})
+
+const store = useMainStore()
+const day = ref(1)
+
+const talks = computed(() => {
+  return store.talks
+    .filter(talk => talk.day === day.value)
+    .map(talk => ({
+      ...talk,
+      speakerNames: store.getSpeakerForIds(talk.speakers).map(s => s.name).join(', ')
+    }))
+})
+
+const breaks = computed(() => store.breaks.filter(b => b.days.includes(day.value)))
+const times = computed(() => store.times.filter(t => t.days.includes(day.value)))
+const rooms = computed(() => store.rooms)
+const categories = computed(() => store.categories)
+const formats = computed(() => store.formats)
+
+function talkCellStyle({ rooms, times, state }: { rooms?: number[], times?: number[], state?: string }) {
+  if (rooms === undefined) {
+    return {
+      display: 'none'
+    }
+  }
+  return {
+    opacity: state === 'accepted' ? 0.5 : 1,
+    'grid-column-start': rooms[0] + 1,
+    'grid-column-end': rooms[rooms.length - 1] + 2,
+    'grid-row-start': times![0] + 2,
+    'grid-row-end': times![times!.length - 1] + 3,
+  }
+}
+
+function talkCssClass({ formats: formatId, categories: categoryId, times: timesArr }: { formats?: string, categories?: string, times?: number[] }) {
+  const category: Record<string, string> = {
+    'clzyaamxk102o13hpbki089rf': 'design',
+    'clzyaamxk102p13hpw8tzwls8': 'front',
+    'clzyaamxk102q13hp7nja505n': 'backend',
+    'clzyaamxk102r13hpan99q8vi': 'iot',
+    'clzyaamxk102s13hpkwipk45v': 'architecture',
+    'clzyaamxk102t13hp9akxg5en': 'tools',
+    'clzyaamxk102u13hpzlab3f0w': 'human',
+    'clzyaamxk102v13hplgi4r5fy': 'alien'
+  }
+  const format: Record<string, string> = {
+    'clzyaamxk102w13hpk1e1095a': 'lightning',
+    'clzyaamxk102x13hp665tzg4v': 'conference',
+    'clzyaamxk102y13hp61scz1oh': 'hands-on'
+  }
+  return [
+    'schedule-talk--cell',
+    'schedule-talk-' + (format[formatId || ''] || '') + '--cell',
+    'schedule-talk-time' + (timesArr?.reduce((a, c) => a + c, 0) || '') + '--cell',
+    category[categoryId || ''] ? 'schedule-talk-' + category[categoryId || ''] + '--cell' : ''
+  ]
+}
+
+function talkName(categoryId: string) {
+  return categories.value
+    .filter(({ id }) => id === categoryId)
+    .map(({ name }) => name)[0]
+}
+
+function roomName(room: number) {
+  return rooms.value[room - 1]
+}
+
+function levelName(level: string) {
+  switch (level) {
+    case 'BEGINNER':
+      return 'Débutant'
+    case 'INTERMEDIATE':
+      return 'Intermédiaire'
+    case 'ADVANCED':
+      return 'Confirmé'
+    default:
+      return level
+  }
+}
+
+function duration(formatId: string) {
+  return formats.value
+    .filter(({ id }) => id === formatId)
+    .map(({ name }) => name)[0]
+}
+</script>
+
 <template>
   <section id="schedule" class="container--white">
     <template v-if="!forApp">
@@ -23,7 +117,7 @@
       <div v-for="room of rooms" :key="room" class="schedule-room--cell">
         <h3>{{ room }}</h3>
       </div>
-      <div v-for="time of times" :key="time" class="schedule-time--cell">
+      <div v-for="time of times" :key="time.time" class="schedule-time--cell">
         {{ time.time }}
       </div>
       <div
@@ -43,7 +137,7 @@
         :data-time="talk.time"
       >
         <div v-if="talk.day === day">
-          <nuxt-link
+          <NuxtLink
             :to="`/talk/${talk.id}`"
             :class="{ disabled: talk.id.includes('keynote')}"
           >
@@ -53,7 +147,7 @@
             <h5 v-if="talk.speakerNames" class="schedule-speaker-name">
               {{ talk.speakerNames }}
             </h5>
-          </nuxt-link>
+          </NuxtLink>
           <ul class="schedule-talk-category">
             <li :class="['schedule-talk-'+talk.categories+'--category']">
               {{ talkName(talk.categories) }}
@@ -62,17 +156,17 @@
           <span class="schedule-talk-videoLinks" v-if="talk.peertubeLink || talk.dailymotionLink || talk.youtubeLink">
             <a v-if="talk.peertubeLink" :href="talk.peertubeLink" target="_blank"><img
               class="icon"
-              src="@/assets/img/cinema.svg"
+              src="/img/cinema.svg"
               alt="icon cinema"
             /></a>
             <a v-if="talk.dailymotionLink" :href="talk.dailymotionLink" target="_blank"><img
               class="icon"
-              src="@/assets/img/dailymotion.svg"
+              src="/img/dailymotion.svg"
               alt="icon dailymotion"
             /></a>
             <a v-if="talk.youtubeLink" :href="talk.youtubeLink" target="_blank"><img
               class="icon"
-              src="@/assets/img/youtube.svg"
+              src="/img/youtube.svg"
               alt="icon youtube"
             /></a>
           </span>
@@ -82,7 +176,7 @@
               :key="slidesLink"
             >
               <a :href="slidesLink" target="_blank"><img
-                class="icon" src="@/assets/img/presentation.svg"
+                class="icon" src="/img/presentation.svg"
                 alt="icon presentation"
               />
               </a>
@@ -101,110 +195,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  props: {
-    forApp: {
-      type: Boolean,
-      default: false
-    }
-  },
-  data() {
-    return {
-      day: 1
-    }
-  },
-  computed: {
-    talks() {
-      return [
-        ...this.$store.getters.talks.filter(talk => {
-          return talk.day === this.day
-        }).map(talk => {
-          return {
-            ...talk,
-            speakerNames: this.$store.getters.getSpeakerForIds(talk.speakers).map(s => s.name).join(', ')
-          }
-        })
-      ]
-    },
-    breaks() {
-      return this.$store.getters.breaks.filter(b => b.days.includes(this.day))
-    },
-    times() {
-      return this.$store.getters.times.filter(t => t.days.includes(this.day))
-    },
-    rooms() {
-      return this.$store.getters.rooms
-    }
-  },
-  methods: {
-    talkCellStyle({rooms, times, state}) {
-      // times.sort(); cause js issue with https or proxy
-      if (rooms === undefined) {
-        return {
-          "display": "none"
-        }
-      }
-      return {
-        "opacity" : state === 'accepted' ? 0.5 : 1 ,
-        "grid-column-start": rooms[0] + 1,
-        "grid-column-end": rooms[rooms.length - 1] + 2,
-        "grid-row-start": times[0] + 2,
-        "grid-row-end": times[times.length - 1] + 3,
-      }
-    },
-    talkCssClass({formats, categories, times}) {
-      const category = {
-        "clzyaamxk102o13hpbki089rf": "design",
-        "clzyaamxk102p13hpw8tzwls8": "front",
-        "clzyaamxk102q13hp7nja505n": "backend",
-        "clzyaamxk102r13hpan99q8vi": "iot",
-        "clzyaamxk102s13hpkwipk45v": "architecture",
-        "clzyaamxk102t13hp9akxg5en": "tools",
-        "clzyaamxk102u13hpzlab3f0w": "human",
-        "clzyaamxk102v13hplgi4r5fy": "alien"
-      }[categories];
-      const format = {
-        "clzyaamxk102w13hpk1e1095a": "lightning",
-        "clzyaamxk102x13hp665tzg4v": "conference",
-        "clzyaamxk102y13hp61scz1oh": "hands-on"
-      }[formats];
-      return [
-        "schedule-talk--cell",
-        "schedule-talk-" + format + "--cell",
-        "schedule-talk-time" + times.reduce((a, c) => a + c, "") + "--cell",
-        category ? "schedule-talk-" + category + "--cell" : ""
-      ];
-    },
-    talkName(category) {
-      return this.$store.getters.categories
-        .filter(({id}) => id === category)
-        .map(({name}) => name)[0];
-    },
-    roomName(room) {
-      return this.rooms[room - 1];
-    },
-    levelName(level) {
-      switch (level) {
-        case "BEGINNER":
-          return "Débutant"
-        case "INTERMEDIATE":
-          return "Intermédiaire"
-        case "ADVANCED":
-          return "Confirmé"
-        default:
-          return level
-      }
-    },
-    duration(format) {
-      return this.$store.getters.formats
-        .filter(({id}) => id === format)
-        .map(({name}) => name)[0];
-    }
-  },
-}
-</script>
 
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
@@ -463,4 +453,3 @@ $color-alien: #066420;
   visibility: hidden;
 }
 </style>
-

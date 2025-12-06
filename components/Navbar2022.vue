@@ -1,12 +1,87 @@
+<script setup lang="ts">
+const router = useRouter()
+const route = useRoute()
+const store = useMainStore()
+
+defineProps<{
+  alwaysVisible?: boolean
+}>()
+
+const scrolledToHide = ref(false)
+const scrolledToShow = ref(false)
+
+const configuration = computed(() => store.configuration)
+
+const sections = computed(() => {
+  const result = [{ name: '#BackToSchool', anchor: '#backtoschool', mobile: false }]
+  if (configuration.value.displaySponsors) {
+    result.push({ name: 'Sponsors', anchor: '#sponsors', mobile: true })
+  }
+  if (configuration.value.isCfpOpened) {
+    result.push({ name: 'Proposer un talk', anchor: '#cfp', mobile: true })
+  }
+  if (configuration.value.isRegisterOpen) {
+    result.push({ name: 'Billetterie', anchor: '#register', mobile: false })
+  }
+  if (configuration.value.isScheduleOnline) {
+    result.push({ name: 'Nos speakers', anchor: '#speakers', mobile: false })
+    result.push({ name: 'Le programme', anchor: '#schedule', mobile: true })
+  }
+  if (configuration.value.isPhotoOnline) {
+    result.push({ name: 'Les photos', anchor: '#pictures', mobile: false })
+  }
+  if (configuration.value.isVideoOnline) {
+    result.push({ name: 'La vidéo', anchor: '#video', mobile: false })
+  }
+  result.push({ name: "L'équipe", anchor: '#team', mobile: false })
+  return result
+})
+
+const isHome = () => route.path === '/'
+
+const handleScroll = () => {
+  scrolledToHide.value = window.scrollY > 100
+  scrolledToShow.value = window.scrollY > window.innerHeight - 200
+}
+
+const scrollTo = (target: string) => {
+  if (import.meta.client) {
+    if (isHome()) {
+      location.hash = target
+    }
+    else {
+      router.push(`/${target}`)
+    }
+  }
+  return false
+}
+
+const goToHome = () => {
+  router.push('/')
+}
+
+onMounted(() => {
+  if (isHome()) {
+    window.addEventListener('scroll', handleScroll)
+  }
+})
+
+onUnmounted(() => {
+  if (isHome()) {
+    window.removeEventListener('scroll', handleScroll)
+  }
+})
+</script>
+
 <template>
-  <nav :class="{'navbar--hidden': scrolledToHide, 'navbar--visible': scrolledToShow}">
+  <nav :class="{ 'navbar--hidden': scrolledToHide, 'navbar--visible': scrolledToShow }">
     <div class="Navbar-wrapper">
       <div class="Navbar-logo">
         <img
+          src="/img/logo.svg"
+          alt="Logo Touraine Tech' 2020"
           @touch="goToHome()"
           @click="goToHome()"
-          src="../assets/img/logo.svg"
-          alt="Logo Touraine Tech' 2020"
         >
       </div>
       <div class="Navbar-menu">
@@ -14,9 +89,9 @@
           <li
             v-for="section in sections"
             :key="section.anchor"
+            :class="{ mobile: section.mobile }"
             @touch="scrollTo(section.anchor)"
             @click="scrollTo(section.anchor)"
-            :class="{'mobile': section.mobile}"
           >
             <a>{{ section.name }}</a>
           </li>
@@ -26,80 +101,8 @@
   </nav>
 </template>
 
-<script>
-export default {
-  props: {
-    alwaysVisible: {
-      type: Boolean,
-      default: false
-    }
-  },
-  data() {
-    const configuration = this.$store.getters.configuration;
-    const sections = [        { name: "#BackToSchool", anchor: "#backtoschool", mobile: false }];
-    if(configuration.displaySponsors) {
-      sections.push({ name: "Sponsors", anchor: "#sponsors", mobile: true })
-    }
-    if(configuration.isCfpOpened) {
-      sections.push({ name: "Proposer un talk", anchor: "#cfp", mobile: true })
-    }
-    if(configuration.isRegisterOpen) {
-      sections.push({ name: "Billetterie", anchor: "#register", mobile: false })
-    }
-    if(configuration.isScheduleOnline) {
-      sections.push({ name: "Nos speakers", anchor: "#speakers", mobile: false })
-      sections.push({ name: "Le programme", anchor: "#schedule", mobile: true })
-    }
-    if(configuration.isPhotoOnline) {
-      sections.push({ name: "Les photos", anchor: "#pictures", mobile: false })
-    }
-    if(configuration.isVideoOnline) {
-      sections.push({ name: "La vidéo", anchor: "#video", mobile: false })
-    }
-    sections.push({ name: "L'équipe", anchor: "#team", mobile: false },)
-    return {
-      scrolledToHide: false,
-      scrolledToShow: false,
-      sections: sections
-    };
-  },
-  created() {
-    if (process.browser && this.isHome()) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
-  },
-  destroyed() {
-    if (process.browser && this.isHome()) {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
-  },
-  methods: {
-    handleScroll() {
-      this.scrolledToHide = window.scrollY > 100;
-      this.scrolledToShow = window.scrollY > window.innerHeight - 200;
-    },
-    scrollTo(target) {
-      if (process.browser) {
-        if (this.isHome()) {
-          location.hash = target
-        } else {
-          this.$router.push(`/${target}`);
-        }
-      }
-      return false;
-    },
-    goToHome() {
-      this.$router.push("/");
-    },
-    isHome() {
-      return this.$route.path === "/";
-    }
-  }
-};
-</script>
-
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@import "~/assets/scss/variables";
 
 @media screen and (max-width: $tablet-step - 1) {
   nav {

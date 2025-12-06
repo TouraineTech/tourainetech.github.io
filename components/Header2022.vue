@@ -14,28 +14,9 @@
   </section>
 </template>
 
-<script>
-import HeaderPhrase from "~/components/header/HeaderPhrase.vue";
-import SeeScheduleButton from "~/components/header/buttons/SeeScheduleButton";
-import RegisterSpeakerButton from "~/components/header/buttons/RegisterSpeakerButton";
-import RegisterAttendeeButton from "~/components/header/buttons/RegisterAttendeeButton";
-import BeginnerSpeakerLink from "./header/buttons/BeginnerSpeakerLink.vue";
-
-export default {
-  components: {
-    BeginnerSpeakerLink,
-    HeaderPhrase,
-    SeeScheduleButton,
-    RegisterSpeakerButton,
-    RegisterAttendeeButton
-  },
-  computed: {
-    configuration() {
-      return this.$store.getters.configuration;
-    }
-  },
-  mounted() {}
-};
+<script setup lang="ts">
+const store = useMainStore();
+const configuration = computed(() => store.configuration);
 </script>
 
 <style lang="scss" scoped>
@@ -51,7 +32,7 @@ export default {
       min-height: 600px;
     }
     background-image: linear-gradient(rgba(white, 1), rgba(white, 0.8) 90%),
-      url(~assets/img/cover_home.jpg);
+      url(/img/cover_home.jpg);
     background-position: 50% 50%;
     background-size: cover;
     .Header-wrapper {

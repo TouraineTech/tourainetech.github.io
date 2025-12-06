@@ -11,16 +11,9 @@
     </div>
   </section>
 </template>
-<script>
-
-export default {
-  computed: {
-    configuration() {
-      return this.$store.getters.configuration;
-    }
-  },
-  mounted() {}
-};
+<script setup lang="ts">
+const store = useMainStore();
+const configuration = computed(() => store.configuration);
 </script>
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";

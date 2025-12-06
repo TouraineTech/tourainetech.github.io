@@ -1,22 +1,19 @@
-<script>
-export default {
-  computed: {
-    days() { return this.$store.getters.days;}
-  }
-}
+<script setup lang="ts">
+const store = useMainStore()
+const days = computed(() => store.days)
 </script>
 
 <template>
   <div class="container--white">
     Welcome
-    <nuxt-link
+    <NuxtLink
       v-for="day of days"
-      :to="`/timer/${day}`"
       :key="day"
+      :to="`/timer/${day}`"
     >
       <h4>
         Jour {{ day }}
       </h4>
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>
