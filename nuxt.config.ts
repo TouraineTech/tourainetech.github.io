@@ -82,6 +82,9 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    output: {
+      publicDir: 'dist',
+    },
     prerender: {
       crawlLinks: true,
       routes: [

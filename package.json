@@ -15,7 +15,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "deploy": "gh-pages --dotfiles -d .output/public -b master",
+    "deploy": "gh-pages --dotfiles -d dist -b master",
     "extract:all": "node tools/conferenceHallJsonExtractor.js",
     "extract:preBuildPlanning": "node tools/prePlanningBuilder.js",
     "extract:timerDatas": "node tools/timerJsonBuilder.js",
