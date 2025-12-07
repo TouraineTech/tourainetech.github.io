@@ -7,12 +7,13 @@ const props = withDefaults(defineProps<{
 
 const store = useMainStore()
 const route = useRoute()
-const router = useRouter()
 const day = ref(parseInt(route.query.day as string) || 1)
 
 function setDay(newDay: number) {
   day.value = newDay
-  router.replace({ query: { ...route.query, day: newDay } })
+  const url = new URL(window.location.href)
+  url.searchParams.set('day', String(newDay))
+  window.history.replaceState({}, '', url)
 }
 
 const talks = computed(() => {
