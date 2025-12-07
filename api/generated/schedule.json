@@ -45,18 +45,18 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmh8999v200cq1eocr6qsonxd",
-    "title": "La réactivité et les signaux : démystifions la magie du frontend",
-    "categories": "Front web, design, UI, UX",
+    "id": "cmhn775l500c91eseahc5i0s9",
+    "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
+    "categories": "Humain & Tech",
     "formats": "Conférence (50min)",
     "rooms": [
-      1
+      3
     ],
     "times": [
       3
     ],
     "day": 1,
-    "level": "ADVANCED"
+    "level": "BEGINNER"
   },
   {
     "id": "cmgb8qdfb00ix1elb5spxgtxc",
@@ -453,18 +453,18 @@
     "level": "INTERMEDIATE"
   },
   {
-    "id": "cmhn775l500c91eseahc5i0s9",
-    "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
-    "categories": "Humain & Tech",
+    "id": "cmh8999v200cq1eocr6qsonxd",
+    "title": "La réactivité et les signaux : démystifions la magie du frontend",
+    "categories": "Front web, design, UI, UX",
     "formats": "Conférence (50min)",
     "rooms": [
-      3
+      1
     ],
     "times": [
       17
     ],
     "day": 1,
-    "level": "BEGINNER"
+    "level": "ADVANCED"
   },
   {
     "id": "cmgtb4fr4018a1epd1a602gss",
@@ -771,12 +771,12 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmh898i6n00cn1eocmqh5tv17",
-    "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+    "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+    "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
     "categories": "Outils, pratiques de dev",
     "formats": "Lightning (15min)",
     "rooms": [
-      3
+      1
     ],
     "times": [
       9
@@ -855,12 +855,12 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmfmc8jsu05zqml1e0y7i8gu8",
-    "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
+    "id": "cmh898i6n00cn1eocmqh5tv17",
+    "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
     "categories": "Outils, pratiques de dev",
     "formats": "Lightning (15min)",
     "rooms": [
-      1
+      3
     ],
     "times": [
       11

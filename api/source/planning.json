@@ -29,11 +29,11 @@
       },
       {
         "rooms": [
-          "F21"
+          "Bio"
         ],
-        "id": "cmh8999v200cq1eocr6qsonxd",
-        "title": "La réactivité et les signaux : démystifions la magie du frontend",
-        "speaker": "Estéban S"
+        "id": "cmhn775l500c91eseahc5i0s9",
+        "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
+        "speaker": "Hafsa ELMAIZI"
       },
       {
         "rooms": [
@@ -275,11 +275,11 @@
       },
       {
         "rooms": [
-          "Bio"
+          "F21"
         ],
-        "id": "cmhn775l500c91eseahc5i0s9",
-        "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
-        "speaker": "Hafsa ELMAIZI"
+        "id": "cmh8999v200cq1eocr6qsonxd",
+        "title": "La réactivité et les signaux : démystifions la magie du frontend",
+        "speaker": "Estéban S"
       },
       {
         "rooms": [
@@ -467,11 +467,11 @@
     "12:35": [
       {
         "rooms": [
-          "Bio"
+          "F21"
         ],
-        "id": "cmh898i6n00cn1eocmqh5tv17",
-        "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
-        "speaker": "Estéban S"
+        "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+        "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
+        "speaker": "Stéphane Philippart"
       },
       {
         "rooms": [
@@ -517,11 +517,11 @@
       },
       {
         "rooms": [
-          "F21"
+          "Bio"
         ],
-        "id": "cmfmc8jsu05zqml1e0y7i8gu8",
-        "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
-        "speaker": "Stéphane Philippart"
+        "id": "cmh898i6n00cn1eocmqh5tv17",
+        "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+        "speaker": "Estéban S"
       },
       {
         "rooms": [
