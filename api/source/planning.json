@@ -29,7 +29,7 @@
       },
       {
         "rooms": [
-          "Bio"
+          "F21"
         ],
         "id": "cmh8999v200cq1eocr6qsonxd",
         "title": "La réactivité et les signaux : démystifions la magie du frontend",
@@ -275,7 +275,7 @@
       },
       {
         "rooms": [
-          "F21"
+          "Bio"
         ],
         "id": "cmhn775l500c91eseahc5i0s9",
         "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
@@ -467,7 +467,7 @@
     "12:35": [
       {
         "rooms": [
-          "F21"
+          "Bio"
         ],
         "id": "cmh898i6n00cn1eocmqh5tv17",
         "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
@@ -517,7 +517,7 @@
       },
       {
         "rooms": [
-          "Bio"
+          "F21"
         ],
         "id": "cmfmc8jsu05zqml1e0y7i8gu8",
         "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
