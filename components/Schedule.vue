@@ -229,7 +229,7 @@ function formatName(format: string) {
             <p>
               📋 {{ formatName(talk.formats) }} ({{ duration(talk.formats) }})
             </p>
-            <p>
+            <p v-if="talk.level">
               🎯 {{ levelName(talk.level) }}
             </p>
           </div>
