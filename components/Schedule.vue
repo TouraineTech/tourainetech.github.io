@@ -6,7 +6,14 @@ const props = withDefaults(defineProps<{
 })
 
 const store = useMainStore()
-const day = ref(1)
+const route = useRoute()
+const router = useRouter()
+const day = ref(parseInt(route.query.day as string) || 1)
+
+function setDay(newDay: number) {
+  day.value = newDay
+  router.replace({ query: { ...route.query, day: newDay } })
+}
 
 const talks = computed(() => {
   return store.talks
@@ -148,10 +155,10 @@ function formatName(format: string) {
       <br>
     </template>
     <div class="container-days">
-      <div class="schedule-room--cell" :style="{'opacity' : day === 1 ? 1 : 0.5 }" @click="day=1">
+      <div class="schedule-room--cell" :style="{'opacity' : day === 1 ? 1 : 0.5 }" @click="setDay(1)">
         Jeudi
       </div>
-      <div class="schedule-room--cell" :style="{'opacity' : day === 2 ? 1 : 0.5 }" @click="day=2">
+      <div class="schedule-room--cell" :style="{'opacity' : day === 2 ? 1 : 0.5 }" @click="setDay(2)">
         Vendredi
       </div>
     </div>
@@ -181,7 +188,7 @@ function formatName(format: string) {
       >
         <div v-if="talk.day === day">
           <NuxtLink
-            :to="`/talk/${talk.id}`"
+            :to="`/talk/${talk.id}?day=${day}`"
             :class="{ disabled: talk.id.includes('keynote')}"
           >
             <h4 class="schedule-title">
