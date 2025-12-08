@@ -67,7 +67,6 @@
       </div>
     </div>
 
-    <!-- Lightbox premium pour le t-shirt -->
     <ImageLightbox
       v-model="showLightbox"
       :src="tshirtImg"
@@ -81,6 +80,7 @@
 
 <script setup>
 import tshirtImg from '~/assets/img/tshirt.jpg'
+import ImageLightbox from "./ImageLightbox.vue";
 
 const showLightbox = ref(false)
 </script>
@@ -234,8 +234,7 @@ const showLightbox = ref(false)
     display: flex;
     align-items: center;
   }
-
-  // Ajout d'un élément invisible pour maintenir l'alignement
+  
   &:not(.PriceBloc--early):after {
     content: "";
     height: 1.8em;
@@ -326,7 +325,6 @@ const showLightbox = ref(false)
   }
 }
 
-// Mode fermé pour toute la section
 .register-card--closed {
   position: relative;
   overflow: hidden;
@@ -415,7 +413,6 @@ const showLightbox = ref(false)
   }
 }
 
-// Désactive le zoom de la carte pour le bloc t-shirt
 .PriceBloc--tshirt {
   &:hover {
     transform: none;
