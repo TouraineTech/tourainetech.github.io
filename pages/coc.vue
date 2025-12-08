@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="page--coc container--white">
     <h1>Code de conduite pour la conférence</h1>
@@ -5,9 +8,9 @@
     <p>
       Toutes les personnes participant à la conférence,
       y compris sponsors et bénévoles
-      s'engagent à accepter le code d'éthique et de déontologie, ou « code de conduite » suivant.
+      s'engagent à accepter le code d'éthique et de déontologie, ou « code de conduite » suivant.
       L'organisation s'attachera à faire respecter ce code durant l'événement.
-      Nous attendons la coopération de chacun‧e pour assurer un environnement sain pour tou‧te‧s.
+      Nous attendons la coopération de chacun·e pour assurer un environnement sain pour tou·te·s.
     </p>
 
     <h2>La version rapide</h2>
@@ -17,7 +20,7 @@
       votre sexe, votre identité sexuelle, votre âge, votre orientation
       sexuelle, votre handicap, votre apparence physique, votre poids, votre
       race ou votre religion. Nous ne tolérons aucun harcèlement des
-      participant‧e‧s à la conférence, sous quelque forme que ce soit.
+      participant·e·s à la conférence, sous quelque forme que ce soit.
       Les expressions et les images à connotation sexuelle ne sont pas appropriées
       lors de l'événement. Ceci inclut les conférences, les ateliers, les soirées,
       Twitter et les autres médias en ligne.
@@ -39,7 +42,7 @@
     </p>
 
     <p>
-      Les participant‧e‧s à qui il sera demandé d'arrêter tout comportement de
+      Les participant·e·s à qui il sera demandé d'arrêter tout comportement de
       harcèlement doivent arrêter immédiatement.
     </p>
 
@@ -59,15 +62,15 @@
     </p>
 
     <p>
-      Si vous vous sentez harcelé‧e, si vous pensez que quelqu'un se fait
+      Si vous vous sentez harcelé·e, si vous pensez que quelqu'un se fait
       harceler, et plus généralement en cas de problème, merci de contacter
-      immédiatement l’équipe d’organisation de l'événement. L'organisation s'assure
+      immédiatement l'équipe d'organisation de l'événement. L'organisation s'assure
       que ses membres sont facilement identifiables (badge, brassard, tour de cou,
       t-shirt…) présentés au début de la conférence.
     </p>
 
     <p>
-      Les membres de l'organisation seront ravi‧e‧s d'aider les participants à
+      Les membres de l'organisation seront ravi·e·s d'aider les participants à
       contacter la sécurité de l'hôtel ou du bâtiment où se déroule l'événement,
       ou les forces de l'ordre ; à fournir une escorte ainsi qu'à aider de toute
       autre façon les personnes victimes de harcèlement, pour garantir leur
@@ -76,7 +79,7 @@
     </p>
 
     <p>
-      Nous attendons de chacun‧e le respect de ces règles dans le bâtiment
+      Nous attendons de chacun·e le respect de ces règles dans le bâtiment
       des conférences et des ateliers, ainsi que pendant les événements sociaux
       relatifs à la conférence.
     </p>
@@ -94,9 +97,9 @@
             Version originale et crédit:
             <a href="http://2012.jsconf.us/#/about">http://2012.jsconf.us/#/about</a>
             &amp;
-            <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initiative</a><br />
+            <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initiative</a><br>
             Merci d'aider à la traduction et à l'amélioration de ce texte :
-            <a href="https://github.com/confcodeofconduct/confcodeofconduct.com">on github.com</a><br />
+            <a href="https://github.com/confcodeofconduct/confcodeofconduct.com">on github.com</a><br>
 
             Ce texte est sous licence
             <a
@@ -109,8 +112,6 @@
     </div>
   </div>
 </template>
-
-<script></script>
 
 <style lang="scss" scoped>
 .page--coc {

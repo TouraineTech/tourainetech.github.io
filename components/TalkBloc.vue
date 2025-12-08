@@ -1,39 +1,29 @@
+<script setup lang="ts">
+interface Talk {
+  name: string
+  speakers: string[]
+}
+
+const props = withDefaults(defineProps<{
+  talk?: Talk
+}>(), {
+  talk: () => ({ name: '', speakers: [] })
+})
+
+const store = useMainStore()
+const speakers = computed(() => store.getSpeakerForIds(props.talk.speakers))
+</script>
+
 <template>
   <div class="talk--bloc">
     <h3>{{ talk.name }}</h3>
     <div class="talk-speakers--grid">
       <div v-for="speaker in speakers" :key="speaker.name">
-        <SpeakerBloc :speaker="speaker"></SpeakerBloc>
+        <SpeakerBloc :speaker="speaker" />
       </div>
     </div>
   </div>
 </template>
-
-<script>
-  import SpeakerBloc from './SpeakerBloc'
-
-export default {
-  components: {
-    SpeakerBloc
-  },
-  props: {
-    talk: {
-      type: Object,
-      default () {
-        return {
-          name: "",
-          speakers: []
-        }
-      }
-    }
-  },
-  computed: {
-    speakers() {
-      return this.$store.getters.getSpeakerForIds(this.talk.speakers)
-    }
-  }
-}
-</script>
 
 
 <style lang="scss" scoped>

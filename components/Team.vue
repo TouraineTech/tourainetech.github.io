@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const store = useMainStore()
+const team = computed(() => store.team)
+</script>
+
 <template>
   <section
     id="team"
@@ -11,7 +16,7 @@
           :key="p.name"
         >
           <img
-            :src="require(`@/assets/img/team/${p.avatar}`)"
+            :src="`/img/team/${p.avatar}`"
             :alt="p.name"
           >
           <div>{{ p.name }}</div>
@@ -21,20 +26,10 @@
   </section>
 </template>
 
-<script>
-export default {
-  computed: {
-    team() {
-      return this.$store.state.team;
-    }
-  }
-};
-</script>
-
 <style lang="scss" scoped>
 section {
   background: linear-gradient(rgba(white, 0.8), rgba(white, 0.8) 90%),
-    url(~assets/img/team.jpg) 50% 10%;
+    url(/img/team.jpg) 50% 10%;
   background-size: cover;
   min-height: 400px;
 }
