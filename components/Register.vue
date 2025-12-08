@@ -48,11 +48,11 @@
         <div class="PriceBloc-row PriceBloc-row--single">
           <div class="PriceBloc PriceBloc--tshirt">
             <img
-              src="~/assets/img/tshirt.png"
+              src="~/assets/img/tshirt.jpg"
               alt="T-shirt Touraine Tech"
               class="PriceBloc-tshirt-img"
               @click="showLightbox = true"
-            />
+            >
             <h3 class="PriceBloc-title">
               T-shirt
             </h3>
@@ -73,7 +73,7 @@
         <div v-if="showLightbox" class="tshirt-lightbox" @click.self="showLightbox = false">
           <div class="tshirt-lightbox__backdrop" />
           <div class="tshirt-lightbox__content">
-            <button class="tshirt-lightbox__close" @click="showLightbox = false" aria-label="Fermer">
+            <button class="tshirt-lightbox__close" aria-label="Fermer" @click="showLightbox = false">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 6L6 18M6 6l12 12" />
               </svg>
@@ -81,10 +81,10 @@
             <div class="tshirt-lightbox__showcase">
               <div class="tshirt-lightbox__glow" />
               <img
-                src="~/assets/img/tshirt.png"
+                src="~/assets/img/tshirt.jpg"
                 alt="T-shirt Touraine Tech"
                 class="tshirt-lightbox__image"
-              />
+              >
             </div>
             <div class="tshirt-lightbox__info">
               <span class="tshirt-lightbox__badge">Édition 2026</span>
