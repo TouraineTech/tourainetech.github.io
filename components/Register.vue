@@ -46,7 +46,13 @@
           </div>
         </div>
         <div class="PriceBloc-row PriceBloc-row--single">
-          <div class="PriceBloc">
+          <div class="PriceBloc PriceBloc--tshirt">
+            <img
+              src="~/assets/img/tshirt.png"
+              alt="T-shirt Touraine Tech"
+              class="PriceBloc-tshirt-img"
+              @click="showLightbox = true"
+            />
             <h3 class="PriceBloc-title">
               T-shirt
             </h3>
@@ -57,13 +63,61 @@
         </div>
       </div>
       <div class="RegisterHelp">
-        <span>Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
+        <span>Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L'hébergement et le transport ne sont pas inclus dans ce prix.</span>
       </div>
     </div>
+
+    <!-- Lightbox premium pour le t-shirt -->
+    <Teleport to="body">
+      <Transition name="lightbox-fade">
+        <div v-if="showLightbox" class="tshirt-lightbox" @click.self="showLightbox = false">
+          <div class="tshirt-lightbox__backdrop" />
+          <div class="tshirt-lightbox__content">
+            <button class="tshirt-lightbox__close" @click="showLightbox = false" aria-label="Fermer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12" />
+              </svg>
+            </button>
+            <div class="tshirt-lightbox__showcase">
+              <div class="tshirt-lightbox__glow" />
+              <img
+                src="~/assets/img/tshirt.png"
+                alt="T-shirt Touraine Tech"
+                class="tshirt-lightbox__image"
+              />
+            </div>
+            <div class="tshirt-lightbox__info">
+              <span class="tshirt-lightbox__badge">Édition 2026</span>
+              <h3 class="tshirt-lightbox__title">T-shirt Touraine Tech</h3>
+              <p class="tshirt-lightbox__price">20 €</p>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
   </section>
 </template>
 
 <script setup>
+const showLightbox = ref(false)
+
+// Bloque le scroll et ferme avec Escape
+watch(showLightbox, (isOpen) => {
+  document.body.style.overflow = isOpen ? 'hidden' : ''
+})
+
+onMounted(() => {
+  const handleEscape = (e) => {
+    if (e.key === 'Escape' && showLightbox.value) {
+      showLightbox.value = false
+    }
+  }
+  window.addEventListener('keydown', handleEscape)
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handleEscape)
+    document.body.style.overflow = ''
+  })
+})
 </script>
 <style lang="scss" scoped>
 @import "./../assets/scss/variables";
@@ -366,6 +420,240 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.PriceBloc--tshirt {
+  min-height: auto;
+}
+.PriceBloc-tshirt-img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+      0 20px 40px rgba(94, 195, 182, 0.25),
+      0 8px 16px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    transform: translateY(-4px) scale(1.01);
+    transition-duration: 0.1s;
+  }
+}
+
+// Désactive le zoom de la carte pour le bloc t-shirt
+.PriceBloc--tshirt {
+  &:hover {
+    transform: none;
+    box-shadow: 0 4px 18px rgba(60, 60, 60, 0.08);
+  }
+}
+// ============================================
+// LIGHTBOX PREMIUM T-SHIRT
+// ============================================
+.tshirt-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(94, 195, 182, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 70% 80%, rgba(67, 233, 123, 0.1) 0%, transparent 50%),
+      linear-gradient(180deg, rgba(15, 23, 32, 0.97) 0%, rgba(8, 12, 18, 0.99) 100%);
+    backdrop-filter: blur(8px);
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    width: 100%;
+    animation: lightbox-slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 10;
+    backdrop-filter: blur(8px);
+
+    svg {
+      width: 28px;
+      height: 28px;
+      stroke-width: 2.5;
+    }
+
+    &:hover {
+      background: rgba(94, 195, 182, 0.3);
+      border-color: rgba(94, 195, 182, 0.5);
+      transform: scale(1.1) rotate(90deg);
+      box-shadow: 0 0 20px rgba(94, 195, 182, 0.4);
+    }
+
+    &:active {
+      transform: scale(0.95) rotate(90deg);
+    }
+  }
+
+  &__showcase {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  &__glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(94, 195, 182, 0.35) 0%, transparent 70%);
+    filter: blur(40px);
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  &__image {
+    position: relative;
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow:
+      0 25px 50px -12px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(255, 255, 255, 0.05);
+    animation: image-float 4s ease-in-out infinite;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: linear-gradient(135deg, rgba(94, 195, 182, 0.2) 0%, rgba(67, 233, 123, 0.15) 100%);
+    border: 1px solid rgba(94, 195, 182, 0.3);
+    border-radius: 20px;
+    color: #5ec3b6;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  &__price {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+// Animations
+@keyframes lightbox-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes image-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+// Vue Transition
+.lightbox-fade-enter-active {
+  transition: opacity 0.3s ease;
+
+  .tshirt-lightbox__content {
+    animation: lightbox-slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+.lightbox-fade-leave-active {
+  transition: opacity 0.25s ease;
+
+  .tshirt-lightbox__content {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+}
+
+.lightbox-fade-enter-from,
+.lightbox-fade-leave-to {
+  opacity: 0;
+
+  .tshirt-lightbox__content {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
 }
 @media screen and (max-width: $mobile-step) {
   .register-card {
