@@ -197,7 +197,8 @@ function duration(formatId: string) {
 </template>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "sass:color";
+@use "./../assets/scss/variables" as *;
 
 $color-iot: #5dbf48;
 $color-human: #f3d800;
@@ -283,7 +284,7 @@ $color-alien: #066420;
     color: white;
 
     h5 {
-      color: darken(white, 30%);
+      color: color.adjust(white, $lightness: -30%);
     }
   }
 
@@ -303,7 +304,7 @@ $color-alien: #066420;
 
   .schedule-room--duration-level {
     display: inline-block;
-    color: darken(white, 10%);
+    color: color.adjust(white, $lightness: -10%);
     font-size: 0.8rem;
     position: absolute;
     bottom: 5px;
@@ -351,10 +352,10 @@ $color-alien: #066420;
   padding-bottom: 1rem;
   background: repeating-linear-gradient(
       45deg,
-      lighten($color-secondary, 30%),
-      lighten($color-secondary, 30%) 10px,
-      lighten($color-secondary, 35%) 10px,
-      lighten($color-secondary, 35%) 20px
+      color.adjust($color-secondary, $lightness: 30%),
+      color.adjust($color-secondary, $lightness: 30%) 10px,
+      color.adjust($color-secondary, $lightness: 35%) 10px,
+      color.adjust($color-secondary, $lightness: 35%) 20px
   );
 }
 

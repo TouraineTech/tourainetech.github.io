@@ -54,7 +54,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "~/assets/scss/variables" as *;
 
 .socials ul {
   justify-content: center;

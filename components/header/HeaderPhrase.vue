@@ -23,7 +23,7 @@ const configuration = computed(() => store.configuration)
 </template>
 
 <style lang="scss" scoped>
-@import "./../../assets/scss/variables";
+@use "./../../assets/scss/variables" as *;
 
 .HeaderPhrase {
   padding: 1rem;

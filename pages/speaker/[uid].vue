@@ -134,7 +134,8 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "sass:color";
+@use "~/assets/scss/variables" as *;
 
 .container--fix {
   margin-top: 5rem;
@@ -195,7 +196,7 @@ h2 {
 
 div.description--container {
   text-align: left;
-  background-color: lighten($color-secondary, 20%);
+  background-color: color.adjust($color-secondary, $lightness: 20%);
   padding: 2rem;
   margin-top: 2rem;
 

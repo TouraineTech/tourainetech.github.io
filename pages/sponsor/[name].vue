@@ -134,7 +134,8 @@ useHead({
 </style>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "sass:color";
+@use "~/assets/scss/variables" as *;
 
 .container--fix {
   margin-top: 5rem;
@@ -165,7 +166,7 @@ h2 {
 }
 
 div.description--container {
-  background-color: lighten($color-secondary, 20%);
+  background-color: color.adjust($color-secondary, $lightness: 20%);
   padding: 2rem;
 
   p {
@@ -187,7 +188,7 @@ div.description--container {
 }
 
 .job-offer-bloc {
-  background-color: lighten($color-secondary, 20%);
+  background-color: color.adjust($color-secondary, $lightness: 20%);
   margin-top: 2rem;
   margin-bottom: 2rem;
   h3 {

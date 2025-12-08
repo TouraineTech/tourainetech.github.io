@@ -18,7 +18,7 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "./../assets/scss/variables" as *;
 
   .speaker--bloc{
       text-align: center;

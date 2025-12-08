@@ -20,7 +20,7 @@ const configuration = computed(() => store.configuration);
 </script>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "./../assets/scss/variables" as *;
 .Header {
   &-container {
     position: relative;

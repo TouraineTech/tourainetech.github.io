@@ -82,7 +82,8 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "sass:color";
+@use "./../assets/scss/variables" as *;
 
 @media screen and (max-width: $tablet-step - 1) {
   nav {
@@ -134,7 +135,7 @@ nav {
       background-color: white;
       transition: 300ms ease-in-out;
       &:hover {
-        background-color: lighten($color-secondary, 30%);
+        background-color: color.adjust($color-secondary, $lightness: 30%);
       }
       a {
         color: $color-primary;

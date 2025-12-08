@@ -37,7 +37,8 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "sass:color";
+@use "~/assets/scss/variables" as *;
 
 .scrolltotop--container.scrolltotop--visible {
   transform: translateY(0);
@@ -51,7 +52,7 @@ onUnmounted(() => {
   bottom: 2rem;
   right: 2rem;
   padding: 12px;
-  background-color: transparentize($color-primary, 0.5);
+  background-color: color.adjust($color-primary, $alpha: -0.5);
   border-radius: 50%;
   transition: 300ms ease-in-out;
   cursor: pointer;

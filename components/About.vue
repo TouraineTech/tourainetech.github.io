@@ -16,7 +16,7 @@ const store = useMainStore();
 const configuration = computed(() => store.configuration);
 </script>
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "./../assets/scss/variables" as *;
 
 p {
   font-size: 24px;

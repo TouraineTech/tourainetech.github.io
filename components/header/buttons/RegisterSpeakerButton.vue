@@ -13,7 +13,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import "./../../../assets/scss/variables";
+@use "./../../../assets/scss/variables" as *;
 a {
   background-color: $color-primary;
   color: white;

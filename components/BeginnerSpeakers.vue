@@ -74,7 +74,7 @@ const mailLink = `mailto:team@touraine.tech?subject=${encodeURIComponent(
 </template>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "./../assets/scss/variables" as *;
 
 .beginners-card {
   background: #fff;
