@@ -102,7 +102,7 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "~/assets/scss/variables" as *;
 
 @media screen and (max-width: $tablet-step - 1) {
   nav {

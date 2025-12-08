@@ -21,7 +21,7 @@ const speakers = computed(() => store.speakers)
 </template>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/variables";
+@use "~/assets/scss/variables" as *;
 
 .speaker--grid {
   display: grid;

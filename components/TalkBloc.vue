@@ -27,7 +27,7 @@ const speakers = computed(() => store.getSpeakerForIds(props.talk.speakers))
 
 
 <style lang="scss" scoped>
-  @import "./../assets/scss/variables";
+  @use "./../assets/scss/variables" as *;
 
   .talk--bloc{
     display: flex;

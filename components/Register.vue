@@ -66,7 +66,7 @@
 <script setup>
 </script>
 <style lang="scss" scoped>
-@import "./../assets/scss/variables";
+@use "./../assets/scss/variables" as *;
 
 .register-section {
   padding: 4rem 0;

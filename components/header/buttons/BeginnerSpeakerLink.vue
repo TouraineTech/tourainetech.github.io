@@ -6,7 +6,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import "./../../../assets/scss/variables";
+@use "./../../../assets/scss/variables" as *;
 
 .beginner-speakers-link {
   display: block;

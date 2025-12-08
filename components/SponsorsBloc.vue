@@ -27,7 +27,7 @@ const sponsors = computed(() =>
 </template>
 
 <style lang="scss">
-  @import "./../assets/scss/variables";
+  @use "./../assets/scss/variables" as *;
 
   .sponsor-Gold {
     --img-max-width: 300px;
