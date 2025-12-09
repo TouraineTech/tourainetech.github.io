@@ -46,7 +46,13 @@
           </div>
         </div>
         <div class="PriceBloc-row PriceBloc-row--single">
-          <div class="PriceBloc">
+          <div class="PriceBloc PriceBloc--tshirt">
+            <img
+              src="~/assets/img/tshirt.jpg"
+              alt="T-shirt Touraine Tech"
+              class="PriceBloc-tshirt-img"
+              @click="showLightbox = true"
+            >
             <h3 class="PriceBloc-title">
               T-shirt
             </h3>
@@ -57,13 +63,26 @@
         </div>
       </div>
       <div class="RegisterHelp">
-        <span>Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L’hébergement et le transport ne sont pas inclus dans ce prix.</span>
+        <span>Votre billet vous donne accès à toutes les conférences, aux pauses café et aux repas des jeudi et vendredi midi. L'hébergement et le transport ne sont pas inclus dans ce prix.</span>
       </div>
     </div>
+
+    <ImageLightbox
+      v-model="showLightbox"
+      :src="tshirtImg"
+      alt="T-shirt Touraine Tech"
+      badge="Édition 2026"
+      title="T-shirt Touraine Tech"
+      price="20 €"
+    />
   </section>
 </template>
 
 <script setup>
+import tshirtImg from '~/assets/img/tshirt.jpg'
+import ImageLightbox from "./ImageLightbox.vue";
+
+const showLightbox = ref(false)
 </script>
 <style lang="scss" scoped>
 @use "./../assets/scss/variables" as *;
@@ -215,8 +234,7 @@
     display: flex;
     align-items: center;
   }
-
-  // Ajout d'un élément invisible pour maintenir l'alignement
+  
   &:not(.PriceBloc--early):after {
     content: "";
     height: 1.8em;
@@ -307,7 +325,6 @@
   }
 }
 
-// Mode fermé pour toute la section
 .register-card--closed {
   position: relative;
   overflow: hidden;
@@ -366,6 +383,41 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+.PriceBloc--tshirt {
+  min-height: auto;
+}
+.PriceBloc-tshirt-img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+      0 20px 40px rgba(94, 195, 182, 0.25),
+      0 8px 16px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    transform: translateY(-4px) scale(1.01);
+    transition-duration: 0.1s;
+  }
+}
+
+.PriceBloc--tshirt {
+  &:hover {
+    transform: none;
+    box-shadow: 0 4px 18px rgba(60, 60, 60, 0.08);
+  }
 }
 @media screen and (max-width: $mobile-step) {
   .register-card {
