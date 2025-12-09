@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SPEAKERS_DIR = path.join(__dirname, '../assets/img/speakers');
+const SPEAKERS_DIR = path.join(__dirname, '../public/img/speakers');
 const DEFAULT_IMG = path.join(SPEAKERS_DIR, 'default.jpeg');
 const CONFERENCE_HALL_PATH = path.join(__dirname, '../api/generated/conferenceHall.json');
 
