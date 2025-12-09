@@ -527,6 +527,20 @@
       ]
     },
     {
+      "id": "cmgjs3f2q00571epdgt6rsaw6",
+      "title": "Détectives de la prod : résoudre l’enquête avant le crash",
+      "abstract": "Saviez-vous que, derrière les coulisses de vos outils de travail, se cachent des équipes prêtes à intervenir à tout moment ?\n\nCes équipes, souvent discrètes mais essentielles, gèrent des dizaines de projets avec des effectifs réduits.\nMais quand une alerte survient, elles doivent réagir vite. Très vite.\nComment réussir à diagnostiquer et résoudre un incident en pleine production, sans perdre une précieuse seconde ?\n\nDans ce talk je vous emmène au cœur de l'action, où je partage notre méthodologie pour transformer chaque crise en une enquête méthodique et efficace.\nNous explorerons comment des outils bien pensés, une organisation affûtée, et un soupçon d'intuition transforment la gestion d'incidents en une véritable enquête… parfois aussi palpitante qu’une partie de Cluedo.\n\nAu programme : bonnes pratiques de troubleshooting, logging et monitoring, pour que vous repartiez avec des clés concrètes pour dompter les incidents dans vos propres projets.\n\nVous verrez qu'en production, chaque problème cache une histoire… à résoudre en équipe.",
+      "formats": "Conférence (50min)",
+      "categories": "Backend, Cloud, Big Data",
+      "level": "BEGINNER",
+      "speakers": [
+        "Sébastien_Ferrer"
+      ],
+      "languages": [
+        "fr"
+      ]
+    },
+    {
       "id": "cmgjlphf700501epdnp49avm7",
       "title": "IA générative et réchauffement climatique : comment réduire la facture?",
       "abstract": "L’IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…\nLors de cette présentation, nous passerons en revue le véritable coût écologique de l’IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.\nL’objectif : comprendre l’impact de l’IA générative sur l’environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte.",
@@ -910,6 +924,20 @@
       "speakers": [
         "Estelle_Landry_☀️",
         "Emilie_Goubin"
+      ],
+      "languages": [
+        "fr"
+      ]
+    },
+    {
+      "id": "cmfmdbvxs060pml1ewmsj5r4a",
+      "title": "☕️ Toi aussi crée ta CLI boostée à l'IA avec Picocli 🖥️ 🤖",
+      "abstract": "Les CLI (Command Line Interface), tout le monde les utilise et elles existent depuis la nuit des temps.  \nDernièrement, elles reviennent sur le devant de scène avec les CLI boostées à l'IA devenant des vrais collègues de _pair programming_.\n\nSouvent synonymes de gain de productivité, leur création est parfois obscure et peut sembler complexe.  \nC'était le cas il y a quelques décennies, mais depuis quelques années, des langages et Frameworks permettent d'en écrire simplement dans votre langage préféré.  \nJe vous propose d'utiliser un langage qui ne paraît pas, au premier abord, le plus intuitif pour faire une CLI : Java !\n\nMais il sera bien accompagné dans cette tâche : grâce à Picocli et Quarkus, notre CLI aura tout d'une grande, tout en étant simple à développer !  \nEt cerise sur le gâteau : nous créerons un \"vrai\" exécutable grâce à Graal VM.\n\nVenez m'accompagner lors d'une session de live coding permettant de mettre en lumière comment créer une CLI en Java avec Picocli et Quarkus en partant de zéro !\n\nEt qui sait, avec un peu de magie on aura, au final, un vrai assistant intelligent dans notre et terminal 🤖.",
+      "formats": "Conférence (50min)",
+      "categories": "Intelligence Artificielle",
+      "level": "BEGINNER",
+      "speakers": [
+        "Stéphane_Philippart"
       ],
       "languages": [
         "fr"
@@ -1350,8 +1378,8 @@
     {
       "uid": "Emmanuelle_ABOAF",
       "name": "Emmanuelle ABOAF",
-      "bio": "Sourde de naissance, bionique (deux implants cochléaires) et surtout développeuse Fullstack Angular .NET chez Shodo, je lutte chaque jour pour l’accessibilité. Dans mon monde idéal, tout doit être accessible aussi bien dans la vraie vie que sur le Web.",
-      "company": "",
+      "bio": "Sourde de naissance avec deux implants cochléaires, je suis développeuse et coach en accessibilité chez Shodo. Dans mon monde idéal, tout doit être accessible aussi bien dans la vraie vie que sur le Web.",
+      "company": "Shodo",
       "picture": null,
       "twitter": null,
       "github": null
@@ -1514,6 +1542,15 @@
       "name": "Bastien Rousseau",
       "bio": "Tech Lead avec 10 ans d'expérience dans le développement avec une forte affinité pour le Web.\n\nCe qui m'intéresse vraiment c'est ce qu'il y a sous le capot (surtout du Web), les RFC, les spécifications techniques, fouiller le code, les documentations.\nJ'ai une envie de partager mes connaissances à d'autres personnes, que ma curiosité soit contagieuse.\n\nActuellement chez un client, je conçoit et développe des librairies pour un socle Angular avec son Design System et une architecture micro-frontend.\nEt pourquoi pas y ajouter des Web Components ?",
       "company": "Apside",
+      "picture": null,
+      "twitter": null,
+      "github": null
+    },
+    {
+      "uid": "Sébastien_Ferrer",
+      "name": "Sébastien Ferrer",
+      "bio": "Sébastien est ingénieur logiciel chez OVHcloud à Nantes, dans l'équipe SIA (Service Integration & Automation).\nExerçant ce métier depuis maintenant plus de 12 ans, il a toujours aimé vulgariser et partager ses connaissances en public.\n\nIl anime actuellement des conférences autour de la cybersécurité, de la gestion d'incidents et divers autres sujets techniques.\nPortant un grand intérêt pour l'enseignement, il intervient également régulièrement dans certaines écoles et universités.\n\nIl est également passionné par le théâtre, ayant joué 10 ans dans une troupe en région parisienne.",
+      "company": "OVHcloud",
       "picture": null,
       "twitter": null,
       "github": null
@@ -1762,15 +1799,6 @@
       "github": null
     },
     {
-      "uid": "Sébastien_Ferrer",
-      "name": "Sébastien Ferrer",
-      "bio": "Sébastien est ingénieur logiciel chez OVHcloud à Nantes, dans l'équipe SIA (Service Integration & Automation).\nExerçant ce métier depuis maintenant plus de 12 ans, il a toujours aimé vulgariser et partager ses connaissances en public.\n\nIl anime actuellement des conférences autour de la cybersécurité, de la gestion d'incidents et divers autres sujets techniques.\nPortant un grand intérêt pour l'enseignement, il intervient également régulièrement dans certaines écoles et universités.\n\nIl est également passionné par le théâtre, ayant joué 10 ans dans une troupe en région parisienne.",
-      "company": "OVHcloud",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
       "uid": "Gabriel_Augendre",
       "name": "Gabriel Augendre",
       "bio": "I’m Gabriel, technical lead in a software development team at OVHcloud (Lyon, France) and FOSS enthusiast.",
@@ -1807,6 +1835,15 @@
       "github": null
     },
     {
+      "uid": "Stéphane_Philippart",
+      "name": "Stéphane Philippart",
+      "bio": "Durant plus de 20 ans dans le métier \"d'informaticien\" j'ai pu me confronter à beaucoup de technologies différentes. Et c'est cette diversité qui me fait continuer à autant aimer notre métier.\n\nDepuis maintenant 3 ans j'ai la chance d'évoluer au sein d'OVHcloud en tant que developer advocate. Cette position me permet de découvrir de nouvelles technologies ou disciplines comme l’Intelligence Artificielle ou le \"cloud native\" par exemple.\n\nMais mon cœur de vieux développeur Java ne peut pas trop s'éloigner de cette technologie qui est le fil rouge de mes nombreuses années de développeur.\n\nC'est avec humilité que je partage cette expérience mais aussi les nouveautés de notre écosystème à travers mes conférences et le meetup TADx co-créé à Tours.",
+      "company": "OVHcloud",
+      "picture": null,
+      "twitter": null,
+      "github": null
+    },
+    {
       "uid": "Benjamin_Lacroix",
       "name": "Benjamin Lacroix",
       "bio": "Développeur mobile, Web & Back j'aide nos clients à choisir, puis à implémenter la meilleur stack pour leurs besoins.\n\nJ'adore apprendre, bidouiller et entreprendre, je le raconte au détour de différentes conférences : XebiCon, DevFest, Android Makers et en interne.",
@@ -1820,15 +1857,6 @@
       "name": "Jordan NOURRY",
       "bio": "",
       "company": "",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Stéphane_Philippart",
-      "name": "Stéphane Philippart",
-      "bio": "Durant plus de 20 ans dans le métier \"d'informaticien\" j'ai pu me confronter à beaucoup de technologies différentes. Et c'est cette diversité qui me fait continuer à autant aimer notre métier.\n\nDepuis maintenant 3 ans j'ai la chance d'évoluer au sein d'OVHcloud en tant que developer advocate. Cette position me permet de découvrir de nouvelles technologies ou disciplines comme l’Intelligence Artificielle ou le \"cloud native\" par exemple.\n\nMais mon cœur de vieux développeur Java ne peut pas trop s'éloigner de cette technologie qui est le fil rouge de mes nombreuses années de développeur.\n\nC'est avec humilité que je partage cette expérience mais aussi les nouveautés de notre écosystème à travers mes conférences et le meetup TADx co-créé à Tours.",
-      "company": "OVHcloud",
       "picture": null,
       "twitter": null,
       "github": null

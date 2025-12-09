@@ -45,10 +45,10 @@
   {
     "time": "11:10",
     "talk": {
-      "id": "cmfl3j2to043zml1efob6dcdf",
-      "name": "Accessibilité en action : rendre vos formulaires utilisables par tous",
+      "id": "cmhkes3jq006g1esen8ao5y6c",
+      "name": "Comment concevoir et tester un site accessible ?",
       "speakers": [
-        "François-Xavier_Lair"
+        "Emmanuelle_ABOAF"
       ]
     }
   },
@@ -81,10 +81,10 @@
   {
     "time": "12:35",
     "talk": {
-      "id": "cmh898i6n00cn1eocmqh5tv17",
-      "name": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+      "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+      "name": "JBang, un fichier Java pour les gouverner tous ? 💍",
       "speakers": [
-        "Estéban_S"
+        "Stéphane_Philippart"
       ]
     }
   },
