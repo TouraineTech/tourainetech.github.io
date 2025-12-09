@@ -525,8 +525,8 @@
     "level": "INTERMEDIATE"
   },
   {
-    "id": "cmgjlphf700501epdnp49avm7",
-    "title": "IA générative et réchauffement climatique : comment réduire la facture?",
+    "id": "cmfmdbvxs060pml1ewmsj5r4a",
+    "title": "☕️ Toi aussi crée ta CLI boostée à l'IA avec Picocli 🖥️ 🤖",
     "categories": "Intelligence Artificielle",
     "formats": "Conférence (50min)",
     "rooms": [
@@ -537,7 +537,7 @@
       19
     ],
     "day": 1,
-    "level": "INTERMEDIATE"
+    "level": "BEGINNER"
   },
   {
     "id": "cmgds4c25000i1emjxzezk8is",
@@ -983,9 +983,9 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmfo17lm807shml1exdvpdkr3",
-    "title": "Votre code mérite mieux. Offrez-lui un linter !",
-    "categories": "Outils, pratiques de dev",
+    "id": "cmgjs3f2q00571epdgt6rsaw6",
+    "title": "Détectives de la prod : résoudre l’enquête avant le crash",
+    "categories": "Backend, Cloud, Big Data",
     "formats": "Conférence (50min)",
     "rooms": [
       3
@@ -994,7 +994,7 @@
       15
     ],
     "day": 2,
-    "level": "INTERMEDIATE"
+    "level": "BEGINNER"
   },
   {
     "id": "cmfmjg2hg06himl1ed3cyjum6",

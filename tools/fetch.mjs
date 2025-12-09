@@ -45,6 +45,13 @@ async function fetchConferenceHall() {
   proposals = proposals.filter(p => statusList.includes(p.deliberationStatus));
   console.log(`🔍 Filtered to ${proposals.length} proposals (status: ${status})`);
 
+  // Exclude declined proposals
+  const beforeDeclined = proposals.length;
+  proposals = proposals.filter(p => p.confirmationStatus !== 'DECLINED');
+  if (beforeDeclined !== proposals.length) {
+    console.log(`🚫 Excluded ${beforeDeclined - proposals.length} declined proposals`);
+  }
+
   // Save raw data
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(proposals, null, 2));
   console.log(`✅ Saved to ${OUTPUT_PATH}`);

@@ -126,11 +126,10 @@
   {
     "time": "14:30",
     "talk": {
-      "id": "cmfo17lm807shml1exdvpdkr3",
-      "name": "Votre code mérite mieux. Offrez-lui un linter !",
+      "id": "cmgjs3f2q00571epdgt6rsaw6",
+      "name": "Détectives de la prod : résoudre l’enquête avant le crash",
       "speakers": [
-        "Sébastien_Ferrer",
-        "Gabriel_Augendre"
+        "Sébastien_Ferrer"
       ]
     }
   },

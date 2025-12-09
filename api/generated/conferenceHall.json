@@ -541,21 +541,6 @@
       ]
     },
     {
-      "id": "cmgjlphf700501epdnp49avm7",
-      "title": "IA générative et réchauffement climatique : comment réduire la facture?",
-      "abstract": "L’IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…\nLors de cette présentation, nous passerons en revue le véritable coût écologique de l’IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.\nL’objectif : comprendre l’impact de l’IA générative sur l’environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte.",
-      "formats": "Conférence (50min)",
-      "categories": "Intelligence Artificielle",
-      "level": "INTERMEDIATE",
-      "speakers": [
-        "Arielle_Villa-Massone",
-        "Emilie_GREFF"
-      ],
-      "languages": [
-        "fr"
-      ]
-    },
-    {
       "id": "cmgi079ue00271emj06wwt4nr",
       "title": "La face cachée de la performance des équipes de développements",
       "abstract": "En tant que coach craft et devops, j'accompagne au quotidien des équipes de développements. Je suis à leur écoute, je prends en compte leur besoin et j'essaie de comprendre ce qui les ralentit. \nFort de mon expérience depuis plus de 17 ans maintenant, j'ai identifié petit à petit les \"vrais\" bloqueurs ou ralentisseurs de ces équipes. Et j'ai découvert notamment qu'un développeur était interrompu **1 fois toutes les 4 minutes dans son quotidien de travail**, soit environ 15 fois par heure. \nCela a pour effet d'avoir un impact négatif sur votre mémoire de travail et donc sur votre performance. \n\nAlors faut il encore penser que ce qui ralentit le plus les équipes, ce sont les processus ou les outils ?\n\nA travers cette conférence, je souhaite vous révéler les **4/5 ralentisseurs invisibles les plus impactants** dans votre quotidien. Nous comprendrons ensemble également pas à pas leur impact négatif sur les équipes et sur les temps de réalisation de nos tâches. Tout cela avec l'appui d'étude et de références scientifiques pertinentes. Pour terminer, vous présenterai également les perspectives possibles en 2026 qui pourraient être mise dans votre organisation.",
@@ -880,21 +865,6 @@
       "level": "INTERMEDIATE",
       "speakers": [
         "Thibault_Monégier_du_Sorbier"
-      ],
-      "languages": [
-        "fr"
-      ]
-    },
-    {
-      "id": "cmfo17lm807shml1exdvpdkr3",
-      "title": "Votre code mérite mieux. Offrez-lui un linter !",
-      "abstract": "Vous ne savez pas ce qu'est un **linter** ? Vous en avez déjà entendu parler sans vraiment comprendre son **utilité** ? Vous utilisez déjà un linter au quotidien, mais vous aimeriez aller plus loin en le **personnalisant** selon vos besoins ? Ce talk est fait pour vous !\n\nDans cette présentation, nous **démystifierons** le concept de linter, en expliquant son rôle fondamental dans l'amélioration de la **qualité** du code et **l'automatisation** des bonnes pratiques. Nous explorerons les bases de leur fonctionnement, avant de passer à la pratique en construisant, étape par étape, un linter personnalisé. À l’issue de cette session, vous repartirez avec les **connaissances** et les **outils** nécessaires pour créer et partager **votre propre linter**, adapté à votre équipe ou à la communauté open source.\n\nQue vous soyez **débutant** ou développeur **expérimenté**, venez découvrir comment un linter bien conçu peut transformer votre manière de coder !\n\nNous utiliserons le langage Go pour nos exemples tout en proposant des ouvertures vers de l'outillage pour d'autres langages de programmation.",
-      "formats": "Conférence (50min)",
-      "categories": "Outils, pratiques de dev",
-      "level": "INTERMEDIATE",
-      "speakers": [
-        "Sébastien_Ferrer",
-        "Gabriel_Augendre"
       ],
       "languages": [
         "fr"
@@ -1556,24 +1526,6 @@
       "github": null
     },
     {
-      "uid": "Arielle_Villa-Massone",
-      "name": "Arielle Villa-Massone",
-      "bio": "Passionnée par les enjeux environnementaux, Arielle est une experte en IA, actuellement MLOps Engineer chez Octo Technology. Dans son rôle, elle participe au déploiement et à la maintenance des pipelines de machine learning au sein de diverses équipes clientes. Elle œuvre également à diffuser les bonnes pratiques d’écoconception de l’IA auprès de ses collègues et clients, visant à réduire l’empreinte environnementale de l’IA en production.\nhttps://www.linkedin.com/in/ariellevillamassone/",
-      "company": "OCTO Technology",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Emilie_GREFF",
-      "name": "Emilie GREFF",
-      "bio": "",
-      "company": "",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
       "uid": "geoffrey_graveaud",
       "name": "geoffrey graveaud",
       "bio": "I have been working in the field of computer science for over 15 years. \n\nI am interested in all areas:  DevSecOps, Software Craftmanship, Security,  Agility, Method, Product  etc…\n\nI gained extensive experience because I had the opportunity to work for thirty different organizations. \n\nIn my last experiences, I was CTO, Coach, Head of a consulting department, speaker, trainer, facilitator and event organizer.\n\nI have been a speaker for 2 years (Voxxed Days, DevOxx, DevFest Agile Tour, MixIt, JugSummerCamp, Sunny Tech, BDX.io, etc.) \n\nCurrently, I am passionate about speaking coaching. In 1 year and half, I have already accompanied several 32 people especially for the preparation of TEDX, School of Product, for the contest of Miss Aquitaine, Opening Keynotes and for the springboards of speakers of Craft Records.\n\nThis year, I accompagny the [Craft Records association](https://www.linkedin.com/company/craftsrecords/) and [Women In Tech Bordeaux](https://www.meetup.com/fr-FR/women-in-tech-bordeaux/).  Since May, I challenge myself to coach a team of coaches for speaking for the \"Tremplin des speakers Bordeaux\"",
@@ -1794,15 +1746,6 @@
       "name": "Thibault Monégier du Sorbier",
       "bio": "Après de multiples expériences chez des acteurs du monde de la finance, je suis maintenant Staff Engineer à la Digital Factory de Bpifrance.\nJe participe à la plateformisation du Digital afin de créer le socle qui sera mis à disposition en self service pour permettre l'implémentation des futurs produits digitaux de Bpifrance.\nMa mission consiste essentiellement à creuser les sujets durs des équipes pour leur permettre d'avoir l'ensemble des cadres et standards nécessaires pour l'industrialisation de leur développement. C'est dans ce cadre que je m'intéresse aux sujets de formation des développeurs (bonnes pratiques, standards d'architectures) mais aussi aux sujets de recherche (autour de l'IA essentiellement)\n\nJe suis également co-organisateur du Spring Meetup sur Paris, avec l'organisation d'un évent par mois autour de l'utilisation de SpringBoot dans les projets.",
       "company": "Bpifrance",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Gabriel_Augendre",
-      "name": "Gabriel Augendre",
-      "bio": "I’m Gabriel, technical lead in a software development team at OVHcloud (Lyon, France) and FOSS enthusiast.",
-      "company": "OVHcloud",
       "picture": null,
       "twitter": null,
       "github": null
