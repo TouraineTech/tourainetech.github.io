@@ -5,7 +5,7 @@ const route = useRoute()
 const store = useMainStore()
 
 const sponsor = computed(() =>
-  store.sponsors.find((s) => s.id === route.params.name),
+  store.sponsors.find(s => s.id === route.params.name),
 )
 
 if (!sponsor.value) {

@@ -1,8 +1,12 @@
-import SPONSORS from './api/sponsors.json'
+import { readFileSync } from 'node:fs'
+import { parse as parseYaml } from 'yaml'
+import yaml from '@rollup/plugin-yaml'
 import { speakers as SPEAKERS, talks as TALKS } from './api/generated/conferenceHall.json'
 import DAYS from './api/config/days.json'
 import ROOMS from './api/config/rooms.json'
 import CONFIGURATION from './assets/configuration'
+
+const SPONSORS = parseYaml(readFileSync('./api/sponsors.yaml', 'utf-8')) as Array<{ id: string }>
 
 const title = `Touraine Tech 20${CONFIGURATION.eventEdition} - Conférence sur les nouvelles technologies du numérique`
 const description = 'La conférence technique en région centre sur les nouvelles technologies du numérique'
@@ -72,6 +76,7 @@ export default defineNuxtConfig({
   ],
 
   vite: {
+    plugins: [yaml()],
     css: {
       preprocessorOptions: {
         scss: {
