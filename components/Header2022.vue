@@ -5,10 +5,10 @@
         <HeaderPhrase></HeaderPhrase>
       </div>
       <div class="Header-buttons">
-        <SeeScheduleButton v-if="configuration.isScheduleOnline"></SeeScheduleButton>
-        <RegisterSpeakerButton v-if="configuration.isCfpOpen"></RegisterSpeakerButton>
-        <BeginnerSpeakerLink v-if="configuration.isCfpOpen"></BeginnerSpeakerLink>
-        <RegisterAttendeeButton v-if="configuration.isRegisterOpen && !configuration.isSoldOut"></RegisterAttendeeButton>
+        <HeaderButtonsSeeScheduleButton v-if="configuration.isScheduleOnline" />
+        <HeaderButtonsRegisterSpeakerButton v-if="configuration.isCfpOpen" />
+        <HeaderButtonsBeginnerSpeakerLink v-if="configuration.isCfpOpen" />
+        <HeaderButtonsRegisterAttendeeButton v-if="configuration.isRegisterOpen && !configuration.isSoldOut" />
       </div>
     </div>
   </section>
