@@ -133,9 +133,7 @@ export const useMainStore = defineStore('main', {
     team: (TEAM as TeamMember[]).sort((a, b) => a.name.localeCompare(b.name)),
     talks: addPlanningToTalks(CONFERENCE_HALL.talks as Talk[]),
     breaks: BREAKS as Break[],
-    speakers: (CONFERENCE_HALL.speakers as Speaker[]).sort((a, b) =>
-      a.uid.localeCompare(b.uid),
-    ),
+    speakers: CONFERENCE_HALL.speakers as Speaker[],
     categories: CONFERENCE_HALL.categories as Category[],
     formats: CONFERENCE_HALL.formats as Format[],
     times: TIMES as Time[],
