@@ -1,56 +1,79 @@
 <script setup lang="ts">
 import Showdown from 'showdown'
 import CONFIGURATION from '~/assets/configuration'
+import CONFERENCE_HALL from '~/api/generated/conferenceHall.json'
+import PLANNING from '~/api/generated/schedule.json'
+import TIMES from '~/api/config/times.json'
+import ROOMS from '~/api/config/rooms.json'
 
 const route = useRoute()
-const store = useMainStore()
-const converter = new Showdown.Converter()
 
-const rawTalk = computed(() =>
-  store.talks.find((t) => t.id === route.params.id),
-)
+const { data: pageData } = await useAsyncData(`talk-${route.params.id}`, () => {
+  const converter = new Showdown.Converter()
 
-if (!rawTalk.value) {
+  // Build talks with planning data
+  const planningByTalkId: Record<string, { rooms: number[]; times: number[]; day: number }> = {}
+  PLANNING.forEach((p) => {
+    planningByTalkId[p.id] = p
+  })
+
+  const allTalks = CONFERENCE_HALL.talks
+    .filter((t) => {
+      const planning = planningByTalkId[t.id]
+      return planning && planning.rooms.length > 0 && planning.times.length > 0 && planning.day
+    })
+    .map((t) => {
+      const planning = planningByTalkId[t.id]
+      return { ...t, ...planning }
+    })
+
+  const rawTalk = allTalks.find((t) => t.id === route.params.id)
+
+  if (!rawTalk) {
+    return null
+  }
+
+  const timeData = TIMES[rawTalk.times?.[0] ?? 0]
+  const roomName = ROOMS[(rawTalk.rooms?.[0] ?? 1) - 1]
+
+  const talk = {
+    ...rawTalk,
+    times: timeData?.time?.replace(':', 'h') ?? '',
+    day: rawTalk.day === 1 ? 'Jeudi' : 'Vendredi',
+    rooms: roomName,
+  }
+
+  const speakers = rawTalk.speakers
+    .map((uid) => CONFERENCE_HALL.speakers.find((s) => s.uid === uid))
+    .filter((s): s is (typeof CONFERENCE_HALL.speakers)[number] => s !== undefined)
+
+  const abstractHTML = converter.makeHtml(talk.abstract || '')
+
+  return { talk, speakers, abstractHTML }
+})
+
+if (!pageData.value) {
   throw createError({ statusCode: 404, message: 'Talk not found' })
 }
 
-const talk = computed(() => {
-  const t = rawTalk.value
-  if (!t) return null
-  const timeData = store.times[t.times?.[0] ?? 0]
-  const roomName = store.rooms[(t.rooms?.[0] ?? 1) - 1]
-  return {
-    ...t,
-    times: timeData?.time?.replace(':', 'h') ?? '',
-    day: t.day === 1 ? 'Jeudi' : 'Vendredi',
-    rooms: roomName,
-  }
-})
+const { talk, speakers, abstractHTML } = pageData.value
 
-const speakers = computed(() =>
-  store.speakers.filter((s) => rawTalk.value?.speakers.includes(s.uid)),
-)
-
-const abstractHTML = computed(() => converter.makeHtml(talk.value?.abstract || ''))
-
-const title = computed(
-  () => `Touraine Tech 20${CONFIGURATION.eventEdition} - ${talk.value?.title}`,
-)
-const url = computed(() => `https://touraine.tech/talk/${talk.value?.id}`)
+const title = `Touraine Tech 20${CONFIGURATION.eventEdition} - ${talk.title}`
+const url = `https://touraine.tech/talk/${talk.id}`
 
 useHead({
-  title: title.value,
+  title,
   meta: [
-    { hid: 'description', name: 'description', content: talk.value?.title },
-    { hid: 'ogtitle', property: 'og:title', content: title.value },
-    { hid: 'ogdescription', property: 'og:description', content: talk.value?.title },
+    { hid: 'description', name: 'description', content: talk.title },
+    { hid: 'ogtitle', property: 'og:title', content: title },
+    { hid: 'ogdescription', property: 'og:description', content: talk.title },
     { hid: 'ogtype', property: 'og:type', content: 'website' },
-    { hid: 'ogurl', property: 'og:url', content: url.value },
+    { hid: 'ogurl', property: 'og:url', content: url },
     { hid: 'oglocale', property: 'og:locale', content: 'fr_FR' },
     { hid: 'twittercard', name: 'twitter:card', content: 'summary' },
-    { hid: 'twittertitle', name: 'twitter:title', content: title.value },
-    { hid: 'twitterdescription', name: 'twitter:description', content: talk.value?.title },
-    { hid: 'twitterimagealt', name: 'twitter:image:alt', content: `Logo ${talk.value?.title}` },
+    { hid: 'twittertitle', name: 'twitter:title', content: title },
+    { hid: 'twitterdescription', name: 'twitter:description', content: talk.title },
+    { hid: 'twitterimagealt', name: 'twitter:image:alt', content: `Logo ${talk.title}` },
   ],
 })
 </script>
@@ -72,7 +95,7 @@ useHead({
     </div>
     <div class="description--container">
       <!-- eslint-disable-next-line vue/no-v-html -->
-      <p v-html="abstractHTML" />
+      <div v-html="abstractHTML" />
       <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
         <p
           v-for="slidesLink of talk.slidesLinks"

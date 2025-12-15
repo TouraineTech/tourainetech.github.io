@@ -129,44 +129,27 @@ function addPlanningToTalks(talks: Talk[]): Talk[] {
 
 export const useMainStore = defineStore('main', {
   state: () => ({
-    sponsors: [] as Sponsor[],
-    team: [] as TeamMember[],
-    talks: [] as Talk[],
-    speakers: [] as Speaker[],
-    breaks: [] as Break[],
-    categories: [] as Category[],
-    formats: [] as Format[],
-    times: [] as Time[],
-    rooms: [] as string[],
-    days: [] as number[],
-    photos: [] as Photo[],
-    configuration: {} as typeof CONFIGURATION,
+    sponsors: SPONSORS as Sponsor[],
+    team: (TEAM as TeamMember[]).sort((a, b) => a.name.localeCompare(b.name)),
+    talks: addPlanningToTalks(CONFERENCE_HALL.talks as Talk[]),
+    breaks: BREAKS as Break[],
+    speakers: (CONFERENCE_HALL.speakers as Speaker[]).sort((a, b) =>
+      a.uid.localeCompare(b.uid),
+    ),
+    categories: CONFERENCE_HALL.categories as Category[],
+    formats: CONFERENCE_HALL.formats as Format[],
+    times: TIMES as Time[],
+    rooms: ROOMS as string[],
+    days: DAYS as number[],
+    photos: (PHOTOS as Photo[]).sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+    ),
+    configuration: CONFIGURATION,
   }),
 
   getters: {
     getSpeakerForIds: (state) => {
       return (ids: string[]) => state.speakers.filter(({ uid }) => ids.includes(uid))
-    },
-  },
-
-  actions: {
-    init() {
-      this.sponsors = SPONSORS as Sponsor[]
-      this.team = (TEAM as TeamMember[]).sort((a, b) => a.name.localeCompare(b.name))
-      this.talks = addPlanningToTalks(CONFERENCE_HALL.talks as Talk[])
-      this.breaks = BREAKS as Break[]
-      this.speakers = (CONFERENCE_HALL.speakers as Speaker[]).sort((a, b) =>
-        a.uid.localeCompare(b.uid),
-      )
-      this.categories = CONFERENCE_HALL.categories as Category[]
-      this.formats = CONFERENCE_HALL.formats as Format[]
-      this.times = TIMES as Time[]
-      this.rooms = ROOMS as string[]
-      this.photos = (PHOTOS as Photo[]).sort(
-        (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-      )
-      this.days = DAYS as number[]
-      this.configuration = CONFIGURATION
     },
   },
 })
