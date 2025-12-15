@@ -141,6 +141,18 @@ function formatName(format: string) {
   const match = format?.match(/^([^(]+)/)
   return match ? match[1].trim() : format
 }
+
+// OpenFeedback URL builder
+const OPENFEEDBACK_EVENT_ID = 'nIlFquxGUZ1IJ1cDkc1z'
+const DATE_BY_DAY: Record<number, string> = {
+  1: '2026-02-12', // Jeudi
+  2: '2026-02-13'  // Vendredi
+}
+
+function getOpenFeedbackUrl(talkId: string, talkDay: number) {
+  const date = DATE_BY_DAY[talkDay] || DATE_BY_DAY[1]
+  return `https://openfeedback.io/${OPENFEEDBACK_EVENT_ID}/${date}/${talkId}`
+}
 </script>
 
 <template>
@@ -233,6 +245,15 @@ function formatName(format: string) {
               </a>
             </p>
           </span>
+          <a
+            v-if="!talk.id.includes('keynote') && !talk.id.includes('dummy')"
+            :href="getOpenFeedbackUrl(talk.id, talk.day)"
+            target="_blank"
+            class="schedule-talk-feedback"
+            title="Donner votre feedback"
+          >
+            <img class="icon" src="/img/feedback.svg" alt="Feedback" />
+          </a>
           <div class="schedule-room--duration-level" v-if="talk.formats">
             <p>
               📋 {{ formatName(talk.formats) }} ({{ duration(talk.formats) }})
@@ -516,5 +537,37 @@ $color-ia: #9b59b6;
 #dummy1 ul.schedule-talk-category,
 #dummy2 ul.schedule-talk-category{
   visibility: hidden;
+}
+
+// Feedback link - positioned bottom right with teal glow on hover
+.schedule-talk-feedback {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba($color-secondary, 0.15);
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    background: $color-secondary;
+    box-shadow: 0 0 16px rgba($color-secondary, 0.6);
+    transform: scale(1.1);
+
+    .icon {
+      transform: scale(1.1);
+    }
+  }
 }
 </style>
