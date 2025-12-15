@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generate OpenFeedback JSON file
+ * Generate OpenFeedback JSON file from planning source
  * Usage: node tools/generateOpenfeedback.mjs
  */
 import fs from 'fs';
@@ -14,15 +14,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load data
-const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/schedule.json'), 'utf8'));
+const planning = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/planning.json'), 'utf8'));
 const { talks, speakers: speakersData } = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/conferenceHall.json'), 'utf8'));
-const times = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/config/times.json'), 'utf8'));
-const rooms = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/config/rooms.json'), 'utf8'));
 
 // Config
 const DATE_BY_DAY = {
-  1: '2026-02-05',
-  2: '2026-02-06'
+  jeudi: '2026-02-12',
+  vendredi: '2026-02-13'
 };
 
 const EXCLUDED_IDS = [
@@ -43,29 +41,36 @@ function getDuration(formatStr) {
 
 // Generate sessions
 const sessions = {};
-for (const slot of schedule) {
-  if (EXCLUDED_IDS.includes(slot.id)) continue;
 
-  const talk = talksById[slot.id];
-  if (!talk) continue;
+for (const [dayName, slots] of Object.entries(planning)) {
+  const dateStr = DATE_BY_DAY[dayName];
+  if (!dateStr) {
+    console.warn(`⚠️ Unknown day: ${dayName}`);
+    continue;
+  }
 
-  const timeIdx = slot.times[0];
-  const timeObj = times[timeIdx];
-  if (!timeObj) continue;
+  for (const [timeStr, sessionList] of Object.entries(slots)) {
+    for (const slot of sessionList) {
+      if (EXCLUDED_IDS.includes(slot.id)) continue;
 
-  const startTime = parseISO(`${DATE_BY_DAY[slot.day]}T${timeObj.time}:00`);
-  const duration = getDuration(slot.formats);
-  const endTime = addMinutes(startTime, duration);
+      const talk = talksById[slot.id];
+      if (!talk) continue;
 
-  sessions[slot.id] = {
-    id: slot.id,
-    title: slot.title,
-    trackTitle: rooms[slot.rooms[0] - 1] || 'Unknown',
-    tags: [slot.categories, slot.formats].filter(Boolean),
-    speakers: talk.speakers || [],
-    startTime: formatISO(startTime),
-    endTime: formatISO(endTime),
-  };
+      const startTime = parseISO(`${dateStr}T${timeStr}:00`);
+      const duration = getDuration(talk.formats);
+      const endTime = addMinutes(startTime, duration);
+
+      sessions[slot.id] = {
+        id: slot.id,
+        title: slot.title,
+        trackTitle: slot.rooms[0] || 'Unknown',
+        tags: [talk.categories, talk.formats].filter(Boolean),
+        speakers: talk.speakers || [],
+        startTime: formatISO(startTime),
+        endTime: formatISO(endTime),
+      };
+    }
+  }
 }
 
 // Generate speakers
@@ -82,7 +87,7 @@ for (const speaker of speakersData) {
   speakers[speaker.uid] = {
     id: speaker.uid,
     name: speaker.name,
-    photoUrl: `https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/assets/img/speakers/${speaker.uid}.png`,
+    photoUrl: `https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/${speaker.uid}.png`,
     socials,
   };
 }

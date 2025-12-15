@@ -20,7 +20,8 @@
     "planning:build": "node tools/build.mjs",
     "planning:validate": "node tools/build.mjs --validate-only",
     "planning:photos": "node tools/photos.mjs",
-    "planning:all": "npm run planning:build && npm run planning:photos",
+    "planning:openfeedback": "node tools/generateOpenfeedback.mjs",
+    "planning:all": "pnpm run planning:build && pnpm run planning:photos && pnpm run planning:openfeedback",
     "extract:timerDatas": "node tools/timerJsonBuilder.mjs",
     "extract:flickr": "node tools/flickr.mjs"
   },
