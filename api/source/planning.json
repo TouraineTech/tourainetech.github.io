@@ -217,9 +217,10 @@
         "rooms": [
           "Bio"
         ],
-        "id": "cmhurnq7v00081eqwwkn03wlr",
-        "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
-        "speaker": "Antoine DESSAIGNE"
+        "id": "cmfl5qm6y049qml1eqf13uojk",
+        "title": "J'ai packagé mon application en image Docker, et maintenant ?",
+        "speaker": "Aurélie Vache"
+
       },
       {
         "rooms": [
@@ -637,9 +638,9 @@
         "rooms": [
           "Physique"
         ],
-        "id": "cmfl5qm6y049qml1eqf13uojk",
-        "title": "J'ai packagé mon application en image Docker, et maintenant ?",
-        "speaker": "Aurélie Vache"
+        "id": "cmhurnq7v00081eqwwkn03wlr",
+        "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+        "speaker": "Antoine DESSAIGNE"
       }
     ],
     "16:35": [

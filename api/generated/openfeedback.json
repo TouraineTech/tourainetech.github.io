@@ -344,16 +344,16 @@
       "startTime": "2026-02-12T13:30:00+01:00",
       "endTime": "2026-02-12T14:20:00+01:00"
     },
-    "cmhurnq7v00081eqwwkn03wlr": {
-      "id": "cmhurnq7v00081eqwwkn03wlr",
-      "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+    "cmfl5qm6y049qml1eqf13uojk": {
+      "id": "cmfl5qm6y049qml1eqf13uojk",
+      "title": "J'ai packagé mon application en image Docker, et maintenant ?",
       "trackTitle": "Bio",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Antoine_DESSAIGNE"
+        "Aurélie_Vache"
       ],
       "startTime": "2026-02-12T13:30:00+01:00",
       "endTime": "2026-02-12T14:20:00+01:00"
@@ -1012,16 +1012,16 @@
       "startTime": "2026-02-13T15:45:00+01:00",
       "endTime": "2026-02-13T16:35:00+01:00"
     },
-    "cmfl5qm6y049qml1eqf13uojk": {
-      "id": "cmfl5qm6y049qml1eqf13uojk",
-      "title": "J'ai packagé mon application en image Docker, et maintenant ?",
+    "cmhurnq7v00081eqwwkn03wlr": {
+      "id": "cmhurnq7v00081eqwwkn03wlr",
+      "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
       "trackTitle": "Physique",
       "tags": [
         "Backend, Cloud, Big Data",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Aurélie_Vache"
+        "Antoine_DESSAIGNE"
       ],
       "startTime": "2026-02-13T15:45:00+01:00",
       "endTime": "2026-02-13T16:35:00+01:00"
