@@ -94,7 +94,7 @@ for (const speaker of speakersData) {
 
 // Write output
 const output = { sessions, speakers };
-const outputPath = path.join(__dirname, '../api/openfeedback.json');
+const outputPath = path.join(__dirname, '../api/generated/openfeedback.json');
 
 fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 console.log(`✅ OpenFeedback file generated: ${outputPath}`);
