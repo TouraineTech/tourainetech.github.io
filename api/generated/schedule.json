@@ -645,9 +645,9 @@
     "level": "INTERMEDIATE"
   },
   {
-    "id": "cmgi079ue00271emj06wwt4nr",
-    "title": "La face cachée de la performance des équipes de développements",
-    "categories": "Alien",
+    "id": "cmfthbs3r00581ekebwe0h562",
+    "title": "Pairing is caring!",
+    "categories": "Humain & Tech",
     "formats": "Conférence (50min)",
     "rooms": [
       4
@@ -656,7 +656,7 @@
       3
     ],
     "day": 2,
-    "level": "BEGINNER"
+    "level": "INTERMEDIATE"
   },
   {
     "id": "cmhkes3jq006g1esen8ao5y6c",
@@ -927,9 +927,9 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmfthbs3r00581ekebwe0h562",
-    "title": "Pairing is caring!",
-    "categories": "Humain & Tech",
+    "id": "cmgi079ue00271emj06wwt4nr",
+    "title": "La face cachée de la performance des équipes de développements",
+    "categories": "Alien",
     "formats": "Conférence (50min)",
     "rooms": [
       3
@@ -938,7 +938,7 @@
       13
     ],
     "day": 2,
-    "level": "INTERMEDIATE"
+    "level": "BEGINNER"
   },
   {
     "id": "cmfpr4j8d00191el7dfaur789",

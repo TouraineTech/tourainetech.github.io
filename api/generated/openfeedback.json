@@ -598,16 +598,16 @@
       "startTime": "2026-02-13T10:10:00+01:00",
       "endTime": "2026-02-13T11:00:00+01:00"
     },
-    "cmgi079ue00271emj06wwt4nr": {
-      "id": "cmgi079ue00271emj06wwt4nr",
-      "title": "La face cachée de la performance des équipes de développements",
+    "cmfthbs3r00581ekebwe0h562": {
+      "id": "cmfthbs3r00581ekebwe0h562",
+      "title": "Pairing is caring!",
       "trackTitle": "Physique",
       "tags": [
-        "Alien",
+        "Humain & Tech",
         "Conférence (50min)"
       ],
       "speakers": [
-        "geoffrey_graveaud"
+        "Olivier_Breda"
       ],
       "startTime": "2026-02-13T10:10:00+01:00",
       "endTime": "2026-02-13T11:00:00+01:00"
@@ -883,16 +883,16 @@
       "startTime": "2026-02-13T13:30:00+01:00",
       "endTime": "2026-02-13T14:20:00+01:00"
     },
-    "cmfthbs3r00581ekebwe0h562": {
-      "id": "cmfthbs3r00581ekebwe0h562",
-      "title": "Pairing is caring!",
+    "cmgi079ue00271emj06wwt4nr": {
+      "id": "cmgi079ue00271emj06wwt4nr",
+      "title": "La face cachée de la performance des équipes de développements",
       "trackTitle": "Bio",
       "tags": [
-        "Humain & Tech",
+        "Alien",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Olivier_Breda"
+        "geoffrey_graveaud"
       ],
       "startTime": "2026-02-13T13:30:00+01:00",
       "endTime": "2026-02-13T14:20:00+01:00"
