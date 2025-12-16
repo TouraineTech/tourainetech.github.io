@@ -21,6 +21,7 @@
     "planning:validate": "node tools/build.mjs --validate-only",
     "planning:photos": "node tools/photos.mjs",
     "planning:openfeedback": "node tools/generateOpenfeedback.mjs",
+    "planning:qrcodes": "node tools/generateQRCodes.mjs",
     "planning:all": "pnpm run planning:build && pnpm run planning:photos && pnpm run planning:openfeedback",
     "extract:timerDatas": "node tools/timerJsonBuilder.mjs",
     "extract:flickr": "node tools/flickr.mjs"
@@ -44,6 +45,8 @@
     "node-fetch": "^3.3.2",
     "nuxt": "^3.15.1",
     "pinia": "^2.3.0",
-    "sass": "^1.83.0"
+    "qrcode": "^1.5.4",
+    "sass": "^1.83.0",
+    "sharp": "^0.34.5"
   }
 }
