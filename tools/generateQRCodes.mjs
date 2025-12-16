@@ -34,13 +34,24 @@ function extractDate(isoDate) {
   return isoDate.split('T')[0];
 }
 
+// Generate URL-friendly slug from title
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove accents
+    .replace(/[^a-z0-9]+/g, '-')     // Replace special chars with dashes
+    .replace(/^-+|-+$/g, '')         // Trim dashes from start/end
+    .substring(0, 80);               // Limit length
+}
+
 // Build OpenFeedback URL
 function buildOpenFeedbackUrl(sessionId, date) {
   return `https://openfeedback.io/${OPENFEEDBACK_EVENT_ID}/${date}/${sessionId}`;
 }
 
 // Generate QR code with logo overlay
-async function generateQRCode(sessionId, url, logoBuffer) {
+async function generateQRCode(slug, url, logoBuffer) {
   // Generate QR code as buffer
   const qrBuffer = await QRCode.toBuffer(url, {
     errorCorrectionLevel: 'H', // High error correction for logo overlay
@@ -99,7 +110,7 @@ async function generateQRCode(sessionId, url, logoBuffer) {
       .toBuffer();
   }
 
-  const outputPath = path.join(OUTPUT_DIR, `qr-${sessionId}.png`);
+  const outputPath = path.join(OUTPUT_DIR, `qr-${slug}.png`);
   fs.writeFileSync(outputPath, finalBuffer);
 
   return outputPath;
@@ -125,14 +136,15 @@ async function main() {
   for (const session of sessions) {
     const date = extractDate(session.startTime);
     const url = buildOpenFeedbackUrl(session.id, date);
+    const slug = slugify(session.title);
 
     try {
-      await generateQRCode(session.id, url, logoBuffer);
+      await generateQRCode(slug, url, logoBuffer);
       generated++;
       process.stdout.write(`\r  Generated: ${generated}/${sessions.length}`);
     } catch (error) {
       errors++;
-      console.error(`\n  Error for ${session.id}: ${error.message}`);
+      console.error(`\n  Error for ${slug} (${session.id}): ${error.message}`);
     }
   }
 
