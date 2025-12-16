@@ -1,7 +1,7 @@
 import SPONSORS from './api/sponsors.json'
-import { speakers as SPEAKERS, talks as TALKS } from './api/conferenceHall'
-import DAYS from './api/days.json'
-import ROOMS from './api/rooms.json'
+import { speakers as SPEAKERS, talks as TALKS } from './api/generated/conferenceHall.json'
+import DAYS from './api/config/days.json'
+import ROOMS from './api/config/rooms.json'
 import CONFIGURATION from './assets/configuration'
 
 const title = `Touraine Tech 20${CONFIGURATION.eventEdition} - Conférence sur les nouvelles technologies du numérique`

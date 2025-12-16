@@ -1,6 +1,6 @@
 <template>
   <div class="speaker--bloc">
-    <div v-if="speaker.picture" class="container--image">
+    <div class="container--image">
       <img :src="`/img/speakers/${speaker.uid}.png`" :alt="speaker.name">
     </div>
     <h3>{{ speaker.name }}</h3>

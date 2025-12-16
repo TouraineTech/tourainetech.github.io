@@ -27,8 +27,11 @@ const talk = computed(() => {
   }
 })
 
+// Use rawTalk.speakers order to preserve speaker ordering
 const speakers = computed(() =>
-  store.speakers.filter((s) => rawTalk.value?.speakers.includes(s.uid)),
+  rawTalk.value?.speakers
+    .map((uid) => store.speakers.find((s) => s.uid === uid))
+    .filter((s): s is (typeof store.speakers)[number] => s !== undefined) ?? [],
 )
 
 const abstractHTML = computed(() => converter.makeHtml(talk.value?.abstract || ''))
@@ -72,7 +75,7 @@ useHead({
     </div>
     <div class="description--container">
       <!-- eslint-disable-next-line vue/no-v-html -->
-      <p v-html="abstractHTML" />
+      <div v-html="abstractHTML" />
       <span v-if="talk.slidesLinks && talk.slidesLinks.length > 0">
         <p
           v-for="slidesLink of talk.slidesLinks"

@@ -2,179 +2,189 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:00",
     "talk": {
-      "speakers": [
-        "Julien_Briault"
-      ],
       "id": "keynoteOuverture2",
-      "name": "Comment nous avons transformé les Restos du Cœur en Cloud Provider"
+      "name": "Keynote d'ouverture",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
+      "id": "cmgb8p87t00iu1elbwzenncmt",
+      "name": "Lorsqu'un simple bug réseau vous emmène dans les entrailles de Linux...",
       "speakers": [
-        "Audrey_Maniez"
-      ],
-      "id": "cm2myp4f1010kiupx0qd7dqkt",
-      "name": "Les trésors cachés des lecteurs vidéo pour un multimédia plus accessible"
+        "Florian_Forestier"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
+      "id": "cmgdppqat00031emj0fncou7u",
+      "name": "L’ampoule qui en savait trop : voyage au cœur de la sécurité des objets connectés",
       "speakers": [
-        "Kevin_Davin"
-      ],
-      "id": "cm1mj97e7017q6veiowes6b18",
-      "name": "SELECT 'amazing_features' FROM \"posgresql\""
+        "Paul_Pinault"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
+      "id": "cmfqkp1gy006d1el7o5hhsq9m",
+      "name": "🎶 🎒🥾Promenons-nous dans les bois, ceux que l'on ne connaît pas 🎶",
       "speakers": [
-        "Khadija_ABDELOUALI"
-      ],
-      "id": "cm2wc7sr901ffty2ajckhcp52",
-      "name": "Révolutionnez votre expérience utilisateur avec les Progressive Web Apps"
+        "Sylvain_Gougouzian"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
+      "id": "cmgzj314m008c1eqqdaxeuiyk",
+      "name": "Open source et gouvernance, quand les communautés s'embrasent",
       "speakers": [
-        "Jean_Philippe_LE_GOFF"
-      ],
-      "id": "cm2x01tgg000nweqsq57yteb1",
-      "name": "Mise en œuvre de l'Approche Accelerate chez Decathlon : De la Théorie à Pratique"
+        "Matthieu_Lempereur"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
+      "id": "cmfp4h6550053nb1euv1kgrhv",
+      "name": "Un mot de passe ? Non merci, j’ai une passkey.",
       "speakers": [
-        "Julie_Galia"
-      ],
-      "id": "cm2tgf2tn00mpty2ajhsz55yr",
-      "name": "Delta Lake : le recalcul sans fracas ni tracas"
+        "Quentin_Aubert"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
+      "id": "cmg80g4fj00b41elbdpqgxarg",
+      "name": "Récit d'une modélisation : de l'exploration à la révélation !",
       "speakers": [
-        "Emmanuel-Lin_Toulemonde"
-      ],
-      "id": "cm1uuns7z025ec6s9k3outfue",
-      "name": "Optimisation de performance bénéfice ou sacrifice ?"
+        "Maxime_Sanglan-Charlier",
+        "Nick_Tune"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
+      "id": "cmftql18d005r1ekejaszpaqy",
+      "name": "Haute couture du Web : le défilé des approches CSS 🎨",
       "speakers": [
-        "Olivier_PONCET"
-      ],
-      "id": "cm1qdss7c017yc6s94jfr8we3",
-      "name": "Anatomie d'une faille"
+        "Etienne_IDOUX",
+        "Audrey_GENTILI"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
+      "id": "cmfnnbo2e07kbml1esffxazcj",
+      "name": "Git : le super-héros mal aimé de ton repo",
       "speakers": [
-        "Anaïs_Moulin"
-      ],
-      "id": "cm2ajxoas009jxalm0m81be0w",
-      "name": "\"On a 34 % de femmes, venez chez nous, on fait des trucs pour vous !\""
+        "Yann-Thomas_Le_Moigne"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
-      "id": "pm2",
-      "name": "Pause"
+      "id": "cmfl2vyvf041pml1eg6tp42u2",
+      "name": "Let's play Factorio",
+      "speakers": [
+        "Julien_WITTOUCK"
+      ]
     }
   },
   {
-    "time": "16:40",
+    "time": "16:35",
     "talk": {
-      "speakers": [],
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "17:30",
+    "talk": {
       "id": "keynoteCloture2",
-      "name": "Keynote de clôture"
+      "name": "Keynote de clôture",
+      "speakers": []
     }
   }
 ]

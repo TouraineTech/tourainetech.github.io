@@ -1,0 +1,688 @@
+{
+  "jeudi": {
+    "09:00": [
+      {
+        "rooms": [
+          "F21",
+          "F22"
+        ],
+        "id": "keynoteOuverture1",
+        "title": "Keynote d'ouverture"
+      }
+    ],
+    "10:10": [
+      {
+        "rooms": [
+          "F23"
+        ],
+        "id": "cmi8qyrm000hz1eqwm1ote3eh",
+        "title": "1h50min pour créer une App Front avec la Clean Archigonale ©️",
+        "speaker": "Dorian Lamandé, Guillaume Chauvet"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmi0u7gdo008t1eqwmbw14pj3",
+        "title": "Le Magicien Zod : Emmenez TypeScript au-delà du build 🧙",
+        "speaker": "Mickael Alves, Lucas Audart"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmhn775l500c91eseahc5i0s9",
+        "title": "Onboarding 2.0 : Réinventer l'intégration des devs",
+        "speaker": "Hafsa ELMAIZI"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmgb8qdfb00ix1elb5spxgtxc",
+        "title": "Mes trains Jouef passent au numérique, avec des Raspberry et TinyGo !",
+        "speaker": "Florian Forestier, Justine Bachelard"
+      },
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmgp7m5ko00gd1epdis578ri7",
+        "title": "L’architecture hexagonale au pays des irréductibles développeurs",
+        "speaker": "Nathan Castelein, Ambre Person"
+      }
+    ],
+    "11:10": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmgardqoe00gi1elbnoz01mz5",
+        "title": "Makers de Père en Fils",
+        "speaker": "Matthias Gougouzian, Sylvain Gougouzian"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmg72szhs00a51elbjk4mrfru",
+        "title": "Redécouvrir PHP : pratiques modernes au-delà de l’héritage",
+        "speaker": "Horacio Gonzalez (LostInBrittany)"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmhz1lest005q1eqwd1db1r7k",
+        "title": "Valoriser sans survendre : l’art moderne de pitcher son code",
+        "speaker": "Hugo Massing"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmhz04xeo005j1eqw6cw1ood7",
+        "title": "Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes",
+        "speaker": "Quentin JOLY, Denis GERMAIN"
+      }
+    ],
+    "12:10": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmgtc5c1i018f1epdv6rky64p",
+        "title": "La transactionalité expliquée",
+        "speaker": "Benjamin Cavy"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfl3nxjo0449ml1er4av6dur",
+        "title": "Title, ce faux ami de l’accessibilité",
+        "speaker": "François-Xavier Lair"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmiakph7m000501mdh18ph2gv",
+        "title": "Pas de use case, pas de produit",
+        "speaker": "Vincent Péchon"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmi2447u200bs1eqwaoydda9d",
+        "title": "Comment faire vivre les logiciels plus de 40 ans?",
+        "speaker": "Herve Chaminaud"
+      }
+    ],
+    "12:35": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmi36xifp00cn1eqwyb8n9hu2",
+        "title": "Reactivity from scratch",
+        "speaker": "Pierre Robillard"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmi15i4ad00901eqwb4h2epxz",
+        "title": "Le hasard fait bien les tests",
+        "speaker": "David Pilato"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmi0qaihi008i1eqwjvcnoxx1",
+        "title": "D-Bus pour les buses : intégration du gestionnaire de mots de passe Bitwarden dans les environnements de bureau Linux",
+        "speaker": "Ronan Bocquillon"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmhw3evtr002j1eqwse48kxb9",
+        "title": "Eco-conception ou comment revenir à la base",
+        "speaker": "Aurélie Jollet"
+      }
+    ],
+    "13:00": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmhteh41l001z1eovbqkjk0tl",
+        "title": "Bug de process interne : besoin d'un patch ?",
+        "speaker": "Theo DOUARE"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmhnwc64500ev1ese828x3uvf",
+        "title": "Jeux Vidéo et LLM: pas si différent",
+        "speaker": "guillaume blaquiere"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmhhvwum6002b1esel27gye48",
+        "title": "@Transactional : Facile à utiliser, difficile à maîtriser",
+        "speaker": "Benoit MARTIN"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmgxuaaii00241eqqyrgmql72",
+        "title": "Les Dessous de vos Cartes : À la découverte de la contribution OpenStreetMap",
+        "speaker": "Rémi Dehenne"
+      }
+    ],
+    "13:30": [
+      {
+        "rooms": [
+          "F23"
+        ],
+        "id": "cmhw5c0dk002p1eqwx0wyhmih",
+        "title": "Maîtrise Typescript par la pratique",
+        "speaker": "Johan Rouve, Marjorie Aubert, Bastien Tran"
+      },
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmhyzhf87005b1eqwfbahyxcw",
+        "title": "On est tous responsables de la génération suivante.",
+        "speaker": "Julien Gidel"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmhursm9y000c1eqwwnrrh4op",
+        "title": "L’animation web responsable : faire bouger sans alourdir",
+        "speaker": "Josiane MAKELELE"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmfl5qm6y049qml1eqf13uojk",
+        "title": "J'ai packagé mon application en image Docker, et maintenant ?",
+        "speaker": "Aurélie Vache"
+
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmh20nf6b00hd1eqqfsy4ycjh",
+        "title": "Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle !",
+        "speaker": "Julien Briault"
+      }
+    ],
+    "14:30": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmhsw7itb000g1eovd27h9o3b",
+        "title": "Noms de domaines : la grande histoire des petites extensions",
+        "speaker": "Benoît Masson, Théo Bougé"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfl3j2to043zml1efob6dcdf",
+        "title": "Accessibilité en action : rendre vos formulaires utilisables par tous",
+        "speaker": "François-Xavier Lair"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmh35770c000i1eoczsnuq2x2",
+        "title": "Fatiguée de la POO ? Passez à la DOP !",
+        "speaker": "Jérôme Tama"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmh0hncaz00ar1eqqkwzkszm4",
+        "title": "It's a brick, retour au (code) source",
+        "speaker": "alekmaul"
+      }
+    ],
+    "15:45": [
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmicalnsk000w01pdhbaxt8cr",
+        "title": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
+        "speaker": "Alexis \"Horgix\" Chotard"
+      },
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmh8999v200cq1eocr6qsonxd",
+        "title": "La réactivité et les signaux : démystifions la magie du frontend",
+        "speaker": "Estéban S"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmgtb4fr4018a1epd1a602gss",
+        "title": "Un jardin sur sol vivant connecté, pourquoi et comment ?",
+        "speaker": "Delegue Alexandre"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmgrsifk400rn1epd99q5uw9o",
+        "title": "Les Agents : l'ordre dans le chaos des IA",
+        "speaker": "Thierry Chantier"
+      }
+    ],
+    "16:35": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmgnznz6e00cl1epd5eysrjz6",
+        "title": "Un voyage dans le temps sur le passé, le présent et l'avenir de la protection de la mémoire",
+        "speaker": "Laurent Grangeau"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmgkxto2q008h1epdujofui82",
+        "title": "Web Components : chronique d'une renaissance",
+        "speaker": "Bastien Rousseau"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmfmdbvxs060pml1ewmsj5r4a",
+        "title": "☕\uFE0F Toi aussi crée ta CLI boostée à l'IA avec Picocli \uD83D\uDDA5\uFE0F \uD83E\uDD16",
+        "speaker": "Stéphane Philippart"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmgds4c25000i1emjxzezk8is",
+        "title": "Open-source : Pourquoi ? Comment ?",
+        "speaker": "Julien Deniau"
+      }
+    ],
+    "17:35": [
+      {
+        "rooms": [
+          "F21",
+          "F22"
+        ],
+        "id": "keynoteCloture1",
+        "title": "Keynote de clôture"
+      }
+    ]
+  },
+  "vendredi": {
+    "09:00": [
+      {
+        "rooms": [
+          "F21",
+          "F22"
+        ],
+        "id": "keynoteOuverture2",
+        "title": "Keynote d'ouverture"
+      }
+    ],
+    "10:10": [
+      {
+        "rooms": [
+          "F23"
+        ],
+        "id": "cmfma87kf05uhml1e0xx58mjb",
+        "title": "Playwright : tester vos applications devient un jeu d'enfant",
+        "speaker": "Benjamin Cavy"
+      },
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmghzal70001w1emj2wqelocf",
+        "title": "Révolution TanStack Query : Enfin une bonne gestion d’état 🗂️",
+        "speaker": "Lucas Audart, Mickael Alves"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmgb8p87t00iu1elbwzenncmt",
+        "title": "Lorsqu'un simple bug réseau vous emmène dans les entrailles de Linux...",
+        "speaker": "Florian Forestier"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmg72evd7009y1elbj2qg1rlk",
+        "title": "Serveurs MCP au-delà des bases : bonnes pratiques, choix de conception et leurs conséquences",
+        "speaker": "Horacio Gonzalez (LostInBrittany)"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfthbs3r00581ekebwe0h562",
+        "title": "Pairing is caring!",
+        "speaker": "Olivier Breda"
+      }
+    ],
+    "11:10": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmhkes3jq006g1esen8ao5y6c",
+        "title": "Comment concevoir et tester un site accessible ?",
+        "speaker": "Emmanuelle ABOAF"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmgdppqat00031emj0fncou7u",
+        "title": "L’ampoule qui en savait trop : voyage au cœur de la sécurité des objets connectés",
+        "speaker": "Paul Pinault"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmgapz81z00gd1elb5e5rp0qc",
+        "title": "🤖 Astro GitOps - Press ⓧ to start",
+        "speaker": "Kevin Davin"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmg6lz5ru008v1elb3xxe2y9k",
+        "title": "Super apps : on voulait un skateboard, on construit un porte-avion",
+        "speaker": "Baptiste CARLIER, Antoine Robiez"
+      }
+    ],
+    "12:10": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmicafa39000t01pd111ht6na",
+        "title": "Mieux écrire, mieux trouver : Diátaxis comme guide de documentation",
+        "speaker": "Alexis \"Horgix\" Chotard"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfqkp1gy006d1el7o5hhsq9m",
+        "title": "🎶 🎒🥾Promenons-nous dans les bois, ceux que l'on ne connaît pas 🎶",
+        "speaker": "Sylvain Gougouzian"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmh5a7snp005o1eoc9ch38wt1",
+        "title": "Silence... Ça tourne ! : De l'éco-volontariat à la promotion de mon side project en Australie",
+        "speaker": "Nicolas GUILLOT"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmg3gkgyx00711envtmmew8ww",
+        "title": "De Warhol à Basquiat : Le vibe coding démocratise-t-il vraiment la création logicielle ?",
+        "speaker": "Alexis Kovalenko"
+      }
+    ],
+    "12:35": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmfmc8jsu05zqml1e0y7i8gu8",
+        "title": "JBang, un fichier Java pour les gouverner tous ? 💍",
+        "speaker": "Stéphane Philippart"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmgzj314m008c1eqqdaxeuiyk",
+        "title": "Open source et gouvernance, quand les communautés s'embrasent",
+        "speaker": "Matthieu Lempereur"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmfp2f4gv003inb1eaon5kvu4",
+        "title": "Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey",
+        "speaker": "Erwan Le Tutour"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfl0nv2n03xgml1e2jdbcc9g",
+        "title": "TikTok avec son framework LynxJS peut-il détrôner React Native et Flutter ?",
+        "speaker": "Simon Bernardin"
+      }
+    ],
+    "13:00": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmfpfohv100bonb1e3vmg9lao",
+        "title": "Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech",
+        "speaker": "Yann Schepens"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfp4h6550053nb1euv1kgrhv",
+        "title": "Un mot de passe ? Non merci, j’ai une passkey.",
+        "speaker": "Quentin Aubert"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmh898i6n00cn1eocmqh5tv17",
+        "title": "En JavaScript, il y a un paquet pour tout... et souvent pour rien.",
+        "speaker": "Estéban S"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfl4jghf046hml1ecampkjzq",
+        "title": "Handicap invisible : l’accessibilité commence dans les réunions (et l'IA peut aider)",
+        "speaker": "Anaïs Moulin"
+      }
+    ],
+    "13:30": [
+      {
+        "rooms": [
+          "F23"
+        ],
+        "id": "cmgq77rnb00k31epdyed8t9v3",
+        "title": "Codez votre Game Master de JDR grâce à l'IA agentique et le SDK Strands Agents.",
+        "speaker": "Olivier Leplus, Adrien Lebret, Tiffany Souterre"
+      },
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmgah8mo800fj1elbs7lmahsn",
+        "title": "Au secours ! Mes images pourrissent mes perfs",
+        "speaker": "Antoine CARON, Mathieu Mure"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmg80g4fj00b41elbdpqgxarg",
+        "title": "Récit d'une modélisation : de l'exploration à la révélation !",
+        "speaker": "Maxime Sanglan-Charlier, Nick Tune"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmgi079ue00271emj06wwt4nr",
+        "title": "La face cachée de la performance des équipes de développements",
+        "speaker": "geoffrey graveaud"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfpr4j8d00191el7dfaur789",
+        "title": "Respectons (enfin) l'article 25 du RGPD avec PostgreSQL Anonymiser",
+        "speaker": "Nicolas GUILHEM"
+      }
+    ],
+    "14:30": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmfz7neh8001o1enve10obqb4",
+        "title": "Local-first et sync-engines, l'architecture du futur ?",
+        "speaker": "Benjamin Legrand"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmftql18d005r1ekejaszpaqy",
+        "title": "Haute couture du Web : le défilé des approches CSS 🎨",
+        "speaker": "Etienne IDOUX, Audrey GENTILI"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmgjs3f2q00571epdgt6rsaw6",
+        "title": "Détectives de la prod : résoudre l’enquête avant le crash",
+        "speaker": "Sébastien Ferrer"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfmjg2hg06himl1ed3cyjum6",
+        "title": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+        "speaker": "Estelle Landry ☀️, Emilie Goubin"
+      }
+    ],
+    "15:45": [
+      {
+        "rooms": [
+          "F21"
+        ]
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfnnbo2e07kbml1esffxazcj",
+        "title": "Git : le super-héros mal aimé de ton repo",
+        "speaker": "Yann-Thomas Le Moigne"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmfmd7m81060eml1eta12tr9p",
+        "title": "REX : Notre IA et nous contre le legacy : REX d'une reprise de contrôle assistée",
+        "speaker": "Benjamin Lacroix, Jordan NOURRY"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmhurnq7v00081eqwwkn03wlr",
+        "title": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+        "speaker": "Antoine DESSAIGNE"
+      }
+    ],
+    "16:35": [
+      {
+        "rooms": [
+          "F21"
+        ],
+        "id": "cmfm5pib505owml1ezi0buel3",
+        "title": "Async/Await et Java",
+        "speaker": "Didier Plaindoux"
+      },
+      {
+        "rooms": [
+          "F22"
+        ],
+        "id": "cmfl2vyvf041pml1eg6tp42u2",
+        "title": "Let's play Factorio",
+        "speaker": "Julien WITTOUCK"
+      },
+      {
+        "rooms": [
+          "Bio"
+        ],
+        "id": "cmfl90bm104f5ml1egkfcc0by",
+        "title": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
+        "speaker": "Stéphane Trebel"
+      },
+      {
+        "rooms": [
+          "Physique"
+        ],
+        "id": "cmfl0vubz03xuml1ejt5ihvek",
+        "title": "Another World, une belle leçon d’architecture logicielle",
+        "speaker": "Olivier PONCET"
+      }
+    ],
+    "17:30": [
+      {
+        "rooms": [
+          "F21",
+          "F22"
+        ],
+        "id": "keynoteCloture2",
+        "title": "Keynote de clôture"
+      }
+    ]
+  }
+}

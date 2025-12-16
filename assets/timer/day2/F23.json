@@ -2,22 +2,23 @@
   {
     "time": "10:10",
     "talk": {
+      "id": "cmfma87kf05uhml1e0xx58mjb",
+      "name": "Playwright : tester vos applications devient un jeu d'enfant",
       "speakers": [
-        "Alexandre_Touret"
-      ],
-      "id": "cm24uc0y200f9h2uwddb3cnmx",
-      "name": "Créer des API REST en Java avec une approche API-First : Mise en pratique et retours d'expérience"
+        "Benjamin_Cavy"
+      ]
     }
   },
   {
     "time": "13:30",
     "talk": {
+      "id": "cmgq77rnb00k31epdyed8t9v3",
+      "name": "Codez votre Game Master de JDR grâce à l'IA agentique et le SDK Strands Agents.",
       "speakers": [
-        "Marjorie_Aubert",
-        "Manon_Carbonnel"
-      ],
-      "id": "clzyeb6z8311113hppljm7k4c",
-      "name": "Redécouvrir la coopération : Atelier de Mob Programming"
+        "Olivier_Leplus",
+        "Adrien_Lebret",
+        "Tiffany_Souterre"
+      ]
     }
   }
 ]

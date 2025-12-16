@@ -2,182 +2,181 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
+      "id": "cmgb8qdfb00ix1elb5spxgtxc",
+      "name": "Mes trains Jouef passent au numérique, avec des Raspberry et TinyGo !",
       "speakers": [
-        "Romain_BERTHON",
-        "Aurélien_BOUDOUX"
-      ],
-      "id": "clzyebwkf315m13hpmpuurbyh",
-      "name": "CQRS / ES : nos heuristiques après plusieurs années de production"
+        "Florian_Forestier",
+        "Justine_Bachelard"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
+      "id": "cmhz04xeo005j1eqw6cw1ood7",
+      "name": "Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes",
       "speakers": [
-        "Benjamin_Cavy"
-      ],
-      "id": "cm14qcii9002i1bi2a4a82tbi",
-      "name": "Les feature flags : le couteau suisse de votre flow de développement"
+        "Quentin_JOLY",
+        "Denis_GERMAIN"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
+      "id": "cmi2447u200bs1eqwaoydda9d",
+      "name": "Comment faire vivre les logiciels plus de 40 ans?",
       "speakers": [
-        "Sylvain_METAYER"
-      ],
-      "id": "cm28x3w3s00dk6gvvmsyrb4mr",
-      "name": "Automatisez l'installation de votre poste de travail !"
+        "Herve_Chaminaud"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
+      "id": "cmhw3evtr002j1eqwse48kxb9",
+      "name": "Eco-conception ou comment revenir à la base",
       "speakers": [
-        "David_Maurin"
-      ],
-      "id": "cm2t1bthp00goty2akav1zf0a",
-      "name": "StyleX est-il le React du CSS ?"
+        "Aurélie_Jollet"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
+      "id": "cmgxuaaii00241eqqyrgmql72",
+      "name": "Les Dessous de vos Cartes : À la découverte de la contribution OpenStreetMap",
       "speakers": [
-        "Jean-Philippe_Foures"
-      ],
-      "id": "clzyebug7315e13hpaewg0wg7",
-      "name": "La Quantification ou comment compresser les LLMs pour un usage plus responsable."
+        "Rémi_Dehenne"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
+      "id": "cmh20nf6b00hd1eqqfsy4ycjh",
+      "name": "Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle !",
       "speakers": [
-        "Benjamin_Legrand"
-      ],
-      "id": "cm00sa3ru001coh1u5uiypqr4",
-      "name": "Les signals avec Angular : comment ça marche ?"
+        "Julien_Briault"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
+      "id": "cmh0hncaz00ar1eqqkwzkszm4",
+      "name": "It's a brick, retour au (code) source",
       "speakers": [
-        "Jérôme_Tama"
-      ],
-      "id": "cm1627z6900dh1bi2mk033axc",
-      "name": "To Gather, or not to Gather, that is the question."
+        "alekmaul"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
+      "id": "cmicalnsk000w01pdhbaxt8cr",
+      "name": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
       "speakers": [
-        "Sylvain_Gougouzian",
-        "Thierry_Chantier"
-      ],
-      "id": "cm2n4r61c012biupxlnrlkwtw",
-      "name": "Et si Mozart, Daft Punk et Bob Marley avaient été des techs ? 🎶"
+        "Alexis_\"Horgix\"_Chotard"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
-      "id": "pm2",
-      "name": "Pause"
-    }
-  },
-  {
-    "time": "16:45",
-    "talk": {
+      "id": "cmgds4c25000i1emjxzezk8is",
+      "name": "Open-source : Pourquoi ? Comment ?",
       "speakers": [
-        "Aurélie_Vache",
-        "sherine_khoury"
-      ],
-      "id": "clzyebuz6315g13hppah52bp5",
-      "name": "“Question pour un conteneur” : Quiz interactif sur les images, les conteneurs, OCI & Docker"
+        "Julien_Deniau"
+      ]
     }
   },
   {
-    "time": "17:35",
+    "time": "16:35",
     "talk": {
-      "speakers": [],
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:40",
+    "talk": {
       "id": "gouter",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   }
 ]

@@ -2,23 +2,24 @@
   {
     "time": "10:10",
     "talk": {
+      "id": "cmi8qyrm000hz1eqwm1ote3eh",
+      "name": "1h50min pour créer une App Front avec la Clean Archigonale ©️",
       "speakers": [
-        "Guillaume_Laforge",
-        "Valentin_Deleplace"
-      ],
-      "id": "cm2sx9e91007dty2as5hm5mqn",
-      "name": "Les LLMs par la pratique, avec Gemini et LangChain4j en Java"
+        "Dorian_Lamandé",
+        "Guillaume_Chauvet"
+      ]
     }
   },
   {
     "time": "13:30",
     "talk": {
+      "id": "cmhw5c0dk002p1eqwx0wyhmih",
+      "name": "Maîtrise Typescript par la pratique",
       "speakers": [
-        "François-Xavier_Lair",
-        "Henri_Gauffriau"
-      ],
-      "id": "cm0gowkzv00kwodc9pvcyscql",
-      "name": "Atelier : 10 tests simples pour améliorer l'accessibilité de votre site"
+        "Johan_Rouve",
+        "Marjorie_Aubert",
+        "Bastien_Tran"
+      ]
     }
   }
 ]

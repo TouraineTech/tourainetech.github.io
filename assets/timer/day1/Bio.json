@@ -2,181 +2,179 @@
   {
     "time": "08:00",
     "talk": {
-      "speakers": [],
       "id": "welcome",
-      "name": "👋 Accueil et petit déjeuner"
+      "name": "👋 Accueil et petit déjeuner",
+      "speakers": []
     }
   },
   {
     "time": "09:50",
     "talk": {
-      "speakers": [],
       "id": "ptitdej",
-      "name": "🥐 Suite du petit déjeuner (20 min)"
+      "name": "🥐 Suite du petit déjeuner (20 min)",
+      "speakers": []
     }
   },
   {
     "time": "10:10",
     "talk": {
+      "id": "cmhn775l500c91eseahc5i0s9",
+      "name": "Onboarding 2.0 : Réinventer l'intégration des devs",
       "speakers": [
-        "Morgan_Blanloeil",
-        "Kevin_Toublanc"
-      ],
-      "id": "clzyec474316f13hpsvbb5y16",
-      "name": "DevLake : Un voyage au pays du DORA"
+        "Hafsa_ELMAIZI"
+      ]
     }
   },
   {
     "time": "11:00",
     "talk": {
-      "speakers": [],
       "id": "am1",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "11:10",
     "talk": {
+      "id": "cmhz1lest005q1eqwd1db1r7k",
+      "name": "Valoriser sans survendre : l’art moderne de pitcher son code",
       "speakers": [
-        "damien_rouxel"
-      ],
-      "id": "clzyebrnk315213hpem0a8riw",
-      "name": "Introduction à la programmation réactive, de zero à Super Mario"
+        "Hugo_Massing"
+      ]
     }
   },
   {
     "time": "12:00",
     "talk": {
-      "speakers": [],
       "id": "dejeuner",
-      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) "
+      "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+      "speakers": []
     }
   },
   {
     "time": "12:10",
     "talk": {
+      "id": "cmiakph7m000501mdh18ph2gv",
+      "name": "Pas de use case, pas de produit",
       "speakers": [
-        "Marie-Cécile_TREGOUËT"
-      ],
-      "id": "cm2xkwfqt005h13dzqmtq2jxe",
-      "name": "Retour vers le futur du web : voyage au pays des rendus évolutifs"
+        "Vincent_Péchon"
+      ]
     }
   },
   {
     "time": "12:25",
     "talk": {
-      "speakers": [],
       "id": "dejeuner1",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "12:35",
     "talk": {
+      "id": "cmi0qaihi008i1eqwjvcnoxx1",
+      "name": "D-Bus pour les buses : intégration du gestionnaire de mots de passe Bitwarden dans les environnements de bureau Linux",
       "speakers": [
-        "Hugues_Lepesant"
-      ],
-      "id": "cm0we5zox039rodc9nq4h5xxd",
-      "name": "Les outils DevOps au service de la formation DevOps"
+        "Ronan_Bocquillon"
+      ]
     }
   },
   {
     "time": "12:50",
     "talk": {
-      "speakers": [],
       "id": "soSmall",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   },
   {
     "time": "13:00",
     "talk": {
+      "id": "cmhhvwum6002b1esel27gye48",
+      "name": "@Transactional : Facile à utiliser, difficile à maîtriser",
       "speakers": [
-        "Julie_Brunetto",
-        "Gauthier_Fiorentino"
-      ],
-      "id": "clzyebgja312w13hpg7gx9qrc",
-      "name": "Merge confliture sur mes gitscottes : découper ses PR sans pleurer"
+        "Benoit_MARTIN"
+      ]
     }
   },
   {
     "time": "13:15",
     "talk": {
-      "speakers": [],
       "id": "dejeuner2",
-      "name": "🍽 fin de la pause déjeuner (40 min)"
+      "name": "🍽 fin de la pause déjeuner (40 min)",
+      "speakers": []
     }
   },
   {
     "time": "13:30",
     "talk": {
+      "id": "cmfl5qm6y049qml1eqf13uojk",
+      "name": "J'ai packagé mon application en image Docker, et maintenant ?",
       "speakers": [
-        "Antoine_DESSAIGNE"
-      ],
-      "id": "cm27zogf3005d6gvvgopui5g6",
-      "name": "Comme Alice, osez suivre le lapin blanc et plongez dans la JVM pour comprendre son fonctionnement"
+        "Aurélie_Vache"
+      ]
     }
   },
   {
     "time": "14:20",
     "talk": {
-      "speakers": [],
       "id": "pm0",
-      "name": "☕ Pause café (10 min)"
+      "name": "☕ Pause café (10 min)",
+      "speakers": []
     }
   },
   {
     "time": "14:30",
     "talk": {
+      "id": "cmh35770c000i1eoczsnuq2x2",
+      "name": "Fatiguée de la POO ? Passez à la DOP !",
       "speakers": [
-        "Clara_MAMET"
-      ],
-      "id": "cm2rp7md900kwap20pxm3ich3",
-      "name": "J'ai peur de parler en public, pas vous ?"
+        "Jérôme_Tama"
+      ]
     }
   },
   {
     "time": "15:20",
     "talk": {
-      "speakers": [],
       "id": "pm1",
-      "name": "☕ Pause café (25 min)"
+      "name": "☕ Pause café (25 min)",
+      "speakers": []
     }
   },
   {
     "time": "15:45",
     "talk": {
+      "id": "cmgrsifk400rn1epd99q5uw9o",
+      "name": "Les Agents : l'ordre dans le chaos des IA",
       "speakers": [
-        "Gauthier_Fiorentino"
-      ],
-      "id": "clzyebc1i312013hpqs60agw7",
-      "name": "Theming : Faites peau neuve en 50 minutes top chrono"
+        "Thierry_Chantier"
+      ]
     }
   },
   {
     "time": "16:35",
     "talk": {
-      "speakers": [],
-      "id": "pm2",
-      "name": "Pause"
-    }
-  },
-  {
-    "time": "16:45",
-    "talk": {
+      "id": "cmfmdbvxs060pml1ewmsj5r4a",
+      "name": "☕️ Toi aussi crée ta CLI boostée à l'IA avec Picocli 🖥️ 🤖",
       "speakers": [
-        "alekmaul"
-      ],
-      "id": "clzyec5b6316k13hpsaxygky2",
-      "name": "Du rêve à la réalité, coder un jeu sur Super Nintendo"
+        "Stéphane_Philippart"
+      ]
     }
   },
   {
-    "time": "17:35",
+    "time": "16:35",
     "talk": {
-      "speakers": [],
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:40",
+    "talk": {
       "id": "gouter",
-      "name": ""
+      "name": "",
+      "speakers": []
     }
   }
 ]
