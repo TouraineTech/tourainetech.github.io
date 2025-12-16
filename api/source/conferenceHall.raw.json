@@ -6233,7 +6233,7 @@
     "id": "cmfoiit6c000cnb1ean32406l",
     "title": "Plongez au coeur des structures de données en java",
     "abstract": "Les structures de données sont au coeur des projets informatiques, du simple tableau aux structures plus complexes comme des hashmap.\nAu delà de la théorie, les languages et notamment Java proposent des implémentations permettant de ne pas trop se soucier de ce qu'il se cache derrière le capot.\n\nAvec ce talk, venez ouvrir ce capot avec moi et découvrir comment Java vous propose une implémentation des structures de données répondant aux usages les plus communs\nEnsemble, nous aborderons\n\n- la notion de complexité pour comprendre les enjeux derrière les différentes structures de données \n- l'API Collection de Java avec notamment les sequenced collection apparus dans la version 21\n- quelques exemples d'implémentations approfondis de structures de données classiques",
-    "deliberationStatus": "ACCEPTED",
+    "deliberationStatus": "PENDING",
     "confirmationStatus": "PENDING",
     "publicationStatus": "PUBLISHED",
     "level": "INTERMEDIATE",

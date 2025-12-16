@@ -857,20 +857,6 @@
       ]
     },
     {
-      "id": "cmfoiit6c000cnb1ean32406l",
-      "title": "Plongez au coeur des structures de données en java",
-      "abstract": "Les structures de données sont au coeur des projets informatiques, du simple tableau aux structures plus complexes comme des hashmap.\nAu delà de la théorie, les languages et notamment Java proposent des implémentations permettant de ne pas trop se soucier de ce qu'il se cache derrière le capot.\n\nAvec ce talk, venez ouvrir ce capot avec moi et découvrir comment Java vous propose une implémentation des structures de données répondant aux usages les plus communs\nEnsemble, nous aborderons\n\n- la notion de complexité pour comprendre les enjeux derrière les différentes structures de données \n- l'API Collection de Java avec notamment les sequenced collection apparus dans la version 21\n- quelques exemples d'implémentations approfondis de structures de données classiques",
-      "formats": "Conférence (50min)",
-      "categories": "Conception, architecture",
-      "level": "INTERMEDIATE",
-      "speakers": [
-        "Thibault_Monégier_du_Sorbier"
-      ],
-      "languages": [
-        "fr"
-      ]
-    },
-    {
       "id": "cmfnnbo2e07kbml1esffxazcj",
       "title": "Git : le super-héros mal aimé de ton repo",
       "abstract": "On utilise Git tous les jours… sans vraiment le connaître. Après tout, ce n’est pas notre cœur de métier : on code, et Git est juste censé suivre. Sauf que parfois, une commande ratée et tout part en cacahuète : historique qui s’emmêle, branches qui se perdent, merge qui tourne au cauchemar… et quelques cheveux blancs en bonus.\n\nPourtant, derrière ces moments de panique se cache un allié puissant, capable de rendre notre quotidien bien plus simple.\n\nDans cette session, nous irons explorer une petite partie des possibilités de Git :\n- voyager entre branches sans se perdre,\n- remonter le temps dans l’historique,\n- restaurer un état précis,\n- dompter les merges capricieux,\n- automatiser les tâches rébarbatives,\n- … et bien plus encore !\n\nVous repartirez avec des astuces concrètes, faciles à appliquer, pour transformer Git en véritable partenaire de sérénité plutôt qu’en source d’angoisse.",
@@ -1737,15 +1723,6 @@
       "name": "Erwan Le Tutour",
       "bio": "# LE TUTOUR Erwan\n## 🧑‍💻 Analyste programmeur\nDéveloppeur passionné, curieux et toujours en quête d'amélioration continue, je mets mes compétences au service de projets exigeants avec rigueur et enthousiasme. Mes expériences variées m'ont permis d'évoluer dans des environnements agiles, et de contribuer activement à des projets à fort impact métier. \n\n## 🎯 Mes valeurs\n- Apprendre\n- Transmettre\n- Tout faire avec passion",
       "company": "SFEIR",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Thibault_Monégier_du_Sorbier",
-      "name": "Thibault Monégier du Sorbier",
-      "bio": "Après de multiples expériences chez des acteurs du monde de la finance, je suis maintenant Staff Engineer à la Digital Factory de Bpifrance.\nJe participe à la plateformisation du Digital afin de créer le socle qui sera mis à disposition en self service pour permettre l'implémentation des futurs produits digitaux de Bpifrance.\nMa mission consiste essentiellement à creuser les sujets durs des équipes pour leur permettre d'avoir l'ensemble des cadres et standards nécessaires pour l'industrialisation de leur développement. C'est dans ce cadre que je m'intéresse aux sujets de formation des développeurs (bonnes pratiques, standards d'architectures) mais aussi aux sujets de recherche (autour de l'IA essentiellement)\n\nJe suis également co-organisateur du Spring Meetup sur Paris, avec l'organisation d'un évent par mois autour de l'utilisation de SpringBoot dans les projets.",
-      "company": "Bpifrance",
       "picture": null,
       "twitter": null,
       "github": null
