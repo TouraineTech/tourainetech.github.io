@@ -1,0 +1,1 @@
+const e=[{time:"10:10",talk:{id:"cmi8qyrm000hz1eqwm1ote3eh",name:"1h50min pour créer une App Front avec la Clean Archigonale ©️",speakers:["Dorian_Lamandé","Guillaume_Chauvet"]}},{time:"13:30",talk:{id:"cmhw5c0dk002p1eqwx0wyhmih",name:"Maîtrise Typescript par la pratique",speakers:["Johan_Rouve","Marjorie_Aubert","Bastien_Tran"]}}];export{e as default};
