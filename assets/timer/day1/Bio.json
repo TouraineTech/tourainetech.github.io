@@ -108,10 +108,10 @@
   {
     "time": "13:30",
     "talk": {
-      "id": "cmhurnq7v00081eqwwkn03wlr",
-      "name": "G1, ZGC, Shenandoah, ... Chez Java, ils sont gentils avec tous leurs GCs mais moi je choisis lequel ?",
+      "id": "cmfl5qm6y049qml1eqf13uojk",
+      "name": "J'ai packagé mon application en image Docker, et maintenant ?",
       "speakers": [
-        "Antoine_DESSAIGNE"
+        "Aurélie_Vache"
       ]
     }
   },

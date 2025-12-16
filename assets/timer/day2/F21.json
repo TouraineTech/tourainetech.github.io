@@ -152,16 +152,6 @@
     }
   },
   {
-    "time": "15:45",
-    "talk": {
-      "id": "cmfoiit6c000cnb1ean32406l",
-      "name": "Plongez au coeur des structures de données en java",
-      "speakers": [
-        "Thibault_Monégier_du_Sorbier"
-      ]
-    }
-  },
-  {
     "time": "16:35",
     "talk": {
       "id": "cmfm5pib505owml1ezi0buel3",

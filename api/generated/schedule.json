@@ -1011,20 +1011,6 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmfoiit6c000cnb1ean32406l",
-    "title": "Plongez au coeur des structures de données en java",
-    "categories": "Conception, architecture",
-    "formats": "Conférence (50min)",
-    "rooms": [
-      1
-    ],
-    "times": [
-      17
-    ],
-    "day": 2,
-    "level": "INTERMEDIATE"
-  },
-  {
     "id": "cmfnnbo2e07kbml1esffxazcj",
     "title": "Git : le super-héros mal aimé de ton repo",
     "categories": "Outils, pratiques de dev",
