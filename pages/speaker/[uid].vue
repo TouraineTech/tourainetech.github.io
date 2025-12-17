@@ -128,7 +128,7 @@ useHead({
     </div>
     <div class="description--container">
       <!-- eslint-disable-next-line vue/no-v-html -->
-      <p v-html="bioHTML" />
+      <div v-html="bioHTML" />
     </div>
   </div>
 </template>
@@ -200,7 +200,7 @@ div.description--container {
   padding: 2rem;
   margin-top: 2rem;
 
-  p {
+  :deep(p) {
     line-height: 32px;
   }
 }
