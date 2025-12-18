@@ -1011,6 +1011,20 @@
     "level": "BEGINNER"
   },
   {
+    "id": "cmgjlphf700501epdnp49avm7",
+    "title": "IA générative et réchauffement climatique : comment réduire la facture?",
+    "categories": "Intelligence Artificielle",
+    "formats": "Conférence (50min)",
+    "rooms": [
+      1
+    ],
+    "times": [
+      17
+    ],
+    "day": 2,
+    "level": "INTERMEDIATE"
+  },
+  {
     "id": "cmfnnbo2e07kbml1esffxazcj",
     "title": "Git : le super-héros mal aimé de ton repo",
     "categories": "Outils, pratiques de dev",

@@ -969,16 +969,16 @@
       "startTime": "2026-02-13T14:30:00+01:00",
       "endTime": "2026-02-13T15:20:00+01:00"
     },
-    "cmfoiit6c000cnb1ean32406l": {
-      "id": "cmfoiit6c000cnb1ean32406l",
-      "title": "Plongez au coeur des structures de données en java",
+    "cmgjlphf700501epdnp49avm7": {
+      "id": "cmgjlphf700501epdnp49avm7",
+      "title": "IA générative et réchauffement climatique : comment réduire la facture?",
       "trackTitle": "F21",
       "tags": [
-        "Conception, architecture",
+        "Intelligence Artificielle",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Thibault_Monégier_du_Sorbier"
+        "Emilie_GREFF"
       ],
       "startTime": "2026-02-13T15:45:00+01:00",
       "endTime": "2026-02-13T16:35:00+01:00"
@@ -1354,6 +1354,12 @@
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Sébastien_Ferrer.png",
       "socials": []
     },
+    "Emilie_GREFF": {
+      "id": "Emilie_GREFF",
+      "name": "Emilie GREFF",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Emilie_GREFF.png",
+      "socials": []
+    },
     "geoffrey_graveaud": {
       "id": "geoffrey_graveaud",
       "name": "geoffrey graveaud",
@@ -1496,12 +1502,6 @@
       "id": "Erwan_Le_Tutour",
       "name": "Erwan Le Tutour",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Erwan_Le_Tutour.png",
-      "socials": []
-    },
-    "Thibault_Monégier_du_Sorbier": {
-      "id": "Thibault_Monégier_du_Sorbier",
-      "name": "Thibault Monégier du Sorbier",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Thibault_Monégier_du_Sorbier.png",
       "socials": []
     },
     "Yann-Thomas_Le_Moigne": {
