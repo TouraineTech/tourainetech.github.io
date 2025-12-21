@@ -1,0 +1,1 @@
+import{_ as o}from"./UxFacJvQ.js";import{_ as t,c as s,b as c,o as r}from"./B80vgquZ.js";import"./CKskPkQU.js";import"./SE6Rwp4M.js";import"./BCQE69DL.js";const _={},a={class:"page--speakers"};function n(p,m){const e=o;return r(),s("div",a,[c(e)])}const u=t(_,[["render",n],["__scopeId","data-v-4004f16b"]]);export{u as default};
