@@ -36,6 +36,19 @@ const speakers = computed(() =>
 
 const abstractHTML = computed(() => converter.makeHtml(talk.value?.abstract || ''))
 
+// OpenFeedback URL builder
+const OPENFEEDBACK_EVENT_ID = 'nIlFquxGUZ1IJ1cDkc1z'
+const DATE_BY_DAY: Record<number, string> = {
+  1: '2026-02-12', // Jeudi
+  2: '2026-02-13'  // Vendredi
+}
+
+const feedbackUrl = computed(() => {
+  if (!rawTalk.value?.day) return null
+  const date = DATE_BY_DAY[rawTalk.value.day] || DATE_BY_DAY[1]
+  return `https://openfeedback.io/${OPENFEEDBACK_EVENT_ID}/${date}/${rawTalk.value.id}`
+})
+
 const title = computed(
   () => `Touraine Tech 20${CONFIGURATION.eventEdition} - ${talk.value?.title}`,
 )
@@ -106,6 +119,24 @@ useHead({
         >La vidéo (youtube) </a>
       </p>
     </div>
+    <a
+      v-if="feedbackUrl"
+      class="feedback-cta"
+      target="_blank"
+      :href="feedbackUrl"
+    >
+      <span class="feedback-cta__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+      </span>
+      <span class="feedback-cta__text">Donner votre avis</span>
+      <span class="feedback-cta__arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </span>
+    </a>
   </div>
 </template>
 
@@ -183,6 +214,108 @@ div.time--container {
         padding-right: 1rem;
       }
     }
+  }
+}
+
+// Feedback CTA Button
+.feedback-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 1rem 1.75rem;
+  background: linear-gradient(135deg, $color-secondary 0%, color.adjust($color-secondary, $lightness: -8%) 100%);
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  border-radius: 50px;
+  box-shadow:
+    0 4px 15px rgba($color-secondary, 0.35),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  // Subtle shine effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+      0 8px 25px rgba($color-secondary, 0.45),
+      0 4px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, color.adjust($color-secondary, $lightness: 5%) 0%, $color-secondary 100%);
+
+    &::before {
+      left: 100%;
+    }
+
+    .feedback-cta__arrow {
+      transform: translateX(4px);
+    }
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgba($color-primary, 0.15);
+    border-radius: 50%;
+    padding: 0.25rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    flex: 1;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.3s ease;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-step) {
+  .feedback-cta {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-right: -2rem;
+    border-radius: 0;
+    justify-content: center;
   }
 }
 </style>
