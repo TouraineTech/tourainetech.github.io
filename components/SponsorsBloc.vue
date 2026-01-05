@@ -5,7 +5,7 @@ const props = defineProps<{
 
 const store = useMainStore()
 const sponsors = computed(() =>
-  store.sponsors.filter(sp => sp.type === (props.type || '').toLowerCase())
+  store.sponsors.filter(sp => sp.type === (props.type || '').toLowerCase()),
 )
 </script>
 

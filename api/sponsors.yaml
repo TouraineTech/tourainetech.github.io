@@ -1,0 +1,24 @@
+# Sponsors Touraine Tech
+# Types possibles: gold, silver, bronze, partenaires
+
+- id: neosoft
+  name: Néosoft
+  type: silver
+  image: neosoft.png
+  link: https://www.neosoft.fr/
+  desc: |
+    Néosoft est une ESN indépendante de conseil en transformation digitale de 1800 collaborateurs réunis en communautés d'experts : Conseil & Agilité, Cybersécurité, Data, DevOps, Infrastructures & Cloud et Software Engineering.
+    <br><br>
+    Depuis sa création à Rennes en 2005, Néosoft conseille et accompagne ses clients à 360° dans leurs projets d'innovation. En créant un environnement de travail plus respectueux de la planète, le groupe s'engage à réduire son impact carbone et à favoriser l'inclusion par le numérique.
+    <br><br>
+    Créé en 2014, Néosoft Tours compte désormais 60 collaborateurs passionnés. Avec une ambiance familiale, des projets hébergés dans nos locaux et de nombreux événements organisés tout au long de l'année, l'agence poursuit son développement en Centre-Val de Loire. Aujourd'hui, Néosoft s'impose progressivement comme un acteur majeur auprès des grands comptes de la région, notamment dans les domaines de la santé, des assurances et des télécoms sur les activités de conception & développement, d'infrastructures des systèmes et de conseil & agilité. Venez nous rencontrer !
+  linkedIn: https://www.linkedin.com/company/neosoft_
+  instagram: https://www.instagram.com/neosoft__
+  youtube: https://www.youtube.com/@neosoft_
+  jobOffers:
+    - id: dev-fullstack
+      title: Développeur Full Stack H/F
+      link: https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/job/Dveloppeur-Full-Stack--H-F-_JR101690?primaryLocation=20f778f71e331001ac7fbd0e542a0000
+    - id: devops
+      title: Ingénieur DevOps H/F
+      link: https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/job/Nosoft-Tours/XMLNAME--CLO--Ingnieur-DevOps_JR101683

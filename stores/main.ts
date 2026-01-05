@@ -1,6 +1,11 @@
 import { defineStore } from 'pinia'
-import SPONSORS from '~/api/sponsors.json'
+import SPONSORS from '~/api/sponsors.yaml'
 import TEAM from '~/api/team.json'
+
+declare module '*.yaml' {
+  const data: unknown
+  export default data
+}
 import BREAKS from '~/api/config/breaks.json'
 import CONFERENCE_HALL from '~/api/generated/conferenceHall.json'
 import PLANNING from '~/api/generated/schedule.json'
@@ -68,9 +73,19 @@ interface Sponsor {
   id: string
   name: string
   type: string
-  logo?: string
-  url?: string
-  description?: string
+  image: string
+  link: string
+  desc: string
+  linkedIn?: string
+  twitter?: string
+  bluesky?: string
+  facebook?: string
+  instagram?: string
+  tiktok?: string
+  youtube?: string
+  twitch?: string
+  github?: string
+  jobOffers?: Array<{ id: string; title: string; pdf?: string; link?: string }>
 }
 
 interface TeamMember {
