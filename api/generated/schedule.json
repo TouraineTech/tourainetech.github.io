@@ -503,7 +503,6 @@
       1
     ],
     "times": [
-      18,
       19
     ],
     "day": 1,
@@ -518,7 +517,6 @@
       2
     ],
     "times": [
-      18,
       19
     ],
     "day": 1,
@@ -533,7 +531,6 @@
       3
     ],
     "times": [
-      18,
       19
     ],
     "day": 1,
@@ -548,7 +545,6 @@
       4
     ],
     "times": [
-      18,
       19
     ],
     "day": 1,
@@ -1075,8 +1071,7 @@
       1
     ],
     "times": [
-      18,
-      20
+      19
     ],
     "day": 2,
     "level": "INTERMEDIATE"
@@ -1090,8 +1085,7 @@
       2
     ],
     "times": [
-      18,
-      20
+      19
     ],
     "day": 2,
     "level": "BEGINNER"
@@ -1105,23 +1099,21 @@
       3
     ],
     "times": [
-      18,
-      20
+      19
     ],
     "day": 2,
     "level": "INTERMEDIATE"
   },
   {
     "id": "cmfl0vubz03xuml1ejt5ihvek",
-    "title": "Another World, une belle leçon d’architecture logicielle",
+    "title": "Another World, une belle leçon d'architecture logicielle",
     "categories": "Alien",
     "formats": "Conférence (50min)",
     "rooms": [
       4
     ],
     "times": [
-      18,
-      20
+      19
     ],
     "day": 2,
     "level": "BEGINNER"
