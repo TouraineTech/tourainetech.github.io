@@ -23,6 +23,21 @@
       title: Ingénieur DevOps H/F
       link: https://neosoft.wd3.myworkdayjobs.com/fr-FR/neo-soft/job/Nosoft-Tours/XMLNAME--CLO--Ingnieur-DevOps_JR101683
 
+- id: code-troopers
+  name: Code-Troopers
+  type: silver
+  image: codetroopers.png
+  link: https://code-troopers.com
+  desc: |
+    Depuis 2014, Code-Troopers conçoit et réalise des applications web et mobiles sur-mesure pour des PME, scaleups, grands groupes et organismes publics, dans des secteurs variés (mobilité, énergie, santé, événementiel, etc.). Nous intervenons sur l'ensemble du cycle projet (audit, architecture, développement, intégration, mise en production, maintenance) en combinant rigueur, performance, sécurité et scalabilité, pour délivrer des solutions robustes et adaptées aux enjeux stratégiques de nos clients.
+    <br><br>
+    Que ce soit pour monter une équipe projet complète ou venir en renfort des équipes internes, nous adaptons notre accompagnement aux besoins des clients tout en garantissant un haut niveau d'expertise et de flexibilité.
+    <br><br>
+    Nous offrons un environnement à taille humaine, fondé sur la convivialité, le partage et l'exigence de qualité. Nous valorisons l'autonomie, la liberté de choisir ses technologies et son matériel, ainsi qu'un bon équilibre pro/perso. Chaque collaborateur a un rôle concret dans les projets, peut monter en compétences, et contribue à la vie de l'entreprise dans un cadre bienveillant et collaboratif. L'équilibre entre sérieux du travail et moments de convivialité, ainsi que la proximité entre tous les membres de l'équipe, font de Code-Troopers un lieu où l'on vient travailler avec plaisir.
+    <br><br>
+    Code-Troopers est aussi le créateur de la solution Chapitô, qui a servi encore cette année à générer l'application mobile pour Touraine Tech.
+  linkedIn: https://www.linkedin.com/company/codetroopers
+
 - id: acensi
   name: ACENSI
   type: silver
