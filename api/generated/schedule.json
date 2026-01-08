@@ -87,8 +87,8 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmgardqoe00gi1elbnoz01mz5",
-    "title": "Makers de Père en Fils",
+    "id": "cmfmjg2hg06himl1ed3cyjum6",
+    "title": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
     "categories": "Humain & Tech",
     "formats": "Conférence (50min)",
     "rooms": [
@@ -993,8 +993,8 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmfmjg2hg06himl1ed3cyjum6",
-    "title": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+    "id": "cmgardqoe00gi1elbnoz01mz5",
+    "title": "Makers de Père en Fils",
     "categories": "Humain & Tech",
     "formats": "Conférence (50min)",
     "rooms": [
@@ -1106,7 +1106,7 @@
   },
   {
     "id": "cmfl0vubz03xuml1ejt5ihvek",
-    "title": "Another World, une belle leçon d'architecture logicielle",
+    "title": "Another World, une belle leçon d’architecture logicielle",
     "categories": "Alien",
     "formats": "Conférence (50min)",
     "rooms": [
@@ -1128,7 +1128,7 @@
       2
     ],
     "times": [
-      24
+      21
     ],
     "day": 2,
     "level": null

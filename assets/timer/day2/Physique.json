@@ -127,11 +127,11 @@
   {
     "time": "14:30",
     "talk": {
-      "id": "cmfmjg2hg06himl1ed3cyjum6",
-      "name": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
+      "id": "cmgardqoe00gi1elbnoz01mz5",
+      "name": "Makers de Père en Fils",
       "speakers": [
-        "Estelle_Landry_☀️",
-        "Emilie_Goubin"
+        "Matthias_Gougouzian",
+        "Sylvain_Gougouzian"
       ]
     }
   },
@@ -156,19 +156,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmfl0vubz03xuml1ejt5ihvek",
       "name": "Another World, une belle leçon d’architecture logicielle",
       "speakers": [
         "Olivier_PONCET"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   }
 ]

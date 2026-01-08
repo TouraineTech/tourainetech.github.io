@@ -155,19 +155,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmfl90bm104f5ml1egkfcc0by",
       "name": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
       "speakers": [
         "Stéphane_Trebel"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   }
 ]

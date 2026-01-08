@@ -154,19 +154,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmfmdbvxs060pml1ewmsj5r4a",
       "name": "☕️ Toi aussi crée ta CLI boostée à l'IA avec Picocli 🖥️ 🤖",
       "speakers": [
         "Stéphane_Philippart"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   },
   {

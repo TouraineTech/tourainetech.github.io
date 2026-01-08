@@ -45,11 +45,11 @@
   {
     "time": "11:10",
     "talk": {
-      "id": "cmgardqoe00gi1elbnoz01mz5",
-      "name": "Makers de Père en Fils",
+      "id": "cmfmjg2hg06himl1ed3cyjum6",
+      "name": "Grandir avec le numérique : et si on apprenait aux enfants à s’en protéger ?",
       "speakers": [
-        "Matthias_Gougouzian",
-        "Sylvain_Gougouzian"
+        "Estelle_Landry_☀️",
+        "Emilie_Goubin"
       ]
     }
   },
@@ -165,19 +165,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmgnznz6e00cl1epd5eysrjz6",
       "name": "Un voyage dans le temps sur le passé, le présent et l'avenir de la protection de la mémoire",
       "speakers": [
         "Laurent_Grangeau"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   },
   {

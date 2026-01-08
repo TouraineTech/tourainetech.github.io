@@ -156,19 +156,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmgds4c25000i1emjxzezk8is",
       "name": "Open-source : Pourquoi ? Comment ?",
       "speakers": [
         "Julien_Deniau"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   },
   {

@@ -1276,7 +1276,7 @@
     {
       "uid": "Aurélie_Jollet",
       "name": "Aurélie Jollet",
-      "bio": "Développeuse backend chez CGI, j'aime apprendre et partager autour de la technologie.\nJe suis également très sensible à la sphère environnementale et m'intéresse aux questions : comment rendre le numérique plus responsable, et comment apporter des solutions sans détruire notre planète.",
+      "bio": "Développeuse backend depuis une dizaine d'année, j'aime apprendre et partager autour de la technologie.\nJe suis également très sensible à la sphère environnementale et m'intéresse aux questions : comment rendre le numérique plus responsable, et comment apporter des solutions sans détruire notre planète.",
       "company": "Apside TOP",
       "picture": null,
       "twitter": null,
@@ -1366,8 +1366,8 @@
     {
       "uid": "Estéban_S",
       "name": "Estéban S",
-      "bio": "Je suis développeur web avec plus de 7 ans d'expérience, et full-stack depuis quelques années. Ma priorité est d'optimiser l'expérience utilisateur à chaque étape du développement, et je m'efforce d'apprendre constamment, que ce soit du code, du design ou de l'administration système.\n\nCette approche m'a conduit à développer une passion pour l'open-source. Que ce soit pour étudier du code ou y contribuer activement, j'aspire à participer à la communauté de diverses manières : en rédigeant de la documentation, en améliorant le design, en corrigeant des bogues ou en proposant de nouvelles fonctionnalités. Je gravite principalement autour de UnJS, Vite, Vue.js, Nuxt, Adonis et Laravel !\n\nMa seconde grande passion est le partage des connaissances. À travers mon blog (https://soubiran.dev) et mes réseaux sociaux, je m'efforce de diffuser ce que j'apprends et découvre. Mon objectif est de transmettre des informations de manière claire et accessible, comme j'aurais souhaité les trouver lorsque j'ai débuté dans le développement web, à une époque où des milliers de questions m'envahissaient et où les réponses étaient parfois rares.",
-      "company": "MaiaSpace",
+      "bio": "Estéban partait sur une carrière dans la cyber-sécurité. Et puis, un vendredi matin de décembre, au cours d'une Nuit de l'Info, il a fait connaissance avec le développement web. Ce canvas blanc où seuls nos idées et notre créativité nous limitent.\n\nDepuis, il ne l'a pas quitté, ça s'est même intensifié. Il partage tout ce qu'il découvre, apprend et construit sur ses réseaux, son blog et parfois sur Twitch, quand le temps lui permet.\n\nMalgré tout, avec l'arrivée de l'IA agentique, il se demande s'il ne devrait pas devenir pâtissier. Toujours un impact positif pour le client avec le gustatif en plus.",
+      "company": "Takima",
       "picture": null,
       "twitter": null,
       "github": null
@@ -1762,7 +1762,7 @@
     {
       "uid": "Estelle_Landry_☀️",
       "name": "Estelle Landry ☀️",
-      "bio": "Passionée par mon métier de Product Owner, par l'UX (User eXpérience) et le GameStorming, j'aime participer à l'élaboration d'un produit en étant le lien entre les utilisateurs et les développeurs.\n\nSpeakeuse en conférence tech, membre des Duchess France, de SunnyTech, je continue à me perfectionner et à discuter de nouvelles méthodes ou technologies de l'IT.",
+      "bio": "Estelle Landry est Product Manager avec plus de 10 ans d’expérience dans la conception de produits numériques à fort impact.\n\nAncienne développeuse, elle travaille à l’intersection du business, de la tech et des besoins utilisateurs, avec une expertise particulière sur les produits éducatifs et les environnements complexes.\n\nSpeakeuse et organisatrice d’événements tech, elle partage régulièrement ses retours d’expérience autour du product discovery, de la culture produit et de la collaboration produit–tech–design.",
       "company": "Pix",
       "picture": null,
       "twitter": null,
@@ -1771,7 +1771,7 @@
     {
       "uid": "Emilie_Goubin",
       "name": "Emilie Goubin",
-      "bio": "",
+      "bio": "Formatrice à l’INSPÉ Centre-Val de Loire, je forme les futur·es enseignant·es au numérique éducatif. Ancienne créatrice de contenus pédagogiques pour Pix Junior, j’explore les passerelles entre culture numérique et apprentissages scolaires pour rendre le numérique plus inclusif et stimulant.",
       "company": "Université Orléans",
       "picture": null,
       "twitter": null,
@@ -1780,7 +1780,7 @@
     {
       "uid": "Stéphane_Philippart",
       "name": "Stéphane Philippart",
-      "bio": "Durant plus de 20 ans dans le métier \"d'informaticien\" j'ai pu me confronter à beaucoup de technologies différentes. Et c'est cette diversité qui me fait continuer à autant aimer notre métier.\n\nDepuis maintenant 3 ans j'ai la chance d'évoluer au sein d'OVHcloud en tant que developer advocate. Cette position me permet de découvrir de nouvelles technologies ou disciplines comme l’Intelligence Artificielle ou le \"cloud native\" par exemple.\n\nMais mon cœur de vieux développeur Java ne peut pas trop s'éloigner de cette technologie qui est le fil rouge de mes nombreuses années de développeur.\n\nC'est avec humilité que je partage cette expérience mais aussi les nouveautés de notre écosystème à travers mes conférences et le meetup TADx co-créé à Tours.",
+      "bio": "Durant plus de 20 ans dans le métier \"d'informaticien\" j'ai pu me confronter à beaucoup de technologies différentes. Et c'est cette diversité qui me fait continuer à autant aimer notre métier.\n\nDepuis maintenant 4 ans j'ai la chance d'évoluer au sein d'OVHcloud en tant que developer advocate. Cette position me permet de découvrir de nouvelles technologies ou disciplines comme l’Intelligence Artificielle ou le \"cloud native\" par exemple.\n\nMais mon cœur de vieux développeur Java ne peut pas trop s'éloigner de cette technologie qui est le fil rouge de mes nombreuses années de développeur.\n\nC'est avec humilité que je partage cette expérience mais aussi les nouveautés de notre écosystème à travers mes conférences et le meetup TADx co-créé à Tours.",
       "company": "OVHcloud",
       "picture": null,
       "twitter": null,
@@ -1834,7 +1834,7 @@
     {
       "uid": "Anaïs_Moulin",
       "name": "Anaïs Moulin",
-      "bio": "Ingénieure généraliste, Anaïs est Product Owner et a eu l'occasion de travailler sur une variété de projets avec des besoins et des contextes variés. \n\nAu-delà de ses activités fonctionnelles, elle est conférencière et fière d'être engagée pour l'inclusion des femmes dans les métiers de la tech. \n\nEn dehors de ses activités professionnelles, elle voyage autour du monde pour explorer et découvrir de nouveaux horizons.",
+      "bio": "Product Owner, Anaïs intervient sur des projets complexes où elle concilie besoins fonctionnels et enjeux techniques.\n\nConférencière passionnée, elle s'engage activement pour la place des femmes dans la tech. Elle utilise ses conférences pour partager ses convictions et son expertise. Globe-trotteuse dans l'âme, elle puise son inspiration dans ses voyages à travers le monde.",
       "company": "Ippon Technologies",
       "picture": null,
       "twitter": null,
@@ -1852,7 +1852,7 @@
     {
       "uid": "Julien_WITTOUCK",
       "name": "Julien WITTOUCK",
-      "bio": "Je suis fan de Star Wars 💫, de Dragon Ball 🐉, et de rock seventies & nineties 🎸🤘.\n\nJe suis aussi Architecte Solution 🏗️  indépendant, associé chez [Ekité](https://ekite.info) et j'enseigne le développement Java / Spring à l'université de Lille 🎓 depuis plus de 10 ans.\nJe suis aussi l'auteur du livre [L’infrastructure as Code avec Terraform](https://www.editions-eni.fr/livre/l-infrastructure-as-code-avec-terraform-deployez-votre-infrastructure-sur-le-cloud-9782409046629) paru aux éditions ENI, et membre du comité d'organisation de la conférence ☁️ Cloud Nord\n\nMes sujets de prédilection:\n\n* ☕ : Java/Spring\n* ☁️ : Cloud/IaC/Terraform\n* 🐋 : Docker/Kubernetes\n* 🐧 : Linux 💙",
+      "bio": "Je suis fan de Star Wars 💫, de Dragon Ball 🐉, et de rock seventies & nineties 🎸🤘.\n\nJe suis aussi Architecte Solution 🏗️  indépendant, associé chez [Ekité](https://ekite.info) et j'enseigne le développement Java / Spring à l'université de Lille 🎓 depuis plus de 10 ans.\nJe suis aussi l'auteur du livre [L’infrastructure as Code avec Terraform](https://www.editions-eni.fr/livre/l-infrastructure-as-code-avec-terraform-deployez-votre-infrastructure-sur-le-cloud-9782409046629) paru aux éditions ENI, et membre du comité d'organisation de la conférence ☁️ Cloud Nord\n\nJe publie régulièrement des articles de veille sur mon site perso [codeka.io](https://codeka.io).\n\nMes sujets de prédilection:\n\n* ☕ : Java/Spring\n* ☁️ : Cloud/IaC/Terraform\n* 🐋 : Docker/Kubernetes\n* 🐧 : Linux 💙",
       "company": "Freelance / Associé chez Ekité",
       "picture": null,
       "twitter": null,
