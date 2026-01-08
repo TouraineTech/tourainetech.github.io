@@ -163,19 +163,19 @@
   {
     "time": "16:35",
     "talk": {
+      "id": "pm2",
+      "name": "Pause",
+      "speakers": []
+    }
+  },
+  {
+    "time": "16:45",
+    "talk": {
       "id": "cmgkxto2q008h1epdujofui82",
       "name": "Web Components : chronique d'une renaissance",
       "speakers": [
         "Bastien_Rousseau"
       ]
-    }
-  },
-  {
-    "time": "16:35",
-    "talk": {
-      "id": "pm2",
-      "name": "Pause",
-      "speakers": []
     }
   },
   {
