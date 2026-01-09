@@ -1,0 +1,85 @@
+---
+interface Props {
+  icon: string;
+  label: string;
+  value: string;
+  highlight?: boolean;
+}
+
+const { icon, label, value, highlight = false } = Astro.props;
+---
+
+<div class:list={['meta-pill', { highlight }]}>
+  <span class="meta-pill-icon">{icon}</span>
+  <div class="meta-pill-text">
+    <span class="meta-pill-label">{label}</span>
+    <span class="meta-pill-value">{value}</span>
+  </div>
+</div>
+
+<style>
+  .meta-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+  }
+
+  .meta-pill:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .meta-pill.highlight {
+    border-color: var(--accent);
+    background: var(--accent-light);
+  }
+
+  .meta-pill-icon {
+    font-size: 1.5rem;
+  }
+
+  .meta-pill-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .meta-pill-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .meta-pill-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+    font-family: var(--font-display);
+  }
+
+  .meta-pill.highlight .meta-pill-value {
+    color: var(--accent-dark);
+  }
+
+  @media (max-width: 640px) {
+    .meta-pill {
+      padding: 0.75rem 1rem;
+    }
+
+    .meta-pill-icon {
+      font-size: 1.25rem;
+    }
+
+    .meta-pill-value {
+      font-size: 0.9rem;
+    }
+  }
+</style>

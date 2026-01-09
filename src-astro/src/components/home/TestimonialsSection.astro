@@ -1,0 +1,159 @@
+---
+import { testimonials } from '@data/config/site';
+---
+
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-header">
+      <span class="section-label">Temoignages</span>
+      <h2 class="section-title">Ils en parlent</h2>
+      <p class="section-desc">
+        Ce que disent les participants des editions precedentes
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      {testimonials.map((testimonial) => (
+        <div class="testimonial-card">
+          <div class="testimonial-quote">
+            <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+            </svg>
+            <p class="testimonial-text">{testimonial.quote}</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              {testimonial.avatar ? (
+                <img src={testimonial.avatar} alt={testimonial.author} />
+              ) : (
+                <span class="avatar-placeholder">{testimonial.author.charAt(0)}</span>
+              )}
+            </div>
+            <div class="author-info">
+              <span class="author-name">{testimonial.author}</span>
+              <span class="author-role">
+                {testimonial.role}
+                {testimonial.company && ` @ ${testimonial.company}`}
+              </span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+  }
+
+  .testimonials-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .testimonial-quote {
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-icon {
+    color: var(--accent);
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .avatar-placeholder {
+    color: white;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .author-role {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 1024px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+      padding: 1.5rem;
+    }
+  }
+</style>

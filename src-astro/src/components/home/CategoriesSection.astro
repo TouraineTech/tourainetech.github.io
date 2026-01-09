@@ -1,0 +1,105 @@
+---
+import { talkCategories } from '@data/config/site';
+---
+
+<section class="categories">
+  <div class="categories-inner">
+    <div class="section-header">
+      <span class="section-label">Thematiques</span>
+      <h2 class="section-title">Les sujets abordes</h2>
+      <p class="section-desc">
+        Des talks pour tous les profils, du debutant a l'expert
+      </p>
+    </div>
+
+    <div class="categories-grid">
+      {talkCategories.map((category) => (
+        <div class="category-card" style={`--category-color: ${category.color}`}>
+          <span class="category-icon">{category.icon}</span>
+          <h3 class="category-name">{category.name}</h3>
+          <p class="category-desc">{category.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .categories {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+  }
+
+  .categories-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .category-card {
+    background: var(--bg-primary);
+    border-radius: 20px;
+    padding: 1.75rem;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--category-color, var(--accent));
+    box-shadow: var(--shadow-md);
+  }
+
+  .category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: color-mix(in srgb, var(--category-color, var(--accent)) 15%, transparent);
+    border-radius: 14px;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .category-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .category-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1200px) {
+    .categories-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .category-card {
+      padding: 1.5rem;
+    }
+  }
+</style>

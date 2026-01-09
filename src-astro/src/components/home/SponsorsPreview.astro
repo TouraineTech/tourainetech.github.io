@@ -1,0 +1,175 @@
+---
+import sponsors from '@data/sponsors.yaml';
+
+// Filter to show only Platinum and Gold sponsors on home page
+const platinumSponsors = sponsors.filter((s: any) => s.type === 'platinum');
+const goldSponsors = sponsors.filter((s: any) => s.type === 'gold');
+---
+
+<section class="sponsors-preview">
+  <div class="sponsors-preview-inner">
+    <div class="section-header">
+      <span class="section-label">Sponsors</span>
+      <h2 class="section-title">Ils nous soutiennent</h2>
+      <p class="section-desc">
+        Merci a nos sponsors qui rendent cet evenement possible
+      </p>
+    </div>
+
+    {platinumSponsors.length > 0 && (
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Platinum</h3>
+        <div class="sponsors-grid sponsors-grid-platinum">
+          {platinumSponsors.map((sponsor: any) => (
+            <a
+              href={sponsor.link}
+              target="_blank"
+              rel="noopener"
+              class="sponsor-card sponsor-card-platinum"
+              title={sponsor.name}
+            >
+              <img
+                src={`/images/sponsors/${sponsor.image}`}
+                alt={sponsor.name}
+                loading="lazy"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {goldSponsors.length > 0 && (
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Gold</h3>
+        <div class="sponsors-grid sponsors-grid-gold">
+          {goldSponsors.map((sponsor: any) => (
+            <a
+              href={sponsor.link}
+              target="_blank"
+              rel="noopener"
+              class="sponsor-card sponsor-card-gold"
+              title={sponsor.name}
+            >
+              <img
+                src={`/images/sponsors/${sponsor.image}`}
+                alt={sponsor.name}
+                loading="lazy"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="sponsors-footer">
+      <a href="/sponsors" class="btn btn-secondary">
+        Voir tous nos sponsors
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sponsors-preview {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+  }
+
+  .sponsors-preview-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sponsors-tier {
+    margin-bottom: 2.5rem;
+  }
+
+  .sponsors-tier-title {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .sponsor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+  }
+
+  .sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+  }
+
+  .sponsor-card img {
+    max-height: 60px;
+    max-width: 180px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+  }
+
+  .sponsor-card:hover img {
+    filter: grayscale(0%);
+  }
+
+  .sponsor-card-platinum {
+    padding: 2rem 3rem;
+  }
+
+  .sponsor-card-platinum img {
+    max-height: 80px;
+    max-width: 220px;
+  }
+
+  .sponsors-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .sponsors-grid {
+      gap: 1rem;
+    }
+
+    .sponsor-card {
+      padding: 1rem 1.5rem;
+    }
+
+    .sponsor-card-platinum {
+      padding: 1.5rem 2rem;
+    }
+
+    .sponsor-card img {
+      max-height: 40px;
+      max-width: 120px;
+    }
+
+    .sponsor-card-platinum img {
+      max-height: 50px;
+      max-width: 160px;
+    }
+  }
+</style>
