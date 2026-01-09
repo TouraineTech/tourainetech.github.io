@@ -1,0 +1,760 @@
+---
+import Layout from '@layouts/Layout.astro';
+import TalkCard from '@components/schedule/TalkCard.astro';
+
+// Import data
+import scheduleData from '@data/generated/schedule.json';
+import timesData from '@data/config/times.json';
+import breaksData from '@data/config/breaks.json';
+import roomsData from '@data/config/rooms.json';
+import conferenceHall from '@data/generated/conferenceHall.json';
+
+// Types
+interface ScheduleItem {
+  id: string;
+  title: string;
+  categories: string | null;
+  formats: string;
+  rooms: number[];
+  times: number[];
+  day: number;
+  level: string | null;
+}
+
+interface TimeSlot {
+  timeIndex: string;
+  time: string;
+  days: number[];
+}
+
+interface BreakItem {
+  id: string;
+  name: string;
+  format: string;
+  rooms: number[];
+  times: number[];
+  days: number[];
+}
+
+interface Speaker {
+  uid?: string;
+  displayName?: string;
+  photoURL?: string;
+}
+
+// Build speakers lookup from conferenceHall
+const speakersLookup = new Map<string, Speaker>();
+conferenceHall.speakers?.forEach((speaker: any) => {
+  speakersLookup.set(speaker.uid, speaker);
+});
+
+// Also map speaker names to speaker data from talks
+conferenceHall.talks?.forEach((talk: any) => {
+  talk.speakers?.forEach((speakerName: string) => {
+    if (!speakersLookup.has(speakerName)) {
+      const existingSpeaker = conferenceHall.speakers?.find((s: any) =>
+        s.displayName === speakerName.split('_').join(' ') ||
+        s.displayName?.includes(speakerName.split('_')[0])
+      );
+      if (existingSpeaker) {
+        speakersLookup.set(speakerName, existingSpeaker);
+      }
+    }
+  });
+});
+
+// Get speakers for a talk
+function getSpeakersForTalk(talkId: string): Array<{ name: string; photoURL?: string }> {
+  const chTalk = conferenceHall.talks?.find((t: any) => t.id === talkId);
+  if (!chTalk?.speakers) return [];
+
+  return chTalk.speakers.map((speakerName: string) => {
+    const speaker = speakersLookup.get(speakerName);
+    return {
+      name: speakerName,
+      photoURL: speaker?.photoURL
+    };
+  });
+}
+
+// Filter data by day
+const day1Talks = (scheduleData as ScheduleItem[]).filter(t => t.day === 1);
+const day2Talks = (scheduleData as ScheduleItem[]).filter(t => t.day === 2);
+
+const day1Times = (timesData as TimeSlot[]).filter(t => t.days.includes(1));
+const day2Times = (timesData as TimeSlot[]).filter(t => t.days.includes(2));
+
+const day1Breaks = (breaksData as BreakItem[]).filter(b => b.days.includes(1));
+const day2Breaks = (breaksData as BreakItem[]).filter(b => b.days.includes(2));
+
+const rooms = roomsData as string[];
+
+// Helper to check if a time slot has a break
+function getBreakForTime(breaks: BreakItem[], timeIndex: number): BreakItem | undefined {
+  return breaks.find(b => b.times.includes(timeIndex));
+}
+
+// Check if a break applies to a specific room
+function isBreakForRoom(breakItem: BreakItem, roomIndex: number): boolean {
+  return breakItem.rooms.includes(roomIndex + 1); // rooms are 1-indexed
+}
+
+// Check if this is the first room of a break (to render once with colspan)
+function isFirstBreakRoom(breakItem: BreakItem, roomIndex: number): boolean {
+  return breakItem.rooms[0] === (roomIndex + 1);
+}
+
+// Get colspan for a break starting at this room
+function getBreakColSpan(breakItem: BreakItem, roomIndex: number): number {
+  // Count consecutive rooms from this one
+  const roomNum = roomIndex + 1;
+  return breakItem.rooms.filter(r => r >= roomNum).length;
+}
+
+// Helper to get talks for a specific time and room
+function getTalkForCell(talks: ScheduleItem[], timeIndex: number, roomIndex: number): ScheduleItem | undefined {
+  return talks.find(t =>
+    t.times.includes(timeIndex) &&
+    t.rooms.includes(roomIndex + 1) // rooms are 1-indexed in data
+  );
+}
+
+// Check if a talk spans multiple rows (starts at earlier time)
+function isTalkContinuation(talks: ScheduleItem[], timeIndex: number, roomIndex: number): boolean {
+  const talk = talks.find(t =>
+    t.rooms.includes(roomIndex + 1) &&
+    t.times.includes(timeIndex) &&
+    t.times[0] !== timeIndex
+  );
+  return !!talk;
+}
+
+// Get row span for a talk
+function getTalkRowSpan(talk: ScheduleItem): number {
+  return talk.times.length;
+}
+
+// Check if talk spans multiple rooms
+function getColSpan(talk: ScheduleItem): number {
+  return talk.rooms.length;
+}
+
+// Check if this talk was already rendered in a previous room column
+function isAlreadyRendered(talk: ScheduleItem, currentRoomIndex: number): boolean {
+  // If the talk's first room is before the current room, it was already rendered
+  const firstRoom = Math.min(...talk.rooms);
+  return firstRoom < (currentRoomIndex + 1);
+}
+
+// Room capacities
+const roomCapacities: Record<string, string> = {
+  'F21': '250 places',
+  'F22': '120 places',
+  'Bio': '80 places',
+  'Physique': '80 places',
+  'F23': '30 places'
+};
+
+// Categories for filter
+const categories = [
+  { id: 'all', label: 'Toutes', color: 'var(--text-muted)' },
+  { id: 'front', label: 'Front', color: 'var(--cat-front)' },
+  { id: 'backend', label: 'Backend', color: 'var(--cat-backend)' },
+  { id: 'archi', label: 'Architecture', color: 'var(--cat-archi)' },
+  { id: 'iot', label: 'IoT', color: 'var(--cat-iot)' },
+  { id: 'tools', label: 'Tools', color: 'var(--cat-tools)' },
+  { id: 'human', label: 'Human & Tech', color: 'var(--cat-human)' },
+  { id: 'ai', label: 'AI', color: 'var(--cat-ai)' },
+  { id: 'alien', label: 'Alien', color: 'var(--cat-alien)' },
+];
+---
+
+<Layout title="Programme - Touraine Tech 2026">
+  <div class="schedule-page">
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="header-top">
+        <div class="header-title">
+          <h1>Programme</h1>
+          <span class="edition">Touraine Tech 2026</span>
+        </div>
+
+        <div class="day-toggle">
+          <button class="day-btn active" data-day="1">
+            Jeudi 12
+            <span>Jour 1</span>
+          </button>
+          <button class="day-btn" data-day="2">
+            Vendredi 13
+            <span>Jour 2</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="category-filters">
+        {categories.map((cat, i) => (
+          <button
+            class:list={['cat-filter', { active: i === 0 }]}
+            style={`--cat-color: ${cat.color}`}
+            data-category={cat.id}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+    </header>
+
+    <!-- Schedule Grid - Day 1 -->
+    <div class="schedule-container" id="day1" data-day="1">
+      <div class="schedule-grid">
+        <!-- Header Row -->
+        <div class="corner-cell room-header"></div>
+        {rooms.map((room, i) => (
+          <div class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}>
+            <div class="room-name">{room}</div>
+            <div class="room-capacity">{roomCapacities[room]}</div>
+          </div>
+        ))}
+
+        <!-- Time slots -->
+        {day1Times.map((timeSlot) => {
+          const timeIndex = parseInt(timeSlot.timeIndex);
+          const breakItem = getBreakForTime(day1Breaks, timeIndex);
+
+          return (
+            <>
+              <div class="time-cell">
+                <span class="time-value">{timeSlot.time}</span>
+              </div>
+
+              {rooms.map((_, roomIndex) => {
+                // Check if this room has a break at this time
+                if (breakItem && isBreakForRoom(breakItem, roomIndex)) {
+                  // Only render the break cell from the first room it applies to
+                  if (isFirstBreakRoom(breakItem, roomIndex)) {
+                    const breakColSpan = getBreakColSpan(breakItem, roomIndex);
+                    return (
+                      <div class="break-cell" style={`grid-column: span ${breakColSpan};`}>
+                        <div class="break-content">
+                          <span class="break-name">{breakItem.name}</span>
+                        </div>
+                      </div>
+                    );
+                  }
+                  // Skip other rooms that are part of the same break
+                  return null;
+                }
+
+                // Skip if this is a continuation of a multi-row talk
+                if (isTalkContinuation(day1Talks, timeIndex, roomIndex)) {
+                  return null;
+                }
+
+                const talk = getTalkForCell(day1Talks, timeIndex, roomIndex);
+
+                if (!talk) {
+                  return <div class="empty-cell"></div>;
+                }
+
+                // Skip if this talk was already rendered in a previous room (multi-room talks)
+                if (isAlreadyRendered(talk, roomIndex)) {
+                  return null;
+                }
+
+                const rowSpan = getTalkRowSpan(talk);
+                const colSpan = getColSpan(talk);
+                const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+                const speakers = getSpeakersForTalk(talk.id);
+
+                return (
+                  <div
+                    class="talk-cell"
+                    style={`${rowSpan > 1 ? `grid-row: span ${rowSpan};` : ''} ${colSpan > 1 ? `grid-column: span ${colSpan};` : ''}`}
+                    data-category={talk.categories?.toLowerCase() || 'keynote'}
+                  >
+                    <TalkCard
+                      id={talk.id}
+                      title={talk.title}
+                      category={talk.categories}
+                      format={talk.formats}
+                      level={talk.level}
+                      speakers={speakers}
+                      isWorkshop={isWorkshop}
+                      rowSpan={rowSpan}
+                    />
+                  </div>
+                );
+              })}
+            </>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Schedule Grid - Day 2 -->
+    <div class="schedule-container hidden" id="day2" data-day="2">
+      <div class="schedule-grid">
+        <!-- Header Row -->
+        <div class="corner-cell room-header"></div>
+        {rooms.map((room, i) => (
+          <div class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}>
+            <div class="room-name">{room}</div>
+            <div class="room-capacity">{roomCapacities[room]}</div>
+          </div>
+        ))}
+
+        <!-- Time slots -->
+        {day2Times.map((timeSlot) => {
+          const timeIndex = parseInt(timeSlot.timeIndex);
+          const breakItem = getBreakForTime(day2Breaks, timeIndex);
+
+          return (
+            <>
+              <div class="time-cell">
+                <span class="time-value">{timeSlot.time}</span>
+              </div>
+
+              {rooms.map((_, roomIndex) => {
+                // Check if this room has a break at this time
+                if (breakItem && isBreakForRoom(breakItem, roomIndex)) {
+                  // Only render the break cell from the first room it applies to
+                  if (isFirstBreakRoom(breakItem, roomIndex)) {
+                    const breakColSpan = getBreakColSpan(breakItem, roomIndex);
+                    return (
+                      <div class="break-cell" style={`grid-column: span ${breakColSpan};`}>
+                        <div class="break-content">
+                          <span class="break-name">{breakItem.name}</span>
+                        </div>
+                      </div>
+                    );
+                  }
+                  // Skip other rooms that are part of the same break
+                  return null;
+                }
+
+                // Skip if this is a continuation of a multi-row talk
+                if (isTalkContinuation(day2Talks, timeIndex, roomIndex)) {
+                  return null;
+                }
+
+                const talk = getTalkForCell(day2Talks, timeIndex, roomIndex);
+
+                if (!talk) {
+                  return <div class="empty-cell"></div>;
+                }
+
+                // Skip if this talk was already rendered in a previous room (multi-room talks)
+                if (isAlreadyRendered(talk, roomIndex)) {
+                  return null;
+                }
+
+                const rowSpan = getTalkRowSpan(talk);
+                const colSpan = getColSpan(talk);
+                const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+                const speakers = getSpeakersForTalk(talk.id);
+
+                return (
+                  <div
+                    class="talk-cell"
+                    style={`${rowSpan > 1 ? `grid-row: span ${rowSpan};` : ''} ${colSpan > 1 ? `grid-column: span ${colSpan};` : ''}`}
+                    data-category={talk.categories?.toLowerCase() || 'keynote'}
+                  >
+                    <TalkCard
+                      id={talk.id}
+                      title={talk.title}
+                      category={talk.categories}
+                      format={talk.formats}
+                      level={talk.level}
+                      speakers={speakers}
+                      isWorkshop={isWorkshop}
+                      rowSpan={rowSpan}
+                    />
+                  </div>
+                );
+              })}
+            </>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .schedule-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  /* Page Header */
+  .page-header {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 2rem 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-top {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .header-title h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .header-title .edition {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* Day Toggle */
+  .day-toggle {
+    display: flex;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .day-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .day-btn span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .day-btn.active {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .day-btn:not(.active):hover {
+    color: var(--text-primary);
+  }
+
+  /* Category Filters */
+  .category-filters {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .category-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    background: var(--bg-primary);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .cat-filter::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cat-color);
+  }
+
+  .cat-filter:hover,
+  .cat-filter.active {
+    border-color: var(--cat-color);
+    background: color-mix(in srgb, var(--cat-color) 8%, white);
+    color: var(--text-primary);
+  }
+
+  /* Schedule Container */
+  .schedule-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+
+  .schedule-container.hidden {
+    display: none;
+  }
+
+  /* Schedule Grid */
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 70px repeat(5, 1fr);
+    gap: 1px;
+    background: var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1200px) {
+    .schedule-container {
+      overflow-x: auto;
+    }
+
+    .schedule-grid {
+      grid-template-columns: 60px repeat(5, minmax(160px, 1fr));
+      min-width: 900px;
+    }
+  }
+
+  /* Room Headers */
+  .room-header {
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .room-header.first-room {
+    border-radius: 16px 0 0 0;
+  }
+
+  .room-header.last-room {
+    border-radius: 0 16px 0 0;
+  }
+
+  .room-name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .room-capacity {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+
+  /* Corner cell */
+  .corner-cell {
+    background: var(--bg-tertiary);
+    position: sticky;
+    left: 0;
+    z-index: 20;
+  }
+
+  /* Time Column */
+  .time-cell {
+    background: var(--bg-primary);
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    border-right: 2px solid var(--accent-light);
+  }
+
+  .time-value {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  /* Talk Cells */
+  .talk-cell {
+    background: var(--bg-primary);
+    padding: 0.4rem;
+    min-height: 90px;
+  }
+
+  /* Break Cells */
+  .break-cell {
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+  }
+
+  .break-cell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 8px,
+      rgba(106, 191, 173, 0.04) 8px,
+      rgba(106, 191, 173, 0.04) 16px
+    );
+  }
+
+  .break-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .break-name {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  /* Empty Cell */
+  .empty-cell {
+    background: var(--bg-primary);
+    min-height: 90px;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .talk-cell {
+    animation: fadeIn 0.4s ease backwards;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .page-header {
+      padding: 1.5rem 1rem 0;
+    }
+
+    .header-top {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .header-title h1 {
+      font-size: 2rem;
+    }
+
+    .schedule-container {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .header-title h1 {
+      font-size: 1.5rem;
+    }
+
+    .day-toggle {
+      width: 100%;
+    }
+
+    .day-btn {
+      flex: 1;
+      padding: 0.6rem 1rem;
+    }
+
+    .schedule-grid {
+      grid-template-columns: 55px repeat(5, minmax(150px, 1fr));
+    }
+
+    .time-value {
+      font-size: 0.8rem;
+    }
+
+    .room-name {
+      font-size: 0.9rem;
+    }
+
+    .talk-cell {
+      min-height: 80px;
+    }
+  }
+</style>
+
+<script>
+  // Day toggle
+  document.querySelectorAll('.day-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const day = this.getAttribute('data-day');
+
+      // Update buttons
+      document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Show/hide grids
+      document.querySelectorAll('.schedule-container').forEach(container => {
+        if (container.getAttribute('data-day') === day) {
+          container.classList.remove('hidden');
+        } else {
+          container.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Category filter (basic implementation - filters visually)
+  document.querySelectorAll('.cat-filter').forEach(filter => {
+    filter.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+
+      // Update filter buttons
+      document.querySelectorAll('.cat-filter').forEach(f => f.classList.remove('active'));
+      this.classList.add('active');
+
+      // Filter talks
+      document.querySelectorAll('.talk-cell').forEach(cell => {
+        if (category === 'all') {
+          (cell as HTMLElement).style.opacity = '1';
+        } else {
+          const cellCat = cell.getAttribute('data-category') || '';
+          const matches = cellCat.toLowerCase().includes(category);
+          (cell as HTMLElement).style.opacity = matches ? '1' : '0.3';
+        }
+      });
+    });
+  });
+</script>

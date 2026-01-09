@@ -39,6 +39,17 @@
   --radius-lg: 16px;
   --radius-xl: 20px;
   --radius-2xl: 24px;
+
+  /* Category Colors */
+  --cat-design: #E91E8C;
+  --cat-front: #0077C2;
+  --cat-backend: #2C4A5C;
+  --cat-iot: #22A352;
+  --cat-archi: #E84D2E;
+  --cat-tools: #F59E0B;
+  --cat-human: #EAB308;
+  --cat-ai: #8B5CF6;
+  --cat-alien: #066420;
 }
 
 /* Reset */
