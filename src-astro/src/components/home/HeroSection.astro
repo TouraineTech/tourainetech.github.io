@@ -1,0 +1,380 @@
+---
+import MetaPill from '@components/ui/MetaPill.astro';
+import { siteConfig } from '@data/config/site';
+
+const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition } = siteConfig;
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-meta">
+        <MetaPill icon="📅" label="Date" value={edition.dates} />
+        <MetaPill icon="📍" label="Lieu" value={edition.location} />
+        {isCfpOpen && cfpDeadline && (
+          <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
+        )}
+      </div>
+
+      <h1 class="hero-title">
+        La conference tech<br />
+        <span class="hero-title-accent">en Touraine</span>
+      </h1>
+
+      <p class="hero-desc">
+        Deux jours de conferences, workshops et rencontres avec les acteurs de la tech.
+        Rejoignez 800 passionnes a Polytech Tours !
+      </p>
+
+      <div class="hero-actions">
+        {isTicketingOpen && (
+          <a href={ticketingUrl} target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            Prendre ma place
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        )}
+        {isCfpOpen && (
+          <a href={cfpUrl} target="_blank" rel="noopener" class:list={['btn', 'btn-lg', isTicketingOpen ? 'btn-secondary' : 'btn-primary']}>
+            Proposer un talk
+          </a>
+        )}
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-header">
+        <span class="hero-card-badge">Edition {edition.year}</span>
+        <h2 class="hero-card-title">Billetterie</h2>
+      </div>
+
+      <div class="hero-card-prices">
+        <div class="price-row">
+          <div class="price-info">
+            <span class="price-label">Early Bird</span>
+            <span class="price-dates">Jusqu'au 31 dec</span>
+          </div>
+          <div class="price-value">
+            <span class="price-amount">45€</span>
+            <span class="price-status available">Disponible</span>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div class="price-info">
+            <span class="price-label">Tarif normal</span>
+            <span class="price-dates">A partir du 1er jan</span>
+          </div>
+          <div class="price-value">
+            <span class="price-amount">60€</span>
+          </div>
+        </div>
+      </div>
+
+      <a href={ticketingUrl} target="_blank" rel="noopener" class="hero-card-cta">
+        Reserver maintenant
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <div class="hero-card-features">
+        <div class="feature">
+          <span class="feature-icon">🎤</span>
+          <span>50+ talks</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🍽️</span>
+          <span>Repas inclus</span>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🎁</span>
+          <span>Goodies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 5rem 2rem 6rem;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+  }
+
+  .hero-orb-1 {
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    opacity: 0.6;
+  }
+
+  .hero-orb-2 {
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.4;
+  }
+
+  .hero-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-title-accent {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-desc {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Hero Card */
+  .hero-card {
+    background: var(--bg-primary);
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .hero-card-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-card-badge {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .hero-card-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+  }
+
+  .price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .price-label {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .price-dates {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .price-value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+
+  .price-amount {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+  }
+
+  .price-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+  }
+
+  .price-status.available {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+  }
+
+  .hero-card-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-card-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(106, 191, 173, 0.4);
+  }
+
+  .hero-card-features {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+
+  .feature-icon {
+    font-size: 1.25rem;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-meta {
+      justify-content: center;
+    }
+
+    .hero-desc {
+      max-width: none;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding: 2rem 1rem 3rem;
+    }
+
+    .hero-meta {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .hero-card {
+      padding: 1.5rem;
+    }
+
+    .hero-card-features {
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+  }
+</style>

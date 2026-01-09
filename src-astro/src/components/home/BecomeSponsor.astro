@@ -1,0 +1,170 @@
+---
+const perks = [
+  { icon: '👥', title: 'Visibilite', desc: 'Logo sur tous les supports, site web et reseaux sociaux' },
+  { icon: '🎯', title: 'Recrutement', desc: 'Stand dedie et acces aux profils des participants' },
+  { icon: '🎤', title: 'Prise de parole', desc: 'Slots dedies selon le niveau de sponsoring' },
+  { icon: '🎁', title: 'Places offertes', desc: 'Invitations pour vos equipes techniques' },
+];
+---
+
+<section class="become-sponsor">
+  <div class="become-sponsor-inner">
+    <div class="become-sponsor-content">
+      <h2 class="become-sponsor-title">Devenez sponsor</h2>
+      <p class="become-sponsor-desc">
+        Associez votre marque a l'evenement tech majeur de la region Centre-Val de Loire.
+        Touchez 800+ professionnels de la tech, recrutez et renforcez votre image employeur.
+      </p>
+      <div class="become-sponsor-actions">
+        <a href="https://sponsoring2026.touraine.tech" target="_blank" rel="noopener" class="btn btn-white">
+          Nous contacter
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="/sponsor_2026.pdf" target="_blank" rel="noopener" class="btn btn-outline-white">
+          Telecharger le dossier
+        </a>
+      </div>
+    </div>
+
+    <div class="sponsor-perks">
+      {perks.map((perk) => (
+        <div class="perk-card">
+          <div class="perk-icon">{perk.icon}</div>
+          <h4 class="perk-title">{perk.title}</h4>
+          <p class="perk-desc">{perk.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .become-sponsor {
+    padding: var(--section-padding);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .become-sponsor::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  }
+
+  .become-sponsor::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  }
+
+  .become-sponsor-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .become-sponsor-content {
+    color: white;
+  }
+
+  .become-sponsor-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 1.25rem;
+    color: white;
+  }
+
+  .become-sponsor-desc {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    color: white;
+  }
+
+  .become-sponsor-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-perks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .perk-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .perk-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+  }
+
+  .perk-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .perk-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .perk-desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .become-sponsor-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .become-sponsor-actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .sponsor-perks {
+      grid-template-columns: 1fr;
+    }
+
+    .become-sponsor-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .become-sponsor-actions .btn {
+      justify-content: center;
+    }
+  }
+</style>

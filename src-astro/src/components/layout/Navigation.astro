@@ -1,0 +1,232 @@
+---
+import { siteConfig } from '@data/config/site';
+
+const { isCfpOpen, isTicketingOpen, isProgrammePublished, ticketingUrl, cfpUrl } = siteConfig;
+
+// Navigation links - conditionally shown based on site mode
+const navLinks = [
+  { href: '/', label: 'Accueil', always: true },
+  { href: '/schedule', label: 'Programme', show: isProgrammePublished },
+  { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
+  { href: '/sponsors', label: 'Sponsors', always: true },
+  { href: '/team', label: 'Equipe', always: true },
+].filter(link => link.always || link.show);
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">TT</div>
+      <div class="nav-logo-text">
+        Touraine<span>Tech</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={['nav-link', { active: currentPath === link.href }]}
+        >
+          {link.label}
+        </a>
+      ))}
+
+      {isCfpOpen && (
+        <a href={cfpUrl} target="_blank" rel="noopener" class="nav-cta nav-cta-cfp">
+          Proposer un talk
+        </a>
+      )}
+
+      {isTicketingOpen && (
+        <a href={ticketingUrl} target="_blank" rel="noopener" class="nav-cta">
+          Billetterie
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      )}
+    </div>
+
+    <!-- Mobile menu button -->
+    <button class="nav-mobile-toggle" aria-label="Menu" aria-expanded="false">
+      <span class="nav-mobile-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 2rem;
+  }
+
+  .nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--text-primary);
+  }
+
+  .nav-logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: white;
+    font-family: var(--font-display);
+    box-shadow: var(--shadow-accent);
+  }
+
+  .nav-logo-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-logo-text span {
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1.25rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--text-primary);
+    background: var(--glass-bg);
+  }
+
+  .nav-link.active {
+    color: var(--accent-dark);
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    padding: 0.875rem 1.75rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-accent);
+  }
+
+  .nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(106, 191, 173, 0.35);
+  }
+
+  .nav-cta-cfp {
+    background: var(--bg-primary);
+    color: var(--accent-dark);
+    border: 2px solid var(--accent);
+    box-shadow: none;
+  }
+
+  .nav-cta-cfp:hover {
+    background: var(--accent-light);
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .nav-mobile-icon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    position: relative;
+  }
+
+  .nav-mobile-icon::before,
+  .nav-mobile-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    left: 0;
+  }
+
+  .nav-mobile-icon::before { top: -8px; }
+  .nav-mobile-icon::after { bottom: -8px; }
+
+  @media (max-width: 1024px) {
+    .nav-link {
+      display: none;
+    }
+
+    .nav-mobile-toggle {
+      display: block;
+    }
+
+    .nav-cta {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .nav {
+      padding: 0.75rem 1rem;
+    }
+
+    .nav-logo-text {
+      display: none;
+    }
+
+    .nav-cta {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .nav-cta svg {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touraine Tech 2026 - Proposition "Elegant Glass"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a1b2e;
+      --primary-deep: #0f1019;
+      --secondary: #6ABFAD;
+      --secondary-light: #8fd4c5;
+      --secondary-glow: rgba(106, 191, 173, 0.4);
+      --accent: #4ecdc4;
+      --glass-bg: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --text-primary: #ffffff;
+      --text-secondary: rgba(255, 255, 255, 0.7);
+      --text-muted: rgba(255, 255, 255, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--primary-deep);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Background ambient effects */
+    .bg-ambient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.5;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .bg-orb-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+      top: -200px;
+      right: -100px;
+      animation-delay: 0s;
+    }
+
+    .bg-orb-2 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+      bottom: 20%;
+      left: -100px;
+      animation-delay: -7s;
+    }
+
+    .bg-orb-3 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #7c5cbf 0%, transparent 70%);
+      top: 50%;
+      right: 20%;
+      animation-delay: -14s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(40px, 10px) scale(1.02); }
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav.scrolled {
+      background: rgba(15, 16, 25, 0.85);
+      backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .nav-logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+      font-family: 'Outfit', sans-serif;
+      box-shadow: 0 4px 20px var(--secondary-glow);
+    }
+
+    .nav-logo-text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo-text span {
+      color: var(--secondary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+      background: var(--glass-bg);
+    }
+
+    .nav-link.active {
+      color: var(--secondary);
+    }
+
+    .nav-cta {
+      margin-left: 1rem;
+      padding: 0.875rem 1.75rem;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      color: var(--primary-deep);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 14px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px var(--secondary-glow);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--secondary-glow);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 2rem 4rem;
+      position: relative;
+    }
+
+    .hero-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem 0.5rem 0.5rem;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 100px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--secondary);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title-gradient {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 50%, var(--secondary-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-meta-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .hero-meta-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-meta-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .hero-meta-value {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      color: var(--primary-deep);
+      box-shadow: 0 4px 20px var(--secondary-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px var(--secondary-glow);
+    }
+
+    .btn-glass {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      color: var(--text-primary);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--secondary);
+    }
+
+    /* Hero Visual */
+    .hero-visual {
+      position: relative;
+      animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+      opacity: 0;
+    }
+
+    .hero-card-stack {
+      position: relative;
+      height: 500px;
+    }
+
+    .hero-card {
+      position: absolute;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      padding: 1.5rem;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hero-card:hover {
+      transform: translateY(-10px) !important;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-card-1 {
+      width: 320px;
+      top: 0;
+      right: 0;
+      transform: rotate(3deg);
+    }
+
+    .hero-card-2 {
+      width: 280px;
+      top: 120px;
+      left: 0;
+      transform: rotate(-5deg);
+    }
+
+    .hero-card-3 {
+      width: 300px;
+      bottom: 0;
+      right: 40px;
+      transform: rotate(1deg);
+    }
+
+    .speaker-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .speaker-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .speaker-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .speaker-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .talk-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .talk-category {
+      padding: 0.375rem 0.75rem;
+      background: rgba(106, 191, 173, 0.2);
+      color: var(--secondary);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .talk-time {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .talk-card h4 {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+
+    .talk-speakers {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .talk-speakers-avatars {
+      display: flex;
+    }
+
+    .talk-speakers-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--secondary);
+      border: 2px solid var(--primary-deep);
+      margin-left: -8px;
+    }
+
+    .talk-speakers-avatar:first-child {
+      margin-left: 0;
+    }
+
+    .talk-speakers-name {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* Stats Section */
+    .stats {
+      padding: 6rem 2rem;
+      position: relative;
+    }
+
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 2rem;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--secondary);
+      box-shadow: 0 10px 40px rgba(106, 191, 173, 0.15);
+    }
+
+    .stat-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    /* Speakers Section */
+    .speakers {
+      padding: 6rem 2rem;
+    }
+
+    .speakers-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 100px;
+      font-size: 0.875rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .speaker-card-full {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 1.5rem;
+      backdrop-filter: blur(20px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .speaker-card-full::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--secondary), var(--accent));
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .speaker-card-full:hover {
+      transform: translateY(-8px);
+      border-color: var(--secondary);
+      box-shadow: 0 20px 60px rgba(106, 191, 173, 0.2);
+    }
+
+    .speaker-card-full:hover::before {
+      transform: scaleX(1);
+    }
+
+    .speaker-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      overflow: hidden;
+    }
+
+    .speaker-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .speaker-name {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .speaker-role {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .speaker-socials {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .speaker-social {
+      width: 36px;
+      height: 36px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .speaker-social:hover {
+      background: var(--secondary);
+      border-color: var(--secondary);
+      color: var(--primary-deep);
+    }
+
+    /* Schedule Preview */
+    .schedule {
+      padding: 6rem 2rem;
+      background: linear-gradient(180deg, transparent 0%, rgba(106, 191, 173, 0.03) 100%);
+    }
+
+    .schedule-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .schedule-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .schedule-tab {
+      padding: 1rem 2rem;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .schedule-tab.active {
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+      color: var(--primary-deep);
+      border-color: transparent;
+      box-shadow: 0 4px 20px var(--secondary-glow);
+    }
+
+    .schedule-tab:hover:not(.active) {
+      border-color: var(--secondary);
+      color: var(--text-primary);
+    }
+
+    .schedule-preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .schedule-slot {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 1.5rem;
+      backdrop-filter: blur(20px);
+      border-left: 4px solid var(--secondary);
+      transition: all 0.3s ease;
+    }
+
+    .schedule-slot:hover {
+      transform: translateX(8px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .schedule-slot-time {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .schedule-slot-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .schedule-slot-speaker {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .schedule-slot-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    .schedule-slot-room {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .schedule-slot-tag {
+      padding: 0.25rem 0.5rem;
+      background: rgba(106, 191, 173, 0.15);
+      color: var(--secondary);
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    /* Sponsors */
+    .sponsors {
+      padding: 6rem 2rem;
+    }
+
+    .sponsors-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sponsors-tier {
+      margin-bottom: 3rem;
+    }
+
+    .sponsors-tier-title {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.5rem;
+    }
+
+    .sponsors-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .sponsor-card {
+      width: 180px;
+      height: 100px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .sponsor-card:hover {
+      transform: scale(1.05);
+      border-color: var(--secondary);
+      box-shadow: 0 10px 40px rgba(106, 191, 173, 0.15);
+    }
+
+    .sponsor-card.platinum {
+      width: 240px;
+      height: 130px;
+      font-size: 1.25rem;
+    }
+
+    .sponsor-card.gold {
+      width: 200px;
+      height: 110px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      padding: 6rem 2rem;
+    }
+
+    .newsletter-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .newsletter-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 32px;
+      padding: 3rem;
+      backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, var(--secondary-glow) 0%, transparent 60%);
+      opacity: 0.3;
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .newsletter-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-desc {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .newsletter-input:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px var(--secondary-glow);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 4rem 2rem 2rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    .footer-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-secondary);
+      margin-top: 1rem;
+      max-width: 300px;
+      line-height: 1.7;
+    }
+
+    .footer-title {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--secondary);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    .footer-copyright {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-social {
+      width: 40px;
+      height: 40px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social:hover {
+      background: var(--secondary);
+      border-color: var(--secondary);
+      color: var(--primary-deep);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-desc {
+        margin: 0 auto 2rem;
+      }
+
+      .hero-meta {
+        justify-content: center;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .schedule-preview {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links {
+        display: none;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .speakers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Background -->
+  <div class="bg-ambient">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">TT</div>
+        <div class="nav-logo-text">Touraine <span>Tech</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link active">Accueil</a>
+        <a href="#" class="nav-link">Programme</a>
+        <a href="#" class="nav-link">Speakers</a>
+        <a href="#" class="nav-link">Sponsors</a>
+        <a href="#" class="nav-link">L'Equipe</a>
+        <a href="#" class="nav-cta">Billetterie</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Edition 2026
+        </div>
+        <h1 class="hero-title">
+          La tech en <br><span class="hero-title-gradient">Touraine</span>
+        </h1>
+        <p class="hero-desc">
+          Deux jours de conférences et d'ateliers pour explorer les dernières innovations tech. Rejoignez-nous à Tours !
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">📅</div>
+            <div class="hero-meta-text">
+              <span class="hero-meta-label">Date</span>
+              <span class="hero-meta-value">12-13 Février 2026</span>
+            </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">📍</div>
+            <div class="hero-meta-text">
+              <span class="hero-meta-label">Lieu</span>
+              <span class="hero-meta-value">Polytech Tours</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">
+            Prendre mon billet
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#" class="btn btn-glass">Voir le programme</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-card hero-card-1">
+            <div class="speaker-card">
+              <div class="speaker-avatar">👩‍💻</div>
+              <div class="speaker-info">
+                <h4>Marie Dupont</h4>
+                <p>Staff Engineer @ Google</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card hero-card-2 talk-card">
+            <div class="talk-card-header">
+              <span class="talk-category">Backend</span>
+              <span class="talk-time">50 min</span>
+            </div>
+            <h4>Rust pour les développeurs Java : le guide ultime</h4>
+            <div class="talk-speakers">
+              <div class="talk-speakers-avatars">
+                <div class="talk-speakers-avatar"></div>
+              </div>
+              <span class="talk-speakers-name">Thomas Martin</span>
+            </div>
+          </div>
+          <div class="hero-card hero-card-3">
+            <div class="speaker-card">
+              <div class="speaker-avatar">🧑‍🔬</div>
+              <div class="speaker-info">
+                <h4>Pierre Leroy</h4>
+                <p>CTO @ Startup Tech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">50+</div>
+          <div class="stat-label">Conférences</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">800</div>
+          <div class="stat-label">Participants</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">60</div>
+          <div class="stat-label">Speakers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2</div>
+          <div class="stat-label">Jours</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section class="speakers">
+    <div class="speakers-inner">
+      <div class="section-header">
+        <div class="section-label">
+          <span>🎤</span> Speakers 2026
+        </div>
+        <h2 class="section-title">Nos incroyables speakers</h2>
+        <p class="section-desc">
+          Des experts passionnés qui partagent leur savoir et leurs retours d'expérience
+        </p>
+      </div>
+      <div class="speakers-grid">
+        <div class="speaker-card-full">
+          <div class="speaker-photo">👩‍💻</div>
+          <h3 class="speaker-name">Marie Dupont</h3>
+          <p class="speaker-role">Staff Engineer @ Google</p>
+          <div class="speaker-socials">
+            <a href="#" class="speaker-social">in</a>
+            <a href="#" class="speaker-social">𝕏</a>
+            <a href="#" class="speaker-social">GH</a>
+          </div>
+        </div>
+        <div class="speaker-card-full">
+          <div class="speaker-photo">🧑‍🔬</div>
+          <h3 class="speaker-name">Thomas Martin</h3>
+          <p class="speaker-role">Principal Architect @ AWS</p>
+          <div class="speaker-socials">
+            <a href="#" class="speaker-social">in</a>
+            <a href="#" class="speaker-social">𝕏</a>
+          </div>
+        </div>
+        <div class="speaker-card-full">
+          <div class="speaker-photo">👨‍🎨</div>
+          <h3 class="speaker-name">Sophie Bernard</h3>
+          <p class="speaker-role">Lead UX @ Figma</p>
+          <div class="speaker-socials">
+            <a href="#" class="speaker-social">in</a>
+            <a href="#" class="speaker-social">𝕏</a>
+            <a href="#" class="speaker-social">GH</a>
+          </div>
+        </div>
+        <div class="speaker-card-full">
+          <div class="speaker-photo">🧑‍💼</div>
+          <h3 class="speaker-name">Pierre Leroy</h3>
+          <p class="speaker-role">CTO @ DataDog</p>
+          <div class="speaker-socials">
+            <a href="#" class="speaker-social">in</a>
+            <a href="#" class="speaker-social">GH</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Preview -->
+  <section class="schedule">
+    <div class="schedule-inner">
+      <div class="section-header">
+        <div class="section-label">
+          <span>📅</span> Programme
+        </div>
+        <h2 class="section-title">Le programme 2026</h2>
+        <p class="section-desc">
+          Deux jours intenses de contenus tech de qualité
+        </p>
+      </div>
+      <div class="schedule-tabs">
+        <button class="schedule-tab active">Jeudi 12</button>
+        <button class="schedule-tab">Vendredi 13</button>
+      </div>
+      <div class="schedule-preview">
+        <div class="schedule-slot">
+          <div class="schedule-slot-time">09:00 - 09:50</div>
+          <h4 class="schedule-slot-title">Keynote d'ouverture : L'IA en 2026</h4>
+          <p class="schedule-slot-speaker">Marie Dupont</p>
+          <div class="schedule-slot-meta">
+            <span class="schedule-slot-room">📍 Amphi A</span>
+            <span class="schedule-slot-tag">Keynote</span>
+          </div>
+        </div>
+        <div class="schedule-slot">
+          <div class="schedule-slot-time">10:00 - 10:50</div>
+          <h4 class="schedule-slot-title">Clean Architecture en pratique</h4>
+          <p class="schedule-slot-speaker">Thomas Martin</p>
+          <div class="schedule-slot-meta">
+            <span class="schedule-slot-room">📍 Salle 1</span>
+            <span class="schedule-slot-tag">Architecture</span>
+          </div>
+        </div>
+        <div class="schedule-slot">
+          <div class="schedule-slot-time">10:00 - 10:50</div>
+          <h4 class="schedule-slot-title">Design Systems à l'échelle</h4>
+          <p class="schedule-slot-speaker">Sophie Bernard</p>
+          <div class="schedule-slot-meta">
+            <span class="schedule-slot-room">📍 Salle 2</span>
+            <span class="schedule-slot-tag">Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="sponsors">
+    <div class="sponsors-inner">
+      <div class="section-header">
+        <div class="section-label">
+          <span>🤝</span> Sponsors
+        </div>
+        <h2 class="section-title">Ils nous soutiennent</h2>
+      </div>
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Platinum</h3>
+        <div class="sponsors-grid">
+          <div class="sponsor-card platinum">IPPON</div>
+          <div class="sponsor-card platinum">MAIF</div>
+        </div>
+      </div>
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Gold</h3>
+        <div class="sponsors-grid">
+          <div class="sponsor-card gold">OVH</div>
+          <div class="sponsor-card gold">Clever Cloud</div>
+          <div class="sponsor-card gold">Microsoft</div>
+        </div>
+      </div>
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Silver</h3>
+        <div class="sponsors-grid">
+          <div class="sponsor-card">Worldline</div>
+          <div class="sponsor-card">Sopra</div>
+          <div class="sponsor-card">NeoSoft</div>
+          <div class="sponsor-card">Grafana</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Restez informés</h2>
+          <p class="newsletter-desc">
+            Inscrivez-vous à notre newsletter pour ne rien manquer de Touraine Tech 2026
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="votre@email.com">
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">TT</div>
+            <div class="nav-logo-text">Touraine <span>Tech</span></div>
+          </a>
+          <p>La conférence tech incontournable de la région Centre-Val de Loire. Deux jours pour apprendre, partager et networker.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Programme</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Billetterie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Infos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">L'Equipe</a></li>
+            <li><a href="#">Code de conduite</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Editions</h4>
+          <ul class="footer-links">
+            <li><a href="#">2025</a></li>
+            <li><a href="#">2024</a></li>
+            <li><a href="#">2023</a></li>
+            <li><a href="#">Archives</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Touraine Tech. Fait avec 💚 à Tours.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social">𝕏</a>
+          <a href="#" class="footer-social">in</a>
+          <a href="#" class="footer-social">YT</a>
+          <a href="#" class="footer-social">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Schedule tabs
+    const tabs = document.querySelectorAll('.schedule-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

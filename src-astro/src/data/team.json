@@ -1,0 +1,34 @@
+[
+  {
+    "name":"Benjamin",
+    "avatar": "benjamin.jpeg"
+  },
+  {
+    "name":"Christophe",
+    "avatar": "christophe.jpeg"
+  },
+  {
+    "name":"Amandine",
+    "avatar": "amandine.jpeg"
+  },
+  {
+    "name":"Florian",
+    "avatar": "florian.jpeg"
+  },
+  {
+    "name":"François",
+    "avatar": "francois.png"
+  },
+  {
+    "name":"Valentin",
+    "avatar": "valentin.png"
+  },
+  {
+    "name":"Jordane",
+    "avatar": "jordane.jpeg"
+  },
+  {
+    "name":"Antoine",
+    "avatar": "antoine.png"
+  }
+]

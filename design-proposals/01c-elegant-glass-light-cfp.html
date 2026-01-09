@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touraine Tech 2026 - Elegant Glass Light (CFP Ouvert)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFB;
+      --bg-tertiary: #F0F4F3;
+      --text-primary: #1C1D21;
+      --text-secondary: #4A4B52;
+      --text-muted: #8B8D97;
+      --accent: #6ABFAD;
+      --accent-light: #E8F5F2;
+      --accent-dark: #4A9A8A;
+      --accent-glow: rgba(106, 191, 173, 0.3);
+      --cfp-accent: #6ABFAD;
+      --cfp-light: #E8F5F2;
+      --glass-bg: rgba(106, 191, 173, 0.06);
+      --glass-border: rgba(106, 191, 173, 0.12);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.08);
+      --shadow-accent: 0 4px 20px rgba(106, 191, 173, 0.25);
+      --shadow-cfp: 0 4px 20px rgba(106, 191, 173, 0.25);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 1rem 2rem;
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .nav-logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .nav-logo-text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo-text span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+      background: var(--glass-bg);
+    }
+
+    .nav-link.active {
+      color: var(--accent-dark);
+    }
+
+    .nav-cta {
+      margin-left: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(106, 191, 173, 0.35);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 5rem 2rem 6rem;
+      background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--cfp-light) 0%, transparent 70%);
+      opacity: 0.6;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+      opacity: 0.4;
+    }
+
+    .hero-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem 0.5rem 0.5rem;
+      background: var(--cfp-light);
+      border: 1px solid rgba(106, 191, 173, 0.2);
+      border-radius: 100px;
+      font-size: 0.875rem;
+      color: var(--cfp-accent);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--cfp-accent);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+
+    /* Hero Meta Pills */
+    .hero-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.875rem 1.25rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .hero-meta-pill:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-meta-pill.cfp {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .hero-meta-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .hero-meta-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .hero-meta-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .hero-meta-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .hero-title {
+      font-size: clamp(2.75rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .hero-title-gradient {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-cfp {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      box-shadow: var(--shadow-cfp);
+    }
+
+    .btn-cfp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(106, 191, 173, 0.4);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(106, 191, 173, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      border: 2px solid var(--glass-border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    /* Hero CFP Card */
+    .hero-cfp {
+      background: var(--bg-primary);
+      border: 2px solid rgba(106, 191, 173, 0.2);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+
+    .hero-cfp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-cfp-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .hero-cfp-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-cfp-badge {
+      padding: 0.5rem 1rem;
+      background: var(--cfp-accent);
+      color: white;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .hero-cfp-deadline {
+      background: var(--cfp-light);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .hero-cfp-deadline-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-cfp-deadline-date {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--cfp-accent);
+    }
+
+    .hero-cfp-perks {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-cfp-perk {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .hero-cfp-perk-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--accent-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .hero-cfp-ctas {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .hero-cfp-cta {
+      flex: 1;
+      padding: 1rem;
+      font-size: 0.95rem;
+      justify-content: center;
+    }
+
+    /* Why Speak Section */
+    .why-speak {
+      padding: 5rem 2rem;
+      background: var(--bg-primary);
+    }
+
+    .why-speak-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .why-speak-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .why-speak-card {
+      background: var(--bg-secondary);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .why-speak-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .why-speak-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--cfp-light);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 2rem;
+    }
+
+    .why-speak-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .why-speak-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Stats Section */
+    .stats {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 2rem;
+      background: var(--bg-primary);
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    /* Categories Section */
+    .categories {
+      padding: 5rem 2rem;
+      background: var(--bg-primary);
+    }
+
+    .categories-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent-light);
+      border-radius: 100px;
+      font-size: 0.875rem;
+      color: var(--accent-dark);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .section-label.cfp {
+      background: var(--cfp-light);
+      color: var(--cfp-accent);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .category-card {
+      background: var(--bg-secondary);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .category-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--cfp-accent);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .category-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1rem;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .category-card:nth-child(1) .category-icon { background: #E8F5F2; }
+    .category-card:nth-child(2) .category-icon { background: #FFF3E0; }
+    .category-card:nth-child(3) .category-icon { background: #E3F2FD; }
+    .category-card:nth-child(4) .category-icon { background: #FCE4EC; }
+    .category-card:nth-child(5) .category-icon { background: #F3E5F5; }
+    .category-card:nth-child(6) .category-icon { background: #FFF8E1; }
+    .category-card:nth-child(7) .category-icon { background: #E8EAF6; }
+
+    .category-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .category-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .testimonials-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: var(--bg-primary);
+      border-radius: 24px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .testimonial-quote {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-quote::before {
+      content: '"';
+      font-size: 3rem;
+      color: var(--cfp-accent);
+      line-height: 0;
+      vertical-align: bottom;
+      margin-right: 0.25rem;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--cfp-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .testimonial-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.125rem;
+    }
+
+    .testimonial-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .testimonial-badge {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+      background: var(--cfp-light);
+      color: var(--cfp-accent);
+      border-radius: 4px;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 5rem 2rem;
+      background: var(--bg-primary);
+    }
+
+    .gallery-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--bg-tertiary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 3rem;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+      transition: gap 0.3s ease;
+    }
+
+    .btn-link:hover {
+      gap: 0.75rem;
+    }
+
+    /* Sponsors Section */
+    .sponsors {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .sponsors-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sponsors-tier {
+      margin-bottom: 3rem;
+    }
+
+    .sponsors-tier-title {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.5rem;
+    }
+
+    .sponsors-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .sponsor-card {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sponsor-card:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-md);
+    }
+
+    .sponsor-card.platinum {
+      width: 240px;
+      height: 130px;
+      font-size: 1.25rem;
+    }
+
+    .sponsor-card.gold {
+      width: 200px;
+      height: 110px;
+    }
+
+    .sponsor-card.silver {
+      width: 160px;
+      height: 90px;
+      font-size: 0.95rem;
+    }
+
+    /* Become Sponsor Section */
+    .become-sponsor {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+    }
+
+    .become-sponsor-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .become-sponsor-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .become-sponsor-content p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .become-sponsor-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--accent-dark);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-outline-white:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    .sponsor-perks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .perk-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .perk-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .perk-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .perk-desc {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Tickets CTA Section */
+    .tickets-cta {
+      padding: 4rem 2rem;
+      background: var(--bg-primary);
+      text-align: center;
+    }
+
+    .tickets-cta-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .tickets-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .tickets-cta p {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .newsletter-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .newsletter-card {
+      background: var(--bg-primary);
+      border-radius: 24px;
+      padding: 3rem;
+    }
+
+    .newsletter-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-desc {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 1rem;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .newsletter-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 4rem 2rem 2rem;
+      background: var(--text-primary);
+      color: white;
+    }
+
+    .footer-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 1rem;
+      max-width: 300px;
+      line-height: 1.7;
+    }
+
+    .footer-title {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-copyright {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.9rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-social {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social:hover {
+      background: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .why-speak-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 150px);
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+
+      .become-sponsor-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 3rem 1.5rem 4rem;
+      }
+
+      .why-speak-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .stat-value {
+        font-size: 2.5rem;
+      }
+
+      .categories-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 120px);
+      }
+
+      .sponsor-perks {
+        grid-template-columns: 1fr;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">TT</div>
+        <div class="nav-logo-text">Touraine <span>Tech</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link active">Accueil</a>
+        <a href="#" class="nav-link">Speakers</a>
+        <a href="#" class="nav-link">Sponsors</a>
+        <a href="#" class="nav-link">L'Equipe</a>
+        <a href="https://cfp26.touraine.tech" class="nav-cta">Proposer un talk</a>
+        <a href="https://billetterie26.touraine.tech" class="nav-cta">Billetterie</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-meta">
+          <div class="hero-meta-pill">
+            <span class="hero-meta-icon">📅</span>
+            <div class="hero-meta-text">
+              <span class="hero-meta-label">Date</span>
+              <span class="hero-meta-value">12-13 Fevrier 2026</span>
+            </div>
+          </div>
+          <div class="hero-meta-pill">
+            <span class="hero-meta-icon">📍</span>
+            <div class="hero-meta-text">
+              <span class="hero-meta-label">Lieu</span>
+              <span class="hero-meta-value">Polytech Tours</span>
+            </div>
+          </div>
+          <div class="hero-meta-pill cfp">
+            <span class="hero-meta-icon">🎤</span>
+            <div class="hero-meta-text">
+              <span class="hero-meta-label">CFP ouvert</span>
+              <span class="hero-meta-value">jusqu'au 16 Nov</span>
+            </div>
+          </div>
+        </div>
+        <h1 class="hero-title">
+          La conference tech<br>en <span class="hero-title-gradient">Touraine</span>
+        </h1>
+        <p class="hero-desc">
+          Deux jours de conferences et d'ateliers pour explorer les dernieres innovations tech. Rejoignez la communaute tech de la region Centre !
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-secondary">Voir les categories</a>
+          <a href="#" class="btn btn-secondary">Pourquoi proposer ?</a>
+        </div>
+      </div>
+      <div class="hero-cfp">
+        <div class="hero-cfp-header">
+          <div>
+            <h3 class="hero-cfp-title">Proposer un talk</h3>
+            <p class="hero-cfp-subtitle">Conference Hall</p>
+          </div>
+          <span class="hero-cfp-badge">CFP Ouvert</span>
+        </div>
+        <div class="hero-cfp-deadline">
+          <p class="hero-cfp-deadline-label">Date limite de soumission</p>
+          <p class="hero-cfp-deadline-date">16 Novembre 2025</p>
+        </div>
+        <div class="hero-cfp-perks">
+          <div class="hero-cfp-perk">
+            <span class="hero-cfp-perk-icon">✨</span>
+            <span>Conferences (50min) et Lightning talks (15min)</span>
+          </div>
+          <div class="hero-cfp-perk">
+            <span class="hero-cfp-perk-icon">🎁</span>
+            <span>Place offerte + frais de deplacement</span>
+          </div>
+          <div class="hero-cfp-perk">
+            <span class="hero-cfp-perk-icon">🎥</span>
+            <span>Captation video de votre talk</span>
+          </div>
+        </div>
+        <div class="hero-cfp-ctas">
+          <a href="https://cfp26.touraine.tech" target="_blank" class="btn btn-primary hero-cfp-cta">
+            Proposer un talk
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="https://billetterie26.touraine.tech" target="_blank" class="btn btn-primary hero-cfp-cta">
+            Acheter un billet
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Speak Section -->
+  <section class="why-speak">
+    <div class="why-speak-inner">
+      <div class="section-header">
+        <div class="section-label cfp">Pourquoi proposer ?</div>
+        <h2 class="section-title">Devenez speaker</h2>
+        <p class="section-desc">Une experience enrichissante et des avantages concrets</p>
+      </div>
+      <div class="why-speak-grid">
+        <div class="why-speak-card">
+          <div class="why-speak-icon">🎯</div>
+          <h3 class="why-speak-title">Partagez</h3>
+          <p class="why-speak-desc">Transmettez votre expertise a 800+ professionnels de la tech</p>
+        </div>
+        <div class="why-speak-card">
+          <div class="why-speak-icon">🌟</div>
+          <h3 class="why-speak-title">Progressez</h3>
+          <p class="why-speak-desc">Ameliorez vos competences de prise de parole en public</p>
+        </div>
+        <div class="why-speak-card">
+          <div class="why-speak-icon">🤝</div>
+          <h3 class="why-speak-title">Rencontrez</h3>
+          <p class="why-speak-desc">Echangez avec d'autres speakers et participants passionnes</p>
+        </div>
+        <div class="why-speak-card">
+          <div class="why-speak-icon">🎬</div>
+          <h3 class="why-speak-title">Rayonnez</h3>
+          <p class="why-speak-desc">Votre talk sera filme et diffuse sur notre chaine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">50+</div>
+          <div class="stat-label">Talks en 2025</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">800</div>
+          <div class="stat-label">Participants</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">60</div>
+          <div class="stat-label">Speakers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Salles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="categories-inner">
+      <div class="section-header">
+        <div class="section-label cfp">Thematiques</div>
+        <h2 class="section-title">Les sujets recherches</h2>
+        <p class="section-desc">Proposez un talk dans l'une de ces categories</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">🖥️</div>
+          <h3 class="category-name">Backend & Cloud</h3>
+          <p class="category-desc">Java, Go, Python, K8s, AWS, GCP...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🎨</div>
+          <h3 class="category-name">Frontend & Design</h3>
+          <p class="category-desc">React, Vue, CSS, UX, Accessibilite...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🏗️</div>
+          <h3 class="category-name">Architecture</h3>
+          <p class="category-desc">DDD, microservices, patterns...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🤖</div>
+          <h3 class="category-name">IA & Data</h3>
+          <p class="category-desc">ML, LLM, data engineering...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🛠️</div>
+          <h3 class="category-name">DevOps & Outils</h3>
+          <p class="category-desc">CI/CD, testing, observabilite...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🧠</div>
+          <h3 class="category-name">Humain & Tech</h3>
+          <p class="category-desc">Soft skills, management, carriere...</p>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">📱</div>
+          <h3 class="category-name">Mobile & IoT</h3>
+          <p class="category-desc">iOS, Android, embarque...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Speakers) -->
+  <section class="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-header">
+        <div class="section-label cfp">Temoignages</div>
+        <h2 class="section-title">Ils ont parle a Touraine Tech</h2>
+        <p class="section-desc">Les retours de nos speakers des editions precedentes</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Ma premiere conference et un accueil incroyable ! L'equipe m'a accompagne jusqu'au jour J. Je recommande a tous les debutants.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩‍💻</div>
+            <div class="testimonial-info">
+              <h4>Julie R. <span class="testimonial-badge">Speaker 2025</span></h4>
+              <p>Dev @ Startup</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Une ambiance tres conviviale et un public curieux et bienveillant. Le format est ideal pour tester de nouveaux sujets.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🧑‍💻</div>
+            <div class="testimonial-info">
+              <h4>Marc D. <span class="testimonial-badge">Speaker 2024</span></h4>
+              <p>Architect @ ESN</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Organisation au top, super echanges avec les participants. J'y retourne chaque annee avec un nouveau talk !</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👨‍🔬</div>
+            <div class="testimonial-info">
+              <h4>Sophie L. <span class="testimonial-badge">Speaker 2023-2025</span></h4>
+              <p>Tech Lead @ Grand Groupe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="gallery-inner">
+      <div class="gallery-header">
+        <div>
+          <div class="section-label">Photos</div>
+          <h2 class="section-title">Revivez l'edition 2025</h2>
+        </div>
+        <a href="#" class="btn-link">
+          Voir toutes les photos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+        <div class="gallery-item">📸</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors">
+    <div class="sponsors-inner">
+      <div class="section-header">
+        <div class="section-label">Sponsors</div>
+        <h2 class="section-title">Ils nous soutiennent</h2>
+      </div>
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Platinum</h3>
+        <div class="sponsors-grid">
+          <div class="sponsor-card platinum">IPPON</div>
+          <div class="sponsor-card platinum">MAIF</div>
+        </div>
+      </div>
+      <div class="sponsors-tier">
+        <h3 class="sponsors-tier-title">Gold</h3>
+        <div class="sponsors-grid">
+          <div class="sponsor-card gold">OVH</div>
+          <div class="sponsor-card gold">Clever Cloud</div>
+          <div class="sponsor-card gold">Microsoft</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Become Sponsor Section -->
+  <section class="become-sponsor">
+    <div class="become-sponsor-inner">
+      <div class="become-sponsor-content">
+        <h2>Devenez sponsor</h2>
+        <p>Associez votre marque a l'evenement tech majeur de la region Centre-Val de Loire. Touchez 800+ professionnels de la tech.</p>
+        <div class="become-sponsor-actions">
+          <a href="https://sponsoring2026.touraine.tech" target="_blank" class="btn btn-white">
+            Nous contacter
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="/sponsor_2026.pdf" target="_blank" class="btn btn-outline-white">
+            Telecharger le dossier
+          </a>
+        </div>
+      </div>
+      <div class="sponsor-perks">
+        <div class="perk-card">
+          <div class="perk-icon">👥</div>
+          <h4 class="perk-title">Visibilite</h4>
+          <p class="perk-desc">Logo sur tous les supports</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🎯</div>
+          <h4 class="perk-title">Recrutement</h4>
+          <p class="perk-desc">Stand dedie</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🎤</div>
+          <h4 class="perk-title">Prise de parole</h4>
+          <p class="perk-desc">Slots dedies</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🎁</div>
+          <h4 class="perk-title">Places offertes</h4>
+          <p class="perk-desc">Invitations equipes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets CTA -->
+  <section class="tickets-cta">
+    <div class="tickets-cta-inner">
+      <h2>Envie de participer ?</h2>
+      <p>La billetterie est ouverte ! Reservez votre place pour Touraine Tech 2026.</p>
+      <a href="https://billetterie26.touraine.tech" target="_blank" class="btn btn-primary">
+        Acheter mon billet
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-card">
+        <h2 class="newsletter-title">Restez informes</h2>
+        <p class="newsletter-desc">Inscrivez-vous pour ne rien manquer de Touraine Tech 2026</p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="votre@email.com">
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">TT</div>
+            <div class="nav-logo-text" style="color: white;">Touraine <span>Tech</span></div>
+          </a>
+          <p>La conference tech incontournable de la region Centre-Val de Loire.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Proposer un talk</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Billetterie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Infos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">L'Equipe</a></li>
+            <li><a href="#">Code de conduite</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Editions</h4>
+          <ul class="footer-links">
+            <li><a href="#">2025</a></li>
+            <li><a href="#">2024</a></li>
+            <li><a href="#">2023</a></li>
+            <li><a href="#">Archives</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Touraine Tech. Fait avec 💚 a Tours.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social">X</a>
+          <a href="#" class="footer-social">in</a>
+          <a href="#" class="footer-social">YT</a>
+          <a href="#" class="footer-social">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
