@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme - Touraine Tech 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Core palette */
+      --accent: #6ABFAD;
+      --accent-dark: #4A9F8D;
+      --accent-light: rgba(106, 191, 173, 0.12);
+
+      /* Backgrounds */
+      --bg-primary: #FAFCFB;
+      --bg-secondary: #F0F5F3;
+      --bg-card: #FFFFFF;
+      --bg-break: #F5F7F6;
+
+      /* Text */
+      --text-primary: #1A2E28;
+      --text-secondary: #4A6359;
+      --text-muted: #7A9A91;
+
+      /* Borders & Effects */
+      --border: rgba(26, 46, 40, 0.08);
+      --border-strong: rgba(26, 46, 40, 0.15);
+      --shadow-sm: 0 1px 3px rgba(26, 46, 40, 0.04);
+      --shadow-md: 0 4px 12px rgba(26, 46, 40, 0.08);
+      --shadow-hover: 0 8px 24px rgba(26, 46, 40, 0.12);
+
+      /* Category Colors */
+      --cat-design: #E91E8C;
+      --cat-front: #0077C2;
+      --cat-backend: #2C4A5C;
+      --cat-iot: #22A352;
+      --cat-archi: #E84D2E;
+      --cat-tools: #F59E0B;
+      --cat-human: #EAB308;
+      --cat-ai: #8B5CF6;
+
+      /* Typography */
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+      /* Grid */
+      --time-col-width: 70px;
+      --room-min-width: 220px;
+      --row-height: 100px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* Page Header */
+    .page-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-top {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .header-title h1 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .header-title .edition {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Day Toggle */
+    .day-toggle {
+      display: flex;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .day-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: transparent;
+      border-radius: 10px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .day-btn span {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .day-btn.active {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .day-btn:not(.active):hover {
+      color: var(--text-primary);
+    }
+
+    /* Category Filters */
+    .category-filters {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .category-filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-filter {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      background: var(--bg-card);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .cat-filter::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cat-color);
+    }
+
+    .cat-filter:hover,
+    .cat-filter.active {
+      border-color: var(--cat-color);
+      background: color-mix(in srgb, var(--cat-color) 8%, white);
+      color: var(--text-primary);
+    }
+
+    /* Schedule Container */
+    .schedule-container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 4rem;
+      overflow-x: auto;
+    }
+
+    /* Schedule Grid */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: var(--time-col-width) repeat(5, minmax(var(--room-min-width), 1fr));
+      gap: 1px;
+      background: var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      min-width: max-content;
+    }
+
+    /* Room Headers */
+    .room-header {
+      background: var(--bg-secondary);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 120px;
+      z-index: 10;
+    }
+
+    .room-header:first-child {
+      border-radius: 16px 0 0 0;
+    }
+
+    .room-header:last-child {
+      border-radius: 0 16px 0 0;
+    }
+
+    .room-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .room-capacity {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    /* Corner cell */
+    .corner-cell {
+      background: var(--bg-secondary);
+      position: sticky;
+      left: 0;
+      z-index: 20;
+    }
+
+    /* Time Column */
+    .time-cell {
+      background: var(--bg-card);
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: sticky;
+      left: 0;
+      z-index: 5;
+      border-right: 2px solid var(--accent-light);
+    }
+
+    .time-value {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .time-period {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Talk Cells */
+    .talk-cell {
+      background: var(--bg-card);
+      padding: 0.5rem;
+    }
+
+    .talk-card {
+      height: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--cat-color);
+      border-radius: 10px;
+      padding: 0.75rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .talk-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .talk-category {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--cat-color);
+      margin-bottom: 0.35rem;
+    }
+
+    .talk-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1.3;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .talk-meta {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .speaker-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 2px solid var(--bg-card);
+      object-fit: cover;
+    }
+
+    .speaker-avatar:not(:first-child) {
+      margin-left: -10px;
+    }
+
+    .speaker-name {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .talk-level {
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      background: var(--bg-secondary);
+      color: var(--text-muted);
+    }
+
+    .talk-level.beginner { background: #DCFCE7; color: #166534; }
+    .talk-level.intermediate { background: #FEF3C7; color: #92400E; }
+    .talk-level.advanced { background: #FEE2E2; color: #991B1B; }
+
+    /* Workshop (tall) cards */
+    .talk-card.workshop {
+      background: linear-gradient(135deg, var(--bg-card) 0%, color-mix(in srgb, var(--cat-color) 5%, white) 100%);
+    }
+
+    .talk-card.workshop .talk-title {
+      -webkit-line-clamp: 3;
+    }
+
+    .workshop-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--cat-color);
+      margin-top: 0.25rem;
+    }
+
+    .workshop-badge svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* Break Cells */
+    .break-cell {
+      background: var(--bg-break);
+      grid-column: 2 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .break-cell::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 8px,
+        rgba(106, 191, 173, 0.03) 8px,
+        rgba(106, 191, 173, 0.03) 16px
+      );
+    }
+
+    .break-content {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .break-icon {
+      font-size: 1.25rem;
+    }
+
+    .break-name {
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .break-time {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Empty Cell */
+    .empty-cell {
+      background: var(--bg-card);
+    }
+
+    /* Links overlay on hover */
+    .talk-links {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      display: flex;
+      gap: 0.25rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .talk-card:hover .talk-links {
+      opacity: 1;
+    }
+
+    .talk-link {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .talk-link:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .talk-link svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .talk-card {
+      animation: fadeIn 0.4s ease backwards;
+    }
+
+    .schedule-grid .talk-cell:nth-child(6n+1) .talk-card { animation-delay: 0.05s; }
+    .schedule-grid .talk-cell:nth-child(6n+2) .talk-card { animation-delay: 0.1s; }
+    .schedule-grid .talk-cell:nth-child(6n+3) .talk-card { animation-delay: 0.15s; }
+    .schedule-grid .talk-cell:nth-child(6n+4) .talk-card { animation-delay: 0.2s; }
+    .schedule-grid .talk-cell:nth-child(6n+5) .talk-card { animation-delay: 0.25s; }
+
+    /* Now indicator */
+    .now-indicator {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      z-index: 15;
+    }
+
+    .now-indicator::before {
+      content: 'NOW';
+      position: absolute;
+      left: -35px;
+      top: -8px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--bg-card);
+      padding: 0.15rem 0.3rem;
+      border-radius: 3px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .page-header {
+        padding: 1.5rem 1rem 0;
+      }
+
+      .header-top {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .header-title h1 {
+        font-size: 2rem;
+      }
+
+      .schedule-container {
+        padding: 1rem;
+      }
+
+      :root {
+        --room-min-width: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-title h1 {
+        font-size: 1.5rem;
+      }
+
+      .day-toggle {
+        width: 100%;
+      }
+
+      .day-btn {
+        flex: 1;
+        padding: 0.6rem 1rem;
+      }
+
+      :root {
+        --time-col-width: 55px;
+        --room-min-width: 160px;
+        --row-height: 90px;
+      }
+
+      .time-value {
+        font-size: 0.85rem;
+      }
+
+      .room-name {
+        font-size: 0.95rem;
+      }
+
+      .talk-title {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-top">
+      <div class="header-title">
+        <h1>Programme</h1>
+        <span class="edition">Touraine Tech 2026</span>
+      </div>
+
+      <div class="day-toggle">
+        <button class="day-btn active">
+          Jeudi 12
+          <span>Jour 1</span>
+        </button>
+        <button class="day-btn">
+          Vendredi 13
+          <span>Jour 2</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="category-filters">
+      <button class="cat-filter active" style="--cat-color: var(--text-muted)">
+        Toutes
+      </button>
+      <button class="cat-filter" style="--cat-color: var(--cat-design)">Design</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-front)">Front</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-backend)">Backend</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-iot)">IoT</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-archi)">Architecture</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-tools)">Tools</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-human)">Human & Tech</button>
+      <button class="cat-filter" style="--cat-color: var(--cat-ai)">AI</button>
+    </div>
+  </header>
+
+  <!-- Schedule Grid -->
+  <div class="schedule-container">
+    <div class="schedule-grid">
+      <!-- Header Row -->
+      <div class="corner-cell room-header"></div>
+      <div class="room-header">
+        <div class="room-name">F21</div>
+        <div class="room-capacity">250 places</div>
+      </div>
+      <div class="room-header">
+        <div class="room-name">F22</div>
+        <div class="room-capacity">120 places</div>
+      </div>
+      <div class="room-header">
+        <div class="room-name">Bio</div>
+        <div class="room-capacity">80 places</div>
+      </div>
+      <div class="room-header">
+        <div class="room-name">Physique</div>
+        <div class="room-capacity">80 places</div>
+      </div>
+      <div class="room-header">
+        <div class="room-name">F23</div>
+        <div class="room-capacity">30 places</div>
+      </div>
+
+      <!-- 08:00 - Welcome -->
+      <div class="time-cell">
+        <span class="time-value">08:00</span>
+        <span class="time-period">matin</span>
+      </div>
+      <div class="break-cell">
+        <div class="break-content">
+          <span class="break-icon">☕</span>
+          <span class="break-name">Accueil & Petit-dejeuner</span>
+          <span class="break-time">08:00 - 09:00</span>
+        </div>
+      </div>
+
+      <!-- 09:00 - Keynote -->
+      <div class="time-cell">
+        <span class="time-value">09:00</span>
+      </div>
+      <div class="talk-cell" style="grid-column: span 5;">
+        <div class="talk-card" style="--cat-color: var(--cat-ai);">
+          <div class="talk-links">
+            <a href="#" class="talk-link" title="Video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </a>
+          </div>
+          <span class="talk-category">Keynote</span>
+          <h3 class="talk-title">L'IA en 2026 : Entre promesses et realites</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=1" class="speaker-avatar" alt="">
+            <span class="speaker-name">Marie Dupont</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10:00 - Talks -->
+      <div class="time-cell">
+        <span class="time-value">10:00</span>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-front);">
+          <span class="talk-category">Front</span>
+          <h3 class="talk-title">React Server Components en production</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=2" class="speaker-avatar" alt="">
+            <span class="speaker-name">Pierre Martin</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-backend);">
+          <span class="talk-category">Backend</span>
+          <h3 class="talk-title">Rust pour les developpeurs Java</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=3" class="speaker-avatar" alt="">
+            <span class="speaker-name">Sophie Bernard</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-archi);">
+          <span class="talk-category">Architecture</span>
+          <h3 class="talk-title">Event Sourcing sans les erreurs</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=4" class="speaker-avatar" alt="">
+            <span class="speaker-name">Thomas Leroy</span>
+            <span class="talk-level advanced">Avance</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-iot);">
+          <span class="talk-category">IoT</span>
+          <h3 class="talk-title">Construire sa maison connectee</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=5" class="speaker-avatar" alt="">
+            <span class="speaker-name">Julie Moreau</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell" style="grid-row: span 2;">
+        <div class="talk-card workshop" style="--cat-color: var(--cat-tools);">
+          <span class="talk-category">Tools</span>
+          <h3 class="talk-title">Workshop Git avance : rebase, cherry-pick et bisect</h3>
+          <div class="workshop-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            120 min
+          </div>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=6" class="speaker-avatar" alt="">
+            <img src="https://i.pravatar.cc/100?img=7" class="speaker-avatar" alt="">
+            <span class="speaker-name">L. Petit, A. Roux</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11:00 - Talks -->
+      <div class="time-cell">
+        <span class="time-value">11:00</span>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-design);">
+          <span class="talk-category">Design</span>
+          <h3 class="talk-title">Design System: de la theorie a la pratique</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=8" class="speaker-avatar" alt="">
+            <span class="speaker-name">Emma Richard</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-ai);">
+          <div class="talk-links">
+            <a href="#" class="talk-link" title="Slides">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </a>
+          </div>
+          <span class="talk-category">AI</span>
+          <h3 class="talk-title">LLM locaux : performance et vie privee</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=9" class="speaker-avatar" alt="">
+            <span class="speaker-name">Hugo Faure</span>
+            <span class="talk-level advanced">Avance</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-human);">
+          <span class="talk-category">Human & Tech</span>
+          <h3 class="talk-title">Accessibilite web : au-dela des checklist</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=10" class="speaker-avatar" alt="">
+            <span class="speaker-name">Lea Fournier</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-backend);">
+          <span class="talk-category">Backend</span>
+          <h3 class="talk-title">GraphQL Federation en microservices</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=11" class="speaker-avatar" alt="">
+            <span class="speaker-name">Marc Dubois</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <!-- F23 spans from previous row (workshop) -->
+
+      <!-- 12:00 - Lunch -->
+      <div class="time-cell">
+        <span class="time-value">12:00</span>
+        <span class="time-period">midi</span>
+      </div>
+      <div class="break-cell">
+        <div class="break-content">
+          <span class="break-icon">🍽️</span>
+          <span class="break-name">Dejeuner</span>
+          <span class="break-time">12:00 - 14:00</span>
+        </div>
+      </div>
+
+      <!-- 14:00 - Afternoon talks -->
+      <div class="time-cell">
+        <span class="time-value">14:00</span>
+        <span class="time-period">apres-midi</span>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-tools);">
+          <span class="talk-category">Tools</span>
+          <h3 class="talk-title">Kubernetes sans la migraine</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=12" class="speaker-avatar" alt="">
+            <span class="speaker-name">Antoine Girard</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-front);">
+          <span class="talk-category">Front</span>
+          <h3 class="talk-title">Astro : le framework qui monte</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=13" class="speaker-avatar" alt="">
+            <span class="speaker-name">Camille Blanc</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-ai);">
+          <span class="talk-category">AI</span>
+          <h3 class="talk-title">Fine-tuning de modeles pour l'entreprise</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=14" class="speaker-avatar" alt="">
+            <span class="speaker-name">Nicolas Morel</span>
+            <span class="talk-level advanced">Avance</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-archi);">
+          <span class="talk-category">Architecture</span>
+          <h3 class="talk-title">Monolith modulaire vs Microservices</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=15" class="speaker-avatar" alt="">
+            <span class="speaker-name">Sarah Lambert</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell" style="grid-row: span 2;">
+        <div class="talk-card workshop" style="--cat-color: var(--cat-design);">
+          <span class="talk-category">Design</span>
+          <h3 class="talk-title">Workshop Figma : prototypage avance et composants</h3>
+          <div class="workshop-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            120 min
+          </div>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=16" class="speaker-avatar" alt="">
+            <span class="speaker-name">Clara Mercier</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15:00 - Talks -->
+      <div class="time-cell">
+        <span class="time-value">15:00</span>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-iot);">
+          <span class="talk-category">IoT</span>
+          <h3 class="talk-title">LoRaWAN pour les nuls</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=17" class="speaker-avatar" alt="">
+            <span class="speaker-name">Vincent Andre</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-backend);">
+          <span class="talk-category">Backend</span>
+          <h3 class="talk-title">PostgreSQL : secrets de performance</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=18" class="speaker-avatar" alt="">
+            <span class="speaker-name">Olivier Simon</span>
+            <span class="talk-level advanced">Avance</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-human);">
+          <span class="talk-category">Human & Tech</span>
+          <h3 class="talk-title">Management de devs : REX 10 ans</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=19" class="speaker-avatar" alt="">
+            <span class="speaker-name">Philippe Durand</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-front);">
+          <span class="talk-category">Front</span>
+          <h3 class="talk-title">CSS moderne : has(), container queries</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=20" class="speaker-avatar" alt="">
+            <span class="speaker-name">Marine Bonnet</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16:00 - Break -->
+      <div class="time-cell">
+        <span class="time-value">16:00</span>
+      </div>
+      <div class="break-cell">
+        <div class="break-content">
+          <span class="break-icon">🍪</span>
+          <span class="break-name">Pause gouter</span>
+          <span class="break-time">16:00 - 16:30</span>
+        </div>
+      </div>
+
+      <!-- 16:30 - Last talks -->
+      <div class="time-cell">
+        <span class="time-value">16:30</span>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-ai);">
+          <span class="talk-category">AI</span>
+          <h3 class="talk-title">RAG patterns pour applications metier</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=21" class="speaker-avatar" alt="">
+            <span class="speaker-name">David Lefevre</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-tools);">
+          <span class="talk-category">Tools</span>
+          <h3 class="talk-title">Observabilite : traces, logs, metriques</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=22" class="speaker-avatar" alt="">
+            <span class="speaker-name">Julien Robert</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-design);">
+          <span class="talk-category">Design</span>
+          <h3 class="talk-title">Motion design pour developpeurs</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=23" class="speaker-avatar" alt="">
+            <span class="speaker-name">Alice Garnier</span>
+            <span class="talk-level beginner">Debut.</span>
+          </div>
+        </div>
+      </div>
+      <div class="talk-cell">
+        <div class="talk-card" style="--cat-color: var(--cat-backend);">
+          <span class="talk-category">Backend</span>
+          <h3 class="talk-title">Tests de charge avec k6</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=24" class="speaker-avatar" alt="">
+            <span class="speaker-name">Romain Chevalier</span>
+            <span class="talk-level intermediate">Inter.</span>
+          </div>
+        </div>
+      </div>
+      <div class="empty-cell"></div>
+
+      <!-- 17:30 - Closing -->
+      <div class="time-cell">
+        <span class="time-value">17:30</span>
+        <span class="time-period">soir</span>
+      </div>
+      <div class="talk-cell" style="grid-column: span 5;">
+        <div class="talk-card" style="--cat-color: var(--accent);">
+          <span class="talk-category">Closing</span>
+          <h3 class="talk-title">Cloture & Annonces - Rendez-vous demain !</h3>
+          <div class="talk-meta">
+            <img src="https://i.pravatar.cc/100?img=25" class="speaker-avatar" alt="">
+            <img src="https://i.pravatar.cc/100?img=26" class="speaker-avatar" alt="">
+            <span class="speaker-name">Equipe Touraine Tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Day toggle interaction
+    document.querySelectorAll('.day-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Category filter interaction
+    document.querySelectorAll('.cat-filter').forEach(filter => {
+      filter.addEventListener('click', function() {
+        document.querySelectorAll('.cat-filter').forEach(f => f.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Talk card click - could open modal or navigate
+    document.querySelectorAll('.talk-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        if (e.target.closest('.talk-link')) return;
+        console.log('Open talk details');
+      });
+    });
+  </script>
+</body>
+</html>
