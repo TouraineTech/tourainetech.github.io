@@ -1,0 +1,226 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  category: string | null;
+  format: string;
+  level: string | null;
+  speakers?: Array<{ name: string; photoURL?: string }>;
+  isWorkshop?: boolean;
+  rowSpan?: number;
+}
+
+const { id, title, category, format, level, speakers = [], isWorkshop = false, rowSpan = 1 } = Astro.props;
+
+// Map category to CSS variable
+function getCategoryColor(cat: string | null): string {
+  if (!cat) return 'var(--accent)';
+  const catLower = cat.toLowerCase();
+  if (catLower.includes('design') || catLower.includes('ui') || catLower.includes('ux') || catLower.includes('front')) return 'var(--cat-front)';
+  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data')) return 'var(--cat-backend)';
+  if (catLower.includes('archi') || catLower.includes('conception')) return 'var(--cat-archi)';
+  if (catLower.includes('iot') || catLower.includes('embarqué')) return 'var(--cat-iot)';
+  if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'var(--cat-tools)';
+  if (catLower.includes('humain') || catLower.includes('human')) return 'var(--cat-human)';
+  if (catLower.includes('ia') || catLower.includes('ai') || catLower.includes('machine')) return 'var(--cat-ai)';
+  if (catLower.includes('alien')) return 'var(--cat-alien)';
+  return 'var(--accent)';
+}
+
+function getCategoryLabel(cat: string | null): string {
+  if (!cat) return 'Keynote';
+  const catLower = cat.toLowerCase();
+  if (catLower.includes('front') || catLower.includes('design') || catLower.includes('ui')) return 'Front';
+  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data')) return 'Backend';
+  if (catLower.includes('archi') || catLower.includes('conception')) return 'Architecture';
+  if (catLower.includes('iot') || catLower.includes('embarqué')) return 'IoT';
+  if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'Tools';
+  if (catLower.includes('humain') || catLower.includes('human')) return 'Human & Tech';
+  if (catLower.includes('ia') || catLower.includes('ai') || catLower.includes('machine')) return 'AI';
+  if (catLower.includes('alien')) return 'Alien';
+  return cat;
+}
+
+function getLevelLabel(lvl: string | null): string {
+  if (!lvl) return '';
+  if (lvl === 'BEGINNER') return 'Debut.';
+  if (lvl === 'INTERMEDIATE') return 'Inter.';
+  if (lvl === 'ADVANCED') return 'Avance';
+  return lvl;
+}
+
+function getLevelClass(lvl: string | null): string {
+  if (!lvl) return '';
+  if (lvl === 'BEGINNER') return 'beginner';
+  if (lvl === 'INTERMEDIATE') return 'intermediate';
+  if (lvl === 'ADVANCED') return 'advanced';
+  return '';
+}
+
+// Extract duration from format string
+function getDuration(fmt: string): string {
+  const match = fmt.match(/\((\d+)min\)/);
+  return match ? match[1] + ' min' : '';
+}
+
+const catColor = getCategoryColor(category);
+const catLabel = getCategoryLabel(category);
+const levelLabel = getLevelLabel(level);
+const levelClass = getLevelClass(level);
+const duration = getDuration(format);
+---
+
+<a href={`/talk/${id}`} class:list={['talk-card', { workshop: isWorkshop }]} style={`--cat-color: ${catColor}`}>
+  <span class="talk-category">{catLabel}</span>
+  <h3 class="talk-title">{title}</h3>
+
+  {isWorkshop && (
+    <div class="workshop-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      {duration}
+    </div>
+  )}
+
+  <div class="talk-meta">
+    {speakers.slice(0, 2).map(speaker => (
+      <img
+        src={speaker.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&background=6ABFAD&color=fff&size=48`}
+        class="speaker-avatar"
+        alt={speaker.name}
+        loading="lazy"
+      />
+    ))}
+    <span class="speaker-name">
+      {speakers.length > 0 ? speakers.map(s => s.name.split('_').join(' ')).join(', ') : 'Equipe TT'}
+    </span>
+    {levelLabel && (
+      <span class:list={['talk-level', levelClass]}>{levelLabel}</span>
+    )}
+  </div>
+</a>
+
+<style>
+  .talk-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-left: 4px solid var(--cat-color);
+    border-radius: 10px;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .talk-card:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(26, 46, 40, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .talk-card.workshop {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, color-mix(in srgb, var(--cat-color) 5%, white) 100%);
+  }
+
+  .talk-category {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--cat-color);
+    margin-bottom: 0.35rem;
+  }
+
+  .talk-title {
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .talk-card.workshop .talk-title {
+    -webkit-line-clamp: 3;
+  }
+
+  .workshop-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--cat-color);
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .workshop-badge svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .talk-meta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .speaker-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--bg-primary);
+    object-fit: cover;
+  }
+
+  .speaker-avatar:not(:first-child) {
+    margin-left: -10px;
+  }
+
+  .speaker-name {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .talk-level {
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+
+  .talk-level.beginner {
+    background: #DCFCE7;
+    color: #166534;
+  }
+
+  .talk-level.intermediate {
+    background: #FEF3C7;
+    color: #92400E;
+  }
+
+  .talk-level.advanced {
+    background: #FEE2E2;
+    color: #991B1B;
+  }
+</style>
