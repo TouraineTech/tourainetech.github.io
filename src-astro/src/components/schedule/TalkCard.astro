@@ -12,12 +12,17 @@ interface Props {
 
 const { id, title, category, format, level, speakers = [], isWorkshop = false, rowSpan = 1 } = Astro.props;
 
+// Detect format type
+const isLightning = format.toLowerCase().includes('lightning') || format.includes('10min');
+const isKeynote = !category;
+const isHandsOn = format.toLowerCase().includes('hands-on') || format.includes('120min');
+
 // Map category to CSS variable
 function getCategoryColor(cat: string | null): string {
   if (!cat) return 'var(--accent)';
   const catLower = cat.toLowerCase();
   if (catLower.includes('design') || catLower.includes('ui') || catLower.includes('ux') || catLower.includes('front')) return 'var(--cat-front)';
-  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data')) return 'var(--cat-backend)';
+  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data') || catLower.includes('cloud')) return 'var(--cat-backend)';
   if (catLower.includes('archi') || catLower.includes('conception')) return 'var(--cat-archi)';
   if (catLower.includes('iot') || catLower.includes('embarqué')) return 'var(--cat-iot)';
   if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'var(--cat-tools)';
@@ -31,19 +36,19 @@ function getCategoryLabel(cat: string | null): string {
   if (!cat) return 'Keynote';
   const catLower = cat.toLowerCase();
   if (catLower.includes('front') || catLower.includes('design') || catLower.includes('ui')) return 'Front';
-  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data')) return 'Backend';
-  if (catLower.includes('archi') || catLower.includes('conception')) return 'Architecture';
+  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data') || catLower.includes('cloud')) return 'Backend';
+  if (catLower.includes('archi') || catLower.includes('conception')) return 'Archi';
   if (catLower.includes('iot') || catLower.includes('embarqué')) return 'IoT';
   if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'Tools';
-  if (catLower.includes('humain') || catLower.includes('human')) return 'Human & Tech';
+  if (catLower.includes('humain') || catLower.includes('human')) return 'Human';
   if (catLower.includes('ia') || catLower.includes('ai') || catLower.includes('machine')) return 'AI';
   if (catLower.includes('alien')) return 'Alien';
-  return cat;
+  return cat.length > 10 ? cat.substring(0, 10) : cat;
 }
 
 function getLevelLabel(lvl: string | null): string {
   if (!lvl) return '';
-  if (lvl === 'BEGINNER') return 'Debut.';
+  if (lvl === 'BEGINNER') return 'Deb.';
   if (lvl === 'INTERMEDIATE') return 'Inter.';
   if (lvl === 'ADVANCED') return 'Avance';
   return lvl;
@@ -60,7 +65,16 @@ function getLevelClass(lvl: string | null): string {
 // Extract duration from format string
 function getDuration(fmt: string): string {
   const match = fmt.match(/\((\d+)min\)/);
-  return match ? match[1] + ' min' : '';
+  return match ? match[1] : '';
+}
+
+// Get format label
+function getFormatLabel(fmt: string): string {
+  if (fmt.toLowerCase().includes('lightning')) return 'Lightning';
+  if (fmt.toLowerCase().includes('hands-on')) return 'Hands-on';
+  if (fmt.toLowerCase().includes('keynote')) return 'Keynote';
+  if (fmt.toLowerCase().includes('conf')) return 'Conf';
+  return 'Conf';
 }
 
 const catColor = getCategoryColor(category);
@@ -68,82 +82,222 @@ const catLabel = getCategoryLabel(category);
 const levelLabel = getLevelLabel(level);
 const levelClass = getLevelClass(level);
 const duration = getDuration(format);
+const formatLabel = getFormatLabel(format);
+
+// Build speaker display name (full name)
+const speakerDisplay = speakers.length > 0
+  ? speakers.map(s => s.name.split('_').join(' ')).join(', ')
+  : 'Equipe TT';
 ---
 
-<a href={`/talk/${id}`} class:list={['talk-card', { workshop: isWorkshop }]} style={`--cat-color: ${catColor}`}>
-  <span class="talk-category">{catLabel}</span>
-  <h3 class="talk-title">{title}</h3>
-
-  {isWorkshop && (
-    <div class="workshop-badge">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"/>
-        <polyline points="12 6 12 12 16 14"/>
-      </svg>
-      {duration}
-    </div>
-  )}
-
-  <div class="talk-meta">
-    {speakers.slice(0, 2).map(speaker => (
-      <img
-        src={speaker.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&background=6ABFAD&color=fff&size=48`}
-        class="speaker-avatar"
-        alt={speaker.name}
-        loading="lazy"
-      />
-    ))}
-    <span class="speaker-name">
-      {speakers.length > 0 ? speakers.map(s => s.name.split('_').join(' ')).join(', ') : 'Equipe TT'}
+<a
+  href={`/talk/${id}`}
+  class:list={['talk-card', {
+    workshop: isWorkshop || isHandsOn,
+    lightning: isLightning,
+    keynote: isKeynote
+  }]}
+  style={`--cat-color: ${catColor}`}
+>
+  <!-- Header: Format + Category -->
+  <div class="card-header">
+    <span class:list={['format-badge', { lightning: isLightning, workshop: isHandsOn }]}>
+      {isLightning ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+      ) : isHandsOn ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+      ) : isKeynote ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M3 9h18M9 21V9"/>
+        </svg>
+      )}
+      {formatLabel}{duration && ` · ${duration}min`}
     </span>
+    <span class="category-tag">{catLabel}</span>
+  </div>
+
+  <!-- Body: Title -->
+  <div class="card-body">
+    <h3 class="talk-title">{title}</h3>
+
+    {isHandsOn && (
+      <div class="workshop-info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <span>Atelier · 30 places</span>
+      </div>
+    )}
+  </div>
+
+  <!-- Footer: Speakers + Level -->
+  <div class="card-footer">
+    <div class="speakers">
+      <div class="speaker-avatars">
+        {speakers.slice(0, 2).map(speaker => (
+          <img
+            src={speaker.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&background=6ABFAD&color=fff&size=48`}
+            class="speaker-avatar"
+            alt={speaker.name}
+            loading="lazy"
+          />
+        ))}
+      </div>
+      <span class="speaker-name">{speakerDisplay}</span>
+    </div>
     {levelLabel && (
-      <span class:list={['talk-level', levelClass]}>{levelLabel}</span>
+      <span class:list={['level-badge', levelClass]}>{levelLabel}</span>
     )}
   </div>
 </a>
 
 <style>
   .talk-card {
+    --cat-color: var(--accent);
+
     display: flex;
     flex-direction: column;
     height: 100%;
     background: var(--bg-primary);
     border: 1px solid var(--glass-border);
-    border-left: 4px solid var(--cat-color);
-    border-radius: 10px;
-    padding: 0.75rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
+    border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  /* Top accent bar */
+  .talk-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--cat-color);
   }
 
   .talk-card:hover {
-    border-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 24px rgba(26, 46, 40, 0.12);
     transform: translateY(-2px);
+    box-shadow:
+      0 8px 20px -6px rgba(26, 46, 40, 0.12),
+      0 4px 8px -2px rgba(26, 46, 40, 0.06);
+    border-color: rgba(106, 191, 173, 0.25);
   }
 
+  /* Workshop variant */
   .talk-card.workshop {
-    background: linear-gradient(135deg, var(--bg-primary) 0%, color-mix(in srgb, var(--cat-color) 5%, white) 100%);
+    background: linear-gradient(180deg, var(--bg-primary) 0%, color-mix(in srgb, var(--cat-color) 4%, white) 100%);
   }
 
-  .talk-category {
-    font-size: 0.65rem;
+  .talk-card.workshop::before {
+    height: 4px;
+  }
+
+  /* Lightning variant */
+  .talk-card.lightning::before {
+    background: linear-gradient(90deg, #F59E0B, #FBBF24);
+  }
+
+  /* Keynote variant */
+  .talk-card.keynote {
+    background: linear-gradient(135deg, #1C1D21 0%, #2C3E50 100%);
+    border: none;
+  }
+
+  .talk-card.keynote::before {
+    background: linear-gradient(90deg, var(--accent) 0%, #4ECDC4 100%);
+    height: 4px;
+  }
+
+  /* Card Header */
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.7rem 0;
+    gap: 0.4rem;
+  }
+
+  .format-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.2rem 0.4rem;
+    background: var(--bg-secondary);
+    border-radius: 5px;
+    font-size: 0.6rem;
     font-weight: 600;
+    color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
+  }
+
+  .format-badge svg {
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+  }
+
+  .format-badge.lightning {
+    background: rgba(245, 158, 11, 0.12);
+    color: #B45309;
+  }
+
+  .format-badge.workshop {
+    background: rgba(139, 92, 246, 0.12);
+    color: #6D28D9;
+  }
+
+  .talk-card.keynote .format-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .category-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.4rem;
+    background: color-mix(in srgb, var(--cat-color) 12%, white);
+    border-radius: 4px;
+    font-size: 0.55rem;
+    font-weight: 600;
     color: var(--cat-color);
-    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .talk-card.keynote .category-tag {
+    background: rgba(106, 191, 173, 0.2);
+    color: var(--accent);
+  }
+
+  /* Card Body */
+  .card-body {
+    padding: 0.5rem 0.7rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .talk-title {
+    font-size: 0.8rem;
     font-weight: 600;
-    font-size: 0.85rem;
     line-height: 1.3;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -154,72 +308,113 @@ const duration = getDuration(format);
     -webkit-line-clamp: 3;
   }
 
-  .workshop-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-size: 0.65rem;
-    font-weight: 600;
-    color: var(--cat-color);
-    margin-top: 0.25rem;
-    margin-bottom: 0.5rem;
+  .talk-card.keynote .talk-title {
+    color: white;
+    font-size: 0.85rem;
   }
 
-  .workshop-badge svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .talk-meta {
-    margin-top: auto;
+  .workshop-info {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
+    border-top: 1px dashed var(--glass-border);
+  }
+
+  .workshop-info svg {
+    width: 12px;
+    height: 12px;
+    color: var(--cat-color);
+  }
+
+  .workshop-info span {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--cat-color);
+  }
+
+  /* Card Footer */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.7rem;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--glass-border);
+    gap: 0.4rem;
+    margin-top: auto;
+  }
+
+  .talk-card.keynote .card-footer {
+    background: rgba(0, 0, 0, 0.2);
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .speakers {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .speaker-avatars {
+    display: flex;
+    flex-shrink: 0;
   }
 
   .speaker-avatar {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    background: var(--bg-secondary);
-    border: 2px solid var(--bg-primary);
+    border: 2px solid var(--bg-secondary);
     object-fit: cover;
   }
 
   .speaker-avatar:not(:first-child) {
-    margin-left: -10px;
+    margin-left: -8px;
+  }
+
+  .talk-card.keynote .speaker-avatar {
+    border-color: rgba(255, 255, 255, 0.2);
   }
 
   .speaker-name {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: var(--text-secondary);
-    flex: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .talk-level {
-    font-size: 0.6rem;
-    font-weight: 600;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    background: var(--bg-secondary);
-    color: var(--text-muted);
-    flex-shrink: 0;
+  .talk-card.keynote .speaker-name {
+    color: rgba(255, 255, 255, 0.7);
   }
 
-  .talk-level.beginner {
+  .level-badge {
+    font-size: 0.5rem;
+    font-weight: 600;
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+  }
+
+  .level-badge.beginner {
     background: #DCFCE7;
     color: #166534;
   }
 
-  .talk-level.intermediate {
+  .level-badge.intermediate {
     background: #FEF3C7;
     color: #92400E;
   }
 
-  .talk-level.advanced {
+  .level-badge.advanced {
     background: #FEE2E2;
     color: #991B1B;
   }
