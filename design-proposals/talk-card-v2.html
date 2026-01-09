@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalkCard v2 - Touraine Tech 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Core palette */
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFB;
+      --bg-tertiary: #F0F4F3;
+      --text-primary: #1C1D21;
+      --text-secondary: #4A4B52;
+      --text-muted: #8B8D97;
+      --accent: #6ABFAD;
+      --accent-dark: #4A9A8A;
+      --glass-border: rgba(106, 191, 173, 0.15);
+
+      /* Category colors */
+      --cat-front: #0077C2;
+      --cat-backend: #2C4A5C;
+      --cat-archi: #E84D2E;
+      --cat-iot: #22A352;
+      --cat-tools: #F59E0B;
+      --cat-human: #EAB308;
+      --cat-ai: #8B5CF6;
+      --cat-alien: #066420;
+
+      /* Format colors */
+      --format-conf: var(--accent);
+      --format-lightning: #F59E0B;
+      --format-workshop: #8B5CF6;
+
+      /* Fonts */
+      --font-display: 'DM Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-display);
+      background: var(--bg-secondary);
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-dark);
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--glass-border);
+    }
+
+    /* Demo grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ============================================
+       TALK CARD V2 - "Editorial Conference Card"
+       ============================================ */
+
+    .talk-card {
+      --cat-color: var(--accent);
+
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-primary);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .talk-card:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 12px 24px -8px rgba(26, 46, 40, 0.12),
+        0 4px 8px -2px rgba(26, 46, 40, 0.06);
+      border-color: rgba(106, 191, 173, 0.3);
+    }
+
+    /* Top accent bar */
+    .talk-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cat-color);
+    }
+
+    /* Card header - format & category */
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0.875rem 0;
+      gap: 0.5rem;
+    }
+
+    .format-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.5rem;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .format-badge svg {
+      width: 12px;
+      height: 12px;
+      opacity: 0.7;
+    }
+
+    .format-badge.lightning {
+      background: rgba(245, 158, 11, 0.1);
+      color: #B45309;
+    }
+
+    .format-badge.workshop {
+      background: rgba(139, 92, 246, 0.1);
+      color: #6D28D9;
+    }
+
+    .category-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.5rem;
+      background: color-mix(in srgb, var(--cat-color) 12%, white);
+      border-radius: 4px;
+      font-size: 0.6rem;
+      font-weight: 600;
+      color: var(--cat-color);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    /* Card body - title */
+    .card-body {
+      padding: 0.625rem 0.875rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .talk-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--text-primary);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Card footer - speakers & meta */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.625rem 0.875rem;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--glass-border);
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .speakers {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .speaker-avatars {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .speaker-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid var(--bg-secondary);
+      object-fit: cover;
+    }
+
+    .speaker-avatar:not(:first-child) {
+      margin-left: -8px;
+    }
+
+    .speaker-name {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .meta-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .level-badge {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      font-weight: 500;
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .level-badge.beginner {
+      background: #DCFCE7;
+      color: #166534;
+    }
+
+    .level-badge.intermediate {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    .level-badge.advanced {
+      background: #FEE2E2;
+      color: #991B1B;
+    }
+
+    .duration {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg-tertiary);
+      padding: 0.15rem 0.35rem;
+      border-radius: 3px;
+    }
+
+    /* ============================================
+       WORKSHOP VARIANT - Taller card style
+       ============================================ */
+
+    .talk-card.workshop-card {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, color-mix(in srgb, var(--cat-color) 4%, white) 100%);
+    }
+
+    .talk-card.workshop-card::before {
+      height: 4px;
+    }
+
+    .talk-card.workshop-card .talk-title {
+      -webkit-line-clamp: 4;
+    }
+
+    .talk-card.workshop-card .card-body {
+      padding-bottom: 0.875rem;
+    }
+
+    .workshop-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px dashed var(--glass-border);
+    }
+
+    .workshop-info svg {
+      width: 14px;
+      height: 14px;
+      color: var(--cat-color);
+    }
+
+    .workshop-info span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--cat-color);
+    }
+
+    /* ============================================
+       KEYNOTE VARIANT - Larger, more prominent
+       ============================================ */
+
+    .talk-card.keynote-card {
+      background: linear-gradient(135deg, #1C1D21 0%, #2C3E50 100%);
+      border: none;
+    }
+
+    .talk-card.keynote-card::before {
+      background: linear-gradient(90deg, var(--accent) 0%, #4ECDC4 100%);
+      height: 4px;
+    }
+
+    .talk-card.keynote-card .format-badge {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .talk-card.keynote-card .category-tag {
+      background: rgba(106, 191, 173, 0.2);
+      color: var(--accent);
+    }
+
+    .talk-card.keynote-card .talk-title {
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .talk-card.keynote-card .card-footer {
+      background: rgba(0, 0, 0, 0.2);
+      border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .talk-card.keynote-card .speaker-name {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .talk-card.keynote-card .speaker-avatar {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .talk-card.keynote-card .duration {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* ============================================
+       LIGHTNING VARIANT - Compact, energetic
+       ============================================ */
+
+    .talk-card.lightning-card::before {
+      background: linear-gradient(90deg, #F59E0B, #FBBF24);
+    }
+
+    .talk-card.lightning-card .card-header {
+      padding-bottom: 0.25rem;
+    }
+
+    .talk-card.lightning-card .talk-title {
+      -webkit-line-clamp: 2;
+      font-size: 0.8rem;
+    }
+
+    /* ============================================
+       COMPARISON: Schedule Grid Preview
+       ============================================ */
+
+    .schedule-preview {
+      display: grid;
+      grid-template-columns: 60px repeat(5, 1fr);
+      gap: 1px;
+      background: var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    .time-cell {
+      background: var(--bg-primary);
+      padding: 0.75rem 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .room-header {
+      background: var(--bg-tertiary);
+      padding: 0.75rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+    }
+
+    .schedule-cell {
+      background: var(--bg-primary);
+      padding: 0.35rem;
+    }
+
+    .schedule-cell .talk-card {
+      height: 100%;
+    }
+
+    .break-row {
+      grid-column: 2 / -1;
+      background: var(--bg-tertiary);
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Animation on load */
+    @keyframes cardFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .talk-card {
+      animation: cardFadeIn 0.4s ease-out backwards;
+    }
+
+    .card-grid .talk-card:nth-child(1) { animation-delay: 0.05s; }
+    .card-grid .talk-card:nth-child(2) { animation-delay: 0.1s; }
+    .card-grid .talk-card:nth-child(3) { animation-delay: 0.15s; }
+    .card-grid .talk-card:nth-child(4) { animation-delay: 0.2s; }
+    .card-grid .talk-card:nth-child(5) { animation-delay: 0.25s; }
+  </style>
+</head>
+<body>
+  <h1>TalkCard v2 - Design Proposé</h1>
+  <p class="subtitle">Mix entre l'élégance Astro et la densité d'info Nuxt</p>
+
+  <div class="section-title">Conférences Standard (50min)</div>
+  <div class="card-grid">
+    <!-- Card 1: Architecture -->
+    <a href="#" class="talk-card" style="--cat-color: var(--cat-archi)">
+      <div class="card-header">
+        <span class="format-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          Conf · 50min
+        </span>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">L'architecture hexagonale au pays des irréductibles monolithes</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=NC&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+            <img src="https://ui-avatars.com/api/?name=AP&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">N. Castelein, A. Person</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge beginner">Déb.</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 2: Tools -->
+    <a href="#" class="talk-card" style="--cat-color: var(--cat-tools)">
+      <div class="card-header">
+        <span class="format-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          Conf · 50min
+        </span>
+        <span class="category-tag">Tools</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">Le Magicien Zod : Emmenez TypeScript au-delà du build</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=MA&background=F59E0B&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Mickael Alves</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge intermediate">Inter.</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 3: Human & Tech -->
+    <a href="#" class="talk-card" style="--cat-color: var(--cat-human)">
+      <div class="card-header">
+        <span class="format-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          Conf · 50min
+        </span>
+        <span class="category-tag">Human & Tech</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">Onboarding 2.0 : Réinventer l'intégration des devs</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=HE&background=EAB308&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Hafsa ELMAIZI</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge beginner">Déb.</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 4: Backend -->
+    <a href="#" class="talk-card" style="--cat-color: var(--cat-backend)">
+      <div class="card-header">
+        <span class="format-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          Conf · 50min
+        </span>
+        <span class="category-tag">Backend</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">Limits, Requests, QoS, PriorityClasses, on balaie tout ça</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=QJ&background=2C4A5C&color=fff&size=48" class="speaker-avatar" alt="">
+            <img src="https://ui-avatars.com/api/?name=DG&background=2C4A5C&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Q. Joly, D. Germain</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge advanced">Avancé</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">Lightning Talks (10min)</div>
+  <div class="card-grid">
+    <a href="#" class="talk-card lightning-card" style="--cat-color: var(--cat-ai)">
+      <div class="card-header">
+        <span class="format-badge lightning">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          Lightning · 10min
+        </span>
+        <span class="category-tag">AI</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">ChatGPT peut-il remplacer Stack Overflow ?</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=JD&background=8B5CF6&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Jean Dupont</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge beginner">Déb.</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="talk-card lightning-card" style="--cat-color: var(--cat-front)">
+      <div class="card-header">
+        <span class="format-badge lightning">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          Lightning · 10min
+        </span>
+        <span class="category-tag">Front</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">CSS :has() - Le sélecteur parent enfin là !</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=ML&background=0077C2&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Marie Leblanc</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge intermediate">Inter.</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">Workshops / Hands-on (120min)</div>
+  <div class="card-grid">
+    <a href="#" class="talk-card workshop-card" style="--cat-color: var(--cat-archi)">
+      <div class="card-header">
+        <span class="format-badge workshop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+          Hands-on · 120min
+        </span>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">1h50min pour créer une App Front avec la Clean Archigonale</h3>
+        <div class="workshop-info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Atelier pratique · 30 places max</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=DL&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+            <img src="https://ui-avatars.com/api/?name=GC&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">D. Lamandé, G. Chauvet</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge intermediate">Inter.</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="talk-card workshop-card" style="--cat-color: var(--cat-iot)">
+      <div class="card-header">
+        <span class="format-badge workshop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+          Hands-on · 120min
+        </span>
+        <span class="category-tag">IoT</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">Construisez votre station météo connectée avec Raspberry Pi</h3>
+        <div class="workshop-info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Atelier pratique · 20 places max</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=FF&background=22A352&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Florian Forestier</span>
+        </div>
+        <div class="meta-badges">
+          <span class="level-badge beginner">Déb.</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">Keynote</div>
+  <div class="card-grid">
+    <a href="#" class="talk-card keynote-card" style="--cat-color: var(--accent)">
+      <div class="card-header">
+        <span class="format-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          Keynote · 50min
+        </span>
+        <span class="category-tag">Keynote</span>
+      </div>
+      <div class="card-body">
+        <h3 class="talk-title">Keynote d'ouverture</h3>
+      </div>
+      <div class="card-footer">
+        <div class="speakers">
+          <div class="speaker-avatars">
+            <img src="https://ui-avatars.com/api/?name=TT&background=6ABFAD&color=fff&size=48" class="speaker-avatar" alt="">
+          </div>
+          <span class="speaker-name">Équipe Touraine Tech</span>
+        </div>
+        <div class="meta-badges">
+          <span class="duration">50min</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title">Aperçu dans la grille</div>
+  <div class="schedule-preview">
+    <!-- Header row -->
+    <div class="room-header" style="background: transparent;"></div>
+    <div class="room-header">F21</div>
+    <div class="room-header">F22</div>
+    <div class="room-header">Bio</div>
+    <div class="room-header">Physique</div>
+    <div class="room-header">F23</div>
+
+    <!-- Time slot with talks -->
+    <div class="time-cell">10:10</div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-archi); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Archi</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">L'architecture hexagonale au pays des irréductibles...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=NC&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">N. Castelein</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge beginner">Déb.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-tools); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Tools</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Le Magicien Zod : Emmenez TypeScript...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=MA&background=F59E0B&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">M. Alves</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge intermediate">Int.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-human); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Human</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Onboarding 2.0 : Réinventer l'intégration...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=HE&background=EAB308&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">H. Elmaizi</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge beginner">Déb.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-alien); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Alien</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Mes trains Jouef passent au numérique...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=FF&background=066420&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">F. Forestier</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge intermediate">Int.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell" style="grid-row: span 3;">
+      <a href="#" class="talk-card workshop-card" style="--cat-color: var(--cat-archi); animation: none; height: 100%;">
+        <div class="card-header">
+          <span class="format-badge workshop">Hands-on · 120min</span>
+          <span class="category-tag">Archi</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title" style="-webkit-line-clamp: 5;">1h50min pour créer une App Front avec la Clean Archigonale</h3>
+          <div class="workshop-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px; color: var(--cat-color);">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Atelier · 30 places</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=DL&background=E84D2E&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">D. Lamandé</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge intermediate">Int.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Break row -->
+    <div class="time-cell">11:00</div>
+    <div class="break-row">☕ Pause café (10 min)</div>
+
+    <!-- Another time slot -->
+    <div class="time-cell">11:10</div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-human); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Human</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Grandir avec le numérique : et si on apprenait...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=EL&background=EAB308&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">E. Landry</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge beginner">Déb.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-alien); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Alien</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Redécouvrir PHP : pratiques modernes au-delà...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=HG&background=066420&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">H. Gonzalez</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge beginner">Déb.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-tools); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Tools</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Valoriser sans survendre : l'art moderne de pitcher...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=HM&background=F59E0B&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">H. Massing</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge intermediate">Int.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="schedule-cell">
+      <a href="#" class="talk-card" style="--cat-color: var(--cat-backend); animation: none;">
+        <div class="card-header">
+          <span class="format-badge">Conf · 50min</span>
+          <span class="category-tag">Backend</span>
+        </div>
+        <div class="card-body">
+          <h3 class="talk-title">Limits, Requests, QoS, PriorityClasses...</h3>
+        </div>
+        <div class="card-footer">
+          <div class="speakers">
+            <div class="speaker-avatars">
+              <img src="https://ui-avatars.com/api/?name=QJ&background=2C4A5C&color=fff&size=48" class="speaker-avatar" alt="">
+            </div>
+            <span class="speaker-name">Q. Joly</span>
+          </div>
+          <div class="meta-badges">
+            <span class="level-badge intermediate">Int.</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
