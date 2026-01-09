@@ -1,0 +1,101 @@
+---
+import { stats } from '@data/config/site';
+---
+
+<section class="stats">
+  <div class="stats-inner">
+    {stats.map((stat) => (
+      <div class="stat-card">
+        <span class="stat-icon">{stat.icon}</span>
+        <span class="stat-value">{stat.value}</span>
+        <span class="stat-label">{stat.label}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .stats {
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+  }
+
+  .stats-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+  }
+
+  .stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-dark);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  @media (max-width: 1024px) {
+    .stats-inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .stats {
+      padding: 3rem 1rem;
+    }
+
+    .stats-inner {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .stat-card {
+      padding: 1.5rem 1rem;
+    }
+
+    .stat-icon {
+      font-size: 2rem;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+    }
+  }
+</style>

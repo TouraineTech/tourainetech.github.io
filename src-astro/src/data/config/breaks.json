@@ -1,0 +1,164 @@
+[
+  {
+    "id": "welcome",
+    "name": "👋 Accueil et petit déjeuner",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      0
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "ptitdej",
+    "name": "🥐 Suite du petit déjeuner (20 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      2
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "am1",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      4
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "dejeuner",
+    "name": "🍽 Pause déjeuner (jusqu'à 13h30, 10 min avant le premier Lightning) ",
+    "format": "break",
+    "rooms": [
+      1,2,3,4
+    ],
+    "times": [
+      6
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "dejeuner1",
+    "name": "",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      8
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "soSmall",
+    "name": "",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      10
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "dejeuner2",
+    "name": "🍽 fin de la pause déjeuner (40 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      12
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "pm0",
+    "name": "☕ Pause café (10 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      14
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "pm1",
+    "name": "☕ Pause café (25 min)",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      16
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "pm2",
+    "name": "Pause",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      18
+    ],
+    "days": [1,2]
+  },
+  {
+    "id": "gouter",
+    "name": "",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      20
+    ],
+    "days": [1]
+  }
+]
