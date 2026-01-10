@@ -143,16 +143,6 @@ const speakerDisplay = speakers.length > 0
   <!-- Footer: Speakers + Level -->
   <div class="card-footer">
     <div class="speakers">
-      <div class="speaker-avatars">
-        {speakers.slice(0, 2).map(speaker => (
-          <img
-            src={speaker.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&background=6ABFAD&color=fff&size=48`}
-            class="speaker-avatar"
-            alt={speaker.name}
-            loading="lazy"
-          />
-        ))}
-      </div>
       <span class="speaker-name">{speakerDisplay}</span>
     </div>
     {levelLabel && (
@@ -204,22 +194,6 @@ const speakerDisplay = speakers.length > 0
     height: 4px;
   }
 
-  /* Lightning variant */
-  .talk-card.lightning::before {
-    background: linear-gradient(90deg, #F59E0B, #FBBF24);
-  }
-
-  /* Keynote variant */
-  .talk-card.keynote {
-    background: linear-gradient(135deg, #1C1D21 0%, #2C3E50 100%);
-    border: none;
-  }
-
-  .talk-card.keynote::before {
-    background: linear-gradient(90deg, var(--accent) 0%, #4ECDC4 100%);
-    height: 4px;
-  }
-
   /* Card Header */
   .card-header {
     display: flex;
@@ -249,19 +223,9 @@ const speakerDisplay = speakers.length > 0
     opacity: 0.7;
   }
 
-  .format-badge.lightning {
-    background: rgba(245, 158, 11, 0.12);
-    color: #B45309;
-  }
-
   .format-badge.workshop {
     background: rgba(139, 92, 246, 0.12);
     color: #6D28D9;
-  }
-
-  .talk-card.keynote .format-badge {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.8);
   }
 
   .category-tag {
@@ -276,11 +240,6 @@ const speakerDisplay = speakers.length > 0
     text-transform: uppercase;
     letter-spacing: 0.02em;
     white-space: nowrap;
-  }
-
-  .talk-card.keynote .category-tag {
-    background: rgba(106, 191, 173, 0.2);
-    color: var(--accent);
   }
 
   /* Card Body */
@@ -304,11 +263,6 @@ const speakerDisplay = speakers.length > 0
 
   .talk-card.workshop .talk-title {
     -webkit-line-clamp: 3;
-  }
-
-  .talk-card.keynote .talk-title {
-    color: white;
-    font-size: 0.85rem;
   }
 
   .workshop-info {
@@ -344,38 +298,11 @@ const speakerDisplay = speakers.length > 0
     margin-top: auto;
   }
 
-  .talk-card.keynote .card-footer {
-    background: rgba(0, 0, 0, 0.2);
-    border-top-color: rgba(255, 255, 255, 0.1);
-  }
-
   .speakers {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
     flex: 1;
     min-width: 0;
-  }
-
-  .speaker-avatars {
-    display: flex;
-    flex-shrink: 0;
-  }
-
-  .speaker-avatar {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid var(--bg-secondary);
-    object-fit: cover;
-  }
-
-  .speaker-avatar:not(:first-child) {
-    margin-left: -8px;
-  }
-
-  .talk-card.keynote .speaker-avatar {
-    border-color: rgba(255, 255, 255, 0.2);
   }
 
   .speaker-name {
@@ -384,10 +311,6 @@ const speakerDisplay = speakers.length > 0
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .talk-card.keynote .speaker-name {
-    color: rgba(255, 255, 255, 0.7);
   }
 
   .level-badge {
