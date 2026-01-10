@@ -1,0 +1,101 @@
+---
+// ScrollToTop - Floating button to scroll back to top
+---
+
+<button class="scroll-to-top" id="scroll-to-top" aria-label="Retour en haut de page">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script>
+  const scrollButton = document.getElementById('scroll-to-top');
+
+  function toggleScrollButton() {
+    if (window.scrollY > 300) {
+      scrollButton?.classList.add('visible');
+    } else {
+      scrollButton?.classList.remove('visible');
+    }
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Initial check
+  toggleScrollButton();
+
+  // Listen for scroll
+  window.addEventListener('scroll', toggleScrollButton, { passive: true });
+
+  // Click handler
+  scrollButton?.addEventListener('click', scrollToTop);
+</script>
+
+<style>
+  .scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      0 4px 14px rgba(106, 191, 173, 0.35),
+      0 2px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.3s ease;
+    z-index: 999;
+  }
+
+  .scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .scroll-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 8px 24px rgba(106, 191, 173, 0.45),
+      0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .scroll-to-top:active {
+    transform: translateY(-2px);
+  }
+
+  .scroll-to-top svg {
+    transition: transform 0.2s ease;
+  }
+
+  .scroll-to-top:hover svg {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 640px) {
+    .scroll-to-top {
+      bottom: 1.25rem;
+      right: 1.25rem;
+      width: 44px;
+      height: 44px;
+    }
+  }
+</style>

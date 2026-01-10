@@ -2,6 +2,7 @@
 import '@styles/global.css';
 import Navigation from '@components/layout/Navigation.astro';
 import Footer from '@components/layout/Footer.astro';
+import ScrollToTop from '@components/ui/ScrollToTop.astro';
 import { siteConfig } from '@data/config/site';
 
 interface Props {
@@ -64,5 +65,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer />
+    <ScrollToTop />
   </body>
 </html>
