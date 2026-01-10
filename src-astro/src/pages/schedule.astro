@@ -179,24 +179,39 @@ const categories = [
           <span class="edition">Touraine Tech 2026</span>
         </div>
 
-        <div class="day-toggle">
-          <button class="day-btn active" data-day="1">
+        <div class="day-toggle" role="tablist" aria-label="Sélection du jour">
+          <button
+            class="day-btn active"
+            data-day="1"
+            role="tab"
+            id="tab-day1"
+            aria-selected="true"
+            aria-controls="day1"
+          >
             Jeudi 12
             <span>Jour 1</span>
           </button>
-          <button class="day-btn" data-day="2">
+          <button
+            class="day-btn"
+            data-day="2"
+            role="tab"
+            id="tab-day2"
+            aria-selected="false"
+            aria-controls="day2"
+          >
             Vendredi 13
             <span>Jour 2</span>
           </button>
         </div>
       </div>
 
-      <div class="category-filters">
+      <div class="category-filters" role="group" aria-label="Filtrer par catégorie">
         {categories.map((cat, i) => (
           <button
             class:list={['cat-filter', { active: i === 0 }]}
             style={`--cat-color: ${cat.color}`}
             data-category={cat.id}
+            aria-pressed={i === 0 ? 'true' : 'false'}
           >
             {cat.label}
           </button>
@@ -205,7 +220,7 @@ const categories = [
     </header>
 
     <!-- Schedule Grid - Day 1 -->
-    <div class="schedule-container" id="day1" data-day="1">
+    <div class="schedule-container" id="day1" data-day="1" role="tabpanel" aria-labelledby="tab-day1">
       <div class="schedule-grid">
         <!-- Header Row -->
         <div class="corner-cell room-header"></div>
@@ -292,7 +307,7 @@ const categories = [
     </div>
 
     <!-- Schedule Grid - Day 2 -->
-    <div class="schedule-container hidden" id="day2" data-day="2">
+    <div class="schedule-container hidden" id="day2" data-day="2" role="tabpanel" aria-labelledby="tab-day2">
       <div class="schedule-grid">
         <!-- Header Row -->
         <div class="corner-cell room-header"></div>
@@ -744,17 +759,24 @@ const categories = [
 </style>
 
 <script>
-  // Day toggle
-  document.querySelectorAll('.day-btn').forEach(btn => {
+  // Day toggle with ARIA tabs
+  const dayButtons = document.querySelectorAll('.day-btn');
+  const tabPanels = document.querySelectorAll('.schedule-container');
+
+  dayButtons.forEach(btn => {
     btn.addEventListener('click', function() {
       const day = this.getAttribute('data-day');
 
-      // Update buttons
-      document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+      // Update buttons and ARIA
+      dayButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
       this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
 
       // Show/hide grids
-      document.querySelectorAll('.schedule-container').forEach(container => {
+      tabPanels.forEach(container => {
         if (container.getAttribute('data-day') === day) {
           container.classList.remove('hidden');
         } else {
@@ -762,16 +784,45 @@ const categories = [
         }
       });
     });
+
+    // Keyboard navigation for tabs
+    btn.addEventListener('keydown', function(e) {
+      const key = (e as KeyboardEvent).key;
+      let targetBtn: Element | null = null;
+
+      if (key === 'ArrowLeft' || key === 'ArrowRight') {
+        e.preventDefault();
+        const buttons = Array.from(dayButtons);
+        const currentIndex = buttons.indexOf(this);
+
+        if (key === 'ArrowRight') {
+          targetBtn = buttons[(currentIndex + 1) % buttons.length];
+        } else {
+          targetBtn = buttons[(currentIndex - 1 + buttons.length) % buttons.length];
+        }
+
+        if (targetBtn) {
+          (targetBtn as HTMLElement).focus();
+          (targetBtn as HTMLElement).click();
+        }
+      }
+    });
   });
 
-  // Category filter (basic implementation - filters visually)
-  document.querySelectorAll('.cat-filter').forEach(filter => {
+  // Category filter with ARIA
+  const catFilters = document.querySelectorAll('.cat-filter');
+
+  catFilters.forEach(filter => {
     filter.addEventListener('click', function() {
       const category = this.getAttribute('data-category');
 
-      // Update filter buttons
-      document.querySelectorAll('.cat-filter').forEach(f => f.classList.remove('active'));
+      // Update filter buttons and ARIA
+      catFilters.forEach(f => {
+        f.classList.remove('active');
+        f.setAttribute('aria-pressed', 'false');
+      });
       this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
 
       // Filter talks
       document.querySelectorAll('.talk-cell').forEach(cell => {

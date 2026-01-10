@@ -16,7 +16,7 @@ const navLinks = [
 const currentPath = Astro.url.pathname;
 ---
 
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Navigation principale">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
       <div class="nav-logo-icon">TT</div>
@@ -25,26 +25,40 @@ const currentPath = Astro.url.pathname;
       </div>
     </a>
 
+    <!-- Desktop Navigation -->
     <div class="nav-links">
       {navLinks.map((link) => (
         <a
           href={link.href}
           class:list={['nav-link', { active: currentPath === link.href }]}
+          aria-current={currentPath === link.href ? 'page' : undefined}
         >
           {link.label}
         </a>
       ))}
 
       {isCfpOpen && (
-        <a href={cfpUrl} target="_blank" rel="noopener" class="nav-cta nav-cta-cfp">
+        <a
+          href={cfpUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-cta nav-cta-cfp"
+          aria-label="Proposer un talk (ouvre dans une nouvelle fenetre)"
+        >
           Proposer un talk
         </a>
       )}
 
       {isTicketingOpen && (
-        <a href={ticketingUrl} target="_blank" rel="noopener" class="nav-cta">
+        <a
+          href={ticketingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-cta"
+          aria-label="Billetterie (ouvre dans une nouvelle fenetre)"
+        >
           Billetterie
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
@@ -52,11 +66,110 @@ const currentPath = Astro.url.pathname;
     </div>
 
     <!-- Mobile menu button -->
-    <button class="nav-mobile-toggle" aria-label="Menu" aria-expanded="false">
+    <button
+      class="nav-mobile-toggle"
+      id="nav-toggle"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="nav-mobile-menu"
+    >
       <span class="nav-mobile-icon"></span>
     </button>
   </div>
+
+  <!-- Mobile Navigation Panel -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
+    <div class="nav-mobile-links">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={['nav-mobile-link', { active: currentPath === link.href }]}
+          aria-current={currentPath === link.href ? 'page' : undefined}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    <div class="nav-mobile-ctas">
+      {isCfpOpen && (
+        <a
+          href={cfpUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-mobile-cta nav-mobile-cta-cfp"
+        >
+          Proposer un talk
+        </a>
+      )}
+
+      {isTicketingOpen && (
+        <a
+          href={ticketingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-mobile-cta"
+        >
+          Billetterie
+        </a>
+      )}
+    </div>
+  </div>
 </nav>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-mobile-menu');
+  const nav = document.querySelector('.nav');
+
+  function openMenu() {
+    menu?.setAttribute('aria-hidden', 'false');
+    toggle?.setAttribute('aria-expanded', 'true');
+    toggle?.setAttribute('aria-label', 'Fermer le menu');
+    nav?.classList.add('nav-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menu?.setAttribute('aria-hidden', 'true');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', 'Ouvrir le menu');
+    nav?.classList.remove('nav-open');
+    document.body.style.overflow = '';
+  }
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      toggle?.focus();
+    }
+  });
+
+  // Close when clicking a link
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (toggle?.getAttribute('aria-expanded') === 'true') {
+      const target = e.target as HTMLElement;
+      if (!nav?.contains(target)) {
+        closeMenu();
+      }
+    }
+  });
+</script>
 
 <style>
   .nav {
@@ -111,6 +224,7 @@ const currentPath = Astro.url.pathname;
     color: var(--accent);
   }
 
+  /* Desktop Navigation */
   .nav-links {
     display: flex;
     align-items: center;
@@ -134,6 +248,7 @@ const currentPath = Astro.url.pathname;
 
   .nav-link.active {
     color: var(--accent-dark);
+    background: var(--accent-light);
   }
 
   .nav-cta {
@@ -169,12 +284,19 @@ const currentPath = Astro.url.pathname;
     box-shadow: var(--shadow-md);
   }
 
+  /* Mobile Toggle Button */
   .nav-mobile-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    transition: background 0.2s ease;
+  }
+
+  .nav-mobile-toggle:hover {
+    background: var(--glass-bg);
   }
 
   .nav-mobile-icon {
@@ -183,6 +305,7 @@ const currentPath = Astro.url.pathname;
     height: 2px;
     background: var(--text-primary);
     position: relative;
+    transition: background 0.2s ease;
   }
 
   .nav-mobile-icon::before,
@@ -193,13 +316,112 @@ const currentPath = Astro.url.pathname;
     height: 2px;
     background: var(--text-primary);
     left: 0;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
   }
 
   .nav-mobile-icon::before { top: -8px; }
   .nav-mobile-icon::after { bottom: -8px; }
 
+  /* Hamburger to X animation */
+  .nav-open .nav-mobile-icon {
+    background: transparent;
+  }
+
+  .nav-open .nav-mobile-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .nav-open .nav-mobile-icon::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* Mobile Menu Panel */
+  .nav-mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 2rem 2rem;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .nav-mobile-menu[aria-hidden="false"] {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-mobile-link {
+    display: block;
+    padding: 1rem 1.25rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease;
+  }
+
+  .nav-mobile-link:hover {
+    color: var(--text-primary);
+    background: var(--glass-bg);
+  }
+
+  .nav-mobile-link.active {
+    color: var(--accent-dark);
+    background: var(--accent-light);
+  }
+
+  .nav-mobile-ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .nav-mobile-cta {
+    display: block;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease;
+  }
+
+  .nav-mobile-cta:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-mobile-cta-cfp {
+    background: var(--bg-secondary);
+    color: var(--accent-dark);
+    border: 2px solid var(--accent);
+  }
+
+  /* Responsive */
   @media (max-width: 1024px) {
-    .nav-link {
+    .nav-links {
       display: none;
     }
 
@@ -207,8 +429,8 @@ const currentPath = Astro.url.pathname;
       display: block;
     }
 
-    .nav-cta {
-      margin-left: 0;
+    .nav-mobile-menu {
+      display: block;
     }
   }
 
@@ -221,13 +443,17 @@ const currentPath = Astro.url.pathname;
       display: none;
     }
 
-    .nav-cta {
-      padding: 0.75rem 1rem;
-      font-size: 0.875rem;
+    .nav-mobile-menu {
+      padding: 1rem 1rem 1.5rem;
     }
 
-    .nav-cta svg {
-      display: none;
+    .nav-mobile-link {
+      padding: 0.875rem 1rem;
+      font-size: 1rem;
+    }
+
+    .nav-mobile-cta {
+      padding: 0.875rem 1.25rem;
     }
   }
 </style>
