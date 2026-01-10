@@ -1,0 +1,140 @@
+---
+import type { FullSpeaker } from '@lib/data';
+import { getSpeakerAvatarUrl } from '@lib/data';
+
+interface Props {
+  speaker: FullSpeaker;
+  size?: 'sm' | 'md' | 'lg';
+  showCompany?: boolean;
+  linkToProfile?: boolean;
+}
+
+const { speaker, size = 'md', showCompany = false, linkToProfile = false } = Astro.props;
+
+const avatarUrl = getSpeakerAvatarUrl(speaker);
+const speakerName = speaker.name.split('_').join(' ');
+
+const sizeClasses = {
+  sm: 'speaker-card--sm',
+  md: 'speaker-card--md',
+  lg: 'speaker-card--lg',
+};
+
+const Tag = linkToProfile ? 'a' : 'div';
+const linkProps = linkToProfile ? { href: `/speaker/${speaker.uid}` } : {};
+---
+
+<Tag class:list={['speaker-card', sizeClasses[size]]} {...linkProps}>
+  <div class="speaker-card__avatar">
+    <img
+      src={avatarUrl}
+      alt={speakerName}
+      loading="lazy"
+      onerror={`this.onerror=null;this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(speakerName)}&background=6abfad&color=fff&size=200'`}
+    />
+  </div>
+  <div class="speaker-card__info">
+    <h3 class="speaker-card__name">{speakerName}</h3>
+    {showCompany && speaker.company && (
+      <span class="speaker-card__company">{speaker.company}</span>
+    )}
+  </div>
+</Tag>
+
+<style>
+  .speaker-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
+
+  a.speaker-card:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .speaker-card__avatar {
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bg-tertiary);
+  }
+
+  .speaker-card__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .speaker-card__info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .speaker-card__name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .speaker-card__company {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Size variants */
+  .speaker-card--sm .speaker-card__avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .speaker-card--sm .speaker-card__name {
+    font-size: 0.9rem;
+  }
+
+  .speaker-card--md .speaker-card__avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .speaker-card--md .speaker-card__name {
+    font-size: 1rem;
+  }
+
+  .speaker-card--lg .speaker-card__avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .speaker-card--lg .speaker-card__name {
+    font-size: 1.15rem;
+  }
+
+  .speaker-card--lg {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .speaker-card--lg .speaker-card__info {
+    text-align: center;
+  }
+</style>
