@@ -1,6 +1,14 @@
 # Sponsors Touraine Tech
 # Types possibles: gold, silver, bronze, partenaires
 
+- id: techcorp-demo
+  name: TechCorp (Demo)
+  type: gold
+  image: placeholder-gold.png
+  link: https://example.com
+  desc: |
+    Sponsor Gold de démonstration pour tester le design.
+
 - id: neosoft
   name: Néosoft
   type: silver
@@ -48,3 +56,11 @@
     Envie d'en savoir plus ? N'hésitez pas à venir nous voir à notre stand !
   linkedIn: https://www.linkedin.com/showcase/acensi-centre-ouest/
   instagram: https://www.instagram.com/acensisana/
+
+- id: startup-demo
+  name: StartupBronze (Demo)
+  type: bronze
+  image: placeholder-bronze.png
+  link: https://example.com
+  desc: |
+    Sponsor Bronze de démonstration pour tester le design.
