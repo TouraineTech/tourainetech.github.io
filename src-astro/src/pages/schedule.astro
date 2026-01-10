@@ -89,61 +89,15 @@ const day2Breaks = (breaksData as BreakItem[]).filter(b => b.days.includes(2));
 
 const rooms = roomsData as string[];
 
-// Helper to check if a time slot has a break
-function getBreakForTime(breaks: BreakItem[], timeIndex: number): BreakItem | undefined {
-  return breaks.find(b => b.times.includes(timeIndex));
-}
-
-// Check if a break applies to a specific room
-function isBreakForRoom(breakItem: BreakItem, roomIndex: number): boolean {
-  return breakItem.rooms.includes(roomIndex + 1); // rooms are 1-indexed
-}
-
-// Check if this is the first room of a break (to render once with colspan)
-function isFirstBreakRoom(breakItem: BreakItem, roomIndex: number): boolean {
-  return breakItem.rooms[0] === (roomIndex + 1);
-}
-
-// Get colspan for a break starting at this room
-function getBreakColSpan(breakItem: BreakItem, roomIndex: number): number {
-  // Count consecutive rooms from this one
-  const roomNum = roomIndex + 1;
-  return breakItem.rooms.filter(r => r >= roomNum).length;
-}
-
-// Helper to get talks for a specific time and room
-function getTalkForCell(talks: ScheduleItem[], timeIndex: number, roomIndex: number): ScheduleItem | undefined {
-  return talks.find(t =>
-    t.times.includes(timeIndex) &&
-    t.rooms.includes(roomIndex + 1) // rooms are 1-indexed in data
-  );
-}
-
-// Check if a talk spans multiple rows (starts at earlier time)
-function isTalkContinuation(talks: ScheduleItem[], timeIndex: number, roomIndex: number): boolean {
-  const talk = talks.find(t =>
-    t.rooms.includes(roomIndex + 1) &&
-    t.times.includes(timeIndex) &&
-    t.times[0] !== timeIndex
-  );
-  return !!talk;
-}
-
-// Get row span for a talk
-function getTalkRowSpan(talk: ScheduleItem): number {
-  return talk.times.length;
-}
-
-// Check if talk spans multiple rooms
-function getColSpan(talk: ScheduleItem): number {
-  return talk.rooms.length;
-}
-
-// Check if this talk was already rendered in a previous room column
-function isAlreadyRendered(talk: ScheduleItem, currentRoomIndex: number): boolean {
-  // If the talk's first room is before the current room, it was already rendered
-  const firstRoom = Math.min(...talk.rooms);
-  return firstRoom < (currentRoomIndex + 1);
+// Nuxt-style: CSS Grid absolute positioning using timeIndex directly
+// grid-column: rooms[0]+1 to rooms[last]+2 (col 1 is time column)
+// grid-row: timeIndex+2 to lastTimeIndex+3 (row 1 is header)
+function getCellStyle(item: { rooms: number[]; times: number[] }): string {
+  const colStart = item.rooms[0] + 1;
+  const colEnd = item.rooms[item.rooms.length - 1] + 2;
+  const rowStart = item.times[0] + 2;
+  const rowEnd = item.times[item.times.length - 1] + 3;
+  return `grid-column-start: ${colStart}; grid-column-end: ${colEnd}; grid-row-start: ${rowStart}; grid-row-end: ${rowEnd};`;
 }
 
 // Room capacities
@@ -222,85 +176,58 @@ const categories = [
     <!-- Schedule Grid - Day 1 -->
     <div class="schedule-container" id="day1" data-day="1" role="tabpanel" aria-labelledby="tab-day1">
       <div class="schedule-grid">
-        <!-- Header Row -->
+        <!-- Header Row: corner + room headers -->
         <div class="corner-cell room-header"></div>
         {rooms.map((room, i) => (
-          <div class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}>
+          <div
+            class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
+            style={`grid-column: ${i + 2}; grid-row: 1;`}
+          >
             <div class="room-name">{room}</div>
             <div class="room-capacity">{roomCapacities[room]}</div>
           </div>
         ))}
 
-        <!-- Time slots -->
-        {day1Times.map((timeSlot) => {
-          const timeIndex = parseInt(timeSlot.timeIndex);
-          const breakItem = getBreakForTime(day1Breaks, timeIndex);
+        <!-- Time labels (column 1) -->
+        {day1Times.map((timeSlot) => (
+          <div class="time-cell" style="grid-column: 1;">
+            {timeSlot.time}
+          </div>
+        ))}
+
+        <!-- Breaks with absolute positioning -->
+        {day1Breaks.map((breakItem) => (
+          breakItem.name && (
+            <div class="break-cell" style={getCellStyle(breakItem)}>
+              <div class="break-content">
+                <span class="break-name">{breakItem.name}</span>
+              </div>
+            </div>
+          )
+        ))}
+
+        <!-- Talks with absolute positioning -->
+        {day1Talks.map((talk) => {
+          const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+          const speakers = getSpeakersForTalk(talk.id);
 
           return (
-            <>
-              <div class="time-cell">
-                <span class="time-value">{timeSlot.time}</span>
-              </div>
-
-              {rooms.map((_, roomIndex) => {
-                // Check if this room has a break at this time
-                if (breakItem && isBreakForRoom(breakItem, roomIndex)) {
-                  // Only render the break cell from the first room it applies to
-                  if (isFirstBreakRoom(breakItem, roomIndex)) {
-                    const breakColSpan = getBreakColSpan(breakItem, roomIndex);
-                    return (
-                      <div class="break-cell" style={`grid-column: span ${breakColSpan};`}>
-                        <div class="break-content">
-                          <span class="break-name">{breakItem.name}</span>
-                        </div>
-                      </div>
-                    );
-                  }
-                  // Skip other rooms that are part of the same break
-                  return null;
-                }
-
-                // Skip if this is a continuation of a multi-row talk
-                if (isTalkContinuation(day1Talks, timeIndex, roomIndex)) {
-                  return null;
-                }
-
-                const talk = getTalkForCell(day1Talks, timeIndex, roomIndex);
-
-                if (!talk) {
-                  return <div class="empty-cell"></div>;
-                }
-
-                // Skip if this talk was already rendered in a previous room (multi-room talks)
-                if (isAlreadyRendered(talk, roomIndex)) {
-                  return null;
-                }
-
-                const rowSpan = getTalkRowSpan(talk);
-                const colSpan = getColSpan(talk);
-                const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
-                const speakers = getSpeakersForTalk(talk.id);
-
-                return (
-                  <div
-                    class="talk-cell"
-                    style={`${rowSpan > 1 ? `grid-row: span ${rowSpan};` : ''} ${colSpan > 1 ? `grid-column: span ${colSpan};` : ''}`}
-                    data-category={talk.categories?.toLowerCase() || 'keynote'}
-                  >
-                    <TalkCard
-                      id={talk.id}
-                      title={talk.title}
-                      category={talk.categories}
-                      format={talk.formats}
-                      level={talk.level}
-                      speakers={speakers}
-                      isWorkshop={isWorkshop}
-                      rowSpan={rowSpan}
-                    />
-                  </div>
-                );
-              })}
-            </>
+            <div
+              class="talk-cell"
+              style={getCellStyle(talk)}
+              data-category={talk.categories?.toLowerCase() || 'keynote'}
+            >
+              <TalkCard
+                id={talk.id}
+                title={talk.title}
+                category={talk.categories}
+                format={talk.formats}
+                level={talk.level}
+                speakers={speakers}
+                isWorkshop={isWorkshop}
+                rowSpan={talk.times.length}
+              />
+            </div>
           );
         })}
       </div>
@@ -309,85 +236,58 @@ const categories = [
     <!-- Schedule Grid - Day 2 -->
     <div class="schedule-container hidden" id="day2" data-day="2" role="tabpanel" aria-labelledby="tab-day2">
       <div class="schedule-grid">
-        <!-- Header Row -->
+        <!-- Header Row: corner + room headers -->
         <div class="corner-cell room-header"></div>
         {rooms.map((room, i) => (
-          <div class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}>
+          <div
+            class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
+            style={`grid-column: ${i + 2}; grid-row: 1;`}
+          >
             <div class="room-name">{room}</div>
             <div class="room-capacity">{roomCapacities[room]}</div>
           </div>
         ))}
 
-        <!-- Time slots -->
-        {day2Times.map((timeSlot) => {
-          const timeIndex = parseInt(timeSlot.timeIndex);
-          const breakItem = getBreakForTime(day2Breaks, timeIndex);
+        <!-- Time labels (column 1) -->
+        {day2Times.map((timeSlot) => (
+          <div class="time-cell" style="grid-column: 1;">
+            {timeSlot.time}
+          </div>
+        ))}
+
+        <!-- Breaks with absolute positioning -->
+        {day2Breaks.map((breakItem) => (
+          breakItem.name && (
+            <div class="break-cell" style={getCellStyle(breakItem)}>
+              <div class="break-content">
+                <span class="break-name">{breakItem.name}</span>
+              </div>
+            </div>
+          )
+        ))}
+
+        <!-- Talks with absolute positioning -->
+        {day2Talks.map((talk) => {
+          const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+          const speakers = getSpeakersForTalk(talk.id);
 
           return (
-            <>
-              <div class="time-cell">
-                <span class="time-value">{timeSlot.time}</span>
-              </div>
-
-              {rooms.map((_, roomIndex) => {
-                // Check if this room has a break at this time
-                if (breakItem && isBreakForRoom(breakItem, roomIndex)) {
-                  // Only render the break cell from the first room it applies to
-                  if (isFirstBreakRoom(breakItem, roomIndex)) {
-                    const breakColSpan = getBreakColSpan(breakItem, roomIndex);
-                    return (
-                      <div class="break-cell" style={`grid-column: span ${breakColSpan};`}>
-                        <div class="break-content">
-                          <span class="break-name">{breakItem.name}</span>
-                        </div>
-                      </div>
-                    );
-                  }
-                  // Skip other rooms that are part of the same break
-                  return null;
-                }
-
-                // Skip if this is a continuation of a multi-row talk
-                if (isTalkContinuation(day2Talks, timeIndex, roomIndex)) {
-                  return null;
-                }
-
-                const talk = getTalkForCell(day2Talks, timeIndex, roomIndex);
-
-                if (!talk) {
-                  return <div class="empty-cell"></div>;
-                }
-
-                // Skip if this talk was already rendered in a previous room (multi-room talks)
-                if (isAlreadyRendered(talk, roomIndex)) {
-                  return null;
-                }
-
-                const rowSpan = getTalkRowSpan(talk);
-                const colSpan = getColSpan(talk);
-                const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
-                const speakers = getSpeakersForTalk(talk.id);
-
-                return (
-                  <div
-                    class="talk-cell"
-                    style={`${rowSpan > 1 ? `grid-row: span ${rowSpan};` : ''} ${colSpan > 1 ? `grid-column: span ${colSpan};` : ''}`}
-                    data-category={talk.categories?.toLowerCase() || 'keynote'}
-                  >
-                    <TalkCard
-                      id={talk.id}
-                      title={talk.title}
-                      category={talk.categories}
-                      format={talk.formats}
-                      level={talk.level}
-                      speakers={speakers}
-                      isWorkshop={isWorkshop}
-                      rowSpan={rowSpan}
-                    />
-                  </div>
-                );
-              })}
-            </>
+            <div
+              class="talk-cell"
+              style={getCellStyle(talk)}
+              data-category={talk.categories?.toLowerCase() || 'keynote'}
+            >
+              <TalkCard
+                id={talk.id}
+                title={talk.title}
+                category={talk.categories}
+                format={talk.formats}
+                level={talk.level}
+                speakers={speakers}
+                isWorkshop={isWorkshop}
+                rowSpan={talk.times.length}
+              />
+            </div>
           );
         })}
       </div>
@@ -538,10 +438,12 @@ const categories = [
     display: none;
   }
 
-  /* Schedule Grid */
+  /* Schedule Grid - CSS Grid with absolute positioning */
   .schedule-grid {
     display: grid;
-    grid-template-columns: 70px repeat(5, 1fr);
+    grid-template-columns: 75px repeat(5, 1fr);
+    /* Auto rows for flexibility */
+    grid-auto-rows: minmax(50px, auto);
     gap: 1px;
     background: var(--glass-border);
     border-radius: 16px;
@@ -564,6 +466,7 @@ const categories = [
     background: var(--bg-tertiary);
     padding: 1rem;
     text-align: center;
+    grid-row: 1;
   }
 
   .room-header.first-room {
@@ -593,6 +496,8 @@ const categories = [
     position: sticky;
     left: 0;
     z-index: 20;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   /* Timeline start on corner */
@@ -606,43 +511,32 @@ const categories = [
     background: linear-gradient(180deg, transparent 0%, var(--accent-light) 100%);
   }
 
-  /* Time Column - Timeline Style */
+  /* Time Column - Stacked Style */
   .time-cell {
     background: var(--bg-primary);
-    padding: 0;
+    padding: 0.5rem 0.3rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     position: sticky;
     left: 0;
     z-index: 5;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
   }
 
   /* Vertical timeline line */
-  .time-cell::before {
+  .time-cell::after {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
     top: 0;
     bottom: 0;
     width: 2px;
     background: var(--accent);
-    opacity: 0.3;
-  }
-
-  .time-value {
-    font-family: var(--font-display);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    background: var(--bg-primary);
-    padding: 0.15rem 0.4rem;
-    border-radius: 4px;
-    position: relative;
-    z-index: 1;
-    border: 1px solid var(--glass-border);
-    margin-top: 0.25rem;
+    opacity: 0.2;
   }
 
   /* Talk Cells */
@@ -690,11 +584,6 @@ const categories = [
     color: var(--text-secondary);
   }
 
-  /* Empty Cell */
-  .empty-cell {
-    background: var(--bg-primary);
-  }
-
   /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -740,12 +629,11 @@ const categories = [
     }
 
     .schedule-grid {
-      grid-template-columns: 55px repeat(5, minmax(150px, 1fr));
+      grid-template-columns: 60px repeat(5, minmax(150px, 1fr));
     }
 
-    .time-value {
-      font-size: 0.7rem;
-      padding: 0.1rem 0.3rem;
+    .time-cell {
+      font-size: 0.75rem;
     }
 
     .room-name {
@@ -759,12 +647,11 @@ const categories = [
 
   @media (max-width: 480px) {
     .schedule-grid {
-      grid-template-columns: 45px repeat(5, minmax(130px, 1fr));
+      grid-template-columns: 55px repeat(5, minmax(130px, 1fr));
     }
 
-    .time-value {
-      font-size: 0.65rem;
-      padding: 0.08rem 0.2rem;
+    .time-cell {
+      font-size: 0.7rem;
     }
 
     .room-name {

@@ -40,16 +40,16 @@
   --radius-xl: 20px;
   --radius-2xl: 24px;
 
-  /* Category Colors */
+  /* Category Colors - Vibrant Spectrum palette */
   --cat-design: #E91E8C;
-  --cat-front: #0077C2;
-  --cat-backend: #2C4A5C;
-  --cat-iot: #22A352;
+  --cat-front: #0066FF;
+  --cat-backend: #1E3A5F;
+  --cat-iot: #00A676;
   --cat-archi: #E84D2E;
-  --cat-tools: #F59E0B;
-  --cat-human: #EAB308;
-  --cat-ai: #8B5CF6;
-  --cat-alien: #066420;
+  --cat-tools: #FF8C00;
+  --cat-human: #8B5CF6;
+  --cat-ai: #6366F1;
+  --cat-alien: #14B8A6;
 }
 
 /* Reset */
