@@ -145,7 +145,7 @@ const samplePhotos = [
 
   .page-header h1 {
     font-family: var(--font-display);
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     color: white;
     margin-bottom: 0.75rem;
@@ -189,11 +189,12 @@ const samplePhotos = [
     border-radius: var(--radius-lg);
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   .gallery-item:hover {
-    transform: scale(1.02);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
   }
 
   .photo-placeholder {
@@ -330,10 +331,6 @@ const samplePhotos = [
   @media (max-width: 768px) {
     .page-header {
       padding: 3rem 1rem;
-    }
-
-    .page-header h1 {
-      font-size: 2rem;
     }
 
     .photos-container {

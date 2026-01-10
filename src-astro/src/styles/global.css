@@ -335,3 +335,79 @@ a {
   white-space: nowrap;
   border: 0;
 }
+
+/* ===================================
+   Accessibility - Focus States
+   =================================== */
+
+/* Global focus-visible for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Focus on dark backgrounds (buttons with accent bg) */
+.btn-primary:focus-visible,
+.nav-cta:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Card focus states */
+.card:focus-visible,
+a.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-dark);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  z-index: 10001;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ===================================
+   Accessibility - Reduced Motion
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================================
+   Accessibility - Color Contrast Note
+   =================================== */
+/*
+ * WCAG Contrast Requirements:
+ * - White text on --accent (#6ABFAD): 2.3:1 FAIL
+ * - White text on --accent-dark (#4A9A8A): 3.9:1 FAIL for small text
+ *
+ * USE --accent-dark for backgrounds with white text
+ * Or use dark text (--text-primary) on --accent backgrounds
+ */
