@@ -202,15 +202,17 @@ export function markdownToHtml(md: string | undefined | null): string {
 }
 
 /**
- * Generate speaker avatar URL (fallback to UI Avatars)
+ * Generate speaker avatar URL
+ * Priority: picture URL > local file by UID > onerror fallback to UI Avatars
  */
 export function getSpeakerAvatarUrl(speaker: FullSpeaker): string {
+  // Si une URL de photo existe déjà (ex: depuis Conference Hall), l'utiliser
   if (speaker.picture) {
     return speaker.picture;
   }
-  // Fallback to UI Avatars service
-  const name = encodeURIComponent(speaker.name);
-  return `https://ui-avatars.com/api/?name=${name}&background=6abfad&color=fff&size=200`;
+  // Sinon, utiliser l'UID comme nom de fichier local
+  // L'onerror dans les composants fera le fallback vers UI Avatars si le fichier n'existe pas
+  return `/img/speakers/${speaker.uid}.png`;
 }
 
 /**

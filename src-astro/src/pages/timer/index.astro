@@ -1,0 +1,119 @@
+---
+import Layout from '@layouts/Layout.astro';
+import daysData from '@data/config/days.json';
+
+const days = daysData as number[];
+
+const dayLabels: Record<number, string> = {
+  1: 'Jeudi 12 février',
+  2: 'Vendredi 13 février',
+};
+---
+
+<Layout title="Timer - Sélection du jour" description="Timer pour les salles de Touraine Tech 2026">
+  <div class="timer-index">
+    <div class="timer-container">
+      <img src="/img/logo.svg" alt="Touraine Tech" class="logo" />
+      <h1>Timer</h1>
+      <p class="subtitle">Sélectionnez le jour</p>
+
+      <div class="days-grid">
+        {days.map((day) => (
+          <a href={`/timer/${day}`} class="day-card">
+            <span class="day-number">Jour {day}</span>
+            <span class="day-label">{dayLabels[day] || `Jour ${day}`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .timer-index {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .timer-container {
+    text-align: center;
+    color: white;
+  }
+
+  .logo {
+    height: 80px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .days-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .day-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .day-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .day-number {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .day-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .days-grid {
+      flex-direction: column;
+    }
+
+    .day-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>

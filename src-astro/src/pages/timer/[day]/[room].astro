@@ -1,0 +1,354 @@
+---
+import Layout from '@layouts/Layout.astro';
+import daysData from '@data/config/days.json';
+import roomsData from '@data/config/rooms.json';
+
+export function getStaticPaths() {
+  const days = daysData as number[];
+  const rooms = roomsData as string[];
+
+  const paths = [];
+  for (const day of days) {
+    for (const room of rooms) {
+      paths.push({
+        params: { day: String(day), room },
+      });
+    }
+  }
+  return paths;
+}
+
+const { day, room } = Astro.params;
+
+const roomBackgrounds: Record<string, string> = {
+  F21: '/img/visualArt/fondF21.png',
+  F22: '/img/visualArt/fondF22.png',
+  Bio: '/img/visualArt/fondBio.png',
+  Physique: '/img/visualArt/fondPhysique.png',
+};
+---
+
+<Layout title={`Timer - ${room} - Jour ${day}`} description={`Timer pour la salle ${room}`}>
+  <div class="timer-room" data-room={room} data-day={day}>
+    <img src="/img/logo.svg" alt="Touraine Tech" class="logo" />
+
+    <div id="talks-container">
+      <div class="loading">Chargement...</div>
+    </div>
+  </div>
+</Layout>
+
+<script define:vars={{ day, room }}>
+  async function loadTimerData() {
+    try {
+      const response = await fetch(`/timer/day${day}/${room}.json`);
+      const talks = await response.json();
+
+      // Enhance talks with endTime and next talk info
+      const enhancedTalks = talks.map((talk, index) => ({
+        ...talk,
+        endTime: talks[index + 1]?.time,
+        nextTalkId: talks[index + 1]?.talk?.id,
+        nextTalkName: talks[index + 1]?.talk?.name,
+      }));
+
+      renderTalks(enhancedTalks);
+      scrollToCurrentTalk(enhancedTalks);
+    } catch (e) {
+      console.error('Error loading timer data:', e);
+      document.getElementById('talks-container').innerHTML =
+        '<div class="error">Erreur lors du chargement des données</div>';
+    }
+  }
+
+  function renderTalks(talks) {
+    const container = document.getElementById('talks-container');
+    container.innerHTML = talks
+      .map(
+        (talk) => `
+        <div class="talk-bloc" id="${talk.talk?.id || 'unknown'}">
+          <h1 class="talk-title">${talk.talk?.name || ''}</h1>
+          <h2 class="chrono" data-end-time="${talk.endTime || ''}" data-start-time="${talk.time}">
+            --:--
+          </h2>
+          <div class="sponsors-container">
+            <img src="/img/sponsors-banner.png" alt="Sponsors" class="sponsors-banner" onerror="this.style.display='none'" />
+          </div>
+          <h3 class="next-talk">
+            ${talk.nextTalkName ? `Prochain sujet : ${talk.nextTalkName}` : ''}
+          </h3>
+        </div>
+      `
+      )
+      .join('');
+
+    // Start the timers
+    startTimers();
+  }
+
+  function startTimers() {
+    setInterval(() => {
+      const chronos = document.querySelectorAll('.chrono');
+      chronos.forEach((chrono) => {
+        const endTime = chrono.dataset.endTime;
+        const startTime = chrono.dataset.startTime;
+        if (!endTime) {
+          chrono.textContent = '--:--';
+          return;
+        }
+
+        const remaining = calculateRemainingTime(endTime);
+        const duration = calculateDuration(startTime, endTime);
+
+        chrono.textContent = remaining.asString;
+
+        // Blink when less than 10% time remaining
+        if (remaining.remainingInSeconds > 0 && remaining.remainingInSeconds < duration / 10) {
+          chrono.classList.add('blink');
+        } else {
+          chrono.classList.remove('blink');
+        }
+
+        // Auto-scroll when time is up
+        if (remaining.remainingInSeconds <= 0) {
+          const talkBloc = chrono.closest('.talk-bloc');
+          if (talkBloc) {
+            const nextId = talkBloc.nextElementSibling?.id;
+            if (nextId) {
+              const nextElement = document.getElementById(nextId);
+              if (nextElement) {
+                nextElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          }
+        }
+      });
+    }, 500);
+  }
+
+  function calculateRemainingTime(endTime) {
+    const [hours, minutes] = endTime.split(':').map(Number);
+    const endDate = new Date();
+    endDate.setHours(hours, minutes, 0, 0);
+
+    const now = new Date();
+    const remainingInSeconds = (endDate.getTime() - now.getTime()) / 1000;
+
+    const mins = Math.floor(Math.abs(remainingInSeconds) / 60);
+    const secs = Math.floor(Math.abs(remainingInSeconds) % 60);
+
+    return {
+      asString: `${String(mins).padStart(2, '0')} : ${String(secs).padStart(2, '0')}`,
+      remainingInSeconds,
+    };
+  }
+
+  function calculateDuration(startTime, endTime) {
+    const [startH, startM] = startTime.split(':').map(Number);
+    const [endH, endM] = endTime.split(':').map(Number);
+
+    const startDate = new Date();
+    startDate.setHours(startH, startM, 0, 0);
+
+    const endDate = new Date();
+    endDate.setHours(endH, endM, 0, 0);
+
+    return (endDate.getTime() - startDate.getTime()) / 1000;
+  }
+
+  function scrollToCurrentTalk(talks) {
+    setTimeout(() => {
+      const now = new Date();
+      const currentTime = now.getHours() * 60 + now.getMinutes();
+
+      const currentTalk = talks.find((talk) => {
+        if (!talk.endTime) return false;
+        const [endH, endM] = talk.endTime.split(':').map(Number);
+        const endTimeMinutes = endH * 60 + endM;
+        return endTimeMinutes > currentTime;
+      });
+
+      if (currentTalk?.talk?.id) {
+        const element = document.getElementById(currentTalk.talk.id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    }, 500);
+  }
+
+  // Load data on page load
+  loadTimerData();
+</script>
+
+<style define:vars={{ roomBg: `url('${Astro.props.roomBg || ''}')` }}>
+  .timer-room {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    height: 10vh;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    z-index: 100;
+  }
+
+  .loading,
+  .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .error {
+    color: #ff6b6b;
+  }
+
+  .talk-bloc {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .talk-title {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .chrono {
+    font-family: var(--font-display);
+    font-size: 10rem;
+    font-weight: 700;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .sponsors-container {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    height: 15vh;
+    max-width: 90%;
+  }
+
+  .sponsors-banner {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .next-talk {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 90%;
+  }
+
+  /* Desktop with backgrounds */
+  @media (min-width: 1300px) {
+    .talk-bloc {
+      padding: 0;
+    }
+
+    .talk-title {
+      width: 100%;
+      margin-top: 25vh;
+      height: auto;
+      font-size: 2.5rem;
+    }
+
+    .chrono {
+      font-size: 6rem;
+      height: 10vh;
+    }
+
+    .next-talk {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .sponsors-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2vh 0;
+      height: 20vh;
+    }
+  }
+
+  /* Room-specific backgrounds for desktop */
+  @media (min-width: 1300px) {
+    .timer-room[data-room='F21'] .talk-bloc {
+      background-image: url('/img/visualArt/fondF21.png');
+    }
+
+    .timer-room[data-room='F22'] .talk-bloc {
+      background-image: url('/img/visualArt/fondF22.png');
+    }
+
+    .timer-room[data-room='Bio'] .talk-bloc {
+      background-image: url('/img/visualArt/fondBio.png');
+    }
+
+    .timer-room[data-room='Physique'] .talk-bloc {
+      background-image: url('/img/visualArt/fondPhysique.png');
+    }
+  }
+
+  @media (max-width: 768px) {
+    .talk-title {
+      font-size: 1.5rem;
+      height: auto;
+    }
+
+    .chrono {
+      font-size: 4rem;
+      height: auto;
+    }
+
+    .next-talk {
+      font-size: 1rem;
+    }
+  }
+</style>

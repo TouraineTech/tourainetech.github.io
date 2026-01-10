@@ -1,0 +1,195 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+// Default YouTube URLs (can be overridden via query params)
+const defaultStreams = {
+  F21: 'kNB8dfP4zcs',
+  F22: 'uogzR8Wrxy4',
+  Bio: 'L-PJfQKM0dE',
+  Physique: '27IO_EVL_CQ',
+};
+
+// OBS WebSocket URLs
+const obsUrls = {
+  F21: 'https://touraine.tech/obs-web/#wss://starfish-fair-unicorn.ngrok-free.app/',
+  F22: 'https://touraine.tech/obs-web/#wss://labrador-happy-unduly.ngrok-free.app/',
+  Bio: 'https://touraine.tech/obs-web/#wss://innocent-python-premium.ngrok-free.app/',
+  Physique: 'https://touraine.tech/obs-web/#wss://vital-raccoon-preferably.ngrok-free.app/',
+};
+
+const rooms = ['F21', 'F22', 'Bio', 'Physique'];
+---
+
+<Layout title="Régie TNT" description="Page de régie pour la diffusion Touraine Tech">
+  <div class="regie-page">
+    <div class="regie-container">
+      <header class="regie-header">
+        <h1>Bienvenue sur la régie TNT</h1>
+        <p>Passer les paramètres des URL YouTube comme le lien suivant :</p>
+        <code class="url-example">
+          https://touraine.tech/regie?F21=codeVideoYoutubeSalleF21&F22=codeVideoYoutubeSalleF22&Bio=codeVideoYoutubeSalleBio&Physique=codeVideoYoutubeSallePhysique
+        </code>
+      </header>
+
+      <section id="regie" class="regie-grid">
+        {rooms.map((room) => (
+          <div class="regie-room" data-room={room}>
+            <h2>{room}</h2>
+            <div class="regie-frames">
+              <iframe
+                id={`obs-${room}`}
+                src={obsUrls[room]}
+                allowfullscreen
+                title={`OBS ${room}`}
+              ></iframe>
+              <iframe
+                id={`yt-${room}`}
+                src={`https://www.youtube.com/embed/${defaultStreams[room]}`}
+                allowfullscreen
+                title={`YouTube ${room}`}
+              ></iframe>
+            </div>
+          </div>
+        ))}
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Update YouTube iframes based on query parameters
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const rooms = ['F21', 'F22', 'Bio', 'Physique'];
+
+    rooms.forEach((room) => {
+      const videoId = params.get(room);
+      if (videoId) {
+        const iframe = document.getElementById(`yt-${room}`);
+        if (iframe) {
+          iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        }
+      }
+    });
+
+    // Scroll to regie section after a short delay
+    setTimeout(() => {
+      const regieElement = document.getElementById('regie');
+      if (regieElement) {
+        regieElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 1000);
+  });
+</script>
+
+<style>
+  .regie-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  .regie-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .regie-header {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+  }
+
+  .regie-header h1 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .regie-header p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .url-example {
+    display: block;
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .regie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .regie-room {
+    height: calc((100dvh - 72px) / 2);
+    width: calc((100% - 24px) / 2);
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regie-room h2 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    margin: 0;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .regie-frames {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .regie-frames iframe {
+    width: calc((100% - 8px) / 2);
+    height: 100%;
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--bg-tertiary);
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .regie-room {
+      height: calc(100dvh - 48px);
+      width: 100%;
+    }
+
+    .regie-frames iframe {
+      height: calc((100% - 8px) / 2);
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .regie-container {
+      padding: 16px;
+    }
+
+    .regie-room h2 {
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+</style>
