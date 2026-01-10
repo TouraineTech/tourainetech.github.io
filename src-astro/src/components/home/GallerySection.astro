@@ -1,4 +1,9 @@
 ---
+import { siteConfig } from '@data/config/site';
+
+const { edition } = siteConfig;
+const previousYear = edition.year - 1;
+
 // Placeholder photos - will be replaced with actual Flickr photos
 const photos = [
   { id: '1', placeholder: true },
@@ -16,7 +21,7 @@ const photos = [
   <div class="gallery-inner">
     <div class="section-header">
       <span class="section-label">En images</span>
-      <h2 class="section-title">Revivez l'edition 2025</h2>
+      <h2 class="section-title">Revivez l'edition {previousYear}</h2>
       <p class="section-desc">
         Conferences, workshops, networking et bonne humeur
       </p>
@@ -30,14 +35,14 @@ const photos = [
               <span>📸</span>
             </div>
           ) : (
-            <img src={photo.url} alt={photo.title || 'Touraine Tech 2025'} loading="lazy" />
+            <img src={photo.url} alt={photo.title || `Touraine Tech ${previousYear}`} loading="lazy" />
           )}
         </div>
       ))}
     </div>
 
     <div class="gallery-footer">
-      <a href="https://www.flickr.com/photos/143866243@N05/albums" target="_blank" rel="noopener" class="btn btn-secondary">
+      <a href="https://www.flickr.com/photos/143866243@N05/albums" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
         Voir toutes les photos
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
