@@ -532,31 +532,27 @@ import Layout from '@layouts/Layout.astro';
     border-radius: var(--radius-md);
   }
 
-  /* Reporting Section */
+  /* Reporting Section - Soft Amber Style */
   .reporting-card {
-    background: linear-gradient(
-      135deg,
-      var(--accent) 0%,
-      var(--accent-dark) 100%
-    );
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-left: 4px solid #F59E0B;
     border-radius: var(--radius-lg);
-    padding: 2.5rem;
-    color: white;
+    padding: 2rem;
+    color: var(--text-secondary);
     position: relative;
-    overflow: hidden;
-    box-shadow:
-      0 20px 40px rgba(106, 191, 173, 0.25),
-      0 8px 16px rgba(106, 191, 173, 0.15);
   }
 
   .reporting-card::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(245, 158, 11, 0.04) 0%,
+      transparent 60%
+    );
+    border-radius: var(--radius-lg);
     pointer-events: none;
   }
 
@@ -565,35 +561,35 @@ import Layout from '@layouts/Layout.astro';
   }
 
   .reporting-intro {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.7;
-    margin-bottom: 2rem;
-    opacity: 0.95;
+    margin-bottom: 1.75rem;
+    color: var(--text-secondary);
   }
 
   .reporting-intro strong {
-    color: white;
+    color: var(--text-primary);
   }
 
   .reporting-methods {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .method {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--color-alert-light);
+    border: 1px solid rgba(245, 158, 11, 0.2);
     padding: 1.25rem;
     border-radius: var(--radius-md);
-    backdrop-filter: blur(4px);
   }
 
   .method-icon {
-    font-size: 2rem;
+    font-size: 1.75rem;
     flex-shrink: 0;
   }
 
@@ -602,38 +598,40 @@ import Layout from '@layouts/Layout.astro';
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.35rem;
+    color: var(--text-primary);
   }
 
   .method-content p {
     font-size: 0.95rem;
-    opacity: 0.9;
+    color: var(--text-secondary);
     line-height: 1.5;
   }
 
   .method-content a {
-    color: white;
+    color: #B45309;
     text-decoration: underline;
     text-underline-offset: 2px;
+    font-weight: 600;
   }
 
   .method-content a:hover {
-    opacity: 0.8;
+    color: #D97706;
   }
 
   .confidentiality-badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--glass-border);
     font-size: 0.9rem;
-    font-weight: 500;
+    color: var(--text-muted);
   }
 
   .lock-icon {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: #F59E0B;
   }
 
   /* Commitments Section */
