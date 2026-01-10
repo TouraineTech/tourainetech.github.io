@@ -1,0 +1,394 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { getAllSponsors, getSponsorTypeLabel, type Sponsor } from '@lib/data';
+
+const allSponsors = getAllSponsors();
+
+// Group sponsors by type
+const sponsorsByType = {
+  platinum: allSponsors.filter(s => s.type === 'platinum'),
+  gold: allSponsors.filter(s => s.type === 'gold'),
+  silver: allSponsors.filter(s => s.type === 'silver'),
+  bronze: allSponsors.filter(s => s.type === 'bronze'),
+  partenaires: allSponsors.filter(s => s.type === 'partenaires'),
+};
+
+const tierOrder: Sponsor['type'][] = ['platinum', 'gold', 'silver', 'bronze', 'partenaires'];
+---
+
+<Layout title="Nos sponsors" description="Les sponsors et partenaires de Touraine Tech 2026">
+  <div class="sponsors-page">
+    <header class="page-header">
+      <div class="header-content">
+        <span class="header-label">Touraine Tech 2026</span>
+        <h1>Nos sponsors</h1>
+        <p class="header-description">
+          Merci à nos {allSponsors.length} sponsors et partenaires qui rendent cet événement possible.
+        </p>
+      </div>
+    </header>
+
+    <div class="sponsors-container">
+      {tierOrder.map((tier) => {
+        const sponsors = sponsorsByType[tier];
+        if (sponsors.length === 0) return null;
+
+        return (
+          <section class="tier-section" data-tier={tier}>
+            <h2 class="tier-title">
+              <span class={`tier-badge tier-badge--${tier}`}>
+                {getSponsorTypeLabel(tier)}
+              </span>
+              <span class="tier-count">{sponsors.length} sponsor{sponsors.length > 1 ? 's' : ''}</span>
+            </h2>
+
+            <div class={`sponsors-grid sponsors-grid--${tier}`}>
+              {sponsors.map((sponsor) => (
+                <a
+                  href={`/sponsor/${sponsor.id}`}
+                  class={`sponsor-card sponsor-card--${tier}`}
+                >
+                  <div class="sponsor-logo">
+                    <img
+                      src={`/img/sponsors/${sponsor.image}`}
+                      alt={sponsor.name}
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="sponsor-info">
+                    <h3 class="sponsor-name">{sponsor.name}</h3>
+                    {sponsor.jobOffers && sponsor.jobOffers.length > 0 && (
+                      <span class="job-badge">
+                        {sponsor.jobOffers.length} offre{sponsor.jobOffers.length > 1 ? 's' : ''} d'emploi
+                      </span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+
+    <section class="become-sponsor">
+      <div class="become-sponsor-content">
+        <h2>Devenir sponsor</h2>
+        <p>
+          Vous souhaitez soutenir Touraine Tech et gagner en visibilité auprès de la communauté tech ?
+        </p>
+        <div class="become-sponsor-actions">
+          <a href="mailto:contact@touraine.tech" class="btn btn-primary">
+            Nous contacter
+          </a>
+          <a href="/docs/dossier-sponsoring.pdf" class="btn btn-secondary" target="_blank">
+            Télécharger le dossier
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .sponsors-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  /* Page Header */
+  .page-header {
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 4rem 2rem;
+  }
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: var(--accent);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .header-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  /* Sponsors Container */
+  .sponsors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  /* Tier Section */
+  .tier-section {
+    margin-bottom: 3rem;
+  }
+
+  .tier-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tier-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+
+  .tier-badge--platinum {
+    background: linear-gradient(135deg, #e5e4e2 0%, #a8a9ad 100%);
+    color: #1a1a2e;
+  }
+
+  .tier-badge--gold {
+    background: linear-gradient(135deg, #ffd700 0%, #ffb800 100%);
+    color: #1a1a2e;
+  }
+
+  .tier-badge--silver {
+    background: linear-gradient(135deg, #c0c0c0 0%, #a0a0a0 100%);
+    color: #1a1a2e;
+  }
+
+  .tier-badge--bronze {
+    background: linear-gradient(135deg, #cd7f32 0%, #a0522d 100%);
+    color: white;
+  }
+
+  .tier-badge--partenaires {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+  }
+
+  .tier-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  /* Sponsors Grid */
+  .sponsors-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .sponsors-grid--platinum {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .sponsors-grid--gold {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .sponsors-grid--silver,
+  .sponsors-grid--bronze {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .sponsors-grid--partenaires {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  /* Sponsor Card */
+  .sponsor-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-light);
+  }
+
+  .sponsor-card--platinum {
+    border-width: 2px;
+  }
+
+  .sponsor-card--platinum:hover {
+    border-color: #a8a9ad;
+  }
+
+  .sponsor-card--gold:hover {
+    border-color: #ffd700;
+  }
+
+  .sponsor-logo {
+    padding: 1.5rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+  }
+
+  .sponsor-card--platinum .sponsor-logo {
+    min-height: 150px;
+    padding: 2rem;
+  }
+
+  .sponsor-card--partenaires .sponsor-logo {
+    min-height: 80px;
+    padding: 1rem;
+  }
+
+  .sponsor-logo img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .sponsor-card--platinum .sponsor-logo img {
+    max-height: 100px;
+  }
+
+  .sponsor-info {
+    padding: 1rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .sponsor-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .job-badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  /* Become Sponsor Section */
+  .become-sponsor {
+    background: var(--bg-primary);
+    border-top: 1px solid var(--glass-border);
+    padding: 4rem 2rem;
+  }
+
+  .become-sponsor-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .become-sponsor h2 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .become-sponsor p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  .become-sponsor-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--glass-border);
+  }
+
+  .btn-secondary:hover {
+    background: var(--bg-tertiary);
+    transform: translateY(-2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 3rem 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .sponsors-container {
+      padding: 2rem 1rem;
+    }
+
+    .sponsors-grid--platinum,
+    .sponsors-grid--gold,
+    .sponsors-grid--silver,
+    .sponsors-grid--bronze,
+    .sponsors-grid--partenaires {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .tier-title {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+</style>
