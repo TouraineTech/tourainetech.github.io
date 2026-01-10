@@ -132,6 +132,21 @@
     "days": [1,2]
   },
   {
+    "id": "pm2",
+    "name": "Pause",
+    "format": "break",
+    "rooms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "times": [
+      18
+    ],
+    "days": [1,2]
+  },
+  {
     "id": "gouter",
     "name": "",
     "format": "break",
