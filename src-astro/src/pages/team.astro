@@ -5,10 +5,11 @@ import teamData from '@data/team.json';
 interface TeamMember {
   name: string;
   avatar: string;
-  twitter?: string;
-  github?: string;
-  linkedin?: string;
-  bluesky?: string;
+  role: string;
+  twitter?: string | null;
+  github?: string | null;
+  linkedin?: string | null;
+  bluesky?: string | null;
 }
 
 const team = teamData as TeamMember[];
@@ -45,6 +46,9 @@ const team = teamData as TeamMember[];
               </div>
 
               <h3 class="member-name">{member.name}</h3>
+              <span class:list={['member-role', { 'member-role--bureau': member.role !== 'Membre' }]}>
+                {member.role}
+              </span>
 
               {(member.twitter || member.github || member.linkedin || member.bluesky) && (
                 <div class="social-links">
@@ -71,8 +75,8 @@ const team = teamData as TeamMember[];
                       title="Bluesky"
                       aria-label={`${member.name} sur Bluesky`}
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 568 501" fill="currentColor">
-                        <path d="M123.121 33.6637C188.241 82.5526 258.281 181.681 284 234.873C309.719 181.681 379.759 82.5526 444.879 33.6637C491.866 -1.61183 568 -28.9064 568 57.9464C568 75.2916 558.055 203.659 552.222 224.501C531.947 296.954 458.067 315.434 392.347 304.249C507.222 323.8 536.444 388.56 473.333 453.32C353.473 576.312 301.061 422.461 287.631 googletag383.039C285.169 373.411 284 366.352 284 366.352C284 366.352 282.831 373.411 280.369 383.039C266.939 422.461 214.527 576.312 94.6667 453.32C31.5556 388.56 60.7778 323.8 175.653 304.249C109.933 315.434 36.0535 296.954 15.7778 224.501C9.94525 203.659 0 75.2916 0 57.9464C0 -28.9064 76.1345 -1.61183 123.121 33.6637Z"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
                       </svg>
                     </a>
                   )}
@@ -171,7 +175,7 @@ const team = teamData as TeamMember[];
 
   .page-header h1 {
     font-family: var(--font-display);
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
@@ -231,12 +235,9 @@ const team = teamData as TeamMember[];
   }
 
   .team-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     border-color: color-mix(in srgb, var(--accent) 40%, transparent);
-    box-shadow:
-      0 12px 28px -8px rgba(26, 46, 40, 0.15),
-      0 6px 12px -4px rgba(26, 46, 40, 0.08),
-      0 0 0 1px rgba(106, 191, 173, 0.1);
+    box-shadow: var(--shadow-md);
   }
 
   /* Accent Bar */
@@ -334,23 +335,42 @@ const team = teamData as TeamMember[];
     letter-spacing: -0.01em;
   }
 
+  /* Member Role */
+  .member-role {
+    display: inline-block;
+    margin-top: 0.35rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: var(--bg-secondary);
+    border-radius: 100px;
+  }
+
+  .member-role--bureau {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-weight: 600;
+  }
+
   /* Social Links */
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.4rem;
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid var(--glass-border);
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: var(--bg-secondary);
     color: var(--text-muted);
@@ -374,6 +394,8 @@ const team = teamData as TeamMember[];
   }
 
   .social-link svg {
+    width: 16px;
+    height: 16px;
     transition: transform 0.2s ease;
   }
 
@@ -385,10 +407,6 @@ const team = teamData as TeamMember[];
   @media (max-width: 768px) {
     .page-header {
       padding: 3.5rem 1.5rem;
-    }
-
-    .page-header h1 {
-      font-size: 2.25rem;
     }
 
     .team-container {
@@ -422,19 +440,19 @@ const team = teamData as TeamMember[];
     }
 
     .social-links {
-      gap: 0.5rem;
+      gap: 0.35rem;
       margin-top: 0.75rem;
       padding-top: 0.75rem;
     }
 
     .social-link {
-      width: 38px;
-      height: 38px;
+      width: 32px;
+      height: 32px;
     }
 
     .social-link svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
   }
 
