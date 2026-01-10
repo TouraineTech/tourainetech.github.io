@@ -1,0 +1,365 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+// Placeholder photos - à remplacer par les vraies photos Flickr
+const photoYears = [
+  { year: 2025, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2025', count: 0 },
+  { year: 2024, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2024', count: 150 },
+  { year: 2023, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2023', count: 200 },
+  { year: 2022, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2022', count: 180 },
+  { year: 2020, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2020', count: 120 },
+  { year: 2019, albumUrl: 'https://www.flickr.com/photos/touraine-tech/albums/2019', count: 100 },
+];
+
+// Sample photos for gallery preview (placeholder paths)
+const samplePhotos = [
+  '/img/photos/photo1.jpg',
+  '/img/photos/photo2.jpg',
+  '/img/photos/photo3.jpg',
+  '/img/photos/photo4.jpg',
+  '/img/photos/photo5.jpg',
+  '/img/photos/photo6.jpg',
+];
+---
+
+<Layout title="Photos" description="Galerie photos des éditions Touraine Tech">
+  <div class="photos-page">
+    <header class="page-header">
+      <div class="header-content">
+        <span class="header-label">Souvenirs</span>
+        <h1>Photos</h1>
+        <p class="header-description">
+          Revivez les meilleurs moments des éditions précédentes de Touraine Tech.
+        </p>
+      </div>
+    </header>
+
+    <div class="photos-container">
+      <!-- Featured Gallery -->
+      <section class="featured-gallery">
+        <h2>Édition 2024</h2>
+        <div class="gallery-grid">
+          {samplePhotos.map((photo, index) => (
+            <div class="gallery-item" data-index={index}>
+              <div class="photo-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Photo {index + 1}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <a
+          href="https://www.flickr.com/photos/touraine-tech/albums/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="view-all-btn"
+        >
+          Voir toutes les photos 2024
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </section>
+
+      <!-- Previous Years -->
+      <section class="previous-years">
+        <h2>Éditions précédentes</h2>
+        <div class="years-grid">
+          {photoYears.filter(y => y.count > 0).map((yearData) => (
+            <a
+              href={yearData.albumUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="year-card"
+            >
+              <div class="year-visual">
+                <span class="year-number">{yearData.year}</span>
+              </div>
+              <div class="year-info">
+                <h3>Touraine Tech {yearData.year}</h3>
+                <span class="photo-count">{yearData.count} photos</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Flickr Link -->
+      <section class="flickr-section">
+        <div class="flickr-content">
+          <svg class="flickr-logo" viewBox="0 0 24 24" width="48" height="48">
+            <circle cx="6" cy="12" r="5" fill="#0063dc"/>
+            <circle cx="18" cy="12" r="5" fill="#ff0084"/>
+          </svg>
+          <p>Toutes nos photos sont disponibles sur Flickr</p>
+          <a
+            href="https://www.flickr.com/photos/touraine-tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flickr-btn"
+          >
+            Voir notre Flickr
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .photos-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  /* Page Header */
+  .page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/photos-header.jpg') center/cover;
+    padding: 5rem 2rem;
+  }
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  .header-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+  }
+
+  /* Photos Container */
+  .photos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  /* Section Titles */
+  .photos-container h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Featured Gallery */
+  .featured-gallery {
+    margin-bottom: 4rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.02);
+  }
+
+  .photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+  }
+
+  .view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .view-all-btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+  }
+
+  /* Previous Years */
+  .previous-years {
+    margin-bottom: 4rem;
+  }
+
+  .years-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .year-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .year-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-light);
+  }
+
+  .year-visual {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .year-number {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .year-info {
+    padding: 1rem;
+  }
+
+  .year-info h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem;
+  }
+
+  .photo-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  /* Flickr Section */
+  .flickr-section {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .flickr-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flickr-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .flickr-section p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .flickr-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #0063dc;
+    color: white;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .flickr-btn:hover {
+    background: #0052b8;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 3rem 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .photos-container {
+      padding: 2rem 1rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .years-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flickr-section {
+      padding: 2rem 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .years-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
