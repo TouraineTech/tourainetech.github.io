@@ -1,0 +1,120 @@
+---
+import Layout from '@layouts/Layout.astro';
+import SpeakerCard from '@components/ui/SpeakerCard.astro';
+import { getAllScheduledSpeakers } from '@lib/data';
+
+const speakers = getAllScheduledSpeakers();
+---
+
+<Layout title="Speakers" description="Découvrez les speakers de Touraine Tech 2026">
+  <div class="speakers-page">
+    <header class="page-header">
+      <div class="header-content">
+        <span class="header-label">Touraine Tech 2026</span>
+        <h1>Nos Speakers</h1>
+        <p class="header-description">
+          {speakers.length} speakers talentueux partageront leur expertise lors de cette édition.
+        </p>
+      </div>
+    </header>
+
+    <div class="speakers-container">
+      <div class="speakers-grid">
+        {speakers.map((speaker) => (
+          <SpeakerCard
+            speaker={speaker}
+            size="lg"
+            showCompany={true}
+            linkToProfile={true}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .speakers-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  /* Page Header */
+  .page-header {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 3rem 2rem;
+  }
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .header-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Speakers Container */
+  .speakers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Speakers Grid */
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 2rem 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .speakers-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .speakers-grid {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .speakers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
