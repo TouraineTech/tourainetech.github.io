@@ -1,34 +1,74 @@
 [
   {
-    "name":"Benjamin",
-    "avatar": "benjamin.jpeg"
+    "name": "Florian",
+    "avatar": "florian.jpeg",
+    "role": "Président",
+    "twitter": "florian_tt",
+    "github": "florian-tt",
+    "linkedin": "florian-touraine",
+    "bluesky": "florian.bsky.social"
   },
   {
-    "name":"Christophe",
-    "avatar": "christophe.jpeg"
+    "name": "Valentin",
+    "avatar": "valentin.png",
+    "role": "Secrétaire",
+    "twitter": "valentin_tt",
+    "github": "valentin-tt",
+    "linkedin": "valentin-touraine",
+    "bluesky": "valentin.bsky.social"
   },
   {
-    "name":"Amandine",
-    "avatar": "amandine.jpeg"
+    "name": "Benjamin",
+    "avatar": "benjamin.jpeg",
+    "role": "Trésorier",
+    "twitter": "benjamin_tt",
+    "github": "benjamin-tt",
+    "linkedin": "benjamin-touraine",
+    "bluesky": "benjamin.bsky.social"
   },
   {
-    "name":"Florian",
-    "avatar": "florian.jpeg"
+    "name": "Christophe",
+    "avatar": "christophe.jpeg",
+    "role": "Membre",
+    "twitter": "christophe_tt",
+    "github": "christophe-tt",
+    "linkedin": "christophe-touraine",
+    "bluesky": null
   },
   {
-    "name":"François",
-    "avatar": "francois.png"
+    "name": "Amandine",
+    "avatar": "amandine.jpeg",
+    "role": "Membre",
+    "twitter": null,
+    "github": "amandine-tt",
+    "linkedin": "amandine-touraine",
+    "bluesky": null
   },
   {
-    "name":"Valentin",
-    "avatar": "valentin.png"
+    "name": "François",
+    "avatar": "francois.png",
+    "role": "Membre",
+    "twitter": "francois_tt",
+    "github": null,
+    "linkedin": "francois-touraine",
+    "bluesky": "francois.bsky.social"
   },
   {
-    "name":"Jordane",
-    "avatar": "jordane.jpeg"
+    "name": "Jordane",
+    "avatar": "jordane.jpeg",
+    "role": "Membre",
+    "twitter": null,
+    "github": "jordane-tt",
+    "linkedin": null,
+    "bluesky": "jordane.bsky.social"
   },
   {
-    "name":"Antoine",
-    "avatar": "antoine.png"
+    "name": "Antoine",
+    "avatar": "antoine.png",
+    "role": "Membre",
+    "twitter": "antoine_tt",
+    "github": "antoine-tt",
+    "linkedin": "antoine-touraine",
+    "bluesky": "antoine.bsky.social"
   }
 ]
