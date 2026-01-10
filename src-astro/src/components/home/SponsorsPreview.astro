@@ -221,6 +221,13 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     border-color: #FFD700;
   }
 
+  .sponsor-card-gold:focus-visible,
+  .sponsor-card-silver:focus-visible,
+  .sponsor-logo-only:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
   .sponsor-card-gold .sponsor-logo img {
     max-height: 80px;
     max-width: 200px;

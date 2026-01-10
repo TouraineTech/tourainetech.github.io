@@ -756,6 +756,25 @@ const categories = [
       min-height: 80px;
     }
   }
+
+  @media (max-width: 480px) {
+    .schedule-grid {
+      grid-template-columns: 45px repeat(5, minmax(130px, 1fr));
+    }
+
+    .time-value {
+      font-size: 0.65rem;
+      padding: 0.08rem 0.2rem;
+    }
+
+    .room-name {
+      font-size: 0.8rem;
+    }
+
+    .room-capacity {
+      display: none;
+    }
+  }
 </style>
 
 <script>
