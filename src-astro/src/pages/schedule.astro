@@ -195,15 +195,15 @@ const categories = [
           </div>
         ))}
 
-        <!-- Breaks with absolute positioning -->
+        <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
         {day1Breaks.map((breakItem) => (
-          breakItem.name && (
-            <div class="break-cell" style={getCellStyle(breakItem)}>
+          <div class="break-cell" style={getCellStyle(breakItem)}>
+            {breakItem.name && (
               <div class="break-content">
                 <span class="break-name">{breakItem.name}</span>
               </div>
-            </div>
-          )
+            )}
+          </div>
         ))}
 
         <!-- Talks with absolute positioning -->
@@ -255,15 +255,15 @@ const categories = [
           </div>
         ))}
 
-        <!-- Breaks with absolute positioning -->
+        <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
         {day2Breaks.map((breakItem) => (
-          breakItem.name && (
-            <div class="break-cell" style={getCellStyle(breakItem)}>
+          <div class="break-cell" style={getCellStyle(breakItem)}>
+            {breakItem.name && (
               <div class="break-content">
                 <span class="break-name">{breakItem.name}</span>
               </div>
-            </div>
-          )
+            )}
+          </div>
         ))}
 
         <!-- Talks with absolute positioning -->
@@ -445,7 +445,7 @@ const categories = [
     /* Auto rows for flexibility */
     grid-auto-rows: minmax(50px, auto);
     gap: 1px;
-    background: var(--glass-border);
+    background: var(--bg-primary);
     border-radius: 16px;
     overflow: hidden;
   }
