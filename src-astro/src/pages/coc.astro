@@ -2,250 +2,791 @@
 import Layout from '@layouts/Layout.astro';
 ---
 
-<Layout title="Code de Conduite" description="Code de conduite pour la conférence Touraine Tech">
+<Layout title="Code de Conduite" description="Code de conduite pour la conférence Touraine Tech 2026 - Un événement inclusif et bienveillant">
   <div class="coc-page">
-    <div class="coc-container">
-      <header class="coc-header">
-        <span class="header-label">Touraine Tech 2026</span>
+    <!-- Hero Section -->
+    <header class="coc-hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Touraine Tech 2026</span>
         <h1>Code de Conduite</h1>
-      </header>
-
-      <div class="coc-content glass-card">
-        <p>
-          Toutes les personnes participant à la conférence,
-          y compris sponsors et bénévoles
-          s'engagent à accepter le code d'éthique et de déontologie, ou « code de conduite » suivant.
-          L'organisation s'attachera à faire respecter ce code durant l'événement.
-          Nous attendons la coopération de chacun·e pour assurer un environnement sain pour tou·te·s.
+        <p class="hero-subtitle">
+          Ensemble, créons un espace où chacun·e peut apprendre, partager et s'épanouir en toute sécurité.
         </p>
+      </div>
+    </header>
 
-        <h2>La version rapide</h2>
-
-        <p>
-          Notre conférence se veut une expérience sans harcèlement, quel que soit
-          votre sexe, votre identité sexuelle, votre âge, votre orientation
-          sexuelle, votre handicap, votre apparence physique, votre poids, votre
-          race ou votre religion. Nous ne tolérons aucun harcèlement des
-          participant·e·s à la conférence, sous quelque forme que ce soit.
-          Les expressions et les images à connotation sexuelle ne sont pas appropriées
-          lors de l'événement. Ceci inclut les conférences, les ateliers, les soirées,
-          Twitter et les autres médias en ligne.
-          L'organisation s'engage à prendre des sanctions appropriées pour les personnes
-          qui violent ces règles, jusqu'à l'exclusion <em>sans remboursement</em>
-          et le recours légal.
-        </p>
-
-        <h2>La version moins rapide</h2>
-
-        <p>
-          Le harcèlement inclut des commentaires à l'oral ou à l'écrit sur le sexe,
-          l'identité sexuelle, l'âge, l'orientation sexuelle, le handicap, l'apparence
-          physique, le poids, la race, la religion, les images à connotation
-          sexuelle dans des lieux publics, les intimidations délibérées, la traque,
-          la poursuite, un harcèlement photographique ou vidéo, une suite
-          d'interruptions des conférences et des autres événements, un contact
-          physique inapproprié et des avances sexuelles non désirées.
-        </p>
-
-        <p>
-          Les participant·e·s à qui il sera demandé d'arrêter tout comportement de
-          harcèlement doivent arrêter immédiatement.
-        </p>
-
-        <p>
-          Les sponsors sont aussi sujet à la politique anti-harcèlement. En
-          particulier, les sponsors ne doivent pas utiliser d'images ou de supports
-          à connotation sexuelle. Ils ne doivent pas non plus se livrer à des activités
-          à connotation sexuelle. L'équipe du stand (y compris les bénévoles) ne
-          doit pas utiliser de vêtements, uniformes ou costumes à connotation
-          sexuelle. Ils ne doivent pas non plus créer un environnement sexualisé.
-        </p>
-
-        <p>
-          Face à un comportement de harcèlement, l'équipe d'organisation de la conférence
-          peut prendre toute action qui lui semble adéquate.
-          Cela va d'un simple avertissement à l'exclusion sans remboursement de la conférence.
-        </p>
-
-        <p>
-          Si vous vous sentez harcelé·e, si vous pensez que quelqu'un se fait
-          harceler, et plus généralement en cas de problème, merci de contacter
-          immédiatement l'équipe d'organisation de l'événement. L'organisation s'assure
-          que ses membres sont facilement identifiables (badge, brassard, tour de cou,
-          t-shirt…) présentés au début de la conférence.
-        </p>
-
-        <p>
-          Les membres de l'organisation seront ravi·e·s d'aider les participants à
-          contacter la sécurité de l'hôtel ou du bâtiment où se déroule l'événement,
-          ou les forces de l'ordre ; à fournir une escorte ainsi qu'à aider de toute
-          autre façon les personnes victimes de harcèlement, pour garantir leur
-          sécurité pendant la durée de l'événement. Nous apprécions votre
-          participation à l'événement.
-        </p>
-
-        <p>
-          Nous attendons de chacun·e le respect de ces règles dans le bâtiment
-          des conférences et des ateliers, ainsi que pendant les événements sociaux
-          relatifs à la conférence.
-        </p>
-
-        <div class="contact-box">
+    <div class="coc-container">
+      <!-- TL;DR Section -->
+      <section class="tldr-section" style="--delay: 0">
+        <div class="section-header">
+          <span class="section-emoji">📋</span>
+          <h2>En bref</h2>
+        </div>
+        <div class="tldr-card">
           <p>
-            En cas de souci, merci de vous diriger vers <a href="/#team">un membre de l'équipe d'organisation</a> en sweat vert.
+            <strong>Touraine Tech s'engage à offrir une expérience sans harcèlement pour tou·te·s</strong>,
+            indépendamment du genre, de l'identité de genre, de l'âge, de l'orientation sexuelle,
+            du handicap, de l'apparence physique, de l'origine ou de la religion.
+          </p>
+          <p class="tldr-highlight">
+            Nous ne tolérons aucune forme de harcèlement. Les personnes enfreignant ces règles
+            peuvent être exclues <em>sans remboursement</em>.
           </p>
         </div>
+      </section>
 
-        <footer class="coc-footer">
+      <!-- Values Section -->
+      <section class="values-section" style="--delay: 1">
+        <div class="section-header">
+          <span class="section-emoji">🌟</span>
+          <h2>Nos valeurs</h2>
+        </div>
+        <div class="values-grid">
+          <article class="value-card" style="--card-delay: 0">
+            <span class="value-icon">🤝</span>
+            <h3>Respect & Bienveillance</h3>
+            <p>Chaque interaction est une opportunité de construire ensemble. Traitez les autres comme vous aimeriez être traité·e.</p>
+          </article>
+          <article class="value-card" style="--card-delay: 1">
+            <span class="value-icon">🌈</span>
+            <h3>Diversité & Inclusion</h3>
+            <p>La richesse de notre communauté vient de sa diversité. Toutes les perspectives sont les bienvenues.</p>
+          </article>
+          <article class="value-card" style="--card-delay: 2">
+            <span class="value-icon">💬</span>
+            <h3>Communication ouverte</h3>
+            <p>Exprimez-vous librement, écoutez activement. Le dialogue constructif fait grandir tout le monde.</p>
+          </article>
+          <article class="value-card" style="--card-delay: 3">
+            <span class="value-icon">🛡️</span>
+            <h3>Espace sécurisé</h3>
+            <p>Chacun·e doit pouvoir participer sans crainte. Nous protégeons activement cet environnement.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Encouraged Behaviors -->
+      <section class="encouraged-section" style="--delay: 2">
+        <div class="section-header">
+          <span class="section-emoji">✅</span>
+          <h2>Comportements encouragés</h2>
+        </div>
+        <div class="encouraged-card">
+          <ul class="behavior-list encouraged">
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Accueillir chaleureusement les nouveaux·elles participant·e·s</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Utiliser un langage inclusif et respectueux</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Respecter les points de vue et expériences différents</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Accepter gracieusement les critiques constructives</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Se concentrer sur ce qui est le mieux pour la communauté</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Faire preuve d'empathie envers les autres</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Unacceptable Behaviors -->
+      <section class="forbidden-section" style="--delay: 3">
+        <div class="section-header">
+          <span class="section-emoji">❌</span>
+          <h2>Comportements inacceptables</h2>
+        </div>
+        <div class="forbidden-grid">
+          <article class="forbidden-card" style="--card-delay: 0">
+            <div class="forbidden-icon">🚫</div>
+            <h3>Harcèlement</h3>
+            <p>Commentaires offensants, intimidation délibérée, traque, harcèlement photographique ou vidéo, interruptions répétées.</p>
+          </article>
+          <article class="forbidden-card" style="--card-delay: 1">
+            <div class="forbidden-icon">⛔</div>
+            <h3>Discrimination</h3>
+            <p>Commentaires discriminatoires liés au genre, à l'orientation sexuelle, au handicap, à l'apparence, à l'origine ou à la religion.</p>
+          </article>
+          <article class="forbidden-card" style="--card-delay: 2">
+            <div class="forbidden-icon">🔇</div>
+            <h3>Intimidation</h3>
+            <p>Menaces, comportements agressifs, contact physique inapproprié, avances sexuelles non désirées.</p>
+          </article>
+          <article class="forbidden-card" style="--card-delay: 3">
+            <div class="forbidden-icon">⚠️</div>
+            <h3>Contenu inapproprié</h3>
+            <p>Images ou propos à connotation sexuelle, dans les talks, sur les stands, ou sur les réseaux sociaux liés à l'événement.</p>
+          </article>
+        </div>
+        <p class="forbidden-note">
+          Cette liste n'est pas exhaustive. Tout comportement jugé inapproprié par l'équipe d'organisation pourra faire l'objet de sanctions.
+        </p>
+      </section>
+
+      <!-- Reporting Section -->
+      <section class="reporting-section" style="--delay: 4">
+        <div class="section-header">
+          <span class="section-emoji">🚨</span>
+          <h2>Signalement</h2>
+        </div>
+        <div class="reporting-card">
+          <div class="reporting-content">
+            <p class="reporting-intro">
+              Si vous êtes victime ou témoin d'un comportement inapproprié,
+              <strong>n'hésitez pas à nous contacter immédiatement</strong>.
+            </p>
+
+            <div class="reporting-methods">
+              <div class="method">
+                <span class="method-icon">👕</span>
+                <div class="method-content">
+                  <h4>Sur place</h4>
+                  <p>Repérez un membre de l'équipe en <strong>sweat vert</strong>. Nous sommes là pour vous aider.</p>
+                </div>
+              </div>
+              <div class="method">
+                <span class="method-icon">📧</span>
+                <div class="method-content">
+                  <h4>Par email</h4>
+                  <p><a href="mailto:contact@touraine.tech">contact@touraine.tech</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="confidentiality-badge">
+              <span class="lock-icon">🔒</span>
+              <span>Confidentialité garantie - Nous traitons chaque signalement avec discrétion</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Commitments Section -->
+      <section class="commitments-section" style="--delay: 5">
+        <div class="section-header">
+          <span class="section-emoji">🤲</span>
+          <h2>Nos engagements</h2>
+        </div>
+        <div class="commitments-card">
+          <p>L'équipe d'organisation de Touraine Tech s'engage à :</p>
+          <ul class="commitments-list">
+            <li>Prendre chaque signalement au sérieux et l'examiner avec attention</li>
+            <li>Protéger la confidentialité des personnes impliquées</li>
+            <li>Accompagner les victimes (escorte, contact sécurité, aide au besoin)</li>
+            <li>Appliquer des sanctions proportionnées, jusqu'à l'exclusion sans remboursement</li>
+            <li>Être facilement identifiables tout au long de l'événement</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Scope Section -->
+      <section class="scope-section" style="--delay: 6">
+        <div class="section-header">
+          <span class="section-emoji">📍</span>
+          <h2>Où s'applique ce code ?</h2>
+        </div>
+        <div class="scope-card">
           <p>
-            <small>
-              Texte repris depuis <a href="https://confcodeofconduct.com/index-fr.html" target="_blank" rel="noopener noreferrer">confcodeofconduct.com</a>
-              <br/>
-              Version originale et crédit:
-              <a href="http://2012.jsconf.us/#/about" target="_blank" rel="noopener noreferrer">JSConf US 2012</a>
-              &amp;
-              <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy" target="_blank" rel="noopener noreferrer">The Ada Initiative</a>
-              <br/>
-              Merci d'aider à la traduction et à l'amélioration de ce texte :
-              <a href="https://github.com/confcodeofconduct/confcodeofconduct.com" target="_blank" rel="noopener noreferrer">on github.com</a>
-              <br/>
-              Ce texte est sous licence
-              <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 3.0 Unported License</a>
-            </small>
+            Ce code de conduite s'applique dans tous les espaces de l'événement :
+            <strong>conférences, ateliers, stands sponsors, espaces de networking, soirées officielles</strong>,
+            ainsi que sur les <strong>réseaux sociaux et canaux de communication</strong> liés à Touraine Tech.
           </p>
-        </footer>
-      </div>
+          <p>
+            Les sponsors sont également soumis à cette politique et ne doivent pas utiliser de contenus,
+            d'activités ou de tenues à caractère sexuel.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer Credits -->
+      <footer class="coc-credits">
+        <div class="credits-content">
+          <p>
+            Ce code de conduite est adapté de
+            <a href="https://confcodeofconduct.com/index-fr.html" target="_blank" rel="noopener noreferrer">confcodeofconduct.com</a>
+          </p>
+          <p class="credits-sources">
+            Sources originales :
+            <a href="http://2012.jsconf.us/#/about" target="_blank" rel="noopener noreferrer">JSConf US 2012</a> &
+            <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy" target="_blank" rel="noopener noreferrer">The Ada Initiative</a>
+          </p>
+          <p class="credits-license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.fr" target="_blank" rel="noopener noreferrer">
+              Creative Commons Attribution 3.0
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   </div>
 </Layout>
 
 <style>
+  /* Page Variables */
   .coc-page {
+    --color-values: #3B82F6;
+    --color-values-light: #EFF6FF;
+    --color-encouraged: #10B981;
+    --color-encouraged-light: #ECFDF5;
+    --color-forbidden: #EF4444;
+    --color-forbidden-light: #FEF2F2;
+    --color-alert: #F59E0B;
+    --color-alert-light: #FFFBEB;
+
     min-height: 100vh;
     background: var(--bg-secondary);
-    padding: 2rem;
   }
 
-  .coc-container {
+  /* Hero Section */
+  .coc-hero {
+    position: relative;
+    padding: 6rem 2rem 4rem;
+    overflow: hidden;
+    background: linear-gradient(
+      135deg,
+      var(--bg-primary) 0%,
+      color-mix(in srgb, var(--accent) 8%, var(--bg-primary)) 100%
+    );
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 50%, color-mix(in srgb, var(--accent) 15%, transparent) 0%, transparent 50%),
+      radial-gradient(circle at 80% 50%, color-mix(in srgb, var(--color-values) 10%, transparent) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
-  }
-
-  /* Header */
-  .coc-header {
     text-align: center;
-    margin-bottom: 2rem;
   }
 
-  .header-label {
+  .hero-badge {
     display: inline-block;
-    padding: 0.35rem 0.75rem;
-    background: var(--accent-light);
-    color: var(--accent-dark);
-    font-size: 0.8rem;
-    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    background: var(--accent);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
     border-radius: 100px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 14px rgba(106, 191, 173, 0.3);
   }
 
-  .coc-header h1 {
+  .coc-hero h1 {
     font-family: var(--font-display);
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Container */
+  .coc-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+  }
+
+  /* Section Headers */
+  section {
+    margin-bottom: 3.5rem;
+    animation: fadeInUp 0.6s ease-out both;
+    animation-delay: calc(var(--delay, 0) * 0.1s);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-emoji {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .section-header h2 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--text-primary);
+    letter-spacing: -0.02em;
   }
 
-  /* Content */
-  .coc-content {
+  /* TL;DR Section */
+  .tldr-card {
     background: var(--bg-primary);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tldr-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--color-values));
+  }
+
+  .tldr-card p {
+    font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-secondary);
+    margin-bottom: 1rem;
   }
 
-  .coc-content p {
-    margin-bottom: 1.25rem;
-    text-align: justify;
+  .tldr-card p:last-child {
+    margin-bottom: 0;
   }
 
-  .coc-content h2 {
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin: 2rem 0 1rem;
-  }
-
-  .coc-content h2:first-of-type {
-    margin-top: 1.5rem;
-  }
-
-  .coc-content em {
-    font-style: italic;
-    font-weight: 600;
-    color: var(--text-primary);
-  }
-
-  .coc-content a {
-    color: var(--accent);
-    text-decoration: underline;
-  }
-
-  .coc-content a:hover {
-    color: var(--accent-dark);
-  }
-
-  /* Contact box */
-  .contact-box {
-    background: var(--accent-light);
-    border-left: 4px solid var(--accent);
+  .tldr-highlight {
+    background: var(--color-alert-light);
+    border-left: 4px solid var(--color-alert);
     padding: 1rem 1.25rem;
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    margin: 2rem 0;
+    margin-top: 1.5rem !important;
   }
 
-  .contact-box p {
-    margin: 0;
-    color: var(--accent-dark);
-    font-weight: 500;
+  .tldr-highlight em {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-forbidden);
   }
 
-  .contact-box a {
-    color: var(--accent-dark);
-    font-weight: 600;
+  /* Values Section */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
-  /* Footer */
-  .coc-footer {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--glass-border);
+  .value-card {
+    background: var(--color-values-light);
+    border: 1px solid color-mix(in srgb, var(--color-values) 20%, transparent);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease-out both;
+    animation-delay: calc(0.2s + var(--card-delay, 0) * 0.1s);
   }
 
-  .coc-footer small {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+    border-color: color-mix(in srgb, var(--color-values) 40%, transparent);
+  }
+
+  .value-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-values);
+    margin-bottom: 0.5rem;
+  }
+
+  .value-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
     line-height: 1.6;
   }
 
-  .coc-footer a {
+  /* Encouraged Section */
+  .encouraged-card {
+    background: var(--color-encouraged-light);
+    border: 1px solid color-mix(in srgb, var(--color-encouraged) 25%, transparent);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+  }
+
+  .behavior-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .behavior-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--color-encouraged);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Forbidden Section */
+  .forbidden-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .forbidden-card {
+    background: var(--color-forbidden-light);
+    border: 1px solid color-mix(in srgb, var(--color-forbidden) 20%, transparent);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    animation: fadeInUp 0.5s ease-out both;
+    animation-delay: calc(0.3s + var(--card-delay, 0) * 0.1s);
+    transition: all 0.3s ease;
+  }
+
+  .forbidden-card:hover {
+    border-color: color-mix(in srgb, var(--color-forbidden) 40%, transparent);
+  }
+
+  .forbidden-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .forbidden-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-forbidden);
+    margin-bottom: 0.5rem;
+  }
+
+  .forbidden-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .forbidden-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+  }
+
+  /* Reporting Section */
+  .reporting-card {
+    background: linear-gradient(
+      135deg,
+      var(--accent) 0%,
+      var(--accent-dark) 100%
+    );
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+      0 20px 40px rgba(106, 191, 173, 0.25),
+      0 8px 16px rgba(106, 191, 173, 0.15);
+  }
+
+  .reporting-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .reporting-content {
+    position: relative;
+  }
+
+  .reporting-intro {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+
+  .reporting-intro strong {
+    color: white;
+  }
+
+  .reporting-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .method {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(4px);
+  }
+
+  .method-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .method-content h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  .method-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.5;
+  }
+
+  .method-content a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .method-content a:hover {
+    opacity: 0.8;
+  }
+
+  .confidentiality-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .lock-icon {
+    font-size: 1.25rem;
+  }
+
+  /* Commitments Section */
+  .commitments-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+  }
+
+  .commitments-card > p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .commitments-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .commitments-list li {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .commitments-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* Scope Section */
+  .scope-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+  }
+
+  .scope-card p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .scope-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .scope-card strong {
+    color: var(--text-primary);
+  }
+
+  /* Credits Footer */
+  .coc-credits {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+  }
+
+  .credits-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .credits-sources {
+    font-size: 0.85rem !important;
+  }
+
+  .credits-license {
+    margin-top: 1rem !important;
+  }
+
+  .coc-credits a {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+  }
+
+  .coc-credits a:hover {
+    color: var(--accent);
   }
 
   /* Responsive */
-  @media (max-width: 640px) {
-    .coc-page {
-      padding: 1rem;
+  @media (max-width: 768px) {
+    .coc-hero {
+      padding: 4rem 1.5rem 3rem;
     }
 
-    .coc-header h1 {
+    .coc-container {
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .values-grid,
+    .forbidden-grid,
+    .reporting-methods {
+      grid-template-columns: 1fr;
+    }
+
+    .reporting-card {
+      padding: 1.75rem;
+    }
+
+    .tldr-card,
+    .encouraged-card,
+    .commitments-card,
+    .scope-card {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .coc-hero h1 {
       font-size: 2rem;
     }
 
-    .coc-content {
-      padding: 1.5rem;
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    .section-emoji {
+      font-size: 1.75rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.35rem;
+    }
+
+    .value-card,
+    .forbidden-card {
+      padding: 1.25rem;
+    }
+
+    .method {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
     }
   }
 </style>
