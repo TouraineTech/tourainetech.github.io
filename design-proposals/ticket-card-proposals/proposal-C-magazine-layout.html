@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal C - Magazine Layout | Ticket Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #6ABFAD;
+      --accent-dark: #4A9F8D;
+      --accent-light: rgba(106, 191, 173, 0.08);
+      --bg-primary: #FAFCFB;
+      --bg-warm: #F8F6F3;
+      --text-primary: #1A2E28;
+      --text-secondary: #5A6D66;
+      --text-muted: #8A9A94;
+      --border: rgba(26, 46, 40, 0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-warm);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .ticket-card {
+      max-width: 520px;
+      width: 100%;
+      background: white;
+      border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 30px 60px -20px rgba(26, 46, 40, 0.12);
+      overflow: hidden;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Top band */
+    .top-band {
+      background: var(--accent);
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .event-date {
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .availability {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .availability::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    /* Main content grid */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 160px;
+    }
+
+    /* Left: Ticket info */
+    .ticket-section {
+      padding: 2rem 2rem 2rem 1.75rem;
+      border-right: 1px dashed var(--border);
+      position: relative;
+    }
+
+    /* Decorative circles on dashed border */
+    .ticket-section::before,
+    .ticket-section::after {
+      content: '';
+      position: absolute;
+      right: -8px;
+      width: 16px;
+      height: 16px;
+      background: var(--bg-warm);
+      border-radius: 50%;
+    }
+
+    .ticket-section::before { top: -8px; }
+    .ticket-section::after { bottom: -8px; }
+
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .main-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.1;
+      margin-bottom: 1.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .main-title em {
+      font-style: italic;
+      color: var(--accent-dark);
+    }
+
+    /* Prices as list */
+    .price-list {
+      margin-bottom: 1.75rem;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .price-row:last-child {
+      border-bottom: none;
+    }
+
+    .price-name {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .price-name.unavailable {
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .price-tag {
+      display: flex;
+      align-items: baseline;
+      gap: 0.15rem;
+    }
+
+    .price-value {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .price-value.unavailable {
+      color: var(--text-muted);
+    }
+
+    .price-currency {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .unavailable-badge {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: white;
+      background: var(--text-muted);
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+    }
+
+    /* CTA */
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.5rem;
+      background: var(--text-primary);
+      color: white;
+      border: none;
+      border-radius: 2px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background: black;
+    }
+
+    .cta-button svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover svg {
+      transform: translateX(2px);
+    }
+
+    /* Right: T-shirt showcase */
+    .tshirt-section {
+      background: linear-gradient(180deg, var(--accent-light) 0%, white 100%);
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .tshirt-image-wrapper {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .tshirt-image {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(106, 191, 173, 0.2);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .tshirt-section:hover .tshirt-image {
+      transform: rotate(-3deg) scale(1.05);
+    }
+
+    .tshirt-badge {
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      background: var(--accent);
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.3rem 0.5rem;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    .tshirt-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .tshirt-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .tshirt-price {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .tshirt-price span {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    /* Responsive */
+    @media (max-width: 540px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ticket-section {
+        border-right: none;
+        border-bottom: 1px dashed var(--border);
+      }
+
+      .ticket-section::before,
+      .ticket-section::after {
+        display: none;
+      }
+
+      .tshirt-section {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        text-align: left;
+        padding: 1.25rem 1.75rem;
+      }
+
+      .tshirt-image-wrapper {
+        margin-bottom: 0;
+      }
+
+      .tshirt-image {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket-card">
+    <div class="top-band">
+      <span class="event-date">30-31 Janvier 2026 - Polytech Tours</span>
+      <span class="availability">Disponible</span>
+    </div>
+
+    <div class="content-grid">
+      <div class="ticket-section">
+        <p class="section-label">Billetterie</p>
+        <h2 class="main-title">Prenez votre<br><em>place</em></h2>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span class="price-name unavailable">Early-bird<span class="unavailable-badge">Epuise</span></span>
+            <div class="price-tag">
+              <span class="price-value unavailable">50</span>
+              <span class="price-currency">EUR</span>
+            </div>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Plein tarif</span>
+            <div class="price-tag">
+              <span class="price-value">70</span>
+              <span class="price-currency">EUR</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="cta-button">
+          Acheter mon billet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="tshirt-section">
+        <div class="tshirt-image-wrapper">
+          <img src="https://via.placeholder.com/220x220/6ABFAD/ffffff?text=2026" alt="T-shirt" class="tshirt-image">
+          <span class="tshirt-badge">NEW</span>
+        </div>
+        <div>
+          <p class="tshirt-label">Goodies</p>
+          <p class="tshirt-title">T-shirt edition</p>
+          <p class="tshirt-price">20<span>EUR</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme Highlight - Touraine Tech 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFB;
+      --bg-tertiary: #F0F4F3;
+      --text-primary: #1C1D21;
+      --text-secondary: #4A4B52;
+      --text-muted: #8B8D97;
+      --accent: #6ABFAD;
+      --accent-light: #E8F5F2;
+      --accent-dark: #4A9A8A;
+      --glass-border: rgba(106, 191, 173, 0.12);
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.08);
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      /* Category Colors */
+      --cat-front: #0066FF;
+      --cat-backend: #1E3A5F;
+      --cat-ai: #6366F1;
+      --cat-archi: #E84D2E;
+      --cat-human: #8B5CF6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       SCHEDULE HIGHLIGHT SECTION
+       Direction: Editorial Tech Magazine
+       ========================================== */
+
+    .schedule-highlight {
+      padding: 6rem 2rem;
+      background: var(--bg-primary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative background elements */
+    .schedule-highlight::before {
+      content: '';
+      position: absolute;
+      top: -300px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .schedule-highlight::after {
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .schedule-highlight-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header with asymmetric layout */
+    .schedule-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .schedule-header-content {
+      max-width: 600px;
+    }
+
+    .schedule-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, var(--accent-light) 0%, rgba(99, 102, 241, 0.08) 100%);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.25rem;
+    }
+
+    .schedule-label-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.9); }
+    }
+
+    .schedule-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+
+    .schedule-title-highlight {
+      background: linear-gradient(135deg, var(--accent) 0%, #6366F1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .schedule-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .schedule-stats {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Featured Talks Grid - Editorial Layout */
+    .featured-talks {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Main featured talk - Large card */
+    .talk-card {
+      background: var(--bg-primary);
+      border-radius: 24px;
+      border: 1px solid var(--glass-border);
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .talk-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+
+    .talk-card-featured {
+      grid-row: span 2;
+    }
+
+    .talk-card-featured .talk-card-inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .talk-card-inner {
+      padding: 2rem;
+    }
+
+    /* Category ribbon */
+    .talk-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .talk-category-front {
+      background: rgba(0, 102, 255, 0.1);
+      color: var(--cat-front);
+    }
+
+    .talk-category-ai {
+      background: rgba(99, 102, 241, 0.1);
+      color: var(--cat-ai);
+    }
+
+    .talk-category-backend {
+      background: rgba(30, 58, 95, 0.1);
+      color: var(--cat-backend);
+    }
+
+    .talk-category-archi {
+      background: rgba(232, 77, 46, 0.1);
+      color: var(--cat-archi);
+    }
+
+    .talk-category-human {
+      background: rgba(139, 92, 246, 0.1);
+      color: var(--cat-human);
+    }
+
+    .talk-category::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .talk-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .talk-card-featured .talk-title {
+      font-size: 1.75rem;
+    }
+
+    .talk-excerpt {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .talk-card-featured .talk-excerpt {
+      -webkit-line-clamp: 4;
+      flex: 1;
+    }
+
+    .talk-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--glass-border);
+      margin-top: auto;
+    }
+
+    .talk-speaker {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex: 1;
+    }
+
+    .speaker-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-tertiary) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--accent-dark);
+      flex-shrink: 0;
+    }
+
+    .speaker-info {
+      min-width: 0;
+    }
+
+    .speaker-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .speaker-company {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .talk-format {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.75rem;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .talk-format svg {
+      width: 14px;
+      height: 14px;
+      opacity: 0.7;
+    }
+
+    /* Hover effect for arrow */
+    .talk-card .talk-arrow {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 0.3s ease;
+    }
+
+    .talk-card:hover .talk-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .talk-arrow svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent-dark);
+    }
+
+    /* CTA Section */
+    .schedule-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem;
+      background: linear-gradient(135deg, var(--text-primary) 0%, #2C3E50 100%);
+      border-radius: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .schedule-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(106, 191, 173, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .schedule-cta-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .schedule-cta-title {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .schedule-cta-subtitle {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .schedule-cta-btn {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.125rem 2rem;
+      background: white;
+      color: var(--text-primary);
+      border: none;
+      border-radius: 16px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .schedule-cta-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .schedule-cta-btn svg {
+      transition: transform 0.3s ease;
+    }
+
+    .schedule-cta-btn:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Browse all link */
+    .schedule-browse-all {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+      text-decoration: none;
+      margin-top: 1.5rem;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .schedule-browse-all:hover {
+      color: var(--accent);
+      gap: 0.75rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .schedule-highlight {
+        padding: 4rem 1.5rem;
+      }
+
+      .schedule-header {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .schedule-stats {
+        justify-content: flex-start;
+      }
+
+      .featured-talks {
+        grid-template-columns: 1fr;
+      }
+
+      .talk-card-featured {
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .schedule-highlight {
+        padding: 3rem 1rem;
+      }
+
+      .schedule-title {
+        font-size: 2rem;
+      }
+
+      .schedule-stats {
+        gap: 1.5rem;
+      }
+
+      .stat-value {
+        font-size: 2rem;
+      }
+
+      .talk-card-inner {
+        padding: 1.5rem;
+      }
+
+      .talk-title {
+        font-size: 1.15rem;
+      }
+
+      .talk-card-featured .talk-title {
+        font-size: 1.35rem;
+      }
+
+      .schedule-cta {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .schedule-cta-title {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- SCHEDULE HIGHLIGHT SECTION -->
+  <section class="schedule-highlight">
+    <div class="schedule-highlight-inner">
+      <!-- Header -->
+      <div class="schedule-header">
+        <div class="schedule-header-content">
+          <div class="schedule-label">
+            <span class="schedule-label-dot"></span>
+            Programme 2026
+          </div>
+          <h2 class="schedule-title">
+            Decouvrez les <span class="schedule-title-highlight">talks</span><br>
+            de cette edition
+          </h2>
+          <p class="schedule-subtitle">
+            50+ conferences, workshops et lightning talks sur 2 jours.
+            IA, Cloud, Frontend, Architecture... il y en a pour tous les gouts !
+          </p>
+        </div>
+        <div class="schedule-stats">
+          <div class="stat-item">
+            <div class="stat-value">50+</div>
+            <div class="stat-label">Talks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Jours</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">9</div>
+            <div class="stat-label">Categories</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Talks -->
+      <div class="featured-talks">
+        <!-- Main Featured Talk -->
+        <article class="talk-card talk-card-featured">
+          <div class="talk-card-inner">
+            <span class="talk-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+            <div class="talk-category talk-category-ai">Intelligence Artificielle</div>
+            <h3 class="talk-title">Les Agents : l'ordre dans le chaos des IA</h3>
+            <p class="talk-excerpt">
+              Decouvrez comment les agents IA revolutionnent notre facon de concevoir les systemes intelligents.
+              Une plongee au coeur des architectures multi-agents et de leurs applications pratiques.
+            </p>
+            <div class="talk-meta">
+              <div class="talk-speaker">
+                <div class="speaker-avatar">TC</div>
+                <div class="speaker-info">
+                  <div class="speaker-name">Thierry Chantier</div>
+                  <div class="speaker-company">AI Architect</div>
+                </div>
+              </div>
+              <div class="talk-format">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+                50 min
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Talk 1 -->
+        <article class="talk-card">
+          <div class="talk-card-inner">
+            <span class="talk-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+            <div class="talk-category talk-category-front">Frontend</div>
+            <h3 class="talk-title">La reactivite et les signaux : demystifions la magie du frontend</h3>
+            <p class="talk-excerpt">
+              Comprendre les fondements de la reactivite moderne dans les frameworks JS.
+            </p>
+            <div class="talk-meta">
+              <div class="talk-speaker">
+                <div class="speaker-avatar">ES</div>
+                <div class="speaker-info">
+                  <div class="speaker-name">Esteban S</div>
+                  <div class="speaker-company">Frontend Lead</div>
+                </div>
+              </div>
+              <div class="talk-format">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+                50 min
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Talk 2 -->
+        <article class="talk-card">
+          <div class="talk-card-inner">
+            <span class="talk-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+            <div class="talk-category talk-category-archi">Architecture</div>
+            <h3 class="talk-title">Moins 40% de couts avec plus de business et sans quitter AWS</h3>
+            <p class="talk-excerpt">
+              Strategies concretes pour optimiser vos couts cloud tout en accelerant.
+            </p>
+            <div class="talk-meta">
+              <div class="talk-speaker">
+                <div class="speaker-avatar">AC</div>
+                <div class="speaker-info">
+                  <div class="speaker-name">Alexis Chotard</div>
+                  <div class="speaker-company">Cloud Architect</div>
+                </div>
+              </div>
+              <div class="talk-format">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+                50 min
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="schedule-cta">
+        <div class="schedule-cta-content">
+          <h3 class="schedule-cta-title">Explorez le programme complet</h3>
+          <p class="schedule-cta-subtitle">Filtrez par categorie, jour ou format</p>
+        </div>
+        <a href="/schedule" class="schedule-cta-btn">
+          Voir tout le programme
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

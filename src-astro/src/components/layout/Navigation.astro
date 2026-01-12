@@ -19,10 +19,7 @@ const currentPath = Astro.url.pathname;
 <nav class="nav" role="navigation" aria-label="Navigation principale">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <div class="nav-logo-icon">TT</div>
-      <div class="nav-logo-text">
-        Touraine<span>Tech</span>
-      </div>
+      <img src="/img/logo.svg" alt="Touraine Tech" class="nav-logo-img" />
     </a>
 
     <!-- Desktop Navigation -->
@@ -193,35 +190,12 @@ const currentPath = Astro.url.pathname;
   .nav-logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
     text-decoration: none;
-    color: var(--text-primary);
   }
 
-  .nav-logo-icon {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.25rem;
-    color: white;
-    font-family: var(--font-display);
-    box-shadow: var(--shadow-accent);
-  }
-
-  .nav-logo-text {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: -0.02em;
-  }
-
-  .nav-logo-text span {
-    color: var(--accent);
+  .nav-logo-img {
+    height: 40px;
+    width: auto;
   }
 
   /* Desktop Navigation */

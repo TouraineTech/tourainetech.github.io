@@ -2,7 +2,7 @@
 import MetaPill from '@components/ui/MetaPill.astro';
 import { siteConfig } from '@data/config/site';
 
-const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition } = siteConfig;
+const { isCfpOpen, isTicketingOpen, isProgrammePublished, cfpDeadline, ticketingUrl, cfpUrl, edition } = siteConfig;
 ---
 
 <section class="hero">
@@ -28,23 +28,22 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
 
       <p class="hero-desc">
         Deux jours de conferences, workshops et rencontres avec les acteurs de la tech.
-        Rejoignez 800 passionnes a Polytech Tours !
+        Rejoignez 800 passionnes a l'Universite de Tours !
       </p>
 
       <div class="hero-actions">
-        {isTicketingOpen && (
-          <a href={ticketingUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-            Prendre ma place
+        {isCfpOpen ? (
+          <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            Proposer un talk
+          </a>
+        ) : isProgrammePublished ? (
+          <a href="/schedule" class="btn btn-primary btn-lg">
+            Consulter le programme
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
-        )}
-        {isCfpOpen && (
-          <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class:list={['btn', 'btn-lg', isTicketingOpen ? 'btn-secondary' : 'btn-primary']}>
-            Proposer un talk
-          </a>
-        )}
+        ) : null}
       </div>
     </div>
 
@@ -73,8 +72,8 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
         </div>
 
         <div class="hero-ticket-addon">
-          <div class="addon-image">
-            <img src="/img/tshirt.jpg" alt="T-shirt Touraine Tech 2026" />
+          <div class="addon-image" role="button" tabindex="0" aria-label="Voir le t-shirt en grand">
+            <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2026" />
           </div>
           <div class="addon-info">
             <p class="addon-title">T-shirt edition 2026</p>
@@ -92,7 +91,57 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
       </div>
     </div>
   </div>
+
+  <!-- T-shirt Lightbox Modal -->
+  <div class="lightbox" id="tshirt-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="T-shirt en grand">
+    <button class="lightbox-close" aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2026" />
+    </div>
+  </div>
 </section>
+
+<script>
+  const lightbox = document.getElementById('tshirt-lightbox');
+  const trigger = document.querySelector('.addon-image');
+  const closeBtn = document.querySelector('.lightbox-close');
+
+  function openLightbox() {
+    lightbox?.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeBtn?.focus();
+  }
+
+  function closeLightbox() {
+    lightbox?.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    trigger?.focus();
+  }
+
+  trigger?.addEventListener('click', openLightbox);
+  trigger?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openLightbox();
+    }
+  });
+
+  closeBtn?.addEventListener('click', closeLightbox);
+
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox?.getAttribute('aria-hidden') === 'false') {
+      closeLightbox();
+    }
+  });
+</script>
 
 <style>
   .hero {
@@ -272,15 +321,7 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
     border-radius: 16px;
     padding: 1.25rem;
     text-align: center;
-    transition: all 0.25s ease;
-    cursor: default;
     position: relative;
-  }
-
-  .ticket-price:not(.unavailable):hover {
-    border-color: var(--accent-light);
-    background: var(--accent-light);
-    transform: translateY(-2px);
   }
 
   .ticket-price.unavailable {
@@ -343,6 +384,18 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
     overflow: hidden;
     flex-shrink: 0;
     border: 2px solid rgba(106, 191, 173, 0.15);
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .addon-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(106, 191, 173, 0.3);
+  }
+
+  .addon-image:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   .addon-image img {
@@ -352,8 +405,71 @@ const { isCfpOpen, isTicketingOpen, cfpDeadline, ticketingUrl, cfpUrl, edition }
     transition: transform 0.3s ease;
   }
 
-  .hero-ticket-addon:hover .addon-image img {
+  .addon-image:hover img {
     transform: scale(1.1);
+  }
+
+  /* Lightbox Modal */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+  }
+
+  .lightbox[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .lightbox-content {
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .lightbox[aria-hidden="false"] .lightbox-content {
+    transform: scale(1);
+  }
+
+  .lightbox-content img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .lightbox-close:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
   }
 
   .addon-info {
