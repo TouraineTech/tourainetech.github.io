@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Colors - Touraine Tech 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0F1115;
+      --bg-card: #1A1D23;
+      --bg-elevated: #22262E;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #6ABFAD;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 3rem 2rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), #4ECDC4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .problem-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      max-width: 600px;
+    }
+
+    .problem-box h3 {
+      color: #EF4444;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .problem-colors {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .problem-swatch {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .problem-swatch .color {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+    }
+
+    .problem-swatch span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .vs {
+      font-weight: 600;
+      color: #EF4444;
+    }
+
+    /* Proposal Section */
+    .proposal {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proposal::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--proposal-accent, var(--accent)), var(--proposal-accent-end, #4ECDC4));
+    }
+
+    .proposal-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .proposal-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .proposal-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+
+    .proposal-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 500px;
+    }
+
+    .recommended-badge {
+      background: linear-gradient(135deg, var(--accent), #4ECDC4);
+      color: #0F1115;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Color Swatches */
+    .swatches-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .swatches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .swatch {
+      background: var(--bg-elevated);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .swatch:hover {
+      transform: translateY(-2px);
+    }
+
+    .swatch-color {
+      height: 60px;
+      position: relative;
+    }
+
+    .swatch-color::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+    }
+
+    .swatch-info {
+      padding: 0.75rem;
+    }
+
+    .swatch-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .swatch-hex {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* Badges Demo */
+    .badges-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .badges-demo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      padding: 1.5rem;
+      background: #FFFFFF;
+      border-radius: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    /* Cards Demo */
+    .cards-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .cards-demo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .mini-card {
+      background: #FFFFFF;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .mini-card-accent {
+      height: 4px;
+    }
+
+    .mini-card-content {
+      padding: 0.75rem;
+    }
+
+    .mini-card-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #1F2937;
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+
+    .mini-card-speaker {
+      font-size: 0.65rem;
+      color: #6B7280;
+    }
+
+    /* Color Blind Simulation */
+    .colorblind-section {
+      background: var(--bg-elevated);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .colorblind-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .colorblind-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .colorblind-variant h4 {
+      font-size: 0.85rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .colorblind-swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .colorblind-swatch {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .colorblind-swatch::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.55rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* CSS Variables */
+    .css-section {
+      margin-top: 2rem;
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+    }
+
+    .css-section pre {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      overflow-x: auto;
+    }
+
+    .css-section .property {
+      color: #7DD3FC;
+    }
+
+    .css-section .value {
+      color: #FCD34D;
+    }
+
+    /* Proposal-specific accents */
+    .proposal-1 { --proposal-accent: #FF4444; --proposal-accent-end: #FFD93D; }
+    .proposal-2 { --proposal-accent: #F472B6; --proposal-accent-end: #A78BFA; }
+    .proposal-3 { --proposal-accent: #FF0080; --proposal-accent-end: #00FFCC; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 0 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Category Colors</h1>
+      <p class="subtitle">Propositions de palettes pour Touraine Tech 2026</p>
+
+      <div class="problem-box">
+        <h3>Probleme actuel</h3>
+        <div class="problem-colors">
+          <div class="problem-swatch">
+            <div class="color" style="background: #F59E0B;"></div>
+            <span>Tools #F59E0B</span>
+          </div>
+          <span class="vs">vs</span>
+          <div class="problem-swatch">
+            <div class="color" style="background: #EAB308;"></div>
+            <span>Human #EAB308</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROPOSAL 1: Vibrant Spectrum -->
+    <section class="proposal proposal-1">
+      <div class="proposal-header">
+        <div>
+          <span class="proposal-number">Proposition 01</span>
+          <h2 class="proposal-title">Vibrant Spectrum</h2>
+          <p class="proposal-desc">Couleurs saturees et vives, bien reparties sur le cercle chromatique. Maximum de contraste entre les categories.</p>
+        </div>
+        <span class="recommended-badge">Recommande</span>
+      </div>
+
+      <div class="swatches-section">
+        <span class="section-label">Palette complete</span>
+        <div class="swatches-grid">
+          <div class="swatch">
+            <div class="swatch-color" style="background: #E91E8C;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Design</div>
+              <div class="swatch-hex">#E91E8C</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #0066FF;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Front</div>
+              <div class="swatch-hex">#0066FF</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #1E3A5F;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Backend</div>
+              <div class="swatch-hex">#1E3A5F</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #00A676;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">IoT</div>
+              <div class="swatch-hex">#00A676</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #E84D2E;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Archi</div>
+              <div class="swatch-hex">#E84D2E</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #FF8C00;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Tools</div>
+              <div class="swatch-hex">#FF8C00</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #8B5CF6;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Human</div>
+              <div class="swatch-hex">#8B5CF6</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #6366F1;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">AI</div>
+              <div class="swatch-hex">#6366F1</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #14B8A6;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Alien</div>
+              <div class="swatch-hex">#14B8A6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-section">
+        <span class="section-label">Badges sur fond blanc</span>
+        <div class="badges-demo">
+          <span class="badge" style="background: rgba(233,30,140,0.12); color: #E91E8C;">Design</span>
+          <span class="badge" style="background: rgba(0,102,255,0.12); color: #0066FF;">Front</span>
+          <span class="badge" style="background: rgba(30,58,95,0.12); color: #1E3A5F;">Backend</span>
+          <span class="badge" style="background: rgba(0,166,118,0.12); color: #00A676;">IoT</span>
+          <span class="badge" style="background: rgba(232,77,46,0.12); color: #E84D2E;">Archi</span>
+          <span class="badge" style="background: rgba(255,140,0,0.12); color: #FF8C00;">Tools</span>
+          <span class="badge" style="background: rgba(139,92,246,0.12); color: #8B5CF6;">Human</span>
+          <span class="badge" style="background: rgba(99,102,241,0.12); color: #6366F1;">AI</span>
+          <span class="badge" style="background: rgba(20,184,166,0.12); color: #14B8A6;">Alien</span>
+        </div>
+      </div>
+
+      <div class="cards-section">
+        <span class="section-label">Barres d'accent sur cards</span>
+        <div class="cards-demo">
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #E91E8C;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Design System</div>
+              <div class="mini-card-speaker">Marie Dupont</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #0066FF;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">React 19 Features</div>
+              <div class="mini-card-speaker">Jean Martin</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #1E3A5F;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Spring Boot 4</div>
+              <div class="mini-card-speaker">Pierre Leroy</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #FF8C00;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Git Avance</div>
+              <div class="mini-card-speaker">Sophie Bernard</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #8B5CF6;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Soft Skills</div>
+              <div class="mini-card-speaker">Luc Petit</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #6366F1;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">LLM en Prod</div>
+              <div class="mini-card-speaker">Emma Robert</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="colorblind-section">
+        <span class="section-label">Simulation daltonisme</span>
+        <div class="colorblind-grid">
+          <div class="colorblind-variant">
+            <h4>Vision normale</h4>
+            <div class="colorblind-swatches">
+              <div class="colorblind-swatch" style="background: #E91E8C;" data-label="Des"></div>
+              <div class="colorblind-swatch" style="background: #0066FF;" data-label="Fro"></div>
+              <div class="colorblind-swatch" style="background: #1E3A5F;" data-label="Bck"></div>
+              <div class="colorblind-swatch" style="background: #00A676;" data-label="IoT"></div>
+              <div class="colorblind-swatch" style="background: #E84D2E;" data-label="Arc"></div>
+              <div class="colorblind-swatch" style="background: #FF8C00;" data-label="Too"></div>
+              <div class="colorblind-swatch" style="background: #8B5CF6;" data-label="Hum"></div>
+              <div class="colorblind-swatch" style="background: #6366F1;" data-label="AI"></div>
+              <div class="colorblind-swatch" style="background: #14B8A6;" data-label="Ali"></div>
+            </div>
+          </div>
+          <div class="colorblind-variant">
+            <h4>Deuteranopie (vert-rouge)</h4>
+            <div class="colorblind-swatches">
+              <div class="colorblind-swatch" style="background: #7878C8;" data-label="Des"></div>
+              <div class="colorblind-swatch" style="background: #0055E8;" data-label="Fro"></div>
+              <div class="colorblind-swatch" style="background: #2D3A55;" data-label="Bck"></div>
+              <div class="colorblind-swatch" style="background: #8F9E00;" data-label="IoT"></div>
+              <div class="colorblind-swatch" style="background: #A89000;" data-label="Arc"></div>
+              <div class="colorblind-swatch" style="background: #C9A200;" data-label="Too"></div>
+              <div class="colorblind-swatch" style="background: #6565E8;" data-label="Hum"></div>
+              <div class="colorblind-swatch" style="background: #4848E8;" data-label="AI"></div>
+              <div class="colorblind-swatch" style="background: #A0B000;" data-label="Ali"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="css-section">
+        <pre><span class="property">--cat-design:</span> <span class="value">#E91E8C</span>;
+<span class="property">--cat-front:</span> <span class="value">#0066FF</span>;
+<span class="property">--cat-backend:</span> <span class="value">#1E3A5F</span>;
+<span class="property">--cat-iot:</span> <span class="value">#00A676</span>;
+<span class="property">--cat-archi:</span> <span class="value">#E84D2E</span>;
+<span class="property">--cat-tools:</span> <span class="value">#FF8C00</span>;
+<span class="property">--cat-human:</span> <span class="value">#8B5CF6</span>;  /* Violet - tres different de Tools */
+<span class="property">--cat-ai:</span> <span class="value">#6366F1</span>;
+<span class="property">--cat-alien:</span> <span class="value">#14B8A6</span>;</pre>
+      </div>
+    </section>
+
+    <!-- PROPOSAL 2: Pastel Harmony -->
+    <section class="proposal proposal-2">
+      <div class="proposal-header">
+        <div>
+          <span class="proposal-number">Proposition 02</span>
+          <h2 class="proposal-title">Pastel Harmony</h2>
+          <p class="proposal-desc">Tons doux et harmonieux, moins agressifs visuellement. Ideal pour une experience plus calme et elegante.</p>
+        </div>
+      </div>
+
+      <div class="swatches-section">
+        <span class="section-label">Palette complete</span>
+        <div class="swatches-grid">
+          <div class="swatch">
+            <div class="swatch-color" style="background: #EC4899;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Design</div>
+              <div class="swatch-hex">#EC4899</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #3B82F6;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Front</div>
+              <div class="swatch-hex">#3B82F6</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #475569;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Backend</div>
+              <div class="swatch-hex">#475569</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #22C55E;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">IoT</div>
+              <div class="swatch-hex">#22C55E</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #EF4444;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Archi</div>
+              <div class="swatch-hex">#EF4444</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #F97316;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Tools</div>
+              <div class="swatch-hex">#F97316</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #A855F7;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Human</div>
+              <div class="swatch-hex">#A855F7</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #6366F1;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">AI</div>
+              <div class="swatch-hex">#6366F1</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #06B6D4;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Alien</div>
+              <div class="swatch-hex">#06B6D4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-section">
+        <span class="section-label">Badges sur fond blanc</span>
+        <div class="badges-demo">
+          <span class="badge" style="background: rgba(236,72,153,0.12); color: #EC4899;">Design</span>
+          <span class="badge" style="background: rgba(59,130,246,0.12); color: #3B82F6;">Front</span>
+          <span class="badge" style="background: rgba(71,85,105,0.12); color: #475569;">Backend</span>
+          <span class="badge" style="background: rgba(34,197,94,0.12); color: #22C55E;">IoT</span>
+          <span class="badge" style="background: rgba(239,68,68,0.12); color: #EF4444;">Archi</span>
+          <span class="badge" style="background: rgba(249,115,22,0.12); color: #F97316;">Tools</span>
+          <span class="badge" style="background: rgba(168,85,247,0.12); color: #A855F7;">Human</span>
+          <span class="badge" style="background: rgba(99,102,241,0.12); color: #6366F1;">AI</span>
+          <span class="badge" style="background: rgba(6,182,212,0.12); color: #06B6D4;">Alien</span>
+        </div>
+      </div>
+
+      <div class="cards-section">
+        <span class="section-label">Barres d'accent sur cards</span>
+        <div class="cards-demo">
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #EC4899;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Design System</div>
+              <div class="mini-card-speaker">Marie Dupont</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #3B82F6;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">React 19 Features</div>
+              <div class="mini-card-speaker">Jean Martin</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #475569;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Spring Boot 4</div>
+              <div class="mini-card-speaker">Pierre Leroy</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #F97316;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Git Avance</div>
+              <div class="mini-card-speaker">Sophie Bernard</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #A855F7;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Soft Skills</div>
+              <div class="mini-card-speaker">Luc Petit</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #6366F1;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">LLM en Prod</div>
+              <div class="mini-card-speaker">Emma Robert</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="css-section">
+        <pre><span class="property">--cat-design:</span> <span class="value">#EC4899</span>;
+<span class="property">--cat-front:</span> <span class="value">#3B82F6</span>;
+<span class="property">--cat-backend:</span> <span class="value">#475569</span>;
+<span class="property">--cat-iot:</span> <span class="value">#22C55E</span>;
+<span class="property">--cat-archi:</span> <span class="value">#EF4444</span>;
+<span class="property">--cat-tools:</span> <span class="value">#F97316</span>;
+<span class="property">--cat-human:</span> <span class="value">#A855F7</span>;  /* Violet - tres different de Tools */
+<span class="property">--cat-ai:</span> <span class="value">#6366F1</span>;
+<span class="property">--cat-alien:</span> <span class="value">#06B6D4</span>;</pre>
+      </div>
+    </section>
+
+    <!-- PROPOSAL 3: Tech Neon -->
+    <section class="proposal proposal-3">
+      <div class="proposal-header">
+        <div>
+          <span class="proposal-number">Proposition 03</span>
+          <h2 class="proposal-title">Tech Neon</h2>
+          <p class="proposal-desc">Vibes modernes et electriques. Couleurs vives qui evoquent les interfaces tech et le gaming.</p>
+        </div>
+      </div>
+
+      <div class="swatches-section">
+        <span class="section-label">Palette complete</span>
+        <div class="swatches-grid">
+          <div class="swatch">
+            <div class="swatch-color" style="background: #FF0080;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Design</div>
+              <div class="swatch-hex">#FF0080</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #00B4FF;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Front</div>
+              <div class="swatch-hex">#00B4FF</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #64748B;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Backend</div>
+              <div class="swatch-hex">#64748B</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #00D68F;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">IoT</div>
+              <div class="swatch-hex">#00D68F</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #FF6B6B;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Archi</div>
+              <div class="swatch-hex">#FF6B6B</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #FF9500;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Tools</div>
+              <div class="swatch-hex">#FF9500</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #BF5AF2;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Human</div>
+              <div class="swatch-hex">#BF5AF2</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #5E5CE6;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">AI</div>
+              <div class="swatch-hex">#5E5CE6</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #30D5C8;"></div>
+            <div class="swatch-info">
+              <div class="swatch-name">Alien</div>
+              <div class="swatch-hex">#30D5C8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-section">
+        <span class="section-label">Badges sur fond blanc</span>
+        <div class="badges-demo">
+          <span class="badge" style="background: rgba(255,0,128,0.12); color: #FF0080;">Design</span>
+          <span class="badge" style="background: rgba(0,180,255,0.12); color: #00B4FF;">Front</span>
+          <span class="badge" style="background: rgba(100,116,139,0.12); color: #64748B;">Backend</span>
+          <span class="badge" style="background: rgba(0,214,143,0.12); color: #00D68F;">IoT</span>
+          <span class="badge" style="background: rgba(255,107,107,0.12); color: #FF6B6B;">Archi</span>
+          <span class="badge" style="background: rgba(255,149,0,0.12); color: #FF9500;">Tools</span>
+          <span class="badge" style="background: rgba(191,90,242,0.12); color: #BF5AF2;">Human</span>
+          <span class="badge" style="background: rgba(94,92,230,0.12); color: #5E5CE6;">AI</span>
+          <span class="badge" style="background: rgba(48,213,200,0.12); color: #30D5C8;">Alien</span>
+        </div>
+      </div>
+
+      <div class="cards-section">
+        <span class="section-label">Barres d'accent sur cards</span>
+        <div class="cards-demo">
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #FF0080;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Design System</div>
+              <div class="mini-card-speaker">Marie Dupont</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #00B4FF;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">React 19 Features</div>
+              <div class="mini-card-speaker">Jean Martin</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #64748B;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Spring Boot 4</div>
+              <div class="mini-card-speaker">Pierre Leroy</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #FF9500;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Git Avance</div>
+              <div class="mini-card-speaker">Sophie Bernard</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #BF5AF2;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">Soft Skills</div>
+              <div class="mini-card-speaker">Luc Petit</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-accent" style="background: #5E5CE6;"></div>
+            <div class="mini-card-content">
+              <div class="mini-card-title">LLM en Prod</div>
+              <div class="mini-card-speaker">Emma Robert</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="css-section">
+        <pre><span class="property">--cat-design:</span> <span class="value">#FF0080</span>;
+<span class="property">--cat-front:</span> <span class="value">#00B4FF</span>;
+<span class="property">--cat-backend:</span> <span class="value">#64748B</span>;
+<span class="property">--cat-iot:</span> <span class="value">#00D68F</span>;
+<span class="property">--cat-archi:</span> <span class="value">#FF6B6B</span>;
+<span class="property">--cat-tools:</span> <span class="value">#FF9500</span>;
+<span class="property">--cat-human:</span> <span class="value">#BF5AF2</span>;  /* Violet neon - tres different de Tools */
+<span class="property">--cat-ai:</span> <span class="value">#5E5CE6</span>;
+<span class="property">--cat-alien:</span> <span class="value">#30D5C8</span>;</pre>
+      </div>
+    </section>
+
+    <footer>
+      <p>Touraine Tech 2026 - Propositions de palettes de couleurs</p>
+    </footer>
+  </div>
+</body>
+</html>

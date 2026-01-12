@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
   edition: {
     year: 2026,
     dates: '12-13 Fevrier 2026',
-    location: 'Polytech Tours',
+    location: 'Faculté des Sciences - Université de Tours',
   },
 };
 

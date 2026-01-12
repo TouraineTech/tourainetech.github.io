@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Column Proposals - Start + End Times</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #6ABFAD;
+      --accent-dark: #4A9A8A;
+      --accent-light: rgba(106, 191, 173, 0.12);
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAF9;
+      --bg-tertiary: #F0F4F2;
+      --text-primary: #1A2E28;
+      --text-secondary: #4A5D56;
+      --text-muted: #7A8B85;
+      --glass-border: rgba(106, 191, 173, 0.2);
+      --font-display: 'Outfit', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-display);
+      background: var(--bg-tertiary);
+      min-height: 100vh;
+      padding: 2rem;
+      color: var(--text-primary);
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      color: var(--text-secondary);
+    }
+
+    .badge-new {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .proposals {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .proposal {
+      background: var(--bg-primary);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .proposal-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .proposal-number {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .proposal-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .proposal-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .demo-box {
+      background: var(--bg-secondary);
+      border-radius: 14px;
+      padding: 1.25rem;
+    }
+
+    .demo-box h4 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .mock-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .mock-row {
+      display: grid;
+      gap: 1px;
+    }
+
+    .mock-talk {
+      background: var(--bg-primary);
+      padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .mock-talk.short { min-height: 70px; }
+    .mock-talk.tall { min-height: 140px; }
+
+    /* =====================================================
+       PROPOSAL 1: STACKED COMPACT
+       Start time prominent, end time subtle below
+       ===================================================== */
+
+    .p1-row { grid-template-columns: 75px 1fr; }
+    .p1-row.mobile { grid-template-columns: 50px 1fr; }
+
+    .p1-time {
+      background: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.6rem 0.4rem;
+      position: relative;
+    }
+
+    .p1-time::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--accent);
+      opacity: 0.2;
+    }
+
+    .p1-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--bg-tertiary);
+      padding: 0.4rem 0.6rem;
+      border-radius: 8px;
+      border: 1px solid var(--glass-border);
+    }
+
+    .p1-start {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.1;
+    }
+
+    .p1-separator {
+      font-size: 0.5rem;
+      color: var(--accent);
+      margin: 0.1rem 0;
+    }
+
+    .p1-end {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.1;
+    }
+
+    /* Mobile compact */
+    .p1-row.mobile .p1-block {
+      padding: 0.25rem 0.35rem;
+    }
+    .p1-row.mobile .p1-start {
+      font-size: 0.7rem;
+    }
+    .p1-row.mobile .p1-separator {
+      display: none;
+    }
+    .p1-row.mobile .p1-end {
+      font-size: 0.55rem;
+    }
+
+    /* =====================================================
+       PROPOSAL 2: INLINE ARROW
+       Horizontal flow with arrow separator
+       ===================================================== */
+
+    .p2-row { grid-template-columns: 105px 1fr; }
+    .p2-row.mobile { grid-template-columns: 55px 1fr; }
+
+    .p2-time {
+      background: var(--bg-primary);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0.6rem 0.3rem;
+      position: relative;
+    }
+
+    .p2-time::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
+      opacity: 0.15;
+    }
+
+    .p2-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--bg-tertiary);
+      padding: 0.35rem 0.55rem;
+      border-radius: 6px;
+    }
+
+    .p2-start {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .p2-arrow {
+      font-size: 0.7rem;
+      color: var(--accent);
+      margin: 0 0.1rem;
+    }
+
+    .p2-end {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    /* Mobile - stack vertically */
+    .p2-row.mobile .p2-pill {
+      flex-direction: column;
+      gap: 0;
+      padding: 0.3rem 0.4rem;
+    }
+    .p2-row.mobile .p2-start {
+      font-size: 0.7rem;
+    }
+    .p2-row.mobile .p2-arrow {
+      transform: rotate(90deg);
+      font-size: 0.55rem;
+      margin: 0.05rem 0;
+    }
+    .p2-row.mobile .p2-end {
+      font-size: 0.6rem;
+    }
+
+    /* =====================================================
+       PROPOSAL 3: DURATION BAR (Creative)
+       Visual timeline with duration indicator
+       ===================================================== */
+
+    .p3-row { grid-template-columns: 85px 1fr; }
+    .p3-row.mobile { grid-template-columns: 50px 1fr; }
+
+    .p3-time {
+      background: var(--bg-primary);
+      padding: 0.5rem 0.35rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .p3-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+    }
+
+    .p3-start {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-align: center;
+      padding-bottom: 0.25rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .p3-bar {
+      flex: 1;
+      width: 4px;
+      min-height: 16px;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+      border-radius: 2px;
+      position: relative;
+      opacity: 0.35;
+    }
+
+    .p3-bar::before,
+    .p3-bar::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid var(--bg-primary);
+    }
+
+    .p3-bar::before {
+      top: -5px;
+      background: var(--accent);
+    }
+
+    .p3-bar::after {
+      bottom: -5px;
+      background: var(--accent-dark);
+    }
+
+    .p3-end {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-align: center;
+      padding-top: 0.25rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .p3-duration {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      font-size: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-dark);
+      white-space: nowrap;
+    }
+
+    /* Mobile - simplified */
+    .p3-row.mobile .p3-start {
+      font-size: 0.65rem;
+    }
+    .p3-row.mobile .p3-end {
+      font-size: 0.55rem;
+    }
+    .p3-row.mobile .p3-bar::before,
+    .p3-row.mobile .p3-bar::after {
+      width: 8px;
+      height: 8px;
+    }
+    .p3-row.mobile .p3-duration {
+      display: none;
+    }
+
+    /* =====================================================
+       COMPARISON TABLE
+       ===================================================== */
+
+    .comparison {
+      background: var(--bg-primary);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .comparison h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .comparison-table th {
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .comparison-table td:first-child {
+      font-weight: 600;
+    }
+
+    .check { color: var(--accent); }
+    .warn { color: #E9A23B; }
+    .cross { color: var(--text-muted); }
+
+    .rec-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 1rem; }
+      .proposal { padding: 1.25rem; }
+      .demo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Time Column: Start + End <span class="badge-new">New</span></h1>
+    <p>3 propositions pour afficher debut ET fin de chaque creneau</p>
+  </header>
+
+  <div class="proposals">
+
+    <!-- PROPOSAL 1: Stacked Compact -->
+    <article class="proposal">
+      <div class="proposal-header">
+        <div class="proposal-number">1</div>
+        <div>
+          <h2 class="proposal-title">Stacked Compact</h2>
+          <p class="proposal-desc">Heure de debut proeminente, heure de fin discrete en dessous</p>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-box">
+          <h4>Desktop (75px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p1-row">
+              <div class="p1-time">
+                <div class="p1-block">
+                  <span class="p1-start">09:00</span>
+                  <span class="p1-separator">|</span>
+                  <span class="p1-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk 50min</div>
+            </div>
+            <div class="mock-row p1-row">
+              <div class="p1-time">
+                <div class="p1-block">
+                  <span class="p1-start">10:00</span>
+                  <span class="p1-separator">|</span>
+                  <span class="p1-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop 2h</div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-box">
+          <h4>Mobile (50px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p1-row mobile">
+              <div class="p1-time">
+                <div class="p1-block">
+                  <span class="p1-start">09:00</span>
+                  <span class="p1-separator">|</span>
+                  <span class="p1-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk</div>
+            </div>
+            <div class="mock-row p1-row mobile">
+              <div class="p1-time">
+                <div class="p1-block">
+                  <span class="p1-start">10:00</span>
+                  <span class="p1-separator">|</span>
+                  <span class="p1-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROPOSAL 2: Inline Arrow -->
+    <article class="proposal">
+      <div class="proposal-header">
+        <div class="proposal-number">2</div>
+        <div>
+          <h2 class="proposal-title">Inline Arrow</h2>
+          <p class="proposal-desc">Lecture horizontale naturelle, passe en vertical sur mobile</p>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-box">
+          <h4>Desktop (105px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p2-row">
+              <div class="p2-time">
+                <div class="p2-pill">
+                  <span class="p2-start">09:00</span>
+                  <span class="p2-arrow">→</span>
+                  <span class="p2-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk 50min</div>
+            </div>
+            <div class="mock-row p2-row">
+              <div class="p2-time">
+                <div class="p2-pill">
+                  <span class="p2-start">10:00</span>
+                  <span class="p2-arrow">→</span>
+                  <span class="p2-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop 2h</div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-box">
+          <h4>Mobile (55px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p2-row mobile">
+              <div class="p2-time">
+                <div class="p2-pill">
+                  <span class="p2-start">09:00</span>
+                  <span class="p2-arrow">→</span>
+                  <span class="p2-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk</div>
+            </div>
+            <div class="mock-row p2-row mobile">
+              <div class="p2-time">
+                <div class="p2-pill">
+                  <span class="p2-start">10:00</span>
+                  <span class="p2-arrow">→</span>
+                  <span class="p2-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROPOSAL 3: Duration Bar -->
+    <article class="proposal">
+      <div class="proposal-header">
+        <div class="proposal-number">3</div>
+        <div>
+          <h2 class="proposal-title">Duration Bar</h2>
+          <p class="proposal-desc">Barre verticale qui visualise la duree - unique et memorable</p>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-box">
+          <h4>Desktop (85px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p3-row">
+              <div class="p3-time">
+                <div class="p3-wrapper">
+                  <span class="p3-start">09:00</span>
+                  <div class="p3-bar">
+                    <span class="p3-duration">50 min</span>
+                  </div>
+                  <span class="p3-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk 50min</div>
+            </div>
+            <div class="mock-row p3-row">
+              <div class="p3-time">
+                <div class="p3-wrapper">
+                  <span class="p3-start">10:00</span>
+                  <div class="p3-bar">
+                    <span class="p3-duration">2 heures</span>
+                  </div>
+                  <span class="p3-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop 2h</div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-box">
+          <h4>Mobile (50px)</h4>
+          <div class="mock-schedule">
+            <div class="mock-row p3-row mobile">
+              <div class="p3-time">
+                <div class="p3-wrapper">
+                  <span class="p3-start">09:00</span>
+                  <div class="p3-bar"></div>
+                  <span class="p3-end">09:50</span>
+                </div>
+              </div>
+              <div class="mock-talk short">Talk</div>
+            </div>
+            <div class="mock-row p3-row mobile">
+              <div class="p3-time">
+                <div class="p3-wrapper">
+                  <span class="p3-start">10:00</span>
+                  <div class="p3-bar"></div>
+                  <span class="p3-end">12:00</span>
+                </div>
+              </div>
+              <div class="mock-talk tall">Workshop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Comparison -->
+    <div class="comparison">
+      <h3>Comparaison</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Critere</th>
+            <th>1. Stacked</th>
+            <th>2. Inline Arrow</th>
+            <th>3. Duration Bar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Largeur desktop</td>
+            <td>75px <span class="check">✓</span></td>
+            <td>105px <span class="warn">~</span></td>
+            <td>85px <span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Largeur mobile</td>
+            <td>50px <span class="check">✓</span></td>
+            <td>55px <span class="check">✓</span></td>
+            <td>50px <span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Hierarchie claire</td>
+            <td><span class="check">✓✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓✓</span></td>
+          </tr>
+          <tr>
+            <td>Lisibilite mobile</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Complexite CSS</td>
+            <td>Simple <span class="check">✓</span></td>
+            <td>Simple <span class="check">✓</span></td>
+            <td>Medium <span class="warn">~</span></td>
+          </tr>
+          <tr>
+            <td>Originalite</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓✓</span></td>
+          </tr>
+          <tr>
+            <td><strong>Recommandation</strong></td>
+            <td><span class="rec-badge">Recommande</span></td>
+            <td></td>
+            <td>Si budget temps OK</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
