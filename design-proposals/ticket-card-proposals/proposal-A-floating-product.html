@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal A - Floating Product | Ticket Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #6ABFAD;
+      --accent-dark: #4A9F8D;
+      --accent-light: rgba(106, 191, 173, 0.15);
+      --bg-primary: #FAFCFB;
+      --bg-secondary: #F0F5F3;
+      --text-primary: #1A2E28;
+      --text-secondary: #4A6359;
+      --text-muted: #7A9189;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(106, 191, 173, 0.2);
+      --shadow-lg: 0 25px 50px -12px rgba(26, 46, 40, 0.15);
+      --shadow-xl: 0 35px 60px -15px rgba(26, 46, 40, 0.2);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card-container {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    /* Floating T-shirt - positioned absolutely */
+    .floating-product {
+      position: absolute;
+      top: -30px;
+      right: -40px;
+      z-index: 10;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-product img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: var(--shadow-xl);
+      border: 3px solid white;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .floating-product:hover img {
+      transform: scale(1.08) rotate(3deg);
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: white;
+      padding: 0.35rem 0.8rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'Space Mono', monospace;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(106, 191, 173, 0.4);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      50% { transform: translateY(-12px) rotate(2deg); }
+    }
+
+    /* Main ticket card */
+    .ticket-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ticket-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    }
+
+    /* Header */
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      padding-right: 100px; /* Space for floating product */
+    }
+
+    .card-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* Prices */
+    .prices-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .price-card {
+      background: var(--bg-secondary);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent-light) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(106, 191, 173, 0.15);
+    }
+
+    .price-card:hover::after {
+      opacity: 1;
+    }
+
+    .price-card.sold-out {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .price-card.sold-out::before {
+      content: 'EPUISE';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-12deg);
+      background: var(--text-primary);
+      color: white;
+      padding: 0.3rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+    .price-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .price-value {
+      font-family: 'Space Mono', monospace;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .price-value span {
+      font-size: 1.2rem;
+      font-weight: 400;
+      vertical-align: super;
+    }
+
+    /* Divider with t-shirt mention */
+    .addon-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .addon-divider::before,
+    .addon-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--glass-border);
+    }
+
+    .addon-divider span {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* CTA Button */
+    .cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 1.25rem 2rem;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: white;
+      border: none;
+      border-radius: 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(106, 191, 173, 0.35);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(106, 191, 173, 0.45);
+    }
+
+    .cta-button svg {
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      .floating-product {
+        top: -20px;
+        right: -10px;
+      }
+      .floating-product img {
+        width: 100px;
+        height: 100px;
+      }
+      .card-header {
+        padding-right: 60px;
+      }
+      .price-value {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <!-- Floating T-shirt -->
+    <div class="floating-product">
+      <img src="https://via.placeholder.com/280x280/6ABFAD/ffffff?text=T-Shirt+2026" alt="T-shirt Touraine Tech 2026">
+      <span class="floating-badge">+20 EUR</span>
+    </div>
+
+    <!-- Main Card -->
+    <div class="ticket-card">
+      <div class="card-header">
+        <div>
+          <h2 class="card-title">Prenez votre place</h2>
+          <p class="card-subtitle">30-31 Janvier 2026 - Polytech Tours</p>
+        </div>
+        <span class="status-badge">Disponible</span>
+      </div>
+
+      <div class="prices-grid">
+        <div class="price-card sold-out">
+          <p class="price-label">Early-bird</p>
+          <p class="price-value">50<span>EUR</span></p>
+        </div>
+        <div class="price-card">
+          <p class="price-label">Plein tarif</p>
+          <p class="price-value">70<span>EUR</span></p>
+        </div>
+      </div>
+
+      <div class="addon-divider">
+        <span>T-shirt edition disponible</span>
+      </div>
+
+      <a href="#" class="cta-button">
+        Acheter mon billet
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
