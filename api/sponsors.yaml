@@ -1,6 +1,20 @@
 # Sponsors Touraine Tech
 # Types possibles: gold, silver, bronze, partenaires
 
+- id: harmonie-mutuelle
+  name: Harmonie Mutuelle
+  type: gold
+  image: harmonie-mutuelle.png
+  link: https://www.harmonie-mutuelle.fr/
+  desc: |
+    Harmonie Mutuelle a souhaité être sponsor de Touraine Tech 2019 afin de soutenir une initiative locale sur la ville de Tours.<br><br>
+    En tant qu'employeur IT important sur la ville de Tours, cette participation permet aussi à Harmonie Mutuelle de s'impliquer davantage dans l'écosystème numérique de la région Centre et d'être au plus près des acteurs de l'IT.<br><br>
+    Pour toutes ces raisons Harmonie Mutuelle a de nouveau souhaité être partenaire en 2026.
+  twitter: https://x.com/hmutuelle
+  linkedIn: https://www.linkedin.com/company/harmoniemutuelle
+  youtube: https://www.youtube.com/user/HarmonieMutuelle
+  instagram: https://www.instagram.com/harmoniemutuelle
+
 - id: neosoft
   name: Néosoft
   type: silver
