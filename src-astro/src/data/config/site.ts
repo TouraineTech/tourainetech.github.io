@@ -1,15 +1,18 @@
 import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
-  // Mode du site - ajuster selon le cycle de l'evenement
+  // Phases du site - ajuster selon le cycle de l'evenement
   isCfpOpen: false,
   isTicketingOpen: true,
   isProgrammePublished: true,
+  isSponsoringOpen: true,
+  isGalleryEnabled: true,
 
   // URLs externes
   cfpDeadline: '16 novembre 2025',
   ticketingUrl: 'https://www.billetweb.fr/touraine-tech-2026',
   cfpUrl: 'https://conference-hall.io/touraine-tech-2026',
+  sponsoringUrl: 'https://sponsoring2026.touraine.tech',
 
   // Informations de l'edition
   edition: {

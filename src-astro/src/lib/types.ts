@@ -1,11 +1,19 @@
 // Site configuration
 export interface SiteConfig {
+  // Phases du site
   isCfpOpen: boolean;
   isTicketingOpen: boolean;
   isProgrammePublished: boolean;
+  isSponsoringOpen: boolean;
+  isGalleryEnabled: boolean;
+
+  // URLs externes
   cfpDeadline?: string;
   ticketingUrl: string;
   cfpUrl: string;
+  sponsoringUrl: string;
+
+  // Informations de l'edition
   edition: {
     year: number;
     dates: string;

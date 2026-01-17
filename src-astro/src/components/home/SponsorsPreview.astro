@@ -1,5 +1,8 @@
 ---
+import { siteConfig } from '@data/config/site';
 import sponsors from '@data/sponsors.yaml';
+
+const { isSponsoringOpen } = siteConfig;
 
 // Filter sponsors by tier (Gold > Silver > Bronze)
 const goldSponsors = sponsors.filter((s: any) => s.type === 'gold');
@@ -9,6 +12,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
 const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bronzeSponsors.length > 0;
 ---
 
+{isSponsoringOpen && (
 <section class="sponsors-preview">
   <div class="sponsors-preview-inner">
     <div class="section-header">
@@ -137,6 +141,7 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     </div>
   </div>
 </section>
+)}
 
 <style>
   .sponsors-preview {

@@ -1,14 +1,14 @@
 ---
 import { siteConfig } from '@data/config/site';
 
-const { isCfpOpen, isTicketingOpen, isProgrammePublished, ticketingUrl, cfpUrl } = siteConfig;
+const { isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoringOpen, ticketingUrl, cfpUrl } = siteConfig;
 
 // Navigation links - conditionally shown based on site mode
 const navLinks = [
   { href: '/', label: 'Accueil', always: true },
   { href: '/schedule', label: 'Programme', show: isProgrammePublished },
   { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
-  { href: '/sponsors', label: 'Sponsors', always: true },
+  { href: '/sponsors', label: 'Sponsors', show: isSponsoringOpen },
   { href: '/team', label: 'Equipe', always: true },
   { href: '/photos', label: 'Photos', always: true },
 ].filter(link => link.always || link.show);
