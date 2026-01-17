@@ -3,6 +3,11 @@ import Layout from '@layouts/Layout.astro';
 import daysData from '@data/config/days.json';
 import roomsData from '@data/config/rooms.json';
 
+interface Room {
+  name: string;
+  capacity: number;
+}
+
 export function getStaticPaths() {
   const days = daysData as number[];
   return days.map((day) => ({
@@ -11,7 +16,7 @@ export function getStaticPaths() {
 }
 
 const { day } = Astro.params;
-const rooms = roomsData as string[];
+const rooms = roomsData as Room[];
 
 const dayLabels: Record<string, string> = {
   '1': 'Jeudi 12 février',
@@ -35,8 +40,8 @@ const dayLabels: Record<string, string> = {
 
       <div class="rooms-grid">
         {rooms.map((room) => (
-          <a href={`/timer/${day}/${room}`} class="room-card">
-            <span class="room-name">{room}</span>
+          <a href={`/timer/${day}/${room.name}`} class="room-card">
+            <span class="room-name">{room.name}</span>
           </a>
         ))}
       </div>

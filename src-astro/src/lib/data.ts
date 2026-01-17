@@ -4,6 +4,7 @@ import type {
   ConferenceHallData,
   ScheduledTalk,
   TimeSlot,
+  Room,
   Sponsor,
   JobOffer,
 } from './types';
@@ -18,10 +19,10 @@ import sponsorsYaml from '@data/sponsors.yaml';
 const conferenceHall = conferenceHallData as ConferenceHallData;
 const schedule = scheduleData as ScheduledTalk[];
 const times = timesData as TimeSlot[];
-const rooms = roomsData as string[];
+const rooms = roomsData as Room[];
 
 // Re-export types for convenience
-export type { Sponsor, JobOffer };
+export type { Sponsor, JobOffer, Room };
 
 // Types for the data utility functions (enriched versions)
 export interface FullSpeaker {
@@ -239,11 +240,33 @@ export function formatTimeDisplay(timeIndex: number, day: number): string {
  * Format room display (e.g., "Salle F21" or "Salles F21, F22")
  */
 export function formatRoomDisplay(roomIndexes: number[]): string {
-  const roomNames = roomIndexes.map((idx) => rooms[idx - 1]);
+  const roomNames = roomIndexes.map((idx) => rooms[idx - 1]?.name);
   if (roomNames.length === 1) {
     return `Salle ${roomNames[0]}`;
   }
   return `Salles ${roomNames.join(', ')}`;
+}
+
+/**
+ * Get all rooms with their capacities
+ */
+export function getAllRooms(): Room[] {
+  return rooms;
+}
+
+/**
+ * Get room by index (1-based)
+ */
+export function getRoomByIndex(index: number): Room | undefined {
+  return rooms[index - 1];
+}
+
+/**
+ * Get room capacity string (e.g., "250 places")
+ */
+export function getRoomCapacityLabel(roomName: string): string {
+  const room = rooms.find((r) => r.name === roomName);
+  return room ? `${room.capacity} places` : '';
 }
 
 /**
