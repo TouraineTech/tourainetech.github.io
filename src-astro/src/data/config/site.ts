@@ -30,9 +30,9 @@ export const siteConfig: SiteConfig = {
 
 // Stats affichees sur la home page
 export const stats = [
-  { value: '50+', label: 'talks', icon: '🎤' },
-  { value: '800', label: 'participants', icon: '👥' },
-  { value: '60', label: 'speakers', icon: '🎙️' },
+  { value: '80', label: 'talks', icon: '🎤' },
+  { value: '550', label: 'participants', icon: '👥' },
+  { value: '85', label: 'speakers', icon: '🎙️' },
   { value: '2', label: 'jours', icon: '📅' },
 ];
 
