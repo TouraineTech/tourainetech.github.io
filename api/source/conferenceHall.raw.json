@@ -50,6 +50,36 @@
             "answer": "Oui / Yes"
           }
         ]
+      },
+      {
+        "id": "cm_maxime_guillet_001",
+        "name": "Maxime Guillet",
+        "bio": "Maxime Guillet est ingénieur plateforme avec plus de 15 ans d'expérience en systèmes, réseaux et infrastructures modernes. Il travaille chez PayFit sur des environnements mêlant AWS, Kubernetes, automatisation et production à grande échelle, avec un focus sur la conception de solutions adaptées aux usages des équipes de développement. Ancien SRE chez Aircall et ingénieur systèmes chez Mailjet, il a opéré et fait évoluer des infrastructures critiques.",
+        "company": "PayFit",
+        "references": null,
+        "picture": null,
+        "location": null,
+        "email": "maxime.guillet@payfit.com",
+        "socialLinks": [
+          "https://www.linkedin.com/in/maximeguillet/"
+        ],
+        "survey": [
+          {
+            "id": "6f130980-c069-45ec-8750-65c78a3bfff8",
+            "question": "Avez-vous des restrictions alimentaires ? Do you have any food restriction?",
+            "answer": []
+          },
+          {
+            "id": "73726fb2-382c-450b-8a7a-391deba97024",
+            "question": "Quelle est votre taille de T-Shirt ? What is your shirt size?",
+            "answer": "M"
+          },
+          {
+            "id": "faa7f5f7-f084-40db-a255-007140b214b9",
+            "question": "Serez-vous présent à la soirée des speakers jeudi soir ? / Will you be attending the speakers' dinner on Thursday evening?",
+            "answer": "Oui / Yes"
+          }
+        ]
       }
     ],
     "review": {
