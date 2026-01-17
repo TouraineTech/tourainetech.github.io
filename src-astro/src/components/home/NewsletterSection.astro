@@ -1,8 +1,3 @@
----
-// Newsletter form - action URL to be configured
-const formAction = '#'; // TODO: Configure newsletter service
----
-
 <section class="newsletter">
   <div class="newsletter-inner">
     <div class="newsletter-card">
@@ -11,10 +6,10 @@ const formAction = '#'; // TODO: Configure newsletter service
         Inscrivez-vous pour ne rien manquer de Touraine Tech 2026 :
         ouverture de la billetterie, annonces des speakers, et plus encore.
       </p>
-      <form class="newsletter-form" action={formAction} method="POST">
+      <form class="newsletter-form">
         <input
           type="email"
-          name="email"
+          name="EMAIL"
           class="newsletter-input"
           placeholder="votre@email.com"
           required
@@ -24,12 +19,57 @@ const formAction = '#'; // TODO: Configure newsletter service
           S'inscrire
         </button>
       </form>
+      <p class="newsletter-status" aria-live="polite"></p>
       <p class="newsletter-privacy">
         Pas de spam, promis. Desinscription possible a tout moment.
       </p>
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.querySelector('.newsletter-form') as HTMLFormElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement;
+    const button = form.querySelector('button') as HTMLButtonElement;
+    const status = document.querySelector('.newsletter-status') as HTMLElement;
+    const originalText = button.textContent;
+
+    button.disabled = true;
+    button.textContent = 'Envoi...';
+    status.textContent = '';
+    status.className = 'newsletter-status';
+
+    try {
+      const response = await fetch('/.netlify/functions/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emailInput.value }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        status.textContent = data.alreadySubscribed
+          ? 'Vous êtes déjà inscrit !'
+          : 'Merci ! Vous êtes inscrit.';
+        status.className = 'newsletter-status success';
+        form.reset();
+      } else {
+        status.textContent = data.error || 'Erreur. Veuillez réessayer.';
+        status.className = 'newsletter-status error';
+      }
+    } catch (error) {
+      status.textContent = 'Erreur réseau. Veuillez réessayer.';
+      status.className = 'newsletter-status error';
+    } finally {
+      button.disabled = false;
+      button.textContent = originalText;
+    }
+  });
+</script>
 
 <style>
   .newsletter {
@@ -91,6 +131,21 @@ const formAction = '#'; // TODO: Configure newsletter service
 
   .newsletter-input::placeholder {
     color: var(--text-muted);
+  }
+
+  .newsletter-status {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    min-height: 1.5em;
+  }
+
+  .newsletter-status.success {
+    color: var(--accent);
+  }
+
+  .newsletter-status.error {
+    color: #e74c3c;
   }
 
   .newsletter-privacy {
