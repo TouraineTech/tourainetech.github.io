@@ -8,7 +8,6 @@ const navLinks = [
   { href: '/', label: 'Accueil', always: true },
   { href: '/schedule', label: 'Programme', show: isProgrammePublished },
   { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
-  { href: '/sponsors', label: 'Sponsors', show: isSponsoringOpen },
   { href: '/team', label: 'Equipe', always: true },
   { href: '/coc', label: 'Code de conduite', always: true },
 ].filter(link => link.always || link.show);
