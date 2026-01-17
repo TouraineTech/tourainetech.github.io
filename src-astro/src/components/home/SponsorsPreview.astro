@@ -4,12 +4,13 @@ import sponsors from '@data/sponsors.yaml';
 
 const { isSponsoringOpen } = siteConfig;
 
-// Filter sponsors by tier (Gold > Silver > Bronze)
+// Filter sponsors by tier (Gold > Silver > Bronze > Partenaires)
 const goldSponsors = sponsors.filter((s: any) => s.type === 'gold');
 const silverSponsors = sponsors.filter((s: any) => s.type === 'silver');
 const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
+const partenaires = sponsors.filter((s: any) => s.type === 'partenaires');
 
-const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bronzeSponsors.length > 0;
+const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bronzeSponsors.length > 0 || partenaires.length > 0;
 ---
 
 {isSponsoringOpen && (
@@ -39,9 +40,7 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
             <div class="sponsors-grid sponsors-grid-gold">
               {goldSponsors.map((sponsor: any) => (
                 <a
-                  href={sponsor.link}
-                  target="_blank"
-                  rel="noopener"
+                  href={`/sponsor/${sponsor.id}`}
                   class="sponsor-card sponsor-card-gold"
                   title={sponsor.name}
                 >
@@ -53,7 +52,14 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
                       loading="lazy"
                     />
                   </div>
-                  <span class="sponsor-name">{sponsor.name}</span>
+                  <div class="sponsor-info">
+                    <span class="sponsor-name">{sponsor.name}</span>
+                    {sponsor.jobOffers && sponsor.jobOffers.length > 0 && (
+                      <span class="job-badge">
+                        {sponsor.jobOffers.length} offre{sponsor.jobOffers.length > 1 ? 's' : ''} d'emploi
+                      </span>
+                    )}
+                  </div>
                 </a>
               ))}
             </div>
@@ -74,9 +80,7 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
             <div class="sponsors-grid sponsors-grid-silver">
               {silverSponsors.map((sponsor: any) => (
                 <a
-                  href={sponsor.link}
-                  target="_blank"
-                  rel="noopener"
+                  href={`/sponsor/${sponsor.id}`}
                   class="sponsor-card sponsor-card-silver"
                   title={sponsor.name}
                 >
@@ -87,7 +91,14 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
                       loading="lazy"
                     />
                   </div>
-                  <span class="sponsor-name">{sponsor.name}</span>
+                  <div class="sponsor-info">
+                    <span class="sponsor-name">{sponsor.name}</span>
+                    {sponsor.jobOffers && sponsor.jobOffers.length > 0 && (
+                      <span class="job-badge">
+                        {sponsor.jobOffers.length} offre{sponsor.jobOffers.length > 1 ? 's' : ''} d'emploi
+                      </span>
+                    )}
+                  </div>
                 </a>
               ))}
             </div>
@@ -108,10 +119,37 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
             <div class="sponsors-grid sponsors-grid-bronze">
               {bronzeSponsors.map((sponsor: any) => (
                 <a
-                  href={sponsor.link}
-                  target="_blank"
-                  rel="noopener"
+                  href={`/sponsor/${sponsor.id}`}
                   class="sponsor-logo-only"
+                  title={sponsor.name}
+                >
+                  <img
+                    src={`/img/sponsors/${sponsor.image}`}
+                    alt={sponsor.name}
+                    loading="lazy"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Partenaires Tier */}
+        {partenaires.length > 0 && (
+          <div class="tier tier-partenaires">
+            <div class="tier-header">
+              <span class="tier-badge tier-badge-partenaires">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                Partenaires
+              </span>
+            </div>
+            <div class="sponsors-grid sponsors-grid-partenaires">
+              {partenaires.map((sponsor: any) => (
+                <a
+                  href={`/sponsor/${sponsor.id}`}
+                  class="sponsor-logo-only sponsor-logo-partenaires"
                   title={sponsor.name}
                 >
                   <img
@@ -130,15 +168,6 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
         <p>Les sponsors seront annoncés prochainement</p>
       </div>
     )}
-
-    <div class="sponsors-footer">
-      <a href="/sponsors" class="btn btn-secondary">
-        Voir tous nos sponsors
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
   </div>
 </section>
 )}
@@ -179,20 +208,36 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     border-radius: 100px;
   }
 
+  /* Badge Gold - Pulse animation */
   .tier-badge-gold {
     background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
     color: #1a1a2e;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+    animation: goldPulse 3s ease-in-out infinite;
   }
 
+  @keyframes goldPulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 6px 30px rgba(255, 215, 0, 0.6); }
+  }
+
+  /* Badge Silver - Light shadow */
   .tier-badge-silver {
     background: linear-gradient(135deg, #E8E8E8 0%, #C0C0C0 100%);
     color: #1a1a2e;
+    box-shadow: 0 2px 10px rgba(192, 192, 192, 0.4);
   }
 
   .tier-badge-bronze {
     background: linear-gradient(135deg, #CD7F32 0%, #A0522D 100%);
     color: white;
+  }
+
+  .tier-badge-partenaires {
+    background: var(--accent-light);
+    color: var(--accent-dark);
   }
 
   /* Sponsors Grid */
@@ -203,26 +248,54 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     gap: 1.5rem;
   }
 
-  /* Gold Cards - Premium */
+  /* ===========================================
+     GOLD TIER - Zone VIP avec présence maximale
+     =========================================== */
+  .tier-gold {
+    position: relative;
+    background:
+      radial-gradient(ellipse 100% 80% at 50% 20%, rgba(255, 215, 0, 0.12) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(255, 248, 220, 0.4) 0%, transparent 100%);
+    padding: 3rem 2rem;
+    border-radius: 32px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+  }
+
+  .sponsors-grid-gold {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Gold Cards - Effet 3D multicouche */
   .sponsor-card-gold {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 2.5rem;
+    padding: 3rem 3.5rem;
     background: white;
-    border: 2px solid #DAA520;
-    border-radius: 20px;
+    border: 3px solid #DAA520;
+    border-radius: 24px;
     text-decoration: none;
-    transition: all 0.3s ease;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+    box-shadow:
+      0 0 0 1px rgba(255, 215, 0, 0.1),
+      0 4px 12px rgba(255, 215, 0, 0.15),
+      0 12px 40px rgba(255, 215, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   .sponsor-card-gold:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 35px rgba(255, 215, 0, 0.35);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+      0 0 0 2px rgba(255, 215, 0, 0.2),
+      0 8px 24px rgba(255, 215, 0, 0.25),
+      0 24px 60px rgba(255, 215, 0, 0.3);
     border-color: #FFD700;
   }
 
@@ -233,15 +306,17 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     outline-offset: 2px;
   }
 
+  /* Logos Gold - Plus grands, filtres premium */
   .sponsor-card-gold .sponsor-logo img {
-    max-height: 80px;
-    max-width: 200px;
+    max-height: 110px;
+    max-width: 260px;
     object-fit: contain;
+    filter: contrast(1.05) saturate(1.1);
   }
 
   .sponsor-card-gold .sponsor-name {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--text-primary);
   }
 
@@ -268,40 +343,66 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     100% { background-position: -200% 0; }
   }
 
-  /* Silver Cards - Elegant */
+  /* ===========================================
+     SILVER TIER - Élégant mais secondaire
+     =========================================== */
+  .tier-silver {
+    background: linear-gradient(180deg, rgba(192, 192, 192, 0.08) 0%, transparent 100%);
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+  }
+
+  /* Grille Silver - 3 colonnes, centré */
+  .sponsors-grid-silver {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Silver Cards - Effet verre dépoli */
   .sponsor-card-silver {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-    padding: 1.5rem 2rem;
-    background: var(--bg-secondary);
-    border: 1px solid #C0C0C0;
+    padding: 1.75rem 2.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(192, 192, 192, 0.5);
     border-radius: 16px;
     text-decoration: none;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.06),
+      0 8px 24px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
   }
 
   .sponsor-card-silver:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: #A0A0A0;
-    background: white;
+    transform: translateY(-6px);
+    border-color: #A8A8A8;
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.08),
+      0 16px 40px rgba(0, 0, 0, 0.08);
   }
 
+  /* Logos Silver - Taille moyenne, légèrement plus grands */
   .sponsor-card-silver .sponsor-logo img {
-    max-height: 60px;
-    max-width: 160px;
+    max-height: 70px;
+    max-width: 180px;
     object-fit: contain;
   }
 
   .sponsor-card-silver .sponsor-name {
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-primary);
   }
 
-  /* Bronze - Compact logos only */
+  /* ===========================================
+     BRONZE TIER - Minimaliste, logos compacts
+     =========================================== */
   .sponsors-grid-bronze {
     gap: 1rem;
   }
@@ -335,6 +436,35 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     opacity: 1;
   }
 
+  /* Partenaires */
+  .sponsors-grid-partenaires {
+    gap: 1rem;
+  }
+
+  .sponsor-logo-partenaires img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  /* Sponsor Info */
+  .sponsor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  .job-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
   /* Empty state */
   .sponsors-empty {
     text-align: center;
@@ -349,35 +479,46 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     font-size: 1rem;
   }
 
-  /* Footer */
-  .sponsors-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 2.5rem;
-  }
-
-  /* Responsive */
+  /* ===========================================
+     RESPONSIVE
+     =========================================== */
   @media (max-width: 768px) {
     .sponsors-grid {
       gap: 1rem;
     }
 
+    .tier-gold {
+      padding: 2rem 1rem;
+      border-radius: 24px;
+    }
+
+    .sponsors-grid-gold {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
     .sponsor-card-gold {
-      padding: 1.5rem 2rem;
+      padding: 2rem 1.5rem;
     }
 
     .sponsor-card-gold .sponsor-logo img {
-      max-height: 60px;
-      max-width: 150px;
+      max-height: 80px;
+      max-width: 200px;
+    }
+
+    /* Silver 2 colonnes sur tablette */
+    .sponsors-grid-silver {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
 
     .sponsor-card-silver {
-      padding: 1rem 1.5rem;
+      padding: 1.25rem 1.5rem;
     }
 
     .sponsor-card-silver .sponsor-logo img {
-      max-height: 45px;
-      max-width: 120px;
+      max-height: 55px;
+      max-width: 140px;
     }
 
     .sponsor-logo-only img {
@@ -387,6 +528,11 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
   }
 
   @media (max-width: 480px) {
+    /* Silver 1 colonne sur mobile */
+    .sponsors-grid-silver {
+      grid-template-columns: 1fr;
+    }
+
     .sponsors-grid-bronze {
       gap: 0.5rem;
     }
