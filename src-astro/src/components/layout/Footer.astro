@@ -9,7 +9,6 @@ const footerLinks = {
     { label: 'Accueil', href: '/' },
     { label: 'Programme', href: '/schedule' },
     { label: 'Speakers', href: '/speakers' },
-    { label: 'Sponsors', href: '/sponsors' },
     { label: 'Photos', href: '/photos' },
   ],
   infos: [
@@ -42,10 +41,7 @@ const socials = [
     <div class="footer-main">
       <div class="footer-brand">
         <a href="/" class="footer-logo">
-          <div class="footer-logo-icon">TT</div>
-          <div class="footer-logo-text">
-            Touraine<span>Tech</span>
-          </div>
+          <img src="/img/logo.svg" alt="Touraine Tech" class="footer-logo-img" />
         </a>
         <p class="footer-tagline">
           La conference tech en Touraine
@@ -152,29 +148,9 @@ const socials = [
     margin-bottom: 1rem;
   }
 
-  .footer-logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1rem;
-    color: white;
-    font-family: var(--font-display);
-  }
-
-  .footer-logo-text {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.15rem;
-    letter-spacing: -0.02em;
-  }
-
-  .footer-logo-text span {
-    color: var(--accent);
+  .footer-logo-img {
+    height: 48px;
+    width: auto;
   }
 
   .footer-tagline {
