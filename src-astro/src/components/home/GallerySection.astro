@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '@data/config/site';
 
-const { edition } = siteConfig;
+const { edition, isGalleryEnabled } = siteConfig;
 const previousYear = edition.year - 1;
 
 // Placeholder photos - will be replaced with actual Flickr photos
@@ -17,6 +17,7 @@ const photos = [
 ];
 ---
 
+{isGalleryEnabled && (
 <section class="gallery">
   <div class="gallery-inner">
     <div class="section-header">
@@ -53,6 +54,7 @@ const photos = [
     </div>
   </div>
 </section>
+)}
 
 <style>
   .gallery {
