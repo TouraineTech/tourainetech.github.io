@@ -16,12 +16,10 @@
     "@astrojs/sitemap": "^3.2.0",
     "astro": "^4.16.0",
     "date-fns": "^3.6.0",
-    "marked": "^17.0.1",
-    "showdown": "^2.1.0"
+    "marked": "^17.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2",
-    "@types/showdown": "^2.0.6",
     "sass": "^1.80.0",
     "typescript": "^5.6.0"
   }

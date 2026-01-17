@@ -37,38 +37,30 @@ export interface Talk {
   title: string;
   abstract?: string;
   formats: string;
-  categories: string;
+  categories: string | null;
   level: 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED' | null;
   speakers: string[];
-  languages: string[];
+  languages?: string[];
 }
 
 export interface Speaker {
   uid: string;
-  displayName: string;
+  name: string;
+  displayName?: string;
   company?: string;
   bio?: string;
+  picture?: string | null;
   photoURL?: string;
-  twitter?: string;
-  github?: string;
+  twitter?: string | null;
+  github?: string | null;
   linkedin?: string;
 }
 
 export interface ConferenceHallData {
   talks: Talk[];
   speakers: Speaker[];
-  categories: Category[];
-  formats: Format[];
-}
-
-export interface Category {
-  id: number;
-  name: string;
-}
-
-export interface Format {
-  id: number;
-  name: string;
+  categories: string[];
+  formats: string[];
 }
 
 // Schedule data
@@ -101,7 +93,8 @@ export interface Break {
 export interface JobOffer {
   id: string;
   title: string;
-  link: string;
+  link?: string;
+  pdf?: string;
 }
 
 export interface Sponsor {
@@ -112,9 +105,14 @@ export interface Sponsor {
   link: string;
   desc?: string;
   linkedIn?: string;
+  twitter?: string;
+  bluesky?: string;
+  facebook?: string;
   instagram?: string;
   youtube?: string;
-  twitter?: string;
+  tiktok?: string;
+  twitch?: string;
+  github?: string;
   jobOffers?: JobOffer[];
 }
 

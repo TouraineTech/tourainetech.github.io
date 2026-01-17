@@ -1,4 +1,6 @@
 ---
+import { getCategoryColor, getCategoryLabel } from '@lib/data';
+
 interface Props {
   id: string;
   title: string;
@@ -16,35 +18,6 @@ const { id, title, category, format, level, speakers = [], isWorkshop = false, r
 const isLightning = format.toLowerCase().includes('lightning') || format.includes('10min');
 const isKeynote = !category;
 const isHandsOn = format.toLowerCase().includes('hands-on') || format.includes('120min');
-
-// Map category to CSS variable
-function getCategoryColor(cat: string | null): string {
-  if (!cat) return 'var(--accent)';
-  const catLower = cat.toLowerCase();
-  if (catLower.includes('design') || catLower.includes('ui') || catLower.includes('ux') || catLower.includes('front')) return 'var(--cat-front)';
-  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data') || catLower.includes('cloud')) return 'var(--cat-backend)';
-  if (catLower.includes('archi') || catLower.includes('conception')) return 'var(--cat-archi)';
-  if (catLower.includes('iot') || catLower.includes('embarqué')) return 'var(--cat-iot)';
-  if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'var(--cat-tools)';
-  if (catLower.includes('humain') || catLower.includes('human')) return 'var(--cat-human)';
-  if (catLower.includes('ia') || catLower.includes('ai') || catLower.includes('machine')) return 'var(--cat-ai)';
-  if (catLower.includes('alien')) return 'var(--cat-alien)';
-  return 'var(--accent)';
-}
-
-function getCategoryLabel(cat: string | null): string {
-  if (!cat) return 'Keynote';
-  const catLower = cat.toLowerCase();
-  if (catLower.includes('front') || catLower.includes('design') || catLower.includes('ui')) return 'Front';
-  if (catLower.includes('back') || catLower.includes('java') || catLower.includes('data') || catLower.includes('cloud')) return 'Backend';
-  if (catLower.includes('archi') || catLower.includes('conception')) return 'Archi';
-  if (catLower.includes('iot') || catLower.includes('embarqué')) return 'IoT';
-  if (catLower.includes('outil') || catLower.includes('pratique') || catLower.includes('dev')) return 'Tools';
-  if (catLower.includes('humain') || catLower.includes('human')) return 'Human';
-  if (catLower.includes('ia') || catLower.includes('ai') || catLower.includes('machine')) return 'AI';
-  if (catLower.includes('alien')) return 'Alien';
-  return cat.length > 10 ? cat.substring(0, 10) : cat;
-}
 
 function getLevelLabel(lvl: string | null): string {
   if (!lvl) return '';

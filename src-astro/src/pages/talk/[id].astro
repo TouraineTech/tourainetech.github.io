@@ -11,6 +11,7 @@ import {
   isWorkshop,
   isLightning,
   isKeynote,
+  getCategoryColor,
 } from '@lib/data';
 
 export async function getStaticPaths() {
@@ -31,30 +32,6 @@ const abstractHtml = markdownToHtml(talk.abstract);
 const feedbackUrl = buildOpenFeedbackUrl(talk.id, talk.day);
 const formatLabel = getFormatLabel(talk);
 const durationLabel = getDurationLabel(talk);
-
-// Category color mapping
-const categoryColors: Record<string, string> = {
-  'front': 'var(--cat-front)',
-  'backend': 'var(--cat-backend)',
-  'architecture': 'var(--cat-archi)',
-  'conception': 'var(--cat-archi)',
-  'iot': 'var(--cat-iot)',
-  'tools': 'var(--cat-tools)',
-  'outils': 'var(--cat-tools)',
-  'human': 'var(--cat-human)',
-  'ai': 'var(--cat-ai)',
-  'alien': 'var(--cat-alien)',
-};
-
-function getCategoryColor(category: string | null): string {
-  if (!category) return 'var(--accent)';
-  const lowerCat = category.toLowerCase();
-  for (const [key, color] of Object.entries(categoryColors)) {
-    if (lowerCat.includes(key)) return color;
-  }
-  return 'var(--accent)';
-}
-
 const catColor = getCategoryColor(talk.categories);
 ---
 
