@@ -14,6 +14,12 @@ export const siteConfig: SiteConfig = {
   cfpUrl: 'https://conference-hall.io/touraine-tech-2026',
   sponsoringUrl: 'https://sponsoring2026.touraine.tech',
 
+  // Billetterie
+  ticketTiers: [
+    { name: 'Early-bird', price: 50, isSoldOut: true },
+    { name: 'Plein tarif', price: 70, isSoldOut: false },
+  ],
+
   // Informations de l'edition
   edition: {
     year: 2026,
