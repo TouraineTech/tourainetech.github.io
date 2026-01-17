@@ -8,7 +8,8 @@
       "categories": "Conception, architecture",
       "level": "INTERMEDIATE",
       "speakers": [
-        "Alexis_\"Horgix\"_Chotard"
+        "Alexis_\"Horgix\"_Chotard",
+        "Maxime_Guillet"
       ],
       "languages": [
         "fr"
@@ -1130,6 +1131,15 @@
       "github": null
     },
     {
+      "uid": "Maxime_Guillet",
+      "name": "Maxime Guillet",
+      "bio": "Maxime Guillet est ingénieur plateforme avec plus de 15 ans d'expérience en systèmes, réseaux et infrastructures modernes. Il travaille chez PayFit sur des environnements mêlant AWS, Kubernetes, automatisation et production à grande échelle, avec un focus sur la conception de solutions adaptées aux usages des équipes de développement. Ancien SRE chez Aircall et ingénieur systèmes chez Mailjet, il a opéré et fait évoluer des infrastructures critiques.",
+      "company": "PayFit",
+      "picture": null,
+      "twitter": null,
+      "github": null
+    },
+    {
       "uid": "Vincent_Péchon",
       "name": "Vincent Péchon",
       "bio": "Hello ! Moi c'est Vincent, et je combine mon expertise technique avec une vision business pour créer des produits qui ont du sens.\n\nAprès 10 ans d'expérience en entrepreneuriat, je me suis reconverti dans l’informatique pour devenir BA Technico-fonctionnel. \n\nAu quotidien je  : \n✔ Traduis les besoins métiers en solutions techniques\n✔ Fédère les équipes autour d'une vision produit claire\n✔ Contribue à la stratégie tech tout en gardant les mains dans le code\n\nÀ côté, je fais vivre l'écosystème tech :\n🍻 Organisateur du Turon Computer Club - L'afterwork tech qui rassemble 60+ passionnés chaque mois à Tours\n\n🚀 Facilitateur Startup Weekend : 20 à mon actif aujourd’hui\n\n👨‍🏫 Mentor pour jeunes entrepreneurs (PEPITE Centre-Val de Loire)",
@@ -1366,7 +1376,7 @@
     {
       "uid": "Estéban_S",
       "name": "Estéban S",
-      "bio": "Estéban partait sur une carrière dans la cyber-sécurité. Et puis, un vendredi matin de décembre, au cours d'une Nuit de l'Info, il a fait connaissance avec le développement web. Ce canvas blanc où seuls nos idées et notre créativité nous limitent.\n\nDepuis, il ne l'a pas quitté, ça s'est même intensifié. Il partage tout ce qu'il découvre, apprend et construit sur ses réseaux, son blog et parfois sur Twitch, quand le temps lui permet.\n\nMalgré tout, avec l'arrivée de l'IA agentique, il se demande s'il ne devrait pas devenir pâtissier. Toujours un impact positif pour le client avec le gustatif en plus.",
+      "bio": "Estéban partait sur une carrière dans la cyber-sécurité. Et puis, un vendredi matin de décembre, au cours d'une Nuit de l'Info, il a fait connaissance avec le développement web. Dès lors, sa vie a pris un autre tournant.\n\nVue.js et Laravel sont devenus ses meilleurs alliés pour répondre à des besoins complexes avec des solutions simples et élégantes. Dans le même temps, il a découvert le plaisir de transmettre son savoir, que ce soit à travers des conférences, des articles techniques et des lives Twitch.\n\nMalgré tout, avec l'arrivée de l'IA agentique, il se demande s'il ne devrait pas devenir pâtissier. Toujours un impact positif pour le client avec le gustatif en plus.",
       "company": "Takima",
       "picture": null,
       "twitter": null,
