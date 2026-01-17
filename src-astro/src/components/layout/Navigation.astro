@@ -119,12 +119,28 @@ const currentPath = Astro.url.pathname;
   const menu = document.getElementById('nav-mobile-menu');
   const nav = document.querySelector('.nav');
 
+  // Get all focusable elements in the mobile menu
+  function getFocusableElements(): HTMLElement[] {
+    if (!menu) return [];
+    return Array.from(
+      menu.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )
+    );
+  }
+
   function openMenu() {
     menu?.setAttribute('aria-hidden', 'false');
     toggle?.setAttribute('aria-expanded', 'true');
     toggle?.setAttribute('aria-label', 'Fermer le menu');
     nav?.classList.add('nav-open');
     document.body.style.overflow = 'hidden';
+
+    // Focus first focusable element in menu
+    const focusable = getFocusableElements();
+    if (focusable.length > 0) {
+      focusable[0].focus();
+    }
   }
 
   function closeMenu() {
@@ -144,11 +160,41 @@ const currentPath = Astro.url.pathname;
     }
   });
 
-  // Close on Escape key
+  // Handle keyboard navigation (Escape + Focus trap)
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+    const isOpen = toggle?.getAttribute('aria-expanded') === 'true';
+    if (!isOpen) return;
+
+    // Close on Escape
+    if (e.key === 'Escape') {
       closeMenu();
       toggle?.focus();
+      return;
+    }
+
+    // Focus trap on Tab
+    if (e.key === 'Tab') {
+      const focusable = getFocusableElements();
+      // Include toggle button in the trap
+      const allFocusable = toggle ? [toggle, ...focusable] : focusable;
+      if (allFocusable.length === 0) return;
+
+      const firstElement = allFocusable[0];
+      const lastElement = allFocusable[allFocusable.length - 1];
+
+      if (e.shiftKey) {
+        // Shift+Tab: if on first element, go to last
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        }
+      } else {
+        // Tab: if on last element, go to first
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      }
     }
   });
 
@@ -243,7 +289,7 @@ const currentPath = Astro.url.pathname;
 
   .nav-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(106, 191, 173, 0.35);
+    box-shadow: 0 8px 30px rgba(74, 154, 138, 0.35);
   }
 
   .nav-cta-cfp {

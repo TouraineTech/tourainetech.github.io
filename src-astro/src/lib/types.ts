@@ -81,6 +81,11 @@ export interface TimeSlot {
   days: number[];
 }
 
+export interface Room {
+  name: string;
+  capacity: number;
+}
+
 export interface Break {
   id: string;
   title: string;

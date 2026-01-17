@@ -1,7 +1,7 @@
 [
-  "F21",
-  "F22",
-  "Bio",
-  "Physique",
-  "F23"
+  { "name": "F21", "capacity": 250 },
+  { "name": "F22", "capacity": 120 },
+  { "name": "Bio", "capacity": 80 },
+  { "name": "Physique", "capacity": 80 },
+  { "name": "F23", "capacity": 30 }
 ]
