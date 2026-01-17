@@ -2,7 +2,7 @@
 import MetaPill from '@components/ui/MetaPill.astro';
 import { siteConfig } from '@data/config/site';
 
-const { isCfpOpen, isTicketingOpen, isProgrammePublished, cfpDeadline, ticketingUrl, cfpUrl, edition } = siteConfig;
+const { isCfpOpen, isTicketingOpen, isProgrammePublished, cfpDeadline, ticketingUrl, cfpUrl, edition, ticketTiers } = siteConfig;
 ---
 
 <section class="hero">
@@ -61,14 +61,12 @@ const { isCfpOpen, isTicketingOpen, isProgrammePublished, cfpDeadline, ticketing
 
       <div class="hero-ticket-body">
         <div class="hero-ticket-prices">
-          <div class="ticket-price unavailable">
-            <p class="ticket-price-label">Early-bird</p>
-            <p class="ticket-price-value">50<span>€</span></p>
-          </div>
-          <div class="ticket-price">
-            <p class="ticket-price-label">Plein tarif</p>
-            <p class="ticket-price-value">70<span>€</span></p>
-          </div>
+          {ticketTiers.map((tier) => (
+            <div class:list={['ticket-price', { unavailable: tier.isSoldOut }]}>
+              <p class="ticket-price-label">{tier.name}</p>
+              <p class="ticket-price-value">{tier.price}<span>€</span></p>
+            </div>
+          ))}
         </div>
 
         <div class="hero-ticket-addon">

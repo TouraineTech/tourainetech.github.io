@@ -1,3 +1,10 @@
+// Ticket tier configuration
+export interface TicketTier {
+  name: string;
+  price: number;
+  isSoldOut: boolean;
+}
+
 // Site configuration
 export interface SiteConfig {
   // Phases du site
@@ -12,6 +19,9 @@ export interface SiteConfig {
   ticketingUrl: string;
   cfpUrl: string;
   sponsoringUrl: string;
+
+  // Billetterie
+  ticketTiers: TicketTier[];
 
   // Informations de l'edition
   edition: {
