@@ -514,20 +514,6 @@
       ]
     },
     {
-      "id": "cmgmgmsud00ax1epdob8k2loa",
-      "title": "Speechless Live",
-      "abstract": "Speechless Live est un show unique en france. Initialement créé dans la Silicon Valley, il s'exporte maintenant dans le monde et a posé ses valises à Nantes depuis 2017. Cettte session hors norme s'exporte maintenant dans les différentes conférences de France afin d'offrir un temps de pause bien mérité pour les neurones.\n\nL'objectif est simple : faire s'affronter des speakers.euses dans un exercice d'improvisation ! Au programme :\n3 speakers.euses\n2 Juré.ées\nUn thème tiré au sort\nUn sujet donné par le public\nDes slides sans queue ni tête imposées\n\nCette session est donc avant tout une performance et un bon moyen de se détendre entre 2 conférences techniques",
-      "formats": "Conférence (50min)",
-      "categories": "Alien",
-      "level": "BEGINNER",
-      "speakers": [
-        "jean-francois_garreau"
-      ],
-      "languages": [
-        "fr"
-      ]
-    },
-    {
       "id": "cmgkxto2q008h1epdujofui82",
       "title": "Web Components : chronique d'une renaissance",
       "abstract": "En 2012, les Web Components promettaient de structurer nos applications de manière native dans le navigateur : composants réutilisables, interfaces cohérentes, maintenance facilitée. Idéal sur le papier.\n\nMais la réalité a été moins glorieuse. On s'est perdus dans des polyfills instables, un support navigateur désastreux, des ruptures d'API majeures. Résultat : le monde a adopté React, Vue ou Angular, et les Web Components ont disparu des radars.\n\nAujourd'hui, il est facile d'oublier cette histoire. C'est justement pourquoi elle vaut la peine d'être revisitée.\n\nParce qu'en 2026, les choses ont changé. Le support est universel. Le Declarative Shadow DOM permet le SSR. L'écosystème a mûri. Les Web Components ne promettent plus de remplacer vos frameworks, mais d'y coexister intelligemment.\n\nCette session revient sur ce qui a échoué et ce qui fonctionne maintenant, pour vous aider à faire les bons choix.\n\nAu programme :\n- **Les raisons de l'échec initial** : polyfills instables, Shadow DOM v0/v1, absence de réactivité\n- **Ce qui change la donne** : support universel, Declarative Shadow DOM, Form-associated custom elements\n- **L'intégration stratégique** : comment les Web Components s'intègrent avec React, Vue, Angular, et les approches qui marchent (Design Systems, micro-frontends, composants métier)",
@@ -1527,15 +1513,6 @@
       "name": "Laurent Grangeau",
       "bio": "Laurent Grangeau is a Cloud Solution Architect with more than 10+ years of experience. Former Java developer, he has since developed in .NET, with Agile and DevOps mindsets. He has been experimenting with cloud providers for more than 5+ years. Docker enthusiast from the beginning, he has experienced with building microservices and distributed systems. He loves to automate things and run distributed applications at scale.",
       "company": "Google",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "jean-francois_garreau",
-      "name": "jean-francois garreau",
-      "bio": "GDE Web Technology, je travaille pour Sfeir en tant que Engineering Director de l'agence de Nantes. Je suis un fan de la Web Platform et m'amuse dès que je peux avec les standards :). Mon rôle m'amène à ne pas faire que de la tech mais aussi beaucoup de chose en lien avec le management et la stratégie.\n\nEn dehors du travail, je suis co-fondateur du GDG Nantes, organisateur du DevFest Nantes, Women Tech Makers Amabassador\n\nRetrouvez l'ensemble de mes contributions sur https://github.com/jefBinomed",
-      "company": "Sfeir / GDG Nantes",
       "picture": null,
       "twitter": null,
       "github": null
