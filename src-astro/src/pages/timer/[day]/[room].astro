@@ -3,15 +3,20 @@ import Layout from '@layouts/Layout.astro';
 import daysData from '@data/config/days.json';
 import roomsData from '@data/config/rooms.json';
 
+interface Room {
+  name: string;
+  capacity: number;
+}
+
 export function getStaticPaths() {
   const days = daysData as number[];
-  const rooms = roomsData as string[];
+  const rooms = roomsData as Room[];
 
   const paths = [];
   for (const day of days) {
     for (const room of rooms) {
       paths.push({
-        params: { day: String(day), room },
+        params: { day: String(day), room: room.name },
       });
     }
   }
