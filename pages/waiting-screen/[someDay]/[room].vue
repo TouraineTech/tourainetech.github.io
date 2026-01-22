@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import WaintingScreenTalk from '../../../components/WaitingScreenTalk.vue'
+
 const route = useRoute()
 
 const day = computed(() => route.params.someDay as string)
@@ -67,13 +69,14 @@ onMounted(async () => {
 <template>
   <div class="container--white fullWidth">
     Room page {{ room }} for day {{ day }}
+    <img class="logoContainer" src="/img/logo.svg" alt="logo TNT">
     <div
       v-for="talk of talks"
       :id="talk?.talk?.id"
       :key="talk?.talk?.id"
       class="talk--bloc"
     >
-      <TimerTalk :talk="talk" :room="room" />
+      <WaitingScreenTalk :talk="talk" :room="room" />
     </div>
   </div>
 </template>
@@ -93,5 +96,13 @@ onMounted(async () => {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.logoContainer {
+  position: sticky;
+  top: 2vh;
+  left: 95vw;
+  height: 10vh;
+  filter: drop-shadow(0px 0px 5px #fff);
 }
 </style>

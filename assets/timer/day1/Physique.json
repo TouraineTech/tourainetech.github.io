@@ -149,7 +149,8 @@
       "id": "cmicalnsk000w01pdhbaxt8cr",
       "name": "Moins 40% de coûts avec plus de business et sans quitter AWS ? Done !",
       "speakers": [
-        "Alexis_\"Horgix\"_Chotard"
+        "Alexis_\"Horgix\"_Chotard",
+        "Maxime_Guillet"
       ]
     }
   },
@@ -172,7 +173,7 @@
     }
   },
   {
-    "time": "16:40",
+    "time": "17:35",
     "talk": {
       "id": "gouter",
       "name": "",

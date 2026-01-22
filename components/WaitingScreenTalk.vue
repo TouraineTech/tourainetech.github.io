@@ -4,6 +4,9 @@
     <h2 class="chrono" :class="{'blink': lowRemainingTime}">
       {{ remainingTime.asString }}
     </h2>
+    <div class="container--sponsors">
+      <TimerSponsors class="sponsors" />
+    </div>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
@@ -106,6 +109,27 @@ onUnmounted(() => {
   width: 100vw;
   max-width: 100%;
   overflow-x: hidden;
+  background-size: 100vw 100vh;
+}
+
+.timerTalk-F21 {
+  background-image: url('/img/visualArt/fondF21.png');
+  background-size: 100vw 100vh;
+}
+
+.timerTalk-F22 {
+  background-image: url('/img/visualArt/fondF22.png');
+  background-size: 100vw 100vh;
+}
+
+.timerTalk-Physique {
+  background-image: url('/img/visualArt/fondPhysique.png');
+  background-size: 100vw 100vh;
+}
+
+.timerTalk-Bio {
+  background-image: url('/img/visualArt/fondBio.png');
+  background-size: 100vw 100vh;
 }
 
 .timerTalk h1, .timerTalk h2, .timerTalk h3 {
@@ -115,23 +139,25 @@ onUnmounted(() => {
 }
 
 .timerTalk h1 {
-  width: 85%;
+  width: 100%;
   display: inline-block;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
   font-size: 3rem;
-  height: 30vh;
+  height: 5vh;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 25vh;
 }
 
 .timerTalk h2 {
-  font-size: 10rem;
+  font-size: 6rem;
   font-weight: bold;
-  height: 40vh;
+  height: 10vh;
 }
+
 .timerTalk h3 {
-  font-size: large;
+  font-size: xxx-large;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -145,5 +171,20 @@ onUnmounted(() => {
   50% {
     opacity: 0;
   }
+}
+
+.container--sponsors {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  height: 20vh;
+  margin: 2vh 0;
+}
+
+.sponsors {
+  margin: auto;
+  display: flex;
+  align-self: end;
+  height: 100%;
+  max-width: 150%;
 }
 </style>
