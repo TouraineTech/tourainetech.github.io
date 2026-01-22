@@ -90,6 +90,18 @@
   linkedIn: https://www.linkedin.com/showcase/acensi-centre-ouest/
   instagram: https://www.instagram.com/acensisana/
 
+- id: cgi
+  name: CGI
+  type: silver
+  image: cgi.png
+  link: https://www.cgi.com/
+  linkedIn: https://www.linkedin.com/company/cgi/
+  instagram: https://www.instagram.com/cgi_france/
+  desc: |
+    Fondée en 1976, CGI figure parmi les plus importantes entreprises indépendantes de services de conseil en technologie de l'information (TI) et en management au monde. CGI compte 94 000 conseillers et professionnels établis partout dans le monde grâce auxquels l'entreprise offre un portefeuille complet de services et de solutions : des services de conseil en management et en stratégie TI, de l'intégration de systèmes, des services en TI et en gestion des processus d'affaires en mode délégué ainsi que des solutions de propriété intellectuelle.<br/><br/>
+    La collaboration de CGI avec ses clients repose sur un modèle axé sur les relations locales, conjugué à un réseau mondial de prestation de services, qui permet aux clients de réaliser la transformation numérique de leur organisation et d'accélérer l'obtention de résultats.<br/><br/>
+    Au cours de l'exercice financier 2025, CGI a généré des revenus de 15,91 milliards $ CA. Les actions de CGI sont inscrites à la Bourse de Toronto (GIB.A) ainsi qu'à la Bourse de New York (GIB). Apprenez-en davantage sur <a href="https://www.cgi.com/" target="_blank">cgi.com</a>.
+
 - id: catamania
   name: Catamania
   type: bronze
