@@ -4,7 +4,7 @@ import CONFIGURATION from '~/assets/configuration'
 
 const route = useRoute()
 const store = useMainStore()
-const converter = new Showdown.Converter()
+const converter = new Showdown.Converter({ simpleLineBreaks: true })
 
 const rawTalk = computed(() =>
   store.talks.find((t) => t.id === route.params.id),
@@ -180,8 +180,9 @@ div.description--container {
   padding: 2rem;
   margin-top: 2rem;
 
-  p {
+  :deep(p) {
     line-height: 32px;
+    margin-bottom: 1rem;
   }
 }
 
