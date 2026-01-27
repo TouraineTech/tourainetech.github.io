@@ -8,8 +8,7 @@
       "categories": "Conception, architecture",
       "level": "INTERMEDIATE",
       "speakers": [
-        "Alexis_\"Horgix\"_Chotard",
-        "Maxime_Guillet"
+        "Alexis_\"Horgix\"_Chotard"
       ],
       "languages": [
         "fr"
@@ -457,7 +456,7 @@
     {
       "id": "cmgrsifk400rn1epd99q5uw9o",
       "title": "Les Agents : l'ordre dans le chaos des IA",
-      "abstract": "Les LLM sont devenus peu à peu la baguette magique de notre temps.\nAvec l’intégration des outils et des agents intelligents, le champ des possibles est immense.\n\nMais comment ne pas se sentir perdu, tel un peintre qui aurait une palette de couleurs infinie mais aucune idée de comment composer son chef-d’œuvre ?\n\nPour que la richesse de votre palette ne vous entraîne pas dans une Fantasia de votre IT, cherchons ensemble les moyens d’organiser et coordonner ces merveilles pour qu’elles vous accompagnent avec succès dans vos projets.\n\nJe vous propose de partir de quelques agents que nous verrons naître ensemble pour explorer les architectures et workflows qui nous permettront de les assembler en un tout cohérent et efficace.\n\nIntro : Du LLM à l’agent et aux tools\nPrésentation de pattern : sequentiel, superviseur, handoffs, reflection…\nQuelques frameworks : LangGraph, ADK, Strands, CrewAI, Agno\nLive coding : développer des agents, implémenter un des patterns\n\nVous repartirez en ayant découvert les frameworks et les solutions concrètes qui sont dans le paysage actuel que vous pourrez envisager dès aujourd’hui pour que votre univers agentique ne vous apporte plus que du bonheur.",
+      "abstract": "Les LLM sont devenus peu à peu la baguette magique de notre temps.\nAvec l'intégration des outils et des agents intelligents, le champ des possibles est immense.\n\nMais comment ne pas se sentir perdu, tel un peintre qui aurait une palette de couleurs infinie mais aucune idée de comment composer son chef-d'œuvre ?\n\nPour que la richesse de votre palette ne vous entraîne pas dans une Fantasia de votre IT, cherchons ensemble les moyens d'organiser et coordonner ces merveilles pour qu'elles vous accompagnent avec succès dans vos projets.\n\nJe vous propose de partir de quelques agents que nous verrons naître ensemble pour explorer les architectures et workflows qui nous permettront de les assembler en un tout cohérent et efficace.\n\nIntro : Du LLM à l'agent et aux tools\nPrésentation de pattern : sequentiel, superviseur, handoffs, reflection...\nQuelques frameworks : LangGraph, ADK, Strands, CrewAI, Agno\nLive coding : développer des agents, implémenter un des patterns\n\nVous repartirez en ayant découvert les frameworks et les solutions concrètes qui sont dans le paysage actuel que vous pourrez envisager dès aujourd'hui pour que votre univers agentique ne vous apporte plus que du bonheur.",
       "formats": "Conférence (50min)",
       "categories": "Intelligence Artificielle",
       "level": "BEGINNER",
@@ -508,6 +507,20 @@
       "level": "INTERMEDIATE",
       "speakers": [
         "Laurent_Grangeau"
+      ],
+      "languages": [
+        "fr"
+      ]
+    },
+    {
+      "id": "cmgmgmsud00ax1epdob8k2loa",
+      "title": "Speechless Live",
+      "abstract": "Speechless Live est un show unique en france. Initialement créé dans la Silicon Valley, il s'exporte maintenant dans le monde et a posé ses valises à Nantes depuis 2017. Cettte session hors norme s'exporte maintenant dans les différentes conférences de France afin d'offrir un temps de pause bien mérité pour les neurones.\n\nL'objectif est simple : faire s'affronter des speakers.euses dans un exercice d'improvisation ! Au programme :\n3 speakers.euses\n2 Juré.ées\nUn thème tiré au sort\nUn sujet donné par le public\nDes slides sans queue ni tête imposées\n\nCette session est donc avant tout une performance et un bon moyen de se détendre entre 2 conférences techniques",
+      "formats": "Conférence (50min)",
+      "categories": "Alien",
+      "level": "BEGINNER",
+      "speakers": [
+        "jean-francois_garreau"
       ],
       "languages": [
         "fr"
@@ -1131,15 +1144,6 @@
       "github": null
     },
     {
-      "uid": "Maxime_Guillet",
-      "name": "Maxime Guillet",
-      "bio": "Maxime Guillet est ingénieur plateforme avec plus de 15 ans d'expérience en systèmes, réseaux et infrastructures modernes. Il travaille chez PayFit sur des environnements mêlant AWS, Kubernetes, automatisation et production à grande échelle, avec un focus sur la conception de solutions adaptées aux usages des équipes de développement. Ancien SRE chez Aircall et ingénieur systèmes chez Mailjet, il a opéré et fait évoluer des infrastructures critiques.",
-      "company": "PayFit",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
       "uid": "Vincent_Péchon",
       "name": "Vincent Péchon",
       "bio": "Hello ! Moi c'est Vincent, et je combine mon expertise technique avec une vision business pour créer des produits qui ont du sens.\n\nAprès 10 ans d'expérience en entrepreneuriat, je me suis reconverti dans l’informatique pour devenir BA Technico-fonctionnel. \n\nAu quotidien je  : \n✔ Traduis les besoins métiers en solutions techniques\n✔ Fédère les équipes autour d'une vision produit claire\n✔ Contribue à la stratégie tech tout en gardant les mains dans le code\n\nÀ côté, je fais vivre l'écosystème tech :\n🍻 Organisateur du Turon Computer Club - L'afterwork tech qui rassemble 60+ passionnés chaque mois à Tours\n\n🚀 Facilitateur Startup Weekend : 20 à mon actif aujourd’hui\n\n👨‍🏫 Mentor pour jeunes entrepreneurs (PEPITE Centre-Val de Loire)",
@@ -1513,6 +1517,15 @@
       "name": "Laurent Grangeau",
       "bio": "Laurent Grangeau is a Cloud Solution Architect with more than 10+ years of experience. Former Java developer, he has since developed in .NET, with Agile and DevOps mindsets. He has been experimenting with cloud providers for more than 5+ years. Docker enthusiast from the beginning, he has experienced with building microservices and distributed systems. He loves to automate things and run distributed applications at scale.",
       "company": "Google",
+      "picture": null,
+      "twitter": null,
+      "github": null
+    },
+    {
+      "uid": "jean-francois_garreau",
+      "name": "jean-francois garreau",
+      "bio": "GDE Web Technology, je travaille pour Sfeir en tant que Engineering Director de l'agence de Nantes. Je suis un fan de la Web Platform et m'amuse dès que je peux avec les standards :). Mon rôle m'amène à ne pas faire que de la tech mais aussi beaucoup de chose en lien avec le management et la stratégie.\n\nEn dehors du travail, je suis co-fondateur du GDG Nantes, organisateur du DevFest Nantes, Women Tech Makers Amabassador\n\nRetrouvez l'ensemble de mes contributions sur https://github.com/jefBinomed",
+      "company": "Sfeir / GDG Nantes",
       "picture": null,
       "twitter": null,
       "github": null
