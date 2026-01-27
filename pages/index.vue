@@ -9,6 +9,7 @@ const configuration = computed(() => store.configuration)
       <Header2022 />
       <About />
       <Sponsors v-if="configuration.displaySponsors" />
+      <MobileApp v-if="configuration.displayMobileApp" />
       <Register v-if="configuration.isRegisterOpen" />
       <CFP v-if="!configuration.isScheduleOnline" />
       <BeginnerSpeakers v-if="!configuration.isScheduleOnline && configuration.isCfpOpen" />
