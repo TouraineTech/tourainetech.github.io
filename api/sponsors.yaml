@@ -14,6 +14,13 @@
   linkedIn: https://www.linkedin.com/company/harmoniemutuelle
   youtube: https://www.youtube.com/user/HarmonieMutuelle
   instagram: https://www.instagram.com/harmoniemutuelle
+  jobOffers:
+    - id: urbaniste-si
+      title: Urbaniste SI H/F
+      link: https://recrutement.harmonie-mutuelle.fr/fr/annonce/4135527-urbaniste-si-hf-37700-saint-pierre-des-corps
+    - id: ingenieur-securite-operationnel
+      title: Ingénieur sécurité opérationnel H/F
+      link: https://recrutement.harmonie-mutuelle.fr/fr/annonce/4141009-ingenieur-securite-operationnel-hf-37700-saint-pierre-des-corps
 
 - id: clever-cloud
   name: Clever Cloud
