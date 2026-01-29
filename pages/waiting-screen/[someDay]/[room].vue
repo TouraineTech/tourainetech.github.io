@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'naked',
+})
+
 const route = useRoute()
 
 const day = computed(() => route.params.someDay as string)
@@ -65,15 +69,14 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="container--white fullWidth">
-    Room page {{ room }} for day {{ day }}
+  <img src="/img/logo_26_bordered.png" alt="logo TNT" class="waiting-screen--logo" />
+  <div class="waiting-screen--container">
     <div
       v-for="talk of talks"
       :id="talk?.talk?.id"
       :key="talk?.talk?.id"
-      class="talk--bloc"
     >
-      <TimerTalk :talk="talk" :room="room" />
+      <WaitingScreenTalk :talk="talk" :room="room" />
     </div>
   </div>
 </template>
@@ -81,17 +84,18 @@ onMounted(async () => {
 <style lang="scss" scoped>
 @use "~/assets/scss/variables" as *;
 
-.fullWidth {
-  width: 100vw;
-  background-color: $color-primary;
-  color: white;
-  overflow-x: hidden;
+.waiting-screen--logo {
+  position: fixed;
+  top: 0;
+  right: 2.5vw;
+  height: 10vh;
+  z-index: 10;
 }
-.talk--bloc {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
+.waiting-screen--container {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #54988a;
+  color: #fff;
 }
 </style>

@@ -4,9 +4,6 @@
     <h2 class="chrono" :class="{'blink': lowRemainingTime}">
       {{ remainingTime.asString }}
     </h2>
-    <div class="container--sponsors">
-      <TimerSponsors class="sponsors" />
-    </div>
     <h3>Prochain sujet :  {{ talk.nextTalkName }}</h3>
   </div>
 </template>
@@ -147,68 +144,6 @@ onUnmounted(() => {
 @keyframes blinker {
   50% {
     opacity: 0;
-  }
-}
-
-.container--sponsors {
-  display: none;
-}
-
-@media (min-width: 1300px) {
-  .timerTalk {
-    background-size: 100vw 100vh;
-  }
-
-  .timerTalk-F21 {
-    background-image: url('/img/visualArt/fondF21.png');
-    background-size: 100vw 100vh;
-  }
-  .timerTalk-F22 {
-    background-image: url('/img/visualArt/fondF22.png');
-    background-size: 100vw 100vh;
-  }
-  .timerTalk-Physique {
-    background-image: url('/img/visualArt/fondPhysique.png');
-    background-size: 100vw 100vh;
-  }
-  .timerTalk-Bio {
-    background-image: url('/img/visualArt/fondBio.png');
-    background-size: 100vw 100vh;
-  }
-
-  .timerTalk h1 {
-    width: 100%;
-    margin-top: 25vh;
-    height: 5vh;
-    text-align: center;
-  }
-
-  .timerTalk h2 {
-    font-size: 6rem;
-    font-weight: bold;
-    height: 10vh;
-  }
-  .timerTalk h3 {
-    font-size: xxx-large;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .container--sponsors {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: block;
-    position: sticky;
-    height: 20vh;
-    margin: 2vh 0;
-  }
-
-  .sponsors {
-    margin: auto;
-    display: flex;
-    align-self: end;
-    height: 100%;
-    max-width: 150%;
   }
 }
 </style>
