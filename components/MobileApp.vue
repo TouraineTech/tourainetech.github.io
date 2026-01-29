@@ -39,12 +39,7 @@
           </div>
         </div>
         <div ref="mockupRef" class="mobileapp-mockup" :class="{ 'is-visible': mockupVisible }">
-          <div class="mobileapp-phone">
-            <div class="mobileapp-phone-notch" />
-            <div class="mobileapp-phone-screen">
-              <img src="/img/app-mobile.webp" alt="Application mobile Touraine Tech" class="mobileapp-phone-img">
-            </div>
-          </div>
+          <img src="/img/app-mobile.webp" alt="Application mobile Touraine Tech" class="mobileapp-phone-img">
         </div>
       </div>
     </div>
@@ -171,37 +166,11 @@ onMounted(() => {
   }
 }
 
-.mobileapp-phone {
-  width: 180px;
-  height: 340px;
-  background: $color-primary;
-  border-radius: 28px;
-  padding: 10px;
-  position: relative;
-  box-shadow:
-    0 16px 48px rgba(106, 191, 173, 0.25),
-    0 4px 16px rgba(34, 35, 51, 0.15);
-}
-
-.mobileapp-phone-notch {
-  width: 60px;
-  height: 6px;
-  background: #444;
-  border-radius: 4px;
-  margin: 4px auto 8px;
-}
-
-.mobileapp-phone-screen {
-  border-radius: 18px;
-  height: calc(100% - 18px);
-  overflow: hidden;
-}
-
 .mobileapp-phone-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 360px;
+  height: auto;
   display: block;
+  filter: drop-shadow(0 16px 48px rgba(106, 191, 173, 0.25)) drop-shadow(0 4px 16px rgba(34, 35, 51, 0.15));
 }
 
 // Responsive
@@ -227,14 +196,8 @@ onMounted(() => {
     justify-content: center;
   }
 
-  .mobileapp-phone {
-    width: 140px;
-    height: 260px;
-    border-radius: 22px;
-  }
-
-  .mobileapp-phone-screen {
-    border-radius: 14px;
+  .mobileapp-phone-img {
+    width: 200px;
   }
 }
 </style>
