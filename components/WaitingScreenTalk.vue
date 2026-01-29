@@ -33,6 +33,10 @@
             :alt="sponsor.name"
           />
         </div>
+        <div class="talk--sponsors--institutional">
+          <img src="/img/sponsors/logo-polytech.png" alt="Polytech" />
+          <img src="/img/sponsors/logo-UFR.png" alt="UFR" />
+        </div>
       </div>
       <div class="illustration">
         <img :src="`/img/visualArt/illustration_2026.png`" alt="illustration" />
@@ -152,6 +156,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: center;
   gap: 5vh;
+  z-index: 2;
 }
 
 .waiting-screen--title {
@@ -226,7 +231,8 @@ onUnmounted(() => {
 
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--gold,
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--silver,
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze {
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--institutional {
   display: flex;
   gap: 2vh;
   border: 2px solid;
@@ -240,23 +246,26 @@ onUnmounted(() => {
   grid-row: 1 / 3;
   padding: 2vh 2vw;
   flex-direction: column;
+  align-items: center;
   border-color: #ffc300;
 }
 
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--gold img ,
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--silver img ,
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze img {
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--gold img,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--silver img,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze img,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--institutional img {
   object-fit: contain;
 }
 
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--gold img {
-  max-width: 100%;
+  max-width: 80%;
   height: calc((100% - 2vh) / 2);
 }
 
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--silver,
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze {
-  justify-content: center;
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--institutional {
+  justify-content: space-around;
   padding: 1vh 2vw;
 }
 
@@ -267,15 +276,22 @@ onUnmounted(() => {
 }
 
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze {
-  grid-column: 2 / 4;
+  grid-column: 2;
   grid-row: 2;
   border-color: #bb9a93;
 }
 
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--institutional {
+  grid-column: 3;
+  grid-row: 2;
+  border-color: #6abfad;
+}
+
 .waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--silver img,
-.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze img  {
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--bronze img,
+.waiting-screen--container .talk--sponsors--container .talk--sponsors .talk--sponsors--institutional img  {
   height: 100%;
-  max-width: calc((100% - 4vw) / 5);
+  max-width: 10vw;
 }
 
 .waiting-screen--container .waiting-screen--next-talk {
