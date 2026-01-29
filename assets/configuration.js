@@ -16,5 +16,6 @@ export default {
     isPhotoOnline: false,
     nbEdition: 8,
     displaySponsors : true,
+    displayMobileApp: true,
     displayBeginnerSpeakers: true,
 }
