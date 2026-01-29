@@ -24,25 +24,17 @@
               href="https://apps.apple.com/app/id1599891078"
               target="_blank"
               rel="noopener noreferrer"
-              class="mobileapp-store-btn"
-              aria-label="Télécharger sur l'App Store"
+              class="mobileapp-store-link"
             >
-              <svg class="mobileapp-store-icon" width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
-                <path d="M16.52 12.46c-.03-3.12 2.55-4.62 2.67-4.7-1.45-2.12-3.72-2.41-4.53-2.45-1.93-.2-3.76 1.13-4.74 1.13-.98 0-2.49-1.1-4.1-1.08-2.11.03-4.06 1.23-5.15 3.12-2.19 3.8-.56 9.44 1.58 12.53 1.05 1.51 2.29 3.21 3.93 3.15 1.58-.06 2.17-1.02 4.08-1.02 1.9 0 2.44 1.02 4.1.99 1.7-.03 2.77-1.54 3.81-3.06 1.2-1.75 1.69-3.45 1.72-3.54-.04-.01-3.3-1.27-3.33-5.03zM13.43 3.44C14.3 2.38 14.89.95 14.74-.5c-1.17.05-2.59.78-3.43 1.76-.75.87-1.41 2.26-1.23 3.59 1.31.1 2.64-.66 3.35-1.41z" />
-              </svg>
-              <span class="mobileapp-store-name">App Store</span>
+              <img src="/img/badge-app-store.svg" alt="Télécharger sur l'App Store" class="mobileapp-store-badge mobileapp-store-badge--apple">
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=to.chapi.tnt"
               target="_blank"
               rel="noopener noreferrer"
-              class="mobileapp-store-btn"
-              aria-label="Disponible sur Google Play"
+              class="mobileapp-store-link"
             >
-              <svg class="mobileapp-store-icon" width="20" height="22" viewBox="0 0 20 22" fill="currentColor">
-                <path d="M.54.94L11.32 11 .54 21.06C.2 20.56 0 19.94 0 19.24V2.76C0 2.06.2 1.44.54.94zM12.6 12.28l2.82 2.82-9.8 5.56L12.6 12.28zM15.87 9.47l3.25 1.84c.56.32.88.8.88 1.36 0 .56-.32 1.04-.88 1.36l-3.72 2.1-3.08-3.08 3.55-3.58zM5.62 1.34l9.8 5.56-2.82 2.82L5.62 1.34z" />
-              </svg>
-              <span class="mobileapp-store-name">Google Play</span>
+              <img src="/img/badge-google-play.png" alt="Disponible sur Google Play" class="mobileapp-store-badge">
             </a>
           </div>
         </div>
@@ -143,33 +135,27 @@ onMounted(() => {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.mobileapp-store-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: $color-primary;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.6rem 1.4rem;
-  border-radius: 12px;
-  transition: transform 0.15s, box-shadow 0.15s;
+.mobileapp-store-link {
+  display: block;
+  transition: transform 0.15s, opacity 0.15s;
 
   &:hover {
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 20px rgba(34, 35, 51, 0.25);
+    opacity: 0.9;
   }
 }
 
-.mobileapp-store-icon {
-  flex-shrink: 0;
-}
+.mobileapp-store-badge {
+  height: 60px;
+  width: auto;
+  display: block;
 
-.mobileapp-store-name {
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.2;
+  &--apple {
+    height: 46px;
+  }
 }
 
 // Phone mockup
