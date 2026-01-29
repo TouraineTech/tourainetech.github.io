@@ -1641,7 +1641,7 @@
   {
     "id": "cmh35770c000i1eoczsnuq2x2",
     "proposalNumber": 157,
-    "title": "Fatiguée de la POO ? Passez à la DOP !",
+    "title": "Fatigués de la POO ? Passez à la DOP !",
     "abstract": "Depuis Java 8 et l'introduction de d'une dose de programmation _fonctionnelle_, le langage a beaucoup évoluer.\n\nChaque _release_ ou presque apporte son lot de nouveautés qui nous permettent de repenser nos applications, qui nous donnent de nouveaux outils.\n\nLa **P**rogrammation **O**rientée **D**onnées (***Data Oriented Programming***) représente un paradigme émergent qui privilégie la manipulation des données plutôt que l’encapsulation des comportements. \n\n**Ce guide pratique** -sous forme de refactoring- explore les étapes clés pour transformer du code Java, d'une approche traditionnelle, orientés objet vers une approche orientée données.\n\n🏹 Armez vos arcs de nouvelles cordes et repartez avec un kata à faire en équipe.",
     "submittedAt": "2025-10-23T08:10:42.104Z",
     "deliberationStatus": "ACCEPTED",
