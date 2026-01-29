@@ -69,10 +69,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="fullWidth">
-    <div class="talk--header">
-      <img src="/img/logo_TNT26.png" alt="logo TNT" />
-    </div>
+  <img src="/img/logo_26_bordered.png" alt="logo TNT" class="waiting-screen--logo" />
+  <div class="waiting-screen--container">
     <div
       v-for="talk of talks"
       :id="talk?.talk?.id"
@@ -86,26 +84,18 @@ onMounted(async () => {
 <style lang="scss" scoped>
 @use "~/assets/scss/variables" as *;
 
-.fullWidth {
+.waiting-screen--logo {
+  position: fixed;
+  top: 0;
+  right: 2.5vw;
+  height: 10vh;
+  z-index: 10;
+}
+
+.waiting-screen--container {
   width: 100vw;
   overflow-x: hidden;
   background-color: #54988a;
   color: #fff;
-}
-
-.talk--header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 15vh;
-  display: flex;
-  justify-content: flex-end;
-  padding: 2.5vh 2vw;
-  z-index: 10;
-}
-
-.talk--header img {
-  height: 5vh;
 }
 </style>
