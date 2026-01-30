@@ -82,6 +82,24 @@ onMounted(async () => {
 <style lang="scss" scoped>
 @use "~/assets/scss/variables" as *;
 
+/* Chrome / Chromium / Edge */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+/* Firefox (au cas où) */
+html {
+    scrollbar-width: none;
+}
+
+/* Empêche tout scroll visuel */
+body {
+    overflow: hidden;
+}
+
+  
 .fullWidth {
   width: 100vw;
   background-color: $color-primary;
