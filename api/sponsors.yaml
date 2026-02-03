@@ -96,6 +96,13 @@
     Envie d'en savoir plus ? N'hésitez pas à venir nous voir à notre stand !
   linkedIn: https://www.linkedin.com/showcase/acensi-centre-ouest/
   instagram: https://www.instagram.com/acensisana/
+  jobOffers:
+    - id: dev-java
+      title: Développeur Java H/F
+      link: https://www.hellowork.com/fr-fr/emplois/67501490.html
+    - id: tech-lead-java
+      title: Tech Lead Java H/F
+      link: https://www.hellowork.com/fr-fr/emplois/74472344.html
 
 - id: cgi
   name: CGI
