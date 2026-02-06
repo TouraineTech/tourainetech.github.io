@@ -105,6 +105,10 @@ export default defineNuxtConfig({
         ...DAYS.flatMap((day: string) =>
           ROOMS.map((room: string) => `/timer/${day}/${room}`),
         ),
+        ...DAYS.map((day: string) => `/waiting-screen/${day}`),
+        ...DAYS.flatMap((day: string) =>
+          ROOMS.map((room: string) => `/waiting-screen/${day}/${room}`),
+        ),
       ],
     },
   },
