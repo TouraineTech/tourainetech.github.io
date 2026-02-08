@@ -1114,7 +1114,7 @@
       "id": "keynoteCloture2",
       "title": "Keynote de clôture",
       "abstract": "Keynote de clôture du vendredi",
-      "formats": "Conférence (50min)",
+      "formats": "Conférence (20min)",
       "categories": null,
       "level": null,
       "speakers": []
@@ -1899,6 +1899,7 @@
   "formats": [
     "Conférence (50min)",
     "Lightning (15min)",
-    "Hands-on (120min)"
+    "Hands-on (120min)",
+    "Conférence (20min)"
   ]
 }
