@@ -181,7 +181,7 @@ function getOpenFeedbackUrl(talkId: string, talkDay: number) {
         <h3>{{ room }}</h3>
       </div>
       <div v-for="time of times" :key="time.time" class="schedule-time--cell">
-        {{ time.time }}
+        {{ time.hiddenDays?.includes(day) ? '' : time.time }}
       </div>
       <div
         v-for="cell of breaks"

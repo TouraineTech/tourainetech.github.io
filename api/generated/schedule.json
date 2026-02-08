@@ -1121,14 +1121,13 @@
     "id": "keynoteCloture2",
     "title": "Keynote de clôture",
     "categories": null,
-    "formats": "Conférence (50min)",
+    "formats": "Conférence (20min)",
     "rooms": [
       1,
       2
     ],
     "times": [
-      21,
-      22
+      21
     ],
     "day": 2,
     "level": null
