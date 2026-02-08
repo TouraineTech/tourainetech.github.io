@@ -53,6 +53,7 @@ interface Time {
   timeIndex: string
   time: string
   days: number[]
+  hiddenDays?: number[]
 }
 
 interface Break {
