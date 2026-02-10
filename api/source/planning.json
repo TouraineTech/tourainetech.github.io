@@ -614,9 +614,9 @@
         "rooms": [
           "F21"
         ],
-        "id": "cmgjlphf700501epdnp49avm7",
-        "title": "IA générative et réchauffement climatique : comment réduire la facture?",
-        "speaker": "Emilie GREFF"
+        "id": "cmfl0vubz03xuml1ejt5ihvek",
+        "title": "Another World, une belle leçon d’architecture logicielle",
+        "speaker": "Olivier PONCET"
       },
       {
         "rooms": [
@@ -667,14 +667,6 @@
         "id": "cmfl90bm104f5ml1egkfcc0by",
         "title": "Rust pour le développement d'applications métier haut-niveau ! 🦀",
         "speaker": "Stéphane Trebel"
-      },
-      {
-        "rooms": [
-          "Physique"
-        ],
-        "id": "cmfl0vubz03xuml1ejt5ihvek",
-        "title": "Another World, une belle leçon d’architecture logicielle",
-        "speaker": "Olivier PONCET"
       }
     ],
     "17:40": [
