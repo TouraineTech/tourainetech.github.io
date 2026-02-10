@@ -1006,9 +1006,9 @@
     "level": "BEGINNER"
   },
   {
-    "id": "cmgjlphf700501epdnp49avm7",
-    "title": "IA générative et réchauffement climatique : comment réduire la facture?",
-    "categories": "Intelligence Artificielle",
+    "id": "cmfl0vubz03xuml1ejt5ihvek",
+    "title": "Another World, une belle leçon d’architecture logicielle",
+    "categories": "Alien",
     "formats": "Conférence (50min)",
     "rooms": [
       1
@@ -1017,7 +1017,7 @@
       17
     ],
     "day": 2,
-    "level": "INTERMEDIATE"
+    "level": "BEGINNER"
   },
   {
     "id": "cmfnnbo2e07kbml1esffxazcj",
@@ -1102,20 +1102,6 @@
     ],
     "day": 2,
     "level": "INTERMEDIATE"
-  },
-  {
-    "id": "cmfl0vubz03xuml1ejt5ihvek",
-    "title": "Another World, une belle leçon d’architecture logicielle",
-    "categories": "Alien",
-    "formats": "Conférence (50min)",
-    "rooms": [
-      4
-    ],
-    "times": [
-      19
-    ],
-    "day": 2,
-    "level": "BEGINNER"
   },
   {
     "id": "keynoteCloture2",

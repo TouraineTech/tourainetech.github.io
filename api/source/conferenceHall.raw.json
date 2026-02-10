@@ -2602,47 +2602,6 @@
     }
   },
   {
-    "id": "cmgjlphf700501epdnp49avm7",
-    "proposalNumber": 115,
-    "title": "IA générative et réchauffement climatique : comment réduire la facture?",
-    "abstract": "L’IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…\nLors de cette présentation, nous passerons en revue le véritable coût écologique de l’IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.\nL’objectif : comprendre l’impact de l’IA générative sur l’environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte.",
-    "submittedAt": "2025-10-09T15:57:25.744Z",
-    "deliberationStatus": "ACCEPTED",
-    "confirmationStatus": "CONFIRMED",
-    "publicationStatus": "PUBLISHED",
-    "level": "INTERMEDIATE",
-    "references": "Conférence déjà donnée 2-3 fois en entreprise au total 30-40 personnes de différents profils (généraliste, experts).\nLe format de base est le suivant mais est facilement adaptable:\n- 3 min : les enjeux environnementaux (limites planétaires, le visage du changement climatique)\n- 3 min : lever le voile sur la magie de l'IA - les étapes de développement (les étapes de développement d'un LLM, les infrastructures)\n- 3 min : l'impact de l'IA sur l'environnement (le manque de transparence des grands acteurs, exemple de Lama - voir étude de Carbone4, les besoins en ressources en fonction des étapes, les enjeux sur les limites planétaires)\n- 15 min : Action : les bonnes pratiques, les solutions pour réduire l'impact tout au long de la chaine (cloud, algo, code), les outils de mesure (codecarbon, ecologits) et d'optimisation (pruna.ai, les techniques d'optimisations)\n- 5 min : questions",
-    "formats": [
-      "Conférence (50min)"
-    ],
-    "categories": [
-      "Intelligence Artificielle"
-    ],
-    "tags": [],
-    "languages": [
-      "fr"
-    ],
-    "speakers": [
-      {
-        "id": "cmgjlphez004z1epdoxhg4rna",
-        "name": "Emilie GREFF",
-        "bio": null,
-        "company": null,
-        "references": null,
-        "picture": "https://lh3.googleusercontent.com/a/ACg8ocK5V6R7O66ZZSJfGMdGb1XlxkvFi72r319FpiWU4Fu8uRTb0eU=s96-c",
-        "location": null,
-        "email": "emilie.greff@octo.com",
-        "socialLinks": [],
-        "survey": []
-      }
-    ],
-    "review": {
-      "average": 3.7142857142857144,
-      "positives": 0,
-      "negatives": 0
-    }
-  },
-  {
     "id": "cmgi079ue00271emj06wwt4nr",
     "proposalNumber": 110,
     "title": "La face cachée de la performance des équipes de développements",

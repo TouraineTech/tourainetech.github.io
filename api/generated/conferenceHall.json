@@ -542,20 +542,6 @@
       ]
     },
     {
-      "id": "cmgjlphf700501epdnp49avm7",
-      "title": "IA générative et réchauffement climatique : comment réduire la facture?",
-      "abstract": "L’IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…\nLors de cette présentation, nous passerons en revue le véritable coût écologique de l’IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.\nL’objectif : comprendre l’impact de l’IA générative sur l’environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte.",
-      "formats": "Conférence (50min)",
-      "categories": "Intelligence Artificielle",
-      "level": "INTERMEDIATE",
-      "speakers": [
-        "Emilie_GREFF"
-      ],
-      "languages": [
-        "fr"
-      ]
-    },
-    {
       "id": "cmgi079ue00271emj06wwt4nr",
       "title": "La face cachée de la performance des équipes de développements",
       "abstract": "En tant que coach craft et devops, j'accompagne au quotidien des équipes de développements. Je suis à leur écoute, je prends en compte leur besoin et j'essaie de comprendre ce qui les ralentit. \nFort de mon expérience depuis plus de 17 ans maintenant, j'ai identifié petit à petit les \"vrais\" bloqueurs ou ralentisseurs de ces équipes. Et j'ai découvert notamment qu'un développeur était interrompu **1 fois toutes les 4 minutes dans son quotidien de travail**, soit environ 15 fois par heure. \nCela a pour effet d'avoir un impact négatif sur votre mémoire de travail et donc sur votre performance. \n\nAlors faut il encore penser que ce qui ralentit le plus les équipes, ce sont les processus ou les outils ?\n\nA travers cette conférence, je souhaite vous révéler les **4/5 ralentisseurs invisibles les plus impactants** dans votre quotidien. Nous comprendrons ensemble également pas à pas leur impact négatif sur les équipes et sur les temps de réalisation de nos tâches. Tout cela avec l'appui d'étude et de références scientifiques pertinentes. Pour terminer, vous présenterai également les perspectives possibles en 2026 qui pourraient être mise dans votre organisation.",
@@ -1531,15 +1517,6 @@
       "name": "Sébastien Ferrer",
       "bio": "Sébastien est ingénieur logiciel chez OVHcloud à Nantes, dans l'équipe SIA (Service Integration & Automation).\nExerçant ce métier depuis maintenant plus de 12 ans, il a toujours aimé vulgariser et partager ses connaissances en public.\n\nIl anime actuellement des conférences autour de la cybersécurité, de la gestion d'incidents et divers autres sujets techniques.\nPortant un grand intérêt pour l'enseignement, il intervient également régulièrement dans certaines écoles et universités.\n\nIl est également passionné par le théâtre, ayant joué 10 ans dans une troupe en région parisienne.",
       "company": "OVHcloud",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Emilie_GREFF",
-      "name": "Emilie GREFF",
-      "bio": "",
-      "company": "",
       "picture": null,
       "twitter": null,
       "github": null
