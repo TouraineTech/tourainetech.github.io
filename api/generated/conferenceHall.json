@@ -644,13 +644,13 @@
     },
     {
       "id": "cmgapz81z00gd1elb5e5rp0qc",
-      "title": "🤖 Astro GitOps - Press ⓧ to start",
-      "abstract": "Tout le monde dit faire du GitOps, mais le seul point commun c'est qu'à la fin on met tout dans Git… 🤔\n\nEn repartant de la base du GitOps, de son idée fondatrice à son utilisation quotidienne, nous découvrirons les bonnes et mauvaises pratiques qui façonnent cet univers.\nAu travers d'exemples dans différents domaines (Kubernetes, infrastructure, secret management), nous verrons concrètement comment appliquer cette philosophie.          \n\nEmbarquons pour ce voyage vers la production, accompagné de nos bots favoris 🤖 !",
+      "title": "Design de persuasion : De la séduction à l'engagement",
+      "abstract": "Qu’est ce qui fait la réussite d’un produit ? C’est une vaste question que l’on se pose tous lors du démarrage d’un projet. Et l’on pense - souvent à tort - que l’idée initiale est la clef du succès. On devient alors obnubilé par les statistiques (de clic, de rebond, etc.) en oubliant d'analyser l'expérience de nos utilisateurs. \n\nB.J Fogg, scientifique du comportement, pense que la clé se trouve dans l'engagement réel que votre produit arrive à susciter à vos utilisateurs. Il suggère d’utiliser des techniques de facilitation et de persuasion afin de créer ce lien et d'initier une relation entre votre service et vos utilisateurs.\n\nCette présentation est une introduction au design de persuasion et regroupe les principaux mécanismes à utiliser dans vos prochaines conceptions.\n",
       "formats": "Conférence (50min)",
-      "categories": "Backend, Cloud, Big Data",
+      "categories": "Front web, design, UI, UX",
       "level": "INTERMEDIATE",
       "speakers": [
-        "Kevin_Davin"
+        "Estelle_Landry_☀️"
       ],
       "languages": [
         "fr"
@@ -1585,10 +1585,10 @@
       "github": null
     },
     {
-      "uid": "Kevin_Davin",
-      "name": "Kevin Davin",
-      "bio": "Google Developer Expert on Google Cloud & Kotlin, Gitlab Hero, I am above all passionate about tech, languages, infrastructure, and automation.\n\nOn a daily basis, I work with languages such as Kotlin, Java, SQL, and YAML.\nLeveraging the power of the Google Kubernetes Engine and GitLab's Continuous Integration, I deploy and manage applications seamlessly.\n\nI am an ardent advocate of agility and DevOps, and I had the privilege of guiding teams in adopting these principles successfully.\n\nFrom code quality analysis to unit or end-to-end tests setup all the way to continuous deployment and operation, I ensure a project's journey from inception to production is smooth and efficient.\n\nCurrently, I'm Principal Software Engineer at Gradle, focusing on the development of Develocity. This groundbreaking product enhances developer productivity by reducing build and test times, while also providing valuable insights into all aspects of the development process.",
-      "company": "Gradle",
+      "uid": "Estelle_Landry_☀️",
+      "name": "Estelle Landry ☀️",
+      "bio": "Estelle Landry est Product Manager avec plus de 10 ans d’expérience dans la conception de produits numériques à fort impact.\n\nAncienne développeuse, elle travaille à l’intersection du business, de la tech et des besoins utilisateurs, avec une expertise particulière sur les produits éducatifs et les environnements complexes.\n\nSpeakeuse et organisatrice d’événements tech, elle partage régulièrement ses retours d’expérience autour du product discovery, de la culture produit et de la collaboration produit–tech–design.",
+      "company": "Pix",
       "picture": null,
       "twitter": null,
       "github": null
@@ -1742,15 +1742,6 @@
       "name": "Yann-Thomas Le Moigne",
       "bio": "Développeur informatique passionné par les technologies JavaScript, Angular, Svelte, Java, Spring, Quarkus...\n\nJe suis curieux et j'aime beaucoup ce qui peut me faciliter la vie. C'est pourquoi je propose de partager mon expérience sur certains outils de développement.\n\nJe suis également investi dans plusieurs associations :\n- Angular Devs France : Partage de contenu autour du framework Angular en francophone.\n- Ng Baguette Conf : Co organisateur de la conférence.\n- Ess 37 : Ecole de secours et de sauvetage - Formateur PSC\n- SPV : Sapeur Pompier Volontaire",
       "company": "Apside TOP",
-      "picture": null,
-      "twitter": null,
-      "github": null
-    },
-    {
-      "uid": "Estelle_Landry_☀️",
-      "name": "Estelle Landry ☀️",
-      "bio": "Estelle Landry est Product Manager avec plus de 10 ans d’expérience dans la conception de produits numériques à fort impact.\n\nAncienne développeuse, elle travaille à l’intersection du business, de la tech et des besoins utilisateurs, avec une expertise particulière sur les produits éducatifs et les environnements complexes.\n\nSpeakeuse et organisatrice d’événements tech, elle partage régulièrement ses retours d’expérience autour du product discovery, de la culture produit et de la collaboration produit–tech–design.",
-      "company": "Pix",
       "picture": null,
       "twitter": null,
       "github": null

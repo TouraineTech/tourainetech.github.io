@@ -643,14 +643,14 @@
     },
     "cmgapz81z00gd1elb5e5rp0qc": {
       "id": "cmgapz81z00gd1elb5e5rp0qc",
-      "title": "🤖 Astro GitOps - Press ⓧ to start",
+      "title": "Design de persuasion : De la séduction à l'engagement",
       "trackTitle": "Bio",
       "tags": [
-        "Backend, Cloud, Big Data",
+        "Front web, design, UI, UX",
         "Conférence (50min)"
       ],
       "speakers": [
-        "Kevin_Davin"
+        "Estelle_Landry_☀️"
       ],
       "startTime": "2026-02-13T11:10:00+01:00",
       "endTime": "2026-02-13T12:00:00+01:00"
@@ -1389,10 +1389,10 @@
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Sylvain_Gougouzian.png",
       "socials": []
     },
-    "Kevin_Davin": {
-      "id": "Kevin_Davin",
-      "name": "Kevin Davin",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Kevin_Davin.png",
+    "Estelle_Landry_☀️": {
+      "id": "Estelle_Landry_☀️",
+      "name": "Estelle Landry ☀️",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Estelle_Landry_☀️.png",
       "socials": []
     },
     "Antoine_CARON": {
@@ -1495,12 +1495,6 @@
       "id": "Yann-Thomas_Le_Moigne",
       "name": "Yann-Thomas Le Moigne",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Yann-Thomas_Le_Moigne.png",
-      "socials": []
-    },
-    "Estelle_Landry_☀️": {
-      "id": "Estelle_Landry_☀️",
-      "name": "Estelle Landry ☀️",
-      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Estelle_Landry_☀️.png",
       "socials": []
     },
     "Emilie_Goubin": {
