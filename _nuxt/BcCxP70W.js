@@ -1,0 +1,1 @@
+import{L as a,M as s,N as r,O as u,P as o}from"./Zp4-u3Fb.js";function i(e){const t=e||s();return t?.ssrContext?.head||t?.runWithContext(()=>{if(r())return u(o)})}function x(e,t={}){const n=i(t.nuxt);if(n)return a(e,{head:n,...t})}export{x as u};
