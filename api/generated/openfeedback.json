@@ -1,5 +1,18 @@
 {
   "sessions": {
+    "keynoteOuverture1": {
+      "id": "keynoteOuverture1",
+      "title": "Debuggons la démocratie",
+      "trackTitle": "F21",
+      "tags": [
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Clement_Hammel"
+      ],
+      "startTime": "2026-02-12T09:00:00+01:00",
+      "endTime": "2026-02-12T09:50:00+01:00"
+    },
     "cmi8qyrm000hz1eqwm1ote3eh": {
       "id": "cmi8qyrm000hz1eqwm1ote3eh",
       "title": "1h50min pour créer une App Front avec la Clean Archigonale ©️",
@@ -541,6 +554,33 @@
       ],
       "startTime": "2026-02-12T16:45:00+01:00",
       "endTime": "2026-02-12T17:35:00+01:00"
+    },
+    "keynoteCloture1": {
+      "id": "keynoteCloture1",
+      "title": "Speechless",
+      "trackTitle": "F21",
+      "tags": [
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Jean-Francois_Garreau"
+      ],
+      "startTime": "2026-02-12T17:40:00+01:00",
+      "endTime": "2026-02-12T18:30:00+01:00"
+    },
+    "keynoteOuverture2": {
+      "id": "keynoteOuverture2",
+      "title": "Gray Hat, Black Hat, Users : comment protéger une plateforme de 85M d'utilisateurs face à des menaces hybrides",
+      "trackTitle": "F21",
+      "tags": [
+        "Conférence (50min)"
+      ],
+      "speakers": [
+        "Mikael_Robert",
+        "Yohan"
+      ],
+      "startTime": "2026-02-13T09:00:00+01:00",
+      "endTime": "2026-02-13T09:50:00+01:00"
     },
     "cmfma87kf05uhml1e0xx58mjb": {
       "id": "cmfma87kf05uhml1e0xx58mjb",
@@ -1567,6 +1607,30 @@
       "id": "Simon_Bernardin",
       "name": "Simon Bernardin",
       "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Simon_Bernardin.png",
+      "socials": []
+    },
+    "Clement_Hammel": {
+      "id": "Clement_Hammel",
+      "name": "Clément Hammel",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Clement_Hammel.png",
+      "socials": []
+    },
+    "Jean-Francois_Garreau": {
+      "id": "Jean-Francois_Garreau",
+      "name": "Jean-François Garreau",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Jean-Francois_Garreau.png",
+      "socials": []
+    },
+    "Mikael_Robert": {
+      "id": "Mikael_Robert",
+      "name": "Mikael Robert",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Mikael_Robert.png",
+      "socials": []
+    },
+    "Yohan": {
+      "id": "Yohan",
+      "name": "Yohan",
+      "photoUrl": "https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/Yohan.png",
       "socials": []
     }
   }

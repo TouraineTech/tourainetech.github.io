@@ -16,6 +16,7 @@ const __dirname = path.dirname(__filename);
 // Load data
 const planning = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/planning.json'), 'utf8'));
 const { talks, speakers: speakersData } = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/conferenceHall.json'), 'utf8'));
+const keynotes = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/keynotes.json'), 'utf8'));
 
 // Config
 const DATE_BY_DAY = {
@@ -24,13 +25,13 @@ const DATE_BY_DAY = {
 };
 
 const EXCLUDED_IDS = [
-  'keynoteCloture1', 'keynoteCloture2',
-  'keynoteOuverture1', 'keynoteOuverture2',
+  'keynoteCloture2',
   'dummy1', 'dummy2'
 ];
 
-// Build talk lookup
+// Build talk lookup (conferenceHall talks + keynotes fallback)
 const talksById = Object.fromEntries(talks.map(t => [t.id, t]));
+const keynotesById = Object.fromEntries(keynotes.map(k => [k.id, k]));
 
 // Extract duration from format string (e.g., "Conférence (50min)" → 50)
 function getDuration(formatStr) {
@@ -53,7 +54,7 @@ for (const [dayName, slots] of Object.entries(planning)) {
     for (const slot of sessionList) {
       if (EXCLUDED_IDS.includes(slot.id)) continue;
 
-      const talk = talksById[slot.id];
+      const talk = keynotesById[slot.id] || talksById[slot.id];
       if (!talk) continue;
 
       const startTime = parseISO(`${dateStr}T${timeStr}:00`);
@@ -62,7 +63,7 @@ for (const [dayName, slots] of Object.entries(planning)) {
 
       sessions[slot.id] = {
         id: slot.id,
-        title: slot.title,
+        title: talk.title || slot.title,
         trackTitle: slot.rooms[0] || 'Unknown',
         tags: [talk.categories, talk.formats].filter(Boolean),
         speakers: talk.speakers || [],
@@ -90,6 +91,25 @@ for (const speaker of speakersData) {
     photoUrl: `https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/${speaker.uid}.png`,
     socials,
   };
+}
+
+// Add keynote speakers (not in conferenceHall)
+const keynoteSpeakers = {
+  'Clement_Hammel': { name: 'Clément Hammel' },
+  'Jean-Francois_Garreau': { name: 'Jean-François Garreau' },
+  'Mikael_Robert': { name: 'Mikael Robert' },
+  'Yohan': { name: 'Yohan' },
+};
+
+for (const [uid, info] of Object.entries(keynoteSpeakers)) {
+  if (!speakers[uid]) {
+    speakers[uid] = {
+      id: uid,
+      name: info.name,
+      photoUrl: `https://raw.githubusercontent.com/TouraineTech/tourainetech.github.io/develop/public/img/speakers/${uid}.png`,
+      socials: [],
+    };
+  }
 }
 
 // Write output

@@ -246,7 +246,7 @@ function getOpenFeedbackUrl(talkId: string, talkDay: number) {
             </p>
           </span>
           <a
-            v-if="!talk.id.includes('keynote') && !talk.id.includes('dummy')"
+            v-if="talk.id !== 'keynoteCloture2' && !talk.id.includes('dummy')"
             :href="getOpenFeedbackUrl(talk.id, talk.day)"
             target="_blank"
             class="schedule-talk-feedback"
