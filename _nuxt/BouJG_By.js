@@ -1,0 +1,1 @@
+import{_ as o}from"./D4dPYpZR.js";import{f as t,c,b as s,o as _,_ as a}from"./D0_Dt6cf.js";import"./CUQaGtPz.js";import"./D9rg-k_f.js";import"./tyuwaQRx.js";const n={class:"page--schedule"},p=t({__name:"schedule",setup(r){return(m,d)=>{const e=o;return _(),c("div",n,[s(e,{"for-app":!0})])}}}),x=a(p,[["__scopeId","data-v-9da97ca0"]]);export{x as default};
