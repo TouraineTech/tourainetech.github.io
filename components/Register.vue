@@ -12,9 +12,9 @@
         Billetterie
       </h2>
       <div class="register-badge">
-        Ouverture de la billetterie le mardi 7 octobre 2025 à 12h30
+        {{ configuration.isSoldOut ? 'Billetterie fermée' : 'Ouverture de la billetterie le mardi 7 octobre 2025 à 12h30' }}
       </div>
-      <div>
+      <div v-if="!configuration.isSoldOut">
         <a
           href="https://billetterie26.touraine.tech"
           target="_blank"
@@ -25,7 +25,7 @@
       </div>
       <div class="PriceBloc-wrapper">
         <div class="PriceBloc-row">
-          <div class="PriceBloc PriceBloc--early PriceBloc--soldOut">
+          <div :class="['PriceBloc', 'PriceBloc--early', { 'PriceBloc--closed': configuration.isSoldOut }]">
             <h3 class="PriceBloc-title">
               Early-bird
             </h3>
@@ -36,7 +36,7 @@
               places limitées
             </div>
           </div>
-          <div class="PriceBloc">
+          <div :class="['PriceBloc', { 'PriceBloc--closed': configuration.isSoldOut }]">
             <h3 class="PriceBloc-title">
               Plein tarif
             </h3>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="PriceBloc-row PriceBloc-row--single">
-          <div class="PriceBloc PriceBloc--tshirt">
+          <div :class="['PriceBloc', 'PriceBloc--tshirt', { 'PriceBloc--closed': configuration.isSoldOut }]">
             <img
               src="~/assets/img/tshirt.jpg"
               alt="T-shirt Touraine Tech"
@@ -82,6 +82,8 @@
 import tshirtImg from '~/assets/img/tshirt.jpg'
 import ImageLightbox from "./ImageLightbox.vue";
 
+const store = useMainStore()
+const configuration = computed(() => store.configuration)
 const showLightbox = ref(false)
 </script>
 <style lang="scss" scoped>
