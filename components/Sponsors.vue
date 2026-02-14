@@ -15,9 +15,6 @@
         <a href="/sponsor_2026.pdf" target="_blank" class="sponsors-badge">
           <span class="sponsors-badge-icon" aria-hidden="true">📄</span> Dossier de sponsoring
         </a>
-        <a class="sponsors-btn" href="https://sponsoring2026.touraine.tech" target="_blank">
-          <span class="sponsors-btn-icon">💼</span> Devenez sponsor
-        </a>
       </div>
       <div class="sponsors-blocs">
         <SponsorsBloc type="Platinium"></SponsorsBloc>
@@ -90,27 +87,6 @@
   font-size: 1.3em;
   margin-right: 0.5em;
   line-height: 1;
-}
-.sponsors-btn {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(90deg, #5ec3b6 0%, #43e97b 100%);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 0.6rem 1.8rem;
-  border-radius: 30px;
-  box-shadow: 0 2px 8px rgba(94, 195, 182, 0.13);
-  text-decoration: none;
-  transition: transform 0.12s, box-shadow 0.12s;
-}
-.sponsors-btn:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 18px rgba(94, 195, 182, 0.22);
-}
-.sponsors-btn-icon {
-  font-size: 1.3em;
-  margin-right: 0.5em;
 }
 .sponsors-blocs {
   margin-top: 2.5rem;
