@@ -128,9 +128,9 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
   }
 
   function startTimers() {
-    setInterval(() => {
-      const chronos = document.querySelectorAll('.chrono');
-      chronos.forEach((chrono) => {
+    const chronos = document.querySelectorAll('.chrono');
+    chronos.forEach((chrono) => {
+      const intervalId = setInterval(() => {
         const endTime = chrono.dataset.endTime;
         const startTime = chrono.dataset.startTime;
         if (!endTime) {
@@ -150,6 +150,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
         }
 
         if (remaining.remainingInSeconds <= 0) {
+          chrono.textContent = '00 : 00';
           const talkBloc = chrono.closest('.talk-bloc');
           if (talkBloc) {
             const next = talkBloc.nextElementSibling;
@@ -157,9 +158,10 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
               next.scrollIntoView({ behavior: 'smooth' });
             }
           }
+          clearInterval(intervalId);
         }
-      });
-    }, 500);
+      }, 500);
+    });
   }
 
   function calculateRemainingTime(endTime) {
@@ -215,7 +217,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
   loadData();
 </script>
 
-<style>
+<style is:global>
   * {
     margin: 0;
     padding: 0;
@@ -257,7 +259,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
     max-width: 100%;
     padding-top: 10vh;
     padding-bottom: 5vh;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
