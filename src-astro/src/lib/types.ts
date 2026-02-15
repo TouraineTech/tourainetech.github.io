@@ -10,9 +10,10 @@ export interface SiteConfig {
   // Phases du site
   isCfpOpen: boolean;
   isTicketingOpen: boolean;
+  isTicketingTeasing: boolean;
+  ticketingOpenDate?: string;
   isProgrammePublished: boolean;
   isSponsoringOpen: boolean;
-  isGalleryEnabled: boolean;
 
   // URLs externes
   cfpDeadline?: string;

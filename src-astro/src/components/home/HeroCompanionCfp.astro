@@ -1,0 +1,249 @@
+---
+/**
+ * Hero Companion — CFP Phase
+ * Encourages talk submissions with deadline and CTA
+ * Design: unified companion card pattern (matches ticket card)
+ */
+import { siteConfig, talkCategories } from '@data/config/site';
+
+const { cfpUrl, cfpDeadline } = siteConfig;
+---
+
+<div class="companion-card">
+  <div class="companion-header">
+    <div>
+      <h3 class="companion-title">Proposez votre talk&nbsp;!</h3>
+      <p class="companion-subtitle">Tous les formats sont les bienvenus</p>
+    </div>
+    <div class="companion-badge">
+      <span class="badge-dot"></span>
+      CFP ouvert
+    </div>
+  </div>
+
+  <div class="companion-body">
+    <p class="companion-desc">
+      Partagez votre expertise avec la communauté tech tourangelle.
+      Conférences, quickies, workshops&nbsp;: choisissez votre format.
+    </p>
+
+    {cfpDeadline && (
+      <div class="cfp-deadline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <span>Avant le <strong>{cfpDeadline}</strong></span>
+      </div>
+    )}
+
+    <div class="cfp-topics">
+      {talkCategories.slice(0, 4).map((cat) => (
+        <span class="topic-chip" style={`--c: ${cat.color}`}>
+          <span class="topic-icon">{cat.icon}</span>
+          {cat.name.split(',')[0]}
+        </span>
+      ))}
+      <span class="topic-more">+{talkCategories.length - 4} tracks</span>
+    </div>
+
+    <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="companion-cta">
+      Soumettre un talk
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  /* === Companion card shared pattern === */
+  .companion-card {
+    background: var(--bg-primary);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .companion-header {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .companion-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .companion-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .companion-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .companion-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #90EE90;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .companion-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .companion-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 1.15rem;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-accent);
+  }
+
+  .companion-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(106, 191, 173, 0.35);
+  }
+
+  .companion-cta svg {
+    transition: transform 0.3s ease;
+  }
+
+  .companion-cta:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* === CFP-specific === */
+  .companion-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .cfp-deadline {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  .cfp-deadline svg {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .cfp-deadline strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .cfp-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
+  .topic-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    white-space: nowrap;
+    background: color-mix(in srgb, var(--c) 10%, var(--bg-primary));
+    color: color-mix(in srgb, var(--c) 75%, var(--text-primary));
+    border: 1px solid color-mix(in srgb, var(--c) 18%, transparent);
+  }
+
+  .topic-icon {
+    font-size: 0.8rem;
+  }
+
+  .topic-more {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  /* === Animations === */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .companion-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .companion-body {
+      padding: 1.5rem;
+    }
+  }
+</style>
