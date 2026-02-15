@@ -14,6 +14,25 @@
   linkedIn: https://www.linkedin.com/company/harmoniemutuelle
   youtube: https://www.youtube.com/user/HarmonieMutuelle
   instagram: https://www.instagram.com/harmoniemutuelle
+  jobOffers:
+    - id: urbaniste-si
+      title: Urbaniste SI H/F
+      link: https://recrutement.harmonie-mutuelle.fr/fr/annonce/4135527-urbaniste-si-hf-37700-saint-pierre-des-corps
+    - id: ingenieur-securite-operationnel
+      title: Ingénieur sécurité opérationnel H/F
+      link: https://recrutement.harmonie-mutuelle.fr/fr/annonce/4141009-ingenieur-securite-operationnel-hf-37700-saint-pierre-des-corps
+
+- id: clever-cloud
+  name: Clever Cloud
+  type: gold
+  image: clever-cloud.png
+  link: https://www.clever-cloud.com/
+  linkedIn: https://www.linkedin.com/company/clever-cloud/
+  twitter: https://twitter.com/clever_cloudFR
+  twitch: https://www.twitch.tv/clevercloud
+  desc: |
+    <b>Clever Cloud</b> est un PaaS (Platform as a Service) qui simplifie vos releases produit.<br/>Envoyez simplement votre code, et nous nous occupons du reste.<br/><br/>Du déploiement à l'hébergement en passant par le maintien en condition opérationnelle et la scalabilité automatique : tout est intégré. Facile à prendre en main et sans lock-in, Clever Cloud est compatible avec la majorité des technologies du marché.<br/><br/>Enfin un cloud pensé pour les développeurs !
+  jobOffers: []
 
 - id: neosoft
   name: Néosoft
@@ -77,3 +96,110 @@
     Envie d'en savoir plus ? N'hésitez pas à venir nous voir à notre stand !
   linkedIn: https://www.linkedin.com/showcase/acensi-centre-ouest/
   instagram: https://www.instagram.com/acensisana/
+  jobOffers:
+    - id: dev-java
+      title: Développeur Java H/F
+      link: https://www.hellowork.com/fr-fr/emplois/67501490.html
+    - id: tech-lead-java
+      title: Tech Lead Java H/F
+      link: https://www.hellowork.com/fr-fr/emplois/74472344.html
+
+- id: cgi
+  name: CGI
+  type: silver
+  image: cgi.png
+  link: https://www.cgi.com/
+  linkedIn: https://www.linkedin.com/company/cgi/
+  instagram: https://www.instagram.com/cgi_france/
+  desc: |
+    Fondée en 1976, CGI figure parmi les plus importantes entreprises indépendantes de services de conseil en technologie de l'information (TI) et en management au monde. CGI compte 94 000 conseillers et professionnels établis partout dans le monde grâce auxquels l'entreprise offre un portefeuille complet de services et de solutions : des services de conseil en management et en stratégie TI, de l'intégration de systèmes, des services en TI et en gestion des processus d'affaires en mode délégué ainsi que des solutions de propriété intellectuelle.<br/><br/>
+    La collaboration de CGI avec ses clients repose sur un modèle axé sur les relations locales, conjugué à un réseau mondial de prestation de services, qui permet aux clients de réaliser la transformation numérique de leur organisation et d'accélérer l'obtention de résultats.<br/><br/>
+    Au cours de l'exercice financier 2025, CGI a généré des revenus de 15,91 milliards $ CA. Les actions de CGI sont inscrites à la Bourse de Toronto (GIB.A) ainsi qu'à la Bourse de New York (GIB). Apprenez-en davantage sur <a href="https://www.cgi.com/" target="_blank">cgi.com</a>.
+
+- id: catamania
+  name: Catamania
+  type: bronze
+  image: catamania.png
+  link: https://www.catamania.com/
+  desc: |
+    <u>La Société</u>
+    <br><br>
+    Catamania est une société de conseil et de services numériques. Depuis sa création en 1999, nous œuvrons pour réaliser la transformation digitale de nos clients, en mettant à leur disposition nos expertises techniques, métier et méthodologiques.
+    <br><br>
+    Nous nous engageons à leurs côtés pour définir et participer à l'évolution de leur système d'information, de la banque à l'assurance, en passant par la grande distribution, l'industrie et le secteur public.
+    <br><br>
+    Forts de plus de 25 ans d'expérience, nous offrons des solutions sur-mesure en Architecture, Conseil, Étude, Développement, Test, Paramétrage, Pilotage et Cybersécurité, toujours en phase avec les enjeux d'aujourd'hui et de demain.
+    <br><br>
+    Nous agissons pour construire un avenir plus équitable, en mettant l'humain et l'environnement au centre de nos préoccupations. À travers des actions concrètes et engagées, nous cultivons un environnement où l'éthique guide nos choix et où chaque décision a un impact positif, durable et mesurable. En alliant proximité, innovation et développement, nous créons des solutions responsables et adaptées aux enjeux de demain.
+    <br><br>
+    Avec 21 agences en France et à l'international (Luxembourg, Suisse, Maroc et Canada), Catamania place la proximité au cœur de ses actions. C'est la raison pour laquelle chaque implantation est pensée pour renforcer les liens avec nos clients, consultants et partenaires. Cette approche géographique n'est pas seulement une volonté stratégique, mais bien une réalité ancrée sur le terrain, permettant d'être toujours plus proches de ceux avec qui nous collaborons.
+    <br><br>
+    <u>Notre singularité</u>
+    <br><br>
+    Notre singularité est plurielle, car elle bénéficie à chacun : collaborateurs, clients, partenaires et utilisateurs finaux. Nous ne cherchons pas simplement à faire mieux.
+    <br>
+    Nous cherchons à penser autrement, à élever l'humain au cœur de chaque projet, de chaque solution : « DIGITAL process for HUMAN progess ».
+    <br><br>
+    Un engagement profond, une exigence constante, une marque de pensée qui guide toutes nos actions.
+    <br>
+    Elle traduit notre volonté d'excellence, mais aussi notre capacité à créer de la valeur, ensemble, durablement.
+    <br><br>
+    <u>Nos expertises</u>
+    <br><br>
+    La montée en compétences de nos collaborateurs renforce la pertinence de nos solutions. Un lien vertueux, bénéfique pour chacun, valorisant pour tous.
+    <br><br>
+    Nos expertises évoluent en continu. Nous actualisons nos savoir-faire, faisons mûrir nos offres et les confrontons aux réalités du terrain. Une seule source d'inspiration guide cette dynamique : vos aspirations et celles d'un monde en mutation permanente.
+    <br><br>
+    Nous restons en éveil. À l'écoute, en observation, en analyse. Nous ressentons, étudions, déduisons. Rien n'est laissé au hasard. Chaque réflexion s'appuie sur une méthode rigoureuse car progresser exige de cultiver ses propres leviers d'amélioration.
+    <br><br>
+    Nous sommes convaincus que chaque projet mérite une approche unique et sur-mesure. C'est pourquoi nos solutions mêlent expertise technique, compréhension métier et innovation utile.
+    <br>
+    Elles traduisent vos ambitions en réussites concrètes.
+    <br><br>
+    Explorer nos solutions, c'est ouvrir la porte à un univers. Un univers où excellence et valeur construisent un avenir désirable — pour vous, et avec vous.
+    <br><br>
+    <u>Le Programme INNOVIA</u>
+    <br><br>
+    Catamania dispose d'un programme de Recherche & Développement, ouvert à tous ses consultants, baptisé « Innovia ». Ce programme intervient sur différents sujets, comme l'Intelligence Artificielle, le Big Data, la Mobilité, ou les Tests Automatisés. C'est un véritable espace de collaboration où chacun, quel que soit son rôle, peut contribuer activement à des projets porteurs de sens.
+    <br><br>
+    Convaincus que l'engagement et la solidarité sont des moteurs essentiels pour notre développement, nous avons toujours cherché à allier nos expertises techniques et métier à des actions à forte valeur ajoutée pour la société. Dans cette dynamique et à travers notre programme R&D Innovia, nous avons mis en place des mécénats de compétences. Ils permettent à nos collaborateurs de mettre leur savoir-faire au service d'associations et d'initiatives locales. Ainsi chacun a l'opportunité de monter en compétences, de contribuer à des projets porteurs de sens et d'expérimenter des solutions innovantes.
+    <br><br>
+    Vous avez envie d'en savoir plus, alors n'hésitez pas à nous contacter :
+    <br>
+    <a href="https://www.catamania.com/contact/">https://www.catamania.com/contact/</a>
+  twitter: https://x.com/Cat_Amania
+  linkedIn: https://www.linkedin.com/company/catamania
+  youtube: https://www.youtube.com/@catamania_esn
+
+- id: ippon
+  name: Ippon Technologies
+  type: bronze
+  image: ippon.png
+  link: https://fr.ippon.tech/
+  linkedIn: https://www.linkedin.com/company/ippon-technologies
+  desc: |
+    Chez Ippon, la tech est une aventure collective où innovation, impact et partage sont au cœur de notre ADN. Cabinet de conseil en Technologie, nous accompagnons chaque année plus de 100 entreprises dans leur transformation numérique.
+    <br><br>
+    Notre expertise s'articule autour de trois visions complémentaires :
+    <br>
+    🤖 <b>IA Générative</b>, avec une approche Discovery to Delivery pour transformer les opportunités IA en valeur mesurable,
+    <br>
+    🚀 <b>Plateformisation</b>, pour concevoir des plateformes scalables, sécurisées et orientées time-to-market,
+    <br>
+    🔧 <b>Modernisation du SI</b>, pour faire évoluer l'existant vers plus d'agilité, de fiabilité et de valeur métier.
+    <br><br>
+    Notre approche va bien au-delà du conseil traditionnel : nous concevons sur-mesure des produits numériques pensés pour répondre précisément aux enjeux de chaque client. Pas de solutions standardisées ou à grande échelle : notre force, c'est le sur-mesure, la co-construction, l'écoute et l'adaptabilité.
+    <br><br>
+    Nous avançons main dans la main avec nos clients, car les meilleures solutions se dessinent souvent en chemin. Ainsi, nous privilégions des méthodes agiles, un fort engagement terrain et une proximité qui font toute la différence.
+
+- id: polytechtours
+  name: Polytech'Tours
+  type: partenaires
+  image: logo-polytech-UFR.png
+  link: https://polytech.univ-tours.fr/
+  desc: |
+    L'École polytechnique de l'université de Tours (Polytech Tours) est l'une des 207 écoles d'ingénieurs françaises accréditées au 1er septembre 2022 à délivrer un diplôme d'ingénieur.
+    <br><br>
+    Elle est située à Tours, en Indre-et-Loire, dans la région Centre, plus précisément dans le quartier des Deux-Lions, au sud de la ville. Ses activités sont réparties sur trois sites éloignés de quelques centaines de mètres : site Portalis (départements « informatique », « informatique embarquée » et « premier cycle »), site Dassault (départements « mécanique et conception des systèmes », et « électronique et énergie électrique ») et le site Lesseps (département « Génie de l'aménagement et de l'environnement »).
+    <br><br>
+    Elle fait partie du réseau Polytech, groupement de seize écoles d'ingénieurs internes aux universités. Elle est habilitée par la Commission des titres d'ingénieur et membre de la Conférence des grandes écoles. Composante de l'université de Tours, l'École participe à la notoriété de l'université et aux projets communs développés avec les autres composantes.
