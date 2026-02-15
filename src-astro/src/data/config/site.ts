@@ -3,10 +3,11 @@ import type { SiteConfig } from '@lib/types';
 export const siteConfig: SiteConfig = {
   // Phases du site - ajuster selon le cycle de l'evenement
   isCfpOpen: false,
-  isTicketingOpen: true,
-  isProgrammePublished: true,
+  isTicketingOpen: false,
+  isTicketingTeasing: false,
+  ticketingOpenDate: '15 janvier 2026',
+  isProgrammePublished: false,
   isSponsoringOpen: true,
-  isGalleryEnabled: true,
 
   // URLs externes
   cfpDeadline: '16 novembre 2025',

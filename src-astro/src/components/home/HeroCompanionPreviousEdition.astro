@@ -1,0 +1,228 @@
+---
+/**
+ * Hero Companion — Default/Early Phase
+ * Showcases the previous edition to build hype for the next one
+ * Design: unified companion card pattern (matches ticket card)
+ */
+import { siteConfig, stats } from '@data/config/site';
+
+const { edition } = siteConfig;
+const previousYear = edition.year - 1;
+---
+
+<div class="companion-card">
+  <div class="companion-header">
+    <div>
+      <h3 class="companion-title">Retour sur {previousYear}</h3>
+      <p class="companion-subtitle">L'événement tech en Touraine</p>
+    </div>
+    <div class="companion-badge">
+      Édition {previousYear}
+    </div>
+  </div>
+
+  <div class="companion-body">
+    <p class="companion-desc">
+      L'année dernière, la communauté tech s'est retrouvée à Tours
+      pour deux jours de conférences, workshops et rencontres.
+    </p>
+
+    <div class="prev-stats">
+      {stats.map((stat) => (
+        <div class="prev-stat">
+          <span class="prev-stat-icon">{stat.icon}</span>
+          <span class="prev-stat-val">{stat.value}</span>
+          <span class="prev-stat-lbl">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+
+    <div class="prev-actions">
+      <a href="/photos" class="prev-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+        Voir les photos
+      </a>
+      <a href="https://www.youtube.com/@TouraineTech" target="_blank" rel="noopener noreferrer" class="prev-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Revoir les talks
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* === Companion card shared pattern === */
+  .companion-card {
+    background: var(--bg-primary);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .companion-header {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .companion-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .companion-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .companion-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .companion-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+  }
+
+  .companion-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* === Previous edition specific === */
+  .companion-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .prev-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+  }
+
+  .prev-stat {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .prev-stat-icon {
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .prev-stat-val {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .prev-stat-lbl {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: lowercase;
+  }
+
+  .prev-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .prev-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .prev-link:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent-dark);
+    transform: translateY(-1px);
+  }
+
+  .prev-link svg {
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+
+  /* === Animations === */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    .companion-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .companion-body {
+      padding: 1.5rem;
+    }
+
+    .prev-actions {
+      flex-direction: column;
+    }
+  }
+</style>
