@@ -24,13 +24,6 @@ export function getStaticPaths() {
 }
 
 const { day, room } = Astro.params;
-
-const roomBackgrounds: Record<string, string> = {
-  F21: '/img/visualArt/fondF21.png',
-  F22: '/img/visualArt/fondF22.png',
-  Bio: '/img/visualArt/fondBio.png',
-  Physique: '/img/visualArt/fondPhysique.png',
-};
 ---
 
 <Layout title={`Timer - ${room} - Jour ${day}`} description={`Timer pour la salle ${room}`}>
@@ -76,9 +69,6 @@ const roomBackgrounds: Record<string, string> = {
           <h2 class="chrono" data-end-time="${talk.endTime || ''}" data-start-time="${talk.time}">
             --:--
           </h2>
-          <div class="sponsors-container">
-            <img src="/img/sponsors-banner.png" alt="Sponsors" class="sponsors-banner" onerror="this.style.display='none'" />
-          </div>
           <h3 class="next-talk">
             ${talk.nextTalkName ? `Prochain sujet : ${talk.nextTalkName}` : ''}
           </h3>
@@ -186,7 +176,7 @@ const roomBackgrounds: Record<string, string> = {
   loadTimerData();
 </script>
 
-<style define:vars={{ roomBg: `url('${Astro.props.roomBg || ''}')` }}>
+<style>
   .timer-room {
     min-height: 100vh;
     width: 100vw;
@@ -265,21 +255,6 @@ const roomBackgrounds: Record<string, string> = {
     }
   }
 
-  .sponsors-container {
-    display: none;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    height: 15vh;
-    max-width: 90%;
-  }
-
-  .sponsors-banner {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-  }
-
   .next-talk {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
@@ -313,32 +288,6 @@ const roomBackgrounds: Record<string, string> = {
       margin-bottom: 2rem;
     }
 
-    .sponsors-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 2vh 0;
-      height: 20vh;
-    }
-  }
-
-  /* Room-specific backgrounds for desktop */
-  @media (min-width: 1300px) {
-    .timer-room[data-room='F21'] .talk-bloc {
-      background-image: url('/img/visualArt/fondF21.png');
-    }
-
-    .timer-room[data-room='F22'] .talk-bloc {
-      background-image: url('/img/visualArt/fondF22.png');
-    }
-
-    .timer-room[data-room='Bio'] .talk-bloc {
-      background-image: url('/img/visualArt/fondBio.png');
-    }
-
-    .timer-room[data-room='Physique'] .talk-bloc {
-      background-image: url('/img/visualArt/fondPhysique.png');
-    }
   }
 
   @media (max-width: 768px) {
