@@ -1,0 +1,149 @@
+---
+import Layout from '@layouts/Layout.astro';
+import daysData from '@data/config/days.json';
+import roomsData from '@data/config/rooms.json';
+
+interface Room {
+  name: string;
+  capacity: number;
+}
+
+export function getStaticPaths() {
+  const days = daysData as number[];
+  return days.map((day) => ({
+    params: { day: String(day) },
+  }));
+}
+
+const { day } = Astro.params;
+const rooms = roomsData as Room[];
+
+const dayLabels: Record<string, string> = {
+  '1': 'Jeudi 12 février',
+  '2': 'Vendredi 13 février',
+};
+---
+
+<Layout title={`Écran d'attente - Jour ${day}`} description={`Sélection de la salle pour le jour ${day}`}>
+  <div class="ws-day">
+    <div class="ws-container">
+      <a href="/waiting-screen" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Retour
+      </a>
+
+      <img src="/img/logo_26_bordered.png" alt="Touraine Tech" class="logo" />
+      <h1>Jour {day}</h1>
+      <p class="subtitle">{dayLabels[day!] || `Jour ${day}`}</p>
+
+      <div class="rooms-grid">
+        {rooms.map((room) => (
+          <a href={`/waiting-screen/${day}/${room.name}`} class="room-card">
+            <span class="room-name">{room.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .ws-day {
+    min-height: 100vh;
+    background: #54988a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .ws-container {
+    text-align: center;
+    color: white;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: white;
+  }
+
+  .logo {
+    height: 80px;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .rooms-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+
+  .room-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .room-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .room-name {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .rooms-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .room-card {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+</style>

@@ -1,0 +1,410 @@
+---
+import daysData from '@data/config/days.json';
+import roomsData from '@data/config/rooms.json';
+import sponsors from '@data/sponsors.yaml';
+
+interface Room {
+  name: string;
+  capacity: number;
+}
+
+export function getStaticPaths() {
+  const days = daysData as number[];
+  const rooms = roomsData as Room[];
+
+  const paths = [];
+  for (const day of days) {
+    for (const room of rooms) {
+      paths.push({
+        params: { day: String(day), room: room.name },
+      });
+    }
+  }
+  return paths;
+}
+
+const { day, room } = Astro.params;
+
+const goldSponsors = sponsors.filter((s: any) => s.type === 'gold');
+const silverSponsors = sponsors.filter((s: any) => s.type === 'silver');
+const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
+---
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Écran d'attente - {room} - Jour {day}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <img src="/img/logo_26_bordered.png" alt="Touraine Tech" class="ws-logo" />
+
+  <div class="ws-room" data-day={day} data-room={room}>
+    <div id="talks-container">
+      <div class="loading">Chargement...</div>
+    </div>
+  </div>
+
+  <template id="sponsors-template">
+    <div class="talk-sponsors-container">
+      <span class="sponsors-label">Merci à nos sponsors</span>
+      <div class="talk-sponsors">
+        <div class="talk-sponsors-gold">
+          {goldSponsors.map((s: any) => (
+            <img src={`/img/sponsors/${s.image}`} alt={s.name} />
+          ))}
+        </div>
+        <div class="talk-sponsors-silver">
+          {silverSponsors.map((s: any) => (
+            <img src={`/img/sponsors/${s.image}`} alt={s.name} />
+          ))}
+        </div>
+        <div class="talk-sponsors-bronze">
+          {bronzeSponsors.map((s: any) => (
+            <img src={`/img/sponsors/${s.image}`} alt={s.name} />
+          ))}
+        </div>
+        <div class="talk-sponsors-institutional">
+          <img src="/img/sponsors/logo-polytech.png" alt="Polytech" />
+          <img src="/img/sponsors/logo-UFR.png" alt="UFR" />
+        </div>
+      </div>
+      <div class="illustration">
+        <img src="/img/visualArt/illustration_2026.png" alt="Illustration Touraine Tech 2026" />
+      </div>
+    </div>
+  </template>
+</body>
+</html>
+
+<script define:vars={{ day, room }}>
+  async function loadData() {
+    try {
+      const response = await fetch(`/timer/day${day}/${room}.json`);
+      const talks = await response.json();
+
+      const enhancedTalks = talks.map((talk, index) => ({
+        ...talk,
+        endTime: talks[index + 1]?.time,
+        nextTalkId: talks[index + 1]?.talk?.id,
+        nextTalkName: talks[index + 1]?.talk?.name,
+      }));
+
+      renderTalks(enhancedTalks);
+      scrollToCurrentTalk(enhancedTalks);
+    } catch (e) {
+      console.error('Error loading waiting screen data:', e);
+      document.getElementById('talks-container').innerHTML =
+        '<div class="loading">Erreur lors du chargement des données</div>';
+    }
+  }
+
+  function renderTalks(talks) {
+    const container = document.getElementById('talks-container');
+    const sponsorsTemplate = document.getElementById('sponsors-template');
+    const sponsorsHtml = sponsorsTemplate ? sponsorsTemplate.innerHTML : '';
+
+    container.innerHTML = talks
+      .map(
+        (talk) => `
+        <div class="talk-bloc" id="${talk.talk?.id || 'unknown'}">
+          <div class="talk-title">
+            <h2>${talk.talk?.name || ''}</h2>
+          </div>
+          <span class="chrono" data-end-time="${talk.endTime || ''}" data-start-time="${talk.time}">
+            --:--
+          </span>
+          ${sponsorsHtml}
+          <div class="talk-next">
+            ${talk.nextTalkName ? `<span><b>Prochain sujet :</b> ${talk.nextTalkName}</span>` : ''}
+          </div>
+        </div>
+      `
+      )
+      .join('');
+
+    startTimers();
+  }
+
+  function startTimers() {
+    setInterval(() => {
+      const chronos = document.querySelectorAll('.chrono');
+      chronos.forEach((chrono) => {
+        const endTime = chrono.dataset.endTime;
+        const startTime = chrono.dataset.startTime;
+        if (!endTime) {
+          chrono.textContent = '--:--';
+          return;
+        }
+
+        const remaining = calculateRemainingTime(endTime);
+        const duration = calculateDuration(startTime, endTime);
+
+        chrono.textContent = remaining.asString;
+
+        if (remaining.remainingInSeconds > 0 && remaining.remainingInSeconds < duration / 10) {
+          chrono.classList.add('blink');
+        } else {
+          chrono.classList.remove('blink');
+        }
+
+        if (remaining.remainingInSeconds <= 0) {
+          const talkBloc = chrono.closest('.talk-bloc');
+          if (talkBloc) {
+            const next = talkBloc.nextElementSibling;
+            if (next) {
+              next.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }
+      });
+    }, 500);
+  }
+
+  function calculateRemainingTime(endTime) {
+    const [hours, minutes] = endTime.split(':').map(Number);
+    const endDate = new Date();
+    endDate.setHours(hours, minutes, 0, 0);
+
+    const now = new Date();
+    const remainingInSeconds = (endDate.getTime() - now.getTime()) / 1000;
+
+    const mins = Math.floor(Math.abs(remainingInSeconds) / 60);
+    const secs = Math.floor(Math.abs(remainingInSeconds) % 60);
+
+    return {
+      asString: `${String(mins).padStart(2, '0')} : ${String(secs).padStart(2, '0')}`,
+      remainingInSeconds,
+    };
+  }
+
+  function calculateDuration(startTime, endTime) {
+    const [startH, startM] = startTime.split(':').map(Number);
+    const [endH, endM] = endTime.split(':').map(Number);
+
+    const startDate = new Date();
+    startDate.setHours(startH, startM, 0, 0);
+
+    const endDate = new Date();
+    endDate.setHours(endH, endM, 0, 0);
+
+    return (endDate.getTime() - startDate.getTime()) / 1000;
+  }
+
+  function scrollToCurrentTalk(talks) {
+    setTimeout(() => {
+      const now = new Date();
+      const currentTime = now.getHours() * 60 + now.getMinutes();
+
+      const currentTalk = talks.find((talk) => {
+        if (!talk.endTime) return false;
+        const [endH, endM] = talk.endTime.split(':').map(Number);
+        return endH * 60 + endM > currentTime;
+      });
+
+      if (currentTalk?.talk?.id) {
+        const element = document.getElementById(currentTalk.talk.id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }
+    }, 2000);
+  }
+
+  loadData();
+</script>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #54988a;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .ws-logo {
+    position: fixed;
+    top: 0;
+    right: 2.5vw;
+    height: 10vh;
+    z-index: 10;
+  }
+
+  .ws-room {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .talk-bloc {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+
+  .talk-title {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    max-width: 90vw;
+  }
+
+  .talk-title h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .chrono {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Sponsors grid */
+  .talk-sponsors-container {
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 0 2vw;
+  }
+
+  .talk-sponsors-container .illustration {
+    position: absolute;
+    bottom: calc(100% - 24px - 2vh);
+    left: 5vw;
+    display: flex;
+  }
+
+  .talk-sponsors-container .illustration img {
+    height: 30vh;
+  }
+
+  .sponsors-label {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 24px;
+    font-size: 1rem;
+    color: #fff;
+    font-style: italic;
+  }
+
+  .talk-sponsors {
+    display: grid;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .talk-sponsors-gold,
+  .talk-sponsors-silver,
+  .talk-sponsors-bronze,
+  .talk-sponsors-institutional {
+    display: flex;
+    gap: 2vh;
+    border: 2px solid;
+    border-radius: 1vw;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .talk-sponsors-gold {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 2vh 2vw;
+    flex-direction: column;
+    align-items: center;
+    border-color: #ffc300;
+  }
+
+  .talk-sponsors-gold img,
+  .talk-sponsors-silver img,
+  .talk-sponsors-bronze img,
+  .talk-sponsors-institutional img {
+    object-fit: contain;
+  }
+
+  .talk-sponsors-gold img {
+    max-width: 80%;
+    height: calc((100% - 2vh) / 2);
+  }
+
+  .talk-sponsors-silver,
+  .talk-sponsors-bronze,
+  .talk-sponsors-institutional {
+    justify-content: space-around;
+    padding: 1vh 2vw;
+  }
+
+  .talk-sponsors-silver {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    border-color: #d3d3d3;
+  }
+
+  .talk-sponsors-bronze {
+    grid-column: 2;
+    grid-row: 2;
+    border-color: #bb9a93;
+  }
+
+  .talk-sponsors-institutional {
+    grid-column: 3;
+    grid-row: 2;
+    border-color: #6abfad;
+  }
+
+  .talk-sponsors-silver img,
+  .talk-sponsors-bronze img,
+  .talk-sponsors-institutional img {
+    height: 100%;
+    max-width: 10vw;
+  }
+
+  .talk-next {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+</style>
