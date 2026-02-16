@@ -18,4 +18,5 @@ export default {
     displaySponsors : true,
     displayMobileApp: true,
     displayBeginnerSpeakers: true,
+    hideScheduleInTalk: true,
 }

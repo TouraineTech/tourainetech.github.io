@@ -36,6 +36,13 @@ const speakers = computed(() =>
 
 const abstractHTML = computed(() => converter.makeHtml(talk.value?.abstract || ''))
 
+const youtubeEmbedUrl = computed(() => {
+  const link = talk.value?.youtubeLink
+  if (!link) return null
+  const match = link.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/)
+  return match ? `https://www.youtube.com/embed/${match[1]}` : null
+})
+
 // OpenFeedback URL builder
 const OPENFEEDBACK_EVENT_ID = 'nIlFquxGUZ1IJ1cDkc1z'
 const DATE_BY_DAY: Record<number, string> = {
@@ -83,9 +90,20 @@ useHead({
         <SpeakerBloc :speaker="speaker" />
       </NuxtLink>
     </div>
-    <div class="time--container">
+    <div v-if="!CONFIGURATION.hideScheduleInTalk" class="time--container">
       {{ talk.day }} à {{ talk.times }}, Salle {{ talk.rooms }}
     </div>
+    <h2 v-if="youtubeEmbedUrl" class="section-title">Replay du talk</h2>
+    <div v-if="youtubeEmbedUrl" class="video--container">
+      <iframe
+        :src="youtubeEmbedUrl"
+        title="Vidéo du talk"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
+    <h2 class="section-title">Description</h2>
     <div class="description--container">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-html="abstractHTML" />
@@ -111,12 +129,6 @@ useHead({
           target="_blank"
           :href="`${talk.dailymotionLink}`"
         >La vidéo (dailymotion) </a>
-      </p>
-      <p v-if="talk.youtubeLink">
-        <a
-          target="_blank"
-          :href="`${talk.youtubeLink}`"
-        >La vidéo (youtube) </a>
       </p>
     </div>
     <a
@@ -155,8 +167,26 @@ h1 {
   margin-bottom: 1rem;
 }
 
-h2 {
-  color: $color-secondary;
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3px;
+    background: $color-secondary;
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
+  }
 }
 
 .container--image {
@@ -205,7 +235,26 @@ div.time--container {
   justify-content: center;
 }
 
+.video--container {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $color-primary;
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+  }
+}
+
 @media screen and (max-width: $mobile-step) {
+  .video--container {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    border-radius: 0;
+  }
+
   div.description--container {
     margin-left: -2rem;
     margin-right: -2rem;
