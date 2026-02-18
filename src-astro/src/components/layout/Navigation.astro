@@ -8,8 +8,10 @@ const navLinks = [
   { href: '/', label: 'Accueil', always: true },
   { href: '/schedule', label: 'Programme', show: isProgrammePublished },
   { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
-  { href: '/team', label: 'Equipe', always: true },
+  { href: '/#sponsors', label: 'Sponsors', always: true },
+  { href: '/#venue', label: 'Lieu', always: true },
   { href: '/coc', label: 'Code de conduite', always: true },
+  { href: '/team', label: 'Equipe', always: true },
 ].filter(link => link.always || link.show);
 
 const currentPath = Astro.url.pathname;
