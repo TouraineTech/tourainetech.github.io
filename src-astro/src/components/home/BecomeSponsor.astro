@@ -1,5 +1,5 @@
 ---
-import { siteConfig, stats } from '@data/config/site';
+import { siteConfig } from '@data/config/site';
 
 const { isSponsoringOpen, sponsoringUrl } = siteConfig;
 
@@ -32,7 +32,7 @@ const perks = [
 ---
 
 {isSponsoringOpen && (
-<section class="become-sponsor">
+<section class="become-sponsor" id="become-sponsor">
   <!-- Subtle decorative elements -->
   <div class="bg-decoration">
     <div class="accent-blur"></div>
@@ -40,16 +40,6 @@ const perks = [
   </div>
 
   <div class="become-sponsor-inner">
-    <!-- Stats bar -->
-    <div class="stats-bar">
-      {stats.map((stat, i) => (
-        <div class="stat-item" style={`--delay: ${i * 0.1}s`}>
-          <span class="stat-value">{stat.value}</span>
-          <span class="stat-label">{stat.label}</span>
-        </div>
-      ))}
-    </div>
-
     <!-- Main content -->
     <div class="sponsor-header">
       <span class="sponsor-eyebrow">Sponsoring 2026</span>
@@ -155,41 +145,6 @@ const perks = [
     margin: 0 auto;
     position: relative;
     z-index: 1;
-  }
-
-  /* Stats bar */
-  .stats-bar {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-bottom: 4rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-
-  .stat-item {
-    text-align: center;
-    animation: fadeInUp 0.6s ease-out backwards;
-    animation-delay: var(--delay);
-  }
-
-  .stat-value {
-    display: block;
-    font-size: clamp(3rem, 7vw, 4.5rem);
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1;
-    letter-spacing: -0.04em;
-  }
-
-  .stat-label {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-top: 0.75rem;
-    font-weight: 500;
   }
 
   /* Header */
