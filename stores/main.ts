@@ -13,6 +13,7 @@ import TIMES from '~/api/config/times.json'
 import ROOMS from '~/api/config/rooms.json'
 import PHOTOS from '~/api/photos_72177720323970146.json'
 import DAYS from '~/api/config/days.json'
+import VIDEOS from '~/api/source/videos.json'
 import CONFIGURATION from '~/assets/configuration'
 
 interface Speaker {
@@ -37,6 +38,9 @@ interface Talk {
   times?: number[]
   day?: number
   youtubeLink?: string
+  peertubeLink?: string
+  dailymotionLink?: string
+  slidesLinks?: (string | { pdf: string })[]
 }
 
 interface Category {
@@ -102,6 +106,16 @@ interface PlanningItem {
   day: number
 }
 
+function addVideosToTalks(talks: Talk[]): Talk[] {
+  const videos = VIDEOS as Record<string, string>
+  return talks.map((talk) => {
+    if (videos[talk.id]) {
+      return { ...talk, youtubeLink: videos[talk.id] }
+    }
+    return talk
+  })
+}
+
 function addPlanningToTalks(talks: Talk[]): Talk[] {
   const planningByTalkId: Record<string, PlanningItem> = {}
   ;(PLANNING as PlanningItem[]).forEach((planning) => {
@@ -147,7 +161,7 @@ export const useMainStore = defineStore('main', {
   state: () => ({
     sponsors: SPONSORS as Sponsor[],
     team: (TEAM as TeamMember[]).sort((a, b) => a.name.localeCompare(b.name)),
-    talks: addPlanningToTalks(CONFERENCE_HALL.talks as Talk[]),
+    talks: addPlanningToTalks(addVideosToTalks(CONFERENCE_HALL.talks as Talk[])),
     breaks: BREAKS as Break[],
     speakers: CONFERENCE_HALL.speakers as Speaker[],
     categories: CONFERENCE_HALL.categories as Category[],
