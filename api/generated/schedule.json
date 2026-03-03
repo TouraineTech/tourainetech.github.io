@@ -1,7 +1,7 @@
 [
   {
     "id": "keynoteOuverture1",
-    "title": "Keynote d'ouverture",
+    "title": "Debuggons la démocratie",
     "categories": null,
     "formats": "Conférence (50min)",
     "rooms": [
@@ -552,7 +552,7 @@
   },
   {
     "id": "keynoteCloture1",
-    "title": "Keynote de clôture",
+    "title": "Speechless",
     "categories": null,
     "formats": "Conférence (50min)",
     "rooms": [
@@ -568,7 +568,7 @@
   },
   {
     "id": "keynoteOuverture2",
-    "title": "Keynote d'ouverture",
+    "title": "Gray Hat, Black Hat, Users : comment protéger une plateforme de 85M d'utilisateurs face à des menaces hybrides",
     "categories": null,
     "formats": "Conférence (50min)",
     "rooms": [

@@ -1071,30 +1071,37 @@
     },
     {
       "id": "keynoteOuverture1",
-      "title": "Keynote d'ouverture",
+      "title": "Debuggons la démocratie",
       "abstract": "Keynote d'ouverture du jeudi",
       "formats": "Conférence (50min)",
       "categories": null,
       "level": null,
-      "speakers": []
+      "speakers": [
+        "Clement_Hammel"
+      ]
     },
     {
       "id": "keynoteCloture1",
-      "title": "Keynote de clôture",
+      "title": "Speechless",
       "abstract": "Keynote de clôture du jeudi",
       "formats": "Conférence (50min)",
       "categories": null,
       "level": null,
-      "speakers": []
+      "speakers": [
+        "Jean-Francois_Garreau"
+      ]
     },
     {
       "id": "keynoteOuverture2",
-      "title": "Keynote d'ouverture",
+      "title": "Gray Hat, Black Hat, Users : comment protéger une plateforme de 85M d'utilisateurs face à des menaces hybrides",
       "abstract": "Keynote d'ouverture du vendredi",
       "formats": "Conférence (50min)",
       "categories": null,
       "level": null,
-      "speakers": []
+      "speakers": [
+        "Mikael_Robert",
+        "Yohan"
+      ]
     },
     {
       "id": "keynoteCloture2",
