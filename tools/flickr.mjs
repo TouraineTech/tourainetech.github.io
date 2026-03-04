@@ -32,4 +32,4 @@ const createPhotoJSON = async (albumId) => {
   fs.writeFile('api/photos_' + albumId + '.json', JSON.stringify(allPhotos), () => {});
 };
 
-createPhotoJSON('72177720323970146');
+createPhotoJSON('72177720332338811');
