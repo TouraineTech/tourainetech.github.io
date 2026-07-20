@@ -46,7 +46,7 @@ const currentPath = Astro.url.pathname;
         </a>
       )}
 
-      {isCfpOpen && (
+      {isCfpOpen && !isProgrammePublished && (
         <a
           href={cfpUrl}
           target="_blank"
@@ -111,7 +111,7 @@ const currentPath = Astro.url.pathname;
         </a>
       )}
 
-      {isCfpOpen && (
+      {isCfpOpen && !isProgrammePublished && (
         <a
           href={cfpUrl}
           target="_blank"

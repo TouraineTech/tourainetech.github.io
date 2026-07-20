@@ -4,7 +4,7 @@ import HeroCompanionCfp from './HeroCompanionCfp.astro';
 import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
 import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
 import { siteConfig } from '@data/config/site';
-import { isCfp, isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
+import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
 ---
@@ -20,11 +20,12 @@ const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTie
       <div class="hero-meta">
         <MetaPill icon="📅" label="Date" value={edition.dates} />
         <MetaPill icon="📍" label="Lieu" value={edition.location} />
-        {/* Pendant la billetterie/programme, le CFP est un indicateur secondaire */}
-        {showTicketCard && isCfpOpen && cfpDeadline && (
+        {/* Pendant la billetterie, le CFP est un indicateur secondaire.
+            Une fois le programme publié, le CFP n'est plus pertinent. */}
+        {isTicketing && isCfpOpen && cfpDeadline && (
           <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
         )}
-        {showTicketCard && !isCfpOpen && (
+        {isTicketing && !isCfpOpen && (
           <MetaPill icon="🎤" label="CFP" value="Terminé" />
         )}
       </div>
@@ -48,8 +49,9 @@ const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTie
             </svg>
           </a>
         )}
-        {/* CFP ouvert pendant la billetterie/programme : CTA secondaire actionnable */}
-        {showTicketCard && isCfpOpen && (
+        {/* CFP ouvert pendant la billetterie : CTA secondaire actionnable
+            (masqué une fois le programme publié) */}
+        {isTicketing && isCfpOpen && (
           <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
             Soumettre un talk
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -121,11 +123,11 @@ const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTie
       <HeroCompanionCfp />
     )}
 
-    {!showTicketCard && !isCfpOpen && isSponsoring && (
+    {!showTicketCard && !isCfp &&isSponsoring && (
       <HeroCompanionSponsoring />
     )}
 
-    {!showTicketCard && !isCfpOpen && !isSponsoring && (
+    {!showTicketCard && !isCfp &&!isSponsoring && (
       <HeroCompanionPreviousEdition />
     )}
   </div>
