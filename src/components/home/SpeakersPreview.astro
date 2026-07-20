@@ -1,0 +1,60 @@
+---
+// Teaser "a l'affiche" (phase programme) : un echantillon de speakers reels,
+// lien vers /speakers. Reutilise getAllScheduledSpeakers + SpeakerCard.
+import SpeakerCard from '@components/ui/SpeakerCard.astro';
+import { getAllScheduledSpeakers } from '@lib/data';
+
+const PREVIEW = 8;
+const speakers = getAllScheduledSpeakers().slice(0, PREVIEW);
+---
+
+{speakers.length > 0 && (
+  <section class="speakers-preview">
+    <div class="sp-inner">
+      <div class="section-header">
+        <span class="section-label">Speakers</span>
+        <h2 class="section-title">A l'affiche</h2>
+        <p class="section-desc">Une partie des intervenants de l'edition 2026</p>
+      </div>
+
+      <div class="sp-grid">
+        {speakers.map((speaker) => (
+          <SpeakerCard speaker={speaker} size="sm" linkToProfile showCompany />
+        ))}
+      </div>
+
+      <div class="sp-footer">
+        <a href="/speakers" class="btn btn-secondary">
+          Tous les speakers
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .speakers-preview {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+  }
+
+  .sp-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .sp-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+</style>

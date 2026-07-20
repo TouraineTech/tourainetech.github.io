@@ -1,14 +1,15 @@
 ---
 import { siteConfig } from '@data/config/site';
+import { isCfpOpen, isProgrammePublished, showTicketCard } from '@lib/phase';
 
-const { isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoringOpen, ticketingUrl, cfpUrl } = siteConfig;
+const { ticketingUrl, cfpUrl } = siteConfig;
 
-// Navigation links - conditionally shown based on site mode
+// Navigation links - conditionally shown based on site phase
 const navLinks = [
   { href: '/', label: 'Accueil', always: true },
   { href: '/schedule', label: 'Programme', show: isProgrammePublished },
   { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
-  { href: '/#sponsors', label: 'Sponsors', always: true },
+  { href: '/sponsors', label: 'Sponsors', always: true },
   { href: '/#venue', label: 'Lieu', always: true },
   { href: '/coc', label: 'Code de conduite', always: true },
   { href: '/team', label: 'Equipe', always: true },
@@ -47,7 +48,7 @@ const currentPath = Astro.url.pathname;
         </a>
       )}
 
-      {isTicketingOpen && (
+      {showTicketCard && (
         <a
           href={ticketingUrl}
           target="_blank"
@@ -101,7 +102,7 @@ const currentPath = Astro.url.pathname;
         </a>
       )}
 
-      {isTicketingOpen && (
+      {showTicketCard && (
         <a
           href={ticketingUrl}
           target="_blank"

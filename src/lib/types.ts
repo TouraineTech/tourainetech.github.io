@@ -7,13 +7,15 @@ export interface TicketTier {
 
 // Site configuration
 export interface SiteConfig {
-  // Phases du site
-  isCfpOpen: boolean;
+  // Phase principale de campagne : pilote le hero + l'ordre editorial de la home.
+  // Les flags legacy (isCfpOpen, isProgrammePublished, showTicketCard...) en sont
+  // derives dans src/lib/phase.ts.
+  phase: 'cfp' | 'ticketing' | 'programme' | 'post-event';
+
+  // Etats independants (disponibilite des CTA/contenus, PAS l'ordre)
   isTicketingOpen: boolean;
-  isTicketingTeasing: boolean;
-  ticketingOpenDate?: string;
-  isProgrammePublished: boolean;
   isSponsoringOpen: boolean;
+  ticketingOpenDate?: string;
 
   // URLs externes
   cfpDeadline?: string;

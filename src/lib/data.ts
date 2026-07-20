@@ -410,6 +410,26 @@ export function getSponsorsByType(type: Sponsor['type']): Sponsor[] {
   return getAllSponsors().filter((s) => s.type === type);
 }
 
+const TIER_ORDER: Sponsor['type'][] = ['platinum', 'gold', 'silver', 'bronze', 'partenaires'];
+
+export interface SponsorTier {
+  type: Sponsor['type'];
+  label: string;
+  sponsors: Sponsor[];
+}
+
+/**
+ * Sponsors regroupes par tier, dans l'ordre de prestige, tiers vides exclus.
+ */
+export function getSponsorsByTier(): SponsorTier[] {
+  const all = getAllSponsors();
+  return TIER_ORDER.map((type) => ({
+    type,
+    label: getSponsorTypeLabel(type),
+    sponsors: all.filter((s) => s.type === type),
+  })).filter((tier) => tier.sponsors.length > 0);
+}
+
 /**
  * Get sponsor type label
  */

@@ -1,13 +1,13 @@
 import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
-  // Phases du site - ajuster selon le cycle de l'evenement
-  isCfpOpen: true,
+  // Phase de campagne : 'cfp' | 'ticketing' | 'programme' | 'post-event'
+  phase: 'cfp',
+
+  // Etats independants
   isTicketingOpen: false,
-  isTicketingTeasing: true,
-  ticketingOpenDate: '15 janvier 2026',
-  isProgrammePublished: true,
   isSponsoringOpen: true,
+  ticketingOpenDate: '15 janvier 2026',
 
   // URLs externes
   cfpDeadline: '16 novembre 2025',

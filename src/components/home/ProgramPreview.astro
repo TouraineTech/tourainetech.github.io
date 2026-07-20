@@ -1,0 +1,116 @@
+---
+// Teaser programme (phase programme) : temps forts (keynotes) reels,
+// lien vers /schedule. Reutilise getAllScheduledTalks + helpers de data.ts.
+import { getAllScheduledTalks, isKeynote, getCategoryLabel, getCategoryColor } from '@lib/data';
+
+const talks = getAllScheduledTalks();
+const keynotes = talks.filter(isKeynote);
+// Fallback : si pas de keynotes marquees, prendre les premieres sessions.
+const highlights = (keynotes.length > 0 ? keynotes : talks).slice(0, 3);
+---
+
+{highlights.length > 0 && (
+  <section class="program-preview">
+    <div class="pp-inner">
+      <div class="section-header">
+        <span class="section-label">Programme</span>
+        <h2 class="section-title">Les temps forts</h2>
+        <p class="section-desc">Un apercu de l'edition 2026</p>
+      </div>
+
+      <div class="pp-grid">
+        {highlights.map((talk) => (
+          <a href={`/talk/${talk.id}`} class="pp-card" style={`--cat: ${getCategoryColor(talk.categories)}`}>
+            <span class="pp-tag">{getCategoryLabel(talk.categories)}</span>
+            <h3 class="pp-title">{talk.title}</h3>
+            <p class="pp-speakers">
+              {talk.speakers.map((s) => s.name.split('_').join(' ')).join(', ')}
+            </p>
+            <span class="pp-time">{talk.timeDisplay}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="pp-footer">
+        <a href="/schedule" class="btn btn-primary">
+          Decouvrir le programme
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .program-preview {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+  }
+
+  .pp-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .pp-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-left: 4px solid var(--cat, var(--accent));
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .pp-tag {
+    align-self: flex-start;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--cat, var(--accent));
+  }
+
+  .pp-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .pp-speakers {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  .pp-time {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: auto;
+  }
+
+  .pp-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+</style>

@@ -1,28 +1,35 @@
 ---
-import { siteConfig } from '@data/config/site';
-import sponsors from '@data/sponsors.yaml';
+import { getAllSponsors } from '@lib/data';
+import type { Sponsor } from '@lib/types';
 
-const { isSponsoringOpen } = siteConfig;
+interface Props {
+  showHeader?: boolean;
+}
+const { showHeader = true } = Astro.props;
 
-// Filter sponsors by tier (Gold > Silver > Bronze > Partenaires)
-const goldSponsors = sponsors.filter((s: any) => s.type === 'gold');
-const silverSponsors = sponsors.filter((s: any) => s.type === 'silver');
-const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
-const partenaires = sponsors.filter((s: any) => s.type === 'partenaires');
+// Affichage complet par tier. La visibilite depend de hasSponsors UNIQUEMENT :
+// fermer les ventes de sponsoring (isSponsoringOpen=false) ne doit jamais
+// masquer les sponsors deja signes.
+const sponsors = getAllSponsors();
+const goldSponsors = sponsors.filter((s: Sponsor) => s.type === 'gold');
+const silverSponsors = sponsors.filter((s: Sponsor) => s.type === 'silver');
+const bronzeSponsors = sponsors.filter((s: Sponsor) => s.type === 'bronze');
+const partenaires = sponsors.filter((s: Sponsor) => s.type === 'partenaires');
 
-const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bronzeSponsors.length > 0 || partenaires.length > 0;
+const hasSponsors = sponsors.length > 0;
 ---
 
-{isSponsoringOpen && (
 <section class="sponsors-preview" id="sponsors">
   <div class="sponsors-preview-inner">
-    <div class="section-header">
-      <span class="section-label">Sponsors</span>
-      <h2 class="section-title">Ils nous soutiennent</h2>
-      <p class="section-desc">
-        Merci à nos sponsors qui rendent cet événement possible
-      </p>
-    </div>
+    {showHeader && (
+      <div class="section-header">
+        <span class="section-label">Sponsors</span>
+        <h2 class="section-title">Ils nous soutiennent</h2>
+        <p class="section-desc">
+          Merci à nos partenaires qui rendent cet événement possible
+        </p>
+      </div>
+    )}
 
     {hasSponsors ? (
       <div class="sponsors-tiers">
@@ -170,7 +177,6 @@ const hasSponsors = goldSponsors.length > 0 || silverSponsors.length > 0 || bron
     )}
   </div>
 </section>
-)}
 
 <style>
   .sponsors-preview {

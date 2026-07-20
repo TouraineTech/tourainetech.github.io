@@ -4,28 +4,54 @@ import HeroSection from '@components/home/HeroSection.astro';
 import StatsSection from '@components/home/StatsSection.astro';
 import CategoriesSection from '@components/home/CategoriesSection.astro';
 import TestimonialsSection from '@components/home/TestimonialsSection.astro';
+import SpeakersPreview from '@components/home/SpeakersPreview.astro';
+import ProgramPreview from '@components/home/ProgramPreview.astro';
 import GallerySection from '@components/home/GallerySection.astro';
-import SponsorsPreview from '@components/home/SponsorsPreview.astro';
-import BecomeSponsor from '@components/home/BecomeSponsor.astro';
+import SponsorsBlock from '@components/home/SponsorsBlock.astro';
 import MapSection from '@components/home/MapSection.astro';
 import NewsletterSection from '@components/home/NewsletterSection.astro';
-import { siteConfig, testimonials } from '@data/config/site';
+import { testimonials } from '@data/config/site';
 import photosData from '@data/generated/photos.json';
+import { isCfp, isTicketing, isProgramme, isPost } from '@lib/phase';
 
-// Rendu conditionnel selon la phase / la disponibilite du contenu
+// Composition pilotee par la phase (cf. plan) : ossature stable, importance
+// des contenus qui glisse. L'edition precedente descend a mesure que
+// l'edition courante devient concrete.
 const hasTestimonials = testimonials.length > 0;
 const hasPhotos = (photosData as unknown[]).length > 0;
-const { isSponsoringOpen } = siteConfig;
+const isPreEventCampaign = isCfp || isTicketing;
 ---
 
 <Layout>
   <HeroSection />
   <StatsSection />
-  <CategoriesSection />
-  {hasTestimonials && <TestimonialsSection />}
-  {hasPhotos && <GallerySection />}
-  <SponsorsPreview />
-  {isSponsoringOpen && <BecomeSponsor />}
-  <MapSection />
+
+  {isPreEventCampaign && (
+    <>
+      <CategoriesSection />
+      {hasTestimonials && <TestimonialsSection />}
+      <SponsorsBlock />
+      {hasPhotos && <GallerySection />}
+      <MapSection />
+    </>
+  )}
+
+  {isProgramme && (
+    <>
+      <SpeakersPreview />
+      <ProgramPreview />
+      <SponsorsBlock />
+      <MapSection />
+      {hasPhotos && <GallerySection />}
+    </>
+  )}
+
+  {isPost && (
+    <>
+      {hasPhotos && <GallerySection />}
+      <SponsorsBlock />
+    </>
+  )}
+
   <NewsletterSection />
 </Layout>
