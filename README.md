@@ -10,7 +10,7 @@ Recommandé — [mise](https://mise.jdx.dev) installe les bons outils d'un coup 
 mise trust && mise install   # Node 22, pnpm, Task (voir mise.toml)
 ```
 
-Sinon, manuellement : Node.js 22, [pnpm](https://pnpm.io), [Task](https://taskfile.dev) (`brew install go-task/tap/go-task`).
+Sinon, manuellement : Node.js 24, [pnpm](https://pnpm.io), [Task](https://taskfile.dev) (`brew install go-task/tap/go-task`).
 
 ## Développement
 
