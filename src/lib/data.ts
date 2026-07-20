@@ -55,8 +55,8 @@ export interface FullTalk {
 // OpenFeedback configuration
 const OPENFEEDBACK_EVENT_ID = 'nIlFquxGUZ1IJ1cDkc1z';
 const DATE_BY_DAY: Record<number, string> = {
-  1: '2026-02-12', // Jeudi
-  2: '2026-02-13', // Vendredi
+  1: '2027-02-18', // Jeudi
+  2: '2027-02-19', // Vendredi
 };
 
 const DAY_LABELS: Record<number, string> = {

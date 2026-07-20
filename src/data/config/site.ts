@@ -24,8 +24,8 @@ export const siteConfig: SiteConfig = {
 
   // Informations de l'edition
   edition: {
-    year: 2026,
-    dates: '12-13 Fevrier 2026',
+    year: 2027,
+    dates: '18-19 Fevrier 2027',
     location: 'Polytech Tours',
   },
 };
