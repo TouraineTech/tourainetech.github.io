@@ -1,6 +1,6 @@
 ---
 import { siteConfig } from '@data/config/site';
-import { isCfpOpen, isProgrammePublished, showTicketCard } from '@lib/phase';
+import { isCfpOpen, isSponsoring, isProgrammePublished, showTicketCard } from '@lib/phase';
 
 const { ticketingUrl, cfpUrl } = siteConfig;
 
@@ -35,6 +35,16 @@ const currentPath = Astro.url.pathname;
           {link.label}
         </a>
       ))}
+
+      {isSponsoring && (
+        <a
+          href="/sponsors"
+          class="nav-cta nav-cta-cfp"
+          aria-label="Devenir sponsor"
+        >
+          Devenir sponsor
+        </a>
+      )}
 
       {isCfpOpen && (
         <a
@@ -91,6 +101,16 @@ const currentPath = Astro.url.pathname;
     </div>
 
     <div class="nav-mobile-ctas">
+      {isSponsoring && (
+        <a
+          href="/sponsors"
+          class="nav-cta nav-cta-cfp"
+          aria-label="Devenir sponsor"
+        >
+          Devenir sponsor
+        </a>
+      )}
+
       {isCfpOpen && (
         <a
           href={cfpUrl}

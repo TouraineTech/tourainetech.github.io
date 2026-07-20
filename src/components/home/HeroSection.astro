@@ -4,7 +4,7 @@ import HeroCompanionCfp from './HeroCompanionCfp.astro';
 import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
 import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
 import { siteConfig } from '@data/config/site';
-import { isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoringOpen, showTicketCard } from '@lib/phase';
+import { isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
 ---
@@ -107,11 +107,11 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
       <HeroCompanionCfp />
     )}
 
-    {!showTicketCard && !isCfpOpen && isSponsoringOpen && (
+    {!showTicketCard && !isCfpOpen && isSponsoring && (
       <HeroCompanionSponsoring />
     )}
 
-    {!showTicketCard && !isCfpOpen && !isSponsoringOpen && (
+    {!showTicketCard && !isCfpOpen && !isSponsoring && (
       <HeroCompanionPreviousEdition />
     )}
   </div>

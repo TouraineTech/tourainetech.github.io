@@ -4,6 +4,8 @@ import { getAllSponsors } from '@lib/data';
 // Source de verite : la phase de campagne pilote le hero + l'ordre editorial.
 export const phase = siteConfig.phase;
 
+export const isIntro = phase === 'intro';
+export const isSponsoring = phase === 'sponsoring';
 export const isCfp = phase === 'cfp';
 export const isTicketing = phase === 'ticketing';
 export const isProgramme = phase === 'programme';

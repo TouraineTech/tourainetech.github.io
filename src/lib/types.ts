@@ -10,7 +10,7 @@ export interface SiteConfig {
   // Phase principale de campagne : pilote le hero + l'ordre editorial de la home.
   // Les flags legacy (isCfpOpen, isProgrammePublished, showTicketCard...) en sont
   // derives dans src/lib/phase.ts.
-  phase: 'cfp' | 'ticketing' | 'programme' | 'post-event';
+  phase: 'intro' | 'sponsoring' | 'cfp' | 'ticketing' | 'programme' | 'post-event';
 
   // Etats independants (disponibilite des CTA/contenus, PAS l'ordre)
   isTicketingOpen: boolean;
