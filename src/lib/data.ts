@@ -88,6 +88,8 @@ const CATEGORY_COLORS: Record<string, string> = {
   humain: 'var(--cat-human)',
   ai: 'var(--cat-ai)',
   ia: 'var(--cat-ai)',
+  intelligence: 'var(--cat-ai)',
+  artificielle: 'var(--cat-ai)',
   machine: 'var(--cat-ai)',
   alien: 'var(--cat-alien)',
 };
@@ -116,7 +118,7 @@ export function getCategoryLabel(category: string | null): string {
   if (lowerCat.includes('iot') || lowerCat.includes('embarqué')) return 'IoT';
   if (lowerCat.includes('outil') || lowerCat.includes('pratique') || lowerCat.includes('dev')) return 'Tools';
   if (lowerCat.includes('humain') || lowerCat.includes('human')) return 'Human';
-  if (lowerCat.includes('ia') || lowerCat.includes('ai') || lowerCat.includes('machine')) return 'AI';
+  if (lowerCat.includes('intelligence') || lowerCat.includes('artificielle') || lowerCat.includes(' ia') || lowerCat.includes('machine')) return 'IA';
   if (lowerCat.includes('alien')) return 'Alien';
   return category.length > 10 ? category.substring(0, 10) : category;
 }

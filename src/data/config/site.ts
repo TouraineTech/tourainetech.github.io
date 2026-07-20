@@ -48,30 +48,13 @@ export const talkCategories = [
   { id: 'alien', name: 'Alien', icon: '👽', description: 'IoT, embarque, mobile, et plus', color: '#1ABC9C' },
 ];
 
-// Temoignages (placeholders)
-export const testimonials = [
-  {
-    id: '1',
-    quote: 'Une conference a taille humaine avec des talks de grande qualite. Je reviens chaque annee!',
-    author: 'Marie Dupont',
-    role: 'Developpeur Senior',
-    company: 'TechCorp',
-    avatar: '',
-  },
-  {
-    id: '2',
-    quote: 'L\'ambiance est top, les speakers accessibles, et le lieu est parfait. Vivement l\'annee prochaine!',
-    author: 'Thomas Martin',
-    role: 'Tech Lead',
-    company: 'StartupXYZ',
-    avatar: '',
-  },
-  {
-    id: '3',
-    quote: 'Mon premier talk en conference, et l\'equipe m\'a super bien accompagne. Une experience inoubliable.',
-    author: 'Sophie Bernard',
-    role: 'Speaker 2025',
-    company: '',
-    avatar: '',
-  },
-];
+// Temoignages reels a ajouter ici (l'ancien contenu etait fictif et a ete retire).
+// La section n'est affichee sur la home que si ce tableau est non vide.
+export const testimonials: Array<{
+  id: string;
+  quote: string;
+  author: string;
+  role: string;
+  company: string;
+  avatar: string;
+}> = [];

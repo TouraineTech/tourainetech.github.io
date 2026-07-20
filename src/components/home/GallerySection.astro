@@ -1,20 +1,18 @@
 ---
 import { siteConfig } from '@data/config/site';
+import PhotoGallery from '@components/ui/PhotoGallery.astro';
+import photosData from '@data/generated/photos.json';
+
+interface Photo {
+  date: string;
+  small: string;
+  original: string;
+}
 
 const { edition } = siteConfig;
 const previousYear = edition.year - 1;
-
-// Placeholder photos - will be replaced with actual Flickr photos
-const photos = [
-  { id: '1', placeholder: true },
-  { id: '2', placeholder: true },
-  { id: '3', placeholder: true },
-  { id: '4', placeholder: true },
-  { id: '5', placeholder: true },
-  { id: '6', placeholder: true },
-  { id: '7', placeholder: true },
-  { id: '8', placeholder: true },
-];
+const photos = (photosData as Photo[]) ?? [];
+const PREVIEW = 8;
 ---
 
 <section class="gallery">
@@ -27,27 +25,14 @@ const photos = [
       </p>
     </div>
 
-    <div class="gallery-grid">
-      {photos.map((photo) => (
-        <div class="gallery-item">
-          {photo.placeholder ? (
-            <div class="gallery-placeholder">
-              <span>📸</span>
-            </div>
-          ) : (
-            <img src={photo.url} alt={photo.title || `Touraine Tech ${previousYear}`} loading="lazy" />
-          )}
-        </div>
-      ))}
-    </div>
+    <PhotoGallery photos={photos} limit={PREVIEW} />
 
     <div class="gallery-footer">
-      <a href="https://www.flickr.com/photos/143866243@N05/albums" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+      <a href="/photos" class="btn btn-secondary">
         Voir toutes les photos
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-          <polyline points="15 3 21 3 21 9"/>
-          <line x1="10" y1="14" x2="21" y2="3"/>
+          <path d="M5 12h14" />
+          <path d="M12 5l7 7-7 7" />
         </svg>
       </a>
     </div>
@@ -65,67 +50,9 @@ const photos = [
     margin: 0 auto;
   }
 
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .gallery-item {
-    aspect-ratio: 4/3;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  .gallery-item:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .gallery-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-tertiary) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-  }
-
   .gallery-footer {
     display: flex;
     justify-content: center;
-  }
-
-  @media (max-width: 1024px) {
-    .gallery-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .gallery-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .gallery-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
-    }
-
-    .gallery-item {
-      border-radius: 12px;
-    }
+    margin-top: 2rem;
   }
 </style>

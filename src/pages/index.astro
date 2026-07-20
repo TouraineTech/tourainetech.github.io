@@ -9,16 +9,23 @@ import SponsorsPreview from '@components/home/SponsorsPreview.astro';
 import BecomeSponsor from '@components/home/BecomeSponsor.astro';
 import MapSection from '@components/home/MapSection.astro';
 import NewsletterSection from '@components/home/NewsletterSection.astro';
+import { siteConfig, testimonials } from '@data/config/site';
+import photosData from '@data/generated/photos.json';
+
+// Rendu conditionnel selon la phase / la disponibilite du contenu
+const hasTestimonials = testimonials.length > 0;
+const hasPhotos = (photosData as unknown[]).length > 0;
+const { isSponsoringOpen } = siteConfig;
 ---
 
 <Layout>
   <HeroSection />
   <StatsSection />
   <CategoriesSection />
-  <TestimonialsSection />
-  <GallerySection />
+  {hasTestimonials && <TestimonialsSection />}
+  {hasPhotos && <GallerySection />}
   <SponsorsPreview />
-  <BecomeSponsor />
+  {isSponsoringOpen && <BecomeSponsor />}
   <MapSection />
   <NewsletterSection />
 </Layout>

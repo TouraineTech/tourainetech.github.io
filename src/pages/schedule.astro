@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import TalkCard from '@components/schedule/TalkCard.astro';
-import { getAllRooms, type Room } from '@lib/data';
+import { getAllRooms, getCategoryLabel, getCategoryColor, type Room } from '@lib/data';
 
 // Import data
 import scheduleData from '@data/generated/schedule.json';
@@ -99,18 +99,21 @@ function getCellStyle(item: { rooms: number[]; times: number[] }): string {
   return `grid-column-start: ${colStart}; grid-column-end: ${colEnd}; grid-row-start: ${rowStart}; grid-row-end: ${rowEnd};`;
 }
 
-// Categories for filter
-const categories = [
+// Filter buttons derived from the categories actually present in the schedule.
+// Keyed by the normalized label from data.ts (getCategoryLabel) so buttons and
+// talk cells share the exact same identity — no hardcoded English ids.
+const allTalks = scheduleDays.flatMap((d) => d.talks);
+const seenCat = new Set<string>();
+const categories: Array<{ id: string; label: string; color: string }> = [
   { id: 'all', label: 'Toutes', color: 'var(--text-muted)' },
-  { id: 'front', label: 'Front', color: 'var(--cat-front)' },
-  { id: 'backend', label: 'Backend', color: 'var(--cat-backend)' },
-  { id: 'archi', label: 'Architecture', color: 'var(--cat-archi)' },
-  { id: 'iot', label: 'IoT', color: 'var(--cat-iot)' },
-  { id: 'tools', label: 'Tools', color: 'var(--cat-tools)' },
-  { id: 'human', label: 'Human & Tech', color: 'var(--cat-human)' },
-  { id: 'ai', label: 'AI', color: 'var(--cat-ai)' },
-  { id: 'alien', label: 'Alien', color: 'var(--cat-alien)' },
 ];
+for (const t of allTalks) {
+  if (!t.categories) continue;
+  const label = getCategoryLabel(t.categories);
+  if (seenCat.has(label)) continue;
+  seenCat.add(label);
+  categories.push({ id: label, label, color: getCategoryColor(t.categories) });
+}
 ---
 
 <Layout title="Programme - Touraine Tech 2026">
@@ -212,7 +215,7 @@ const categories = [
               <div
                 class="talk-cell"
                 style={getCellStyle(talk)}
-                data-category={talk.categories?.toLowerCase() || 'keynote'}
+                data-category={getCategoryLabel(talk.categories)}
               >
                 <TalkCard
                   id={talk.id}
@@ -672,10 +675,12 @@ const categories = [
       document.querySelectorAll('.talk-cell').forEach(cell => {
         if (category === 'all') {
           (cell as HTMLElement).style.opacity = '1';
+          (cell as HTMLElement).style.pointerEvents = '';
         } else {
           const cellCat = cell.getAttribute('data-category') || '';
-          const matches = cellCat.toLowerCase().includes(category);
-          (cell as HTMLElement).style.opacity = matches ? '1' : '0.3';
+          const matches = cellCat === category;
+          (cell as HTMLElement).style.opacity = matches ? '1' : '0.15';
+          (cell as HTMLElement).style.pointerEvents = matches ? '' : 'none';
         }
       });
     });
