@@ -1,12 +1,12 @@
 name: CI
 
+# Le build + les Deploy Previews sont gérés par Netlify sur chaque PR.
+# Ici on ne fait qu'un typecheck rapide (complémentaire de Netlify).
 on:
-  push:
-    branches: [main, feat/astro-migration]
   pull_request:
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,9 +20,14 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      - name: Setup Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # `pnpm build` régénère les données (prebuild) puis lance `astro build`.
-      - name: Build
-        run: pnpm build
+      - name: Typecheck
+        run: task check

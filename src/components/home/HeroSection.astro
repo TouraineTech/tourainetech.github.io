@@ -150,8 +150,8 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
 
 <script>
   const lightbox = document.getElementById('tshirt-lightbox');
-  const trigger = document.querySelector('.addon-image');
-  const closeBtn = document.querySelector('.lightbox-close');
+  const trigger = document.querySelector<HTMLElement>('.addon-image');
+  const closeBtn = document.querySelector<HTMLElement>('.lightbox-close');
 
   function openLightbox() {
     lightbox?.setAttribute('aria-hidden', 'false');

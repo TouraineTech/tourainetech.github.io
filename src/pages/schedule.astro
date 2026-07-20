@@ -611,7 +611,7 @@ for (const t of allTalks) {
   const tabPanels = document.querySelectorAll('.schedule-container');
 
   dayButtons.forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function(this: HTMLElement) {
       const day = this.getAttribute('data-day');
 
       // Update buttons and ARIA
@@ -633,7 +633,7 @@ for (const t of allTalks) {
     });
 
     // Keyboard navigation for tabs
-    btn.addEventListener('keydown', function(e) {
+    btn.addEventListener('keydown', function(this: HTMLElement, e: Event) {
       const key = (e as KeyboardEvent).key;
       let targetBtn: Element | null = null;
 
@@ -660,7 +660,7 @@ for (const t of allTalks) {
   const catFilters = document.querySelectorAll('.cat-filter');
 
   catFilters.forEach(filter => {
-    filter.addEventListener('click', function() {
+    filter.addEventListener('click', function(this: HTMLElement) {
       const category = this.getAttribute('data-category');
 
       // Update filter buttons and ARIA

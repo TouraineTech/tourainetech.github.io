@@ -17,7 +17,7 @@ const obsUrls = {
   Physique: 'https://touraine.tech/obs-web/#wss://vital-raccoon-preferably.ngrok-free.app/',
 };
 
-const rooms = ['F21', 'F22', 'Bio', 'Physique'];
+const rooms = ['F21', 'F22', 'Bio', 'Physique'] as const;
 ---
 
 <Layout title="Régie TNT" description="Page de régie pour la diffusion Touraine Tech" noindex>
@@ -60,12 +60,12 @@ const rooms = ['F21', 'F22', 'Bio', 'Physique'];
   // Update YouTube iframes based on query parameters
   document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
-    const rooms = ['F21', 'F22', 'Bio', 'Physique'];
+    const rooms = ['F21', 'F22', 'Bio', 'Physique'] as const;
 
     rooms.forEach((room) => {
       const videoId = params.get(room);
       if (videoId) {
-        const iframe = document.getElementById(`yt-${room}`);
+        const iframe = document.getElementById(`yt-${room}`) as HTMLIFrameElement | null;
         if (iframe) {
           iframe.src = `https://www.youtube.com/embed/${videoId}`;
         }

@@ -1,0 +1,43 @@
+# Taskfile (https://taskfile.dev) — source unique des commandes.
+# Prérequis : `brew install go-task/tap/go-task`
+version: '3'
+
+tasks:
+  dev:
+    desc: Serveur de développement Astro
+    cmd: pnpm dev
+
+  build:
+    desc: Build de production (régénère les données puis astro build)
+    cmd: pnpm build
+
+  check:
+    desc: Typecheck du projet (astro check) — utilisé par la CI
+    cmd: pnpm exec astro check
+
+  data:
+    desc: Régénère les données planning + timer depuis les sources
+    cmds:
+      - pnpm run planning:build
+      - pnpm run extract:timerDatas
+
+  redirects:
+    desc: 'Génère public/_redirects d''archivage (vars: YEAR, [DOMAIN])'
+    requires:
+      vars: [YEAR]
+    vars:
+      DOMAIN: '{{.DOMAIN | default (printf "%s.touraine.tech" .YEAR)}}'
+    cmd: YEAR={{.YEAR}} DOMAIN={{.DOMAIN}} node tools/generateRedirects.mjs
+
+  archive:
+    desc: 'Fige le build et le publie sur le repo d''archive <YEAR>.touraine.tech (vars: YEAR, [ARCHIVE_REPO], [ARCHIVE_DOMAIN])'
+    requires:
+      vars: [YEAR]
+    vars:
+      ARCHIVE_DOMAIN: '{{.ARCHIVE_DOMAIN | default (printf "%s.touraine.tech" .YEAR)}}'
+      ARCHIVE_REPO: '{{.ARCHIVE_REPO | default (printf "git@github.com:TouraineTech/%s.touraine.tech.git" .YEAR)}}'
+    cmds:
+      - pnpm build
+      # L'archive sert sous son propre sous-domaine → on écrase le CNAME du live.
+      - echo "{{.ARCHIVE_DOMAIN}}" > dist/CNAME
+      - pnpm exec gh-pages -d dist -r {{.ARCHIVE_REPO}} -b gh-pages --dotfiles -m "archive {{.YEAR}}"
