@@ -6,6 +6,7 @@
 import { siteConfig } from '@data/config/site';
 import { getAllSponsors } from '@lib/data';
 import { hasSponsors, showSponsoringCta, isPost } from '@lib/phase';
+import SponsorPerks from '@components/home/SponsorPerks.astro';
 
 const { sponsoringUrl } = siteConfig;
 const sponsors = getAllSponsors();
@@ -33,6 +34,12 @@ const heading = showSponsoringCta
         </p>
       )}
     </div>
+
+    {showSponsoringCta && (
+      <div class="sb-perks">
+        <SponsorPerks />
+      </div>
+    )}
 
     {hasSponsors && (
       <>
@@ -102,6 +109,11 @@ const heading = showSponsoringCta
     max-width: 560px;
     margin: 1rem auto 0;
     line-height: 1.6;
+  }
+
+  .sb-perks {
+    max-width: 900px;
+    margin: 2.5rem auto 0;
   }
 
   .sb-proof {
