@@ -204,16 +204,9 @@ const perks = [
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
     animation: fadeInUp 0.6s ease-out backwards;
     animation-delay: calc(0.35s + var(--index) * 0.08s);
     box-shadow: var(--shadow-sm);
-  }
-
-  .perk-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: color-mix(in srgb, var(--accent) 25%, transparent);
   }
 
   .perk-icon-wrapper {
@@ -224,11 +217,6 @@ const perks = [
     justify-content: center;
     background: color-mix(in srgb, var(--accent) 8%, white);
     border-radius: 14px;
-    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .perk-card:hover .perk-icon-wrapper {
-    transform: scale(1.05);
   }
 
   .perk-icon {

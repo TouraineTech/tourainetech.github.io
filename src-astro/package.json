@@ -13,8 +13,8 @@
     "photos:fetch": "node ../tools/photos.mjs"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.2.0",
-    "astro": "^4.16.0",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.0.0",
     "date-fns": "^3.6.0",
     "marked": "^17.0.1"
   },

@@ -227,10 +227,13 @@ export function getTalksBySpeakerUid(uid: string): FullTalk[] {
 }
 
 /**
- * Format time display (e.g., "Jeudi 12 a 09h00")
+ * Format time display (e.g., "Jeudi 12 a 09h00").
+ * `timePosition` is the position of the slot in `times.json` (the value stored
+ * in `schedule[].times` by tools/build.mjs), NOT the `timeIndex` field — the
+ * two diverge because `times.json` skips some `timeIndex` values.
  */
-export function formatTimeDisplay(timeIndex: number, day: number): string {
-  const slot = times.find((t) => t.timeIndex === String(timeIndex));
+export function formatTimeDisplay(timePosition: number, day: number): string {
+  const slot = times[timePosition];
   const dayLabel = DAY_LABELS[day] || `Jour ${day}`;
   const time = slot?.time?.replace(':', 'h') || '??h??';
   return `${dayLabel} a ${time}`;
@@ -270,10 +273,12 @@ export function getRoomCapacityLabel(roomName: string): string {
 }
 
 /**
- * Get raw time string (e.g., "09:00")
+ * Get raw time string (e.g., "09:00").
+ * `timePosition` is the position of the slot in `times.json` (see
+ * formatTimeDisplay), NOT the `timeIndex` field.
  */
-export function getTimeString(timeIndex: number): string {
-  const slot = times.find((t) => t.timeIndex === String(timeIndex));
+export function getTimeString(timePosition: number): string {
+  const slot = times[timePosition];
   return slot?.time || '??:??';
 }
 

@@ -2,11 +2,11 @@ import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
   // Phases du site - ajuster selon le cycle de l'evenement
-  isCfpOpen: false,
+  isCfpOpen: true,
   isTicketingOpen: false,
-  isTicketingTeasing: false,
+  isTicketingTeasing: true,
   ticketingOpenDate: '15 janvier 2026',
-  isProgrammePublished: false,
+  isProgrammePublished: true,
   isSponsoringOpen: true,
 
   // URLs externes
@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
   edition: {
     year: 2026,
     dates: '12-13 Fevrier 2026',
-    location: 'Faculté des Sciences - Université de Tours',
+    location: 'Polytech Tours',
   },
 };
 

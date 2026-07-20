@@ -26,7 +26,7 @@ export function getStaticPaths() {
 const { day, room } = Astro.params;
 ---
 
-<Layout title={`Timer - ${room} - Jour ${day}`} description={`Timer pour la salle ${room}`}>
+<Layout title={`Timer - ${room} - Jour ${day}`} description={`Timer pour la salle ${room}`} noindex>
   <div class="timer-room" data-room={room} data-day={day}>
     <img src="/img/logo.svg" alt="Touraine Tech" class="logo" />
 
@@ -37,6 +37,8 @@ const { day, room } = Astro.params;
 </Layout>
 
 <script define:vars={{ day, room }}>
+  let timerInterval = null;
+
   async function loadTimerData() {
     try {
       const response = await fetch(`/timer/day${day}/${room}.json`);
@@ -82,7 +84,9 @@ const { day, room } = Astro.params;
   }
 
   function startTimers() {
-    setInterval(() => {
+    // Guard against stacking intervals if the talks are re-rendered.
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
       const chronos = document.querySelectorAll('.chrono');
       chronos.forEach((chrono) => {
         const endTime = chrono.dataset.endTime;

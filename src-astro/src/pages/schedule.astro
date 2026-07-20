@@ -77,15 +77,13 @@ function getSpeakersForTalk(talkId: string): Array<{ name: string; photoURL?: st
   });
 }
 
-// Filter data by day
-const day1Talks = (scheduleData as ScheduleItem[]).filter(t => t.day === 1);
-const day2Talks = (scheduleData as ScheduleItem[]).filter(t => t.day === 2);
-
-const day1Times = (timesData as TimeSlot[]).filter(t => t.days.includes(1));
-const day2Times = (timesData as TimeSlot[]).filter(t => t.days.includes(2));
-
-const day1Breaks = (breaksData as BreakItem[]).filter(b => b.days.includes(1));
-const day2Breaks = (breaksData as BreakItem[]).filter(b => b.days.includes(2));
+// Filter data by day (one entry per conference day)
+const scheduleDays = [1, 2].map((day) => ({
+  day,
+  talks: (scheduleData as ScheduleItem[]).filter((t) => t.day === day),
+  times: (timesData as TimeSlot[]).filter((t) => t.days.includes(day)),
+  breaks: (breaksData as BreakItem[]).filter((b) => b.days.includes(day)),
+}));
 
 // Get rooms with capacities from config
 const rooms = getAllRooms();
@@ -165,125 +163,73 @@ const categories = [
       </div>
     </header>
 
-    <!-- Schedule Grid - Day 1 -->
-    <div class="schedule-container" id="day1" data-day="1" role="tabpanel" aria-labelledby="tab-day1">
-      <div class="schedule-grid">
-        <!-- Header Row: corner + room headers -->
-        <div class="corner-cell room-header"></div>
-        {rooms.map((room, i) => (
-          <div
-            class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
-            style={`grid-column: ${i + 2}; grid-row: 1;`}
-          >
-            <div class="room-name">{room.name}</div>
-            <div class="room-capacity">{room.capacity} places</div>
-          </div>
-        ))}
-
-        <!-- Time labels (column 1) -->
-        {day1Times.map((timeSlot) => (
-          <div class="time-cell" style="grid-column: 1;">
-            {timeSlot.time}
-          </div>
-        ))}
-
-        <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
-        {day1Breaks.map((breakItem) => (
-          <div class="break-cell" style={getCellStyle(breakItem)}>
-            {breakItem.name && (
-              <div class="break-content">
-                <span class="break-name">{breakItem.name}</span>
-              </div>
-            )}
-          </div>
-        ))}
-
-        <!-- Talks with absolute positioning -->
-        {day1Talks.map((talk) => {
-          const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
-          const speakers = getSpeakersForTalk(talk.id);
-
-          return (
+    <!-- Schedule Grid - one per day -->
+    {scheduleDays.map(({ day, talks, times, breaks }) => (
+      <div
+        class:list={['schedule-container', { hidden: day !== 1 }]}
+        id={`day${day}`}
+        data-day={day}
+        role="tabpanel"
+        aria-labelledby={`tab-day${day}`}
+      >
+        <div class="schedule-grid">
+          <!-- Header Row: corner + room headers -->
+          <div class="corner-cell room-header"></div>
+          {rooms.map((room, i) => (
             <div
-              class="talk-cell"
-              style={getCellStyle(talk)}
-              data-category={talk.categories?.toLowerCase() || 'keynote'}
+              class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
+              style={`grid-column: ${i + 2}; grid-row: 1;`}
             >
-              <TalkCard
-                id={talk.id}
-                title={talk.title}
-                category={talk.categories}
-                format={talk.formats}
-                level={talk.level}
-                speakers={speakers}
-                isWorkshop={isWorkshop}
-                rowSpan={talk.times.length}
-              />
+              <div class="room-name">{room.name}</div>
+              <div class="room-capacity">{room.capacity} places</div>
             </div>
-          );
-        })}
-      </div>
-    </div>
+          ))}
 
-    <!-- Schedule Grid - Day 2 -->
-    <div class="schedule-container hidden" id="day2" data-day="2" role="tabpanel" aria-labelledby="tab-day2">
-      <div class="schedule-grid">
-        <!-- Header Row: corner + room headers -->
-        <div class="corner-cell room-header"></div>
-        {rooms.map((room, i) => (
-          <div
-            class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
-            style={`grid-column: ${i + 2}; grid-row: 1;`}
-          >
-            <div class="room-name">{room.name}</div>
-            <div class="room-capacity">{room.capacity} places</div>
-          </div>
-        ))}
+          <!-- Time labels (column 1) -->
+          {times.map((timeSlot) => (
+            <div class="time-cell" style="grid-column: 1;">
+              {timeSlot.time}
+            </div>
+          ))}
 
-        <!-- Time labels (column 1) -->
-        {day2Times.map((timeSlot) => (
-          <div class="time-cell" style="grid-column: 1;">
-            {timeSlot.time}
-          </div>
-        ))}
+          <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
+          {breaks.map((breakItem) => (
+            <div class="break-cell" style={getCellStyle(breakItem)}>
+              {breakItem.name && (
+                <div class="break-content">
+                  <span class="break-name">{breakItem.name}</span>
+                </div>
+              )}
+            </div>
+          ))}
 
-        <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
-        {day2Breaks.map((breakItem) => (
-          <div class="break-cell" style={getCellStyle(breakItem)}>
-            {breakItem.name && (
-              <div class="break-content">
-                <span class="break-name">{breakItem.name}</span>
+          <!-- Talks with absolute positioning -->
+          {talks.map((talk) => {
+            const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+            const speakers = getSpeakersForTalk(talk.id);
+
+            return (
+              <div
+                class="talk-cell"
+                style={getCellStyle(talk)}
+                data-category={talk.categories?.toLowerCase() || 'keynote'}
+              >
+                <TalkCard
+                  id={talk.id}
+                  title={talk.title}
+                  category={talk.categories}
+                  format={talk.formats}
+                  level={talk.level}
+                  speakers={speakers}
+                  isWorkshop={isWorkshop}
+                  rowSpan={talk.times.length}
+                />
               </div>
-            )}
-          </div>
-        ))}
-
-        <!-- Talks with absolute positioning -->
-        {day2Talks.map((talk) => {
-          const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
-          const speakers = getSpeakersForTalk(talk.id);
-
-          return (
-            <div
-              class="talk-cell"
-              style={getCellStyle(talk)}
-              data-category={talk.categories?.toLowerCase() || 'keynote'}
-            >
-              <TalkCard
-                id={talk.id}
-                title={talk.title}
-                category={talk.categories}
-                format={talk.formats}
-                level={talk.level}
-                speakers={speakers}
-                isWorkshop={isWorkshop}
-                rowSpan={talk.times.length}
-              />
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    ))}
   </div>
 </Layout>
 

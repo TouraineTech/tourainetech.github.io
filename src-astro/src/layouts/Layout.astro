@@ -9,12 +9,15 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  /** Set on internal/utility pages (regie, timer, waiting-screen) to keep them out of search indexes. */
+  noindex?: boolean;
 }
 
 const {
   title = `Touraine Tech ${siteConfig.edition.year}`,
   description = 'La conference tech en Touraine - 50+ talks, 800 participants, 2 jours de conferences techniques a Tours',
-  ogImage = '/og-image.png',
+  ogImage = '/img/cover_home.jpg',
+  noindex = false,
 } = Astro.props;
 
 const fullTitle = title.includes('Touraine Tech') ? title : `${title} | Touraine Tech ${siteConfig.edition.year}`;
@@ -28,6 +31,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#6ABFAD" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Search Console / stores -->
+    <meta name="google-site-verification" content="aloBwm93e88RJEH5XUhpIl9yuBphazWNYt6Al0PR7cM" />
+    <meta name="application-name" content="Touraine Tech" />
+    <meta name="apple-mobile-web-app-title" content="Touraine Tech" />
+    <meta name="msapplication-TileColor" content="#6ABFAD" />
+    <meta name="apple-itunes-app" content="app-id=1599891078" />
+    <meta name="google-play-app" content="app-id=to.chapi.tnt" />
 
     <title>{fullTitle}</title>
 
@@ -36,6 +48,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6ABFAD" />
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalURL} />
@@ -50,6 +64,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tourainetech" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
@@ -61,6 +76,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Analytics (Umami) -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="61e0351a-e30c-43c4-8464-3a673ece80f7"
+      data-domains="touraine.tech"
+    ></script>
   </head>
   <body>
     <a href="#main" class="skip-link">Aller au contenu principal</a>
