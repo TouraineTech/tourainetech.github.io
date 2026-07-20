@@ -11,15 +11,17 @@ interface Props {
   photos: Photo[];
   /** Nombre max de vignettes affichees (le reste reste accessible via le lien Flickr). */
   limit?: number;
+  /** Largeur mini d'une vignette (px). Plus grand = moins de colonnes, vignettes plus grosses. */
+  minThumb?: number;
 }
 
-const { photos, limit } = Astro.props;
+const { photos, limit, minThumb = 180 } = Astro.props;
 const shown = typeof limit === 'number' ? photos.slice(0, limit) : photos;
 // Seules les URLs plein format sont necessaires cote client (lightbox).
 const originals = shown.map((p) => p.original);
 ---
 
-<div class="photo-gallery">
+<div class="photo-gallery" style={`--min-thumb: ${minThumb}px`}>
   {shown.map((p, i) => (
     <button
       type="button"
@@ -93,7 +95,7 @@ const originals = shown.map((p) => p.original);
 <style>
   .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--min-thumb, 180px), 1fr));
     gap: 0.75rem;
   }
 

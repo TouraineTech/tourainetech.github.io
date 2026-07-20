@@ -1,4 +1,5 @@
 import { marked } from 'marked';
+import sanitizeHtml from 'sanitize-html';
 import type {
   Speaker,
   ConferenceHallData,
@@ -295,9 +296,36 @@ export function buildOpenFeedbackUrl(talkId: string, day: number): string {
 /**
  * Convert markdown to HTML
  */
+// Contenu injecte via set:html : abstracts/bios viennent des soumissions CFP
+// (non fiables) → on sanitize systematiquement. Astro ne sanitize pas set:html.
+const SANITIZE_OPTIONS: sanitizeHtml.IOptions = {
+  allowedTags: [
+    ...sanitizeHtml.defaults.allowedTags,
+    'img', 'h1', 'h2',
+  ],
+  allowedAttributes: {
+    ...sanitizeHtml.defaults.allowedAttributes,
+    a: ['href', 'name', 'target', 'rel'],
+    img: ['src', 'alt', 'title'],
+  },
+  allowedSchemes: ['http', 'https', 'mailto'],
+  // Force les liens externes en toute securite
+  transformTags: {
+    a: sanitizeHtml.simpleTransform('a', { rel: 'noopener noreferrer' }),
+  },
+};
+
+/**
+ * Sanitize du HTML avant injection via set:html (defense XSS).
+ */
+export function sanitize(html: string | undefined | null): string {
+  if (!html) return '';
+  return sanitizeHtml(html, SANITIZE_OPTIONS);
+}
+
 export function markdownToHtml(md: string | undefined | null): string {
   if (!md) return '';
-  return marked.parse(md, { async: false }) as string;
+  return sanitize(marked.parse(md, { async: false }) as string);
 }
 
 /**

@@ -108,10 +108,12 @@ const { day, room } = Astro.params;
           chrono.classList.remove('blink');
         }
 
-        // Auto-scroll when time is up
+        // Auto-scroll quand le temps est ecoule — une seule fois par talk
+        // (sinon scrollIntoView se redeclenche toutes les 500 ms indefiniment).
         if (remaining.remainingInSeconds <= 0) {
           const talkBloc = chrono.closest('.talk-bloc');
-          if (talkBloc) {
+          if (talkBloc && !talkBloc.dataset.scrolled) {
+            talkBloc.dataset.scrolled = '1';
             const nextId = talkBloc.nextElementSibling?.id;
             if (nextId) {
               const nextElement = document.getElementById(nextId);
@@ -133,8 +135,10 @@ const { day, room } = Astro.params;
     const now = new Date();
     const remainingInSeconds = (endDate.getTime() - now.getTime()) / 1000;
 
-    const mins = Math.floor(Math.abs(remainingInSeconds) / 60);
-    const secs = Math.floor(Math.abs(remainingInSeconds) % 60);
+    // Un creneau expire affiche 00 : 00 (et non un compteur qui remonte).
+    const clamped = Math.max(0, remainingInSeconds);
+    const mins = Math.floor(clamped / 60);
+    const secs = Math.floor(clamped % 60);
 
     return {
       asString: `${String(mins).padStart(2, '0')} : ${String(secs).padStart(2, '0')}`,

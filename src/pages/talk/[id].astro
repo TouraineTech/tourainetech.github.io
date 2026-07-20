@@ -49,7 +49,7 @@ const catColor = getCategoryColor(talk.categories);
       <!-- Header -->
       <header class="talk-header">
         <div class="talk-meta">
-          <span class="format-badge" class:list={[{ 'lightning': isLightning(talk), 'workshop': isWorkshop(talk), 'keynote': isKeynote(talk) }]}>
+          <span class:list={['format-badge', { 'lightning': isLightning(talk), 'workshop': isWorkshop(talk), 'keynote': isKeynote(talk) }]}>
             {formatLabel}
             {durationLabel && <span class="duration">· {durationLabel}</span>}
           </span>
