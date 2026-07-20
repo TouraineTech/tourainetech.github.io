@@ -4,9 +4,9 @@ import HeroCompanionCfp from './HeroCompanionCfp.astro';
 import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
 import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
 import { siteConfig } from '@data/config/site';
-import { isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
+import { isCfp, isCfpOpen, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
-const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
+const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
 ---
 
 <section class="hero">
@@ -20,8 +20,12 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
       <div class="hero-meta">
         <MetaPill icon="📅" label="Date" value={edition.dates} />
         <MetaPill icon="📍" label="Lieu" value={edition.location} />
-        {isCfpOpen && cfpDeadline && (
+        {/* Pendant la billetterie/programme, le CFP est un indicateur secondaire */}
+        {showTicketCard && isCfpOpen && cfpDeadline && (
           <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
+        )}
+        {showTicketCard && !isCfpOpen && (
+          <MetaPill icon="🎤" label="CFP" value="Terminé" />
         )}
       </div>
 
@@ -39,6 +43,15 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
         {isProgrammePublished && (
           <a href="/schedule" class="btn btn-primary btn-lg">
             Consulter le programme
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        )}
+        {/* CFP ouvert pendant la billetterie/programme : CTA secondaire actionnable */}
+        {showTicketCard && isCfpOpen && (
+          <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            Soumettre un talk
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -72,6 +85,7 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
               <div class:list={['ticket-price', { unavailable: tier.isSoldOut }]}>
                 <p class="ticket-price-label">{tier.name}</p>
                 <p class="ticket-price-value">{tier.price}<span>€</span></p>
+                {tier.isSoldOut && <span class="ticket-soldout">Épuisé</span>}
               </div>
             ))}
           </div>
@@ -103,7 +117,7 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
       </div>
     )}
 
-    {!showTicketCard && isCfpOpen && (
+    {!showTicketCard && isCfp && (
       <HeroCompanionCfp />
     )}
 
@@ -342,23 +356,23 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
     position: relative;
   }
 
-  .ticket-price.unavailable {
-    opacity: 0.45;
+  .ticket-price.unavailable .ticket-price-value {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    opacity: 0.65;
   }
 
-  .ticket-price.unavailable::after {
-    content: 'EPUISE';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-8deg);
-    background: var(--text-primary);
-    color: white;
-    padding: 0.25rem 0.6rem;
-    font-size: 0.65rem;
-    font-weight: 600;
-    border-radius: 4px;
-    letter-spacing: 0.05em;
+  .ticket-soldout {
+    display: inline-block;
+    margin-top: 0.45rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    background: var(--bg-tertiary);
+    border-radius: 999px;
   }
 
   .ticket-price-label {
@@ -512,7 +526,7 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
     gap: 0.6rem;
     width: 100%;
     padding: 1.15rem;
-    background: var(--text-primary);
+    background: var(--accent);
     color: white;
     border: none;
     border-radius: 14px;
@@ -525,7 +539,7 @@ const { cfpDeadline, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = s
   }
 
   .hero-ticket-cta:hover {
-    background: #0D1D18;
+    background: var(--accent-dark);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(26, 46, 40, 0.2);
   }

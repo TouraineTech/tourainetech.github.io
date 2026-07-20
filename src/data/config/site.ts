@@ -2,10 +2,11 @@ import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
   // Phase de campagne : 'cfp' | 'ticketing' | 'programme' | 'post-event'
-  phase: 'cfp',
+  phase: 'ticketing',
 
   // Etats independants
-  isTicketingOpen: false,
+  isCfpOpen: true,
+  isTicketingOpen: true,
   isSponsoringOpen: true,
   ticketingOpenDate: '15 janvier 2026',
 

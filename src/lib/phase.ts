@@ -12,16 +12,14 @@ export const isProgramme = phase === 'programme';
 export const isPost = phase === 'post-event';
 
 // Etats independants
+export const isCfpOpen = siteConfig.isCfpOpen;
 export const isSponsoringOpen = siteConfig.isSponsoringOpen;
 export const isTicketingOpen = siteConfig.isTicketingOpen;
 
 // Derive de la donnee : ne jamais renseigner a la main.
 export const hasSponsors = getAllSponsors().length > 0;
 
-// Flags legacy derives (consommes par HeroSection / Navigation).
-// C'est ce mapping qui garantit "une seule conversion principale par phase"
-// et corrige le bug "CFP invisible".
-export const isCfpOpen = isCfp;
+// Flags derives (consommes par HeroSection / Navigation).
 export const isProgrammePublished = isProgramme || isPost;
 
 // La card billetterie du hero s'affiche pendant les phases billetterie/programme

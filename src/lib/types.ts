@@ -13,6 +13,9 @@ export interface SiteConfig {
   phase: 'intro' | 'sponsoring' | 'cfp' | 'ticketing' | 'programme' | 'post-event';
 
   // Etats independants (disponibilite des CTA/contenus, PAS l'ordre)
+  // Le CFP peut rester ouvert/ferme independamment de la phase courante
+  // (ex: ouvert pendant la phase ticketing).
+  isCfpOpen: boolean;
   isTicketingOpen: boolean;
   isSponsoringOpen: boolean;
   ticketingOpenDate?: string;

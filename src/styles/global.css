@@ -63,6 +63,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Décalage pour la nav sticky lors des scrolls vers une ancre (#sponsors, #venue…) */
+  scroll-padding-top: 5rem;
 }
 
 body {
