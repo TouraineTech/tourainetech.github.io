@@ -1,0 +1,11 @@
+[build]
+  publish = "dist"
+  # `pnpm build` déclenche le hook `prebuild` (planning:build + extract:timerDatas)
+  # qui régénère les données dans src/data + public/timer avant `astro build`.
+  command = "pnpm build"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"

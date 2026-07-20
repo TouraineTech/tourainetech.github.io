@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/conferenceHall.raw.json'), 'utf8'));
+const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/source/conferenceHall.raw.json'), 'utf8'));
 
 // Extract unique speakers with their talks
 const speakersMap = new Map();

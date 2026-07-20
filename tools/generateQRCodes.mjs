@@ -21,7 +21,7 @@ const LOGO_WIDTH = 300; // Logo width in the center (logo is wide, ~2.4:1 ratio)
 
 // Load sessions data
 const openfeedback = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../api/generated/openfeedback.json'), 'utf8')
+  fs.readFileSync(path.join(__dirname, '../src/data/generated/openfeedback.json'), 'utf8')
 );
 
 // Ensure output directory exists

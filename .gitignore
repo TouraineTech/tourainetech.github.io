@@ -19,3 +19,6 @@ dist
 
 # Local Netlify folder
 .netlify
+
+# Astro
+.astro

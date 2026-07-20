@@ -14,9 +14,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load data
-const planning = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/planning.json'), 'utf8'));
-const { talks, speakers: speakersData } = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/conferenceHall.json'), 'utf8'));
-const keynotes = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/source/keynotes.json'), 'utf8'));
+const planning = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/source/planning.json'), 'utf8'));
+const { talks, speakers: speakersData } = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/generated/conferenceHall.json'), 'utf8'));
+const keynotes = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/source/keynotes.json'), 'utf8'));
 
 // Config
 const DATE_BY_DAY = {
@@ -114,7 +114,7 @@ for (const [uid, info] of Object.entries(keynoteSpeakers)) {
 
 // Write output
 const output = { sessions, speakers };
-const outputPath = path.join(__dirname, '../api/generated/openfeedback.json');
+const outputPath = path.join(__dirname, '../src/data/generated/openfeedback.json');
 
 fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 console.log(`✅ OpenFeedback file generated: ${outputPath}`);

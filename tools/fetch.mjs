@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const EVENT_ID = 'touraine-tech-2026';
-const OUTPUT_PATH = path.join(__dirname, '../api/source/conferenceHall.raw.json');
+const OUTPUT_PATH = path.join(__dirname, '../src/data/source/conferenceHall.raw.json');
 
 const apiKey = process.env.API_KEY;
 const status = process.env.STATUS || 'pending,accepted';

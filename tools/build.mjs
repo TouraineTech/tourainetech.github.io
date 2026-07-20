@@ -12,16 +12,16 @@ const __dirname = path.dirname(__filename);
 
 const PATHS = {
   // Source files
-  raw: path.join(__dirname, '../api/source/conferenceHall.raw.json'),
-  keynotes: path.join(__dirname, '../api/source/keynotes.json'),
-  overrides: path.join(__dirname, '../api/source/overrides.json'),
-  planning: path.join(__dirname, '../api/source/planning.json'),
+  raw: path.join(__dirname, '../src/data/source/conferenceHall.raw.json'),
+  keynotes: path.join(__dirname, '../src/data/source/keynotes.json'),
+  overrides: path.join(__dirname, '../src/data/source/overrides.json'),
+  planning: path.join(__dirname, '../src/data/source/planning.json'),
   // Config files
-  times: path.join(__dirname, '../api/config/times.json'),
-  rooms: path.join(__dirname, '../api/config/rooms.json'),
+  times: path.join(__dirname, '../src/data/config/times.json'),
+  rooms: path.join(__dirname, '../src/data/config/rooms.json'),
   // Generated files
-  conferenceHall: path.join(__dirname, '../api/generated/conferenceHall.json'),
-  schedule: path.join(__dirname, '../api/generated/schedule.json'),
+  conferenceHall: path.join(__dirname, '../src/data/generated/conferenceHall.json'),
+  schedule: path.join(__dirname, '../src/data/generated/schedule.json'),
 };
 
 const validateOnly = process.argv.includes('--validate-only');
@@ -124,7 +124,8 @@ const formats = [...new Set(talks.map(t => t.formats).filter(Boolean))];
 console.log('📅 Generating schedule...');
 
 function roomNameToIndex(roomName) {
-  const idx = rooms.indexOf(roomName);
+  // rooms.json holds objects { name, capacity }
+  const idx = rooms.findIndex(r => r.name === roomName);
   return idx === -1 ? null : idx + 1;
 }
 
@@ -287,7 +288,7 @@ if (validateOnly) {
 console.log('\n📝 Writing output files...');
 
 // Ensure generated directory exists
-const generatedDir = path.join(__dirname, '../api/generated');
+const generatedDir = path.join(__dirname, '../src/data/generated');
 if (!fs.existsSync(generatedDir)) {
   fs.mkdirSync(generatedDir, { recursive: true });
 }

@@ -11,11 +11,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load data
-const times = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/config/times.json'), 'utf8'));
-const rooms = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/config/rooms.json'), 'utf8'));
-const breaks = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/config/breaks.json'), 'utf8'));
-const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/schedule.json'), 'utf8'));
-const { talks } = JSON.parse(fs.readFileSync(path.join(__dirname, '../api/generated/conferenceHall.json'), 'utf8'));
+const times = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/config/times.json'), 'utf8'));
+const rooms = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/config/rooms.json'), 'utf8'));
+const breaks = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/config/breaks.json'), 'utf8'));
+const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/generated/schedule.json'), 'utf8'));
+const { talks } = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/generated/conferenceHall.json'), 'utf8'));
 
 // Build talk lookup by ID
 const talksById = Object.fromEntries(
@@ -75,7 +75,7 @@ function main() {
   const days = [...new Set(times.flatMap(t => t.days))];
 
   for (const day of days) {
-    const dayDir = path.join(__dirname, `../assets/timer/day${day}`);
+    const dayDir = path.join(__dirname, `../public/timer/day${day}`);
 
     // Ensure directory exists
     if (!fs.existsSync(dayDir)) {
@@ -83,7 +83,8 @@ function main() {
     }
 
     for (let roomIdx = 0; roomIdx < rooms.length; roomIdx++) {
-      const roomName = rooms[roomIdx];
+      // rooms.json holds objects { name, capacity }
+      const roomName = rooms[roomIdx].name;
       const data = generateDayRoom(day, roomIdx + 1);
 
       const filePath = path.join(dayDir, `${roomName}.json`);
@@ -94,10 +95,10 @@ function main() {
 
   // Also update days.json
   fs.writeFileSync(
-    path.join(__dirname, '../api/config/days.json'),
+    path.join(__dirname, '../src/data/config/days.json'),
     JSON.stringify(days, null, 2)
   );
-  console.log(`\n   ✅ api/config/days.json`);
+  console.log(`\n   ✅ src/data/config/days.json`);
 
   console.log('\n🎉 Timer files generated!');
 }

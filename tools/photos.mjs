@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const SPEAKERS_DIR = path.join(__dirname, '../public/img/speakers');
 const DEFAULT_IMG = path.join(SPEAKERS_DIR, 'default.jpeg');
-const CONFERENCE_HALL_PATH = path.join(__dirname, '../api/generated/conferenceHall.json');
+const CONFERENCE_HALL_PATH = path.join(__dirname, '../src/data/generated/conferenceHall.json');
 
 async function downloadPhoto(url, destPath) {
   const response = await fetch(url);
