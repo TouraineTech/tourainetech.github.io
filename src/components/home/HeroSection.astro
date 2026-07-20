@@ -3,10 +3,13 @@ import MetaPill from '@components/ui/MetaPill.astro';
 import HeroCompanionCfp from './HeroCompanionCfp.astro';
 import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
 import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
-import { siteConfig } from '@data/config/site';
+import { siteConfig, stats } from '@data/config/site';
 import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
+
+// Source unique : le nombre de participants vient de `stats` (evite la divergence).
+const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
 ---
 
 <section class="hero">
@@ -37,7 +40,7 @@ const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTie
 
       <p class="hero-desc">
         Deux jours de conferences, workshops et rencontres avec les acteurs de la tech.
-        Rejoignez 800 passionnés à Polytech Tours !
+        Rejoignez {participants} passionnés à Polytech Tours !
       </p>
 
       <div class="hero-actions">
