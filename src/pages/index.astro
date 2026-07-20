@@ -45,9 +45,9 @@ const isPreEventCampaign = isCfp || isTicketing;
 
   {isPreEventCampaign && (
     <>
+      <SponsorsBlock />
       <CategoriesSection />
       {hasTestimonials && <TestimonialsSection />}
-      <SponsorsBlock />
       {hasPhotos && <GallerySection />}
       <MapSection />
     </>

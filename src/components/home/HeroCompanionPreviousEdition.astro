@@ -5,9 +5,11 @@
  * Design: unified companion card pattern (matches ticket card)
  */
 import { siteConfig, stats } from '@data/config/site';
+import { isPost } from '@lib/phase';
 
 const { edition } = siteConfig;
-const previousYear = edition.year - 1;
+// En post-event, la retrospective porte sur l'edition courante (qui vient de se tenir).
+const previousYear = isPost ? edition.year : edition.year - 1;
 ---
 
 <div class="companion-card">

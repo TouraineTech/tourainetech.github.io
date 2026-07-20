@@ -2,6 +2,7 @@
 import { siteConfig } from '@data/config/site';
 import PhotoGallery from '@components/ui/PhotoGallery.astro';
 import photosData from '@data/generated/photos.json';
+import { isPost } from '@lib/phase';
 
 interface Photo {
   date: string;
@@ -10,7 +11,8 @@ interface Photo {
 }
 
 const { edition } = siteConfig;
-const previousYear = edition.year - 1;
+// En post-event, on met en avant l'edition courante (qui vient de se tenir).
+const previousYear = isPost ? edition.year : edition.year - 1;
 const photos = (photosData as Photo[]) ?? [];
 const PREVIEW = 8;
 ---

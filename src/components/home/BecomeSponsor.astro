@@ -1,11 +1,12 @@
 ---
 import { siteConfig } from '@data/config/site';
 import SponsorPerks from '@components/home/SponsorPerks.astro';
+import { showSponsoringCta } from '@lib/phase';
 
-const { isSponsoringOpen, sponsoringUrl } = siteConfig;
+const { sponsoringUrl } = siteConfig;
 ---
 
-{isSponsoringOpen && (
+{showSponsoringCta && (
 <section class="become-sponsor" id="become-sponsor">
   <!-- Subtle decorative elements -->
   <div class="bg-decoration">
@@ -23,7 +24,7 @@ const { isSponsoringOpen, sponsoringUrl } = siteConfig;
       </h2>
       <p class="sponsor-subtitle">
         L'événement tech incontournable du Centre-Val de Loire.
-        Une journée, une communauté, des connexions qui durent.
+        Deux jours, une communauté, des connexions qui durent.
       </p>
     </div>
 
