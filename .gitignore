@@ -22,3 +22,6 @@ dist
 
 # Astro
 .astro
+
+# Claude Code
+.claude/
