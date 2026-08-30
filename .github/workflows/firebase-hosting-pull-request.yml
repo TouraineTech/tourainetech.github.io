@@ -27,8 +27,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # `pnpm build` déclenche le hook `prebuild` (planning:build + extract:timerDatas)
-      # qui régénère les données dans src/data + public/timer avant `astro build`.
+      # `pnpm build` runs the `prebuild` hook (planning:build + extract:timerDatas),
+      # regenerating src/data and public/timer before `astro build`.
       - name: Build
         run: pnpm build
 
