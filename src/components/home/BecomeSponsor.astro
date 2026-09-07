@@ -29,6 +29,13 @@ const steps = [
           <article class:list={['offer', `offer-${offer.name.toLowerCase()}`]} aria-labelledby={`offer-${offer.name.toLowerCase()}`}>
             <div class="offer-heading">
               <h3 id={`offer-${offer.name.toLowerCase()}`}>{offer.name}</h3>
+              {offer.name === 'Gold' && (
+                <span class="offer-emblem" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                    <path d="m12 2.5 2.94 5.96 6.58.96-4.76 4.64 1.12 6.55L12 17.52l-5.88 3.09 1.12-6.55L2.48 9.42l6.58-.96L12 2.5Z" />
+                  </svg>
+                </span>
+              )}
               <p class="offer-availability">{offer.availability}</p>
             </div>
             <p class="offer-price">{priceFormat.format(offer.price)}<span> €</span></p>
@@ -92,7 +99,10 @@ const steps = [
   .offer { --tier-color: #80533b; padding: 1.75rem; border: 1px solid var(--glass-border); border-top: 3px solid var(--tier-color); border-radius: 16px; background: var(--bg-primary); }
   .offer-silver { --tier-color: #626c7a; }
   .offer-gold { --tier-color: #87691d; background: #fcfbf6; }
+  .offer-heading { position: relative; }
   .offer-heading h3 { color: var(--tier-color); font-size: 1.15rem; }
+  .offer-gold .offer-heading { padding-right: 3rem; }
+  .offer-emblem { position: absolute; top: 0; right: 0; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #f3ecd8; color: var(--tier-color); }
   .offer-availability { color: var(--text-secondary); font-size: .75rem; margin-top: .25rem; }
   .offer-price { margin: 1.5rem 0 .75rem; font-family: var(--font-display); font-size: 2.75rem; font-weight: 600; line-height: 1; letter-spacing: -.04em; }
   .offer-price span { font-size: 1.5rem; font-weight: 400; }
