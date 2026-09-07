@@ -34,7 +34,9 @@ const previousYear = isPost ? edition.year : edition.year - 1;
         <div class="prev-stat">
           <span class="prev-stat-icon" aria-hidden="true">{stat.icon}</span>
           <span class="prev-stat-text">
-            <span class="prev-stat-val">{stat.value}</span>
+            <span class="prev-stat-val">
+              {stat.approximate && <><span aria-hidden="true">≈ </span><span class="sr-only">Environ </span></>}{stat.value}
+            </span>
             <span class="prev-stat-lbl">{stat.label}</span>
           </span>
         </div>
@@ -50,7 +52,7 @@ const previousYear = isPost ? edition.year : edition.year - 1;
         </svg>
         Voir les photos
       </a>
-      <a href="https://www.youtube.com/@TouraineTech" target="_blank" rel="noopener noreferrer" class="prev-link">
+      <a href="https://www.youtube.com/@tourainetech37" target="_blank" rel="noopener noreferrer" class="prev-link">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <polygon points="5 3 19 12 5 21 5 3"/>
         </svg>

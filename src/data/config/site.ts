@@ -33,21 +33,21 @@ export const siteConfig: SiteConfig = {
 
 // Stats affichees sur la home page
 export const stats = [
-  { value: '80', label: 'talks', icon: '🎤' },
-  { value: '550', label: 'participants', icon: '👥' },
-  { value: '85', label: 'speakers', icon: '🎙️' },
-  { value: '2', label: 'jours', icon: '📅' },
+  { value: '80', approximate: true, label: 'talks', icon: '🎤' },
+  { value: '550', approximate: true, label: 'participants', icon: '👥' },
+  { value: '85', approximate: true, label: 'speakers', icon: '🎙️' },
+  { value: '2', approximate: false, label: 'jours', icon: '📅' },
 ];
 
 // Categories de talks
 export const talkCategories = [
-  { id: 'backend', name: 'Backend, Cloud, Big Data', icon: '☁️', description: 'Infrastructure, APIs, donnees', color: '#4A90D9' },
-  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, experiences utilisateur', color: '#E84C88' },
+  { id: 'backend', name: 'Backend, Cloud, Big Data', icon: '☁️', description: 'Infrastructure, APIs, données', color: '#4A90D9' },
+  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, expériences utilisateur', color: '#E84C88' },
   { id: 'architecture', name: 'Conception, Architecture', icon: '🏗️', description: 'Patterns, bonnes pratiques', color: '#6ABFAD' },
   { id: 'devops', name: 'DevOps, Outils', icon: '🔧', description: 'CI/CD, automatisation', color: '#F5A623' },
   { id: 'ia', name: 'IA, Data', icon: '🤖', description: 'Machine learning, analytics', color: '#9B59B6' },
-  { id: 'humain', name: 'Humain & Tech', icon: '💬', description: 'Soft skills, carrieres', color: '#E74C3C' },
-  { id: 'alien', name: 'Alien', icon: '👽', description: 'IoT, embarque, mobile, et plus', color: '#1ABC9C' },
+  { id: 'humain', name: 'Humain & Tech', icon: '💬', description: 'Soft skills, carrières', color: '#E74C3C' },
+  { id: 'alien', name: 'Alien', icon: '👽', description: 'IoT, embarqué, mobile, et plus', color: '#1ABC9C' },
 ];
 
 // Temoignages reels a ajouter ici (l'ancien contenu etait fictif et a ete retire).

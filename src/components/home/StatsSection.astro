@@ -7,7 +7,9 @@ import { stats } from '@data/config/site';
     {stats.map((stat) => (
       <div class="stat-card">
         <span class="stat-icon">{stat.icon}</span>
-        <span class="stat-value">{stat.value}</span>
+        <span class="stat-value">
+          {stat.approximate && <><span aria-hidden="true">≈ </span><span class="sr-only">Environ </span></>}{stat.value}
+        </span>
         <span class="stat-label">{stat.label}</span>
       </div>
     ))}
