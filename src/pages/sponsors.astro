@@ -16,11 +16,12 @@ const description = hasSponsors
   : showSponsoringCta
     ? 'Développeurs, architectes, DevOps, designers et responsables techniques : rencontrez la communauté tech du Centre-Val de Loire pendant deux jours à Polytech Tours.'
     : 'Les premiers partenaires seront annoncés prochainement.';
+const seoDescription = `Devenez partenaire de Touraine Tech ${siteConfig.edition.year} à Tours. Découvrez les formules Bronze, Silver et Gold, le dossier sponsoring et le formulaire de partenariat.`;
 ---
 
 <Layout
-  title="Sponsors & Partenaires"
-  description={description}
+  title="Sponsoring et partenaires"
+  description={showSponsoringCta ? seoDescription : description}
 >
   <PageHeader
     title={heading}

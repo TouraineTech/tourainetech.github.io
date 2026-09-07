@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import EventStructuredData from '@components/seo/EventStructuredData.astro';
 import HeroSection from '@components/home/HeroSection.astro';
 import StatsSection from '@components/home/StatsSection.astro';
 import CategoriesSection from '@components/home/CategoriesSection.astro';
@@ -23,6 +24,7 @@ const isPreEventCampaign = isCfp || isTicketing;
 ---
 
 <Layout>
+  <EventStructuredData slot="head" />
   <HeroSection />
   <StatsSection />
 

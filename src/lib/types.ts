@@ -34,6 +34,8 @@ export interface SiteConfig {
   edition: {
     year: number;
     dates: string;
+    startDate: string;
+    endDate: string;
     location: string;
   };
 }

@@ -1,14 +1,5 @@
 ---
-// Polytech Tours
-const venue = {
-  name: 'Polytech Tours',
-  address: '64 Avenue Jean Portalis',
-  city: '37200 Tours',
-  coordinates: {
-    lat: 47.3646161,
-    lng: 0.6838372,
-  },
-};
+import { venue } from '@data/config/site';
 
 // OpenStreetMap embed URL
 const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${venue.coordinates.lng - 0.01}%2C${venue.coordinates.lat - 0.005}%2C${venue.coordinates.lng + 0.01}%2C${venue.coordinates.lat + 0.005}&layer=mapnik&marker=${venue.coordinates.lat}%2C${venue.coordinates.lng}`;
@@ -24,7 +15,7 @@ const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${venu
       <h2>{venue.name}</h2>
       <p class="address">
         {venue.address}<br />
-        {venue.city}
+        {venue.postalCode} {venue.city}
       </p>
 
       <div class="transport-info">

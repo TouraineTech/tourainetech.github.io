@@ -27,8 +27,19 @@ export const siteConfig: SiteConfig = {
   edition: {
     year: 2027,
     dates: '18–19 février 2027',
+    startDate: '2027-02-18',
+    endDate: '2027-02-19',
     location: 'Polytech Tours',
   },
+};
+
+export const venue = {
+  name: siteConfig.edition.location,
+  address: '64 Avenue Jean Portalis',
+  postalCode: '37200',
+  city: 'Tours',
+  country: 'FR',
+  coordinates: { lat: 47.3646161, lng: 0.6838372 },
 };
 
 // Stats affichees sur la home page
