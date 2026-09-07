@@ -15,14 +15,14 @@ const PAGE_LIMIT = 120;
 const flickrUrl = 'https://www.flickr.com/photos/touraine-tech/';
 ---
 
-<Layout title="Photos" description="Galerie photos de Touraine Tech - revivez les meilleurs moments de la conference.">
+<Layout title="Photos" description="Galerie de photos de Touraine Tech - revivez les meilleurs moments de la conférence.">
   <div class="photos-page">
     <header class="page-header">
       <div class="header-content">
         <span class="header-label">Souvenirs</span>
         <h1>Photos</h1>
         <p class="header-description">
-          Revivez les meilleurs moments de la derniere edition de Touraine Tech.
+          Revivez les meilleurs moments de la dernière édition de Touraine Tech.
         </p>
       </div>
     </header>
@@ -31,7 +31,7 @@ const flickrUrl = 'https://www.flickr.com/photos/touraine-tech/';
       {photos.length > 0 ? (
         <section class="gallery-section">
           <div class="gallery-head">
-            <h2>Edition 2025</h2>
+            <h2>Édition 2026</h2>
             <span class="gallery-count">{photos.length} photos</span>
           </div>
           <PhotoGallery photos={photos} limit={PAGE_LIMIT} />
@@ -46,9 +46,9 @@ const flickrUrl = 'https://www.flickr.com/photos/touraine-tech/';
             <circle cx="6" cy="12" r="5" fill="#0063dc" />
             <circle cx="18" cy="12" r="5" fill="#ff0084" />
           </svg>
-          <p>Retrouvez l'integralite de nos photos sur Flickr.</p>
+          <p>Retrouvez l’intégralité de nos photos sur Flickr.</p>
           <a href={flickrUrl} target="_blank" rel="noopener noreferrer" class="flickr-btn">
-            Voir notre Flickr
+            Voir nos albums sur Flickr
           </a>
         </div>
       </section>
