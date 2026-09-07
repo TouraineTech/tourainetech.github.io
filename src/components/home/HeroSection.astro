@@ -1,0 +1,658 @@
+---
+import MetaPill from '@components/ui/MetaPill.astro';
+import HeroCompanionCfp from './HeroCompanionCfp.astro';
+import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
+import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
+import { siteConfig, stats } from '@data/config/site';
+import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
+
+const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
+
+// Source unique : le nombre de participants vient de `stats` (evite la divergence).
+const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-meta">
+        <MetaPill icon="📅" label="Date" value={edition.dates} />
+        <MetaPill icon="📍" label="Lieu" value={edition.location} />
+        {/* Pendant la billetterie, le CFP est un indicateur secondaire.
+            Une fois le programme publié, le CFP n'est plus pertinent. */}
+        {isTicketing && isCfpOpen && cfpDeadline && (
+          <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
+        )}
+        {isTicketing && !isCfpOpen && (
+          <MetaPill icon="🎤" label="CFP" value="Terminé" />
+        )}
+      </div>
+
+      <h1 class="hero-title">
+        La conference tech<br />
+        <span class="hero-title-accent">en Touraine</span>
+      </h1>
+
+      <p class="hero-desc">
+        Deux jours de conferences, workshops et rencontres avec les acteurs de la tech.
+        Rejoignez {participants} passionnés à Polytech Tours !
+      </p>
+
+      <div class="hero-actions">
+        {isProgrammePublished && (
+          <a href="/schedule" class="btn btn-primary btn-lg">
+            Consulter le programme
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        )}
+        {/* CFP ouvert pendant la billetterie : CTA secondaire actionnable
+            (masqué une fois le programme publié) */}
+        {isTicketing && isCfpOpen && (
+          <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            Soumettre un talk
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        )}
+      </div>
+    </div>
+
+    {showTicketCard && (
+      <div class="hero-ticket">
+        <div class="hero-ticket-header">
+          <div>
+            <h3 class="hero-ticket-title">Prenez votre place</h3>
+            <p class="hero-ticket-subtitle">{edition.dates} - {edition.location}</p>
+          </div>
+          {isTicketingOpen ? (
+            <div class="hero-ticket-badge">
+              <span class="badge-dot"></span>
+              Disponible
+            </div>
+          ) : (
+            <div class="hero-ticket-badge hero-ticket-badge--teasing">
+              Bientôt
+            </div>
+          )}
+        </div>
+
+        <div class="hero-ticket-body">
+          <div class="hero-ticket-prices">
+            {ticketTiers.map((tier) => (
+              <div class:list={['ticket-price', { unavailable: tier.isSoldOut }]}>
+                <p class="ticket-price-label">{tier.name}</p>
+                <p class="ticket-price-value">{tier.price}<span>€</span></p>
+                {tier.isSoldOut && <span class="ticket-soldout">Épuisé</span>}
+              </div>
+            ))}
+          </div>
+
+          <div class="hero-ticket-addon">
+            <button type="button" class="addon-image" aria-label="Voir le t-shirt en grand">
+              <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2027" />
+            </button>
+            <div class="addon-info">
+              <p class="addon-title">T-shirt edition 2027</p>
+              <p class="addon-desc">Coton bio, coupe unisexe</p>
+            </div>
+            <span class="addon-price">+20<span>€</span></span>
+          </div>
+
+          {isTicketingOpen ? (
+            <a href={ticketingUrl} target="_blank" rel="noopener noreferrer" class="hero-ticket-cta">
+              Acheter mon billet
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          ) : (
+            <div class="hero-ticket-teasing">
+              Ouverture le {ticketingOpenDate}
+            </div>
+          )}
+        </div>
+      </div>
+    )}
+
+    {!showTicketCard && isCfp && (
+      <HeroCompanionCfp />
+    )}
+
+    {!showTicketCard && !isCfp &&isSponsoring && (
+      <HeroCompanionSponsoring />
+    )}
+
+    {!showTicketCard && !isCfp &&!isSponsoring && (
+      <HeroCompanionPreviousEdition />
+    )}
+  </div>
+
+  <!-- T-shirt Lightbox Modal -->
+  <div class="lightbox" id="tshirt-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="T-shirt en grand">
+    <button class="lightbox-close" aria-label="Fermer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2027" />
+    </div>
+  </div>
+</section>
+
+<script>
+  const lightbox = document.getElementById('tshirt-lightbox');
+  const trigger = document.querySelector<HTMLElement>('.addon-image');
+  const closeBtn = document.querySelector<HTMLElement>('.lightbox-close');
+
+  function openLightbox() {
+    lightbox?.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeBtn?.focus();
+  }
+
+  function closeLightbox() {
+    lightbox?.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    trigger?.focus();
+  }
+
+  trigger?.addEventListener('click', openLightbox);
+
+  closeBtn?.addEventListener('click', closeLightbox);
+
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox?.getAttribute('aria-hidden') === 'false') {
+      closeLightbox();
+    }
+  });
+</script>
+
+<style>
+  .hero {
+    padding: 5rem 2rem 6rem;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+  }
+
+  .hero-orb-1 {
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    opacity: 0.6;
+  }
+
+  .hero-orb-2 {
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.4;
+  }
+
+  .hero-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-title-accent {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-desc {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Hero Ticket Card */
+  .hero-ticket {
+    background: var(--bg-primary);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+
+  .hero-ticket-header {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-ticket-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .hero-ticket-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-ticket-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-ticket-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #90EE90;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero-ticket-body {
+    padding: 2rem;
+  }
+
+  .hero-ticket-prices {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ticket-price {
+    flex: 1;
+    background: var(--bg-secondary);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 1.25rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .ticket-price.unavailable .ticket-price-value {
+    text-decoration: line-through;
+    color: var(--text-muted);
+    opacity: 0.65;
+  }
+
+  .ticket-soldout {
+    display: inline-block;
+    margin-top: 0.45rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    background: var(--bg-tertiary);
+    border-radius: 999px;
+  }
+
+  .ticket-price-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+
+  .ticket-price-value {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+  }
+
+  .ticket-price-value span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-left: 2px;
+  }
+
+  /* T-shirt Add-on Section */
+  .hero-ticket-addon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--accent-light) 0%, rgba(74, 154, 138, 0.05) 100%);
+    border: 1px solid rgba(74, 154, 138, 0.15);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .addon-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid rgba(74, 154, 138, 0.15);
+    cursor: zoom-in;
+    background: none;
+    padding: 0;
+  }
+
+  .addon-image:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .addon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Lightbox Modal */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+  }
+
+  .lightbox[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .lightbox-content {
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .lightbox[aria-hidden="false"] .lightbox-content {
+    transform: scale(1);
+  }
+
+  .lightbox-content img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-close:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+
+  .addon-info {
+    flex: 1;
+  }
+
+  .addon-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+  }
+
+  .addon-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .addon-price {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+    flex-shrink: 0;
+  }
+
+  .addon-price span {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  /* CTA Button */
+  .hero-ticket-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 1.15rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .hero-ticket-cta:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(26, 46, 40, 0.2);
+  }
+
+  .hero-ticket-cta svg {
+    transition: transform 0.3s ease;
+  }
+
+  .hero-ticket-cta:hover svg {
+    transform: translateX(3px);
+  }
+
+  .hero-ticket-badge--teasing {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .hero-ticket-teasing {
+    text-align: center;
+    padding: 1.15rem;
+    background: var(--bg-secondary);
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-meta {
+      justify-content: center;
+    }
+
+    .hero-desc {
+      max-width: none;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding: 2rem 1rem 3rem;
+    }
+
+    .hero-meta {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .hero-ticket-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .hero-ticket-body {
+      padding: 1.5rem;
+    }
+
+    .hero-ticket-prices {
+      flex-direction: column;
+    }
+
+    .ticket-price-value {
+      font-size: 1.8rem;
+    }
+
+    .hero-ticket-addon {
+      padding: 0.75rem;
+    }
+
+    .addon-image {
+      width: 50px;
+      height: 50px;
+    }
+
+    .addon-title {
+      font-size: 0.85rem;
+    }
+
+    .addon-price {
+      font-size: 1.1rem;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+import { siteConfig } from '@data/config/site';
+import PhotoGallery from '@components/ui/PhotoGallery.astro';
+import photosData from '@data/generated/photos.json';
+import { isPost } from '@lib/phase';
+
+interface Photo {
+  date: string;
+  small: string;
+  original: string;
+}
+
+const { edition } = siteConfig;
+// En post-event, on met en avant l'edition courante (qui vient de se tenir).
+const previousYear = isPost ? edition.year : edition.year - 1;
+const photos = (photosData as Photo[]) ?? [];
+const PREVIEW = 8;
+---
+
+<section class="gallery">
+  <div class="gallery-inner">
+    <div class="section-header">
+      <span class="section-label">En images</span>
+      <h2 class="section-title">Revivez l'edition {previousYear}</h2>
+      <p class="section-desc">
+        Conferences, workshops, networking et bonne humeur
+      </p>
+    </div>
+
+    <PhotoGallery photos={photos} limit={PREVIEW} minThumb={300} />
+
+    <div class="gallery-footer">
+      <a href="/photos" class="btn btn-secondary">
+        Voir toutes les photos
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14" />
+          <path d="M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gallery {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+  }
+
+  .gallery-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .gallery-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+</style>

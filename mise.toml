@@ -1,0 +1,6 @@
+# Versions des outils du projet, gérées par mise (https://mise.jdx.dev).
+# Installer d'un coup : `mise install`
+[tools]
+node = "24"       # aligné sur la CI + Netlify (NODE_VERSION=24)
+pnpm = "11.6.0"   # version ayant produit pnpm-lock.yaml
+task = "3"        # go-task (Taskfile.yml)

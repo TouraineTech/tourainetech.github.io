@@ -1,0 +1,25 @@
+# Set the production branch to `main` in Netlify's project settings.
+# Astro builds a static site; the newsletter uses the function below.
+[build]
+  # Override the old src-astro base directory configured in Netlify.
+  base = "/"
+  publish = "dist"
+  # `pnpm build` déclenche le hook `prebuild` (planning:build + extract:timerDatas)
+  # qui régénère les données dans src/data + public/timer avant `astro build`.
+  command = "pnpm build"
+
+[build.environment]
+  NODE_VERSION = "24"
+  # The pnpm version is pinned in package.json for Netlify/Corepack.
+  PNPM_FLAGS = "--frozen-lockfile"
+
+[functions]
+  directory = "netlify/functions"
+
+# Keep Netlify URLs (production, previews and deploy permalinks) out of search.
+# Match the request host so touraine.tech remains indexable on the same deploy.
+[[edge_functions]]
+  function = "noindex-netlify"
+  path = "/*"
+  [edge_functions.header]
+    host = '^[^.]+\.netlify\.app(?::[0-9]+)?$'

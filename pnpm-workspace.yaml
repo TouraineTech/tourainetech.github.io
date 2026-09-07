@@ -1,0 +1,8 @@
+allowBuilds:
+  '@parcel/watcher': true
+  better-sqlite3: true
+  esbuild: true
+  netlify-cli: true
+  sharp: true
+  unix-dgram: true
+  unrs-resolver: true

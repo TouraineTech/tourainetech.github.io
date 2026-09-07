@@ -1,0 +1,688 @@
+---
+import Layout from '@layouts/Layout.astro';
+import TalkCard from '@components/schedule/TalkCard.astro';
+import { getAllRooms, getCategoryLabel, getCategoryColor, type Room } from '@lib/data';
+
+// Import data
+import scheduleData from '@data/generated/schedule.json';
+import timesData from '@data/config/times.json';
+import breaksData from '@data/config/breaks.json';
+import conferenceHall from '@data/generated/conferenceHall.json';
+
+// Types
+interface ScheduleItem {
+  id: string;
+  title: string;
+  categories: string | null;
+  formats: string;
+  rooms: number[];
+  times: number[];
+  day: number;
+  level: string | null;
+}
+
+interface TimeSlot {
+  timeIndex: string;
+  time: string;
+  days: number[];
+}
+
+interface BreakItem {
+  id: string;
+  name: string;
+  format: string;
+  rooms: number[];
+  times: number[];
+  days: number[];
+}
+
+interface Speaker {
+  uid?: string;
+  displayName?: string;
+  photoURL?: string;
+}
+
+// Build speakers lookup from conferenceHall
+const speakersLookup = new Map<string, Speaker>();
+conferenceHall.speakers?.forEach((speaker: any) => {
+  speakersLookup.set(speaker.uid, speaker);
+});
+
+// Also map speaker names to speaker data from talks
+conferenceHall.talks?.forEach((talk: any) => {
+  talk.speakers?.forEach((speakerName: string) => {
+    if (!speakersLookup.has(speakerName)) {
+      const existingSpeaker = conferenceHall.speakers?.find((s: any) =>
+        s.displayName === speakerName.split('_').join(' ') ||
+        s.displayName?.includes(speakerName.split('_')[0])
+      );
+      if (existingSpeaker) {
+        speakersLookup.set(speakerName, existingSpeaker);
+      }
+    }
+  });
+});
+
+// Get speakers for a talk
+function getSpeakersForTalk(talkId: string): Array<{ name: string; photoURL?: string }> {
+  const chTalk = conferenceHall.talks?.find((t: any) => t.id === talkId);
+  if (!chTalk?.speakers) return [];
+
+  return chTalk.speakers.map((speakerName: string) => {
+    const speaker = speakersLookup.get(speakerName);
+    return {
+      name: speakerName,
+      photoURL: speaker?.photoURL
+    };
+  });
+}
+
+// Filter data by day (one entry per conference day)
+const scheduleDays = [1, 2].map((day) => ({
+  day,
+  talks: (scheduleData as ScheduleItem[]).filter((t) => t.day === day),
+  times: (timesData as TimeSlot[]).filter((t) => t.days.includes(day)),
+  breaks: (breaksData as BreakItem[]).filter((b) => b.days.includes(day)),
+}));
+
+// Get rooms with capacities from config
+const rooms = getAllRooms();
+
+// Nuxt-style: CSS Grid absolute positioning using timeIndex directly
+// grid-column: rooms[0]+1 to rooms[last]+2 (col 1 is time column)
+// grid-row: timeIndex+2 to lastTimeIndex+3 (row 1 is header)
+function getCellStyle(item: { rooms: number[]; times: number[] }): string {
+  const colStart = item.rooms[0] + 1;
+  const colEnd = item.rooms[item.rooms.length - 1] + 2;
+  const rowStart = item.times[0] + 2;
+  const rowEnd = item.times[item.times.length - 1] + 3;
+  return `grid-column-start: ${colStart}; grid-column-end: ${colEnd}; grid-row-start: ${rowStart}; grid-row-end: ${rowEnd};`;
+}
+
+// Filter buttons derived from the categories actually present in the schedule.
+// Keyed by the normalized label from data.ts (getCategoryLabel) so buttons and
+// talk cells share the exact same identity — no hardcoded English ids.
+const allTalks = scheduleDays.flatMap((d) => d.talks);
+const seenCat = new Set<string>();
+const categories: Array<{ id: string; label: string; color: string }> = [
+  { id: 'all', label: 'Toutes', color: 'var(--text-muted)' },
+];
+for (const t of allTalks) {
+  if (!t.categories) continue;
+  const label = getCategoryLabel(t.categories);
+  if (seenCat.has(label)) continue;
+  seenCat.add(label);
+  categories.push({ id: label, label, color: getCategoryColor(t.categories) });
+}
+---
+
+<Layout title="Programme - Touraine Tech 2027">
+  <div class="schedule-page">
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="header-top">
+        <div class="header-title">
+          <h1>Programme</h1>
+          <span class="edition">Touraine Tech 2027</span>
+        </div>
+
+        <div class="day-toggle" role="tablist" aria-label="Sélection du jour">
+          <button
+            class="day-btn active"
+            data-day="1"
+            role="tab"
+            id="tab-day1"
+            aria-selected="true"
+            aria-controls="day1"
+          >
+            Jeudi 12
+            <span>Jour 1</span>
+          </button>
+          <button
+            class="day-btn"
+            data-day="2"
+            role="tab"
+            id="tab-day2"
+            aria-selected="false"
+            aria-controls="day2"
+          >
+            Vendredi 13
+            <span>Jour 2</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="category-filters" role="group" aria-label="Filtrer par catégorie">
+        {categories.map((cat, i) => (
+          <button
+            class:list={['cat-filter', { active: i === 0 }]}
+            style={`--cat-color: ${cat.color}`}
+            data-category={cat.id}
+            aria-pressed={i === 0 ? 'true' : 'false'}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+    </header>
+
+    <!-- Schedule Grid - one per day -->
+    {scheduleDays.map(({ day, talks, times, breaks }) => (
+      <div
+        class:list={['schedule-container', { hidden: day !== 1 }]}
+        id={`day${day}`}
+        data-day={day}
+        role="tabpanel"
+        aria-labelledby={`tab-day${day}`}
+      >
+        <div class="schedule-grid">
+          <!-- Header Row: corner + room headers -->
+          <div class="corner-cell room-header"></div>
+          {rooms.map((room, i) => (
+            <div
+              class:list={['room-header', { 'first-room': i === 0, 'last-room': i === rooms.length - 1 }]}
+              style={`grid-column: ${i + 2}; grid-row: 1;`}
+            >
+              <div class="room-name">{room.name}</div>
+              <div class="room-capacity">{room.capacity} places</div>
+            </div>
+          ))}
+
+          <!-- Time labels (column 1) -->
+          {times.map((timeSlot) => (
+            <div class="time-cell" style="grid-column: 1;">
+              {timeSlot.time}
+            </div>
+          ))}
+
+          <!-- Breaks with absolute positioning (including empty ones for hatched background) -->
+          {breaks.map((breakItem) => (
+            <div class="break-cell" style={getCellStyle(breakItem)}>
+              {breakItem.name && (
+                <div class="break-content">
+                  <span class="break-name">{breakItem.name}</span>
+                </div>
+              )}
+            </div>
+          ))}
+
+          <!-- Talks with absolute positioning -->
+          {talks.map((talk) => {
+            const isWorkshop = talk.formats.includes('120min') || talk.formats.includes('Hands-on');
+            const speakers = getSpeakersForTalk(talk.id);
+
+            return (
+              <div
+                class="talk-cell"
+                style={getCellStyle(talk)}
+                data-category={getCategoryLabel(talk.categories)}
+              >
+                <TalkCard
+                  id={talk.id}
+                  title={talk.title}
+                  category={talk.categories}
+                  format={talk.formats}
+                  level={talk.level}
+                  speakers={speakers}
+                  isWorkshop={isWorkshop}
+                  rowSpan={talk.times.length}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .schedule-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  /* Page Header */
+  .page-header {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 2rem 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-top {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .header-title h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .header-title .edition {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* Day Toggle */
+  .day-toggle {
+    display: flex;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .day-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .day-btn span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .day-btn.active {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .day-btn:not(.active):hover {
+    color: var(--text-primary);
+  }
+
+  /* Category Filters */
+  .category-filters {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .category-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    background: var(--bg-primary);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .cat-filter::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cat-color);
+  }
+
+  .cat-filter:hover,
+  .cat-filter.active {
+    border-color: var(--cat-color);
+    background: color-mix(in srgb, var(--cat-color) 8%, white);
+    color: var(--text-primary);
+  }
+
+  /* Schedule Container */
+  .schedule-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+
+  .schedule-container.hidden {
+    display: none;
+  }
+
+  /* Schedule Grid - CSS Grid with absolute positioning */
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 75px repeat(5, 1fr);
+    /* Auto rows for flexibility */
+    grid-auto-rows: minmax(50px, auto);
+    gap: 1px;
+    background: var(--bg-primary);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1200px) {
+    .schedule-container {
+      overflow-x: auto;
+    }
+
+    .schedule-grid {
+      grid-template-columns: 60px repeat(5, minmax(160px, 1fr));
+      min-width: 900px;
+    }
+  }
+
+  /* Room Headers */
+  .room-header {
+    background: var(--bg-tertiary);
+    padding: 1rem;
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .room-header.first-room {
+    border-radius: 16px 0 0 0;
+  }
+
+  .room-header.last-room {
+    border-radius: 0 16px 0 0;
+  }
+
+  .room-name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .room-capacity {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+
+  /* Corner cell */
+  .corner-cell {
+    background: var(--bg-tertiary);
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Timeline start on corner */
+  .corner-cell::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, transparent 0%, var(--accent-light) 100%);
+  }
+
+  /* Time Column - Stacked Style */
+  .time-cell {
+    background: var(--bg-primary);
+    padding: 0.5rem 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  /* Vertical timeline line */
+  .time-cell::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent);
+    opacity: 0.2;
+  }
+
+  /* Talk Cells */
+  .talk-cell {
+    background: var(--bg-primary);
+    padding: 0.4rem;
+    min-height: 90px;
+  }
+
+  /* Break Cells */
+  .break-cell {
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .break-cell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 8px,
+      rgba(106, 191, 173, 0.04) 8px,
+      rgba(106, 191, 173, 0.04) 16px
+    );
+  }
+
+  .break-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .break-name {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .talk-cell {
+    animation: fadeIn 0.4s ease backwards;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .page-header {
+      padding: 1.5rem 1rem 0;
+    }
+
+    .header-top {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .header-title h1 {
+      font-size: 2rem;
+    }
+
+    .schedule-container {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .header-title h1 {
+      font-size: 1.5rem;
+    }
+
+    .day-toggle {
+      width: 100%;
+    }
+
+    .day-btn {
+      flex: 1;
+      padding: 0.6rem 1rem;
+    }
+
+    .schedule-grid {
+      grid-template-columns: 60px repeat(5, minmax(150px, 1fr));
+    }
+
+    .time-cell {
+      font-size: 0.75rem;
+    }
+
+    .room-name {
+      font-size: 0.9rem;
+    }
+
+    .talk-cell {
+      min-height: 80px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .schedule-grid {
+      grid-template-columns: 55px repeat(5, minmax(130px, 1fr));
+    }
+
+    .time-cell {
+      font-size: 0.7rem;
+    }
+
+    .room-name {
+      font-size: 0.8rem;
+    }
+
+    .room-capacity {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // Day toggle with ARIA tabs
+  const dayButtons = document.querySelectorAll('.day-btn');
+  const tabPanels = document.querySelectorAll('.schedule-container');
+
+  dayButtons.forEach(btn => {
+    btn.addEventListener('click', function(this: HTMLElement) {
+      const day = this.getAttribute('data-day');
+
+      // Update buttons and ARIA
+      dayButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+
+      // Show/hide grids
+      tabPanels.forEach(container => {
+        if (container.getAttribute('data-day') === day) {
+          container.classList.remove('hidden');
+        } else {
+          container.classList.add('hidden');
+        }
+      });
+    });
+
+    // Keyboard navigation for tabs
+    btn.addEventListener('keydown', function(this: HTMLElement, e: Event) {
+      const key = (e as KeyboardEvent).key;
+      let targetBtn: Element | null = null;
+
+      if (key === 'ArrowLeft' || key === 'ArrowRight') {
+        e.preventDefault();
+        const buttons = Array.from(dayButtons);
+        const currentIndex = buttons.indexOf(this);
+
+        if (key === 'ArrowRight') {
+          targetBtn = buttons[(currentIndex + 1) % buttons.length];
+        } else {
+          targetBtn = buttons[(currentIndex - 1 + buttons.length) % buttons.length];
+        }
+
+        if (targetBtn) {
+          (targetBtn as HTMLElement).focus();
+          (targetBtn as HTMLElement).click();
+        }
+      }
+    });
+  });
+
+  // Category filter with ARIA
+  const catFilters = document.querySelectorAll('.cat-filter');
+
+  catFilters.forEach(filter => {
+    filter.addEventListener('click', function(this: HTMLElement) {
+      const category = this.getAttribute('data-category');
+
+      // Update filter buttons and ARIA
+      catFilters.forEach(f => {
+        f.classList.remove('active');
+        f.setAttribute('aria-pressed', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
+
+      // Filter talks
+      document.querySelectorAll('.talk-cell').forEach(cell => {
+        if (category === 'all') {
+          (cell as HTMLElement).style.opacity = '1';
+          (cell as HTMLElement).style.pointerEvents = '';
+        } else {
+          const cellCat = cell.getAttribute('data-category') || '';
+          const matches = cellCat === category;
+          (cell as HTMLElement).style.opacity = matches ? '1' : '0.15';
+          (cell as HTMLElement).style.pointerEvents = matches ? '' : 'none';
+        }
+      });
+    });
+  });
+</script>

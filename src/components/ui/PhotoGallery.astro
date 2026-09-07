@@ -1,0 +1,205 @@
+---
+// Grille de photos + lightbox (navigation clavier), 100% vanilla.
+// Une seule instance par page (les IDs de lightbox sont fixes).
+interface Photo {
+  small: string;
+  original: string;
+  date?: string;
+}
+
+interface Props {
+  photos: Photo[];
+  /** Nombre max de vignettes affichees (le reste reste accessible via le lien Flickr). */
+  limit?: number;
+  /** Largeur mini d'une vignette (px). Plus grand = moins de colonnes, vignettes plus grosses. */
+  minThumb?: number;
+}
+
+const { photos, limit, minThumb = 180 } = Astro.props;
+const shown = typeof limit === 'number' ? photos.slice(0, limit) : photos;
+// Seules les URLs plein format sont necessaires cote client (lightbox).
+const originals = shown.map((p) => p.original);
+---
+
+<div class="photo-gallery" style={`--min-thumb: ${minThumb}px`}>
+  {shown.map((p, i) => (
+    <button
+      type="button"
+      class="photo-thumb"
+      data-index={i}
+      data-full={p.original}
+      aria-label={`Agrandir la photo ${i + 1}`}
+    >
+      <img src={p.small} alt={`Touraine Tech${p.date ? ' - ' + p.date.slice(0, 10) : ''}`} loading="lazy" decoding="async" />
+    </button>
+  ))}
+</div>
+
+<div class="photo-lightbox" id="photo-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo en grand">
+  <button type="button" class="pl-btn pl-close" aria-label="Fermer">&times;</button>
+  <button type="button" class="pl-btn pl-prev" aria-label="Photo precedente">&lsaquo;</button>
+  <figure class="pl-figure">
+    <img class="pl-img" src="" alt="" />
+  </figure>
+  <button type="button" class="pl-btn pl-next" aria-label="Photo suivante">&rsaquo;</button>
+</div>
+
+<script define:vars={{ originals }}>
+  (() => {
+    const lightbox = document.getElementById('photo-lightbox');
+    if (!lightbox) return;
+    const imgEl = lightbox.querySelector('.pl-img');
+    const thumbs = Array.from(document.querySelectorAll('.photo-thumb'));
+    let current = 0;
+    let lastFocus = null;
+
+    function show(i) {
+      current = (i + originals.length) % originals.length;
+      imgEl.src = originals[current];
+      imgEl.alt = `Touraine Tech - photo ${current + 1}`;
+    }
+
+    function open(i) {
+      lastFocus = document.activeElement;
+      show(i);
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      imgEl.src = '';
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    thumbs.forEach((t) => {
+      t.addEventListener('click', () => open(Number(t.getAttribute('data-index'))));
+    });
+    lightbox.querySelector('.pl-close').addEventListener('click', close);
+    lightbox.querySelector('.pl-prev').addEventListener('click', (e) => { e.stopPropagation(); show(current - 1); });
+    lightbox.querySelector('.pl-next').addEventListener('click', (e) => { e.stopPropagation(); show(current + 1); });
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(current - 1);
+      else if (e.key === 'ArrowRight') show(current + 1);
+    });
+  })();
+</script>
+
+<style>
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--min-thumb, 180px), 1fr));
+    gap: 0.75rem;
+  }
+
+  .photo-thumb {
+    padding: 0;
+    border: none;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md, 10px);
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 3 / 2;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .photo-thumb:hover,
+  .photo-thumb:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md, 0 8px 24px rgba(0, 0, 0, 0.15));
+    outline: 2px solid var(--accent, #6abfad);
+    outline-offset: 2px;
+  }
+
+  .photo-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Lightbox */
+  .photo-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+  }
+
+  .photo-lightbox.open {
+    display: flex;
+  }
+
+  .pl-figure {
+    margin: 0;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+  }
+
+  .pl-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .pl-btn {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+  }
+
+  .pl-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .pl-close {
+    top: 1.25rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  .pl-prev,
+  .pl-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .pl-prev { left: 1.5rem; }
+  .pl-next { right: 1.5rem; }
+
+  @media (max-width: 640px) {
+    .photo-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.5rem;
+    }
+    .pl-prev { left: 0.5rem; }
+    .pl-next { right: 0.5rem; }
+  }
+</style>

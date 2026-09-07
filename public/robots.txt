@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow:
+
+Sitemap: https://touraine.tech/sitemap-index.xml

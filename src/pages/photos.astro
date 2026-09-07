@@ -1,0 +1,185 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PhotoGallery from '@components/ui/PhotoGallery.astro';
+import photosData from '@data/generated/photos.json';
+
+interface Photo {
+  date: string;
+  small: string;
+  original: string;
+}
+
+const photos = (photosData as Photo[]) ?? [];
+// On affiche un large echantillon sur la page ; l'album complet reste sur Flickr.
+const PAGE_LIMIT = 120;
+const flickrUrl = 'https://www.flickr.com/photos/touraine-tech/';
+---
+
+<Layout title="Photos" description="Galerie photos de Touraine Tech - revivez les meilleurs moments de la conference.">
+  <div class="photos-page">
+    <header class="page-header">
+      <div class="header-content">
+        <span class="header-label">Souvenirs</span>
+        <h1>Photos</h1>
+        <p class="header-description">
+          Revivez les meilleurs moments de la derniere edition de Touraine Tech.
+        </p>
+      </div>
+    </header>
+
+    <div class="photos-container">
+      {photos.length > 0 ? (
+        <section class="gallery-section">
+          <div class="gallery-head">
+            <h2>Edition 2025</h2>
+            <span class="gallery-count">{photos.length} photos</span>
+          </div>
+          <PhotoGallery photos={photos} limit={PAGE_LIMIT} />
+        </section>
+      ) : (
+        <p class="empty">Les photos seront disponibles prochainement.</p>
+      )}
+
+      <section class="flickr-section">
+        <div class="flickr-content">
+          <svg class="flickr-logo" viewBox="0 0 24 24" width="48" height="48" aria-hidden="true">
+            <circle cx="6" cy="12" r="5" fill="#0063dc" />
+            <circle cx="18" cy="12" r="5" fill="#ff0084" />
+          </svg>
+          <p>Retrouvez l'integralite de nos photos sur Flickr.</p>
+          <a href={flickrUrl} target="_blank" rel="noopener noreferrer" class="flickr-btn">
+            Voir notre Flickr
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .photos-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+  }
+
+  .page-header {
+    background: linear-gradient(135deg, var(--accent, #6abfad) 0%, var(--accent-dark, #4a9284) 100%);
+    padding: 5rem 2rem;
+  }
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  .header-description {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.1rem;
+  }
+
+  .photos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  .gallery-section {
+    margin-bottom: 4rem;
+  }
+
+  .gallery-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-head h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .gallery-count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .empty {
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .flickr-section {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg, 16px);
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .flickr-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flickr-section p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+
+  .flickr-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #0063dc;
+    color: white;
+    font-weight: 600;
+    border-radius: var(--radius-md, 10px);
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .flickr-btn:hover {
+    background: #0052b8;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .page-header {
+      padding: 3rem 1rem;
+    }
+    .photos-container {
+      padding: 2rem 1rem;
+    }
+    .flickr-section {
+      padding: 2rem 1rem;
+    }
+  }
+</style>

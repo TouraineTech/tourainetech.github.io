@@ -1,0 +1,376 @@
+---
+import { siteConfig } from '@data/config/site';
+import SponsorPerks from '@components/home/SponsorPerks.astro';
+import { showSponsoringCta } from '@lib/phase';
+
+const { sponsoringUrl } = siteConfig;
+---
+
+{showSponsoringCta && (
+<section class="become-sponsor" id="become-sponsor">
+  <!-- Subtle decorative elements -->
+  <div class="bg-decoration">
+    <div class="accent-blur"></div>
+    <div class="grid-pattern"></div>
+  </div>
+
+  <div class="become-sponsor-inner">
+    <!-- Main content -->
+    <div class="sponsor-header">
+      <span class="sponsor-eyebrow">Sponsoring 2027</span>
+      <h2 class="sponsor-title">
+        Faites rayonner votre marque
+        <span class="title-accent">devant ceux qui comptent</span>
+      </h2>
+      <p class="sponsor-subtitle">
+        L'événement tech incontournable du Centre-Val de Loire.
+        Deux jours, une communauté, des connexions qui durent.
+      </p>
+    </div>
+
+    <!-- Perks grid -->
+    <SponsorPerks />
+
+    <!-- CTA section -->
+    <div class="cta-section">
+      <div class="cta-text">
+        <p class="cta-hook">Prêt à rejoindre l'aventure ?</p>
+        <p class="cta-subtext">Discutons de votre présence à Touraine Tech 2027</p>
+      </div>
+      <div class="cta-actions">
+        <a href={sponsoringUrl} target="_blank" rel="noopener" class="btn-primary">
+          Parlons-en
+          <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="/sponsor_2027.pdf" target="_blank" rel="noopener" class="btn-secondary">
+          Dossier sponsoring
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+)}
+
+<style>
+  .become-sponsor {
+    /* Light, airy palette */
+    --bg-base: #f8f9fa;
+    --bg-surface: #ffffff;
+    --border-subtle: rgba(0, 0, 0, 0.06);
+    --border-medium: rgba(0, 0, 0, 0.1);
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+
+    padding: var(--section-padding);
+    background: var(--bg-base);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Background decoration */
+  .bg-decoration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .accent-blur {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: -30%;
+    right: -15%;
+    background: radial-gradient(ellipse, var(--accent) 0%, transparent 70%);
+    opacity: 0.07;
+    filter: blur(100px);
+  }
+
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 70%);
+  }
+
+  .become-sponsor-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  .sponsor-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .sponsor-eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.1s backwards;
+  }
+
+  .sponsor-title {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+    letter-spacing: -0.02em;
+  }
+
+  .title-accent {
+    display: block;
+    color: var(--accent);
+  }
+
+  .sponsor-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.7;
+    animation: fadeInUp 0.6s ease-out 0.3s backwards;
+  }
+
+  /* Perks grid */
+  .perks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .perk-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    animation: fadeInUp 0.6s ease-out backwards;
+    animation-delay: calc(0.35s + var(--index) * 0.08s);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .perk-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--accent) 8%, white);
+    border-radius: 14px;
+  }
+
+  .perk-icon {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  .perk-content {
+    flex: 1;
+  }
+
+  .perk-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .perk-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .perk-highlight {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.4rem 0.85rem;
+    background: color-mix(in srgb, var(--accent) 10%, white);
+    border-radius: 100px;
+  }
+
+  /* CTA section */
+  .cta-section {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    animation: fadeInUp 0.6s ease-out 0.7s backwards;
+    box-shadow: var(--shadow-md);
+  }
+
+  .cta-hook {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .cta-subtext {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 40%, transparent);
+    filter: brightness(1.05);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-medium);
+  }
+
+  .btn-secondary:hover {
+    background: var(--bg-base);
+    border-color: var(--border-medium);
+    transform: translateY(-2px);
+  }
+
+  .btn-arrow {
+    transition: transform 0.25s ease;
+  }
+
+  .btn-primary:hover .btn-arrow {
+    transform: translateX(3px);
+  }
+
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .stats-bar {
+      gap: 3rem;
+    }
+
+    .perks-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 2.25rem 2rem;
+    }
+
+    .cta-actions {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .stats-bar {
+      flex-wrap: wrap;
+      gap: 2rem 3.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+    }
+
+    .perk-card {
+      padding: 1.75rem;
+    }
+
+    .perk-icon-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .perk-icon {
+      font-size: 1.5rem;
+    }
+
+    .cta-section {
+      padding: 2rem 1.5rem;
+    }
+
+    .cta-hook {
+      font-size: 1.3rem;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+</style>

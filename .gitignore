@@ -16,3 +16,12 @@ dist
 
 .DS_Store
 .data/
+
+# Local Netlify folder
+.netlify
+
+# Astro
+.astro
+
+# Claude Code
+.claude/

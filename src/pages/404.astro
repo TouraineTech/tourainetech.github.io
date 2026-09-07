@@ -1,0 +1,88 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout
+  title="Page introuvable"
+  description="Cette page n'existe pas ou a été déplacée."
+  noindex
+>
+  <section class="notfound">
+    <span class="notfound-code">404</span>
+    <h1>Cette page n'existe pas</h1>
+    <p>
+      Le lien est peut-être erroné, ou la page a été déplacée.
+      Revenez à l'accueil pour retrouver votre chemin.
+    </p>
+    <div class="notfound-actions">
+      <a class="notfound-btn primary" href="/">Retour à l'accueil</a>
+      <a class="notfound-btn" href="/schedule">Voir le programme</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .notfound {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .notfound-code {
+    font-size: clamp(4rem, 18vw, 9rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent, #6abfad);
+    letter-spacing: -0.04em;
+  }
+
+  .notfound h1 {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin: 0;
+  }
+
+  .notfound p {
+    max-width: 34rem;
+    color: var(--text-muted, #6b7280);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .notfound-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .notfound-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid var(--accent, #6abfad);
+    color: var(--accent, #6abfad);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .notfound-btn:hover {
+    background: var(--accent, #6abfad);
+    color: #fff;
+  }
+
+  .notfound-btn.primary {
+    background: var(--accent, #6abfad);
+    color: #fff;
+  }
+
+  .notfound-btn.primary:hover {
+    filter: brightness(0.94);
+  }
+</style>
