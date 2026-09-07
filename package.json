@@ -4,6 +4,7 @@
   "version": "3.0.0",
   "description": "Touraine Tech conference website",
   "private": true,
+  "packageManager": "pnpm@11.6.0",
   "scripts": {
     "dev": "astro dev",
     "prebuild": "pnpm run planning:build && pnpm run extract:timerDatas",
