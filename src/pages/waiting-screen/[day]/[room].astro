@@ -47,7 +47,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
     </div>
   </div>
 
-  <template id="sponsors-template">
+  {sponsors.length > 0 && <template id="sponsors-template">
     <div class="talk-sponsors-container">
       <span class="sponsors-label">Merci à nos sponsors</span>
       <div class="talk-sponsors">
@@ -75,7 +75,7 @@ const bronzeSponsors = sponsors.filter((s: any) => s.type === 'bronze');
         <img src="/img/visualArt/illustration_2027.png" alt="Illustration Touraine Tech 2027" />
       </div>
     </div>
-  </template>
+  </template>}
 </body>
 </html>
 

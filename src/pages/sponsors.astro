@@ -2,28 +2,41 @@
 import Layout from '@layouts/Layout.astro';
 import SponsorsPreview from '@components/home/SponsorsPreview.astro';
 import BecomeSponsor from '@components/home/BecomeSponsor.astro';
-import { hasSponsors } from '@lib/phase';
+import { hasSponsors, showSponsoringCta } from '@lib/phase';
+import { siteConfig } from '@data/config/site';
+
+const heading = hasSponsors
+  ? 'Ils rendent Touraine Tech possible'
+  : showSponsoringCta
+    ? 'Construisons la prochaine édition ensemble.'
+    : `Les partenaires de Touraine Tech ${siteConfig.edition.year}`;
+const description = hasSponsors
+  ? "Merci aux entreprises qui soutiennent la communauté tech du Centre-Val de Loire. Retrouvez leurs fiches et leurs offres d'emploi."
+  : showSponsoringCta
+    ? 'Développeurs, architectes, DevOps, designers et responsables techniques : rencontrez la communauté tech du Centre-Val de Loire pendant deux jours à Polytech Tours.'
+    : 'Les premiers partenaires seront annoncés prochainement.';
 ---
 
 <Layout
   title="Sponsors & Partenaires"
-  description="Les partenaires qui rendent Touraine Tech possible, leurs offres d'emploi, et comment devenir sponsor."
+  description={description}
 >
   <header class="sponsors-hero">
     <div class="sponsors-hero-inner">
-      <span class="hero-eyebrow">Partenaires</span>
-      <h1>Ils rendent Touraine Tech possible</h1>
-      <p>
-        Merci aux entreprises qui soutiennent la communaute tech du Centre-Val de Loire.
-        Retrouvez leurs fiches et leurs offres d'emploi.
-      </p>
+      <span class="hero-eyebrow">Partenaires {siteConfig.edition.year}</span>
+      <h1>{heading}</h1>
+      <p>{description}</p>
+      {showSponsoringCta && (
+        <p class="hero-details">{siteConfig.edition.dates} <span aria-hidden="true">·</span> {siteConfig.edition.location}</p>
+      )}
+      {!hasSponsors && (
+        <p class="sponsors-empty">Les premiers partenaires seront annoncés prochainement.</p>
+      )}
     </div>
   </header>
 
-  {hasSponsors ? (
+  {hasSponsors && (
     <SponsorsPreview showHeader={false} />
-  ) : (
-    <p class="sponsors-empty">Les partenaires seront annonces prochainement.</p>
   )}
 
   <BecomeSponsor />
@@ -31,21 +44,21 @@ import { hasSponsors } from '@lib/phase';
 
 <style>
   .sponsors-hero {
-    background: linear-gradient(135deg, var(--accent, #6abfad) 0%, var(--accent-dark, #4a9284) 100%);
-    padding: 5rem 2rem;
+    background: var(--bg-secondary);
+    padding: 4rem 2rem;
     text-align: center;
   }
 
   .sponsors-hero-inner {
-    max-width: 720px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   .hero-eyebrow {
     display: inline-block;
     padding: 0.35rem 0.75rem;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    background: var(--accent-light);
+    color: var(--accent-dark);
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 100px;
@@ -56,21 +69,34 @@ import { hasSponsors } from '@lib/phase';
     font-family: var(--font-display);
     font-size: clamp(2rem, 5vw, 2.75rem);
     font-weight: 800;
-    color: #fff;
+    color: var(--text-primary);
     margin: 0 0 0.75rem;
     line-height: 1.15;
   }
 
   .sponsors-hero p {
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
     line-height: 1.6;
     margin: 0;
   }
 
-  .sponsors-empty {
-    text-align: center;
-    color: var(--text-secondary);
-    padding: 4rem 1.5rem;
+  .sponsors-hero .hero-details {
+    margin-top: 1.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+  }
+
+  .hero-details span { margin: 0 .5rem; }
+
+  .sponsors-hero .sponsors-empty {
+    margin-top: .75rem;
+    font-size: .8rem;
+  }
+
+  @media (max-width: 767px) {
+    .sponsors-hero { padding: 3rem 1.25rem; }
+    .sponsors-hero h1 { font-size: 2.25rem; }
   }
 </style>

@@ -25,6 +25,7 @@ export interface SiteConfig {
   ticketingUrl: string;
   cfpUrl: string;
   sponsoringUrl: string;
+  sponsoringBrochureUrl?: string;
 
   // Billetterie
   ticketTiers: TicketTier[];

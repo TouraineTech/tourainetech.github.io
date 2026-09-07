@@ -1,20 +1,21 @@
 import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
-  // Phase de campagne : 'cfp' | 'ticketing' | 'programme' | 'post-event'
-  phase: 'intro',
+  // Phase de campagne : 'intro' | 'sponsoring' | 'cfp' | 'ticketing' | 'programme' | 'post-event'
+  phase: 'cfp',
 
   // Etats independants
-  isCfpOpen: false,
+  isCfpOpen: true,
   isTicketingOpen: false,
-  isSponsoringOpen: false,
+  isSponsoringOpen: true,
   ticketingOpenDate: '15 janvier 2026',
 
   // URLs externes
-  cfpDeadline: '16 novembre 2025',
+  cfpDeadline: '1er novembre 2026',
   ticketingUrl: 'https://www.billetweb.fr/touraine-tech-2026',
-  cfpUrl: 'https://conference-hall.io/touraine-tech-2026',
-  sponsoringUrl: 'https://sponsoring2026.touraine.tech',
+  cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
+  sponsoringUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeS5r7w_Jgw_XknTfulcafGlMGt7GF-8dV85D1oTkki2s9jiA/viewform?usp=header',
+  sponsoringBrochureUrl: 'https://docs.google.com/presentation/d/1F0LQAw_z6eixZx00sHqnA3h_Yx6b-QqZWH9H9tG5nlw/edit?usp=sharing',
 
   // Billetterie
   ticketTiers: [
@@ -25,7 +26,7 @@ export const siteConfig: SiteConfig = {
   // Informations de l'edition
   edition: {
     year: 2027,
-    dates: '18-19 Fevrier 2027',
+    dates: '18–19 février 2027',
     location: 'Polytech Tours',
   },
 };

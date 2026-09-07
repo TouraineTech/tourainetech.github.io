@@ -1,376 +1,132 @@
 ---
 import { siteConfig } from '@data/config/site';
-import SponsorPerks from '@components/home/SponsorPerks.astro';
+import { sponsoringCampaign } from '@data/config/sponsoring';
 import { showSponsoringCta } from '@lib/phase';
 
-const { sponsoringUrl } = siteConfig;
+const { sponsoringUrl, sponsoringBrochureUrl } = siteConfig;
+const { offers, deadline, contactEmail } = sponsoringCampaign;
+const priceFormat = new Intl.NumberFormat('fr-FR');
+const steps = [
+  { title: 'Choisissez votre formule', text: 'Consultez le dossier et indiquez la formule souhaitée dans le formulaire.' },
+  { title: 'Formalisons le partenariat', text: 'Nous vous adressons une convention à signer, puis la facture correspondante.' },
+  { title: 'Préparons votre visibilité', text: 'Transmettez-nous votre logo vectoriel, votre lien et vos offres d’emploi.' },
+];
 ---
 
 {showSponsoringCta && (
-<section class="become-sponsor" id="become-sponsor">
-  <!-- Subtle decorative elements -->
-  <div class="bg-decoration">
-    <div class="accent-blur"></div>
-    <div class="grid-pattern"></div>
-  </div>
+  <section class="become-sponsor" id="become-sponsor" aria-labelledby="offers-title">
+    <div class="partnership-inner">
+      <header class="offers-header">
+        <div>
+          <span class="section-label">Les formules</span>
+          <h2 id="offers-title">À chaque entreprise, sa place.</h2>
+        </div>
+        <p>Tarifs pour les deux jours.<br />TVA non applicable.</p>
+      </header>
 
-  <div class="become-sponsor-inner">
-    <!-- Main content -->
-    <div class="sponsor-header">
-      <span class="sponsor-eyebrow">Sponsoring 2027</span>
-      <h2 class="sponsor-title">
-        Faites rayonner votre marque
-        <span class="title-accent">devant ceux qui comptent</span>
-      </h2>
-      <p class="sponsor-subtitle">
-        L'événement tech incontournable du Centre-Val de Loire.
-        Deux jours, une communauté, des connexions qui durent.
-      </p>
-    </div>
-
-    <!-- Perks grid -->
-    <SponsorPerks />
-
-    <!-- CTA section -->
-    <div class="cta-section">
-      <div class="cta-text">
-        <p class="cta-hook">Prêt à rejoindre l'aventure ?</p>
-        <p class="cta-subtext">Discutons de votre présence à Touraine Tech 2027</p>
+      <div class="offers-grid">
+        {offers.map((offer) => (
+          <article class:list={['offer', `offer-${offer.name.toLowerCase()}`]} aria-labelledby={`offer-${offer.name.toLowerCase()}`}>
+            <div class="offer-heading">
+              <h3 id={`offer-${offer.name.toLowerCase()}`}>{offer.name}</h3>
+              <p class="offer-availability">{offer.availability}</p>
+            </div>
+            <p class="offer-price">{priceFormat.format(offer.price)}<span> €</span></p>
+            <p class="offer-description">{offer.description}</p>
+            <ul>
+              {offer.features.map((feature) => (
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
-      <div class="cta-actions">
-        <a href={sponsoringUrl} target="_blank" rel="noopener" class="btn-primary">
-          Parlons-en
-          <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="/sponsor_2027.pdf" target="_blank" rel="noopener" class="btn-secondary">
-          Dossier sponsoring
-        </a>
+      <p class="offers-note">Les principales prestations sont présentées ici. Consultez le dossier pour le détail de chaque formule et les modalités de réservation.</p>
+
+      <div class="partnership-actions">
+        <div class="actions-copy">
+          <h3>Faisons connaissance.</h3>
+          <p>Les engagements sont ouverts jusqu’au <strong>{deadline}</strong>.</p>
+        </div>
+        <div class="actions-buttons">
+          {sponsoringBrochureUrl && (
+            <a href={sponsoringBrochureUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Consulter le dossier
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v7H3V3h7" /></svg>
+            </a>
+          )}
+          <a href={sponsoringUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Devenir sponsor
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="partnership-process">
+        <h2>Et ensuite ?</h2>
+        <ol class="partnership-steps">
+          {steps.map((step, index) => (
+            <li>
+              <span class="step-number" aria-hidden="true">0{index + 1}</span>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </li>
+          ))}
+        </ol>
+        <p class="partnership-contact">Une question sur les formules ? <a href={`mailto:${contactEmail}`}>Écrivez à l’équipe →</a></p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 )}
 
 <style>
-  .become-sponsor {
-    /* Light, airy palette */
-    --bg-base: #f8f9fa;
-    --bg-surface: #ffffff;
-    --border-subtle: rgba(0, 0, 0, 0.06);
-    --border-medium: rgba(0, 0, 0, 0.1);
-    --text-primary: #1a1a1a;
-    --text-secondary: #555555;
-    --text-muted: #888888;
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
-    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
-
-    padding: var(--section-padding);
-    background: var(--bg-base);
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* Background decoration */
-  .bg-decoration {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-  }
-
-  .accent-blur {
-    position: absolute;
-    width: 800px;
-    height: 600px;
-    top: -30%;
-    right: -15%;
-    background: radial-gradient(ellipse, var(--accent) 0%, transparent 70%);
-    opacity: 0.07;
-    filter: blur(100px);
-  }
-
-  .grid-pattern {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
-    background-size: 60px 60px;
-    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 70%);
-  }
-
-  .become-sponsor-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Header */
-  .sponsor-header {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .sponsor-eyebrow {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 1.5rem;
-    animation: fadeInUp 0.6s ease-out 0.1s backwards;
-  }
-
-  .sponsor-title {
-    font-size: clamp(2.25rem, 5vw, 3.25rem);
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1.15;
-    margin-bottom: 1.5rem;
-    animation: fadeInUp 0.6s ease-out 0.2s backwards;
-    letter-spacing: -0.02em;
-  }
-
-  .title-accent {
-    display: block;
-    color: var(--accent);
-  }
-
-  .sponsor-subtitle {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 540px;
-    margin: 0 auto;
-    line-height: 1.7;
-    animation: fadeInUp 0.6s ease-out 0.3s backwards;
-  }
-
-  /* Perks grid */
-  .perks-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 4rem;
-  }
-
-  .perk-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    animation: fadeInUp 0.6s ease-out backwards;
-    animation-delay: calc(0.35s + var(--index) * 0.08s);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .perk-icon-wrapper {
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: color-mix(in srgb, var(--accent) 8%, white);
-    border-radius: 14px;
-  }
-
-  .perk-icon {
-    font-size: 1.75rem;
-    line-height: 1;
-  }
-
-  .perk-content {
-    flex: 1;
-  }
-
-  .perk-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.01em;
-  }
-
-  .perk-desc {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-
-  .perk-highlight {
-    display: inline-block;
-    align-self: flex-start;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 0.4rem 0.85rem;
-    background: color-mix(in srgb, var(--accent) 10%, white);
-    border-radius: 100px;
-  }
-
-  /* CTA section */
-  .cta-section {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 20px;
-    padding: 2.5rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.5rem;
-    animation: fadeInUp 0.6s ease-out 0.7s backwards;
-    box-shadow: var(--shadow-md);
-  }
-
-  .cta-hook {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.25rem;
-    letter-spacing: -0.02em;
-  }
-
-  .cta-subtext {
-    font-size: 1rem;
-    color: var(--text-secondary);
-  }
-
-  .cta-actions {
-    display: flex;
-    gap: 0.875rem;
-    flex-shrink: 0;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.9rem 1.5rem;
-    border-radius: 10px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 35%, transparent);
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 40%, transparent);
-    filter: brightness(1.05);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: var(--text-primary);
-    border: 1px solid var(--border-medium);
-  }
-
-  .btn-secondary:hover {
-    background: var(--bg-base);
-    border-color: var(--border-medium);
-    transform: translateY(-2px);
-  }
-
-  .btn-arrow {
-    transition: transform 0.25s ease;
-  }
-
-  .btn-primary:hover .btn-arrow {
-    transform: translateX(3px);
-  }
-
-  /* Animation keyframes */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(24px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsive */
+  .become-sponsor { padding: var(--section-padding); background: var(--bg-primary); }
+  .partnership-inner { max-width: 1100px; margin: 0 auto; }
+  .offers-header { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 2rem; }
+  .offers-header h2 { margin-top: .65rem; font-size: clamp(1.75rem, 3vw, 2.25rem); }
+  .offers-header > p { flex-shrink: 0; color: var(--text-secondary); font-size: .85rem; line-height: 1.7; text-align: right; }
+  .offers-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+  .offer { --tier-color: #80533b; padding: 1.75rem; border: 1px solid var(--glass-border); border-top: 3px solid var(--tier-color); border-radius: 16px; background: var(--bg-primary); }
+  .offer-silver { --tier-color: #626c7a; }
+  .offer-gold { --tier-color: #87691d; background: #fcfbf6; }
+  .offer-heading h3 { color: var(--tier-color); font-size: 1.15rem; }
+  .offer-availability { color: var(--text-secondary); font-size: .75rem; margin-top: .25rem; }
+  .offer-price { margin: 1.5rem 0 .75rem; font-family: var(--font-display); font-size: 2.75rem; font-weight: 600; line-height: 1; letter-spacing: -.04em; }
+  .offer-price span { font-size: 1.5rem; font-weight: 400; }
+  .offer-description { min-height: 3.2rem; color: var(--text-secondary); font-size: .9rem; line-height: 1.65; }
+  .offer ul { display: grid; gap: .85rem; list-style: none; margin: 1.5rem 0 0; padding: 1.25rem 0 0; border-top: 1px solid var(--glass-border); }
+  .offer li { display: flex; align-items: baseline; gap: .6rem; font-size: .85rem; line-height: 1.65; }
+  .offer li svg { flex: 0 0 16px; align-self: start; margin-top: .2rem; color: var(--accent-dark); }
+  .offers-note { color: var(--text-secondary); font-size: .8rem; line-height: 1.7; margin-top: 1rem; }
+  .partnership-actions { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 2rem; padding: 2rem; border-radius: 16px; background: var(--accent-light); }
+  .actions-copy h3 { font-size: 1.5rem; margin-bottom: .4rem; }
+  .actions-copy p { font-size: .85rem; color: var(--text-secondary); }
+  .actions-buttons { display: flex; flex-shrink: 0; gap: .75rem; }
+  .actions-buttons .btn { font-size: .9rem; }
+  .partnership-process { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--glass-border); }
+  .partnership-process > h2 { font-size: 1.75rem; margin-bottom: 1.75rem; }
+  .partnership-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; list-style: none; padding: 0; }
+  .step-number { display: block; color: var(--accent-dark); font-size: .85rem; font-weight: 600; margin-bottom: .6rem; }
+  .partnership-steps h3 { font-size: 1.05rem; margin-bottom: .6rem; }
+  .partnership-steps p { font-size: .9rem; line-height: 1.75; color: var(--text-secondary); }
+  .partnership-contact { margin-top: 2rem; font-size: .9rem; color: var(--text-secondary); }
+  .partnership-contact a { color: var(--accent-dark); font-weight: 600; text-underline-offset: 4px; }
   @media (max-width: 1024px) {
-    .stats-bar {
-      gap: 3rem;
-    }
-
-    .perks-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cta-section {
-      flex-direction: column;
-      text-align: center;
-      padding: 2.25rem 2rem;
-    }
-
-    .cta-actions {
-      width: 100%;
-      justify-content: center;
-    }
+    .offer { padding: 1.25rem; }
+    .partnership-actions { flex-direction: column; align-items: start; gap: 1.25rem; }
   }
-
-  @media (max-width: 640px) {
-    .stats-bar {
-      flex-wrap: wrap;
-      gap: 2rem 3.5rem;
-      padding-bottom: 2.5rem;
-    }
-
-    .stat-value {
-      font-size: 2.5rem;
-    }
-
-    .perk-card {
-      padding: 1.75rem;
-    }
-
-    .perk-icon-wrapper {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-    }
-
-    .perk-icon {
-      font-size: 1.5rem;
-    }
-
-    .cta-section {
-      padding: 2rem 1.5rem;
-    }
-
-    .cta-hook {
-      font-size: 1.3rem;
-    }
-
-    .cta-actions {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-      justify-content: center;
-      width: 100%;
-    }
+  @media (max-width: 767px) {
+    .offers-header { flex-direction: column; align-items: start; gap: 1rem; }
+    .offers-header > p { text-align: left; }
+    .offers-grid, .partnership-steps { grid-template-columns: 1fr; }
+    .offer { padding: 1.5rem; }
+    .offer-description { min-height: 0; }
+    .offer-price { margin-top: 1.25rem; }
+    .partnership-actions { padding: 1.5rem; }
+    .actions-buttons { flex-direction: column; width: 100%; }
+    .partnership-process { margin-top: 3rem; padding-top: 2rem; }
   }
 </style>
