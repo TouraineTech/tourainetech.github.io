@@ -1,5 +1,7 @@
 import { siteConfig } from '@data/config/site';
 import { getAllSponsors } from '@lib/data';
+import programmeEdition from '@data/source/edition.json';
+import { canPublishProgramme } from './publication';
 
 // Source de verite : la phase de campagne pilote le hero + l'ordre editorial.
 export const phase = siteConfig.phase;
@@ -20,7 +22,7 @@ export const isTicketingOpen = siteConfig.isTicketingOpen;
 export const hasSponsors = getAllSponsors().length > 0;
 
 // Flags derives (consommes par HeroSection / Navigation).
-export const isProgrammePublished = isProgramme || isPost;
+export const isProgrammePublished = canPublishProgramme(phase, siteConfig.edition.year, programmeEdition.year);
 
 // La card billetterie du hero s'affiche pendant les phases billetterie/programme
 // (l'etat "ouvert vs bientot" est gere par isTicketingOpen a l'interieur).

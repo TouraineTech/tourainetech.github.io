@@ -1,0 +1,24 @@
+---
+import { siteConfig } from '@data/config/site';
+import { isCfpOpen } from '@lib/phase';
+
+interface Props { title: string; }
+const { title } = Astro.props;
+---
+
+<section class="programme-pending">
+  <span class="section-label">Touraine Tech {siteConfig.edition.year}</span>
+  <h1>{title}</h1>
+  <p>Le programme et les intervenants de l’édition {siteConfig.edition.year} seront annoncés prochainement.</p>
+  {isCfpOpen ? (
+    <a class="btn btn-primary" href={siteConfig.cfpUrl} target="_blank" rel="noopener noreferrer">Proposer un talk</a>
+  ) : (
+    <a class="btn btn-primary" href="/">Retour à l’accueil</a>
+  )}
+</section>
+
+<style>
+  .programme-pending { max-width: 800px; margin: 0 auto; padding: var(--section-padding); text-align: center; }
+  h1 { margin: 1rem 0; }
+  p { margin-bottom: 2rem; }
+</style>

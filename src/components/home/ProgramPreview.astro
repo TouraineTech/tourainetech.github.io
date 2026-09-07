@@ -2,6 +2,7 @@
 // Teaser programme (phase programme) : temps forts (keynotes) reels,
 // lien vers /schedule. Reutilise getAllScheduledTalks + helpers de data.ts.
 import { getAllScheduledTalks, isKeynote, getCategoryLabel, getCategoryColor } from '@lib/data';
+import { isProgrammePublished } from '@lib/phase';
 
 const talks = getAllScheduledTalks();
 const keynotes = talks.filter(isKeynote);
@@ -9,7 +10,7 @@ const keynotes = talks.filter(isKeynote);
 const highlights = (keynotes.length > 0 ? keynotes : talks).slice(0, 3);
 ---
 
-{highlights.length > 0 && (
+{isProgrammePublished && highlights.length > 0 && (
   <section class="program-preview">
     <div class="pp-inner">
       <div class="section-header">

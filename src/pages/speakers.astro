@@ -1,12 +1,18 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import ProgrammePending from '@components/ui/ProgrammePending.astro';
+import { isProgrammePublished } from '@lib/phase';
 import SpeakerCard from '@components/ui/SpeakerCard.astro';
 import { getAllScheduledSpeakers } from '@lib/data';
 
 const speakers = getAllScheduledSpeakers();
 ---
 
-<Layout title="Speakers" description="Découvrez les speakers de Touraine Tech 2027">
+<Layout title="Speakers" description="Découvrez les speakers de Touraine Tech 2027" noindex={!isProgrammePublished}>
+  {!isProgrammePublished ? (
+    <ProgrammePending title="Les intervenants" />
+  ) : (
+
   <div class="speakers-page">
     <header class="page-header">
       <div class="header-content">
@@ -31,6 +37,7 @@ const speakers = getAllScheduledSpeakers();
       </div>
     </div>
   </div>
+  )}
 </Layout>
 
 <style>

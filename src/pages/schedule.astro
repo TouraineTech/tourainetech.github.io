@@ -1,5 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import ProgrammePending from '@components/ui/ProgrammePending.astro';
+import { isProgrammePublished } from '@lib/phase';
 import TalkCard from '@components/schedule/TalkCard.astro';
 import { getAllRooms, getCategoryLabel, getCategoryColor, type Room } from '@lib/data';
 
@@ -116,7 +118,11 @@ for (const t of allTalks) {
 }
 ---
 
-<Layout title="Programme - Touraine Tech 2027">
+<Layout title="Programme - Touraine Tech 2027" noindex={!isProgrammePublished}>
+  {!isProgrammePublished ? (
+    <ProgrammePending title="Le programme" />
+  ) : (
+
   <div class="schedule-page">
     <!-- Page Header -->
     <header class="page-header">
@@ -234,6 +240,7 @@ for (const t of allTalks) {
       </div>
     ))}
   </div>
+  )}
 </Layout>
 
 <style>
