@@ -71,19 +71,31 @@ const steps = [
         </div>
       </div>
 
-      <div class="partnership-process">
-        <h2>Et ensuite ?</h2>
-        <ol class="partnership-steps">
+      <section class="partnership-process" aria-labelledby="process-title">
+        <header class="process-header">
+          <span class="process-eyebrow">Le partenariat, pas à pas</span>
+          <h2 id="process-title">Et ensuite ?</h2>
+          <p>Trois étapes pour préparer votre présence à Touraine Tech.</p>
+        </header>
+        <ol class="partnership-steps" role="list">
           {steps.map((step, index) => (
             <li>
               <span class="step-number" aria-hidden="true">0{index + 1}</span>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
+              <div class="step-content">
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </div>
             </li>
           ))}
         </ol>
-        <p class="partnership-contact">Une question sur les formules ? <a href={`mailto:${contactEmail}`}>Écrivez à l’équipe →</a></p>
-      </div>
+        <div class="partnership-contact">
+          <p>Une question sur les formules ?</p>
+          <a href={`mailto:${contactEmail}`}>
+            Écrivez à l’équipe
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </a>
+        </div>
+      </section>
     </div>
   </section>
 )}
@@ -114,14 +126,19 @@ const steps = [
   .actions-copy h3 { font-size: 1.5rem; }
   .actions-buttons { display: flex; flex-shrink: 0; gap: .75rem; }
   .actions-buttons .btn { font-size: .9rem; }
-  .partnership-process { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--glass-border); }
-  .partnership-process > h2 { font-size: 1.75rem; margin-bottom: 1.75rem; }
-  .partnership-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; list-style: none; padding: 0; }
-  .step-number { display: block; color: var(--accent-dark); font-size: .85rem; font-weight: 600; margin-bottom: .6rem; }
-  .partnership-steps h3 { font-size: 1.05rem; margin-bottom: .6rem; }
+  .partnership-process { margin-top: 4rem; padding: 3rem; border: 1px solid var(--glass-border); border-radius: 24px; background: var(--bg-secondary); }
+  .process-eyebrow { color: var(--accent-dark); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .process-header h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin: .5rem 0 .75rem; }
+  .process-header p { color: var(--text-secondary); font-size: .95rem; line-height: 1.7; }
+  .partnership-steps { --step-gap: 2rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--step-gap); list-style: none; margin: 2.5rem 0 0; padding: 0; }
+  .partnership-steps > li { position: relative; }
+  .partnership-steps > li:not(:last-child)::after { content: ''; position: absolute; top: 23px; left: 48px; width: calc(100% + var(--step-gap) - 48px); height: 2px; background: color-mix(in srgb, var(--accent-dark) 22%, transparent); }
+  .step-number { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 1.25rem; border-radius: 50%; background: var(--accent-dark); color: white; font-family: var(--font-display); font-size: 1rem; font-weight: 600; }
+  .partnership-steps h3 { font-size: 1.05rem; line-height: 1.45; margin-bottom: .6rem; }
   .partnership-steps p { font-size: .9rem; line-height: 1.75; color: var(--text-secondary); }
-  .partnership-contact { margin-top: 2rem; font-size: .9rem; color: var(--text-secondary); }
-  .partnership-contact a { color: var(--accent-dark); font-weight: 600; text-underline-offset: 4px; }
+  .partnership-contact { display: flex; justify-content: space-between; align-items: center; gap: .75rem 1.5rem; flex-wrap: wrap; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--glass-border); font-size: .9rem; color: var(--text-secondary); }
+  .partnership-contact a { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; color: var(--accent-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+  .partnership-contact a:hover { text-decoration-thickness: 2px; }
   @media (max-width: 1024px) {
     .offer { padding: 1.25rem; }
     .partnership-actions { flex-direction: column; align-items: start; gap: 1.25rem; }
@@ -135,6 +152,11 @@ const steps = [
     .offer-price { margin-top: 1.25rem; }
     .partnership-actions { padding: 1.5rem; }
     .actions-buttons { flex-direction: column; width: 100%; }
-    .partnership-process { margin-top: 3rem; padding-top: 2rem; }
+    .partnership-process { margin-top: 3rem; padding: 1.5rem; border-radius: 20px; }
+    .partnership-steps { --step-gap: 1.75rem; margin-top: 2rem; }
+    .partnership-steps > li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 1rem; }
+    .partnership-steps > li:not(:last-child)::after { top: 48px; left: 23px; width: 2px; height: calc(100% + var(--step-gap) - 48px); }
+    .step-number { margin-bottom: 0; }
+    .step-content { padding-top: .6rem; }
   }
 </style>
