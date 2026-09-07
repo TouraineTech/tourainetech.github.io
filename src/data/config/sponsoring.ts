@@ -1,6 +1,5 @@
 // Synthèse du dossier de partenariat 2027, lié dans siteConfig.sponsoringBrochureUrl.
 export const sponsoringCampaign = {
-  deadline: '30 novembre 2026',
   contactEmail: 'team@touraine.tech',
   offers: [
     {
@@ -21,8 +20,8 @@ export const sponsoringCampaign = {
       name: 'Gold',
       price: 4500,
       availability: '6 partenariats au total',
-      description: 'Associez présence sur place et prise de parole.',
-      features: ['Logo sur le site et page sponsor dédiée', 'Stand avec emplacement privilégié', 'Publication de vos offres d’emploi', 'Prise de parole sur scène'],
+      description: 'Renforcez votre visibilité tout au long de l’événement.',
+      features: ['Logo sur le site et page sponsor dédiée', 'Stand avec emplacement privilégié', 'Publication de vos offres d’emploi', 'Présentation lors de la keynote d’ouverture (1 min)'],
     },
   ],
 };

@@ -4,7 +4,7 @@ import { sponsoringCampaign } from '@data/config/sponsoring';
 import { showSponsoringCta } from '@lib/phase';
 
 const { sponsoringUrl, sponsoringBrochureUrl } = siteConfig;
-const { offers, deadline, contactEmail } = sponsoringCampaign;
+const { offers, contactEmail } = sponsoringCampaign;
 const priceFormat = new Intl.NumberFormat('fr-FR');
 const steps = [
   { title: 'Choisissez votre formule', text: 'Consultez le dossier et indiquez la formule souhaitée dans le formulaire.' },
@@ -51,12 +51,11 @@ const steps = [
           </article>
         ))}
       </div>
-      <p class="offers-note">Les principales prestations sont présentées ici. Consultez le dossier pour le détail de chaque formule et les modalités de réservation.</p>
+      <p class="offers-note">Les principales prestations sont présentées ici. Consultez le dossier pour le détail de chaque formule et les modalités de réservation. Le partenariat ne donne aucun avantage pour la sélection d’un talk.</p>
 
       <div class="partnership-actions">
         <div class="actions-copy">
           <h3>Faisons connaissance.</h3>
-          <p>Les engagements sont ouverts jusqu’au <strong>{deadline}</strong>.</p>
         </div>
         <div class="actions-buttons">
           {sponsoringBrochureUrl && (
@@ -112,8 +111,7 @@ const steps = [
   .offer li svg { flex: 0 0 16px; align-self: start; margin-top: .2rem; color: var(--accent-dark); }
   .offers-note { color: var(--text-secondary); font-size: .8rem; line-height: 1.7; margin-top: 1rem; }
   .partnership-actions { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 2rem; padding: 2rem; border-radius: 16px; background: var(--accent-light); }
-  .actions-copy h3 { font-size: 1.5rem; margin-bottom: .4rem; }
-  .actions-copy p { font-size: .85rem; color: var(--text-secondary); }
+  .actions-copy h3 { font-size: 1.5rem; }
   .actions-buttons { display: flex; flex-shrink: 0; gap: .75rem; }
   .actions-buttons .btn { font-size: .9rem; }
   .partnership-process { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--glass-border); }
