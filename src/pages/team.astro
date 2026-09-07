@@ -45,7 +45,7 @@ const team = teamData as TeamMember[];
                 </div>
               </div>
 
-              <h3 class="member-name">{member.name}</h3>
+              <h2 class="member-name">{member.name}</h2>
               <span class:list={['member-role', { 'member-role--bureau': member.role !== 'Membre' }]}>
                 {member.role}
               </span>
@@ -132,7 +132,8 @@ const team = teamData as TeamMember[];
         rgba(255, 255, 255, 0.92),
         rgba(255, 255, 255, 0.88)
       ),
-      url('/img/team.jpg') center 20% / cover;
+      /* Photo de l'édition 2026, issue de la galerie Flickr du site (55128471579). */
+      url('/img/team/conference-2026.jpg') center 40% / cover;
     border-bottom: 1px solid var(--glass-border);
     padding: 5rem 2rem;
     position: relative;
