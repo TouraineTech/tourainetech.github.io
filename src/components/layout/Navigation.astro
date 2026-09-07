@@ -87,7 +87,7 @@ const currentPath = Astro.url.pathname;
   </div>
 
   <!-- Mobile Navigation Panel -->
-  <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
+  <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true" inert>
     <div class="nav-mobile-links">
       {navLinks.map((link) => (
         <a
@@ -152,6 +152,7 @@ const currentPath = Astro.url.pathname;
   }
 
   function openMenu() {
+    menu?.removeAttribute('inert');
     menu?.setAttribute('aria-hidden', 'false');
     toggle?.setAttribute('aria-expanded', 'true');
     toggle?.setAttribute('aria-label', 'Fermer le menu');
@@ -166,6 +167,7 @@ const currentPath = Astro.url.pathname;
   }
 
   function closeMenu() {
+    menu?.setAttribute('inert', '');
     menu?.setAttribute('aria-hidden', 'true');
     toggle?.setAttribute('aria-expanded', 'false');
     toggle?.setAttribute('aria-label', 'Ouvrir le menu');

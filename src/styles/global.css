@@ -11,7 +11,7 @@
   --bg-tertiary: #F0F4F3;
   --text-primary: #1C1D21;
   --text-secondary: #4A4B52;
-  --text-muted: #8B8D97;
+  --text-muted: #656975;
   --accent: #4A9A8A;
   --accent-light: #E8F5F2;
   --accent-dark: #357A6B;
@@ -135,7 +135,7 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #2a6558 100%);
   color: white;
   box-shadow: var(--shadow-accent);
 }
@@ -349,14 +349,14 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-dark);
   outline-offset: 2px;
 }
 
-/* Focus on dark backgrounds (buttons with accent bg) */
+/* A dark outer ring stays visible on the light surfaces around these buttons. */
 .btn-primary:focus-visible,
 .nav-cta:focus-visible {
-  outline: 2px solid white;
+  outline: 2px solid var(--accent-dark);
   outline-offset: 2px;
 }
 
@@ -407,6 +407,6 @@ a.card:focus-visible {
    =================================== */
 /*
  * WCAG AA Contrast Requirements (4.5:1 for small text):
- * - White text on --accent (#4A9A8A): ~4.6:1 PASS
- * - White text on --accent-dark (#357A6B): ~6.5:1 PASS
+ * - White text on --accent (#4A9A8A): ~3.34:1 — decorative use only
+ * - White text on --accent-dark (#357A6B): ~5.05:1
  */
