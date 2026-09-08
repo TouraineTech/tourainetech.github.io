@@ -11,26 +11,38 @@ const sponsors = getAllSponsors();
     <div class="sponsors-inner">
       {showSponsoringCta ? (
         <div class="sponsoring-invitation">
-          <div class="sponsoring-heading">
-            <span class="sponsoring-eyebrow">Partenaires {siteConfig.edition.year}</span>
-            <h2 id="sponsoring-title">Votre entreprise a sa place <span>à Touraine Tech.</span></h2>
+          <div class="sponsoring-photo">
+            <img
+              src="/img/sponsoring/espace-partenaires.jpeg"
+              alt="Échanges entre participants dans l’espace des stands"
+              width="1264"
+              height="842"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
-          <div class="sponsoring-copy">
-            <p class="sponsoring-intro">
-              Rencontrez la communauté tech, partagez votre expertise
-              et soutenez un événement local.
-            </p>
-            <ul class="sponsoring-benefits" aria-label="Les bénéfices du partenariat">
-              <li>Visibilité</li>
-              <li>Rencontres</li>
-              <li>Partage</li>
-            </ul>
-            <a href="/sponsors" class="btn btn-primary">
-              Découvrir le sponsoring
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
+          <div class="sponsoring-content">
+            <div class="sponsoring-heading">
+              <span class="sponsoring-eyebrow">Partenaires {siteConfig.edition.year}</span>
+              <h2 id="sponsoring-title">Votre entreprise a sa place <span>à Touraine Tech.</span></h2>
+            </div>
+            <div class="sponsoring-copy">
+              <p class="sponsoring-intro">
+                Rencontrez la communauté tech, partagez votre expertise
+                et soutenez un événement local.
+              </p>
+              <ul class="sponsoring-benefits" aria-label="Les bénéfices du partenariat">
+                <li>Visibilité</li>
+                <li>Rencontres</li>
+                <li>Partage</li>
+              </ul>
+              <a href="/sponsors" class="btn btn-primary">
+                Découvrir le sponsoring
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       ) : (
@@ -59,10 +71,14 @@ const sponsors = getAllSponsors();
 <style>
   .sponsors-block { padding: var(--section-padding); background: var(--bg-primary); }
   .sponsors-inner { max-width: 1100px; margin: 0 auto; }
-  .sponsoring-invitation { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: clamp(2rem, 5vw, 4rem); padding: clamp(2rem, 5vw, 3.5rem); border-radius: 24px; border: 1px solid var(--glass-border); background: #edf6f3; color: var(--text-primary); }
+  .sponsoring-invitation { display: grid; grid-template-columns: 1.1fr 1fr; overflow: hidden; border-radius: 24px; border: 1px solid var(--glass-border); background: #edf6f3; color: var(--text-primary); }
+  .sponsoring-photo { min-width: 0; background: var(--bg-tertiary); }
+  .sponsoring-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .sponsoring-content { min-width: 0; padding: clamp(1.75rem, 4vw, 3rem); }
   .sponsoring-heading, .sponsoring-copy { min-width: 0; }
+  .sponsoring-copy { margin-top: 1.25rem; }
   .sponsoring-eyebrow { display: inline-block; color: var(--accent-dark); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
-  .sponsoring-heading h2 { color: var(--text-primary); font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.12; margin: 1rem 0 0; letter-spacing: -.025em; text-wrap: balance; }
+  .sponsoring-heading h2 { color: var(--text-primary); font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1.12; margin: 1rem 0 0; letter-spacing: -.025em; text-wrap: balance; }
   .sponsoring-heading h2 span { display: block; color: var(--accent-dark); }
   .sponsoring-intro { font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
   .sponsoring-benefits { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; list-style: none; padding: 0; margin: 1.5rem 0 2rem; font-size: .85rem; font-weight: 600; color: var(--accent-dark); }
@@ -79,7 +95,9 @@ const sponsors = getAllSponsors();
   .partner-logo img { max-height: 44px; max-width: 120px; object-fit: contain; }
   .partners-link { color: var(--accent-dark); font-weight: 600; text-underline-offset: 4px; }
   @media (max-width: 767px) {
-    .sponsoring-invitation { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1.5rem; border-radius: 20px; }
+    .sponsoring-invitation { grid-template-columns: 1fr; border-radius: 20px; }
+    .sponsoring-photo { aspect-ratio: 3 / 2; }
+    .sponsoring-content { padding: 1.75rem 1.5rem 2rem; }
     .sponsoring-heading h2 { font-size: clamp(1.9rem, 7vw, 2.65rem); }
   }
   @media (max-width: 420px) { .sponsoring-copy .btn { width: 100%; } }
