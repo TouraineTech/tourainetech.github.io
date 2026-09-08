@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/ui/PageHeader.astro';
 import SponsorsPreview from '@components/home/SponsorsPreview.astro';
 import BecomeSponsor from '@components/home/BecomeSponsor.astro';
 import { hasSponsors, showSponsoringCta } from '@lib/phase';
@@ -21,19 +22,12 @@ const description = hasSponsors
   title="Sponsors & Partenaires"
   description={description}
 >
-  <header class="sponsors-hero">
-    <div class="sponsors-hero-inner">
-      <span class="hero-eyebrow">Partenaires {siteConfig.edition.year}</span>
-      <h1>{heading}</h1>
-      <p>{description}</p>
-      {showSponsoringCta && (
-        <p class="hero-details">{siteConfig.edition.dates} <span aria-hidden="true">·</span> {siteConfig.edition.location}</p>
-      )}
-      {!hasSponsors && (
-        <p class="sponsors-empty">Les premiers partenaires seront annoncés prochainement.</p>
-      )}
-    </div>
-  </header>
+  <PageHeader
+    title={heading}
+    description={description}
+    details={showSponsoringCta ? `${siteConfig.edition.dates} · ${siteConfig.edition.location}` : undefined}
+    notice={!hasSponsors && showSponsoringCta ? 'Les premiers partenaires seront annoncés prochainement.' : undefined}
+  />
 
   {hasSponsors && (
     <SponsorsPreview showHeader={false} />
@@ -41,62 +35,3 @@ const description = hasSponsors
 
   <BecomeSponsor />
 </Layout>
-
-<style>
-  .sponsors-hero {
-    background: var(--bg-secondary);
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-
-  .sponsors-hero-inner {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .hero-eyebrow {
-    display: inline-block;
-    padding: 0.35rem 0.75rem;
-    background: var(--accent-light);
-    color: var(--accent-dark);
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-radius: 100px;
-    margin-bottom: 1rem;
-  }
-
-  .sponsors-hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 2.75rem);
-    font-weight: 800;
-    color: var(--text-primary);
-    margin: 0 0 0.75rem;
-    line-height: 1.15;
-  }
-
-  .sponsors-hero p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .sponsors-hero .hero-details {
-    margin-top: 1.5rem;
-    font-size: .9rem;
-    font-weight: 600;
-    color: var(--accent-dark);
-  }
-
-  .hero-details span { margin: 0 .5rem; }
-
-  .sponsors-hero .sponsors-empty {
-    margin-top: .75rem;
-    font-size: .8rem;
-  }
-
-  @media (max-width: 767px) {
-    .sponsors-hero { padding: 3rem 1.25rem; }
-    .sponsors-hero h1 { font-size: 2.25rem; }
-  }
-</style>

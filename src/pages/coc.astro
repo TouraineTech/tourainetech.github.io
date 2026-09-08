@@ -1,20 +1,14 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/ui/PageHeader.astro';
 ---
 
 <Layout title="Code de conduite" description="Code de conduite pour la conférence Touraine Tech 2027 - Un événement inclusif et bienveillant">
   <div class="coc-page">
-    <!-- Hero Section -->
-    <header class="coc-hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <span class="hero-badge">Touraine Tech 2027</span>
-        <h1>Code de conduite</h1>
-        <p class="hero-subtitle">
-          Ensemble, créons un espace où chacun·e peut apprendre, partager et s'épanouir en toute sécurité.
-        </p>
-      </div>
-    </header>
+    <PageHeader
+      title="Code de conduite"
+      description="Ensemble, créons un espace où chacun·e peut apprendre, partager et s'épanouir en toute sécurité."
+    />
 
     <div class="coc-container">
       <!-- TL;DR Section -->
@@ -247,66 +241,6 @@ import Layout from '@layouts/Layout.astro';
 
     min-height: 100vh;
     background: var(--bg-secondary);
-  }
-
-  /* Hero Section */
-  .coc-hero {
-    position: relative;
-    padding: 6rem 2rem 4rem;
-    overflow: hidden;
-    background: linear-gradient(
-      135deg,
-      var(--bg-primary) 0%,
-      color-mix(in srgb, var(--accent) 8%, var(--bg-primary)) 100%
-    );
-    border-bottom: 1px solid var(--glass-border);
-  }
-
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(circle at 20% 50%, color-mix(in srgb, var(--accent) 15%, transparent) 0%, transparent 50%),
-      radial-gradient(circle at 80% 50%, color-mix(in srgb, var(--color-values) 10%, transparent) 0%, transparent 50%);
-    pointer-events: none;
-  }
-
-  .hero-content {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .hero-badge {
-    display: inline-block;
-    padding: 0.5rem 1.25rem;
-    background: var(--accent);
-    color: white;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    border-radius: 100px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 14px rgba(106, 191, 173, 0.3);
-  }
-
-  .coc-hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 800;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
   }
 
   /* Container */
@@ -729,10 +663,6 @@ import Layout from '@layouts/Layout.astro';
 
   /* Responsive */
   @media (max-width: 768px) {
-    .coc-hero {
-      padding: 4rem 1.5rem 3rem;
-    }
-
     .coc-container {
       padding: 2rem 1.25rem 3rem;
     }
@@ -760,14 +690,6 @@ import Layout from '@layouts/Layout.astro';
   }
 
   @media (max-width: 480px) {
-    .coc-hero h1 {
-      font-size: 2rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1rem;
-    }
-
     .section-emoji {
       font-size: 1.75rem;
     }
