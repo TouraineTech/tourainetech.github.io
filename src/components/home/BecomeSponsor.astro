@@ -132,8 +132,8 @@ const steps = [
   .process-header p { color: var(--text-secondary); font-size: .95rem; line-height: 1.7; }
   .partnership-steps { --step-gap: 2rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--step-gap); list-style: none; margin: 2.5rem 0 0; padding: 0; }
   .partnership-steps > li { position: relative; }
-  .partnership-steps > li:not(:last-child)::after { content: ''; position: absolute; top: 23px; left: 48px; width: calc(100% + var(--step-gap) - 48px); height: 2px; background: color-mix(in srgb, var(--accent-dark) 22%, transparent); }
-  .step-number { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 1.25rem; border-radius: 50%; background: var(--accent-dark); color: white; font-family: var(--font-display); font-size: 1rem; font-weight: 600; }
+  .partnership-steps > li:not(:last-child)::after { content: ''; position: absolute; top: 23px; left: 24px; width: calc(100% + var(--step-gap) - 48px); height: 2px; background: color-mix(in srgb, var(--accent-dark) 22%, transparent); }
+  .step-number { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 1.25rem; transform: translateX(-50%); border-radius: 50%; background: var(--accent-dark); color: white; font-family: var(--font-display); font-size: 1rem; font-weight: 600; }
   .partnership-steps h3 { font-size: 1.05rem; line-height: 1.45; margin-bottom: .6rem; }
   .partnership-steps p { font-size: .9rem; line-height: 1.75; color: var(--text-secondary); }
   .partnership-contact { display: flex; justify-content: space-between; align-items: center; gap: .75rem 1.5rem; flex-wrap: wrap; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--glass-border); font-size: .9rem; color: var(--text-secondary); }
@@ -156,7 +156,7 @@ const steps = [
     .partnership-steps { --step-gap: 1.75rem; margin-top: 2rem; }
     .partnership-steps > li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 1rem; }
     .partnership-steps > li:not(:last-child)::after { top: 48px; left: 23px; width: 2px; height: calc(100% + var(--step-gap) - 48px); }
-    .step-number { margin-bottom: 0; }
+    .step-number { margin-bottom: 0; transform: none; }
     .step-content { padding-top: .6rem; }
   }
 </style>
