@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '@data/config/site';
+import { isProgrammePublished } from '@lib/phase';
 
 const { edition } = siteConfig;
 const currentYear = new Date().getFullYear();
@@ -7,8 +8,10 @@ const currentYear = new Date().getFullYear();
 const footerLinks = {
   conference: [
     { label: 'Accueil', href: '/' },
-    { label: 'Programme', href: '/schedule' },
-    { label: 'Speakers', href: '/speakers' },
+    ...(isProgrammePublished ? [
+      { label: 'Programme', href: '/schedule' },
+      { label: 'Speakers', href: '/speakers' },
+    ] : []),
     { label: 'Photos', href: '/photos' },
   ],
   infos: [

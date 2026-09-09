@@ -21,7 +21,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-meta">
-        <MetaPill icon="📅" label="Date" value={edition.dates} />
+        <MetaPill icon="calendar" label="Date" value={edition.dates} />
         <MetaPill icon="📍" label="Lieu" value={edition.location} />
         {/* Pendant la billetterie, le CFP est un indicateur secondaire.
             Une fois le programme publié, le CFP n'est plus pertinent. */}
