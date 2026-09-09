@@ -5,6 +5,7 @@
  * Design: unified companion card pattern (matches ticket card)
  */
 import { siteConfig, stats } from '@data/config/site';
+import CalendarIcon from '@components/ui/CalendarIcon.astro';
 import { isPost } from '@lib/phase';
 
 const { edition } = siteConfig;
@@ -32,7 +33,9 @@ const previousYear = isPost ? edition.year : edition.year - 1;
     <div class="prev-stats">
       {stats.map((stat) => (
         <div class="prev-stat">
-          <span class="prev-stat-icon" aria-hidden="true">{stat.icon}</span>
+          <span class="prev-stat-icon" aria-hidden="true">
+            {stat.icon === 'calendar' ? <CalendarIcon /> : stat.icon}
+          </span>
           <span class="prev-stat-text">
             <span class="prev-stat-val">
               {stat.approximate && <><span aria-hidden="true">≈ </span><span class="sr-only">Environ </span></>}{stat.value}

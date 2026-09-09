@@ -1,12 +1,15 @@
 ---
-import { stats } from '@data/config/site';
+import { siteConfig, stats } from '@data/config/site';
+import CalendarIcon from '@components/ui/CalendarIcon.astro';
 ---
 
 <section class="stats">
   <div class="stats-inner">
     {stats.map((stat) => (
       <div class="stat-card">
-        <span class="stat-icon">{stat.icon}</span>
+        <span class="stat-icon" aria-hidden="true">
+          {stat.icon === 'calendar' ? <CalendarIcon date={siteConfig.edition.dates} /> : stat.icon}
+        </span>
         <span class="stat-value">
           {stat.approximate && <><span aria-hidden="true">≈ </span><span class="sr-only">Environ </span></>}{stat.value}
         </span>

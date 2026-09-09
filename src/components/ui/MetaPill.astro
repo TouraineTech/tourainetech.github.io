@@ -1,4 +1,6 @@
 ---
+import CalendarIcon from './CalendarIcon.astro';
+
 interface Props {
   icon: string;
   label: string;
@@ -7,18 +9,12 @@ interface Props {
 }
 
 const { icon, label, value, highlight = false } = Astro.props;
-// Read the first day from the displayed date range to keep the decoration in sync.
-const calendarDay = icon === 'calendar' ? value.match(/^\d{1,2}\b/)?.[0] : undefined;
 ---
 
 <div class:list={['meta-pill', { highlight }]}>
   <span class="meta-pill-icon" aria-hidden="true">
     {icon === 'calendar' ? (
-      <svg class="calendar-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="3" y="6" width="26" height="24" rx="4" fill="var(--accent-light)" stroke="currentColor" stroke-width="1.5" />
-        <path d="M3 14h26M10 3v6M22 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        <text x="16" y="25" text-anchor="middle" fill="currentColor" font-size="11" font-weight="700">{calendarDay}</text>
-      </svg>
+      <CalendarIcon date={value} size={32} />
     ) : icon}
   </span>
   <div class="meta-pill-text">
@@ -51,8 +47,6 @@ const calendarDay = icon === 'calendar' ? value.match(/^\d{1,2}\b/)?.[0] : undef
     width: 2rem;
     font-size: 1.5rem;
   }
-
-  .calendar-icon { display: block; color: var(--accent-dark); }
 
   .meta-pill-text {
     display: flex;

@@ -36,7 +36,7 @@ export const stats = [
   { value: '80', approximate: true, label: 'talks', icon: '🎤' },
   { value: '550', approximate: true, label: 'participants', icon: '👥' },
   { value: '85', approximate: true, label: 'speakers', icon: '🎙️' },
-  { value: '2', approximate: false, label: 'jours', icon: '📅' },
+  { value: '2', approximate: false, label: 'jours', icon: 'calendar' },
 ];
 
 // Categories de talks

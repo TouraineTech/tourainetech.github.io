@@ -1,0 +1,26 @@
+---
+interface Props {
+  date?: string;
+  size?: number | string;
+}
+
+const { date, size = '1em' } = Astro.props;
+const day = date?.match(/^\d{1,2}\b/)?.[0];
+---
+
+<svg width={size} height={size} viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+  <path d="M4 5h24v25H4z" fill="#eeeeec" />
+  <path d="M4 5h4v25H4z" fill="#d9d9d6" />
+  <path d="M4 5h24v8H4z" fill="#b65c60" />
+  <path d="M4 11h24v2H4z" fill="#97494d" />
+  <path d="M10 3v5M22 3v5" stroke="#f6f0e8" stroke-width="2" stroke-linecap="round" />
+  {day ? (
+    <text x="16" y="27" text-anchor="middle" fill="#444444" font-family="Arial, sans-serif" font-size="17">{day}</text>
+  ) : (
+    <path d="M10 18h3m3 0h3m3 0h2M10 23h3m3 0h3m3 0h2" stroke="#888888" stroke-width="2" />
+  )}
+</svg>
+
+<style>
+  svg { display: inline-block; vertical-align: middle; }
+</style>
