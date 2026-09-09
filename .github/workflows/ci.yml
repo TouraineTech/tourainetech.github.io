@@ -33,3 +33,6 @@ jobs:
 
       - name: Typecheck
         run: task check
+
+      - name: Test publication rules
+        run: pnpm test

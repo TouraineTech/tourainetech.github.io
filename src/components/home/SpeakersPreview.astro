@@ -3,12 +3,13 @@
 // lien vers /speakers. Reutilise getAllScheduledSpeakers + SpeakerCard.
 import SpeakerCard from '@components/ui/SpeakerCard.astro';
 import { getAllScheduledSpeakers } from '@lib/data';
+import { isProgrammePublished } from '@lib/phase';
 
 const PREVIEW = 8;
 const speakers = getAllScheduledSpeakers().slice(0, PREVIEW);
 ---
 
-{speakers.length > 0 && (
+{isProgrammePublished && speakers.length > 0 && (
   <section class="speakers-preview">
     <div class="sp-inner">
       <div class="section-header">

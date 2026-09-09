@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { isProgrammePublished } from '@lib/phase';
 import {
   getSpeakerByUid,
   getAllScheduledSpeakers,
@@ -9,6 +10,7 @@ import {
 } from '@lib/data';
 
 export async function getStaticPaths() {
+  if (!isProgrammePublished) return [];
   const speakers = getAllScheduledSpeakers();
   return speakers.map((speaker) => ({
     params: { uid: speaker.uid },
