@@ -1,0 +1,38 @@
+---
+import { siteConfig, venue } from '@data/config/site';
+
+const { edition } = siteConfig;
+const event = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  '@id': new URL(`/#event-${edition.year}`, Astro.site).href,
+  name: `Touraine Tech ${edition.year}`,
+  description: 'Deux jours de conférences, d’ateliers et de rencontres avec la communauté tech en Touraine.',
+  url: new URL('/', Astro.site).href,
+  // The programme is not published yet: use dates without inventing start times.
+  startDate: edition.startDate,
+  endDate: edition.endDate,
+  eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  image: [new URL('/img/sponsoring/rencontres-2026.jpg', Astro.site).href],
+  location: {
+    '@type': 'Place',
+    name: venue.name,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: venue.address,
+      postalCode: venue.postalCode,
+      addressLocality: venue.city,
+      addressCountry: venue.country,
+    },
+  },
+  organizer: {
+    '@type': 'Organization',
+    name: 'Touraine Tech',
+    url: new URL('/', Astro.site).href,
+  },
+};
+const serialized = JSON.stringify(event).replace(/</g, '\\u003c');
+---
+
+<script is:inline type="application/ld+json" set:html={serialized} />

@@ -15,8 +15,8 @@ interface Props {
 }
 
 const {
-  title = `Touraine Tech ${siteConfig.edition.year}`,
-  description = 'La conférence tech en Touraine : deux jours de conférences, d’ateliers et de rencontres avec la communauté tech à Tours.',
+  title = `Touraine Tech ${siteConfig.edition.year} — Conférence tech à Tours`,
+  description = `Touraine Tech vous donne rendez-vous les ${siteConfig.edition.dates} à ${siteConfig.edition.location} : conférences, ateliers et rencontres avec la communauté tech.`,
   ogImage = '/logo.jpg',
   ogImageAlt = 'Logo Touraine Tech',
   noindex = false,
@@ -89,6 +89,7 @@ const socialImageURL = new URL(ogImage, import.meta.env.DEPLOY_PRIME_URL || Astr
 
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <slot name="head" />
 
     <!-- Analytics (Umami) -->
     <script
