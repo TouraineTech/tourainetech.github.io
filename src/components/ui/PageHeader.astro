@@ -1,0 +1,72 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  details?: string;
+  notice?: string;
+}
+
+const {
+  title,
+  description,
+  details,
+  notice,
+} = Astro.props;
+---
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>{title}</h1>
+    <p class="page-description">{description}</p>
+    {details && <p class="page-details">{details}</p>}
+    {notice && <p class="page-notice">{notice}</p>}
+  </div>
+</header>
+
+<style>
+  .page-header {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    background:
+      radial-gradient(ellipse at 15% 10%, rgba(106, 191, 173, .13), transparent 55%),
+      radial-gradient(ellipse at 85% 100%, rgba(106, 191, 173, .08), transparent 50%),
+      var(--bg-secondary);
+    border-bottom: 1px solid var(--glass-border);
+    text-align: center;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(55, 119, 104, .045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(55, 119, 104, .045) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, #000, transparent);
+  }
+
+  .page-header-inner { position: relative; max-width: 800px; margin: 0 auto; }
+
+  h1 {
+    margin: 0 0 .75rem;
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -.025em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  p { margin: 0; line-height: 1.65; color: var(--text-secondary); }
+  .page-description { font-size: 1rem; text-wrap: pretty; }
+  .page-details { margin-top: 1.5rem; font-size: .9rem; font-weight: 600; color: var(--accent-dark); }
+  .page-notice { margin-top: .75rem; font-size: .8rem; }
+
+  @media (max-width: 767px) {
+    .page-header { padding: 3rem 1.25rem; }
+  }
+</style>

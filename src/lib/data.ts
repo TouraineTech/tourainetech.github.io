@@ -239,7 +239,7 @@ export function formatTimeDisplay(timePosition: number, day: number): string {
   const slot = times[timePosition];
   const dayLabel = DAY_LABELS[day] || `Jour ${day}`;
   const time = slot?.time?.replace(':', 'h') || '??h??';
-  return `${dayLabel} a ${time}`;
+  return `${dayLabel} à ${time}`;
 }
 
 /**
@@ -370,7 +370,7 @@ export function getFormatLabel(talk: FullTalk): string {
   if (isKeynote(talk)) return 'Keynote';
   if (isWorkshop(talk)) return 'Atelier';
   if (isLightning(talk)) return 'Lightning';
-  return 'Conference';
+  return 'Conférence';
 }
 
 /**

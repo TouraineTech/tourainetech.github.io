@@ -1,168 +1,104 @@
 ---
-// Bloc sponsors COMPACT de la home : argumentaire -> preuve (logos) -> CTA.
-// Deux axes independants pilotent le rendu (cf. plan) :
-//   hasSponsors      -> affiche les logos ("Ils nous font deja confiance")
-//   showSponsoringCta -> affiche l'argumentaire commercial + CTA
 import { siteConfig } from '@data/config/site';
 import { getAllSponsors } from '@lib/data';
 import { hasSponsors, showSponsoringCta, isPost } from '@lib/phase';
-import SponsorPerks from '@components/home/SponsorPerks.astro';
 
-const { sponsoringUrl } = siteConfig;
 const sponsors = getAllSponsors();
-
-// Rien a montrer si aucun sponsor signe ET pas d'argumentaire commercial (ex: phase intro).
-const shouldRender = hasSponsors || showSponsoringCta;
-
-// Titre adapte a l'etat
-const heading = showSponsoringCta
-  ? 'Faites rayonner votre marque devant ceux qui comptent'
-  : isPost
-    ? 'Merci a nos partenaires'
-    : 'Ils rendent Touraine Tech possible';
 ---
 
-{shouldRender && (
-<section class="sponsors-block" id="sponsors">
-  <div class="sponsors-block-inner">
-    <div class="sb-header">
-      <span class="sb-eyebrow">Sponsors</span>
-      <h2 class="sb-title">{heading}</h2>
-      {showSponsoringCta && (
-        <p class="sb-subtitle">
-          Visibilite, recrutement et temps de parole devant la communaute tech du Centre-Val de Loire.
-        </p>
-      )}
-    </div>
-
-    {showSponsoringCta && (
-      <div class="sb-perks">
-        <SponsorPerks />
-      </div>
-    )}
-
-    {hasSponsors && (
-      <>
-        {showSponsoringCta && <p class="sb-proof">Ils nous font deja confiance</p>}
-        <div class="sb-logos">
-          {sponsors.map((sponsor: any) => (
-            <a href={`/sponsor/${sponsor.id}`} class="sb-logo" title={sponsor.name}>
-              <img src={`/img/sponsors/${sponsor.image}`} alt={sponsor.name} loading="lazy" />
-            </a>
-          ))}
+{(hasSponsors || showSponsoringCta) && (
+  <section class="sponsors-block" id="sponsors" aria-labelledby="sponsoring-title">
+    <div class="sponsors-inner">
+      {showSponsoringCta ? (
+        <div class="sponsoring-invitation">
+          <div class="sponsoring-photo">
+            <img
+              src="/img/sponsoring/espace-partenaires.jpeg"
+              alt="Échanges entre participants dans l’espace des stands"
+              width="1264"
+              height="842"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="sponsoring-content">
+            <div class="sponsoring-heading">
+              <span class="sponsoring-eyebrow">Partenaires {siteConfig.edition.year}</span>
+              <h2 id="sponsoring-title">Votre entreprise a sa place <span>à Touraine Tech.</span></h2>
+            </div>
+            <div class="sponsoring-copy">
+              <p class="sponsoring-intro">
+                Rencontrez la communauté tech, partagez votre expertise
+                et soutenez un événement local.
+              </p>
+              <ul class="sponsoring-benefits" aria-label="Les bénéfices du partenariat">
+                <li>Visibilité</li>
+                <li>Rencontres</li>
+                <li>Partage</li>
+              </ul>
+              <a href="/sponsors" class="btn btn-primary">
+                Découvrir le sponsoring
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-      </>
-    )}
-
-    <div class="sb-actions">
-      {showSponsoringCta && (
-        <a href={sponsoringUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Decouvrir les offres
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
+      ) : (
+        <h2 id="sponsoring-title" class="partners-title">
+          {isPost ? 'Merci à nos partenaires' : 'Ils rendent Touraine Tech possible'}
+        </h2>
       )}
+
       {hasSponsors && (
-        <a href="/sponsors" class="btn btn-secondary">Decouvrir tous nos partenaires</a>
+        <div class="confirmed-partners">
+          {showSponsoringCta && <p class="partners-label">Ils nous font déjà confiance</p>}
+          <div class="partner-logos">
+            {sponsors.map((sponsor) => (
+              <a href={`/sponsor/${sponsor.id}`} class="partner-logo" title={sponsor.name}>
+                <img src={`/img/sponsors/${sponsor.image}`} alt={sponsor.name} loading="lazy" />
+              </a>
+            ))}
+          </div>
+          <a href="/sponsors" class="partners-link">Découvrir tous nos partenaires →</a>
+        </div>
       )}
     </div>
-  </div>
-</section>
+  </section>
 )}
 
 <style>
-  .sponsors-block {
-    padding: var(--section-padding);
-    background: var(--bg-primary);
+  .sponsors-block { padding: var(--section-padding); background: var(--bg-primary); }
+  .sponsors-inner { max-width: 1100px; margin: 0 auto; }
+  .sponsoring-invitation { display: grid; grid-template-columns: 1.1fr 1fr; overflow: hidden; border-radius: 24px; border: 1px solid var(--glass-border); background: #edf6f3; color: var(--text-primary); }
+  .sponsoring-photo { min-width: 0; background: var(--bg-tertiary); }
+  .sponsoring-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .sponsoring-content { min-width: 0; padding: clamp(1.75rem, 4vw, 3rem); }
+  .sponsoring-heading, .sponsoring-copy { min-width: 0; }
+  .sponsoring-copy { margin-top: 1.25rem; }
+  .sponsoring-eyebrow { display: inline-block; color: var(--accent-dark); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .sponsoring-heading h2 { color: var(--text-primary); font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1.12; margin: 1rem 0 0; letter-spacing: -.025em; text-wrap: balance; }
+  .sponsoring-heading h2 span { display: block; color: var(--accent-dark); }
+  .sponsoring-intro { font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+  .sponsoring-benefits { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; list-style: none; padding: 0; margin: 1.5rem 0 2rem; font-size: .85rem; font-weight: 600; color: var(--accent-dark); }
+  .sponsoring-benefits li { display: flex; align-items: center; gap: .5rem; }
+  .sponsoring-benefits li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+  .sponsoring-copy .btn { background: var(--accent-dark); color: #fff; border-color: transparent; box-shadow: none; }
+  .sponsoring-copy .btn:hover { background: #245e51; }
+  .sponsoring-copy .btn:focus-visible { outline: 3px solid var(--accent-dark); outline-offset: 5px; }
+  .partners-title, .confirmed-partners { text-align: center; }
+  .sponsoring-invitation + .confirmed-partners { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border); }
+  .partners-label { font-size: .9rem; color: var(--text-secondary); }
+  .partner-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin: 1.5rem 0; }
+  .partner-logo { display: flex; align-items: center; justify-content: center; padding: .75rem 1.25rem; border-radius: 10px; background: var(--bg-tertiary); }
+  .partner-logo img { max-height: 44px; max-width: 120px; object-fit: contain; }
+  .partners-link { color: var(--accent-dark); font-weight: 600; text-underline-offset: 4px; }
+  @media (max-width: 767px) {
+    .sponsoring-invitation { grid-template-columns: 1fr; border-radius: 20px; }
+    .sponsoring-photo { aspect-ratio: 3 / 2; }
+    .sponsoring-content { padding: 1.75rem 1.5rem 2rem; }
+    .sponsoring-heading h2 { font-size: clamp(1.9rem, 7vw, 2.65rem); }
   }
-
-  .sponsors-block-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .sb-eyebrow {
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 1rem;
-  }
-
-  .sb-title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 800;
-    color: var(--text-primary);
-    line-height: 1.2;
-    max-width: 720px;
-    margin: 0 auto;
-    letter-spacing: -0.02em;
-  }
-
-  .sb-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    max-width: 560px;
-    margin: 1rem auto 0;
-    line-height: 1.6;
-  }
-
-  .sb-perks {
-    max-width: 900px;
-    margin: 2.5rem auto 0;
-  }
-
-  .sb-proof {
-    margin: 2.5rem 0 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text-muted);
-  }
-
-  .sb-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-
-  .sb-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.25rem;
-    background: var(--bg-tertiary);
-    border-radius: 10px;
-    transition: transform 0.2s ease, background 0.2s ease;
-  }
-
-  .sb-logo:hover,
-  .sb-logo:focus-visible {
-    background: var(--bg-secondary);
-    transform: translateY(-2px);
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .sb-logo img {
-    max-height: 44px;
-    max-width: 120px;
-    object-fit: contain;
-  }
-
-  .sb-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.875rem;
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
+  @media (max-width: 420px) { .sponsoring-copy .btn { width: 100%; } }
 </style>

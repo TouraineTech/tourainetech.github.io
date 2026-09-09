@@ -1,4 +1,6 @@
 ---
+import CalendarIcon from './CalendarIcon.astro';
+
 interface Props {
   icon: string;
   label: string;
@@ -10,7 +12,11 @@ const { icon, label, value, highlight = false } = Astro.props;
 ---
 
 <div class:list={['meta-pill', { highlight }]}>
-  <span class="meta-pill-icon">{icon}</span>
+  <span class="meta-pill-icon" aria-hidden="true">
+    {icon === 'calendar' ? (
+      <CalendarIcon date={value} size={32} />
+    ) : icon}
+  </span>
   <div class="meta-pill-text">
     <span class="meta-pill-label">{label}</span>
     <span class="meta-pill-value">{value}</span>
@@ -35,12 +41,19 @@ const { icon, label, value, highlight = false } = Astro.props;
   }
 
   .meta-pill-icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 2rem;
+    width: 2rem;
     font-size: 1.5rem;
   }
 
   .meta-pill-text {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    text-align: left;
     line-height: 1.2;
   }
 

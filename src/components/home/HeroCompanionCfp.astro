@@ -24,7 +24,7 @@ const { cfpUrl, cfpDeadline } = siteConfig;
   <div class="companion-body">
     <p class="companion-desc">
       Partagez votre expertise avec la communauté tech tourangelle.
-      Conférences, quickies, workshops&nbsp;: choisissez votre format.
+      Conférences, Lightning talks, workshops&nbsp;: choisissez votre format.
     </p>
 
     {cfpDeadline && (
@@ -33,18 +33,17 @@ const { cfpUrl, cfpDeadline } = siteConfig;
           <circle cx="12" cy="12" r="10"/>
           <polyline points="12 6 12 12 16 14"/>
         </svg>
-        <span>Avant le <strong>{cfpDeadline}</strong></span>
+        <span>Jusqu'au <strong>{cfpDeadline}</strong></span>
       </div>
     )}
 
     <div class="cfp-topics">
-      {talkCategories.slice(0, 4).map((cat) => (
+      {talkCategories.map((cat) => (
         <span class="topic-chip" style={`--c: ${cat.color}`}>
           <span class="topic-icon">{cat.icon}</span>
-          {cat.name.split(',')[0]}
+          {cat.name}
         </span>
       ))}
-      <span class="topic-more">+{talkCategories.length - 4} tracks</span>
     </div>
 
     <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="companion-cta">
@@ -217,11 +216,7 @@ const { cfpUrl, cfpDeadline } = siteConfig;
     font-size: 0.8rem;
   }
 
-  .topic-more {
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--text-muted);
-  }
+
 
   /* === Animations === */
   @keyframes pulse {

@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/ui/PageHeader.astro';
 import teamData from '@data/team.json';
 
 interface TeamMember {
@@ -17,15 +18,10 @@ const team = teamData as TeamMember[];
 
 <Layout title="L'équipe" description="L'équipe organisatrice de Touraine Tech 2027">
   <div class="team-page">
-    <header class="page-header">
-      <div class="header-content">
-        <span class="header-label">Touraine Tech 2027</span>
-        <h1>L'équipe</h1>
-        <p class="header-description">
-          {team.length} bénévoles passionnés organisent cet événement.
-        </p>
-      </div>
-    </header>
+    <PageHeader
+      title="L'équipe"
+      description={`${team.length} bénévoles passionnés organisent cet événement.`}
+    />
 
     <div class="team-container">
       <div class="team-grid">
@@ -45,7 +41,7 @@ const team = teamData as TeamMember[];
                 </div>
               </div>
 
-              <h3 class="member-name">{member.name}</h3>
+              <h2 class="member-name">{member.name}</h2>
               <span class:list={['member-role', { 'member-role--bureau': member.role !== 'Membre' }]}>
                 {member.role}
               </span>
@@ -122,69 +118,6 @@ const team = teamData as TeamMember[];
   .team-page {
     min-height: 100vh;
     background: var(--bg-secondary);
-  }
-
-  /* Page Header */
-  .page-header {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.92),
-        rgba(255, 255, 255, 0.88)
-      ),
-      url('/img/team.jpg') center 20% / cover;
-    border-bottom: 1px solid var(--glass-border);
-    padding: 5rem 2rem;
-    position: relative;
-  }
-
-  .page-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      var(--accent),
-      transparent
-    );
-    opacity: 0.5;
-  }
-
-  .header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .header-label {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    background: var(--accent-light);
-    color: var(--accent-dark);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-radius: 100px;
-    margin-bottom: 1.25rem;
-  }
-
-  .page-header h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 2.5rem);
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.02em;
-  }
-
-  .header-description {
-    color: var(--text-secondary);
-    font-size: 1.15rem;
   }
 
   /* Team Container */
@@ -405,10 +338,6 @@ const team = teamData as TeamMember[];
 
   /* Responsive */
   @media (max-width: 768px) {
-    .page-header {
-      padding: 3.5rem 1.5rem;
-    }
-
     .team-container {
       padding: 2.5rem 1rem;
     }

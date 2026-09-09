@@ -1,20 +1,21 @@
 import type { SiteConfig } from '@lib/types';
 
 export const siteConfig: SiteConfig = {
-  // Phase de campagne : 'cfp' | 'ticketing' | 'programme' | 'post-event'
-  phase: 'intro',
+  // Phase de campagne : 'intro' | 'sponsoring' | 'cfp' | 'ticketing' | 'programme' | 'post-event'
+  phase: 'cfp',
 
   // Etats independants
-  isCfpOpen: false,
+  isCfpOpen: true,
   isTicketingOpen: false,
-  isSponsoringOpen: false,
+  isSponsoringOpen: true,
   ticketingOpenDate: '15 janvier 2026',
 
   // URLs externes
-  cfpDeadline: '16 novembre 2025',
+  cfpDeadline: '1er novembre 2026',
   ticketingUrl: 'https://www.billetweb.fr/touraine-tech-2026',
-  cfpUrl: 'https://conference-hall.io/touraine-tech-2026',
-  sponsoringUrl: 'https://sponsoring2026.touraine.tech',
+  cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
+  sponsoringUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeS5r7w_Jgw_XknTfulcafGlMGt7GF-8dV85D1oTkki2s9jiA/viewform?usp=header',
+  sponsoringBrochureUrl: 'https://docs.google.com/presentation/d/1F0LQAw_z6eixZx00sHqnA3h_Yx6b-QqZWH9H9tG5nlw/edit?usp=sharing',
 
   // Billetterie
   ticketTiers: [
@@ -25,28 +26,28 @@ export const siteConfig: SiteConfig = {
   // Informations de l'edition
   edition: {
     year: 2027,
-    dates: '18-19 Fevrier 2027',
+    dates: '18–19 février 2027',
     location: 'Polytech Tours',
   },
 };
 
 // Stats affichees sur la home page
 export const stats = [
-  { value: '80', label: 'talks', icon: '🎤' },
-  { value: '550', label: 'participants', icon: '👥' },
-  { value: '85', label: 'speakers', icon: '🎙️' },
-  { value: '2', label: 'jours', icon: '📅' },
+  { value: '80', approximate: true, label: 'talks', icon: '🎤' },
+  { value: '550', approximate: true, label: 'participants', icon: '👥' },
+  { value: '85', approximate: true, label: 'speakers', icon: '🎙️' },
+  { value: '2', approximate: false, label: 'jours', icon: 'calendar' },
 ];
 
 // Categories de talks
 export const talkCategories = [
-  { id: 'backend', name: 'Backend, Cloud, Big Data', icon: '☁️', description: 'Infrastructure, APIs, donnees', color: '#4A90D9' },
-  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, experiences utilisateur', color: '#E84C88' },
+  { id: 'backend', name: 'Backend, Cloud, Big Data', icon: '☁️', description: 'Infrastructure, APIs, données', color: '#4A90D9' },
+  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, expériences utilisateur', color: '#E84C88' },
   { id: 'architecture', name: 'Conception, Architecture', icon: '🏗️', description: 'Patterns, bonnes pratiques', color: '#6ABFAD' },
   { id: 'devops', name: 'DevOps, Outils', icon: '🔧', description: 'CI/CD, automatisation', color: '#F5A623' },
   { id: 'ia', name: 'IA, Data', icon: '🤖', description: 'Machine learning, analytics', color: '#9B59B6' },
-  { id: 'humain', name: 'Humain & Tech', icon: '💬', description: 'Soft skills, carrieres', color: '#E74C3C' },
-  { id: 'alien', name: 'Alien', icon: '👽', description: 'IoT, embarque, mobile, et plus', color: '#1ABC9C' },
+  { id: 'humain', name: 'Humain & Tech', icon: '💬', description: 'Soft skills, carrières', color: '#E74C3C' },
+  { id: 'alien', name: 'Alien', icon: '👽', description: 'IoT, embarqué, mobile, et plus', color: '#1ABC9C' },
 ];
 
 // Temoignages reels a ajouter ici (l'ancien contenu etait fictif et a ete retire).
