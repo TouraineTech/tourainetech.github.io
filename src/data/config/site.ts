@@ -14,8 +14,8 @@ export const siteConfig: SiteConfig = {
   cfpDeadline: '1er novembre 2026',
   ticketingUrl: 'https://www.billetweb.fr/touraine-tech-2026',
   cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
-  sponsoringUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeS5r7w_Jgw_XknTfulcafGlMGt7GF-8dV85D1oTkki2s9jiA/viewform?usp=header',
-  sponsoringBrochureUrl: 'https://docs.google.com/presentation/d/1F0LQAw_z6eixZx00sHqnA3h_Yx6b-QqZWH9H9tG5nlw/edit?usp=sharing',
+  sponsoringUrl: 'https://sponsoring27.touraine.tech',
+  sponsoringBrochureUrl: 'https://dossier-sponsor27.touraine.tech',
 
   // Billetterie
   ticketTiers: [
