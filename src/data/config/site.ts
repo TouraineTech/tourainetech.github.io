@@ -8,18 +8,18 @@ export const siteConfig: SiteConfig = {
   isCfpOpen: true,
   isTicketingOpen: false,
   isSponsoringOpen: true,
-  ticketingOpenDate: '15 janvier 2026',
+  ticketingOpenDate: '5 octobre 2026',
 
   // URLs externes
   cfpDeadline: '1er novembre 2026',
-  ticketingUrl: 'https://www.billetweb.fr/touraine-tech-2026',
+  ticketingUrl: 'https://billetterie27.touraine.tech',
   cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
   sponsoringUrl: 'https://sponsoring27.touraine.tech',
   sponsoringBrochureUrl: 'https://dossier-sponsor27.touraine.tech',
 
   // Billetterie
   ticketTiers: [
-    { name: 'Early-bird', price: 50, isSoldOut: true },
+    { name: 'Early-bird', price: 50, isSoldOut: false },
     { name: 'Plein tarif', price: 70, isSoldOut: false },
   ],
 
