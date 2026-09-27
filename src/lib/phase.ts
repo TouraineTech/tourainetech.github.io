@@ -24,9 +24,10 @@ export const hasSponsors = getAllSponsors().length > 0;
 // Flags derives (consommes par HeroSection / Navigation).
 export const isProgrammePublished = canPublishProgramme(phase, siteConfig.edition.year, programmeEdition.year);
 
-// La card billetterie du hero s'affiche pendant les phases billetterie/programme
-// (l'etat "ouvert vs bientot" est gere par isTicketingOpen a l'interieur).
-export const showTicketCard = isTicketing || isProgramme;
+// La carte annonce aussi l'ouverture pendant le CFP quand une date est renseignée.
+// L'état "ouvert vs bientôt" est géré par isTicketingOpen à l'intérieur.
+export const showTicketCard = isTicketing || isProgramme
+  || (isCfp && !isTicketingOpen && Boolean(siteConfig.ticketingOpenDate));
 
 // Le bloc sponsors commercial (argumentaire + CTA) : ouvert et hors post-event.
 export const showSponsoringCta = isSponsoringOpen && !isPost;

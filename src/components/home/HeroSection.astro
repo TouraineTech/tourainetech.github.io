@@ -7,6 +7,7 @@ import { siteConfig, stats } from '@data/config/site';
 import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
+const showSecondaryCfp = isTicketing || (isCfp && showTicketCard);
 
 // Source unique : le nombre de participants vient de `stats` (evite la divergence).
 const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
@@ -23,12 +24,12 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
       <div class="hero-meta">
         <MetaPill icon="calendar" label="Date" value={edition.dates} />
         <MetaPill icon="📍" label="Lieu" value={edition.location} />
-        {/* Pendant la billetterie, le CFP est un indicateur secondaire.
+        {/* Quand la carte billetterie est affichée, le CFP reste accessible à gauche.
             Une fois le programme publié, le CFP n'est plus pertinent. */}
-        {isTicketing && isCfpOpen && cfpDeadline && (
+        {showSecondaryCfp && isCfpOpen && cfpDeadline && (
           <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
         )}
-        {isTicketing && !isCfpOpen && (
+        {showSecondaryCfp && !isCfpOpen && (
           <MetaPill icon="🎤" label="CFP" value="Terminé" />
         )}
       </div>
@@ -43,12 +44,6 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
         Rejoignez environ {participants} passionnés à Polytech Tours !
       </p>
 
-      {isCfp && !isTicketingOpen && ticketingOpenDate && (
-        <p class="hero-ticket-announcement">
-          La billetterie ouvre le {ticketingOpenDate.replace(/\s+\d{4}$/, '')} !
-        </p>
-      )}
-
       <div class="hero-actions">
         {isProgrammePublished && (
           <a href="/schedule" class="btn btn-primary btn-lg">
@@ -58,9 +53,9 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
             </svg>
           </a>
         )}
-        {/* CFP ouvert pendant la billetterie : CTA secondaire actionnable
+        {/* CFP ouvert à côté de la carte billetterie : CTA secondaire actionnable
             (masqué une fois le programme publié) */}
-        {isTicketing && isCfpOpen && (
+        {showSecondaryCfp && isCfpOpen && (
           <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
             Soumettre un talk
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -74,10 +69,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     {showTicketCard && (
       <div class="hero-ticket">
         <div class="hero-ticket-header">
-          <div>
-            <h3 class="hero-ticket-title">Prenez votre place</h3>
-            <p class="hero-ticket-subtitle">{edition.dates} - {edition.location}</p>
-          </div>
+          <h3 class="hero-ticket-title">Prenez votre place</h3>
           {isTicketingOpen ? (
             <div class="hero-ticket-badge">
               <span class="badge-dot"></span>
@@ -110,7 +102,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
             </a>
           ) : (
             <div class="hero-ticket-teasing">
-              Ouverture le {ticketingOpenDate}
+              La billetterie ouvre le {ticketingOpenDate?.replace(/\s+\d{4}\b/, '')}&nbsp;!
             </div>
           )}
         </div>
@@ -212,12 +204,6 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     max-width: 500px;
   }
 
-  .hero-ticket-announcement {
-    margin-bottom: 2rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-  }
-
   .hero-actions {
     display: flex;
     gap: 1rem;
@@ -258,14 +244,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     font-size: 1.35rem;
     font-weight: 600;
     color: white;
-    margin-bottom: 0.2rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-ticket-subtitle {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85rem;
+    margin-bottom: 0;
     position: relative;
     z-index: 1;
   }
@@ -311,7 +290,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
   .ticket-price {
     flex: 1;
     background: var(--bg-secondary);
-    border: 2px solid transparent;
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--bg-primary));
     border-radius: 16px;
     padding: 1.25rem;
     text-align: center;
@@ -400,11 +379,13 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
   .hero-ticket-teasing {
     text-align: center;
     padding: 1.15rem;
-    background: var(--bg-secondary);
+    background: var(--accent-light);
+    border: 1px solid var(--accent);
     border-radius: 14px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-secondary);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--accent-dark);
   }
 
   @keyframes fadeInUp {
