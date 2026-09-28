@@ -7,9 +7,10 @@ import { siteConfig, stats } from '@data/config/site';
 import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
+const showSecondaryCfp = isTicketing || (isCfp && showTicketCard);
 
 // Source unique : le nombre de participants vient de `stats` (evite la divergence).
-const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
+const participants = stats.find((s) => s.label === 'participant·es')?.value ?? '';
 ---
 
 <section class="hero">
@@ -23,12 +24,12 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
       <div class="hero-meta">
         <MetaPill icon="calendar" label="Date" value={edition.dates} />
         <MetaPill icon="📍" label="Lieu" value={edition.location} />
-        {/* Pendant la billetterie, le CFP est un indicateur secondaire.
+        {/* Quand la carte billetterie est affichée, le CFP reste accessible à gauche.
             Une fois le programme publié, le CFP n'est plus pertinent. */}
-        {isTicketing && isCfpOpen && cfpDeadline && (
+        {showSecondaryCfp && isCfpOpen && cfpDeadline && (
           <MetaPill icon="🎤" label="CFP ouvert" value={`jusqu'au ${cfpDeadline}`} highlight />
         )}
-        {isTicketing && !isCfpOpen && (
+        {showSecondaryCfp && !isCfpOpen && (
           <MetaPill icon="🎤" label="CFP" value="Terminé" />
         )}
       </div>
@@ -39,8 +40,8 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
       </h1>
 
       <p class="hero-desc">
-        Deux jours de conférences, workshops et rencontres avec les acteurs de la tech.
-        Rejoignez environ {participants} passionnés à Polytech Tours !
+        Deux jours de conférences, workshops et rencontres avec les actrices et acteurs de la tech.
+        Rejoignez environ {participants} passionné·es à Polytech Tours !
       </p>
 
       <div class="hero-actions">
@@ -52,9 +53,9 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
             </svg>
           </a>
         )}
-        {/* CFP ouvert pendant la billetterie : CTA secondaire actionnable
+        {/* CFP ouvert à côté de la carte billetterie : CTA secondaire actionnable
             (masqué une fois le programme publié) */}
-        {isTicketing && isCfpOpen && (
+        {showSecondaryCfp && isCfpOpen && (
           <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
             Soumettre un talk
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -68,10 +69,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     {showTicketCard && (
       <div class="hero-ticket">
         <div class="hero-ticket-header">
-          <div>
-            <h3 class="hero-ticket-title">Prenez votre place</h3>
-            <p class="hero-ticket-subtitle">{edition.dates} - {edition.location}</p>
-          </div>
+          <h3 class="hero-ticket-title">Prenez votre place</h3>
           {isTicketingOpen ? (
             <div class="hero-ticket-badge">
               <span class="badge-dot"></span>
@@ -95,17 +93,6 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
             ))}
           </div>
 
-          <div class="hero-ticket-addon">
-            <button type="button" class="addon-image" aria-label="Voir le t-shirt en grand">
-              <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2027" />
-            </button>
-            <div class="addon-info">
-              <p class="addon-title">T-shirt édition 2027</p>
-              <p class="addon-desc">Coton bio, coupe unisexe</p>
-            </div>
-            <span class="addon-price">+20<span>€</span></span>
-          </div>
-
           {isTicketingOpen ? (
             <a href={ticketingUrl} target="_blank" rel="noopener noreferrer" class="hero-ticket-cta">
               Acheter mon billet
@@ -115,7 +102,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
             </a>
           ) : (
             <div class="hero-ticket-teasing">
-              Ouverture le {ticketingOpenDate}
+              La billetterie ouvre le {ticketingOpenDate?.replace(/\s+\d{4}\b/, '')}&nbsp;!
             </div>
           )}
         </div>
@@ -134,51 +121,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
       <HeroCompanionPreviousEdition />
     )}
   </div>
-
-  <!-- T-shirt Lightbox Modal -->
-  <div class="lightbox" id="tshirt-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="T-shirt en grand">
-    <button class="lightbox-close" aria-label="Fermer">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M18 6L6 18M6 6l12 12"/>
-      </svg>
-    </button>
-    <div class="lightbox-content">
-      <img src="/images/tshirt.jpg" alt="T-shirt Touraine Tech 2027" />
-    </div>
-  </div>
 </section>
-
-<script>
-  const lightbox = document.getElementById('tshirt-lightbox');
-  const trigger = document.querySelector<HTMLElement>('.addon-image');
-  const closeBtn = document.querySelector<HTMLElement>('.lightbox-close');
-
-  function openLightbox() {
-    lightbox?.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    closeBtn?.focus();
-  }
-
-  function closeLightbox() {
-    lightbox?.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    trigger?.focus();
-  }
-
-  trigger?.addEventListener('click', openLightbox);
-
-  closeBtn?.addEventListener('click', closeLightbox);
-
-  lightbox?.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox?.getAttribute('aria-hidden') === 'false') {
-      closeLightbox();
-    }
-  });
-</script>
 
 <style>
   .hero {
@@ -301,14 +244,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     font-size: 1.35rem;
     font-weight: 600;
     color: white;
-    margin-bottom: 0.2rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-ticket-subtitle {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85rem;
+    margin-bottom: 0;
     position: relative;
     z-index: 1;
   }
@@ -354,7 +290,7 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
   .ticket-price {
     flex: 1;
     background: var(--bg-secondary);
-    border: 2px solid transparent;
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--bg-primary));
     border-radius: 16px;
     padding: 1.25rem;
     text-align: center;
@@ -402,127 +338,6 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
     margin-left: 2px;
   }
 
-  /* T-shirt Add-on Section */
-  .hero-ticket-addon {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: linear-gradient(135deg, var(--accent-light) 0%, rgba(74, 154, 138, 0.05) 100%);
-    border: 1px solid rgba(74, 154, 138, 0.15);
-    border-radius: 16px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .addon-image {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    overflow: hidden;
-    flex-shrink: 0;
-    border: 2px solid rgba(74, 154, 138, 0.15);
-    cursor: zoom-in;
-    background: none;
-    padding: 0;
-  }
-
-  .addon-image:focus {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .addon-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Lightbox Modal */
-  .lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.92);
-    backdrop-filter: blur(20px);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
-  }
-
-  .lightbox[aria-hidden="false"] {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .lightbox-content {
-    transform: scale(0.9);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .lightbox[aria-hidden="false"] .lightbox-content {
-    transform: scale(1);
-  }
-
-  .lightbox-content img {
-    max-width: 90vw;
-    max-height: 85vh;
-    border-radius: 16px;
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
-  }
-
-  .lightbox-close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .lightbox-close:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
-  }
-
-  .addon-info {
-    flex: 1;
-  }
-
-  .addon-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.15rem;
-  }
-
-  .addon-desc {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-  }
-
-  .addon-price {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--accent-dark);
-    flex-shrink: 0;
-  }
-
-  .addon-price span {
-    font-size: 0.85rem;
-    font-weight: 500;
-  }
-
   /* CTA Button */
   .hero-ticket-cta {
     display: flex;
@@ -564,11 +379,13 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
   .hero-ticket-teasing {
     text-align: center;
     padding: 1.15rem;
-    background: var(--bg-secondary);
+    background: var(--accent-light);
+    border: 1px solid var(--accent);
     border-radius: 14px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-secondary);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--accent-dark);
   }
 
   @keyframes fadeInUp {
@@ -636,23 +453,6 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
 
     .ticket-price-value {
       font-size: 1.8rem;
-    }
-
-    .hero-ticket-addon {
-      padding: 0.75rem;
-    }
-
-    .addon-image {
-      width: 50px;
-      height: 50px;
-    }
-
-    .addon-title {
-      font-size: 0.85rem;
-    }
-
-    .addon-price {
-      font-size: 1.1rem;
     }
   }
 </style>
