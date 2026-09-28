@@ -45,7 +45,7 @@ export const venue = {
 // Stats affichees sur la home page
 export const stats = [
   { value: '80', approximate: true, label: 'talks', icon: '🎤' },
-  { value: '550', approximate: true, label: 'participants', icon: '👥' },
+  { value: '550', approximate: true, label: 'participant·es', icon: '👥' },
   { value: '85', approximate: true, label: 'speakers', icon: '🎙️' },
   { value: '2', approximate: false, label: 'jours', icon: 'calendar' },
 ];
@@ -53,7 +53,7 @@ export const stats = [
 // Categories de talks
 export const talkCategories = [
   { id: 'backend', name: 'Backend, Cloud, Big Data', icon: '☁️', description: 'Infrastructure, APIs, données', color: '#4A90D9' },
-  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, expériences utilisateur', color: '#E84C88' },
+  { id: 'frontend', name: 'Front, Design, UI/UX', icon: '🎨', description: 'Interfaces, expériences utilisatrice et utilisateur', color: '#E84C88' },
   { id: 'architecture', name: 'Conception, Architecture', icon: '🏗️', description: 'Patterns, bonnes pratiques', color: '#6ABFAD' },
   { id: 'devops', name: 'DevOps, Outils', icon: '🔧', description: 'CI/CD, automatisation', color: '#F5A623' },
   { id: 'ia', name: 'IA, Data', icon: '🤖', description: 'Machine learning, analytics', color: '#9B59B6' },

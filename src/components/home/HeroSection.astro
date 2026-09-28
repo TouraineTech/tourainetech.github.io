@@ -10,7 +10,7 @@ const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTie
 const showSecondaryCfp = isTicketing || (isCfp && showTicketCard);
 
 // Source unique : le nombre de participants vient de `stats` (evite la divergence).
-const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
+const participants = stats.find((s) => s.label === 'participant·es')?.value ?? '';
 ---
 
 <section class="hero">
@@ -40,8 +40,8 @@ const participants = stats.find((s) => s.label === 'participants')?.value ?? '';
       </h1>
 
       <p class="hero-desc">
-        Deux jours de conférences, workshops et rencontres avec les acteurs de la tech.
-        Rejoignez environ {participants} passionnés à Polytech Tours !
+        Deux jours de conférences, workshops et rencontres avec les actrices et acteurs de la tech.
+        Rejoignez environ {participants} passionné·es à Polytech Tours !
       </p>
 
       <div class="hero-actions">
