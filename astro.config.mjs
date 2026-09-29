@@ -12,9 +12,10 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
-      // Exclut les pages operationnelles (deja en noindex) du sitemap.
+      // Exclut les pages operationnelles et de confirmation (deja en noindex) du sitemap.
       filter: (page) =>
         !/\/(timer|waiting-screen|regie)(\/|$)/.test(new URL(page).pathname) &&
+        !/^\/newsletter\/(confirmation|success)\/?$/.test(new URL(page).pathname) &&
         (programmePublished || !isProgrammePath(new URL(page).pathname)),
     }),
   ],
