@@ -1,75 +1,116 @@
-<section class="newsletter">
+---
+const brevoFormUrl = 'https://846309c8.sibforms.com/serve/MUIFAOqLuqX3l7D-RR8y_rgyDPxvjNJVAmPuwClu3oJfpfcigIJfxXpNEEx7t82iqiA0R3jkPoMOo1hI_n8MhftQ9k-SldFYDpTs3tO94wg6_-Hu1a_lhLGKLCLdsjWqiwR1YVOKhmvfCwnXcBFPQNkAro4E6quiAVxU83TQZue7lPRL4avetSaWiGV6XYAbywHaehd5L8Ikv9Xr';
+const recaptchaSiteKey = '6LfkYxQqAAAAADrRRDHk7OSX4D-AnVvvR1YIaI9T';
+---
+
+<section class="newsletter" aria-labelledby="newsletter-title">
   <div class="newsletter-inner">
-    <div class="newsletter-card">
-      <h2 class="newsletter-title">Restez informés</h2>
+    <div id="sib-form-container" class="newsletter-card sib-form-container">
+      <h2 id="newsletter-title" class="newsletter-title">Restez informés</h2>
       <p class="newsletter-desc">
         Inscrivez-vous pour ne rien manquer de Touraine Tech 2027 :
         ouverture de la billetterie, annonces des speakers, et plus encore.
       </p>
-      <form class="newsletter-form">
-        <input
-          type="email"
-          name="EMAIL"
-          class="newsletter-input"
-          placeholder="votre@email.com"
-          required
-          aria-label="Adresse email"
-        />
-        <button type="submit" class="btn btn-primary">
-          S'inscrire
-        </button>
-      </form>
-      <p class="newsletter-status" aria-live="polite"></p>
-      <p class="newsletter-privacy">
-        Pas de spam, promis. Désinscription possible à tout moment.
-      </p>
+
+      <!-- Keep Brevo's IDs and classes: its script uses them for validation and feedback. -->
+      <div id="error-message" class="sib-form-message-panel" role="alert">
+        <span class="sib-form-message-panel__inner-text">
+          Votre inscription n’a pas pu être envoyée. Veuillez réessayer.
+        </span>
+      </div>
+      <div id="success-message" class="sib-form-message-panel" role="status" aria-live="polite">
+        <span class="sib-form-message-panel__inner-text">
+          Merci ! Consultez votre boîte mail pour confirmer votre inscription.
+        </span>
+      </div>
+
+      <div id="sib-container">
+        <form id="sib-form" class="newsletter-form" method="POST" action={brevoFormUrl} data-type="subscription">
+          <div class="newsletter-fields">
+            <div class="sib-input">
+              <div class="form__entry entry_block">
+                <div class="form__label-row">
+                  <label class="newsletter-label" for="EMAIL">Adresse email</label>
+                  <div class="entry__field">
+                    <input
+                      type="email"
+                      id="EMAIL"
+                      name="EMAIL"
+                      class="input newsletter-input"
+                      placeholder="votre@email.com"
+                      autocomplete="email"
+                      aria-describedby="newsletter-email-error"
+                      data-required="true"
+                      required
+                    />
+                  </div>
+                </div>
+                <span id="newsletter-email-error" class="entry__error entry__error--primary" aria-live="polite"></span>
+              </div>
+            </div>
+            <button
+              type="submit"
+              form="sib-form"
+              class="btn btn-primary sib-form-block__button sib-form-block__button-with-loader"
+            >
+              <svg class="progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="42 15" />
+              </svg>
+              S'inscrire
+            </button>
+          </div>
+
+          <div class="sib-optin" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row">
+                <label class="newsletter-consent" for="OPT_IN">
+                  <input
+                    type="checkbox"
+                    class="input_replaced"
+                    id="OPT_IN"
+                    name="OPT_IN"
+                    value="1"
+                    aria-describedby="newsletter-consent-error"
+                    required
+                  />
+                  <span>J’accepte de recevoir la newsletter Touraine Tech.</span>
+                </label>
+              </div>
+              <span id="newsletter-consent-error" class="entry__error entry__error--primary" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="g-recaptcha-v3" data-sitekey={recaptchaSiteKey} hidden></div>
+          <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="locale" value="fr" />
+        </form>
+      </div>
+
+      <div class="newsletter-notes">
+        <p class="newsletter-privacy">
+          Pas de spam, promis. Désinscription possible à tout moment.
+        </p>
+        <p class="newsletter-data">
+          Votre adresse est traitée par Brevo selon sa{' '}
+          <a href="https://www.brevo.com/fr/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.
+        </p>
+        <noscript>
+          <p class="newsletter-data"><a href={brevoFormUrl}>Ouvrir le formulaire d’inscription</a></p>
+        </noscript>
+      </div>
     </div>
   </div>
 </section>
 
-<script>
-  const form = document.querySelector('.newsletter-form') as HTMLFormElement;
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement;
-    const button = form.querySelector('button') as HTMLButtonElement;
-    const status = document.querySelector('.newsletter-status') as HTMLElement;
-    const originalText = button.textContent;
-
-    button.disabled = true;
-    button.textContent = 'Envoi...';
-    status.textContent = '';
-    status.className = 'newsletter-status';
-
-    try {
-      const response = await fetch('/.netlify/functions/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: emailInput.value }),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        status.textContent = data.alreadySubscribed
-          ? 'Vous êtes déjà inscrit !'
-          : 'Merci ! Vous êtes inscrit.';
-        status.className = 'newsletter-status success';
-        form.reset();
-      } else {
-        status.textContent = data.error || 'Erreur. Veuillez réessayer.';
-        status.className = 'newsletter-status error';
-      }
-    } catch (error) {
-      status.textContent = 'Erreur réseau. Veuillez réessayer.';
-      status.className = 'newsletter-status error';
-    } finally {
-      button.disabled = false;
-      button.textContent = originalText;
-    }
-  });
+<script is:inline>
+  window.LOCALE = 'fr';
+  window.REQUIRED_ERROR_MESSAGE = 'Vous devez renseigner ce champ.';
+  window.EMAIL_INVALID_MESSAGE = 'Veuillez saisir une adresse email valide.';
+  window.GENERIC_INVALID_MESSAGE = 'Les informations fournies ne sont pas valides.';
+  window.AUTOHIDE = false;
 </script>
+<script is:inline defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script is:inline async defer src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}&hl=fr`}></script>
 
 <style>
   .newsletter {
@@ -106,14 +147,35 @@
   }
 
   .newsletter-form {
-    display: flex;
-    gap: 0.75rem;
     max-width: 480px;
     margin: 0 auto 1rem;
+    text-align: left;
+  }
+
+  .newsletter-fields {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .sib-input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .newsletter-label,
+  .input--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   .newsletter-input {
-    flex: 1;
+    width: 100%;
     padding: 1rem 1.25rem;
     border: 1px solid var(--glass-border);
     border-radius: 14px;
@@ -121,6 +183,12 @@
     font-family: var(--font-body);
     transition: all 0.3s ease;
     background: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  .newsletter-fields .btn {
+    min-height: 54px;
+    flex-shrink: 0;
   }
 
   .newsletter-input:focus {
@@ -133,24 +201,111 @@
     color: var(--text-muted);
   }
 
-  .newsletter-status {
+  .newsletter-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+  }
+
+  .newsletter-consent input {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+    accent-color: var(--accent-dark);
+  }
+
+  .newsletter-consent input:focus-visible {
+    outline: 2px solid var(--accent-dark);
+    outline-offset: 3px;
+  }
+
+  .entry__error {
+    display: none;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    color: #a12626;
+    font-size: 0.85rem;
+  }
+
+  .entry_errored .newsletter-input {
+    border-color: #a12626;
+  }
+
+  .sib-form-message-panel {
+    display: none;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-md);
     font-size: 0.95rem;
-    min-height: 1.5em;
+    text-align: left;
   }
 
-  .newsletter-status.success {
-    color: var(--accent);
+  .sib-form-message-panel--active {
+    display: block;
   }
 
-  .newsletter-status.error {
-    color: #e74c3c;
+  #success-message {
+    color: var(--accent-dark);
+    background: var(--accent-light);
+  }
+
+  #error-message {
+    color: #a12626;
+    background: #fff1f1;
+  }
+
+  .progress-indicator__icon {
+    width: 1rem;
+    height: 1rem;
+    animation: newsletter-spin 1s linear infinite;
+  }
+
+  .sib-hide-loader-icon {
+    display: none;
+  }
+
+  .newsletter-form .btn:disabled {
+    cursor: wait;
+    opacity: 0.7;
+  }
+
+  .newsletter-notes {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 1.65rem;
+    text-align: left;
   }
 
   .newsletter-privacy {
     font-size: 0.85rem;
+  }
+
+  .newsletter-data {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
+  }
+
+  .newsletter-data a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  @keyframes newsletter-spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .progress-indicator__icon {
+      animation: none;
+    }
   }
 
   @media (max-width: 640px) {
@@ -158,10 +313,11 @@
       padding: 2rem 1.5rem;
     }
 
-    .newsletter-form {
+    .newsletter-fields {
       flex-direction: column;
     }
 
+    .sib-input,
     .newsletter-form .btn {
       width: 100%;
       justify-content: center;
