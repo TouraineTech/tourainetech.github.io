@@ -1,0 +1,50 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  help?: string;
+}
+
+const { title, description, help } = Astro.props;
+---
+
+<Layout title={title} description={description} noindex minimal>
+  <section class="newsletter-status">
+    <h1>{title}</h1>
+    <p>{description}</p>
+    {help && <p class="newsletter-help">{help}</p>}
+    <a class="btn btn-primary mt-2" href="/">Retour à l’accueil</a>
+  </section>
+</Layout>
+
+<style>
+  .newsletter-status {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-wrap: balance;
+  }
+
+  p {
+    max-width: 38rem;
+    text-wrap: pretty;
+  }
+
+  .newsletter-help {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+</style>

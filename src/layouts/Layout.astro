@@ -10,6 +10,7 @@ interface Props {
   description?: string;
   ogImage?: string;
   ogImageAlt?: string;
+  minimal?: boolean;
   /** Set on internal/utility pages (regie, timer, waiting-screen) to keep them out of search indexes. */
   noindex?: boolean;
 }
@@ -20,6 +21,7 @@ const {
   ogImage = '/logo.jpg',
   ogImageAlt = 'Logo Touraine Tech',
   noindex = false,
+  minimal = false,
 } = Astro.props;
 
 const fullTitle = title.includes('Touraine Tech') ? title : `${title} | Touraine Tech ${siteConfig.edition.year}`;
@@ -99,13 +101,48 @@ const socialImageURL = new URL(ogImage, import.meta.env.DEPLOY_PRIME_URL || Astr
       data-domains="touraine.tech"
     ></script>
   </head>
-  <body>
+  <body class:list={{ 'layout-minimal': minimal }}>
     <a href="#main" class="skip-link">Aller au contenu principal</a>
-    <Navigation />
+    {minimal ? (
+      <header class="minimal-header">
+        <a href="/" aria-label="Touraine Tech — Accueil">
+          <img src="/img/logo.svg" alt="Touraine Tech" width="114" height="48" />
+        </a>
+      </header>
+    ) : <Navigation />}
     <main id="main">
       <slot />
     </main>
-    <Footer />
-    <ScrollToTop />
+    {!minimal && <Footer />}
+    {!minimal && <ScrollToTop />}
   </body>
 </html>
+
+<style>
+  .layout-minimal {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout-minimal main {
+    flex: 1;
+    display: grid;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  .minimal-header {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .minimal-header a {
+    display: inline-flex;
+    border-radius: var(--radius-sm);
+  }
+
+  .minimal-header img {
+    object-fit: contain;
+  }
+</style>
