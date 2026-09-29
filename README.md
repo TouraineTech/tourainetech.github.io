@@ -42,8 +42,14 @@ Les sorties atterrissent dans `src/data/generated` et `public/timer`.
 
 ## Déploiement
 
-- **Live (`touraine.tech`)** → Netlify (Deploy Previews par PR + la fonction newsletter). Config : `netlify.toml`.
+- **Live (`touraine.tech`)** → Netlify (Deploy Previews par PR). Config : `netlify.toml`.
 - **CI** → GitHub Actions (`.github/workflows/ci.yml`) : un simple `task check` sur les PR (le build est couvert par Netlify).
+
+### Newsletter
+
+Le formulaire HTML Brevo est intégré dans `src/components/home/NewsletterSection.astro`, avec le style du site. Les inscriptions sont envoyées directement à Brevo avec le consentement, le champ piège et reCAPTCHA v3 ; aucune fonction Netlify ni clé API Brevo n’est nécessaire.
+
+Le double opt-in, les messages et les redirections se configurent dans Brevo. Si le formulaire change, reprendre son URL et sa clé publique reCAPTCHA depuis le code d’intégration fourni par Brevo. Conserver les identifiants et classes `sib-*` utilisés par son script de validation.
 
 ### Archiver une édition
 

@@ -1,5 +1,5 @@
 # Set the production branch to `main` in Netlify's project settings.
-# Astro builds a static site; the newsletter uses the function below.
+# Astro builds a static site; Brevo handles newsletter subscriptions directly.
 [build]
   # Override the old src-astro base directory configured in Netlify.
   base = "/"
@@ -12,9 +12,6 @@
   NODE_VERSION = "24"
   # The pnpm version is pinned in package.json for Netlify/Corepack.
   PNPM_FLAGS = "--frozen-lockfile"
-
-[functions]
-  directory = "netlify/functions"
 
 # Keep Netlify URLs (production, previews and deploy permalinks) out of search.
 # Match the request host so touraine.tech remains indexable on the same deploy.
