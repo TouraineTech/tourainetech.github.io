@@ -1,0 +1,31 @@
+---
+import { siteConfig } from '@data/config/site';
+import { primoSpeakersCampaign } from '@data/config/cfp';
+import { isCfpOpen, isPrimoSpeakersOpen } from '@lib/phase';
+---
+
+<div class="primo-actions">
+  {isPrimoSpeakersOpen ? (
+    <a class="btn btn-primary" href={siteConfig.cfpUrl} target="_blank" rel="noopener noreferrer"
+      aria-label="Proposer mon premier sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">
+      Proposer mon premier sujet
+    </a>
+  ) : isCfpOpen ? (
+    <a class="btn btn-primary" href="/cfp">Découvrir le CFP général</a>
+  ) : (
+    <a class="btn btn-secondary" href="/cfp">Consulter le CFP</a>
+  )}
+  <a class="contact-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>Parler avec l’équipe</a>
+</div>
+{isPrimoSpeakersOpen && (
+  <p class="submission-note">Sur Conference Hall, choisissez le format « {primoSpeakersCampaign.format} ».</p>
+)}
+
+<style>
+  .primo-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; }
+  .primo-actions .btn { background: var(--accent-dark); box-shadow: none; line-height: 1.5; }
+  .primo-actions .btn-secondary { background: var(--bg-primary); }
+  .contact-link { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 4px; font-weight: 600; font-size: .95rem; }
+  .submission-note { margin-top: 1rem; max-width: 55ch; font-size: .85rem; line-height: 1.7; }
+  @media (max-width: 480px) { .primo-actions { align-items: flex-start; flex-direction: column; } .primo-actions .btn { width: 100%; } }
+</style>

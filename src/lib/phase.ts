@@ -1,4 +1,5 @@
 import { siteConfig } from '@data/config/site';
+import { primoSpeakersCampaign } from '@data/config/cfp';
 import { getAllSponsors } from '@lib/data';
 import programmeEdition from '@data/source/edition.json';
 import { canPublishProgramme } from './publication';
@@ -23,6 +24,8 @@ export const hasSponsors = getAllSponsors().length > 0;
 
 // Flags derives (consommes par HeroSection / Navigation).
 export const isProgrammePublished = canPublishProgramme(phase, siteConfig.edition.year, programmeEdition.year);
+
+export const isPrimoSpeakersOpen = isCfpOpen && primoSpeakersCampaign.isOpen && !isProgrammePublished && !isPost;
 
 // La carte annonce aussi l'ouverture pendant le CFP quand une date est renseignée.
 // L'état "ouvert vs bientôt" est géré par isTicketingOpen à l'intérieur.

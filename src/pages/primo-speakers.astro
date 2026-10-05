@@ -1,0 +1,184 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '@layouts/Layout.astro';
+import PrimoSpeakerActions from '@components/ui/PrimoSpeakerActions.astro';
+import { siteConfig } from '@data/config/site';
+import { primoSpeakersCampaign, primoSpeakersJourney } from '@data/config/cfp';
+import { isCfpOpen, isPrimoSpeakersOpen } from '@lib/phase';
+import teamPhoto from '../../public/img/team/conference-2026.jpg';
+import '@styles/speaker-campaign.css';
+
+const { edition, cfpDeadline } = siteConfig;
+const description = isPrimoSpeakersOpen
+  ? `Préparez votre première conférence à Touraine Tech ${edition.year} avec l’équipe de mentorat : sujet, prise de parole et répétitions. Candidatures jusqu’au ${primoSpeakersCampaign.deadline}.`
+  : `Découvrez le parcours primo-speaker de Touraine Tech ${edition.year} : un accompagnement pour préparer sa première conférence. Les candidatures à ce parcours sont closes.`;
+---
+
+<Layout title="Votre première conférence : le parcours primo-speaker" description={description}
+  ogImage="/img/team/conference-2026.jpg" ogImageAlt="L’équipe de Touraine Tech parmi le public">
+  <div class="speaker-campaign primo-page">
+    <header class="campaign-hero">
+      <div class="campaign-inner">
+        <a class="campaign-back" href="/cfp">Le CFP de Touraine Tech</a>
+        <div class="primo-hero-grid">
+          <div>
+            <p class="campaign-edition">Touraine Tech {edition.year}, les {edition.dates}</p>
+            <h1>Votre première conférence commence par une idée.</h1>
+            <p class="campaign-lead">Vous avez une expérience à partager, un retour de terrain ou quelque chose
+              que vous avez appris&nbsp;? Même si votre idée est encore en construction, nous vous aidons à lui donner forme.</p>
+            <p class="campaign-status">
+              {isPrimoSpeakersOpen ? (
+                <>Candidatures au parcours primo-speaker jusqu’au&nbsp;<strong><time datetime={primoSpeakersCampaign.deadlineDate}>{primoSpeakersCampaign.deadline}</time></strong>.<br />{primoSpeakersCampaign.duration} sur scène, avec un accompagnement pour vous préparer.</>
+              ) : (
+                <>Les candidatures au parcours primo-speaker sont&nbsp;<strong>closes</strong>.<br />
+                  {isCfpOpen ? <>Le CFP général reste ouvert jusqu’au {cfpDeadline}.</> : <>Le CFP de cette édition est terminé.</>}
+                </>
+              )}
+            </p>
+            <PrimoSpeakerActions />
+          </div>
+          <figure class="primo-hero-photo">
+            <Image src={teamPhoto} alt="L’équipe de Touraine Tech parmi le public lors de l’édition 2026"
+              widths={[480, 720, 1024]} sizes="(max-width: 900px) 100vw, 40vw" loading="eager" />
+            <figcaption>L’équipe de Touraine Tech lors de l’édition 2026.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <section class="campaign-section" aria-labelledby="who-title">
+      <div class="campaign-inner audience-grid">
+        <div>
+          <h2 id="who-title">Vous n’avez jamais parlé en conférence&nbsp;?</h2>
+          <p class="campaign-section-intro">Ce parcours s’adresse aux personnes qui souhaitent préparer leur première
+            conférence avec l’aide de l’équipe bénévole de mentorat. Votre expérience du terrain est un point de départ&nbsp;:
+            vous pouvez partager ce que vous avez essayé, compris ou appris.</p>
+        </div>
+        <div class="idea-examples">
+          <h3>Votre sujet pourrait partir de…</h3>
+          <ul>
+            <li>Un problème que vous avez résolu et ce qu’il vous a appris.</li>
+            <li>Un outil que vous avez testé, avec ses réussites et ses limites.</li>
+            <li>Une pratique qui a changé la façon de travailler de votre équipe.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaign-section campaign-section--tinted" aria-labelledby="journey-title">
+      <div class="campaign-inner">
+        <h2 id="journey-title">De l’idée au jour J, vous avancez avec nous.</h2>
+        <p class="campaign-section-intro">Le mentorat fait partie du parcours. Des personnes expérimentées en mentorat
+          et en coaching vous accompagnent dans la préparation de votre intervention.</p>
+        <ol class="journey">
+          {primoSpeakersJourney.map((step) => (
+            <li><h3>{step.title}</h3><p>{step.description}</p></li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section class="campaign-section" aria-labelledby="apply-title">
+      <div class="campaign-inner apply-grid">
+        <div>
+          <h2 id="apply-title">Comment proposer votre premier sujet&nbsp;?</h2>
+          {isPrimoSpeakersOpen ? (
+            <>
+              <p class="campaign-section-intro">Une ébauche suffit pour commencer. Expliquez ce que vous aimeriez
+                partager et ce que le public pourrait en retenir&nbsp;: nous vous aiderons à améliorer votre proposition.</p>
+              <ol class="application-steps">
+                <li>Ouvrez le CFP Touraine Tech {edition.year} sur Conference Hall.</li>
+                <li>Choisissez le format <strong>« {primoSpeakersCampaign.format} »</strong>.</li>
+                <li>Déposez votre ébauche avant la clôture du <strong>{primoSpeakersCampaign.deadline}</strong>.</li>
+              </ol>
+            </>
+          ) : (
+            <p class="campaign-section-intro">Les candidatures au parcours accompagné sont closes pour cette édition.
+              {isCfpOpen ? ' Vous pouvez encore proposer un sujet au CFP général, dans les autres formats.' : ' Vous pouvez contacter l’équipe pour en savoir plus sur l’accompagnement.'}</p>
+          )}
+          <PrimoSpeakerActions />
+        </div>
+        <aside class="contact-aside">
+          <h3>Vous hésitez encore&nbsp;?</h3>
+          <p>Vous ne vous sentez pas assez légitime, ou vous aimeriez échanger sur votre idée avant de la déposer&nbsp;?
+            Prenez contact avec nous.</p>
+          <a class="campaign-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>{primoSpeakersCampaign.contactEmail}</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="campaign-section faq-section" aria-labelledby="faq-title">
+      <div class="campaign-inner faq-inner">
+        <h2 id="faq-title">Quelques questions avant de vous lancer</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Mon sujet doit-il déjà être finalisé&nbsp;?</summary>
+            <p>Vous pouvez proposer une idée encore imparfaite. L’aide à la construction du sujet et à l’amélioration
+              de votre proposition fait partie de l’accompagnement.</p>
+          </details>
+          <details>
+            <summary>Combien de temps dure l’intervention&nbsp;?</summary>
+            <p>Le format « {primoSpeakersCampaign.format} » dure {primoSpeakersCampaign.duration}.</p>
+          </details>
+          <details>
+            <summary>Pourquoi une date limite plus tôt que le CFP général&nbsp;?</summary>
+            <p>La clôture du {primoSpeakersCampaign.deadline} laisse du temps pour construire votre sujet,
+              préparer la prise de parole et organiser les répétitions avant la conférence.</p>
+          </details>
+          <details>
+            <summary>J’ai déjà parlé en conférence. Puis-je proposer un sujet&nbsp;?</summary>
+            <p>Le parcours primo-speaker s’adresse aux personnes qui n’ont jamais parlé en conférence.
+              Les autres formats sont présentés dans <a class="campaign-link" href="/cfp">le CFP général</a>.</p>
+          </details>
+          <details>
+            <summary>Quelle disponibilité prévoir pour l’accompagnement&nbsp;?</summary>
+            <p>Pour connaître les modalités et les échanges à prévoir, <a class="campaign-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>contactez l’équipe</a>.
+              Nous pourrons répondre à vos questions avant que vous vous lanciez.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .primo-hero-grid { display: grid; grid-template-columns: 1.3fr 1fr; align-items: start; gap: 3.5rem; }
+  h1 { max-width: 17ch; }
+  .primo-hero-photo { margin: 0; }
+  .primo-hero-photo img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 60% center; border-radius: 24px; }
+  figcaption { margin-top: .75rem; color: var(--text-muted); font-size: .8rem; }
+  .audience-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: center; }
+  .idea-examples { padding-left: 2rem; border-left: 2px solid var(--accent-light); }
+  .idea-examples ul { padding-left: 1.25rem; margin-top: 1rem; }
+  .idea-examples li { margin-top: .75rem; color: var(--text-secondary); line-height: 1.8; }
+  .journey { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; padding: 0; margin-top: 3rem; counter-reset: journey; }
+  .journey li { counter-increment: journey; position: relative; padding: 3rem 1.5rem 0 0; border-top: 2px solid var(--accent-dark); }
+  .journey li::before { content: counter(journey); position: absolute; top: -.95rem; left: 0; display: grid; place-items: center; width: 1.8rem; height: 1.8rem; background: var(--accent-dark); color: white; font-family: var(--font-display); font-weight: 600; border-radius: 50%; }
+  .journey p { margin-top: .8rem; font-size: .95rem; line-height: 1.8; }
+  .apply-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 4rem; align-items: start; }
+  .application-steps { margin: 1.5rem 0 2rem; padding-left: 1.4rem; }
+  .application-steps li { padding-left: .25rem; margin-top: .85rem; color: var(--text-secondary); line-height: 1.8; }
+  .application-steps strong { color: var(--text-primary); }
+  .contact-aside { background: var(--bg-secondary); padding: 2rem; border-radius: 16px; }
+  .contact-aside p { margin: 1rem 0; font-size: 1rem; line-height: 1.8; }
+  .contact-aside a { overflow-wrap: anywhere; }
+  .faq-section { background: var(--bg-secondary); }
+  .faq-inner { max-width: 850px; }
+  .faq-list { margin-top: 2rem; }
+  details { border-bottom: 1px solid var(--glass-border); }
+  summary { padding: 1.35rem 0; font-weight: 600; color: var(--text-primary); cursor: pointer; line-height: 1.65; }
+  details p { padding-bottom: 1.5rem; max-width: 65ch; font-size: 1rem; line-height: 1.8; }
+  @media (max-width: 900px) {
+    .primo-hero-grid, .audience-grid, .apply-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    h1 { max-width: 20ch; }
+    .primo-hero-photo img { aspect-ratio: 3 / 2; }
+    .journey { grid-template-columns: repeat(2, 1fr); gap: 3rem 0; }
+  }
+  @media (max-width: 600px) {
+    .journey { grid-template-columns: 1fr; gap: 0; margin-top: 2rem; }
+    .journey li { border-top: 0; border-left: 2px solid var(--accent-dark); margin-left: .9rem; padding: 0 0 2rem 1.75rem; }
+    .journey li:last-child { padding-bottom: 0; border-left-color: transparent; }
+    .journey li::before { top: 0; left: -1rem; }
+    .idea-examples { padding-left: 1rem; }
+  }
+</style>

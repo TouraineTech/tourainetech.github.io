@@ -1,0 +1,25 @@
+.speaker-campaign { --campaign-width: 1200px; }
+.speaker-campaign .campaign-inner { max-width: var(--campaign-width); margin: 0 auto; }
+.speaker-campaign .campaign-hero { padding: 3rem 2rem 4rem; background: var(--bg-secondary); }
+.speaker-campaign .campaign-section { padding: 4rem 2rem; }
+.speaker-campaign .campaign-section--tinted { background: var(--accent-light); }
+.speaker-campaign .campaign-back { display: inline-block; margin-bottom: 2rem; color: var(--accent-dark); text-decoration: underline; text-underline-offset: 4px; font-size: .9rem; }
+.speaker-campaign .campaign-edition { margin-bottom: 1rem; color: var(--accent-dark); font-size: .95rem; font-weight: 600; }
+.speaker-campaign h1 { font-size: clamp(2.4rem, 4.8vw, 4rem); line-height: 1.08; text-wrap: balance; }
+.speaker-campaign h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1.15; text-wrap: balance; }
+.speaker-campaign h3 { font-size: 1.25rem; }
+.speaker-campaign .campaign-lead { margin-top: 1.5rem; max-width: 55ch; font-size: 1.1rem; line-height: 1.8; }
+.speaker-campaign .campaign-status { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--accent-dark); font-size: .95rem; line-height: 1.8; }
+.speaker-campaign .campaign-status strong { color: var(--accent-dark); }
+.speaker-campaign .campaign-section-intro { margin-top: 1rem; max-width: 65ch; line-height: 1.8; }
+.speaker-campaign .campaign-link { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 4px; font-weight: 600; }
+.speaker-campaign .campaign-button { background: var(--accent-dark); box-shadow: none; line-height: 1.5; }
+.speaker-campaign .campaign-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+@media (max-width: 767px) {
+  .speaker-campaign .campaign-hero { padding: 2rem 1.25rem 3rem; }
+  .speaker-campaign .campaign-section { padding: 3rem 1.25rem; }
+}
+@media (max-width: 480px) {
+  .speaker-campaign .campaign-actions { flex-direction: column; align-items: flex-start; }
+  .speaker-campaign .campaign-button { width: 100%; }
+}
