@@ -4,7 +4,7 @@ import HeroCompanionCfp from './HeroCompanionCfp.astro';
 import HeroCompanionSponsoring from './HeroCompanionSponsoring.astro';
 import HeroCompanionPreviousEdition from './HeroCompanionPreviousEdition.astro';
 import { siteConfig, stats } from '@data/config/site';
-import { isCfp, isCfpOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
+import { isCfp, isCfpOpen, isPrimoSpeakersOpen, isTicketing, isTicketingOpen, isProgrammePublished, isSponsoring, showTicketCard } from '@lib/phase';
 
 const { cfpDeadline, cfpUrl, ticketingUrl, ticketingOpenDate, edition, ticketTiers } = siteConfig;
 const showSecondaryCfp = isTicketing || (isCfp && showTicketCard);
@@ -57,13 +57,16 @@ const participants = stats.find((s) => s.label === 'participant·es')?.value ?? 
             (masqué une fois le programme publié) */}
         {showSecondaryCfp && isCfpOpen && (
           <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
-            Soumettre un talk
+            Proposer un sujet
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
         )}
       </div>
+      {isPrimoSpeakersOpen && (
+        <p class="hero-primo">Votre première conférence&nbsp;? <a href="/primo-speakers">Découvrez notre accompagnement primo-speaker.</a></p>
+      )}
     </div>
 
     {showTicketCard && (
@@ -209,6 +212,10 @@ const participants = stats.find((s) => s.label === 'participant·es')?.value ?? 
     gap: 1rem;
     flex-wrap: wrap;
   }
+
+  .hero-primo { margin-top: 1.5rem; max-width: 50ch; font-size: .95rem; line-height: 1.75; }
+  .hero-primo a { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 4px; font-weight: 600; }
+  @media (max-width: 1024px) { .hero-primo { margin-inline: auto; } }
 
   /* Hero Ticket Card */
   .hero-ticket {

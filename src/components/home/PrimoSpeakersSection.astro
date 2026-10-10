@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import teamPhoto from '../../../public/img/team/conference-2026.jpg';
+import { siteConfig } from '@data/config/site';
+import { primoSpeakersCampaign } from '@data/config/cfp';
+import { isPrimoSpeakersOpen } from '@lib/phase';
+---
+
+<section class:list={['primo-section', { 'primo-section--closed': !isPrimoSpeakersOpen }]} aria-labelledby="primo-invitation-title">
+  <div class="primo-inner">
+    <div class="primo-copy">
+      <h2 id="primo-invitation-title">Et si {siteConfig.edition.year} était l’année de votre première conférence&nbsp;?</h2>
+      <p class="primo-intro">Une expérience à partager, mais un sujet encore en construction&nbsp;?
+        L’équipe de mentorat vous accompagne pour préparer votre première intervention à Touraine Tech.</p>
+      {isPrimoSpeakersOpen ? (
+        <p class="primo-deadline">Candidatures au parcours primo-speaker jusqu’au&nbsp;<strong><time datetime={primoSpeakersCampaign.deadlineDate}>{primoSpeakersCampaign.deadline}</time></strong>.</p>
+      ) : (
+        <p class="primo-deadline">Les candidatures au parcours primo-speaker sont closes. Le CFP général reste ouvert jusqu’au&nbsp;<strong>{siteConfig.cfpDeadline}</strong>.</p>
+      )}
+      <a class="btn btn-primary" href="/primo-speakers">Découvrir l’accompagnement</a>
+    </div>
+    {isPrimoSpeakersOpen && (
+      <Image class="primo-photo" src={teamPhoto} alt="L’équipe de Touraine Tech parmi le public lors de l’édition 2026"
+        widths={[400, 640, 900]} sizes="(max-width: 767px) 100vw, 40vw" loading="lazy" />
+    )}
+  </div>
+</section>
+
+<style>
+  .primo-section { padding: 1rem 2rem 3rem; background: var(--bg-primary); }
+  .primo-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; background: var(--accent-light); border-radius: 24px; overflow: hidden; }
+  .primo-copy { padding: clamp(1.75rem, 4vw, 3.5rem); }
+  h2 { font-size: clamp(1.9rem, 3.2vw, 2.8rem); line-height: 1.15; max-width: 23ch; text-wrap: balance; }
+  .primo-intro { margin-top: 1.25rem; max-width: 55ch; font-size: 1.05rem; line-height: 1.75; }
+  .primo-deadline { margin: 1.25rem 0 1.75rem; font-size: .95rem; }
+  .primo-deadline strong { color: var(--accent-dark); }
+  .primo-copy .btn { background: var(--accent-dark); box-shadow: none; }
+  .primo-photo { width: 100%; height: 100%; object-fit: cover; object-position: 65% center; }
+  .primo-section--closed .primo-inner { grid-template-columns: 1fr; }
+  .primo-section--closed h2 { max-width: 32ch; }
+  @media (max-width: 767px) { .primo-section { padding: 1rem 1rem 2rem; } .primo-inner { grid-template-columns: 1fr; } .primo-photo { aspect-ratio: 3 / 2; } }
+  @media (max-width: 480px) { .primo-copy .btn { width: 100%; } }
+</style>

@@ -1,0 +1,154 @@
+---
+import Layout from '@layouts/Layout.astro';
+import { siteConfig, talkCategories } from '@data/config/site';
+import { cfpFormats, primoSpeakersCampaign } from '@data/config/cfp';
+import { isCfpOpen, isPrimoSpeakersOpen } from '@lib/phase';
+import '@styles/speaker-campaign.css';
+
+const { edition, cfpUrl, cfpDeadline } = siteConfig;
+const description = isCfpOpen
+  ? `Proposez un sujet à Touraine Tech ${edition.year} : conférences, lightning talks et ateliers. CFP général jusqu’au ${cfpDeadline}. ${isPrimoSpeakersOpen ? `Parcours primo-speaker jusqu’au ${primoSpeakersCampaign.deadline}.` : 'Les candidatures au parcours primo-speaker sont closes.'}`
+  : `L’appel à sujets de Touraine Tech ${edition.year} est terminé. Retrouvez les formats et le parcours d’accompagnement primo-speaker.`;
+---
+
+<Layout title="CFP : proposez votre sujet" description={description}>
+  <div class="speaker-campaign cfp-page">
+    <header class="campaign-hero">
+      <div class="campaign-inner cfp-hero-grid">
+        <div>
+          <p class="campaign-edition">Touraine Tech {edition.year}, les {edition.dates} à {edition.location}</p>
+          <h1>Une expérience à partager&nbsp;? Proposez votre sujet.</h1>
+          <p class="campaign-lead">Un retour de terrain, une découverte, une pratique qui mérite d’être discutée&nbsp;:
+            partagez ce que vous avez appris avec la communauté tech. Notre appel à sujets, ou CFP, accueille
+            des conférences, des présentations courtes et des ateliers.</p>
+          <div class="campaign-actions">
+            {isCfpOpen ? (
+              <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
+                aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
+            ) : (
+              <p class="closed-message">Le CFP de cette édition est terminé.</p>
+            )}
+            <a class="campaign-link" href="/primo-speakers">C’est ma première conférence</a>
+          </div>
+        </div>
+        <aside class="deadlines" aria-labelledby="deadlines-title">
+          <h2 id="deadlines-title">Deux parcours, deux échéances</h2>
+          <dl>
+            <div>
+              <dt>Parcours primo-speaker accompagné</dt>
+              <dd>{isPrimoSpeakersOpen ? <time datetime={primoSpeakersCampaign.deadlineDate}>{primoSpeakersCampaign.deadline}</time> : 'Candidatures closes'}</dd>
+            </div>
+            <div>
+              <dt>CFP général</dt>
+              <dd>{isCfpOpen ? cfpDeadline : 'Candidatures closes'}</dd>
+            </div>
+          </dl>
+          <p>Le parcours accompagné ferme plus tôt pour laisser le temps de préparer et de répéter votre intervention.</p>
+        </aside>
+      </div>
+    </header>
+
+    <section class="campaign-section" aria-labelledby="formats-title">
+      <div class="campaign-inner formats-grid">
+        <div>
+          <h2 id="formats-title">Un format pour votre sujet</h2>
+          <p class="campaign-section-intro">Choisissez le temps et la forme qui conviennent à ce que vous souhaitez transmettre.</p>
+        </div>
+        <dl class="formats">
+          {cfpFormats.map((format) => (
+            <div><dt>{format.name}<span>{format.duration}</span></dt><dd>{format.description}</dd></div>
+          ))}
+          <div class="primo-format">
+            <dt>Lightning primo-speakers<span>15 min</span></dt>
+            <dd>Votre première conférence, avec l’aide de l’équipe de mentorat. Questions comprises.
+              <a class="campaign-link" href="/primo-speakers">Découvrir l’accompagnement</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="campaign-section campaign-section--tinted" aria-labelledby="first-talk-title">
+      <div class="campaign-inner first-talk-grid">
+        <div>
+          <h2 id="first-talk-title">Votre première conférence&nbsp;? Nous vous accompagnons.</h2>
+          <p class="campaign-section-intro">Une idée encore imparfaite peut être proposée. Le parcours primo-speaker
+            comprend l’aide à la construction du sujet, le coaching à la prise de parole, les répétitions
+            et l’accompagnement le jour J, jusqu’au débrief.</p>
+        </div>
+        <div>
+          <p class="primo-status">{isPrimoSpeakersOpen ? <>Candidatures jusqu’au&nbsp;<strong>{primoSpeakersCampaign.deadline}</strong>.</> : <>Les candidatures à ce parcours sont closes pour cette édition.</>}</p>
+          <a class="btn btn-primary campaign-button" href="/primo-speakers">Découvrir l’accompagnement</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaign-section" aria-labelledby="topics-title">
+      <div class="campaign-inner">
+        <h2 id="topics-title">De quoi avez-vous envie de parler&nbsp;?</h2>
+        <p class="campaign-section-intro">Des technologies aux façons de travailler ensemble, voici les thématiques de Touraine Tech.</p>
+        <ul class="topics">
+          {talkCategories.map((category) => (
+            <li><span aria-hidden="true">{category.icon}</span><div><h3>{category.name}</h3><p>{category.description}</p></div></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="campaign-section submission-section" aria-labelledby="submission-title">
+      <div class="campaign-inner submission-inner">
+        <h2 id="submission-title">{isCfpOpen ? 'Envie de proposer votre sujet ?' : 'Une question sur le CFP ?'}</h2>
+        <p class="campaign-section-intro">{isCfpOpen
+          ? 'Sur Conference Hall, choisissez un format et une thématique, puis présentez votre idée et ce que le public pourra en retenir.'
+          : 'Vous pouvez toujours échanger avec l’équipe au sujet des formats ou du parcours primo-speaker.'}</p>
+        <div class="campaign-actions">
+          {isCfpOpen && (
+            <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
+              aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
+          )}
+          <a class="campaign-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>Parler avec l’équipe</a>
+        </div>
+        <p class="conduct-note">La conférence se déroule dans le respect de notre <a class="campaign-link" href="/coc">code de conduite</a>.</p>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .cfp-hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: center; }
+  h1 { max-width: 20ch; }
+  .deadlines { background: var(--bg-primary); border-radius: 20px; padding: 2rem; border: 1px solid var(--glass-border); }
+  .deadlines h2 { font-size: 1.5rem; }
+  .deadlines dl { margin: 1.5rem 0; }
+  .deadlines dl > div + div { border-top: 1px solid var(--glass-border); padding-top: 1.25rem; margin-top: 1.25rem; }
+  .deadlines dt { font-size: .9rem; color: var(--text-secondary); }
+  .deadlines dd { margin-top: .35rem; font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; color: var(--accent-dark); }
+  .deadlines p { font-size: .85rem; line-height: 1.8; }
+  .closed-message { color: var(--accent-dark); font-weight: 600; }
+  .formats-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; }
+  .formats > div { display: grid; grid-template-columns: 1fr 1.5fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--glass-border); }
+  .formats > div:first-child { padding-top: 0; }
+  .formats dt { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; }
+  .formats dt span { display: block; font-family: var(--font-body); color: var(--accent-dark); font-size: .9rem; margin-top: .25rem; }
+  .formats dd { color: var(--text-secondary); font-size: 1rem; line-height: 1.8; }
+  .primo-format a { display: inline-block; margin-top: .5rem; }
+  .first-talk-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 4rem; align-items: center; }
+  .primo-status { margin-bottom: 1.5rem; font-size: 1rem; }
+  .primo-status strong { color: var(--accent-dark); }
+  .topics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem 3rem; list-style: none; padding: 0; margin-top: 2.5rem; }
+  .topics li { display: flex; gap: .9rem; align-items: start; }
+  .topics li > span { font-size: 1.5rem; }
+  .topics h3 { font-size: 1.1rem; }
+  .topics p { margin-top: .5rem; font-size: .9rem; line-height: 1.8; }
+  .submission-section { background: var(--bg-secondary); }
+  .submission-inner { max-width: 850px; }
+  .conduct-note { margin-top: 2rem; font-size: .85rem; }
+  @media (max-width: 900px) {
+    .cfp-hero-grid, .formats-grid, .first-talk-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .topics { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .formats > div { grid-template-columns: 1fr; gap: .75rem; }
+    .topics { grid-template-columns: 1fr; }
+    .deadlines { padding: 1.5rem; }
+  }
+</style>

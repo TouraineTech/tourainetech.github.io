@@ -5,6 +5,7 @@
  * Design: unified companion card pattern (matches ticket card)
  */
 import { siteConfig, talkCategories } from '@data/config/site';
+import { isCfpOpen } from '@lib/phase';
 
 const { cfpUrl, cfpDeadline } = siteConfig;
 ---
@@ -12,22 +13,22 @@ const { cfpUrl, cfpDeadline } = siteConfig;
 <div class="companion-card">
   <div class="companion-header">
     <div>
-      <h2 class="companion-title">Proposez votre talk&nbsp;!</h2>
+      <h2 class="companion-title">{isCfpOpen ? 'Proposez votre sujet !' : 'Le CFP est terminé'}</h2>
       <p class="companion-subtitle">Tous les formats sont les bienvenus</p>
     </div>
     <div class="companion-badge">
-      <span class="badge-dot"></span>
-      CFP ouvert
+      {isCfpOpen && <span class="badge-dot"></span>}
+      {isCfpOpen ? 'CFP ouvert' : 'CFP terminé'}
     </div>
   </div>
 
   <div class="companion-body">
     <p class="companion-desc">
-      Partagez votre expertise avec la communauté tech tourangelle.
+      Partagez une expérience, un retour de terrain ou une idée avec la communauté tech tourangelle.
       Conférences, Lightning talks, workshops&nbsp;: choisissez votre format.
     </p>
 
-    {cfpDeadline && (
+    {isCfpOpen && cfpDeadline && (
       <div class="cfp-deadline">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
           <circle cx="12" cy="12" r="10"/>
@@ -46,12 +47,13 @@ const { cfpUrl, cfpDeadline } = siteConfig;
       ))}
     </div>
 
-    <a href={cfpUrl} target="_blank" rel="noopener noreferrer" class="companion-cta">
-      Soumettre un talk
+    <a href={isCfpOpen ? cfpUrl : '/cfp'} target={isCfpOpen ? '_blank' : undefined} rel={isCfpOpen ? 'noopener noreferrer' : undefined} class="companion-cta">
+      {isCfpOpen ? 'Proposer un sujet' : 'Consulter le CFP'}
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
     </a>
+    <a href="/cfp" class="cfp-details">Formats, dates et accompagnement</a>
   </div>
 </div>
 
@@ -172,6 +174,8 @@ const { cfpUrl, cfpDeadline } = siteConfig;
     line-height: 1.6;
     color: var(--text-secondary);
   }
+
+  .cfp-details { text-align: center; color: var(--accent-dark); text-decoration: underline; text-underline-offset: 4px; font-size: .85rem; }
 
   .cfp-deadline {
     display: flex;
