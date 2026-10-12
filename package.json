@@ -13,6 +13,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "planning:fetch": "node tools/fetch.mjs",
+    "planning:edit": "node tools/planning-editor/server.mjs",
     "planning:build": "node tools/build.mjs",
     "planning:validate": "node tools/build.mjs --validate-only",
     "planning:photos": "node tools/photos.mjs",

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier du programme · Touraine Tech</title>
+  <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="identity"><img src="/logo.svg" alt="Touraine Tech" width="44" height="44"><div><span class="brand">Touraine Tech</span><h1>Atelier du programme</h1></div></div>
+    <div class="header-actions"><span id="edition" class="edition">Chargement…</span><button id="import" class="button secondary">Importer</button><button id="export" class="button primary">Exporter le planning <span aria-hidden="true">↗</span></button></div>
+    <input id="import-file" type="file" accept="application/json,.json" hidden>
+  </header>
+  <main class="workspace" id="workspace" aria-busy="true">
+    <aside class="library" aria-label="Réserve de talks">
+      <div class="library-heading"><h2>Les talks</h2><span id="talk-count" class="count">—</span></div>
+      <p class="help">Glissez un talk vers une salle.<br>Ou sélectionnez-le, puis un créneau.</p>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Titre ou intervenant" aria-label="Rechercher un talk"></label>
+      <div class="filters"><label class="sr-only" for="category">Catégorie</label><select id="category"><option value="">Toutes les catégories</option></select><label class="sr-only" for="format">Format</label><select id="format"><option value="">Tous les formats</option></select></div>
+      <div class="library-tabs" role="group" aria-label="Talks à afficher"><button data-filter="all" class="active" aria-pressed="true">Tous</button><button data-filter="unplaced" aria-pressed="false">À placer <span id="remaining">—</span></button></div>
+      <div id="talk-list" class="talk-list"></div>
+      <div class="return-zone" id="return-zone" tabindex="0" role="button" aria-label="Retirer le talk sélectionné du planning"><span aria-hidden="true">↶</span> Remettre un talk ici pour le retirer</div>
+    </aside>
+    <section class="schedule" aria-label="Planning">
+      <div class="schedule-toolbar"><div class="day-tabs" role="group" aria-label="Jour du planning"><button data-day="jeudi" class="active" aria-pressed="true">Jeudi</button><button data-day="vendredi" aria-pressed="false">Vendredi</button></div><div class="history"><button id="undo" class="icon-button" title="Annuler (Ctrl ou ⌘ Z)" aria-label="Annuler" disabled>↶</button><button id="redo" class="icon-button" title="Rétablir (Ctrl ou ⌘ Maj Z)" aria-label="Rétablir" disabled>↷</button><span class="toolbar-divider"></span><button id="new-planning" class="text-button">Vider le planning</button></div></div>
+      <div class="board-scroll" id="board-scroll"><div id="board" class="board"></div></div>
+      <footer class="schedule-footer"><span id="progress">Chargement des talks…</span><button id="show-issues" class="validation" aria-expanded="false" aria-controls="issues">Vérification…</button><span id="save-status" class="save-status"></span></footer>
+      <div id="issues" class="issues" hidden></div>
+    </section>
+  </main>
+  <div id="announcement" class="announcement" role="status" aria-live="polite"></div>
+  <dialog id="placement-dialog"><form id="placement-form"><div class="dialog-heading"><h2>Placer le talk</h2><button type="button" class="icon-button" id="close-placement" aria-label="Fermer">×</button></div><p id="placement-title"></p><div class="dialog-fields"><label>Jour<select id="placement-day"><option value="jeudi">Jeudi</option><option value="vendredi">Vendredi</option></select></label><label>Horaire<select id="placement-time"></select></label></div><fieldset><legend>Salles</legend><div id="placement-rooms" class="room-options"></div></fieldset><p id="placement-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" id="unplace" class="button secondary">Retirer du planning</button><button type="submit" class="button primary">Placer le talk</button></div></form></dialog>
+  <dialog id="confirm-dialog"><form method="dialog"><h2 id="confirm-title">Vider le planning ?</h2><p id="confirm-description">Les talks retourneront dans la réserve. Vous pourrez annuler cette action.</p><div class="dialog-actions"><button class="button secondary" value="cancel">Annuler</button><button class="button primary" value="confirm">Confirmer</button></div></form></dialog>
+  <noscript>Activez JavaScript pour utiliser l’éditeur de planning.</noscript>
+</body>
+</html>
