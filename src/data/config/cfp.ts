@@ -1,10 +1,14 @@
 // Source commune aux pages CFP, primo-speakers et aux invitations de l'accueil.
+// Affichage jusqu'à cette date incluse (heure de Paris), évalué au build.
+// Une date vide masque le parcours ; redéployer pour actualiser le site statique.
+const primoSpeakersDeadline = '2026-10-11';
+
 export const primoSpeakersCampaign = {
-  // Site statique : passer à false et redéployer à la clôture du 11 octobre.
-  // Ce statut est indépendant du CFP général, ouvert jusqu'au 1er novembre.
-  isOpen: true,
-  deadline: '11 octobre 2026',
-  deadlineDate: '2026-10-11',
+  deadlineDate: primoSpeakersDeadline,
+  deadline: primoSpeakersDeadline
+    ? new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeZone: 'Europe/Paris' })
+      .format(new Date(`${primoSpeakersDeadline}T12:00:00Z`))
+    : '',
   format: 'Lightning primo-speakers (15min)',
   duration: '15 minutes, questions comprises',
   contactEmail: 'team@touraine.tech',

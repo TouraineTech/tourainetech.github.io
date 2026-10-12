@@ -2,7 +2,7 @@ import { siteConfig } from '@data/config/site';
 import { primoSpeakersCampaign } from '@data/config/cfp';
 import { getAllSponsors } from '@lib/data';
 import programmeEdition from '@data/source/edition.json';
-import { canPublishProgramme } from './publication';
+import { canPublishProgramme, isDeadlineOpen } from './publication';
 
 // Source de verite : la phase de campagne pilote le hero + l'ordre editorial.
 export const phase = siteConfig.phase;
@@ -25,7 +25,7 @@ export const hasSponsors = getAllSponsors().length > 0;
 // Flags derives (consommes par HeroSection / Navigation).
 export const isProgrammePublished = canPublishProgramme(phase, siteConfig.edition.year, programmeEdition.year);
 
-export const isPrimoSpeakersOpen = isCfpOpen && primoSpeakersCampaign.isOpen && !isProgrammePublished && !isPost;
+export const isPrimoSpeakersOpen = isCfpOpen && isDeadlineOpen(primoSpeakersCampaign.deadlineDate) && !isProgrammePublished && !isPost;
 
 // La carte annonce aussi l'ouverture pendant le CFP quand une date est renseignée.
 // L'état "ouvert vs bientôt" est géré par isTicketingOpen à l'intérieur.
