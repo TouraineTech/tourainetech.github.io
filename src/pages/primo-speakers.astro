@@ -8,6 +8,8 @@ import { isCfpOpen, isPrimoSpeakersOpen } from '@lib/phase';
 import teamPhoto from '../../public/img/team/conference-2026.jpg';
 import '@styles/speaker-campaign.css';
 
+if (!isPrimoSpeakersOpen) return Astro.redirect('/cfp');
+
 const { edition, cfpDeadline } = siteConfig;
 const description = isPrimoSpeakersOpen
   ? `Préparez votre première conférence à Touraine Tech ${edition.year} avec l’équipe de mentorat : sujet, prise de parole et répétitions. Candidatures jusqu’au ${primoSpeakersCampaign.deadline}.`

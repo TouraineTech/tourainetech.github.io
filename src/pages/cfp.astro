@@ -7,8 +7,8 @@ import '@styles/speaker-campaign.css';
 
 const { edition, cfpUrl, cfpDeadline } = siteConfig;
 const description = isCfpOpen
-  ? `Proposez un sujet à Touraine Tech ${edition.year} : conférences, lightning talks et ateliers. CFP général jusqu’au ${cfpDeadline}. ${isPrimoSpeakersOpen ? `Parcours primo-speaker jusqu’au ${primoSpeakersCampaign.deadline}.` : 'Les candidatures au parcours primo-speaker sont closes.'}`
-  : `L’appel à sujets de Touraine Tech ${edition.year} est terminé. Retrouvez les formats et le parcours d’accompagnement primo-speaker.`;
+  ? `Proposez un sujet à Touraine Tech ${edition.year} : conférences, lightning talks et ateliers. CFP général jusqu’au ${cfpDeadline}.${isPrimoSpeakersOpen ? ` Parcours primo-speaker jusqu’au ${primoSpeakersCampaign.deadline}.` : ''}`
+  : `L’appel à sujets de Touraine Tech ${edition.year} est terminé. Retrouvez les formats de conférence.`;
 ---
 
 <Layout title="CFP : proposez votre sujet" description={description}>
@@ -28,22 +28,22 @@ const description = isCfpOpen
             ) : (
               <p class="closed-message">Le CFP de cette édition est terminé.</p>
             )}
-            <a class="campaign-link" href="/primo-speakers">C’est ma première conférence</a>
+            {isPrimoSpeakersOpen && <a class="campaign-link" href="/primo-speakers">C’est ma première conférence</a>}
           </div>
         </div>
         <aside class="deadlines" aria-labelledby="deadlines-title">
-          <h2 id="deadlines-title">Deux parcours, deux échéances</h2>
+          <h2 id="deadlines-title">{isPrimoSpeakersOpen ? 'Deux parcours, deux échéances' : 'Date limite de candidature'}</h2>
           <dl>
-            <div>
+            {isPrimoSpeakersOpen && <div>
               <dt>Parcours primo-speaker accompagné</dt>
-              <dd>{isPrimoSpeakersOpen ? <time datetime={primoSpeakersCampaign.deadlineDate}>{primoSpeakersCampaign.deadline}</time> : 'Candidatures closes'}</dd>
-            </div>
+              <dd><time datetime={primoSpeakersCampaign.deadlineDate}>{primoSpeakersCampaign.deadline}</time></dd>
+            </div>}
             <div>
               <dt>CFP général</dt>
               <dd>{isCfpOpen ? cfpDeadline : 'Candidatures closes'}</dd>
             </div>
           </dl>
-          <p>Le parcours accompagné ferme plus tôt pour laisser le temps de préparer et de répéter votre intervention.</p>
+          {isPrimoSpeakersOpen && <p>Le parcours accompagné ferme plus tôt pour laisser le temps de préparer et de répéter votre intervention.</p>}
         </aside>
       </div>
     </header>
@@ -58,16 +58,16 @@ const description = isCfpOpen
           {cfpFormats.map((format) => (
             <div><dt>{format.name}<span>{format.duration}</span></dt><dd>{format.description}</dd></div>
           ))}
-          <div class="primo-format">
+          {isPrimoSpeakersOpen && <div class="primo-format">
             <dt>Lightning primo-speakers<span>15 min</span></dt>
             <dd>Votre première conférence, avec l’aide de l’équipe de mentorat. Questions comprises.
               <a class="campaign-link" href="/primo-speakers">Découvrir l’accompagnement</a></dd>
-          </div>
+          </div>}
         </dl>
       </div>
     </section>
 
-    <section class="campaign-section campaign-section--tinted" aria-labelledby="first-talk-title">
+    {isPrimoSpeakersOpen && <section class="campaign-section campaign-section--tinted" aria-labelledby="first-talk-title">
       <div class="campaign-inner first-talk-grid">
         <div>
           <h2 id="first-talk-title">Votre première conférence&nbsp;? Nous vous accompagnons.</h2>
@@ -76,11 +76,11 @@ const description = isCfpOpen
             et l’accompagnement le jour J, jusqu’au débrief.</p>
         </div>
         <div>
-          <p class="primo-status">{isPrimoSpeakersOpen ? <>Candidatures jusqu’au&nbsp;<strong>{primoSpeakersCampaign.deadline}</strong>.</> : <>Les candidatures à ce parcours sont closes pour cette édition.</>}</p>
+          <p class="primo-status">Candidatures jusqu’au&nbsp;<strong>{primoSpeakersCampaign.deadline}</strong>.</p>
           <a class="btn btn-primary campaign-button" href="/primo-speakers">Découvrir l’accompagnement</a>
         </div>
       </div>
-    </section>
+    </section>}
 
     <section class="campaign-section" aria-labelledby="topics-title">
       <div class="campaign-inner">
@@ -99,7 +99,7 @@ const description = isCfpOpen
         <h2 id="submission-title">{isCfpOpen ? 'Envie de proposer votre sujet ?' : 'Une question sur le CFP ?'}</h2>
         <p class="campaign-section-intro">{isCfpOpen
           ? 'Sur Conference Hall, choisissez un format et une thématique, puis présentez votre idée et ce que le public pourra en retenir.'
-          : 'Vous pouvez toujours échanger avec l’équipe au sujet des formats ou du parcours primo-speaker.'}</p>
+          : 'Vous pouvez toujours échanger avec l’équipe au sujet des formats de conférence.'}</p>
         <div class="campaign-actions">
           {isCfpOpen && (
             <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"

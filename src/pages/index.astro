@@ -14,7 +14,7 @@ import MapSection from '@components/home/MapSection.astro';
 import NewsletterSection from '@components/home/NewsletterSection.astro';
 import { testimonials } from '@data/config/site';
 import photosData from '@data/generated/photos.json';
-import { isIntro, isSponsoring, isCfp, isCfpOpen, isTicketing, isProgramme, isPost } from '@lib/phase';
+import { isIntro, isSponsoring, isCfp, isPrimoSpeakersOpen, isTicketing, isProgramme, isPost } from '@lib/phase';
 
 // Composition pilotee par la phase (cf. plan) : ossature stable, importance
 // des contenus qui glisse. L'edition precedente descend a mesure que
@@ -27,7 +27,7 @@ const isPreEventCampaign = isCfp || isTicketing;
 <Layout>
   <EventStructuredData slot="head" />
   <HeroSection />
-  {isPreEventCampaign && isCfpOpen && <PrimoSpeakersSection />}
+  {isPreEventCampaign && isPrimoSpeakersOpen && <PrimoSpeakersSection />}
   <StatsSection />
 
   {isIntro && (

@@ -2,10 +2,13 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import yaml from '@rollup/plugin-yaml';
 import { siteConfig } from './src/data/config/site';
+import { primoSpeakersCampaign } from './src/data/config/cfp';
 import programmeEdition from './src/data/source/edition.json';
-import { canPublishProgramme, isProgrammePath } from './src/lib/publication';
+import { canPublishProgramme, isDeadlineOpen, isProgrammePath } from './src/lib/publication';
 
 const programmePublished = canPublishProgramme(siteConfig.phase, siteConfig.edition.year, programmeEdition.year);
+const primoSpeakersOpen = siteConfig.isCfpOpen && isDeadlineOpen(primoSpeakersCampaign.deadlineDate)
+  && !programmePublished && siteConfig.phase !== 'post-event';
 
 export default defineConfig({
   site: 'https://touraine.tech',
@@ -16,7 +19,8 @@ export default defineConfig({
       filter: (page) =>
         !/\/(timer|waiting-screen|regie)(\/|$)/.test(new URL(page).pathname) &&
         !/^\/newsletter\/(confirmation|success)\/?$/.test(new URL(page).pathname) &&
-        (programmePublished || !isProgrammePath(new URL(page).pathname)),
+        (programmePublished || !isProgrammePath(new URL(page).pathname)) &&
+        (primoSpeakersOpen || !/^\/primo-speakers\/?$/.test(new URL(page).pathname)),
     }),
   ],
   vite: {
