@@ -21,6 +21,10 @@ tasks:
       - pnpm run planning:build
       - pnpm run extract:timerDatas
 
+  planning:
+    desc: Ouvre l'éditeur local du planning (glisser-déposer et export JSON)
+    cmd: pnpm run planning:edit
+
   redirects:
     desc: 'Génère public/_redirects d''archivage (vars: YEAR, [DOMAIN])'
     requires:

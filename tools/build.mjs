@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { getDurationFromFormat } from './planning-editor/model.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -138,18 +139,6 @@ function timeStringToIndex(timeStr) {
 function timeToMinutes(timeStr) {
   const [h, m] = timeStr.split(':').map(Number);
   return h * 60 + m;
-}
-
-// Extract duration from format string (e.g., "Hands-on (120min)" → 110)
-// Note: 120min hands-on = 110min for slot calculation (3 slots, not 4)
-function getDurationFromFormat(formatStr) {
-  if (!formatStr) return 50; // default
-  const match = formatStr.match(/\((\d+)min\)/);
-  if (!match) return 50;
-  const minutes = parseInt(match[1], 10);
-  // Hands-on 120min → 3 slots (finit avant la pause déjeuner)
-  if (minutes === 120) return 110;
-  return minutes;
 }
 
 // Calculate all time slot indices that a talk occupies based on start time and duration
