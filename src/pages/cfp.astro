@@ -1,18 +1,20 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import CfpClosed from '@components/cfp/CfpClosed.astro';
 import { siteConfig, talkCategories } from '@data/config/site';
 import { cfpFormats, primoSpeakersCampaign } from '@data/config/cfp';
 import { isCfpOpen, isPrimoSpeakersOpen } from '@lib/phase';
 import '@styles/speaker-campaign.css';
 
-const { edition, cfpUrl, cfpDeadline } = siteConfig;
+const { edition, cfpUrl, cfpDeadline, cfpDeliberationDate } = siteConfig;
 const description = isCfpOpen
   ? `Proposez un sujet à Touraine Tech ${edition.year} : conférences, lightning talks et ateliers. CFP général jusqu’au ${cfpDeadline}.${isPrimoSpeakersOpen ? ` Parcours primo-speaker jusqu’au ${primoSpeakersCampaign.deadline}.` : ''}`
-  : `L’appel à sujets de Touraine Tech ${edition.year} est terminé. Retrouvez les formats de conférence.`;
+  : `L’appel à sujets de Touraine Tech ${edition.year} est terminé.${cfpDeliberationDate ? ` La délibération aura lieu ${cfpDeliberationDate}.` : ''}`;
 ---
 
-<Layout title="CFP : proposez votre sujet" description={description}>
+<Layout title={isCfpOpen ? 'CFP : proposez votre sujet' : 'CFP : candidatures closes'} description={description}>
   <div class="speaker-campaign cfp-page">
+    {isCfpOpen ? <>
     <header class="campaign-hero">
       <div class="campaign-inner cfp-hero-grid">
         <div>
@@ -22,12 +24,8 @@ const description = isCfpOpen
             partagez ce que vous avez appris avec la communauté tech. Notre appel à sujets, ou CFP, accueille
             des conférences, des présentations courtes et des ateliers.</p>
           <div class="campaign-actions">
-            {isCfpOpen ? (
-              <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
-                aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
-            ) : (
-              <p class="closed-message">Le CFP de cette édition est terminé.</p>
-            )}
+            <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
+              aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
             {isPrimoSpeakersOpen && <a class="campaign-link" href="/primo-speakers">C’est ma première conférence</a>}
           </div>
         </div>
@@ -40,7 +38,7 @@ const description = isCfpOpen
             </div>}
             <div>
               <dt>CFP général</dt>
-              <dd>{isCfpOpen ? cfpDeadline : 'Candidatures closes'}</dd>
+              <dd>{cfpDeadline}</dd>
             </div>
           </dl>
           {isPrimoSpeakersOpen && <p>Le parcours accompagné ferme plus tôt pour laisser le temps de préparer et de répéter votre intervention.</p>}
@@ -96,20 +94,17 @@ const description = isCfpOpen
 
     <section class="campaign-section submission-section" aria-labelledby="submission-title">
       <div class="campaign-inner submission-inner">
-        <h2 id="submission-title">{isCfpOpen ? 'Envie de proposer votre sujet ?' : 'Une question sur le CFP ?'}</h2>
-        <p class="campaign-section-intro">{isCfpOpen
-          ? 'Sur Conference Hall, choisissez un format et une thématique, puis présentez votre idée et ce que le public pourra en retenir.'
-          : 'Vous pouvez toujours échanger avec l’équipe au sujet des formats de conférence.'}</p>
+        <h2 id="submission-title">Envie de proposer votre sujet ?</h2>
+        <p class="campaign-section-intro">Sur Conference Hall, choisissez un format et une thématique, puis présentez votre idée et ce que le public pourra en retenir.</p>
         <div class="campaign-actions">
-          {isCfpOpen && (
-            <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
-              aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
-          )}
+          <a class="btn btn-primary campaign-button" href={cfpUrl} target="_blank" rel="noopener noreferrer"
+            aria-label="Proposer un sujet sur Conference Hall (ouvre dans une nouvelle fenêtre)">Proposer un sujet</a>
           <a class="campaign-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>Parler avec l’équipe</a>
         </div>
         <p class="conduct-note">La conférence se déroule dans le respect de notre <a class="campaign-link" href="/coc">code de conduite</a>.</p>
       </div>
     </section>
+    </> : <CfpClosed />}
   </div>
 </Layout>
 
@@ -123,7 +118,6 @@ const description = isCfpOpen
   .deadlines dt { font-size: .9rem; color: var(--text-secondary); }
   .deadlines dd { margin-top: .35rem; font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; color: var(--accent-dark); }
   .deadlines p { font-size: .85rem; line-height: 1.8; }
-  .closed-message { color: var(--accent-dark); font-weight: 600; }
   .formats-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; }
   .formats > div { display: grid; grid-template-columns: 1fr 1.5fr; gap: 1.5rem; padding: 1.5rem 0; border-bottom: 1px solid var(--glass-border); }
   .formats > div:first-child { padding-top: 0; }

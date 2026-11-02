@@ -5,13 +5,14 @@ export const siteConfig: SiteConfig = {
   phase: 'ticketing',
 
   // Etats independants
-  isCfpOpen: true,
+  isCfpOpen: false,
   isTicketingOpen: true,
   isSponsoringOpen: true,
   ticketingOpenDate: '5 octobre 2026 à 12h',
 
   // URLs externes
   cfpDeadline: '1er novembre 2026',
+  cfpDeliberationDate: 'fin novembre 2026',
   ticketingUrl: 'https://billetterie27.touraine.tech',
   cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
   sponsoringUrl: 'https://sponsoring27.touraine.tech',

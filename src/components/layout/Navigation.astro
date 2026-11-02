@@ -7,7 +7,7 @@ const { ticketingUrl, cfpUrl } = siteConfig;
 // Navigation links - conditionally shown based on site phase
 const navLinks = [
   { href: '/', label: 'Accueil', always: true },
-  { href: '/cfp', label: 'CFP', show: isCfpOpen && !isProgrammePublished },
+  { href: '/cfp', label: 'CFP', show: !isProgrammePublished },
   { href: '/schedule', label: 'Programme', show: isProgrammePublished },
   { href: '/speakers', label: 'Speakers', show: isProgrammePublished },
   { href: '/sponsors', label: 'Sponsors', always: true },
