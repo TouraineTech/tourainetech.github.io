@@ -22,6 +22,7 @@ export interface SiteConfig {
 
   // URLs externes
   cfpDeadline?: string;
+  cfpDeliberationDate?: string;
   ticketingUrl: string;
   cfpUrl: string;
   sponsoringUrl: string;

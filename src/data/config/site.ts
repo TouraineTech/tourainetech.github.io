@@ -12,6 +12,7 @@ export const siteConfig: SiteConfig = {
 
   // URLs externes
   cfpDeadline: '1er novembre 2026',
+  cfpDeliberationDate: 'fin novembre 2026',
   ticketingUrl: 'https://billetterie27.touraine.tech',
   cfpUrl: 'https://conference-hall.io/touraine-tech-2027',
   sponsoringUrl: 'https://sponsoring27.touraine.tech',

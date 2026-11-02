@@ -1,0 +1,65 @@
+---
+import { siteConfig } from '@data/config/site';
+import { primoSpeakersCampaign } from '@data/config/cfp';
+import { isTicketingOpen } from '@lib/phase';
+
+const { edition, cfpDeadline, cfpDeliberationDate, ticketingUrl } = siteConfig;
+const steps = [
+  { label: 'Candidatures closes', date: cfpDeadline, state: 'done' },
+  { label: 'Délibération du comité', date: cfpDeliberationDate, state: 'current' },
+  { label: `Touraine Tech ${edition.year}`, date: edition.dates, state: 'next' },
+].filter((step) => step.date);
+---
+
+<header class="campaign-hero">
+  <div class="campaign-inner">
+    <p class="campaign-edition">CFP Touraine Tech {edition.year}</p>
+    <h1>Merci pour vos propositions&nbsp;!</h1>
+    <p class="campaign-lead">Le CFP est clos. Le comité lit chaque sujet avec attention avant de composer le programme.</p>
+  </div>
+</header>
+
+<section class="campaign-section">
+  <div class="campaign-inner">
+    <ol class="timeline">
+      {steps.map((step) => (
+        <li class={`step step--${step.state}`} aria-current={step.state === 'current' ? 'step' : undefined}>
+          <span class="dot" aria-hidden="true"></span>
+          <p class="step-date">{step.date}</p>
+          <p class="step-label">{step.label}</p>
+          {step.state === 'current' && <p class="step-tag">Prochaine étape</p>}
+        </li>
+      ))}
+    </ol>
+    <p class="ticket-note">Sujet retenu&nbsp;? Votre place vous est offerte.
+      {isTicketingOpen && <>Dans le cas contraire, la billetterie est déjà ouverte.</>}</p>
+    <div class="campaign-actions">
+      {isTicketingOpen && (
+        <a class="btn btn-primary campaign-button" href={ticketingUrl} target="_blank" rel="noopener noreferrer"
+          aria-label="Prendre sa place sur la billetterie (ouvre dans une nouvelle fenêtre)">Prendre sa place</a>
+      )}
+      <a class="campaign-link" href={`mailto:${primoSpeakersCampaign.contactEmail}`}>Écrire à l’équipe</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline { list-style: none; padding: 0; margin: 0 0 3rem; display: grid; grid-template-columns: repeat(3, 1fr); position: relative; }
+  .timeline::before { content: ''; position: absolute; top: 9px; left: 0; right: 0; height: 2px; background: var(--glass-border); }
+  .step { position: relative; padding-right: 2rem; }
+  .dot { display: block; width: 20px; height: 20px; border-radius: 50%; background: var(--bg-primary); border: 2px solid var(--glass-border); position: relative; margin-bottom: 1.25rem; }
+  .step--done .dot { background: var(--text-secondary); border-color: var(--text-secondary); }
+  .step--current .dot { background: var(--accent-dark); border-color: var(--accent-dark); box-shadow: 0 0 0 6px var(--accent-light); }
+  .step-date { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; }
+  .step--current .step-date { color: var(--accent-dark); }
+  .step--done .step-date, .step--done .step-label { color: var(--text-secondary); }
+  .step-label { margin-top: .35rem; }
+  .step-tag { display: inline-block; margin-top: .75rem; padding: .2rem .7rem; border-radius: 999px; background: var(--accent-light); color: var(--accent-dark); font-size: .8rem; font-weight: 600; }
+  .ticket-note { max-width: 60ch; line-height: 1.8; }
+  @media (max-width: 767px) {
+    .timeline { grid-template-columns: 1fr; gap: 2rem; }
+    .timeline::before { top: 0; bottom: 0; left: 9px; right: auto; width: 2px; height: auto; }
+    .step { padding-left: 2.5rem; }
+    .dot { position: absolute; left: 0; top: .3rem; }
+  }
+</style>
