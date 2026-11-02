@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   phase: 'ticketing',
 
   // Etats independants
-  isCfpOpen: true,
+  isCfpOpen: false,
   isTicketingOpen: true,
   isSponsoringOpen: true,
   ticketingOpenDate: '5 octobre 2026 à 12h',
